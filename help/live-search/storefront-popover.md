@@ -1,0 +1,32 @@
+---
+title: Storefront Popover
+description: Das Popup-Storefront-Popup für die Live-Suche gibt dynamisch vorgeschlagene Produkte und Miniaturansichten zurück.
+exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
+source-git-commit: 7402e97f53b71e488d860215487f4809572b7e6f
+workflow-type: tm+mt
+source-wordcount: '239'
+ht-degree: 0%
+
+---
+
+# Storefront Popover
+
+Wann [!DNL Live Search] is [installiert](install.md), wird ein Popup in der Storefront angezeigt, wenn der Käufer im Feld [Suche](https://docs.magento.com/user-guide/catalog/search-quick.html) ankreuzen. Wenn jedes Zeichen eingegeben wird, wird das Popover mit den vorgeschlagenen Produkten und Miniaturbildern der Top-Suchergebnisse aktualisiert.
+
+[!DNL Live Search] gibt Ergebnisse für eine Abfrage von zwei Zeichen oder mehr zurück. Bei einer teilweisen Übereinstimmung beträgt die maximale Anzahl von Zeichen pro Wort 20. Die Anzahl der Zeichen in einer Abfrage vom Typ &quot;Suche beim Eingeben&quot; ist nicht konfigurierbar.
+
+>[!NOTE]
+>
+>Die [!DNL Live Search] Storefront-Popover ist nur für Stores verfügbar, die *Luma* Design oder ein benutzerdefiniertes Design, das auf *Luma*. Die *Luma* -Design ist im [!DNL Commerce] Beispieldaten. Das Popover unterstützt nicht die *Leer* Design. Siehe [Arbeiten mit einem geänderten Design](#working-with-modified-theme) für weitere Informationen.
+
+## Durchsuchbare Attribute
+
+Um zielgerichtete Ergebnisse zu erzielen, lesen Sie den Abschnitt [durchsuchbar](https://docs.magento.com/user-guide/stores/attributes-product.html#storefront-properties) (`searchable=true`) Produktattribute. Um die Relevanz sicherzustellen, sollten Attribute nur durchsuchbar sein, wenn sie Inhalte mit einer klaren und präzisen Bedeutung enthalten. Vermeiden Sie die Verwendung von Attributen, die weniger präzisen, langwierigen Text enthalten, z. B. `description`, die zwar standardmäßig für die Suche aktiviert ist, aber die Genauigkeit der Suchergebnisse verringern kann. Wenn beispielsweise eine Person nach &quot;Shorts&quot;sucht und es Hemden mit einer Beschreibung gibt, die den Begriff &quot;Kurzärmel&quot;enthält, werden die Hemden in die Suchergebnisse aufgenommen.
+
+Die folgenden Attribute sind immer durchsuchbar:
+
+* `sku`
+* `name`
+* `categories`
+
+![Popup für Live-Suche](assets/storefront-search-as-you-type.png)

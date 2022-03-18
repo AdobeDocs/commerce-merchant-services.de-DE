@@ -1,0 +1,77 @@
+---
+title: Synonyme hinzufügen
+description: Fügen Sie Live-Suchsynonyme hinzu, um die Antwort auf Suchanfragen zu verbessern.
+exl-id: 6c277d88-cb22-4174-abda-6d6bb65fe3be
+source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+workflow-type: tm+mt
+source-wordcount: '394'
+ht-degree: 0%
+
+---
+
+# Synonyme hinzufügen
+
+Fügen Sie Ihre eigene kuratierte Liste von [!DNL Live Search] Synonyme zur Verbesserung der Antwort auf Suchanfragen und zur Interaktion der Kunden.
+
+![[!DNL Live Search] Synonyme](assets/synonym-workspace.png)
+
+## Schritt 1: Synonym hinzufügen
+
+1. Navigieren Sie im Admin zu **Marketing** > SEO &amp; Suche > **[!DNL Live Search]**.
+1. Legen Sie für mehrere Stores **Anwendungsbereich** der [Store-Ansicht](https://docs.magento.com/user-guide/configuration/scope.html) wobei die Synonym-Einstellungen gelten.
+1. Klicken Sie auf **Synonyme** Registerkarte.
+1. Klicken Sie auf **Synonyme hinzufügen** Schaltfläche.
+
+## Schritt 2: Synonym nach Typ definieren
+
+Befolgen Sie die Anweisungen für das [Typ des Synonyms](synonyms-type.md) die Sie erstellen möchten.
+
+### Zweiwegsynonym
+
+1. Standard akzeptieren **Zweiweg** -Option.
+
+   ![Zweiwege-Synonym hinzufügen](assets/synonym-add-two-way.png)
+
+
+1. Geben Sie die **Schlüsselwort** Begriff oder Satz, der abgeglichen werden soll.
+1. Geben Sie die **Erweiterung** Begriffe, die Sie als Synonyme für den Suchbegriff hinzufügen möchten. Trennen Sie mehrere Begriffe durch Kommas.
+In diesem Beispiel lautet das passende Keyword &quot;Hosen&quot;und die Erweiterungsbegriffe lauten &quot;lange Hosen, Hosen, Slacks&quot;.
+
+   ![Beispiel für bidirektionale Synonyme](assets/synonym-add-two-way-example.png)
+
+1. Wenn Sie fertig sind, klicken Sie auf **Speichern**.
+Der Satz von Synonymen erscheint in der Liste mit einem Zwei-Wege-Pfeil zwischen den einzelnen Begriffen, was bedeutet, dass die Begriffe austauschbar sind.
+
+   ![Zweiwegsynonym](assets/synonym-two-way.png)
+
+### Einwegsynonym
+
+1. Klicken Sie auf **Einweg** Synonym.
+
+   ![Einwegsynonym hinzufügen](assets/synonym-add-one-way.png)
+
+1. Geben Sie die **Schlüsselwort** und **Erweiterung** Begriff(e). Trennen Sie mehrere Begriffe durch Kommas.
+
+   ![Beispiel für unidirektionale Synonyme](assets/synonym-add-one-way-example.png)
+
+   In diesem Beispiel ist das Keyword &quot;Hosen&quot;und die Einweg-Erweiterungsbegriffe &quot;Capris, Hosen mit Kalbslänge, Pädagogiker&quot;sind jeweils eine Untergruppe von &quot;Hosen&quot;, jedoch mit einer bestimmten Bedeutung.
+
+1. Wenn Sie fertig sind, klicken Sie auf **Speichern**.
+Die Gruppe von Synonymen wird in der Liste mit einem einseitigen Pfeil angezeigt, der von den Erweiterungsbegriffen zum Keyword zeigt, um anzugeben, dass es sich bei den Begriffen um Untergruppen des Keywords handelt. Ein Pluszeichen trennt jeden Erweiterungsbegriff.
+
+   ![Einwegsynonym](assets/synonym-one-way.png)
+
+## Schritt 3: Veröffentlichungsänderungen
+
+Wenn Ihre Synonyme abgeschlossen sind, klicken Sie auf **Veröffentlichungsänderungen**.
+Es kann bis zu zwei Stunden dauern, bis Ihre Updates in der Storefront verfügbar sind.
+
+![Veröffentlichungsänderungen](assets/synonym-publish.png)
+
+## Feldbeschreibungen
+
+| Feld | Beschreibung |
+|--- |--- |
+| [Typ](synonyms.md) | Bestimmt, ob die Synonyme dieselbe Bedeutung wie das Keyword haben oder eine Untergruppe des Keywords sind. Optionen:<br />Zweiweg (Standard) - Begriffe, die dieselbe Bedeutung wie der Suchbegriff haben und dieselben Suchergebnisse zurückgeben<br />Einweg - Begriffe, die eine Teilmenge des Suchbegriffs darstellen. Einwegsynonyme geben eine engere Liste spezifischer Produkte zurück. |
+| Schlüsselwort | Ein Wort, das häufig mit einer Auswahl von Produkten in Ihrem Katalog verknüpft ist. |
+| Erweiterung | Zusätzliche Begriffe, die dieselbe oder eine ähnliche Bedeutung wie der Suchbegriff haben. |
