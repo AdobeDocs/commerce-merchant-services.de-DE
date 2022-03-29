@@ -2,9 +2,9 @@
 title: Storefront Popover
 description: Das Popup-Storefront-Popup für die Live-Suche gibt dynamisch vorgeschlagene Produkte und Miniaturansichten zurück.
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 7402e97f53b71e488d860215487f4809572b7e6f
+source-git-commit: 10cea4389d685ce0e26b083872b13a1cd19ba2af
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '381'
 ht-degree: 0%
 
 ---
@@ -30,3 +30,15 @@ Die folgenden Attribute sind immer durchsuchbar:
 * `categories`
 
 ![Popup für Live-Suche](assets/storefront-search-as-you-type.png)
+
+## Popover-Seitengröße
+
+Die Seitengröße des Popover bestimmt, wie viele Zeilen von automatisch ausgefüllten Produkten zurückgegeben werden können. Zuvor war die Seitengröße hartcodiert als sechs Zeilen. Die Variable `page_size` -Wert ist jetzt eine Einstellung, die über die *Admin*. Während der Live Search-Installation wird die Variable `page_size` -Wert ändert sich in den aktuellen Wert der [Katalogsuche](https://docs.magento.com/user-guide/configuration/catalog/catalog.html#catalog-search) - `Autocomplete Limit` -Einstellung.
+
+Standardmäßig ist der Wert Katalogsuche - Automatische Vervollständigungsgrenze auf acht Zeilen (oder Zeilen) festgelegt. Gehen Sie wie folgt vor, um die Seitengröße des Popover zu ändern:
+
+1. Im *Admin* Seitenleiste, navigieren Sie zu **Stores** > Einstellungen > **Konfiguration**.
+1. Erweitern Sie im linken Bereich **Katalog** und wählen Sie **Katalog** aus der Liste der Einstellungen.
+1. Erweitern Sie die *Katalogsuche* Abschnitt.
+1. Legen Sie die **Automatische Vervollständigungsgrenze** auf die Anzahl der Zeilen, die Sie im Popover zulassen möchten.
+1. Wenn Sie fertig sind, klicken Sie auf **Konfiguration speichern**.

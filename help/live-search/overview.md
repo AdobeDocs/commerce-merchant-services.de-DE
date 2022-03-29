@@ -2,37 +2,17 @@
 title: Übersicht
 description: Die Live-Suche aus Adobe Commerce bietet ein blitzschnelles, superrelevantes und intuitives Sucherlebnis.
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: e1fae25f8a005e2d4c659bf2d84580772a423c35
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '95'
 ht-degree: 0%
 
 ---
 
 # [!DNL Live Search]
 
-[!DNL Live Search] von Adobe Commerce bietet ein blitzschnelles, superrelevantes und intuitives Sucherlebnis und ist für Adobe Commerce kostenlos verfügbar. [!DNL Live Search] mit Strom [Adobe Sensei](https://www.adobe.com/sensei.html) verwendet künstliche Intelligenz und Algorithmen des maschinellen Lernens, um eine tiefgehende Analyse aggregierter Besucherdaten durchzuführen. Diese Daten führen in Kombination mit Ihrem Adobe Commerce-Katalog zu sehr ansprechenden, relevanten und personalisierten Einkaufserlebnissen. mit dem Schwerpunkt auf Geschwindigkeit, Relevanz und Benutzerfreundlichkeit, [!DNL Live Search] ist ein Spielveränderer für Käufer und Händler gleichermaßen.
+[!DNL Live Search] ist ein Satz eigenständiger [packages](#live-search-packages) ersetzt die standardmäßigen Magento Open Source- und Adobe Commerce-Suchfunktionen. Die [!DNL Live Search] -Modul wird über die Befehlszeile des Servers installiert und stellt eine Verbindung zu Ihrer Adobe Commerce-Installation als [service](https://docs.magento.com/user-guide/system/saas.html). Wenn der Prozess abgeschlossen ist, [!DNL Live Search] wird auf der *Marketing* Menü unter *SEO und Suche* im [!DNL Commerce] *Admin*.
 
-- [Onboarding](install.md)
-Führen Sie die [!DNL Live Search] Installation und Konfiguration.
+Die Adobe Commerce-Seite beinhaltet das Hosten der Suche *Admin*, das Synchronisieren von Katalogdaten und das Ausführen des Abfragedienstes.
 
-- [Quick Tour](quick-tour.md)
-Machen Sie einen kurzen Überblick über [!DNL Live Search] von der Schaufensterfront aus.
-
-- [Storefront Popover](storefront-popover.md)
-Die [!DNL Live Search] storefront popover gibt empfohlene Produkte und Miniaturansichten der Top-Suchergebnisse zurück, wenn Kunden Abfragetext eingeben.
-
-- [Arbeitsbereich](workspace.md)
-Erfahren Sie mehr über [!DNL Live Search] Arbeitsbereich.
-
-- [Facets](facets.md)
-Verwenden Sie mehrere Dimensionen von Attributwerten als leistungsstarke Suchfilter.
-
-- [Synonyme](synonyms.md)
-Erweitern Sie die Reichweite der Suche mit Wörtern, die von denen in Ihrem Katalog abweichen könnten.
-
-- [Regeln](rules.md)
-Gestalten Sie das Einkaufserlebnis mit if-then-Anweisungen, die Logik und Ereignisse zur Suche hinzufügen. Verwenden Sie Regeln, um Produkte für einen bestimmten Zeitraum anzukurbeln oder zu vergraben.
-
-- [Indizierung](indexing.md)
-Erfahren Sie mehr [!DNL Live Search] indiziert die Metadaten für Produktattributeigenschaften.
+![Architekturdiagramm der Live-Suche](assets/architecture-diagram.svg)

@@ -2,9 +2,9 @@
 title: Live Search - Versionshinweise
 description: Die neuesten Versionsinformationen zur Live-Suche von Adobe Commerce.
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 8fea8145e624b57278b9373246e8c4249472a03d
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '653'
 ht-degree: 1%
 
 ---
@@ -16,6 +16,19 @@ Diese Versionshinweise beschreiben die neuesten Versionen von [!DNL Live Search]
 * ![Neu](../assets/new.svg) - Neue Funktionen
 * ![Fehlerbehebung](../assets/fix.svg) - Fehlerbehebungen und Verbesserungen
 * ![Fehler](../assets/bug.svg) - Bekannte Probleme
+
+## [!DNL Live Search] 2,0
+
+* Kompatibel mit Adobe Commerce (EE): 2.4.x
+* Kompatibel mit Adobe Commerce for Cloud (ECE): 2.4.x
+* Stabilität: Stabil
+
+* ![Neu](../assets/new.svg) - Die Anzahl der verfügbaren Zeilen im [storefront popover](quick-tour.md) kann über die *Admin*.
+* ![Neu](../assets/new.svg) - Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/) Kompatibilität für die Live-Suche.
+* ![Neu](../assets/new.svg) - Der Installationsprozess der Live-Suche wird mit erweiterten Prozessänderungen aktualisiert.
+* ![Fehlerbehebung](../assets/fix.svg) - [Erweiterte Suche](https://docs.magento.com/user-guide/catalog/search-advanced.html) -Link aus der Fußzeile der Storefront entfernt.
+* ![Fehler](../assets/bug.svg) - Die folgenden Produktattribute werden von [Magento GraphQL-API](https://devdocs.magento.com/guides/v2.4/graphql) bei Verwendung im Zusammenhang mit der Betaversion von PWA: `description`, `name`, `short_description`
+* ![Fehler](../assets/bug.svg) - Die Beta-Version von PWA für Live Search unterstützt nicht [Ereignisverarbeitung](https://devdocs.magento.com/shared-services/storefront-events-sdk.html).
 
 ## [!DNL Live Search] 1.3.1
 
@@ -47,7 +60,7 @@ Diese Versionshinweise beschreiben die neuesten Versionen von [!DNL Live Search]
 * Stabilität: Stabil
 
 * ![Neu](../assets/new.svg) - Storefront [Popover](storefront-popover.md) zeigt empfohlene Produkte und Miniaturansichten der wichtigsten Suchergebnisse an, wenn Käufer Abfragen in das Suchfeld eingeben.
-* ![Neu](../assets/new.svg) - Commerce-Admin-Sitzung bleibt während längerer Zeiträume der Tastaturinaktivität geöffnet
+* ![Neu](../assets/new.svg) - Handel *Admin* -Sitzung bleibt während längerer Zeiträume der Tastaturinaktivität geöffnet
 * ![Neu](../assets/new.svg) - [!DNL Live Search] wird nach dem Onboarding automatisch aktiviert
 * ![Fehlerbehebung](../assets/fix.svg) - Die anfängliche Indizierungszeit beträgt weniger als eine Stunde
 * ![Fehlerbehebung](../assets/fix.svg) - Inkrementelle Produktupdates nahezu in Echtzeit (nach Installation und Einrichtung)
