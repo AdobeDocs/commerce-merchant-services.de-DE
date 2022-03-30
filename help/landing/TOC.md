@@ -2,19 +2,19 @@
 user-guide-title: Dienste für Adobe Commerce
 user-guide-description: Dokumentation und Ressourcen für gehostete Dienste, die erweiterte Funktionen für Adobe Commerce und Magento Open Source bieten.
 title: Dienste für Adobe Commerce
-source-git-commit: b06f127a504c62ea3d5cca205068703856dd2cd8
+source-git-commit: 18da8d12cd50c802cdf0a4eea22b9ea4c8d9843d
 workflow-type: tm+mt
-source-wordcount: '74'
-ht-degree: 39%
+source-wordcount: '62'
+ht-degree: 46%
 
 ---
 
 # Dienste für die Dokumentation zu Adobe Commerce {#user-guides}
 
 - [Dienste für Adobe Commerce](home.md)
-- [[!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/overview.html)
-- [[!DNL Product Recommendations]](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/guide-overview.html)
-- [[!DNL Payment Services]](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/guide-overview.html)
+- [[!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html)
+- [[!DNL Product Recommendations]](https://experienceleague-review.corp.adobe.com/docs/commerce-merchant-services/product-recommendations/guide-overview.html)
+- [[!DNL Payment Services]](https://experienceleague-review.corp.adobe.com/docs/commerce-merchant-services/payment-services/guide-overview.html)
 - [[!DNL Amazon Sales Channel]](https://experienceleague.adobe.com/docs/commerce-channels/amazon/guide-overview.html)
-- [Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/landing/saas.html)
-- [Katalogsynchronisierung](https://experienceleague.adobe.com/docs/commerce-merchant-services/landing/catalog-sync.html)
+- [Services Connector](/help/landing/saas.md)
+- [Katalogsynchronisierung](/help/landing/catalog-sync.md)
