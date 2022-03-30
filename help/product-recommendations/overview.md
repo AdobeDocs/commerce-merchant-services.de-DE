@@ -1,9 +1,9 @@
 ---
 title: Übersicht
 description: '"[!DNL Product Recommendations] sind ein leistungsstarkes Marketing-Tool, mit dem Sie Konversionen steigern, den Umsatz steigern und die Interaktion mit Käufern fördern können."'
-source-git-commit: 4ad607c8595b25d01b5f5020b787fc1d35d4df25
+source-git-commit: b3ac6ab9c5877b5c722cd08cc50d746595386ba9
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '351'
 ht-degree: 0%
 
 ---
@@ -31,18 +31,3 @@ Mit Produktempfehlungen können Sie:
 - Wählen Sie aus neun verschiedenen intelligenten Empfehlungstypen, die auf den folgenden Bereichen basieren: Kaufbasierte, artikelbasierte, populationsbasierte, Trend- und Ähnlichkeitsbasierte
 - Verwenden Sie Verhaltensdaten, um Empfehlungen auf der gesamten Storefront-Journey des Käufers zu personalisieren.
 - Messen Sie Schlüsselmetriken, die für jede Empfehlung relevant sind, damit Sie die Auswirkungen Ihrer Empfehlungen verstehen können.
-
-- [Onboarding](onboarding.md)
-Schließen Sie die Installation und Konfiguration der Produktempfehlungen ab.
-
-- [Arbeitsbereich](workspace.md)
-Erfahren Sie mehr über den Recommendations-Arbeitsbereich. Erstellen und bearbeiten Sie Empfehlungen.
-
-- [Typen](type.md)
-Erfahren Sie mehr über die Empfehlungen, die Sie auf verschiedenen Seiten Ihrer Site bereitstellen können.
-
-- [Filter](filters.md)
-Definieren Sie Bedingungen, die Produkte entweder ein- oder ausschließen, um sie als Empfehlungen zu verwenden.
-
-- [Platzierung und Beschriftungen](placement.md)
-Erfahren Sie, wo Sie Empfehlungen auf verschiedenen Seiten Ihrer Site platzieren können und Vorschläge für häufig verwendete Bezeichnungen für jeden Empfehlungstyp.

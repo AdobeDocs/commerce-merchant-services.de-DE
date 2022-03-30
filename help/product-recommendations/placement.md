@@ -1,9 +1,9 @@
 ---
 title: Platzierung und Beschriftungen
 description: Erfahren Sie, wo Sie Empfehlungen auf verschiedenen Seiten Ihrer Site platzieren können und Vorschläge für häufig verwendete Bezeichnungen für jeden Empfehlungstyp.
-source-git-commit: 4ec8acf6795cd451df48fbfba12e8635c180bf79
+source-git-commit: b3ac6ab9c5877b5c722cd08cc50d746595386ba9
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '556'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,11 @@ ht-degree: 0%
 
 Mit so vielen Empfehlungstypen, aus denen Sie auswählen können, welche sollten Sie auf jeder Seite verwenden? Wenn Sie nicht sicher sind, wo Sie beginnen sollen, versuchen Sie Folgendes:
 
-|Startseite|`Recommended for you`| |Produktseite|`Viewed this, viewed that`| |Warenkorb|`Bought this, bought that`|
+| Seite | Empfehlungstyp |
+|---|---|
+| Startseite | `Recommended for you` |
+| Produktseite | `Viewed this, viewed that` |
+| Warenkorb | `Bought this, bought that` |
 
 Sie können die [Metriken](workspace.md) und bei Bedarf anpassen. Denken Sie daran, dass Experimente der Schlüssel sind.
 
