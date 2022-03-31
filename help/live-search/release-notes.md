@@ -2,9 +2,9 @@
 title: Live Search - Versionshinweise
 description: Die neuesten Versionsinformationen zur Live-Suche von Adobe Commerce.
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: 8fea8145e624b57278b9373246e8c4249472a03d
+source-git-commit: c70d08b90d7584559fd69cdeece0220015ae8523
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '648'
 ht-degree: 1%
 
 ---
@@ -46,7 +46,7 @@ Diese Versionshinweise beschreiben die neuesten Versionen von [!DNL Live Search]
 * Kompatibel mit Adobe Commerce for Cloud (ECE): 2.4.x
 * Stabilität: Stabil
 
-* ![Neu](../assets/new.svg) - [Leistung](https://docs.magento.com/user-guide/live-search/performance.html) Das Berichterstellungs-Dashboard bietet Einblicke in Suchbegriffe, die von Käufern verwendet werden.
+* ![Neu](../assets/new.svg) - [Leistung](performance.md) Das Berichterstellungs-Dashboard bietet Einblicke in Suchbegriffe, die von Käufern verwendet werden.
 * ![Neu](../assets/new.svg) - [!DNL Live Search] [Storefront Events SDK](https://devdocs.magento.com/shared-services/storefront-events-sdk.html) bietet Zugriff auf eine gemeinsame Datenschicht mit Ereignisveröffentlichungs- und Abonnementdiensten sowie Metriken.
 * ![Fehlerbehebung](../assets/fix.svg) - die [Storefront Popover](https://devdocs.magento.com/live-search/storefront-popover.html) hat eine neue `active` -Klasse für `.search-autocomplete` Container, der die Sichtbarkeit steuert.
 * ![Fehlerbehebung](../assets/fix.svg) - In der Storefront wird die [Suchbegriffe](https://docs.magento.com/user-guide/marketing/search-terms-popular.html) Fußzeilenlink entfernt und sein Cache für [!DNL Live Search] Installationen.

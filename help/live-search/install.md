@@ -2,9 +2,9 @@
 title: Live Search installieren
 description: Erfahren Sie, wie Sie Live Search über Adobe Commerce installieren, aktualisieren und deinstallieren.
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: b6aca1b78fae6d8c43ca47307aa1c63dbdc1c36a
+source-git-commit: c70d08b90d7584559fd69cdeece0220015ae8523
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1199'
 ht-degree: 0%
 
 ---
@@ -75,7 +75,7 @@ In diesem Szenario werden Storefront-Vorgänge während der [!DNL Live Search] -
 
 1. Konfigurieren Sie Ihre [API-Schlüssel](#configure-api-keys) und überprüfen Sie, ob Ihre Katalogdaten [synchronisiert](#synchronize-catalog-data) mit [!DNL Live Search] Dienste.
 
-1. Um Facetten als Filter in der Storefront verfügbar zu machen, fügen Sie die [facets](https://docs.magento.com/user-guide/live-search/facets-add.html) Sie benötigen die [Facettenanforderungen](https://docs.magento.com/user-guide/live-search/facets.html).
+1. Um Facetten als Filter in der Storefront verfügbar zu machen, fügen Sie die [facets](facets-add.md) Sie benötigen die [Facettenanforderungen](facets.md).
 
    Sie sollten in der Lage sein, nach `cron` führt die Attributmetadaten für Feeds und Exporte aus.
 
@@ -123,7 +123,7 @@ In diesem Szenario [!DNL Elasticsearch] verwaltet vorübergehend Suchanfragen au
 
 1. Konfigurieren Sie Ihre [API-Schlüssel](#configure-api-keys) und überprüfen Sie, ob Ihre Katalogdaten [synchronisiert](#synchronize-catalog-data) mit [!DNL Live Search] Dienste.
 
-1. Um Facetten als Filter in der Storefront verfügbar zu machen, fügen Sie die [facets](https://docs.magento.com/user-guide/live-search/facets-add.html) Sie benötigen die [Facettenanforderungen](https://docs.magento.com/user-guide/live-search/facets.html).
+1. Um Facetten als Filter in der Storefront verfügbar zu machen, fügen Sie die [facets](facets-add.md) Sie benötigen die [Facettenanforderungen](facets.md).
 
    Sie sollten in der Lage sein, nach `cron` führt die Produkt- und Attributfeeds aus und exportiert Attributmetadaten zu [!DNL Live Search] Dienste.
 
@@ -177,7 +177,7 @@ Weitere Hilfe finden Sie unter [[!DNL Live Search] Katalog nicht synchronisiert]
 
 ### Künftige Produktaktualisierungen
 
-Nach der ersten Synchronisierung kann es bis zu fünfzehn Minuten dauern, bis inkrementelle Produktaktualisierungen für die Storefront-Suche verfügbar sind. Weitere Informationen finden Sie unter [Streaming-Produktaktualisierungen](https://devdocs.magento.com/live-search/indexing.html).
+Nach der ersten Synchronisierung kann es bis zu fünfzehn Minuten dauern, bis inkrementelle Produktaktualisierungen für die Storefront-Suche verfügbar sind. Weitere Informationen finden Sie unter [Streaming-Produktaktualisierungen](indexing.md).
 
 ## Verbindung testen {#test-connection}
 
