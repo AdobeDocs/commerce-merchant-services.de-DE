@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie installieren und verwenden [!DNL Payment Serv
 role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
-source-git-commit: b790ef50c2acaa830ce5ad1b9a755f9d7f9dd5c5
+source-git-commit: 5f731eca49b6f59bbeb7190e0026eb05f2d1a99b
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,10 @@ Siehe [Lebenszyklusrichtlinie](https://devdocs.magento.com/release/lifecycle-pol
 
 ## Angenommene Kreditkarten und Währungen
 
-Zurzeit [!DNL Payment Services] sind nur in den USA (USA) verfügbar und akzeptiert US-Dollar (USD).
+Zurzeit [!DNL Payment Services] sind nur in verfügbar:
+
+* USA (USA) und akzeptiert US-Dollar (USD).
+* Kanada (CA) und akzeptiert kanadische Dollar (CAD).
 
 Siehe [Verfügbarkeit der PayPal-Währung](https://developer.paypal.com/docs/platforms/checkout/reference/country-availability-advanced-cards/) Dokumentation finden Sie weitere Informationen.
 
