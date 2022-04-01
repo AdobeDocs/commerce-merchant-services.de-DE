@@ -2,7 +2,7 @@
 title: Facets hinzufügen
 description: Erfahren Sie, wie Sie filterbare Produktattribute als Live-Suchfacetten hinzufügen.
 exl-id: 0df6c21b-55b3-41ce-94f4-f70b70ffb84e
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
 source-wordcount: '649'
 ht-degree: 0%
@@ -42,7 +42,7 @@ Die Facette wird am unteren Rand des *Dynamische Facetten* und *Veröffentlichun
 
 ## Schritt 2: Eigenschaften von Facetten bearbeiten (optional)
 
-1. Um die Facetteneigenschaften zu bearbeiten, klicken Sie auf **Mehr** (![Mehr Auswahl](assets/btn-more.png) Optionen in der Spalte ganz rechts.
+1. Um die Facetteneigenschaften zu bearbeiten, klicken Sie auf **Mehr** (![Mehr Auswahl](assets/btn-more.png)) in der Spalte ganz rechts.
 1. Klicken Sie im Menü auf **Bearbeiten**. Passen Sie dann die folgenden Eigenschaften nach Bedarf an.
 
    * Titel - ([Headless](facets-type.md) nur) Geben Sie die Facettenbeschriftung ein, die Sie verwenden möchten.

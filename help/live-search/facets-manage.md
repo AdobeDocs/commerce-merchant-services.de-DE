@@ -2,7 +2,7 @@
 title: Facets verwalten
 description: Erfahren Sie, wie Sie vorhandene Live-Suchfacetten verwalten.
 exl-id: 1d51a36a-20d6-46b6-b379-11e46c8824a0
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 0%
@@ -56,19 +56,19 @@ Ihre Änderungen werden erst dann in der Storefront angezeigt, nachdem sie verö
 
 Der Pin ändert die Farbe, wenn darauf geklickt wird, und wird verwendet, um die Facette in die *Angeheftete Facetten* oder *Dynamische Facetten* Abschnitt.
 
-1. So veröffentlichen Sie eine Facette am oberen Rand des *Filter* Liste, suchen Sie die Facette im *Dynamische Facetten* und klicken Sie auf die graue Nadel (![Pin-Auswahl](assets/btn-pin-gray.png).
+1. So veröffentlichen Sie eine Facette am oberen Rand des *Filter* Liste, suchen Sie die Facette im *Dynamische Facetten* und klicken Sie auf die graue Nadel (![Pin-Auswahl](assets/btn-pin-gray.png)).
 Der Stift wird blau und die Facette wechselt zur *Angeheftete Facetten* Abschnitt.
-1. Um eine Facette zu entschlüsseln, suchen Sie die Facette im *Angeheftete Facetten* und klicken Sie auf den blauen Stift (![Pin-Auswahl](assets/btn-pin-blue.png).
+1. Um eine Facette zu entschlüsseln, suchen Sie die Facette im *Angeheftete Facetten* und klicken Sie auf den blauen Stift (![Pin-Auswahl](assets/btn-pin-blue.png)).
 Die Nadel wird grau und die Facette wechselt zur *Dynamische Facetten* Abschnitt.
 
    ![Gesteitete und dynamische Facetten](assets/facets-pinned-unpinned.png)
 
 ## Fixierte Facette verschieben
 
-Die Reihenfolge der fixierten Facetten kann geändert werden, indem die Zeile an eine andere Position verschoben wird. Verfestigte Facetten haben eine *Verschieben* Symbol (![Auswahl verschieben](assets/btn-move.png) am Anfang der Zeile. Im Gegensatz zu fixierten Facetten können dynamische Facetten nicht verschoben werden.
+Die Reihenfolge der fixierten Facetten kann geändert werden, indem die Zeile an eine andere Position verschoben wird. Verfestigte Facetten haben eine *Verschieben* Symbol (![Auswahl verschieben](assets/btn-move.png)) am Anfang der Zeile. Im Gegensatz zu fixierten Facetten können dynamische Facetten nicht verschoben werden.
 
 1. Suchen Sie die Facette im *Angeheftete Facetten* der Liste.
-1. Verwenden Sie die **Verschieben** (![Auswahl verschieben](assets/btn-move.png) -Symbol, um die Zeile an eine neue Position im *Angeheftete Facetten* Abschnitt.
+1. Verwenden Sie die **Verschieben** (![Auswahl verschieben](assets/btn-move.png)), um die Zeile an eine neue Position im *Angeheftete Facetten* Abschnitt.
 Nach der Veröffentlichung der Änderungen werden die neu sortierten Facetten in der Storefront angezeigt *Filter* Liste.
 
 ## Facette löschen

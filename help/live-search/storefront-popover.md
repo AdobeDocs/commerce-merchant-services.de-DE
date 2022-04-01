@@ -2,9 +2,9 @@
 title: Storefront Popover
 description: Das Popup-Storefront-Popup für die Live-Suche gibt dynamisch vorgeschlagene Produkte und Miniaturansichten zurück.
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 10cea4389d685ce0e26b083872b13a1cd19ba2af
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '379'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Wann [!DNL Live Search] is [installiert](install.md), wird ein Popup in der Stor
 
 >[!NOTE]
 >
->Die [!DNL Live Search] Storefront-Popover ist nur für Stores verfügbar, die *Luma* Design oder ein benutzerdefiniertes Design, das auf *Luma*. Die *Luma* -Design ist im [!DNL Commerce] Beispieldaten. Das Popover unterstützt nicht die *Leer* Design. Siehe [Arbeiten mit einem geänderten Design](#working-with-modified-theme) für weitere Informationen.
+>Die [!DNL Live Search] Storefront-Popover ist nur für Stores verfügbar, die *Luma* Design oder ein benutzerdefiniertes Design, das auf *Luma*. Die *Luma* -Design ist im [!DNL Commerce] Beispieldaten. Das Popover unterstützt nicht die *Leer* Design. Siehe [Formatieren von Popover-Elementen](storefront-popover-styling.md) , um mehr zu erfahren.
 
 ## Durchsuchbare Attribute
 

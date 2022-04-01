@@ -2,9 +2,9 @@
 title: Regeln hinzufügen
 description: Erfahren Sie, wie Sie Live-Suchregeln erstellen.
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
-source-wordcount: '1283'
+source-wordcount: '1284'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,8 @@ Eine Regel kann bis zu 10 Bedingungen enthalten. Der logische Operator, der zwei
    * Alle - Alle logischen Operatoren in der Regel sind auf `AND` und die Ergebnisse werden im Testbereich angezeigt.
 
    Die *Übereinstimmung* bestimmt den logischen Operator, der zum Verknüpfen mehrerer Bedingungen verwendet wird. Ändern der *Übereinstimmung* Durch die Einstellung werden alle logischen Operatoren in der Regel geändert. Es ist nicht möglich, `AND` und `OR` in derselben Regel.
-In diesem Beispiel gibt es zwei separate Abfragen, die nicht nach &quot;Yoga Hots&quot;suchen, sondern nach &quot;Yoga&quot;oder &quot;Hots&quot;. Diese Regel ist weniger spezifisch und wird häufiger im Storefront ausgelöst als die andere.
+
+   In diesem Beispiel gibt es zwei separate Abfragen, die nicht nach &quot;Yoga Hots&quot;suchen, sondern nach &quot;Yoga&quot;oder &quot;Hots&quot;. Diese Regel ist weniger spezifisch und wird häufiger im Storefront ausgelöst als die andere.
 
    ![Regeln - Übereinstimmung](assets/rules-match.png)
 
@@ -74,10 +75,11 @@ In diesem Beispiel gibt es zwei separate Abfragen, die nicht nach &quot;Yoga Hot
 
 ## Schritt 3: Ereignis(e) hinzufügen
 
-Ereignisse sind Aktionen, die die Suchergebnisse ändern, wenn die Bedingung(en) erfüllt ist. Eine einzelne Regel kann bis zu fünfundzwanzig Ereignisse umfassen.
+Ereignisse sind Aktionen, die die Suchergebnisse ändern, wenn die Bedingung(en) erfüllt ist. Eine einzelne Regel kann bis zu 25 Ereignisse enthalten.
 
 1. under *Veranstaltungen*, wählen Sie die **Ereignis** , um zu erfolgen, wenn die damit verbundenen Bedingungen erfüllt sind.
-Wählen Sie beispielsweise `Pin a product`. Geben Sie dann den Namen des Produkts ein, das Sie veröffentlichen möchten. Wenn Sie Hilfe benötigen, finden Sie den Namen im Testbereich.
+
+   Wählen Sie beispielsweise `Pin a product`. Geben Sie dann den Namen des Produkts ein, das Sie veröffentlichen möchten. Wenn Sie Hilfe benötigen, finden Sie den Namen im Testbereich.
 Geben Sie dann die *Position* wo das eingeklemmte Produkt erscheinen soll. Das Produkt wird an die neue Position im Testbereich verschoben und mit einer *Angeheftet* Vorschau-Badge.
 
    ![Regeln - Übereinstimmung](assets/rule-event-pin-product.png)
@@ -108,8 +110,11 @@ Die hier eingegebenen Informationen werden im [Regeldetails](rules-workspace.md)
 
 ## Schritt 6: Speichern und veröffentlichen
 
-Wenn Sie fertig sind, klicken Sie auf **Speichern und veröffentlichen**.
-Die Regel wird der Liste im Arbeitsbereich &quot;Regeln&quot;hinzugefügt. Obwohl aktive Regeln sofort in Kraft treten, kann es bis zu 15 Minuten dauern, bis zwischengespeicherte Abfrageergebnisse in der Storefront aktualisiert werden.
+1. Wenn Sie fertig sind, klicken Sie auf **Speichern und veröffentlichen**.
+
+   Die Regel wird der Liste im Arbeitsbereich &quot;Regeln&quot;hinzugefügt.
+
+1. Obwohl aktive Regeln sofort in Kraft treten, müssen Sie möglicherweise bis zu 15 Minuten warten, bis die zwischengespeicherten Abfrageergebnisse im Storefront aktualisiert werden.
 
 ## Feldbeschreibungen
 

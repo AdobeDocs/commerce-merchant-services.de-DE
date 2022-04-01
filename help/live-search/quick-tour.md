@@ -2,7 +2,7 @@
 title: Quick Tour
 description: Nehmen Sie einen kurzen Überblick über die Live-Suche von der Storefront.
 exl-id: bcb19506-6617-4c8a-83df-9d961f81e9e8
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
 source-wordcount: '308'
 ht-degree: 0%
@@ -16,6 +16,7 @@ mit dem Schwerpunkt auf Geschwindigkeit, Relevanz und Benutzerfreundlichkeit, [!
 ## Suchen nach der Eingabe
 
 [!DNL Live Search] antwortet mit vorgeschlagenen Produkten und einem Miniaturbild der Top-Suchergebnisse in einer [Popover](storefront-popover.md) als Käufer Abfragen in die [Suche](https://docs.magento.com/user-guide/catalog/search-quick.html) ankreuzen. Die [Produktdetails](https://docs.magento.com/user-guide/quick-tour/product-page.html) wird angezeigt, wenn Kunden auf ein vorgeschlagenes oder vorgestelltes Produkt klicken. A _Alle anzeigen_ -Link in der Fußzeile des Popups zeigt die Seite mit den Suchergebnissen an.
+
 [!DNL Live Search] gibt Ergebnisse vom Typ &quot;Suche beim Eingeben&quot;für eine Abfrage von zwei oder mehr Zeichen zurück. Bei einer teilweisen Übereinstimmung beträgt die maximale Anzahl von Zeichen pro Wort 20. Die Anzahl der Zeichen in der Abfrage kann nicht konfiguriert werden. Die folgenden Felder sind im Popover enthalten: `name`, `sku`und `category_ids`.
 
 ![Beispiel-Storefront - Suche während der Eingabe](assets/storefront-search-as-you-type.png)

@@ -2,9 +2,9 @@
 title: Synonyme hinzufügen
 description: Fügen Sie Live-Suchsynonyme hinzu, um die Antwort auf Suchanfragen zu verbessern.
 exl-id: 6c277d88-cb22-4174-abda-6d6bb65fe3be
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '393'
 ht-degree: 0%
 
 ---
@@ -63,8 +63,8 @@ Die Gruppe von Synonymen wird in der Liste mit einem einseitigen Pfeil angezeigt
 
 ## Schritt 3: Veröffentlichungsänderungen
 
-Wenn Ihre Synonyme abgeschlossen sind, klicken Sie auf **Veröffentlichungsänderungen**.
-Es kann bis zu zwei Stunden dauern, bis Ihre Updates in der Storefront verfügbar sind.
+1. Wenn Ihre Synonyme abgeschlossen sind, klicken Sie auf **Veröffentlichungsänderungen**.
+1. Warten Sie bis zu zwei Stunden, bis Ihre Updates in der Storefront verfügbar sind.
 
 ![Veröffentlichungsänderungen](assets/synonym-publish.png)
 

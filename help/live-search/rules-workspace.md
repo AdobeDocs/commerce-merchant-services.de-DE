@@ -2,9 +2,9 @@
 title: Arbeitsbereich für Regeln
 description: Erfahren Sie mehr über den Arbeitsbereich "Live-Suchregeln".
 exl-id: a52839fb-2264-4443-83c3-9eaa2ccb6996
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '585'
 ht-degree: 0%
 
 ---
@@ -91,7 +91,7 @@ Im Bereich Details anzeigen können Sie Folgendes tun:
 
 | Kontrolle | Beschreibung |
 |--- |--- |
-| Regel hinzufügen | Öffnet die [Regeleditor]({% link live-search/rules-add.md %}). |
+| Regel hinzufügen | Öffnet die [Regeleditor](rules-add.md). |
 | Status | Filtert die Liste der Regeln nach Status. Optionen: Alle, aktiv, inaktiv, Geplant |
 | ![Spaltenauswahl](assets/btn-show-hide-columns.png) | Gibt die im Raster sichtbaren Spalten an. Optionen: Zuletzt aktualisiert, Startdatum, Enddatum, Status |
 | Suche | Sucht nach einer Regel mit vollständigem Namen oder teilweiser Übereinstimmung. |
