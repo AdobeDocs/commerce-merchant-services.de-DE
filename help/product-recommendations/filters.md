@@ -1,7 +1,8 @@
 ---
 title: Produkte filtern
 description: Definieren Sie Bedingungen, die Produkte entweder ein- oder ausschließen, um sie als Empfehlungen zu verwenden.
-source-git-commit: 7fe89df32dc5363817f957180e5b75e7217fc14a
+exl-id: baab28ff-b529-4cbc-adb7-4fa225e87d4a
+source-git-commit: e7c3d1ab49ee9469e3312321f6d96446840d0778
 workflow-type: tm+mt
 source-wordcount: '693'
 ht-degree: 0%

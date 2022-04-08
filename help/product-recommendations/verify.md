@@ -1,7 +1,8 @@
 ---
 title: Ereigniskollektion überprüfen
 description: Erfahren Sie, wie Sie überprüfen können, ob Verhaltensdaten an Adobe Commerce gesendet werden.
-source-git-commit: 7fe89df32dc5363817f957180e5b75e7217fc14a
+exl-id: c8c34db4-9d87-4012-b8f0-e9b1da214305
+source-git-commit: e7c3d1ab49ee9469e3312321f6d96446840d0778
 workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 0%

@@ -1,7 +1,8 @@
 ---
 title: Implementierungsarbeitsablauf
 description: Erfahren Sie mehr über die Schritte zur erfolgreichen Implementierung [!DNL Product Recommendations] auf Ihrer Schaufensterfront.
-source-git-commit: 4ad607c8595b25d01b5f5020b787fc1d35d4df25
+exl-id: 766e1191-0330-4515-9331-e45318539dc9
+source-git-commit: e7c3d1ab49ee9469e3312321f6d96446840d0778
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 0%

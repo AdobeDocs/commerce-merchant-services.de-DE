@@ -1,7 +1,8 @@
 ---
 title: Commerce Services Connector
 description: Erfahren Sie, wie Sie Ihre Adobe Commerce- oder Magento Open Source-Instanz mithilfe eines API-Schlüssels und eines privaten Schlüssels in Dienste integrieren können.
-source-git-commit: 8789bd21362109325d0d7b23d9b130067390eeae
+exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
+source-git-commit: ae63fed82ee68f70a107b9c0a631d223990d50e1
 workflow-type: tm+mt
 source-wordcount: '830'
 ht-degree: 0%
@@ -10,11 +11,11 @@ ht-degree: 0%
 
 # [!DNL Commerce Services Connector]
 
-Einige Adobe Commerce- und Magento Open Source-Funktionen basieren auf [!DNL Commerce Services]  und als SaaS (Software as a Service) bereitgestellt werden. Um diese Dienste verwenden zu können, müssen Sie Ihre [!DNL Commerce] -Instanz mithilfe eines API-Schlüssels und eines privaten Schlüssels und geben Sie den Datenraum im [Konfiguration](https://docs.magento.com/user-guide/configuration/services/saas.html). Sie müssen dies nur einmal einrichten.
+Some Adobe Commerce and Magento Open Source features are powered by [!DNL Commerce Services]  and deployed as SaaS (software as a service). Um diese Dienste verwenden zu können, müssen Sie Ihre [!DNL Commerce] -Instanz mithilfe eines API-Schlüssels und eines privaten Schlüssels und geben Sie den Datenraum im [Konfiguration](https://docs.magento.com/user-guide/configuration/services/saas.html). Sie müssen dies nur einmal einrichten.
 
-## Verfügbare Dienste
+## Available services
 
-Im Folgenden werden die [!DNL Commerce] Funktionen, auf die Sie über [!DNL Commerce Services Connector]:
+The following lists the [!DNL Commerce] features you can access through the [!DNL Commerce Services Connector]:
 
 | Diensleistung | Verfügbarkeit |
 | ---|--- |
@@ -32,7 +33,7 @@ In den folgenden Abschnitten werden die einzelnen Elemente ausführlicher erläu
 
 ## Anmeldeinformationen {#apikey}
 
-Der API-Schlüssel und der private Schlüssel werden aus dem [!DNL Commerce] Konto des Lizenzinhabers, das durch eine eindeutige [!DNL Commerce] ID (MageID). So übergeben Sie die Berechtigungsprüfung für Dienste wie [!DNL Product Recommendations] oder [!DNL Live Search]festgelegt ist, kann der Lizenzinhaber der Händlerorganisation den Satz von API-Schlüsseln generieren, solange das Konto gut aufgestellt ist. Die Schlüssel können auf der Grundlage des &quot;Bedarfs an Wissen&quot;an den Systemintegrator oder das Entwicklungsteam weitergegeben werden, der Projekte und Umgebungen im Auftrag des Lizenzinhabers verwaltet. Darüber hinaus sind Lösungsintegratoren auch berechtigt, [!DNL Commerce Services]. Wenn Sie ein Lösungsintegrator sind, ist der Unterzeichner der [!DNL Commerce] Der Partnervertrag sollte die API-Schlüssel generieren.
+The API key and private key are generated from the [!DNL Commerce] account of the license holder, which is identified by a unique [!DNL Commerce] ID (MageID). So übergeben Sie die Berechtigungsprüfung für Dienste wie [!DNL Product Recommendations] oder [!DNL Live Search]festgelegt ist, kann der Lizenzinhaber der Händlerorganisation den Satz von API-Schlüsseln generieren, solange das Konto gut aufgestellt ist. The keys can be shared on a &quot;need to know&quot; basis with the systems integrator or development team that manages projects and environments on behalf of the license holder. Additionally, solution integrators are also entitled to use [!DNL Commerce Services]. If you are a solution integrator, the signer of the [!DNL Commerce] partner contract should generate the API keys.
 
 ### API-Schlüssel und privaten Schlüssel generieren {#genapikey}
 
@@ -44,9 +45,9 @@ Der API-Schlüssel und der private Schlüssel werden aus dem [!DNL Commerce] Kon
 
    >[!NOTE]
    >
-   > Für [!DNL _Produkt-Recommendations_] und [!DNL _Live Search_] auswählen **Produktion**. Produktionsschlüssel bieten Zugriff auf Produktions- und Nicht-Produktionsdatenbereiche. Sandbox-Schlüssel werden für diese Dienste nicht verwendet.
+   > For [!DNL _Product Recommendations_] and [!DNL _Live Search_], select **Production**. Produktionsschlüssel bieten Zugriff auf Produktions- und Nicht-Produktionsdatenbereiche. Sandbox-Schlüssel werden für diese Dienste nicht verwendet.
 
-1. Geben Sie im Feld _API-Schlüssel_ und klicken Sie auf **Neu hinzufügen**.
+1. Enter a name in the _API Keys_ section and click **Add New**.
 
    Dadurch wird ein Dialogfeld zum Herunterladen des neuen Schlüssels geöffnet.
 
@@ -106,4 +107,4 @@ Um die Namen des SaaS-Projekts oder der Datenspeicherorte zu ändern, klicken Si
 
 ## Katalogsynchronisierung
 
-Wenn [!DNL Commerce] -Instanz stellt erfolgreich eine Verbindung zu [!DNL Commerce Services], exportiert der Prozess der Katalogsynchronisierung Produktdaten aus Ihrer [!DNL Commerce] Server zu [!DNL Commerce Services]. [Weitere Infos](catalog-sync.md) Informationen zur Katalogsynchronisierung.
+When your [!DNL Commerce] instance successfully connects to [!DNL Commerce Services], the catalog sync process exports product data from your [!DNL Commerce] server to [!DNL Commerce Services]. [Learn more](catalog-sync.md) about the catalog sync process.

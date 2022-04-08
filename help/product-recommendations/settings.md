@@ -1,7 +1,8 @@
 ---
 title: Einstellungen
 description: Erfahren Sie, wie Sie die Quelle Ihrer [!DNL Product Recommendations] Daten und wie visuelle Empfehlungen aktiviert werden.
-source-git-commit: 8c85d26474e371d30b76499f312553a07e329a80
+exl-id: 8c074e11-e0cb-4d55-b646-30279c79bbc2
+source-git-commit: e7c3d1ab49ee9469e3312321f6d96446840d0778
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 0%

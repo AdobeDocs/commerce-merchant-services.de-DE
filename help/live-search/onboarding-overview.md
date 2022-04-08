@@ -1,7 +1,8 @@
 ---
 title: Onboarding-Übersicht
 description: Onboarding-Fluss der Live-Suche, Systemanforderungen, Grenzen und Einschränkungen
-source-git-commit: 6220824c6032a33a760fe5c2bb5d2346e00a074b
+exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
+source-git-commit: 67e0287d38eb81e17c1ae317c54d60a5c4816eab
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 0%

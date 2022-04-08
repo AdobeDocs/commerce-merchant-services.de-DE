@@ -1,7 +1,8 @@
 ---
 title: Übersicht
-description: '"[!DNL Product Recommendations] sind ein leistungsstarkes Marketing-Tool, mit dem Sie Konversionen steigern, den Umsatz steigern und die Interaktion mit Käufern fördern können."'
-source-git-commit: b3ac6ab9c5877b5c722cd08cc50d746595386ba9
+description: '''[!DNL Product Recommendations] sind ein leistungsstarkes Marketing-Tool, mit dem Sie Konversionen steigern, den Umsatz steigern und die Interaktion mit Käufern fördern können."'
+exl-id: 818ac876-58c9-4c68-975e-53da59ed6b52
+source-git-commit: e7c3d1ab49ee9469e3312321f6d96446840d0778
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 0%

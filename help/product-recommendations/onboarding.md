@@ -1,7 +1,8 @@
 ---
 title: Onboarding
 description: Erfahren Sie mehr über die Anforderungen und unterstützten Plattformen in [!DNL Product Recommendations].
-source-git-commit: 4ad607c8595b25d01b5f5020b787fc1d35d4df25
+exl-id: ad47ac39-8f6f-4765-84ad-9e3d104385db
+source-git-commit: e7c3d1ab49ee9469e3312321f6d96446840d0778
 workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 0%

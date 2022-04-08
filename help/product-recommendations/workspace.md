@@ -1,7 +1,8 @@
 ---
 title: Arbeitsbereich
 description: Erfahren Sie, wie Sie die Performance von Produktempfehlungen konfigurieren, verwalten und überwachen.
-source-git-commit: 4ad607c8595b25d01b5f5020b787fc1d35d4df25
+exl-id: 85a06cc3-91b9-484a-96a9-fc85718e6d70
+source-git-commit: e7c3d1ab49ee9469e3312321f6d96446840d0778
 workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 0%
@@ -31,20 +32,20 @@ Zunächst wird die [Umfang](https://docs.magento.com/user-guide/stores/websites-
 
    Die berechneten Werte in den Metrikspalten ändern sich entsprechend dem aktuellen Datumsbereich.
 
-## Spalten ein-/ausblenden
+## Show/hide columns
 
 1. Klicken Sie oben links auf **Einblenden/Ausblenden** ![Spaltenauswahl](assets/icon-show-hide-columns.png) Spalten.
 
    Die sichtbaren Spalten haben ein blaues Häkchen.
 
-1. Führen Sie im Menü einen der folgenden Schritte aus:
+1. In the menu, do either of the following:
 
    - Um eine ausgeblendete Spalte anzuzeigen, klicken Sie auf einen beliebigen Spaltennamen ohne Häkchen.
-   - Um eine sichtbare Spalte auszublenden, klicken Sie auf einen beliebigen Spaltennamen mit einem Häkchen.
+   - To hide a visible column, click any column name with a check mark.
 
    Die Tabelle wird aktualisiert und enthält nur die ausgewählten Spalten.
 
-   ![Recommendations Workspace](assets/workspace-select-columns.png)
+   ![Recommendations workspace](assets/workspace-select-columns.png)
    _Spalten ein-/ausblenden_
 
 ## Einstellungen
@@ -60,33 +61,33 @@ _Recommendations-Einstellungen_
 
 ## Details anzeigen
 
-1. Klicken Sie in der Tabelle auf die Empfehlung, die Sie untersuchen möchten.
+1. In the table, click the recommendation that you want to examine.
 
-   ![Recommendations Workspace](assets/recommendation-detail.png)
+   ![Recommendations workspace](assets/recommendation-detail.png)
    _Details zur Homepage-Konversionsrate_
 
 1. Um den Status der Empfehlung zu ändern, klicken Sie auf **Aktivieren** oder **Deaktivieren**.
 
-## Empfehlung bearbeiten
+## Edit recommendation
 
-Klicken Sie auf der Seite mit den Empfehlungsdetails auf **Bearbeiten**. Weitere Informationen finden Sie unter [Recommendations bearbeiten](edit.md).
+From the recommendation details page, click **Edit**. Weitere Informationen finden Sie unter [Recommendations bearbeiten](edit.md).
 
 ## Empfehlung erstellen
 
-Klicken Sie auf der Seite mit den Empfehlungsdetails auf **Erstellen**. Weitere Informationen finden Sie unter [Recommendations erstellen](create.md).
+From the recommendation details page, click **Create**. To learn more, go to [Create Recommendations](create.md).
 
 ## Workspace-Steuerelemente
 
 | Kontrolle | Beschreibung |
 |---|---|
-| ![Kalenderauswahl](assets/icon-calendar.png) | Bestimmt den Zeitraum, der für Metrikberechnungen verwendet wird. Optionen: 24 Stunden / 7 Tage / 30 Tage |
+| ![Kalenderauswahl](assets/icon-calendar.png) | Determines the range of time that is used for metrics calculations. Options: 24 hours / 7 days / 30 days |
 | ![Spaltenauswahl](assets/icon-show-hide-columns.png) | Bestimmt die Spalten, die im [!DNL Product Recommendations] Tabelle. |
-| Einstellungen | Bestimmt den SaaS-Datenraum, aus dem Recommendations-Verhaltensdaten abgerufen werden, und ermöglicht auch den Empfehlungstyp für visuelle Ähnlichkeit. |
+| Einstellungen | Determines the SaaS data space where recommendation-behavioral data is fetched, and also enables visual similarity recommendation type. |
 | Empfehlung erstellen | Öffnet die [Neue Empfehlung erstellen](create.md) Seite. |
 
-## Spaltenbeschreibungen
+## Column Descriptions
 
-| Spalte | Beschreibung |
+| Column | Beschreibung |
 |---|---|
 | Name | Der Name der Empfehlung. |
 | Seite | Die Seite, auf der die Empfehlung angezeigt wird. |
@@ -94,11 +95,11 @@ Klicken Sie auf der Seite mit den Empfehlungsdetails auf **Erstellen**. Weitere 
 | Status | Der Empfehlungsstatus. Optionen: Inaktiv/Aktiv/Entwurf |
 | Erstellt | Das Datum, an dem die Empfehlung erstellt wurde. |
 | Zuletzt bearbeitet | Das Datum, an dem die Empfehlung zuletzt bearbeitet wurde. |
-| Impressionen | Die Häufigkeit, mit der eine Empfehlungseinheit auf einer Seite geladen und gerendert wird. Eine Empfehlungseinheit, die sich unterhalb des Darstellungsbereichs des Browsers befindet, wird auf der Seite gerendert, aber nicht vom Käufer angezeigt. In diesem Fall wird die gerenderte Einheit als Impression gezählt, eine Ansicht wird jedoch nur gezählt, wenn der Benutzer die Einheit in die Ansicht scrollt. |
+| Impressionen | Die Häufigkeit, mit der eine Empfehlungseinheit auf einer Seite geladen und gerendert wird. A recommendation unit that is below the fold of the browser&#39;s viewport is rendered on the page, but not viewed by the shopper. In this case, the rendered unit is counted as an impression, but a view is counted only if the user scrolls the unit into view. |
 | vImpressions | (Sichtbare Impressionen) Die Anzahl der Empfehlungseinheiten, die mindestens eine Ansicht registrieren. |
-| Ansichten | Die Anzahl der Empfehlungseinheiten, die im Viewport des Browsers des Käufers angezeigt werden. Dieses Ereignis kann mehrmals auf einer Seite ausgelöst werden. |
+| Ansichten | Die Anzahl der Empfehlungseinheiten, die im Viewport des Browsers des Käufers angezeigt werden. This event can fire multiple times on a page. |
 | Klicks | Die Summe der Klicks eines Käufers auf einen Artikel in der Empfehlungseinheit und der Anzahl der Klicks des Käufers auf die **Zum Warenkorb hinzufügen** Schaltfläche in der Empfehlungseinheit |
-| Umsatz | Der Umsatz, der durch die Empfehlung für den aktuellen Zeitraum bedingt ist. |
+| Umsatz | The revenue driven by the recommendation for the current time range. |
 | LT Umsatz | (Lebensdauerumsatz) Der durch eine Empfehlung generierte Lebenszeitumsatz. |
 | Sichtbarkeit | Der Prozentsatz der Empfehlungseinheiten, die sich für die Ansicht registrieren. |
 | Ctr | (Registrierter Klick-Prozentsatz) Der Prozentsatz der Einheitenimpressionen für die Empfehlung, die einen Klick registriert. |

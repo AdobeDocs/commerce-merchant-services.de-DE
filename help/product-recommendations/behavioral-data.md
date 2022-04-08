@@ -1,7 +1,8 @@
 ---
 title: Verhaltensdaten
 description: Erfahren Sie mehr über Verhaltensdaten und wann Sie mit der Verwendung beginnen können.
-source-git-commit: 7fe89df32dc5363817f957180e5b75e7217fc14a
+exl-id: d68a97b9-1497-4603-a72c-4aaaf6e048cb
+source-git-commit: e7c3d1ab49ee9469e3312321f6d96446840d0778
 workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 0%

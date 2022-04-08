@@ -1,7 +1,8 @@
 ---
 title: Versionshinweise
 description: Die neuesten Versionsinformationen für [!DNL Product Recommendations] aus Adobe Commerce.
-source-git-commit: 7fe89df32dc5363817f957180e5b75e7217fc14a
+exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
+source-git-commit: e7c3d1ab49ee9469e3312321f6d96446840d0778
 workflow-type: tm+mt
 source-wordcount: '888'
 ht-degree: 0%

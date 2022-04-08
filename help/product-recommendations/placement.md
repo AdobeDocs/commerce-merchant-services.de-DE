@@ -1,7 +1,8 @@
 ---
 title: Platzierung und Beschriftungen
 description: Erfahren Sie, wo Sie Empfehlungen auf verschiedenen Seiten Ihrer Site platzieren können und Vorschläge für häufig verwendete Bezeichnungen für jeden Empfehlungstyp.
-source-git-commit: b3ac6ab9c5877b5c722cd08cc50d746595386ba9
+exl-id: e1025138-49dc-4833-92bb-27e8e415d724
+source-git-commit: e7c3d1ab49ee9469e3312321f6d96446840d0778
 workflow-type: tm+mt
 source-wordcount: '556'
 ht-degree: 0%

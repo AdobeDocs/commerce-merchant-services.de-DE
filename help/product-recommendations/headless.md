@@ -1,7 +1,8 @@
 ---
 title: Headless
 description: Informationen zur Integration [!DNL Product Recommendations] in einer Headless-Storefront.
-source-git-commit: 7fe89df32dc5363817f957180e5b75e7217fc14a
+exl-id: 316d0b0c-5938-4e2f-9d0d-747746cf6056
+source-git-commit: e7c3d1ab49ee9469e3312321f6d96446840d0778
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 0%
