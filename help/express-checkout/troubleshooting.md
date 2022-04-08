@@ -2,9 +2,9 @@
 title: Beheben von Problemen bei der [!DNL Express Checkout]
 description: Fehlerbehebung, bekannte Probleme, die bei der Verwendung des [!DNL Express Checkout] für die Adobe Commerce-Erweiterung.
 exl-id: a379ff81-360d-4cb9-a123-47e8cbc0cdbd
-source-git-commit: 163dd5260908b4ea3a8bfbcfdb834531d1603734
+source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -95,9 +95,9 @@ Adobe Commerce kann in der Regel so konfiguriert werden, dass bis zu 20 Adressze
 
 Es gibt ein bekanntes Problem für die [!DNL Express Checkout].
 
-Wenn Sie die `Enable terms and conditions` Kontrollkästchen und [Anmeldung mit einem Bolt-Konto](https://help.bolt.com/shoppers/guides/checkout/log-in/), wird das Kontrollkästchen nicht angezeigt.
+Wenn Sie die `Enable terms and conditions` in der Admin-Checkbox und melden Sie sich mit einem [!DNL Bolt] -Konto, `Enable terms and conditions` wird während des Checkout nicht angezeigt. Siehe Abschnitt [Anmelden](https://help.bolt.com/shoppers/account/login-dashboard/) [!DNL Bolt] für weitere Informationen.
 
-Siehe [Bedingungen](https://docs.magento.com/user-guide/sales/terms-and-conditions.html) für weitere Informationen.
+Siehe [Bedingungen](https://docs.magento.com/user-guide/sales/terms-and-conditions.html) Thema für weitere Informationen zur Admin-Konfiguration.
 
 ## Unerwartetes Verhalten bei `Display Billing Address On` auf `payment page`
 
@@ -105,7 +105,7 @@ Es gibt ein bekanntes Problem für die [!DNL Express Checkout].
 
 Wenn Sie `Display Billing Address On` Parameter auf `payment page` und [Anmeldung mit einem Bolt-Konto](https://help.bolt.com/shoppers/guides/checkout/log-in/) Wenn Sie die `My billing and shipping address are the same` Kontrollkästchen:
 
-![Gleiche Adresse](../assets/checked-address.png)
+![Gleiche Adresse](assets/checked-address.png)
 
 Optionsfelder `use existing card`.
 
@@ -119,4 +119,4 @@ Siehe Abschnitt [Übersetzen und Lokalisieren](https://devdocs.magento.com/guide
 
 ## Hilfe erhalten
 
-Wenden Sie sich für weitere Hilfe oder Fragen an den Adobe Commerce-Support.
+Wenden Sie sich für Unterstützung an den Adobe Commerce-Support.

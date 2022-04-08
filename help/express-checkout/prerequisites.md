@@ -2,10 +2,10 @@
 title: '''[!DNL Express Checkout] Voraussetzungen'''
 description: Stellen Sie sicher, dass Ihr System die für die Verwendung der [!DNL Express Checkout] für die Adobe Commerce-Erweiterung.
 exl-id: fa61aa73-a2b6-4c69-ab42-cede74c15caa
-source-git-commit: 163dd5260908b4ea3a8bfbcfdb834531d1603734
+source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
 workflow-type: tm+mt
-source-wordcount: '153'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -34,4 +34,4 @@ Die [!DNL Express Checkout] weist für das EAP-Programm (EAP) bereits Kompatibil
 | ISPU | [!DNL In-Store Pickup] (ISPU)-Funktionalität wird nicht unterstützt |
 | Multishipping | Multishipping wird nicht unterstützt |
 
-Siehe Abschnitt [Bolzbeschränkungen](https://help.bolt.com/integrations/adobe-express-checkout/set-up/#limitations) Seite mit weiteren Informationen zu Kompatibilitätsbeschränkungen für Bolt und dem [!DNL Express Checkout] -Erweiterung.
+Siehe Abschnitt [[!DNL Bolt] Einschränkungen](https://help.bolt.com/integrations/adobe-express-checkout/set-up/#limitations) Seite mit weiteren Informationen zu Kompatibilitätsbeschränkungen für [!DNL Bolt] und [!DNL Express Checkout] -Erweiterung.

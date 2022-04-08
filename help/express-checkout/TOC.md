@@ -3,9 +3,9 @@ user-guide-title: '[!DNL Express Checkout] für Adobe Commerce'
 user-guide-description: Erfahren Sie, wie Sie [!DNL Express Checkout] kann von Ihrer Adobe Commerce-Instanz und der erfolgreichen Integration und Einrichtung der Erweiterung profitieren.
 breadcrumb-title: Handbuch für Merchant Services
 hide: true
-source-git-commit: 163dd5260908b4ea3a8bfbcfdb834531d1603734
+source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
 workflow-type: tm+mt
-source-wordcount: '50'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -26,4 +26,5 @@ ht-degree: 0%
    - [Checkout](checkout-flow.md)
    - [Versanddetails](shipping-details.md)
    - [Zahlungsmethoden](payment-methods.md)
+   - [Erstellen einer Bestellung in Admin](create-order-admin.md)
    - [Fehlerbehebung [!DNL Express Checkout]](troubleshooting.md)

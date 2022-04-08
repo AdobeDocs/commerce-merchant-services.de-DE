@@ -2,9 +2,9 @@
 title: Testen der [!DNL Express Checkout] für die Adobe Commerce-Erweiterung
 description: Durch Tests und Validierung wird sichergestellt, dass die [!DNL Express Checkout] -Erweiterung funktioniert erwartungsgemäß.
 exl-id: 308f39e1-e2f6-40d8-b876-0f9013effed3
-source-git-commit: d8302d2d652b4e2380cc862183e58cbd2cca831b
+source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Testen der [!DNL Express Checkout] in einer Sandbox-Umgebung ist ein sehr wichti
 
 ### Sandbox-Konto verwenden
 
-Wenn Sie Ihre Sandbox testen und validieren, müssen Sie eine falsche Kreditkartennummer und eine [Sandbox](https://merchant-sandbox.bolt.com/register){target=&quot;_blank&quot;} Handelskonto in Bolt, sodass Sie keine echten Gebühren für ein bestehendes Kreditkartenkonto erstellen.
+Wenn Sie Ihre Sandbox testen und validieren, müssen Sie eine falsche Kreditkartennummer und eine [Sandbox](https://merchant-sandbox.bolt.com/register){target=&quot;_blank&quot;} Handelskonto in [!DNL Bolt], sodass Sie keine echten Gebühren für ein bestehendes Kreditkartenkonto erstellen.
 
 ## Test in Produktion
 
@@ -48,7 +48,7 @@ Führen Sie einen erfolgreichen Checkout aus Ihrem Store durch, indem Sie die fo
 
 1. Gehen Sie in Ihre Storefront und platzieren Sie die gewünschten Artikel in Ihren Warenkorb.
 1. Fahren Sie mit dem Checkout fort.
-1. Geben Sie eine E-Mail-Adresse ein, die mit einem Bolt-Konto verknüpft ist, wenn Sie dazu aufgefordert werden.
+1. Geben Sie eine E-Mail-Adresse ein, die mit einer [!DNL Bolt] Konto bei Aufforderung
 1. Geben Sie das einmalige Passwort (OTP) ein, das an die E-Mail-Adresse des Kontos gesendet wird.
 1. Wählen Sie das Umgebungs-Dashboard aus:
 

@@ -2,9 +2,9 @@
 title: Checkout
 description: Übersicht über die [!DNL Express Checkout] in Adobe Commerce.
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
-source-git-commit: 163dd5260908b4ea3a8bfbcfdb834531d1603734
+source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -15,18 +15,18 @@ ht-degree: 0%
 >
 > Diese Funktion ist nur für Benutzer des Early Adopter Program (EAP) gedacht und steht noch nicht allen Kunden zur Verfügung. Derzeit auf US-Kunden beschränkt. Wenden Sie sich für Unterstützung und Fragen an den Adobe Commerce-Support.
 
-In diesem Abschnitt erhalten Sie einen Überblick über das typische Checkout-Erlebnis mit der [!DNL Express Checkout] für die Adobe Commerce-Erweiterung.
+This section provides an overview of the typical checkout experience using the [!DNL Express Checkout] for Adobe Commerce extension.
 
-Erfolgreich [!DNL Express Checkout] Fluss besteht aus folgenden Schritten:
+A successful [!DNL Express Checkout] flow consists of the following steps:
 
 1. Öffnen Sie Ihre Storefront und fügen Sie Artikel in Ihren Warenkorb ein.
 1. Fahren Sie mit dem Checkout fort.
 
-![Checkout](../assets/proceed-checkout.png)
+![Checkout](assets/proceed-checkout.png)
 
-1. Geben Sie bei Aufforderung eine E-Mail-Adresse ein, die mit einem Bolt-Konto verknüpft ist.
-1. Geben Sie das Einmalige Passwort (OTP) ein, das an die E-Mail-Adresse oder Telefonnummer dieses Bolt-Kontos gesendet wird.
-1. Nach der Anmeldung mit Ihrem Bolt-Konto werden die Details des Checkout automatisch ausgefüllt:
+1. Geben Sie bei Aufforderung eine E-Mail-Adresse ein, die mit einer [!DNL Bolt] -Konto.
+1. Geben Sie das einmalige Kennwort (OTP) ein, das an dieses gesendet wird. [!DNL Bolt] E-Mail-Adresse oder Telefonnummer des Kontos.
+1. Nach der Anmeldung bei [!DNL Bolt] -Konto, Checkout-Details werden automatisch ausgefüllt:
 
    - Versandinformationen
    - Zahlungsmethode
@@ -41,22 +41,22 @@ Die [!DNL Express Checkout] ist mit standardmäßigen zusätzlichen Adobe Commer
 
 ## [!DNL Express Checkout] Anwendungsfälle
 
-Die [!DNL Express Checkout] ermöglicht mehrere Anwendungsfälle während eines Checkout-Vorgangs:
+The [!DNL Express Checkout] allows for multiple use cases during a checkout flow:
 
-- Gastbenutzer mit einem registrierten Bolt-Konto.
-- Gastbenutzer mit einem neuen Bolt-Konto.
-- Ein bestehender Adobe Commerce-Benutzer mit/ohne registriertes Bolt-Konto.
+- Guest user with a registered [!DNL Bolt] account.
+- Gastbenutzer mit neuer [!DNL Bolt] -Konto.
+- Ein bestehender Adobe Commerce-Benutzer mit/ohne Registrierung [!DNL Bolt] -Konto.
 
 ## Gastbenutzer-Checkout: Funktionsweise
 
-Das Erlebnis beim Auschecken von Gastgebern unterscheidet sich vom angemeldeten Erlebnis. Wenn ein Käufer eine E-Mail-Adresse zum Checkout eingibt, wird die [!DNL Express Checkout] validiert es, um ein vorhandenes Bolt-Konto zu finden.
+Das Erlebnis beim Auschecken von Gastgebern unterscheidet sich vom angemeldeten Erlebnis. Wenn ein Käufer eine E-Mail-Adresse zum Checkout eingibt, wird die [!DNL Express Checkout] validiert sie, um eine vorhandene [!DNL Bolt] -Konto.
 
-### Registriertes Bolt-Konto
+### Angemeldet [!DNL Bolt] account
 
-Wenn ein Bolt-Konto gefunden wird, fahren die Käufer mit ihrer [!DNL Express Checkout] nahtloses Checkout-Erlebnis:
+Wenn eine [!DNL Bolt] -Konto gefunden werden, setzen die Käufer mit ihrer [!DNL Express Checkout] nahtloses Checkout-Erlebnis:
 
-1. Geben Sie das Einmalige Passwort (OTP) ein, das je nach den Einstellungen des Benutzers im Bolt-Konto an die E-Mail-Adresse des jeweiligen Bolt-Kontos oder an das Mobilgerät gesendet wird.
-1. Nachdem Sie sich mit Ihrem Bolt-Konto angemeldet haben, werden die Checkout-Details automatisch ausgefüllt:
+1. Geben Sie das einmalige Kennwort (OTP) ein, das an dieses gesendet wird. [!DNL Bolt] E-Mail-Adresse oder Mobilgerät des Kontos, abhängig von den Benutzereinstellungen in der [!DNL Bolt] -Konto.
+1. Once logged in with your [!DNL Bolt] account, it fills the checkout details automatically:
 
    - Versandinformationen
    - Zahlungsmethode
@@ -67,28 +67,28 @@ Wenn ein Bolt-Konto gefunden wird, fahren die Käufer mit ihrer [!DNL Express Ch
 >
 > Gastbenutzer geben die Bestellung auf und können sich in Adobe Commerce registrieren.
 
-### Neues Bolt-Konto
+### Neu [!DNL Bolt] account
 
-Wenn kein Bolt-Konto gefunden wird, fahren die Käufer mit ihrem standardmäßigen Adobe Commerce-Checkout fort und der Käufer stellt alle erforderlichen Details zur Bestellung bereit:
+Wenn nicht [!DNL Bolt] -Konto gefunden wird, haben die Käufer weiterhin den standardmäßigen Adobe Commerce-Checkout und der Käufer stellt alle erforderlichen Informationen zur Bestellung bereit:
 
 - Versand- und Rechnungsinformationen
 - Versandmethode
 - Überprüfungszahlungsmethode
-- Vor der Bestellung wird in Bolt ein Kontrollkästchen für schnellere Checkouts angezeigt. Sie können den Geschäftsbedingungen zustimmen, um ihr Bolt-Konto zu erstellen.
+- Ein Kontrollkästchen erscheint bei [!DNL Bolt] für schnellere Checkouts vor der Bestellung. Sie können den Nutzungsbedingungen zustimmen, um ihre [!DNL Bolt] -Konto.
 
-   ![Bolt merken](../assets/checked-bolt.png)
+   ![Angaben [!DNL Bolt]](assets/checked-bolt.png)
 
 - Der Gastbenutzer gibt die Bestellung auf und kann sich in Adobe Commerce registrieren.
 
-## Ein bestehender Adobe Commerce-Benutzer: Funktionsweise
+## An existing Adobe Commerce user: How it works
 
 Ein bestehender Benutzer kann vorhandene Details auswählen, wenn der Benutzer eine Bestellung bei der [!DNL Express Checkout] für ein schnelleres Checkout-Erlebnis.
 
-Wenn ein Käufer eine E-Mail-Adresse zum Checkout eingibt, wird die [!DNL Express Checkout] validiert es, um ein vorhandenes Bolt-Konto zu finden.
+Wenn ein Käufer eine E-Mail-Adresse zum Checkout eingibt, wird die [!DNL Express Checkout] validiert sie, um eine vorhandene [!DNL Bolt] -Konto.
 
-### Registriertes Bolt-Konto bei einem Adobe Commerce-Benutzer
+### Angemeldet [!DNL Bolt] Konto mit einem Adobe Commerce-Benutzer
 
-Wenn ein Bolt-Konto gefunden wird, fahren die Käufer mit ihrem standardmäßigen Adobe Commerce-Checkout fort, und der Käufer gibt alle erforderlichen Details an und gibt dann die Bestellung auf:
+Wenn eine [!DNL Bolt] -Konto gefunden wird, setzen die Käufer mit dem standardmäßigen Adobe Commerce-Checkout fort und der Käufer gibt alle erforderlichen Details an und gibt dann die Bestellung auf:
 
 - Versand- und Rechnungsinformationen
 - Versandmethode
@@ -98,19 +98,19 @@ Siehe Abschnitt [Fehlerbehebung](../express-checkout/troubleshooting.md) finden 
 
 >[!NOTE]
 >
-> Wenn der Benutzer über ein Bolt-Konto verfügt und die E-Mail nicht als in Adobe Commerce registriert angezeigt wird, wird die OTP-Anmeldung (One-Time Password) Trigger. Siehe [eingetragenes Bolt-Konto](#registered-bolt-account) Fluss.
+> Wenn der Benutzer [!DNL Bolt] -Konto und -E-Mail werden nicht als in Adobe Commerce registriert angezeigt, sondern als Trigger für die OTP-Anmeldung (One-Time Password). Siehe [registriert [!DNL Bolt] account](#registered-bolt-account) Fluss.
 
-### Neues Bolt-Konto
+### Neu [!DNL Bolt] account
 
-Wenn kein Bolt-Konto gefunden wird, fahren die Käufer mit dem standardmäßigen Adobe Commerce-Checkout fort und der Käufer wählt alle erforderlichen Informationen aus seinen gespeicherten Informationen aus, um die Bestellung aufzugeben:
+Wenn nicht [!DNL Bolt] -Konto gefunden wird, haben Käufer weiterhin ihre standardmäßige Adobe Commerce-Kasse und der Käufer wählt alle erforderlichen Informationen aus den gespeicherten Informationen aus, um die Bestellung aufzugeben:
 
 - Versand- und Rechnungsinformationen
 - Versandmethode
 - Überprüfungszahlungsmethode
-- Vor der Bestellung wird in Bolt ein Kontrollkästchen für schnellere Checkouts angezeigt. Sie können den Geschäftsbedingungen zustimmen, um ihr Bolt-Konto zu erstellen.
+- Ein Kontrollkästchen erscheint bei [!DNL Bolt] für schnellere Checkouts vor der Bestellung. Sie können den Nutzungsbedingungen zustimmen, um ihre [!DNL Bolt] -Konto.
 
-   ![Bolt merken](../assets/checked-bolt.png)
+   ![Angaben [!DNL Bolt]](assets/checked-bolt.png)
 
-## Hilfe erhalten
+## Get help
 
-Wenden Sie sich für Unterstützung und Fragen an den Adobe Commerce-Support.
+Contact Adobe Commerce Support for any assistance.
