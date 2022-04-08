@@ -2,18 +2,19 @@
 title: Zahlungsoptionen
 description: Legen Sie die Zahlungsoptionen fest, um die für Ihre Store-Kunden verfügbaren Methoden anzupassen.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: 9aa701e006a7f107775679f156f84d3e2fdc153b
+source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
 workflow-type: tm+mt
-source-wordcount: '908'
+source-wordcount: '928'
 ht-degree: 0%
 
 ---
 
 # Zahlungsoptionen
 
-Mit Adobe Commerce und Magento Open Source [!DNL Payment Services], haben Sie mehrere Zahlungsoptionen für Sie. Legen Sie diese Optionen in der Admin Store-Konfiguration fest (**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**) durch Erweiterung **[!UICONTROL Sales]**auswählen **[!UICONTROL Payment Method]s**, und gehen Sie dann zu_[!UICONTROL Recommended Solutions]_ auf der Seite.
+Mit Adobe Commerce und Magento Open Source [!DNL Payment Services], haben Sie mehrere Zahlungsoptionen für Sie. Sie können diese Zahlungsoptionen wie folgt konfigurieren:
 
-![Ansicht zu Zahlungsmethoden](assets/methods-view.png)
+* [Dashboard](configure-dashboard.md)
+* [Store-Konfiguration](configure-admin.md) (empfohlen für ältere Zahlungsoptionen oder ein Multistore-Setup)
 
 Je nachdem, wo Sie sich im Checkout-Prozess befinden, gibt es für jede Zahlungsmethode unterschiedliche Verhaltensweisen:
 
@@ -22,17 +23,21 @@ Je nachdem, wo Sie sich im Checkout-Prozess befinden, gibt es für jede Zahlungs
 * Warenkorb - Verfügbar bei Klick auf _Warenkorb anzeigen und bearbeiten_ aus dem Mini-Warenkorb
 * Checkout-Ansicht - bei Klick auf _Zum Auschecken fortfahren_ aus dem Mini-Warenkorb oder Warenkorb
 
+>[!IMPORTANT]
+>
+>Zahlungsdienste müssen vor der Abwicklung der Zahlungen abgeschlossen sein.
+
 ## [!UICONTROL Credit Card Fields]
 
 [!UICONTROL Credit Card Fields] bieten einen einfachen und sicheren Checkout für Kreditkarten- oder Debitkartenzahlmethoden. Wenn ein Kunde mit Kreditkartenfeldern zur Kasse geht, gibt er seinen Namen, seine Rechnungsadresse sowie seine Kredit- oder Debitkarteninformationen ein, um seine Bestellung aufzugeben. Ihre Kundeninformationen werden während der Kaufsitzung sicher verwendet, um sie nahtlos durch den Checkout-Fluss zu führen.
 
-Sie können [!UICONTROL Credit Card Fields] im Admin. Siehe [Konfiguration [!DNL Payment Services]](configure-admin.md#configure-credit-card-fields) für weitere Informationen.
+Sie können [!UICONTROL Credit Card Fields] in der Store-Konfiguration oder im Dashboard Zahlungsdienste . Siehe [Konfiguration [!DNL Payment Services]](configure-dashboard.md#configure-credit-card-fields) für weitere Informationen.
 
 ## [!DNL PayPal Smart Buttons]
 
 [!DNL PayPal Smart Buttons], die PayPal verwenden, um einen Kauf abzuschließen, speichert die Lieferadresse Ihres Käufers, die Rechnungsadresse und Zahlungsdetails zur späteren Verwendung. Käufer können jede Zahlungsmethode verwenden, die zuvor von PayPal gespeichert oder angeboten wurde.
 
-Sie können [!DNL PayPal Smart Buttons] im Admin. Siehe [Konfiguration [!DNL Payment Services]](configure-admin.md#configure-paypal-smart-buttons) für weitere Informationen.
+Sie können [!DNL PayPal Smart Buttons] in der Store-Konfiguration oder im Dashboard Zahlungsdienste .  Siehe [Konfiguration [!DNL Payment Services]](configure-dashboard.md#configure-paypal-smart-buttons) für weitere Informationen.
 
 ### Schaltfläche &quot;PayPal&quot;
 

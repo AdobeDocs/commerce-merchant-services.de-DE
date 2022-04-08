@@ -2,9 +2,9 @@
 title: Aktivieren [!DNL Payment Services] für die Produktion
 description: Schließen Sie den Onboarding-Prozess ab, indem Sie [!DNL Payment Services] für die Produktion.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
-source-git-commit: fd818dadbaa2a58efd7313ce888c7dda27d25f14
+source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
 workflow-type: tm+mt
-source-wordcount: '658'
+source-wordcount: '692'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,17 @@ Siehe [Zahlungsdienste konfigurieren](configure-admin.md) Weitere Informationen 
 
 ## Zahlungsanspruch von Adobe anfordern
 
-Um das Live-Onboarding zu aktivieren, müssen Sie einen Zahlungsanspruch von [Adobe](https://business.adobe.com/resources/payment-services.html).
+Um das Live-Onboarding zu aktivieren, müssen Sie einen Zahlungsanspruch von Adobe anfordern:
+
+1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+1. Klicken **[!UICONTROL Get Live Payments]** in [!DNL Payment Services] Dashboard.
+
+   ![Anforderungsberechtigungen](assets/request-entitlements.png)
+
+1. Füllen Sie das Formular aus.
+1. Ein Mitglied des Vertriebsteams wird sich mit Ihnen in Verbindung setzen.
+
+Alternativ können Sie Zahlungsansprüche von Adobe anfordern unter [business.adobe.com](https://business.adobe.com/resources/payment-services.html).
 
 >[!IMPORTANT]
 >
