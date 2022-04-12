@@ -2,16 +2,16 @@
 title: Facets
 description: Live-Suchfacetten verwenden mehrere Dimensionen von Attributwerten als Suchkriterien.
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 554b07c233da2af2ca2d9aacf56bdfe09dc67cd3
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '388'
 ht-degree: 0%
 
 ---
 
 # Facets
 
-Faceting ist eine Methode der Hochleistungsfilterung, bei der mehrere Dimensionen von Attributwerten als Suchkriterien verwendet werden. Die facettierte Suche ist ähnlich, aber deutlich &quot;schlauer&quot;als die Standardsuche [mehrstufige Navigation](https://docs.magento.com/user-guide/catalog/navigation-layered.html). Die Liste der verfügbaren Filter wird durch die Variable [filterbare Attribute](https://docs.magento.com/user-guide/catalog/navigation-layered-filterable-attributes.html) der in den Suchergebnissen zurückgegebenen Produkte. Es können bis zu 100 Facetten konfiguriert werden mit [!DNL Live Search].
+Faceting ist eine Methode der Hochleistungsfilterung, bei der mehrere Dimensionen von Attributwerten als Suchkriterien verwendet werden. Die facettierte Suche ist ähnlich, aber deutlich &quot;schlauer&quot;als die Standardsuche [mehrstufige Navigation](https://docs.magento.com/user-guide/catalog/navigation-layered.html). Die Liste der verfügbaren Filter wird durch die Variable [filterbare Attribute](https://docs.magento.com/user-guide/catalog/navigation-layered-filterable-attributes.html) der in den Suchergebnissen zurückgegebenen Produkte.
 
 ![Gefilterte Suchergebnisse](assets/storefront-search-results-run.png)
 
@@ -19,11 +19,24 @@ Faceting ist eine Methode der Hochleistungsfilterung, bei der mehrere Dimensione
 
 Die Anforderungen an Kategorie- und Produktattribute für die Facettierung ähneln den für die Navigation mit Ebenen verwendeten filterbaren Attributen. Die Storefront-Eigenschaften jedes Attributs müssen auf `filterable (with results)`.
 
+* Bis zu 100 Attribute können als Facetten mit [!DNL Live Search].
+* [!DNL Live Search] indiziert bis zu 300 Attribute als filterbar/searchable/sortable und bei der Suche sichtbar.
+
 | Einstellung | Beschreibung |
 |--- |--- |
 | [Anzeigeparameter der Kategorie](https://docs.magento.com/user-guide/catalog/categories-display-settings.html) | Anker - `Yes` |
 | [Attributeigenschaften](https://docs.magento.com/user-guide/stores/attribute-product-create.html) | [Katalogeingabetyp](https://docs.magento.com/user-guide/stores/attributes-input-types.html) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price` |
 | Eigenschaften von Attributspeicher | Verwendung in mehrschichtiger Navigation - `Filterable (with results)` |
+
+## Standardmäßige Attributwerte
+
+Die folgenden Produktattribute haben [Storefront-Eigenschaften](https://docs.magento.com/user-guide/stores/attributes-product.html) die von [!DNL Live Search] und standardmäßig aktiviert.
+
+| Eigenschaft | Storefront-Eigenschaft | Attribut |
+|---|---|---|
+| Sortierbar | Wird zur Sortierung in der Produktliste verwendet | `price` |
+| Durchsuchbar | Verwendung in der Suche | `price` <br />`sku`<br />`name` |
+| FilterableInSearch | Verwendung in Ebenen Navigation - Filtern möglich (mit Ergebnissen) | `price`<br />`visibility`<br />`category_name` |
 
 ## Standardmäßige Eigenschaften von Nicht-Systemattributen
 

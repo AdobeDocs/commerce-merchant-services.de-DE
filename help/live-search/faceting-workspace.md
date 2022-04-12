@@ -2,14 +2,14 @@
 title: Factory Workspace
 description: Erfahren Sie mehr über den Arbeitsbereich "Live-Suche".
 exl-id: b47b5c19-59bb-41e4-9599-3b90cbc44b70
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: a8943e56cc074a96d3f9e1009b76fa589b76a8a4
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 0%
 
 ---
 
-# Factory-Arbeitsbereich
+# Factory Workspace
 
 Die [!DNL Live Search] Workspace listet alle derzeit verfügbaren Facetten auf und bietet Zugriff auf die Tools, die Sie zum Einrichten und Verwalten von Facetten benötigen. Angeheftete Facetten erscheinen zuerst in der Liste vorhandener Facetten, gefolgt von dynamischen Facetten. Die Liste kann gefiltert werden, um alle Facetten anzuzeigen, oder nur diejenigen, die fixiert oder dynamisch sind.
 

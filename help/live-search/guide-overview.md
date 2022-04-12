@@ -1,10 +1,10 @@
 ---
-title: Guide Overview
+title: Live Search-Anleitung - Übersicht
 description: Die Live-Suche aus Adobe Commerce bietet ein blitzschnelles, superrelevantes und intuitives Sucherlebnis.
 exl-id: 11e2ed97-ce80-4826-b914-71688dd29e4b
-source-git-commit: 67e0287d38eb81e17c1ae317c54d60a5c4816eab
+source-git-commit: a8943e56cc074a96d3f9e1009b76fa589b76a8a4
 workflow-type: tm+mt
-source-wordcount: '220'
+source-wordcount: '222'
 ht-degree: 0%
 
 ---
