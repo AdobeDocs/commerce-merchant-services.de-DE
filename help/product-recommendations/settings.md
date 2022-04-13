@@ -2,9 +2,9 @@
 title: Einstellungen
 description: Erfahren Sie, wie Sie die Quelle Ihrer [!DNL Product Recommendations] Daten und wie visuelle Empfehlungen aktiviert werden.
 exl-id: 8c074e11-e0cb-4d55-b646-30279c79bbc2
-source-git-commit: e7c3d1ab49ee9469e3312321f6d96446840d0778
+source-git-commit: 6d0c7c749fe90c7c204afe47446f3483d8668b53
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Um die Quelle Ihrer Produktempfehlungsdaten zu ändern, wählen Sie den SaaS-Dat
 
 1. Klicken Sie im Recommendations-Quellabschnitt auf **Konfiguration bearbeiten**.
 
-1. Befolgen Sie die Anweisungen zum Konfigurieren eines neuen [Commerce-Dienst].
+1. Befolgen Sie die Anweisungen zum Konfigurieren eines neuen [[!DNL Commerce] service](/help/landing/saas.md).
 
 ## Visuelle Empfehlungen aktivieren
 

@@ -2,9 +2,9 @@
 title: Ereigniskollektion überprüfen
 description: Erfahren Sie, wie Sie überprüfen können, ob Verhaltensdaten an Adobe Commerce gesendet werden.
 exl-id: c8c34db4-9d87-4012-b8f0-e9b1da214305
-source-git-commit: e7c3d1ab49ee9469e3312321f6d96446840d0778
+source-git-commit: 7d9cef7a81196921b465ccf2dcd58d98b66d6598
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,9 @@ So stellen Sie sicher, dass die JS-Datei für den Ereignissammler auf allen Seit
 1. Laden Sie die Seite neu.
 1. Sie sollten `ds.js` oder `ds.min.js` im **Name** Spalte.
 
+![Event Collector JS](assets/filter-ds.png)
+_Event Collector JS_
+
 So stellen Sie sicher, dass Ereignisse auf Seiten Ihrer Site (Startseite, Produkt, Checkout usw.) ausgelöst werden:
 
 1. Stellen Sie sicher, dass Sie alle Anzeigensperren in Ihrem Browser deaktivieren und Cookies auf der Site akzeptieren.
@@ -30,6 +33,9 @@ So stellen Sie sicher, dass Ereignisse auf Seiten Ihrer Site (Startseite, Produk
 1. Wählen Sie die **Netzwerk** Registerkarte und Filter für `tp2`.
 1. Laden Sie die Seite neu.
 1. Aufrufe werden unter angezeigt `tp2` im **Name** Spalte.
+
+![Auslösen von Ereignissen](assets/filter-tp2.png)
+_Sicherstellen, dass Ereignisse ausgelöst werden_
 
 ## Überprüfen mit der Chrome-Erweiterung Snowplow
 
@@ -47,7 +53,8 @@ Installieren Sie die [Erweiterung &quot;Snowplow Analytics Debugger&quot;für Ch
 
 1. Stellen Sie sicher, dass [SaaS-Datenraum-ID](https://docs.magento.com/user-guide/configuration/services/saas.html) korrekt eingestellt ist.
 
-Wenn bei der Überprüfung, ob die Ereignisse erfasst und an Adobe Commerce gesendet werden, Probleme auftreten, [Support kontaktieren](https://support.magento.com/hc/en-us).
+![Snowpflug-Filter](assets/snowplow-filter.png)
+_Snowpflug-Filter_
 
 >[!NOTE]
 >

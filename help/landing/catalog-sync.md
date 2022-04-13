@@ -2,18 +2,18 @@
 title: Katalogsynchronisierung
 description: Erfahren Sie, wie Sie Produktdaten aus der [!DNL Commerce] Server zu [!DNL Commerce Services] laufend, um die Dienstleistungen auf dem neuesten Stand zu halten.
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
-source-git-commit: ae63fed82ee68f70a107b9c0a631d223990d50e1
+source-git-commit: 6d0c7c749fe90c7c204afe47446f3483d8668b53
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # Katalogsynchronisierung
 
-Adobe Commerce and Magento Open Source use indexers to compile catalog data into tables. Der Prozess wird automatisch von [events](https://docs.magento.com/user-guide/system/index-management-events.html) wie eine Änderung des Produktpreises oder des Lagerbestands.
+Adobe Commerce und Magento Open Source verwenden Indexer, um Katalogdaten in Tabellen zu kompilieren. Der Prozess wird automatisch von [events](https://docs.magento.com/user-guide/system/index-management-events.html) wie eine Änderung des Produktpreises oder des Lagerbestands.
 
-The catalog sync process runs hourly to allow [!DNL Commerce Services] to use catalog data. Die Katalogsynchronisierung exportiert Produktdaten aus der [!DNL Commerce] Server zu [!DNL Commerce Services] laufend, um die Dienstleistungen auf dem neuesten Stand zu halten. Beispiel: [!DNL Product Recommendations] benötigt aktuelle Kataloginformationen, um Empfehlungen mit korrekten Namen, Preisen und Verfügbarkeit exakt zurückzugeben. Sie können die _Katalogsynchronisierung_ Dashboard zur Beobachtung und Verwaltung des Synchronisierungsprozesses oder der [Befehlszeilenschnittstelle](#resynccmdline) zum Trigger der Katalogsynchronisierung und der Neuindizierung von Produktdaten für die Verwendung durch [!DNL Commerce Services].
+Der Katalogsynchronisierungsprozess wird stündlich ausgeführt, um [!DNL Commerce] Dienste zur Verwendung von Katalogdaten. Die Katalogsynchronisierung exportiert Produktdaten aus der [!DNL Commerce] Server zu [!DNL Commerce] Dienstleistungen, um die Dienstleistungen auf dem neuesten Stand zu halten. Beispiel: [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) benötigt aktuelle Kataloginformationen, um Empfehlungen mit korrekten Namen, Preisen und Verfügbarkeit exakt zurückzugeben. Sie können die _Katalogsynchronisierung_ Dashboard zur Beobachtung und Verwaltung des Synchronisierungsprozesses oder der [Befehlszeilenschnittstelle](#resynccmdline) zum Trigger der Katalogsynchronisierung und der Neuindizierung von Produktdaten für die Verwendung durch [!DNL Commerce] Dienste.
 
 >[!NOTE]
 >
@@ -46,15 +46,15 @@ Meldet einen Synchronisierungsstatus von:
 
 ### Synchronisierte Produkte
 
-Displays the total number of products synced from your [!DNL Commerce] catalog. Nach der ersten Synchronisierung sollten Sie erwarten, dass nur geänderte Produkte synchronisiert werden.
+Zeigt die Gesamtzahl der mit Ihrer [!DNL Commerce] Katalog. Nach der ersten Synchronisierung sollten Sie erwarten, dass nur geänderte Produkte synchronisiert werden.
 
-## Resync {#resync}
+## Neu synchronisieren {#resync}
 
 Wenn Sie eine Neusynchronisierung Ihres Katalogs starten müssen, bevor die stündliche geplante Synchronisierung erfolgt, können Sie eine Neusynchronisierung erzwingen.
 
 >[!NOTE]
 >
-> Forcing a resync triggers a resync of your entire product catalog, which can increase load on hardware resources.
+> Erzwingen einer erneuten Synchronisierung von Triggern eine Neusynchronisierung des gesamten Produktkatalogs, was die Belastung der Hardware-Ressourcen erhöhen kann.
 
 1. Aus dem _Katalogsynchronisierung_ Dashboard, auswählen **Einstellungen**.
 
@@ -74,7 +74,7 @@ Die **Synchronisierte Katalogprodukte** -Tabelle werden die folgenden Informatio
 | Name | Storefront-Name des Produkts |
 | Typ | Identifiziert den Produkttyp, z. B. einfach, konfigurierbar, herunterladbar usw. |
 | Zuletzt exportiert | Datum, an dem das Produkt zuletzt erfolgreich aus Ihrem Katalog exportiert wurde |
-| Last Modified | Datum der letzten Änderung des Produkts in Ihrem Katalog |
+| Zuletzt geändert | Datum der letzten Änderung des Produkts in Ihrem Katalog |
 | SKU | Zeigt die Lagereinheit für das Produkt an |
 | Preis | Preis der Ware |
 | Sichtbarkeit | Die Sichtbarkeitseinstellung eines Produkts, wie in der Variablen [!DNL Commerce] Katalog |
@@ -100,7 +100,7 @@ Wenn die Katalogsynchronisierung den Status **Fehlgeschlagen**, senden Sie eine 
 
 ## Befehlszeilenschnittstelle {#resynccmdline}
 
-Die `saas:resync` -Befehl ist Teil der `magento/saas-export` Paket. You can install this package using one of the [!DNL Commerce Services] products, such as [!DNL Product Recommendations] or [!DNL Live Search].
+Die `saas:resync` -Befehl ist Teil der `magento/saas-export` Paket. Sie können dieses Paket mit einem der [!DNL Commerce Services] Produkte wie [[!DNL Product Recommendations]](/help/product-recommendations/install-configure.md) oder [[!DNL Live Search]](/help/live-search/install.md).
 
 >[!NOTE]
 >
@@ -127,9 +127,9 @@ Der Feed-Name kann einer der folgenden sein:
 - `productattributes`- Produktattribute wie `activity`, `gender`, `tops`, `bottoms`, usw.
 - `productoverrides`— Kundenspezifische Preisbildungs- und Katalogsichtbarkeitsregeln, z. B. auf der Grundlage von Kategorieberechtigungen
 
-### Examples
+### Beispiele
 
-The following example reindexes the product data from the [!DNL Commerce] catalog and resyncs it to Commerce services:
+Im folgenden Beispiel werden die Produktdaten aus der [!DNL Commerce] Kataloge erstellen und sie erneut mit Commerce-Diensten synchronisieren:
 
 ```bash
 bin/magento saas:resync --feed products
