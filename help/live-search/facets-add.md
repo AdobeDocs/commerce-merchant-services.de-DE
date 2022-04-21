@@ -2,9 +2,9 @@
 title: Facets hinzufügen
 description: Erfahren Sie, wie Sie filterbare Produktattribute als Live-Suchfacetten hinzufügen.
 exl-id: 0df6c21b-55b3-41ce-94f4-f70b70ffb84e
-source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
+source-git-commit: 966b15e6cb8c839c39575a3ad25a6b460201330b
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '652'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ Die Facette wird am unteren Rand des *Dynamische Facetten* und *Veröffentlichun
    * Titel - ([Headless](facets-type.md) nur) Geben Sie die Facettenbeschriftung ein, die Sie verwenden möchten.
    * Typ auswählen - die *Typ auswählen* für alle [!DNL Commerce] storefronts is `single select`. Bei Headless-Implementierungen: `multi-select` Typ kann mit einem logischen Operator (`or` oder `and`), um den Satz der zurückgegebenen Produkte zu bestimmen.
    * Sortiertyp - Facets werden alphabetisch für alle sortiert [!DNL Commerce] Storefronts. Bei Headless-Implementierungen können Facetten entweder alphabetisch oder nach Anzahl sortiert werden. Optionen: Alphabetisch, Anzahl (nur Headless)
-   * Max. Wert - Geben Sie die maximale Anzahl an Facettenwerten ein, die in der Storefront angezeigt werden. Gültige Einträge: 0-10
+   * Max. Wert - Geben Sie die maximale Anzahl an Facettenwerten ein, die in der Storefront angezeigt werden. Gültige Einträge: 0-30; Standard: 8
 
 1. Wenn Sie fertig sind, klicken Sie auf **Speichern**.
 
@@ -70,7 +70,7 @@ Wenn die Facette nach zwei Stunden nicht verfügbar ist, lesen Sie [Export über
 | Titel | ([Headless](facets-type.md) nur) Die [Facet-Bezeichnung](facets-type.md) die in der Storefront sichtbar sind, können zur Konsistenz mit Ihrer Marke bearbeitet werden. |
 | Typ auswählen | Zeigt die [Auswahlmethode](facets-type.md) das mit dem Produktattribut verknüpft ist. Alle Facetten im [!DNL Commerce] Storefronts sind `Single select` nur. Headless-Implementierungen unterstützen auch `Multi-select` mit den logischen Operatoren `OR` und `AND`. |
 | Sortiertyp | Die Methode, mit der [sort](facets-type.md) Facetten. Alle [!DNL Commerce] storefronts sortiert Facetten nur alphabetisch. Headless-Implementierungen können auch nach `Count`. Optionen:<br />Alphabetisch - Sortiert Facetten alphabetisch.<br />Anzahl - (nur Headless) Sortiert Facetten basierend auf der Anzahl der gefundenen Übereinstimmungen. |
-| Max. Wert | Die maximale Anzahl von Werten, die in der Storefront für jede Facette angezeigt werden können. Facets, die einen Wertebereich darstellen, sind gleichmäßig verteilt. Standard: 8 |
+| Max. Wert | Die maximale Anzahl von Werten, die in der Storefront für jede Facette angezeigt werden können. Facets, die einen Wertebereich darstellen, sind gleichmäßig verteilt. Gültige Einträge: 0-30; Standard: 8 |
 
 ### Steuerelemente
 
