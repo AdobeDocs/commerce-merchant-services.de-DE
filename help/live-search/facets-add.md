@@ -2,7 +2,7 @@
 title: Facets hinzufügen
 description: Erfahren Sie, wie Sie filterbare Produktattribute als Live-Suchfacetten hinzufügen.
 exl-id: 0df6c21b-55b3-41ce-94f4-f70b70ffb84e
-source-git-commit: 966b15e6cb8c839c39575a3ad25a6b460201330b
+source-git-commit: f31c76404315a9fe142bf0c72ff9999c4a87365d
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 0%
@@ -54,8 +54,8 @@ Die Facette wird am unteren Rand des *Dynamische Facetten* und *Veröffentlichun
 
    ![Factory-Arbeitsbereich](assets/facet-edit.png)
 
-1. So veröffentlichen Sie die Facette am oberen Rand des *Filter* Liste, klicken Sie auf die graue Push-Taste (![Pin-Auswahl](assets/btn-pin-gray.png).
-1. Um die Reihenfolge der fixierten Facette zu ändern, klicken Sie auf die **Verschieben** (![Auswahl verschieben](assets/btn-move.png) und ziehen Sie die Zeile an eine neue Position im *Angeheftete Facetten* Abschnitt.
+1. So veröffentlichen Sie die Facette am oberen Rand des *Filter* Liste, klicken Sie auf die graue Push-Taste (![Pin-Auswahl](assets/btn-pin-gray.png)).
+1. Um die Reihenfolge der fixierten Facette zu ändern, klicken Sie auf die **Verschieben** (![Auswahl verschieben](assets/btn-move.png)) und ziehen Sie die Zeile an eine neue Position im *Angeheftete Facetten* Abschnitt.
 
 ## Schritt 3: Veröffentlichungsänderungen
 

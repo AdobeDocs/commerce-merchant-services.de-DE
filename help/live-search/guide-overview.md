@@ -2,16 +2,16 @@
 title: Live Search-Anleitung - Übersicht
 description: Die Live-Suche aus Adobe Commerce bietet ein blitzschnelles, superrelevantes und intuitives Sucherlebnis.
 exl-id: 11e2ed97-ce80-4826-b914-71688dd29e4b
-source-git-commit: a8943e56cc074a96d3f9e1009b76fa589b76a8a4
+source-git-commit: 9d1637efdfde60f7b94c4fa60b369225b799bc83
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '219'
 ht-degree: 0%
 
 ---
 
 # Live Search-Anleitung - Übersicht
 
-[!DNL Live Search] von Adobe Commerce bietet ein blitzschnelles, superrelevantes und intuitives Sucherlebnis und ist für Adobe Commerce kostenlos verfügbar. [!DNL Live Search] mit Strom [Adobe Sensei](https://www.adobe.com/sensei.html) verwendet künstliche Intelligenz und Algorithmen des maschinellen Lernens, um eine tiefgehende Analyse aggregierter Besucherdaten durchzuführen. Diese Daten führen in Kombination mit Ihrem Adobe Commerce-Katalog zu sehr ansprechenden, relevanten und personalisierten Einkaufserlebnissen. mit dem Schwerpunkt auf Geschwindigkeit, Relevanz und Benutzerfreundlichkeit, [!DNL Live Search] ist ein Spielveränderer für Käufer und Händler gleichermaßen.
+[!DNL Live Search] von Adobe Commerce bietet ein blitzschnelles, superrelevantes und intuitives Sucherlebnis für Adobe Commerce ohne zusätzliche Kosten. [!DNL Live Search] mit Strom [Adobe Sensei](https://www.adobe.com/sensei.html) verwendet künstliche Intelligenz und Algorithmen des maschinellen Lernens, um eine tiefgehende Analyse aggregierter Besucherdaten durchzuführen. Diese Daten führen in Kombination mit Ihrem Adobe Commerce-Katalog zu sehr ansprechenden, relevanten und personalisierten Einkaufserlebnissen. mit Schwerpunkt auf Geschwindigkeit, Relevanz und Benutzerfreundlichkeit, [!DNL Live Search] ist ein Spielveränderer für Käufer und Händler gleichermaßen.
 
 Die Live-Suche umfasst drei Bereiche für Administratoren:
 

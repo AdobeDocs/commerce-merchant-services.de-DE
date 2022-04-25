@@ -2,9 +2,9 @@
 title: Onboarding-Übersicht
 description: Onboarding-Fluss der Live-Suche, Systemanforderungen, Grenzen und Einschränkungen
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: f33f02fa15b6250970bda3302d3403b6fcec5786
+source-git-commit: f2934746c327528d5d52f2ae356afe303ff9b81b
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '337'
 ht-degree: 0%
 
 ---
@@ -45,6 +45,7 @@ Zu diesem Zeitpunkt wird die [!DNL Live Search] Die Such-/Kategorie-API weist di
 
 ### PWA Beta-Version
 
+* Die aktuelle Beta-PWA-Implementierung der Live-Suche erfordert mehr Verarbeitungszeit, um Suchergebnisse zurückzugeben, als die Live-Suche mit der nativen Commerce-Storefront.
 * Die Beta-Version von PWA für [!DNL Live Search] unterstützt nicht [Ereignisverarbeitung](https://devdocs.magento.com/shared-services/storefront-events-sdk.html).
 * Die folgenden Produktattribute werden von GraphQL nicht unterstützt, wenn sie im Zusammenhang mit der Betaversion von [PWA](https://developer.adobe.com/commerce/pwa-studio/): `description`, `name`, `short_description`
 
@@ -55,3 +56,5 @@ Zu diesem Zeitpunkt wird die [!DNL Live Search] Die Such-/Kategorie-API weist di
 * [Benutzerspezifische Preisgruppen](https://docs.magento.com/user-guide/catalog/product-price-group.html)
 * Mehrere Lagerorte, die von [MCOM](https://docs.magento.com/user-guide/mcom.html) oder anderen OMS-Erweiterungen
 * [Integrierte B2B-Funktionen](https://business.adobe.com/products/magento/b2b-ecommerce.html)
+* Die Produktpreise beinhalten nicht [Mehrwertsteuer](https://docs.magento.com/user-guide/tax/vat.html) (MwSt).
+* Nicht vorrätige Produkte werden unabhängig von der [Lageroptionen](https://docs.magento.com/user-guide/catalog/inventory-options-global.html) Konfiguration.
