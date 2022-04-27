@@ -2,9 +2,9 @@
 title: Arten von Synonymen
 description: Die 1- und 2-Wege-Live-Suchsynonyme erweitern die Definition von Keywords.
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
-source-git-commit: 7402e97f53b71e488d860215487f4809572b7e6f
+source-git-commit: c8fd75f68ed0def18f6f89adc777244057c5d79d
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '402'
 ht-degree: 0%
 
 ---
@@ -31,6 +31,14 @@ Ein unidirektionales Synonym ist eine Teilmenge eines Suchbegriffs, jedoch mit e
 
 Beachten Sie die folgenden Best Practices, um die Nutzung von Live Search-Synonymen optimal zu nutzen.
 
-Es ist nicht erforderlich, sowohl Singular- als auch Plural-Formulare als Synonym zu definieren. Wenn Sie eine Mischung aus Einzel- und Plural-Begriffen in Ihrem Katalog haben, findet Search die richtige Produktgruppe. Wenn Sie beispielsweise das Wort &quot;Pant&quot;im Produktnamen verwenden und ein Käufer nach &quot;Hosen&quot;sucht, wird der richtige Satz von Produkten zurückgegeben und das Singular &quot;Pant&quot;wird als Vorschlag angeboten. Der Singular-Begriff &quot;Hose&quot;wird oft in der Modebranche und manchmal auch im Einzelhandel verwendet, obwohl die Pluralform &quot;Hosen&quot;in einigen Bereichen häufiger verwendet wird. (Das Wort &quot;Hose&quot;bezieht sich technisch auf den Teil eines Kleidungsstücks, der ein Bein bedeckt, weshalb man ein &quot;Paar Hosen&quot;benötigt, um beide Beine zu bedecken.)
+### Keyword-Zuordnung
+
+Bei dieser Technik werden anstelle von Synonymen durchsuchbare Produktattribute verwendet, um schlüsselwortbasierte Verknüpfungen zwischen Produkten zu erstellen. Daher kann ein zugeordnetes Produkt in den Suchergebnissen eines anderen Produkts angezeigt werden. Weitere Informationen finden Sie unter [Suchergebnisse](https://docs.magento.com/user-guide/catalog/search-results.html).
+
+### Verwendung von Singular und Plural
+
+Es ist nicht erforderlich, sowohl die Singular- als auch die Plural eines Wortes als Synonym zu definieren. Wenn Sie eine Mischung aus Einzel- und Plural-Begriffen in Ihrem Katalog haben, findet Search den richtigen Satz von Produkten. Wenn Sie beispielsweise das Wort &quot;Pant&quot;im Produktnamen verwenden und ein Käufer nach &quot;Hosen&quot;sucht, wird der richtige Satz von Produkten zurückgegeben und das Singular &quot;Pant&quot;wird als Vorschlag angeboten. Der Singular-Begriff &quot;Hose&quot;wird oft in der Modebranche und manchmal auch im Einzelhandel verwendet, obwohl die Pluralform &quot;Hosen&quot;in einigen Bereichen häufiger verwendet wird. (Das Wort &quot;Hose&quot;bezieht sich technisch auf den Teil eines Kleidungsstücks, der ein Bein bedeckt, weshalb man ein &quot;Paar Hosen&quot;benötigt, um beide Beine zu bedecken.)
+
+### Konsistenz
 
 Konsistent mit der Verwendung von Terminologie in Ihrem Katalog sein. Beachten Sie, dass es regionale Unterschiede bei der Verwendung und manchmal Unterschiede innerhalb einer Branche geben kann.
