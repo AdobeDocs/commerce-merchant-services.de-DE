@@ -4,9 +4,9 @@ description: Nach der Installation können Sie [!DNL Payment Services] im Dashbo
 role: Admin, User
 level: Intermediate
 exl-id: 015c5c8c-8184-45c1-932a-f4365ddf5a30
-source-git-commit: 695666596ed11026983215c745c7b33ee4b0bfdc
+source-git-commit: bae0eeac349fe3c266d868f8d94c5e033390a661
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '548'
 ht-degree: 0%
 
 ---
@@ -98,4 +98,4 @@ Sie können auch die _[!UICONTROL Button style]_Optionen der PayPal-Smart-Schalt
 1. Um Ihre Änderungen zu speichern, klicken Sie auf **[!UICONTROL Save]** oben rechts auf der Seite.
 1. Navigieren Sie zu **[!UICONTROL System]** > **[!UICONTROL Cache Management]** und klicken Sie auf **[!UICONTROL Flush Cache]** , um alle ungültigen Caches zu aktualisieren.
 
-Sie können [!DNL PayPal Smart Buttons] Formatierung im Admin oder Dashboard. Siehe [Konfiguration [!DNL PayPal Smart Buttons style]](configure-admin.md#configure-paypal-smart-button-styling) für weitere Informationen.
+Sie können [!DNL PayPal Smart Buttons] Formatierung im Admin oder Dashboard. Siehe [Handbuch zum Schaltflächenstil von PayPal](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) für weitere Informationen.
