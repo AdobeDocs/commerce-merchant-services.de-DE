@@ -2,9 +2,9 @@
 title: Onboarding-Übersicht
 description: Onboarding-Fluss der Live-Suche, Systemanforderungen, Grenzen und Einschränkungen
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: f2934746c327528d5d52f2ae356afe303ff9b81b
+source-git-commit: 66ffbf2576615bb1f6015a13c65af86e8d7ea700
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '343'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,11 @@ Zu diesem Zeitpunkt wird die [!DNL Live Search] Die Such-/Kategorie-API weist di
 * Indexiert nur Produkte aus der Adobe Commerce-Datenbank
 * Indexiert keine CMS-Seiten
 
-### Abfragebeschränkungen
+### Synonyme
+
+* [!DNL Live Search] kann bis zu 200 Synonyme pro `Data Space ID`.
+
+### Abfrage
 
 * [!DNL Live Search] hat keinen Zugriff auf die vollständige Taxonomie des Kategoriebaums, wodurch einige Navigationsszenarien mit Ebenen über die Reichweite hinausgehen.
 * [!DNL Live Search] verwendet einen eindeutigen GraphQL-Endpunkt für Abfragen, um Funktionen wie intelligente Facettierung und Suche nach dem Typ zu unterstützen. Obwohl ähnlich der [Magento GraphQL-API](https://devdocs.magento.com/guides/v2.4/graphql), gibt es einige Unterschiede und einige Felder sind derzeit möglicherweise nicht vollständig kompatibel.
