@@ -4,9 +4,9 @@ description: Nach der Installation können Sie [!DNL Payment Services] im Dashbo
 role: Admin, User
 level: Intermediate
 exl-id: 015c5c8c-8184-45c1-932a-f4365ddf5a30
-source-git-commit: bae0eeac349fe3c266d868f8d94c5e033390a661
+source-git-commit: 44e97a0299e980656aef557eb5c2bac9b6443452
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '656'
 ht-degree: 0%
 
 ---
@@ -51,6 +51,8 @@ Sie können [!DNL Payment Services] für Ihre Website und aktivieren Sie entwede
 
 1. Um Ihre Änderungen zu speichern, klicken Sie auf **[!UICONTROL Save]** oben rechts auf der Seite.
 
+   Wenn Sie versuchen, von dieser Ansicht weg zu navigieren, ohne Ihre Änderungen zu speichern, wird ein Modal angezeigt, in dem Sie aufgefordert werden, Änderungen zu verwerfen, die Bearbeitung fortzusetzen oder Änderungen zu speichern.
+
 1. Navigieren Sie zu **[!UICONTROL System]** > **[!UICONTROL Cache Management]** und klicken Sie auf **[!UICONTROL Flush Cache]** , um alle ungültigen Caches zu aktualisieren.
 
 ### Kreditkartenfelder
@@ -63,6 +65,9 @@ Siehe [Zahlungsoptionen](payments-options.md#paypal-smart-buttons) für weitere 
 1. nach [die Zahlungsaktion festlegen](production.md#set-payment-services-as-payment-method), set **[!UICONTROL Payment action]** nach `Authorize` oder `Authorize and Capture`.
 1. Für **[!UICONTROL Debug Mode]**, um den Selektor zu aktivieren, um den Debug-Modus zu aktivieren.
 1. Um Ihre Änderungen zu speichern, klicken Sie auf **[!UICONTROL Save]** oben rechts auf der Seite.
+
+   Wenn Sie versuchen, von dieser Ansicht weg zu navigieren, ohne Ihre Änderungen zu speichern, wird ein Modal angezeigt, in dem Sie aufgefordert werden, Änderungen zu verwerfen, die Bearbeitung fortzusetzen oder Änderungen zu speichern.
+
 1. Navigieren Sie zu **[!UICONTROL System]** > **[!UICONTROL Cache Management]** und klicken Sie auf **[!UICONTROL Flush Cache]** , um alle ungültigen Caches zu aktualisieren.
 
 ### PayPal-Schaltflächen
@@ -83,6 +88,9 @@ Sie können die Zahlungsoptionen für PayPal-Smart-Schaltflächen im Dashboard a
 1. So ändern Sie die [Spätere Nachrichten bezahlen](payments-options.md#pay-later-button) (falls gewünscht) können Sie die **[!UICONTROL Display Pay Later message]** -Option.
 1. Um den Debug-Modus zu aktivieren, klicken Sie auf **[!UICONTROL Debug Mode]**,
 1. Um Ihre Änderungen zu speichern, klicken Sie auf **[!UICONTROL Save]** oben rechts auf der Seite.
+
+   Wenn Sie versuchen, von dieser Ansicht weg zu navigieren, ohne Ihre Änderungen zu speichern, wird ein Modal angezeigt, in dem Sie aufgefordert werden, Änderungen zu verwerfen, die Bearbeitung fortzusetzen oder Änderungen zu speichern.
+
 1. Navigieren Sie zu **[!UICONTROL System]** > **[!UICONTROL Cache Management]** und klicken Sie auf **[!UICONTROL Flush Cache]** , um alle ungültigen Caches zu aktualisieren.
 
 ### Schaltflächenstil
@@ -96,6 +104,9 @@ Sie können auch die _[!UICONTROL Button style]_Optionen der PayPal-Smart-Schalt
 1. Um die Auswahl der Schaltflächenhöhe zu aktivieren, klicken Sie auf **[!UICONTROL Responsive button height]**.
 1. So ändern Sie die **[!UICONTROL Label]** wählen Sie die gewünschte Beschriftungsoption aus.
 1. Um Ihre Änderungen zu speichern, klicken Sie auf **[!UICONTROL Save]** oben rechts auf der Seite.
+
+   Wenn Sie versuchen, von dieser Ansicht weg zu navigieren, ohne Ihre Änderungen zu speichern, wird ein Modal angezeigt, in dem Sie aufgefordert werden, Änderungen zu verwerfen, die Bearbeitung fortzusetzen oder Änderungen zu speichern.
+
 1. Navigieren Sie zu **[!UICONTROL System]** > **[!UICONTROL Cache Management]** und klicken Sie auf **[!UICONTROL Flush Cache]** , um alle ungültigen Caches zu aktualisieren.
 
 Sie können [!DNL PayPal Smart Buttons] Formatierung im Admin oder Dashboard. Siehe [Handbuch zum Schaltflächenstil von PayPal](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) für weitere Informationen.
