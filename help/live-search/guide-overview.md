@@ -2,9 +2,9 @@
 title: Live Search-Anleitung - Übersicht
 description: Die Live-Suche aus Adobe Commerce bietet ein blitzschnelles, superrelevantes und intuitives Sucherlebnis.
 exl-id: 11e2ed97-ce80-4826-b914-71688dd29e4b
-source-git-commit: 9d1637efdfde60f7b94c4fa60b369225b799bc83
+source-git-commit: 5f83b72c18490a6829ef30064f75c5d963bd93be
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '242'
 ht-degree: 0%
 
 ---
@@ -32,3 +32,9 @@ Verwenden Sie die folgenden Ressourcen, wenn Sie Informationen benötigen oder F
 
 [Hilfezentrum](https://support.magento.com/hc/en-us) - Weitere Informationen finden Sie in den Artikeln zur Live-Suche.
 [Support-Tickets](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket) - Senden Sie ein Ticket, um zusätzliche Hilfe zu erhalten.
+
+Führen Sie vor dem Senden eines Support-Tickets über die Befehlszeile Folgendes aus, um die derzeit installierte Live Search-Version zu überprüfen:
+
+```bash
+composer show magento/module-live-search | grep version
+```
