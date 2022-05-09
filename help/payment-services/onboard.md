@@ -4,16 +4,16 @@ description: Verbinden Sie Ihre Instanz mit [!DNL Payment Services] durch Ausfü
 role: User
 level: Intermediate
 exl-id: 1ee8c660-0941-4378-a1d7-ae45de3de211
-source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
 
 # Onboard [!DNL Payment Services]
 
-Erste Schritte mit [!DNL Payment Services] Für Adobe Commerce und Magento Open Source müssen Sie einige Onboarding-Schritte ausführen, um Ihre Instanz mit der Zahlungsfunktion zu verbinden.
+Erste Schritte mit [!DNL Payment Services] für [!DNL Adobe Commerce] und [!DNL Magento Open Source]müssen Sie einige Onboarding-Schritte ausführen, um Ihre Instanz mit der Zahlungsfunktion zu verbinden.
 
 ## Onboarding-Fluss
 
@@ -23,7 +23,7 @@ Dieses Diagramm zeigt den allgemeinen Prozess für das Onboarding. [!DNL Payment
 
 Nachdem Sie das Onboarding für Sandbox- oder Live-Zahlungen abgeschlossen haben, können Sie über [!DNL Payment Services] im Admin.
 
-Wenn sowohl Sandbox- als auch Live-Zahlungen integriert und aktiviert sind, können Sie einfach zwischen diesen Modi über die [!DNL Payment Services] zu Hause.
+Wenn sowohl Sandbox- als auch Live-Zahlungen integriert und aktiviert sind, können Sie einfach zwischen diesen Modi über die [!DNL Payment Services] Home.
 
 ## Voraussetzungen
 

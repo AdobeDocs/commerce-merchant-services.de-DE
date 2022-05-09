@@ -2,16 +2,16 @@
 title: Testen und Validieren
 description: Durch Tests und Validierung wird sichergestellt, dass [!DNL Payment Services] Funktionen funktionieren erwartungsgemäß und bieten beste Zahlungsoptionen für Ihre Kunden
 exl-id: 95b4615e-73b0-41e8-83e2-e65a0b22f10f
-source-git-commit: bcb817775fe9cd9ac7096931dd40d5ec0c4a5cfc
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '436'
 ht-degree: 0%
 
 ---
 
 # Testen und Validieren
 
-Bevor Sie [!DNL Payment Services] Für Adobe Commerce und die Magento Open Source zu Ihren Kunden ist es empfehlenswert, dies in Ihrer Sandbox-Umgebung zu testen. _und_ in der Produktion. Durch Tests und Validierung wird sichergestellt, dass [!DNL Payment Services] Funktionen funktionieren erwartungsgemäß und bieten die besten Zahlungsoptionen für Ihr Geschäft und Ihre Kunden.
+Bevor Sie [!DNL Payment Services] für [!DNL Adobe Commerce] und [!DNL Magento Open Source] Für Ihre Kunden ist es empfehlenswert, in Ihrer Sandbox-Umgebung zu testen. _und_ in der Produktion. Durch Tests und Validierung wird sichergestellt, dass [!DNL Payment Services] Funktionen funktionieren erwartungsgemäß und bieten die besten Zahlungsoptionen für Ihr Geschäft und Ihre Kunden.
 
 ## Test in Sandbox-Umgebung
 

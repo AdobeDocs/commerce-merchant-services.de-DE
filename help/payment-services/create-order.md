@@ -2,18 +2,18 @@
 title: Erstellen einer Bestellung mit [!DNL Payment Services]
 description: Der Administrator bietet die Möglichkeit, eine Bestellung mithilfe von [!DNL Payment Services] direkt vom Administrator durch einen Händler für Kunden, die Hilfe benötigen.
 exl-id: 1542a33f-9c01-4c36-bbce-bfa3107fbeb8
-source-git-commit: bcb817775fe9cd9ac7096931dd40d5ec0c4a5cfc
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '170'
+source-wordcount: '162'
 ht-degree: 1%
 
 ---
 
 # Erstellen einer Bestellung mit [!DNL Payment Services]
 
-Sie können [!DNL Payment Services] Sie können Ihre Anforderungen mithilfe der Konfigurationsoptionen in der Admin-Konsole erfüllen.
+Sie können Zahlungsdienste an Ihre Anforderungen anpassen, indem Sie [[!DNL Payment Services] settings](settings.md).
 
-[!DNL Payment Services] für Adobe Commerce und Magento Open Source können Sie direkt vom Administrator eine Bestellung eines Händlers für dessen Kunden ausführen, die Hilfe benötigen. Die **[!UICONTROL Create New Order]** Das Formular enthält alle Informationen, die zum Abschließen des normalen Checkout-Prozesses erforderlich sind, einschließlich gehosteter Felder mit Kreditkarteninformationen. Siehe [Bestellung erstellen](https://docs.magento.com/user-guide/customers/customer-account-create-order.html){target=&quot;_blank&quot;} für detaillierte Informationen zu den erforderlichen Schritten.
+[!DNL Payment Services] für [!DNL Adobe Commerce] und [!DNL Magento Open Source] ermöglicht es Ihnen, eine Bestellung direkt vom Administrator durch einen Händler für Kunden zu tätigen, die Hilfe benötigen. Die **[!UICONTROL Create New Order]** Das Formular enthält alle Informationen, die zum Abschließen des normalen Checkout-Prozesses erforderlich sind, einschließlich gehosteter Felder mit Kreditkarteninformationen. Siehe [Bestellung erstellen](https://docs.magento.com/user-guide/customers/customer-account-create-order.html){target=&quot;_blank&quot;} für detaillierte Informationen zu den erforderlichen Schritten.
 
 ## Gehostete Kreditkartenfelder
 

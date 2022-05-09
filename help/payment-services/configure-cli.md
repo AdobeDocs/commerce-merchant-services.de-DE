@@ -4,26 +4,26 @@ description: Nach der Installation können Sie [!DNL Payment Services] über die
 role: Admin, Developer
 level: Intermediate
 exl-id: 265ab1be-fe52-41f3-85cb-addbc2ddfb17
-source-git-commit: bcb817775fe9cd9ac7096931dd40d5ec0c4a5cfc
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
 
 # Befehlszeilenkonfiguration
 
-Nach der Installation [!DNL Payment Services]können Sie sie einfach über [innerhalb des Administrators](configure-admin.md) oder über die Befehlszeilenschnittstelle (CLI).
+Nach der Installation [!DNL Payment Services]können Sie sie einfach über [innerhalb der Startseite](payments-home.md) oder über die Befehlszeilenschnittstelle (CLI).
 
 ## Datenexport konfigurieren
 
-[!DNL Payment Services] kombiniert Bestelldaten aus Magento Open Source und Adobe Commerce mit aggregierten Zahlungsdaten von Zahlungsdienstleistern, um nützliche Berichte zu erstellen. Die [!DNL Payment Services] -Erweiterung verwendet Indexer, um effizient alle erforderlichen Daten für die Berichte zu erfassen.
+[!DNL Payment Services] kombiniert Bestelldaten aus [!DNL Magento Open Source] und [!DNL Adobe Commerce] mit aggregierten Zahlungsdaten von Zahlungsdienstleistern, um nützliche Berichte zu erstellen. Die [!DNL Payment Services] -Erweiterung verwendet Indexer, um effizient alle erforderlichen Daten für die Berichte zu erfassen.
 
 Informationen zu den in verwendeten Daten [!DNL Payment Services] Reporting, siehe [Bestellstatusbericht](order-payment-status.md#data-used-in-the-report).
 
-### CRON auf Magento Open Source konfigurieren
+### CRON konfigurieren [!DNL Magento Open Source]
 
-Wenn Sie eine `BY SCHEDULE` Indexmodus auf der Magento Open Source, müssen Sie Cron konfigurieren. Siehe [Cron konfigurieren und ausführen](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html).
+Wenn Sie eine `BY SCHEDULE` Indexmodus auf [!DNL Magento Open Source], müssen Sie Cron konfigurieren. Siehe [Cron konfigurieren und ausführen](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html).
 
 ### Indexer festlegen
 

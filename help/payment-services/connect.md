@@ -2,9 +2,9 @@
 title: Instanz verbinden
 description: Verbinden Sie Ihre Commerce-Instanz mit einem API-Schlüssel und einem privaten Schlüssel und geben Sie den Datenraum in der Konfiguration an.
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
-source-git-commit: fd818dadbaa2a58efd7313ce888c7dda27d25f14
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '921'
+source-wordcount: '911'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Informationen zum Generieren eines API-Schlüssels für Sandbox- oder Produktion
 
 ### Commerce-API-Schlüssel und privater Schlüssel
 
-Einige Adobe Commerce- und Magento Open Source-Funktionen werden als SaaS (Software as a Service), auch Commerce Services genannt, bereitgestellt. Um diese Dienste zu verwenden, müssen Sie Ihre Commerce-Instanz mithilfe eines API-Schlüssels und eines privaten Schlüssels mit diesen Diensten verbinden und den gewünschten Datenraum im [Konfiguration](https://docs.magento.com/user-guide/configuration/services/saas.html){target=&quot;_blank&quot;}.
+Einige [!DNL Adobe Commerce] und [!DNL Magento Open Source] -Funktionen werden als SaaS (Software as a Service), auch Commerce Services genannt, bereitgestellt. Um diese Dienste zu verwenden, müssen Sie Ihre Commerce-Instanz mithilfe eines API-Schlüssels und eines privaten Schlüssels mit diesen Diensten verbinden und den gewünschten Datenraum im [Konfiguration](https://docs.magento.com/user-guide/configuration/services/saas.html){target=&quot;_blank&quot;}.
 
 Wenn Sie ein Commerce-Konto erstellen, das durch eine MageID identifiziert wird, können Sie einen Commerce-API-Schlüssel und einen privaten Schlüssel generieren. So verwenden Sie Commerce-Dienste wie [!DNL Payment Services], [!DNL Product Recommendations]oder [!DNL Live Search]muss der Lizenzinhaber diese Schlüssel generieren, um die Berechtigungsprüfung zu bestehen. Diese Schlüssel können dann an den Systemintegrator oder das Entwicklungsteam übergeben werden, der die Projekte und Umgebungen im Auftrag des Lizenzinhabers verwaltet. Wenn Sie Lösungsintegrator sind, sind Sie auch berechtigt, diese Dienste für Ihre eigenen Anforderungen zu nutzen. In diesem Fall sollte der Unterzeichner des Commerce-Partnervertrags die Schlüssel generieren.
 
@@ -67,8 +67,8 @@ Derselbe API-Schlüssel kann für alle Instanzen verwendet werden, aber jede Ins
 
 Wenn Sie ein SaaS-Projekt erstellen, generiert Commerce je nach Ihrer Commerce-Lizenz einen oder mehrere SaaS-Datenräume:
 
-* Adobe Commerce - Ein Produktionsdatenraum; zwei Testdatenbereiche
-* Magento Open Source - Ein Produktionsdatenraum; keine Testdatenräume
+* [!DNL Adobe Commerce] - einen Produktionsdatenraum; zwei Testdatenbereiche
+* [!DNL Magento Open Source] - einen Produktionsdatenraum; keine Testdatenräume
 
 ### Konfigurieren des SaaS-Projekts
 

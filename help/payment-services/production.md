@@ -2,9 +2,9 @@
 title: Aktivieren [!DNL Payment Services] für die Produktion
 description: Schließen Sie den Onboarding-Prozess ab, indem Sie [!DNL Payment Services] für die Produktion.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
-source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '685'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Nach [Commerce-Dienste konfigurieren](connect.md#configure-commerce-services) un
 
    Diese Option wird angezeigt, wenn Sie noch keine Konfiguration vorgenommen haben [!DNL Payment Services] als Zahlungsmethode für eine oder mehrere Ihrer Magento-Websites.
 
-   Sie werden zum Konfigurationsbereich im Admin mit erweiterten Optionen (**[!UICONTROL Sales]** > **[!UICONTROL Payment Methods]** > _[!UICONTROL Recommended Solutions]_>_[!UICONTROL Payment Services]_), wo Sie die [!DNL Payment Services] Optionen als [Zahlungsmethode](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target=&quot;_blank&quot;}.
+   Sie werden zum Einstellungsbereich in der Startansicht geleitet, wobei die entsprechenden Optionen erweitert sind (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), wo Sie die [!DNL Payment Services] Optionen als [Zahlungsmethode](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target=&quot;_blank&quot;}.
 
 1. In _[!UICONTROL General Configuration]_, set **[!UICONTROL Enable]**nach `Yes`.
 1. Satz **[!UICONTROL Payment Action]** für beide _[!UICONTROL Credit Card Fields]_und_[!UICONTROL PayPal Smart Buttons]_, zu einem der folgenden Elemente:
@@ -32,13 +32,13 @@ Nach [Commerce-Dienste konfigurieren](connect.md#configure-commerce-services) un
    | `Authorize` | Genehmigt den Kauf und legt die Mittel fest. Der Betrag wird erst dann zurückgezogen, wenn er vom Händler &quot;erfasst&quot;wurde. |
    | `Authorize and Capture` | Genehmigt den Kauf und der Händler &quot;erfasst&quot; die Mittel. |
 
-1. Klicken **[!UICONTROL Save Config]**.
-1. Klicken **[!UICONTROL Go to Payment Services]** zurück an die [!DNL Payment Services] zu Hause.
+1. Klicken **[!UICONTROL Save]**.
+1. Klicken **[!UICONTROL Go to Payment Services]** zurück an die [!DNL Payment Services] Home.
 1. [Cache löschen](https://docs.magento.com/user-guide/system/cache-management.html){target=&quot;_blank&quot;}.
 
    Das Löschen sollte nach jeder Konfigurationsänderung erfolgen.
 
-Siehe [Zahlungsdienste konfigurieren](configure-admin.md) Weitere Informationen zur Konfiguration von Kreditkartenfeldern und PayPal-Smart-Schaltflächen.
+Siehe [Zahlungsdienste konfigurieren](settings.md) Weitere Informationen zur Konfiguration von Kreditkartenfeldern und PayPal-Smart-Schaltflächen.
 
 ## Vollständige Onboarding des Händlers
 
@@ -64,14 +64,14 @@ Siehe [Zahlungsdienste konfigurieren](configure-admin.md) Weitere Informationen 
 
    >[!IMPORTANT]
    >
-   >Wenn Sie die Zustimmung zum [!DNL Payment Services] für Adobe Commerce und Magento Open Source zur Verarbeitung Ihrer Zahlungen (in Ihren PayPal-Kontoeinstellungen) können Bestellungen in Ihrem Geschäft nicht von [!DNL Payment Services].
+   >Wenn Sie die Zustimmung zum [!DNL Payment Services] für [!DNL Adobe Commerce] und [!DNL Magento Open Source] für die Verarbeitung Ihrer Zahlungen (in den Einstellungen Ihres PayPal-Kontos) können Bestellungen in Ihrem Geschäft nicht von [!DNL Payment Services].
 
 ## Zahlungsanspruch von Adobe anfordern
 
 Um das Live-Onboarding zu aktivieren, müssen Sie einen Zahlungsanspruch von Adobe anfordern:
 
 1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-1. Klicken **[!UICONTROL Get Live Payments]** in [!DNL Payment Services] Dashboard.
+1. Klicken **[!UICONTROL Get Live Payments]** in [!DNL Payment Services] Home.
 
    ![Anforderungsberechtigungen](assets/request-entitlements.png)
 
@@ -88,10 +88,9 @@ Alternativ können Sie Zahlungsansprüche von Adobe anfordern unter [business.ad
 
 Um [!DNL Payment Services] _Merchant-ID_:
 
-1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
-1. Erweitern Sie im linken Bereich **[!UICONTROL Sales]** und wählen Sie **[!UICONTROL Payment Methods]**.
-1. Erweitern Sie die _[!UICONTROL Recommended Solutions]_Abschnitt.
-1. Im _[!UICONTROL Payment Services]_-Abschnitt, erweitern Sie die_[!UICONTROL General Configuration]_ Abschnitt.
+
+1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+1. Klicken Sie in der Startansicht auf **[!UICONTROL Settings]**. Siehe [Startseite](payments-home.md) für weitere Informationen.
 1. Wählen Sie die erforderlichen _Merchant-ID_ und senden Sie es an Ihren Vertriebsmitarbeiter, der die richtige Preisebene konfiguriert.
 
 ## Live-Zahlungen aktivieren
@@ -100,21 +99,19 @@ A _Produktions-Merchant-ID_ automatisch generiert und in der [Konfiguration](con
 
 So aktivieren Sie Live-Zahlungen:
 
-1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
-1. Erweitern Sie im linken Bereich **[!UICONTROL Sales]** und wählen Sie **[!UICONTROL Payment Methods]**.
-1. Erweitern Sie die _[!UICONTROL Recommended Solutions]_Abschnitt.
-1. Im _[!UICONTROL Payment Services]_-Abschnitt, erweitern Sie die_[!UICONTROL General Configuration]_ Abschnitt.
-1. Satz **[!UICONTROL Method]** nach `Production`.
-1. Klicken **[!UICONTROL Save Config]**.
+1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+1. Klicken Sie auf der Startseite auf **[!UICONTROL Settings]** oben rechts auf der Seite. Siehe [Startseite](payments-home.md) für weitere Informationen.
+1. Im _[!UICONTROL General Configuration]_Abschnittsset **[!UICONTROL Payment mode]**nach `Production`.
+1. Klicken **[!UICONTROL Save]**.
 1. [Cache löschen](https://docs.magento.com/user-guide/system/cache-management.html){target=&quot;_blank&quot;}.
 
    >[!IMPORTANT]
    >
    >Wenn Sie Ihren Cache nicht löschen, können Kunden beim Checkout keine PayPal-Zahlungsoptionen sehen.
 
-Wenn Sie zurück zu [!DNL Payment Services] -Startseite angezeigt, wird die Sandbox-Zahlungsmodusmeldung nicht mehr angezeigt, da Sie jetzt Live-Zahlungen verarbeiten.
+Wenn Sie zurück zu [!DNL Payment Services] Home: Die Sandbox-Zahlungsmodusmeldung wird nicht mehr angezeigt, da Sie jetzt Live-Zahlungen verarbeiten.
 
-Siehe [In Admin konfigurieren](configure-admin.md) für weitere Konfigurationsoptionen.
+Siehe [In Admin konfigurieren](configure-admin.md) für ältere Konfigurationsoptionen.
 
 >[!IMPORTANT]
 >

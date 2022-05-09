@@ -1,42 +1,42 @@
 ---
 title: '"[!DNL Payment Services] Guide overview"'
-description: Umfassende Informationen zu [!DNL Payment Services] für Adobe Commerce- und Magento Open Source-Administratoren, einschließlich Installation und Onboarding
+description: Umfassende Informationen zu [!DNL Payment Services] für [!DNL Adobe Commerce] und [!DNL Magento Open Source] Administratoren, einschließlich Installation und Onboarding
 seo-title: Adobe Commerce Payments Services Guide
-seo-description: Describes how to use [!DNL Payment Services] with Adobe Commerce or Magento Open Source.
+seo-description: Describes how to use [!DNL Payment Services] with Adobe Commerce or [!DNL Magento Open Source].
 exl-id: 30b23f26-9aac-4a24-a607-2431455fc935
-source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '198'
 ht-degree: 0%
 
 ---
 
 # [!DNL Payment Services] Guide - Übersicht
 
-Dieses Handbuch richtet sich an Administratoren von Adobe Commerce und Magento Open Source. Sie enthält detaillierte Informationen zur Installation und zum Onboarding von [!DNL Payment Services]sowie Konfiguration und Verwaltung der Dienste. Es wird von einem grundlegenden Verständnis der Commerce-Konfiguration und -Funktionalität ausgegangen.
+Dieses Handbuch richtet sich an Administratoren von [!DNL Adobe Commerce] und [!DNL Magento Open Source]. Sie enthält detaillierte Informationen zur Installation und zum Onboarding von [!DNL Payment Services]sowie Konfiguration und Verwaltung der Dienste. Es wird von einem grundlegenden Verständnis der Commerce-Konfiguration und -Funktionalität ausgegangen.
 
 [!DNL Payment Services] verfügt über zwei Bereiche für Administratoren:
 
 * Der Administrator: Verwenden Sie diesen Bereich, um auf die Konfigurationsoberfläche und die Berichterstellung zuzugreifen.
-* Die Befehlszeilenschnittstelle: Verwenden Sie dieses Tool, um Installations- und Backend-Konfigurationsaufgaben auszuführen.
+* Befehlszeilenschnittstelle (oder CLI): Verwenden Sie dieses Tool, um Installations- und Backend-Konfigurationsaufgaben auszuführen.
 
 Dieses Handbuch behandelt:
 
 * Alle [!DNL Payment Services]-spezifische Aufgaben, die in Admin ausgeführt werden.
 * Alle [!DNL Payment Services]-spezifische Aufgaben, die über die Befehlszeile &quot;Commerce&quot;ausgeführt werden
 
-Die Kernfunktionen von Adobe Commerce und Magento Open Source werden in diesem Handbuch nicht behandelt.
+Die Kernfunktionen von [!DNL Adobe Commerce] und [!DNL Magento Open Source].
 
 ## Zusätzliche Dokumentation
 
 | Handbuch | Beschreibung |
 |------ | ----------- |
-| [Adobe Commerce 2.4-Benutzerhandbuch](https://docs.magento.com/user-guide/) | Merchandising-fokussierte Dokumentation für Adobe Commerce und Magento Open Source |
-| [Entwicklerhandbuch für Adobe Commerce 2.4](https://devdocs.magento.com/) | Entwickerorientierte Dokumentation zum Erstellen und Anpassen von Adobe Commerce oder Magento Open Source |
+| [[!DNL Adobe Commerce] 2.4-Benutzerhandbuch](https://docs.magento.com/user-guide/) | Merchandising-fokussierte Dokumentation für beide [!DNL Adobe Commerce] und [!DNL Magento Open Source] |
+| [[!DNL Adobe Commerce] 2.4 Entwicklerhandbuch](https://devdocs.magento.com/) | Entwickerorientierte Dokumentation zum Erstellen und Anpassen [!DNL Adobe Commerce] oder [!DNL Magento Open Source] |
 
 ## Support
 
-Wenn Sie Informationen benötigen oder Fragen haben, die nicht in diesem Handbuch behandelt werden, verwenden Sie die folgenden Ressourcen, die in Ihrem Dashboard verfügbar sind:
+Wenn Sie Informationen benötigen oder Fragen haben, die nicht in diesem Handbuch behandelt werden, verwenden Sie die folgenden Ressourcen, die auf Ihrer Startseite verfügbar sind:
 
 ![Hilfe-Ressourcen](assets/help-resources.png)
 

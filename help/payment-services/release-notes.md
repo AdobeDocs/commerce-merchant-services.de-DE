@@ -2,9 +2,9 @@
 title: '"[!DNL Payment Services] Versionshinweise"'
 description: Informationen zu allen [!DNL Payment Services] veröffentlicht.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '529'
 ht-degree: 1%
 
 ---
@@ -19,9 +19,9 @@ Diese Versionshinweise beschreiben die erste Version von [!DNL Payment Services]
 
 ## v1.1.0
 
-![Neu](../assets/new.svg)<!-- Issue PAY-2127 --> [[!DNL Payment Services]](https://marketplace.magento.com/magento-payment-services.html) ist jetzt mit den Adobe Commerce- und Magento Open Source-Versionen 2.4.0 bis 2.4.4 kompatibel.
+![Neu](../assets/new.svg)<!-- Issue PAY-2127 --> [[!DNL Payment Services]](https://marketplace.magento.com/magento-payment-services.html) ist jetzt kompatibel mit [!DNL Adobe Commerce] und [!DNL Magento Open Source] Versionen 2.4.0 bis 2.4.4.
 
-![Neu](../assets/new.svg)<!-- Issue PAY-2682 --> Die [!DNL Payment Services] Erweiterung für Adobe Commerce und Magento Open Source ist für kanadische Händler verfügbar. Merchandising kann die Zahlungskonfiguration in einer der beiden [französisch](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html?lang=fr) oder [englisch](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html?lang=en).
+![Neu](../assets/new.svg)<!-- Issue PAY-2682 --> Die [!DNL Payment Services] Erweiterung für [!DNL Adobe Commerce] und [!DNL Magento Open Source] ist für kanadische Händler verfügbar. Merchandising kann die Zahlungskonfiguration in einer der beiden [französisch](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html?lang=fr) oder [englisch](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html?lang=en).
 
 ![Neu](../assets/new.svg)<!-- Issue PAY-2681 --> [!DNL Payment Services] unterstützt [Kanadische Dollar (CAD)](overview.md#accepted-credit-cards-and-currencies) mit Kreditkarte und Paypal. Käufer können ein Einkaufserlebnis in ihrer bevorzugten Sprache haben, je nach Gebietsschema des Geschäfts, in dem sie einkaufen.
 
@@ -53,13 +53,13 @@ Diese Versionshinweise beschreiben die erste Version von [!DNL Payment Services]
 
 ## v1.0.0
 
-![Neu](../assets/new.svg)<!-- Issue PAY-2127 --> Allgemeines Release zur Verfügbarkeit. [Zahlungsdienste](https://marketplace.magento.com/magento-payment-services.html) ist jetzt mit den Adobe Commerce- und Magento Open Source-Versionen 2.4.0 bis 2.4.3-p1 kompatibel.
+![Neu](../assets/new.svg)<!-- Issue PAY-2127 --> Allgemeines Release zur Verfügbarkeit. [Zahlungsdienste](https://marketplace.magento.com/magento-payment-services.html) ist jetzt kompatibel mit [!DNL Adobe Commerce] und [!DNL Magento Open Source] Versionen 2.4.0 bis 2.4.3-p1.
 
-![Neu](../assets/new.svg)<!-- Issue PAY-124 --> Die [!DNL Payment Services] -Erweiterung für Adobe Commerce und Magento Open Source kann entweder für [Adobe Commerce auf Cloud-Infrastruktur](install.md#magento-commerce-cloud) oder [Vor Ort](install.md#on-premises) Instanzen. Diese Methoden erfordern die Verwendung einer Befehlszeilenschnittstelle.
+![Neu](../assets/new.svg)<!-- Issue PAY-124 --> Die [!DNL Payment Services] Erweiterung für [!DNL Adobe Commerce] und [!DNL Magento Open Source] kann entweder für [[!DNL Adobe Commerce] zur Cloud-Infrastruktur](install.md#magento-commerce-cloud) oder [Vor Ort](install.md#on-premises) Instanzen. Diese Methoden erfordern die Verwendung einer Befehlszeilenschnittstelle.
 
 ![Neu](../assets/new.svg)<!-- Issue PAY-1986 --> [!DNL Payment Services] unterstützt [Sandbox-Konto](onboard.md#enable-sandbox-testing) die es Händlern ermöglicht, die Erweiterung im Testmodus zu bewerten.
 
-![Neu](../assets/new.svg)<!-- Issue PAY-666 --> Händler können [Zahlungsdienste konfigurieren](configure-admin.md) Erweiterung mit grundlegenden Zahlungsverhaltensweisen (wie z. B. der gemeinsamen Auth-Erfassung und dem Wechsel zwischen Sandbox- oder Produktionsumgebungen).
+![Neu](../assets/new.svg)<!-- Issue PAY-666 --> Händler können [Zahlungsdienste konfigurieren](settings.md) Erweiterung mit grundlegenden Zahlungsverhaltensweisen (wie z. B. der gemeinsamen Auth-Erfassung und dem Wechsel zwischen Sandbox- oder Produktionsumgebungen).
 
 ![Neu](../assets/new.svg)<!-- Issue PAY-780 --> Käufer können mit [!DNL Payment Services] oder Sie können die Bestellung über das Telefon und [Erstellen einer ganzen Bestellung](create-order.md) im Admin für sie.
 
@@ -67,7 +67,7 @@ Diese Versionshinweise beschreiben die erste Version von [!DNL Payment Services]
 
 ![Neu](../assets/new.svg)<!-- Issue PAY-311 --> [!DNL Payment Services] unterstützt mehrstufige Preise (basierend auf TPV), die an jeden Händler angepasst sind.
 
-![Neu](../assets/new.svg)<!-- Issue PAY-1443 --> Es ist möglich, das Erscheinungsbild der PayPal-Schaltflächen und der CC-Felder für die [Zahlungsdienste](https://devdocs.magento.com/payment-services/customize-buttons-messaging.html) -Erweiterung.
+![Neu](../assets/new.svg)<!-- Issue PAY-1443 --> Es ist möglich, das Erscheinungsbild der PayPal-Schaltflächen und der CC-Felder für die [Zahlungsdienste](payments-options.md) -Erweiterung.
 
 ![Bekanntes Problem](../assets/bug.svg)<!-- Issue PAY-2473 --> Verwenden [falsche Composer-Schlüssel](https://support.magento.com/hc/en-us/articles/4406603542541) während der Installation der Erweiterung verhindert, dass der Benutzer [authentifizieren](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) korrekt `MAGEID`.
 

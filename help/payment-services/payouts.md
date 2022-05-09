@@ -4,22 +4,22 @@ description: Verwenden Sie den Bericht "Auszahlungen", um vollständige Transpar
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: aff1a43fedab473b84d02068a7d3fbd33b4fe093
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '857'
 ht-degree: 0%
 
 ---
 
 # Zahlungsbericht
 
-[!DNL Payment Services] für Adobe Commerce und Magento Open Source bietet Ihnen umfassende Berichte, sodass Sie einen klaren Überblick über die Bestellungen und Zahlungen Ihres Geschäfts erhalten.
+[!DNL Payment Services] für [!DNL Adobe Commerce] und [!DNL Magento Open Source] bietet Ihnen eine umfassende Berichterstellung, damit Sie einen klaren Überblick über die Bestellungen und Zahlungen Ihres Geschäfts erhalten.
 
 ![Übersicht über die Finanzberichte](assets/reports-view.png)
 
 Der Bericht zu den Auszahlungen zeigt umfassende Auszahlungsinformationen auf einen Blick, sodass Sie vollständige Transparenz in Bezug auf den Zahlungsbetrag, das verarbeitete Volumen und detaillierte Berichte über die Transaktionsstufe zur finanziellen Abstimmung erhalten.
 
-Sie müssen nicht mehrere Dashboards oder Ansichten öffnen, um Bestellungen und Zahlungen zu vergleichen oder Konten abzustimmen. [!DNL Payment Services] für Adobe Commerce und Magento Open Source können Sie all diese Aktionen von einem Ort aus - dem Payouts-Bericht - ausführen, damit Sie Ihre Payouts effizient anzeigen und verwalten können.
+Sie müssen nicht mehrere Ansichten öffnen, um Bestellungen und Zahlungen zu vergleichen oder Konten abzustimmen. [!DNL Payment Services] für [!DNL Adobe Commerce] und [!DNL Magento Open Source] ermöglicht es Ihnen, all diese Aktionen von einem Ort aus - dem Payouts-Bericht - durchzuführen, damit Sie Ihre Payouts effizient anzeigen und verwalten können.
 
 Weitere Informationen finden Sie unter verknüpfte Commerce-Bestell- und Transaktions-IDs, Transaktionsbeträge, Zahlungsmethoden pro Transaktion und mehr im Payouts-Bericht in der Admin-Rubrik.
 
@@ -45,7 +45,7 @@ Wenn _[!UICONTROL Live]_die ausgewählte Datenquelle ist, können Sie Berichtinf
 
 Datenquellenauswahlen funktionieren wie folgt:
 
-* Wenn keine Stores im Livemodus vorhanden sind, wird bei der Auswahl der Datenquelle standardmäßig [!UICONTROL Sandbox]_.
+* Wenn keine Stores im Livemodus vorhanden sind, wird bei der Auswahl der Datenquelle standardmäßig _[!UICONTROL Sandbox]_.
 * Wenn Sie im Livemodus über Speicher (einen oder mehrere) verfügen, wird bei der Auswahl der Datenquelle standardmäßig _[!UICONTROL Live]_.
 * Beim Exportieren von Berichten wird immer die Auswahl der Datenquelle berücksichtigt.
 
