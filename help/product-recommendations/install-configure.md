@@ -2,16 +2,16 @@
 title: Installieren und Konfigurieren
 description: Erfahren Sie, wie Sie installieren, aktualisieren und deinstallieren [!DNL Product Recommendations].
 exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
-source-git-commit: e7c3d1ab49ee9469e3312321f6d96446840d0778
+source-git-commit: b06d5000263b7ee09608a4a8510d76e9f4bdb809
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '403'
 ht-degree: 0%
 
 ---
 
 # Installieren und Konfigurieren
 
-Bereitstellen [!DNL Product Recommendations] für Ihre Storefront und Ihren Administrator müssen Sie das Modul installieren und den Commerce Services Connector konfigurieren. Sobald Updates veröffentlicht sind, können Sie Ihre Installation einfach mit der neuesten Version aktualisieren.
+Bereitstellen [!DNL Product Recommendations] müssen Sie das -Modul installieren und die [Commerce Services Connector](../landing/saas.md). Sobald Updates veröffentlicht sind, können Sie Ihre Installation einfach mit der neuesten Version aktualisieren.
 
 - [Installieren](#install)
 - [Konfigurieren](#configure)
@@ -48,11 +48,11 @@ composer require magento/module-visual-product-recommendations
 
 ## Konfigurieren [!DNL Product Recommendations] {#configure}
 
-Nach der Installation `magento/product-recommendations` -Modul, müssen Sie die [Commerce Services Connector](https://docs.magento.com/user-guide/configuration/services/saas.html) durch Angabe des API-Schlüssels und Auswahl eines SaaS-Datenspeichers.
+Nach der Installation `magento/product-recommendations` -Modul, müssen Sie die [Commerce Services Connector](https://docs.magento.com/user-guide/configuration/services/saas.html) durch Angabe von API-Schlüsseln und Auswahl eines SaaS-Datenspeichers.
 
 Um sicherzustellen, dass der Katalogexport ordnungsgemäß ausgeführt wird, überprüfen Sie, ob die Variable [cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html) und [Indexer](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html) ausgeführt werden und die `Product Feed` Indexer ist auf `Update by Schedule`.
 
-Wenn Sie über den API-Schlüssel erfolgreich eine Verknüpfung zu Commerce Services herstellen und den SaaS-Datenraum angeben, wird die Katalogsynchronisierung initiiert und [verifiziert](verify.md) dass Verhaltensdaten an Ihre Storefront gesendet werden.
+Wenn Sie über API-Schlüssel erfolgreich eine Verknüpfung zu Commerce Services herstellen und den SaaS-Datenraum angeben, beginnt die Katalogsynchronisierung. Sie können dann [verify](verify.md) dass Verhaltensdaten an Ihre Storefront gesendet werden.
 
 ## Aktualisieren Sie Ihre [!DNL Product Recommendations] Installation {#update}
 

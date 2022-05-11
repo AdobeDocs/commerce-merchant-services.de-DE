@@ -2,7 +2,7 @@
 title: Commerce Services Connector
 description: Erfahren Sie, wie Sie Ihre Adobe Commerce- oder Magento Open Source-Instanz mithilfe eines API-Schlüssels und eines privaten Schlüssels in Dienste integrieren können.
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
-source-git-commit: 6d0c7c749fe90c7c204afe47446f3483d8668b53
+source-git-commit: 3035edd14ca6d7b29e7fa6f4c6ed2a66401171c1
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -42,10 +42,6 @@ Der API-Schlüssel und der private Schlüssel werden aus dem [!DNL Commerce] Kon
 1. Unter dem **Magento** Registerkarte, wählen Sie **API-Portal** auf der Seitenleiste.
 
 1. Aus dem _Umgebung_ Menü auswählen **Produktion** oder **Sandbox**.
-
-   >[!NOTE]
-   >
-   > Für [!DNL _Produkt-Recommendations_] und [!DNL _Live Search_] auswählen **Produktion**. Produktionsschlüssel bieten Zugriff auf Produktions- und Nicht-Produktionsdatenbereiche. Sandbox-Schlüssel werden für diese Dienste nicht verwendet.
 
 1. Geben Sie im Feld _API-Schlüssel_ und klicken Sie auf **Neu hinzufügen**.
 
