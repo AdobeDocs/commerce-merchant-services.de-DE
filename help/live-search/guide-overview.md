@@ -1,39 +1,39 @@
 ---
-title: Live Search-Anleitung - Übersicht
-description: Die Live-Suche aus Adobe Commerce bietet ein blitzschnelles, superrelevantes und intuitives Sucherlebnis.
+title: Live Search Guide Overview
+description: Live Search from Adobe Commerce delivers a lightning fast, super-relevant, and intuitive search experience.
 exl-id: 11e2ed97-ce80-4826-b914-71688dd29e4b
-source-git-commit: 5f83b72c18490a6829ef30064f75c5d963bd93be
+source-git-commit: 2676c363182d0b7cb02d15d1093066b1ad4e7b87
 workflow-type: tm+mt
-source-wordcount: '242'
+source-wordcount: '240'
 ht-degree: 0%
 
 ---
 
-# Live Search-Anleitung - Übersicht
+# Live Search Guide Overview
 
-[!DNL Live Search] von Adobe Commerce bietet ein blitzschnelles, superrelevantes und intuitives Sucherlebnis für Adobe Commerce ohne zusätzliche Kosten. [!DNL Live Search] mit Strom [Adobe Sensei](https://www.adobe.com/sensei.html) verwendet künstliche Intelligenz und Algorithmen des maschinellen Lernens, um eine tiefgehende Analyse aggregierter Besucherdaten durchzuführen. Diese Daten führen in Kombination mit Ihrem Adobe Commerce-Katalog zu sehr ansprechenden, relevanten und personalisierten Einkaufserlebnissen. mit Schwerpunkt auf Geschwindigkeit, Relevanz und Benutzerfreundlichkeit, [!DNL Live Search] ist ein Spielveränderer für Käufer und Händler gleichermaßen.
+[!DNL Live Search] [!DNL Live Search][](https://www.adobe.com/sensei.html) This data, when combined with your Adobe Commerce catalog, results in highly engaging, relevant, and personalized shopping experiences. [!DNL Live Search]
 
-Die Live-Suche umfasst drei Bereiche für Administratoren:
+Live Search has three areas for administrators:
 
-* Storefront: Verwenden Sie CSS-Stile, um das Storefront-Popover anzupassen.
-* Admin: Verwenden Sie diesen Bereich, um auf die Konfiguration und Einrichtung zuzugreifen.
-* Befehlszeilenschnittstelle: Verwenden Sie dieses Tool, um Installations- und Backend-Konfigurationsaufgaben auszuführen.
+* [!DNL storefront popover]
+* Admin: Use this area to access the configuration and setup.
+* Command-line interface: Use this tool to execute installation and backend configuration tasks.
 
-## Zusätzliche Dokumentation
+## Additional documentation
 
-| Handbuch | Beschreibung |
+| Guide | Description |
 |--- |--- |
-| Adobe Commerce 2.4-Benutzerhandbuch | Merchandising-fokussierte Dokumentation für Adobe Commerce und Magento Open Source |
-| Entwicklerhandbuch für Adobe Commerce 2.4 | Entwickerorientierte Dokumentation zum Erstellen und Anpassen von Adobe Commerce oder Magento Open Source |
+| Adobe Commerce 2.4 User Guide | Merchant-focused documentation for both Adobe Commerce and Magento Open Source |
+| Adobe Commerce 2.4 Developer Guide | Developer-focused documentation used to build and customize Adobe Commerce or Magento Open Source |
 
 ## Support
 
-Verwenden Sie die folgenden Ressourcen, wenn Sie Informationen benötigen oder Fragen haben, die nicht in diesem Handbuch behandelt werden:
+If you need information or have questions that are not covered in this guide, use the following resources:
 
-[Hilfezentrum](https://support.magento.com/hc/en-us) - Weitere Informationen finden Sie in den Artikeln zur Live-Suche.
-[Support-Tickets](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket) - Senden Sie ein Ticket, um zusätzliche Hilfe zu erhalten.
+[](https://support.magento.com/hc/en-us)
+[](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket)
 
-Führen Sie vor dem Senden eines Support-Tickets über die Befehlszeile Folgendes aus, um die derzeit installierte Live Search-Version zu überprüfen:
+Before submitting a support ticket, run the following from the command line to check the version of Live Search that is currently installed:
 
 ```bash
 composer show magento/module-live-search | grep version
