@@ -1,17 +1,17 @@
 ---
-title: Styling Popover Elements
-description: Technical notes about customizing the Live Search storefront popover.
+title: '"Stile [!DNL Popover] Elemente"'
+description: '"Technische Hinweise zur Anpassung der [!DNL Live Search storefront popover]"'
 exl-id: 033049f2-976e-4299-b026-333ac4b481a3
-source-git-commit: 65126f10574801f7ea8d0a863e9bb512dca13f39
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '210'
+source-wordcount: '205'
 ht-degree: 0%
 
 ---
 
-# [!DNL Popover]
+# Formatierung [!DNL Popover] Elemente
 
-[[!DNL storefront popover]](storefront-popover.md)`name``price` [!DNL popover] [!DNL popover]
+Die [[!DNL storefront popover]](storefront-popover.md) zeigt immer das Produkt an `name` und `price`und die Feldauswahl nicht konfigurierbar ist. Allerdings [!DNL popover] -Elemente können mit CSS-Klassen formatiert werden. Beispielsweise ändern die folgenden Deklarationen die Hintergrundfarbe der [!DNL popover] Container und Fußzeile.
 
 ```css
 .livesearch.popover-container {
@@ -23,20 +23,20 @@ ht-degree: 0%
 }
 ```
 
-## Container visibility
+## Container-Sichtbarkeit
 
-`.livesearch.popover-container``.search-autocomplete`  `.active` `.active`[!DNL popover]
+Die übergeordnete Komponente der `.livesearch.popover-container` is `.search-autocomplete`.  Die `.active` -Klasse gibt die Sichtbarkeit des Containers an. Die `.active` -Klasse wird bedingt hinzugefügt, wenn die [!DNL popover] ist offen.
 
 ```css
 .search-autocomplete.active   /* visible */
 .search-autocomplete          /* not visible */
 ```
 
-[](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/css-topics/css-overview.html)[](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/bk-frontend-dev-guide.html)
+Weitere Informationen zum Formatieren von Storefront-Elementen finden Sie unter [Kaskadierende Stylesheets (CSS)](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/css-topics/css-overview.html) im [Frontend-Entwicklerhandbuch](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/bk-frontend-dev-guide.html).
 
-## Class selectors
+## Klassenselektoren
 
-[!DNL popover]
+Die folgenden Klassenselektoren können verwendet werden, um den Container, die Empfehlung und die Produktelemente im [!DNL popover].
 
 * `.livesearch.popover-container`
 * `.livesearch.view-all-footer`
@@ -48,37 +48,44 @@ ht-degree: 0%
 * `.livesearch.product-name`
 * `.livesearch.product-price`
 
-### Container Class Selectors
+### Container-Klassenauswahl
 
 `.livesearch.popover-container`
 
-![[!DNL Popover]](assets/livesearch-popover-container.png)
+![[!DNL Popover] container](assets/livesearch-popover-container.png)
 
 `.livesearch.view-all-footer`
 
-![](assets/livesearch-view-all-footer.png)
+![Alle Fußzeilen anzeigen](assets/livesearch-view-all-footer.png)
 
-### Suggestion Class Selectors
+### Empfehlungen-Klassenauswahl
 
-`.livesearch.suggestions-container`![](assets/livesearch-suggestions-container.png)
+`.livesearch.suggestions-container`
+![Container mit Empfehlungen](assets/livesearch-suggestions-container.png)
 
-`.livesearch.suggestions-header`![](assets/livesearch-suggestions-header.png)
+`.livesearch.suggestions-header`
+![Kopfzeile für Vorschläge](assets/livesearch-suggestions-header.png)
 
-`.livesearch.suggestion`![](assets/livesearch-suggestion.png)
+`.livesearch.suggestion`
+![Empfehlung](assets/livesearch-suggestion.png)
 
-### Product Class Selectors
+### Produktklassenauswahl
 
-`.livesearch.products-container`![](assets/livesearch-product-container.png)
+`.livesearch.products-container`
+![Produktcontainer](assets/livesearch-product-container.png)
 
-`.livesearch.product-result`![](assets/livesearch-product-result.png)
+`.livesearch.product-result`
+![Produktergebnis](assets/livesearch-product-result.png)
 
-`.livesearch.product-name`![](assets/livesearch-product-name.png)
+`.livesearch.product-name`
+![Produktname](assets/livesearch-product-name.png)
 
-`.livesearch.product-price`![](assets/livesearch-product-price.png)
+`.livesearch.product-price`
+![Produktpreis](assets/livesearch-product-price.png)
 
-## Working with a modified theme {#working-with-modified-theme}
+## Arbeiten mit einem geänderten Design {#working-with-modified-theme}
 
-[!DNL storefront popover][](https://devdocs.magento.com/guides/v2.3/frontend-dev-guide/themes/theme-overview.html)** `top.search``header-wrapper``Magento_Search`
+Die [!DNL storefront popover] kann mit einer benutzerdefinierten [Design](https://devdocs.magento.com/guides/v2.3/frontend-dev-guide/themes/theme-overview.html) , der die erforderlichen Dateien von *Luma*. Die `top.search` im `header-wrapper` des `Magento_Search` darf nicht geändert werden.
 
 ```html
 <referenceContainer name="header-wrapper">
@@ -90,9 +97,9 @@ ht-degree: 0%
 </referenceContainer>
 ```
 
-## [!DNL popover]
+## Deaktivieren der [!DNL popover]
 
-[!DNL popover][](https://docs.magento.com/user-guide/catalog/search-quick.html)
+So deaktivieren Sie die [!DNL popover] und stellen Sie den Standard wieder her [Schnellsuche](https://docs.magento.com/user-guide/catalog/search-quick.html) verwenden, geben Sie den folgenden Befehl ein:
 
 ```bash
 bin/magento module:disable Magento_LiveSearchStorefrontPopover

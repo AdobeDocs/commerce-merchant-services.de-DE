@@ -1,29 +1,29 @@
 ---
-title: Storefront Popover
-description: The Live Search storefront popover dynamically returns suggested products and thumbnails.
+title: '"[!DNL Storefront Popover]"'
+description: '"Die [!DNL Live Search storefront popover] gibt dynamisch vorgeschlagene Produkte und Miniaturansichten zurück."'
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 65126f10574801f7ea8d0a863e9bb512dca13f39
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '358'
 ht-degree: 0%
 
 ---
 
 # [!DNL Storefront Popover]
 
-[!DNL Live Search][](install.md)[!DNL popover][](https://docs.magento.com/user-guide/catalog/search-quick.html) [!DNL popover]
+Wann [!DNL Live Search] is [installiert](install.md), [!DNL popover] erscheint in der Storefront, wenn der Käufer im Feld [Suche](https://docs.magento.com/user-guide/catalog/search-quick.html) ankreuzen. Mit jedem eingegebenen Zeichen muss die [!DNL popover] wird mit vorgeschlagenen Produkten und Miniaturbildern der wichtigsten Suchergebnisse aktualisiert.
 
-[!DNL Live Search] For a partial match, the maximum number of characters per word is 20. The number of characters in a &quot;search as you type&quot; query is not configurable.
+[!DNL Live Search] gibt Ergebnisse für eine Abfrage von zwei Zeichen oder mehr zurück. Bei einer teilweisen Übereinstimmung beträgt die maximale Anzahl von Zeichen pro Wort 20. Die Anzahl der Zeichen in einer Abfrage vom Typ &quot;Suche beim Eingeben&quot; ist nicht konfigurierbar.
 
 >[!NOTE]
 >
->[!DNL Live Search][!DNL storefront popover]**** **[!DNL Commerce] [!DNL popover]** [ [!DNL Popover] ](storefront-popover-styling.md)
+>Die [!DNL Live Search] [!DNL storefront popover] ist nur für Stores verfügbar, die *Luma* Design oder ein benutzerdefiniertes Design, das auf *Luma*. Die *Luma* -Design ist im [!DNL Commerce] Beispieldaten. Die [!DNL popover] unterstützt nicht die *Leer* Design. Siehe [Formatierung [!DNL Popover] Elemente](storefront-popover-styling.md) , um mehr zu erfahren.
 
-## Searchable attributes
+## Durchsuchbare Attribute
 
-[](https://docs.magento.com/user-guide/stores/attributes-product.html#storefront-properties)`searchable=true` To ensure relevancy, make attributes searchable only if they contain content that has a clear and concise meaning. `description` For example, if a person searches for &quot;shorts&quot; and there are shirts with a description that includes the term &quot;short sleeves&quot;, then the shirts will be included in the search results.
+Um zielgerichtete Ergebnisse zu erzielen, lesen Sie den Abschnitt [durchsuchbar](https://docs.magento.com/user-guide/stores/attributes-product.html#storefront-properties) (`searchable=true`) Produktattribute. Um die Relevanz sicherzustellen, sollten Attribute nur durchsuchbar sein, wenn sie Inhalte mit einer klaren und präzisen Bedeutung enthalten. Vermeiden Sie die Verwendung von Attributen, die weniger präzisen, langwierigen Text enthalten, z. B. `description`, die zwar standardmäßig für die Suche aktiviert ist, aber die Genauigkeit der Suchergebnisse verringern kann. Wenn beispielsweise eine Person nach &quot;Shorts&quot;sucht und es Hemden mit einer Beschreibung gibt, die den Begriff &quot;Kurzärmel&quot;enthält, werden die Hemden in die Suchergebnisse aufgenommen.
 
-The following attributes are always searchable:
+Die folgenden Attribute sind immer durchsuchbar:
 
 * `sku`
 * `name`
@@ -31,14 +31,14 @@ The following attributes are always searchable:
 
 [[!DNL Live Search popover]](assets/storefront-search-as-you-type.png)
 
-## [!DNL Popover]
+## [!DNL Popover] Seitengröße
 
-[!DNL popover] Previously, the page size was hardcoded as six lines. `page_size`** `page_size`[](https://docs.magento.com/user-guide/configuration/catalog/catalog.html#catalog-search)`Autocomplete Limit`
+Die Seitengröße der [!DNL popover] bestimmt, wie viele Zeilen von automatisch ausgefüllten Produkten zurückgegeben werden können. Zuvor war die Seitengröße hartcodiert als sechs Zeilen. Die Variable `page_size` -Wert ist jetzt eine Einstellung, die über die *Admin*. Während der Live Search-Installation wird die Variable `page_size` -Wert ändert sich in den aktuellen Wert der [Katalogsuche](https://docs.magento.com/user-guide/configuration/catalog/catalog.html#catalog-search) - `Autocomplete Limit` -Einstellung.
 
-By default, the Catalog Search - Autocomplete Limit value is set to eight lines (or rows). [!DNL popover]
+Standardmäßig ist der Wert Katalogsuche - Automatische Vervollständigungsgrenze auf acht Zeilen (oder Zeilen) festgelegt. So ändern Sie die Seitengröße der [!DNL popover]führen Sie folgende Schritte aus:
 
-1. **********
-1. ********
-1. **
-1. ****[!DNL popover]
-1. ****
+1. Im *Admin* Seitenleiste, navigieren Sie zu **Stores** > Einstellungen > **Konfiguration**.
+1. Erweitern Sie im linken Bereich **Katalog** und wählen Sie **Katalog** aus der Liste der Einstellungen.
+1. Erweitern Sie die *Katalogsuche* Abschnitt.
+1. Legen Sie die **Automatische Vervollständigungsgrenze** auf die Anzahl der Zeilen, die Sie in der [!DNL popover].
+1. Wenn Sie fertig sind, klicken Sie auf **Konfiguration speichern**.

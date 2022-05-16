@@ -1,46 +1,48 @@
 ---
-title: Types of Synonyms
-description: One- and two-way Live Search synonyms expand the definition of keywords.
+title: '"Arten von Synonymen"'
+description: '"Einweg- und Zweiwege [!DNL Live Search] Synonyme erweitern die Definition von Keywords."'
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
-source-git-commit: 7c3b7ff9e892521108dfec3f308db795e3ab42f9
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '447'
 ht-degree: 0%
 
 ---
 
-# Types of Synonyms
+# Arten von Synonymen
 
-One- and two-way synonyms expand the definition of keywords. Some are interchangeable with the keyword, while others represent a subset of the keyword.
+Ein- und Zwei-Wege-Synonyme erweitern die Definition von Keywords. Einige sind mit dem Keyword austauschbar, während andere eine Untergruppe des Keywords darstellen.
 
-## Two-way
+## Zweiweg
 
-Two-way synonyms have the same meaning and return the same search results. In the following example, the first word shown in bold is the keyword that is used in the catalog, followed by words that have the same meaning as the original keyword. You can create a simple pair of two-way synonyms, or a chain of multiple two-way synonyms for the same keyword.
+Zwei-Wege-Synonyme haben dieselbe Bedeutung und geben dieselben Suchergebnisse zurück. Im folgenden Beispiel ist das erste fett gedruckte Wort der im Katalog verwendete Suchbegriff, gefolgt von Wörtern, die dieselbe Bedeutung wie der ursprüngliche Suchbegriff haben. Sie können ein einfaches Paar aus bidirektionalen Synonymen oder eine Kette aus mehreren bidirektionalen Synonymen für dasselbe Keyword erstellen.
 
-****![](assets/btn-two-way.png)****![](assets/btn-two-way.png)![](assets/btn-two-way.png)
+**Jacke** ![Zweiwegauswahl](assets/btn-two-way.png) Mantel
+**pants** ![Zweiwegauswahl](assets/btn-two-way.png) Klappen ![Zweiwegauswahl](assets/btn-two-way.png) Hosenträger
 
-## One-way
+## Einweg
 
-A one-way synonym is a subset of a keyword, but with a more specific meaning. For example, capris and shorts are pants, but not all pants are capris or shorts. A search for pants includes capris and shorts. However, a search for shorts does not return capris.
+Ein unidirektionales Synonym ist eine Teilmenge eines Suchbegriffs, jedoch mit einer spezifischeren Bedeutung. Zum Beispiel sind Kapriolen und Kurzhosen Hosen, aber nicht alle Hosen sind Kapriolen oder Kurzhosen. Bei der Suche nach Hosen sind auch Kapriolen und Kurzkursen enthalten. Bei der Suche nach Shorts werden jedoch keine Capris zurückgegeben.
 
-****![](assets/btn-one-way.png)****![](assets/btn-one-way.png)![](assets/btn-multiple-one-way.png)![](assets/btn-multiple-one-way.png)
+**Pullover** ![Einwegauswahl](assets/btn-one-way.png) hoodie
+**pants** ![Einwegauswahl](assets/btn-one-way.png) Capris ![Mehrere Einweg-Selektoren](assets/btn-multiple-one-way.png) calf-length-pants ![Mehrere Einweg-Selektoren](assets/btn-multiple-one-way.png) Pädagogische Schubboote
 
-## Best practices
+## Best Practices
 
-Keep in mind the following best practices to get the most from Live Search synonyms.
+Beachten Sie die folgenden Best Practices, um die Nutzung von Live Search-Synonymen optimal zu nutzen.
 
-### Keyword mapping
+### Keyword-Zuordnung
 
-This technique uses searchable product attributes, rather than synonyms, to create keyword-based associations between products. As a result, a mapped product can appear in the search results of another product. [](https://docs.magento.com/user-guide/catalog/search-results.html)
+Bei dieser Technik werden anstelle von Synonymen durchsuchbare Produktattribute verwendet, um schlüsselwortbasierte Verknüpfungen zwischen Produkten zu erstellen. Daher kann ein zugeordnetes Produkt in den Suchergebnissen eines anderen Produkts angezeigt werden. Weitere Informationen finden Sie unter [Suchergebnisse](https://docs.magento.com/user-guide/catalog/search-results.html).
 
-### Use single words
+### Verwenden einzelner Wörter
 
-If a synonym term contains multiple words, the blank space between the words causes them to be treated as a separate synonyms. For example, if you define “time piece” as a synonym for “watch”, the words “time” and “piece” are treated as separate synonyms.
+Wenn ein Begriff aus einem Synonym mehrere Wörter enthält, bewirkt der leere Abstand zwischen den Wörtern, dass sie als separate Synonyme behandelt werden. Wenn Sie beispielsweise &quot;Zeitstück&quot;als Synonym für &quot;watch&quot;definieren, werden die Wörter &quot;time&quot;und &quot;element&quot;als separate Synonyme behandelt.
 
-### Use of singular and plural
+### Verwendung von Singular und Plural
 
-It is not necessary to define both the singular and plural forms of a word as a synonym. If you have a mixture of singular and plural terms in your catalog, Search finds the correct set of products. For example, if you use the word “pant” in the product name and a shopper searches for “pants”, the correct set of products is returned, and the singular word “pant” is offered as a suggestion. The singular term “pant” is often used in the fashion industry and sometimes in retail, although the plural form “pants” is more commonly used in some areas. (The word “pant” technically refers to the part of a garment that covers one leg, which is why you need a “pair of pants” to cover both legs.)
+Es ist nicht erforderlich, sowohl die Singular- als auch die Plural eines Wortes als Synonym zu definieren. Wenn Sie eine Mischung aus Einzel- und Plural-Begriffen in Ihrem Katalog haben, findet Search den richtigen Satz von Produkten. Wenn Sie beispielsweise das Wort &quot;Pant&quot;im Produktnamen verwenden und ein Käufer nach &quot;Hosen&quot;sucht, wird der richtige Satz von Produkten zurückgegeben und das Singular &quot;Pant&quot;wird als Vorschlag angeboten. Der Singular-Begriff &quot;Hose&quot;wird oft in der Modebranche und manchmal auch im Einzelhandel verwendet, obwohl die Pluralform &quot;Hosen&quot;in einigen Bereichen häufiger verwendet wird. (Das Wort &quot;Hose&quot;bezieht sich technisch auf den Teil eines Kleidungsstücks, der ein Bein bedeckt, weshalb man ein &quot;Paar Hosen&quot;benötigt, um beide Beine zu bedecken.)
 
-### Consistency
+### Konsistenz
 
-Be consistent with the way terminology is used in your catalog. Keep in mind that there might be regional differences in usage, and sometimes differences within an industry.
+Konsistent mit der Verwendung von Terminologie in Ihrem Katalog sein. Beachten Sie, dass es regionale Unterschiede bei der Verwendung und manchmal Unterschiede innerhalb einer Branche geben kann.
