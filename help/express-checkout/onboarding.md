@@ -2,9 +2,9 @@
 title: Onboard the [!DNL Express Checkout] für die Adobe Commerce-Erweiterung
 description: Erfahren Sie, wie Sie [!DNL Express Checkout] kann von Ihrer Adobe Commerce-Instanz profitieren und zeigen, wie Sie die Erweiterung erfolgreich integrieren und einrichten können.
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
+source-git-commit: bd9541c5e4810085ab85206b2ecca21e66800a2f
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '621'
 ht-degree: 0%
 
 ---
@@ -102,9 +102,10 @@ Weitere Informationen zu den standardmäßigen Adobe Commerce-Checkout-Optionen 
 So aktivieren Sie die [!DNL Express Checkout] für die Adobe Commerce-Erweiterung:
 
 1. Klicken **Konfiguration speichern**.
+1. Navigieren Sie zu **[!UICONTROL System]** > **[!UICONTROL Cache Management]** und klicken Sie auf **[!UICONTROL Flush Cache]** , um alle ungültigen Caches zu aktualisieren.
 
 ## Hilfe erhalten
 
-Der Onboarding-Prozess soll Sie durch die erforderlichen Schritte zur Einrichtung und Aktivierung aller [!DNL Express Checkout] Funktionalität. Wenden Sie sich für Unterstützung an den Adobe Commerce-Support.
+Der Onboarding-Prozess soll Sie durch die erforderlichen Schritte zur Einrichtung und Aktivierung der [!DNL Express Checkout] Funktionalität. Kontakt [!DNL Adobe Commerce] Engineering-Team durch Ihren zugewiesenen Slack [Adobe Beta-Programmkanal](http://adobe-beta-programs.slack.com/) für jede Unterstützung.
 
 Siehe Abschnitt [Testen und Validieren](../express-checkout/testing.md) für weitere Informationen.
