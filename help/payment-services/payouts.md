@@ -4,9 +4,9 @@ description: Verwenden Sie den Bericht "Auszahlungen", um vollständige Transpar
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 4fc2b3bdf9f319337939905bca2b9525985702d4
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '947'
 ht-degree: 0%
 
 ---
@@ -72,6 +72,16 @@ In der Ansicht &quot;Payouts&quot;können Sie den Zeitrahmen für die Payout-Tra
 1. Klicken Sie auf den Filter Kalenderauswahl für Transaktionsdaten .
 1. Wählen Sie den entsprechenden Datumsbereich aus.
 1. Zeigen Sie die Payouts-Status im Raster für Ihre angegebenen Daten an.
+
+## Spalten ein- und ausblenden
+
+Der Bericht &quot;Auszahlungen&quot;zeigt standardmäßig die meisten verfügbaren Informationsspalten an. Sie können jedoch anpassen, welche Spalten in Ihrem Bericht angezeigt werden.
+
+1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Payouts]**.
+1. Klicken Sie auf _Spalteneinstellungen_ Symbol (![Symbol für Spalteneinstellungen](assets/column-settings.png)).
+1. Um anzupassen, welche Spalten im Bericht angezeigt werden, aktivieren oder deaktivieren Sie die Spalten in der Liste.
+
+   Der Bericht &quot;Auszahlungen&quot;zeigt sofort alle Änderungen an, die Sie im Menü &quot;Spalteneinstellungen&quot;vorgenommen haben. Die Spaltenvoreinstellungen werden gespeichert und bleiben in Kraft, wenn Sie von der Berichtsansicht weg navigieren.
 
 ## Herunterladen von Transaktionen
 
