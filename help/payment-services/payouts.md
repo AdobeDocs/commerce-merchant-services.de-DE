@@ -4,9 +4,9 @@ description: Verwenden Sie den Bericht "Auszahlungen", um vollständige Transpar
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: 4fc2b3bdf9f319337939905bca2b9525985702d4
+source-git-commit: 4554ea65ded73e9552f307ff51e0e7eff64cd2e9
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '975'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,10 @@ ht-degree: 0%
 ![Übersicht über die Finanzberichte](assets/reports-view.png)
 
 Der Bericht zu den Auszahlungen zeigt umfassende Auszahlungsinformationen auf einen Blick, sodass Sie vollständige Transparenz in Bezug auf den Zahlungsbetrag, das verarbeitete Volumen und detaillierte Berichte über die Transaktionsstufe zur finanziellen Abstimmung erhalten.
+
+>[!NOTE]
+>
+>Payouts-Berichte zeigen nur erfasste Bestellungen an - die Zahlungsaktion ist auf [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method)) - oder [markiert als `Invoiced`](https://docs.magento.com/user-guide/sales/invoice-create.html).
 
 Sie müssen nicht mehrere Ansichten öffnen, um Bestellungen und Zahlungen zu vergleichen oder Konten abzustimmen. [!DNL Payment Services] für [!DNL Adobe Commerce] und [!DNL Magento Open Source] ermöglicht es Ihnen, all diese Aktionen von einem Ort aus - dem Payouts-Bericht - durchzuführen, damit Sie Ihre Payouts effizient anzeigen und verwalten können.
 
@@ -106,7 +110,7 @@ Payout-Berichte enthalten die folgenden Informationen.
 | [!UICONTROL Provider] | Zahlungsdienstleister |
 | [!UICONTROL Provider trans] | Transaktions-ID |
 | [!UICONTROL Trans date] | Datum und Uhrzeit der Initiierung der Transaktion |
-| [!UICONTROL Type] | Transaktionstyp—*[!UICONTROL PAYMENT]*, *[!UICONTROL AUTH]*, *[!UICONTROL BONUS]*, *[!UICONTROL CHARGEBACK]*, *[!UICONTROL CORRECTION]*, *[!UICONTROL CURRENCY_CONVERSATION]*, *[!UICONTROL DEPOSIT]*, *[!UICONTROL DISBURSEMENT]*, *[!UICONTROL DISPUTE]*, *[!UICONTROL FEES]*, *[!UICONTROL HOLD]*, *[!UICONTROL HOLD_RELEASE]*, *[!UICONTROL INCENTIVES]*, *[!UICONTROL OTHERS]*, *[!UICONTROL RECOUP]*, *[!UICONTROL REFUND]*, *[!UICONTROL REVERSAL]*, *[!UICONTROL WITHDRAWAL]* <br> <br>Siehe [Transaktionstypen](#transaction-types) für weitere Informationen. |
+| [!UICONTROL Type] | Transaktionstyp—*[!UICONTROL PAYMENT]*, *[!UICONTROL BONUS]*, *[!UICONTROL CHARGEBACK]*, *[!UICONTROL CORRECTION]*, *[!UICONTROL CURRENCY_CONVERSATION]*, *[!UICONTROL DEPOSIT]*, *[!UICONTROL DISBURSEMENT]*, *[!UICONTROL DISPUTE]*, *[!UICONTROL FEES]*, *[!UICONTROL HOLD]*, *[!UICONTROL HOLD_RELEASE]*, *[!UICONTROL INCENTIVES]*, *[!UICONTROL OTHERS]*, *[!UICONTROL RECOUP]*, *[!UICONTROL REFUND]*, *[!UICONTROL REVERSAL]*, *[!UICONTROL WITHDRAWAL]* <br> <br>Siehe [Transaktionstypen](#transaction-types) für weitere Informationen. |
 | [!UICONTROL Status] | Aktueller Status der Transaktion—*[!UICONTROL SUCCESS]*, *[!UICONTROL DENIED]*, *[!UICONTROL PENDING]* |
 | [!UICONTROL Code] | Transaktionscode, der entweder einen Kredit (*CR*) oder Schulden (*DR*) |
 | [!UICONTROL Reference ID] | Ursprüngliche Transaktions-ID, mit der dieses Ereignis verknüpft ist |
