@@ -4,9 +4,9 @@ description: Verwenden Sie den Bestellstatusbericht, um mehr über den Zahlungss
 role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
-source-git-commit: 4fc2b3bdf9f319337939905bca2b9525985702d4
+source-git-commit: fde5844ad6c602708f9a5ad76ce8c9b5547dba76
 workflow-type: tm+mt
-source-wordcount: '1268'
+source-wordcount: '1359'
 ht-degree: 0%
 
 ---
@@ -122,6 +122,18 @@ Sie können auch manuell eine Aktualisierung der Berichtdaten zum Bestellzahlung
 
    Die Daten des Berichts zum Bestellstatus werden aktualisiert, und *[!UICONTROL Update complete]* -Bestätigung angezeigt und die neuesten Informationen im Raster vorhanden sind.
 
+## Streitigkeiten anzeigen
+
+Sie können alle Streitigkeiten bezüglich der Bestellungen Ihres Ladens einsehen und zum PayPal-Abwicklungszentrum navigieren, um über den Bestellstatusbericht darauf zu reagieren.
+
+1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
+1. Navigieren Sie zum **[!UICONTROL Disputes column]**.
+1. Anzeigen von Streitigkeiten für eine bestimmte Bestellung, siehe [den Streitstatus](#order-payment-status-information).
+1. Klicken Sie auf den Link zur Kennung des Streits (beginnend mit _PP-D-_), um zur [PayPal Resolution Center](https://www.paypal.com/us/smarthelp/article/what-is-the-resolution-center-faq3327).
+1. Ergreifen Sie bei Bedarf geeignete Maßnahmen für den Streit.
+
+   Klicken Sie auf die Spaltenüberschrift &quot;Streitigkeiten&quot;, um die Streitigkeiten nach Status zu sortieren.
+
 ## Zahlungsstatus der Bestellung herunterladen
 
 Sie können eine CSV-Datei mit allen Status herunterladen, die im Raster der Bestellzahlungsansicht angezeigt werden, unabhängig davon, ob Sie den standardmäßigen Status von 30 Tagen oder einen benutzerdefinierten Zeitrahmen anzeigen.
@@ -171,7 +183,7 @@ Berichte zum Bestellstatus enthalten die folgenden Informationen.
 | [!UICONTROL Refund Status] | Status einer Rückerstattung bei einer Bestellung (z. B. Informationen aus Rückgaben, RMAs und Kreditkarten)—   *[!UICONTROL Requires refund]*, *[!UICONTROL Refund requested]*, *[!UICONTROL Refunded]*, *[!UICONTROL Refund failed]* oder *[!UICONTROL Voided]* |
 | [!UICONTROL Refund Amount] | Erstatteter Gesamtbetrag für eine Bestellung |
 | [!UICONTROL Cur] | Währungstyp des für eine Bestellung rückerstatteten Betrags |
-| [!UICONTROL Dispute Status] | Stand der Streitigkeiten über einen Beschluss (Informationen aus Streitigkeiten und Chargebacks)—*[!UICONTROL New]*, *[!UICONTROL Representment]*, *[!UICONTROL Accepted]*, *[!UICONTROL Pre-arbitration received]*, *[!UICONTROL Arbitration]* oder *[!UICONTROL Arbitration received]* |
+| [!UICONTROL Disputes] | Stand der Streitigkeiten über einen Beschluss (Informationen aus Streitigkeiten und Chargebacks)—*[!UICONTROL Open]*, *[!UICONTROL Waiting for buyer response]*, *[!UICONTROL Waiting for seller response]*, *[!UICONTROL Under review]*, *[!UICONTROL Resolved]* oder *[!UICONTROL Other]* |
 | [!UICONTROL Payment Method] | Zahlungsmethode, die bei einer Bestellung im Commerce-Geschäft verwendet wird |
 | [!UICONTROL Website] | Website, von der aus die Bestellung aufgegeben wurde |
 | [!UICONTROL Store] | Store, aus dem die Bestellung aufgegeben wurde |
