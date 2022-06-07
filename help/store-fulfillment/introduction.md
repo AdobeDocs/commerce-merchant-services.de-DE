@@ -4,9 +4,9 @@ description: '"Erfahren Sie wie [!DNL Store Fulfillment for Adobe Commerce by Wa
 role: User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c
-source-git-commit: 26d0ddbcbe648b336d527788668caef1f8e688ed
+source-git-commit: 33d8ed57f5a4b8419bd30375a1fb5bec6be37a5e
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Store Fulfillment bietet außerdem einen durchgängigen Erfüllungs-Workflow, mi
 
 ## Store Fulfillment-Erweiterung
 
-Die Store Fulfillment-Erweiterung ist mit Adobe Commerce integriert, sodass Sie die Konfiguration für Adobe Commerce-Vorgänge und Kundenschnittstellen über den Administrator verwalten können.
+Unterstützt und verbessert native Adobe Commerce-Funktionen
 
 * Unterstützt die meisten Produkttypen - einfach, konfigurierbar, gruppiert, gebündelt und virtuell
 
@@ -39,11 +39,11 @@ Die Store Fulfillment-Erweiterung ist mit Adobe Commerce integriert, sodass Sie 
 
 * Integriert mit POS (Point-Sale)-Händlern wie ERP, OMS und WMS-Händlern für die Bestandsverwaltung
 
-* Vollständig kompatibel mit dem Design Luma.
+* Vollständig kompatibel mit dem Luma-Design
 
-* Bietet GraphQL-Unterstützung für Headless- und Venia-Storefronts.
+* GraphQL-Unterstützung für Headless- und Venia-Storefronts
 
-* Unterstützt die Store-Hilfe-App von der Walmart Commerce Technology. Diese App sendet Abholaufträge direkt an das Handheld-Gerät Ihres Mitarbeiters im richtigen Speicher, damit Artikel schnell und präzise abgerufen und an Kunden weitergegeben werden können, wenn sie zur Abholung eintreffen.
+* Unterstützt die Store-Hilfe-App von der Walmart Commerce Technology. Diese App sendet Abholaufträge direkt an das Handheld-Gerät Ihres Mitarbeiters im richtigen Speicher, damit Artikel beim Check-in schnell und präzise ausgewählt, inszeniert und an die Kunden weitergegeben werden können.
 
 ## Store Assist App
 
@@ -61,7 +61,7 @@ Die Store Assist App für iOS- und Android™-Geräte interagiert mit der Walmar
 
 Die Store-Erfüllung verbessert Adobe Commerce durch die folgenden Funktionen, um verbesserte Einkaufserlebnisse und optimierte Erfüllung-Workflows bereitzustellen:
 
-* **SLS (Store Location Selector)**- Fügt Speicherbereinigungsoptionen, Lagerverfügbarkeit und Store-Selektoren zu Adobe Commerce-Produkt-, Warenkorb- und Checkout-Schnittstellen hinzu.
+* **SLS (Store Location Selector)**- Stellt zusätzlich zum nativen Checkout die Store-Erfassungsoption, die Lagerverfügbarkeit und die Store-Auswahl auf den Produkt- und Warenkorbseiten bereit.
 
 * **Lagerbestandsverfügbarkeit**- Fügt Adobe Commerce Inventory management zusätzliche Produkt- und globale Konfigurationsoptionen hinzu, um die Lagerbestandszuordnung zu unterstützen und so die zeitnahe lokale Erfüllung zu fördern.
 
