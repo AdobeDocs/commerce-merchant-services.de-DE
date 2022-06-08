@@ -2,9 +2,9 @@
 title: Aktivieren [!DNL Payment Services] für die Produktion
 description: Schließen Sie den Onboarding-Prozess ab, indem Sie [!DNL Payment Services] für die Produktion.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 51722d7045ccb6ccfdc7ab5bd93d5ca46b52cf03
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '709'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ Siehe [Zahlungsdienste konfigurieren](settings.md) Weitere Informationen zur Kon
 
    >[!IMPORTANT]
    >
-   >Wenn Sie die Zustimmung zum [!DNL Payment Services] für [!DNL Adobe Commerce] und [!DNL Magento Open Source] für die Verarbeitung Ihrer Zahlungen (in den Einstellungen Ihres PayPal-Kontos) können Bestellungen in Ihrem Geschäft nicht von [!DNL Payment Services].
+   >Wenn Sie die Zustimmung zum [!DNL Payment Services] für [!DNL Adobe Commerce] und [!DNL Magento Open Source] für die Verarbeitung Ihrer Zahlungen (in den Einstellungen Ihres PayPal-Kontos) können Bestellungen in Ihrem Geschäft nicht von [!DNL Payment Services]. Auf Ihrer Zahlungsdienst-Startseite wird ein Warnhinweis über die widerrufene Zustimmung angezeigt.
 
 ## Zahlungsanspruch von Adobe anfordern
 
@@ -115,7 +115,7 @@ Siehe [In Admin konfigurieren](configure-admin.md) für ältere Konfigurationsop
 
 >[!IMPORTANT]
 >
->Wenn Sie die Zustimmung zum [!DNL Payment Services] für die Verarbeitung Ihrer Zahlungen (in den Einstellungen Ihres PayPal-Kontos) können Bestellungen in Ihrem Geschäft nicht von [!DNL Payment Services]. Wenn Sie die Zahlungsverarbeitung erneut aktivieren möchten, müssen Sie das Onboarding erneut abschließen.
+>Wenn Sie die Zustimmung zum [!DNL Payment Services] für die Verarbeitung Ihrer Zahlungen (in den Einstellungen Ihres PayPal-Kontos) können Bestellungen in Ihrem Geschäft nicht von [!DNL Payment Services]. Wenn Sie die Zahlungsverarbeitung erneut aktivieren möchten, müssen Sie das Onboarding erneut abschließen. Auf Ihrer Zahlungsdienst-Startseite wird ein Warnhinweis über die widerrufene Zustimmung angezeigt.
 
 ## Produktionstest
 
