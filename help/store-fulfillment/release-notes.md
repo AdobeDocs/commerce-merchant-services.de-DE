@@ -1,17 +1,17 @@
 ---
-title: '''[!DNL Store Fulfillment by Walmart Technologies] Versionshinweise'''
-description: Informationen zu allen [!DNL Store Fulfillment by Walmart Technologies] veröffentlicht.
+title: '''[!DNL Store Fulfillment by Walmart Commerce Technologies] Versionshinweise'''
+description: Informationen zu allen [!DNL Store Fulfillment by Walmart Commerce Technologies] veröffentlicht.
 exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
-source-git-commit: df045a8d2089bbaf2c13015cfa05c16842bd2b3f
+source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '56'
+ht-degree: 8%
 
 ---
 
 # Versionshinweise
 
-Diese Versionshinweise beschreiben die erste Version von [!DNL Store Fulfillment Services by Walmart Technologies] und umfassen:
+Diese Versionshinweise beschreiben die erste Version von [!DNL Store Fulfillment Services by Walmart Commerce Technologies] und umfassen:
 
 ![Neu](../assets/new.svg) Neue Funktionen
 ![Problem behoben](../assets/fix.svg) Fehlerbehebungen und Verbesserungen

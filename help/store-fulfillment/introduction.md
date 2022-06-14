@@ -1,12 +1,12 @@
 ---
 title: '"Einführung in [!DNL Store Fulfillment]"'
-description: '"Erfahren Sie wie [!DNL Store Fulfillment for Adobe Commerce by Walmart Technologies] unterstützt Online-Einkauf, Abholung im Geschäft (BOPIS) für Kunden. Verwenden Sie die Store Assist Mobile, um die BOPIS-Erfüllung und Auftragsverarbeitung für Store-Mitarbeiter und Commerce-Kunden zu optimieren."'
+description: '"Erfahren Sie wie [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] unterstützt Online-Einkauf, Abholung im Geschäft (BOPIS) für Kunden. Verwenden Sie die Store Assist Mobile, um die BOPIS-Erfüllung und Auftragsverarbeitung für Store-Mitarbeiter und Commerce-Kunden zu optimieren."'
 role: User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c
-source-git-commit: 33d8ed57f5a4b8419bd30375a1fb5bec6be37a5e
+source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '575'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies ist eine fortschrittliche Omnichannel-Fulfillment-Lösung, die in Ihre [!DNL Commerce] Geschäft, um einen erstklassigen Online-Kauf zu liefern, holen Sie sich im Geschäft (BOPIS) Kundenerlebnis.
 
-![Store-Erfüllung durch die Admin-Konfiguration von Walmart Technologies](assets/store-fulfillment-admin-home.png)
+![Admin-Konfiguration der Adobe der Store-Fulfillment-Lösung](assets/store-fulfillment-admin-home.png)
 
 Store Fulfillment bietet außerdem einen durchgängigen Erfüllungs-Workflow, mit dem Händler Kosten senken und gleichzeitig Konversionsraten, durchschnittlicher Bestellwert und Kundenzufriedenheitsraten steigern können. Dieser Workflow bietet Folgendes:
 

@@ -1,13 +1,13 @@
 ---
 user-guide-title: '"[!DNL Store FulFillment Guide]"'
-user-guide-description: In diesem Handbuch finden Sie ausführliche Informationen zum Installieren und Konfigurieren von Store Fulfillment-Diensten für Ihren Adobe Commerce- oder Magento Open Source-Store.
-breadcrumb-title: Leitfaden für Store-Erfüllung durch Walmart Technologies
+user-guide-description: Detaillierte Informationen zur Installation, Konfiguration und Verwendung von Store Fulfillment für Adobe Commerce Stores
+breadcrumb-title: Store Fulfillment for Adobe Commerce
 index: false
 hidden: true
-source-git-commit: 26d0ddbcbe648b336d527788668caef1f8e688ed
+source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '84'
+ht-degree: 2%
 
 ---
 
@@ -16,15 +16,27 @@ ht-degree: 0%
 
 - [Guide - Übersicht](guide-overview.md)
 - [Einführung in [!DNL Store Fulfillment]](introduction.md)
+- [Arbeitsablauf für Speicherunterstützung](store-assist-modules.md)
+- [Voraussetzungen](solution-requirements.md)
 - [Versionshinweise](release-notes.md)
 - Onboard Store Fulfillment {#onboarding}
    - [Onboarding-Übersicht](onboard.md)
-   - [Installation](install.md)
-   - [Dienstverbindung und Einrichtung](connect-set-up-service.md)
-   - [Test und Bereitstellung](test-deploy.md)
-- Funktionskonfiguration {#configuration}
+   - [Installieren der Erweiterung](install.md)
+   - [Store-Erfüllung verbinden](connect-set-up-service.md)
+   - [Testen und Bereitstellen](test-and-deploy.md)
+- [Konfigurationsübersicht](service-config-settings-overview.md)
+- Speicherkonfiguration {#store-configuration}
    - [Allgemeine Konfiguration](enable-general.md)
    - [Verkaufs-E-Mails](sales-emails.md)
-   - [Lagerverwaltung](product-stock.md)
-   - [Store-Quellen](store-sources.md)
+   - [Transaktionsspeicherquellen](merchant-store-configuration.md)
+   - [ProduktStock-Management](product-stock.md)
+   - [Inventory management-Quellübertragung](inventory-stock-transfer.md)
+   - [Mehrere Websites/Bereiche](multi-site-and-scope-config.md)
+- Systemkonfiguration {#system-configuration}
    - [Hintergrundprozesse](background-processes.md)
+   - [Speicherort und Einrichtung der Zuordnung](store-location-map-provider-setup.md)
+   - [Einrichtung des Check-in-Erlebnisses](check-in-experience-setup.md)
+   - [Benutzereinstellungen](user-setup.md)
+   - [App-Einrichtung](app-setup.md)
+
+
