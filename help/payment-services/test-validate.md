@@ -2,7 +2,7 @@
 title: Testen und Validieren
 description: Durch Tests und Validierung wird sichergestellt, dass [!DNL Payment Services] Funktionen funktionieren erwartungsgemäß und bieten beste Zahlungsoptionen für Ihre Kunden
 exl-id: 95b4615e-73b0-41e8-83e2-e65a0b22f10f
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 599405b908cc8b770c917a18ad488a1f69be222b
 workflow-type: tm+mt
 source-wordcount: '436'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Bevor Sie [!DNL Payment Services] für [!DNL Adobe Commerce] und [!DNL Magento O
 Test [!DNL Payment Services] in einer Sandbox-Umgebung ist ein wichtiger Validierungsschritt, auch wenn es sich um eine simulierte Umgebung handelt, die nur mit der PayPal-Sandbox verbunden ist, nicht mit echten Banken und Händlern.
 
 1. Führen Sie einen erfolgreichen Checkout aus Ihrem Store durch, indem Sie [Kreditkartenfelder](payments-options.md#credit-card-fields) oder [PayPal Smart-Schaltflächen](payments-options.md#paypal-smart-buttons). Siehe [Sandbox-Modus verwenden](#use-sandbox-mode) für weitere Informationen zur Verwendung von gefälschten Kreditkarten zum Testen.
-1. Erfassen (wenn Ihre Zahlungsaktion ausgeführt wird) [auf `Authorize and Capture`](onboard.md#set-payment-services-as-payment-method)), [Rückerstattung](refunds.md)oder [void](voids.md) die gerade ausgefüllte Bestellung. Sie können auch einfach [eine Rechnung erstellen](https://docs.magento.com/user-guide/sales/invoice-create.html){target=&quot;_blank&quot;} für eine Bestellung, wenn Ihre Zahlungsaktion auf `Authorize` anstelle von `Authorize and Capture`.
+1. Erfassen (wenn Ihre Zahlungsaktion ausgeführt wird) [auf `Authorize and Capture`](production.md#set-payment-services-as-payment-method), [Rückerstattung](refunds.md)oder [void](voids.md) die gerade ausgefüllte Bestellung. Sie können auch einfach [eine Rechnung erstellen](https://docs.magento.com/user-guide/sales/invoice-create.html){target=&quot;_blank&quot;} für eine Bestellung, wenn Ihre Zahlungsaktion auf `Authorize` anstelle von `Authorize and Capture`.
 1. Zeigen Sie die Transaktion und andere Informationen innerhalb von 24-48 Stunden im [Zahlungsbericht](payouts.md).
 1. Weitere Informationen zur Bestellung finden Sie im Abschnitt [Bestellstatusbericht](order-payment-status.md).
 

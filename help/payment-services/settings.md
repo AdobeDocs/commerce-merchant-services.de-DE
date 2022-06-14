@@ -4,9 +4,9 @@ description: Nach der Installation können Sie [!DNL Payment Services] in der St
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: b30c15ab808be4526424a4a3be19e3d0aedcc662
+source-git-commit: 724abe973094c1aa631ca34bd8096052fa1e9195
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -43,6 +43,7 @@ Sie können [!DNL Payment Services] für Ihre Website und aktivieren Sie entwede
    >
    >Ihre _[!UICONTROL Sandbox Merchant ID]_und_[!UICONTROL Production Merchant ID]_ werden automatisch generiert und in den entsprechenden Feldern angezeigt, wenn Sie das Onboarding für die Sandbox und/oder die Produktion abschließen. Entfernen oder ändern Sie diese IDs nicht.
 
+1. Wählen Sie die Store-Ansicht im **[!UICONTROL Scope]** Dropdown-Menü, für das Sie eine Zahlungsmethode aktivieren möchten.
 1. Um die Standardeinstellungen für Zahlungsfunktionen und die Anzeige der Storefront zu ändern, legen Sie die zusätzlichen Optionen nach Bedarf fest:
 
    - [Kreditkartenfelder](#credit-card-fields)
