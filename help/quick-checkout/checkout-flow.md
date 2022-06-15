@@ -2,9 +2,9 @@
 title: '"Checkout-Fluss"'
 description: '"Überblick über die [!DNL Quick Checkout] Fluss in Adobe Commerce."'
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
-source-git-commit: 9841db7616c8aa6d5bc5af3e6e92c0abe9a4a1e2
+source-git-commit: c0b1185a53cb84be2335e2e1beb392c9f23070c9
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '553'
 ht-degree: 0%
 
 ---
@@ -90,7 +90,7 @@ Wenn eine [!DNL Bolt] -Konto gefunden wird, setzen die Käufer mit dem standardm
 - Versandmethode
 - Überprüfungszahlungsmethode
 
-Siehe Abschnitt [Fehlerbehebung](../quick-checkout/troubleshooting.md) finden Sie weitere Informationen, wenn Sie bei der Bestellung als bestehender Adobe Commerce-Benutzer auf Probleme stoßen.
+Wenn Sie Probleme haben, wenn Sie eine Bestellung als bestehenden Adobe Commerce-Benutzer aufgeben, lesen Sie den Abschnitt [Fehlerbehebung bei Problemen mit der Schnellüberprüfung](https://support.magento.com/hc/en-us/articles/6909450342541) Artikel im Adobe Commerce Help Center.
 
 >[!NOTE]
 >
