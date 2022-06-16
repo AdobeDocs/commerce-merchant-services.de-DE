@@ -1,15 +1,16 @@
 ---
 title: Verkaufs-E-Mails
-description: Konfigurieren Sie Einstellungen für die Transaktions-E-Mail-Vorlagen, um mit Kunden zu kommunizieren und Administratoren während des Auftrags- und Ausführungsprozesses zu speichern.
+description: Konfigurieren Sie die Transaktions-E-Mail-Vorlagen für die Kommunikation mit Kunden und Store-Administratoren während des Ausführungsprozesses für Store-Abholaufträge.
 role: User, Admin
 level: Intermediate
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
 source-wordcount: '1216'
 ht-degree: 0%
 
 ---
+
 
 # Verkaufs-E-Mails
 
