@@ -4,9 +4,9 @@ description: '"Erfahren Sie wie [!DNL Store Fulfillment for Adobe Commerce by Wa
 role: User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 87818d3a0eb8f0cb4bc9fac2aef3c56a2e620aaf
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '603'
 ht-degree: 0%
 
 ---
@@ -74,3 +74,8 @@ Die Store-Erfüllung verbessert Adobe Commerce durch die folgenden Funktionen, u
 * **Transaktions-E-Mails**-Erweitert die Admin-Funktionen für [!UICONTROL Sales Emails] um E-Mail-Vorlagen für Online-Käufe hinzuzufügen, sammeln Sie In-Store-Transaktionen. Die Vorlagen unterstützen die Echtzeit-Kommunikation zwischen Kunden und Store-Mitarbeitern während des Bestellabnahmeprozesses.
 
 * **Flexible Erfüllung**-Erweiterungen [!DNL Commerce] Funktionen zur Unterstützung von Szenarien für die Verarbeitung von Rückständen, Mengenreduzierungen und teilweiser Auftragserfüllung bei gleichzeitiger Erleichterung von Stornierungen und Kreditkarten, die zur Unterstützung dieser Szenarien erforderlich sind.
+
+>[!TIP]
+>
+> Eine kurze Demo der Store Fulfillment-Lösung finden Sie in der [Store Fulfillment - Übersicht](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/orders/store-fulfillment.html) verfügbar unter _Videos und Tutorials zu Adobe Commerce_.
+
