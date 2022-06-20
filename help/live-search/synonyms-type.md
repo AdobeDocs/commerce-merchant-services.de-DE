@@ -2,9 +2,9 @@
 title: '"Arten von Synonymen"'
 description: '"Einweg- und Zweiwege [!DNL Live Search] Synonyme erweitern die Definition von Keywords."'
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: cd1b40ffb350a87ea1317be82789f702922881b9
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '513'
 ht-degree: 0%
 
 ---
@@ -31,9 +31,13 @@ Ein unidirektionales Synonym ist eine Teilmenge eines Suchbegriffs, jedoch mit e
 
 Beachten Sie die folgenden Best Practices, um die Nutzung von Live Search-Synonymen optimal zu nutzen.
 
-### Keyword-Zuordnung
+### Vermeiden Sie &quot;Stoppwörter&quot;
 
-Bei dieser Technik werden anstelle von Synonymen durchsuchbare Produktattribute verwendet, um schlüsselwortbasierte Verknüpfungen zwischen Produkten zu erstellen. Daher kann ein zugeordnetes Produkt in den Suchergebnissen eines anderen Produkts angezeigt werden. Weitere Informationen finden Sie unter [Suchergebnisse](https://docs.magento.com/user-guide/catalog/search-results.html).
+Die Live-Suche filtert häufig verwendete englische &quot;Stoppwörter&quot;aus Synonymen heraus, z. B.:
+
+a, an und sind, wie es ist, aber durch, ob es, in, in, ist, nein, nicht, auf, oder so, dass die, ihre, dann, dort, diese, dies, zu, mit
+
+Stoppwörter machen Synonyme nicht aussagekräftiger, erhöhen aber die Menge der zu verarbeitenden Daten.
 
 ### Verwenden einzelner Wörter
 
@@ -46,3 +50,7 @@ Es ist nicht erforderlich, sowohl die Singular- als auch die Plural eines Wortes
 ### Konsistenz
 
 Konsistent mit der Verwendung von Terminologie in Ihrem Katalog sein. Beachten Sie, dass es regionale Unterschiede bei der Verwendung und manchmal Unterschiede innerhalb einer Branche geben kann.
+
+### Keyword-Zuordnung
+
+Bei dieser Technik werden anstelle von Synonymen durchsuchbare Produktattribute verwendet, um schlüsselwortbasierte Verknüpfungen zwischen Produkten zu erstellen. Daher kann ein zugeordnetes Produkt in den Suchergebnissen eines anderen Produkts angezeigt werden. Weitere Informationen finden Sie unter [Suchergebnisse](https://docs.magento.com/user-guide/catalog/search-results.html).
