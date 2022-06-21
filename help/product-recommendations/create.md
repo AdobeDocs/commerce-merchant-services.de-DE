@@ -2,9 +2,9 @@
 title: Neue Empfehlung erstellen
 description: Erfahren Sie, wie Sie eine Produktempfehlungseinheit erstellen.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: e7c3d1ab49ee9469e3312321f6d96446840d0778
+source-git-commit: 1d2b4b8d85e5ccea1c4258869fbfd191a2e7987b
 workflow-type: tm+mt
-source-wordcount: '674'
+source-wordcount: '836'
 ht-degree: 0%
 
 ---
@@ -45,6 +45,14 @@ Wenn Sie die Empfehlungseinheit aktivieren, beginnt Adobe Commerce [Daten erfass
    _Empfehlungsname und -platzierung_
 
 1. Im _Empfehlungstyp auswählen_ -Abschnitt, geben Sie die [Empfehlungstyp](type.md) Sie möchten auf der ausgewählten Seite angezeigt werden. Bei einigen Seiten wird die Variable [placement](placement.md) Empfehlungen sind auf bestimmte Typen beschränkt.
+
+   Einige Empfehlungstypen verwenden Verhaltensdaten von Ihren Kunden zu [Trainingsmodelle für maschinelles Lernen](behavioral-data.md) , um personalisierte Empfehlungen zu erstellen. Um Ihnen bei der Visualisierung des Trainings-Fortschritts für jeden Empfehlungstyp zu helfen, zeigt dieser Abschnitt die Bereitschaft für jeden Typ an. Diese Indikatoren werden anhand von zwei Faktoren berechnet:
+
+   - Ausreichende Ergebnissatzgröße: Gibt es in den meisten Szenarien genügend Ergebnisse, um die Verwendung von [Ersatzempfehlungen](behavioral-data.md#backuprecs)?
+
+   - Ausreichende Ergebnissatzvielfalt: Stellen die zurückgegebenen Produkte eine Vielzahl von Produkten aus Ihrem Katalog dar? Mit diesem Faktor soll verhindert werden, dass eine Minderheit von Produkten die einzigen Artikel ist, die auf der gesamten Site empfohlen werden.
+
+   Basierend auf den oben genannten Faktoren wird ein Bereitschaftswert berechnet und angezeigt. Ein Empfehlungstyp gilt als bereitstellbar, wenn sein Bereitschaftswert 75 % oder höher beträgt. Ein Empfehlungstyp wird als teilweise fertig angesehen, wenn seine Bereitschaft mindestens 50 % beträgt. Schließlich gilt ein Empfehlungstyp als nicht bereit zur Bereitstellung, wenn sein Bereitschaftswert unter 50 % liegt.
 
 1. Im _Anzeigebezeichnung Storefront_ eingeben. [label](placement.md#recommendation-labels) die für Ihre Kunden sichtbar ist, z. B. &quot;Topverkäufe&quot;.
 

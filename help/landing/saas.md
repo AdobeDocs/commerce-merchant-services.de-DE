@@ -1,19 +1,19 @@
 ---
 title: Commerce Services Connector
-description: Erfahren Sie, wie Sie Ihre Adobe Commerce- oder Magento Open Source-Instanz mithilfe eines API-Schlüssels und eines privaten Schlüssels in Dienste integrieren können.
+description: Erfahren Sie, wie Sie Ihre Adobe Commerce- oder Magento Open Source-Instanz mithilfe von Produktions- und Sandbox-API-Schlüsseln in Dienste integrieren.
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
-source-git-commit: 3035edd14ca6d7b29e7fa6f4c6ed2a66401171c1
+source-git-commit: 42cb709f4699fcdd56df7ca02466ab416f01cab2
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '834'
 ht-degree: 0%
 
 ---
 
 # [!DNL Commerce Services Connector]
 
-Einige Adobe Commerce- und Magento Open Source-Funktionen basieren auf [!DNL Commerce Services]  und als SaaS (Software as a Service) bereitgestellt werden. Um diese Dienste verwenden zu können, müssen Sie Ihre [!DNL Commerce] -Instanz mithilfe eines API-Schlüssels und eines privaten Schlüssels und geben Sie den Datenraum im [Konfiguration](https://docs.magento.com/user-guide/configuration/services/saas.html). Sie müssen dies nur einmal einrichten.
+Einige Adobe Commerce- und Magento Open Source-Funktionen basieren auf [!DNL Commerce Services]  und als SaaS (Software as a Service) bereitgestellt werden. Um diese Dienste verwenden zu können, müssen Sie Ihre [!DNL Commerce] -Instanz mithilfe von Produktions- und Sandbox-API-Schlüsseln und geben Sie den Datenraum im [Konfiguration](https://docs.magento.com/user-guide/configuration/services/saas.html). Sie müssen dies nur einmal einrichten.
 
-## Verfügbare Dienste
+## Verfügbare Dienste {#availableservices}
 
 Im Folgenden werden die [!DNL Commerce] Funktionen, auf die Sie über [!DNL Commerce Services Connector]:
 
@@ -33,9 +33,9 @@ In den folgenden Abschnitten werden die einzelnen Elemente ausführlicher erläu
 
 ## Anmeldeinformationen {#apikey}
 
-Der API-Schlüssel und der private Schlüssel werden aus dem [!DNL Commerce] Konto des Lizenzinhabers, das durch eine eindeutige [!DNL Commerce] ID (MageID). So übergeben Sie die Berechtigungsprüfung für Dienste wie [!DNL Product Recommendations] oder [!DNL Live Search]festgelegt ist, kann der Lizenzinhaber der Händlerorganisation den Satz von API-Schlüsseln generieren, solange das Konto gut aufgestellt ist. Die Schlüssel können auf der Grundlage des &quot;Bedarfs an Wissen&quot;an den Systemintegrator oder das Entwicklungsteam weitergegeben werden, der Projekte und Umgebungen im Auftrag des Lizenzinhabers verwaltet. Darüber hinaus sind Lösungsintegratoren auch berechtigt, [!DNL Commerce Services]. Wenn Sie ein Lösungsintegrator sind, ist der Unterzeichner der [!DNL Commerce] Der Partnervertrag sollte die API-Schlüssel generieren.
+Die Produktions- und Sandbox-API-Schlüssel werden aus dem [!DNL Commerce] Konto des Lizenzinhabers, das durch eine eindeutige [!DNL Commerce] ID (MageID). So übergeben Sie die Berechtigungsprüfung für Dienste wie [!DNL Product Recommendations] oder [!DNL Live Search]festgelegt ist, kann der Lizenzinhaber der Händlerorganisation den Satz von API-Schlüsseln generieren, solange das Konto gut aufgestellt ist. Die Schlüssel können auf der Grundlage des &quot;Bedarfs an Wissen&quot;an den Systemintegrator oder das Entwicklungsteam weitergegeben werden, der Projekte und Umgebungen im Auftrag des Lizenzinhabers verwaltet. Darüber hinaus sind Lösungsintegratoren auch berechtigt, [!DNL Commerce Services]. Wenn Sie ein Lösungsintegrator sind, ist der Unterzeichner der [!DNL Commerce] Der Partnervertrag sollte die API-Schlüssel generieren.
 
-### API-Schlüssel und privaten Schlüssel generieren {#genapikey}
+### Generieren der Produktions- und Sandbox-API-Schlüssel {#genapikey}
 
 1. Melden Sie sich bei Ihrer [!DNL Commerce] Konto unter [https://account.magento.com](https://account.magento.com/){:target=&quot;_blank&quot;}.
 
@@ -51,11 +51,13 @@ Der API-Schlüssel und der private Schlüssel werden aus dem [!DNL Commerce] Kon
 
    >[!WARNING]
    >
-   > Dies ist die einzige Möglichkeit, dass Sie Ihren Schlüssel kopieren oder herunterladen müssen.
+   > Dies ist die einzige Möglichkeit, dass Sie Ihre Schlüssel kopieren oder herunterladen müssen.
 
 1. Klicken **Download** Klicken Sie dann auf **Abbrechen**.
 
-   Die **API-Schlüssel** -Abschnitt zeigt nun Ihren API-Schlüssel an. Sie benötigen sowohl den API-Schlüssel als auch den privaten Schlüssel, wenn Sie [Auswählen oder Erstellen eines SaaS-Projekts](#createsaasenv).
+1. Wiederholen Sie die obigen Schritte für jede Umgebung (Produktion und Sandbox).
+
+   Die **API-Schlüssel** -Abschnitt zeigt nun Ihre API-Schlüssel an. Sie benötigen sowohl die Produktions- als auch die Sandbox-Schlüssel, wenn Sie [Auswählen oder Erstellen eines SaaS-Projekts](#createsaasenv).
 
 ## SaaS-Konfiguration {#saasenv}
 
@@ -71,35 +73,37 @@ Für [!DNL Product Recommendations], enthält der SaaS-Datenraum Katalog- und Ve
 
 >[!NOTE]
 >
-> Wenn die Variable **[!UICONTROL Commerce Services Connector]** im Abschnitt [!DNL Commerce] -Konfiguration, müssen Sie die [!DNL Commerce] Module für Ihre gewünschten [!DNL Commerce] -Dienst, z. B. [[!DNL Product Recommendations]](/help/product-recommendations/install-configure.md).
+> Wenn die Variable **[!UICONTROL Commerce Services Connector]** im Abschnitt [!DNL Commerce] -Konfiguration, müssen Sie die [!DNL Commerce] Module für Ihre gewünschten [[!DNL Commerce] service](#availableservices).
 
 Um ein SaaS-Projekt auszuwählen oder zu erstellen, fordern Sie die [!DNL Commerce] API-Schlüssel aus der [!DNL Commerce] Lizenzinhaber für Ihr Geschäft.
 
-1. Im _Admin_ Seitenleiste, navigieren Sie zu **Stores** > _Einstellungen_ > **Konfiguration**.
+1. Im _Admin_ Seitenleiste, navigieren Sie zu **System** > Dienste > **Commerce Services Connector**.
 
-1. Erweitern Sie im linken Bereich **Dienste** und wählen Sie **Commerce Services Connector**.
-
-1. Im _API-Schlüssel_ Fügen Sie Ihre Schlüsselwerte für die **Produktions-API-Schlüssel** und **Privater Produktionsschlüssel**.
+1. Im _Sandbox-API-Schlüssel_ und _Schlüssel der Produktions-API_ -Abschnitte, fügen Sie Ihre Schlüsselwerte ein.
 
    Private Schlüssel müssen enthalten sein `----BEGIN PRIVATE KEY---` am Anfang des Schlüssels und `----END PRIVATE KEY----` am Ende des privaten Schlüssels.
 
-1. Klicken **Konfiguration speichern**.
+1. Klicken **Speichern**.
 
-Sämtliche SaaS-Projekte, die mit Ihrem API-Schlüssel verknüpft sind, werden im **SaaS-Projekt** -Feld.
+Sämtliche SaaS-Projekte, die mit Ihren Schlüsseln verknüpft sind, werden im **Projekt** im Feld **SaaS-Kennung** Abschnitt.
 
-1. Wenn keine SaaS-Projekte vorhanden sind, klicken Sie auf **Projekt erstellen**. Dann in der **Projektname** ein, geben Sie einen Namen für Ihr SaaS-Projekt ein.
+1. Wenn keine SaaS-Projekte vorhanden sind, klicken Sie auf **Projekt erstellen**. Dann in der **Projekt** ein, geben Sie einen Namen für Ihr SaaS-Projekt ein.
 
    Wenn Sie ein SaaS-Projekt erstellen, [!DNL Commerce] generiert je nach Ihrer [!DNL Commerce] -Lizenz:
    - Adobe Commerce - Ein Produktionsdatenraum; zwei Testdatenbereiche
    - Magento Open Source - Ein Produktionsdatenraum; keine Testdatenräume
 
-1. Wählen Sie die **SaaS-Datenraum** zur Verwendung für die aktuelle Konfiguration Ihrer [!DNL Commerce] speichern.
+1. Wählen Sie die **Datenraum** zur Verwendung für die aktuelle Konfiguration Ihrer [!DNL Commerce] speichern.
 
 >[!WARNING]
 >
 > Wenn Sie im Abschnitt &quot;Mein Konto&quot;im API-Portal neue Schlüssel generieren, aktualisieren Sie sofort die API-Schlüssel in der Admin-Konfiguration. Wenn Sie neue Schlüssel generieren und diese nicht im Admin aktualisieren, funktionieren Ihre SaaS-Erweiterungen nicht mehr und Sie verlieren wertvolle Daten.
 
-Um die Namen des SaaS-Projekts oder der Datenspeicherorte zu ändern, klicken Sie auf das **Dieses Projekt umbenennen** oder **Umbenennen des Datenspeichers** bzw.
+Um die Namen des SaaS-Projekts oder der Datenspeicherorte zu ändern, klicken Sie auf **Umbenennen**.
+
+## IMS-Organisation (optional) {#organizationid}
+
+(Diese Funktion dient der zukünftigen Integration in die Adobe Experience Platform.) Um Ihre Adobe Commerce-Instanz mit Adobe Experience Platform zu verbinden, melden Sie sich mit Ihrem Adobe ID-Konto bei Ihrem Adobe-Konto an. Nach der Anmeldung wird die mit Ihrem Adobe-Konto verknüpfte IMS-Organisation in diesem Abschnitt angezeigt.
 
 ## Katalogsynchronisierung
 

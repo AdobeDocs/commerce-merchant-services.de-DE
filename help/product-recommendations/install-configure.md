@@ -2,9 +2,9 @@
 title: Installieren und Konfigurieren
 description: Erfahren Sie, wie Sie installieren, aktualisieren und deinstallieren [!DNL Product Recommendations].
 exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
-source-git-commit: b06d5000263b7ee09608a4a8510d76e9f4bdb809
+source-git-commit: cfeb8b4f8e2dc1e9d2d4c0be7a7bc522488418bc
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '484'
 ht-degree: 0%
 
 ---
@@ -62,17 +62,7 @@ Wie alle Adobe Commerce [!DNL Product Recommendations] verwendet Composer für I
 composer update magento/product-recommendations --with-dependencies
 ```
 
-Um auf eine Hauptversion zu aktualisieren, z. B. von 2.0 auf 3.0, müssen Sie das Stammverzeichnis Ihres Projekts bearbeiten `composer.json` -Datei. (Siehe [Versionshinweise](release-notes.md) für Informationen zur neuesten Version.) Lassen Sie uns beispielsweise den `composer.json` Datei und suchen Sie nach `magento/product-recommendations` -Modul:
-
-```json
-"require": {
-    ...
-    "magento/product-recommendations": "^2.0",
-    ...
-}
-```
-
-Überspringen wir die Hauptversion von `2.0` nach `3.0`:
+Um auf eine Hauptversion zu aktualisieren, z. B. von 3.0 auf 4.0, müssen Sie den Stamm bearbeiten `composer.json` -Datei für Ihr Projekt. (Siehe [Versionshinweise](release-notes.md) für Informationen zur neuesten Version.) Lassen Sie uns beispielsweise den `composer.json` Datei und suchen Sie nach `magento/product-recommendations` -Modul:
 
 ```json
 "require": {
@@ -82,11 +72,25 @@ Um auf eine Hauptversion zu aktualisieren, z. B. von 2.0 auf 3.0, müssen Sie da
 }
 ```
 
+Überspringen wir die Hauptversion von `3.0` nach `4.0`:
+
+```json
+"require": {
+    ...
+    "magento/product-recommendations": "^4.0",
+    ...
+}
+```
+
 Speichern Sie die `composer.json` Datei und führen Sie Folgendes aus:
 
 ```bash
 composer update magento/product-recommendations --with-dependencies
 ```
+
+>[!NOTE]
+>
+> In den Versionen 3.x.x von Product Recommendations benötigen Sie nur einen einzigen API-Schlüssel. In den Versionen 4.x.x und höher müssen Sie öffentliche und private API-Schlüssel für die Produktion sowie öffentliche und private Sandbox-API-Schlüssel bereitstellen. Wenn Sie nicht beide API-Schlüsselpaare bereitstellen, können Sie nicht in der Admin-Konsole auf die Funktion &quot;Product Recommendations&quot;zugreifen. Die Datenerfassung wird jedoch in Ihrer Storefront fortgesetzt und vorhandene Empfehlungen werden Ihren Käufern weiterhin angezeigt.
 
 ## Deinstallieren [!DNL Product Recommendations] {#uninstall}
 

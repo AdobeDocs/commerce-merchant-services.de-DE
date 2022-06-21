@@ -2,9 +2,9 @@
 title: Verhaltensdaten
 description: Erfahren Sie mehr über Verhaltensdaten und wann Sie mit der Verwendung beginnen können.
 exl-id: d68a97b9-1497-4603-a72c-4aaaf6e048cb
-source-git-commit: e7c3d1ab49ee9469e3312321f6d96446840d0778
+source-git-commit: 371ae21c97021912279381b5e32f953fe3b4f0dd
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '585'
 ht-degree: 0%
 
 ---
@@ -35,9 +35,11 @@ Andere Variablen, die sich auf die zum Trainieren benötigte Zeit auswirken kön
 - Einige Empfehlungstypen trainieren schneller als andere
 - Adobe Commerce berechnet Verhaltensdaten alle vier Stunden neu. Sie können Ihre Empfehlungseinheiten zwar technisch zu diesem Zeitpunkt bereitstellen, wissen jedoch, dass die Empfehlungen genauer werden, je länger sie auf Ihrer Site verwendet werden.
 
+Um den Trainings-Fortschritt der einzelnen Empfehlungstypen zu visualisieren, muss die [Empfehlung erstellen](create.md) Seite zeigt die Indikatoren zur Bereitschaft an.
+
 Während Daten auf Produktions- und maschinellen Lernmodellen erfasst werden, können Sie die [verbleibende Aufgaben](implementation-workflow.md) erforderlich, um Empfehlungen für Ihre Storefront bereitzustellen. Wenn Sie die Tests und Konfiguration von Empfehlungen abgeschlossen haben, haben die Modelle für maschinelles Lernen genügend Daten gesammelt und berechnet, um relevante Empfehlungen zu erstellen, sodass Sie die Empfehlungen in Ihrer Storefront bereitstellen können.
 
-## Reserveempfehlungen
+## Reserveempfehlungen {#backuprecs}
 
 Wenn nicht genügend Eingabedaten vorhanden sind, um alle angeforderten Empfehlungselemente in einer Einheit bereitzustellen, bietet Adobe Commerce Ersatzempfehlungen zum Ausfüllen von Empfehlungseinheiten. Wenn Sie beispielsweise die `Recommended for you` Empfehlungstyp auf Ihrer Homepage verwenden, hat ein Erstkäufer Ihrer Site nicht genügend Verhaltensdaten generiert, um genau empfohlene personalisierte Produkte zu erzielen. In diesem Fall überdeckt Adobe Commerce Elemente basierend auf dem `Most viewed` Empfehlungstyp an diesen Kunden.
 
