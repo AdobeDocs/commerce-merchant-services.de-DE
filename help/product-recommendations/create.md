@@ -2,9 +2,9 @@
 title: Neue Empfehlung erstellen
 description: Erfahren Sie, wie Sie eine Produktempfehlungseinheit erstellen.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 1d2b4b8d85e5ccea1c4258869fbfd191a2e7987b
+source-git-commit: 5fa08429a97c9ed59a339a0eca268f99c1023b7e
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: '841'
 ht-degree: 0%
 
 ---
@@ -41,8 +41,8 @@ Wenn Sie die Empfehlungseinheit aktivieren, beginnt Adobe Commerce [Daten erfass
 
    Sie können bis zu fünf aktive Empfehlungseinheiten für jeden Seitentyp und bis zu 25 für Page Builder erstellen. Der Seitentyp ist grau ausgeblendet, wenn die Grenze erreicht ist.
 
-   ![Empfehlungsname](assets/create-recommendation.png)
-   _Empfehlungsname und -platzierung_
+   ![Empfehlungsname und -seite](assets/create-recommendation.png)
+   _Empfehlungsname und Seitenplatzierung_
 
 1. Im _Empfehlungstyp auswählen_ -Abschnitt, geben Sie die [Empfehlungstyp](type.md) Sie möchten auf der ausgewählten Seite angezeigt werden. Bei einigen Seiten wird die Variable [placement](placement.md) Empfehlungen sind auf bestimmte Typen beschränkt.
 
@@ -54,10 +54,10 @@ Wenn Sie die Empfehlungseinheit aktivieren, beginnt Adobe Commerce [Daten erfass
 
    Basierend auf den oben genannten Faktoren wird ein Bereitschaftswert berechnet und angezeigt. Ein Empfehlungstyp gilt als bereitstellbar, wenn sein Bereitschaftswert 75 % oder höher beträgt. Ein Empfehlungstyp wird als teilweise fertig angesehen, wenn seine Bereitschaft mindestens 50 % beträgt. Schließlich gilt ein Empfehlungstyp als nicht bereit zur Bereitstellung, wenn sein Bereitschaftswert unter 50 % liegt.
 
-1. Im _Anzeigebezeichnung Storefront_ eingeben. [label](placement.md#recommendation-labels) die für Ihre Kunden sichtbar ist, z. B. &quot;Topverkäufe&quot;.
-
-   ![Empfehlungsname](assets/create-recommendation-select-type.png)
+   ![Empfehlungstyp](assets/create-recommendation-select-type.png)
    _Empfehlungstyp_
+
+1. Im _Anzeigebezeichnung Storefront_ eingeben. [label](placement.md#recommendation-labels) die für Ihre Kunden sichtbar ist, z. B. &quot;Topverkäufe&quot;.
 
 1. Im _Anzahl der Produkte auswählen_ können Sie mit dem Schieberegler festlegen, wie viele Produkte in der Empfehlungseinheit angezeigt werden sollen.
 
@@ -72,12 +72,12 @@ Wenn Sie die Empfehlungseinheit aktivieren, beginnt Adobe Commerce [Daten erfass
 
    Die _Position auswählen_ zeigt alle Empfehlungen (falls vorhanden) an, die für den ausgewählten Seitentyp erstellt wurden.
 
-   ![Empfehlungsname](assets/create-recommendation-select-placement.png)
-   _Empfehlungstyp_
+   ![Empfehlungsauftrag](assets/create-recommendation-select-placement.png)
+   _Empfehlungsauftrag auf Seite_
 
 1. (Optional) Im _Filter_ Abschnitt [Filter anwenden](filters.md) , um zu steuern, welche Produkte in der Empfehlungseinheit angezeigt werden.
 
-   ![Empfehlungsname](assets/create-recommendation-select-placement.png)
+   ![Empfehlungsfilter](assets/create-recommendation-filter-products.png)
    _Empfehlungs-Produktfilter_
 
 1. Klicken Sie nach Abschluss des Vorgangs auf eine der folgenden Optionen:
