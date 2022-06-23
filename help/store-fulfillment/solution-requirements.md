@@ -1,15 +1,15 @@
 ---
-title: Dienstanforderungen
-description: '"Anforderungen an die Bereitstellung und das Onboarding der [!DNL Store Fulfillment Manager] service"'
+title: Anforderungen an die Store-Erfüllung
+description: Anforderungen an die Bereitstellung und das Onboarding der [!DNL Store Fulfillment solution].
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+exl-id: f9e05049-5904-4f6c-b45d-9f81fbc76b69
+source-git-commit: 421c90f4c8bd687216cd48c72f30301a32115522
 workflow-type: tm+mt
-source-wordcount: '232'
-ht-degree: 3%
+source-wordcount: '291'
+ht-degree: 2%
 
 ---
-
 
 # Anforderungen an die Store-Erfüllung für Adobe Commerce
 
@@ -19,8 +19,8 @@ Sie müssen die folgenden technischen und geschäftlichen Anforderungen erfülle
 
 Die [!DNL Store Fulfillment] -Lösung ist für Adobe Commerce-Kunden auf den folgenden Plattformen verfügbar.
 
-* Adobe Commerce über Cloud-Infrastruktur (ECE)
-* Adobe Commerce vor Ort (EE)
+- Adobe Commerce über Cloud-Infrastruktur (ECE)
+- Adobe Commerce vor Ort (EE)
 
 Die Store Fulfillment-Lösung ist mit den folgenden Softwareversionen kompatibel.
 
@@ -36,22 +36,36 @@ Die Store Fulfillment-Lösung ist mit den folgenden Softwareversionen kompatibel
 
 Detaillierte Anforderungen finden Sie unter Adobe Commerce . [Systemanforderungen](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) in der Entwicklerdokumentation.
 
+## Anforderungen an Store Assist-Apps
+
+Der End-to-End-Prozess zur Verwaltung von Store-Abruf-Bestellungen wird über die Store-Hilfe-App verwaltet, die auf Mobilgeräten installiert ist. Diese Geräte, die vom Einzelhändler oder von den Verkaufsmitarbeitern mit ihren persönlichen Smartphones bereitgestellt werden, müssen die folgenden Anforderungen erfüllen:
+
+**Mindestanforderungen an das Betriebssystem**
+
+- Android 6
+- iOS 12
+
+**Mindestanforderungen an die Hardware**
+
+- 1 GB RAM
+- 600 MB freier Speicherplatz
+
 ## Geschäftsanforderungen
 
 Ihr Unternehmen muss die folgenden Mindestkriterien erfüllen, um die Store Fulfillment-Lösung zu implementieren.
 
-* Nur in den USA ansässige Unternehmen
+- Nur in den USA ansässige Unternehmen
 
-* B2C-Einzelhändler, CPG-Hersteller, die D2C verkaufen, oder Distributoren, die D2C oder kleine Unternehmen verkaufen
+- B2C-Einzelhändler, CPG-Hersteller, die D2C verkaufen, oder Vertriebsgesellschaften, die D2C oder kleine Unternehmen verkaufen
 
-* Mindestens ein physisches Lager oder Lager
+- Mindestens ein physisches Lager oder Lager
 
-* Verwalten des Produktbestands mit Inventory management für Adobe Commerce (auch MSI genannt)
+- Verwalten des Produktbestands mit Inventory management für Adobe Commerce (auch MSI genannt)
 
-* Möglichkeit zur Konsortimentierung des Händlerinventars
+- Möglichkeit zur Konsortimentierung des Händlerinventars
 
-* Store-Wi-Fi-Verfügbarkeit an allen Standorten, die die Store Fulfillment-Lösung unterstützen
+- Die WLAN-Verfügbarkeit wird an allen Standorten gespeichert, die die Store Fulfillment-Lösung unterstützen: Internet-Geschwindigkeit von 3 MBit/s
 
-* Store- und Warehouse-Mitarbeiter haben während ihres Verlags Zugriff auf Mobilgeräte mit iOS oder Android, die entweder persönlich oder vom Händler bereitgestellt werden
+- Store- und Warehouse-Mitarbeiter haben während ihres Verlags Zugriff auf Mobilgeräte mit iOS oder Android, die entweder persönlich oder vom Händler bereitgestellt werden
 
-* Produkte, die mit der Store Fulfillment-Lösung verwaltet werden, müssen über Produktattribute verfügen, die entweder einen SKU- oder einen UPC-Produktcode enthalten
+- Produkte, die mit der Store Fulfillment-Lösung verwaltet werden, müssen über Produktattribute verfügen, die entweder einen SKU- oder einen UPC-Produktcode enthalten
