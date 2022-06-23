@@ -4,9 +4,9 @@ description: '"Installieren Sie die [!DNL Store Fulfillment solution] für eine 
 role: User, Admin
 level: Intermediate
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
-source-git-commit: 66c4ca972004c43fa55795006b1511820ca9b514
+source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '661'
 ht-degree: 0%
 
 ---
@@ -29,15 +29,15 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 ## Installationsanforderungen
 
-- **Zugriff auf das Softwarearchiv der Walmart Commerce Technologies-Software zur Store-Erfüllung (.zip-Datei)**- Wenden Sie sich während des Onboarding- und Aktivierungsprozesses an Ihren Kundenbetreuer, um Zugriff auf die Installationsdatei für die Store Fulfillment-Erweiterung zu erhalten.
+- **Zugriff auf das Softwarearchiv der Walmart Commerce Technologies-Software zur Store-Erfüllung (.zip-Datei)**—Wenden Sie sich während des Onboarding- und Aktivierungsprozesses an Ihren Kundenbetreuer, um Zugriff auf die Installationsdatei für die Store Fulfillment-Erweiterung zu erhalten.
 
-- **Adobe Commerce-Kontoinformationen**- Installieren der [!DNL Store Fulfillment] -Lösung erfordert [Commerce-Konto](https://docs.magento.com/user-guide/magento/magento-account.html){target=&quot;_blank&quot;}. Sie benötigen eine Konto-ID und Anmeldedaten mit dem Inhaber- oder Administratorzugriff auf die [!DNL Adobe Commerce] Projekt.
+- **Adobe Commerce-Kontoinformationen**- Installieren der [!DNL Store Fulfillment] -Lösung erfordert [[!DNL Commerce] account](https://docs.magento.com/user-guide/magento/magento-account.html){target=&quot;_blank&quot;}. Sie benötigen eine Konto-ID und Anmeldedaten mit dem Inhaber- oder Administratorzugriff auf die [!DNL Adobe Commerce] Projekt.
 
 - Für [!DNL Adobe Commerce] Bei Cloud-Infrastrukturprojekten müssen Softwareinstallateure Administratorzugriff auf das Cloud-Projekt haben. Siehe [Benutzerzugriff verwalten](https://devdocs.magento.com/cloud/project/user-admin.html).
 
 - **Erlebnis mit Composer und dem[!DNL Commerce CLI]**—Siehe [Allgemeine CLI-Installation](https://devdocs.magento.com/extensions/install/){target=&quot;_blank&quot;} für Informationen zur Verwendung dieser Tools zum Installieren und Verwalten von Erweiterungen auf der [!DNL Adobe Commerce] Plattform.
 
-- **Erlebnis der Installation von Drittanbietererweiterungen auf Adobe Commerce**-Weitere Informationen finden Sie in der Adobe Commerce-Dokumentation.
+- **Erlebnis der Installation von Drittanbietererweiterungen auf Adobe Commerce**—Weitere Informationen finden Sie in der Adobe Commerce-Dokumentation.
 
    - [Installieren einer Erweiterung für eine Adobe Commerce in einer Cloud-Infrastrukturinstanz](https://devdocs.magento.com/cloud/howtos/install-components.html#install-an-extension).
 
@@ -94,7 +94,8 @@ Verwenden Sie Composer, um den Quellordner für die Installation zu konfiguriere
 
 Schließen Sie die Installation mit der `bin/magento setup:upgrade` , um das Datenbankschema und die Daten mit den Änderungen zu aktualisieren, um die Lösung zur Store-Erfüllung zu unterstützen.
 
->Hinweis:
+>[!NOTE]
+>
 >Für Adobe Commerce in Cloud-Infrastrukturprojekten müssen Sie die Erweiterung nicht registrieren. Übernehmen Sie stattdessen die Codeänderungen aus dem vorherigen Schritt und übertragen Sie sie in Ihre Umgebungsverzweigung. Die Befehle zum Aktualisieren des Datenbankschemas und der Daten werden während des Build- und Bereitstellungsprozesses der Cloud automatisch ausgeführt.
 
 ### Schritt 5: Schließen Sie die Installation ab
@@ -183,7 +184,7 @@ Schließen Sie die Installation mit der `bin/magento setup:upgrade` , um das Dat
 
 ### Zusätzliche Schritte
 
-Verwenden Sie bei Bedarf die `[setup:static-content: deploy](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-commerce.html#setupstatic-contentdeploy)` CLI-Befehl zum Bereitstellen von statischen Ansichtsdateien in Ihrer Produktionsumgebung.
+Verwenden Sie bei Bedarf die [Setup:static-content:deploy](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-commerce.html#setupstatic-contentdeploy){target=&quot;_blank&quot;} CLI-Befehl zum Bereitstellen von statischen Ansichtsdateien in Ihrer Produktionsumgebung.
 
 ```terminal
 php bin/magento setup:static-content:deploy -f

@@ -4,9 +4,9 @@ description: Richten Sie die [!DNL Store Assist] App zur Verwaltung von End-to-E
 role: User, Admin
 level: Intermediate
 exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
-source-git-commit: 421c90f4c8bd687216cd48c72f30301a32115522
+source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
@@ -48,13 +48,13 @@ Die Store-Hilfe-App erfordert zwei Arten von Konfiguration:
 
    - Passen Sie alle Anweisungen in der App an (Auswählen, Staging, Übergabe).
 
-   - **Benachrichtigungen auswählen**-Geben Sie an, ob eine Push-Benachrichtigung gesendet werden soll, um den Pickingprozess zu starten, nachdem ein Kunde eine Bestellung aufgegeben hat.
+   - **Benachrichtigungen auswählen**—Geben Sie an, ob eine Push-Benachrichtigung gesendet werden soll, um den Pickingprozess zu starten, nachdem ein Kunde eine Bestellung aufgegeben hat.
 
-   - **Benachrichtigungen einchecken**-Geben Sie an, ob eine Push-Benachrichtigung während des Eincheckvorgangs für die Bestellabholung nach dem Einchecken gesendet werden soll, nachdem die Kundenwartezeit einen bestimmten Zeitraum überschreitet. Oder deaktivieren Sie die Benachrichtigung.
+   - **Benachrichtigungen einchecken**—Geben Sie an, ob eine Push-Benachrichtigung während des Eincheckvorgangs für die Bestellabholung nach dem Einchecken gesendet werden soll, nachdem die Wartezeit des Kunden einen bestimmten Zeitraum überschreitet. Oder deaktivieren Sie die Benachrichtigung.
 
    - **Übergabe**—Aktivieren Sie optionale Prozesse, wenn Store Associate die Bestellung an den Kunden bereitstellt, z. B. eine Kundenunterschrift erforderlich ist oder die Zuordnung auffordert, die Kunden-ID zu überprüfen.
 
-   - **Elementabweisung bei Übergabe aktivieren**-Ermöglicht es Kunden, während der Bestellübergabe Bestellartikel zurückzugeben oder abzubrechen.
+   - **Elementabweisung bei Übergabe aktivieren**- Ermöglichen Sie Kunden, während der Bestellübergabe Bestellartikel zurückzugeben oder abzubrechen.
    Arbeiten Sie mit dem Team von Walmart Commerce Technologies Client Services zusammen, um die Frontend-Konfiguration für die Store Assist App abzuschließen.
 
 ## App-Download und -Installation
@@ -67,7 +67,7 @@ Nachdem die Konfiguration der Store-Hilfe-App abgeschlossen ist, können Store-A
 
 - Für die Anmeldung bei Store Associates sind die folgenden Informationen erforderlich:
 
-   - Der Firmenname, der mit Ihrem Store Assist-Konto verknüpft ist
+   - **[!UICONTROL Company name]** mit dem Store Assist-Konto verknüpft ist
 
-   - Speichern Sie die Anmeldeinformationen des Assist-Kontos - Benutzername und Kennwort-Anmeldeinformationen für das Konto.
+   - **Anmeldeinformationen des Store-Assist-Kontos**—Benutzername und Passwort für ihr Konto.
    Ein Adobe Commerce-Administrator kann ein Benutzerkonto erstellen und Berechtigungen für die Benutzerkonten der Store Assist App für Speicherorte mit [In-Store-Abruf](merchant-store-configuration.md#pickup-location-configuration) in den Admin Stores-Einstellungen aktiviert wurde.

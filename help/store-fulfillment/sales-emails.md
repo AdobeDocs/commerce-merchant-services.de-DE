@@ -4,9 +4,9 @@ description: Konfigurieren Sie die Transaktions-E-Mail-Vorlagen für die Kommuni
 role: User, Admin
 level: Intermediate
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1215'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Verkaufs-E-Mails
 
-Store Fulfillment bietet eine erweiterte Reihe von Transaktions-E-Mail-Vorlagen, um Bestell- und Erfüllungs-Workflows zu unterstützen. Sie bieten eine konsistente, automatisierte Kommunikation und Messaging über alle Kanäle hinweg. Sie informieren Kunden- und Store-Administratoren über Bestellstatusänderungen, Anweisungen für In-Store-Abholaufträge und vieles mehr.
+Store Fulfillment bietet eine erweiterte Reihe von Transaktions-E-Mail-Vorlagen, um Bestell- und Erfüllungs-Workflows zu unterstützen. Sie bieten eine konsistente, automatisierte Kommunikation und Messaging über alle Kanäle hinweg - Sie informieren Kunden- und Store-Administratoren über Bestellstatusänderungen, Anweisungen für In-Store-Abholaufträge und vieles mehr.
 
 E-Mail-Vorlagen für die Store-Erfüllung werden mit Standardnachrichten und -Einstellungen konfiguriert. Merchant-Administratoren in Adobe Commerce können Konfigurationen verwalten und ändern sowie E-Mail-Vorlagen auswählen, um mit Kunden in unterschiedlichen Szenarien zu kommunizieren. Administratoren können Vorlagen auch konfigurieren und anpassen.
 

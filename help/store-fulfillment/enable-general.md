@@ -3,9 +3,10 @@ title: Allgemeine Konfiguration
 description: Konfigurieren allgemeiner Einstellungen zum Aktivieren von [!DNL Store Fulfillment] für Ihren Laden. Konfigurieren Sie globale Erweiterungseinstellungen, Systemeinstellungen für die Protokollierung, Datensynchronisation und Sicherheit. Stellen Sie wichtige Daten bereit, um die Integration zwischen Adobe Commerce und Store Fulfillment-Diensten zu ermöglichen.
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
+source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
 workflow-type: tm+mt
-source-wordcount: '2409'
+source-wordcount: '2413'
 ht-degree: 0%
 
 ---
@@ -18,27 +19,23 @@ Die Integration muss mit dem Store Fulfillment-Dienst verbunden sein. Konfigurie
 
 Die allgemeine Konfiguration für [!DNL Store Fulfillment] enthält die folgenden Konfigurationseinstellungen:
 
-- [Aktivieren der Erweiterung](#enable-the-extension)
+- [Lösung aktivieren](#enable-the-store-fulfillment-solution)
 - [Kontoanmeldeinformationen verwalten, um eine Verbindung zu Store Fulfillment-Diensten herzustellen](#account-credentials)
 - [Konfigurieren der Protokollierung](#configure-logging)
-- [Festlegen von Optionen für die Verwaltung von Vorgängen zur [Synchronisierung von Ordnern]](#order-synchronization)
+- [Optionen zum Verwalten von Bestell- und Fehlersynchronisierungsvorgängen festlegen](#order-synchronization)
 - [Versandoptionen für Store-Erfüllung aktivieren](#enable-store-fullment-shipping-options)
 - [Konfigurieren von Sicherheits- und Authentifizierungseinstellungen für die Store Fulfillment-App](#store-fulfillment-app)
 - [Verfügbarkeit und Nachrichtenkonfiguration der Versandmethode festlegen](#in-store-delivery-methods)
 
-
-## Aktivieren der Erweiterung
+## Aktivieren Sie die Store Fulfillment-Lösung.
 
 | **Feld** | **Beschreibung** | **Anwendungsbereich** | **Erforderlich** |
 |--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
 | **[!UICONTROL Enabled]** | Aktivieren oder deaktivieren Sie die Lösung. Wenn diese Option aktiviert ist, konfigurieren und verwenden Sie Store Fulfillment-Funktionen und stellen Sie die Verbindung zwischen Ihren Adobe Commerce Store- und Store Fulfillment-Diensten her. Wenn diese Option deaktiviert ist, sind alle Funktionen zur Store-Erfüllung deaktiviert und es gibt keine Kommunikation zwischen Adobe Commerce und Store Fulfillment-Diensten. Bestellinformationen können nicht verarbeitet oder empfangen werden. | Global | Ja |
 
-
-Informationen zum Abschließen dieser Einrichtung finden Sie unter **Stores → Configuration → Services → Store Fulfillment by Walmart Commerce Technologies**.
+Informationen zum Abschließen dieser Einrichtung finden Sie unter **Stores > Konfiguration > Dienste > Store Fulfillment by Walmart Commerce Technologies**.
 
 ## Kontoanmeldeinformationen hinzufügen
-
-
 
 | **Feld** | **Beschreibung** | **Anwendungsbereich** | **Erforderlich** |
 |----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
@@ -72,7 +69,7 @@ Details zu Vorgängen zur Bestellsynchronisierung finden Sie im Dashboard Wartes
 
 | **Feld** | **Beschreibung** | **Anwendungsbereich** | **Erforderlich** |
 |-----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|--------------|
-| **Kritischen Fehler erneut versuchen** | Gibt die Wiederholungsversuche für einen Synchronisierungsvorgang für Datensätze an, nachdem ein kritischer Fehler aufgetreten ist.</br></br>Kritische Fehler treten immer dann auf, wenn die Integration keine positive Antwort vom Fulfillment-Dienst erhält. Dies kann vorkommen, wenn der Dienst ausfällt oder die gesendeten Bestelldaten einen Fehler aufweisen.</br></br>Wenn die Wiederholungsschwelle erreicht ist, bleibt das Element in der Warteschlange, wird aber nicht erneut verarbeitet. Alle Elemente anzeigen, deren Fehler auftreten **[!UICONTROL System → Tools → Store Fulfillment Queue]** Verwaltung in der Admin-Konsole. Wenden Sie sich an Ihren Kundenbetreuer, um eine Fehlerbehebung bei konsistent fehlerhaften Elementen durchzuführen. | Global | Nein |
+| **Kritischen Fehler erneut versuchen** | Gibt die Wiederholungsversuche für einen Synchronisierungsvorgang für Datensätze an, nachdem ein kritischer Fehler aufgetreten ist.</br></br>Kritische Fehler treten immer dann auf, wenn die Integration keine positive Antwort vom Fulfillment-Dienst erhält. Dies kann vorkommen, wenn der Dienst ausfällt oder die gesendeten Bestelldaten einen Fehler aufweisen.</br></br>Wenn die Wiederholungsschwelle erreicht ist, bleibt das Element in der Warteschlange, wird aber nicht erneut verarbeitet. Alle Elemente anzeigen, deren Fehler auftreten **[!UICONTROL System > Tools > Store Fulfillment Queue]** Verwaltung in der Admin-Konsole. Wenden Sie sich an Ihren Kundenbetreuer, um eine Fehlerbehebung bei konsistent fehlerhaften Elementen durchzuführen. | Global | Nein |
 | **E-Mail zur Fehlerbenachrichtigung aktivieren** | Aktivieren Sie Fehlerbenachrichtigungen, um eine E-Mail zu erhalten, wenn die [!UICONTROL Retry Critical Error Threshold] wird für eine Bestellung erreicht. Die Benachrichtigung enthält alle verfügbaren Details zum Fehler. | Global | Nein |
 | **E-Mail zur Fehlerbenachrichtigung an senden** | Eine kommagetrennte Liste von Empfänger-E-Mail-Adressen für Fehlerbenachrichtigungen. | Global | Nein |
 | **E-Mail-Vorlage für die Bestellsynchronisierung** | Gibt die E-Mail-Vorlage an, mit der Empfänger über Fehler bei der Bestellsynchronisierung benachrichtigt werden. Eine Standardvorlage wird bereitgestellt. Die Anpassung wird nicht unterstützt. | Store-Ansicht | Nein |
@@ -91,7 +88,6 @@ Details zu Vorgängen zur Bestellsynchronisierung finden Sie im Dashboard Wartes
 Konfigurieren Sie die Versandoptionen Store-Erfüllung , die die Verfügbarkeit der Optionen für die In-Store-Abholung und den Home-Versand für Ihre Adobe Commerce-Stores bestimmen.
 
 ### Zu Lager Schiff
-
 
 | **Feld** | **Beschreibung** | **Anwendungsbereich** | **Erforderlich** |
 |---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
@@ -117,7 +113,6 @@ Konfigurieren Sie die Einstellungen für das Benutzerkonto der Store Fulfillment
 | **[!UICONTROL Lockout Time (minutes)]** | Anzahl der Minuten, in denen ein Konto nach einem Anmeldefehler gesperrt werden soll. | Global | Nein |
 | **[!UICONTROL Force Password Change]** | Bestimmt, ob eine Änderung des Benutzerkennworts erforderlich ist.</br></br>`Yes`: Der Benutzer muss nach der Kontoeinrichtung sein Kennwort ändern.</br>`No`: empfiehlt dem Benutzer, das Kennwort nach der Kontoeinrichtung zu ändern. | Global | Nein |
 | **Kennwortlebensdauer** | Die Anzahl der Tage, in denen ein Kennwort vor einer erforderlichen Kennwortänderung gültig bleibt. Lassen Sie es leer, um diese Option zu deaktivieren. | Global | Nein |
-
 
 ### Zweifaktorauthentifizierung
 
@@ -150,7 +145,6 @@ In-store pickup, says its global setting, but scope is Website.  How do you conf
 | **Aktivieren der aktuellen Erfassung** | Aktivieren oder deaktivieren Sie die Option &quot;Cursor-Seitenabruf&quot;während des Checkout-Prozesses für Kunden, die die Store-Abholung auswählen.</br></br>Diese globale Einstellung gilt für alle Einzelhandelsspeicherorte. Wenn diese Option aktiviert ist, können Sie sie selektiv am Speicherort des Einzelhandels deaktivieren. | Webseite | Nein |
 
 Weitere Informationen zum Anpassen der Versandmethoden an ausgewählten Einzelhandelsstandorten finden Sie unter **Konfiguration des Einzelhandelsspeichers**.
-
 
 #### Konfiguration des Titels der Bereitstellungsmethode
 
@@ -262,8 +256,3 @@ Weitere Informationen zum Anpassen der Versandmethoden an ausgewählten Einzelha
 <td>Nein</td>
 </tr>
 </tbody></table>
-
-
-
-
-

@@ -3,13 +3,13 @@ title: Testen und Bereitstellen der Store-Erfüllung
 description: Testen Sie den Plan, um die Funktion zur Store-Erfüllung zu überprüfen. Tests umfassen die API zur Lagerbestandssynchronisierung, den End-to-End-Erfüllungs-Workflow für abgebrochene Bestellungen, die Benutzerverwaltung der App zur Inhaltsbearbeitung und das Customer Check-in-Erlebnis.
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+exl-id: 77285a66-5161-407b-94cd-b3f412d7949d
+source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
 workflow-type: tm+mt
 source-wordcount: '2652'
 ht-degree: 0%
 
 ---
-
 
 # Testen und Bereitstellen der Store-Erfüllung für Adobe Commerce
 
@@ -55,9 +55,6 @@ Dieser Stichprobenprüfplan umfasst die folgenden Funktionsbereiche:
 | Adobe Commerce Frontend | Produkttypen | Kunde, Admin |
 | Frontend-Checkout</br>Formular für das Einchecken | Eincheckerlebnis | Kunde, Admin |
 | Store Assist App | Bestellung</br>Auswahl</br>Staging</br>und Übergabe | Store Associate |
-
-
-
 
 ### Inventar-API-Synchronisierung
 
@@ -139,7 +136,6 @@ Dieser Abschnitt des Testplans enthält Szenarien zum Testen des End-to-End-Work
 </td>
 <td>
 <ul>
-<td>
 <li>Auftragsverlauf aktualisiert mit <code>We refunded $X online. Transaction ID: transactionID</code> und <code>Received Cancel acknowledgment from the BOPIS solution.</code></li>
 <li>Bestellstatus: <code>Closed</code>. (Wir haben jetzt ZAHLUNGSÜBERPRÜFUNG festgelegt.)</li>
 <li>In Adobe Commerce erstelltes Credit Memo. (Warten Sie, bis das Cron funktioniert.)</li>
@@ -452,7 +448,7 @@ In diesem Abschnitt des Testplans wird das Check-in-Erlebnis für Store-Abholauf
 
 - Alternativer Abruf-Kontakt - Überprüfen Sie den Workflow für das Hinzufügen eines [!UICONTROL Alternate Pickup Contact] und wählen Sie eine [!UICONTROL Preferred Contact] bei Bestellungen zur Reservierung.
 
-- Formular für das Einchecken - Überprüfen Sie den Workflow zum Senden einer Eincheckanfrage für Store-Abholaufträge.
+- Formular für die Anmeldung - Überprüfen Sie den Workflow für die Übermittlung einer Eincheckanfrage für Store-Abholaufträge.
 
 **Funktionsbereiche:** Warenkorb zur Kasse, Formular zum Einchecken für Bestellungen zur Abholung von Geschäften</br>
 **Rolle:** Admin, Kunde, Store Associate</br>
@@ -569,7 +565,7 @@ In diesem Abschnitt des Testplans werden Szenarien zum Testen der Reihenfolge, A
 </tr>
 <tr>
 <td>
-<strong>Single Order Picking-Happy Path, Cursor-Pickup</strong></td>
+<strong>Einzelbestellauswahl - Happy Path, Cumulative Pickup</strong></td>
 <td>Wählen Sie einzelne und mehrere Elemente aus. Keine Nilpicks und Abholung (mit Staging).
 </td>
 <td>
@@ -639,8 +635,6 @@ In diesem Abschnitt des Testplans werden Szenarien zum Testen der Reihenfolge, A
 </tbody>
 </table>
 
-
-
 ## Bereitstellen
 
 Nachdem Sie überprüft haben, ob die Lösung entsprechend Ihren Spezifikationen konfiguriert und getestet wurde, können Sie sie vom Staging zur Produktion bereitstellen.
@@ -650,23 +644,3 @@ Die Implementierung und Tests variieren je nach Infrastruktur und Funktionen.
 >[!TIP]
 >
 >Bereitstellungsrichtlinien, Checklisten und Best Practices für Adobe Commerce bei Cloud-Infrastrukturprojekten finden Sie unter [Bereitstellen Ihres Stores](https://devdocs.magento.com/cloud/live/stage-prod-live.html) in der Adobe Commerce Developer-Dokumentation.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
