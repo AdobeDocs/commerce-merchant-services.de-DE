@@ -4,9 +4,9 @@ description: Nach der Installation können Sie [!DNL Payment Services] in der St
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 724abe973094c1aa631ca34bd8096052fa1e9195
+source-git-commit: aed9469d6acf638d86389cbf1c178fccd8d42759
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '695'
 ht-degree: 0%
 
 ---
@@ -65,6 +65,9 @@ Siehe [Zahlungsoptionen](payments-options.md#paypal-smart-buttons) für weitere 
 1. Um den Namen der Zahlungsmethode zu ändern, die beim Checkout angezeigt wird, bearbeiten Sie den Wert im **[!UICONTROL Checkout title]** -Feld.
 1. nach [die Zahlungsaktion festlegen](production.md#set-payment-services-as-payment-method), Umschalten **[!UICONTROL Payment action]** nach `Authorize` oder `Authorize and Capture`.
 1. Um den Debug-Modus zu aktivieren, schalten Sie die **[!UICONTROL Debug Mode]** auswählen.
+
+   Wenn Sie den Debugging-Modus aktivieren, werden zusätzliche Debugging-Informationen über die Kreditkartenzahlung in die `var/log/payment.log` -Datei. Diese Informationen geben Ihnen mehr Einblicke in eine bestimmte Zahlung, die Sie bei der Fehlerbehebung unterstützt.
+
 1. Klicken **[!UICONTROL Save]**.
 
    Wenn Sie versuchen, von dieser Ansicht weg zu navigieren, ohne Ihre Änderungen zu speichern, wird ein Modal angezeigt, in dem Sie aufgefordert werden, Änderungen zu verwerfen, die Bearbeitung fortzusetzen oder Änderungen zu speichern.
@@ -88,6 +91,9 @@ Sie können die Zahlungsoptionen für PayPal-Smart-Schaltflächen aktivieren und
 
 1. So ändern Sie die [Spätere Nachrichten bezahlen](payments-options.md#pay-later-button), um die **[!UICONTROL Display Pay Later message]** -Option.
 1. Um den Debug-Modus zu aktivieren, schalten Sie die **[!UICONTROL Debug Mode]** auswählen.
+
+   Wenn Sie den Debug-Modus aktivieren, werden zusätzliche Debugging-Informationen über die PayPal-Zahlung in den `var/log/payment.log` -Datei. Diese Informationen geben Ihnen mehr Einblicke in eine bestimmte Zahlung, die Sie bei der Fehlerbehebung unterstützt.
+
 1. Klicken **[!UICONTROL Save]**.
 
    Wenn Sie versuchen, von dieser Ansicht weg zu navigieren, ohne Ihre Änderungen zu speichern, wird ein Modal angezeigt, in dem Sie aufgefordert werden, Änderungen zu verwerfen, die Bearbeitung fortzusetzen oder Änderungen zu speichern.
