@@ -2,9 +2,9 @@
 title: Commerce Services Connector
 description: Erfahren Sie, wie Sie Ihre Adobe Commerce- oder Magento Open Source-Instanz mithilfe von Produktions- und Sandbox-API-Schlüsseln in Dienste integrieren.
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
-source-git-commit: 42cb709f4699fcdd56df7ca02466ab416f01cab2
+source-git-commit: 89be4b0aa7b311db10cffe7abf9c16a2becbd3a4
 workflow-type: tm+mt
-source-wordcount: '834'
+source-wordcount: '856'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,8 @@ Im Folgenden werden die [!DNL Commerce] Funktionen, auf die Sie über [!DNL Comm
 | [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) powered by Adobe Sensei | Adobe Commerce |
 | [[!DNL Live Search]](/help/live-search/overview.md) powered by Adobe Sensei | Adobe Commerce |
 | [[!DNL Payment Services]](/help/payment-services/overview.md) | Adobe Commerce und Magento Open Source |
+| [[!DNL Channel Manager]](https://experienceleague.corp.adobe.com/docs/commerce-channels/channel-manager/intro-to-channel-manager/overview.html) | Adobe Commerce und Magento Open Source |
+| [[!DNL Site-Wide Analysis Tool]](https://experienceleague.corp.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html) | Adobe Commerce |
 
 ## Architektur
 
