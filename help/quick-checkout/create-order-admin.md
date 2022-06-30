@@ -1,10 +1,11 @@
 ---
-title: '"Erstellen Sie eine Bestellung mit [!DNL Quick Checkout] in Admin"'
-description: '"Der Administrator bietet die Möglichkeit, eine Bestellung mithilfe von [!DNL Quick Checkout] direkt vom Administrator durch einen Händler für Kunden, die Hilfe benötigen."'
-source-git-commit: 9841db7616c8aa6d5bc5af3e6e92c0abe9a4a1e2
+title: Erstellen einer Bestellung mit [!DNL Quick Checkout] in Admin
+description: Der Administrator bietet die Möglichkeit, eine Bestellung mithilfe von [!DNL Quick Checkout] direkt vom Administrator durch einen Händler für Kunden, die Hilfe benötigen.
+exl-id: 52cb8afb-fb23-468d-94b4-9f9142c54ce0
+source-git-commit: 01bb92d1de1f6a6da1d6326c0190eb7711274045
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '194'
+ht-degree: 1%
 
 ---
 
@@ -26,4 +27,4 @@ Wenn Bestellungen im Auftrag des Käufers erteilt werden, muss die [!DNL Quick C
 
 >[!IMPORTANT]
 >
-> Während des Early Adopter Program (EAP) können Benutzer die OTP-Anmeldung nicht verwenden, um Versanddetails automatisch auszufüllen.
+> Benutzer können die OTP-Anmeldung nicht verwenden, um automatisch alle Versand- und Zahlungsdetails auszufüllen.
