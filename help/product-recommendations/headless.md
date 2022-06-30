@@ -2,9 +2,9 @@
 title: Headless
 description: Informationen zur Integration [!DNL Product Recommendations] in einer Headless-Storefront.
 exl-id: 316d0b0c-5938-4e2f-9d0d-747746cf6056
-source-git-commit: e7c3d1ab49ee9469e3312321f6d96446840d0778
+source-git-commit: ce437d7a991affd2665c86c9e91bb7f39ec626c0
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Sie können diese beiden Aktionen mit den verfügbaren SDKs ausführen, wie im f
 
 1. [Installieren](install-configure.md) die [!DNL Product Recommendations] -Modul.
 
-1. Installieren und verwenden Sie die [Storefront Events SDK](https://devdocs.magento.com/shared-services/storefront-events-sdk.html) , um [Verhaltensereignisse](https://devdocs.magento.com/recommendations/events.html).
+1. Installieren und verwenden Sie die [Adobe Commerce Storefront Event SDK](https://devdocs.magento.com/shared-services/storefront-events-sdk.html) , um [Verhaltensereignisse](https://devdocs.magento.com/recommendations/events.html).
 
    Die erforderlichen Mindestereignisse, die zurückgegeben werden [!DNL Product Recommendations] Ergebnisse:
 
@@ -44,7 +44,7 @@ Sie können diese beiden Aktionen mit den verfügbaren SDKs ausführen, wie im f
    | `rec-click` | recommendations-unit |
    | `rec-add-to-cart-click` | Empfehlungseinheit (wenn eine Schaltfläche zum Warenkorb in der Empfehlungsvorlage vorhanden ist) |
 
-1. Wenn die Ereignisse ausgelöst werden, verwenden Sie die [Storefront Events Collector](https://devdocs.magento.com/shared-services/storefront-event-collector.html) um die Ereignisse zu verarbeiten und an Adobe Sensei zu senden.
+1. Wenn die Ereignisse ausgelöst werden, verwenden Sie die [Adobe Commerce Storefront Event Collector](https://devdocs.magento.com/shared-services/storefront-event-collector.html) um die Ereignisse zu verarbeiten und an Adobe Sensei zu senden.
 
 1. Nachdem die Verhaltensdaten erfasst wurden, können Sie [erstellen](create.md) [!DNL Product Recommendations] im Admin.
 

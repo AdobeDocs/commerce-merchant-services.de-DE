@@ -1,14 +1,15 @@
 ---
 title: Veranstaltungen
 description: Erfahren Sie, welche Ereignisse Daten erfassen und sehen Sie sich die vollständige Schemadefinition an.
-source-git-commit: 566abe09b8c1b0837a833b2f8fcfe1e81bb6963d
+exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
+source-git-commit: ce437d7a991affd2665c86c9e91bb7f39ec626c0
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '223'
 ht-degree: 0%
 
 ---
 
-# Projekt-Beacon-Ereignisse
+# Experience Platform Connector-Ereignisse
 
 Im Folgenden werden die [!DNL Commerce] Ereignisse verfügbar sind, wenn Sie die Experience Platform Connector-Erweiterung installieren. Die von diesen Ereignissen erfassten Daten werden an den Adobe Experience Platform-Edge gesendet. Sie können auch [benutzerspezifische Ereignisse](custom-events.md) um zusätzliche Daten zu erfassen, die nicht vorkonfiguriert bereitgestellt wurden.
 

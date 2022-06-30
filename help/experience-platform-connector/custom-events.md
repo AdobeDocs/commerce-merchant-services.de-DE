@@ -1,7 +1,8 @@
 ---
 title: Erstellen benutzerdefinierter Ereignisse
 description: Erfahren Sie, wie Sie benutzerdefinierte Ereignisse erstellen, um Ihre Adobe Commerce-Daten mit anderen Adobe DX-Produkten zu verbinden.
-source-git-commit: 1dd8f94e632bb98666ad252badf8420a014260fb
+exl-id: 5a754106-c66a-4280-9896-6d065df8a841
+source-git-commit: ce437d7a991affd2665c86c9e91bb7f39ec626c0
 workflow-type: tm+mt
 source-wordcount: '213'
 ht-degree: 0%
@@ -10,7 +11,7 @@ ht-degree: 0%
 
 # Erstellen benutzerdefinierter Ereignisse
 
-Sie können die [Eventplattform](events.md) durch Erstellung eigener Storefront-Ereignisse, um branchenspezifische Daten zu erfassen. Wenn Sie ein benutzerspezifisches Ereignis erstellen und konfigurieren, wird es an die [Magento Storefront Event Collector](https://www.npmjs.com/package/@adobe/magento-storefront-event-collector).
+Sie können die [Eventplattform](events.md) durch Erstellung eigener Storefront-Ereignisse, um branchenspezifische Daten zu erfassen. Wenn Sie ein benutzerspezifisches Ereignis erstellen und konfigurieren, wird es an die [Adobe Commerce-Ereigniserfassung](https://www.npmjs.com/package/@adobe/magento-storefront-event-collector).
 
 ## Umgang mit benutzerdefinierten Ereignissen
 
