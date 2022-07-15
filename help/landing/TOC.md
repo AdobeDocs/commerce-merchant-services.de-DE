@@ -4,8 +4,8 @@ user-guide-description: Dokumentation und Ressourcen für gehostete Dienste, die
 title: Dienste für Adobe Commerce
 source-git-commit: f806200c57f6f247c639cea7d828076d06eeffad
 workflow-type: tm+mt
-source-wordcount: '62'
-ht-degree: 46%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
