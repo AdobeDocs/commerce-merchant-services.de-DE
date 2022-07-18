@@ -1,9 +1,10 @@
 ---
 title: Guide Overview
 description: Adobe Experience Platform-Connector für Adobe Commerce verbindet Ihre [!DNL Commerce] -Instanz auf andere Adobe Experience Cloud-Produkte umzustellen.
-source-git-commit: dc4bb1ea7d2ffc953cca31637bf5aefba6266241
+exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
+source-git-commit: 334ee967ec2379a87acfc5fb427d7ada6fa25ee7
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -23,10 +24,13 @@ Um den Experience Platform-Connector zu verwenden, müssen Sie zunächst:
 Wenn der Zugriff gewährt wird:
 
 1. [Anmelden](https://helpx.adobe.com/manage-account/using/access-adobe-id-account.html) auf Ihr Adobe-Konto.
-1. Sehen Sie sich Ihre [Organisation](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=en#concept_EA8AEE5B02CF46ACBDAD6A8508646255). Die Organisations-ID ist die ID, die Ihrem bereitgestellten Experience Cloud-Unternehmen zugeordnet ist. Diese ID besteht aus einer 24-stelligen alphanumerischen Zeichenfolge, gefolgt von @AdobeOrg (erforderlich).
-1. Zugriff auf den Arbeitsbereich &quot;Datastream&quot;und [Erstellen eines Datenspeichers](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=en).
+1. Sehen Sie sich Ihre [Organisation](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=en#concept_EA8AEE5B02CF46ACBDAD6A8508646255). Die Organisations-ID ist die ID, die Ihrem bereitgestellten Experience Cloud-Unternehmen zugeordnet ist. Diese ID besteht aus einer 24-stelligen alphanumerischen Zeichenfolge gefolgt von (und muss enthalten) `@AdobeOrg`.
+1. Erstellen oder aktualisieren Sie Ihre [XDM-Schema](update-xdm.md) mit Commerce-spezifischen Feldergruppen.
+1. [Erstellen eines Datenspeichers](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=en) und wählen Sie das XDM-Schema aus, das das Commerce-spezifische **Feldergruppen**.
 
-Die Organisations-ID und der Datastream werden verwendet, wenn Sie Ihre Adobe Commerce-Instanz mit der Adobe Experience Platform verbinden.
+>[!NOTE]
+>
+> Die Organisations-ID und der Datastream werden verwendet, um Ihre Adobe Commerce-Instanz mit der Adobe Experience Platform zu verbinden.
 
 ## Nächste Schritte
 
