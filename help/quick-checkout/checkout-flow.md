@@ -2,9 +2,9 @@
 title: '"Checkout-Fluss"'
 description: '"Überblick über die [!DNL Quick Checkout] Fluss in Adobe Commerce."'
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
-source-git-commit: 01bb92d1de1f6a6da1d6326c0190eb7711274045
+source-git-commit: a95d2ed92c69feba03d1b84d44abf08c1d1b4029
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '179'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,9 @@ Erfolgreich [!DNL Quick Checkout] Fluss besteht aus folgenden Schritten:
 
 1. Geben Sie bei Aufforderung eine E-Mail-Adresse ein, die mit einer [!DNL Bolt] -Konto.
 1. Geben Sie das einmalige Kennwort (OTP) ein, das an dieses gesendet wird. [!DNL Bolt] E-Mail-Adresse oder Telefonnummer des Kontos.
+
+![OTP-Popup](assets/pop-up.png)
+
 1. Nach der Anmeldung bei [!DNL Bolt] -Konto, Checkout-Details werden automatisch ausgefüllt:
 
    - Versandinformationen
@@ -39,8 +42,8 @@ Die [!DNL Quick Checkout] ist mit standardmäßigen zusätzlichen Adobe Commerce
 
 Die [!DNL Quick Checkout] ermöglicht mehrere Anwendungsfälle während eines Checkout-Vorgangs:
 
-- [Gastbenutzer](../quick-checkout/checkout-adobe-commerce.md) mit registrierten oder neuen [!DNL Bolt] -Konto.
-- Ein vorhandenes [Adobe Commerce-Benutzer](../quick-checkout/checkout-adobe-commerce.md) mit/ohne Registrierung [!DNL Bolt] -Konto.
+- [Gastbenutzer](../quick-checkout/checkout-bolt.md) mit registrierten oder neuen [!DNL Bolt] -Konto.
+- Ein vorhandenes [Adobe Commerce-Benutzer](../quick-checkout/checkout-adobe-commerce.md) mit oder ohne Registrierung [!DNL Bolt] -Konto.
 
 ## Hilfe erhalten
 

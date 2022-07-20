@@ -1,13 +1,13 @@
 ---
-title: '"Checkout-Fluss"'
-description: '"Überblick über die [!DNL Quick Checkout] Fluss für einen Adobe Commerce-Benutzer."'
-source-git-commit: 01bb92d1de1f6a6da1d6326c0190eb7711274045
+title: Checkout
+description: Übersicht über die [!DNL Quick Checkout] für einen Adobe Commerce-Benutzer.
+exl-id: 085e393b-15f6-4d5a-a04d-927b1f95b74e
+source-git-commit: a95d2ed92c69feba03d1b84d44abf08c1d1b4029
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '300'
 ht-degree: 0%
 
 ---
-
 
 # Ein bestehender Adobe Commerce-Benutzer: Funktionsweise
 
@@ -15,17 +15,28 @@ Ein bestehender Adobe Commerce-Benutzer kann gespeicherte Versand- und Zahlungsd
 
 Wenn ein Käufer seine E-Mail-Adresse beim Checkout eingibt, wird die [!DNL Quick Checkout] validiert es und findet ein vorhandenes [!DNL Bolt] -Konto.
 
-## Angemeldet [!DNL Bolt] Konto mit einem Adobe Commerce-Benutzer
+## Registrierter Benutzer in Adobe Commerce und [!DNL Bolt]
 
-Wenn eine [!DNL Bolt] -Konto gefunden werden, setzen die Käufer mit ihrer [!DNL Quick Checkout] nahtloses Checkout-Erlebnis:
+Wenn ein Käufer ein registrierter Benutzer in Adobe Commerce und [!DNL Bolt] Netzen, werden beide Netze mit gespeicherten Versand- und Zahlungsdetails bereitgestellt.
+
+Wenn eine [!DNL Bolt] -Konto beim Checkout gefunden werden, können Käufer ihre [!DNL Quick Checkout] nahtloses Checkout-Erlebnis:
 
 1. Geben Sie das einmalige Kennwort (OTP) ein, das an dieses gesendet wird. [!DNL Bolt] E-Mail-Adresse des Kontos oder Mobilgerät, je nach [Benutzereinstellungen in der [!DNL Bolt] account](https://help.bolt.com/shoppers/account/account-settings/#how-to-set-preferred-login-method){target=_blank}.
+
+![OTP-Popup](assets/pop-up.png)
+
 1. Nach der Anmeldung bei [!DNL Bolt] -Konto, werden die Details automatisch hinzugefügt:
 
    - Versandinformationen
    - Zahlungsmethode
 
 1. Bestellung aufgeben.
+
+>[!NOTE]
+>
+> Das Popup &quot;Bolt OTP&quot;wird nur angezeigt, wenn sich der Käufer auf der Checkout-Seite befindet. Der Käufer kann sich von der Anmeldung bei Bolt abmelden, indem er dieses Popup-Fenster schließt.
+
+Wenn der Käufer vor dem Checkout bei Adobe Commerce angemeldet ist, wird die [!DNL Bolt] Das OTP-Popup wird beim Checkout nicht angezeigt.
 
 Wenn Sie Probleme haben, wenn Sie eine Bestellung als bestehenden Adobe Commerce-Benutzer aufgeben, lesen Sie den Abschnitt [Fehlerbehebung bei Problemen mit der Schnellüberprüfung](https://support.magento.com/hc/en-us/articles/6909450342541) Artikel im Adobe Commerce Help Center.
 
@@ -38,4 +49,4 @@ Wenn nicht [!DNL Bolt] -Konto gefunden wird, haben die Käufer weiterhin den sta
 - Überprüfungszahlungsmethode
 - Die Option zur Registrierung in [!DNL Bolt] für schnellere Checkouts, bevor die Bestellung erscheint. Der Käufer kann den Geschäftsbedingungen zustimmen, um seine [!DNL Bolt] -Konto.
 
-   ![Angaben [!DNL Bolt]](assets/checked-bolt.png)
+   ![Angaben [!DNL Bolt]](assets/checkbox-remember-bolt.png)

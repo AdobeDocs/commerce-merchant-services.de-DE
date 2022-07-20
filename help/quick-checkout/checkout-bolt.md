@@ -1,13 +1,13 @@
 ---
-title: '"Checkout-Fluss"'
-description: '"Überblick über die [!DNL Quick Checkout] Fluss für einen Bolt-Benutzer in Adobe Commerce."'
-source-git-commit: 01bb92d1de1f6a6da1d6326c0190eb7711274045
+title: Checkout
+description: Übersicht über die [!DNL Quick Checkout] Fluss für einen Bolt-Benutzer in Adobe Commerce.
+exl-id: 12f58b7e-1f86-4891-b225-9f4be82c2d5d
+source-git-commit: a95d2ed92c69feba03d1b84d44abf08c1d1b4029
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '195'
 ht-degree: 0%
 
 ---
-
 
 # Gastbenutzer
 
@@ -18,6 +18,9 @@ Das Gastcheckout-Erlebnis unterscheidet sich vom Adobe-Benutzererlebnis. Wenn ei
 Wenn eine [!DNL Bolt] -Konto gefunden werden, setzen die Käufer mit ihrer [!DNL Quick Checkout] nahtloses Checkout-Erlebnis:
 
 1. Geben Sie das einmalige Kennwort (OTP) ein, das an dieses gesendet wird. [!DNL Bolt] E-Mail-Adresse des Kontos oder Mobilgerät, je nach [Benutzereinstellungen in der [!DNL Bolt] account](https://help.bolt.com/shoppers/account/account-settings/#how-to-set-preferred-login-method){target=_blank}.
+
+![OTP-Popup](assets/pop-up.png)
+
 1. Nach der Anmeldung bei [!DNL Bolt] -Konto, werden die Details automatisch hinzugefügt:
 
    - Versandinformationen
@@ -38,6 +41,6 @@ Wenn nicht [!DNL Bolt] -Konto gefunden wird, die Käufer mit ihrem standardmäß
 - Überprüfungszahlungsmethode
 - Ein Kontrollkästchen erscheint bei [!DNL Bolt] für schnellere Checkouts vor der Bestellung. Der Käufer kann den Geschäftsbedingungen zustimmen, um seine [!DNL Bolt] -Konto.
 
-   ![Angaben [!DNL Bolt]](assets/checked-bolt.png)
+   ![Angaben [!DNL Bolt]](assets/checkbox-remember-bolt.png)
 
 - Der Gastbenutzer gibt die Bestellung auf und kann sich optional in Adobe Commerce registrieren.
