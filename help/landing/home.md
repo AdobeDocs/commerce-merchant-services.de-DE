@@ -5,10 +5,10 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
 breadcrumb-title: Dokumentation
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
-source-git-commit: c70d08b90d7584559fd69cdeece0220015ae8523
+source-git-commit: 688cfa8eb7a871453c7a26a442ceb54ee78b2fd9
 workflow-type: tm+mt
-source-wordcount: '299'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +26,7 @@ Adobe bietet eine Sammlung gehosteter Dienste, mit denen Händler wichtige Gesch
     <strong>[!DNL Product Recommendations]</strong></a>
     </div>
     <p>(Nur Adobe Commerce)<br><em>Fügen Sie KI-gestützte Empfehlungen hinzu, die auf dem Kundenverhalten, beliebten Trends, der Produktähnlichkeit und mehr basieren.</em></p>
-    <br>
+    </br>
   </td>
   <td valign="top">
       <img alt="[!DNL Live Search]" src="assets/live-search.png" />
@@ -34,7 +34,7 @@ Adobe bietet eine Sammlung gehosteter Dienste, mit denen Händler wichtige Gesch
     <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/overview.html"><strong>[!DNL Live Search]</strong></a>
     </div>
     <p>(Nur Adobe Commerce)<br><em>Implementieren Sie dieses KI-gestützte Suchwerkzeug, das intelligentere, schnellere und relevante Ergebnisse für B2C-Käufer liefert.</em></p>
-    <br>
+    </br>
   </td>
 </tr>
 <tr>
@@ -44,14 +44,32 @@ Adobe bietet eine Sammlung gehosteter Dienste, mit denen Händler wichtige Gesch
     <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/guide-overview.html"><strong>[!DNL Payment Services]</strong></a>
     </div>
     <em>Steigern Sie die Kundenzufriedenheit, indem Sie einfach verschiedene Zahlungsmethoden anbieten, darunter kostenlose Zahlungseinsätze und einen Einblick in die Zahlungsverarbeitung, Bestellungen und Rechnungen direkt in Ihr Admin-Dashboard.</em>
-    <br>
+    </br>
   </td>
     <td valign="top">
        <img alt="Amazon-Vertriebskanal" src="assets/amazon-channel.png" />
     <div><a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/guide-overview.html">
     <strong>[!DNL Amazon Sales Channel]</strong></a>
     </div>
-    <p><em>Erstellen Sie auf einer Plattform Commerce-Erlebnisse für B2B- und B2C-Kunden mit mehreren Kanälen. Diese zukunftssichere Technologie bietet Ihnen eine Commerce-Plattform, die endlos flexibel, erweiterbar und skalierbar ist - vom Katalog über die Zahlung bis zur Erfüllung.</em></p>
+    <p><em>Integrieren Sie Ihre Geschäfte mit dem weltweit größten Einkaufsziel im Internet. Dieser Dienst ermöglicht den Amazon-Vertrieb, indem er Commerce mit Ihrem Amazon Seller Central-Konto verbindet und sowohl die Automatisierung als auch die Synchronisation von Katalog- und Bestelldaten ermöglicht. Verwalten Sie alle Amazon-Auflistungen vollständig, implementieren Sie einfache oder intelligente Preisregeln und verwalten Sie Ihre Bestellungen und Lagerbestände über ein einzelnes Commerce-Dashboard.</em></p>
+    </br>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <img alt="[!DNL Channel Manager]" src="assets/channel-manager.png"/>
+    <div>
+    <a href="https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html"><strong>[!DNL Channel Manager]</strong></a>
+    </div>
+    <em>Steigern Sie den Umsatz, erreichen Sie neue Kunden, optimieren Sie die Verkaufsvorgänge und sparen Sie Zeit durch die Integration eines Adobe Commerce- oder Magento Open Source-Produktkatalogs in den Walmart Marketplace. Ermöglichen Sie es Storeadministratoren und Betriebskräften, die Verkäufe, Inventare und Produktpreise von Walmart Marketplace nahtlos aus der Commerce-Umgebung zu verwalten.</em>
+    </br>
+  </td>
+    <td valign="top">
+       <img alt="Store Fulfillment" src="assets/store-fulfillment-landing-graphic.png"/>
+    <div><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html">
+    <strong>[!DNL Store Fulfillment]</strong></a>
+    </div>
+    <p>(Nur Adobe Commerce)<br><em>Mit einem durchgängigen, nahtlosen Omnichannel-Erfüllungs-Workflow, der über ein mobiles Gerät aktiviert wird, können Sie Online-Einkäufe optimieren, das Kundenerlebnis im Geschäft (BOPIS) verbessern und die Produktivität von Store-Mitarbeitern maximieren.</em></p>
     <br>
   </td>
 </tr>
@@ -74,3 +92,6 @@ Bei den folgenden Elementen handelt es sich um aktuelle Änderungen an der Dokum
 * Hinzugefügt [[!DNL Payment Services] Handbuch](/help/payment-services/guide-overview.md) mit den neuesten Informationen zur neuen Marketplace-Erweiterung und zum gehosteten Dienst v1.0.0.
 * Die [!DNL Live Search] [Dashboard für Leistungsberichte](/help/live-search/performance.md) bietet Einblicke in die Effektivität der von Käufern verwendeten Suchbegriffe.
 * B2B-Unterstützung in [[!DNL Product Recommendations]](/help/product-recommendations/overview.md).
+* Der [[!DNL Channel Manager User Guide]](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html) für Kunden, die Walmart Marketplace-Verkäufe über ihre [!DNL Commerce] -Instanz.
+* Der [[!DNL Store Fulfillment User Guide]](https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html) Kunden, die ihren Online-Einkauf verbessern möchten, holen Sie sich das Kundenerlebnis im Geschäft (BOPIS) ab und stellen Sie einen mobilen, nahtlosen Omnichannel-Ausführungs-Workflow für die In-Store- und Cursor-Aufnahme bereit.
+
