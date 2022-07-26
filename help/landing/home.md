@@ -5,9 +5,9 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
 breadcrumb-title: Dokumentation
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
-source-git-commit: 688cfa8eb7a871453c7a26a442ceb54ee78b2fd9
+source-git-commit: 39f7725105cb7773fd43f4b65fd9ea0c1c2182df
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '474'
 ht-degree: 0%
 
 ---
@@ -64,13 +64,13 @@ Adobe bietet eine Sammlung gehosteter Dienste, mit denen Händler wichtige Gesch
     <em>Steigern Sie den Umsatz, erreichen Sie neue Kunden, optimieren Sie die Verkaufsvorgänge und sparen Sie Zeit durch die Integration eines Adobe Commerce- oder Magento Open Source-Produktkatalogs in den Walmart Marketplace. Ermöglichen Sie es Storeadministratoren und Betriebskräften, die Verkäufe, Inventare und Produktpreise von Walmart Marketplace nahtlos aus der Commerce-Umgebung zu verwalten.</em>
     </br>
   </td>
-    <td valign="top">
-       <img alt="Store Fulfillment" src="assets/store-fulfillment-landing-graphic.png"/>
+  <td valign="top">
+    <img alt="Store Fulfillment" src="assets/store-fulfillment-landing-graphic.png"/>
     <div><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html">
     <strong>[!DNL Store Fulfillment]</strong></a>
     </div>
     <p>(Nur Adobe Commerce)<br><em>Mit einem durchgängigen, nahtlosen Omnichannel-Erfüllungs-Workflow, der über ein mobiles Gerät aktiviert wird, können Sie Online-Einkäufe optimieren, das Kundenerlebnis im Geschäft (BOPIS) verbessern und die Produktivität von Store-Mitarbeitern maximieren.</em></p>
-    <br>
+    </br>
   </td>
 </tr>
 </table>
@@ -94,4 +94,3 @@ Bei den folgenden Elementen handelt es sich um aktuelle Änderungen an der Dokum
 * B2B-Unterstützung in [[!DNL Product Recommendations]](/help/product-recommendations/overview.md).
 * Der [[!DNL Channel Manager User Guide]](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html) für Kunden, die Walmart Marketplace-Verkäufe über ihre [!DNL Commerce] -Instanz.
 * Der [[!DNL Store Fulfillment User Guide]](https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html) Kunden, die ihren Online-Einkauf verbessern möchten, holen Sie sich das Kundenerlebnis im Geschäft (BOPIS) ab und stellen Sie einen mobilen, nahtlosen Omnichannel-Ausführungs-Workflow für die In-Store- und Cursor-Aufnahme bereit.
-
