@@ -2,9 +2,9 @@
 title: Zahlungsoptionen
 description: Legen Sie die Zahlungsoptionen fest, um die für Ihre Store-Kunden verfügbaren Methoden anzupassen.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 26735a191eab529bc3e8e7fc3d64295d345888d6
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '931'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Mit [!DNL Adobe Commerce] und [!DNL Magento Open Source] [!DNL Payment Services], haben Sie mehrere Zahlungsoptionen für Sie. Sie können diese Zahlungsoptionen wie folgt konfigurieren:
 
-* [Startseite](payments-home.md)
+* [Home settings](payments-home.md)
 * [Store-Konfiguration](configure-admin.md) (empfohlen für ältere Zahlungsoptionen oder ein Multistore-Setup)
 
 Je nachdem, wo Sie sich im Checkout-Prozess befinden, gibt es für jede Zahlungsmethode unterschiedliche Verhaltensweisen:
@@ -31,31 +31,48 @@ Je nachdem, wo Sie sich im Checkout-Prozess befinden, gibt es für jede Zahlungs
 
 [!UICONTROL Credit Card Fields] bieten einen einfachen und sicheren Checkout für Kreditkarten- oder Debitkartenzahlmethoden. Wenn ein Kunde mit Kreditkartenfeldern zur Kasse geht, gibt er seinen Namen, seine Rechnungsadresse sowie seine Kredit- oder Debitkarteninformationen ein, um seine Bestellung aufzugeben. Ihre Kundeninformationen werden während der Kaufsitzung sicher verwendet, um sie nahtlos durch den Checkout-Fluss zu führen.
 
-Sie können [!UICONTROL Credit Card Fields] in der Store-Konfiguration oder der Zahlungsdienst-Startseite. Siehe [Konfiguration [!DNL Payment Services]](settings.md#configure-credit-card-fields) für weitere Informationen.
+Sie können [!UICONTROL Credit Card Fields] in der Store-Konfiguration oder der Zahlungsdienst-Startseite. Siehe [Einstellungen](settings.md#credit-card-fields) für weitere Informationen.
 
 ## [!DNL PayPal Smart Buttons]
 
 [!DNL PayPal Smart Buttons], die PayPal verwenden, um einen Kauf abzuschließen, speichert die Lieferadresse Ihres Käufers, die Rechnungsadresse und Zahlungsdetails zur späteren Verwendung. Käufer können jede Zahlungsmethode verwenden, die zuvor von PayPal gespeichert oder angeboten wurde.
 
-Sie können [!DNL PayPal Smart Buttons] in der Store-Konfiguration oder der Zahlungsdienst-Startseite.  Siehe [Konfiguration [!DNL Payment Services]](settings.md#configure-paypal-smart-buttons) für weitere Informationen.
+![[!DNL PayPal Smart Buttons] options](assets/buttons-md.png)
 
-### Schaltfläche &quot;PayPal&quot;
+Sie können [!UICONTROL PayPal Smart Buttons] in der Store-Konfiguration oder der Zahlungsdienst-Startseite.  Siehe [Einstellungen](settings.md#payment-buttons) für weitere Informationen.
+
+### [!DNL PayPal] button
 
 Kunden können mit der Schaltfläche PayPal problemlos und sicher auschecken.
 
-Die Schaltfläche PayPal ist von der Produktseite aus sichtbar, in den Miniaturansichten, im Warenkorb und in den Checkout-Ansichten.
+Die [!DNL PayPal] -Schaltfläche ist von der Produktseite aus sichtbar, in der Mini-Warenkorb-, Warenkorb- und Checkout-Ansicht.
 
-### Schaltfläche &quot;Venmo&quot;
+### [!DNL Venmo] button
 
 Kunden können mit dem [Venmo](https://venmo.com/) Schaltfläche.
 
-Die Venmo-Schaltfläche ist von der Produktseite aus sichtbar, von Mini-Warenkorb, Warenkorb und Checkout-Ansichten.
+Die [!DNL Venmo] -Schaltfläche ist von der Produktseite aus sichtbar, in der Mini-Warenkorb-, Warenkorb- und Checkout-Ansicht.
+
+### [!DNL Apple Pay] button
+
+Kunden können die Touch-ID auf ihren Geräten verwenden, um [[!DNL Apple Pay]](https://www.apple.com/apple-pay/), die auf ihrem iOS- oder macOS-Gerät gespeicherte Zahlungsberechtigungen für Kredit- und Debitkarten verwendet.
+
+Die [!DNL Apple Pay] -Schaltfläche ist von der Produktseite aus sichtbar, in der Mini-Warenkorb-, Warenkorb- und Checkout-Ansicht.
 
 ### [!DNL Pay Later] button
 
 Bieten Sie Ihren Kunden kurzfristige, zinsfreie Zahlungen und andere Finanzierungsoptionen an, damit sie jetzt kaufen und später mit dem [!DNL Pay Later] Schaltfläche.
 
-Die [!DNL Pay Later] -Schaltfläche ist von der Produktseite aus sichtbar, in der Mini-Warenkorb-, Warenkorb- und Checkout-Ansicht.
+Die [!DNL Pay Later] -Schaltfläche ist von der Produktseite aus sichtbar, in der Mini-Warenkorb-, Warenkorb- und Checkout-Ansicht:
+
+* **Wenn ein Kunde ein Produkt zwischen 30 und 600 $ auswählt**, Nachrichten unter dem PayPal und [!DNL Pay Later] -Schaltflächen geben dem Kunden weitere Informationen zu [!DNL Pay in 4] Zahlungsoption. Kunden können auf **Weitere Infos** Informationen zum &quot;[!DNL Pay in 4]&quot;-Option _oder_ Klicken Sie auf den Text &quot;Oder sehen Sie 6 Monate Sonderfinanzierung&quot; im Popup, um mehr über die PayPal-Kreditoption zu erfahren und sie zu bewerben.
+* **Wenn ein Kunde ein Produkt oder Produkte auswählt, die über 98,99 USD hinausgehen**, Nachrichten unter dem PayPal und [!DNL Pay Later] -Schaltflächen bieten Kunden weitere Informationen zur Zahlungsoption PayPal Credit. Kunden können auf **Weitere Infos** Informationen zur PayPal-Kreditoption und deren Beantragung, _oder_ Klicken Sie auf den Text &quot;Oder sehen Sie Bezahlen in 4&quot;im Popup, um mehr über die [!DNL Pay in 4] -Option.
+
+   >[!NOTE]
+   >
+   >Die oben aufgeführten Beträge können sich ändern.
+
+Siehe [Einstellungen](settings.md#payment-buttons) , um zu erfahren, wie Sie die [!DNL Pay Later] Messaging.
 
 Es gibt zwei Zahlungsoptionen mit der [!DNL Pay Later] Schaltfläche:
 
@@ -67,19 +84,6 @@ Es gibt zwei Zahlungsoptionen mit der [!DNL Pay Later] Schaltfläche:
 Die [!DNL Pay Now] -Schaltfläche im PayPal-Popup-Fenster angezeigt, wenn ein Kunde auf eine Zahlungsschaltfläche auf dem Zahlungsbildschirm klickt.
 
 Wenn der endgültige Bestellbetrag noch nicht bekannt ist (z. B. wenn Sie noch keine Versandadressen-Informationen haben) und der Kunde gerade von der Produktseite, dem Mini-Warenkorb oder dem Warenkorb auscheckt, wird ein _Weiter_ -Schaltfläche verfügbar. Klickt ein Kunde _Weiter_, nachdem sie ihre Zahlungsmethode bestätigt haben, werden sie auf eine Bestellüberprüfungsseite geleitet, um die erforderlichen Details zu erfassen, bevor sie den Kassengang abschließen.
-
-## [!DNL Pay Later] Messaging
-
-Um Ihren Kunden dabei zu unterstützen, diese als potenzielle Zahlungsoptionen zu identifizieren, [!DNL Pay Later] Nachrichten sind auf der Produktseite, im Mini-Warenkorb und im Warenkorb sowie beim Checkout sichtbar.
-
-* **Wenn ein Kunde ein Produkt zwischen 30 und 600 $ auswählt**, Nachrichten unter dem PayPal und [!DNL Pay Later] -Schaltflächen geben dem Kunden weitere Informationen über die Zahlungsoption In 4. Kunden können auf **Weitere Infos** Informationen zur Option &quot;In 4 bezahlen&quot; _oder_ Klicken Sie auf den Text &quot;Oder sehen Sie 6 Monate Sonderfinanzierung&quot; im Popup, um mehr über die PayPal-Kreditoption zu erfahren und sie zu bewerben.
-* **Wenn ein Kunde ein Produkt oder Produkte auswählt, die über 98,99 USD hinausgehen**, Nachrichten unter dem PayPal und [!DNL Pay Later] -Schaltflächen bieten Kunden weitere Informationen zur Zahlungsoption PayPal Credit. Kunden können auf **Weitere Infos** , um mehr über die PayPal-Kreditoption zu erfahren und sie zu bewerben _oder_ Klicken Sie im Popup auf den Text &quot;Oder siehe In 4 bezahlen&quot;, um mehr über die Option Bezahlen in 4 zu erfahren.
-
-   >[!NOTE]
-   >
-   >Die oben aufgeführten Beträge können sich ändern.
-
-Siehe [Konfigurieren [!DNL Payment Services]](configure-admin.md#configure-paypal-smart-buttons) , um zu erfahren, wie Sie die [!DNL Pay Later] Messaging.
 
 ## Auftragsumberechnung
 

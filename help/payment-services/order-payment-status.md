@@ -4,9 +4,9 @@ description: Verwenden Sie den Bestellstatusbericht, um mehr über den Zahlungss
 role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
-source-git-commit: fde5844ad6c602708f9a5ad76ce8c9b5547dba76
+source-git-commit: 59cceb1cab1ed2bcfaa7d59c54a40255a38dea29
 workflow-type: tm+mt
-source-wordcount: '1359'
+source-wordcount: '1436'
 ht-degree: 0%
 
 ---
@@ -73,14 +73,14 @@ Wenn _[!UICONTROL Live]_die ausgewählte Datenquelle ist, können Sie Berichtinf
 
 Datenquellenauswahlen funktionieren wie folgt:
 
-* Wenn Sie keine Stores haben, die [!DNL Payment Services] Im Livemodus wird bei der Auswahl der Datenquelle standardmäßig [!UICONTROL Sandbox]_.
+* Wenn Sie keine Stores haben, die [!DNL Payment Services] Im Livemodus wird bei der Auswahl der Datenquelle standardmäßig _[!UICONTROL Sandbox]_.
 * Wenn Sie über Stores (einen oder mehrere) verfügen, die [!DNL Payment Services] Im Livemodus wird bei der Auswahl der Datenquelle standardmäßig _[!UICONTROL Live]_.
 * Beim Exportieren von Berichten wird immer die Auswahl der Datenquelle berücksichtigt.
 
 So wählen Sie die Datenquelle für Ihre [!UICONTROL Order Payment Status] Bericht:
 
 1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
-1. Klicken **[!UICONTROL Data source]** und wählen Sie _[!UICONTROL Live]_oder [!UICONTROL Sandbox]_.
+1. Klicken **[!UICONTROL Data source]** und wählen Sie _[!UICONTROL Live]_oder_[!UICONTROL Sandbox]_.
 
    Die Berichtsergebnisse werden basierend auf der ausgewählten Datenquelle neu generiert.
 
@@ -105,11 +105,23 @@ Der Bericht Bestellzahlstatus zeigt standardmäßig alle verfügbaren Informatio
 
 ## Status anzeigen
 
+Die Ansicht des Bestellstatus-Berichts zeigt für jede Bestellung von Zahlungsdiensten umfassende Informationen zum Transaktionsstatus und Zahlstatus an.
+
+### Transaktionsstatus
+
 Standardmäßig werden 30 Tage Bestellzahlstatus im Raster angezeigt.
 
 Scrollen Sie nach links und rechts, um [Bestellstatusangaben](#column-descriptions), einschließlich Bestelldatum, autorisiertes Datum, fakturiert, versandt, Zahlungsstatus und mehr.
 
 Die Anzahl der Zeilen, die bei einer Suche zurückgegeben oder in den standardmäßigen 30 Tagen des Bestellzahlstatus angezeigt werden, wird über dem Raster der Statusanzeige für Bestellungen neben dem Auswahlfilter für Bestelldaten-Kalender angezeigt.
+
+### Zahlungsstatus
+
+In der Spalte Zahlungsstatus wird der aktuelle Status einer Zahlung angezeigt. A `Capture failed` Die Zahlung zeigt einen roten Warnstatus und eine `Voided` Die Zahlung zeigt einen grauen Warnstatus an.
+
+### Erstattungsstatus
+
+In der Spalte Rückerstattungsstatus wird der aktuelle Status einer Rückerstattung angezeigt. A `Capture failed` Die Zahlung zeigt einen roten Warnstatus und eine `Voided` Die Zahlung zeigt einen grauen Warnstatus an.
 
 ## Berichtdaten aktualisieren
 
