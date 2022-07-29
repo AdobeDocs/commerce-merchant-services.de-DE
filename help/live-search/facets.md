@@ -2,9 +2,9 @@
 title: '"Facets"'
 description: '"[!DNL Live Search] Facetten verwenden mehrere Dimensionen von Attributwerten als Suchkriterien."'
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 238ce2f774207f387970d3c833e0a29f0ede6550
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '388'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Die Anforderungen an Kategorie- und Produktattribute für die Facettierung ähne
 |--- |--- |
 | [Anzeigeparameter der Kategorie](https://docs.magento.com/user-guide/catalog/categories-display-settings.html) | Anker - `Yes` |
 | [Attributeigenschaften](https://docs.magento.com/user-guide/stores/attribute-product-create.html) | [Katalogeingabetyp](https://docs.magento.com/user-guide/stores/attributes-input-types.html) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price` |
-| Eigenschaften von Attributspeicher | Verwendung in mehrschichtiger Navigation - `Filterable (with results)` |
+| Eigenschaften von Attributspeicher | Verwendung in der Navigation mit Suchergebnisebenen - `Yes` |
 
 ## Standardmäßige Attributwerte
 
