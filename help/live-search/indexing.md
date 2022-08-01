@@ -2,9 +2,9 @@
 title: '"[!DNL Live Search] Indizierung"'
 description: '"Erfahren Sie wie [!DNL Live Search] indiziert Eigenschaften von Produktattributen."'
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 2835209ad881db388894c5b1da213312436d3550
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Die Eigenschaften von Produktattributen (Metadaten) bestimmen, wie ein Attribut im Katalog verwendet werden kann, sein Aussehen und Verhalten im Speicher sowie die Daten, die in Datenübertragungsvorgängen enthalten sind. Der Umfang der Attributmetadaten lautet `website/store/store view`.
 
-Die [!DNL Live Search] Mit der API kann ein Client nach jedem Produktattribut sortieren, das über die [storefront property](https://docs.magento.com/user-guide/stores/attributes-product.html) `Use in Search` auf `Yes` in der Adobe Commerce-Admin.
+Die [!DNL Live Search] Mit der API kann ein Client nach jedem Produktattribut sortieren, das über die [storefront property](https://docs.magento.com/user-guide/stores/attributes-product.html) `Use in Search` auf `Yes` in der Adobe Commerce-Admin. Wenn aktiviert, `Search Weight` und `Visible in Advanced Search` kann für das -Attribut festgelegt werden.
 
 >[!NOTE]
 >
