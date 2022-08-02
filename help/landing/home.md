@@ -5,16 +5,16 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
 breadcrumb-title: Dokumentation
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
-source-git-commit: 39f7725105cb7773fd43f4b65fd9ea0c1c2182df
+source-git-commit: 24a82d4ccf492237f50a7cb08d8c0bcf57b43a61
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '475'
 ht-degree: 0%
 
 ---
 
 # <!-- use banner as heading -->![Dokumentation zu Diensten](./assets/banner-services-home.png) {#documentation}
 
-Adobe bietet eine Sammlung gehosteter Dienste, mit denen Händler wichtige Geschäftskomponenten unterstützen können.
+Adobe bietet eine Reihe von Diensten, die Händlern helfen, wichtige Komponenten ihres Unternehmens zu unterstützen.
 
 ## Verfügbare Dienste
 
@@ -46,17 +46,17 @@ Adobe bietet eine Sammlung gehosteter Dienste, mit denen Händler wichtige Gesch
     <em>Steigern Sie die Kundenzufriedenheit, indem Sie einfach verschiedene Zahlungsmethoden anbieten, darunter kostenlose Zahlungseinsätze und einen Einblick in die Zahlungsverarbeitung, Bestellungen und Rechnungen direkt in Ihr Admin-Dashboard.</em>
     </br>
   </td>
-    <td valign="top">
-       <img alt="Amazon-Vertriebskanal" src="assets/amazon-channel.png" />
-    <div><a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/guide-overview.html">
-    <strong>[!DNL Amazon Sales Channel]</strong></a>
+  <td valign="top">
+    <img alt="Store Fulfillment" src="assets/store-fulfillment-landing-graphic.png"/>
+    <div><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html">
+    <strong>[!DNL Store Fulfillment]</strong></a>
     </div>
-    <p><em>Integrieren Sie Ihre Geschäfte mit dem weltweit größten Einkaufsziel im Internet. Dieser Dienst ermöglicht den Amazon-Vertrieb, indem er Commerce mit Ihrem Amazon Seller Central-Konto verbindet und sowohl die Automatisierung als auch die Synchronisation von Katalog- und Bestelldaten ermöglicht. Verwalten Sie alle Amazon-Auflistungen vollständig, implementieren Sie einfache oder intelligente Preisregeln und verwalten Sie Ihre Bestellungen und Lagerbestände über ein einzelnes Commerce-Dashboard.</em></p>
+    <p>(Nur Adobe Commerce)<br><em>Überlegene Online-Käufe, die Wiederaufnahme des Kundenerlebnisses im Geschäft (BOPIS) und die Maximierung der Produktivität von Store-Mitarbeitern durch einen durchgängigen, nahtlosen Omnichannel-Erfüllungs-Workflow, der über ein mobiles Gerät aktiviert wird.</em></p>
     </br>
   </td>
-</tr>
-<tr>
-  <td valign="top">
+  </tr>
+  <tr>
+   <td valign="top">
     <img alt="[!DNL Channel Manager]" src="assets/channel-manager.png"/>
     <div>
     <a href="https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html"><strong>[!DNL Channel Manager]</strong></a>
@@ -64,12 +64,12 @@ Adobe bietet eine Sammlung gehosteter Dienste, mit denen Händler wichtige Gesch
     <em>Steigern Sie den Umsatz, erreichen Sie neue Kunden, optimieren Sie die Verkaufsvorgänge und sparen Sie Zeit durch die Integration eines Adobe Commerce- oder Magento Open Source-Produktkatalogs in den Walmart Marketplace. Ermöglichen Sie es Storeadministratoren und Betriebskräften, die Verkäufe, Inventare und Produktpreise von Walmart Marketplace nahtlos aus der Commerce-Umgebung zu verwalten.</em>
     </br>
   </td>
-  <td valign="top">
-    <img alt="Store Fulfillment" src="assets/store-fulfillment-landing-graphic.png"/>
-    <div><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html">
-    <strong>[!DNL Store Fulfillment]</strong></a>
+    <td valign="top">
+       <img alt="Amazon-Vertriebskanal" src="assets/amazon-channel.png" />
+    <div><a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/guide-overview.html">
+    <strong>[!DNL Amazon Sales Channel]</strong></a>
     </div>
-    <p>(Nur Adobe Commerce)<br><em>Mit einem durchgängigen, nahtlosen Omnichannel-Erfüllungs-Workflow, der über ein mobiles Gerät aktiviert wird, können Sie Online-Einkäufe optimieren, das Kundenerlebnis im Geschäft (BOPIS) verbessern und die Produktivität von Store-Mitarbeitern maximieren.</em></p>
+    <p><em>Integrieren Sie Ihre Geschäfte mit dem weltweit größten Einkaufsziel im Internet. Dieser Dienst ermöglicht den Amazon-Vertrieb, indem er Commerce mit Ihrem Amazon Seller Central-Konto verbindet und sowohl die Automatisierung als auch die Synchronisation von Katalog- und Bestelldaten ermöglicht. Verwalten Sie alle Amazon-Auflistungen vollständig, implementieren Sie einfache oder intelligente Preisregeln und verwalten Sie Ihre Bestellungen und Lagerbestände über ein einzelnes Commerce-Dashboard.</em></p>
     </br>
   </td>
 </tr>
