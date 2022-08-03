@@ -2,9 +2,9 @@
 title: '"Onboard the [!DNL Quick Checkout] für Adobe Commerce-Erweiterung"'
 description: '"Erfahren Sie, wie die [!DNL Quick Checkout] kann von Ihrer Adobe Commerce-Instanz profitieren und zeigen, wie Sie die Erweiterung erfolgreich integrieren und einrichten können."'
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: 0624ddc369ddedaaf9ae741831e0d5c5589ea4c2
+source-git-commit: 70f7772765dd66c8db779d29d4b661edb7d0c64a
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '697'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ So verwenden Sie die [!DNL Quick Checkout] benötigen [!DNL Bolt] eindeutige Sch
 - [!DNL Publishable key]: Ein Schlüssel, mit dem Ihr Frontend interagiert [!DNL Bolt] APIs.
 - [!DNL Signing secret]: Dient zur Signaturüberprüfung von Anforderungen, die von empfangen wurden [!DNL Bolt].
 
-![Quick Checkout](assets/account-credentials.png)
+   ![Quick Checkout](assets/account-credentials.png)
 
 Siehe [[!DNL Bolt] Umgebungsdetails](https://help.bolt.com/developers/references/environment-details/#about-keys)Seite &quot;{target=&quot;_blank&quot;}&quot;, auf der Sie Informationen zu Schlüsseln und zum Signieren von Geheimnissen erhalten. [!DNL Bolt] für [!DNL Quick Checkout] -Erweiterung.
 
@@ -73,6 +73,13 @@ Gehen Sie wie im Abschnitt [Prozessoreinrichtung](https://help.bolt.com/integrat
 1. Im _Admin_ Seitenleiste, navigieren Sie zu **Stores** > _Einstellungen_ > **Konfiguration**.
 1. Erweitern Sie im linken Bereich **Vertrieb** und wählen Sie **Checkout**.
 1. Im [!DNL Quick Checkout] Ansicht, festlegen **Aktivieren** nach `Yes`.
+
+![Quick Checkout](assets/quick-checkout-view-no-enable.png)
+
+>[!CAUTION]
+>
+> Die Felder für den SchnellCheckout sind nur sichtbar, wenn **Aktivieren** auf `Yes`.
+
 1. Wählen Sie die zu verwendende Methode (Sandbox oder Produktion) aus.
 
    - Sandbox zu Test- und Entwicklungszwecken
@@ -80,7 +87,7 @@ Gehen Sie wie im Abschnitt [Prozessoreinrichtung](https://help.bolt.com/integrat
 
 1. Validieren Sie die Anmeldeinformationen, nachdem Sie Ihre eindeutige API bereitgestellt haben und [!DNL Publishable keys].
 
-![Quick Checkout](assets/extension-view.png)
+![Quick Checkout](assets/quick-checkout-main-view.png)
 
 >[!CAUTION]
 >
