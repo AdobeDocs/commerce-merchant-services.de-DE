@@ -2,9 +2,9 @@
 title: Veranstaltungen
 description: Erfahren Sie, welche Ereignisse Daten erfassen und sehen Sie sich die vollständige Schemadefinition an.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: ce437d7a991affd2665c86c9e91bb7f39ec626c0
+source-git-commit: 15b7a8be65e5063606bb58755d0719b0ca54de37
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '251'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,8 @@ Klicken Sie auf den Ereignisnamen, um die vollständige Schemadefinition anzuzei
 | [Abmelden](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/signOutAEP.ts) | Profil |
 | [Konto erstellen](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/createAccountAEP.ts) | Profil |
 | [Konto bearbeiten](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/editAccountAEP.ts) | Profil |
+| [Suchanfrage gesendet](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/search/searchRequestSentAEP.ts) | Suche |
+| [Suchantwort erhalten](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/search/searchResponseReceivedAEP.ts) | Suche |
 
 >[!NOTE]
 >
