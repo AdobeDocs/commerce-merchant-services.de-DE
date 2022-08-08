@@ -1,10 +1,11 @@
 ---
-title: '"[!DNL Quick Checkout] Versionshinweise"'
+title: '''[!DNL Quick Checkout] Versionshinweise'''
 description: Informationen zu allen [!DNL Quick Checkout] veröffentlicht.
-source-git-commit: dc13c1e38c92341cfd3221a72e6568220b44690a
+exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
+source-git-commit: 6162141e1ddf4428126178bd172e8d9bd250c485
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 2%
+source-wordcount: '263'
+ht-degree: 1%
 
 ---
 
@@ -30,10 +31,14 @@ Siehe [Verfügbarkeit](https://devdocs.magento.com/release/availability.html) in
 
 ![Neu](../assets/new.svg)<!-- Issue BOLT-1 --> Die [!DNL Quick Checkout] für Adobe Commerce erkennt jeden Käufer im Netzwerk automatisch für [Käufe mit einem Klick](checkout-flow.md) direkt auf Ihrer Site.
 
+![Neu](../assets/new.svg)<!-- Issue BOLT-1 --> Die [!DNL Quick Checkout] für Adobe Commerce ermöglicht es einem Kunden, gleichzeitig [bei Adobe Commerce und Bolt angemeldet sein](checkout-flow.md/#quick-checkout-use-cases) bessere `one-click checkout` Erlebnis.
+
 ![Neu](../assets/new.svg)<!-- Issue BOLT-218 --> [!DNL Quick Checkout] für Adobe Commerce unterstützt eine [Sandbox-Konto](testing.md#testing-in-sandbox) die es Händlern ermöglicht, die Erweiterung im Testmodus zu bewerten.
 
 ![Neu](../assets/new.svg)<!-- Issue BOLT-780 --> Ihre Kunden können über die [[!DNL Quick Checkout]](checkout-page.md) oder über eine [manuelle Auftragserstellung](create-order-admin.md).
 
 ![Neu](../assets/new.svg)<!-- Issue BOLT-666 --> Merchants können die [!DNL Quick Checkout] mit grundlegenden Zahlungsaktionen wie [`Authorize and Capture` oder `Authorize` ](onboarding.md#complete-admin-configuration)oder zwischen Sandbox- und Produktionsumgebungen wechseln.
+
+![Neu](../assets/new.svg)<!-- Issue BOLT-288 --> Benutzerdefiniert [Lebensdauer der Benutzersitzung](user-session-lifetime.md) für [!DNL Quick Checkout] für Adobe Commerce.
 
 ![Bekanntes Problem](../assets/bug.svg)<!-- Issue BOLT-342 --> Verwenden [falsche Composer-Schlüssel](https://support.magento.com/hc/en-us/articles/6909450342541) während der Installation der [!DNL Quick Checkout] verhindert, dass der Benutzer [authentifizieren](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) mit der richtigen `MAGEID`.
