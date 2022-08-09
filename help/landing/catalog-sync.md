@@ -2,9 +2,9 @@
 title: Katalogsynchronisierung
 description: Erfahren Sie, wie Sie Produktdaten aus der [!DNL Commerce] Server zu [!DNL Commerce Services] laufend, um die Dienstleistungen auf dem neuesten Stand zu halten.
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
-source-git-commit: 6d0c7c749fe90c7c204afe47446f3483d8668b53
+source-git-commit: 68e615671f4e465d7fe89794613dbf129ae66dbf
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '861'
 ht-degree: 0%
 
 ---
@@ -96,7 +96,7 @@ Wenn die Synchronisierung nicht planmäßig ausgeführt wird oder nichts synchro
 
 ### Synchronisierung fehlgeschlagen
 
-Wenn die Katalogsynchronisierung den Status **Fehlgeschlagen**, senden Sie eine [Support-Ticket](https://support.magento.com/hc/en-us/articles/360019088251).
+Wenn die Katalogsynchronisierung den Status **Fehlgeschlagen**, senden Sie eine [Support-Ticket](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket).
 
 ## Befehlszeilenschnittstelle {#resynccmdline}
 

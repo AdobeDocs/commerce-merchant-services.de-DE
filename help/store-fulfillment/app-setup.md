@@ -4,9 +4,9 @@ description: Richten Sie die [!DNL Store Assist] App zur Verwaltung von End-to-E
 role: User, Admin
 level: Intermediate
 exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
-source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
+source-git-commit: 68e615671f4e465d7fe89794613dbf129ae66dbf
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Nachdem die Konfiguration der Store-Hilfe-App abgeschlossen ist, können Store-A
 
 - Stellen Sie sicher, dass das Mobilgerät die [Hardware- und Softwareanforderungen](solution-requirements.md#store-assist-app-requirements) für die Lösung Store Fulfillment .
 
-- Laden Sie die Store-Hilfe-App aus dem [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id16092815390){target=&quot;_blank&quot;} oder die [Google Play Store](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target=&quot;_blank&quot;}.
+- Laden Sie die Store-Hilfe-App aus dem [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id1609281539){target=&quot;_blank&quot;} oder die [Google Play Store](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target=&quot;_blank&quot;}.
 
 - Für die Anmeldung bei Store Associates sind die folgenden Informationen erforderlich:
 
