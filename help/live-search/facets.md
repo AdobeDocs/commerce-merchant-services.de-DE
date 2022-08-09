@@ -2,9 +2,9 @@
 title: '"Facets"'
 description: '"[!DNL Live Search] Facetten verwenden mehrere Dimensionen von Attributwerten als Suchkriterien."'
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 238ce2f774207f387970d3c833e0a29f0ede6550
+source-git-commit: 40e7da1cb71bd3c977acb77714c2cab55b3b7bf8
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -19,8 +19,12 @@ Faceting ist eine Methode der Hochleistungsfilterung, bei der mehrere Dimensione
 
 Die Anforderungen an Kategorie- und Produktattribute für die Facettierung ähneln den für die Navigation mit Ebenen verwendeten filterbaren Attributen. Die Storefront-Eigenschaften jedes Attributs müssen auf `filterable (with results)`.
 
-* Bis zu 100 Attribute können als Facetten mit [!DNL Live Search].
-* [!DNL Live Search] indiziert bis zu 300 Attribute als filterbar/searchable/sortable und bei der Suche sichtbar.
+Live Search unterstützt bis zu:
+
+* 100 Attribute, die als Facetten konfiguriert wurden
+* 50 sortierbare Attribute
+* 200 filterbare Attribute
+* 200 durchsuchbare Attribute
 
 | Einstellung | Beschreibung |
 |--- |--- |

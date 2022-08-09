@@ -2,9 +2,9 @@
 title: '"[!DNL Live Search] Versionshinweise"'
 description: '"Die neuesten Versionsinformationen für [!DNL Live Search] von Adobe Commerce."'
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 097f8af7a1e3e904c69d3a7fe52cb0db5b1b4c23
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '858'
 ht-degree: 1%
 
 ---
@@ -16,6 +16,29 @@ Diese Versionshinweise beschreiben die neuesten Versionen von [!DNL Live Search]
 * ![Neu](../assets/new.svg) - Neue Funktionen
 * ![Fehlerbehebung](../assets/fix.svg) - Fehlerbehebungen und Verbesserungen
 * ![Fehler](../assets/bug.svg) - Bekannte Probleme
+
+## [!DNL Live Search] 2,0,3
+
+* Kompatibel mit Adobe Commerce (EE): 2.4.x
+* Kompatibel mit Adobe Commerce for Cloud (ECE): 2.4.x
+* Stabilität: Stabil
+
+* ![Neu](../assets/new.svg) - Live Search unterstützt jetzt B2B-Funktionen durch Berücksichtigung von Kategorieberechtigungen, freigegebenen Katalogen und kundengruppenspezifischen Preisen.
+
+Händler müssen die Live Search-Erweiterung Version >= 2.0.3 aktualisieren, um auf diese Funktionen zugreifen zu können.
+
+Wir empfehlen Benutzern, ein Upgrade durchzuführen und zu testen, bevor sie zur Produktion wechseln. Erwägen Sie, die Produktionsumgebung außerhalb der Spitzenzeiten zu aktualisieren, nachdem Sie die Ergebnisse der Testumgebung überprüft haben.
+
+>[!NOTE]
+>
+>B2B-Unterstützung wird schrittweise ab dem 9. August in den Backend-Services hinzugefügt, wobei die Migration voraussichtlich Ende August abgeschlossen sein wird. Wenn die Live Search-Erweiterung nicht aktualisiert wird, funktioniert Ihre Storefront weiterhin normal, jedoch ohne B2B-Funktionen.
+
+### Bekannte Einschränkungen/Fehler:
+
+* ![Fehler](../assets/bug.svg) - Vorschläge stammen aus Produkten, die der Kundengruppe nicht angezeigt werden können.
+* ![Fehler](../assets/bug.svg) - Produkte werden nicht angezeigt, wenn sie nicht zum &quot;freigegebenen Standardkatalog&quot;hinzugefügt wurden.
+* B2B mit Live Search for PWA Studio ist erst verfügbar, wenn PWA Studio Unterstützung dafür hinzufügt.
+* Produktüberschreibungen und Produktattribut-Feeds können Synchronisierungsprobleme aufweisen, die die Ausführung von Administratoren erfordern `bin/magento indexer:reset` und `bin/magento indexer:reindex` , um die Synchronisierung korrekt zu wiederholen.
 
 ## [!DNL Live Search] 2,0
 
