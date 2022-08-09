@@ -2,16 +2,16 @@
 title: Erstellen benutzerdefinierter Ereignisse
 description: Erfahren Sie, wie Sie benutzerdefinierte Ereignisse erstellen, um Ihre Adobe Commerce-Daten mit anderen Adobe DX-Produkten zu verbinden.
 exl-id: 5a754106-c66a-4280-9896-6d065df8a841
-source-git-commit: ce437d7a991affd2665c86c9e91bb7f39ec626c0
+source-git-commit: 2b735c292920bb0e9052d86bf152748e7ce96079
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '222'
 ht-degree: 0%
 
 ---
 
 # Erstellen benutzerdefinierter Ereignisse
 
-Sie können die [Eventplattform](events.md) durch Erstellung eigener Storefront-Ereignisse, um branchenspezifische Daten zu erfassen. Wenn Sie ein benutzerspezifisches Ereignis erstellen und konfigurieren, wird es an die [Adobe Commerce-Ereigniserfassung](https://www.npmjs.com/package/@adobe/magento-storefront-event-collector).
+Sie können die [Eventplattform](events.md) durch Erstellung eigener Storefront-Ereignisse, um branchenspezifische Daten zu erfassen. Wenn Sie ein benutzerspezifisches Ereignis erstellen und konfigurieren, wird es an die [Adobe Commerce Events Collector](https://github.com/adobe/commerce-events/tree/main/packages/commerce-events-collectors).
 
 ## Umgang mit benutzerdefinierten Ereignissen
 
@@ -21,7 +21,7 @@ Für alle `custom` -Ereignis, fügt der Kollektor eine `personId` (`ecid`) zu `c
 
 Beispiel:
 
-Benutzerspezifisches Ereignis, das über das MSE-SDK veröffentlicht wird:
+Benutzerspezifisches Ereignis, das über das Adobe Commerce Events SDK veröffentlicht wird:
 
 ```javascript
 mse.publish.custom({
@@ -53,7 +53,7 @@ Für alle Ereignisse mit einem Satz `customContext`, überschreibt der Kollektor
 
 Beispiele:
 
-Produktansicht mit über das MSE SDK veröffentlichten Überschreibungen:
+Produktansicht mit Überschreibungen, die über das Adobe Commerce Events SDK veröffentlicht werden:
 
 ```javascript
 mse.publish.productPageView({
@@ -78,7 +78,7 @@ In Experience Platform Edge:
 }
 ```
 
-Die Produktansicht mit Adobe Commerce überschreibt über das MSE-SDK veröffentlichte Informationen:
+Die Produktansicht mit Adobe Commerce überschreibt Veröffentlichungen über das Adobe Commerce Events SDK:
 
 ```javascript
 mse.publish.productPageView({

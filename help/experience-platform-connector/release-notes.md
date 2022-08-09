@@ -2,14 +2,14 @@
 title: Versionshinweise
 description: Die aktuellen Versionsinformationen zum Adobe Experience Platform Connector von Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: 3b71b8cd6ba0036d660d078a7f80371e7671ea9f
+source-git-commit: 1c881bd5783653304d71a7a4a3db9f3471bd0ae3
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-# Versionshinweise zum Experience Platform Connector
+# Versionshinweise
 
 Diese Versionshinweise beschreiben die neuesten Versionen des Experience Platform Connectors und umfassen:
 
@@ -17,11 +17,9 @@ Diese Versionshinweise beschreiben die neuesten Versionen des Experience Platfor
 * ![Fehlerbehebung](../assets/fix.svg) - Fehlerbehebungen und Verbesserungen
 * ![Fehler](../assets/bug.svg) - Bekannte Probleme
 
-## Experience Platform Connector 1.1.0
+## Experience Platform Connector 1.0.0
 
-* Kompatibel mit Adobe Commerce (EE): 2,4,4
-* Kompatibel mit Adobe Commerce for Cloud (ECE): 2,4,4
-* Stabilität: Stabil
+* ![Neu](../assets/new.svg) - Allgemeine Verfügbarkeitsversion
 
 ## Dokumentation
 

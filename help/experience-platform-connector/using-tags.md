@@ -1,9 +1,10 @@
 ---
 title: Erfassen von Commerce-Daten mit Adobe Experience Platform Tags
 description: Erfahren Sie, wie Sie Commerce-Daten mithilfe von Adobe Experience Platform-Tags erfassen.
-source-git-commit: 93133019f8004437ef85db32ff336bfd0e8c6fc2
+exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
+source-git-commit: b5fb915f6ffcc24e72310bc79cba4b08a65128e3
 workflow-type: tm+mt
-source-wordcount: '2126'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -21,7 +22,7 @@ In diesem Thema erfahren Sie, wie Sie die vom Experience Platform-Connector bere
 
 So erfassen Sie Commerce-Ereignisdaten:
 
-- Installieren Sie die [Adobe Commerce Event SDK](https://www.npmjs.com/package/@adobe/magento-storefront-events-sdk). Informationen zu PHP-Storefronts finden Sie im Abschnitt [install](install.md) Thema. PWA Studio-Storefronts: [PWA Studio-Handbuch](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/).
+- Installieren Sie die [Adobe Commerce Events SDK](https://github.com/adobe/commerce-events/tree/main/packages/commerce-events-sdk). Informationen zu PHP-Storefronts finden Sie im Abschnitt [install](install.md) Thema. PWA Studio-Storefronts: [PWA Studio-Handbuch](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/).
 
    >[!NOTE]
    >
@@ -161,7 +162,7 @@ Erstellen Sie die folgenden Datenelemente:
    - **Name**: `Account email`
    - **Erweiterung**: `Adobe Client Data Layer`
    - **Datenelementtyp**: `Data Layer Computed State`
-   - **[Optional] path**: `accountContext.accountEmail`
+   - **[Optional] path**: `accountContext.emailAddress`
 
 1. Kontotyp:
 
@@ -210,7 +211,7 @@ Erstellen Sie die folgenden Datenelemente:
    - **Name**: `Account email`
    - **Erweiterung**: `Adobe Client Data Layer`
    - **Datenelementtyp**: `Data Layer Computed State`
-   - **[Optional] path**: `accountContext.accountEmail`
+   - **[Optional] path**: `accountContext.emailAddress`
 
 1. Kontotyp:
 
@@ -259,7 +260,7 @@ Erstellen Sie die folgenden Datenelemente:
    - **Name**: `Account email`
    - **Erweiterung**: `Adobe Client Data Layer`
    - **Datenelementtyp**: `Data Layer Computed State`
-   - **[Optional] path**: `accountContext.accountEmail`
+   - **[Optional] path**: `accountContext.emailAddress`
 
 1. Kontotyp:
 
@@ -344,12 +345,23 @@ Erstellen Sie die folgenden Datenelemente:
    - **Datenelementtyp**: `Data Layer Computed State`
    - **[Optional] path**: `productContext.sku`
 
-1. Währungscode:
+1. Produktwährung:
 
-   - **Name**: `Currency code`
+   - **Name**: `Product currency`
    - **Erweiterung**: `Adobe Client Data Layer`
    - **Datenelementtyp**: `Data Layer Computed State`
    - **[Optional] path**: `productContext.pricing.currencyCode`
+
+1. Währungscode:
+
+   - **Name**: `Currency code`
+   - **Erweiterung**: `Core`
+   - **Datenelementtyp**: `Custom Code`
+   - **Editor öffnen**:
+
+   ```bash
+   return _satellite.getVar('product currency') || _satellite.getVar('storefront').storeViewCurrencyCode
+   ```
 
 1. Sonderpreis:
 
@@ -370,7 +382,11 @@ Erstellen Sie die folgenden Datenelemente:
    - **Name**: `Product price`
    - **Erweiterung**: `Core`
    - **Datenelementtyp**: `Custom Code`
-   - **Editor öffnen**: `return _satellite.getVar('product regular price') || _satellite.getVar('product special price')`
+   - **Editor öffnen**:
+
+   ```bash
+   return _satellite.getVar('product regular price') || _satellite.getVar('product special price')
+   ```
 
 1. Produktansicht:
 
@@ -414,7 +430,7 @@ Erstellen Sie die folgenden Datenelemente:
    - **Editor öffnen**:
 
    ```bash
-   `return _satellite.getVar('search input').phrase;`
+   return _satellite.getVar('search input').phrase;
    ```
 
 1. Suche nach Eingabe
@@ -517,7 +533,7 @@ Erstellen Sie die folgenden Datenelemente:
    - **Editor öffnen**:
 
    ```bash
-   return _satellite.getVar('search result').productCount;
+   return _satellite.getVar('search result').products.length;
    ```
 
 1. Suchergebnisprodukte:
@@ -712,13 +728,13 @@ Erstellen Sie die folgenden Datenelemente:
    - **Editor öffnen**:
 
    ```bash
-   const searchResult = _satellite.getVar('storefront');
+   const storefrontContext = _satellite.getVar('storefront');
    const cart = _satellite.getVar('cart');
    
    const returnList = [];
    cart.items.forEach(item => {
        const selectedOptions = [];
-       item.configurableOptions.forEach(option => {
+       item.configurableOptions?.forEach(option => {
            selectedOptions.push({
                attribute: option.optionLabel,
                value: option.valueLabel,
@@ -898,13 +914,13 @@ Erstellen Sie die folgenden Datenelemente:
    - **Editor öffnen**:
 
    ```bash
-   const searchResult = _satellite.getVar('storefront');
+   const storefrontContext = _satellite.getVar('storefront');
    const cart = _satellite.getVar('cart');
    
    const returnList = [];
    cart.items.forEach(item => {
        const selectedOptions = [];
-       item.configurableOptions.forEach(option => {
+       item.configurableOptions?.forEach(option => {
            selectedOptions.push({
                attribute: option.optionLabel,
                value: option.valueLabel,
@@ -1058,13 +1074,13 @@ Erstellen Sie die folgenden Datenelemente:
    - **Editor öffnen**:
 
    ```bash
-   const searchResult = _satellite.getVar('storefront');
+   const storefrontContext = _satellite.getVar('storefront');
    const cart = _satellite.getVar('cart');
    
    const returnList = [];
    cart.items.forEach(item => {
        const selectedOptions = [];
-       item.configurableOptions.forEach(option => {
+       item.configurableOptions?.forEach(option => {
            selectedOptions.push({
                attribute: option.optionLabel,
                value: option.valueLabel,

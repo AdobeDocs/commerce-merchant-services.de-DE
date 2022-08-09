@@ -2,7 +2,7 @@
 user-guide-title: Dienste für Adobe Commerce
 user-guide-description: Dokumentation und Ressourcen für gehostete Dienste, die erweiterte Funktionen für Adobe Commerce und Magento Open Source bieten.
 title: Dienste für Adobe Commerce
-source-git-commit: 05d967573f645db1e8473798df279712d6d2dfc9
+source-git-commit: 39456e272b756498186cb267f32a3ac09a548b58
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -19,5 +19,6 @@ ht-degree: 0%
 - [[!DNL Store Fulfillment]](https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html)
 - [[!DNL Channel Manager]](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html)
 - [[!DNL Amazon Sales Channel]](https://experienceleague.adobe.com/docs/commerce-channels/amazon/guide-overview.html)
+- [Experience Platform Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/overview.html)
 - [Services Connector](/help/landing/saas.md)
 - [Katalogsynchronisierung](/help/landing/catalog-sync.md)

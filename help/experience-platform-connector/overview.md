@@ -1,17 +1,17 @@
 ---
 title: Guide Overview
-description: Adobe Experience Platform-Connector für Adobe Commerce verbindet Ihre [!DNL Commerce] -Instanz auf andere Adobe Experience Cloud-Produkte umzustellen.
+description: Der Adobe Experience Platform-Connector für Adobe Commerce verbindet Ihre Commerce-Instanz mit anderen Adobe Experience Cloud-Produkten.
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
-source-git-commit: 15b7a8be65e5063606bb58755d0719b0ca54de37
+source-git-commit: 2b735c292920bb0e9052d86bf152748e7ce96079
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # Übersicht über den Experience Platform Connector
 
-Mit der Experience Platform Connector-Erweiterung können Adobe Commerce-Händler Daten an den Adobe Experience Platform-Edge senden, damit andere Adobe Experience Cloud-Produkte wie Adobe Analytics und Adobe Target diese verwenden können [!DNL Commerce] Daten. Indem Sie [!DNL Commerce] Daten an andere Produkte in der Adobe Experience Cloud weiterleiten, können Sie Aufgaben ausführen, z. B. das Benutzerverhalten auf Ihrer Site analysieren, AB-Tests durchführen und personalisierte Kampagnen erstellen.
+Mit der Experience Platform Connector-Erweiterung können Adobe Commerce-Händler Daten an den Adobe Experience Platform-Edge senden, damit andere Adobe Experience Cloud-Produkte wie Adobe Analytics und Adobe Target diese Commerce-Daten verwenden können. Durch die Verbindung Ihrer Commerce-Daten mit anderen Produkten in der Adobe Experience Cloud können Sie Aufgaben ausführen, z. B. das Benutzerverhalten auf Ihrer Site analysieren, AB-Tests durchführen und personalisierte Kampagnen erstellen.
 
 Storefront-Ereignisse erfassen Kundeninteraktionen wie `View Page`, `View Product`, `Add to Cart`usw. Die erfassten Daten enthalten keine personenbezogenen Daten (PII). Alle Benutzer-IDs wie Cookie-IDs und IP-Adressen werden streng anonymisiert. [Weitere Infos](https://www.adobe.com/privacy/experience-cloud.html). Die vollständige Liste der [Storefront-Ereignisse](events.md).
 
@@ -36,7 +36,7 @@ Wenn der Zugriff gewährt wird:
 
 - Installieren Sie die [Experience Platform Connector-Erweiterung](install.md).
 
-   Die Experience Platform Connector-Erweiterung wird über die Befehlszeile des Servers installiert und stellt eine Verbindung zu Ihrer Adobe Commerce-Installation als [service](../landing/saas.md). Wenn der Vorgang abgeschlossen ist, wird der Experience Platform-Connector auf der **System** Menü unter **Dienste** im [!DNL Commerce] _Admin_.
+   Die Experience Platform Connector-Erweiterung wird über die Befehlszeile des Servers installiert und stellt eine Verbindung zu Ihrer Adobe Commerce-Installation als [service](../landing/saas.md). Wenn der Vorgang abgeschlossen ist, wird der Experience Platform-Connector auf der **System** Menü unter **Dienste** im Handel _Admin_.
 - [Hochladen von Kundenprofilen](profile.md) Adobe Experience Platform zugeordnet werden, sodass Storefront-Daten bestimmten Käufern zugeordnet werden können, um deren Einkaufserlebnis zu verbessern.
 
 ## Zielgruppe
@@ -54,8 +54,8 @@ Derzeit weist der Experience Platform-Connector die folgenden bekannten Probleme
 - Suchereignisse werden in einer Adobe Commerce Enterprise Edition nicht unterstützt, wenn das B2B-Modul installiert ist.
 - Nach der Verbindung mit dem Adobe Experience Platform Edge dauert es etwa eine Stunde, bis die Storefront-Daten von Adobe Commerce zu den verschiedenen Zielen gelangen.
 
-## Support
+Verwenden Sie die folgenden Ressourcen, wenn Sie Informationen benötigen oder Fragen haben, die nicht in diesem Handbuch behandelt werden:
 
-Wenn Sie Informationen benötigen oder Fragen haben, die nicht in diesem Handbuch behandelt werden, können Sie Beiträge an den folgenden Slack-Kanal senden:
-
-- `#beacon-ama`
+- [Hilfezentrum](https://support.magento.com/hc/en-us){target=&quot;_blank&quot;}
+- [Support-Tickets](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket){target=&quot;_blank&quot;}: Senden Sie ein Ticket, um zusätzliche Hilfe zu erhalten.
+- Auf Slack: `#beacon-ama`
