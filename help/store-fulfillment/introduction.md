@@ -4,9 +4,9 @@ description: '"Erfahren Sie wie [!DNL Store Fulfillment for Adobe Commerce by Wa
 role: User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c
-source-git-commit: 87818d3a0eb8f0cb4bc9fac2aef3c56a2e620aaf
+source-git-commit: 1fb22b4644d41ea5c60aead3fe2c455dfa3382f8
 workflow-type: tm+mt
-source-wordcount: '603'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Store Fulfillment bietet außerdem einen durchgängigen Erfüllungs-Workflow, mi
 
 * **Omnichannel-Flexibilität**-Verwandeln Sie Geschäfte und Lagerhäuser in Sammelstellen und Fulfillment-Zentren.
 
-* **Praktische Optionen zur Kundenabholung**-Kunden können bei der Auswahl von Online-Käufen die Produktverfügbarkeit leicht erkennen und einen Store auswählen, um Artikel - entweder direkt oder im Geschäft - abzurufen.
+* **Praktische Optionen zur Kundenabholung**-Bei der Auswahl von Online-Käufen können Kunden die Produktverfügbarkeit einfach sehen und einen Store für die In-Store- oder Cursor-Abholung auswählen.
 
 * **Erfüllungseffizienz**—Die Mobile App Store-Hilfe hilft bei der Speicherung von Assoziationen, die die Geschwindigkeit und Genauigkeit der Auftragserfüllung erhöhen.
 
@@ -31,27 +31,27 @@ Store Fulfillment bietet außerdem einen durchgängigen Erfüllungs-Workflow, mi
 
 ## Store Fulfillment-Erweiterung
 
-Unterstützt und verbessert native Adobe Commerce-Funktionen
+Die Store Fulfillment-Lösung unterstützt und erweitert native Adobe Commerce-Funktionen.
 
 * Unterstützt die meisten Produkttypen - einfach, konfigurierbar, gruppiert, gebündelt und virtuell
 
 * Integriert mit [[!DNL Adobe Commerce] Inventory management](https://docs.magento.com/user-guide/catalog/inventory-learn-more.html)
 
-* Integriert mit POS (Point-Sale)-Händlern wie ERP, OMS und WMS-Händlern für die Bestandsverwaltung
+* Integriert mit POS (Point-Sale)-Bestandsmanagementsystemen für Händler wie ERP, OMS und WMS
 
 * Vollständig kompatibel mit dem Luma-Design
 
 * GraphQL-Unterstützung für Headless- und Venia-Storefronts
 
-* Unterstützt die Store-Hilfe-App von der Walmart Commerce Technology. Diese App sendet Abholaufträge direkt an das Handheld-Gerät Ihres Mitarbeiters im richtigen Speicher, damit Artikel beim Check-in schnell und präzise ausgewählt, inszeniert und an die Kunden weitergegeben werden können.
+* Unterstützt die Store-Hilfe-App von Walmart Commerce Technologies. Diese App stellt Informationen zu Sammelbestellungen direkt an das Handheld-Gerät Ihres Mitarbeiters am ausgewählten Store-Speicherort bereit. Mit diesen Informationen können sie schnell und präzise Artikel auswählen, bereitstellen und an Kunden übergeben, wenn sie im Geschäft ankommen.
 
 ## Store Assist App
 
-Die Store Assist App für iOS- und Android™-Geräte interagiert mit der Walmart Commerce-Technologie, um Omnichannel-Erfüllungsfunktionen in Ihre Einzelhandelsgeschäfte zu bringen.
+Die Store Assist App für iOS- und Android™-Geräte interagiert mit [!DNL Walmart Commerce Technologies] , um Omnichannel-Ausführungsfunktionen in Ihre Einzelhandelsgeschäfte zu bringen.
 
-* Senden von In-Store- und Cursor-Abholaufträgen direkt an die Mobilgeräte von Assoziationen
+* Senden Sie In-Store- und curbside-Abholaufträge direkt an die Mobilgeräte Ihrer Partner.
 
-* Stellen Sie sicher, dass Store-Bestellungen schnell und präzise ausgewählt, inszeniert und an Kunden weitergegeben werden, wenn sie zur Bestellabnahme einchecken.
+* Stellen Sie sicher, dass Lageraufträge schnell und präzise ausgewählt, inszeniert und an Kunden weitergegeben werden, wenn sie zur Bestellabnahme im Geschäft ankommen.
 
 * Verwalten Sie den Benutzerzugriff von Storeverknüpfungen, einschließlich Sicherheitsrichtlinien, Authentifizierung mit zwei Faktoren und mehr
 
@@ -59,19 +59,19 @@ Die Store Assist App für iOS- und Android™-Geräte interagiert mit der Walmar
 
 ## Verbessertes Benutzererlebnis
 
-Die Store-Erfüllung verbessert Adobe Commerce durch die folgenden Funktionen, um verbesserte Einkaufserlebnisse und optimierte Erfüllung-Workflows bereitzustellen:
+Die Store-Erfüllung verbessert Adobe Commerce, indem Funktionen hinzugefügt werden, mit denen verbesserte Einkaufserlebnisse und optimierte Erfüllungs-Workflows bereitgestellt werden können.
 
-* **SLS (Store Location Selector)**- Stellt zusätzlich zum nativen Checkout die Store-Erfassungsoption, die Lagerverfügbarkeit und die Store-Auswahl auf den Produkt- und Warenkorbseiten bereit.
+* **SLS (Store Location Selector)**- Fügt zusätzlich zum nativen Checkout Speicheroptionen, Lagerverfügbarkeit und Store-Selektoren zu den Produkt- und Einkaufswagenseiten hinzu.
 
-* **Lagerbestandsverfügbarkeit**- Fügt Adobe Commerce Inventory management zusätzliche Produkt- und globale Konfigurationsoptionen hinzu, um die Lagerbestandszuordnung zu unterstützen und so die zeitnahe lokale Erfüllung zu fördern.
+* **Lagerbestandsverfügbarkeit**- Fügt zusätzliche Produkt- und globale Konfigurationsoptionen zu Adobe Commerce Inventory management hinzu. Diese Optionen unterstützen die Lagerbestandszuordnung, um die zeitnahe lokale Erfüllung zu fördern.
 
-* **Verbesserungen am Warenkorb und Checkout**-Kommunikation der schnellsten verfügbaren Abholzeiten, Standorte und Kosten an Kunden während ihrer Online-Shopping-Sitzung.
+* **Verbesserungen am Warenkorb und Checkout**-Kommuniziert Kunden während ihrer Online-Shopping-Sitzung die schnellsten verfügbaren Abholzeiten, Standorte und Kosten.
 
 * **Einchecken des Prozessablaufs**-Fügt Schnittstellen hinzu, um den Prozess für das Einchecken von Kunden und die Interaktionen mit Store-Mitarbeitern zu verbessern, wenn diese zur In-Store- oder Cumulative Pickup eintreffen.
 
 * **Mein Kontoverlauf**-Erweitert die [!DNL Commerce] Kontoverlauf , um die Schritte im Bestellverlauf anzuzeigen.
 
-* **Transaktions-E-Mails**-Erweitert die Admin-Funktionen für [!UICONTROL Sales Emails] um E-Mail-Vorlagen für Online-Käufe hinzuzufügen, sammeln Sie In-Store-Transaktionen. Die Vorlagen unterstützen die Echtzeit-Kommunikation zwischen Kunden und Store-Mitarbeitern während des Bestellabnahmeprozesses.
+* **Transaktions-E-Mails**-Erweitert die Admin-Funktionen für [!UICONTROL Sales Emails] Um E-Mail-Vorlagen für Online-Käufe hinzuzufügen, holen Sie sich bei Store-Transaktionen ab. Die Vorlagen unterstützen die Echtzeit-Kommunikation zwischen Kunden und Store-Mitarbeitern während des Bestellabnahmeprozesses.
 
 * **Flexible Erfüllung**-Erweiterungen [!DNL Commerce] Funktionen zur Unterstützung von Szenarien für die Verarbeitung von Rückständen, Mengenreduzierungen und teilweiser Auftragserfüllung bei gleichzeitiger Erleichterung von Stornierungen und Kreditkarten, die zur Unterstützung dieser Szenarien erforderlich sind.
 

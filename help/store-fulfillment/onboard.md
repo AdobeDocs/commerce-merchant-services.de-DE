@@ -1,11 +1,12 @@
 ---
 title: Onboarding-Übersicht für Store Fulfillment-Dienste
-description: '"[!DNL Live Search] Onboarding-Fluss, Systemanforderungen, Grenzen und Einschränkungen"'
+description: '''[!DNL Live Search] Onboarding-Fluss, Systemanforderungen, Begrenzungen und Einschränkungen."'
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+exl-id: f8e403ac-9bbd-4ea2-b209-9b1a8d1e32a2
+source-git-commit: 1fb22b4644d41ea5c60aead3fe2c455dfa3382f8
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '364'
 ht-degree: 0%
 
 ---
@@ -14,20 +15,17 @@ ht-degree: 0%
 
 Erste Schritte mit [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] durch Einrichtung, Konfiguration und Aktivierung der folgenden Komponenten:
 
-- **Store Fulfillment-Erweiterung**-Installieren und konfigurieren Sie diese Drittanbietererweiterung auf Ihrer Adobe Commerce-Instanz. Nach der Installation können Sie die Lösung Store Fulfillment vom Administrator konfigurieren und verwalten, um [!DNL buy online, pickup in store] (BOPIS)-Szenarien in der Commerce-Storefront.
+- **Store Fulfillment-Erweiterung**-Installieren und konfigurieren Sie diese Drittanbietererweiterung auf Ihrer Adobe Commerce-Instanz. Nach der Installation können Sie die Lösung Store Fulfillment vom Administrator konfigurieren und verwalten, um [!DNL buys online, pickup in store] (BOPIS)-Szenarien in der Commerce-Storefront.
 
    ![[!DNL Store Fulfillment Service] Konfiguration in der Admin-Ansicht](assets/store-fulfillment-admin-home.png)
 
-- **Fulfillment-Konto speichern**-Während des Aktivierungsprozesses erstellt ein Kundenbetreuer Ihr Konto für die Store-Erfüllung und stellt Ihnen die Kontoinformationen und Anmeldeinformationen zur Verfügung. Diese Anmeldeinformationen sind erforderlich, um die Verbindung zwischen Adobe Commerce und der Store-Fulfillment-Lösung zu aktivieren.
+- **Fulfillment-Konto speichern**-Während des Aktivierungsprozesses erstellt ein Kundenbetreuer Ihr Konto für die Store-Erfüllung und stellt Ihnen die Kontoinformationen und Anmeldeinformationen zur Verfügung. Diese Anmeldeinformationen sind erforderlich, um die Verbindung zwischen Adobe Commerce und der Store Fulfillment-Lösung zu aktivieren.
 
-- **Store Assist App**—Stellt Store-Zuordnungen mit einem End-to-End-Workflow zur Store-Erfüllung bereit, um BOPIS-Bestellungen von Mobilgeräten zu verwalten. Store Associates können die von Walmart [!DNL Store Assist] für iOS- und Android-Geräte. Der Integrationsprozess der App wird vom Walmart Commerce Technology Client Center als separater Prozess verwaltet. Allerdings [Einige App-Konfigurationseinstellungen](user-setup.md) vom Adobe Commerce-Administrator abgeschlossen.
+- **Store Assist App**—Stellt Store-Zuordnungen mit einem End-to-End-Workflow zur Store-Erfüllung bereit, um BOPIS-Bestellungen von Mobilgeräten zu verwalten. Store Associates können die von Walmart [!DNL Store Assist] für iOS- und Android™-Geräte. Der Integrationsprozess der App wird vom Walmart Commerce Technologies Client Center als separater Prozess verwaltet. Allerdings [Einige App-Konfigurationseinstellungen](user-setup.md) vom Adobe Commerce-Administrator abgeschlossen.
 
    | Store Assist App - Ansicht &quot;Erste Schritte&quot; | Store Assist App - Ansicht &quot;Module&quot; |
    |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
    | ![[!DNL Store Assist App Getting Started] Ansicht auf Mobilgerät](assets/store-assist-get-started-small.png) | ![[!DNL Store Assist App Orders view] auf einem Mobilgerät](assets/store-assist-orders-small.png) |
-
-
-
 
 ## Bereitstellungsschritte
 
@@ -47,12 +45,10 @@ Erste Schritte mit [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerc
 
 1. [Konfigurieren der Erweiterung &quot;Store Fulfillment&quot;vom Adobe Commerce Admin](service-config-settings-overview.md).
 
-1. [Verbinden Sie die [!DNL Store Fulfillment] -Dienst mit den Anmeldedaten für die Store-Erfüllung, die Ihnen bereitgestellt wurden.](connect-set-up-service.md)
+1. [Verbinden Sie die [!DNL Store Fulfillment] -Dienst mit den für Sie bereitgestellten Anmeldedaten zur Store-Erfüllung](connect-set-up-service.md).
 
-1. [Erstellen von Benutzern und Rollen für die Store Assist App](user-setup.md)
+1. [Erstellen von Benutzern und Rollen für die Store Assist App](user-setup.md).
 
-1. [Download von Walmart [!DNL Store Assist] App auf das gewünschte Gerät. Die App ist sowohl im App Store (iOS) als auch im Play Store (Android) verfügbar.](app-setup.md)
+1. [Download von Walmart [!DNL Store Assist] App auf das gewünschte Gerät. Das Programm ist sowohl in der Apple-App (iOS) als auch in Google Play (Android™) verfügbar.](app-setup.md) Stores.
 
 Nachdem Sie erfolgreich installiert, konfiguriert, das Onboarding abgeschlossen und Zugriff auf die [!DNL Store Assist] App, können Sie [mit der Erstellung von Bestellungen und Tests beginnen](test-and-deploy.md).
-
-

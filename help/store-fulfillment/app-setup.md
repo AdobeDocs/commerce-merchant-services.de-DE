@@ -4,16 +4,16 @@ description: Richten Sie die [!DNL Store Assist] App zur Verwaltung von End-to-E
 role: User, Admin
 level: Intermediate
 exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
-source-git-commit: 68e615671f4e465d7fe89794613dbf129ae66dbf
+source-git-commit: 1fb22b4644d41ea5c60aead3fe2c455dfa3382f8
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '604'
 ht-degree: 0%
 
 ---
 
 # App-Einrichtung
 
-Die Store-Hilfe ist eine Fulfillment-as-a-Service-Plattformanwendung (FaaS), die von Walmart Commerce Technologies unterstützt wird. Das Programm bietet In-Store-Funktionen zur Erfüllung von Aufgaben, die [!DNL buy online], [!DNL pick up in store] (BOPIS) Bestellungen.  Mit der Store-Hilfe können Store-Mitarbeiter sehen, welche Artikel Kunden bestellt haben, die richtigen Artikel schneller auswählen und die ausgeführten Bestellungen für den In-Store- oder Cumulative Pickup-Versand an Kunden einrichten.
+Die Store-Hilfe ist eine Fulfillment-as-a-Service-Plattformanwendung (FaaS), die von Walmart Commerce Technologies unterstützt wird. Das Programm bietet In-Store-Funktionen zur Erfüllung von Aufgaben, die [!DNL buy online, pick up in store] (BOPIS) Bestellungen. Mit der Store-Hilfe können Store-Mitarbeiter sehen, welche Artikel Kunden bestellt haben, die richtigen Artikel schneller auswählen und die ausgeführten Bestellungen für den In-Store- oder Cumulative Pickup-Versand an Kunden einrichten.
 
 Die Store-Hilfe-App empfängt alle Bestellungen- und Kundeninformationen - von Bestelldetails bis zur Abholung von Zeiten - und stellt die Daten über Mobilgeräte für die Online-Speicherung von Assoziationen zur Verfügung. Die App enthält [!UICONTROL Pick], [!UICONTROL Stage], [!UICONTROL Handoff]und [!UICONTROL Orders] -Module zur Unterstützung von Store-Zuordnungen zu Fulfillment-Aktivitäten wie den folgenden:
 
@@ -30,13 +30,13 @@ Die Store-Hilfe-App empfängt alle Bestellungen- und Kundeninformationen - von B
 
 Die Store-Hilfe-App erfordert zwei Arten von Konfiguration:
 
-- Adobe Commerce-Konfigurationseinstellungen in [Verwalten von Benutzerkonten, Benutzerrollen und Ressourcenberechtigungen über die Adobe Commerce Admin-Systemeinstellungen](user-setup.md).
+- Adobe Commerce-Systemeinstellungen auf [Verwalten von Benutzerkonten, Benutzerrollen, Ressourcenberechtigungen](user-setup.md)und [die Automarken- und Modellauswahlen, die den Kunden während des Eincheckvorgangs zur Verfügung stehen](check-in-experience-setup.md).
 
 - Frontend-Konfigurationseinstellungen zum Anpassen der Benutzeroberfläche der Store-Hilfe-App und anderer Einstellungen, darunter:
 
    - **Brand the Store Assist app**- Passen Sie die Benutzeroberfläche des Programms mit Ihrem Firmenlogo und Ihren Farben an.
 
-   - **Standardanweisungen aktualisieren**—Passen Sie die Anweisungen in den Store-Assist-Schnittstellen für die Module &quot;Auswählen&quot;, &quot;Staging&quot;, &quot;Übergabe&quot;und &quot;Bestellung&quot;an, um Ihren Unternehmensrichtlinien und -verfahren zu entsprechen, und leiten Sie Store-Verknüpfungen durch jeden Schritt des Erfüllung-Workflows.
+   - **Standardanweisungen aktualisieren**—Passen Sie die Anweisungen in den Modulen &quot;Store-Hilfe&quot;, &quot;Staging&quot;, &quot;Übergabe&quot;und &quot;Bestellung&quot;an, um Store-Associates durch jeden Schritt des Erfüllung-Workflows für Ihr Unternehmen zu führen.
 
    - **Lokalisierung**- Wählen Sie die für die App verfügbare Sprache aus. Wählen Sie das Datums- und Uhrzeitformat und dann die Standardmaßeinheiten und die Standardwährung aus.
 
@@ -59,7 +59,7 @@ Die Store-Hilfe-App erfordert zwei Arten von Konfiguration:
 
 ## App-Download und -Installation
 
-Nachdem die Konfiguration der Store-Hilfe-App abgeschlossen ist, können Store-Associates von ihren Mobilgeräten aus die Store-Hilfe-App herunterladen, installieren und sich bei ihr anmelden.
+Nachdem die Store-Assist-App eingerichtet und konfiguriert wurde, können Store Associates von ihren Mobilgeräten aus die Store-Hilfe-App herunterladen, installieren und sich bei ihr anmelden.
 
 - Stellen Sie sicher, dass das Mobilgerät die [Hardware- und Softwareanforderungen](solution-requirements.md#store-assist-app-requirements) für die Lösung Store Fulfillment .
 
@@ -70,4 +70,4 @@ Nachdem die Konfiguration der Store-Hilfe-App abgeschlossen ist, können Store-A
    - **[!UICONTROL Company name]** mit dem Store Assist-Konto verknüpft ist
 
    - **Anmeldeinformationen des Store-Assist-Kontos**—Benutzername und Passwort für ihr Konto.
-   Ein Adobe Commerce-Administrator kann ein Benutzerkonto erstellen und Berechtigungen für die Benutzerkonten der Store Assist App für Speicherorte mit [In-Store-Abruf](merchant-store-configuration.md#pickup-location-configuration) in den Admin Stores-Einstellungen aktiviert wurde.
+   Ein Adobe Commerce-Administrator kann ein Benutzerkonto erstellen und Berechtigungen für die [!DNL Store Assist app] Benutzerkonten für Speicherorte mit [In-Store-Abruf](merchant-store-configuration.md#pickup-location-configuration) in den Admin Stores-Einstellungen aktiviert wurde.
