@@ -2,106 +2,47 @@
 title: Instanz verbinden
 description: Verbinden Sie Ihre Commerce-Instanz mit einem API-Schlüssel und einem privaten Schlüssel und geben Sie den Datenraum in der Konfiguration an.
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: a983cf30872544d72bd13c3f04f04a35eebcf85d
 workflow-type: tm+mt
-source-wordcount: '911'
+source-wordcount: '621'
 ht-degree: 0%
 
 ---
 
 # Instanz verbinden
 
-[!DNL Payment Services] wird von Commerce Services unterstützt und als SaaS (Software as a Service) bereitgestellt. Sie verbinden Ihre Commerce-Instanz mit einem API-Schlüssel und einem privaten Schlüssel und geben den Datenraum in der Konfiguration an. Sie richten diese Verbindung nur einmal ein.
+[!DNL Payment Services] wird von Commerce Services unterstützt und als SaaS (Software as a Service) bereitgestellt. Sie verbinden Ihre Commerce-Instanz mithilfe eines API-Schlüssels und eines privaten Schlüssels und geben den Datenraum in der Konfiguration mithilfe der [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html). **Sie richten diese Verbindung nur einmal ein.**
 
-Siehe [Commerce Services Connector](https://docs.magento.com/user-guide/system/saas.html){target=&quot;_blank&quot;} im Benutzerhandbuch zu diesem Dienst.
+* Wenn Sie *bereits mit Ihrer Instanz verbunden ist*, indem Sie Ihre API-Anmeldeinformationen abrufen und verwenden und Commerce Services konfigurieren, können Sie mit dem [Einrichten der Test-Sandbox](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/sandbox.html).
+* Wenn Sie *muss Ihre Instanz verbinden* Informationen finden Sie in diesem Thema zu [Abrufen von API-Anmeldeinformationen](#obtain-api-credentials) und [Konfigurieren von Commerce Services](#configure-commerce-services).
+* Wenn Sie *Unsicher, ob Ihre Instanz verbunden ist*, navigieren Sie zu **System** > Dienste > **Commerce Services Connector** und zeigen Sie die öffentlichen und privaten API-Schlüsselwerte im [!UICONTROL Sandbox Keys] und [!UICONTROL Production Keys] und die *Projekt* und *Datenraum* -Felder in [!UICONTROL SaaS Identifier] Abschnitt. Wenn diese Werte vorhanden sind, ist Ihre Instanz verbunden.
 
 ## API-Anmeldeinformationen abrufen
 
-Um einen Commerce SaaS-Dienst zu nutzen, müssen Sie die API-Schlüssel Ihrer Instanz verwenden, die in Ihren [Mein Konto-Dashboard](https://account.magento.com/customer/account/login){target=&quot;_blank&quot;}. Für ein Commerce-Konto können zwei verschiedene API-Schlüsselpaare erstellt werden - eines für Sandbox und eines für Produktion (Live-Zahlungen). Es kann jedoch immer nur ein Paar aktiv verwendet werden.
+Um einen Commerce SaaS-Dienst zu nutzen, müssen Sie die API-Schlüssel Ihrer Instanz (öffentlicher Commerce-API-Schlüssel und privater Schlüssel) sowohl für Sandbox als auch Produktion verwenden, die in Ihrer [Mein Konto-Dashboard](https://account.magento.com/customer/account/login). [Das Schlüsselpaar](https://docs.magento.com/user-guide/configuration/services/saas.html) kann für ein Commerce-Konto erstellt werden - eines für Sandbox und eines für Produktion - wobei jeweils nur ein Paar aktiv verwendet werden kann.
 
 >[!NOTE]
 >
->Benötigen Sie Hilfe beim Zugriff auf Ihre [!UICONTROL My Account] Dashboard? Siehe [Erstellen eines Commerce-Kontos](https://docs.magento.com/user-guide/magento/magento-account-create.html){target=&quot;_blank&quot;} im Benutzerhandbuch zur Kernbenutzeroberfläche.
+>Benötigen Sie Hilfe beim Zugriff auf Ihre [!UICONTROL My Account] Dashboard? Siehe [Erstellen eines Commerce-Kontos](https://docs.magento.com/user-guide/magento/magento-account-create.html).
 
-Ein bestimmtes API-Schlüsselpaar ist für alle Commerce-Services in einer Umgebung gültig. Wenn Sie also Commerce Services bereits für Ihre Commerce-Instanz konfiguriert haben, ist Ihr API-Schlüsselpaar bereits im Admin vorhanden. Wenn Ihr privater API-Schlüssel verloren geht, muss ein neues API-Schlüsselpaar generiert und auf die Commerce Services-Konfiguration in Admin angewendet werden.
+Nach der Erstellung ist in Ihrem Dashboard für Mein Konto immer ein öffentlicher API-Schlüssel verfügbar. Sie kann nach Bedarf kopiert oder gelöscht werden. Der private API-Schlüssel wird angezeigt, wenn Sie einen öffentlichen API-Schlüssel für Sandbox oder Produktion erstellen. Es ist nur zum Kopieren oder Speichern im darauffolgenden Dialogfeld verfügbar und kann später nicht mehr aufgerufen werden.
 
-Informationen zum Generieren eines API-Schlüssels für Sandbox- oder Produktionsumgebungen finden Sie unter [Commerce Services Connector](https://docs.magento.com/user-guide/system/saas.html){target=&quot;_blank&quot;} im Benutzerhandbuch zur Kernbenutzeroberfläche.
+Ein bestimmtes API-Schlüsselpaar gilt für alle Commerce Services in einer Umgebung. Wenn Sie also bereits Commerce Services für Ihre Instanz konfiguriert haben, ist Ihr API-Schlüsselpaar bereits im Commerce Services Connector vorhanden.
 
->[!IMPORTANT]
->
->Wenn Sie ein API-Schlüsselpaar neu generieren und die SaaS-Kennung ändern, stellen alle von dieser Instanz verwendeten Commerce-Dienste eine Verbindung zu einem anderen Datenspeicher her und Ihr Zugriff (einschließlich zuvor gespeicherter Daten) geht verloren. Es wird empfohlen, kein API-Schlüsselpaar neu zu generieren und die SaaS-Kennung in einer aktiven Produktionsinstanz zu ändern.
+Wenn Ihr API-Schlüssel verloren geht, muss ein neues API-Schlüsselpaar [generiert](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#generate-an-api-key-and-private-key) und [angewendet](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#configure-saas-project) zur Connector-Konfiguration für Commerce Services in der Admin-Instanz hinzugefügt. Wenn die falschen Schlüssel konfiguriert sind oder keine in der Konfiguration vorhanden sind, wird in den Zahlungsdiensten ein Dialogfeld mit einem Fehler bei der Kontoüberprüfung angezeigt, das Sie darüber informiert, dass das Konto nicht verifiziert wurde.
 
-### Commerce-API-Schlüssel und privater Schlüssel
+Siehe [Liste der verfügbaren Commerce-Services, die die API verwenden](https://docs.magento.com/user-guide/system/saas.html#available-services).
 
-Einige [!DNL Adobe Commerce] und [!DNL Magento Open Source] -Funktionen werden als SaaS (Software as a Service), auch Commerce Services genannt, bereitgestellt. Um diese Dienste zu verwenden, müssen Sie Ihre Commerce-Instanz mithilfe eines API-Schlüssels und eines privaten Schlüssels mit diesen Diensten verbinden und den gewünschten Datenraum im [Konfiguration](https://docs.magento.com/user-guide/configuration/services/saas.html){target=&quot;_blank&quot;}.
-
-Wenn Sie ein Commerce-Konto erstellen, das durch eine MageID identifiziert wird, können Sie einen Commerce-API-Schlüssel und einen privaten Schlüssel generieren. So verwenden Sie Commerce-Dienste wie [!DNL Payment Services], [!DNL Product Recommendations]oder [!DNL Live Search]muss der Lizenzinhaber diese Schlüssel generieren, um die Berechtigungsprüfung zu bestehen. Diese Schlüssel können dann an den Systemintegrator oder das Entwicklungsteam übergeben werden, der die Projekte und Umgebungen im Auftrag des Lizenzinhabers verwaltet. Wenn Sie Lösungsintegrator sind, sind Sie auch berechtigt, diese Dienste für Ihre eigenen Anforderungen zu nutzen. In diesem Fall sollte der Unterzeichner des Commerce-Partnervertrags die Schlüssel generieren.
-
-### API-Schlüssel und privaten Schlüssel generieren
-
-1. Melden Sie sich bei Ihrem Commerce-Konto an unter [https://account.magento.com/customer/account/login](https://account.magento.com/customer/account/login).
-1. Unter dem **[!UICONTROL Magento]** Registerkarte, wählen Sie **[!UICONTROL API Portal]** auf der Seitenleiste.
-1. Aus dem _[!UICONTROL Environment]_Menü auswählen **[!UICONTROL Sandbox]**, dann **[!UICONTROL Production]**.
-
-   >[!IMPORTANT]
-   >
-   >API-Schlüssel sind für beide Umgebungen erforderlich.
-
-1. Geben Sie im Feld _[!UICONTROL API Keys]_und klicken Sie auf **[!UICONTROL Add New]**.
-
-   Diese Aktion öffnet ein Dialogfeld zum Herunterladen des neuen Schlüssels.
-
-   >[!IMPORTANT]
-   >
-   >Dieser Dialog ist die einzige Möglichkeit, dass Sie Ihren Schlüssel kopieren oder herunterladen können.
-
-1. Klicken **[!UICONTROL Download]** Klicken Sie dann auf **[!UICONTROL Cancel]**.
-
-   Die _[!UICONTROL API Keys]_-Abschnitt zeigt nun Ihren API-Schlüssel an.
-
-1. Kopieren Sie sowohl den API-Schlüssel als auch den privaten Schlüssel, wenn Sie ein SaaS-Projekt auswählen oder erstellen.
-
-   Siehe [SaaS](https://docs.magento.com/user-guide/system/saas.html){target=&quot;_blank&quot;} im Benutzerhandbuch zu den wichtigsten Informationen.
-
-Derselbe API-Schlüssel kann für alle Instanzen verwendet werden, aber jede Instanz muss über einen eigenen SaaS-Datenraum verfügen.
-
-Wenn Sie ein SaaS-Projekt erstellen, generiert Commerce je nach Ihrer Commerce-Lizenz einen oder mehrere SaaS-Datenräume:
-
-* [!DNL Adobe Commerce] - einen Produktionsdatenraum; zwei Testdatenbereiche
-* [!DNL Magento Open Source] - einen Produktionsdatenraum; keine Testdatenräume
-
-### Konfigurieren des SaaS-Projekts
-
->[!NOTE]
->
->Wenn die Variable _[!UICONTROL Commerce Services Connector]_in der Commerce-Konfiguration müssen Sie die Commerce-Module für Ihren gewünschten Commerce-Dienst installieren, z. B. [[!DNL Payment Services]](install.md).
-
-Um ein SaaS-Projekt auszuwählen oder zu erstellen, fordern Sie den Commerce-API-Schlüssel vom Commerce-Lizenzinhaber für Ihren Store an.
-
-1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
-1. Erweitern Sie im linken Bereich **[!UICONTROL Services]** und wählen Sie **[!UICONTROL Commerce Services Connector]**.
-1. Im _[!UICONTROL API Keys]_-Abschnitt, fügen Sie Ihre Schlüsselwerte ein.
-
-   >[!IMPORTANT]
-   >
-   >Fügen Sie Schlüsselwerte für beide hinzu **[!UICONTROL sandbox]** und **[!UICONTROL production]** Umgebungen.
-
-1. Klicken **[!UICONTROL Save Config]**.
-
-   Wenn beim Speichern SaaS-Projekte mit Ihrem API-Schlüssel verknüpft sind, werden diese Projekte im _[!UICONTROL SaaS Project]_im Feld_[!UICONTROL SaaS Identifier]_ Abschnitt.
-
-1. Wenn keine SaaS-Projekte vorhanden sind, klicken Sie auf **[!UICONTROL Create Project]**. Geben Sie dann einen Namen für Ihr SaaS-Projekt im **[!UICONTROL Project Name]** -Feld.
-1. Um für die aktuelle Konfiguration Ihres Commerce-Stores zu verwenden, wählen Sie die **[!UICONTROL SaaS Data Space]**.
+Informationen zum Generieren eines API-Schlüssels für Sandbox- oder Produktionsumgebungen finden Sie unter [Anmeldeinformationen](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html#apikey).
 
 >[!IMPORTANT]
->
->Wenn Sie Ihre Schlüssel im Abschnitt &quot;Mein Konto&quot;im API-Portal neu generieren, aktualisieren Sie sofort die API-Schlüssel in der Admin-Konfiguration. Wenn Sie neue Schlüssel generieren und diese nicht im Admin aktualisieren, funktionieren Ihre SaaS-Erweiterungen nicht mehr und Sie verlieren wertvolle Daten.
-
-Sie können die Namen ändern, indem Sie auf die **[!UICONTROL Rename this Project]** oder **[!UICONTROL Rename Data Space]** -Schaltflächen.
+>Es wird empfohlen, kein API-Schlüsselpaar neu zu generieren *und* ändern Sie die SaaS-Kennung und/oder den Datenraum in einer aktiven Produktionsinstanz. Sie verlieren Daten für Ihre Instanz, wenn sie geändert werden.
 
 ## Commerce Services konfigurieren
 
-Der erste Schritt beim Onboarding [!DNL Payment Services] ist die Konfiguration Ihrer Commerce-Services in der Admin-Konsole.
+Derselbe API-Schlüssel kann für alle Instanzen verwendet werden, aber jede Instanz muss über einen eigenen [SaaS-Datenraum](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html#saasenv).
+
+Nachdem Sie Ihre Anmeldeinformationen erhalten haben, können Sie Ihr SaaS-Projekt und den Saas-Datenraum konfigurieren.
 
 1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]**.
 1. Klicken **[!UICONTROL Configure Commerce Services]**.
@@ -110,4 +51,4 @@ Der erste Schritt beim Onboarding [!DNL Payment Services] ist die Konfiguration 
 
    Sie werden zum Konfigurationsbereich in der Admin-Konsole geleitet. **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**>**[!UICONTROL Commerce Services Connector]**, um Ihren Commerce Services Connector zu konfigurieren.
 
-1. Gehen Sie wie in beschrieben vor, um Ihre Commerce-Services zu konfigurieren. [Commerce-Services](https://docs.magento.com/user-guide/system/saas.html#createsaasenv){target=&quot;_blank&quot;}.
+1. Gehen Sie wie in beschrieben vor, um Ihre Commerce-Services zu konfigurieren. [SaaS-Konfiguration](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#configure-commerce-services).

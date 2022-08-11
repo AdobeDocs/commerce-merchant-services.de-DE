@@ -2,28 +2,38 @@
 title: Installieren [!DNL Payment Services]
 description: Installieren Sie die Erweiterung "Payments Services".
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
-source-git-commit: 647848c58213ea7f85d8a2c025146aa065042433
+source-git-commit: 43599d041899251f7716e215284b6eff9312943d
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # Installieren [!DNL Payment Services]
 
-Installieren der [!DNL Payment Services] Erweiterung für [!DNL Adobe Commerce] und [!DNL Magento Open Source] ist ein erforderlicher Schritt zur Verwendung von [!DNL Payment Services].
+Herunterladen und Installieren der [!DNL Payment Services] Erweiterung für [!DNL Adobe Commerce] und [!DNL Magento Open Source] ist ein erforderlicher Schritt zur Verwendung von [!DNL Payment Services].
 
 ![[!DNL Payment Services] Admin-Ansicht der Erweiterung](assets/admin-view.png)
 
-Die [!DNL Payment Services] Erweiterung für [!DNL Adobe Commerce] und [!DNL Magento Open Source] kann mit Composer-Schlüsseln installiert werden, die mit der Magento-ID ([mageid](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions) im Anmeldeprozess bereitgestellt werden. Der Verfasser verwendet diese Schlüssel bei der ersten Installation von [!DNL Adobe Commerce]oder in Situationen, in denen die Composer-Schlüssel zuvor nicht im `auth.json` -Datei.
+## Erweiterung herunterladen
 
-Siehe [Abrufen der Authentifizierungsschlüssel](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) für weitere Informationen zum Abrufen von Composer-Schlüsseln.
+Sie müssen zuerst die Erweiterung von [Commerce Marketplace](https://experienceleague.adobe.com/docs/commerce-admin/start/resources/commerce-marketplace.html) vor der Installation.
 
-Es gibt zwei Möglichkeiten, diese Erweiterung zu installieren - für [[!DNL Adobe Commerce] zur Cloud-Infrastruktur](install.md#adobe-commerce-on-cloud-infrastructure) oder [Vor Ort](install.md#on-premises) Installationen. Für diese Methoden müssen Sie die Befehlszeilenschnittstelle (CLI) verwenden.
+1. Navigieren Sie zum [Zahlungsdiensterweiterung im Commerce Marketplace](https://marketplace.magento.com/magento-payment-services.html).
+1. Um die Bearbeitung und Version auszuwählen, schalten Sie **[!UICONTROL Edition]** und **[!UICONTROL Your store version]** zu Ihrer gewünschten Auswahl hinzufügen.
+1. Klicken **[!UICONTROL Add to Cart]**.
+1. Checkout abschließen und klicken **[!UICONTROL Place Order]**.
+1. Überprüfen Sie die mit Ihrem Marketplace-Download verknüpfte E-Mail, um eine Bestellbestätigung und Details zu erhalten.
 
 ## Installieren der Erweiterung
 
-Sie können die [!DNL Payment Services] -Erweiterung für beide [!DNL Adobe Commerce] auf Cloud-Infrastruktur und lokalen Instanzen.
+Sie können die [!DNL Payment Services] -Erweiterung für beide [!DNL Adobe Commerce] über Cloud-Infrastrukturen und lokale Instanzen, die mit der Magento-ID verknüpft sind ([mageid](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions)) im Anmeldeprozess mit Composer-Schlüsseln bereitgestellt werden. [!DNL Magento] Open Source-Kunden verwenden die lokalen Anweisungen.
+
+Der Verfasser verwendet diese Schlüssel bei der ersten Installation von [!DNL Adobe Commerce]oder in Situationen, in denen die Composer-Schlüssel zuvor nicht im `auth.json` -Datei.
+
+Siehe [Abrufen der Authentifizierungsschlüssel](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) für weitere Informationen zum Abrufen von Composer-Schlüsseln.
+
+Siehe [Installieren einer Erweiterung](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/extensions.html) Weitere Informationen dazu, was Sie beachten sollten, bevor Sie eine Erweiterung herunterladen und installieren.
 
 ### [!DNL Adobe Commerce] zur Cloud-Infrastruktur
 
@@ -45,9 +55,9 @@ Diese Methode wird zum Installieren der [!DNL Payment Services] -Erweiterung fü
 
 1. Übernehmen Sie Ihre Änderungen und übertragen Sie sie.
 
-### Vor Ort
+### Vor Ort und sonstige Konfigurationen
 
-Diese Methode wird zum Installieren der [!DNL Payment Services] Erweiterung für eine Instanz vor Ort.
+Diese Methode wird zum Installieren der [!DNL Payment Services] Erweiterung für eine örtliche Instanz und [!DNL Magento] Open Source-Kunden.
 
 1. Führen Sie die folgenden Befehle aus, um die Erweiterung abzurufen:
 
@@ -63,7 +73,7 @@ Diese Methode wird zum Installieren der [!DNL Payment Services] Erweiterung für
 
    Die `composer update` -Befehl aktualisiert alle Abhängigkeiten. Wenn Sie nicht alle Abhängigkeiten gleichzeitig aktualisieren möchten, verwenden Sie stattdessen diesen Befehl: `composer require magento/payment-services`.
 
-1. Upgrade [!DNL Adobe Commerce]:
+1. Aktualisieren Sie Ihre Instanz:
 
    ```bash
    bin/magento setup:upgrade
@@ -76,7 +86,7 @@ Diese Methode wird zum Installieren der [!DNL Payment Services] Erweiterung für
    ```
 
 1. Zusagen von Änderungen.
-1. Um sicherzustellen, dass der zugewiesene Code bereitgestellt wird, aktualisieren Sie Ihre lokale Instanz .
+1. Um sicherzustellen, dass der bereitgestellte Code bereitgestellt wird, aktualisieren Sie Ihre Instanz .
 
 ## Aktualisierung der Erweiterung
 

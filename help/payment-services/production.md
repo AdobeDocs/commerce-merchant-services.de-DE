@@ -2,7 +2,7 @@
 title: Aktivieren [!DNL Payment Services] für die Produktion
 description: Schließen Sie den Onboarding-Prozess ab, indem Sie [!DNL Payment Services] für die Produktion.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
-source-git-commit: 51722d7045ccb6ccfdc7ab5bd93d5ca46b52cf03
+source-git-commit: a983cf30872544d72bd13c3f04f04a35eebcf85d
 workflow-type: tm+mt
 source-wordcount: '709'
 ht-degree: 0%
@@ -11,7 +11,11 @@ ht-degree: 0%
 
 # Aktivieren [!DNL Payment Services] für die Produktion
 
-Nach der Erweiterung &quot;Payments Services&quot;ist [installiert](install.md), lautet Ihre Instanz [konfiguriert und verbunden](connect.md)und Sie [Einrichten der Sandbox](sandbox.md) und getestet werden, können Sie fortfahren, den Dienst in die Produktion zu setzen und die [Onboarding-Prozess](onboard.md).
+Sie können den Dienst in die Produktion einbauen und die [Onboarding-Prozess](onboard.md)gemäß den Schritten in diesem Thema, nachdem Sie:
+
+* [Installieren](install.md) die Zahlungsdiensterweiterung
+* [Konfigurieren und Verbinden](connect.md) Ihre Instanz
+* [Einrichten](sandbox.md) und [test](test-validate.md) Ihre Sandbox
 
 ## Satz [!DNL Payment Services] als Zahlungsmethode
 
