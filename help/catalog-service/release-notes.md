@@ -1,13 +1,13 @@
 ---
-title: '"[!DNL Catalog Service] Versionshinweise"'
-description: '"Die neuesten Versionsinformationen für [!DNL Catalog Service] für Adobe Commerce."'
-source-git-commit: 3959cc5d07f9a0da0ba772a4f3bc56adeb3c6bf3
+title: '''[!DNL Catalog Service] Versionshinweise'''
+description: Die neuesten Versionsinformationen für [!DNL Catalog Service] für Adobe Commerce.
+exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
+source-git-commit: 72913e0c0b7364e38d37fe1a8279c40a4e849c02
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '153'
 ht-degree: 2%
 
 ---
-
 
 # [!DNL Catalog Service] Versionshinweise
 
@@ -32,6 +32,7 @@ Diese Versionshinweise beschreiben die neuesten Versionen von [!DNL Catalog Serv
 
 ## Bekannte Einschränkungen
 
+* Pakete und gruppierte Produkte werden nicht unterstützt.
 * Tier-Preise werden nicht unterstützt.
 * In einem Bildbereich enthält nur das erste Bild Rollen.
 * Bilder für Varianten werden nicht abgerufen.
