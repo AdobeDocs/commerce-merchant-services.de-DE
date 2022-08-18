@@ -2,9 +2,9 @@
 title: Zahlungsoptionen
 description: Legen Sie die Zahlungsoptionen fest, um die für Ihre Store-Kunden verfügbaren Methoden anzupassen.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: 26735a191eab529bc3e8e7fc3d64295d345888d6
+source-git-commit: c7afa798096e07409fb36a3d08f7e5b2a5ce40db
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '948'
 ht-degree: 0%
 
 ---
@@ -58,6 +58,10 @@ Die [!DNL Venmo] -Schaltfläche ist von der Produktseite aus sichtbar, in der Mi
 Kunden können die Touch-ID auf ihren Geräten verwenden, um [[!DNL Apple Pay]](https://www.apple.com/apple-pay/), die auf ihrem iOS- oder macOS-Gerät gespeicherte Zahlungsberechtigungen für Kredit- und Debitkarten verwendet.
 
 Die [!DNL Apple Pay] -Schaltfläche ist von der Produktseite aus sichtbar, in der Mini-Warenkorb-, Warenkorb- und Checkout-Ansicht.
+
+>[!NOTE]
+>
+> Wenden Sie sich zur Verwendung von Apple Pay an Ihren Vertriebsmitarbeiter, um ihn für Ihre Live-Stores zu aktivieren.
 
 ### [!DNL Pay Later] button
 

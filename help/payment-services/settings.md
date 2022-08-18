@@ -4,9 +4,9 @@ description: Nach der Installation können Sie [!DNL Payment Services] in der St
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 60d04755b29f107a0543bd71e19ca5b2b6997b4d
+source-git-commit: ecfe1448a0272fe5401090b322f4b69dffd1a8fa
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1087'
 ht-degree: 0%
 
 ---
@@ -108,6 +108,8 @@ Sie können die Zahlungsoptionen für PayPal-Smart-Schaltflächen aktivieren und
       >
       > Verwenden von Apple Pay You [muss über ein Apple-Entwicklerkonto verfügen](test-validate.md#test-in-sandbox-environment) (mit gefälschten Kreditkarten- und Rechnungsinformationen), um sie zu testen. Wenn Sie bereit sind, Apple Pay in Sandbox zu verwenden *oder* Produktionsmodus nach Abschluss [Tests und Validierung](test-validate.md)Wenden Sie sich an Ihren Vertriebsmitarbeiter, um ihn für Ihre Live-Stores zu aktivieren.
 
+      Wenn Sie die Sichtbarkeit auf die Zahlungsschaltflächen oder die PayPal PayPay-später-Nachricht aktivieren/deaktivieren, wird unten auf der Seite &quot;Einstellungen&quot;eine visuelle Vorschau dieser Konfiguration angezeigt.
+
 1. Um den Debug-Modus zu aktivieren, schalten Sie die **[!UICONTROL Debug Mode]** auswählen.
 1. Klicken **[!UICONTROL Save]**.
 
@@ -145,6 +147,9 @@ Sie können auch die _[!UICONTROL Button style]_Optionen der PayPal-Smart-Schalt
 1. So ändern Sie die **[!UICONTROL Shape]** auswählen `Pill` oder `Rect`.
 1. Um die Auswahl der Schaltflächenhöhe zu aktivieren, schalten Sie die **[!UICONTROL Responsive button height]** auswählen.
 1. So ändern Sie die **[!UICONTROL Label]** wählen Sie die gewünschte Beschriftungsoption aus.
+
+   Wenn Sie die Konfigurationsoptionen für Layout, Farbe, Form, Höhe und Beschriftung ändern, wird unten auf der Seite &quot;Einstellungen&quot;eine visuelle Vorschau dieser Konfiguration angezeigt.
+
 1. Klicken **[!UICONTROL Save]**.
 
    Wenn Sie versuchen, von dieser Ansicht weg zu navigieren, ohne Ihre Änderungen zu speichern, wird ein Modal angezeigt, in dem Sie aufgefordert werden, Änderungen zu verwerfen, die Bearbeitung fortzusetzen oder Änderungen zu speichern.
