@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie installieren und verwenden [!DNL Payment Serv
 role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 3f753f6a91c9f2c29def90d323c004a689056e71
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -67,3 +67,9 @@ Onboarding und Einrichten [!DNL Payment Services] wird in nur wenigen Schritten 
 1. Aktivieren [!DNL Payment Services] im Livemodus, um mit der Verarbeitung von Live-Zahlungen zu beginnen.
 
 Um die vollständigen Anweisungen zu erhalten und den Onboarding-Prozess zu starten, lesen Sie [Onboard [!DNL Payment Services]](onboard.md).
+
+## [!DNL Payment Services] Demo
+
+In diesem Video erfahren Sie mehr über [!DNL Payment Services]:
+
+>[!VIDEO](https://video.tv.adobe.com/v/343990?quality=12)
