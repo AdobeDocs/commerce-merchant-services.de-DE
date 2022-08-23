@@ -5,9 +5,9 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
 breadcrumb-title: Dokumentation
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
-source-git-commit: 9dd9564a45aa1de13bbdaed81d79fe136b55cb68
+source-git-commit: 4fcab515a816c03320fa035df3e9f6dfdd8643a9
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '611'
 ht-degree: 0%
 
 ---
@@ -81,7 +81,7 @@ Die [Commerce Services Connector](saas.md) stellt die Integration für Ihre Adob
 
 ## Catalog Service
 
-Der Catalog Service bietet umfassende schreibgeschützte Katalogdaten, um produktbezogene Inhalte auf der Storefront schnell und vollständig wiederzugeben, einschließlich Produktdetailseiten und Produktlistenseiten. Dadurch erhalten Ihre Kunden ein optimiertes Produkterlebnis, während die Leistung gesteigert, die Skalierbarkeit verbessert und Konversionen gesteigert werden.
+Die [Catalog Service](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html) bietet umfassende schreibgeschützte Katalogdaten zum schnellen und vollständigen Rendern produktbezogener Inhalte auf der Storefront, einschließlich Produktdetailseiten und Produktlistenseiten. Dadurch erhalten Ihre Kunden ein optimiertes Produkterlebnis, während die Leistung gesteigert, die Skalierbarkeit verbessert und Konversionen gesteigert werden.
 
 ## Neue Funktionen
 
