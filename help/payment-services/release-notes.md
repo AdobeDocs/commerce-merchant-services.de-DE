@@ -2,9 +2,9 @@
 title: '"[!DNL Payment Services] Versionshinweise"'
 description: Informationen zu allen [!DNL Payment Services] veröffentlicht.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 4489fb72eb6b6066aa2a1360d5d8c9af533e99ee
+source-git-commit: 36eafb5729910440d257ab2d89d16f6b8f01aa68
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '959'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,32 @@ Informationen zu Funktionsänderungen und Fehlerbehebungen, die außerhalb der r
 Siehe [Bevorstehende Versionen](https://devdocs.magento.com/release/) , um mehr über die Veröffentlichungszeitpläne und die Unterstützung zu erfahren.
 
 Siehe [Verfügbarkeit](https://devdocs.magento.com/release/availability.html) in der Entwicklerdokumentation , um mehr über die Produktkompatibilität zu erfahren.
+
+## Aktualisierungen gehosteter Dienste
+
+In diesen Versionshinweisen werden Funktionsänderungen und -korrekturen beschrieben, die außerhalb der regulären Versionen der gehosteten Funktionen für den gehosteten Dienst veröffentlicht wurden.
+
++++Hosting-Dienstaktualisierungen
+
+_31. August 2022_
+
+![Problem behoben](../assets/fix.svg)<!-- Issue PAY-3629 --> Wenn ein neuer Händler zum ersten Mal auf die Zahlungsdienst-Startseite zugreift, wird die Seite jetzt sofort geladen, um den Inhalt anzuzeigen, anstatt dass eine Seitenaktualisierung erforderlich ist.
+
+_9. August 2021_
+
+![Neu](../assets/new.svg)<!-- Issue PAY-3420 --> Apple Pay ist jetzt als PayPal Smart Button verfügbar. Diese [Zahlungsoption](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-options.html#apple-pay-button) ermöglicht es Kunden, die Touch-ID-Funktion auf ihrem iOS- oder macOS-Gerät zu verwenden, um Apple Pay auszuwählen. Apple Pay verarbeitet die Zahlung mit den auf dem Gerät gespeicherten Zahlungsberechtigungen für Kredit- und Debitkarten.
+
+_28. Juni 2021_
+
+![Neu](../assets/new.svg)<!-- Issue PAY-1720 --> Streitigkeiten über Store-Bestellungen sind jetzt verfügbar unter [den Bericht über den Auftragszahlungsstatus](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#view-disputes). Sie können bei Streitigkeiten direkt zum PayPal-Abwicklungszentrum navigieren von [!DNL Payment Services].
+
+![Neu](../assets/new.svg)<!-- Issue PAY-2854 --> Verbesserungen des Benutzererlebnisses aus [!DNL Payment Services] Zu den Startseiten gehören die Möglichkeit, eine Konfiguration auf der aktuellen Vererbungsebene zu ändern, sowie Verbesserungen bei der Anzeige der Kopfzeile und der Navigation.
+
+![Neu](../assets/new.svg)<!-- Issue PAY-2854 --> Jetzt werden Warnungen angezeigt, wenn Sie vom Sandbox-Modus zum Produktionsmodus wechseln und versuchen, von einer Ansicht mit nicht gespeicherten Aktualisierungen weg zu navigieren.
+
+![Neu](../assets/new.svg)<!-- Issue PAY-2761 --> Sie können jetzt die Daten anpassen, die im [Bestellstatusbericht](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) und [Zahlungsbericht](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) durch Einblenden oder Ausblenden von Spalten mithilfe des Steuerelements Spalteneinstellungen.
+
++++
 
 ## v1.3.0
 
@@ -46,20 +72,6 @@ _29. Juni 2022_
 ![Problem behoben](../assets/fix.svg)<!-- Issue PAY-3338 PAY-2502 --> Wenn die Anmeldedaten für Commerce Services ungültig sind, wird die [!DNL Payment Services] Die Startseite wird jetzt in der Admin-Konsole angezeigt. Es wird ein Berechtigungsfehler angezeigt, der Sie darauf hinweist, dass Ihre Anmeldedaten ungültig sind.
 
 ![Bekanntes Problem](../assets/bug.svg)<!-- Issue PAY-0 --> [!DNL Payment Services] ist derzeit inkompatibel mit `commerce-data-export` v101.20 und höher, wodurch sie mit dem [[!DNL Channel manager] Erweiterung](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html).
-
-### Aktualisierungen gehosteter Dienste
-
-In diesen Versionshinweisen werden Funktionsänderungen und -korrekturen beschrieben, die außerhalb der regulären Versionen der versionierten Funktionen zwischen der aktuellen Version 1.2.0 und der vorherigen Version 1.1.0 für den gehosteten Dienst vorgenommen und veröffentlicht wurden.
-
-![Neu](../assets/new.svg)<!-- Issue PAY-3420 --> Apple Pay ist jetzt als PayPal Smart Button verfügbar. Diese [Zahlungsoption](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-options.html#apple-pay-button) ermöglicht Kunden die Verwendung der Touch-ID auf ihren Geräten für die Verwendung von Apple Pay, das die auf ihren iOS- oder macOS-Geräten gespeicherten Zahlungsberechtigungen für Kredit- und Debitkarten verwendet.
-
-![Neu](../assets/new.svg)<!-- Issue PAY-1720 --> Streitigkeiten über Store-Bestellungen sind jetzt verfügbar unter [den Bericht über den Auftragszahlungsstatus](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#view-disputes). Sie können direkt zum PayPal Resolution Center navigieren von [!DNL Payment Services] Maßnahmen bei Streitigkeiten.
-
-![Neu](../assets/new.svg)<!-- Issue PAY-2854 --> Verbesserungen des Benutzererlebnisses aus [!DNL Payment Services] Zu den Startseiten gehören die Möglichkeit, eine Konfiguration auf der aktuellen Vererbungsebene zu ändern, sowie Verbesserungen bei der Anzeige der Kopfzeile und der Navigation.
-
-![Neu](../assets/new.svg)<!-- Issue PAY-2854 --> Jetzt werden Warnungen angezeigt, wenn Sie vom Sandbox-Modus zum Produktionsmodus wechseln und versuchen, von einer Ansicht mit nicht gespeicherten Aktualisierungen weg zu navigieren.
-
-![Neu](../assets/new.svg)<!-- Issue PAY-2761 --> Sie können jetzt die Daten anpassen, die im [Bestellstatusbericht](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) und [Zahlungsbericht](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) durch Einblenden oder Ausblenden von Spalten mithilfe des Steuerelements Spalteneinstellungen.
 
 ## v1.1.0
 
