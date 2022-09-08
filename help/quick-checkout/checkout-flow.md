@@ -1,10 +1,10 @@
 ---
-title: '"Checkout-Fluss"'
-description: '"Überblick über die [!DNL Quick Checkout] Fluss in Adobe Commerce."'
+title: "Checkout-Fluss in Adobe Commerce"
+description: "Überblick über die [!DNL Quick Checkout] Fluss in Adobe Commerce."
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
-source-git-commit: 05d967573f645db1e8473798df279712d6d2dfc9
+source-git-commit: d4b58b0ee3da866d460cf18d96ec9dd27b195f7a
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '194'
 ht-degree: 0%
 
 ---

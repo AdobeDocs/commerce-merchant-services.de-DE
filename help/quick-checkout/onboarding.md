@@ -1,10 +1,10 @@
 ---
-title: '"Onboard the [!DNL Quick Checkout] für Adobe Commerce-Erweiterung"'
-description: '"Erfahren Sie, wie die [!DNL Quick Checkout] kann von Ihrer Adobe Commerce-Instanz profitieren und zeigen, wie Sie die Erweiterung erfolgreich integrieren und einrichten können."'
+title: "Onboard the [!DNL Quick Checkout] für Adobe Commerce-Erweiterung"
+description: "Erfahren Sie, wie die [!DNL Quick Checkout] kann von Ihrer Adobe Commerce-Instanz profitieren und zeigen, wie Sie die Erweiterung erfolgreich integrieren und einrichten können."
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: 27e91a640999cf83a0f0d6701e616f7ceecde12d
+source-git-commit: d4b58b0ee3da866d460cf18d96ec9dd27b195f7a
 workflow-type: tm+mt
-source-wordcount: '701'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,8 @@ ht-degree: 0%
 # [!DNL Quick Checkout] Onboarding
 
 Erste Schritte mit der Verwendung von [!DNL Quick Checkout] Für die Adobe Commerce-Erweiterung müssen Sie einige Onboarding-Schritte ausführen, um Ihre Instanz mit unserer Checkout-Funktion zu verbinden.
+
+![Quick Checkout](assets/overview-admin-panel.png)
 
 1. [Erweiterung abrufen](#get-extension).
 1. [Erstellen Sie ein Produktions- oder Sandbox-Handelskonto mit [!DNL Bolt]](#create-account-with-bolt). Geben Sie alle erforderlichen Informationen zur Überprüfung Ihrer Identität an.
@@ -21,6 +23,16 @@ Erste Schritte mit der Verwendung von [!DNL Quick Checkout] Für die Adobe Comme
 1. [Diensteinstellungen definieren](#complete-admin-configuration) , um die [!DNL Quick Checkout] -Erweiterung.
 1. [Klicken Sie auf Konfiguration speichern .](#enable-live-quick-checkout) -Schaltfläche, um die Erweiterung zu aktivieren.
 1. Scope auf **Hauptwebsite** und [Klicken Sie auf Callback-URL konfigurieren .](#check-shopper-valid-account) Schaltfläche.
+
+Wenn Gainsight aktiviert ist, wird die **Tour** -Schaltfläche in [!DNL Quick Checkout] Admin Panel Info [!DNL Quick Checkout] für Adobe Commerce:
+
+1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > Erweitert:
+
+   ![Quick Checkout](assets/gainsight-admin.png)
+
+Wenn Gainsight nicht aktiviert ist, fahren Sie mit den Onboarding-Schritten fort.
+
+Siehe [[!DNL Quick Checkout] Admin-Bereich](../quick-checkout/admin-panel.md) für weitere Informationen.
 
 >[!NOTE]
 >
