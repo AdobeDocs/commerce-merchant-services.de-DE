@@ -4,26 +4,31 @@ description: Konfigurieren Sie die Automarken- und Modellauswahlen, die verfügb
 role: User, Admin
 level: Intermediate
 exl-id: 341b96cd-bb83-4d07-965c-b09fab24dc81
-source-git-commit: 1fb22b4644d41ea5c60aead3fe2c455dfa3382f8
+source-git-commit: 5e7dcc48c65b2f3f75a33c6e556dcef882a80549
 workflow-type: tm+mt
-source-wordcount: '149'
+source-wordcount: '170'
 ht-degree: 0%
 
 ---
 
 # Einrichtung des Check-in-Erlebnisses
 
-Der Workflow für die Store-Abholung für die Store-Abfüllungs-Lösung enthält ein Abruf-Bestellformular, das Kunden während des Einkaufserlebnisses ausfüllen. Dieses Formular enthält Kfz-Farben und Auswahlfelder, mit denen Kunden Kfz-Beschreibungsdetails bereitstellen können, damit Store-Mitarbeiter den Kunden bei der Zustellung ihrer Kfz-Pickup-Bestellung leicht finden können.
+Wenn Kunden zur Abholung eintreffen, verwenden sie das Formular &quot;Abholauftrag&quot;, um sich einzuchecken und Informationen über ihren Standort, ihre Automobilindustrie und ihr Automodell bereitzustellen. Diese Informationen werden über die Store-Hilfe-App an Store Associates gesendet, damit diese schnell aktuelle Abholaufträge bereitstellen können.
 
 ![[!DNL Check-In Experience Car Make] und [!DNL Model] Einstellungen für die Cursor-Auswahl](assets/checkin-system-settings-car-options.png)
 
+>[!NOTE]
+>
+>Sie konfigurieren die Benutzeroberfläche des Formulars &quot;Abholauftrag&quot;über [Menü &quot;Speicherkonfiguration&quot;](merchant-store-configuration.md#configure-check-in-experience-interface-options). Sie können beispielsweise angeben, welche Eingabefelder angezeigt werden sollen und ob sie erforderlich oder optional sind.
+
+
 ## Autoproduktion und Farbauswahl konfigurieren
 
-Sie können die Autofarbe anzeigen und ändern und die Auswahl in der Abholreihenfolge in den Admin-Systemeinstellungen in Adobe Commerce verfügbar machen:
+Administratoren können die Automobil-Marke und die Modellauswahl verwalten, die im Abruf-Formular in den Systemeinstellungen von Adobe Commerce verfügbar sind:
 
 - **[!UICONTROL System]> Einchecken > Autohersteller**
 - **[!UICONTROL System]> Einchecken > Autofarben**
 
 ![[!DNL Check-In Experience system configuration for curbside pickup]](assets/check-in-experience-system-config.png)
 
-Die Standardkonfiguration umfasst Optionen für gängige Automarken und Farben auf dem US-Markt. [!DNL Commerce] Administratoren können die Konfiguration verwalten, um die verfügbaren Optionen hinzuzufügen oder zu bearbeiten.
+Die Standardkonfiguration enthält eine umfassende Liste von gängigen Automarken und Farben für den US-Markt. [!DNL Commerce] Administratoren können die Konfiguration verwalten, um die verfügbaren Optionen hinzuzufügen oder zu bearbeiten.

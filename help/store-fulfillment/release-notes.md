@@ -1,8 +1,8 @@
 ---
-title: '''[!DNL Store Fulfillment by Walmart Commerce Technologies] Versionshinweise'''
-description: '"Lesen Sie die Versionshinweise, um Informationen zu allen [!DNL Store Fulfillment by Walmart Commerce Technologies] veröffentlicht."'
+title: '[!DNL Store Fulfillment by Walmart Commerce Technologies] Versionshinweise'
+description: "Lesen Sie die Versionshinweise, um Informationen zu allen [!DNL Store Fulfillment by Walmart Commerce Technologies] veröffentlicht."
 exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
-source-git-commit: 1fb22b4644d41ea5c60aead3fe2c455dfa3382f8
+source-git-commit: 5e7dcc48c65b2f3f75a33c6e556dcef882a80549
 workflow-type: tm+mt
 source-wordcount: '135'
 ht-degree: 4%
@@ -17,7 +17,7 @@ Diese Versionshinweise beschreiben die erste Version von [!DNL Store Fulfillment
 ![Problem behoben](../assets/fix.svg) Fehlerbehebungen und Verbesserungen
 ![Bekanntes Problem](../assets/bug.svg) Bekannte Probleme
 
-## v1.0.1
+## v1.1.0
 
 ![Problem behoben](../assets/fix.svg) <!-- Issue WM-x -->Vereinfachtes [Konfiguration des Check-in-Erlebnisses](check-in-experience-setup.md) für die Store Assist-App durch Hinzufügen der standardmäßigen Automarken- und Modellauswahl. In der vorherigen Version mussten Händler die Automobil- und Modellauswahl manuell konfigurieren.
 
@@ -31,4 +31,4 @@ Erste Version, kompatibel mit den folgenden Commerce-Versionen:
 
 ## Store Assist App
 
-Informationen zu neuen Versionen der Store-Hilfe-App finden Sie in den App-Informationen im [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id16092815390){target=&quot;_blank&quot;} oder [Google Play Store](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target=&quot;_blank&quot;}.
+Informationen zu neuen Versionen der Store-Hilfe-App finden Sie in den App-Informationen im [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id1609281539){target=&quot;_blank&quot;} oder [Google Play Store](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target=&quot;_blank&quot;}.
