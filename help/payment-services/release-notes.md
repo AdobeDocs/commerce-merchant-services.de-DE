@@ -1,10 +1,10 @@
 ---
-title: '"[!DNL Payment Services] Versionshinweise"'
+title: "[!DNL Payment Services] Versionshinweise"
 description: Informationen zu allen [!DNL Payment Services] veröffentlicht.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 1f88c66d0c12dcde2c8fdde1dd3b4838ae6d462d
+source-git-commit: 4e6bf72033495683491b0c59a544d1474f6c1486
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1029'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,10 @@ Siehe [Verfügbarkeit](https://devdocs.magento.com/release/availability.html) in
 In diesen Versionshinweisen werden Funktionsänderungen und -korrekturen beschrieben, die außerhalb der regulären Versionen der gehosteten Funktionen für den gehosteten Dienst veröffentlicht wurden.
 
 +++Hosting-Dienstaktualisierungen
+
+_12. September 2022_
+
+![Neu](../assets/new.svg)<!-- Issue PAY-3705 --> Die `increment_id` ist jetzt für die Abstimmung von Auszahlungen in externen ERP-Systemen verfügbar. Sie wird an die [`custom_id` _und_ `invoice_id`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/data.html#reconcile-with-erp-system), die sowohl im PayPal-Webhook als auch in den Details zur Handelsaktivität für eine Auszahlung angezeigt wird.
 
 _31. August 2022_
 
