@@ -4,9 +4,9 @@ description: Richten Sie die [!DNL Store Assist] App zur Verwaltung von End-to-E
 role: User, Admin
 level: Intermediate
 exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
-source-git-commit: 1fb22b4644d41ea5c60aead3fe2c455dfa3382f8
+source-git-commit: fda4620f57aa7aa9fb930b10f5717fee98983378
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '635'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Die Store-Hilfe-App erfordert zwei Arten von Konfiguration:
 
    - **Abbruch aus dem Store**—Geben Sie an, ob Bestellungen aus dem Store storniert werden können und welche Rollen über Abbruchsberechtigungen verfügen
 
-   - **Bestellbereinigungsfenster**—Geben Sie an, wie lange die geplante Abholzeit vergangen ist, bis eine abgerufene Bestellung im Staging verbleibt, bevor sie wieder aufgestockt wird, z. B. drei Tage.
+   - **Bestellbereinigungsfenster**—Geben Sie an, wie lange die [Geschätzte Abruf-Vorlaufzeit](enable-general.md#delivery-method-title-configuration) dass eine abgerufene Bestellung im Staging verbleibt, bevor sie wieder aufgestockt wird, z. B. drei Tage. Der Standardwert ist 7 Tage. Wenn diese Konfiguration aktiviert ist, wird die Bestellung nach Ablauf dieser Zeit automatisch abgebrochen. Die Artikel werden wieder aufgestockt und der Händler erhält eine Abmelde-E-Mail.
 
    - Passen Sie alle Anweisungen in der App an (Auswählen, Staging, Übergabe).
 
