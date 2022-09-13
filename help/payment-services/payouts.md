@@ -4,9 +4,9 @@ description: Verwenden Sie den Bericht "Auszahlungen", um vollständige Transpar
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: 4554ea65ded73e9552f307ff51e0e7eff64cd2e9
+source-git-commit: 27d280fb9f49715a455ff55279416f7df4ada56d
 workflow-type: tm+mt
-source-wordcount: '975'
+source-wordcount: '1322'
 ht-degree: 0%
 
 ---
@@ -15,15 +15,64 @@ ht-degree: 0%
 
 [!DNL Payment Services] für [!DNL Adobe Commerce] und [!DNL Magento Open Source] bietet Ihnen eine umfassende Berichterstellung, damit Sie einen klaren Überblick über die Bestellungen und Zahlungen Ihres Geschäfts erhalten.
 
-![Übersicht über die Finanzberichte](assets/reports-view.png)
+![Übersicht über die Finanzberichte](assets/reports-view-new.png)
 
-Der Bericht zu den Auszahlungen zeigt umfassende Auszahlungsinformationen auf einen Blick, sodass Sie vollständige Transparenz in Bezug auf den Zahlungsbetrag, das verarbeitete Volumen und detaillierte Berichte über die Transaktionsstufe zur finanziellen Abstimmung erhalten.
+Es gibt zwei verfügbare Ansichten zur Payouts-Berichterstellung, mit denen Sie detaillierte Informationen zu all Ihren Auszahlungen anzeigen können:
+
+* **[Ansicht der Payouts-Daten](#payouts-data-visualization-view)**—Auf der Zahlungsdienst-Startseite verfügbares Diagramm, das eine visuelle Darstellung der aggregierten Beträge pro Tag in der Ansicht des Payouts-Berichts darstellt
+* **[Ansicht des Payload-Berichts](#payouts-report-view)**—Bericht verfügbar unter &quot;Auszahlungen&quot;, der detaillierte Payout-Informationen für alle Transaktionen anzeigt
+
+Die Payouts-Ansichten zeigen umfassende Auszahlungsinformationen auf einen Blick, sodass Sie vollständige Transparenz in Bezug auf den Zahlungsbetrag, das verarbeitete Volumen und detaillierte Berichte über die Transaktionsstufe zur finanziellen Abstimmung erhalten.
 
 >[!NOTE]
 >
->Payouts-Berichte zeigen nur erfasste Bestellungen an - die Zahlungsaktion ist auf [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method)) - oder [markiert als `Invoiced`](https://docs.magento.com/user-guide/sales/invoice-create.html).
+>Payouts-Berichte zeigen nur erfasste Bestellungen an (Zahlungsaktion ist auf [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method)) - oder [markiert als `Invoiced`](https://docs.magento.com/user-guide/sales/invoice-create.html).
 
-Sie müssen nicht mehrere Ansichten öffnen, um Bestellungen und Zahlungen zu vergleichen oder Konten abzustimmen. [!DNL Payment Services] für [!DNL Adobe Commerce] und [!DNL Magento Open Source] ermöglicht es Ihnen, all diese Aktionen von einem Ort aus - dem Payouts-Bericht - durchzuführen, damit Sie Ihre Payouts effizient anzeigen und verwalten können.
+## Ansicht der Payouts-Daten
+
+Die Ansicht Payouts-Daten-Visualisierung ist auf der Zahlungsdienst-Startseite verfügbar. Es handelt sich um eine visuelle Darstellung der aggregierten Beträge pro Tag aus der detaillierten Tabelle [Ansicht des Payload-Berichts](#payouts-report-view).
+
+Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** um das Datenvisualisierungs-Diagramm von Gutschriften im Vergleich zu Lastschriften und die sich bewegenden Durchschnittswerte im Zeitverlauf anzuzeigen.
+
+![Payout-Datenvisualisierung in Admin](assets/payouts-data.png)
+
+Klicken **[!UICONTROL View Report]** zur detaillierten Tabelle navigieren [Ansicht des Payload-Berichts](#payouts-report-view).
+
+### Zeitrahmen für Transaktionen anpassen
+
+Standardmäßig werden Transaktionen mit einer Dauer von 30 Tagen angezeigt.
+
+In der Ansicht Payouts-Datenvisualisierung können Sie den Zeitrahmen für die Payout-Transaktionen, die Sie anzeigen möchten, anpassen, indem Sie einen Datumsbereich auswählen:
+
+1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**. Die Ansicht für die Payouts-Datenvisualisierung ist im Abschnitt Payouts sichtbar.
+1. Klicken Sie auf **[!UICONTROL Range]** Auswahlfilter.
+1. Wählen Sie den entsprechenden Datumsbereich aus: 30 Tage, 15 Tage oder 7 Tage.
+1. Zeigen Sie die Transaktionsinformationen für Ihre angegebenen Daten an.
+
+### Transaktionsinformationen
+
+Die Transaktionsbeträge für einen ausgewählten Datumsbereich werden links in der Ansicht Payouts-Datenvisualisierung angezeigt. Die Datumsangaben für den ausgewählten Datumsbereich werden unten in der Ansicht angezeigt. Wenn an einem bestimmten Datum keine Auszahlungen erfolgte, wird dieses Datum nicht angezeigt.
+
+Die Ansicht Payouts-Datenvisualisierung enthält die folgenden Informationen.
+
+| Daten | Beschreibung |
+| ------------ | -------------------- |
+| [!UICONTROL Transaction amount] | Betrag für Transaktionen im festgelegten Zeitrahmen; Daten auf der Y-Achse (links) |
+| Datumsbereich | Datumsbereich für den angegebenen Zeitraum; Daten auf der X-Achse (unten) |
+| Kredit | Zahlungen für den angegebenen Zeitraum |
+| Schulden | Forderungen (Erstattungen) für den festgelegten Zeitraum |
+| anpassbarer Durchschnittswert | Darstellung der durchschnittlichen Auszahlung für jedes Datum im angegebenen Zeitrahmen |
+| Netto für Bereich | Nettoauszahlungsbetrag für den angegebenen Zeitraum (Bereich) |
+
+## Ansicht des Payload-Berichts
+
+Die Ansicht des Berichts &quot;Payouts&quot;ist in der Ansicht &quot;Payouts&quot;der Zahlungsdienste verfügbar. Sie enthält alle verfügbaren Informationen über die Auszahlungen für Ihre Geschäfte. Die [Ansicht der Payouts-Daten](#payouts-data-visualization-view) in der Zahlungsdienst-Startseite ist eine visuelle Darstellung der aggregierten Beträge pro Tag in dieser detaillierteren Berichtsansicht.
+
+Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]** um die detaillierte Tabellenansicht des Berichts &quot;Payouts&quot;anzuzeigen.
+
+![Zahlungsvorgänge im Admin](assets/payouts-report-new.png)
+
+Sie können diese Ansicht entsprechend den Abschnitten in diesem Thema konfigurieren, um die gewünschten Daten am besten darzustellen.
 
 Weitere Informationen finden Sie unter verknüpfte Commerce-Bestell- und Transaktions-IDs, Transaktionsbeträge, Zahlungsmethoden pro Transaktion und mehr im Payouts-Bericht in der Admin-Rubrik.
 
@@ -33,15 +82,9 @@ Sie können Zahlungsvorgänge im .csv-Dateiformat herunterladen, um sie in der b
 >
 >Die in dieser Tabelle angezeigten Daten werden in absteigender Reihenfolge sortiert (`DESC`) standardmäßig mithilfe der `TRANS DATE`. Die `TRANS DATE` ist das Datum und die Uhrzeit, zu der die Transaktion eingeleitet wurde.
 
-## Verfügbarkeit
+### Datenquelle auswählen
 
-Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]**.
-
-![Zahlungsvorgänge im Admin](assets/payouts-report.png)
-
-## Datenquelle auswählen
-
-In der Ansicht des Payouts-Berichts können Sie die Datenquelle auswählen._[!UICONTROL Live]_oder [!UICONTROL Sandbox]_—für die Sie Berichtsergebnisse anzeigen möchten.
+In der Ansicht des Payouts-Berichts können Sie die Datenquelle auswählen._[!UICONTROL Live]_oder_[!UICONTROL Sandbox]_- für die Sie Berichtsergebnisse anzeigen möchten.
 
 ![Auswahl von Datenquellen](assets/datasource.png)
 
@@ -56,38 +99,38 @@ Datenquellenauswahlen funktionieren wie folgt:
 So wählen Sie die Datenquelle für Ihren Bestellzahlstatus-Bericht aus:
 
 1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]**.
-1. Klicken **[!UICONTROL Data source]** und wählen Sie _[!UICONTROL Live]_oder [!UICONTROL Sandbox]_.
+1. Klicken **[!UICONTROL Data source]** und wählen Sie _[!UICONTROL Live]_oder_[!UICONTROL Sandbox]_.
 
    Die Berichtsergebnisse werden basierend auf der ausgewählten Datenquelle neu generiert.
 
-## Transaktionen anzeigen
+### Transaktionen anzeigen
 
-Standardmäßig werden 30 Tage Transaktionen im Raster angezeigt.
+Standardmäßig werden Transaktionen mit einer Dauer von 30 Tagen angezeigt.
 
 Die Anzahl der Zeilen, die bei einer Suche zurückgegeben oder in den standardmäßigen 30-Tage-Transaktionen angezeigt werden, wird über dem Raster der Payouts-Ansicht neben dem Filter für die Kalenderauswahl für Transaktionsinformationen angezeigt.
 
 Scrollen Sie nach links und rechts, um [Informationen zu den einzelnen Auszahlungstransaktionen](#column-descriptions) im täglichen Bericht, einschließlich Transaktionsdatum, Referenz-ID, Rechnungsnummer und Zahlungsmethodendetails.
 
-### Zeitrahmen für Transaktionen anpassen
+#### Zeitrahmen für Transaktionen anpassen
 
-In der Ansicht &quot;Payouts&quot;können Sie den Zeitrahmen für die Payout-Transaktionen anpassen, die Sie anzeigen möchten, indem Sie bestimmte Daten eingeben oder einen Datumsbereich in der Datumsauswahl auswählen:
+In der Ansicht des Payouts-Berichts können Sie den Zeitrahmen für die Payout-Transaktionen anpassen, die Sie anzeigen möchten, indem Sie bestimmte Daten eingeben oder einen Datumsbereich in der Datumsauswahl auswählen:
 
 1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]**.
 1. Klicken Sie auf den Filter Kalenderauswahl für Transaktionsdaten .
 1. Wählen Sie den entsprechenden Datumsbereich aus.
 1. Zeigen Sie die Payouts-Status im Raster für Ihre angegebenen Daten an.
 
-## Spalten ein- und ausblenden
+### Spalten ein- und ausblenden
 
-Der Bericht &quot;Auszahlungen&quot;zeigt standardmäßig die meisten verfügbaren Informationsspalten an. Sie können jedoch anpassen, welche Spalten in Ihrem Bericht angezeigt werden.
+Die Ansicht des Payouts-Berichts zeigt standardmäßig die meisten verfügbaren Informationsspalten an. Sie können jedoch anpassen, welche Spalten im Bericht angezeigt werden.
 
 1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Payouts]**.
 1. Klicken Sie auf _Spalteneinstellungen_ Symbol (![Symbol für Spalteneinstellungen](assets/column-settings.png)).
 1. Um anzupassen, welche Spalten im Bericht angezeigt werden, aktivieren oder deaktivieren Sie die Spalten in der Liste.
 
-   Der Bericht &quot;Auszahlungen&quot;zeigt sofort alle Änderungen an, die Sie im Menü &quot;Spalteneinstellungen&quot;vorgenommen haben. Die Spaltenvoreinstellungen werden gespeichert und bleiben in Kraft, wenn Sie von der Berichtsansicht weg navigieren.
+   In der Ansicht des Berichts &quot;Payouts&quot;werden alle Änderungen, die Sie im Menü &quot;Spalteneinstellungen&quot;vorgenommen haben, sofort angezeigt. Die Spaltenvoreinstellungen werden gespeichert und bleiben in Kraft, wenn Sie von der Berichtsansicht weg navigieren.
 
-## Herunterladen von Transaktionen
+### Herunterladen von Transaktionen
 
 Sie können eine CSV-Datei herunterladen, die alle im Raster Ansicht der Payouts sichtbaren Transaktionen enthält.
 
@@ -96,10 +139,6 @@ Sie können eine CSV-Datei herunterladen, die alle im Raster Ansicht der Payouts
 1. Klicken Sie auf _Download_ (![](assets/icon-download.png)).
 
 Ihre Zahlungsvorgänge werden im .csv-Format heruntergeladen.
-
-## Transaktionsinformationen
-
-Die Payouts-Ansicht zeigt umfassende Informationen für jede Transaktion an, die im Raster angezeigt wird.
 
 ### Spaltenbeschreibungen
 
@@ -115,8 +154,8 @@ Payout-Berichte enthalten die folgenden Informationen.
 | [!UICONTROL Code] | Transaktionscode, der entweder einen Kredit (*CR*) oder Schulden (*DR*) |
 | [!UICONTROL Reference ID] | Ursprüngliche Transaktions-ID, mit der dieses Ereignis verknüpft ist |
 | [!UICONTROL Invoice] | Rechnungskennung (eine pro Bestellung) der Transaktion |
-| [!UICONTROL Commerce order] | Commerce-Bestell-ID <br> <br>So sehen Sie verwandte [Bestellinformationen](https://docs.magento.com/user-guide/sales/orders.html){target=&quot;_blank&quot;}, klicken Sie auf die ID. |
-| [!UICONTROL Commerce trans] | Transaktions-ID <br> <br>So sehen Sie verwandte [Transaktionsinfo](https://docs.magento.com/user-guide/sales/transactions.html){target=&quot;_blank&quot;}, klicken Sie auf die ID. |
+| [!UICONTROL Commerce order] | Commerce-Bestell-ID <br> <br>So sehen Sie verwandte [Bestellinformationen](https://docs.magento.com/user-guide/sales/orders.html)klicken Sie auf die ID. |
+| [!UICONTROL Commerce trans] | Transaktions-ID |
 | [!UICONTROL Pay method] | Kreditkartenart—*[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL CREDIT_CARD]*- und dem zugehörigen Kartenanbieter (z. B. *Visagebühren* oder *MasterCard*) |
 | [!UICONTROL Trans amt] | Transaktionsbetrag |
 | [!UICONTROL Cur] | Währungseinheit für Transaktionsbetrag |
