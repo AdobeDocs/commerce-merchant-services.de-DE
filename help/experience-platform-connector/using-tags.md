@@ -2,9 +2,9 @@
 title: Erfassen von Commerce-Daten mit Adobe Experience Platform Tags
 description: Erfahren Sie, wie Sie Commerce-Daten mithilfe von Adobe Experience Platform-Tags erfassen.
 exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
-source-git-commit: 4af50842c883d3aef7bf50d6a68b82321b784591
+source-git-commit: c7344efead97b0562a146f096123dd84f998fd5e
 workflow-type: tm+mt
-source-wordcount: '2276'
+source-wordcount: '2504'
 ht-degree: 0%
 
 ---
@@ -111,7 +111,7 @@ Fügen wir beispielsweise die Adobe Commerce hinzu `signOut` -Ereignis auf Adobe
 
 Wiederholen Sie die oben genannten Schritte in den Tags für jedes der unten beschriebenen Adobe Commerce-Ereignisse.
 
-### Verfügbare Ereignisse
+## Verfügbare Ereignisse
 
 Ordnen Sie für jedes der folgenden Ereignisse die Adobe Commerce-Ereignisse Ihrem XDM zu, indem Sie die oben genannten Schritte ausführen.
 
@@ -130,6 +130,8 @@ Ordnen Sie für jedes der folgenden Ereignisse die Adobe Commerce-Ereignisse Ihr
 - [`placeOrder`](#placeorder)
 
 ### signOut {#signout}
+
+Wird ausgelöst, wenn ein Käufer versucht, sich abzumelden.
 
 #### Datenelemente
 
@@ -158,6 +160,8 @@ Erstellen Sie das folgende Datenelement:
 - **XDM-Daten**: `%sign-out%`
 
 ### signIn {#signin}
+
+Wird ausgelöst, wenn ein Käufer versucht, sich anzumelden.
 
 #### Datenelemente
 
@@ -216,6 +220,8 @@ Erstellen Sie die folgenden Datenelemente:
 
 ### createAccount {#createaccount}
 
+Wird ausgelöst, wenn ein Käufer versucht, ein Konto zu erstellen.
+
 #### Datenelemente
 
 Erstellen Sie die folgenden Datenelemente:
@@ -272,6 +278,8 @@ Erstellen Sie die folgenden Datenelemente:
 - **XDM-Daten**: `%create account%`
 
 ### editAccount {#editaccount}
+
+Wird ausgelöst, wenn ein Käufer versucht, ein Konto zu bearbeiten.
 
 #### Datenelemente
 
@@ -330,6 +338,8 @@ Erstellen Sie die folgenden Datenelemente:
 
 ### pageView {#pageview}
 
+Wird ausgelöst, wenn eine Seite geladen wird.
+
 #### Datenelemente
 
 Erstellen Sie die folgenden Datenelemente:
@@ -357,6 +367,8 @@ Erstellen Sie die folgenden Datenelemente:
 
 ### productView {#productview}
 
+Wird ausgelöst, wenn eine Produktseite geladen wird.
+
 #### Datenelemente
 
 Erstellen Sie die folgenden Datenelemente:
@@ -374,6 +386,13 @@ Erstellen Sie die folgenden Datenelemente:
    - **Erweiterung**: `Adobe Client Data Layer`
    - **Datenelementtyp**: `Data Layer Computed State`
    - **[Optional] path**: `productContext.sku`
+
+1. Produktbild-URL:
+
+   - **Name**: `product image`
+   - **Erweiterung**: `Adobe Client Data Layer`
+   - **Datenelementtyp**: `Data Layer Computed State`
+   - **[Optional] path**: `productContext.mainImageUrl`
 
 1. Produktwährung:
 
@@ -432,6 +451,8 @@ Erstellen Sie die folgenden Datenelemente:
    - **Preissumme**: **Wert** = `%product price%`
    - **Feldergruppe**: `productListItems` > `currencyCode`
    - **Währungscode**: **Wert** = `%currency code%`
+   - **Feldergruppe**: `productListItems` > `ProductImageUrl`
+   - **ProductImageUrl**: **Wert** = `%product image%`
    - **Feldergruppe**: `commerce` > `productViews` > `value`
    - **value**: **Wert** = `1`
 
@@ -450,6 +471,8 @@ Erstellen Sie die folgenden Datenelemente:
 - **XDM-Daten**: `%product view%`
 
 ### searchRequestSent {#searchrequestsent}
+
+Wird durch Ereignisse im Popup &quot;Suche beim Eingeben&quot;und durch Ereignisse auf den Suchergebnisseiten ausgelöst.
 
 #### Datenelemente
 
@@ -554,6 +577,8 @@ Erstellen Sie die folgenden Datenelemente:
 
 ### searchResponseReceived {#searchresponsereceived}
 
+Wird ausgelöst, wenn die Live-Suche Ergebnisse für die Popup- oder Suchergebnisseite &quot;Suche beim Eingeben&quot;zurückgibt.
+
 #### Datenelemente
 
 Erstellen Sie die folgenden Datenelemente:
@@ -608,6 +633,13 @@ Erstellen Sie die folgenden Datenelemente:
    return suggestions;
    ```
 
+1. Produktbild-URL:
+
+   - **Name**: `product image`
+   - **Erweiterung**: `Adobe Client Data Layer`
+   - **Datenelementtyp**: `Data Layer Computed State`
+   - **[Optional] path**: `productContext.mainImageUrl`
+
 1. Suchantwort:
 
    - **Name**: `search response`
@@ -618,6 +650,8 @@ Erstellen Sie die folgenden Datenelemente:
    - **Feldergruppe**: `siteSearch` > `numberOfResults`
    - **value**: `%search result number of products%`
    - **Feldergruppe**: `productListItems`. Auswählen **Gesamtes Objekt bereitstellen**.
+   - **Feldergruppe**: `productListItems` > `ProductImageUrl`
+   - **ProductImageUrl**: **Wert** = `%product image%`
    - **Datenelement**: `%search result products%`
    - **Feldergruppe**: `searchResponse` > `value`
    - **value**: **Wert** = `1`
@@ -637,6 +671,8 @@ Erstellen Sie die folgenden Datenelemente:
 - **XDM-Daten**: `%search response%`
 
 ### addToCart {#addtocart}
+
+Wird ausgelöst, wenn ein Produkt einem Warenkorb hinzugefügt wird oder wenn die Menge eines Produkts im Warenkorb erhöht wird.
 
 #### Datenelemente
 
@@ -669,6 +705,13 @@ Erstellen Sie die folgenden Datenelemente:
    - **Erweiterung**: `Adobe Client Data Layer`
    - **Datenelementtyp**: `Data Layer Computed State`
    - **[Optional] path**: `productContext.pricing.specialPrice`
+
+1. Produktbild-URL:
+
+   - **Name**: `product image`
+   - **Erweiterung**: `Adobe Client Data Layer`
+   - **Datenelementtyp**: `Data Layer Computed State`
+   - **[Optional] path**: `productContext.mainImageUrl`
 
 1. Produktregulärer Preis:
 
@@ -719,6 +762,8 @@ Erstellen Sie die folgenden Datenelemente:
    - **Feldergruppe**: `productListItems` > `priceTotal`
    - **Preissumme**: **Wert** = `%product price%`
    - **Feldergruppe**: `productListItems` > `currencyCode`
+   - **Feldergruppe**: `productListItems` > `ProductImageUrl`
+   - **ProductImageUrl**: **Wert** = `%product image%`
    - **Währungscode**: **Wert** = `%currency code%`
    - **Feldergruppe**: `commerce` > `cart` > `cartID`
    - **Warenkorb-ID**: **Wert** = `%cart id%`
@@ -741,6 +786,8 @@ Erstellen Sie die folgenden Datenelemente:
 
 ### viewCart {#viewcart}
 
+Wird ausgelöst, wenn eine beliebige Warenkorbseite geladen wird.
+
 #### Datenelemente
 
 Erstellen Sie die folgenden Datenelemente:
@@ -752,12 +799,19 @@ Erstellen Sie die folgenden Datenelemente:
    - **Datenelementtyp**: `Data Layer Computed State`
    - **[Optional] path**: `storefrontInstanceContext`
 
-1. Warenkorb:
+1. Produktbild-URL:
 
+   - **Name**: `product image`
+   - **Erweiterung**: `Adobe Client Data Layer`
+   - **Datenelementtyp**: `Data Layer Computed State`
+   - **[Optional] path**: `productContext.mainImageUrl`
+   1. Warenkorb:
    - **Name**: `cart`
    - **Erweiterung**: `Adobe Client Data Layer`
    - **Datenelementtyp**: `Data Layer Computed State`
    - **[Optional] path**: `shoppingCartContext`
+
+
 
 1. Warenkorb-ID:
 
@@ -812,12 +866,14 @@ Erstellen Sie die folgenden Datenelemente:
    - **Datenelementtyp**: `XDM object`
    - **Feldergruppe**: `productListItems`. Für `productListItems`kann es mehrere vorberechnete Elemente geben. Auswählen **productListItems** > **Gesamtes Array ausfüllen**.
    - **Datenelement**: `%product list items%`
+   - **Feldergruppe**: `productListItems` > `ProductImageUrl`
+   - **ProductImageUrl**: **Wert** = `%product image%`
    - **Feldergruppe**: `commerce` > `cart` > `cartID`
    - **Warenkorb-ID**: **Wert** = `%cart id%`
    - **Feldergruppe**: `commerce` > `productListViews` > `value`
    - **value**: **Wert** = `1`
 
-#### Regeln 
+#### Regeln
 
 - **Name**: `view cart`
 - **Erweiterung**: `Adobe Client Data Layer`
@@ -832,6 +888,8 @@ Erstellen Sie die folgenden Datenelemente:
 - **XDM-Daten**: `%view cart%`
 
 ### removeFromCart {#removefromcart}
+
+Wird ausgelöst, wenn ein Produkt aus dem Warenkorb entfernt wird oder wenn die Menge eines Produkts im Warenkorb verringert wird.
 
 #### Datenelemente
 
@@ -936,6 +994,8 @@ Erstellen Sie die folgenden Datenelemente:
 
 ### initiativeCheckout {#initiatecheckout}
 
+Wird ausgelöst, wenn der Käufer auf eine Schaltfläche zum Auschecken klickt.
+
 #### Datenelemente
 
 Erstellen Sie die folgenden Datenelemente:
@@ -946,6 +1006,13 @@ Erstellen Sie die folgenden Datenelemente:
    - **Erweiterung**: `Adobe Client Data Layer`
    - **Datenelementtyp**: `Data Layer Computed State`
    - **[Optional] path**: `storefrontInstanceContext`
+
+1. Produktbild-URL:
+
+   - **Name**: `product image`
+   - **Erweiterung**: `Adobe Client Data Layer`
+   - **Datenelementtyp**: `Data Layer Computed State`
+   - **[Optional] path**: `productContext.mainImageUrl`
 
 1. Warenkorb:
 
@@ -1007,6 +1074,8 @@ Erstellen Sie die folgenden Datenelemente:
    - **Datenelementtyp**: `XDM object`
    - **Feldergruppe**: `productListItems`. Für `productListItems`kann es mehrere vorberechnete Elemente geben. Auswählen **productListItems** > **Gesamtes Array ausfüllen**.
    - **Datenelement**: `%product list items%`
+   - **Feldergruppe**: `productListItems` > `ProductImageUrl`
+   - **ProductImageUrl**: **Wert** = `%product image%`
    - **Feldergruppe**: `commerce` > `cart` > `cartID`
    - **Warenkorb-ID**: **Wert** = `%cart id%`
    - **Feldergruppe**: `commerce` > `checkouts` > `value`
@@ -1028,6 +1097,8 @@ Erstellen Sie die folgenden Datenelemente:
 
 ### placeOrder {#placeorder}
 
+Wird ausgelöst, wenn der Käufer eine Bestellung aufgibt.
+
 #### Datenelemente
 
 Erstellen Sie die folgenden Datenelemente:
@@ -1038,6 +1109,13 @@ Erstellen Sie die folgenden Datenelemente:
    - **Erweiterung**: `Adobe Client Data Layer`
    - **Datenelementtyp**: `Data Layer Computed State`
    - **[Optional] path**: `storefrontInstanceContext`
+
+1. Produktbild-URL:
+
+   - **Name**: `product image`
+   - **Erweiterung**: `Adobe Client Data Layer`
+   - **Datenelementtyp**: `Data Layer Computed State`
+   - **[Optional] path**: `productContext.mainImageUrl`
 
 1. Warenkorb:
 
@@ -1168,6 +1246,8 @@ Erstellen Sie die folgenden Datenelemente:
    - **Datenelementtyp**: `XDM object`
    - **Feldergruppe**: `productListItems`. Für `productListItems`kann es mehrere vorberechnete Elemente geben. Auswählen **productListItems** > **Gesamtes Array ausfüllen**.
    - **Datenelement**: `%product list items%`
+   - **Feldergruppe**: `productListItems` > `ProductImageUrl`
+   - **ProductImageUrl**: **Wert** = `%product image%`
    - **Feldergruppe**: `commerce` > `order`
    - **Eindeutige Kennung**: **Wert** = `%commerce order%`
    - **Feldergruppe**: `commerce` > `shipping`
