@@ -4,9 +4,9 @@ description: Konfigurieren Sie die Transaktions-E-Mail-Vorlagen für die Kommuni
 role: User, Admin
 level: Intermediate
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
-source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
+source-git-commit: 31ad67d3f3d11c68341de0306eea37f231b2d9b9
 workflow-type: tm+mt
-source-wordcount: '1215'
+source-wordcount: '1200'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ Konfigurieren Sie die Vorlagen für Verkaufs-E-Mails über den Administrator: **
 </tr>
 <tr>
 <td><strong>Bestellung bereit zum Abruf der E-Mail-Kopiermethode senden</strong></td>
-<td>Die Methode der E-Mail "Kopie mit Kohlenstoff"sendet an die Verwendung.</td>
+<td>Die zu verwendende E-Mail-Copy-Methode - Carbon Copy.</td>
 <td>Store-Ansicht</td>
 <td>Nein</td>
 </tr>
@@ -136,7 +136,7 @@ Konfigurieren Sie die Vorlagen für Verkaufs-E-Mails über den Administrator: **
 </tr>
 <tr>
 <td><strong>Die Methode zum Kopieren einer E-Mail wurde erfasst</strong></td>
-<td>Die Methode zum Senden der E-Mail "Kopie des CO2" zur Verwendung.</td>
+<td>Die zu verwendende E-Mail-Copy-Methode - Carbon Copy.</td>
 <td>Store-Ansicht</td>
 <td>Nein</td>
 </tr>
@@ -185,7 +185,7 @@ Konfigurieren Sie die Vorlagen für Verkaufs-E-Mails über den Administrator: **
 </tr>
 <tr>
 <td><strong>Versandreihenfolge - Kopiermethode verzögert</strong></td>
-<td>Die Methode zum Senden der E-Mail "Kopie des CO2" zur Verwendung.</td>
+<td>Die zu verwendende E-Mail-Copy-Methode - Carbon Copy.</td>
 <td>Store-Ansicht</td>
 <td>Nein</td>
 </tr>
@@ -236,7 +236,7 @@ Konfigurieren Sie die Vorlagen für Verkaufs-E-Mails über den Administrator: **
 </tr>
 <tr>
 <td><strong>Sendereihenfolge - Kopiermethode abgebrochen</strong></td>
-<td>Die Methode zum Senden der E-Mail "Kopie des CO2" zur Verwendung.</td>
+<td>Die zu verwendende E-Mail-Copy-Methode - Carbon Copy.</td>
 <td>Store-Ansicht</td>
 <td>Nein</td>
 </tr>
@@ -292,7 +292,7 @@ Konfigurieren Sie die Vorlagen für Verkaufs-E-Mails über den Administrator: **
 </tr>
 <tr>
 <td><strong>Teilweise abgebrochene Kopiermethode für Auftrag senden</strong></td>
-<td>Die Methode zum Senden der E-Mail "Kopie des CO2" zur Verwendung.</td>
+<td>Die zu verwendende E-Mail-Copy-Methode - Carbon Copy.</td>
 <td>Store-Ansicht</td>
 <td>Nein</td>
 </tr>

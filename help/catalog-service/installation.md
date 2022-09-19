@@ -2,7 +2,7 @@
 title: Onboarding und Installation
 description: Erfahren Sie, wie Sie installieren [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 595d7644374b066b7608748cf09df1c41bf0eaee
+source-git-commit: 8f7fa990b422e77c1b3c1d801faefac1d0ae8e01
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Onboarding-Prozess für [!DNL Catalog Service] erfordert Zugriff auf die Befehls
 
 Sie können die [!DNL Catalog Service] Erweiterung für Adobe Commerce in Cloud-Infrastruktur und lokalen Instanzen.
 
-Die [!DNL Catalog Service] wird mit Composer-Schlüsseln installiert, die mit der Magento-ID ([mageid](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-personal/#field-descriptions) im Anmeldeprozess bereitgestellt werden. Der Verfasser verwendet diese Schlüssel bei der ersten Installation von [!DNL Adobe Commerce]oder in Situationen, in denen die Composer-Schlüssel zuvor nicht im `auth.json` -Datei.
+Die [!DNL Catalog Service] wird mit Composer-Schlüsseln installiert, die mit dem Commerce-Konto verknüpft sind [mageid](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-personal/#field-descriptions) im Anmeldeprozess bereitgestellt werden. Der Verfasser verwendet diese Schlüssel bei der ersten Installation von [!DNL Adobe Commerce]oder in Situationen, in denen die Composer-Schlüssel zuvor nicht im `auth.json` -Datei.
 
 Siehe [Abrufen der Authentifizierungsschlüssel](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) für weitere Informationen zum Abrufen von Composer-Schlüsseln.
 

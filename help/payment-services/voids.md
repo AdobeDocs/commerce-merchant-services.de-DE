@@ -2,7 +2,7 @@
 title: Voids
 description: Mit Voids können Sie die Gelder in einem Kredit- oder Debitkartenkonto freigeben, das durch eine Genehmigung für die Höhe eines Kaufs gesperrt oder zurückgehalten wird.
 exl-id: 029a7038-2812-46ce-b188-929a7a758d89
-source-git-commit: bcb817775fe9cd9ac7096931dd40d5ec0c4a5cfc
+source-git-commit: 7b31fe7a71c3c238e6448627b2edfe06bbfbc80e
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Mit [!DNL Payment Services]können Sie bestehende Commerce-Funktionen verwenden,
 >
 >Sie können eine Transaktion nur dann aufheben, wenn die Zahlung noch nicht erfasst wurde.
 
-Wenn Ihr Store [konfiguriert](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target=&quot;_blank&quot;}, um nur (nicht erfassen) Mittel am Verkaufsort zu genehmigen, führt ein Kauf aus Ihrem Geschäft zu einer Bestellung mit einer `Processing` -Status in der Magento-Admin.
+Wenn Ihr Store [konfiguriert](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target=&quot;_blank&quot;}, um nur (nicht erfassen) Mittel am Verkaufsort zu genehmigen, führt ein Kauf aus Ihrem Geschäft zu einer Bestellung mit einer `Processing` -Status in der Commerce-Admin.
 
 Sie können auch [Bestellung stornieren](https://docs.magento.com/user-guide/sales/order-update.html#cancel-a-pending-order){target=&quot;_blank&quot;}, die nicht in Rechnung gestellt wird. Nicht erfasste Berechtigungen werden im Rahmen dieses Löschungsprozesses ebenfalls ungültig gemacht.
 

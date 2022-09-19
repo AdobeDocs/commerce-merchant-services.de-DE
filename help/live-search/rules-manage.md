@@ -1,10 +1,10 @@
 ---
-title: '"Regeln verwalten"'
-description: '"Erfahren Sie, wie Sie vorhandene verwalten [!DNL Live Search] Regeln."'
+title: "Regeln verwalten"
+description: "Erfahren Sie, wie Sie vorhandene verwalten [!DNL Live Search] Regeln."
 exl-id: 1a2ca9f9-1cf2-446f-809b-03ca5c798b13
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: a17c9ef193394d86f5439f900ebba3dd68d33b45
 workflow-type: tm+mt
-source-wordcount: '132'
+source-wordcount: '131'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Befolgen Sie diese Anweisungen, um die Eigenschaften vorhandener Regeln zu aktua
 1. Aktualisieren Sie die Felder für Name, Start- und Enddatum sowie Beschreibung nach Bedarf.
 1. Testen Sie die Regel.
 1. Veröffentlichen Sie die Änderungen.
-Die Regel wird der Liste im Arbeitsbereich &quot;Regeln&quot;hinzugefügt. Obwohl aktive Regeln sofort in Kraft treten, kann es bis zu 15 Minuten dauern, bis zwischengespeicherte Abfrageergebnisse in der Storefront aktualisiert werden.
+Die Regel wird der Liste im Arbeitsbereich &quot;Regeln&quot;hinzugefügt. Obwohl aktive Regeln sofort in Kraft treten, kann es bis zu 15 Minuten dauern, bis zwischengespeicherte Abfrageergebnisse im Storefront aktualisiert werden.
 
 ## Regel löschen
 

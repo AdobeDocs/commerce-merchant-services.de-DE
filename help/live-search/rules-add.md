@@ -1,17 +1,17 @@
 ---
-title: '"Regeln hinzufügen"'
-description: '"Erfahren Sie, wie Sie [!DNL Live Search] Regeln."'
+title: "Regeln hinzufügen"
+description: "Erfahren Sie, wie Sie [!DNL Live Search] Regeln."
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: ed245e440f6db59d8eba66afeddb840420da0cf7
 workflow-type: tm+mt
-source-wordcount: '1282'
+source-wordcount: '1276'
 ht-degree: 0%
 
 ---
 
 # Regeln hinzufügen
 
-Um eine Regel zu erstellen, verwenden Sie zunächst den Regeleditor, um die Bedingungen im Abfragetext des Käufers zu definieren, die die zugehörigen Ereignisse Trigger haben. Schließen Sie dann die Regeldetails ab, testen Sie die Ergebnisse und veröffentlichen Sie die Regel.
+Um eine Regel zu erstellen, verwenden Sie zunächst den Regeleditor, um die Bedingungen im Abfragetext des Käufers zu definieren, unter denen die zugehörigen Ereignisse Trigger werden. Schließen Sie dann die Regeldetails ab, testen Sie die Ergebnisse und veröffentlichen Sie die Regel.
 
 ## Schritt 1: Regel hinzufügen
 
@@ -22,9 +22,9 @@ Um eine Regel zu erstellen, verwenden Sie zunächst den Regeleditor, um die Bedi
 
    ![Arbeitsbereich für Regeln](assets/rules-workspace-add-rule.png)
 
-## Schritt 2: Bedingung(en) beschreiben
+## Schritt 2: Bedingungen beschreiben
 
-Bedingungen sind die Anforderungen zum Trigger eines Ereignisses. Eine Regel kann bis zu zehn Bedingungen und fünfundzwanzig Ereignisse haben.
+Bedingungen sind die Voraussetzungen für den Trigger eines Ereignisses. Eine Regel kann bis zu zehn Bedingungen und 25 Ereignisse enthalten.
 
 ![Regel - Regel erstellen](assets/rules-add-workspace.png)
 
@@ -47,12 +47,12 @@ Zunächst rendert der Testbereich die Abfrage über das Suchfeld Bedingungen . J
    ![Regel - Aktualisierungstest](assets/rule-update-test.png)
 
 1. Wenn Ihnen das Ergebnis gefällt, aktualisieren Sie den Text im *Bedingungen* Suchfeld. Klicken Sie dann auf eine beliebige Stelle auf der Seite, um die Ergebnisse im Testbereich zu aktualisieren.
-1. Um eine einfache Regel mit einer Bedingung zu erstellen, gehen Sie zu Schritt 3: [Ereignis(e) hinzufügen](#events).
+1. Um eine einfache Regel mit einer Bedingung zu erstellen, gehen Sie zu Schritt 3: [Hinzufügen von Ereignissen](#events).
 
 ### Mehrere Bedingungen
 
 1. Um eine Regel mit mehreren Bedingungen zu erstellen, klicken Sie auf **Bedingung hinzufügen**.
-Eine Regel kann bis zu 10 Bedingungen enthalten. Der logische Operator, der zwei Bedingungen verbindet, basiert auf dem aktuellen *Übereinstimmung* -Einstellung. Standardmäßig *Übereinstimmung* is `All` und der logische Operator `AND`.
+Eine Regel kann bis zu zehn Bedingungen enthalten. Der logische Operator, der zwei Bedingungen verbindet, basiert auf dem aktuellen *Übereinstimmung* -Einstellung. Standardmäßig *Übereinstimmung* is `All` und der logische Operator `AND`.
 
    ![Regeln - Suchabfrage enthält](assets/rules-search-query-contains-and.png)
 
@@ -67,24 +67,24 @@ Eine Regel kann bis zu 10 Bedingungen enthalten. Der logische Operator, der zwei
 
    Die *Übereinstimmung* bestimmt den logischen Operator, der zum Verknüpfen mehrerer Bedingungen verwendet wird. Ändern der *Übereinstimmung* Durch die Einstellung werden alle logischen Operatoren in der Regel geändert. Es ist nicht möglich, `AND` und `OR` in derselben Regel.
 
-   In diesem Beispiel gibt es zwei separate Abfragen, die nicht nach &quot;Yoga Hots&quot;suchen, sondern nach &quot;Yoga&quot;oder &quot;Hots&quot;. Diese Regel ist weniger spezifisch und wird häufiger im Storefront ausgelöst als die andere.
+   In diesem Beispiel gibt es zwei separate Abfragen, die nicht nach &quot;Yoga Hots&quot;suchen, sondern nach &quot;Yoga&quot;oder &quot;Hots&quot;. Diese Regel ist weniger spezifisch und wird häufiger in der Storefront ausgelöst als die andere.
 
    ![Regeln - Übereinstimmung](assets/rules-match.png)
 
 1. Um eine weitere Bedingung hinzuzufügen, klicken Sie auf **Bedingung hinzufügen** und wiederholen Sie den Vorgang.
 
-## Schritt 3: Ereignis(e) hinzufügen
+## Schritt 3: Hinzufügen von Ereignissen
 
-Ereignisse sind Aktionen, die die Suchergebnisse ändern, wenn die Bedingung(en) erfüllt ist. Eine einzelne Regel kann bis zu 25 Ereignisse enthalten.
+-Ereignisse sind Aktionen, die die Suchergebnisse ändern, wenn die Bedingungen erfüllt sind. Eine einzelne Regel kann bis zu 25 Ereignisse enthalten.
 
-1. under *Veranstaltungen*, wählen Sie die **Ereignis** , um zu erfolgen, wenn die damit verbundenen Bedingungen erfüllt sind.
+1. under *Veranstaltungen*, wählen Sie die **Ereignis** , um zu erfolgen, wenn die entsprechenden Bedingungen erfüllt sind.
 
    Wählen Sie beispielsweise `Pin a product`. Geben Sie dann den Namen des Produkts ein, das Sie veröffentlichen möchten. Wenn Sie Hilfe benötigen, finden Sie den Namen im Testbereich.
 Geben Sie dann die *Position* wo das eingeklemmte Produkt erscheinen soll. Das Produkt wird an die neue Position im Testbereich verschoben und mit einer *Angeheftet* Vorschau-Badge.
 
    ![Regeln - Übereinstimmung](assets/rule-event-pin-product.png)
 
-1. Wählen Sie für mehrere Ereignisse alle anderen Ereignisse aus, die Trigger werden sollen, wenn die Bedingungen erfüllt sind.
+1. Wählen Sie für mehrere Ereignisse alle anderen Ereignisse aus, die bei Erfüllung von Bedingungen Trigger werden sollen.
 
    * Verstärken - Wählen Sie &quot;Verstärken&quot;. Geben Sie dann den Produktnamen oder die SKU ein, die bzw. die Sie in den Suchergebnissen weiter nach oben verschieben möchten. Im Testbereich verfügt jedes geboosterte Produkt über eine *Verstärkt* Vorschau-Badge.
    * Bury - Verschiebt eine SKU in den Suchergebnissen nach unten. Jede SKU ist mit einer *Vergraben* Vorschau-Badge im Testbereich.
@@ -97,7 +97,7 @@ Die hier eingegebenen Informationen werden im [Regeldetails](rules-workspace.md)
 
 1. under *Details*, geben Sie einen **Name** für die Regel.
 1. Kurzbeschreibung eingeben **Beschreibung** der Regel.
-1. Geben Sie die **Startdatum** und **Enddatum** wann die Regel aktiv sein wird oder Sie die Daten aus dem Kalender auswählen.
+1. Geben Sie die **Startdatum** und **Enddatum** , damit die Regel aktiv ist, oder wählen Sie die Daten aus dem Kalender aus.
 
    Um einen Datumsbereich auszuwählen, klicken Sie auf das erste Datum und ziehen Sie, um den Datumsbereich auszuwählen.
 
@@ -145,9 +145,9 @@ Die hier eingegebenen Informationen werden im [Regeldetails](rules-workspace.md)
 
 | Ereignis | Beschreibung |
 |--- |--- |
-| Verstärken | Verschiebt eine SKU oder einen Bereich von SKUs in den Suchergebnissen höher. Jede ist in den Testsuchergebnissen mit einem &quot;verstärkten&quot;Vorschauzeichen markiert. |
-| Bury | Verschiebt eine SKU oder einen Bereich von SKUs in den Suchergebnissen nach unten. Jede ist in den Testsuchergebnissen mit einem &quot;begrabenen&quot;Vorschauabzeichen markiert. |
-| Produkt fixieren | Hängt eine einzelne SKU an eine bestimmte Position in den Suchergebnissen an. Das Produkt ist in den Testsuchergebnissen mit einem &quot;fixierten&quot;Vorschauabzeichen markiert. |
+| Verstärken | Verschiebt eine SKU oder einen Bereich von SKUs in den Suchergebnissen höher. In den Testsuchergebnissen wird jedes mit einem &quot;verstärkten&quot;Vorschauzeichen markiert. |
+| Bury | Verschiebt eine SKU oder einen Bereich von SKUs in den Suchergebnissen nach unten. Jede ist in den Testsuchergebnissen mit einem Vorschauzeichen &quot;begraben&quot;markiert. |
+| Produkt fixieren | Hängt eine einzelne SKU an eine bestimmte Position in den Suchergebnissen an. Das Produkt ist in den Testsuchergebnissen mit einem &quot;fixierten&quot;Vorschaukennzeichen markiert. |
 | Produkt ausblenden | Schließt eine SKU oder einen Bereich von SKUs aus den Suchergebnissen aus. |
 
 ### Details

@@ -1,17 +1,23 @@
 ---
-title: '"[!DNL Live Search] Indizierung"'
-description: '"Erfahren Sie wie [!DNL Live Search] indiziert Eigenschaften von Produktattributen."'
+title: "[!DNL Live Search] Indizierung"
+description: "Erfahren Sie wie [!DNL Live Search] indiziert Eigenschaften von Produktattributen."
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: 2835209ad881db388894c5b1da213312436d3550
+source-git-commit: 0a1d70465247422db44daee302c67fe1a5a29d32
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '544'
 ht-degree: 0%
 
 ---
 
 # Indizierung
 
-Die Eigenschaften von Produktattributen (Metadaten) bestimmen, wie ein Attribut im Katalog verwendet werden kann, sein Aussehen und Verhalten im Speicher sowie die Daten, die in Datenübertragungsvorgängen enthalten sind. Der Umfang der Attributmetadaten lautet `website/store/store view`.
+Die Produktattributeigenschaften (Metadaten) bestimmen:
+
+* Verwendung eines Attributs im Katalog
+* Aussehen und Verhalten des Stores
+* Die Daten, die in Datenübertragungsvorgängen enthalten sind
+
+Der Umfang der Attributmetadaten lautet `website/store/store view`.
 
 Die [!DNL Live Search] Mit der API kann ein Client nach jedem Produktattribut sortieren, das über die [storefront property](https://docs.magento.com/user-guide/stores/attributes-product.html) `Use in Search` auf `Yes` in der Adobe Commerce-Admin. Wenn aktiviert, `Search Weight` und `Visible in Advanced Search` kann für das -Attribut festgelegt werden.
 
@@ -53,7 +59,7 @@ Mit den folgenden Ereignissen wird ein vollständiger Synchronisations- und Inde
 
 Nach der Erstellung des anfänglichen Index während [Onboarding](install.md#synchronize-catalog-data)werden die folgenden inkrementellen Produktupdates kontinuierlich synchronisiert und neu indiziert:
 
-* Neues Produkt(e) zum Katalog hinzugefügt
+* Neue Produkte zum Katalog hinzugefügt
 * Änderungen an Produktattributwerten
 
 Fügen Sie beispielsweise einen neuen Musterwert zum `color` -Attribut wird als Streaming-Produktaktualisierung behandelt.
@@ -61,7 +67,7 @@ Workflow für Streaming-Update:
 
 1. Aktualisierte Produkte werden von der Adobe Commerce-Instanz mit dem Katalogdienst synchronisiert.
 1. Der Indizierungsdienst sucht kontinuierlich nach Produktaktualisierungen aus dem Katalogdienst. Aktualisierte Produkte werden indiziert, sobald sie im Katalogdienst ankommen.
-1. Es kann bis zu fünfzehn Minuten dauern, bis ein Produktaktualisierungs-Tool in [!DNL Live Search].
+1. Es kann bis zu 15 Minuten dauern, bis eine Produktaktualisierung in [!DNL Live Search].
 
 ## Clientsuche
 

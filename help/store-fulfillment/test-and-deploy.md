@@ -4,9 +4,9 @@ description: Testen Sie den Plan, um die Funktion zur Store-Erfüllung zu überp
 role: User, Admin
 level: Intermediate
 exl-id: 77285a66-5161-407b-94cd-b3f412d7949d
-source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
+source-git-commit: 0a1d70465247422db44daee302c67fe1a5a29d32
 workflow-type: tm+mt
-source-wordcount: '2652'
+source-wordcount: '2657'
 ht-degree: 0%
 
 ---
@@ -96,12 +96,12 @@ In diesem Abschnitt des Testplans wird die Bestands- und Bestellsynchronisierung
 <tr>
 <td><strong>Neue Bestellaufgabe-Push, API-Synchronisierung - Kundenreihenfolge</strong></td>
 <td>Der Kunde sendet eine Store-Abholbestellung.</td>
-<td><ul><li>In der Ansicht "Admin Order"wird eine <strong>Adobe Commerce Admin-Benutzer</strong> erkennt, dass der Status "Bestellsynchronisierung"auf aktualisiert wurde. <code>Sent</code></li><li>Das Bestelldetailprotokoll enthält die Meldung <code>Order was sent to BOPIS solution for sync, it’s not yet acknowledged yet.</code></li></ul></td>
+<td><ul><li>In der Ansicht "Admin Order"wird eine <strong>Adobe Commerce Admin-Benutzer</strong> erkennt, dass der Status "Bestellsynchronisierung"auf aktualisiert wurde. <code>Sent</code></li><li>Das Bestelldetailprotokoll enthält die Meldung <code>Order was sent to BOPIS solution for sync, it's not yet acknowledged yet.</code></li></ul></td>
 </tr>
 <tr>
 <td><strong>Neue Bestellung Push, API Sync - Admin sendet die Bestellung</strong></td>
 <td>Eine Adobe Commerce <strong>Admin</strong> sendet eine Abholbestellung.</td>
-<td><ul><li>In der Ansicht "Admin Order"wird der Status "Auftragssynchronisierung"auf <code>Sent</code>.</li><li>Das Bestelldetailprotokoll enthält die Meldung <code>Order was sent to BOPIS solution for sync, it’s not yet acknowledged yet.</code></li></ul></td>
+<td><ul><li>In der Ansicht "Admin Order"wird der Status "Auftragssynchronisierung"auf <code>Sent</code>.</li><li>Das Bestelldetailprotokoll enthält die Meldung <code>Order was sent to BOPIS solution for sync, it's not yet acknowledged yet.</code></li></ul></td>
 </tr>
 <tr>
 <td><strong>Neue Auftragspush-, Ausnahmenwarteschlange<strong></td>
@@ -161,7 +161,7 @@ Dieser Abschnitt des Testplans enthält Szenarien zum Testen des End-to-End-Work
 <li>Erhalt der Bestellrückerstattungs-E-Mail: <code>$x amount was refunded</code></li>
 <li>Bestellstatus: <code>Processing</code>.</li>
 <li>In Adobe Commerce erstelltes Credit Memo (Warten Sie, bis Cron funktioniert).</li>
-<li>Wenn einige Elemente nicht ausgewählt wurden, bestätigen Sie, dass die [!UICONTROL Ready for Pickup] E-Mail mit dem Abschnitt "Auswahl oder Rückerstattung" angezeigt. <code>DISPLAY COMMENT HISTORY</code> zeigt <code>Order is ready for pickup, but some items not available.</code>.</li>
+<li>Wenn einige Elemente nicht ausgewählt wurden, bestätigen Sie, dass die [!UICONTROL Ready for Pickup] E-Mail mit dem Abschnitt "Auswahl oder Rückerstattung von Null" angezeigt. <code>DISPLAY COMMENT HISTORY</code> zeigt <code>Order is ready for pickup, but some items not available.</code>.</li>
 <li><code>CUSTOMER NOTIFIED</code> Markierung ist <code>true</code>.</li>
 </ul>
 </td>
@@ -566,25 +566,25 @@ In diesem Abschnitt des Testplans werden Szenarien zum Testen der Reihenfolge, A
 <tr>
 <td>
 <strong>Einzelbestellauswahl - Happy Path, Cumulative Pickup</strong></td>
-<td>Wählen Sie einzelne und mehrere Elemente aus. Keine Nilpicks und Abholung (mit Staging).
+<td>Wählen Sie einzelne und mehrere Elemente aus. Keine Nil-Picks und Abholung (mit Staging).
 </td>
 <td>
 </td>
 </tr>
 <tr>
 <td><strong>Multi-Order-Picking - glücklicher Pfad, parallele Übernahme</strong></td>
-<td>Einzelartikel und Artikel mit mehreren Mengen. Keine Nilpicks und Abholung (mit Staging)</td>
+<td>Einzelartikel und Artikel mit mehreren Mengen. Keine Nil-Picks und Abholung (mit Staging)</td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Einzelbestellauswahl - Happy Path In-Store-Abruf</strong></td>
-<td>Einzelartikel und Artikel mit mehreren Mengen. Keine Nilpicks und Instanziierung (mit Staging)</td>
+<td>Einzelartikel und Artikel mit mehreren Mengen. Keine Nil-Picks und Instanziierung (mit Staging)</td>
 <td>
 </td>
 </tr>
 <tr>
 <td><strong>Multi-Order-Picking - glücklicher Pfad, In-Store-Abruf</strong></td>
-<td>Wählen Sie einzelne und mehrere Elemente aus. Keine Nilpicks und Abholung (mit Staging).</td>
+<td>Wählen Sie einzelne und mehrere Elemente aus. Keine Nil-Picks und Abholung (mit Staging).</td>
 <td></td>
 </tr>
 <tr>

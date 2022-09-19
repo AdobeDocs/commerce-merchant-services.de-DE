@@ -1,10 +1,10 @@
 ---
-title: '"Installieren [!DNL Live Search]"'
-description: '"Erfahren Sie, wie Sie installieren, aktualisieren und deinstallieren [!DNL Live Search] von Adobe Commerce."'
+title: "Installieren [!DNL Live Search]"
+description: "Erfahren Sie, wie Sie installieren, aktualisieren und deinstallieren [!DNL Live Search] von Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: a17c9ef193394d86f5439f900ebba3dd68d33b45
 workflow-type: tm+mt
-source-wordcount: '1267'
+source-wordcount: '1266'
 ht-degree: 0%
 
 ---
@@ -179,7 +179,7 @@ Weitere Hilfe finden Sie unter [[!DNL Live Search] Katalog nicht synchronisiert]
 
 ### Künftige Produktaktualisierungen
 
-Nach der ersten Synchronisierung kann es bis zu fünfzehn Minuten dauern, bis inkrementelle Produktaktualisierungen für die Storefront-Suche verfügbar sind. Weitere Informationen finden Sie unter [Indizierung - Streaming von Produktaktualisierungen](indexing.md).
+Nach der ersten Synchronisierung kann es bis zu 15 Minuten dauern, bis inkrementelle Produktaktualisierungen für die Storefront-Suche verfügbar sind. Weitere Informationen finden Sie unter [Indizierung - Streaming von Produktaktualisierungen](indexing.md).
 
 ## Verbindung testen {#test-connection}
 

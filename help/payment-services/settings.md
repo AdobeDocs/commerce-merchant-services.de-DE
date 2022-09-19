@@ -4,9 +4,9 @@ description: Nach der Installation können Sie [!DNL Payment Services] in der St
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: ecfe1448a0272fe5401090b322f4b69dffd1a8fa
+source-git-commit: 31ad67d3f3d11c68341de0306eea37f231b2d9b9
 workflow-type: tm+mt
-source-wordcount: '1087'
+source-wordcount: '1085'
 ht-degree: 0%
 
 ---
@@ -97,7 +97,7 @@ Sie können die Zahlungsoptionen für PayPal-Smart-Schaltflächen aktivieren und
 1. nach [die Zahlungsaktion festlegen](production.md#set-payment-services-as-payment-method), Umschalten **[!UICONTROL Payment action]** nach `Authorize` oder `Authorize and Capture`.
 1. Umschalter-Selektoren zum Aktivieren oder Deaktivieren verwenden [!DNL PayPal smart button] Anzeigefunktionen:
    - **[!UICONTROL Show PayPal buttons on product detail page]**
-   - **[!UICONTROL Show PayPal buttons in mini cart preview]**
+   - **[!UICONTROL Show PayPal buttons in mini-cart preview]**
    - **[!UICONTROL Show PayPal buttons on cart page]**
    - **[!UICONTROL Show PayPal Pay Later button]**
    - **[!UICONTROL Show PayPal Pay Later message]**
@@ -124,7 +124,7 @@ Sie können die Zahlungsoptionen für PayPal-Smart-Schaltflächen aktivieren und
 | [!UICONTROL Title] | Store-Ansicht | Fügen Sie den Text hinzu, der beim Checkout als Titel für diese Zahlungsoption angezeigt werden soll. Optionen: Textfeld |
 | [!UICONTROL Payment Action] | website | Die [Zahlungsaktion](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target=&quot;_blank&quot;} für die angegebene Zahlungsmethode. Optionen: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Show PayPal buttons on product detail page] | Store-Ansicht | Aktivieren oder Deaktivieren [!DNL PayPal Smart Buttons] auf der Produktdetailseite. Optionen: [!UICONTROL  Yes] / [!UICONTROL No] |
-| [!UICONTROL Show PayPal buttons in mini cart preview] | Store-Ansicht | Aktivieren oder Deaktivieren [!DNL PayPal Smart Buttons] in der Vorschau des Mini-Warenkorbs. Optionen: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show PayPal buttons in mini-cart preview] | Store-Ansicht | Aktivieren oder Deaktivieren [!DNL PayPal Smart Buttons] in der Vorschau des Mini-Warenkorbs. Optionen: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal buttons on cart page] | Store-Ansicht | Aktivieren oder Deaktivieren [!DNL PayPal Smart Buttons] auf der Warenkorbseite. Optionen: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal Pay Later button] | Store-Ansicht | Aktivieren oder deaktivieren Sie das Erscheinungsbild der Zahlungsoption Spätere Zahlung , wenn Zahlungsschaltflächen angezeigt werden. Optionen: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal Pay Later Message] | website | Aktivieren oder deaktivieren Sie die &quot;Später bezahlen&quot;-Benachrichtigung im Warenkorb, auf der Produktseite, im Mini-Warenkorb und während des Checkout-Verfahrens. Optionen: [!UICONTROL Yes] / [!UICONTROL No] |

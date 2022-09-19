@@ -1,24 +1,24 @@
 ---
-title: '"Regelkomponenten"'
-description: '"Erfahren Sie mehr über [!DNL Live Search] Regelkomponenten und -operatoren."'
+title: "Regelkomponenten"
+description: "Erfahren Sie mehr über [!DNL Live Search] Regelkomponenten und -operatoren."
 exl-id: 4065aec3-a8d4-4d55-b939-16ad7b0f33ee
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 0a1d70465247422db44daee302c67fe1a5a29d32
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '224'
 ht-degree: 0%
 
 ---
 
 # Regelkomponenten
 
-Eine Regel beschreibt die Bedingungen, die für Trigger-Ereignisse erforderlich sind, die die Suchergebnisse ändern, die als Antwort auf die Abfrage eines Käufers zurückgegeben werden.
+Eine Regel beschreibt die Bedingungen, die zum Trigger von Ereignissen erforderlich sind, die die Suchergebnisse ändern, die als Antwort auf die Abfrage eines Käufers zurückgegeben werden.
 
 ## Voraussetzungen
 
-Eine einfache Regel kann eine einzige Bedingung und ein einzelnes Ereignis aufweisen, während eine komplexe Regel bis zu zehn Bedingungen für einen Trigger von bis zu 25 Ereignissen aufweisen kann.
+Eine einfache Regel kann eine einzelne Bedingung und ein einzelnes Ereignis enthalten, während eine komplexe Regel bis zu zehn Bedingungen haben kann, die bis zu 25 Ereignisse Trigger.
 Regeln können Folgendes enthalten:
 
-* Bis zu 10 Bedingungen
+* Bis zu zehn Bedingungen
 * Bis zu 25 Ereignisse
 
 Der Abfragetext kann Folgendes enthalten:

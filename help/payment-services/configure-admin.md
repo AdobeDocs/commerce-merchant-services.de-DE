@@ -4,7 +4,7 @@ description: Nach der Installation können Sie [!DNL Payment Services] in der St
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: 6f13c39f915c382e99c747d9a88e16ed10bebaf3
+source-git-commit: 31ad67d3f3d11c68341de0306eea37f231b2d9b9
 workflow-type: tm+mt
 source-wordcount: '735'
 ht-degree: 0%
@@ -105,7 +105,7 @@ Sie können die Zahlungsoptionen für PayPal Smart-Schaltflächen innerhalb des 
 | [!UICONTROL PayPal Pay Later Enabled] | Store-Ansicht | Aktivieren oder deaktivieren Sie das Erscheinungsbild der Zahlungsoption Spätere Zahlung , wenn Zahlungsschaltflächen angezeigt werden. Optionen: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Debug Mode] | website | Aktivieren oder deaktivieren Sie den Debug-Modus. Optionen: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show buttons on product detail page] | Store-Ansicht | Aktivieren oder Deaktivieren [!DNL PayPal Smart Buttons] auf der Produktdetailseite. Optionen: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Show buttons in mini cart preview] | Store-Ansicht | Aktivieren oder Deaktivieren [!DNL PayPal Smart Buttons] in der minicart-Vorschau. Optionen: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show buttons in mini-cart preview] | Store-Ansicht | Aktivieren oder Deaktivieren [!DNL PayPal Smart Buttons] in der Vorschau des Mini-Warenkorbs. Optionen: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show buttons on cart page] | Store-Ansicht | Aktivieren oder Deaktivieren [!DNL PayPal Smart Buttons] auf der Warenkorbseite. Optionen: [!UICONTROL Yes] / [!UICONTROL No] |
 
 ### [!DNL PayPal Smart Buttons] Stiloptionen
