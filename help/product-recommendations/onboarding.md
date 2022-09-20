@@ -2,9 +2,9 @@
 title: Onboarding
 description: Erfahren Sie mehr über die Anforderungen und unterstützten Plattformen in [!DNL Product Recommendations].
 exl-id: ad47ac39-8f6f-4765-84ad-9e3d104385db
-source-git-commit: e7c3d1ab49ee9469e3312321f6d96446840d0778
+source-git-commit: 09609fd0b5bd3da9e884115de001bc33832ad792
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '233'
 ht-degree: 0%
 
 ---
@@ -33,6 +33,10 @@ Onboarding-Prozess für [!DNL Product Recommendations] erfordert Zugriff auf die
 ### Unterstützung von Page Builder
 
 [!DNL Product Recommendations] kann einer Seite als Inhaltstyp des Seitenaufbaus hinzugefügt werden. Informationen zum Hinzufügen von Page Builder-Unterstützung zu Product Recommendations finden Sie unter [Installieren und Konfigurieren](install-configure.md).
+
+>[!NOTE]
+>
+>[!DNL Page Builder] Empfehlungseinheiten können nur für die standardmäßige Store-Ansicht erstellt werden.
 
 ### B2B-Unterstützung {#b2bsupport}
 
