@@ -2,9 +2,9 @@
 title: Onboarding und Installation
 description: Erfahren Sie, wie Sie installieren [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 8f7fa990b422e77c1b3c1d801faefac1d0ae8e01
+source-git-commit: 41f42054a495fb815e6dcf0f2ef371bbd2c98701
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '395'
 ht-degree: 0%
 
 ---
@@ -115,3 +115,9 @@ So stellen Sie sicher, dass der Katalogexport ordnungsgemäß ausgeführt wird:
 - Vergewissern Sie sich, dass [Cron-Aufträge](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) laufen.
 - Überprüfen Sie die [Indexer](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) laufen.
 - Stellen Sie sicher, dass `Catalog Attributes Feed`, `Product Feed`, `Product Overrides Feed`und `Product Variant Feed` Indexer werden auf `Update by Schedule`.
+
+## [!DNL Catalog Service] Demo
+
+In diesem Video erfahren Sie mehr über [!DNL Catalog Service] Installation und Prüfung:
+
+>[!VIDEO](https://video.tv.adobe.com/v/3409390?quality=12&learn=on)
