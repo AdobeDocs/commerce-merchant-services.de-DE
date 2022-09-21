@@ -1,9 +1,9 @@
 ---
 title: productSearch-Abfrage
 description: '"Ein Referenzhandbuch für die GraphQL-Abfrage "productSearch"für den Adobe Commerce-Katalogdienst."'
-source-git-commit: 7edfdd71c0900a6bdc7c064a29a6cce405a361ab
+source-git-commit: 49692cf4375ebb975b2cf132d21ac8debe609a90
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '227'
 ht-degree: 2%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 2%
 
 # productSearch-Abfrage
 
-Der Katalogdienst für Adobe Commerce `productSearch` -Abfrage kann LiveSearch verwenden, um Details zu den als Eingabe angegebenen SKUs zurückzugeben. Diese Abfrage entspricht zwar der [`productSearch` Abfrage](https://devdocs.magento.com//live-search/product-search.html), gibt LiveSearch eine `productView` -Objekt. Siehe [`productSearch` Abfrage](https://devdocs.magento.com//live-search/product-search.html) Thema für Referenzinformationen.
+Der Katalogdienst für Adobe Commerce `productSearch` -Abfrage kann die Live-Suche verwenden, um Details zu den als Eingabe angegebenen SKUs zurückzugeben. Diese Abfrage entspricht zwar der [`productSearch` Abfrage](https://devdocs.magento.com//live-search/product-search.html), gibt die Live Search-Suche eine `productView` -Objekt. Siehe [`productSearch` Abfrage](https://devdocs.magento.com//live-search/product-search.html) Thema für Referenzinformationen.
 
 ## Syntax
 
@@ -32,7 +32,7 @@ Sie müssen die folgenden HTTP-Header angeben, um diese Abfrage auszuführen.
 | Kopfzeile | Beschreibung |
 |--- | ---|
 | `Magento-Customer-Group` | Für Storefront-Clients ist dieser Wert in der Storefront im `dataservices_customer_group` Cookie. |
-| `Magento-Environment-Id` | Dieser Wert wird angezeigt unter **System** > **Commerce Services Connector** > **SaaS-Kennung** > **Datenspeicherkennung** oder durch Ausführen der `bin/magento config:show services_connector/services_id/environment_id` Befehl. |
+| `Magento-Environment-Id` | Dieser Wert kann durch Ausführen des `bin/magento config:show services_connector/services_id/environment_id` Befehl. Siehe Feld &quot;Datenraum&quot;unter [Commerce-Services](https://docs.magento.com/user-guide/configuration/services/saas.html) |
 | `Magento-Store-Code` | Der dem Store zugewiesene Code, der mit der aktiven Store-Ansicht verknüpft ist. Beispiel, `main_website_store`. |
 | `Magento-Store-View-Code` | Der der aktiven Store-Ansicht zugewiesene Code. Beispiel, `default`. |
 | `Magento-Website-Code` | Der der Website zugewiesene Code, der mit der aktiven Store-Ansicht verknüpft ist. Beispiel, `base`. |
