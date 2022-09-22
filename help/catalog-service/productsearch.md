@@ -1,7 +1,7 @@
 ---
 title: productSearch-Abfrage
 description: '"Ein Referenzhandbuch für die GraphQL-Abfrage "productSearch"für den Adobe Commerce-Katalogdienst."'
-source-git-commit: 49692cf4375ebb975b2cf132d21ac8debe609a90
+source-git-commit: d9b8c89f6d04aa9d569b450af2893b92938119ad
 workflow-type: tm+mt
 source-wordcount: '227'
 ht-degree: 2%
@@ -11,7 +11,7 @@ ht-degree: 2%
 
 # productSearch-Abfrage
 
-Der Katalogdienst für Adobe Commerce `productSearch` -Abfrage kann die Live-Suche verwenden, um Details zu den als Eingabe angegebenen SKUs zurückzugeben. Diese Abfrage entspricht zwar der [`productSearch` Abfrage](https://devdocs.magento.com//live-search/product-search.html), gibt die Live Search-Suche eine `productView` -Objekt. Siehe [`productSearch` Abfrage](https://devdocs.magento.com//live-search/product-search.html) Thema für Referenzinformationen.
+Der Katalogdienst für Adobe Commerce `productSearch` -Abfrage kann die Live-Suche verwenden, um Details zu den als Eingabe angegebenen SKUs zurückzugeben. Diese Abfrage entspricht zwar der [`productSearch` Abfrage](https://devdocs.magento.com/live-search/product-search.html), gibt die Live Search-Suche eine `productView` -Objekt. Siehe [`productSearch` Abfrage](https://devdocs.magento.com/live-search/product-search.html) Thema für Referenzinformationen.
 
 ## Syntax
 

@@ -1,7 +1,7 @@
 ---
 title: Produktabfrage
 description: '"Ein Referenzhandbuch für die GraphQL-Abfrage "products"für den Adobe Commerce Catalog Service."'
-source-git-commit: 7edfdd71c0900a6bdc7c064a29a6cce405a361ab
+source-git-commit: d9b8c89f6d04aa9d569b450af2893b92938119ad
 workflow-type: tm+mt
 source-wordcount: '1226'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Produktabfrage
 
-Der Katalogdienst für Adobe Commerce `products` -Abfrage gibt Details zu den als Eingabe angegebenen SKUs zurück. Obwohl diese Abfrage denselben Namen hat wie die [`products` Abfrage](https://devdocs.magento.com//guides/v2.4/graphql/queries/products.html) , die mit Adobe Commerce und Magento Open Source bereitgestellt wird, gibt es einige Unterschiede.
+Der Katalogdienst für Adobe Commerce `products` -Abfrage gibt Details zu den als Eingabe angegebenen SKUs zurück. Obwohl diese Abfrage denselben Namen hat wie die [`products` Abfrage](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) , die mit Adobe Commerce und Magento Open Source bereitgestellt wird, gibt es einige Unterschiede.
 
 Die Katalogdienst-Abfrage erfordert einen oder mehrere SKU-Werte als Eingabe. Die Abfrage dient hauptsächlich dem Abrufen von Informationen zum Rendern der folgenden Inhaltstypen:
 
