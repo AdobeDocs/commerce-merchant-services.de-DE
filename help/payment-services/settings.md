@@ -4,9 +4,9 @@ description: Nach der Installation können Sie [!DNL Payment Services] in der St
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 31ad67d3f3d11c68341de0306eea37f231b2d9b9
+source-git-commit: 0bd6137ec7cd5da04ae6a48f06cd5aec254b46ef
 workflow-type: tm+mt
-source-wordcount: '1085'
+source-wordcount: '1236'
 ht-degree: 0%
 
 ---
@@ -169,3 +169,11 @@ Sie können [!DNL PayPal Smart Buttons] Stil [in der Legacy-Konfiguration in der
 | [!UICONTROL Responsive Button Height] | Store-Ansicht | Definiert, ob Zahlungsschaltflächen eine Standardhöhe verwenden. Optionen: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Height] | Store-Ansicht | Definieren Sie die Höhe der Zahlungsschaltflächen. Standardwert: Keine |
 | [!UICONTROL Label] | Store-Ansicht | Definieren Sie den Titel, der in den Zahlungsschaltflächen angezeigt wird. Optionen: [!UICONTROL PayPal] / [!UICONTROL Checkout] / [!UICONTROL Buynow] / [!UICONTROL Pay] / [!UICONTROL Installment] |
+
+## Verwenden mehrerer PayPal-Konten
+
+In den Zahlungsdiensten können Sie mehrere PayPal-Konten innerhalb von **one** Händlerkonto auf der Website-Ebene. Wenn Sie beispielsweise Ihre Geschäfte in mehreren Ländern betreiben (die unterschiedliche [Währungen](https://docs.magento.com/user-guide/stores/currency.html)) oder möchten Adobe Commerce für einige Teile Ihres Unternehmens verwenden, jedoch nicht *all* können Sie Ihr Händlerkonto so einrichten, dass mehrere PayPal-Konten verwendet werden.
+
+Siehe [Site-, Store- und Ansichtsbereich](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) für weitere Informationen zur Hierarchie von Websites, Stores und Store-Ansichten.
+
+Ihr Vertriebsmitarbeiter kann eine neue [Umfang](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) für Ihr Händlerkonto und die zusätzliche Site mit PayPal einbinden, sodass alle PayPal-Schaltflächen, die Sie konfigurieren, auf Ihrer Site angezeigt werden. Wenden Sie sich an Ihren Vertriebsmitarbeiter, um Unterstützung bei der Verwendung mehrerer PayPal-Konten für Ihre Websites zu erhalten.

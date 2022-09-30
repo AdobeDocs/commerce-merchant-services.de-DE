@@ -4,9 +4,9 @@ description: Verwenden Sie den Bericht "Auszahlungen", um vollständige Transpar
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: 27d280fb9f49715a455ff55279416f7df4ada56d
+source-git-commit: 0bd6137ec7cd5da04ae6a48f06cd5aec254b46ef
 workflow-type: tm+mt
-source-wordcount: '1322'
+source-wordcount: '1339'
 ht-degree: 0%
 
 ---
@@ -154,9 +154,9 @@ Payout-Berichte enthalten die folgenden Informationen.
 | [!UICONTROL Code] | Transaktionscode, der entweder einen Kredit (*CR*) oder Schulden (*DR*) |
 | [!UICONTROL Reference ID] | Ursprüngliche Transaktions-ID, mit der dieses Ereignis verknüpft ist |
 | [!UICONTROL Invoice] | Rechnungskennung (eine pro Bestellung) der Transaktion |
-| [!UICONTROL Commerce order] | Commerce-Bestell-ID <br> <br>So sehen Sie verwandte [Bestellinformationen](https://docs.magento.com/user-guide/sales/orders.html)klicken Sie auf die ID. |
-| [!UICONTROL Commerce trans] | Transaktions-ID |
-| [!UICONTROL Pay method] | Kreditkartenart—*[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL CREDIT_CARD]*- und dem zugehörigen Kartenanbieter (z. B. *Visagebühren* oder *MasterCard*) |
+| [!UICONTROL Commerce order] | Commerce-Bestell-ID <br> <br>So sehen Sie verwandte [Bestellinformationen](https://docs.magento.com/user-guide/sales/orders.html){target=&quot;_blank&quot;}, klicken Sie auf die ID. |
+| [!UICONTROL Commerce trans] | Transaktions-ID <br> <br>So sehen Sie verwandte [Transaktionsinfo](https://docs.magento.com/user-guide/sales/transactions.html){target=&quot;_blank&quot;}, klicken Sie auf die ID. |
+| [!UICONTROL Pay method] | Kreditkartenart—*[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL APPLE_PAY]*, *[!UICONTROL CREDIT_CARD]*- und dem zugehörigen Kartenanbieter (z. B. *Visagebühren* oder *MasterCard*) |
 | [!UICONTROL Trans amt] | Transaktionsbetrag |
 | [!UICONTROL Cur] | Währungseinheit für Transaktionsbetrag |
 | [!UICONTROL Pending] | Noch auszuzahlender Betrag |
