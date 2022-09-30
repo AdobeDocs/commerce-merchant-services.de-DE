@@ -4,9 +4,9 @@ description: Nach der Installation können Sie [!DNL Payment Services] in der St
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 0bd6137ec7cd5da04ae6a48f06cd5aec254b46ef
+source-git-commit: 785528d5940af28fa8bf6873d636b40d8e7bc05f
 workflow-type: tm+mt
-source-wordcount: '1236'
+source-wordcount: '1594'
 ht-degree: 0%
 
 ---
@@ -21,9 +21,13 @@ So konfigurieren Sie [!DNL Payment Services] für [!DNL Adobe Commerce] und [!DN
 >
 > Informationen zur Konfiguration mehrerer Stores oder Legacy finden Sie im Abschnitt [In Admin konfigurieren](configure-admin.md) Thema.
 
-## Zahlungsdienste aktivieren
+## Allgemeine Einstellungen konfigurieren
 
-Sie können [!DNL Payment Services] für Ihre Website und aktivieren Sie entweder Sandbox-Tests oder Live-Zahlungen im [!UICONTROL General] Abschnitt.
+Die [!UICONTROL General] -Einstellungen bieten die Möglichkeit, Zahlungsdienste als Zahlungsmethode zu aktivieren oder zu deaktivieren und Kundentransaktionen Informationen hinzuzufügen, um eine Website oder Store-Ansicht mit benutzerspezifischen Informationen zu markieren oder zu präfixieren.
+
+### Zahlungsdienste aktivieren
+
+Sie können [!DNL Payment Services] für Ihre Website hinzufügen und entweder Sandbox-Tests oder Live-Zahlungen aktivieren.
 
 1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 
@@ -33,7 +37,7 @@ Sie können [!DNL Payment Services] für Ihre Website und aktivieren Sie entwede
 
    Die _[!UICONTROL General]_enthält Einstellungen, die zum Aktivieren von [!DNL Payment Services] als Zahlungsmethode.
 
-1. Aktivieren [!DNL Payment Services] als Zahlungsmethode für Ihren Speicher in der _[!UICONTROL General]_-Abschnitt ein-/ausblenden (**[!UICONTROL Enable Payment Services as payment method]**) zu `Yes`.
+1. Aktivieren [!DNL Payment Services] als Zahlungsmethode für Ihren Speicher in der _[!UICONTROL General]_Abschnitt, umschalten **[!UICONTROL Enable Payment Services as payment method]**nach `Yes`.
 
 1. Wenn Sie noch testen [!DNL Payment Services] für Ihren Store festlegen **Zahlungsmodus** nach `Sandbox`. Wenn Sie bereit sind, Live-Zahlungen zu aktivieren, setzen Sie sie auf `Production`.
 
@@ -49,7 +53,31 @@ Sie können [!DNL Payment Services] für Ihre Website und aktivieren Sie entwede
 
 Sie können jetzt die Standardeinstellungen für [Zahlungsoptionen](#configure-payment-options) Funktionen und Anzeige der Storefront.
 
-### Allgemeine Konfigurationsoptionen
+### Hinzufügen eines Softdeskriptors
+
+Sie können eine [!UICONTROL Soft Descriptor] zu Ihrer Website(s) oder Konfiguration einzelner Store-Ansichten hinzufügen. Softbounce-Deskriptoren werden in Kontoauszügen von Kunden angezeigt. Wenn Sie beispielsweise über mehrere Stores/Marken/Kataloge verfügen, können Sie diese einfach trennen, indem Sie benutzerdefinierten Text zum [!UICONTROL Soft Descriptor] -Feld.
+
+1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+
+   ![Startansicht](assets/payment-services-menu-small.png)
+
+1. Klicken **[!UICONTROL Settings]**. Siehe [Einführung in [!DNL Payment Services] Startseite](payments-home.md) für weitere Informationen.
+1. Wählen Sie die Website- oder Store-Ansicht im **[!UICONTROL Scope]** Dropdown-Menü, für das Sie einen weichen Deskriptor erstellen möchten. Behalten Sie für die Ersteinrichtung Folgendes bei: **[!UICONTROL Default]** , um den Standardwert festzulegen.
+1. Fügen Sie Ihren benutzerdefinierten Text (bis zu 22 Zeichen) in das Textfeld ein und ersetzen Sie `Custom descriptor`.
+1. Klicken **[!UICONTROL Save]**.
+1. So erstellen Sie einen anderen Soft-Deskriptor als den konfigurierten Standard für eine Website- oder Store-Ansicht:
+   1. Wählen Sie die Website- oder Store-Ansicht im **[!UICONTROL Scope]** Dropdown-Menü, für das Sie einen weichen Deskriptor erstellen möchten.
+   1. Umschalten *off* **[!UICONTROL Use website]** (oder **[!UICONTROL Use default]**, abhängig vom ausgewählten Bereich).
+   1. Fügen Sie Ihren benutzerdefinierten Text in das Textfeld ein.
+   1. Klicken **[!UICONTROL Save]**.
+1. So aktivieren Sie für eine Website oder eine Store-Ansicht den standardmäßigen Softdeskriptor *oder* der für die übergeordnete Website verwendete Softdeskriptor:
+   1. Wählen Sie die Website- oder Store-Ansicht im **[!UICONTROL Scope]** Dropdown-Menü, für das Sie einen vorhandenen Soft-Deskriptor aktivieren möchten.
+   1. Umschalten *on* **[!UICONTROL Use website]** (oder **[!UICONTROL Use default]**, abhängig vom ausgewählten Bereich).
+   1. Klicken **[!UICONTROL Save]**.
+
+   Wenn Sie versuchen, von dieser Ansicht weg zu navigieren, ohne Ihre Änderungen zu speichern, wird ein Modal angezeigt, in dem Sie aufgefordert werden, Änderungen zu verwerfen, die Bearbeitung fortzusetzen oder Änderungen zu speichern.
+
+### Konfigurationsoptionen
 
 | Feld | Anwendungsbereich | Beschreibung |
 |---|---|---|
@@ -57,6 +85,7 @@ Sie können jetzt die Standardeinstellungen für [Zahlungsoptionen](#configure-p
 | [!UICONTROL Payment mode] | Store-Ansicht | Legen Sie die -Methode oder -Umgebung für Ihren Store fest. Optionen: [!UICONTROL Sandbox] / [!UICONTROL Production] |
 | [!UICONTROL Sandbox Merchant ID] | Store-Ansicht | Ihre Sandbox-Händler-ID, die beim Sandbox-Onboarding automatisch generiert wird. |
 | [!UICONTROL Production Merchant ID] | Store-Ansicht | Ihre Produktions-Händler-ID, die beim Sandbox-Onboarding automatisch generiert wird. |
+| [!UICONTROL Soft Descriptor] | Website- oder Store-Ansicht | Fügen Sie Ihren Websites einen weichen Deskriptor hinzu und speichern Sie diese, um Informationen zu Kundentransaktionen hinzuzufügen, die Marken, Stores oder Produktlinien voneinander trennen. Die [!UICONTROL Use website] toggle wendet einen beliebigen Soft-Deskriptor an, der auf Website-Ebene hinzugefügt wird. Die [!UICONTROL Use default] toggle wendet einen beliebigen Softdescriptor an, der als Standard hinzugefügt wurde. |
 
 ## Zahlungsoptionen konfigurieren
 
@@ -71,7 +100,8 @@ Siehe [Zahlungsoptionen](payments-options.md#credit-card-fields) für weitere In
 1. Wählen Sie die Store-Ansicht im **[!UICONTROL Scope]** Dropdown-Menü, für das Sie eine Zahlungsmethode aktivieren möchten.
 1. Um den Namen der Zahlungsmethode zu ändern, die beim Checkout angezeigt wird, bearbeiten Sie den Wert im **[!UICONTROL Checkout title]** -Feld.
 1. nach [die Zahlungsaktion festlegen](production.md#set-payment-services-as-payment-method), Umschalten **[!UICONTROL Payment action]** nach `Authorize` oder `Authorize and Capture`.
-1. Um den Debug-Modus zu aktivieren, schalten Sie die **[!UICONTROL Debug Mode]** auswählen.
+1. Um Kreditkartenfelder auf der Checkout-Seite zu aktivieren oder zu deaktivieren, aktivieren Sie die **[!UICONTROL Show on checkout page]** auswählen.
+1. Um den Debug-Modus zu aktivieren bzw. zu deaktivieren, müssen Sie die **[!UICONTROL Debug Mode]** auswählen.
 1. Klicken **[!UICONTROL Save]**.
 
    Wenn Sie versuchen, von dieser Ansicht weg zu navigieren, ohne Ihre Änderungen zu speichern, wird ein Modal angezeigt, in dem Sie aufgefordert werden, Änderungen zu verwerfen, die Bearbeitung fortzusetzen oder Änderungen zu speichern.
@@ -84,6 +114,7 @@ Siehe [Zahlungsoptionen](payments-options.md#credit-card-fields) für weitere In
 |---|---|---|
 | [!UICONTROL Title] | Store-Ansicht | Fügen Sie den Text für die Anzeige als Titel für diese Zahlungsoption in der Ansicht Zahlungsmethode während des Checkouts hinzu. Optionen: [!UICONTROL text field] |
 | [!UICONTROL Payment Action] | website | Die [Zahlungsaktion](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target=&quot;_blank&quot;} für die angegebene Zahlungsmethode. Optionen: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Show on checkout page] | website | Aktivieren oder deaktivieren Sie Kreditkartenfelder, die auf der Checkout-Seite angezeigt werden. Optionen: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Debug Mode] | website | Aktivieren oder deaktivieren Sie den Debug-Modus. Optionen: [!UICONTROL Yes] / [!UICONTROL No] |
 
 ### Zahlungsschaltflächen
@@ -96,6 +127,7 @@ Sie können die Zahlungsoptionen für PayPal-Smart-Schaltflächen aktivieren und
 1. Um den Namen der Zahlungsmethode zu ändern, wie er beim Checkout angezeigt wird, bearbeiten Sie den Wert im **[!UICONTROL Checkout Title]** -Feld.
 1. nach [die Zahlungsaktion festlegen](production.md#set-payment-services-as-payment-method), Umschalten **[!UICONTROL Payment action]** nach `Authorize` oder `Authorize and Capture`.
 1. Umschalter-Selektoren zum Aktivieren oder Deaktivieren verwenden [!DNL PayPal smart button] Anzeigefunktionen:
+   - **[!UICONTROL Show PayPal buttons on product checkout page]**
    - **[!UICONTROL Show PayPal buttons on product detail page]**
    - **[!UICONTROL Show PayPal buttons in mini-cart preview]**
    - **[!UICONTROL Show PayPal buttons on cart page]**
@@ -123,6 +155,7 @@ Sie können die Zahlungsoptionen für PayPal-Smart-Schaltflächen aktivieren und
 |---|---|---|
 | [!UICONTROL Title] | Store-Ansicht | Fügen Sie den Text hinzu, der beim Checkout als Titel für diese Zahlungsoption angezeigt werden soll. Optionen: Textfeld |
 | [!UICONTROL Payment Action] | website | Die [Zahlungsaktion](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target=&quot;_blank&quot;} für die angegebene Zahlungsmethode. Optionen: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Show PayPal buttons on checkout page] | Store-Ansicht | Aktivieren oder Deaktivieren [!DNL PayPal Smart Buttons] auf der Checkout-Seite. Optionen: [!UICONTROL  Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal buttons on product detail page] | Store-Ansicht | Aktivieren oder Deaktivieren [!DNL PayPal Smart Buttons] auf der Produktdetailseite. Optionen: [!UICONTROL  Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal buttons in mini-cart preview] | Store-Ansicht | Aktivieren oder Deaktivieren [!DNL PayPal Smart Buttons] in der Vorschau des Mini-Warenkorbs. Optionen: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal buttons on cart page] | Store-Ansicht | Aktivieren oder Deaktivieren [!DNL PayPal Smart Buttons] auf der Warenkorbseite. Optionen: [!UICONTROL Yes] / [!UICONTROL No] |
@@ -144,7 +177,7 @@ Sie können auch die _[!UICONTROL Button style]_Optionen der PayPal-Smart-Schalt
 
 1. Um die Tagline in einem horizontalen Layout zu aktivieren, können Sie die **[!UICONTROL Show tagline]** auswählen.
 1. So ändern Sie die **[!UICONTROL Color]** wählen Sie die gewünschte Farboption aus.
-1. So ändern Sie die **[!UICONTROL Shape]** auswählen `Pill` oder `Rect`.
+1. So ändern Sie die **[!UICONTROL Shape]** auswählen `Pill` oder `Rectangle`.
 1. Um die Auswahl der Schaltflächenhöhe zu aktivieren, schalten Sie die **[!UICONTROL Responsive button height]** auswählen.
 1. So ändern Sie die **[!UICONTROL Label]** wählen Sie die gewünschte Beschriftungsoption aus.
 
