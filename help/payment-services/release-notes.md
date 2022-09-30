@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] Versionshinweise"
 description: Informationen zu allen [!DNL Payment Services] veröffentlicht.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 4e6bf72033495683491b0c59a544d1474f6c1486
+source-git-commit: 5d791896f647391993f668a018b3eb9194c4cf3f
 workflow-type: tm+mt
-source-wordcount: '1029'
+source-wordcount: '1165'
 ht-degree: 0%
 
 ---
@@ -52,6 +52,18 @@ _28. Juni 2021_
 ![Neu](../assets/new.svg)<!-- Issue PAY-2761 --> Sie können jetzt die Daten anpassen, die im [Bestellstatusbericht](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) und [Zahlungsbericht](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) durch Einblenden oder Ausblenden von Spalten mithilfe des Steuerelements Spalteneinstellungen.
 
 +++
+
+## v1.4.0
+
+_30. September 2022_
+
+![Neu](../assets/new.svg)<!-- Issue PAY-784 --> Zahlungsdienste bieten jetzt die Möglichkeit, ein Händlerkonto einzurichten, um [mehrere PayPal-Geschäftskonten verwenden](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#use-multiple-business-accounts). Dadurch kann der Händler Ihre Geschäfte in mehreren Ländern mit unterschiedlichen Währungen betreiben oder Adobe Commerce für einen Teil Ihres Unternehmens verwenden.
+
+![Neu](../assets/new.svg)<!-- Issue PAY-3231 --> Händler können [hinzufügen [!UICONTROL Soft Descriptor]](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#add-soft-descriptor) auf Websites oder in der Konfiguration einzelner Store-Ansichten, die in Kundentransaktionsbankausweisen angezeigt werden, um Marken, Geschäfte oder Produktlinien zu unterscheiden.
+
+![Neu](../assets/new.svg)<!-- Issue PAY-3707 --> [Aktivieren oder Deaktivieren von Kreditkartenfeldern und PayPal-Smart-Schaltflächen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html) für den Checkout in den Zahlungsdiensteinstellungen.
+
+![Problem behoben](../assets/fix.svg)<!-- Issue PAY-3546 --> Klickt ein Kunde **[!UICONTROL Edit cart]**, leitet die Seite zur Warenkorbseite um und zeigt die aktualisierten Elemente an, anstatt einen leeren Warenkorb anzuzeigen.
 
 ## v1.3.1
 
