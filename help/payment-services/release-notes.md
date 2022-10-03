@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] Versionshinweise"
 description: Informationen zu allen [!DNL Payment Services] veröffentlicht.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 5d791896f647391993f668a018b3eb9194c4cf3f
+source-git-commit: 39c0140961fa9de5075087bbc3fbec0e14560860
 workflow-type: tm+mt
-source-wordcount: '1165'
+source-wordcount: '1166'
 ht-degree: 0%
 
 ---
@@ -57,11 +57,11 @@ _28. Juni 2021_
 
 _30. September 2022_
 
-![Neu](../assets/new.svg)<!-- Issue PAY-784 --> Zahlungsdienste bieten jetzt die Möglichkeit, ein Händlerkonto einzurichten, um [mehrere PayPal-Geschäftskonten verwenden](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#use-multiple-business-accounts). Dadurch kann der Händler Ihre Geschäfte in mehreren Ländern mit unterschiedlichen Währungen betreiben oder Adobe Commerce für einen Teil Ihres Unternehmens verwenden.
+![Neu](../assets/new.svg)<!-- Issue PAY-784 --> Zahlungsdienste bieten jetzt die Möglichkeit, ein Händlerkonto einzurichten, um [mehrere PayPal-Geschäftskonten verwenden](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#use-multiple-paypal-accounts). Dadurch kann der Händler Ihre Geschäfte in mehreren Ländern mit unterschiedlichen Währungen betreiben oder Adobe Commerce für einen Teil Ihres Unternehmens verwenden.
 
 ![Neu](../assets/new.svg)<!-- Issue PAY-3231 --> Händler können [hinzufügen [!UICONTROL Soft Descriptor]](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#add-soft-descriptor) auf Websites oder in der Konfiguration einzelner Store-Ansichten, die in Kundentransaktionsbankausweisen angezeigt werden, um Marken, Geschäfte oder Produktlinien zu unterscheiden.
 
-![Neu](../assets/new.svg)<!-- Issue PAY-3707 --> [Aktivieren oder Deaktivieren von Kreditkartenfeldern und PayPal-Smart-Schaltflächen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html) für den Checkout in den Zahlungsdiensteinstellungen.
+![Neu](../assets/new.svg)<!-- Issue PAY-3707 --> [Aktivieren oder Deaktivieren von Kreditkartenfeldern und PayPal-Smart-Schaltflächen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-payment-options) für den Checkout in den Zahlungsdiensteinstellungen.
 
 ![Problem behoben](../assets/fix.svg)<!-- Issue PAY-3546 --> Klickt ein Kunde **[!UICONTROL Edit cart]**, leitet die Seite zur Warenkorbseite um und zeigt die aktualisierten Elemente an, anstatt einen leeren Warenkorb anzuzeigen.
 

@@ -4,9 +4,9 @@ description: Verwenden Sie den Bestellstatusbericht, um mehr über den Zahlungss
 role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
-source-git-commit: ac1d0a4e64f358da44796edb0138b3656a907440
+source-git-commit: 39c0140961fa9de5075087bbc3fbec0e14560860
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1436'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 [!DNL Payment Services] für [!DNL Adobe Commerce] und [!DNL Magento Open Source] bietet Ihnen eine umfassende Berichterstellung, damit Sie einen klaren Überblick über die Bestellungen und Zahlungen Ihres Geschäfts erhalten.
 
-![Übersicht über die Finanzberichte](assets/reports-view-new.png)
+![Übersicht über die Finanzberichte](assets/report-view.png)
 
 Der Bericht über den Bestellstatus zeigt Ihnen, wo sich eine bestimmte Bestellung innerhalb des Bestellprozesses befindet. Dieser Bericht ermöglicht es Ihnen, schnell den Zahlungsstatus Ihrer Bestellungen anzuzeigen und potenzielle Probleme zu identifizieren.
 
