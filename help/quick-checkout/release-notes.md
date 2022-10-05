@@ -2,10 +2,10 @@
 title: '[!DNL Quick Checkout] Versionshinweise'
 description: Informationen zu allen [!DNL Quick Checkout] veröffentlicht.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 4dd8008901dbdbfaf1de5b1aa166dc70dd02440f
+source-git-commit: 7c99f1aa4bed9878625d855509448494d5547d56
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '644'
+ht-degree: 1%
 
 ---
 
@@ -20,6 +20,24 @@ Diese Versionshinweise beschreiben die erste Version von [!DNL Quick Checkout] u
 Siehe [Bevorstehende Versionen](https://devdocs.magento.com/release/) , um mehr über die Veröffentlichungszeitpläne und die Unterstützung zu erfahren.
 
 Siehe [Verfügbarkeit](https://devdocs.magento.com/release/availability.html) in der Entwicklerdokumentation , um mehr über die Produktkompatibilität zu erfahren.
+
+## Aktualisierungen des Admin-Bereichs
+
+In diesen Versionshinweisen werden Funktionsänderungen und -korrekturen beschrieben, die außerhalb der regulären Versionen der versionierten Funktionen für das Admin-Bedienfeld veröffentlicht wurden.
+
++++Admin-Bedienfeldaktualisierungen
+
+_5. Oktober 2022_
+
+![Neu](../assets/new.svg)<!-- Issue BOLT-379 --> [!DNL Quick Checkout] Admin Panel integriert eine [Funktionstour auf Basis von Gainsight](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html).
+
+![Neu](../assets/new.svg)<!-- Issue BOLT-377 --> Die **Berichte** im [!DNL Quick Checkout] Das Admin-Bedienfeld enthält die Beschreibung der Diagramme und Reporting-Informationen, die in Kürze verfügbar sein werden.
+
+![Neu](../assets/new.svg)<!-- Issue BOLT-377 --> Die **Berichte** im [!DNL Quick Checkout] Das Admin-Bedienfeld zeigt den Filterdatumsbereich für Diagramme und Berichtsinformationen an, die bald verfügbar sein werden.
+
+![Problem behoben](../assets/fix.svg)<!-- Issue BOLT-369 --> [[!DNL Quick Checkout] Admin Panel](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) zeigt nun die React-App-Version in der Fußzeile an.
+
++++
 
 ## v1.2.0
 
