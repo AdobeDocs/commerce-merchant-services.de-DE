@@ -4,9 +4,9 @@ description: Nach der Installation können Sie [!DNL Payment Services] in der St
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 785528d5940af28fa8bf6873d636b40d8e7bc05f
+source-git-commit: 6c14f062336926ead7e0ce285fb4251586698240
 workflow-type: tm+mt
-source-wordcount: '1594'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,9 @@ ht-degree: 0%
 
 Sie können [!DNL Payment Services] entsprechend Ihren Anforderungen mithilfe hilfreicher Einstellungen im [!DNL Payment Services] Home.
 
-So konfigurieren Sie [!DNL Payment Services] für [!DNL Adobe Commerce] und [!DNL Magento Open Source] click **[!UICONTROL Settings]**. Diese Konfigurationsoptionen gelten nur für die Umgebung, die im _[!UICONTROL Payment mode]_-Feld in_[!UICONTROL Settings]_ > _[!UICONTROL General]_.
+So konfigurieren Sie [!DNL Payment Services] für [!DNL Adobe Commerce] und [!DNL Magento Open Source] click **[!UICONTROL Settings]**. Diese Konfigurationsoptionen gelten nur für die Umgebung, die im _[!UICONTROL Payment mode]_des[_ Allgemein _Konfigurationsoptionen](#general-configuration-options).
 
->[!IMPORTANT]
->
-> Informationen zur Konfiguration mehrerer Stores oder Legacy finden Sie im Abschnitt [In Admin konfigurieren](configure-admin.md) Thema.
+Informationen zur Konfiguration mehrerer Stores oder Legacy finden Sie unter [In Admin konfigurieren](configure-admin.md).
 
 ## Allgemeine Einstellungen konfigurieren
 
@@ -106,7 +104,7 @@ Siehe [Zahlungsoptionen](payments-options.md#credit-card-fields) für weitere In
 
    Wenn Sie versuchen, von dieser Ansicht weg zu navigieren, ohne Ihre Änderungen zu speichern, wird ein Modal angezeigt, in dem Sie aufgefordert werden, Änderungen zu verwerfen, die Bearbeitung fortzusetzen oder Änderungen zu speichern.
 
-1. Navigieren Sie zu **[!UICONTROL System]** > **[!UICONTROL Cache Management]** und klicken Sie auf **[!UICONTROL Flush Cache]** , um alle ungültigen Caches zu aktualisieren.
+1. [Cache leeren](#flush-the-cache).
 
 #### Konfigurationsoptionen
 
@@ -141,13 +139,13 @@ Sie können die Zahlungsoptionen für PayPal-Smart-Schaltflächen aktivieren und
       > Verwenden von Apple Pay You [muss über ein Apple-Entwicklerkonto verfügen](test-validate.md#test-in-sandbox-environment) (mit gefälschten Kreditkarten- und Rechnungsinformationen), um sie zu testen. Wenn Sie bereit sind, Apple Pay in Sandbox zu verwenden *oder* Produktionsmodus nach Abschluss [Tests und Validierung](test-validate.md)Wenden Sie sich an Ihren Vertriebsmitarbeiter, um ihn für Ihre Live-Stores zu aktivieren.
 
       Wenn Sie die Sichtbarkeit auf die Zahlungsschaltflächen oder die PayPal PayPay-später-Nachricht aktivieren/deaktivieren, wird unten auf der Seite &quot;Einstellungen&quot;eine visuelle Vorschau dieser Konfiguration angezeigt.
-
+Git
 1. Um den Debug-Modus zu aktivieren, schalten Sie die **[!UICONTROL Debug Mode]** auswählen.
 1. Klicken **[!UICONTROL Save]**.
 
    Wenn Sie versuchen, von dieser Ansicht weg zu navigieren, ohne Ihre Änderungen zu speichern, wird ein Modal angezeigt, in dem Sie aufgefordert werden, Änderungen zu verwerfen, die Bearbeitung fortzusetzen oder Änderungen zu speichern.
 
-1. Navigieren Sie zu **[!UICONTROL System]** > **[!UICONTROL Cache Management]** und klicken Sie auf **[!UICONTROL Flush Cache]** , um alle ungültigen Caches zu aktualisieren.
+1. [Cache leeren](#flush-the-cache).
 
 #### Konfigurationsoptionen
 
@@ -187,7 +185,7 @@ Sie können auch die _[!UICONTROL Button style]_Optionen der PayPal-Smart-Schalt
 
    Wenn Sie versuchen, von dieser Ansicht weg zu navigieren, ohne Ihre Änderungen zu speichern, wird ein Modal angezeigt, in dem Sie aufgefordert werden, Änderungen zu verwerfen, die Bearbeitung fortzusetzen oder Änderungen zu speichern.
 
-1. Navigieren Sie zu **[!UICONTROL System]** > **[!UICONTROL Cache Management]** und klicken Sie auf **[!UICONTROL Flush Cache]** , um alle ungültigen Caches zu aktualisieren.
+1. [Cache leeren](#flush-the-cache).
 
 Sie können [!DNL PayPal Smart Buttons] Stil [in der Legacy-Konfiguration in der Admin-Konsole](configure-admin.md#configure-paypal-smart-buttons) oder hier [!DNL Payment Services Home]. Siehe [Handbuch zum Schaltflächenstil von PayPal](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) für weitere Informationen zu den Optionen.
 
@@ -203,6 +201,17 @@ Sie können [!DNL PayPal Smart Buttons] Stil [in der Legacy-Konfiguration in der
 | [!UICONTROL Height] | Store-Ansicht | Definieren Sie die Höhe der Zahlungsschaltflächen. Standardwert: Keine |
 | [!UICONTROL Label] | Store-Ansicht | Definieren Sie den Titel, der in den Zahlungsschaltflächen angezeigt wird. Optionen: [!UICONTROL PayPal] / [!UICONTROL Checkout] / [!UICONTROL Buynow] / [!UICONTROL Pay] / [!UICONTROL Installment] |
 
+## Cache leeren
+
+Wenn Sie die Konfiguration in _Einstellungen_ Wenn Sie beispielsweise die Schaltflächen Apple Pay, Venmo oder PayPal PayLater umschalten, leeren Sie den Cache manuell, sodass Ihr Store die neuesten Konfigurationen anzeigt.
+
+1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL System]** > **[!UICONTROL Cache Management]**.
+1. Klicken **[!UICONTROL Flush Cache]** , um alle ungültigen Caches zu aktualisieren.
+
+Wenn ein beliebiger Cache-Typ in der Tabelle &quot;Cache Management&quot;über eine `INVALIDATED` -Status, zeigt Ihr Store möglicherweise nicht die neueste Konfiguration für dieses Element an. Leeren Sie den Cache, um Ihren Store zu aktualisieren und die neueste Konfiguration anzuzeigen.
+
+Um sicherzustellen, dass Ihr Store die richtige Konfiguration anzeigt, werden regelmäßig [Cache leeren](https://docs.magento.com/user-guide/system/cache-management.html).
+
 ## Verwenden mehrerer PayPal-Konten
 
 In den Zahlungsdiensten können Sie mehrere PayPal-Konten innerhalb von **one** Händlerkonto auf der Website-Ebene. Wenn Sie beispielsweise Ihre Geschäfte in mehreren Ländern betreiben (die unterschiedliche [Währungen](https://docs.magento.com/user-guide/stores/currency.html)) oder möchten Adobe Commerce für einige Teile Ihres Unternehmens verwenden, jedoch nicht *all* können Sie Ihr Händlerkonto so einrichten, dass mehrere PayPal-Konten verwendet werden.
@@ -210,3 +219,4 @@ In den Zahlungsdiensten können Sie mehrere PayPal-Konten innerhalb von **one** 
 Siehe [Site-, Store- und Ansichtsbereich](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) für weitere Informationen zur Hierarchie von Websites, Stores und Store-Ansichten.
 
 Ihr Vertriebsmitarbeiter kann eine neue [Umfang](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) für Ihr Händlerkonto und die zusätzliche Site mit PayPal einbinden, sodass alle PayPal-Schaltflächen, die Sie konfigurieren, auf Ihrer Site angezeigt werden. Wenden Sie sich an Ihren Vertriebsmitarbeiter, um Unterstützung bei der Verwendung mehrerer PayPal-Konten für Ihre Websites zu erhalten.
+
