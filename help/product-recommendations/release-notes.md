@@ -2,9 +2,9 @@
 title: Versionshinweise
 description: Die neuesten Versionsinformationen für [!DNL Product Recommendations] aus Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
-source-git-commit: 78f469dda853a6f46394d5969f879100cf22f8bb
+source-git-commit: ab7bb72826ff3aee1ce93d30dde0a752ef8069de
 workflow-type: tm+mt
-source-wordcount: '945'
+source-wordcount: '957'
 ht-degree: 0%
 
 ---
@@ -31,6 +31,10 @@ Siehe die Entwicklerdokumentation zu [Informationen zur Produktkompatibilität](
 
 * ![Neu](../assets/new.svg) - Hinzugefügt [Bereitschaftsindikatoren](create.md) um Ihnen zu helfen, den Trainings-Fortschritt der einzelnen Empfehlungstypen zu visualisieren.
 * ![Neu](../assets/new.svg) - Dies ist eine Hauptversion. Sie müssen [edit](install-configure.md#update) der Stamm `composer.json` -Datei für Ihr Projekt. Für diese Version müssen Sie außerdem bei der Installation und Konfiguration von Product Recommendations zwei API-Schlüssel angeben: [einen Produktionsschlüssel und einen Sandbox-Schlüssel](../landing/saas.md).
+
+### Bekannte Einschränkungen
+
+* Die `websiteCode` -Wert falsch zurückgegeben, wenn er einen Unterstrich (_) enthält.
 
 ## 3.3.7 von Magento/Produktempfehlungen
 
