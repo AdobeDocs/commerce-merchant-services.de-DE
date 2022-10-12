@@ -2,22 +2,21 @@
 title: Hinzufügen von Feldgruppen zum XDM-Schema
 description: Erfahren Sie, wie Sie Adobe Commerce-spezifische Feldergruppen zu einem XDM-Schema hinzufügen.
 exl-id: 4401bbe7-1ccc-4349-a998-9e9ee9db590f
-source-git-commit: 2b735c292920bb0e9052d86bf152748e7ce96079
+source-git-commit: f5d1c39fe1b02d2a661b92f971fba5b3e836dd6a
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '266'
 ht-degree: 0%
 
 ---
 
 # Hinzufügen von Feldergruppen zum XDM-Schema
 
-Eines der [Voraussetzungen](overview.md#prereqs) über den Experience Platform Connector auf den Arbeitsbereich &quot;Datastream&quot;zugreifen und [Erstellen eines Datenspeichers](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=en) die speziell für Adobe Commerce gilt. Wenn Sie diesen Datastream erstellen, müssen Sie auch ein XDM-Schema auswählen, das die zu erfassenden Daten darstellt. Dieses Thema stellt die Feldergruppen bereit, die Ihr XDM-Schema beinhalten muss, um die von der Adobe Commerce-Storefront bereitgestellten Daten erfolgreich erfassen zu können. [events](events.md).
+Eines der [Onboarding-Schritte](overview.md#onboarding-steps) über den Experience Platform Connector auf den Arbeitsbereich &quot;Datastream&quot;zugreifen und [Erstellen eines Datenspeichers](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) die speziell für Adobe Commerce gilt. Wenn Sie diesen Datastream erstellen, müssen Sie auch ein XDM-Schema auswählen, das die zu erfassenden Daten darstellt. Dieses Thema stellt die Feldergruppen bereit, die Ihr XDM-Schema beinhalten muss, um die von der Adobe Commerce-Storefront bereitgestellten Daten erfolgreich erfassen zu können. [events](events.md).
 
-1. Wenn Sie noch kein XDM-Schema haben, [erstellen](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=en#create) eine. Andernfalls [edit](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=en#edit) Ihr vorhandenes XDM-Schema in der Adobe Experience Platform-Benutzeroberfläche.
+1. Wenn Sie noch kein XDM-Schema haben, [erstellen](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#create) eine. Andernfalls [edit](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#edit) Ihr vorhandenes XDM-Schema in der Adobe Experience Platform-Benutzeroberfläche.
 
-1. [Hinzufügen](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=en#add-field-groups) die folgenden Commerce-spezifischen Feldergruppen:
+1. [Hinzufügen](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#add-field-groups) die folgenden Commerce-spezifischen Feldergruppen:
 
-   - Handel
    - Site-Suche
    - Webseite besuchen
    - Benutzeranmeldungsprozess

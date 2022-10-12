@@ -1,10 +1,10 @@
 ---
 title: Veranstaltungen
-description: Erfahren Sie, welche Daten die einzelnen Ereignisse erfassen, und sehen Sie sich die vollständige Schemadefinition an.
+description: Erfahren Sie, welche Daten von den einzelnen Ereignissen erfasst werden.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: 589d22f488572411b6632ac37d7bc5b752f72e2d
+source-git-commit: aaaab3d11c15a69856711a41e889a5d0208aedd2
 workflow-type: tm+mt
-source-wordcount: '1818'
+source-wordcount: '1977'
 ht-degree: 0%
 
 ---
@@ -13,15 +13,19 @@ ht-degree: 0%
 
 Im Folgenden werden die Commerce-Ereignisse aufgelistet, die bei der Installation der Experience Platform Connector-Erweiterung verfügbar sind. Die von diesen Ereignissen erfassten Daten werden an den Adobe Experience Platform-Edge gesendet. Sie können auch [benutzerspezifische Ereignisse](custom-events.md) um zusätzliche Daten zu erfassen, die nicht vorkonfiguriert bereitgestellt wurden.
 
-Zusätzlich zu den Daten, die die folgenden Ereignisse erfassen, erhalten Sie auch [Zusatzdaten](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) bereitgestellt vom Adobe Experience Platform Web SDK.
+Zusätzlich zu den Daten, die die folgenden Ereignisse erfassen, erhalten Sie auch [sonstige Daten](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) bereitgestellt vom Adobe Experience Platform Web SDK.
 
 >[!NOTE]
 >
->Alle Ereignisse enthalten `personID` -Feld, das eine eindeutige Kennung der Person darstellt.
+>Alle Storefront-Ereignisse enthalten `personID` -Feld, das eine eindeutige Kennung der Person darstellt.
 
 ## addToCart
 
-Wird ausgelöst, wenn ein Produkt zum Warenkorb hinzugefügt oder die Menge eines Produkts im Warenkorb erhöht wird. [Vollständiges Schema](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/product/addToCartAEP.ts).
+Wird ausgelöst, wenn ein Produkt zum Warenkorb hinzugefügt oder die Menge eines Produkts im Warenkorb erhöht wird.
+
+### XDM-Ereignisname
+
+`commerce.productListAdds`
 
 ### Typ
 
@@ -34,10 +38,71 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 | Feld | Beschreibung |
 |---|---|
 | `productListAdds` | Gibt an, ob einem Warenkorb ein Produkt hinzugefügt wurde. Ein Wert von `1` gibt an, dass ein Produkt hinzugefügt wurde. |
+| `productListItems` | Eine Reihe von Produkten, die dem Warenkorb hinzugefügt wurden |
 | `SKU` | Lagereinheit. Die eindeutige Kennung für das Produkt. |
 | `name` | Der Anzeigename oder der für Menschen lesbare Name des Produkts |
-| `priceTotal` | Die Summe für diese Bestellung, nachdem alle Rabatte und Steuern angewendet wurden |
-| `quantity` | Die Anzahl der Einheiten, die der Kunde vom Produkt benötigt hat |
+| `priceTotal` | Der Gesamtpreis für den Produktzeileneintrag |
+| `quantity` | Die Anzahl der zum Warenkorb hinzugefügten Produkteinheiten. |
+| `discountAmount` | Gibt den angewendeten Rabattbetrag an |
+| `currencyCode` | Die [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) Währung für das Produkt |
+| `productImageUrl` | Hauptbild-URL des Produkts |
+| `selectedOptions` | Feld, das für ein konfigurierbares Produkt verwendet wird. `attribute` identifiziert ein Attribut des konfigurierbaren Produkts, z. B. `size` oder `color` und `value` gibt den Wert des Attributs an, z. B. `small` oder `black`. |
+| `cartID` | Die eindeutige ID, die den Warenkorb des Kunden identifiziert |
+
+## openCart
+
+Wird ausgelöst, wenn ein neuer Warenkorb erstellt wird, d. h. wenn ein Produkt einem leeren Warenkorb hinzugefügt wird.
+
+### XDM-Ereignisname
+
+`commerce.productListOpens`
+
+### Typ
+
+Storefront
+
+### Erfasste Daten
+
+In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschrieben.
+
+| Feld | Beschreibung |
+|---|---|
+| `productListOpens` | Gibt an, ob ein Warenkorb erstellt wurde. Ein Wert von `1` gibt an, dass ein Warenkorb erstellt wurde. |
+| `productListItems` | Eine Reihe von Produkten, die dem Warenkorb hinzugefügt wurden |
+| `SKU` | Lagereinheit. Die eindeutige Kennung für das Produkt. |
+| `name` | Der Anzeigename oder der für Menschen lesbare Name des Produkts |
+| `priceTotal` | Der Gesamtpreis für den Produktzeileneintrag |
+| `quantity` | Die Anzahl der zum Warenkorb hinzugefügten Produkteinheiten. |
+| `discountAmount` | Gibt den angewendeten Rabattbetrag an |
+| `currencyCode` | Die [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) Währung für das Produkt |
+| `productImageUrl` | Hauptbild-URL des Produkts |
+| `selectedOptions` | Feld, das für ein konfigurierbares Produkt verwendet wird. `attribute` identifiziert ein Attribut des konfigurierbaren Produkts, z. B. `size` oder `color` und `value` gibt den Wert des Attributs an, z. B. `small` oder `black`. |
+| `cartID` | Die eindeutige ID, die den Warenkorb des Kunden identifiziert |
+
+## removeFromCart
+
+Wird jedes Mal ausgelöst, wenn ein Produkt entfernt oder die Menge eines Produkts im Warenkorb verringert wird.
+
+### XDM-Ereignisname
+
+`commerce.productListRemovals`
+
+### Typ
+
+Storefront
+
+### Erfasste Daten
+
+In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschrieben.
+
+| Feld | Beschreibung |
+|---|---|
+| `productListRemovals` | Gibt an, ob ein Produkt aus dem Warenkorb entfernt wurde. Ein Wert von `1` zeigt an, dass ein Produkt aus dem Warenkorb entfernt wurde. |
+| `productListItems` | Eine Reihe von Produkten, die aus dem Warenkorb entfernt wurden |
+| `SKU` | Lagereinheit. Die eindeutige Kennung für das Produkt. |
+| `name` | Der Anzeigename oder der für Menschen lesbare Name des Produkts |
+| `priceTotal` | Der Gesamtpreis für den Produktzeileneintrag |
+| `quantity` | Die Anzahl der aus dem Warenkorb entfernten Produkteinheiten. |
 | `discountAmount` | Gibt den angewendeten Rabattbetrag an |
 | `currencyCode` | Die [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) Währung für das Produkt |
 | `productImageUrl` | Hauptbild-URL des Produkts |
@@ -46,7 +111,11 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 
 ## shoppingCartView
 
-Wird ausgelöst, wenn eine beliebige Warenkorbseite geladen wird. [Vollständiges Schema](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/shoppingCart/viewAEP.ts).
+Wird ausgelöst, wenn eine beliebige Warenkorbseite geladen wird.
+
+### XDM-Ereignisname
+
+`commerce.productListViews`
 
 ### Typ
 
@@ -59,11 +128,11 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 | Feld | Beschreibung |
 |---|---|
 | `productListViews` | Gibt an, ob eine Produktliste angezeigt wurde |
-| `productListItems` | Eine Reihe von Produkten, die einem Warenkorb hinzugefügt wurden |
+| `productListItems` | Eine Reihe von Produkten im Warenkorb |
 | `SKU` | Lagereinheit. Die eindeutige Kennung für das Produkt. |
 | `name` | Der Anzeigename oder der für Menschen lesbare Name des Produkts |
-| `priceTotal` | Die Summe für diese Bestellung, nachdem alle Rabatte und Steuern angewendet wurden |
-| `quantity` | Die Anzahl der Einheiten, die der Kunde vom Produkt benötigt hat |
+| `priceTotal` | Der Gesamtpreis für den Produktzeileneintrag |
+| `quantity` | Die Anzahl der Produkteinheiten im Warenkorb |
 | `discountAmount` | Gibt den angewendeten Rabattbetrag an |
 | `currencyCode` | Die [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) Währung für das Produkt |
 | `productImageUrl` | Hauptbild-URL des Produkts |
@@ -72,7 +141,11 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 
 ## pageView
 
-Wird ausgelöst, wenn eine Seite geladen wird. [Vollständiges Schema](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/page/viewAEP.ts).
+Wird ausgelöst, wenn eine Seite geladen wird.
+
+### XDM-Ereignisname
+
+`web.webpagedetails.pageViews`
 
 ### Typ
 
@@ -88,7 +161,11 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 
 ## productPageView
 
-Wird ausgelöst, wenn eine Produktseite geladen wird. [Vollständiges Schema](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/product/viewAEP.ts).
+Wird ausgelöst, wenn eine Produktseite geladen wird.
+
+### XDM-Ereignisname
+
+`commerce.productViews`
 
 ### Typ
 
@@ -101,10 +178,10 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 | Feld | Beschreibung |
 |---|---|
 | `productViews` | Gibt an, ob das Produkt angezeigt wurde |
-| `productListItems` | Eine Reihe von Produkten, die einem Warenkorb hinzugefügt wurden |
+| `productListItems` | Eine Reihe von Produkten im Warenkorb |
 | `SKU` | Lagereinheit. Die eindeutige Kennung für das Produkt. |
 | `name` | Der Anzeigename oder der für Menschen lesbare Name des Produkts |
-| `priceTotal` | Die Summe für diese Bestellung, nachdem alle Rabatte und Steuern angewendet wurden |
+| `priceTotal` | Der Gesamtpreis für den Produktzeileneintrag |
 | `discountAmount` | Gibt den angewendeten Rabattbetrag an |
 | `currencyCode` | Die [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) Währung für das Produkt |
 | `productImageUrl` | Hauptbild-URL des Produkts |
@@ -112,7 +189,11 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 
 ## startCheckout
 
-Wird ausgelöst, wenn der Käufer auf eine Schaltfläche zum Auschecken klickt. [Vollständiges Schema](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/shoppingCart/initiateCheckoutAEP.ts).
+Wird ausgelöst, wenn der Käufer auf eine Schaltfläche zum Auschecken klickt.
+
+### XDM-Ereignisname
+
+`commerce.checkouts`
 
 ### Typ
 
@@ -125,11 +206,11 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 | Feld | Beschreibung |
 |---|---|
 | `checkouts` | Gibt an, ob während des Checkout-Prozesses eine Aktion aufgetreten ist |
-| `productListItems` | Eine Reihe von Produkten, die einem Warenkorb hinzugefügt wurden |
+| `productListItems` | Eine Reihe von Produkten im Warenkorb |
 | `SKU` | Lagereinheit. Die eindeutige Kennung für das Produkt. |
 | `name` | Der Anzeigename oder der für Menschen lesbare Name des Produkts |
-| `priceTotal` | Die Summe für diese Bestellung, nachdem alle Rabatte und Steuern angewendet wurden |
-| `quantity` | Die Anzahl der Einheiten, die der Kunde vom Produkt benötigt hat |
+| `priceTotal` | Der Gesamtpreis für den Produktzeileneintrag |
+| `quantity` | Die Anzahl der Produkteinheiten im Warenkorb |
 | `discountAmount` | Gibt den angewendeten Rabattbetrag an |
 | `currencyCode` | Die [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) Währung für das Produkt |
 | `productImageUrl` | Hauptbild-URL des Produkts |
@@ -138,7 +219,11 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 
 ## completeCheckout
 
-Wird ausgelöst, wenn der Käufer eine Bestellung aufgibt. [Vollständiges Schema](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/checkout/placeOrderAEP.ts).
+Wird ausgelöst, wenn der Käufer eine Bestellung aufgibt.
+
+### XDM-Ereignisname
+
+`commerce.order`
 
 ### Typ
 
@@ -163,11 +248,11 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 | `shippingMethod` | Die vom Kunden gewählte Versandmethode, z. B. Standardversand, beschleunigte Auslieferung, Abholung im Geschäft usw. |
 | `shippingAmount` | Die Gesamtversandkosten für die Artikel im Warenkorb |
 | `promotionID` | Eindeutige Kennung der Promotion, falls vorhanden |
-| `productListItems` | Eine Reihe von Produkten, die einem Warenkorb hinzugefügt wurden |
+| `productListItems` | Eine Reihe von Produkten im Warenkorb |
 | `SKU` | Lagereinheit. Die eindeutige Kennung für das Produkt. |
 | `name` | Der Anzeigename oder der für Menschen lesbare Name des Produkts |
-| `priceTotal` | Die Summe für diese Bestellung, nachdem alle Rabatte und Steuern angewendet wurden |
-| `quantity` | Die Anzahl der Einheiten, die der Kunde vom Produkt benötigt hat |
+| `priceTotal` | Der Gesamtpreis für den Produktzeileneintrag |
+| `quantity` | Die Anzahl der Produkteinheiten im Warenkorb |
 | `discountAmount` | Gibt den angewendeten Rabattbetrag an |
 | `currencyCode` | Die [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) Währungscode, der für die Bestellsummen verwendet wird. |
 | `productImageUrl` | Hauptbild-URL des Produkts |
@@ -175,11 +260,15 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 
 ## signIn
 
-Wird ausgelöst, wenn ein Käufer versucht, sich anzumelden. [Vollständiges Schema](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/signInAEP.ts).
+Wird ausgelöst, wenn ein Käufer versucht, sich anzumelden.
 
 >[!NOTE]
 >
 > Dieses Ereignis wird ausgelöst, wenn die spezifische Aktion versucht wird. Es wird nicht angegeben, dass die Aktion erfolgreich war.
+
+### XDM-Ereignisname
+
+`userAccount.login`
 
 ### Typ
 
@@ -201,11 +290,15 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 
 ## signOut
 
-Wird ausgelöst, wenn ein Käufer versucht, sich abzumelden. [Vollständiges Schema](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/signOutAEP.ts).
+Wird ausgelöst, wenn ein Käufer versucht, sich abzumelden.
 
 >[!NOTE]
 >
 > Dieses Ereignis wird ausgelöst, wenn die spezifische Aktion versucht wird. Es wird nicht angegeben, dass die Aktion erfolgreich war.
+
+### XDM-Ereignisname
+
+`userAccount.logout`
 
 ### Typ
 
@@ -223,11 +316,15 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 
 ## createAccount
 
-Wird ausgelöst, wenn ein Käufer versucht, ein Konto zu erstellen. [Vollständiges Schema](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/createAccountAEP.ts).
+Wird ausgelöst, wenn ein Käufer versucht, ein Konto zu erstellen.
 
 >[!NOTE]
 >
 > Dieses Ereignis wird ausgelöst, wenn die spezifische Aktion versucht wird. Es wird nicht angegeben, dass die Aktion erfolgreich war.
+
+### XDM-Ereignisname
+
+`userAccount.createProfile`
 
 ### Typ
 
@@ -250,11 +347,15 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 
 ## editAccount
 
-Wird ausgelöst, wenn ein Käufer versucht, ein Konto zu bearbeiten. [Vollständiges Schema](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/editAccountAEP.ts).
+Wird ausgelöst, wenn ein Käufer versucht, ein Konto zu bearbeiten.
 
 >[!NOTE]
 >
 > Dieses Ereignis wird ausgelöst, wenn die spezifische Aktion versucht wird. Es wird nicht angegeben, dass die Aktion erfolgreich war.
+
+### XDM-Ereignisname
+
+`userAccount.updateProfile`
 
 ### Typ
 
@@ -293,11 +394,13 @@ Wird durch die folgenden Ereignisse auf den Suchergebnisseiten ausgelöst:
 - Zur vorherigen Seite navigieren
 - Navigieren zu einer anderen Seite
 
-[Vollständiges Schema](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/search/searchRequestSentAEP.ts).
-
 >[!NOTE]
 >
 >Suchereignisse werden in einer Adobe Commerce Enterprise Edition nicht unterstützt, wenn das B2B-Modul installiert ist.
+
+### XDM-Ereignisname
+
+`searchRequest`
 
 ### Typ
 
@@ -323,11 +426,13 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 
 Wird ausgelöst, wenn die Live-Suche Ergebnisse für die Popup- oder Suchergebnisseite &quot;Suche beim Eingeben&quot;zurückgibt.
 
-[Vollständiges Schema](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/search/searchResponseReceivedAEP.ts)
-
 >[!NOTE]
 >
 >Suchereignisse werden in einer Adobe Commerce Enterprise Edition nicht unterstützt, wenn das B2B-Modul installiert ist.
+
+### XDM-Ereignisname
+
+`searchResponse`
 
 ### Typ
 
@@ -342,4 +447,4 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 | `searchResponse` | Gibt an, ob eine Suchanfrage empfangen wurde |
 | `suggestions` | Ein Array von Zeichenfolgen, die die Namen der Produkte und Kategorien enthalten, die im Katalog vorhanden sind und der Suchabfrage ähnlich sind |
 | `numberOfResults` | Die Anzahl der zurückgegebenen Produkte |
-| `productListItems` | Eine Reihe von Produkten, die einem Warenkorb hinzugefügt wurden. Umfasst die `SKU`(Bestandseinheit) und `name` des Produkts (Anzeigename oder für Menschen lesbarer Name) |
+| `productListItems` | Eine Reihe von Produkten im Warenkorb. Umfasst die `SKU`(Bestandseinheit) und `name` des Produkts (Anzeigename oder für Menschen lesbarer Name) |

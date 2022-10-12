@@ -2,9 +2,9 @@
 title: Commerce-Daten mit Adobe Experience Platform verbinden
 description: Erfahren Sie, wie Sie Ihre Commerce-Daten mit der Adobe Experience Platform verbinden.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
-source-git-commit: c7344efead97b0562a146f096123dd84f998fd5e
+source-git-commit: 1af2dee51391c94e19b68481d390cc2629fe1d6e
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '474'
 ht-degree: 0%
 
 ---
@@ -19,23 +19,26 @@ Um Ihre Adobe Commerce-Instanz mit der Adobe Experience Platform zu verbinden, m
 
 1. Navigieren Sie im Admin zu **System** > Dienste > **Experience Platform Connector**.
 
-1. Im **Anwendungsbereich** in der Dropdown-Liste den Kontext oder den &quot;Umfang&quot;der Store-Ansicht auswählen.
+1. Im **Anwendungsbereich** in der Dropdown-Liste festlegen, setzen Sie den Kontext auf **Webseite**.
 
 1. Im **Organisations-ID** angezeigt, sehen Sie die Ihrem Adobe Experience Platform-Konto zugeordnete ID, wie in der [Commerce Services Connector](../landing/saas.md#organizationid). Die Organisations-ID ist global. Pro Adobe Commerce-Instanz kann nur eine Organisations-ID zugeordnet werden.
 
-1. Im **Datenspeicher-ID** -Feld die ID des von Ihnen verwendeten Datastreams einfügen [created](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) in der Adobe Experience Platform.
+1. Im **Datenspeicher-ID** -Feld die ID des von Ihnen verwendeten Datastreams einfügen [created](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html#create) in der Adobe Experience Platform.
 
-## Beziehung der Datastream-ID und der Storeübersicht Ihrer Commerce-Instanz
+   >[!NOTE]
+   >
+   >Der Umfang der Datastream-ID muss auf Website-Ebene oder höher festgelegt werden. Auf dieser Ebene wird für jede Website in der Hierarchie dieselbe Datastream-ID verwendet. Sie können den Datensatz-ID-Umfang nicht auf der Storeüberprüfungsebene festlegen.
 
-Die Datastream-ID ermöglicht die Ereignisweiterleitung von Adobe Experience Platform zu anderen Adobe-DX-Produkten und kann mit einer bestimmten Store-Ansicht in Ihrer jeweiligen Adobe Commerce-Instanz verknüpft werden. Sie können auch mehrere Store-Ansichten mit derselben Datastream-ID verknüpfen. Das hängt davon ab, was für Ihr Unternehmen am sinnvollsten ist. [Weitere Infos](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=en#event-forwarding-settings) über die Ereignisweiterleitung.
+1. (Optional) Wenn auf Ihrer Site kein AEP Web SDK bereitgestellt ist, lassen Sie dieses Feld leer, und der Experience Platform Connector stellt eines für Sie bereit. Fügen Sie andernfalls den Namen Ihres AEP Web SDK hinzu.
 
 ## Feldbeschreibungen
 
 | Feld | Beschreibung |
 |--- |--- |
-| Anwendungsbereich | Bestimmte Store-Ansicht, auf die die Konfigurationseinstellungen angewendet werden sollen. |
+| Anwendungsbereich | Bestimmte Website, auf die die Konfigurationseinstellungen angewendet werden sollen. |
 | Organisations-ID (global) | ID, die zu der Organisation gehört, die das Adobe DX-Produkt erworben hat. Diese ID verknüpft Ihre Adobe Commerce-Instanz mit Adobe Experience Platform. |
-| Datenspeicher-ID (Store-Ansicht) | ID, die den Datenfluss von Adobe Experience Platform zu anderen Adobe-DX-Produkten ermöglicht. Diese ID kann mit einer bestimmten Store-Ansicht in Ihrer jeweiligen Adobe Commerce-Instanz verknüpft werden. |
+| Datastream-ID (Website) | ID, die den Datenfluss von Adobe Experience Platform zu anderen Adobe-DX-Produkten ermöglicht. Diese ID muss mit einer bestimmten Website in Ihrer jeweiligen Adobe Commerce-Instanz verknüpft sein. |
+| AEP Web SDK Name (Global) | Wenn auf Ihrer Site kein AEP Web SDK bereitgestellt ist, lassen Sie dieses Feld leer, und der Experience Platform Connector stellt eines für Sie bereit. Wenn Sie bereits ein AEP Web SDK auf Ihrer Site bereitgestellt haben, geben Sie den Namen dieses SDK in dieses Feld ein. Dadurch kann der Storefront Event Collector und das Storefront Event SDK Ihr AEP Web SDK anstelle der vom Experience Platform Connector bereitgestellten Version verwenden. |
 
 Nachdem die Experience Platform Connector-Erweiterung installiert, die Verknüpfung zwischen Adobe Commerce und Adobe Experience Platform erstellt und die angegebene Datastream-ID angegeben wurde, fließen die Commerce-Daten an den Adobe Experience Platform-Edge und an andere Adobe-DX-Produkte.
 
