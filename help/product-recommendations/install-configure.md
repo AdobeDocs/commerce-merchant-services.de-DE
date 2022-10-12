@@ -2,9 +2,9 @@
 title: Installieren und Konfigurieren
 description: Erfahren Sie, wie Sie installieren, aktualisieren und deinstallieren [!DNL Product Recommendations].
 exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
-source-git-commit: 09609fd0b5bd3da9e884115de001bc33832ad792
+source-git-commit: 74176c054f05742bc47e4cf2b4e1ea4e057dcba9
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -90,6 +90,12 @@ Speichern Sie die `composer.json` Datei und führen Sie Folgendes aus:
 
 ```bash
 composer update magento/product-recommendations --with-dependencies
+```
+
+Oder wenn Sie die `magento/module-visual-product-recommendations` und `magento/module-page-builder-product-recommendations` -Module:
+
+```bash
+composer update --with-dependencies magento/product-recommendations magento/module-visual-product-recommendations magento/module-page-builder-product-recommendations
 ```
 
 >[!NOTE]
