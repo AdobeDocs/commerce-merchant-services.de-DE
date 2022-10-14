@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] Versionshinweise"
 description: Informationen zu allen [!DNL Payment Services] veröffentlicht.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 39c0140961fa9de5075087bbc3fbec0e14560860
+source-git-commit: 77fbe32ec285bd6ab55100971459f685e19f8425
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1208'
 ht-degree: 0%
 
 ---
@@ -52,6 +52,12 @@ _28. Juni 2021_
 ![Neu](../assets/new.svg)<!-- Issue PAY-2761 --> Sie können jetzt die Daten anpassen, die im [Bestellstatusbericht](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) und [Zahlungsbericht](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) durch Einblenden oder Ausblenden von Spalten mithilfe des Steuerelements Spalteneinstellungen.
 
 +++
+
+## v1.4.1
+
+_14. Oktober 2022_
+
+![Neu](../assets/new.svg)<!-- Issue PAY-3766 --> Wenn die Zahlungsmethode eines Kunden abgelehnt wird, ist die sichtbare Fehlermeldung beschreibender. Es empfiehlt dem Kunden, die Zahlungsinformationen erneut einzugeben und es erneut zu versuchen, eine andere Zahlungsmethode auszuprobieren oder seine Bank über die Ablehnung der Transaktion zu kontaktieren.
 
 ## v1.4.0
 
