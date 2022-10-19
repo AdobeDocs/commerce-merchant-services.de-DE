@@ -2,7 +2,7 @@
 title: '[!DNL Catalog Service] Versionshinweise'
 description: Die neuesten Versionsinformationen für [!DNL Catalog Service] für Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: bb557e130a7dbef96c625d65cbe191a4ccbe26d0
+source-git-commit: c0d3d277bd9bb291de6eede811dc6b00255e5412
 workflow-type: tm+mt
 source-wordcount: '395'
 ht-degree: 1%
@@ -13,17 +13,17 @@ ht-degree: 1%
 
 Diese Versionshinweise beschreiben die neuesten Versionen von [!DNL Catalog Service] und umfassen:
 
-* ![Neu](../assets/new.svg) - Neue Funktionen
-* ![Fehlerbehebung](../assets/fix.svg) - Fehlerbehebungen und Verbesserungen
-* ![Fehler](../assets/bug.svg) - Bekannte Probleme
+* ![Neu](../assets/new.svg) Neue Funktionen
+* ![Fehlerbehebung](../assets/fix.svg) Fehlerbehebungen und Verbesserungen
+* ![Fehler](../assets/bug.svg) Bekannte Probleme
 
 ## Version 1.0
 
 Releasedatum: 2022-10-04 Kompatibel mit Adobe Commerce (EE): 2.4.x Kompatibel mit Adobe Commerce for Cloud (ECE): 2.4.x Stabilität: Allgemeine Verfügbarkeit
 
-![Neu](../assets/new.svg) - Unterstützt jetzt gebündelte und gruppierte Produkte.
-![Neu](../assets/new.svg) - Es wurden Überschreibungen für die B2B-Sichtbarkeit hinzugefügt. Produkte sind nun durchsuchbar und können für bestimmte Kundengruppen zum Warenkorb hinzugefügt werden.
-![Fehlerbehebung](../assets/fix.svg) - Der Dienst ist jetzt stabiler und hat eine verbesserte Leistung.
+![Neu](../assets/new.svg) Unterstützt jetzt gebündelte und gruppierte Produkte.
+![Neu](../assets/new.svg) Es wurden Sichtbarkeitsüberschreibungen für B2B hinzugefügt. Produkte sind nun durchsuchbar und können für bestimmte Kundengruppen zum Warenkorb hinzugefügt werden.
+![Fehlerbehebung](../assets/fix.svg) Der Dienst ist jetzt stabiler und hat eine verbesserte Leistung.
 
 ### Bekannte Einschränkungen
 
@@ -41,10 +41,10 @@ Diese Funktionen werden noch nicht unterstützt:
 
 Releasedatum: 2022-09-12 Kompatibel mit Adobe Commerce (EE): 2.4.x Kompatibel mit Adobe Commerce for Cloud (ECE): 2.4.x Stabilität: Beta
 
-![Neu](../assets/new.svg) - Bilder für Variantenunterstützung: Produktbilder werden basierend auf den ausgewählten Optionen zurückgegeben
-![Neu](../assets/new.svg) - Preisstützung: nur Mitgliedern bestimmter Kundengruppen erlauben, den Preis der Produkte zu sehen
-![Fehlerbehebung](../assets/fix.svg) - Verbesserte Stabilität und Leistung des Dienstes
-![Neu](../assets/new.svg) - Aktualisierungen werden empfangen, wenn Produkte aus dem Katalog gelöscht werden
+![Neu](../assets/new.svg) Bilder für Varianten unterstützen: Produktbilder werden basierend auf den ausgewählten Optionen zurückgegeben
+![Neu](../assets/new.svg) Preisstützung: nur Mitgliedern bestimmter Kundengruppen erlauben, den Preis der Produkte zu sehen
+![Fehlerbehebung](../assets/fix.svg) Verbesserte Stabilität und Leistung des Dienstes
+![Neu](../assets/new.svg) Aktualisierungen werden empfangen, wenn Produkte aus dem Katalog gelöscht werden
 
 ### Bekannte Einschränkungen
 
@@ -59,7 +59,8 @@ Diese Funktionen werden noch nicht unterstützt:
 
 Releasedatum: 2022-08-09 Kompatibel mit Adobe Commerce (EE): 2.4.x Kompatibel mit Adobe Commerce for Cloud (ECE): 2.4.x Stabilität: Beta
 
-* ![Neu](../assets/new.svg) - die `products` und `refineProduct` -Abfragen geben die folgenden Daten zurück:
+![Neu](../assets/new.svg) Die `products` und `refineProduct` -Abfragen geben die folgenden Daten zurück:
+
 * Vordefinierte (System-)Produktattribute
 * Dynamische Produktattribute und deren Filterung nach Rolle (Produktanzeigen-Seite/Produktlistenseite).
 * Produktoptionen.
