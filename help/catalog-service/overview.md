@@ -2,9 +2,9 @@
 title: '[!DNL Catalog Service]'
 description: '''[!DNL Catalog Service] für Adobe Commerce bietet eine Möglichkeit, den Inhalt von Produktansichtsseiten und Produktlistenseiten viel schneller abzurufen als die nativen Adobe Commerce GraphQL-Abfragen."'
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
-source-git-commit: bb557e130a7dbef96c625d65cbe191a4ccbe26d0
+source-git-commit: fb229136728a8e7a8afa077120dbad388d1e4089
 workflow-type: tm+mt
-source-wordcount: '527'
+source-wordcount: '890'
 ht-degree: 0%
 
 ---
@@ -42,6 +42,30 @@ Da der Dienst die direkte Kommunikation mit der Anwendung umgeht, kann er die La
 Die Core- und Service-GraphQL-Systeme kommunizieren nicht direkt miteinander. Sie greifen von einer anderen URL auf jedes System zu und Aufrufe erfordern unterschiedliche Kopfzeileninformationen. Die beiden GraphQL-Systeme sind für die gemeinsame Verwendung konzipiert. Die [!DNL Catalog Service] Das GraphQL-System erweitert das Kernsystem, um die Erlebnisse im Produkt-Storefront zu beschleunigen.
 
 Sie können optional [API-Mesh für Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/) zur Integration der beiden Adobe Commerce GraphQL-Systeme mit privaten und Drittanbieter-APIs und anderen Softwareschnittstellen über Adobe Developer. Das Gitter kann so konfiguriert werden, dass an jeden Endpunkt gesendete Aufrufe die richtigen Autorisierungsinformationen in den Kopfzeilen enthalten.
+
+## Architektonische Details
+
+Die folgenden Abschnitte beschreiben einige der Unterschiede zwischen den beiden GraphQL-Systemen.
+
+### Schema-Verwaltung
+
+Da Catalog Service als Dienst fungiert, müssen sich Integratoren nicht um die zugrunde liegende Version von Commerce kümmern. Die Syntax der Abfragen ist für alle Versionen identisch. Darüber hinaus ist das Schema für alle Händler konsistent. Diese Konsistenz erleichtert die Einrichtung von Best Practices und die deutliche Erhöhung der Wiederverwendung von Storefront-Widgets.
+
+### Vereinfachung der Warentypen
+
+Das Schema reduziert die Vielfalt der Produktarten auf zwei Anwendungsfälle:
+
+* Einfache Produkte sind Produkte, die mit einem einzigen Preis und einer einzigen Menge definiert sind. Catalog Service ordnet die einfachen, virtuellen, herunterladbaren und Geschenkkarten-Produktarten zu `simpleProductViews`.
+
+* Komplexe Produkte bestehen aus mehreren einfachen Produkten. Die Komponenten einfache Produkte können unterschiedliche Preise haben. Ein komplexes Produkt kann auch so definiert werden, dass der Käufer die Menge an Komponenten für einfache Produkte angeben kann. Catalog Service ordnet die konfigurierbaren, Bundle- und gruppierten Produktarten zu `complexProductViews`.
+
+Komplexe Produktoptionen sind vereinheitlicht und unterscheiden sich durch ihr Verhalten, nicht durch ihren Typ. Jeder Optionswert stellt ein einfaches Produkt dar. Dieser Optionswert hat Zugriff auf die einfachen Produktattribute, einschließlich Preis. Wenn der Käufer alle Optionen für ein komplexes Produkt auswählt, verweist die Kombination der ausgewählten Optionen auf ein bestimmtes einfaches Produkt. Das einfache Produkt bleibt mehrdeutig, bis der Käufer einen Wert für alle verfügbaren Optionen auswählt.
+
+### Preise
+
+Einfache Produkte stellen die Basis-Verkaufseinheit dar, die einen Preis hat. Catalog Service berechnet den regulären Preis vor Rabatten sowie den Endpreis nach Rabatten. Preisberechnungen können feste Produktsteuern enthalten. Sie schließen personalisierte Promotions aus.
+
+Ein komplexes Produkt hat keinen festgelegten Preis. Stattdessen gibt Catalog Service die Preise verknüpfter Simples zurück. Beispielsweise kann ein Händler zunächst allen Varianten eines konfigurierbaren Produkts dieselben Preise zuweisen. Wenn bestimmte Größen oder Farben unbeliebt sind, kann der Händler die Preise dieser Varianten reduzieren. So zeigt der Preis des komplexen (konfigurierbaren) Produkts zunächst eine Preisspanne, die den Preis sowohl von Standard- als auch von unpopulären Varianten widerspiegelt. Nachdem der Käufer einen Wert für alle verfügbaren Optionen ausgewählt hat, zeigt die Storefront einen einzelnen Preis an.
 
 ## Implementierung
 
