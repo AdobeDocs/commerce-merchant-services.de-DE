@@ -1,10 +1,10 @@
 ---
-title: '"Onboarding-Übersicht"'
-description: '"[!DNL Live Search] Onboarding-Fluss, Systemanforderungen, Grenzen und Einschränkungen"'
+title: "Onboarding-Übersicht"
+description: "[!DNL Live Search] Onboarding-Fluss, Systemanforderungen, Grenzen und Einschränkungen"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 5a17c601f84c7e366801c17fad96c1e598b1adfe
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -38,14 +38,20 @@ Zu diesem Zeitpunkt wird die [!DNL Live Search] Die Such-/Kategorie-API weist di
 * Indexiert nur Produkte aus der Adobe Commerce-Datenbank
 * Indexiert keine CMS-Seiten
 
-### Synonyme
-
-* [!DNL Live Search] kann bis zu 200 Synonyme pro `Data Space ID`.
-
 ### Abfrage
 
 * [!DNL Live Search] hat keinen Zugriff auf die vollständige Taxonomie des Kategoriebaums, wodurch einige Navigationsszenarien mit Ebenen über die Reichweite hinausgehen.
 * [!DNL Live Search] verwendet einen eindeutigen GraphQL-Endpunkt für Abfragen, um Funktionen wie intelligente Facettierung und Suche nach dem Typ zu unterstützen. Obwohl ähnlich der [Magento GraphQL-API](https://devdocs.magento.com/guides/v2.4/graphql), gibt es einige Unterschiede und einige Felder sind derzeit möglicherweise nicht vollständig kompatibel.
+
+### Regeln
+
+* Die maximale Regelanzahl pro Datenraum-ID beträgt 50.
+* Maximale Anzahl an Bedingungen pro Regel ist 10.
+* Maximale Anzahl an Ereignissen pro Regel ist 25.
+
+### Synonyme
+
+* [!DNL Live Search] kann bis zu 200 Synonyme pro `Data Space ID`.
 
 ### PWA Beta-Version
 
