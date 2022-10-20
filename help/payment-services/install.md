@@ -2,9 +2,9 @@
 title: Installieren [!DNL Payment Services]
 description: Installieren Sie die Erweiterung "Payments Services".
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
-source-git-commit: 7b31fe7a71c3c238e6448627b2edfe06bbfbc80e
+source-git-commit: 4d6c9a3017575e9adbf5dc11cf0717511592dbcf
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '462'
 ht-degree: 0%
 
 ---
@@ -48,10 +48,10 @@ Diese Methode wird zum Installieren der [!DNL Payment Services] -Erweiterung fü
 1. Aktualisieren Sie die Abhängigkeiten und installieren Sie die Erweiterung:
 
    ```bash
-   composer update
+   composer update magento/payment-services --with-dependencies
    ```
 
-   Die `composer update` -Befehl aktualisiert alle Abhängigkeiten. Wenn Sie nicht alle Abhängigkeiten gleichzeitig aktualisieren möchten, verwenden Sie stattdessen diesen Befehl: `composer require magento/payment-services`.
+   Verwenden Sie die `composer update` -Befehl, um alle Stammabhängigkeiten zu aktualisieren.
 
 1. Übernehmen Sie Ihre Änderungen und übertragen Sie sie.
 
@@ -68,10 +68,10 @@ Diese Methode wird zum Installieren der [!DNL Payment Services] Erweiterung für
 1. Aktualisieren Sie die Abhängigkeiten und installieren Sie die Erweiterung:
 
    ```bash
-   composer update
+   composer update magento/payment-services --with-dependencies
    ```
 
-   Die `composer update` -Befehl aktualisiert alle Abhängigkeiten. Wenn Sie nicht alle Abhängigkeiten gleichzeitig aktualisieren möchten, verwenden Sie stattdessen diesen Befehl: `composer require magento/payment-services`.
+   Verwenden Sie die `composer update` -Befehl, um alle Stammabhängigkeiten zu aktualisieren.
 
 1. Aktualisieren Sie Ihre Instanz:
 
@@ -95,10 +95,10 @@ Wenn eine neue Version von [!DNL Payment Services] veröffentlicht wurde, könne
 1. So rufen Sie die neueste Version des Pakets ab:
 
    ```bash
-   composer update
+   composer update magento/payment-services --with-dependencies
    ```
 
-   Die `composer update` -Befehl aktualisiert alle Abhängigkeiten. Wenn Sie nicht alle Abhängigkeiten gleichzeitig aktualisieren möchten, verwenden Sie stattdessen diesen Befehl: `composer update magento/payment-services`.
+   Verwenden Sie die `composer update` -Befehl, um alle Stammabhängigkeiten zu aktualisieren.
 
 1. Übernehmen Sie Ihre Änderungen und übertragen Sie sie.
 
@@ -114,7 +114,7 @@ Wenn die folgende Fehlermeldung angibt, dass Sie über falsche Composer-Schlüss
 Could not find a matching version of package magento/payment-services. Check the package spelling, your version constraint and that the package is available in a stability which matches your minimum-stability (stable).
 ```
 
-Überprüfen Sie, ob Ihre Composer-Schlüssel mit dem `MageID` verwendet während [!DNL Payment Services] registrieren.
+Überprüfen Sie, ob Ihre Composer-Schlüssel gültig sind und Sie Zugriff auf andere Magento-Packages haben.
 
 So sehen Sie, welche Composer-Schlüssel konfiguriert sind:
 
