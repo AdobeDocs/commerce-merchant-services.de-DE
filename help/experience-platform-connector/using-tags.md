@@ -2,9 +2,9 @@
 title: Erfassen von Commerce-Daten mit Adobe Experience Platform Tags
 description: Erfahren Sie, wie Sie Commerce-Daten mithilfe von Adobe Experience Platform-Tags erfassen.
 exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
-source-git-commit: c7344efead97b0562a146f096123dd84f998fd5e
+source-git-commit: f3c37c9c50c608f9f0ea4582fbcca2b99a3428b5
 workflow-type: tm+mt
-source-wordcount: '2504'
+source-wordcount: '2574'
 ht-degree: 0%
 
 ---
@@ -124,6 +124,7 @@ Ordnen Sie für jedes der folgenden Ereignisse die Adobe Commerce-Ereignisse Ihr
 - [`searchRequestSent`](#searchrequestsent)
 - [`searchResponseReceived`](#searchresponsereceived)
 - [`addToCart`](#addtocart)
+- [`openCart`](#opencart)
 - [`viewCart`](#viewcart)
 - [`removeFromCart`](#removefromcart)
 - [`initiativeCheckout`](#initiatecheckout)
@@ -783,6 +784,39 @@ Erstellen Sie die folgenden Datenelemente:
 - **Aktionstyp**: `Send event`
 - **Typ**: `commerce.productListAdds`
 - **XDM-Daten**: `%add to cart%`
+
+### openCart {#opencart}
+
+Wird ausgelöst, wenn ein neuer Warenkorb erstellt wird, was passiert, wenn ein Produkt einem leeren Warenkorb hinzugefügt wird.
+
+#### Datenelemente
+
+Erstellen Sie das folgende Datenelement:
+
+1. Öffnen Sie den Warenkorb:
+
+   - **Name**: `open cart`
+   - **Erweiterung**: `Adobe Experience Platform Web SDK`
+   - **Datenelementtyp**: `XDM object`
+   - **Feldergruppe**: `commerce` > `productListOpens` > `value`
+   - **value**: **Wert** = `1`
+   - **Feldergruppe**: `commerce` > `cart` > `cartID`
+   - **Warenkorb-ID**: **Wert** = `%cart id%`
+   - **Feldergruppe**: `productListItems`. Für `productListItems`, können mehrere Elemente vorberechnet werden. Auswählen **productListItems** > **Gesamtes Array bereitstellen**.
+
+#### Regeln 
+
+- **Name**: `open cart`
+- **Erweiterung**: `Adobe Client Data Layer`
+- **Ereignistyp**: `Data Pushed`
+- **Bestimmtes Ereignis**: `open-cart`
+
+##### Aktionen
+
+- **Erweiterung**: `Adobe Experience Platform Web SDK`
+- **Aktionstyp**: `Send event`
+- **Typ**: `commerce.productListOpens`
+- **XDM-Daten**: `%open cart%`
 
 ### viewCart {#viewcart}
 

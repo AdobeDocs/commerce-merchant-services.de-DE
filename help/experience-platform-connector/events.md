@@ -2,9 +2,9 @@
 title: Veranstaltungen
 description: Erfahren Sie, welche Daten von den einzelnen Ereignissen erfasst werden.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: aaaab3d11c15a69856711a41e889a5d0208aedd2
+source-git-commit: bd1cf8a3b4740594cf6b8678d899d771a886cb2e
 workflow-type: tm+mt
-source-wordcount: '1977'
+source-wordcount: '1987'
 ht-degree: 0%
 
 ---
@@ -447,4 +447,7 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 | `searchResponse` | Gibt an, ob eine Suchanfrage empfangen wurde |
 | `suggestions` | Ein Array von Zeichenfolgen, die die Namen der Produkte und Kategorien enthalten, die im Katalog vorhanden sind und der Suchabfrage ähnlich sind |
 | `numberOfResults` | Die Anzahl der zurückgegebenen Produkte |
-| `productListItems` | Eine Reihe von Produkten im Warenkorb. Umfasst die `SKU`(Bestandseinheit) und `name` des Produkts (Anzeigename oder für Menschen lesbarer Name) |
+| `productListItems` | Eine Reihe von Produkten im Warenkorb. |
+| `SKU` | Lagereinheit. Die eindeutige Kennung für das Produkt. |
+| `name` | Der Anzeigename oder der für Menschen lesbare Name des Produkts |
+| `productImageUrl` | Hauptbild-URL des Produkts |
