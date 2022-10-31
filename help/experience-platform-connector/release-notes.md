@@ -2,10 +2,10 @@
 title: Versionshinweise
 description: Die aktuellen Versionsinformationen zum Adobe Experience Platform Connector von Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: f3c37c9c50c608f9f0ea4582fbcca2b99a3428b5
+source-git-commit: b0f729a8035d89a8cd45b583df28dedfb36c19d4
 workflow-type: tm+mt
-source-wordcount: '194'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -27,12 +27,14 @@ Siehe [Verfügbarkeit](https://experienceleague.adobe.com/docs/commerce-operatio
 
 In diesen Versionshinweisen werden Funktionsänderungen und Fehlerbehebungen im Zusammenhang mit Erweiterungen beschrieben, die vom Experience Platform-Connector verwendet werden.
 
-+++Hosting-Dienstaktualisierungen
++++Unterstützte Dienstaktualisierungen
 
 _12. Oktober 2022_
 
 * ![Neu](../assets/new.svg) - Zwei wurden hinzugefügt [Storefront-Ereignisse](events.md): `openCart` und `removeFromCart` zum Adobe Commerce Storefront Events SDK und Collector
 * ![Neu](../assets/new.svg) - Unterstützung für eine [AEM Storefront](overview.md#aem-support)
+
++++
 
 ## 2,0,0
 
