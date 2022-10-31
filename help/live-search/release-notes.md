@@ -2,10 +2,10 @@
 title: "[!DNL Live Search] Versionshinweise"
 description: "Die neuesten Versionsinformationen für [!DNL Live Search] von Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: ab7bb72826ff3aee1ce93d30dde0a752ef8069de
+source-git-commit: baa2587fc9d048d7a7915b9370b63ac6c2ff93d2
 workflow-type: tm+mt
-source-wordcount: '931'
-ht-degree: 1%
+source-wordcount: '1114'
+ht-degree: 0%
 
 ---
 
@@ -16,6 +16,22 @@ Diese Versionshinweise beschreiben die neuesten Versionen von [!DNL Live Search]
 * ![Neu](../assets/new.svg) - Neue Funktionen
 * ![Fehlerbehebung](../assets/fix.svg) - Fehlerbehebungen und Verbesserungen
 * ![Fehler](../assets/bug.svg) - Bekannte Probleme
+
+## [!DNL Live Search] 2,0,4
+
+* Kompatibel mit Adobe Commerce (EE): 2.4.x
+* Kompatibel mit Adobe Commerce for Cloud (ECE): 2.4.x
+* Stabilität: Stabil
+
+* ![Neu](../assets/new.svg) - Die Live-Suche unterstützt jetzt das Filtern nach der Einstellung &quot;Nicht vorrätige Produkte anzeigen&quot;im Admin. Wenn &quot;Nicht vorrätige Produkte anzeigen&quot;auf &quot;false&quot;gesetzt ist, `inStock = true` wird zum Filter hinzugefügt.
+* ![Fehlerbehebung](../assets/fix.svg) - Zur Leistungsverbesserung wurde der Block &quot;Vorschläge&quot;aus dem Popup-Fenster &quot;Live-Suche&quot;entfernt. Die Daten werden weiterhin über GraphQL weitergeleitet, falls Sie die Funktion ersetzen möchten.
+* ![Fehlerbehebung](../assets/fix.svg) - `categories` und `categoryPath` ersetzt `categoryIds` für die Kategoriefilterung. Mehr dazu im [productSearch](https://devdocs.magento.com/live-search/product-search.html#filter) Thema.
+* ![Fehlerbehebung](../assets/fix.svg) - Zuvor erhielt ein Benutzer, der mit einem B2B-Unternehmen verbunden war, bei der Suche einen falschen Kundengruppen-Code. Die Live-Suche gibt jetzt den richtigen Wert zurück.
+* ![Fehlerbehebung](../assets/fix.svg) - Bisher gab die Live-Suche bei der Suche nach einem nicht vorhandenen Begriff einen Fehler zurück. Dieser Fehler wurde nun behoben.
+
+Händler müssen die Live Search-Erweiterung Version >= 2.0.4 aktualisieren, um auf diese Funktionen zugreifen zu können.
+
+Wir empfehlen Benutzern, ein Upgrade durchzuführen und zu testen, bevor sie zur Produktion wechseln. Erwägen Sie, die Produktionsumgebung außerhalb der Spitzenzeiten zu aktualisieren, nachdem Sie die Ergebnisse der Testumgebung überprüft haben.
 
 ## [!DNL Live Search] 2,0,3
 
