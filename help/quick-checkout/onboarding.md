@@ -2,9 +2,9 @@
 title: "Onboard the [!DNL Quick Checkout] für Adobe Commerce-Erweiterung"
 description: "Erfahren Sie, wie die [!DNL Quick Checkout] kann von Ihrer Adobe Commerce-Instanz profitieren und zeigen, wie Sie die Erweiterung erfolgreich integrieren und einrichten können."
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: d4b58b0ee3da866d460cf18d96ec9dd27b195f7a
+source-git-commit: bd02a8083d3f4c9cb0422b27d61bd5462187ffc3
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '767'
 ht-degree: 0%
 
 ---
@@ -99,7 +99,9 @@ Gehen Sie wie im Abschnitt [Prozessoreinrichtung](https://help.bolt.com/integrat
 
 1. Validieren Sie die Anmeldeinformationen, nachdem Sie Ihre eindeutige API bereitgestellt haben und [!DNL Publishable keys].
 
-![Quick Checkout](assets/quick-checkout-main-view.png)
+![Quick Checkout](assets/quick-checkout-main-view-react.png)
+
+Siehe Abschnitt [Einstellungen](../quick-checkout/settings-quick-checkout.md) Thema für weitere Informationen zu den Konfigurationsoptionen für die [!DNL Quick Checkout] für die Adobe Commerce-Erweiterung.
 
 >[!CAUTION]
 >

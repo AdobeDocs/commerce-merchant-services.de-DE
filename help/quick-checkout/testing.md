@@ -1,10 +1,10 @@
 ---
-title: '"Testen der [!DNL Quick Checkout] für Adobe Commerce-Erweiterung"'
-description: '"Tests und Validierung stellen sicher, dass die [!DNL Quick Checkout] -Erweiterung funktioniert wie erwartet."'
+title: "Testen der [!DNL Quick Checkout] für Adobe Commerce-Erweiterung"
+description: "Tests und Validierung stellen sicher, dass die [!DNL Quick Checkout] -Erweiterung funktioniert wie erwartet."
 exl-id: 308f39e1-e2f6-40d8-b876-0f9013effed3
-source-git-commit: 9841db7616c8aa6d5bc5af3e6e92c0abe9a4a1e2
+source-git-commit: bd02a8083d3f4c9cb0422b27d61bd5462187ffc3
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '437'
 ht-degree: 0%
 
 ---
@@ -44,15 +44,15 @@ Führen Sie Ihre Produktionstests mit echten Kreditkarten durch und [!DNL Bolt] 
 Führen Sie einen erfolgreichen Checkout aus Ihrem Store durch:
 
 1. Gehen Sie in Ihre Storefront und platzieren Sie die gewünschten Artikel in Ihren Warenkorb.
-2. Fahren Sie mit dem Checkout fort.
-3. Geben Sie eine E-Mail-Adresse ein, die mit einer [!DNL Bolt] Konto bei Aufforderung.
-4. Geben Sie das einmalige Passwort (OTP) ein, das an die E-Mail-Adresse des Kontos gesendet wird.
-5. Wählen Sie das Umgebungs-Dashboard aus:
+1. Fahren Sie mit dem Checkout fort.
+1. Geben Sie eine E-Mail-Adresse ein, die mit einer [!DNL Bolt] Konto bei Aufforderung.
+1. Geben Sie das einmalige Passwort (OTP) ein, das an die E-Mail-Adresse des Kontos gesendet wird.
+1. Wählen Sie das Umgebungs-Dashboard aus:
 
    - Sandbox
    - Produktion
 
-6. Platzieren Sie die Bestellung.
+1. Platzieren Sie die Bestellung.
 
 Sobald eine Bestellung aufgegeben wurde, können Sie Details zu Ihren Bestellungen in Ihrer _Raster für Bestellungen_ Ansicht:
 
