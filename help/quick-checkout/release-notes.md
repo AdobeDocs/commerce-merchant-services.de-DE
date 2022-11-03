@@ -2,10 +2,10 @@
 title: '[!DNL Quick Checkout] Versionshinweise'
 description: Informationen zu allen [!DNL Quick Checkout] veröffentlicht.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 7c99f1aa4bed9878625d855509448494d5547d56
+source-git-commit: dd9131059030f687dfff44b379dc0e8ddbb9f32f
 workflow-type: tm+mt
-source-wordcount: '644'
-ht-degree: 1%
+source-wordcount: '888'
+ht-degree: 0%
 
 ---
 
@@ -27,17 +27,39 @@ In diesen Versionshinweisen werden Funktionsänderungen und -korrekturen beschri
 
 +++Admin-Bedienfeldaktualisierungen
 
+_2. November 2022_
+
+![Neu](../assets/new.svg)<!-- Issue BOLT-293 --> Nun, die [Berichterstellung](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html) im [!DNL Quick Checkout] Das Admin-Bedienfeld zeigt Diagramme und Berichtsinformationen der Checkout-Erlebnisstatistiken Ihres Stores an.
+
+![Neu](../assets/new.svg)<!-- Issue BOLT-422 --> Die [_Übersicht_](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html#reports-overview) im Abschnitt zum Thema Berichte werden detaillierte Informationen zur Leistung des Checkout in Ihrem Geschäft angezeigt, einschließlich der durchschnittlichen Checkout-Zeit, neuer Konten, die beim Checkout erstellt wurden, und des Checkout.
+
+![Neu](../assets/new.svg)<!-- Issue BOLT-423 --> Die [_Trends_](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html#reports-trends) im Tab Berichte zeigt Ihre Kassengang-Erlebnis-Trends gefiltert nach Kontotyp und neuen Konten, die beim Checkout erstellt wurden.
+
+![Neu](../assets/new.svg)<!-- Issue BOLT-439 --> Die **Berichte** Registerkarten anzeigen [Standardfiltervorgaben](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html#filter-data) , mit dem bestimmte Datenbereiche angezeigt werden können.
+
+![Neu](../assets/new.svg)<!-- Issue BOLT-433 --> Sie können jetzt eine _Keine Daten verfügbar_ Warnhinweis für ein Diagramm, wenn eine Anforderung keine Daten zurückgibt.
+
+![Neu](../assets/new.svg)<!-- Issue BOLT-473 --> Verbesserungen des Benutzererlebnisses aus [!DNL Quick Checkout] Admin-Bereich bietet die Möglichkeit, eine [Checkout-Tracking](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/settings-quick-checkout.html#service-settings) -Einstellung, die es Adobe Commerce ermöglicht, Berichtsinformationen mit Bolt zu teilen.
+
 _5. Oktober 2022_
 
-![Neu](../assets/new.svg)<!-- Issue BOLT-379 --> [!DNL Quick Checkout] Admin Panel integriert eine [Funktionstour auf Basis von Gainsight](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html).
+![Neu](../assets/new.svg)<!-- Issue BOLT-379 --> Wenn nun ein neuer Händler auf die [!DNL Quick Checkout] Admin-Bereich zum ersten Mal [Funktionstour auf Basis von Gainsight](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html) angezeigt.
 
-![Neu](../assets/new.svg)<!-- Issue BOLT-377 --> Die **Berichte** im [!DNL Quick Checkout] Das Admin-Bedienfeld enthält die Beschreibung der Diagramme und Reporting-Informationen, die in Kürze verfügbar sein werden.
+![Neu](../assets/new.svg)<!-- Issue BOLT-377 --> Die **Berichte** im [!DNL Quick Checkout] Admin-Bereich zeigt Diagramme und Berichtsanalysen an.
 
-![Neu](../assets/new.svg)<!-- Issue BOLT-377 --> Die **Berichte** im [!DNL Quick Checkout] Das Admin-Bedienfeld zeigt den Filterdatumsbereich für Diagramme und Berichtsinformationen an, die bald verfügbar sein werden.
+![Neu](../assets/new.svg)<!-- Issue BOLT-377 --> Die **Berichte** im [!DNL Quick Checkout] Das Admin-Bedienfeld zeigt den Datumsbereich und die Filtervorgaben für Diagramme und Berichtsanalysen an.
 
-![Problem behoben](../assets/fix.svg)<!-- Issue BOLT-369 --> [[!DNL Quick Checkout] Admin Panel](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) zeigt nun die React-App-Version in der Fußzeile an.
+![Problem behoben](../assets/fix.svg)<!-- Issue BOLT-369 --> Nun, die [[!DNL Quick Checkout] Admin Panel](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) zeigt die App-Version in der Fußzeile an.
 
 +++
+
+## v1.3.0
+
+_2. November 2022_
+
+![Neu](../assets/new.svg)<!-- Issue BOLT-293 --> Jetzt [!DNL Quick Checkout] umfasst die Möglichkeit, eine [Checkout-Tracking](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/settings-quick-checkout.html#service-settings) -Einstellung, die es Adobe Commerce ermöglicht, Berichtsinformationen mit Bolt zu teilen.
+
+![Neu](../assets/new.svg)<!-- Issue BOLT-461 --> Sie können jetzt eine Warnmeldung in Ihrem [!DNL Quick Checkout] Admin-Bereich, wenn [Checkout-Tracking](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html) -Konfiguration deaktiviert ist.
 
 ## v1.2.0
 
@@ -51,7 +73,7 @@ _8. September 2022_
 
 ![Neu](../assets/new.svg)<!-- Issue BOLT-377 --> [!DNL Quick Checkout] Das Admin-Bedienfeld enthält jetzt einen Seitenkopf, der bestimmte Abschnitte enthält, z. B. **Übersicht**, **Berichte** und **Einstellungen**.
 
-![Neu](../assets/new.svg)<!-- Issue BOLT-379 --> [!DNL Quick Checkout] Das Admin-Bedienfeld fügt ein Begrüßungs-Widget hinzu, das eine durch Gainsight unterstützte Feature-Tour bietet.
+![Neu](../assets/new.svg)<!-- Issue BOLT-379 --> Wenn ein neuer Händler auf die [!DNL Quick Checkout] Das Admin-Bedienfeld zeigt zum ersten Mal ein Begrüßungs-Widget an, das eine Übersicht über Funktionen bietet.
 
 ![Neu](../assets/new.svg)<!-- Issue BOLT-378 --> [!DNL Quick Checkout] [Ansicht des Admin-Bedienfelds](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html) enthält eine **Konfiguration** -Schritt, der angezeigt wird, wenn die API- und veröffentlichungsfähigen Schlüssel nicht im [Einstellungen](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) anzeigen.
 
