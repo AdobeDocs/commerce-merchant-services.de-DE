@@ -1,9 +1,10 @@
 ---
 title: Anpassen
 description: Erfahren Sie, wie Sie Ihre Produktempfehlungen anpassen können.
-source-git-commit: 478c5bf7d7830d971c576ce50ff0bf3ffd4fe9e5
+exl-id: b1b8e770-45ec-4403-b79b-4f0a9f7bd959
+source-git-commit: a34c3c8a5caca1bbf611b2df650c562aeeab297b
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -110,7 +111,7 @@ Entwickler benötigen oft Zugriff auf benutzerdefinierte Produktattributwerte in
 
 Wenn Ihr Geschäft beispielsweise Bio-Produkte verkauft, können Sie ein benutzerdefiniertes Attribut für die Produkte haben, die sie als `Organic = Yes`. Möglicherweise benötigen Sie Zugriff auf diesen Attributwert in der Storefront, damit Sie diese Produkte besonders visuell behandeln können, wenn sie in Recommendations angezeigt werden. Auf ähnliche Weise können Sie durch den Zugriff auf diese benutzerdefinierten Produktattributwerte Produkte kennzeichnen oder benutzerdefinierte Logik in der Präsentationsebene Ihrer Site fördern.
 
-![Badge hinzufügen](assets/unit.png)
+![Badge hinzufügen](assets/unit-custom.png)
 
 Um sicherzustellen, dass beim Rendern der Empfehlungseinheit auf der Seite ein benutzerdefiniertes Produktattribut verfügbar ist, legen Sie die `Used in Product Listing` Eigenschaft auf `Yes` im [Produktattribute](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) in der Admin-Seite.
 
