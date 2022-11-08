@@ -5,7 +5,7 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
 breadcrumb-title: Dokumentation
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
-source-git-commit: cc7636dd6bb5dff0d1223279bd22b50df9758253
+source-git-commit: bbc97eff4cd0c5b544df34061a1e156e72b91d18
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 0%
@@ -62,15 +62,15 @@ Adobe bietet eine Sammlung von Commerce-, Integrations- und Datendiensten, die H
    </tr>
 <tr>
     <td valign="top" width="200px">
-       <img alt="Amazon-Vertriebskanal" src="assets/amazon-channel.png" width="170px"></td>
+       <img alt="Amazon Sales Channel" src="assets/amazon-channel.png" width="170px"></td>
    <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/guide-overview.html"> <strong>Amazon-Vertriebskanal</strong></a> <br><em>(Für Magento Open Source verfügbar)</em>
     <div>Integrieren Sie mit dem weltgrößten globalen Online-Shopping-Ziel, um Amazon-Verkäufe zu ermöglichen, Datenautomatisierung und -Synchronisation bereitzustellen, Amazon-Listen zu verwalten und vieles mehr über ein Dashboard.</div>
   </td>
    </tr>
 <tr>
     <td valign="top">
-       <img alt="[!DNL Channel manager]" src="assets/channel-manager.png" width="170px"></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html"> <strong>Kanalmanager</strong></a> <br><em>(Für Magento Open Source verfügbar)</em>
+       <img alt="[!DNL Channel Manager]" src="assets/channel-manager.png" width="170px"></td>
+   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html"> <strong>Kanal-Manager</strong></a> <br><em>(Für Magento Open Source verfügbar)</em>
     <div>Steigern Sie den Umsatz, erreichen Sie neue Kunden, optimieren Sie den Betrieb und sparen Sie Zeit durch die Integration in den Walmart Marketplace. Ermöglichen Sie es Mitarbeitern, die Verkäufe, Inventare und Preise von Walmart Marketplace nahtlos zu verwalten - alles in Commerce.</div>
   </td>
    </tr>
