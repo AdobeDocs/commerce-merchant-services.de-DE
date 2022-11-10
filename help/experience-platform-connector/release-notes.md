@@ -2,7 +2,7 @@
 title: Versionshinweise
 description: Die aktuellen Versionsinformationen zum Adobe Experience Platform Connector von Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: b0f729a8035d89a8cd45b583df28dedfb36c19d4
+source-git-commit: f3d35772d75d1d0711d389a00023834720d63bd9
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -35,6 +35,12 @@ _12. Oktober 2022_
 * ![Neu](../assets/new.svg) - Unterstützung für eine [AEM Storefront](overview.md#aem-support)
 
 +++
+
+## 2,0,1
+
+_10. November 2022_
+
+* ![Problem behoben](../assets/fix.svg) - Jetzt wird der Adobe Experience Platform-Kontext erst festgelegt, nachdem das Storefront Event Collector und Storefront Event SDK erfolgreich geladen wurden.
 
 ## 2,0,0
 
