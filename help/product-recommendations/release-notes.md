@@ -2,9 +2,9 @@
 title: Versionshinweise
 description: Die neuesten Versionsinformationen für [!DNL Product Recommendations] aus Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
-source-git-commit: bd1cf8a3b4740594cf6b8678d899d771a886cb2e
+source-git-commit: 944576fdacd7dbbb704f74ba06d34f64eac41122
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '967'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,6 @@ ht-degree: 0%
 
 Die Versionshinweise enthalten Aktualisierungen für Folgendes [!DNL Product Recommendations] -Module:
 
-* Seit März 2021 [!DNL Product Recommendations] werden jetzt in [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/) Storefronts.
 * [!DNL Product Recommendations] metapackage: `magento/product-recommendations`
 * Unterstützung von Page Builder in [!DNL Product Recommendations] (optional) Modul: `magento/module-page-builder-product-recommendations`
 * Unterstützung des Typs visueller Ähnlichkeitsempfehlungen für [!DNL Product Recommendations] (optional) Modul: `magento/module-visual-product-recommendations`
@@ -26,6 +25,10 @@ Die Versionshinweise umfassen:
 Siehe die Entwicklerdokumentation zu [Informationen zur Produktkompatibilität](https://devdocs.magento.com/release/availability.html).
 
 ## Adobe Commerce 2.3.x und 2.4.x
+
+### 4.0.1 von Magento/Produktempfehlungen
+
+* ![Fehlerbehebung](../assets/fix.svg) - Zuvor wurde in der Produkt-Recommendations ein Fehler angezeigt, wenn die Anzeigewährung auf eine nicht standardmäßige Währung umgestellt wurde. Das Wechseln von Währungen funktioniert jetzt ordnungsgemäß.
 
 ### 4.0.0 von Magento/Produktempfehlungen
 
