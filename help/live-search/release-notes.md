@@ -2,10 +2,10 @@
 title: "[!DNL Live Search] Versionshinweise"
 description: "Die neuesten Versionsinformationen für [!DNL Live Search] von Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: baa2587fc9d048d7a7915b9370b63ac6c2ff93d2
+source-git-commit: 87b60e28e45466bf4271953c6704a53e6d43d73a
 workflow-type: tm+mt
-source-wordcount: '1114'
-ht-degree: 0%
+source-wordcount: '1166'
+ht-degree: 1%
 
 ---
 
@@ -16,6 +16,18 @@ Diese Versionshinweise beschreiben die neuesten Versionen von [!DNL Live Search]
 * ![Neu](../assets/new.svg) - Neue Funktionen
 * ![Fehlerbehebung](../assets/fix.svg) - Fehlerbehebungen und Verbesserungen
 * ![Fehler](../assets/bug.svg) - Bekannte Probleme
+
+## [!DNL Live Search] 2,0,5
+
+* Kompatibel mit Adobe Commerce (EE): 2.4.x
+* Kompatibel mit Adobe Commerce for Cloud (ECE): 2.4.x
+* Stabilität: Stabil
+
+* ![Fehlerbehebung](../assets/fix.svg) - Die Live-Suche würde einen Fehler auslösen, wenn SDK-Ressourcen aufgrund von Netzwerkproblemen nicht verfügbar waren. Dieser Fehler wurde nun behoben.
+
+Händler müssen die Live Search-Erweiterung Version >= 2.0.5 aktualisieren, um auf diese Funktionen zugreifen zu können.
+
+Es wird empfohlen, ein Upgrade durchzuführen und zu testen, bevor Sie die Produktionsumgebung aktivieren. Erwägen Sie, die Produktionsumgebung außerhalb der Spitzenzeiten zu aktualisieren, nachdem Sie die Ergebnisse der Testumgebung überprüft haben.
 
 ## [!DNL Live Search] 2,0,4
 
@@ -30,8 +42,6 @@ Diese Versionshinweise beschreiben die neuesten Versionen von [!DNL Live Search]
 * ![Fehlerbehebung](../assets/fix.svg) - Bisher gab die Live-Suche bei der Suche nach einem nicht vorhandenen Begriff einen Fehler zurück. Dieser Fehler wurde nun behoben.
 
 Händler müssen die Live Search-Erweiterung Version >= 2.0.4 aktualisieren, um auf diese Funktionen zugreifen zu können.
-
-Wir empfehlen Benutzern, ein Upgrade durchzuführen und zu testen, bevor sie zur Produktion wechseln. Erwägen Sie, die Produktionsumgebung außerhalb der Spitzenzeiten zu aktualisieren, nachdem Sie die Ergebnisse der Testumgebung überprüft haben.
 
 ## [!DNL Live Search] 2,0,3
 
