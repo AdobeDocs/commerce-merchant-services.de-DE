@@ -2,9 +2,9 @@
 title: "Onboarding-Übersicht"
 description: "[!DNL Live Search] Onboarding-Fluss, Systemanforderungen, Grenzen und Einschränkungen"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: b4cdbc3b166a3aae5b4219196a86cb681744d435
+source-git-commit: 8e541924d6a69f963e150057b82e682e1e5d3801
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '332'
 ht-degree: 0%
 
 ---
@@ -62,9 +62,6 @@ Zu diesem Zeitpunkt wird die [!DNL Live Search] Die Such-/Kategorie-API weist di
 ### Derzeit nicht unterstützt
 
 * Die [Erweiterte Suche](https://docs.magento.com/user-guide/catalog/search-advanced.html) -Modul deaktiviert ist, wenn [!DNL Live Search] installiert ist und der Link Erweiterte Suche in der Fußzeile der Storefront entfernt wird.
-* [Kundengruppen](https://docs.magento.com/user-guide/customers/customer-groups.html)
 * [Benutzerspezifische Preisgruppen](https://docs.magento.com/user-guide/catalog/product-price-group.html)
 * Mehrere Lagerorte, die von [MCOM](https://docs.magento.com/user-guide/mcom.html) oder anderen OMS-Erweiterungen
-* [Integrierte B2B-Funktionen](https://business.adobe.com/products/magento/b2b-ecommerce.html)
 * Die Produktpreise beinhalten nicht [Mehrwertsteuer](https://docs.magento.com/user-guide/tax/vat.html) (MwSt).
-* Nicht vorrätige Produkte werden unabhängig von der [Lageroptionen](https://docs.magento.com/user-guide/catalog/inventory-options-global.html) Konfiguration.
