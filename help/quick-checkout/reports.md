@@ -1,13 +1,13 @@
 ---
-title: "[!DNL Quick Checkout] reporting"
-description: "[!DNL Quick Checkout] bietet umfassende Berichtsinformationen."
-source-git-commit: bd02a8083d3f4c9cb0422b27d61bd5462187ffc3
+title: '[!DNL Quick Checkout] reporting'
+description: '''[!DNL Quick Checkout] bietet umfassende Berichtsinformationen."'
+exl-id: 91c687f4-9953-4c2f-b240-73430603e6a1
+source-git-commit: dd9eab0d6b88a6c723ec10b882a4bb668d66973f
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '283'
 ht-degree: 0%
 
 ---
-
 
 # Berichte
 
@@ -28,9 +28,9 @@ Die Diagramme im Abschnitt Übersicht zeigen detaillierte Informationen zur Chec
 | Diagramm | Beschreibung |
 |---|---|
 | [!UICONTROL Checkout abandonment] | Der Prozentsatz der Besucher, die den Checkout-Prozess beenden, ohne einen Kauf abzuschließen. |
-| [!UICONTROL Checkout abandonment breakdown] | Der Abbruch des Checkout dividiert durch den Typ des Besuchers. Optionen: [!UICONTROL Bolt] / [!UICONTROL Merchant] / [!UICONTROL Guest] |
+| [!UICONTROL Checkout abandonment breakdown] | Der Abbruch des Checkout dividiert durch den Typ des Besuchers. QuickInfo zeigt einen prozentualen Unterschied zwischen Bolt und Gast an. Optionen: [!UICONTROL Bolt] / [!UICONTROL Merchant] / [!UICONTROL Guest] |
 | [!UICONTROL Average checkout time] | Die durchschnittliche Zeit, die ein Besucher benötigt, um den Checkout-Prozess abzuschließen. |
-| [!UICONTROL Average checkout time breakdown] | Durchschnittliche Checkout-Zeit dividiert durch den Besuchertyp. Optionen: [!UICONTROL Bolt] / [!UICONTROL Merchant] / [!UICONTROL Guest] |
+| [!UICONTROL Average checkout time breakdown] | Durchschnittliche Checkout-Zeit dividiert durch den Besuchertyp. QuickInfo zeigt einen prozentualen Unterschied zwischen Bolt und Gast an. Optionen: [!UICONTROL Bolt] / [!UICONTROL Merchant] / [!UICONTROL Guest] |
 | [!UICONTROL Orders by account type] | Bestellungen dividiert durch den Besuchertyp. Optionen: [!UICONTROL Bolt] / [!UICONTROL Merchant] / [!UICONTROL Guest] |
 
 ## Trendberichte
@@ -55,4 +55,3 @@ Sie können die angezeigten Ergebnisse nach Datum oder vorhandenen Vorgaben filt
 |---|---|
 | [!UICONTROL Preset] | Ein Dropdown-Menü mit Standardvorgaben, die zur Anzeige bestimmter Datenbereiche verwendet werden können. Standardmäßig: Letzte 30 Tage |
 | [!UICONTROL Date range] | Ein Dropdown-Menü, in dem Sie je nach ausgewähltem Datum einen bestimmten Datenbereich auswählen können. |
-
