@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] Versionshinweise"
 description: Informationen zu allen [!DNL Payment Services] veröffentlicht.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 77fbe32ec285bd6ab55100971459f685e19f8425
+source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
 workflow-type: tm+mt
-source-wordcount: '1208'
+source-wordcount: '1286'
 ht-degree: 0%
 
 ---
@@ -53,11 +53,19 @@ _28. Juni 2021_
 
 +++
 
+## v1.5.0
+
+_18. November 2022_
+
+![Neu](../assets/new.svg)<!-- Issue PAY-3880 --> Ein Käufer kann jetzt [Vault-Kreditkarteninformationen beim Checkout speichern](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html) , um in einem späteren Kauf für denselben oder einen anderen Store innerhalb desselben Händlers zu verwenden.
+
+![Neu](../assets/new.svg)<!-- Issue PAY-3950 --> Händler können jetzt die [Funktion &quot;Sofortiger Kauf - Commerce&quot;](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) für ihre Geschäfte, damit die Käufer [ungültige Kreditkarteninformationen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html)), um den Checkout zu beschleunigen.
+
 ## v1.4.1
 
 _14. Oktober 2022_
 
-![Neu](../assets/new.svg)<!-- Issue PAY-3766 --> Wenn die Zahlungsmethode eines Kunden abgelehnt wird, ist die sichtbare Fehlermeldung beschreibender. Es empfiehlt dem Kunden, die Zahlungsinformationen erneut einzugeben und es erneut zu versuchen, eine andere Zahlungsmethode auszuprobieren oder seine Bank über die Ablehnung der Transaktion zu kontaktieren.
+![Fehlerbehebung](../assets/fix.svg)<!-- Issue PAY-3766 --> Wenn die Zahlungsmethode eines Kunden abgelehnt wird, ist die sichtbare Fehlermeldung beschreibender. Es empfiehlt dem Kunden, die Zahlungsinformationen erneut einzugeben und es erneut zu versuchen, eine andere Zahlungsmethode auszuprobieren oder seine Bank über die Ablehnung der Transaktion zu kontaktieren.
 
 ## v1.4.0
 

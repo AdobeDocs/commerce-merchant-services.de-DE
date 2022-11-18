@@ -2,9 +2,9 @@
 title: Sicherheit und Einhaltung
 description: Überprüfen Sie die Sicherheits- und Compliance-Anforderungen für Ihre Site.
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '369'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,10 @@ Merchandising kann eine [Selbstbewertungsfragebogen (SAQ)](https://www.pcisecuri
 ### Kreditkartenfelder
 
 Mit Kreditkartenfeldern werden keine PCI-regulierten Daten über Ihre Dienste weitergegeben. Diese Daten müssen nicht gespeichert oder gepflegt werden, was die PCI-Compliance-Probleme erheblich verringert.
+
+### Kartengewölbe
+
+Wenn ein Kunde [Vault- oder &quot;Save&quot;- ihre Kreditkarteninformationen](vaulting.md) für zukünftige Käufe in Ihren Geschäften werden nur minimale Kreditkarteninformationen für den Käufer freigegeben (letzte vierstellige Zahl, Ablaufdatum der Karte und Marke der Karte). Kreditkarteninformationen werden beim Zahlungsdienstleister gespeichert. Wenn eine Karte abläuft oder sie die Informationen nicht mehr speichern müssen, können sie dieses Token löschen, damit die Informationen nicht mehr vom Zahlungsdienstleister gespeichert werden.
 
 ### PayPal Smart-Schaltflächen
 

@@ -2,9 +2,9 @@
 title: Zahlungsoptionen
 description: Legen Sie die Zahlungsoptionen fest, um die für Ihre Store-Kunden verfügbaren Methoden anzupassen.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: c7afa798096e07409fb36a3d08f7e5b2a5ce40db
+source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '1001'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,8 @@ Je nachdem, wo Sie sich im Checkout-Prozess befinden, gibt es für jede Zahlungs
 ## [!UICONTROL Credit Card Fields]
 
 [!UICONTROL Credit Card Fields] bieten einen einfachen und sicheren Checkout für Kreditkarten- oder Debitkartenzahlmethoden. Wenn ein Kunde mit Kreditkartenfeldern zur Kasse geht, gibt er seinen Namen, seine Rechnungsadresse sowie seine Kredit- oder Debitkarteninformationen ein, um seine Bestellung aufzugeben. Ihre Kundeninformationen werden während der Kaufsitzung sicher verwendet, um sie nahtlos durch den Checkout-Fluss zu führen.
+
+Aktivieren [Kreditkartenausfall](#vaulting) für Ihre Geschäfte, damit die Käufer ihre Kreditkarteninformationen für einen schnellen Checkout zu einem späteren Zeitpunkt überprüfen (speichern) können.
 
 Sie können [!UICONTROL Credit Card Fields] in der Store-Konfiguration oder der Zahlungsdienst-Startseite. Siehe [Einstellungen](settings.md#credit-card-fields) für weitere Informationen.
 
@@ -104,6 +106,12 @@ Wenn ein Kunde direkt von der Produktseite aus mit PayPal auscheckt oder [!DNL P
 Wenn der Kunde die Bestellung storniert, wird der Artikel auf der aktuellen Produktseite zum Warenkorb des Kunden hinzugefügt, zusammen mit allen anderen Artikeln im Warenkorb. Mit dieser Funktion kann der Kunde den Artikel, den er gerade anzeigt, schnell kaufen und gleichzeitig alle anderen Artikel beibehalten, die er zuvor beim Durchsuchen von Produkten zum Warenkorb hinzugefügt hat.
 
 Wenn ein Kunde von der Produktseite aus in den Checkout-Fluss wechselt, wird die Checkout-Seite vereinfacht. In der Ansicht werden nur die bestellbaren Daten und Optionen angezeigt.
+
+## Kreditkartenausnahme
+
+Käufer können ihre Kreditkarteninformationen für zukünftige Käufe auf der Website (alle Geschäfte innerhalb desselben Händlers-Kontos) verwerten oder &quot;speichern&quot;.
+
+Siehe [Kreditkartenausnahme](vaulting.md) für weitere Informationen.
 
 ## Sicherheit
 

@@ -3,10 +3,10 @@ user-guide-title: '[!DNL Payment Services] Handbuch'
 user-guide-description: In diesem Handbuch finden Sie detaillierte Informationen zum Installieren und Konfigurieren von [!DNL Payment Services] für Ihre [!DNL Adobe Commerce] oder [!DNL Magento Open Source] speichern.
 breadcrumb-title: '[!DNL Payment Services] Handbuch'
 index: true
-source-git-commit: 1186b4e52f1d613332a7862c58f482c2591e29a8
+source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
 workflow-type: tm+mt
-source-wordcount: '73'
-ht-degree: 4%
+source-wordcount: '79'
+ht-degree: 3%
 
 ---
 
@@ -16,7 +16,9 @@ ht-degree: 4%
 - [Guide - Übersicht](guide-overview.md)
 - [Einführung in [!DNL Payment Services]](overview.md)
 - [Versionshinweise](release-notes.md)
-- [Zahlungsoptionen](payments-options.md)
+- Zahlungen und Kasse {#payments-checkout}
+   - [Zahlungsoptionen](payments-options.md)
+   - [Kreditkartenausnahme](vaulting.md)
 - Onboard [!DNL Payment Services] {#get-started}
    - [Onboarding-Übersicht](onboard.md)
    - [Installieren Sie die [!DNL Payment Services] Erweiterung](install.md)

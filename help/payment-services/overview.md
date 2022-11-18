@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie installieren und verwenden [!DNL Payment Serv
 role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
-source-git-commit: 3f753f6a91c9f2c29def90d323c004a689056e71
+source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,7 @@ Ob Sie ein kleines Unternehmen, ein mittelständisches Unternehmen oder ein gro�
 * [**Zahlungsoptionen**](payments-options.md)—Legen Sie die Zahlungsoptionen fest, um die für Ihre Store- (oder Multistore-) Kunden verfügbaren Methoden anzupassen.
 * **Finanzberichte zum Cashflow-Management**—Synchronisieren [Zahlungsdetails](order-payment-status.md) mit Bestellungen, die eine vollständige Transparenz des verarbeiteten Volumens, des Zahlungsbilds und der detaillierten Informationen gewährleisten [Berichterstellung auf Transaktionsebene](payouts.md) zur finanziellen Aussöhnung.
 * **Transparente Preisgestaltung**—Die Preise sind klar und im Voraus festgelegt. Was du siehst ist, was du bekommst.
+* **Effizientes Checkout-Erlebnis**—Entfernen Sie alle Hindernisse für einen schnellen und einfachen Checkout und erstellen Sie treue Kunden mit [Kartengewölbe](https://experienceleague-review.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html) und [Sofortiger Kauf](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) (standardmäßig für Adobe Commerce aktiviert).
 
 ## Verfügbarkeit
 

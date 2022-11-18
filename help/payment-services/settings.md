@@ -4,9 +4,9 @@ description: Nach der Installation können Sie [!DNL Payment Services] in der St
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 6c14f062336926ead7e0ce285fb4251586698240
+source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1778'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Sie können [!DNL Payment Services] entsprechend Ihren Anforderungen mithilfe hilfreicher Einstellungen im [!DNL Payment Services] Home.
 
-So konfigurieren Sie [!DNL Payment Services] für [!DNL Adobe Commerce] und [!DNL Magento Open Source] click **[!UICONTROL Settings]**. Diese Konfigurationsoptionen gelten nur für die Umgebung, die im _[!UICONTROL Payment mode]_des[_ Allgemein _Konfigurationsoptionen](#general-configuration-options).
+So konfigurieren Sie [!DNL Payment Services] für [!DNL Adobe Commerce] und [!DNL Magento Open Source] click **[!UICONTROL Settings]**. Diese Konfigurationsoptionen gelten nur für die Umgebung, die im _[!UICONTROL Payment mode]_des[_ Allgemein _Konfigurationsoptionen](#configure-general-settings).
 
 Informationen zur Konfiguration mehrerer Stores oder Legacy finden Sie unter [In Admin konfigurieren](configure-admin.md).
 
@@ -65,12 +65,12 @@ Sie können eine [!UICONTROL Soft Descriptor] zu Ihrer Website(s) oder Konfigura
 1. Klicken **[!UICONTROL Save]**.
 1. So erstellen Sie einen anderen Soft-Deskriptor als den konfigurierten Standard für eine Website- oder Store-Ansicht:
    1. Wählen Sie die Website- oder Store-Ansicht im **[!UICONTROL Scope]** Dropdown-Menü, für das Sie einen weichen Deskriptor erstellen möchten.
-   1. Umschalten *off* **[!UICONTROL Use website]** (oder **[!UICONTROL Use default]**, abhängig vom ausgewählten Bereich).
+   1. Umschalten _off_ **[!UICONTROL Use website]** (oder **[!UICONTROL Use default]**, abhängig vom ausgewählten Bereich).
    1. Fügen Sie Ihren benutzerdefinierten Text in das Textfeld ein.
    1. Klicken **[!UICONTROL Save]**.
-1. So aktivieren Sie für eine Website oder eine Store-Ansicht den standardmäßigen Softdeskriptor *oder* der für die übergeordnete Website verwendete Softdeskriptor:
+1. So aktivieren Sie für eine Website oder eine Store-Ansicht den standardmäßigen Softdeskriptor _oder_ der für die übergeordnete Website verwendete Softdeskriptor:
    1. Wählen Sie die Website- oder Store-Ansicht im **[!UICONTROL Scope]** Dropdown-Menü, für das Sie einen vorhandenen Soft-Deskriptor aktivieren möchten.
-   1. Umschalten *on* **[!UICONTROL Use website]** (oder **[!UICONTROL Use default]**, abhängig vom ausgewählten Bereich).
+   1. Umschalten _on_ **[!UICONTROL Use website]** (oder **[!UICONTROL Use default]** je nach ausgewähltem Bereich).
    1. Klicken **[!UICONTROL Save]**.
 
    Wenn Sie versuchen, von dieser Ansicht weg zu navigieren, ohne Ihre Änderungen zu speichern, wird ein Modal angezeigt, in dem Sie aufgefordert werden, Änderungen zu verwerfen, die Bearbeitung fortzusetzen oder Änderungen zu speichern.
@@ -89,16 +89,28 @@ Sie können eine [!UICONTROL Soft Descriptor] zu Ihrer Website(s) oder Konfigura
 
 Nachdem Sie Zahlungsdienste für Ihre Website aktiviert haben, können Sie die Standardeinstellungen für Zahlungsfunktionen und die Anzeige der Storefront ändern.
 
+1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+
+   ![Startansicht](assets/payment-services-menu-small.png)
+
+1. Klicken **[!UICONTROL Settings]**. Siehe [Einführung in [!DNL Payment Services] Startseite](payments-home.md) für weitere Informationen.
+1. Zahlungsoptionen konfigurieren für [Kreditkarten](#credit-card-fields), [Zahlungsschaltflächen](#payment-buttons)und [Schaltflächenstil](#button-style), entsprechend den folgenden Abschnitten.
+
 ### Kreditkartenfelder
 
 Die _[!UICONTROL Credit Card Fields]_Einstellungen bieten eine einfache und sichere Checkout-Option für Kreditkarten- oder Debitkartenzahlmethoden.
 
 Siehe [Zahlungsoptionen](payments-options.md#credit-card-fields) für weitere Informationen.
 
+1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+
+   ![Startansicht](assets/payment-services-menu-small.png)
+
 1. Wählen Sie die Store-Ansicht im **[!UICONTROL Scope]** Dropdown-Menü, für das Sie eine Zahlungsmethode aktivieren möchten.
 1. Um den Namen der Zahlungsmethode zu ändern, die beim Checkout angezeigt wird, bearbeiten Sie den Wert im **[!UICONTROL Checkout title]** -Feld.
 1. nach [die Zahlungsaktion festlegen](production.md#set-payment-services-as-payment-method), Umschalten **[!UICONTROL Payment action]** nach `Authorize` oder `Authorize and Capture`.
 1. Um Kreditkartenfelder auf der Checkout-Seite zu aktivieren oder zu deaktivieren, aktivieren Sie die **[!UICONTROL Show on checkout page]** auswählen.
+1. So aktivieren oder deaktivieren Sie [Kartengewölbe](#card-vaulting), um die **[!UICONTROL Vault enabled]** auswählen.
 1. Um den Debug-Modus zu aktivieren bzw. zu deaktivieren, müssen Sie die **[!UICONTROL Debug Mode]** auswählen.
 1. Klicken **[!UICONTROL Save]**.
 
@@ -113,6 +125,7 @@ Siehe [Zahlungsoptionen](payments-options.md#credit-card-fields) für weitere In
 | [!UICONTROL Title] | Store-Ansicht | Fügen Sie den Text für die Anzeige als Titel für diese Zahlungsoption in der Ansicht Zahlungsmethode während des Checkouts hinzu. Optionen: [!UICONTROL text field] |
 | [!UICONTROL Payment Action] | website | Die [Zahlungsaktion](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target=&quot;_blank&quot;} für die angegebene Zahlungsmethode. Optionen: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Show on checkout page] | website | Aktivieren oder deaktivieren Sie Kreditkartenfelder, die auf der Checkout-Seite angezeigt werden. Optionen: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Vault enabled] | website | Aktivieren oder deaktivieren Sie die Kreditkartenüberprüfung. Optionen: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Debug Mode] | website | Aktivieren oder deaktivieren Sie den Debug-Modus. Optionen: [!UICONTROL Yes] / [!UICONTROL No] |
 
 ### Zahlungsschaltflächen
@@ -136,10 +149,10 @@ Sie können die Zahlungsoptionen für PayPal-Smart-Schaltflächen aktivieren und
 
       >[!NOTE]
       >
-      > Verwenden von Apple Pay You [muss über ein Apple-Entwicklerkonto verfügen](test-validate.md#test-in-sandbox-environment) (mit gefälschten Kreditkarten- und Rechnungsinformationen), um sie zu testen. Wenn Sie bereit sind, Apple Pay in Sandbox zu verwenden *oder* Produktionsmodus nach Abschluss [Tests und Validierung](test-validate.md)Wenden Sie sich an Ihren Vertriebsmitarbeiter, um ihn für Ihre Live-Stores zu aktivieren.
+      > Verwenden von Apple Pay You [muss über ein Apple-Entwicklerkonto verfügen](test-validate.md#test-in-sandbox-environment) (mit gefälschten Kreditkarten- und Rechnungsinformationen), um sie zu testen. Wenn Sie bereit sind, Apple Pay in Sandbox zu verwenden _oder_ Produktionsmodus nach Abschluss [Tests und Validierung](test-validate.md)Wenden Sie sich an Ihren Vertriebsmitarbeiter, um ihn für Ihre Live-Stores zu aktivieren.
 
       Wenn Sie die Sichtbarkeit auf die Zahlungsschaltflächen oder die PayPal PayPay-später-Nachricht aktivieren/deaktivieren, wird unten auf der Seite &quot;Einstellungen&quot;eine visuelle Vorschau dieser Konfiguration angezeigt.
-Git
+
 1. Um den Debug-Modus zu aktivieren, schalten Sie die **[!UICONTROL Debug Mode]** auswählen.
 1. Klicken **[!UICONTROL Save]**.
 
@@ -212,11 +225,18 @@ Wenn ein beliebiger Cache-Typ in der Tabelle &quot;Cache Management&quot;über e
 
 Um sicherzustellen, dass Ihr Store die richtige Konfiguration anzeigt, werden regelmäßig [Cache leeren](https://docs.magento.com/user-guide/system/cache-management.html).
 
+## Kartengewölbe
+
+Sie können Funktionen aktivieren, mit denen Ihre Kunden ihre Kreditkarteninformationen in ihrem Mein Konto für zukünftige Käufe verwenden oder speichern können.
+
+Aktivieren oder deaktivieren Sie die Kartenüberprüfung im [Einstellungen für Kreditkartenfelder](#credit-card-fields).
+
+Siehe [Kreditkartenausnahme](vaulting.md) für weitere Informationen zur Validierung.
+
 ## Verwenden mehrerer PayPal-Konten
 
-In den Zahlungsdiensten können Sie mehrere PayPal-Konten innerhalb von **one** Händlerkonto auf der Website-Ebene. Wenn Sie beispielsweise Ihre Geschäfte in mehreren Ländern betreiben (die unterschiedliche [Währungen](https://docs.magento.com/user-guide/stores/currency.html)) oder möchten Adobe Commerce für einige Teile Ihres Unternehmens verwenden, jedoch nicht *all* können Sie Ihr Händlerkonto so einrichten, dass mehrere PayPal-Konten verwendet werden.
+In den Zahlungsdiensten können Sie mehrere PayPal-Konten innerhalb von **one** Händlerkonto auf der Website-Ebene. Wenn Sie beispielsweise Ihre Geschäfte in mehreren Ländern betreiben (die unterschiedliche [Währungen](https://docs.magento.com/user-guide/stores/currency.html)) oder möchten Adobe Commerce für einige Teile Ihres Unternehmens verwenden, jedoch nicht _all_ können Sie Ihr Händlerkonto so einrichten, dass mehrere PayPal-Konten verwendet werden.
 
 Siehe [Site-, Store- und Ansichtsbereich](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) für weitere Informationen zur Hierarchie von Websites, Stores und Store-Ansichten.
 
 Ihr Vertriebsmitarbeiter kann eine neue [Umfang](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) für Ihr Händlerkonto und die zusätzliche Site mit PayPal einbinden, sodass alle PayPal-Schaltflächen, die Sie konfigurieren, auf Ihrer Site angezeigt werden. Wenden Sie sich an Ihren Vertriebsmitarbeiter, um Unterstützung bei der Verwendung mehrerer PayPal-Konten für Ihre Websites zu erhalten.
-
