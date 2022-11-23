@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] Versionshinweise"
 description: Informationen zu allen [!DNL Payment Services] veröffentlicht.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
+source-git-commit: 955dc08e6b67acc18380248b2ddf1b8f8c70ec03
 workflow-type: tm+mt
-source-wordcount: '1286'
+source-wordcount: '1334'
 ht-degree: 0%
 
 ---
@@ -52,6 +52,14 @@ _28. Juni 2021_
 ![Neu](../assets/new.svg)<!-- Issue PAY-2761 --> Sie können jetzt die Daten anpassen, die im [Bestellstatusbericht](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) und [Zahlungsbericht](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) durch Einblenden oder Ausblenden von Spalten mithilfe des Steuerelements Spalteneinstellungen.
 
 +++
+
+## v1.5.1
+
+_23. November 2022_
+
+![Neu](../assets/new.svg)<!-- Issue PAY-3923 --> Zahlungsdienste enthalten jetzt die Versionsnummer in der Kopfzeile des Benutzeragenten, damit Anfragen nicht verwendete Endpunkte verfolgen, filtern oder veralteten können.
+
+![Problem behoben](../assets/fix.svg)<!-- Issue PAY-3968 --> Die Zahlungsdienste zeigen jetzt korrekt Bestelldaten an, wenn eine Bestellung über Smart-Schaltflächen von der Produktseite aus platziert wird.
 
 ## v1.5.0
 
