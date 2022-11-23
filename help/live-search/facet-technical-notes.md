@@ -1,10 +1,10 @@
 ---
-title: '"Facettentechnische Hinweise"'
-description: '"Technische Hinweise zur Verwendung von [!DNL Live Search] Facetten."'
+title: "Facettentechnische Hinweise"
+description: "Technische Hinweise zur Verwendung von [!DNL Live Search] Facetten."
 exl-id: 37982610-0ff7-48b7-b088-be7d2eff8a57
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 1a55f2fb3d56183e5e73d172ebdc40f340e4d520
 workflow-type: tm+mt
-source-wordcount: '112'
+source-wordcount: '117'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Faceting ist eine leistungsstarke Filtermethode, die mehrere Dimensionen durchsuchbarer statischer und dynamischer Attributwerte als Suchkriterien verwendet.
 
-[!DNL Live Search] verwendet die `productSearch` Abfrage, die Facetten und andere Daten zurückgibt, die spezifisch für [!DNL Live Search]. Siehe [`productSearch` Abfrage](https://devdocs.magento.com/live-search/product-search.html) für Codebeispiele.
+[!DNL Live Search] verwendet die `productSearch` Abfrage, die Facetten und andere Daten zurückgibt, die spezifisch für [!DNL Live Search]. Siehe [`productSearch` Abfrage](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) für Codebeispiele.
 
 ## Facettenaggregation
 

@@ -2,7 +2,7 @@
 title: "Onboarding-Übersicht"
 description: "[!DNL Live Search] Onboarding-Fluss, Systemanforderungen, Grenzen und Einschränkungen"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: 8e541924d6a69f963e150057b82e682e1e5d3801
+source-git-commit: 1a55f2fb3d56183e5e73d172ebdc40f340e4d520
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Zu diesem Zeitpunkt wird die [!DNL Live Search] Die Such-/Kategorie-API weist di
 ### Abfrage
 
 * [!DNL Live Search] hat keinen Zugriff auf die vollständige Taxonomie des Kategoriebaums, wodurch einige Navigationsszenarien mit Ebenen über die Reichweite hinausgehen.
-* [!DNL Live Search] verwendet einen eindeutigen GraphQL-Endpunkt für Abfragen, um Funktionen wie intelligente Facettierung und Suche nach dem Typ zu unterstützen. Obwohl ähnlich der [Magento GraphQL-API](https://devdocs.magento.com/guides/v2.4/graphql), gibt es einige Unterschiede und einige Felder sind derzeit möglicherweise nicht vollständig kompatibel.
+* [!DNL Live Search] verwendet einen eindeutigen GraphQL-Endpunkt für Abfragen, um Funktionen wie intelligente Facettierung und Suche nach dem Typ zu unterstützen. Obwohl ähnlich der [Magento GraphQL-API](https://developer.adobe.com/commerce/webapi/graphql/), gibt es einige Unterschiede und einige Felder sind derzeit möglicherweise nicht vollständig kompatibel.
 
 ### Regeln
 
