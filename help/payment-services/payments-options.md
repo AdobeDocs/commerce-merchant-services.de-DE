@@ -2,9 +2,9 @@
 title: Zahlungsoptionen
 description: Legen Sie die Zahlungsoptionen fest, um die für Ihre Store-Kunden verfügbaren Methoden anzupassen.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
+source-git-commit: e3270098edff3931b02a9803c8db4b3e9c75d636
 workflow-type: tm+mt
-source-wordcount: '1001'
+source-wordcount: '1002'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Die [!DNL Apple Pay] -Schaltfläche ist von der Produktseite aus sichtbar, in de
 
 >[!NOTE]
 >
-> Wenden Sie sich zur Verwendung von Apple Pay an Ihren Vertriebsmitarbeiter, um ihn für Ihre Live-Stores zu aktivieren.
+> Wenden Sie sich zur Verwendung von Apple Pay an Ihren Kundenbetreuer oder Kundenbetreuer, um ihn für Ihre Live Stores zu aktivieren.
 
 ### [!DNL Pay Later] button
 
