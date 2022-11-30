@@ -2,9 +2,9 @@
 title: '[!DNL Quick Checkout] reporting'
 description: '''[!DNL Quick Checkout] bietet umfassende Berichtsinformationen."'
 exl-id: 91c687f4-9953-4c2f-b240-73430603e6a1
-source-git-commit: dd9eab0d6b88a6c723ec10b882a4bb668d66973f
+source-git-commit: bdfac90aa221f39dfc53eee833c473c7dcb0a042
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '294'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
-> Sie müssen [**Checkout-Tracking**](../quick-checkout/settings-quick-checkout.md) in Ihrem Admin-Bedienfeld, damit Adobe Commerce Checkout-Informationen für Bolt freigeben kann. Standardmäßig ist diese Konfigurationsoption auf **Ja**. Wenn diese Option deaktiviert ist (setzen Sie auf **Nein**), wirkt sich dies auf die Berichterstellung aus.
+> Um die Freigabe von Checkout-Informationen für Adobe Commerce mit Bolt zu ermöglichen, muss die [**Checkout-Tracking**](../quick-checkout/settings-quick-checkout.md)  -Einstellung in Admin aktiviert werden. Standardmäßig ist diese Konfigurationsoption auf **Ja**. Wenn diese Option auf **Nein**, wirkt sich dies auf die Berichterstellung aus. Bolt aktualisiert die Berichtsinformationen einmal täglich um 03:00 Uhr Eastern Standard Time (EST).
 
 ## Übersichtsberichte
 
