@@ -2,9 +2,9 @@
 title: '[!DNL Quick Checkout] Versionshinweise'
 description: Informationen zu allen [!DNL Quick Checkout] veröffentlicht.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: d28e8ccd4362b4e32b2eb8c6e1faf38d7c99a4c2
+source-git-commit: 1f2305df7566cd77a6be161cc9d1265c0291171c
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1040'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,14 @@ Siehe [Verfügbarkeit](https://devdocs.magento.com/release/availability.html) in
 In diesen Versionshinweisen werden Funktionsänderungen und -korrekturen beschrieben, die außerhalb der regulären Versionen der versionierten Funktionen für das Admin-Bedienfeld veröffentlicht wurden.
 
 +++Admin-Bedienfeldaktualisierungen
+
+_30. November 2022_
+
+![Neu](../assets/new.svg)<!-- Issue BOLT-502 --> Nun, die [Berichterstellung](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html) enthält eine neue Vorgabe vom Typ &quot;Letztes Jahr&quot;.
+
+![Neu](../assets/new.svg)<!-- Issue BOLT-471 --> Verbesserungen der Benutzererfahrung in [!DNL Quick Checkout] Admin-Bereich zeigt weitere Informationen in [QuickInfos](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html).
+
+![Problem behoben](../assets/fix.svg)<!-- Issue BOLT-514 --> Verbesserungen der Benutzererfahrung in [!DNL Quick Checkout] Im Admin-Bedienfeld werden die korrekten Gesamtbestellzahlen, die Farbkonsistenz und die korrekten Legenden für alle Diagramme angezeigt.
 
 _2. November 2022_
 
@@ -52,6 +60,16 @@ _5. Oktober 2022_
 ![Problem behoben](../assets/fix.svg)<!-- Issue BOLT-369 --> Nun, die [[!DNL Quick Checkout] Admin Panel](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) zeigt die App-Version in der Fußzeile an.
 
 +++
+
+## v1.4.0
+
+_30. November 2022_
+
+![Neu](../assets/new.svg)<!-- Issue BOLT-513 --> Wenn jetzt ein Adobe Commerce-Kunde während des Checkout-Prozesses beim Store angemeldet ist und über ein Bolt-Konto verfügt, wird eine Option angezeigt, sich beim Bolt-Konto des Käufers anzumelden.
+
+![Neu](../assets/new.svg)<!-- Issue BOLT-512 --> Eine neue Konfiguration erkennt automatisch, ob angemeldete Käufer auch in Bolt angemeldet werden können.
+
+![Neu](../assets/new.svg)<!-- Issue BOLT-480 --> Eine neue Konfiguration im [!DNL Quick Checkout] Mit dem Admin Panel können Sie den standardmäßigen Navigationsfluss in **Versand** Seite, sobald sich ein Bolt-Kunde anmeldet. Standardmäßig ist sie für die **Zahlungen** Seite.
 
 ## v1.3.0
 

@@ -2,9 +2,9 @@
 title: "Checkout-Fluss für einen Adobe Commerce-Benutzer"
 description: "Überblick über die [!DNL Quick Checkout] Fluss für einen Adobe Commerce-Benutzer."
 exl-id: 085e393b-15f6-4d5a-a04d-927b1f95b74e
-source-git-commit: d28e8ccd4362b4e32b2eb8c6e1faf38d7c99a4c2
+source-git-commit: 1f2305df7566cd77a6be161cc9d1265c0291171c
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '323'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Wenn eine [!DNL Bolt] -Konto beim Checkout gefunden werden, können Käufer ihre
 >
 > Das Popup &quot;Bolt OTP&quot;wird nur angezeigt, wenn sich der Käufer auf der Checkout-Seite befindet. Der Käufer kann sich von der Anmeldung bei Bolt abmelden, indem er dieses Popup-Fenster schließt.
 
-Wenn der Käufer vor dem Checkout bei Adobe Commerce angemeldet ist, wird die [!DNL Bolt] Das OTP-Popup wird beim Checkout nicht angezeigt.
+Wenn der Käufer vor dem Checkout bei Adobe Commerce angemeldet ist, wird die [!DNL Bolt] Das OTP-Popup wird beim Checkout nicht angezeigt, aber es erscheint eine Meldung, die den Käufer anweist, sich anzumelden, um auf seine &quot;Bolt Wallet&quot; zuzugreifen.
 
 Wenn Sie Probleme haben, wenn Sie eine Bestellung als bestehenden Adobe Commerce-Benutzer aufgeben, lesen Sie den Abschnitt [Fehlerbehebung bei Problemen mit der Schnellüberprüfung](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/quick-checkout-issues.html) Artikel im Adobe Commerce Help Center.
 

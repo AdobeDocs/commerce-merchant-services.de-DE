@@ -2,7 +2,7 @@
 title: "Onboard the [!DNL Quick Checkout] für Adobe Commerce-Erweiterung"
 description: "Erfahren Sie, wie die [!DNL Quick Checkout] kann von Ihrer Adobe Commerce-Instanz profitieren und zeigen, wie Sie die Erweiterung erfolgreich integrieren und einrichten können."
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: d28e8ccd4362b4e32b2eb8c6e1faf38d7c99a4c2
+source-git-commit: 1f2305df7566cd77a6be161cc9d1265c0291171c
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -132,11 +132,23 @@ So prüfen Sie, ob der Käufer über eine [!DNL Bolt] Konto:
 1. Ändern Sie den Umfang in **Hauptwebsite**.
 1. Klicken Sie auf **Callback-URL konfigurieren** Schaltfläche. Dies ermöglicht [!DNL Bolt] um festzustellen, ob der Käufer über ein Konto verfügt. Ist dies der Fall, wird das OTP-Popup angezeigt.
 
->[!CAUTION]
->
-> Wechsel des Umfangs zum **Hauptwebsite** stellt sicher, dass die richtige URL festgelegt ist. Jede Website kann über mehrere Domänen verfügen.
+   >[!CAUTION]
+   >
+   > Wechsel des Umfangs zum **Hauptwebsite** stellt sicher, dass die richtige URL festgelegt ist. Jede Website kann über mehrere Domänen verfügen.
 
 Siehe [Site-, Store- und Ansichtsbereich](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings)Thema {target=&quot;_blank&quot;} für weitere Informationen zu Bereichen in Adobe Commerce.
+
+## Diensteinstellungen konfigurieren
+
+![Quick Checkout](assets/service-settings.png)
+
+1. Satz **Checkout-Tracking aktivieren** nach `Yes`.
+
+   >[!CAUTION]
+   >
+   > Die Deaktivierung dieser Option wirkt sich auf die Berichterstellung aus, da Adobe Commerce Kasse-Tracking-Informationen nicht mit Bolt teilen darf.
+
+1. Wählen Sie die **Nächste Phase nach der Anmeldung** Option, um den Navigationsfluss zu ändern, nachdem sich der Kunde angemeldet hat. Standardmäßig ist der Wert auf **Zahlungen** Seite.
 
 ## Hilfe erhalten
 
