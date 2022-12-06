@@ -2,9 +2,9 @@
 title: Onboarding und Installation
 description: Erfahren Sie, wie Sie installieren [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 4604aacc19d7740c63b39134bd9f4c146479ac8f
+source-git-commit: fd1c6c385efb2f0e632f74959e75b3b7240b7ada
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -114,15 +114,25 @@ Verwenden Sie diese Methode, um die [!DNL Catalog Service] Erweiterung für eine
    bin/magento cache:clean
    ```
 
+## Konfigurieren des Katalogexports
+
+Nach der Installation [!DNL Catalog Service], müssen Sie die [Commerce Services Connector](../landing/saas.md) durch Angabe von API-Schlüsseln und Auswahl eines SaaS-Datenspeichers.
+
+So stellen Sie sicher, dass der Katalogexport ordnungsgemäß ausgeführt wird:
+
+- Vergewissern Sie sich, dass [Cron-Aufträge](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) laufen.
+- Überprüfen Sie die [Indexer](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) laufen.
+- Stellen Sie sicher, dass `Catalog Attributes Feed`, `Product Feed`, `Product Overrides Feed`und `Product Variant Feed` Indexer werden auf `Update by Schedule`.
+
 ## Catalog Service und API-Mesh
 
-Die [API-Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) ermöglicht es Entwicklern, mithilfe von Adobe IO private oder Drittanbieter-APIs und andere Schnittstellen mit Adobe-Produkten zu integrieren.
+Die [API-Mesh für Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) ermöglicht es Entwicklern, mithilfe von Adobe IO private oder Drittanbieter-APIs und andere Schnittstellen mit Adobe-Produkten zu integrieren.
 
 Der erste Schritt zur Verwendung des API-Meshs mit dem Catalog Service besteht darin, API-Mesh mit Ihrer Instanz zu verbinden. Detaillierte Anweisungen finden Sie unter [Erstellen eines Gitters](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/).
 
 Um das Setup abzuschließen, benötigen Sie die [Adobe IO CLI-Paket](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) installiert.
 
-Sobald der Mesh auf Adobe IO konfiguriert ist, führen Sie den folgenden Befehl aus, um das neue Gitter zu verbinden.
+Nachdem der Mesh auf Adobe I/O konfiguriert wurde, führen Sie den folgenden Befehl aus, der einen `CommerceCatalogServiceGraph` zu Ihrem Gitter.
 
 ```bash
 aio api-mesh:source:install "CommerceCatalogServiceGraph" -f variables.json
@@ -137,17 +147,7 @@ Beispielsweise kann der API-Schlüssel in der Datei gespeichert werden:
 }
 ```
 
-Nach Ausführung dieses Befehls sollte der Catalog Service über das API-Mesh ausgeführt werden.
-
-## Konfigurieren des Katalogexports
-
-Nach der Installation [!DNL Catalog Service], müssen Sie die [Commerce Services Connector](../landing/saas.md) durch Angabe von API-Schlüsseln und Auswahl eines SaaS-Datenspeichers.
-
-So stellen Sie sicher, dass der Katalogexport ordnungsgemäß ausgeführt wird:
-
-- Vergewissern Sie sich, dass [Cron-Aufträge](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) laufen.
-- Überprüfen Sie die [Indexer](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) laufen.
-- Stellen Sie sicher, dass `Catalog Attributes Feed`, `Product Feed`, `Product Overrides Feed`und `Product Variant Feed` Indexer werden auf `Update by Schedule`.
+Nach Ausführung dieses Befehls sollte der Catalog Service über das API-Mesh ausgeführt werden. Sie können die `aio api-mesh:get` -Befehl, um die Konfiguration Ihres aktualisierten Netzwerks anzuzeigen.
 
 ## [!DNL Catalog Service] Demo
 
