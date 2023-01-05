@@ -2,9 +2,9 @@
 title: "[!DNL Live Search] Versionshinweise"
 description: "Die neuesten Versionsinformationen für [!DNL Live Search] von Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: bece7022324da4b38d3cb9b375dc0e391ffb3a88
+source-git-commit: 4566727b4e672033997491bcaf075c48e2a55cc8
 workflow-type: tm+mt
-source-wordcount: '1191'
+source-wordcount: '1004'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ Diese Versionshinweise beschreiben die neuesten Versionen von [!DNL Live Search]
 * ![Fehlerbehebung](../assets/fix.svg) - Fehlerbehebungen und Verbesserungen
 * ![Fehler](../assets/bug.svg) - Bekannte Probleme
 
-## [!DNL Live Search] 2,0,5 {#205}
+## [!DNL Live Search] 2.0.5 {#205}
 
 * Kompatibel mit Adobe Commerce (EE): 2.4.x
 * Kompatibel mit Adobe Commerce for Cloud (ECE): 2.4.x
@@ -29,14 +29,14 @@ Händler müssen die Live Search-Erweiterung Version >= 2.0.5 aktualisieren, um 
 
 Es wird empfohlen, ein Upgrade durchzuführen und zu testen, bevor Sie die Produktionsumgebung aktivieren. Erwägen Sie, die Produktionsumgebung außerhalb der Spitzenzeiten zu aktualisieren, nachdem Sie die Ergebnisse der Testumgebung überprüft haben.
 
-## [!DNL Live Search] 2,0,4 {#204}
+## [!DNL Live Search] 2.0.4 {#204}
 
 * Kompatibel mit Adobe Commerce (EE): 2.4.x
 * Kompatibel mit Adobe Commerce for Cloud (ECE): 2.4.x
 * Stabilität: Stabil
 
 * ![Neu](../assets/new.svg) - Die Live-Suche unterstützt jetzt das Filtern nach der Einstellung &quot;Nicht vorrätige Produkte anzeigen&quot;im Admin. Wenn &quot;Nicht vorrätige Produkte anzeigen&quot;auf &quot;false&quot;gesetzt ist, `inStock = true` wird zum Filter hinzugefügt.
-* ![Fehlerbehebung](../assets/fix.svg) - Zur Leistungsverbesserung wurde der Block &quot;Vorschläge&quot;aus dem Popup-Fenster &quot;Live-Suche&quot;entfernt. Die Daten werden weiterhin über GraphQL weitergeleitet, falls Sie die Funktion ersetzen möchten.
+* ![Fehlerbehebung](../assets/fix.svg) - Zur Leistungsverbesserung wurde der Block &quot;Vorschläge&quot;aus dem Popup-Fenster &quot;Live-Suche&quot;entfernt. Die Daten werden weiterhin über GraphQL übergeben, falls Sie die Funktion ersetzen möchten.
 * ![Fehlerbehebung](../assets/fix.svg) - `categories` und `categoryPath` ersetzt `categoryIds` für die Kategoriefilterung. Mehr dazu im [productSearch](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) Thema.
 * ![Fehlerbehebung](../assets/fix.svg) - Zuvor erhielt ein Benutzer, der mit einem B2B-Unternehmen verknüpft war, bei der Suche einen falschen Kundengruppen-Code. Die Live-Suche gibt jetzt den richtigen Wert zurück.
 * ![Fehlerbehebung](../assets/fix.svg) - Bisher gab die Live-Suche bei der Suche nach einem nicht vorhandenen Begriff einen Fehler zurück. Dieser Fehler wurde nun behoben.
@@ -45,7 +45,7 @@ Händler müssen die Live Search-Erweiterung Version >= 2.0.4 aktualisieren, um 
 
 Wir empfehlen Benutzern, ein Upgrade durchzuführen und zu testen, bevor sie zur Produktion wechseln. Erwägen Sie, die Produktionsumgebung außerhalb der Spitzenzeiten zu aktualisieren, nachdem Sie die Ergebnisse der Testumgebung überprüft haben.
 
-## [!DNL Live Search] 2,0,3 {#203}
+## [!DNL Live Search] 2.0.3 {#203}
 
 * Kompatibel mit Adobe Commerce (EE): 2.4.x
 * Kompatibel mit Adobe Commerce for Cloud (ECE): 2.4.x
@@ -57,21 +57,7 @@ Händler müssen die Live Search-Erweiterung Version >= 2.0.3 aktualisieren, um 
 
 Wir empfehlen Benutzern, ein Upgrade durchzuführen und zu testen, bevor sie zur Produktion wechseln. Erwägen Sie, die Produktionsumgebung außerhalb der Spitzenzeiten zu aktualisieren, nachdem Sie die Ergebnisse der Testumgebung überprüft haben.
 
->[!NOTE]
->
->B2B-Unterstützung wird schrittweise ab dem 9. August in den Backend-Services hinzugefügt, wobei die Migration voraussichtlich Ende August abgeschlossen sein wird. Wenn die Live Search-Erweiterung nicht aktualisiert wird, funktioniert Ihre Storefront weiterhin normal, jedoch ohne B2B-Funktionen.
-
-### Bekannte Einschränkungen/Fehler:
-
-* ![Fehler](../assets/bug.svg) - Vorschläge stammen aus Produkten, die der Kundengruppe nicht angezeigt werden können.
-* ![Fehler](../assets/bug.svg) - Produkte werden nicht angezeigt, wenn sie nicht zum &quot;freigegebenen Standardkatalog&quot;hinzugefügt wurden.
-* ![Fehler](../assets/bug.svg) - Der Suchadapter rendert den Behälter &quot;Nein&quot;für boolesche Produktattribute nicht, obwohl Produkte mit dem -Attribut konfiguriert sind und der Behälter &quot;Nein&quot;in der Antwort zurückgegeben wird.
-* Während einige Produkte und Abfragen nicht-englische Ergebnisse zurückgeben können, werden mehrsprachige Abfragen derzeit nicht unterstützt.
-* B2B mit Live Search for PWA Studio ist erst verfügbar, wenn PWA Studio Unterstützung dafür hinzufügt.
-* Produktüberschreibungen und Produktattribut-Feeds können Synchronisierungsprobleme aufweisen, die die Ausführung von Administratoren erfordern `bin/magento indexer:reset` und `bin/magento indexer:reindex` , um die Synchronisierung korrekt zu wiederholen.
-* Wenn Sie die Catalog Permissions/Shared Catalog/B2B-Funktionen aktivieren oder deaktivieren, wird die `catalog_data_exporter_product_overrides` Indexer wird nicht aktualisiert und fälschlicherweise als `valid`. Verwendung `bin/magento saas:resync --feed=productOverrides` , um das Problem zu beheben.
-
-## [!DNL Live Search] 2,0 {#20}
+## [!DNL Live Search] 2.0 {#20}
 
 * Kompatibel mit Adobe Commerce (EE): 2.4.x
 * Kompatibel mit Adobe Commerce for Cloud (ECE): 2.4.x
@@ -98,7 +84,7 @@ Bestehend [!DNL Live Search] -Installationen müssen aktualisiert werden auf [!D
 * ![Fehlerbehebung](../assets/fix.svg) - Korrektur eines Fehlers, der dazu führte, dass ein Fehler auftrat, wenn [Währungssymbol](https://docs.magento.com/user-guide/stores/currency-symbols.html) (`data-currency-symbol`) verfügbar ist.
 * ![Fehlerbehebung](../assets/fix.svg) - [[!DNL Storefront popover]](storefront-popover.md) zeigt nun die [Sonderpreis](https://docs.magento.com/user-guide/catalog/product-price-special.html) (Endpreis), sofern verfügbar.
 
-## [!DNL Live Search] 1,3,0 {#130}
+## [!DNL Live Search] 1.3.0 {#130}
 
 * Kompatibel mit Adobe Commerce (EE): 2.4.x
 * Kompatibel mit Adobe Commerce for Cloud (ECE): 2.4.x
@@ -111,7 +97,7 @@ Bestehend [!DNL Live Search] -Installationen müssen aktualisiert werden auf [!D
 * ![Fehler](../assets/bug.svg) - Patch for Search Adapter handhabt doppelte Produkte.
 * ![Fehler](../assets/bug.svg) - [!DNL Live Search] unterstützt [einzelne Quelle](https://docs.magento.com/user-guide/catalog/inventory-sources.html) (physische) Inventarstandorte mit mehreren (virtuellen) [Bestände](https://docs.magento.com/user-guide/catalog/inventory-stock.html). Mehrere Inventarquellen werden derzeit nicht unterstützt.
 
-## [!DNL Live Search] 1,2,0 {#120}
+## [!DNL Live Search] 1.2.0 {#120}
 
 * Kompatibel mit Adobe Commerce (EE): 2.4.x
 * Kompatibel mit Adobe Commerce for Cloud (ECE): 2.4.x
