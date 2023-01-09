@@ -2,9 +2,9 @@
 title: Einrichten der Test-Sandbox
 description: Verwenden eines PayPal-Sandbox-Kontos zur Verwendung [!DNL Payment Services] im Testmodus.
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
-source-git-commit: ab4a2f4d432f74cb48dc4b92468305c93088593a
+source-git-commit: 3596e3e156a834e39da2105e7ac79588d1edd408
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '588'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,9 @@ Mit einem PayPal-Sandbox-Konto können Sie [!DNL Payment Services] im Testmodus.
 So schließen Sie das Onboarding einer Sandbox ab:
 
 1. Navigieren Sie zum [Seite &quot;PayPal-Entwicklerkonto&quot;](https://developer.paypal.com/developer/accounts/).
-1. Klicken **[!UICONTROL Log in to Home]** und melden Sie sich mit Ihrem vorhandenen PayPal Developer Portal-generierten Business-Sandbox-Testkonto an oder klicken Sie auf **Anmelden** , um ein Konto zu erstellen.
+1. Klicken **[!UICONTROL Log in to Dashboard]** und melden Sie sich mit Ihrem vorhandenen PayPal Developer Portal-generierten Business-Sandbox-Testkonto an oder klicken Sie auf **Anmelden** , um ein Konto zu erstellen.
 1. Erstellen Sie ein PayPal-Sandbox-Konto:
-   1. Navigieren Sie zu _[!UICONTROL SANDBOX]_>**[!UICONTROL Accounts]**.
+   1. Navigieren Sie zu _[!UICONTROL Testing Tools]_>**[!UICONTROL Sandbox Accounts]**.
    1. Klicken **[!UICONTROL Create account]**.
 
       Wenn Sie beim Sandbox PayPal-Onboarding-Prozess ein PayPal-Sandbox-Konto erstellt haben, müssen Sie [Onboarding-Sandbox zurücksetzen](#reset-your-sandbox-account) weil oder Sie Ihre E-Mail nicht überprüfen können.
