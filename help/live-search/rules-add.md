@@ -2,9 +2,9 @@
 title: "Regeln hinzufügen"
 description: "Erfahren Sie, wie Sie [!DNL Live Search] Regeln."
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: ed245e440f6db59d8eba66afeddb840420da0cf7
+source-git-commit: 941fdc25f93679593cb3c5db0d29d7a561fcce58
 workflow-type: tm+mt
-source-wordcount: '1276'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -95,7 +95,7 @@ Geben Sie dann die *Position* wo das eingeklemmte Produkt erscheinen soll. Das P
 
 Die hier eingegebenen Informationen werden im [Regeldetails](rules-workspace.md) Bereich.
 
-1. under *Details*, geben Sie einen **Name** für die Regel.
+1. under *Details*, geben Sie einen **Name** für die Regel. Alle Regelnamen müssen eindeutig sein.
 1. Kurzbeschreibung eingeben **Beschreibung** der Regel.
 1. Geben Sie die **Startdatum** und **Enddatum** , damit die Regel aktiv ist, oder wählen Sie die Daten aus dem Kalender aus.
 
@@ -154,7 +154,7 @@ Die hier eingegebenen Informationen werden im [Regeldetails](rules-workspace.md)
 
 | Feld | Beschreibung |
 |--- |--- |
-| Name | Der Name der Regel. |
+| Name | Der Name der Regel. Regelnamen müssen eindeutig sein. |
 | Startdatum | Das Startdatum der Regel, falls geplant. |
 | Enddatum | Das Enddatum der Regel, falls geplant. |
 | Beschreibung | Eine kurze Beschreibung der Regel. |
