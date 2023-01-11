@@ -2,9 +2,9 @@
 title: Implementierungsarbeitsablauf
 description: Erfahren Sie mehr über die Schritte zur erfolgreichen Implementierung [!DNL Product Recommendations] auf Ihrer Schaufensterfront.
 exl-id: 766e1191-0330-4515-9331-e45318539dc9
-source-git-commit: e7c3d1ab49ee9469e3312321f6d96446840d0778
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '558'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Wenn Sie die `magento/product-recommendations module`, aggregiert Adobe Sensei d
 
    Bereitstellen [!DNL Product Recommendations] erfordert zwei Hauptschritte [Datenquellen](type.md): Katalog und Verhaltensweisen. Da die Produktion die einzige Umgebung ist, in der die Aktionen Ihrer Kunden erfasst und analysiert werden, ist es in Ihrem Interesse, so früh wie möglich mit der Datenerfassung in der Produktion zu beginnen. [Lernen](behavioral-data.md) wie Adobe Sensei maschinelle Lernmodelle trainiert, die zu Empfehlungen mit höherer Qualität führen. Wenn Sie mit der Erfassung von Verhaltensdaten über die Produktion beginnen, können Sie [Empfehlungen abrufen](verify.md) auf diesen Produktionsdaten basieren, während sie in Nicht-Produktionsumgebungen ausgeführt werden. Anschließend können Sie verschiedene Empfehlungen testen und mit ihnen experimentieren, die anhand von in der Produktion erfassten echten Käuferdaten berechnet werden.
 
-   Um die Datenerfassung für die Produktion bereitzustellen, müssen Sie [Installieren und Konfigurieren](install-configure.md) die [!DNL Product Recommendations] -Modul durch Bereitstellung einer [API-Schlüssel](https://docs.magento.com/user-guide/system/saas.html#apikey).
+   Um die Datenerfassung für die Produktion bereitzustellen, müssen Sie [Installieren und Konfigurieren](install-configure.md) die [!DNL Product Recommendations] -Modul durch Bereitstellung einer [API-Schlüssel](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html).
 
    >[!TIP]
    >
@@ -43,7 +43,7 @@ Wenn Sie die `magento/product-recommendations module`, aggregiert Adobe Sensei d
    >
    > Durch Anpassung der Vorlage können Sie Ihr Stylesheet festlegen, überschreiben, wo eine Empfehlungseinheit auf einer Seite angezeigt wird, usw.
 
-   Siehe [Anpassen](https://devdocs.magento.com/recommendations/customize.html) in der Entwicklerdokumentation , um zu erfahren, wie Sie diesen Schritt abschließen.
+   Siehe [Anpassen](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/customize.html) in der Entwicklerdokumentation , um zu erfahren, wie Sie diesen Schritt abschließen.
 
 1. **Testen von Empfehlungen in Ihrer Nicht-Produktionsumgebung**
 

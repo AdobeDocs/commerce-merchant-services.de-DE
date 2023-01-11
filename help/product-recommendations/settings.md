@@ -2,16 +2,16 @@
 title: Einstellungen
 description: Erfahren Sie, wie Sie die Quelle Ihrer [!DNL Product Recommendations] Daten und wie visuelle Empfehlungen aktiviert werden.
 exl-id: 8c074e11-e0cb-4d55-b646-30279c79bbc2
-source-git-commit: 6d0c7c749fe90c7c204afe47446f3483d8668b53
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '411'
 ht-degree: 0%
 
 ---
 
 # Einstellungen
 
-Wenn Sie [Konfigurieren eines SaaS-Datenraums](https://docs.magento.com/user-guide/configuration/services/saas.html) für Recommendations erfasst der SaaS-Datenraum Katalogdaten und Storefront-Verhaltensdaten. [Adobe Sensei](https://www.adobe.com/sensei.html) analysiert diese Daten und berechnet Produktzuordnungen, die zur Bereitstellung von Product Recommendations verwendet werden.
+Wenn Sie [Konfigurieren eines SaaS-Datenraums](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) für Recommendations erfasst der SaaS-Datenraum Katalogdaten und Storefront-Verhaltensdaten. [Adobe Sensei](https://www.adobe.com/sensei.html) analysiert diese Daten und berechnet Produktzuordnungen, die zur Bereitstellung von Product Recommendations verwendet werden.
 
 Nicht-Produktionsumgebungen für Tests oder Staging verfügen in der Regel nicht über die Menge oder Qualität der Storefront-Verhaltensdaten, um realistische Produktempfehlungen zu erhalten. Das tatsächliche Kaufverhalten in großem Maßstab kann nur in einer Produktionsumgebung erfasst werden. Um dieses Problem zu beheben, können Sie mit Adobe Commerce Produktempfehlungen aus Ihrer Produktionsumgebung mit anderen SaaS-Datenräumen ohne Produktionsumgebung verwenden. Durch die Verwendung der tatsächlichen Storefront-Daten in einer Nicht-Produktionsumgebung können Sie die Empfehlungen, die Ihre Kunden sehen, in der Vorschau anzeigen und mit verschiedenen Empfehlungstypen und Platzierungsorten experimentieren. Recommendations aus einem anderen SaaS-Datenraum kann von Käufern in der Vorschau angezeigt, aber nicht angeklickt werden.
 

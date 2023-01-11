@@ -2,16 +2,16 @@
 title: Katalogsynchronisierung
 description: Erfahren Sie, wie Sie Produktdaten aus der [!DNL Commerce] Server zu [!DNL Commerce Services] laufend, um die Dienstleistungen auf dem neuesten Stand zu halten.
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
-source-git-commit: 68e615671f4e465d7fe89794613dbf129ae66dbf
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '861'
+source-wordcount: '864'
 ht-degree: 0%
 
 ---
 
 # Katalogsynchronisierung
 
-Adobe Commerce und Magento Open Source verwenden Indexer, um Katalogdaten in Tabellen zu kompilieren. Der Prozess wird automatisch von [events](https://docs.magento.com/user-guide/system/index-management-events.html) wie eine Änderung des Produktpreises oder des Lagerbestands.
+Adobe Commerce und Magento Open Source verwenden Indexer, um Katalogdaten in Tabellen zu kompilieren. Der Prozess wird automatisch von [events](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html#events-that-trigger-full-reindexing) wie eine Änderung des Produktpreises oder des Lagerbestands.
 
 Der Katalogsynchronisierungsprozess wird stündlich ausgeführt, um [!DNL Commerce] Dienste zur Verwendung von Katalogdaten. Die Katalogsynchronisierung exportiert Produktdaten aus der [!DNL Commerce] Server zu [!DNL Commerce] Dienstleistungen, um die Dienstleistungen auf dem neuesten Stand zu halten. Beispiel: [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) benötigt aktuelle Kataloginformationen, um Empfehlungen mit korrekten Namen, Preisen und Verfügbarkeit exakt zurückzugeben. Sie können die _Katalogsynchronisierung_ Dashboard zur Beobachtung und Verwaltung des Synchronisierungsprozesses oder der [Befehlszeilenschnittstelle](#resynccmdline) zum Trigger der Katalogsynchronisierung und der Neuindizierung von Produktdaten für die Verwendung durch [!DNL Commerce] Dienste.
 

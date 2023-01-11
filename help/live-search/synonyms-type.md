@@ -1,10 +1,10 @@
 ---
-title: '"Arten von Synonymen"'
-description: '"Einweg- und Zweiwege [!DNL Live Search] Synonyme erweitern die Definition von Keywords."'
+title: "Arten von Synonymen"
+description: "Einweg- und Zweiwege [!DNL Live Search] Synonyme erweitern die Definition von Keywords."
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
-source-git-commit: cd1b40ffb350a87ea1317be82789f702922881b9
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '516'
 ht-degree: 0%
 
 ---
@@ -53,4 +53,4 @@ Konsistent mit der Verwendung von Terminologie in Ihrem Katalog sein. Beachten S
 
 ### Keyword-Zuordnung
 
-Bei dieser Technik werden anstelle von Synonymen durchsuchbare Produktattribute verwendet, um schlüsselwortbasierte Verknüpfungen zwischen Produkten zu erstellen. Daher kann ein zugeordnetes Produkt in den Suchergebnissen eines anderen Produkts angezeigt werden. Weitere Informationen finden Sie unter [Suchergebnisse](https://docs.magento.com/user-guide/catalog/search-results.html).
+Bei dieser Technik werden anstelle von Synonymen durchsuchbare Produktattribute verwendet, um schlüsselwortbasierte Verknüpfungen zwischen Produkten zu erstellen. Daher kann ein zugeordnetes Produkt in den Suchergebnissen eines anderen Produkts angezeigt werden. Weitere Informationen finden Sie unter [Suchergebnisse](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html).

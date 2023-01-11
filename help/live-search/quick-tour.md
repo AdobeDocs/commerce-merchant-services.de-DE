@@ -1,10 +1,10 @@
 ---
-title: '"Quick Tour"'
-description: '"Machen Sie einen kurzen Überblick über [!DNL Live Search] aus der Storefront."'
+title: "Quick Tour"
+description: "Machen Sie einen kurzen Überblick über [!DNL Live Search] aus der Storefront."
 exl-id: bcb19506-6617-4c8a-83df-9d961f81e9e8
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '313'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ mit dem Schwerpunkt auf Geschwindigkeit, Relevanz und Benutzerfreundlichkeit, [!
 
 ## Suchen nach der Eingabe
 
-[!DNL Live Search] antwortet mit vorgeschlagenen Produkten und einem Miniaturbild der Top-Suchergebnisse in einer [Popover](storefront-popover.md) als Käufer Abfragen in die [Suche](https://docs.magento.com/user-guide/catalog/search-quick.html) ankreuzen. Die [Produktdetails](https://docs.magento.com/user-guide/quick-tour/product-page.html) wird angezeigt, wenn Kunden auf ein vorgeschlagenes oder vorgestelltes Produkt klicken. A _Alle anzeigen_ -Link in der Fußzeile des Popups zeigt die Seite mit den Suchergebnissen an.
+[!DNL Live Search] antwortet mit vorgeschlagenen Produkten und einem Miniaturbild der Top-Suchergebnisse in einer [Popover](storefront-popover.md) als Käufer Abfragen in die [Suche](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) ankreuzen. Die [Produktdetails](https://experienceleague.adobe.com/docs/commerce-admin/start/storefront/storefront.html#product-page) wird angezeigt, wenn Kunden auf ein vorgeschlagenes oder vorgestelltes Produkt klicken. A _Alle anzeigen_ -Link in der Fußzeile des Popups zeigt die Seite mit den Suchergebnissen an.
 
 [!DNL Live Search] gibt Ergebnisse vom Typ &quot;Suche beim Eingeben&quot;für eine Abfrage von zwei oder mehr Zeichen zurück. Bei einer teilweisen Übereinstimmung beträgt die maximale Anzahl von Zeichen pro Wort 20. Die Anzahl der Zeichen in der Abfrage kann nicht konfiguriert werden. Die folgenden Felder sind im Popover enthalten: `name`, `sku`und `category_ids`.
 

@@ -2,9 +2,9 @@
 title: "Installieren [!DNL Live Search]"
 description: "Erfahren Sie, wie Sie installieren, aktualisieren und deinstallieren [!DNL Live Search] von Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: 11f961ea7e2e01d5d9efdaf2191f25f3a1dc8878
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '1267'
+source-wordcount: '1279'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Dieses Thema enthält Anweisungen zu folgenden Aktionen:
 
 Gehen Sie wie folgt vor:
 
-1. Vergewissern Sie sich, dass [Cron-Aufträge](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html) und [Indexer](https://docs.magento.com/user-guide/system/index-management.html) laufen.
+1. Vergewissern Sie sich, dass [Cron-Aufträge](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) und [Indexer](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) laufen.
 
 1. Wählen Sie die Integrationsmethode aus, die Ihren Anforderungen entspricht, und befolgen Sie die Anweisungen.
 
@@ -68,7 +68,7 @@ In diesem Szenario werden Storefront-Vorgänge während der [!DNL Live Search] -
    >
    > Während die Daten indiziert und synchronisiert sind, sind die Such- und Kategoriedurchsuchvorgänge nicht in der Storefront verfügbar. Je nach der Größe Ihres Katalogs kann der Vorgang mindestens eine Stunde dauern `cron` läuft, um Ihre Daten zu synchronisieren [!DNL Live Search] Dienste.
 
-1. Stellen Sie sicher, dass Folgendes [Indexer](https://docs.magento.com/user-guide/system/index-management.html) auf `Update by Schedule`:
+1. Stellen Sie sicher, dass Folgendes [Indexer](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) auf `Update by Schedule`:
 
    * Produkt-Feed
    * Produktvarianten-Feed
@@ -116,7 +116,7 @@ In diesem Szenario [!DNL Elasticsearch] verwaltet vorübergehend Suchanfragen au
 
    [!DNL Elasticsearch] verwaltet weiterhin Suchanforderungen aus dem Store, während die [!DNL Live Search] -Dienst synchronisiert Katalogdaten und indiziert Produkte im Hintergrund.
 
-1. Stellen Sie sicher, dass Folgendes [Indexer](https://docs.magento.com/user-guide/system/index-management.html) auf `Update by Schedule`:
+1. Stellen Sie sicher, dass Folgendes [Indexer](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) auf `Update by Schedule`:
 
    * Produkt-Feed
    * Produktvarianten-Feed
@@ -243,14 +243,14 @@ Um auf eine Hauptversion wie 1.0.0 auf 2.0.0 zu aktualisieren, bearbeiten Sie da
 
 ## Deinstallation [!DNL Live Search] {#uninstall}
 
-Deinstallation [!DNL Live Search], siehe [Module deinstallieren](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-uninstall-mods.html).
+Deinstallation [!DNL Live Search], siehe [Module deinstallieren](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html).
 
 ## [!DNL Live Search] packages {#packages}
 
 | Paket | Beschreibung |
 |--- |--- |
-| `module-live-search` | Ermöglicht Händlern, ihre Sucheinstellungen für Facetten, Synonyme, Abfrageregeln usw. zu konfigurieren, und bietet Zugriff auf einen schreibgeschützten GraphQL-Playground zum Testen von Abfragen aus dem *Admin*. |
-| `module-live-search-adapter` | Routet Suchanforderungen von der Storefront zum [!DNL Live Search] und rendert die Ergebnisse in der Storefront. <br />- Kategoriesuche - Routen von Anforderungen aus der Storefront [obere Navigation](https://docs.magento.com/user-guide/catalog/navigation-top.html) zum Suchdienst hinzu.<br />- Globale Suche - Routen von Anfragen von der [Schnellsuche](https://docs.magento.com/user-guide/catalog/search-quick.html) in der oberen rechten Ecke des Storefront zur [!DNL Live Search] Dienst. |
+| `module-live-search` | Ermöglicht Händlern, ihre Sucheinstellungen für Facetten, Synonyme, Abfrageregeln usw. zu konfigurieren, und bietet Zugriff auf einen schreibgeschützten GraphQL-Spielplatz, auf dem Abfragen aus dem *Admin*. |
+| `module-live-search-adapter` | Routet Suchanforderungen von der Storefront zum [!DNL Live Search] und rendert die Ergebnisse in der Storefront. <br />- Kategoriesuche - Routen von Anforderungen aus der Storefront [obere Navigation](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html) zum Suchdienst hinzu.<br />- Globale Suche - Routen von Anfragen von der [Schnellsuche](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) in der oberen rechten Ecke des Storefront zur [!DNL Live Search] Dienst. |
 | `module-live-search-storefront-popover` | Ein Popup &quot;Suche beim Eingeben&quot;ersetzt die standardmäßige Schnellsuche und gibt Daten und Miniaturansichten der Top-Suchergebnisse zurück. |
 
 ## [!DNL Live Search] dependencies {#dependencies}

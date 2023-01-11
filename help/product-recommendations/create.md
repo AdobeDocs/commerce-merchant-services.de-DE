@@ -2,9 +2,9 @@
 title: Neue Empfehlung erstellen
 description: Erfahren Sie, wie Sie eine Produktempfehlungseinheit erstellen.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 5fa08429a97c9ed59a339a0eca268f99c1023b7e
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '848'
 ht-degree: 0%
 
 ---
@@ -20,11 +20,11 @@ Wenn Sie die Empfehlungseinheit aktivieren, beginnt Adobe Commerce [Daten erfass
 
 1. Im _Admin_ Seitenleiste, navigieren Sie zu **Marketing** > _Promotions_ > **Produkt-Recommendations** , um _Produkt-Recommendations_ Arbeitsbereich.
 
-1. Geben Sie die [Store-Ansicht](https://docs.magento.com/user-guide/configuration/scope.html) wo die Empfehlungen angezeigt werden sollen.
+1. Geben Sie die [Store-Ansicht](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) wo die Empfehlungen angezeigt werden sollen.
 
    >[!NOTE]
    >
-   > Die Empfehlungseinheiten für den Seitenaufbau können nur für die standardmäßige Store-Ansicht erstellt werden. Weitere Informationen zum Erstellen von Produktempfehlungen mit Page Builder finden Sie unter [Hinzufügen von Inhalten - Produkt-Recommendations](https://docs.magento.com/user-guide/cms/page-builder-add-recommendations.html).
+   > Die Empfehlungseinheiten für den Seitenaufbau können nur für die standardmäßige Store-Ansicht erstellt werden. Weitere Informationen zum Erstellen von Produktempfehlungen mit Page Builder finden Sie unter [Hinzufügen von Inhalten - Produkt-Recommendations](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html).
 
 1. Klicken **Empfehlung erstellen**.
 
@@ -37,7 +37,7 @@ Wenn Sie die Empfehlungseinheit aktivieren, beginnt Adobe Commerce [Daten erfass
    - Produktdetails
    - Warenkorb
    - Bestätigung
-   - [Page Builder](https://docs.magento.com/user-guide/cms/page-builder-add-recommendations.html)
+   - [Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html)
 
    Sie können bis zu fünf aktive Empfehlungseinheiten für jeden Seitentyp und bis zu 25 für Page Builder erstellen. Der Seitentyp ist grau ausgeblendet, wenn die Grenze erreicht ist.
 

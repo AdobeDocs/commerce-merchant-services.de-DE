@@ -1,10 +1,10 @@
 ---
-title: '"Facettentypen"'
-description: '"[!DNL Live Search] Facetten sind dynamisch und erscheinen bei Bedarf in der Filterliste."'
+title: "Facettentypen"
+description: "[!DNL Live Search] Facetten sind dynamisch und erscheinen bei Bedarf in der Filterliste."
 exl-id: 49fb7609-64b3-4ae8-928d-54c99032d919
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Zum Zeitpunkt der Abfrage [!DNL Live Search] generiert die Suchergebnisse in Gru
 
 Facets, die für die [!DNL Commerce] Storefront wird vom Suchadapter verarbeitet, der die Anforderungen weiterleitet und die Ergebnisse in der Storefront rendert. Alle [!DNL Commerce] Storefront-Facetten werden alphabetisch mit Einzelauswahl-Optionen sortiert, unabhängig vom Eingabetyp, der dem entsprechenden Attribut zugewiesen ist. Facets, die in der Storefront verfügbar sind, werden entsprechend dem aktuellen Design gerendert und spiegeln alle Anpassungen wider, die an der Präsentation der Navigation mit Ebenen vorgenommen wurden.
 
-Im Gegensatz dazu [Headless](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/webapi-vision.html) -Implementierungen werden von der API verarbeitet und unterstützen zusätzliche Optionen. Headless-Facetten können alphabetisch oder nach Anzahl sortiert werden und können über Einzel- oder Mehrfachauswahloptionen verfügen.
+Im Gegensatz dazu [Headless](https://developer.adobe.com/commerce/php/architecture/technical-vision/web-api/) -Implementierungen werden von der API verarbeitet und unterstützen zusätzliche Optionen. Headless-Facetten können alphabetisch oder nach Anzahl sortiert werden und können über Einzel- oder Mehrfachauswahloptionen verfügen.
 
 ### Typ auswählen
 
@@ -42,7 +42,7 @@ Bei Headless-Implementierungen können Facetten als `single select` oder `multi-
 
 ### Facettenbeschriftungen
 
-Für [!DNL Commerce] Storefronts, wird die Facettenbeschriftung durch die [*Attributeigenschaften*](https://docs.magento.com/user-guide/stores/attribute-product-create.html). Bei Geschäften mit mehreren Ansichten können unter zusätzliche Beschriftungen definiert werden. *Verwalten von Bezeichnungen*. Bei Headless-Implementierungen werden Beschriftungen über die [facettierte Arbeitsfläche](faceting-workspace.md).
+Für [!DNL Commerce] Storefronts, wird die Facettenbeschriftung durch die [*Attributeigenschaften*](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html). Bei Geschäften mit mehreren Ansichten können unter zusätzliche Beschriftungen definiert werden. *Verwalten von Bezeichnungen*. Bei Headless-Implementierungen werden Beschriftungen über die [facettierte Arbeitsfläche](faceting-workspace.md).
 
 ### Sortiertyp
 

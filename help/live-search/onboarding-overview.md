@@ -2,9 +2,9 @@
 title: "Onboarding-Übersicht"
 description: "[!DNL Live Search] Onboarding-Fluss, Systemanforderungen, Grenzen und Einschränkungen"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: 1a55f2fb3d56183e5e73d172ebdc40f340e4d520
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '348'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Zu diesem Zeitpunkt wird die [!DNL Live Search] Die Such-/Kategorie-API weist di
 ### Abfrage
 
 * [!DNL Live Search] hat keinen Zugriff auf die vollständige Taxonomie des Kategoriebaums, wodurch einige Navigationsszenarien mit Ebenen über die Reichweite hinausgehen.
-* [!DNL Live Search] verwendet einen eindeutigen GraphQL-Endpunkt für Abfragen, um Funktionen wie intelligente Facettierung und Suche nach dem Typ zu unterstützen. Obwohl ähnlich der [Magento GraphQL-API](https://developer.adobe.com/commerce/webapi/graphql/), gibt es einige Unterschiede und einige Felder sind derzeit möglicherweise nicht vollständig kompatibel.
+* [!DNL Live Search] verwendet einen eindeutigen GraphQL-Endpunkt für Abfragen, um Funktionen wie intelligente Facettierung und Suche nach dem eigenen Typ zu unterstützen. Obwohl ähnlich der [Magento GraphQL-API](https://developer.adobe.com/commerce/webapi/graphql/), gibt es einige Unterschiede und einige Felder sind derzeit möglicherweise nicht vollständig kompatibel.
 
 ### Regeln
 
@@ -56,12 +56,12 @@ Zu diesem Zeitpunkt wird die [!DNL Live Search] Die Such-/Kategorie-API weist di
 ### PWA Beta-Version
 
 * Die aktuelle Beta-PWA-Implementierung der Live-Suche erfordert mehr Verarbeitungszeit, um Suchergebnisse zurückzugeben, als die Live-Suche mit der nativen Commerce-Storefront.
-* Die Beta-Version von PWA für [!DNL Live Search] unterstützt nicht [Ereignisverarbeitung](https://devdocs.magento.com/shared-services/storefront-events-sdk.html).
-* Die folgenden Produktattribute werden von GraphQL nicht unterstützt, wenn sie im Zusammenhang mit der Betaversion von [PWA](https://developer.adobe.com/commerce/pwa-studio/): `description`, `name`, `short_description`
+* Die Beta-Version von PWA für [!DNL Live Search] unterstützt nicht [Ereignisverarbeitung](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/).
+* Die folgenden Produktattribute werden von GraphQL nicht unterstützt, wenn sie im Zusammenhang mit der Beta-Version von [PWA](https://developer.adobe.com/commerce/pwa-studio/): `description`, `name`, `short_description`
 
 ### Derzeit nicht unterstützt
 
-* Die [Erweiterte Suche](https://docs.magento.com/user-guide/catalog/search-advanced.html) -Modul deaktiviert ist, wenn [!DNL Live Search] installiert ist und der Link Erweiterte Suche in der Fußzeile der Storefront entfernt wird.
-* [Benutzerspezifische Preisgruppen](https://docs.magento.com/user-guide/catalog/product-price-group.html)
-* Mehrere Lagerorte, die von [MCOM](https://docs.magento.com/user-guide/mcom.html) oder anderen OMS-Erweiterungen
-* Die Produktpreise beinhalten nicht [Mehrwertsteuer](https://docs.magento.com/user-guide/tax/vat.html) (MwSt).
+* Die [Erweiterte Suche](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) -Modul deaktiviert ist, wenn [!DNL Live Search] installiert ist und der Link Erweiterte Suche in der Fußzeile der Storefront entfernt wird.
+* [Benutzerspezifische Preisgruppen](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-group.html)
+* Mehrere Lagerorte, die von [MCOM](https://experienceleague.adobe.com/docs/commerce-admin/systems/integrations/mcom.html) oder anderen OMS-Erweiterungen
+* Die Produktpreise beinhalten nicht [Mehrwertsteuer](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/vat.html) (MwSt).

@@ -1,10 +1,10 @@
 ---
 title: Test in der Staging-Umgebung
-description: Learn how to use [!DNL Product Recommendations] from your production environment in your staging environment for testing purposes.
+description: Erfahren Sie, wie Sie [!DNL Product Recommendations] aus Ihrer Produktionsumgebung in Ihrer Staging-Umgebung zu Testzwecken.
 exl-id: 178ff2aa-7821-45f7-85f1-d490d8182817
-source-git-commit: e7c3d1ab49ee9469e3312321f6d96446840d0778
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '429'
 ht-degree: 0%
 
 ---
@@ -13,36 +13,36 @@ ht-degree: 0%
 
 Bevor Sie Empfehlungen in Ihrer Produktionsumgebung bereitstellen, sollten Sie sie in einer Nicht-Produktionsumgebung testen, um sicherzustellen, dass alles wie erwartet funktioniert.
 
-[!DNL Product Recommendations] Rückkehrprodukte auf der Grundlage [Verhaltensdaten von Käufern](behavioral-data.md) von Ihrer Storefront erfasst. In einer Nicht-Produktionsumgebung verfügen Sie jedoch wahrscheinlich nicht über Verhaltensdaten von Käufern. The only recommendation type that you can test without behavioral data is `More like this`. This recommendation type does not require any input data, as it uses a direct content similarity match.
+[!DNL Product Recommendations] Rückkehrprodukte auf der Grundlage [Verhaltensdaten von Käufern](behavioral-data.md) von Ihrer Storefront erfasst. In einer Nicht-Produktionsumgebung verfügen Sie jedoch wahrscheinlich nicht über Verhaltensdaten von Käufern. Der einzige Empfehlungstyp, den Sie ohne Verhaltensdaten testen können, ist `More like this`. Für diesen Empfehlungstyp sind keine Eingabedaten erforderlich, da er eine Übereinstimmung mit der direkten Ähnlichkeit von Inhalten verwendet.
 
 Die folgenden Empfehlungstypen erfordern Verhaltensdaten:
 
 - Am häufigsten angezeigt
 - Anzeige, Anzeige,
-- Bought this, bought that
+- kaufte das, kaufte es
 
-Wie können Sie Ihre Empfehlungen in einer Nicht-Produktionsumgebung mit Verhaltensdaten testen? There are a couple of options.
+Wie können Sie Ihre Empfehlungen in einer Nicht-Produktionsumgebung mit Verhaltensdaten testen? Es gibt mehrere Möglichkeiten.
 
 ## Abrufen von Empfehlungen aus der Produktionsumgebung (empfohlen)
 
-Adobe Commerce allows you to fetch recommendations from your production environment and preview them in your non-production environment by [switching](settings.md) the SaaS data space.
+Mit Adobe Commerce können Sie Empfehlungen aus Ihrer Produktionsumgebung abrufen und in Ihrer Nicht-Produktionsumgebung von einer Vorschau anzeigen [Switching](settings.md) den SaaS-Datenraum.
 
 Um Empfehlungen aus Ihrer Produktionsumgebung abzurufen, müssen Sie Folgendes sicherstellen:
 
-- Storefront data collection is [configured and enabled](install-configure.md) on production.
-- Ihr Nicht-Produktions-Umgebungs-Katalog ist größtenteils mit dem in der Produktion vorhandenen Katalog identisch. Using similar catalogs ensures that the products returned in the recommendation units closely mimic those on production.
+- Storefront-Datenerfassung: [konfiguriert und aktiviert](install-configure.md) auf die Produktion.
+- Ihr Nicht-Produktions-Umgebungs-Katalog ist größtenteils mit dem in der Produktion vorhandenen Katalog identisch. Durch die Verwendung ähnlicher Kataloge wird sichergestellt, dass die in den Empfehlungseinheiten zurückgegebenen Produkte denen in der Produktion sehr ähnlich sind.
 
 ## Generieren von Verhaltensdaten in Nicht-Produktionsumgebungen
 
 1. Stellen Sie die `magento/product-recommendations` -Modul in eine Nicht-Produktionsumgebung übertragen, in der die Katalogdaten Ihrem Produktionskatalog ähneln.
 
-1. Verwenden Sie eine der nicht produktionsbezogenen Datenspeicherungs-IDs für [Konfiguration](https://docs.magento.com/user-guide/configuration/services/saas.html) im Admin.
+1. Verwenden Sie eine der nicht produktionsbezogenen Datenspeicherungs-IDs für [Konfiguration](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) im Admin.
 
-1. Generate the data yourself by clicking around your storefront to mimic the behavior of actual shoppers (or create an automation script). Durch Ihre Tests generieren Sie Verhaltensereignisse in Ihrer Nicht-Produktionsumgebung. Diese Ereignisse werden verwendet, um die Produktaffinitäten zu erstellen, die Empfehlungen unterstützen. für Tests, [!DNL Commerce] empfiehlt, dass Sie mit den folgenden Empfehlungstypen interagieren:
+1. Generieren Sie die Daten selbst, indem Sie auf Ihre Storefront klicken, um das Verhalten der tatsächlichen Käufer zu imitieren (oder erstellen Sie ein Automatisierungsskript). Durch Ihre Tests generieren Sie Verhaltensereignisse in Ihrer Nicht-Produktionsumgebung. Diese Ereignisse werden verwendet, um die Produktaffinitäten zu erstellen, die Empfehlungen unterstützen. für Tests, [!DNL Commerce] empfiehlt, dass Sie mit den folgenden Empfehlungstypen interagieren:
 
    - Am häufigsten angezeigt - Erfordert minimale Eingabedaten. Benutzer müssen Produkte anzeigen.
    - Anzeige, Anzeige: Erfordert mehrere Benutzer, mehrere Produkte anzuzeigen.
-   - Bought this, bought that - Requires multiple users to purchase multiple products.
+   - Hat dies gekauft und gekauft - Erfordert, dass mehrere Benutzer mehrere Produkte kaufen.
 
 ### Einschränkungen
 

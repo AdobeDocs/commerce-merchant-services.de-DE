@@ -2,9 +2,9 @@
 title: Produkte filtern
 description: Definieren Sie Bedingungen, die Produkte entweder ein- oder ausschließen, um sie als Empfehlungen zu verwenden.
 exl-id: baab28ff-b529-4cbc-adb7-4fa225e87d4a
-source-git-commit: e7c3d1ab49ee9469e3312321f6d96446840d0778
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '698'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Logische Operatoren `AND` und `OR` werden verwendet, um mehrere Bedingungen zu v
 
 ### Kategorie
 
-Filter, die auf der Kategorie eines Produkts basieren, verwenden direkte Kategoriezuweisungen und deren Unterkategorien. Beispielsweise die Aktivierung einer Ausschlussbedingung für Kategorie `Gear` schließt Produkte aus, die `Gear` und all ihre Unterkategorien wie `Gear/Bags` oder `Gear/Fitness Equipment`. Bei B2B-Händlern erfüllt der Filter Kategorie alle [kundenspezifische Produktkategorien](https://docs.magento.com/user-guide/catalog/category-permissions.html) Sie haben konfiguriert.
+Filter, die auf der Kategorie eines Produkts basieren, verwenden direkte Kategoriezuweisungen und deren Unterkategorien. Beispielsweise die Aktivierung einer Ausschlussbedingung für Kategorie `Gear` schließt Produkte aus, die `Gear` und all ihre Unterkategorien wie `Gear/Bags` oder `Gear/Fitness Equipment`. Bei B2B-Händlern erfüllt der Filter Kategorie alle [kundenspezifische Produktkategorien]https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html) haben Sie konfiguriert.
 
 Adobe Commerce empfiehlt die Verwendung der folgenden Kategoriefilterkonfiguration, wenn Sie Empfehlungen für Ihre Seitentypen bereitstellen:
 
@@ -68,11 +68,11 @@ Filtert Produkte nach Sichtbarkeit, z. B.: _Katalog_, _Suche_ oder beides.
 
 ### Preis
 
-Ein auf dem Produktpreis basierender Filter verwendet den Endpreis, um den Vergleich durchzuführen. Der Endpreis beinhaltet alle Rabatte oder Sonderpreise, die anonymen Käufern zur Verfügung stehen. Bei B2B-Händlern spiegelt der angezeigte Preis die [kundenspezifische Gruppenpreise](https://docs.magento.com/user-guide/catalog/pricing-advanced.html#customer-group-price) Sie haben konfiguriert.
+Ein auf dem Produktpreis basierender Filter verwendet den Endpreis, um den Vergleich durchzuführen. Der Endpreis beinhaltet alle Rabatte oder Sonderpreise, die anonymen Käufern zur Verfügung stehen. Bei B2B-Händlern spiegelt der angezeigte Preis die [kundenspezifische Gruppenpreise](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) Sie haben konfiguriert.
 
 ### Lagerstatus
 
 Die folgenden Ausschlussfilter können verwendet werden, um Produkte nach Lagerstatus herauszufiltern:
 
 - Nicht vorrätig - (nur Ausschluss) Schließt nicht vorrätige Produkte aus.
-- Gering auf Lager - (nur Ausschluss) Schließt Produkte aus, die nicht vorrätig sind. Geringer Lagerstatus basiert auf der _Nur X linke Schwelle_ Wert in [Lagerbestandskonfiguration](https://docs.magento.com/user-guide/configuration/catalog/inventory.html).
+- Gering auf Lager - (nur Ausschluss) Schließt Produkte aus, die nicht vorrätig sind. Geringer Lagerstatus basiert auf der _Nur X linke Schwelle_ Wert in [Lagerbestandskonfiguration](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/inventory.html).

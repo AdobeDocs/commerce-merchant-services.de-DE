@@ -2,9 +2,9 @@
 title: "Arbeitsbereich für Regeln"
 description: '"Machen Sie sich mit dem [!DNL Live Search] Arbeitsbereich "Regeln".'
 exl-id: a52839fb-2264-4443-83c3-9eaa2ccb6996
-source-git-commit: 12fc4e0ee4399a50ad3d2ced2664e41aced7198d
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '585'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Der Arbeitsbereich &quot;Regeln&quot;listet die aktuelle Auswahl der Regeln und 
 
 ## Festlegen des Umfangs
 
-Wenn Ihre Adobe Commerce-Installation mehrere Store-Ansichten enthält, legen Sie **Anwendungsbereich** der [Store-Ansicht](https://docs.magento.com/user-guide/configuration/scope.html) wo Ihre Regeln gelten.
+Wenn Ihre Adobe Commerce-Installation mehrere Store-Ansichten enthält, legen Sie **Anwendungsbereich** der [Store-Ansicht](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) wo Ihre Regeln gelten.
 
 ## Spalten ein-/ausblenden
 

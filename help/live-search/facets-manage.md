@@ -2,9 +2,9 @@
 title: "Facets verwalten"
 description: "Erfahren Sie, wie Sie vorhandene verwalten [!DNL Live Search] Facetten."
 exl-id: 1d51a36a-20d6-46b6-b379-11e46c8824a0
-source-git-commit: a17c9ef193394d86f5439f900ebba3dd68d33b45
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '441'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Siehe [Einstellungen](settings.md) um Preisfacettenintervalle und -gruppierungen
 
 1. Führen Sie einen der folgenden Schritte aus, um die Facettenbeschriftung zu bearbeiten:
 
-   * Für [!DNL Commerce] storefront, bearbeiten Sie die [Attributbezeichnung](https://docs.magento.com/user-guide/stores/attributes-product.html).
+   * Für [!DNL Commerce] storefront, bearbeiten Sie die [Attributbezeichnung](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html).
    * Klicken Sie bei einer Headless-Implementierung auf den Wert in der ersten Spalte und bearbeiten Sie den Text nach Bedarf.
 
    ![Titel bearbeiten](assets/facet-edit-label.png)

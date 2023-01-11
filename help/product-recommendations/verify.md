@@ -2,9 +2,9 @@
 title: Ereigniskollektion überprüfen
 description: Erfahren Sie, wie Sie überprüfen können, ob Verhaltensdaten an Adobe Commerce gesendet werden.
 exl-id: c8c34db4-9d87-4012-b8f0-e9b1da214305
-source-git-commit: 7d9cef7a81196921b465ccf2dcd58d98b66d6598
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '448'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Installieren Sie die [Erweiterung &quot;Snowplow Analytics Debugger&quot;für Ch
 
 1. Scrollen Sie nach unten, bis Sie **Kontextdaten _n_**. Suchen Sie nach der Storefront-Instanz in **Schema**.
 
-1. Stellen Sie sicher, dass [SaaS-Datenraum-ID](https://docs.magento.com/user-guide/configuration/services/saas.html) korrekt eingestellt ist.
+1. Stellen Sie sicher, dass [SaaS-Datenraum-ID](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) korrekt eingestellt ist.
 
 ![Snowpflug-Filter](assets/snowplow-filter.png)
 _Snowpflug-Filter_
@@ -62,8 +62,8 @@ _Snowpflug-Filter_
 
 ## Sicherstellen, dass Ereignisse ordnungsgemäß ausgelöst werden
 
-Um sicherzustellen, dass die für Metriken verwendeten Ereignisse ordnungsgemäß ausgelöst werden, suchen Sie nach der `impression-render`, `view`und `rec-click` -Ereignisse im Snowplow Analytics-Debugger. Siehe [vollständige Liste der Ereignisse](https://devdocs.magento.com/recommendations/events.html).
+Um sicherzustellen, dass die für Metriken verwendeten Ereignisse ordnungsgemäß ausgelöst werden, suchen Sie nach der `impression-render`, `view`und `rec-click` -Ereignisse im Snowplow Analytics-Debugger. Siehe [vollständige Liste der Ereignisse](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/events.html).
 
 >[!NOTE]
 >
-> Wenn [Cookie-Einschränkungsmodus](https://docs.magento.com/user-guide/stores/compliance-cookie-restriction-mode.html) aktiviert ist, erfasst Adobe Commerce keine Verhaltensdaten, bis der Käufer zustimmt. Wenn der Cookie-Beschränkungsmodus deaktiviert ist, werden standardmäßig Verhaltensdaten erfasst.
+> Wenn [Cookie-Einschränkungsmodus](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) aktiviert ist, erfasst Adobe Commerce keine Verhaltensdaten, bis der Käufer zustimmt. Wenn der Cookie-Beschränkungsmodus deaktiviert ist, werden standardmäßig Verhaltensdaten erfasst.

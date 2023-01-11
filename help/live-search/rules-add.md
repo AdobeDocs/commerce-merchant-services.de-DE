@@ -2,9 +2,9 @@
 title: "Regeln hinzufügen"
 description: "Erfahren Sie, wie Sie [!DNL Live Search] Regeln."
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 941fdc25f93679593cb3c5db0d29d7a561fcce58
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1290'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Um eine Regel zu erstellen, verwenden Sie zunächst den Regeleditor, um die Bedi
 ## Schritt 1: Regel hinzufügen
 
 1. Navigieren Sie im Admin zu **Marketing** > SEO &amp; Suche > **Live Search**.
-1. Legen Sie die **Anwendungsbereich** zur Identifizierung der [Store-Ansicht](https://docs.magento.com/user-guide/configuration/scope.html) wo die Regel gilt.
+1. Legen Sie die **Anwendungsbereich** zur Identifizierung der [Store-Ansicht](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) wo die Regel gilt.
 1. Klicken Sie auf **Regeln** Registerkarte.
 1. Klicken **Regel hinzufügen** , um den Regeleditor zu starten.
 

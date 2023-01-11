@@ -1,17 +1,17 @@
 ---
-title: '"[!DNL Storefront Popover]"'
-description: '"Die [!DNL Live Search storefront popover] gibt dynamisch vorgeschlagene Produkte und Miniaturansichten zurück."'
+title: "[!DNL Storefront Popover]"
+description: "Die [!DNL Live Search storefront popover] gibt dynamisch vorgeschlagene Produkte und Miniaturansichten zurück."
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '363'
 ht-degree: 0%
 
 ---
 
 # [!DNL Storefront Popover]
 
-Wann [!DNL Live Search] is [installiert](install.md), [!DNL popover] erscheint in der Storefront, wenn der Käufer im Feld [Suche](https://docs.magento.com/user-guide/catalog/search-quick.html) ankreuzen. Mit jedem eingegebenen Zeichen muss die [!DNL popover] wird mit vorgeschlagenen Produkten und Miniaturbildern der wichtigsten Suchergebnisse aktualisiert.
+Wann [!DNL Live Search] is [installiert](install.md), [!DNL popover] erscheint in der Storefront, wenn der Käufer im Feld [Suche](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) ankreuzen. Mit jedem eingegebenen Zeichen muss die [!DNL popover] wird mit vorgeschlagenen Produkten und Miniaturbildern der wichtigsten Suchergebnisse aktualisiert.
 
 [!DNL Live Search] gibt Ergebnisse für eine Abfrage von zwei Zeichen oder mehr zurück. Bei einer teilweisen Übereinstimmung beträgt die maximale Anzahl von Zeichen pro Wort 20. Die Anzahl der Zeichen in einer Abfrage vom Typ &quot;Suche beim Eingeben&quot; ist nicht konfigurierbar.
 
@@ -21,7 +21,7 @@ Wann [!DNL Live Search] is [installiert](install.md), [!DNL popover] erscheint i
 
 ## Durchsuchbare Attribute
 
-Um zielgerichtete Ergebnisse zu erzielen, lesen Sie den Abschnitt [durchsuchbar](https://docs.magento.com/user-guide/stores/attributes-product.html#storefront-properties) (`searchable=true`) Produktattribute. Um die Relevanz sicherzustellen, sollten Attribute nur durchsuchbar sein, wenn sie Inhalte mit einer klaren und präzisen Bedeutung enthalten. Vermeiden Sie die Verwendung von Attributen, die weniger präzisen, langwierigen Text enthalten, z. B. `description`, die zwar standardmäßig für die Suche aktiviert ist, aber die Genauigkeit der Suchergebnisse verringern kann. Wenn beispielsweise eine Person nach &quot;Shorts&quot;sucht und es Hemden mit einer Beschreibung gibt, die den Begriff &quot;Kurzärmel&quot;enthält, werden die Hemden in die Suchergebnisse aufgenommen.
+Um zielgerichtete Ergebnisse zu erzielen, lesen Sie den Abschnitt [durchsuchbar](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) (`searchable=true`) Produktattribute. Um die Relevanz sicherzustellen, sollten Attribute nur durchsuchbar sein, wenn sie Inhalte mit einer klaren und präzisen Bedeutung enthalten. Vermeiden Sie die Verwendung von Attributen, die weniger präzisen, langwierigen Text enthalten, z. B. `description`, die zwar standardmäßig für die Suche aktiviert ist, aber die Genauigkeit der Suchergebnisse verringern kann. Wenn beispielsweise eine Person nach &quot;Shorts&quot;sucht und es Hemden mit einer Beschreibung gibt, die den Begriff &quot;Kurzärmel&quot;enthält, werden die Hemden in die Suchergebnisse aufgenommen.
 
 Die folgenden Attribute sind immer durchsuchbar:
 
@@ -33,7 +33,7 @@ Die folgenden Attribute sind immer durchsuchbar:
 
 ## [!DNL Popover] Seitengröße
 
-Die Seitengröße der [!DNL popover] bestimmt, wie viele Zeilen von automatisch ausgefüllten Produkten zurückgegeben werden können. Zuvor war die Seitengröße hartcodiert als sechs Zeilen. Die Variable `page_size` -Wert ist jetzt eine Einstellung, die über die *Admin*. Während der Live Search-Installation wird die Variable `page_size` -Wert ändert sich in den aktuellen Wert der [Katalogsuche](https://docs.magento.com/user-guide/configuration/catalog/catalog.html#catalog-search) - `Autocomplete Limit` -Einstellung.
+Die Seitengröße der [!DNL popover] bestimmt, wie viele Zeilen von automatisch ausgefüllten Produkten zurückgegeben werden können. Zuvor war die Seitengröße hartcodiert als sechs Zeilen. Die Variable `page_size` -Wert ist jetzt eine Einstellung, die über die *Admin*. Während der Live Search-Installation wird die Variable `page_size` -Wert ändert sich in den aktuellen Wert der [Katalogsuche](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/catalog.html) - `Autocomplete Limit` -Einstellung.
 
 Standardmäßig ist der Wert Katalogsuche - Automatische Vervollständigungsgrenze auf acht Zeilen (oder Zeilen) festgelegt. So ändern Sie die Seitengröße der [!DNL popover]führen Sie folgende Schritte aus:
 

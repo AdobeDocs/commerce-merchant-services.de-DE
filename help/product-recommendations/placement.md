@@ -2,9 +2,9 @@
 title: Platzierung und Beschriftungen
 description: Erfahren Sie, wo Sie Empfehlungen auf verschiedenen Seiten Ihrer Site platzieren können und Vorschläge für häufig verwendete Bezeichnungen für jeden Empfehlungstyp.
 exl-id: e1025138-49dc-4833-92bb-27e8e415d724
-source-git-commit: e7c3d1ab49ee9469e3312321f6d96446840d0778
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '557'
 ht-degree: 0%
 
 ---
@@ -59,4 +59,4 @@ In der folgenden Tabelle sind die Storefront-Seiten aufgeführt, auf denen Sie E
 | Produktdetails | Am unteren Rand des Hauptinhalts (Standard) | Am häufigsten angezeigt<br>Am häufigsten gekauft<br>Am häufigsten zum Warenkorb hinzugefügt<br>Anzeige, Anzeige,<br>Anzeige: , gekauft als<br>kaufte das, kaufte es<br>Mehr dazu<br>Trends<br>Visuelle Ähnlichkeit |
 | Warenkorb | Am unteren Rand des Hauptinhalts (Standard) | Am häufigsten angezeigt<br>Am häufigsten gekauft<br>Am häufigsten zum Warenkorb hinzugefügt<br>Anzeige, Anzeige,<br>Anzeige: , gekauft als<br>kaufte das, kaufte es<br>Mehr dazu<br>Trends |
 | Bestätigung | Am unteren Rand des Hauptinhalts (Standard) | Am häufigsten angezeigt<br>Am häufigsten gekauft<br>Am häufigsten zum Warenkorb hinzugefügt<br>Anzeige, Anzeige,<br>Anzeige: , gekauft als<br>kaufte das, kaufte es<br>Mehr dazu<br>Trends |
-| Page Builder | [Drag &amp; Drop](https://docs.magento.com/user-guide/cms/page-builder-add-recommendations.html#add-an-existing-recommendation-unit) zum Positionieren des Inhaltstyps | Am häufigsten angezeigt<br>Am häufigsten gekauft<br>Am häufigsten zum Warenkorb hinzugefügt<br>Empfohlen für Sie<br>Trends |
+| Page Builder | [Drag &amp; Drop](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) zum Positionieren des Inhaltstyps | Am häufigsten angezeigt<br>Am häufigsten gekauft<br>Am häufigsten zum Warenkorb hinzugefügt<br>Empfohlen für Sie<br>Trends |

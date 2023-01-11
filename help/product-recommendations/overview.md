@@ -2,9 +2,9 @@
 title: Einführung in [!DNL Product Recommendations]
 description: '''[!DNL Product Recommendations] sind ein leistungsstarkes Marketing-Tool, mit dem Sie Konversionen steigern, den Umsatz steigern und die Interaktion mit Käufern fördern können."'
 exl-id: 818ac876-58c9-4c68-975e-53da59ed6b52
-source-git-commit: 3f753f6a91c9f2c29def90d323c004a689056e71
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Die Datenerfassung für die Zwecke von Produktempfehlungen umfasst keine persön
 
 ## Produktempfehlungen im Vergleich zu Produktbeziehungen
 
-Angesichts der sich ständig ändernden Komplexität des Online-Shopping ist das, was am besten für Ihre Storefront funktioniert, häufig eine Kombination aus mehreren Schlüsseltechnologien. Verwenden beider [!DNL Product Recommendations] und [Produktbeziehungen](https://docs.magento.com/user-guide/marketing/product-relationships.html) bietet Ihnen mehr Flexibilität bei der Werbung für Produkte. Sie können [!DNL Product Recommendations] unterstützt von Adobe Sensei, um Ihre Empfehlungen intelligent skaliert zu automatisieren. Anschließend können Sie [Verwandte Produktregeln](https://docs.magento.com/user-guide/marketing/product-related-rules.html) wenn Sie manuell eingreifen müssen und sicherstellen müssen, dass eine bestimmte Empfehlung an ein Zielkunden-Segment gesendet wird oder bestimmte Geschäftsziele erreicht werden müssen.
+Angesichts der sich ständig ändernden Komplexität des Online-Shopping ist das, was am besten für Ihre Storefront funktioniert, häufig eine Kombination aus mehreren Schlüsseltechnologien. Verwenden beider [!DNL Product Recommendations] und [Produktbeziehungen](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships.html) bietet Ihnen mehr Flexibilität bei der Werbung für Produkte. Sie können [!DNL Product Recommendations] unterstützt von Adobe Sensei, um Ihre Empfehlungen intelligent skaliert zu automatisieren. Anschließend können Sie [Verwandte Produktregeln](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules.html) wenn Sie manuell eingreifen müssen und sicherstellen müssen, dass eine bestimmte Empfehlung an ein Zielkunden-Segment gesendet wird oder bestimmte Geschäftsziele erreicht werden müssen.
 
 Mit Produktempfehlungen können Sie:
 

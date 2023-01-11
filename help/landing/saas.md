@@ -2,16 +2,16 @@
 title: Commerce Services Connector
 description: Erfahren Sie, wie Sie Ihre Adobe Commerce- oder Magento Open Source-Instanz mithilfe von Produktions- und Sandbox-API-Schlüsseln in Dienste integrieren.
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
-source-git-commit: 1e85c4daf0967bf6cec538fca55e2a206d15f732
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '852'
+source-wordcount: '853'
 ht-degree: 0%
 
 ---
 
 # [!DNL Commerce Services Connector]
 
-Einige Adobe Commerce- und Magento Open Source-Funktionen basieren auf [!DNL Commerce Services]  und als SaaS (Software as a Service) bereitgestellt werden. Um diese Dienste verwenden zu können, müssen Sie Ihre [!DNL Commerce] -Instanz mithilfe von Produktions- und Sandbox-API-Schlüsseln und geben Sie den Datenraum im [Konfiguration](https://docs.magento.com/user-guide/configuration/services/saas.html). Sie müssen dies nur einmal einrichten.
+Einige Adobe Commerce- und Magento Open Source-Funktionen basieren auf [!DNL Commerce Services]  und als SaaS (Software as a Service) bereitgestellt werden. Um diese Dienste verwenden zu können, müssen Sie Ihre [!DNL Commerce] -Instanz mithilfe von Produktions- und Sandbox-API-Schlüsseln und geben Sie den Datenraum im [Konfiguration](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html). Sie müssen dies nur einmal einrichten.
 
 ## Verfügbare Dienste {#availableservices}
 
