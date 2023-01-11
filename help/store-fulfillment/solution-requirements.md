@@ -4,10 +4,10 @@ description: Anforderungen an die Bereitstellung und das Onboarding der [!DNL St
 role: User, Admin
 level: Intermediate
 exl-id: f9e05049-5904-4f6c-b45d-9f81fbc76b69
-source-git-commit: 421c90f4c8bd687216cd48c72f30301a32115522
+source-git-commit: 842d5b7182d54a1aa5a715662503801816a24c24
 workflow-type: tm+mt
-source-wordcount: '291'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -22,19 +22,19 @@ Die [!DNL Store Fulfillment] -Lösung ist für Adobe Commerce-Kunden auf den fol
 - Adobe Commerce über Cloud-Infrastruktur (ECE)
 - Adobe Commerce vor Ort (EE)
 
-Die Store Fulfillment-Lösung ist mit den folgenden Softwareversionen kompatibel.
+Die Store Fulfillment-Lösung ist mit den Softwareversionen kompatibel, die im Abschnitt *Softwarekompatibilität* Tabelle.
 
 **Softwarekompatibilität**
 
 | **Software** | **Mindestversion** | **Maximale Version** |
 |----------------|---------------------|---------------------|
-| Adobe Commerce | 2,4,0 | 2,4,4 |
+| Adobe Commerce | 2.4.0 | 2.4.5 |
 | Verfasser | 1.x | 2.x |
-| MariaDB | Artikel 10 Absatz 2 | Artikel 10 Absatz 4 |
-| MySQL | 5,7 | 8,0 |
-| PHP | 7,4 | 8,1 |
+| MariaDB | 10.2 | 10.4 |
+| MySQL | 5.7 | 8.0 |
+| PHP | 7.4 | 8.1 |
 
-Detaillierte Anforderungen finden Sie unter Adobe Commerce . [Systemanforderungen](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) in der Entwicklerdokumentation.
+Detaillierte Anforderungen finden Sie unter Adobe Commerce . [Systemanforderungen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) im *Adobe Commerce-Installationsanleitung*.
 
 ## Anforderungen an Store Assist-Apps
 
@@ -52,7 +52,7 @@ Der End-to-End-Prozess zur Verwaltung von Store-Abruf-Bestellungen wird über di
 
 ## Geschäftsanforderungen
 
-Ihr Unternehmen muss die folgenden Mindestkriterien erfüllen, um die Store Fulfillment-Lösung zu implementieren.
+Ihr Unternehmen muss die folgenden Mindestkriterien erfüllen, um die Store Fulfillment-Lösung zu implementieren:
 
 - Nur in den USA ansässige Unternehmen
 
