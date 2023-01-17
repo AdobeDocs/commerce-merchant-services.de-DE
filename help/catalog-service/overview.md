@@ -2,9 +2,9 @@
 title: '[!DNL Catalog Service]'
 description: '''[!DNL Catalog Service] für Adobe Commerce bietet eine Möglichkeit, den Inhalt von Produktansichtsseiten und Produktlistenseiten viel schneller abzurufen als die nativen Adobe Commerce GraphQL-Abfragen."'
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
-source-git-commit: 55036065c686553bc530bb7a4fe46fcec1bd9ee8
+source-git-commit: 489de0f56cba06620c334e2b17040b32a72968ef
 workflow-type: tm+mt
-source-wordcount: '905'
+source-wordcount: '903'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,9 @@ Die [!DNL Catalog Service] für die Adobe Commerce-Erweiterung bietet Rich-View-
 * Produktvergleichsseiten
 * Alle anderen Seiten, die Produktdaten rendern, wie z. B. Warenkorb-, Bestell- und Wunschlistenseiten
 
-Die [!DNL Catalog Service] uses [GraphQL](https://graphql.org/) , um Produktdaten anzufordern und zu empfangen. GraphQL ist eine Abfragesprache, die ein Frontend-Client verwendet, um mit der in einem Backend wie Adobe Commerce definierten Anwendungsprogrammierschnittstelle (API) zu kommunizieren. GraphQL ist eine beliebte Kommunikationsmethode, da sie einfach ist und es einem Systemintegrator ermöglicht, den Inhalt und die Reihenfolge jeder Antwort anzugeben.
+Die [!DNL Catalog Service] uses [GraphQL](https://graphql.org/) , um Produktdaten anzufordern und zu empfangen. GraphQL ist eine Abfragesprache, die ein Frontend-Client verwendet, um mit der in einem Backend wie Adobe Commerce definierten Anwendungsprogrammierschnittstelle (API) zu kommunizieren. GraphQL ist eine beliebte Kommunikationsmethode, da es einfach ist und es einem Systemintegrator ermöglicht, den Inhalt und die Reihenfolge jeder Antwort anzugeben.
 
-Adobe Commerce verfügt über zwei GraphQL-Systeme. Das GraphQL-Kernsystem bietet eine Vielzahl von Abfragen (Lesevorgänge) und Mutationen (Schreibvorgänge), die es einem Käufer ermöglichen, mit vielen Arten von Seiten zu interagieren, darunter Produkt, Kundenkonto, Warenkorb, Checkout und mehr. Die Abfragen, die Produktinformationen zurückgeben, sind jedoch nicht für die Geschwindigkeit optimiert. Das GraphQL-System der Dienste kann nur Abfragen zu Produkten und zugehörigen Informationen durchführen. Diese Abfragen sind leistungsfähiger als ähnliche Core-Abfragen.
+Adobe Commerce verfügt über zwei GraphQL-Systeme. Das GraphQL-Kernsystem bietet eine breite Palette von Abfragen (Lese-Vorgänge) und Mutationen (Schreibvorgänge), mit denen ein Käufer mit vielen Seitentypen interagieren kann, darunter Produkt, Kundenkonto, Warenkorb, Checkout und mehr. Die Abfragen, die Produktinformationen zurückgeben, sind jedoch nicht für die Geschwindigkeit optimiert. Das GraphQL-System für Dienste kann nur Abfragen zu Produkten und zugehörigen Informationen durchführen. Diese Abfragen sind leistungsfähiger als ähnliche Core-Abfragen.
 
 Sie führen diese Abfragen aus, indem Sie sie an das Gateway unter https://catalog-service.adobe.io/graphql senden.
 
@@ -34,20 +34,20 @@ Das folgende Diagramm zeigt die beiden GraphQL-Systeme:
 
 Im Core-GraphQL-System sendet die PWA eine Anfrage an die Commerce-Anwendung, die jede Anfrage empfängt, verarbeitet sie, möglicherweise eine Anfrage über mehrere Subsysteme sendet und dann eine Antwort an die Storefront zurückgibt. Dieser Rundgang kann zu langsamen Seitenladezeiten führen, was möglicherweise zu niedrigeren Konversionsraten führt.
 
-[!DNL Catalog Service] ist ein zusammengeführter GraphQL-Gateway-Service. Der Dienst greift auf eine separate Datenbank zu, die Produktdetails und zugehörige Informationen wie Produktattribute, Varianten, Preise und Kategorien enthält. Der Dienst synchronisiert die Datenbank durch Indexierung mit der Adobe Commerce.
+[!DNL Catalog Service] ist ein Storefront Services Gateway. Der Dienst greift auf eine separate Datenbank zu, die Produktdetails und zugehörige Informationen wie Produktattribute, Varianten, Preise und Kategorien enthält. Der Dienst synchronisiert die Datenbank durch Indexierung mit der Adobe Commerce.
 Da der Dienst die direkte Kommunikation mit der Anwendung umgeht, kann er die Latenz des Anforderungs- und Antwortzyklus reduzieren.
 
 >[!NOTE]
 >
->Das Gateway dient der zukünftigen Integration mit Product Recommendations. In dieser Version können Sie auf die [!DNL Catalog Service Federated GraphQL] und [!DNL Live Search] verknüpfte Abfragen vom selben Endpunkt, wenn Sie über einen gültigen Lizenzschlüssel für beide Produkte verfügen.
+>Das Gateway dient der zukünftigen Integration mit Product Recommendations. In dieser Version können Sie auf die [!DNL Catalog Service GraphQL] und [!DNL Live Search] Abfragen vom selben Endpunkt aus, wenn Sie einen gültigen Lizenzschlüssel für beide Produkte haben.
 
-Die Core- und Service-GraphQL-Systeme kommunizieren nicht direkt miteinander. Sie greifen von einer anderen URL auf jedes System zu und Aufrufe erfordern unterschiedliche Kopfzeileninformationen. Die beiden GraphQL-Systeme sind für die gemeinsame Verwendung konzipiert. Die [!DNL Catalog Service] Das GraphQL-System erweitert das Kernsystem, um die Erlebnisse im Produkt-Storefront zu beschleunigen.
+Die Core- und Service-GraphQL-Systeme kommunizieren nicht direkt miteinander. Sie greifen von einer anderen URL auf jedes System zu und Aufrufe erfordern unterschiedliche Kopfzeileninformationen. Die beiden GraphQL-Systeme sind für die gemeinsame Nutzung konzipiert. Die [!DNL Catalog Service] Das GraphQL-System erweitert das Kernsystem um schnellere Produkterlebnisse.
 
-Sie können optional [API-Mesh für Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/) zur Integration der beiden Adobe Commerce GraphQL-Systeme mit privaten und Drittanbieter-APIs und anderen Softwareschnittstellen über Adobe Developer. Das Gitter kann so konfiguriert werden, dass an jeden Endpunkt gesendete Aufrufe die richtigen Autorisierungsinformationen in den Kopfzeilen enthalten.
+Sie können optional [API-Mesh für Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/) Integration der beiden Adobe Commerce GraphQL-Systeme in private und Drittanbieter-APIs und andere Softwareschnittstellen mithilfe von Adobe Developer. Das Gitter kann so konfiguriert werden, dass an jeden Endpunkt gesendete Aufrufe die richtigen Autorisierungsinformationen in den Kopfzeilen enthalten.
 
 ## Architektonische Details
 
-Die folgenden Abschnitte beschreiben einige der Unterschiede zwischen den beiden GraphQL-Systemen.
+In den folgenden Abschnitten werden einige der Unterschiede zwischen den beiden GraphQL-Systemen beschrieben.
 
 ### Schema-Verwaltung
 
