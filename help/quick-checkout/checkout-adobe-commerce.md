@@ -2,9 +2,9 @@
 title: "Checkout-Fluss für einen Adobe Commerce-Benutzer"
 description: "Überblick über die [!DNL Quick Checkout] Fluss für einen Adobe Commerce-Benutzer."
 exl-id: 085e393b-15f6-4d5a-a04d-927b1f95b74e
-source-git-commit: 1f2305df7566cd77a6be161cc9d1265c0291171c
+source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,19 @@ Wenn eine [!DNL Bolt] -Konto beim Checkout gefunden werden, können Käufer ihre
 Wenn der Käufer vor dem Checkout bei Adobe Commerce angemeldet ist, wird die [!DNL Bolt] Das OTP-Popup wird beim Checkout nicht angezeigt, aber es erscheint eine Meldung, die den Käufer anweist, sich anzumelden, um auf seine &quot;Bolt Wallet&quot; zuzugreifen.
 
 Wenn Sie Probleme haben, wenn Sie eine Bestellung als bestehenden Adobe Commerce-Benutzer aufgeben, lesen Sie den Abschnitt [Fehlerbehebung bei Problemen mit der Schnellüberprüfung](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/quick-checkout-issues.html) Artikel im Adobe Commerce Help Center.
+
+### Automatische Anmeldung
+
+Es ist möglich, eine automatische Anmeldung für [!DNL Quick Checkout] Benutzer. Sie können eine Konfiguration aktivieren, um einen Benutzer während des Checkout automatisch anzumelden.
+
+1. Im _Admin_ Seitenleiste, navigieren Sie zu **Stores** > **Konfiguration** > **Checkout** , um auf die allgemeine Checkout Admin-Konfigurationsseite zuzugreifen.
+1. Im _Diensteinstellungen_ Abschnitt für [!DNL Quick Checkout], geben Sie alle Details an, die für die Einrichtung der automatischen Anmeldung erforderlich sind.
+
+Siehe [[!DNL Quick Checkout] Diensteinstellungen konfigurieren](../quick-checkout/onboarding.md#configure-service-settings) für weitere Informationen.
+
+>[!NOTE]
+>
+> Erstmalige Anmeldung bei **automatische Anmeldung** aktiviert ist, erfordert die Zustimmung des Benutzers zur Autorisierung durch Akzeptieren eines Popup-Fensters.
 
 ## Neu [!DNL Bolt] account
 

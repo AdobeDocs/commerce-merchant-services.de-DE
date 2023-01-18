@@ -2,9 +2,9 @@
 title: '[!DNL Quick Checkout] Versionshinweise'
 description: Informationen zu allen [!DNL Quick Checkout] veröffentlicht.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 8b915cd0a8f25934675a2ae00ee2694b7facc1bd
+source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1185'
 ht-degree: 0%
 
 ---
@@ -64,6 +64,20 @@ _5. Oktober 2022_
 ![Problem behoben](../assets/fix.svg)<!-- Issue BOLT-369 --> Nun, die [[!DNL Quick Checkout] Admin Panel](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) zeigt die App-Version in der Fußzeile an.
 
 +++
+
+## v1.5.0
+
+_18. Januar 2023_
+
+![Neu](../assets/new.svg)<!-- Issue BOLT-522 --> Eine neue Konfiguration kann aktiviert/deaktiviert werden, um festzustellen, ob [Käufer](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/manage-checkout/checkout-options/checkout-adobe-commerce.html) kann automatisch in Bolt angemeldet werden.
+
+![Neu](../assets/new.svg)<!-- Issue BOLT-523 --> Eine neue Konfiguration kann aktiviert/deaktiviert werden, mit der Händler angeben können, ob Käufer automatisch in beiden Netzwerken oder einfach im Bolt-Netzwerk angemeldet werden können.
+
+![Problem behoben](../assets/fix.svg)<!-- Issue BOLT-542 --> Verbesserungen der Benutzererfahrung bei [Karte oder Adresse in einem Bolt-Konto speichern](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html) wenn ein Käufer E-Mails bereitstellt.
+
+![Problem behoben](../assets/fix.svg)<!-- Issue BOLT-550 --> Verbesserungen der Benutzererfahrung in [automatische Anmeldung](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#configure-service-settings) wenn ein Bolt-Benutzer E-Mails bereitstellt.
+
+![Problem behoben](../assets/fix.svg)<!-- Issue BOLT-544 --> Kompatibilitätsverbesserungen für [Callback-URLs](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#check-shopper-valid-account) mit [mehrere Sites](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-overview.html) in Bolt.
 
 ## v1.4.0
 
