@@ -2,9 +2,9 @@
 title: Katalogsynchronisierung
 description: Erfahren Sie, wie Sie Produktdaten aus der [!DNL Commerce] Server zu [!DNL Commerce Services] laufend, um die Dienstleistungen auf dem neuesten Stand zu halten.
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
-source-git-commit: fe5bbceb7f443e7b177ecd4812b981d6e7fd0a6b
+source-git-commit: 853c55fbae3ccfb7abea8ce074127f2871d55688
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '904'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Der Katalogsynchronisierungsprozess wird stündlich ausgeführt, um [!DNL Commer
 
 >[!NOTE]
 >
-> Die _Katalogsynchronisierung_ Dashboard ist nur verfügbar, wenn der Product Recommendations-Dienst installiert ist.
+> Die _Katalogsynchronisierung_ Dashboard ist nur verfügbar, wenn die _Produkt-Recommendations_ -Module installiert sind und nur Datenprojektionen für diese Funktion widerspiegeln. Unterstützung für andere Commerce-Dienste wie _Live Search_ und _Catalog Service_ sind für die Zukunft geplant.
 
 Um auf das Dashboard Katalogsynchronisierung zuzugreifen, wählen Sie **System** > _Datenübertragung_ > **Katalogsynchronisierung**.
 
