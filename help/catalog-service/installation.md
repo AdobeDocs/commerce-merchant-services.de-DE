@@ -2,9 +2,9 @@
 title: Onboarding und Installation
 description: Erfahren Sie, wie Sie installieren [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 55c35e7775505ab9f6a61a458b6cd6fa4c7f1702
+source-git-commit: 3cf7959ece051c82a0f9ed1125571f223427923e
 workflow-type: tm+mt
-source-wordcount: '574'
+source-wordcount: '581'
 ht-degree: 0%
 
 ---
@@ -137,7 +137,7 @@ bin/magento cache:clean
 
 Nach der Installation von Catalog Service müssen Sie die [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#apikey) durch Angabe der API-Schlüssel und Auswahl eines SaaS-Datenspeichers.
 
-Nachdem die SaaS-Konfiguration abgeschlossen ist, führen Sie eine erste Datensynchronisation durch, indem Sie dem Handbuch zur Katalogsynchronisierung folgen.
+Nachdem die SaaS-Konfiguration abgeschlossen ist, führen Sie eine erste Datensynchronisation durch, indem Sie der [Katalogsynchronisierung](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) Handbuch.
 
 So stellen Sie sicher, dass der Katalogexport ordnungsgemäß ausgeführt wird:
 
