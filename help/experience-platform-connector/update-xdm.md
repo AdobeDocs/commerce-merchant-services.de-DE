@@ -2,9 +2,9 @@
 title: Hinzufügen von Feldgruppen zum XDM-Schema
 description: Erfahren Sie, wie Sie Adobe Commerce-spezifische Feldergruppen zu einem XDM-Schema hinzufügen.
 exl-id: 4401bbe7-1ccc-4349-a998-9e9ee9db590f
-source-git-commit: f5d1c39fe1b02d2a661b92f971fba5b3e836dd6a
+source-git-commit: c9b1d7e34632f7a54544bc6944144b1833ecc5a5
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Eines der [Onboarding-Schritte](overview.md#onboarding-steps) über den Experien
    - Persönliche Kontaktangaben
    - Commerce-Details
    - Adobe Analytics Experience Event Commerce (wenn Sie Daten an Adobe Analytics senden möchten)
-   - Personen-ID
+   - Identitätszuordnung
 
    >[!NOTE]
    >
@@ -32,4 +32,10 @@ Eines der [Onboarding-Schritte](overview.md#onboarding-steps) über den Experien
 
    Ihr XDM-Schema enthält jetzt Commerce-spezifische Feldergruppen, sodass die aus dem Commerce-Store erfassten Daten [events](events.md) wird im XDM dargestellt.
 
-1. [Erstellen eines Datenspeichers](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) und wählen Sie das XDM-Schema aus, das die Commerce-spezifischen Feldergruppen enthält.
+1. [Datensatz erstellen](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) basierend auf dem von Ihnen erstellten oder aktualisierten Schema.
+
+   Ein Datensatz ist ein Speicher- und Verwaltungskonstrukt für eine Sammlung von Daten, normalerweise eine Tabelle, die ein Schema (Spalten) und Felder (Zeilen) enthält. Datensätze enthalten auch Metadaten, die verschiedene Aspekte der in ihnen gespeicherten Daten beschreiben.
+
+1. [Erstellen eines Datenspeichers](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) und wählen Sie das XDM-Schema aus, das die Commerce-spezifischen Feldergruppen und den entsprechenden Datensatz enthält.
+
+   Der Datastream leitet die erfassten Daten an den Datensatz weiter. Die Daten werden im Datensatz basierend auf dem ausgewählten Schema dargestellt.

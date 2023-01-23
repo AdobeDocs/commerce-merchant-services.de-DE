@@ -1,9 +1,10 @@
 ---
 title: Hochladen von Kundenprofilen in Adobe Experience Platform
 description: Erfahren Sie, wie Sie Kundenprofile in Adobe Experience Platform hochladen.
-source-git-commit: 93133019f8004437ef85db32ff336bfd0e8c6fc2
+exl-id: fd0ee7fa-5274-4640-ba00-bcb2ec78f314
+source-git-commit: 9bf28159fdac3a7237956a536f6a522b4e2918fe
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '358'
 ht-degree: 0%
 
 ---
@@ -26,7 +27,7 @@ In diesem Thema erfahren Sie, wie Sie in Experience Platform Ihre Adobe Commerce
 
 1. Bestimmen Sie, wo Sie Ihre Kundendaten speichern. Bei einigen Händlern werden diese Daten in Adobe Commerce gespeichert und können [exportiert](https://docs.magento.com/user-guide/system/data-export.html) als CSV-Datei. Für andere kann es sich in einem separaten CRM-System (Customer Relationship Management) befinden.
 
-1. Nachdem Sie ermittelt haben, wo Sie Ihre Kundendaten speichern, suchen Sie die passende [Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en) basierend darauf, wo Ihre Kundendaten gespeichert werden. Wenn kein entsprechender Quell-Connector angezeigt wird, verwenden Sie die [lokaler Datei-Upload](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/local-system/local-file-upload.html) Kundenprofile aus einer CSV-Datei importieren.
+1. Nachdem Sie ermittelt haben, wo Sie Ihre Kundendaten speichern, suchen Sie die passende [Quell-Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html) basierend darauf, wo Ihre Kundendaten gespeichert werden. Wenn kein entsprechender Quell-Connector angezeigt wird, verwenden Sie die [lokaler Datei-Upload](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/local-system/local-file-upload.html) Kundenprofile aus einer CSV-Datei importieren.
 
    >[!NOTE]
    >

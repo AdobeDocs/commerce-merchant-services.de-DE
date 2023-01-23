@@ -2,9 +2,9 @@
 title: Commerce-Daten mit Adobe Experience Platform verbinden
 description: Erfahren Sie, wie Sie Ihre Commerce-Daten mit der Adobe Experience Platform verbinden.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
-source-git-commit: 1af2dee51391c94e19b68481d390cc2629fe1d6e
+source-git-commit: 710a18a63c84f0ae0a5aa3b3ad50fdfce0358db6
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '840'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,9 @@ ht-degree: 0%
 
 Um Ihre Adobe Commerce-Instanz mit der Adobe Experience Platform zu verbinden, müssen Sie eine Organisations-ID und eine Datastraam-ID angeben.
 
-![Experience Platform-Connector-Konfiguration](assets/epc-config.png)
+![Experience Platform-Connector-Konfiguration](assets/epc-config-sf.png)
+
+## Allgemein
 
 1. Melden Sie sich bei Ihrem Adobe-Konto im [Commerce Services Connector](../landing/saas.md#organizationid) und wählen Sie Ihre Organisations-ID aus.
 
@@ -23,13 +25,35 @@ Um Ihre Adobe Commerce-Instanz mit der Adobe Experience Platform zu verbinden, m
 
 1. Im **Organisations-ID** angezeigt, sehen Sie die Ihrem Adobe Experience Platform-Konto zugeordnete ID, wie in der [Commerce Services Connector](../landing/saas.md#organizationid). Die Organisations-ID ist global. Pro Adobe Commerce-Instanz kann nur eine Organisations-ID zugeordnet werden.
 
-1. Im **Datenspeicher-ID** -Feld die ID des von Ihnen verwendeten Datastreams einfügen [created](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html#create) in der Adobe Experience Platform.
+1. (Optional) Wenn Sie bereits über eine [AEP Web SDK (Legierung)](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html) auf Ihrer Site bereitgestellt, aktivieren Sie das Kontrollkästchen und fügen Sie den Namen Ihres AEP Web SDK hinzu. Lassen Sie diese Felder andernfalls leer, und der Experience Platform Connector stellt eines für Sie bereit.
 
    >[!NOTE]
    >
-   >Der Umfang der Datastream-ID muss auf Website-Ebene oder höher festgelegt werden. Auf dieser Ebene wird für jede Website in der Hierarchie dieselbe Datastream-ID verwendet. Sie können den Datensatz-ID-Umfang nicht auf der Storeüberprüfungsebene festlegen.
+   >Wenn Sie Ihr eigenes AEP Web SDK angeben, verwendet der Experience Platform Connector die mit diesem SDK verknüpfte Datastraam-ID und nicht die auf dieser Seite angegebene Datastream-ID (falls vorhanden).
 
-1. (Optional) Wenn auf Ihrer Site kein AEP Web SDK bereitgestellt ist, lassen Sie dieses Feld leer, und der Experience Platform Connector stellt eines für Sie bereit. Fügen Sie andernfalls den Namen Ihres AEP Web SDK hinzu.
+## Datenerfassung
+
+>[!NOTE]
+>
+>Für Händler, die sich bereits in unserem Back-Office-Beta-Programm angemeldet haben, wird Ihnen ein Kontrollkästchen angezeigt, mit dem Sie Backoffice-Ereignisse aktivieren können. Wenn Sie am Back Office Beta Programm teilnehmen möchten, wenden Sie sich an [drios@adobe.com](mailto:drios@adobe.com).
+
+![Beta-Experience Platform-Connector-Konfiguration](assets/epc-config-beta.png)
+
+Im **Datenerfassung** festlegen, geben Sie an, welche Datentypen erfasst und an den Experience Platform Edge gesendet werden sollen. Standardmäßig werden Storefront-Ereignisse automatisch gesendet, solange das AEP Web SDK und die Organisations-ID gültig sind. Weitere Informationen finden Sie unter Ereignisthema . [storefront](events.md#storefront-events) und [Backoffice](events.md#beta-order-status-events) -Ereignisse.
+
+>[!NOTE]
+>
+>Alle Felder im **Datenerfassung** -Abschnitt auf die **Webseite** oder höher.
+
+1. Auswählen **Backoffice-Ereignisse** wenn Sie Bestellstatusinformationen senden möchten, z. B. wenn eine Bestellung aufgegeben, storniert, rückerstattet oder versandt wurde.
+
+   >[!NOTE]
+   >
+   >Standardmäßig werden alle Backoffice-Daten an den Experience Platform Edge gesendet. Wenn sich ein Kunde dafür entscheidet, die Datenerfassung abzuwählen, müssen Sie in der Experience Platform ausdrücklich die Datenschutzeinstellung des Käufers festlegen. Dies unterscheidet sich von Storefront-Ereignissen, bei denen der Sammler die Zustimmung bereits auf der Grundlage der Kundeneinstellungen verarbeitet. [Weitere Infos](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset.html) über die Festlegung der Datenschutzeinstellungen eines Käufers in der Experience Platform.
+
+1. (Überspringen Sie diesen Schritt, wenn Sie Ihr eigenes AEP Web SDK verwenden.) [Erstellen](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#create) einen Datastream in der Adobe Experience Platform oder wählen Sie einen vorhandenen Datastream aus, den Sie für die Erfassung verwenden möchten.
+
+1. (Überspringen Sie diesen Schritt, wenn Sie Ihr eigenes AEP Web SDK verwenden.) Im **Datenspeicher-ID** -Feld die Kennung dieses neuen oder vorhandenen Datastreams ein.
 
 ## Feldbeschreibungen
 
@@ -37,8 +61,11 @@ Um Ihre Adobe Commerce-Instanz mit der Adobe Experience Platform zu verbinden, m
 |--- |--- |
 | Anwendungsbereich | Bestimmte Website, auf die die Konfigurationseinstellungen angewendet werden sollen. |
 | Organisations-ID (global) | ID, die zu der Organisation gehört, die das Adobe DX-Produkt erworben hat. Diese ID verknüpft Ihre Adobe Commerce-Instanz mit Adobe Experience Platform. |
-| Datastream-ID (Website) | ID, die den Datenfluss von Adobe Experience Platform zu anderen Adobe-DX-Produkten ermöglicht. Diese ID muss mit einer bestimmten Website in Ihrer jeweiligen Adobe Commerce-Instanz verknüpft sein. |
-| AEP Web SDK Name (Global) | Wenn auf Ihrer Site kein AEP Web SDK bereitgestellt ist, lassen Sie dieses Feld leer, und der Experience Platform Connector stellt eines für Sie bereit. Wenn Sie bereits ein AEP Web SDK auf Ihrer Site bereitgestellt haben, geben Sie den Namen dieses SDK in dieses Feld ein. Dadurch kann der Storefront Event Collector und das Storefront Event SDK Ihr AEP Web SDK anstelle der vom Experience Platform Connector bereitgestellten Version verwenden. |
+| Ist das AEP Web SDK bereits auf Ihrer Site bereitgestellt? | Aktivieren Sie dieses Kontrollkästchen, wenn Sie Ihr eigenes AEP Web SDK auf Ihrer Site bereitgestellt haben. |
+| AEP Web SDK Name (Global) | Wenn Sie bereits ein Experience Platform Web SDK auf Ihrer Site bereitgestellt haben, geben Sie in diesem Feld den Namen dieses SDK an. Dadurch kann das Storefront Event Collector und Storefront Event SDK Ihr Experience Platform Web SDK anstelle der vom Experience Platform Connector bereitgestellten Version verwenden. Wenn auf Ihrer Site kein Experience Platform Web SDK bereitgestellt ist, lassen Sie dieses Feld leer, und der Experience Platform Connector stellt eines für Sie bereit. |
+| Storefront-Ereignisse | Ist standardmäßig aktiviert, solange die Organisations-ID und die Datastream-ID gültig sind. Storefront-Ereignisse erfassen anonymisierte Verhaltensdaten von Ihren Käufern beim Durchsuchen Ihrer Site. |
+| Back Office-Ereignisse (Beta) | Wenn diese Option aktiviert ist, enthält die Ereignis-Payload anonymisierte Bestellstatusinformationen, z. B. ob eine Bestellung aufgegeben, storniert, zurückerstattet oder versandt wurde. |
+| Datastream-ID (Website) | ID, die den Datenfluss von Adobe Experience Platform zu anderen Adobe-DX-Produkten ermöglicht. Diese ID muss mit einer bestimmten Website in Ihrer jeweiligen Adobe Commerce-Instanz verknüpft sein. Wenn Sie Ihr eigenes Experience Platform Web SDK angeben, geben Sie in diesem Feld keine Datastream-ID an. Der Experience Platform-Connector verwendet die mit diesem SDK verknüpfte Datastream-ID und ignoriert alle in diesem Feld angegebenen Datastream-IDs (falls vorhanden). |
 
 Nachdem die Experience Platform Connector-Erweiterung installiert, die Verknüpfung zwischen Adobe Commerce und Adobe Experience Platform erstellt und die angegebene Datastream-ID angegeben wurde, fließen die Commerce-Daten an den Adobe Experience Platform-Edge und an andere Adobe-DX-Produkte.
 

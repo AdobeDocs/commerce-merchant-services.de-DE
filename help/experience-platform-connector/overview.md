@@ -2,9 +2,9 @@
 title: Guide Overview
 description: Erfahren Sie, wie Sie Adobe Commerce-Daten mithilfe des Experience Platform-Connectors in Adobe Experience Platform integrieren.
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
-source-git-commit: a316b92f75cb227d0c58af07482f9d37568af7ca
+source-git-commit: c9b1d7e34632f7a54544bc6944144b1833ecc5a5
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '456'
 ht-degree: 0%
 
 ---
@@ -30,15 +30,16 @@ Um den Experience Platform-Connector verwenden zu können, benötigen Sie Folgen
 ## Onboarding-Schritte
 
 1. [Installieren](install.md) die Experience Platform Connector-Erweiterung.
-1. [Anmelden](https://helpx.adobe.com/manage-account/using/access-adobe-id-account.html) auf Ihr Adobe-Konto und [Ansicht](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=en#concept_EA8AEE5B02CF46ACBDAD6A8508646255) Ihre Organisations-ID. Die Organisations-ID ist die ID, die Ihrem bereitgestellten Experience Cloud-Unternehmen zugeordnet ist. Diese ID besteht aus einer 24-stelligen alphanumerischen Zeichenfolge gefolgt von (und muss enthalten) `@AdobeOrg`.
+1. [Anmelden](https://helpx.adobe.com/manage-account/using/access-adobe-id-account.html) auf Ihr Adobe-Konto und [Ansicht](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255) Ihre Organisations-ID. Die Organisations-ID ist die ID, die Ihrem bereitgestellten Experience Cloud-Unternehmen zugeordnet ist. Diese ID besteht aus einer 24-stelligen alphanumerischen Zeichenfolge gefolgt von (und muss enthalten) `@AdobeOrg`.
 1. [Verbinden](connect-data.md) Ihre Adobe Commerce-Instanz in der Adobe Experience Platform.
 1. [Erstellen oder aktualisieren](update-xdm.md) Ihr XDM-Schema mit Commerce-spezifischen Feldergruppen.
-1. [Erstellen eines Datenspeichers](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=en) und wählen Sie das XDM-Schema aus, das die Commerce-spezifischen Feldergruppen enthält.
+1. [Datensatz erstellen](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) basierend auf dem von Ihnen erstellten oder aktualisierten Schema.
+1. [Erstellen eines Datenspeichers](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) und wählen Sie das XDM-Schema aus, das die Commerce-spezifischen Feldergruppen enthält.
 1. (Optional) [Hochladen von Kundenprofilen](profile.md) Adobe Experience Platform zugeordnet werden, sodass Storefront-Daten bestimmten Käufern zugeordnet werden können, um deren Einkaufserlebnis zu verbessern.
 
 ## Zielgruppe
 
-Dieses Handbuch richtet sich an Adobe Commerce-Händler, die ihre Adobe Commerce-Storefront-Daten mit anderen Adobe DX-Produkten verbinden möchten.
+Dieses Handbuch richtet sich an Adobe Commerce-Händler, die ihre Adobe Commerce-Daten mit anderen Adobe DX-Produkten verbinden möchten.
 
 ### PWA Studio-Support
 
@@ -50,5 +51,5 @@ Siehe [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-ser
 
 Verwenden Sie die folgenden Ressourcen, wenn Sie Informationen benötigen oder Fragen haben, die nicht in diesem Handbuch behandelt werden:
 
-- [Hilfezentrum](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html){target=&quot;_blank&quot;}
-- [Support-Tickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target=&quot;_blank&quot;}: Senden Sie ein Ticket, um zusätzliche Hilfe zu erhalten.
+- [Hilfezentrum](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html){target="_blank"}
+- [Support-Tickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"}—Senden Sie ein Ticket, um zusätzliche Hilfe zu erhalten.
