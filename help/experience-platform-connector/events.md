@@ -2,7 +2,7 @@
 title: Veranstaltungen
 description: Erfahren Sie, welche Daten von den einzelnen Ereignissen erfasst werden.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: 975854dbdae32e5e51bb57593cf122627d01571f
+source-git-commit: 18edfec6dbc66ef0e94e9f54ca1061386104d90c
 workflow-type: tm+mt
 source-wordcount: '3141'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Zusätzlich zu den Daten, die die folgenden Ereignisse erfassen, erhalten Sie au
 
 ## Storefront-Ereignisse
 
-+++ Die Storefront-Ereignisse erfassen anonymisierte Verhaltensdaten von Ihren Käufern beim Durchsuchen Ihrer Site. Die von diesen Ereignissen erfassten Daten können verwendet werden, um Promotions und Kampagnen zu erstellen, die auf einen bestimmten Satz von Käufern ausgerichtet sind.
+Die Storefront-Ereignisse erfassen anonymisierte Verhaltensdaten von Ihren Käufern beim Durchsuchen Ihrer Site. Die von diesen Ereignissen erfassten Daten können verwendet werden, um Promotions und Kampagnen zu erstellen, die auf einen bestimmten Satz von Käufern ausgerichtet sind.
 
 >[!NOTE]
 >
@@ -215,11 +215,10 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 | `currencyCode` | Die [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) Währungscode, der für die Bestellsummen verwendet wird. |
 | `productImageUrl` | Hauptbild-URL des Produkts |
 | `selectedOptions` | Feld, das für ein konfigurierbares Produkt verwendet wird. `attribute` identifiziert ein Attribut des konfigurierbaren Produkts, z. B. `size` oder `color` und `value` gibt den Wert des Attributs an, z. B. `small` oder `black`. |
-+++
+
 
 ## Profilereignisse
 
-+++
 Profilereignisse umfassen Kontoinformationen, z. B. `signIn`, `signOut`, `createAccount`und `editAccount`. Diese Daten werden verwendet, um wichtige Kundendetails auszufüllen, die zur besseren Definition von Segmenten oder zur Durchführung von Marketing-Kampagnen benötigt werden, z. B. wenn Sie Kunden ansprechen möchten, die in New York leben.
 
 ### signIn
@@ -316,17 +315,16 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 | `address` | Die technische Adresse, z. B. `name@domain.com` wie allgemein in RFC2822 und nachfolgenden Standards definiert |
 | `userAccount` | Gibt Details zu Treueprogramm, Voreinstellungen, Anmeldeprozesse und andere Kontovoreinstellungen an |
 | `updateProfile` | Gibt an, ob ein Benutzer sein Kontoprofil aktualisiert hat |
-+++
 
 ## Suchereignisse
 
-+++ Die Suchereignisse stellen Daten bereit, die für die Absicht des Käufers relevant sind. Einblicke in die Absichten eines Käufers helfen den Händlern zu sehen, wie Käufer nach Artikeln suchen, worauf sie klicken und letztlich kaufen oder aufgeben. Ein Beispiel dafür, wie Sie diese Daten verwenden können, ist, wenn Sie bestehende Käufer ansprechen möchten, die nach Ihrem Top-Produkt suchen, das Produkt jedoch nie kaufen.
+Die Suchereignisse stellen Daten bereit, die für die Absicht des Käufers relevant sind. Einblicke in die Absichten eines Käufers helfen den Händlern zu sehen, wie Käufer nach Artikeln suchen, worauf sie klicken und letztlich kaufen oder aufgeben. Ein Beispiel dafür, wie Sie diese Daten verwenden können, ist, wenn Sie bestehende Käufer ansprechen möchten, die nach Ihrem Top-Produkt suchen, das Produkt jedoch nie kaufen.
 
 ### searchRequestSent
 
 | Beschreibung | XDM-Ereignisname |
 |---|---|
-| Wird durch die folgenden Ereignisse im Popup &quot;Suche beim Eingeben&quot;ausgelöst:<br>Drücken Sie die Eingabetaste, klicken Sie auf _Alle anzeigen_<br> Wird durch die folgenden Ereignisse auf den Suchergebnisseiten ausgelöst:<br>Wählen Sie einen Filter und ändern Sie die Sortierreihenfolge (_Sortieren nach_), Ändern Sie die Sortierrichtung (aufsteigend oder absteigend), ändern Sie die Anzahl der Ergebnisse pro Seite (_Anzahl pro Seite anzeigen_), zur nächsten Seite navigieren, zur vorherigen Seite navigieren, zu einer anderen Seite navigieren | `searchRequest` |
+| Wird durch die folgenden Ereignisse im Popup &quot;Suche beim Eingeben&quot;ausgelöst:<br><br>Drücken Sie die Eingabetaste, klicken Sie auf _Alle anzeigen_<br><br> Wird durch die folgenden Ereignisse auf den Suchergebnisseiten ausgelöst:<br><br>Wählen Sie einen Filter und ändern Sie die Sortierreihenfolge (_Sortieren nach_), Ändern Sie die Sortierrichtung (aufsteigend oder absteigend), ändern Sie die Anzahl der Ergebnisse pro Seite (_Anzahl pro Seite anzeigen_), zur nächsten Seite navigieren, zur vorherigen Seite navigieren, zu einer anderen Seite navigieren | `searchRequest` |
 
 >[!NOTE]
 >
@@ -372,15 +370,13 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 | `name` | Der Anzeigename oder der für Menschen lesbare Name des Produkts |
 | `productImageUrl` | Hauptbild-URL des Produkts |
 
-+++
-
 ## (Beta) Back-Office-Ereignisse
 
 >[!NOTE]
 >
 >Für Händler, die sich bereits in unserem Back Office Beta Programm angemeldet haben, haben Sie Zugriff auf Backoffice-Veranstaltungen. Wenn Sie am Back Office Beta Programm teilnehmen möchten, wenden Sie sich an [drios@adobe.com](mailto:drios@adobe.com).
 
-+++ Die Backoffice-Ereignisse enthalten Informationen über den Status einer Bestellung, z. B. ob eine Bestellung aufgegeben, storniert, rückerstattet oder versandt wurde. Die Daten, die diese serverseitigen Ereignisse erfassen, zeigen eine 360-Grad-Ansicht der Bestellung des Käufers. Dies kann Händlern bei der Entwicklung von Marketing-Kampagnen helfen, den gesamten Bestellstatus besser zu erreichen oder zu analysieren. Sie können beispielsweise Trends in bestimmten Produktkategorien erkennen, die zu unterschiedlichen Jahreszeiten gut abschneiden. Zum Beispiel Winterkleidung, die sich in kalten Monaten besser verkauft, oder bestimmte Produktfarben, an denen sich Kunden über die Jahre interessieren. Darüber hinaus können Sie mithilfe von Bestellstatusdaten den Kundenwert über die gesamte Lebensdauer berechnen, indem Sie die Tendenz eines Käufers verstehen, basierend auf früheren Bestellungen zu konvertieren.
+Die Backoffice-Ereignisse enthalten Informationen über den Status einer Bestellung, z. B. ob eine Bestellung aufgegeben, storniert, rückerstattet oder versandt wurde. Die Daten, die diese serverseitigen Ereignisse erfassen, zeigen eine 360-Grad-Ansicht der Bestellung des Käufers. Dies kann Händlern bei der Entwicklung von Marketing-Kampagnen helfen, den gesamten Bestellstatus besser zu erreichen oder zu analysieren. Sie können beispielsweise Trends in bestimmten Produktkategorien erkennen, die zu unterschiedlichen Jahreszeiten gut abschneiden. Zum Beispiel Winterkleidung, die sich in kalten Monaten besser verkauft, oder bestimmte Produktfarben, an denen sich Kunden über die Jahre interessieren. Darüber hinaus können Sie mithilfe von Bestellstatusdaten den Kundenwert über die gesamte Lebensdauer berechnen, indem Sie die Tendenz eines Käufers verstehen, basierend auf früheren Bestellungen zu konvertieren.
 
 ### orderPlaced
 
@@ -455,4 +451,3 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 
 In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschrieben.
 |Feld|Beschreibung| |—|—| |`identityMap`|Enthält die E-Mail-Adresse, die den Kunden identifiziert| |`address`|Die technische Adresse, z. B. `name@domain.com` wie allgemein in RFC2822 und nachfolgenden Standards definiert| |`eventType`|`commerce.creditMemoIssued`| |`productListItems`|Ein Array von Produkten in der Reihenfolge| |`order`|Enthält Informationen zur Bestellung| |`purchaseID`|Vom Verkäufer für diesen Kauf oder Vertrag zugewiesene eindeutige Kennung. Es gibt keine Garantie dafür, dass die ID eindeutig ist| |`purchaseOrderNumber`|Vom Käufer für diesen Kauf oder Vertrag zugewiesene eindeutige Kennung|
-+++
