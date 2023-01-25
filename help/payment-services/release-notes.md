@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] Versionshinweise"
 description: Informationen zu allen [!DNL Payment Services] veröffentlicht.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: c26023b1b63362d42ab351e451168dd50ff962a2
+source-git-commit: 1b86831f04250a0a45c09842da0018e20c422e62
 workflow-type: tm+mt
-source-wordcount: '1382'
+source-wordcount: '1445'
 ht-degree: 1%
 
 ---
@@ -29,6 +29,10 @@ In diesen Versionshinweisen werden Funktionsänderungen und -korrekturen beschri
 
 +++Hosting-Dienstaktualisierungen
 
+_25. Januar 2023_
+
+![Bekanntes Problem](../assets/bug.svg)<!-- Issue PAY-4102 --> Neue Installationen von Zahlungsdiensten können Commerce-Services nicht konfigurieren, sodass Zahlungsdienste nicht mehr funktionsfähig sind. Um dieses Problem zu beheben, aktualisieren Sie Ihre Zahlungsdiensterweiterung auf Version 1.5.3.
+
 _12. September 2022_
 
 ![Neu](../assets/new.svg)<!-- Issue PAY-3705 --> Die `increment_id` ist jetzt für die Abstimmung von Auszahlungen in externen ERP-Systemen verfügbar. Sie wird an die [`custom_id` _und_ `invoice_id`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/data.html#reconcile-with-erp-system), die sowohl im PayPal-Webhook als auch in den Details zur Handelsaktivität für eine Auszahlung angezeigt wird.
@@ -52,6 +56,12 @@ _28. Juni 2021_
 ![Neu](../assets/new.svg)<!-- Issue PAY-2761 --> Sie können jetzt die Daten anpassen, die im [Bestellstatusbericht](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) und [Zahlungsbericht](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) durch Einblenden oder Ausblenden von Spalten mithilfe des Steuerelements Spalteneinstellungen.
 
 +++
+
+## v1.5.3
+
+_25. Januar 2022_
+
+![Problem behoben](../assets/fix.svg)<!-- Issue PAY-4102 --> Es wurde ein Problem behoben, das ein rückwärtsinkompatibles bekanntes Problem verursachte. In dieser Version wird die Version der Dienst-ID-Erweiterung auf die neueste stabile Version festgelegt, die es neuen Zahlungsdienst-Installationen ermöglicht, Commerce Services zu konfigurieren.
 
 ## v1.5.2
 
