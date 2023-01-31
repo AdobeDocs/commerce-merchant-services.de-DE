@@ -2,9 +2,9 @@
 title: Guide Overview
 description: Erfahren Sie, wie Sie Adobe Commerce-Daten mithilfe des Experience Platform-Connectors in Adobe Experience Platform integrieren.
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
-source-git-commit: c9b1d7e34632f7a54544bc6944144b1833ecc5a5
+source-git-commit: 092f2f4ab9d34466d66fe5b726bfff67a1309c6f
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,6 @@ Um den Experience Platform-Connector verwenden zu können, benötigen Sie Folgen
 1. [Erstellen oder aktualisieren](update-xdm.md) Ihr XDM-Schema mit Commerce-spezifischen Feldergruppen.
 1. [Datensatz erstellen](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) basierend auf dem von Ihnen erstellten oder aktualisierten Schema.
 1. [Erstellen eines Datenspeichers](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) und wählen Sie das XDM-Schema aus, das die Commerce-spezifischen Feldergruppen enthält.
-1. (Optional) [Hochladen von Kundenprofilen](profile.md) Adobe Experience Platform zugeordnet werden, sodass Storefront-Daten bestimmten Käufern zugeordnet werden können, um deren Einkaufserlebnis zu verbessern.
 
 ## Zielgruppe
 
