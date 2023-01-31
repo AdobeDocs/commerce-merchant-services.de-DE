@@ -2,9 +2,9 @@
 title: '[!DNL Catalog Service] Guide Overview'
 description: '''[!DNL Catalog Service for Adobe Commerce] bietet eine Möglichkeit, den Inhalt von Produktansichtsseiten und Produktlistenseiten schneller abzurufen als die nativen Adobe Commerce GraphQL-Abfragen."'
 exl-id: d83375b2-0d87-4a0a-baf8-eb7eebe85a80
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '238'
 ht-degree: 0%
 
 ---
@@ -32,6 +32,6 @@ Die [Onboarding-Prozess](https://experienceleague.adobe.com/docs/commerce-mercha
 
 Verwenden Sie die folgenden Ressourcen, wenn Sie Informationen benötigen oder Fragen haben, die nicht in diesem Handbuch behandelt werden:
 
-* [Hilfezentrum](https://support.magento.com/hc/en-us/search#q=catalog%20service&amp;sort=relevancy) - Weitere Informationen finden Sie in den Artikeln zur Fehlerbehebung für Catalog Service .
-* [Support-Tickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) - Senden Sie ein Ticket, um zusätzliche Hilfe zu erhalten.
+* [Hilfezentrum](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html) für Artikel zur Fehlerbehebung.
+* [Support-Tickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) - Senden Sie ein Ticket, um zusätzliche Hilfe zu erhalten.
 * Treten Sie dem Adobe Commerce-Technikerteam bei und verwenden Sie die Storefront-Dienste von SaaS im [#storefront-services](https://magentocommeng.slack.com/archives/C03HVPG8RS4) Der öffentliche Slack-Kanal muss auf dem neuesten Stand sein.

@@ -4,9 +4,9 @@ description: Verbinden Sie Ihre Instanz mit [!DNL Payment Services] durch Ausfü
 role: User
 level: Intermediate
 exl-id: 1ee8c660-0941-4378-a1d7-ae45de3de211
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: d8be88f47f103c5d632540dae743ede398a9b7ad
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '344'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Informationen zum Erstellen oder Zugreifen auf API-Schlüssel finden Sie unter [
 
 ## Fehlerbehebung
 
-* [Fehlerbehebung [!DNL Payment Services] Installation](https://support.magento.com/hc/en-us/articles/4406603542541)
-* [PayPal-Sandbox-Konto nicht verifiziert](https://support.magento.com/hc/en-us/articles/4406954952461)
-* [Verzögert [!DNL Payment Services] Berichtsdaten](https://support.magento.com/hc/en-us/articles/4406114741517)
-* [Testen der Kreditkarte schlägt bei PayPal bei der Verarbeitung von Zahlungen in einer Sandbox-Umgebung fehl](https://support.magento.com/hc/en-us/articles/5201041963917)
+* [Fehlerbehebung [!DNL Payment Services] Installation](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html?lang=en)
+* [PayPal-Sandbox-Konto nicht verifiziert](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html)
+* [Verzögert [!DNL Payment Services] Berichtsdaten](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html)
+* [Testen der Kreditkarte schlägt bei PayPal bei der Verarbeitung von Zahlungen in einer Sandbox-Umgebung fehl](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html?lang=en)

@@ -2,9 +2,9 @@
 title: Katalogsynchronisierung
 description: Erfahren Sie, wie Sie Produktdaten aus der [!DNL Commerce] Server zu [!DNL Commerce Services] laufend, um die Dienstleistungen auf dem neuesten Stand zu halten.
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
-source-git-commit: 853c55fbae3ccfb7abea8ce074127f2871d55688
+source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '909'
 ht-degree: 0%
 
 ---
@@ -96,11 +96,11 @@ Wenn Sie eine Datenresynchronisierung Trigger haben, kann es bis zu eine Stunde 
 
 ### Synchronisierung wird nicht ausgeführt
 
-Wenn die Synchronisierung nicht planmäßig ausgeführt wird oder nichts synchronisiert wird, lesen Sie den Abschnitt [KnowledgeBase](https://support.magento.com/hc/en-us/articles/360042224851).
+Wenn die Synchronisierung nicht planmäßig ausgeführt wird oder nichts synchronisiert wird, lesen Sie den Abschnitt [KnowledgeBase](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html).
 
 ### Synchronisierung fehlgeschlagen
 
-Wenn die Katalogsynchronisierung den Status **Fehlgeschlagen**, senden Sie eine [Support-Ticket](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket).
+Wenn die Katalogsynchronisierung den Status **Fehlgeschlagen**, senden Sie eine [Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
 
 ## Befehlszeilenschnittstelle {#resynccmdline}
 

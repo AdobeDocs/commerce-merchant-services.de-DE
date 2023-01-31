@@ -4,9 +4,9 @@ description: Konfigurieren allgemeiner Einstellungen zum Aktivieren von [!DNL St
 role: User, Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: 0cf5a99891fb6ec0b6e446aac05e64bc97d70e7c
+source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
 workflow-type: tm+mt
-source-wordcount: '2543'
+source-wordcount: '2541'
 ht-degree: 0%
 
 ---
@@ -151,7 +151,7 @@ Da die Protokolldatei der Anwendung schnell wachsen kann, aktivieren Sie bei Bed
 
 >[!TIP]
 >
->Bitten Sie bei lokalen Installationen von Adobe Commerce Ihren Systemadministrator, eine Protokollrotation für die `var/log/walmart-bopis.log` -Datei, um die Größe zu minimieren. Informationen zu Vor-Ort-Installationen von Adobe Commerce finden Sie unter [Protokollrotation](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html?lang=en#server-settings) im _Adobe Commerce-Installationsanleitung_. Informationen zu Adobe Commerce zu Cloud-Infrastrukturprojekten finden Sie unter [Protokolle anzeigen und verwalten](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html).
+>Bitten Sie bei lokalen Installationen von Adobe Commerce Ihren Systemadministrator, eine Protokollrotation für die `var/log/walmart-bopis.log` -Datei, um die Größe zu minimieren. Informationen zu Vor-Ort-Installationen von Adobe Commerce finden Sie unter [Protokollrotation](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html#server-settings) im _Adobe Commerce-Installationsanleitung_. Informationen zu Adobe Commerce zu Cloud-Infrastrukturprojekten finden Sie unter [Protokolle anzeigen und verwalten](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html).
 
 <table>
 <thead>

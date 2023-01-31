@@ -2,16 +2,16 @@
 title: Ereigniskollektion überprüfen
 description: Erfahren Sie, wie Sie überprüfen können, ob Verhaltensdaten an Adobe Commerce gesendet werden.
 exl-id: c8c34db4-9d87-4012-b8f0-e9b1da214305
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: d8be88f47f103c5d632540dae743ede398a9b7ad
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '451'
 ht-degree: 0%
 
 ---
 
 # Ereigniskollektion überprüfen
 
-Nach [Installieren und Konfigurieren](install-configure.md) die `magento/product-recommendations` -Modul können Sie überprüfen, ob die Verhaltensdaten an Adobe Commerce gesendet werden. Sie können die in Chrome verfügbaren Entwicklertools verwenden oder die Chrome-Erweiterung Snowplow installieren. Weitere Informationen finden Sie unter [Fehlerbehebung [!DNL Product Recommendations] Modul](https://support.magento.com/hc/en-us/articles/360042224851) in der Support-Wissensdatenbank.
+Nach [Installieren und Konfigurieren](install-configure.md) die `magento/product-recommendations` -Modul können Sie überprüfen, ob die Verhaltensdaten an Adobe Commerce gesendet werden. Sie können die in Chrome verfügbaren Entwicklertools verwenden oder die Chrome-Erweiterung Snowplow installieren. Weitere Informationen finden Sie unter [Fehlerbehebung [!DNL Product Recommendations] Modul](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html) in der Support-Wissensdatenbank.
 
 ## Überprüfen mit Entwicklertools in Chrome
 

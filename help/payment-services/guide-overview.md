@@ -4,9 +4,9 @@ description: Umfassende Informationen zu [!DNL Payment Services] für [!DNL Adob
 seo-title: Adobe Commerce Payments Services Guide
 seo-description: Describes how to use [!DNL Payment Services] with Adobe Commerce or [!DNL Magento Open Source].
 exl-id: 30b23f26-9aac-4a24-a607-2431455fc935
-source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
+source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '214'
 ht-degree: 0%
 
 ---
@@ -44,5 +44,5 @@ Wenn Sie Informationen benötigen oder Fragen haben, die nicht in diesem Handbuc
 
 ![Hilfe-Ressourcen](assets/help-resources.png)
 
-* [Hilfezentrum](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html?lang=en)—Suchen Sie nach [!DNL Payment Services]-zugehörige Artikel zur Fehlerbehebung in der Wissensdatenbank.
-* [Support-Tickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket)—Senden Sie ein Ticket, um zusätzliche Hilfe zu erhalten.
+* [Hilfezentrum](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html)—Suchen Sie nach [!DNL Payment Services]-zugehörige Artikel zur Fehlerbehebung in der Wissensdatenbank.
+* [Support-Tickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)—Senden Sie ein Ticket, um zusätzliche Hilfe zu erhalten.

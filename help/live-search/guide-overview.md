@@ -1,10 +1,10 @@
 ---
-title: '"[!DNL Live Search] Guide Overview"'
-description: '"[!DNL Live Search] Adobe Commerce bietet ein blitzschnelles, superrelevantes und intuitives Sucherlebnis."'
+title: "[!DNL Live Search] Guide Overview"
+description: "[!DNL Live Search] Adobe Commerce bietet ein blitzschnelles, superrelevantes und intuitives Sucherlebnis."
 exl-id: 11e2ed97-ce80-4826-b914-71688dd29e4b
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
 workflow-type: tm+mt
-source-wordcount: '236'
+source-wordcount: '242'
 ht-degree: 0%
 
 ---
@@ -30,8 +30,8 @@ Die Live-Suche umfasst drei Bereiche für Administratoren:
 
 Verwenden Sie die folgenden Ressourcen, wenn Sie Informationen benötigen oder Fragen haben, die nicht in diesem Handbuch behandelt werden:
 
-[Hilfezentrum](https://support.magento.com/hc/en-us) - Weitere Informationen finden Sie in den Artikeln zur Live-Suche.
-[Support-Tickets](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket) - Senden Sie ein Ticket, um zusätzliche Hilfe zu erhalten.
+[Hilfezentrum](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) - Weitere Informationen finden Sie in den Artikeln zur Live-Suche.
+[Support-Tickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) - Senden Sie ein Ticket, um zusätzliche Hilfe zu erhalten.
 
 Führen Sie vor dem Senden eines Support-Tickets über die Befehlszeile Folgendes aus, um die derzeit installierte Live Search-Version zu überprüfen:
 

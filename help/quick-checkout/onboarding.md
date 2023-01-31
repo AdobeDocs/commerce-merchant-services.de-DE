@@ -2,9 +2,9 @@
 title: "Onboard the [!DNL Quick Checkout] für Adobe Commerce-Erweiterung"
 description: "Erfahren Sie, wie die [!DNL Quick Checkout] kann von Ihrer Adobe Commerce-Instanz profitieren und zeigen, wie Sie die Erweiterung erfolgreich integrieren und einrichten können."
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
+source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
 workflow-type: tm+mt
-source-wordcount: '834'
+source-wordcount: '832'
 ht-degree: 0%
 
 ---
@@ -155,6 +155,6 @@ Siehe [Site-, Store- und Ansichtsbereich](https://experienceleague.adobe.com/doc
 
 Der Onboarding-Prozess soll Sie durch die erforderlichen Schritte zur Einrichtung und Aktivierung der [!DNL Express Checkout] Funktionalität.
 
-Kontaktieren Sie den Adobe Commerce-Support über [Adobe Commerce Help Center](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en) für jede Unterstützung.
+Kontaktieren Sie den Adobe Commerce-Support über [Adobe Commerce Help Center](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) für jede Unterstützung.
 
 Siehe [Testen und Validieren](../quick-checkout/testing.md) für weitere Informationen.
