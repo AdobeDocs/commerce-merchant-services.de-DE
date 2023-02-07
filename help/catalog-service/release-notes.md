@@ -1,10 +1,10 @@
 ---
-title: '[!DNL Catalog Service] Versionshinweise'
+title: '''[!DNL Catalog Service] Versionshinweise'
 description: Die neuesten Versionsinformationen für [!DNL Catalog Service] für Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: d377aac8fd42d8c9b1fc0ab6673a6965f50cf452
+source-git-commit: 67f9e5ce69930f3298427a103f9160f925d2ae0d
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '781'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,33 @@ Diese Versionshinweise beschreiben die neuesten Versionen von [!DNL Catalog Serv
 * ![Neu](../assets/new.svg) Neue Funktionen
 * ![Fehlerbehebung](../assets/fix.svg) Fehlerbehebungen und Verbesserungen
 * ![Fehler](../assets/bug.svg) Bekannte Probleme
+
+## Version 1.4
+
+Releasedatum: 2023-2-7 Kompatibel mit Adobe Commerce (EE): 2.4.x Kompatibel mit Adobe Commerce for Cloud (ECE): 2.4.x Stabilität: Allgemeine Verfügbarkeit
+
+![Neu](../assets/new.svg) Das Katalog-Service-Metapaket wurde veröffentlicht, um die Installationsschritte zu vereinfachen.
+![Fehlerbehebung](../assets/fix.svg) API-Skalierbarkeit und Leistungsverbesserungen.
+
+
+### Bekannte Einschränkungen
+
+Diese Funktionen werden noch nicht unterstützt:
+
+* Bundle-Produkte mit Festpreis
+* Beim Löschen von Varianten aus dem Katalog werden keine Aktualisierungen empfangen.
+* Die maximale Größe für die Nutzlast dynamischer Attribute beträgt 9 MB.
+* Gruppenproduktpreis. Kann mit einfachen Produktpreisen berechnet werden.
+* In einem Bild-Array enthält nur das erste Bild Rollen.
+* Farbmuster
+* Laden der Produktdetailseite über die Produkt-URL.
+
+Die folgenden Einschränkungen können mit der GraphQL-Core-API behoben werden:
+
+* Mindestpreis für Werbung
+* Kategoriekosten
+* Herunterladbare Produkte und Geschenkkarten
+* Kategorien (`categories` und `categoryList`)
 
 ## Version 1.3
 
