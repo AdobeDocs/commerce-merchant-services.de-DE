@@ -2,9 +2,9 @@
 title: Katalogsynchronisierung
 description: Erfahren Sie, wie Sie Produktdaten aus der [!DNL Commerce] Server zu [!DNL Commerce Services] laufend, um die Dienstleistungen auf dem neuesten Stand zu halten.
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
-source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
+source-git-commit: dd9ba7171cf6a199701b1abb8083a65326e89f5d
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '932'
 ht-degree: 0%
 
 ---
@@ -108,7 +108,7 @@ Die `saas:resync` -Befehl ist Teil der `magento/saas-export` Paket. Sie können 
 
 >[!NOTE]
 >
-> Wenn Sie eine erneute Synchronisierung von Daten über die Befehlszeile Trigger haben, kann es bis zu einer Stunde dauern, bis die Daten aktualisiert werden.
+> Beim erstmaligen Ausführen einer Datensynchronisation ist es wichtig, die `productattributes` Feed zuerst, gefolgt von `productoverrides`, bevor Sie die `products` Feed.
 
 Befehlsoptionen:
 
@@ -130,6 +130,8 @@ Der Feed-Name kann einer der folgenden sein:
 - `variants`— Produktvarianten eines konfigurierbaren Produkts wie Farbe und Größe
 - `productattributes`- Produktattribute wie `activity`, `gender`, `tops`, `bottoms`, usw.
 - `productoverrides`— Kundenspezifische Preisbildungs- und Katalogsichtbarkeitsregeln, z. B. auf der Grundlage von Kategorieberechtigungen
+
+Wenn Sie eine erneute Synchronisierung von Daten über die Befehlszeile Trigger haben, kann es bis zu einer Stunde dauern, bis die Daten aktualisiert werden.
 
 ### Beispiele
 
