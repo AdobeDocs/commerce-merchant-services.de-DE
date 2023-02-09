@@ -2,9 +2,9 @@
 title: "Checkout-Fluss für einen Adobe Commerce-Benutzer"
 description: "Überblick über die [!DNL Quick Checkout] Fluss für einen Adobe Commerce-Benutzer."
 exl-id: 085e393b-15f6-4d5a-a04d-927b1f95b74e
-source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
+source-git-commit: 66082614ffe6456e2c24a1e8d9baaa1113fb7ffb
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,9 @@ Wenn der Käufer vor dem Checkout bei Adobe Commerce angemeldet ist, wird die [!
 
 Wenn Sie Probleme haben, wenn Sie eine Bestellung als bestehenden Adobe Commerce-Benutzer aufgeben, lesen Sie den Abschnitt [Fehlerbehebung bei Problemen mit der Schnellüberprüfung](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/quick-checkout-issues.html) Artikel im Adobe Commerce Help Center.
 
-### Automatische Anmeldung
+## Automatische Anmeldung
+
+Die Komponente &quot;Automatische Anmeldung&quot;erkennt, wenn ein Käufer über eine aktive Bolt-Sitzung verfügt, und protokolliert den Käufer automatisch. Dadurch werden die Schritte zur Kontoerkennung und zum einmaligen Kenncode (OTP) übersprungen, da der Käufer sie in einer vorherigen Sitzung abgeschlossen hat.
 
 Es ist möglich, eine automatische Anmeldung für [!DNL Quick Checkout] Benutzer. Sie können eine Konfiguration aktivieren, um einen Benutzer während des Checkout automatisch anzumelden.
 

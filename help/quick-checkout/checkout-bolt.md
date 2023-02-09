@@ -2,9 +2,9 @@
 title: "Checkout-Fluss eines Bolt-Benutzers in Adobe Commerce"
 description: Übersicht über die [!DNL Quick Checkout] Fluss für einen Bolt-Benutzer in Adobe Commerce.
 exl-id: 12f58b7e-1f86-4891-b225-9f4be82c2d5d
-source-git-commit: 7c99f1aa4bed9878625d855509448494d5547d56
+source-git-commit: 66082614ffe6456e2c24a1e8d9baaa1113fb7ffb
 workflow-type: tm+mt
-source-wordcount: '202'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,10 @@ ht-degree: 0%
 # Gastbenutzer
 
 Das Gastcheckout-Erlebnis unterscheidet sich vom Adobe-Benutzererlebnis. Wenn ein Käufer eine E-Mail-Adresse zum Checkout eingibt, wird die [!DNL Quick Checkout] validiert es und findet ein vorhandenes [!DNL Bolt] -Konto.
+
+>[!WARNING]
+>
+> Die [!DNL In-Store Pickup] (ISPU)-Funktionalität wird nicht unterstützt, wenn die [!DNL Quick Checkout] aktiviert ist.
 
 ## Angemeldet [!DNL Bolt] account
 

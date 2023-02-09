@@ -2,9 +2,9 @@
 title: "Checkout-Fluss in Adobe Commerce"
 description: "Überblick über die [!DNL Quick Checkout] Fluss in Adobe Commerce."
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
-source-git-commit: d28e8ccd4362b4e32b2eb8c6e1faf38d7c99a4c2
+source-git-commit: 66082614ffe6456e2c24a1e8d9baaa1113fb7ffb
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: '217'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,10 @@ Erfolgreich [!DNL Quick Checkout] Fluss besteht aus folgenden Schritten:
 1. Fahren Sie mit dem Checkout fort.
 
 ![Checkout](assets/proceed-checkout.png)
+
+>[!NOTE]
+>
+> Sie können die automatische Anmeldung für Ihren Händler aktivieren. Siehe [Thema &quot;Automatische Anmeldung aktivieren&quot; von Bolt](https://help.bolt.com/products/embedded/direct-api/auto-login/) für weitere Informationen.
 
 1. Geben Sie bei Aufforderung eine E-Mail-Adresse ein, die mit einer [!DNL Bolt] -Konto.
 1. Geben Sie das einmalige Kennwort (OTP) ein, das an dieses gesendet wird. [!DNL Bolt] E-Mail-Adresse oder Telefonnummer des Kontos.

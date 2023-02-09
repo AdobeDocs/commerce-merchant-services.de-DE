@@ -1,10 +1,10 @@
 ---
-title: '[!DNL Quick Checkout] Versionshinweise'
+title: '''[!DNL Quick Checkout] Versionshinweise'
 description: Informationen zu allen [!DNL Quick Checkout] veröffentlicht.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
+source-git-commit: 66082614ffe6456e2c24a1e8d9baaa1113fb7ffb
 workflow-type: tm+mt
-source-wordcount: '1185'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -64,6 +64,14 @@ _5. Oktober 2022_
 ![Problem behoben](../assets/fix.svg)<!-- Issue BOLT-369 --> Nun, die [[!DNL Quick Checkout] Admin Panel](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) zeigt die App-Version in der Fußzeile an.
 
 +++
+
+## v1.6.0
+
+_9. Februar 2023_
+
+![Problem behoben](../assets/fix.svg)<!-- Issue BOLT-567 --> Verbesserungen der Benutzererfahrung bei [Bestellung](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html) mithilfe der [In-store-Versand](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/delivery/basic-methods/shipping-in-store-delivery.html) -Methode mit der [!DNL Quick Checkout] deaktiviert ist.
+
+![Problem behoben](../assets/fix.svg)<!-- Issue BOLT-569 --> Die Abmeldefunktion wurde verbessert, sodass Käufer [Abmeldung vom Bolt Network](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/user-session-lifetime.html).
 
 ## v1.5.0
 
