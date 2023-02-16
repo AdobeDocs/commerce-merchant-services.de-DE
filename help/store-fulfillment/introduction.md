@@ -1,12 +1,12 @@
 ---
-title: '"Einführung in [!DNL Store Fulfillment]"'
-description: '"Erfahren Sie wie [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] unterstützt Online-Einkauf, Abholung im Geschäft (BOPIS) für Kunden. Verwenden Sie die Store Assist Mobile, um die BOPIS-Erfüllung und Auftragsverarbeitung für Store-Mitarbeiter und Commerce-Kunden zu optimieren."'
+title: "Einführung in [!DNL Store Fulfillment]"
+description: "Erfahren Sie wie [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] unterstützt Online-Einkauf, Abholung im Geschäft (BOPIS) für Kunden. Verwenden Sie die Store Assist Mobile, um die BOPIS-Erfüllung und Auftragsverarbeitung für Store-Mitarbeiter und Commerce-Kunden zu optimieren."
 role: User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c
-source-git-commit: 1fb22b4644d41ea5c60aead3fe2c455dfa3382f8
+source-git-commit: 1157fe71dbef07f9db835a5a399f9304af550a86
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '605'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Die Store Fulfillment-Lösung unterstützt und erweitert native Adobe Commerce-F
 
 * Vollständig kompatibel mit dem Luma-Design
 
-* GraphQL-Unterstützung für Headless- und Venia-Storefronts
+* Teilkompatibilität mit PWA- und Headless-Storefronts
 
 * Unterstützt die Store-Hilfe-App von Walmart Commerce Technologies. Diese App stellt Informationen zu Sammelbestellungen direkt an das Handheld-Gerät Ihres Mitarbeiters am ausgewählten Store-Speicherort bereit. Mit diesen Informationen können sie schnell und präzise Artikel auswählen, bereitstellen und an Kunden übergeben, wenn sie im Geschäft ankommen.
 
