@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] Versionshinweise"
 description: Informationen zu allen [!DNL Payment Services] veröffentlicht.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: a9970d8ac1400a63ef60b289150556b70e71ef22
+source-git-commit: e701fe8284ccb021c20ee7233b66d888b2803a23
 workflow-type: tm+mt
-source-wordcount: '1488'
+source-wordcount: '1564'
 ht-degree: 0%
 
 ---
@@ -56,6 +56,14 @@ _28. Juni 2021_
 ![Neu](../assets/new.svg)<!-- Issue PAY-2761 --> Sie können jetzt die Daten anpassen, die im [Bestellstatusbericht](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) und [Zahlungsbericht](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) durch Einblenden oder Ausblenden von Spalten mithilfe des Steuerelements Spalteneinstellungen.
 
 +++
+
+## v1.6.0
+
+_17. Februar 2023_
+
+![Neu](../assets/fix.svg)<!-- Issue PAY-3540 --> Hinzugefügt [PCI-3DS-Compliance-Funktion für Händler, die in der Europäischen Union (EU) und Großbritannien tätig sind](security.md#3ds). Diese zusätzliche Sicherheitsebene, die die Authentifizierung von Käufern bei ihrem Kreditkartenaussteller erfordert, trägt zur Verhinderung von Online-Betrug bei und ist als Teil der EU-Vorschriften zur Einhaltung der Vorschriften erforderlich.
+
+![Neu](../assets/fix.svg)<!-- Issue PAY-3609 --> Die Möglichkeit wurde hinzugefügt, [Aktivieren der Kartenüberprüfung in der Admin-Konsole](vaulting.md##use-vaulting-in-the-admin). Auf diese Weise können Händler mit ihren bewährten Zahlungsmethoden eine Bestellung für Kunden in der Admin erstellen.
 
 ## v1.5.4
 

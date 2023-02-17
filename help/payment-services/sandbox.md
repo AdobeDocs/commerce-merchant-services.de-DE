@@ -2,9 +2,9 @@
 title: Einrichten der Test-Sandbox
 description: Verwenden eines PayPal-Sandbox-Kontos zur Verwendung [!DNL Payment Services] im Testmodus.
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
-source-git-commit: 3596e3e156a834e39da2105e7ac79588d1edd408
+source-git-commit: 5aba246ce2a7802954a90c08c7dac2247a71ff6d
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '595'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,8 @@ So schließen Sie das Onboarding einer Sandbox ab:
 
    Sie erhalten ein PayPal-Fenster, in dem Sie ein PayPal-Konto anschließen können, um Zahlungen zu akzeptieren.
 
-1. Geben Sie die E-Mail-Adresse Ihres PayPal-Geschäftskontos (kein PayPal-Sandbox-Konto) und Ihr Land oder Ihre Region ein und klicken Sie auf **[!UICONTROL Next]**.
+1. Geben Sie die E-Mail-Adresse und das Passwort des PayPal-Sandbox-Kontos ein, das Sie in Schritt 3 generiert haben (nicht die Informationen zu Ihrem PayPal-Geschäftskonto), sowie Ihr Land oder Ihre Region.
+1. Klicken **[!UICONTROL Next]**.
 
    ![PayPal - PayPal-Konto für Zahlungen verbinden](assets/paypal-connectacct.png)
 
