@@ -4,9 +4,9 @@ description: Nach der Installation können Sie [!DNL Payment Services] in der St
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 17ba23192fed6cd219411420c5d56b42c94af0f5
+source-git-commit: 482182dca95964e68f1637ff1cc7aad84b00e3eb
 workflow-type: tm+mt
-source-wordcount: '1825'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -112,6 +112,7 @@ Siehe [Zahlungsoptionen](payments-options.md#credit-card-fields) für weitere In
 1. Aktivieren [Sichere 3DS-Authentifizierung](security.md#3ds) (`Off` standardmäßig) können Sie die **[!UICONTROL 3DS Secure authentication]** Auswahl zu `Always` oder `When required`.
 1. Um Kreditkartenfelder auf der Checkout-Seite zu aktivieren oder zu deaktivieren, aktivieren Sie die **[!UICONTROL Show on checkout page]** auswählen.
 1. So aktivieren oder deaktivieren Sie [Kartengewölbe](#card-vaulting), um die **[!UICONTROL Vault enabled]** auswählen.
+1. So aktivieren oder deaktivieren Sie [Gültige Zahlungsmethoden im Admin](#card-vaulting) (Damit Händler ihre Bestellungen für Kunden in der Admin-Konsole mit ihrer gültigen Zahlungsmethode abschließen können), schalten Sie die **[!UICONTROL Show vaulted methods in Admin]** auswählen.
 1. Um den Debug-Modus zu aktivieren bzw. zu deaktivieren, müssen Sie die **[!UICONTROL Debug Mode]** auswählen.
 1. Klicken **[!UICONTROL Save]**.
 
@@ -127,7 +128,8 @@ Siehe [Zahlungsoptionen](payments-options.md#credit-card-fields) für weitere In
 | [!UICONTROL Payment Action] | website | Die [Zahlungsaktion](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} für die angegebene Zahlungsmethode. Optionen: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL 3DS Secure authentication] | website | Aktivieren oder Deaktivieren [Sichere 3DS-Authentifizierung](security.md#3ds). Optionen: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Show on checkout page] | website | Aktivieren oder deaktivieren Sie Kreditkartenfelder, die auf der Checkout-Seite angezeigt werden. Optionen: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Vault enabled] | website | Aktivieren oder Deaktivieren [Kreditkartenausfall](#card-vaulting). Optionen: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Vault enabled] | Store-Ansicht | Aktivieren oder Deaktivieren [Kreditkartenausfall](vaulting.md). Optionen: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show vaulted payment methods in Admin] | Store-Ansicht | Aktivierung oder Deaktivierung der Möglichkeit für Händler, Bestellungen für Kunden in der Admin-Konsole abzuschließen [Verwendung einer gültigen Zahlungsmethode](vaulting.md). Optionen: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Debug Mode] | website | Aktivieren oder deaktivieren Sie den Debug-Modus. Optionen: [!UICONTROL Yes] / [!UICONTROL No] |
 
 ### Zahlungsschaltflächen
@@ -230,6 +232,8 @@ Um sicherzustellen, dass Ihr Store die richtige Konfiguration anzeigt, werden re
 ## Kartengewölbe
 
 Sie können Funktionen aktivieren, mit denen Ihre Kunden ihre Kreditkarteninformationen in ihrem Mein Konto für zukünftige Käufe verwenden oder speichern können.
+
+Sie können auch die Kartenauswertung in Admin verwenden, um nachfolgende Bestellungen für bestehende Kunden abzuschließen.
 
 Aktivieren oder deaktivieren Sie die Kartenüberprüfung im [Einstellungen für Kreditkartenfelder](#credit-card-fields).
 

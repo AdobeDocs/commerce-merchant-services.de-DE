@@ -4,9 +4,9 @@ description: Nach der Installation können Sie [!DNL Payment Services] in der St
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: 17ba23192fed6cd219411420c5d56b42c94af0f5
+source-git-commit: 482182dca95964e68f1637ff1cc7aad84b00e3eb
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '868'
 ht-degree: 0%
 
 ---
@@ -63,6 +63,7 @@ Siehe [Zahlungsoptionen](payments-options.md#paypal-smart-buttons) für weitere 
 1. nach [die Zahlungsaktion festlegen](production.md#set-payment-services-as-payment-method)auswählen **[!UICONTROL Authorize]** oder **Autorisieren und Erfassen**.
 1. Für **[!UICONTROL Show on checkout page]** auswählen `Yes` , um Kreditkartenfelder auf der Checkout-Seite zu aktivieren.
 1. Für **[!UICONTROL Vault Enabled]** auswählen `Yes` , um die Kreditkartenausgabe für den Checkout zu aktivieren.
+1. Für **[!UICONTROL Vault Enabled in Admin]** auswählen `Yes` , damit der Händler Bestellungen für Kunden mit seiner Kreditkarte erstellen kann.
 1. Für **[!UICONTROL Debug Mode]** auswählen `Yes` , um den Debug-Modus zu aktivieren (oder `No` , um sie zu deaktivieren).
 1. Aktivieren **[!UICONTROL 3DS Secure authentication]** (`Off` Standardmäßig) `Always` oder `When required`.
 1. Klicken **[!UICONTROL Save Config]** , um Ihre Änderungen zu speichern.
@@ -73,9 +74,10 @@ Siehe [Zahlungsoptionen](payments-options.md#paypal-smart-buttons) für weitere 
 | Feld | Anwendungsbereich | Beschreibung |
 |---|---|---|
 | [!UICONTROL Title] | Store-Ansicht | Fügen Sie den Text für die Anzeige als Titel für diese Zahlungsoption in der Ansicht Zahlungsmethode während des Checkouts hinzu. Optionen: [!UICONTROL text field] |
-| [!UICONTROL Payment Action] | website | Die [Zahlungsaktion](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} für die angegebene Zahlungsmethode. Optionen: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | website | Die [Zahlungsaktion](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html) für die angegebene Zahlungsmethode. Optionen: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Show on checkout page] | website | Aktivieren oder deaktivieren Sie Kreditkartenfelder auf der Checkout-Seite. Optionen: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Vault Enabled] | website | Aktivieren oder deaktivieren Sie die Kreditkartenüberprüfung. Optionen: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Vault enabled] | Store-Ansicht | Aktivieren oder Deaktivieren [Kreditkartenausfall](vaulting.md). Optionen: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Vault enabled in Admin] | Store-Ansicht | Aktivieren oder Deaktivieren der Funktion für [Händler, um Kundenaufträge im Admin abzuschließen](vaulting.md) mit einer gültigen Zahlungsmethode. Optionen: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL 3DS Secure authentication] | website | Aktivieren oder Deaktivieren [Sichere 3DS-Authentifizierung](security.md#3ds). Optionen: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Debug Mode] | website | Aktivieren oder deaktivieren Sie den Debug-Modus. Optionen: [!UICONTROL Yes] / [!UICONTROL No] |
 
