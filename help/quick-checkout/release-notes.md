@@ -2,9 +2,9 @@
 title: '''[!DNL Quick Checkout] Versionshinweise'
 description: Informationen zu allen [!DNL Quick Checkout] veröffentlicht.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 66082614ffe6456e2c24a1e8d9baaa1113fb7ffb
+source-git-commit: d0d205b394a772ca84ffb561d0695bd79144f2c6
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1276'
 ht-degree: 0%
 
 ---
@@ -64,6 +64,12 @@ _5. Oktober 2022_
 ![Problem behoben](../assets/fix.svg)<!-- Issue BOLT-369 --> Nun, die [[!DNL Quick Checkout] Admin Panel](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) zeigt die App-Version in der Fußzeile an.
 
 +++
+
+## v1.7.0
+
+_22. Februar 2023_
+
+![Problem behoben](../assets/fix.svg)<!-- Issue AC-8002 --> Verbesserungen beim Benutzererlebnis bei der Auftragserteilung mithilfe einer [Multishipping](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/multishipping-settings.html) -Methode. Diese Funktion ermöglicht die Anzeige von Zahlungsmethoden während des Checkouts, wenn [!DNL Quick Checkout] aktiviert ist.
 
 ## v1.6.0
 
