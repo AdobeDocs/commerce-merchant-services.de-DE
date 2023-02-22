@@ -1,15 +1,15 @@
 ---
-title: Sicherheit und Einhaltung
+title: Sicherheit und Compliance
 description: Überprüfen Sie die Sicherheits- und Compliance-Anforderungen für Ihre Site.
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
-source-git-commit: 17ba23192fed6cd219411420c5d56b42c94af0f5
+source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
 source-wordcount: '483'
 ht-degree: 0%
 
 ---
 
-# Sicherheit und Einhaltung
+# Sicherheit und Compliance
 
 Sicherheit ist von größter Bedeutung [!DNL Payment Services] und keine von der privaten oder der Zahlungskartenindustrie (PCI) regulierten Informationen über Ihre [!DNL Payment Services].
 

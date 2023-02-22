@@ -1,15 +1,15 @@
 ---
-title: Kreditkartenausnahme
+title: Kreditkartenausfall
 description: Käufer können ihre Kreditkartendetails für zukünftige Käufe einbehalten (speichern).
 exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
-source-git-commit: fb0a8295772fc6e23f2910019e1beadd64d7ed70
+source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '304'
 ht-degree: 0%
 
 ---
 
-# Kreditkartenausnahme
+# Kreditkartenausfall
 
 Konvertieren von einmaligen Kunden in treue Kunden mit Kreditkartenausfall. Käufer können ihre Kreditkartenanmeldeinformationen während des Checkout speichern - oder &quot;Vault&quot;- um sie bei einem späteren Kauf für denselben oder einen anderen, innerhalb desselben Händlerkontos zu verwenden.
 

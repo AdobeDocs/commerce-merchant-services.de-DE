@@ -4,9 +4,9 @@ description: Nach der Installation können Sie [!DNL Payment Services] über die
 role: Admin, Developer
 level: Intermediate
 exl-id: 265ab1be-fe52-41f3-85cb-addbc2ddfb17
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '489'
 ht-degree: 0%
 
 ---
@@ -47,11 +47,11 @@ bin/magento indexer:set-mode schedule sales_order_data_exporter sales_order_stat
 >
 >Wenn Sie in Ihrem Befehl keine Indexer angeben, werden alle Indexer auf denselben Wert aktualisiert. Wenn Sie einen bestimmten Indexer ändern möchten, müssen Sie ihn in Ihrem -Befehl auflisten.
 
-Weitere Informationen zum manuellen Ändern des Indexermodus finden Sie unter [Indexer konfigurieren](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#configure-indexers){target=&quot;_blank&quot;} in der Entwicklerdokumentation. Informationen dazu, wie Sie ihn im Admin ändern können, finden Sie unter [Indexverwaltung](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target=&quot;_blank&quot;} im Benutzerhandbuch zur Kernbenutzeroberfläche.
+Weitere Informationen zum manuellen Ändern des Indexermodus finden Sie unter [Indexer konfigurieren](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#configure-indexers){target="_blank"} in the developer documentation. To learn how to change it in the Admin, see [Index management](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target="_blank"} im Benutzerhandbuch zu zentralen Themen.
 
 ### Daten manuell neu indizieren
 
-Sie können Daten manuell neu indizieren, anstatt darauf zu warten, dass sie automatisch vorgenommen werden. Siehe [Neuindizierung](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#reindex){target=&quot;_blank&quot;} in [Indexer verwalten](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html){target=&quot;_blank&quot;} für weitere Informationen.
+Sie können Daten manuell neu indizieren, anstatt darauf zu warten, dass sie automatisch vorgenommen werden. Siehe [Neuindizierung](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#reindex){target="_blank"} in [Manage the Indexers](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html){target="_blank"} für weitere Informationen.
 
 Wann `BY SCHEDULE` -Modus festgelegt ist, verfolgt das System geänderte Entitäten und der Cron-Auftrag aktualisiert den Index für sie anhand eines festgelegten Zeitplans. Siehe [Ausführen von cron über die Befehlszeile](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html#config-cli-cron-group-run) in [Cron konfigurieren und ausführen](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html)), um zu erfahren, wie Sie die Indexierung manuell mit Cron-Aufträgen durchführen.
 

@@ -2,9 +2,9 @@
 title: Aktivieren [!DNL Payment Services] für die Produktion
 description: Schließen Sie den Onboarding-Prozess ab, indem Sie [!DNL Payment Services] für die Produktion.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
-source-git-commit: 7b31fe7a71c3c238e6448627b2edfe06bbfbc80e
+source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '702'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Nach [Commerce-Dienste konfigurieren](connect.md#configure-commerce-services) un
 
    Diese Option wird angezeigt, wenn Sie noch keine Konfiguration vorgenommen haben [!DNL Payment Services] als Zahlungsmethode für eine oder mehrere Ihrer Websites.
 
-   Sie werden zum Einstellungsbereich in der Startansicht geleitet, wobei die entsprechenden Optionen erweitert sind (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), wo Sie die [!DNL Payment Services] Optionen als [Zahlungsmethode](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target=&quot;_blank&quot;}.
+   Sie werden zum Einstellungsbereich in der Startansicht geleitet, wobei die entsprechenden Optionen erweitert sind (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), wo Sie die [!DNL Payment Services] Optionen als [Zahlungsmethode](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target="_blank"}.
 
 1. In _[!UICONTROL General Configuration]_, set **[!UICONTROL Enable]**nach `Yes`.
 1. Satz **[!UICONTROL Payment Action]** für beide _[!UICONTROL Credit Card Fields]_und_[!UICONTROL PayPal Smart Buttons]_, zu einem der folgenden Elemente:
@@ -38,7 +38,7 @@ Nach [Commerce-Dienste konfigurieren](connect.md#configure-commerce-services) un
 
 1. Klicken **[!UICONTROL Save]**.
 1. Klicken **[!UICONTROL Go to Payment Services]** zurück an die [!DNL Payment Services] Home.
-1. [Cache löschen](https://docs.magento.com/user-guide/system/cache-management.html){target=&quot;_blank&quot;}.
+1. [Cache löschen](https://docs.magento.com/user-guide/system/cache-management.html){target="_blank"}.
 
    Das Löschen sollte nach jeder Konfigurationsänderung erfolgen.
 
@@ -107,7 +107,7 @@ So aktivieren Sie Live-Zahlungen:
 1. Klicken Sie auf der Startseite auf **[!UICONTROL Settings]** oben rechts auf der Seite. Siehe [Startseite](payments-home.md) für weitere Informationen.
 1. Im _[!UICONTROL General Configuration]_Abschnittsset **[!UICONTROL Payment mode]**nach `Production`.
 1. Klicken **[!UICONTROL Save]**.
-1. [Cache löschen](https://docs.magento.com/user-guide/system/cache-management.html){target=&quot;_blank&quot;}.
+1. [Cache löschen](https://docs.magento.com/user-guide/system/cache-management.html){target="_blank"}.
 
    >[!IMPORTANT]
    >

@@ -4,9 +4,9 @@ description: Verwenden Sie den Bestellstatusbericht, um mehr über den Zahlungss
 role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
-source-git-commit: ddd9fa9b2a709858239c88477f19e8787a0b65c2
+source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
-source-wordcount: '1436'
+source-wordcount: '1416'
 ht-degree: 0%
 
 ---
@@ -33,11 +33,11 @@ Sie können Bestellungsstatustransaktionen im .csv-Dateiformat herunterladen, um
 
 Die [!DNL Payment Services] -Modul verwendet Bestelldaten und kombiniert sie mit aggregierten Zahlungsdaten aus anderen Quellen (einschließlich PayPal), um aussagekräftige und sehr nützliche Berichte bereitzustellen.
 
-Die Bestelldaten werden exportiert und im Zahlungsdienst beibehalten. Wenn Sie [Bestellstatus ändern oder hinzufügen](https://docs.magento.com/user-guide/sales/order-status-custom.html){target=&quot;_blank&quot;} oder [Bearbeiten einer Store-Ansicht](https://docs.magento.com/user-guide/stores/stores-all-view-edit.html){target=&quot;_blank&quot;}, [store](https://docs.magento.com/user-guide/stores/store-information.html){target=&quot;_blank&quot;} oder Website-Namen verwenden, werden diese Daten mit Zahlungsdaten kombiniert und der Bericht Bestellzahlungsstatus wird mit den kombinierten Informationen ausgefüllt.
+Die Bestelldaten werden exportiert und im Zahlungsdienst beibehalten. Wenn Sie [Bestellstatus ändern oder hinzufügen](https://docs.magento.com/user-guide/sales/order-status-custom.html){target="_blank"} or [edit a store view](https://docs.magento.com/user-guide/stores/stores-all-view-edit.html){target="_blank"}, [store](https://docs.magento.com/user-guide/stores/store-information.html){target="_blank"}, oder Website-Name, dass die Daten mit den Zahlungsdaten kombiniert werden und der Bericht Bestellzahlstatus mit den kombinierten Informationen ausgefüllt wird.
 
 Dieser Prozess umfasst zwei Schritte:
 
-1. Der Index wird entweder `ON SAVE` (jedes Mal, wenn Bestellinformationen oder Store-Informationen geändert werden) oder `BY SCHEDULE` (auf einen vorkonfigurierten Cron-Zeitplan), je nachdem, wie er in konfiguriert ist [Indexverwaltung](https://docs.magento.com/user-guide/system/index-management.html){target=&quot;_blank&quot;} im Admin.
+1. Der Index wird entweder `ON SAVE` (jedes Mal, wenn Bestellinformationen oder Store-Informationen geändert werden) oder `BY SCHEDULE` (auf einen vorkonfigurierten Cron-Zeitplan), je nachdem, wie er in konfiguriert ist [Indexverwaltung](https://docs.magento.com/user-guide/system/index-management.html){target="_blank"} im Admin.
 
    Standardmäßig erfolgt die Datenindizierung `ON SAVE`, was bedeutet, dass bei jeder Änderung der Reihenfolge, des Bestellstatus, der Store-Ansicht, des Stores oder der Website der Neudexationsprozess sofort stattfindet.
 
@@ -53,7 +53,7 @@ Die einzigen Daten, die zu Berichtszwecken exportiert und erfasst werden, sind D
 
 Auch wenn die Neuindizierung standardmäßig in `ON SAVE` -Modus wird empfohlen, die Indizierung in `BY SCHEDULE` -Modus. Die `BY SCHEDULE` Der Index wird auf einem Cron-Zeitplan von einer Minute ausgeführt und alle geänderten Daten werden innerhalb von zwei Minuten nach jeder Datenänderung im Bestellstatusbericht angezeigt. Diese geplante Neuindizierung hilft Ihnen, den Aufwand für Ihren Store zu reduzieren, insbesondere wenn Sie eine große Menge eingehender Bestellungen haben, da dies planmäßig erfolgt (nicht bei jeder Bestellung).
 
-Sie können den Indexmodus ändern.`ON SAVE` oder `BY SCHEDULE`—[im Admin](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target=&quot;_blank&quot;}.
+Sie können den Indexmodus ändern.`ON SAVE` oder `BY SCHEDULE`—[im Admin](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target="_blank"}.
 
 Informationen zum Konfigurieren des Datenexports finden Sie unter [Befehlszeilenkonfiguration](configure-cli.md#configure-data-export).
 
@@ -181,10 +181,10 @@ Berichte zum Bestellstatus enthalten die folgenden Informationen.
 
 | Spalte | Beschreibung |
 | ------------ | -------------------- |
-| [!UICONTROL Order ID] | Commerce-Bestell-ID<br> <br>So sehen Sie verwandte [Bestellinformationen](https://docs.magento.com/user-guide/sales/orders.html){target=&quot;_blank&quot;}, klicken Sie auf die ID. |
+| [!UICONTROL Order ID] | Commerce-Bestell-ID<br> <br>So sehen Sie verwandte [Bestellinformationen](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}klicken Sie auf die ID. |
 | [!UICONTROL Order Date] | Zeitstempel der Bestellung |
 | [!UICONTROL Authorized Date] | Datum des Zeitstempels der Zahlungsgenehmigung |
-| [!UICONTROL Order Status] | Aktueller Commerce [Bestellstatus](https://docs.magento.com/user-guide/sales/order-status.html){target=&quot;_blank&quot;} |
+| [!UICONTROL Order Status] | Aktueller Commerce [Bestellstatus](https://docs.magento.com/user-guide/sales/order-status.html){target="_blank"} |
 | [!UICONTROL Invoiced] | Rechnungsstatus —*[!UICONTROL No]*, *[!UICONTROL Partial]* oder *[!UICONTROL Yes]* |
 | [!UICONTROL Shipped] | Versandstatus —*[!UICONTROL No]*, *[!UICONTROL Partial]* oder *[!UICONTROL Yes]* |
 | [!UICONTROL Order Amt] | Gesamtbetrag der Bestellung |

@@ -1,17 +1,17 @@
 ---
-title: Zahlungsbericht
+title: Payouts-Bericht
 description: Verwenden Sie den Bericht "Auszahlungen", um vollständige Transparenz in Bezug auf den Zahlungsbetrag, das verarbeitete Volumen und detaillierte Berichte über die Transaktionsstufe zur finanziellen Abstimmung zu erhalten.
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: ddd9fa9b2a709858239c88477f19e8787a0b65c2
+source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
-source-wordcount: '1339'
+source-wordcount: '1335'
 ht-degree: 0%
 
 ---
 
-# Zahlungsbericht
+# Payouts-Bericht
 
 [!DNL Payment Services] für [!DNL Adobe Commerce] und [!DNL Magento Open Source] bietet Ihnen eine umfassende Berichterstellung, damit Sie einen klaren Überblick über die Bestellungen und Zahlungen Ihres Geschäfts erhalten.
 
@@ -154,8 +154,8 @@ Payout-Berichte enthalten die folgenden Informationen.
 | [!UICONTROL Code] | Transaktionscode, der entweder einen Kredit (*CR*) oder Schulden (*DR*) |
 | [!UICONTROL Reference ID] | Ursprüngliche Transaktions-ID, mit der dieses Ereignis verknüpft ist |
 | [!UICONTROL Invoice] | Rechnungskennung (eine pro Bestellung) der Transaktion |
-| [!UICONTROL Commerce order] | Commerce-Bestell-ID <br> <br>So sehen Sie verwandte [Bestellinformationen](https://docs.magento.com/user-guide/sales/orders.html){target=&quot;_blank&quot;}, klicken Sie auf die ID. |
-| [!UICONTROL Commerce trans] | Transaktions-ID <br> <br>So sehen Sie verwandte [Transaktionsinfo](https://docs.magento.com/user-guide/sales/transactions.html){target=&quot;_blank&quot;}, klicken Sie auf die ID. |
+| [!UICONTROL Commerce order] | Commerce-Bestell-ID <br> <br>So sehen Sie verwandte [Bestellinformationen](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}klicken Sie auf die ID. |
+| [!UICONTROL Commerce trans] | Transaktions-ID <br> <br>So sehen Sie verwandte [Transaktionsinfo](https://docs.magento.com/user-guide/sales/transactions.html){target="_blank"}klicken Sie auf die ID. |
 | [!UICONTROL Pay method] | Kreditkartenart—*[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL APPLE_PAY]*, *[!UICONTROL CREDIT_CARD]*- und dem zugehörigen Kartenanbieter (z. B. *Visagebühren* oder *MasterCard*) |
 | [!UICONTROL Trans amt] | Transaktionsbetrag |
 | [!UICONTROL Cur] | Währungseinheit für Transaktionsbetrag |
@@ -184,19 +184,19 @@ Diese Transaktionstypen können in den Auszahlungstransaktionen angegeben werden
 | ------------ | -------------------- |
 | [!UICONTROL PAYMENT] | Geld wechselt zwischen einem Käufer und einem Verkäufer für eine Bestellung |
 | [!UICONTROL AUTH] | Nichterfüllung der Zulassung und Genehmigung |
-| [!UICONTROL BONUS] | — |
+| [!UICONTROL BONUS] | -- |
 | [!UICONTROL CHARGEBACK] | Chargeback-Gebühr und Chargeback-Gebühr-Umrechnungstransaktionen |
-| [!UICONTROL CORRECTION] | — |
-| [!UICONTROL CURRENCY_CONVERSION] | — |
-| [!UICONTROL DEPOSIT] | — |
-| [!UICONTROL DISBURSEMENT] | — |
-| [!UICONTROL DISPUTE] | — |
+| [!UICONTROL CORRECTION] | -- |
+| [!UICONTROL CURRENCY_CONVERSION] | -- |
+| [!UICONTROL DEPOSIT] | -- |
+| [!UICONTROL DISBURSEMENT] | -- |
+| [!UICONTROL DISPUTE] | -- |
 | [!UICONTROL FEES] | Partnergebühren, Zahlungsgebühren und umkehrende Gebühren |
-| [!UICONTROL HOLD] | — |
-| [!UICONTROL HOLD_RELEASE] | — |
-| [!UICONTROL INCENTIVES] | — |
-| [!UICONTROL OTHERS] | — |
+| [!UICONTROL HOLD] | -- |
+| [!UICONTROL HOLD_RELEASE] | -- |
+| [!UICONTROL INCENTIVES] | -- |
+| [!UICONTROL OTHERS] | -- |
 | [!UICONTROL RECOUP] | Einzüge aus Bank- oder Verlustkonten |
-| [!UICONTROL REFUND] | — |
-| [!UICONTROL REVERSAL] | — |
-| [!UICONTROL WITHDRAWAL] | — |
+| [!UICONTROL REFUND] | -- |
+| [!UICONTROL REVERSAL] | -- |
+| [!UICONTROL WITHDRAWAL] | -- |
