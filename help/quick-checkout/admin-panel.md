@@ -1,15 +1,15 @@
 ---
-title: '''[!DNL Quick Checkout] für das Adobe Commerce Admin-Bedienfeld'
-description: Erfahren Sie, wie Sie [!DNL Quick Checkout] Das Admin-Bedienfeld kann Ihnen dabei helfen, die Erweiterung erfolgreich zu integrieren, einzurichten und zu visualisieren.
+title: '''[!DNL Quick Checkout] für das Adobe Commerce Admin Panel'
+description: Erfahren Sie, wie Sie [!DNL Quick Checkout] Das Admin Panel kann Ihnen dabei helfen, die Erweiterung erfolgreich zu integrieren, einzurichten und zu visualisieren.
 exl-id: d91763ed-b4f6-4736-9503-0305edd77e91
-source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
+source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 0%
 
 ---
 
-# Einführung in die [!DNL Quick Checkout] Admin-Bereich
+# Einführung in die [!DNL Quick Checkout] Admin Panel
 
 [!DNL Quick Checkout] für Adobe Commerce und Magento Open Source bietet eine Admin-Bedienfeldansicht mit allen erforderlichen Informationen zum Einrichten und Verwenden der Erweiterung.
 
