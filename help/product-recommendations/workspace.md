@@ -1,15 +1,15 @@
 ---
-title: Arbeitsbereich
+title: '[!DNL Product Recommendations] Workspace'
 description: Erfahren Sie, wie Sie die Performance von Produktempfehlungen konfigurieren, verwalten und überwachen.
 exl-id: 85a06cc3-91b9-484a-96a9-fc85718e6d70
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 25d5321b6f29bab5d8cf329170f3644f35100438
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-# Arbeitsbereich
+# [!DNL Product Recommendations] Arbeitsbereich
 
 Die [!DNL Product Recommendations] Arbeitsbereich zeigt eine Liste der zuvor konfigurierten Empfehlungen mit Metriken an, mit denen Sie den Erfolg jeder Empfehlung verfolgen können. Die Liste kann so konfiguriert werden, dass sie Metriken für den letzten Tag, die letzte Woche oder den letzten Monat berechnet. Sie können die Metriken verwenden, um praktische Einblicke darauf zu erhalten, wie häufig eine Empfehlungseinheit angezeigt oder angeklickt wird, oder um zu analysieren, wie gut Ihre Empfehlungen funktionieren.
 
