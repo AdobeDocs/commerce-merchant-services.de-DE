@@ -1,14 +1,15 @@
 ---
-title: Daten sammeln
+title: Daten erfassen
 description: Erfahren Sie, wie Ereignisse Daten für Produktempfehlungen erfassen.
-source-git-commit: 81ab2e22b0ec81e97d27ee135c88b50731a3986d
+exl-id: b827d88c-327f-4986-8239-8f1921d8383c
+source-git-commit: 0392077939436f0d2b1c37f403f5365c87f3215e
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 0%
 
 ---
 
-# Daten sammeln
+# Daten erfassen
 
 Wenn Sie SaaS-basierte Adobe Commerce-Funktionen wie [Produkt-Recommendations](install-configure.md) oder [Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html), stellen die Module die Verhaltens-Datenerfassung in Ihrem Storefront bereit. Dieser Mechanismus erfasst anonymisierte Verhaltensdaten von Ihren Kunden und ermöglicht Produktempfehlungen. Beispiel: die `view` -Ereignis zur Berechnung der `Viewed this, viewed that` Empfehlungstyp und die `place-order` -Ereignis zur Berechnung der `Bought this, bought that` Empfehlungstyp.
 

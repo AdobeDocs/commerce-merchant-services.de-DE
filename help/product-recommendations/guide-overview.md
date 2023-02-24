@@ -1,17 +1,17 @@
 ---
-title: '[!DNL Product Recommendations] Guide overview'
+title: '[!DNL Product Recommendations] Guide Overview'
 description: Umfassende Informationen zu [!DNL Product Recommendations] für Adobe Commerce-Administratoren, einschließlich Installation und Onboarding
 seo-title: Adobe Commerce [!DNL Product Recommendations] Guide
 seo-description: Describes how to use [!DNL Product Recommendations] with Adobe Commerce.
 exl-id: 7f5105ba-e764-4cb5-9b95-75810e934b47
-source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
+source-git-commit: 0392077939436f0d2b1c37f403f5365c87f3215e
 workflow-type: tm+mt
 source-wordcount: '214'
 ht-degree: 0%
 
 ---
 
-# [!DNL Product Recommendations] Guide - Übersicht
+# [!DNL Product Recommendations] Guide Overview
 
 Dieses Handbuch richtet sich an Administratoren von Adobe Commerce. Sie enthält detaillierte Informationen zur Installation und zum Onboarding von [!DNL Product Recommendations]sowie Konfiguration und Verwaltung der Dienste. Es wird von einem grundlegenden Verständnis des Kerns ausgegangen. [!DNL Commerce] Konfiguration und Funktionalität.
 
