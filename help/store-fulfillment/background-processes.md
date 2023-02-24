@@ -1,10 +1,10 @@
 ---
-title: Konfiguration von Hintergrundprozessen
-description: '"Konfigurieren Sie die Zeitpläne für [!DNL Store Fulfillment] Hintergrundprozesse, die zur Synchronisierung von Daten mit den Erfüllungsdiensten verwendet werden."                   '
+title: Konfiguration des Hintergrundprozesses
+description: "Konfigurieren Sie die Zeitpläne für [!DNL Store Fulfillment] Hintergrundprozesse, die zur Synchronisierung von Daten mit den Erfüllungsdiensten verwendet werden."
 role: User, Admin
 level: Intermediate
 exl-id: 742ae59e-77a0-4db6-b156-2992d4403be7
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
 source-wordcount: '135'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 ---
 
 
-# Konfiguration von Hintergrundprozessen
+# Konfiguration des Hintergrundprozesses
 
 Die Integration von Store Fulfillment verwendet Hintergrundprozesse und Nachrichtenwarteschlangen für optimale Leistung und Skalierung. Erstellen Sie Umgebungen für Ihre Adobe Commerce-Stores mit [Bereitstellungsvariablen](https://devdocs.magento.com/cloud/env/variables-deploy.html#cron_consumers_runner) automatisch starten [Nachrichtenwarteschlangenläufer](https://devdocs.magento.com/guides/v2.4/config-guide/mq/rabbitmq-overview.html).
 

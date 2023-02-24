@@ -1,10 +1,10 @@
 ---
-title: Inventory management-Quellübertragung
-description: '"Konfigurieren Sie die Lager für [!DNL Store Fulfillment solution] mit Adobe Commerce Inventory management. Richten Sie ein neues Lager ein und übertragen Sie das Inventar aus dem Standardbestand, damit Sie es Quellen zuweisen können, die so konfiguriert sind, dass die für die Store-Fulfillment-Lösung erforderlichen Speicherabnahmefunktionen aktiviert werden."'
+title: Inventory management Source Transfer
+description: "Konfigurieren Sie die Lager für [!DNL Store Fulfillment solution] mit Adobe Commerce Inventory management. Richten Sie ein neues Lager ein und übertragen Sie das Inventar aus dem Standardbestand, damit Sie es Quellen zuweisen können, die so konfiguriert sind, dass die für die Store-Fulfillment-Lösung erforderlichen Speicherabnahmefunktionen aktiviert werden."
 role: User, Admin
 level: Intermediate
 exl-id: 669d4dce-4cac-4bde-acc5-26c70a51f7f1
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
 source-wordcount: '358'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 ---
 
 
-# Inventory management-Quellübertragung
+# Inventory management Source Transfer
 
 Die [!DNL Store Fulfillment] -Lösung verwendet die native Adobe Commerce Inventory management. Standardmäßig wird die [!DNL Commerce] -Konfiguration weist das gesamte Webinventar dem Standardbestand zu, dem keine zusätzlichen Quellen zugewiesen werden können. Da einer Website nur ein einzelnes Lager zugewiesen werden kann, muss ein Händler ein neues Lager konfigurieren und optional seinen Standardquellbestand an eine Quelle übertragen, die dem entsprechenden Umfang zugeordnet ist. Anschließend kann die Quelle dem neuen Lager zugewiesen werden.
 

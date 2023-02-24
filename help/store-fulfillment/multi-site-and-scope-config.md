@@ -1,16 +1,17 @@
 ---
-title: Mehrere Konfigurationen von Website und Umfang
+title: Konfiguration mehrerer Websites und Perimeter
 description: Konfigurieren Sie Lager und Bereitstellungsmethoden für mehrere Websites und Storebereiche.
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+exl-id: 8939046e-1c26-4380-83be-ff8e074e591d
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 0%
 
 ---
 
-# Mehrere Konfigurationen von Website und Umfang
+# Konfiguration mehrerer Websites und Perimeter
 
 Sie können die [Anwendungsbereich](https://docs.magento.com/user-guide/configuration/scope.html) für einige Elemente, um mehrere Websites, Stores und Store-Ansichten aufzunehmen:
 

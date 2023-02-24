@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die Module "Pick", "Stage", "Hand-Off"und "
 role: User
 level: Intermediate
 exl-id: a8414f19-5489-41e9-84d6-39d2e61c2b08
-source-git-commit: fda4620f57aa7aa9fb930b10f5717fee98983378
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '806'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Die Store-Hilfe-App stellt Store Associates mit vier Modulen zur Verfügung, um 
 
 ## Auswahlmodul
 
-Mit dem Pick-Modul können Partner die vom Kunden bestellten Artikel suchen und scannen und zum Abholen bepacken. Sie können sehen, wie viele Bestellungen überfällig sind, und sofort mit der Auswahl beginnen. Sie können auch zuerst andere Bestellungen auswählen. Bestellungen werden nach Lieferzeiten mit überfälligen Bestellungen geordnet. Speicherverknüpfungen können auswählen, welche Bestellungen sie auswählen möchten, in welcher Reihenfolge sie Ihre Vorgänge benötigen.
+Mit dem Pick-Modul können Partner die vom Kunden bestellten Artikel suchen und scannen und zum Abholen bepacken. Sie können sehen, wie viele Bestellungen überfällig sind, und sofort mit der Auswahl beginnen. Sie können auch andere Bestellungen auswählen, um sie zuerst auszuwählen. Bestellungen werden nach Lieferzeiten mit überfälligen Bestellungen geordnet. Speicherverknüpfungen können auswählen, welche Bestellungen sie auswählen möchten, in welcher Reihenfolge sie Ihre Vorgänge benötigen.
 
 Ihre Partner können auch wählen, ob sie jeweils eine Bestellung oder mehrere Bestellungen gleichzeitig auswählen möchten.
 

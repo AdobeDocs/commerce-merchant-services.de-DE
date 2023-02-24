@@ -1,16 +1,17 @@
 ---
-title: Konfigurationsübersicht für Store Fulfillment
-description: Erfahren Sie mehr über die Kategorien für die Admin-Konfigurationseinstellungen, die für die Store Fulfillment-Lösung verfügbar sind, und wie sie konfiguriert sind.
+title: Konfigurationsübersicht für die Store-Erfüllung
+description: Erfahren Sie mehr über die Typen von Admin-Konfigurationseinstellungen, die verfügbar sind, um die erweiterten Erfüllungsfunktionen anzupassen, die von der Store Fulfillment-Lösung bereitgestellt werden, und über den Link zu Anweisungen zum Abschluss der Konfiguration.
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+exl-id: c432791a-94a0-457d-9ed9-8937846ce4f4
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '386'
 ht-degree: 0%
 
 ---
 
-# Konfigurationsübersicht für die Store-Erfüllung
+# Konfigurationsübersicht für Store Fulfillment
 
 In Adobe Commerce Admin werden die Konfigurationseinstellungen für Store Fulfillment Services von Walmart Commerce Technologies nach Typ kategorisiert.
 
@@ -26,10 +27,9 @@ In Adobe Commerce Admin werden die Konfigurationseinstellungen für Store Fulfil
 | [Konfiguration mehrerer Websites/Bereiche](multi-site-and-scope-config.md) | Konfigurieren Sie Lager und Bereitstellungsmethoden für mehrere Websites/Storebereiche. | Nein |
 | [Systemkonfiguration für Hintergrundprozesse](background-processes.md) | Konfigurieren Sie die Zeitpläne für Hintergrundprozesse, die zum Synchronisieren von Daten mit den Fulfillment-Diensten verwendet werden. | Nein |
 | [Speicherort und Einrichtung der Zuordnung](store-location-map-provider-setup.md) | Konfigurieren Sie die Möglichkeit, mithilfe eines Entfernungsanbieters nach Einzelhandelsgeschäften zu suchen und diese Informationen auf der SLS-Karte anzuzeigen | Ja |
-| [Einrichtung des Check-in-Erlebnisses](store-location-map-provider-setup.md) | Konfigurieren Sie die Auto-Farbe und die Automake-Optionen, die während des Eincheckvorgangs verfügbar sein werden. | Ja |
+| [Einrichtung des Check-in-Erlebnisses](check-in-experience-setup.md) | Konfigurieren Sie die Auto-Farbe und die Automake-Optionen, die während des Eincheckvorgangs verfügbar sein werden. | Ja |
 | [Benutzereinstellungen](user-setup.md) | Verwalten Sie Benutzerkonten, Rollen und Berechtigungen für Storeverknüpfungen, die die Store-Hilfe-App verwenden. Bereiche. | Ja |
 | [App-Einrichtung](app-setup.md) | Überprüfen Sie die verfügbaren Konfigurationen für die Store Assist App, die zum Abschließen des Onboarding-Prozesses erforderlich sind. Diese Einstellungen können nicht über den Adobe Commerce-Administrator konfiguriert werden. | Ja |
-
 
 ## Verwenden Sie die Konfigurationsreferenz
 

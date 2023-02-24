@@ -4,9 +4,9 @@ description: "Installieren Sie die [!DNL Store Fulfillment solution] für eine A
 role: User, Admin
 level: Intermediate
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
-source-git-commit: d8be88f47f103c5d632540dae743ede398a9b7ad
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '660'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ Extrahieren Sie die Archivdatei, die das Integrations-Bundle enthält, um die Er
 
 1. Extrahieren Sie die Archivdatei in das neue Verzeichnis.
 
-1. Überprüfen Sie, ob die extrahierten Dateien durch Überprüfen der Dateiliste.
+1. Überprüfen Sie, ob die Dateien erfolgreich extrahiert wurden, indem Sie die Dateiauflistung überprüfen.
 
    ```
    ../var/www/html/artifacts]$ ls -a
@@ -194,4 +194,5 @@ Die `-f` ist erforderlich, wenn Sie ein leeres Design verwenden.
 
 >[!NOTE]
 >
->Weitere Informationen finden Sie unter [Best Practices für die Bereitstellung statischer Inhalte in Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/static-content-deployment.html) im Adobe Commerce Help Center.
+>Weitere Informationen finden Sie unter [Best Practices für die Bereitstellung statischer Inhalte in Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/static-content-deployment.html) Artikel im Adobe Commerce Help Center.
+

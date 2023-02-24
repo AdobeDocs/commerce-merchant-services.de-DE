@@ -4,9 +4,9 @@ description: Testen Sie den Plan, um die Funktion zur Store-Erfüllung zu überp
 role: User, Admin
 level: Intermediate
 exl-id: 77285a66-5161-407b-94cd-b3f412d7949d
-source-git-commit: 0a1d70465247422db44daee302c67fe1a5a29d32
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '2657'
+source-wordcount: '2660'
 ht-degree: 0%
 
 ---
@@ -277,7 +277,7 @@ Dieser Abschnitt des Testplans enthält Szenarien zum Testen des End-to-End-Work
 <ol>
 <li>Platzieren Sie die Bestellung.</li>
 <li>Warten Sie, bis die Bestellung synchronisiert wurde.</li>
-<li>Überprüfen Sie, ob die Rechnung erstellt wurde (wenn autorisiert und erfasst wurde) und die E-Mail zur Rechnung eingegangen ist.</li>
+<li>Wenn die Option zum Autorisieren und Erfassen konfiguriert ist, überprüfen Sie, ob die Rechnung erstellt wurde und ob der Kunde die E-Mail zur Rechnung erhalten hat.</li>
 <li>Wählen Sie alle Produkte mit Postman aus.</li>
 <li>Einchecken.</li>
 <li>Richten Sie einen Verzicht!</li>
@@ -566,39 +566,39 @@ In diesem Abschnitt des Testplans werden Szenarien zum Testen der Reihenfolge, A
 <tr>
 <td>
 <strong>Einzelbestellauswahl - Happy Path, Cumulative Pickup</strong></td>
-<td>Wählen Sie einzelne und mehrere Elemente aus. Keine Nil-Picks und Abholung (mit Staging).
+<td>Wählen Sie einzelne und mehrere Elemente aus. Kein Nil-Picks und Cursor-Pickup (mit Staging).
 </td>
 <td>
 </td>
 </tr>
 <tr>
 <td><strong>Multi-Order-Picking - glücklicher Pfad, parallele Übernahme</strong></td>
-<td>Einzelartikel und Artikel mit mehreren Mengen. Keine Nil-Picks und Abholung (mit Staging)</td>
+<td>Einzelartikel und Artikel mit mehreren Mengen. Kein Nil-Picks und Cursor-Pickup (mit Staging)</td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Einzelbestellauswahl - Happy Path In-Store-Abruf</strong></td>
-<td>Einzelartikel und Artikel mit mehreren Mengen. Keine Nil-Picks und Instanziierung (mit Staging)</td>
+<td>Einzelartikel und Artikel mit mehreren Mengen. Keine Nil-Picks und In-Store-Abholung (mit Staging)</td>
 <td>
 </td>
 </tr>
 <tr>
 <td><strong>Multi-Order-Picking - glücklicher Pfad, In-Store-Abruf</strong></td>
-<td>Wählen Sie einzelne und mehrere Elemente aus. Keine Nil-Picks und Abholung (mit Staging).</td>
+<td>Wählen Sie einzelne und mehrere Elemente aus. Kein Nil-Picks und Cursor-Pickup (mit Staging).</td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Einzelbestellauswahl - kein glücklicher Pfad, In-Store-Abruf</strong></td>
-<td>Wählen Sie einzelne und mehrere Elemente mit Teil- und Nilpick-Funktion aus, um sie aufzunehmen (mit Staging).</td>
+<td>Einzel- und Mehrmengen-Elemente mit Teil- und Nilpflücken und In-Store-Abholung (mit Staging) auswählen</td>
 </td>
 <td></td>
 </tr>
 <td><strong>Auswahl mehrerer Bestellungen - nicht glückliche Pfade-Cursor-Sickup</strong></td>
-<td>Wählen Sie einzelne und mehrere Elemente mit Teil- und Nilpick-Funktion aus, um sie aufzunehmen (mit Staging).</td>
+<td>Einzel- und Mehrmengen-Elemente mit Teil- und Nilpflücken und In-Store-Abholung (mit Staging) auswählen</td>
 <td></td>
 </tr>
 <td><strong>Einzelauftragsauswahl - kein glücklicher Pfad, paralleles Aufnehmen</strong></td>
-<td>Einzel- und Mehrmengen-Elemente mit Teil- und Nilpick und Cursor-Aufnahme auswählen (mit Staging)</strong></td>
+<td>Einzel- und Mehrmengen-Elemente mit Teil- und Nilpick- und Cursor-Pickup auswählen (mit Staging)</strong></td>
 </td>
 <td></td>
 </tr>

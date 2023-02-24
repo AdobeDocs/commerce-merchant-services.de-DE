@@ -1,18 +1,18 @@
 ---
-title: Verkaufs-E-Mails
+title: E-Mail-Vorlagen für Vertrieb
 description: Konfigurieren Sie die Transaktions-E-Mail-Vorlagen für die Kommunikation mit Kunden und Store-Administratoren während des Ausführungsprozesses für Store-Abholaufträge.
 role: User, Admin
 level: Intermediate
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
-source-git-commit: 31ad67d3f3d11c68341de0306eea37f231b2d9b9
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '1200'
+source-wordcount: '1202'
 ht-degree: 0%
 
 ---
 
 
-# Verkaufs-E-Mails
+# E-Mail-Vorlagen für Vertrieb
 
 Store Fulfillment bietet eine erweiterte Reihe von Transaktions-E-Mail-Vorlagen, um Bestell- und Erfüllungs-Workflows zu unterstützen. Sie bieten eine konsistente, automatisierte Kommunikation und Messaging über alle Kanäle hinweg - Sie informieren Kunden- und Store-Administratoren über Bestellstatusänderungen, Anweisungen für In-Store-Abholaufträge und vieles mehr.
 

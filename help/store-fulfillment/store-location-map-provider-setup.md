@@ -1,17 +1,17 @@
 ---
-title: Speicherort und Systemkonfiguration für die Zuordnung
+title: Speicherstandort und Systemkonfiguration für die Zuordnung
 description: Konfigurieren Sie einen Entfernungsanbieter, um die Zuordnung von Speicherorten in der Storefront-Benutzeroberfläche zu unterstützen. Für die Lösungen zur Store-Erfüllung ist ein Fernanbieter erforderlich, der die Einzelhandelssuche sowie andere Zuordnungs- und Planungsfunktionen für den End-to-End-Workflow zur Erfüllung von Anforderungen ermöglicht.
 role: User, Admin
 level: Intermediate
 exl-id: d09c4652-e2eb-49dc-8c42-2aa9b6be5d6b
-source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 0%
 
 ---
 
-# Speicherort und Zuordnungseinrichtung
+# Speicherort und Einrichtung der Zuordnung
 
 Aktivieren Sie die Speicherstandort- und Zuordnungsfunktionen für die Store-Ausführung, indem Sie eine [Fernabsatzanbieter](https://docs.magento.com/user-guide/catalog/inventory-configure-distance-priority.html) , um nach Einzelhandelsspeicherorten zu suchen.
 

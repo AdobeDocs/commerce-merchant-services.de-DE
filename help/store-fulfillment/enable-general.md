@@ -4,14 +4,14 @@ description: Konfigurieren allgemeiner Einstellungen zum Aktivieren von [!DNL St
 role: User, Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
 source-wordcount: '2541'
 ht-degree: 0%
 
 ---
 
-# Konfiguration von Store-Service und -Vertrieb
+# Konfiguration von Store Service und Vertrieb
 
 Konfigurieren [!DNL Store Fulfillment] von [!DNL Commerce] Admin , um die Erweiterung zu aktivieren, Erweiterungseinstellungen anzugeben, die Sicherheitseinstellungen für Benutzer der Store Assist-App zu konfigurieren und Optionen für Bereitstellungsmethoden festzulegen.
 
@@ -141,7 +141,7 @@ Aktivieren Sie die [!DNL Store Fulfillment] -Lösung, um die In-Store- und Curso
 
 Nachdem Sie die [!UICONTROL Account Credentials]auswählen <strong>[!UICONTROL Validate Credentials]</strong> , um erstmals eine Verbindung zum Store-Fulfillment-Dienst zu überprüfen und herzustellen.
 
-## Konfigurieren der Protokollierung
+## Protokollierung konfigurieren
 
 Protokolle für Store-Fulfillment-Dienste sind in der Protokolldatei verfügbar `var/log/walmart-bopis.log`.
 
@@ -391,7 +391,7 @@ Konfigurieren Sie diese Einstellungen über den Administrator, indem Sie <strong
 >Weitere Informationen zum Konfigurieren von In-Store-Bereitstellungsoptionen finden Sie unter [In-Store-Bereitstellung](https://docs.magento.com/user-guide/shipping/shipping-in-store-delivery.html) im _Adobe Commerce-Benutzerhandbuch_.
 
 
-### Konfiguration der Bereitstellungsmethoden
+### Konfiguration von Versandmethoden
 
 Mit der Bereitstellungsmethode im Geschäft kann der Kunde eine Quelle auswählen, die beim Checkout als Abholort verwendet werden soll.
 
@@ -420,7 +420,7 @@ Mit der Bereitstellungsmethode im Geschäft kann der Kunde eine Quelle auswähle
 </tbody>
 </table>
 
-### Konfiguration des Titels der Bereitstellungsmethode
+### Konfiguration des Bereitstellungsmethodentitels
 
 <table>
 <thead>
@@ -530,3 +530,4 @@ Mit der Bereitstellungsmethode im Geschäft kann der Kunde eine Quelle auswähle
 <td>Nein</td>
 </tr>
 </tbody></table>
+

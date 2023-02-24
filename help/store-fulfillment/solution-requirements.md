@@ -4,16 +4,16 @@ description: Anforderungen an die Bereitstellung und das Onboarding der [!DNL St
 role: User, Admin
 level: Intermediate
 exl-id: f9e05049-5904-4f6c-b45d-9f81fbc76b69
-source-git-commit: 842d5b7182d54a1aa5a715662503801816a24c24
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '307'
+ht-degree: 2%
 
 ---
 
 # Anforderungen an die Store-Erfüllung für Adobe Commerce
 
-Sie müssen die folgenden technischen und geschäftlichen Anforderungen erfüllen, um die Store Fulfillment-Lösung für Adobe Commerce zu installieren und zu aktivieren.
+In den folgenden Abschnitten werden die technischen und geschäftlichen Anforderungen für die Installation und Aktivierung der Store Fulfillment-Lösung für Adobe Commerce beschrieben.
 
 ## Anforderungen an die Plattform- und Softwareversion
 
@@ -56,7 +56,7 @@ Ihr Unternehmen muss die folgenden Mindestkriterien erfüllen, um die Store Fulf
 
 - Nur in den USA ansässige Unternehmen
 
-- B2C-Einzelhändler, CPG-Hersteller, die D2C verkaufen, oder Vertriebsgesellschaften, die D2C oder kleine Unternehmen verkaufen
+- B2C-Händler (Business to Consumer), Consumer Packaged Goods (CPG) Hersteller, die direkt an Verbraucher verkaufen (D2C), oder Vertriebsgesellschaften, die direkt an Verbraucher oder kleine Unternehmen verkaufen
 
 - Mindestens ein physisches Lager oder Lager
 
