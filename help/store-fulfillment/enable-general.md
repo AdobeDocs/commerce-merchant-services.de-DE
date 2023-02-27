@@ -4,7 +4,7 @@ description: Konfigurieren allgemeiner Einstellungen zum Aktivieren von [!DNL St
 role: User, Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 81723645efc5dd1f0179e32ba80bc57fbfc9d799
 workflow-type: tm+mt
 source-wordcount: '2541'
 ht-degree: 0%
@@ -86,7 +86,7 @@ Aktivieren Sie die [!DNL Store Fulfillment] -Lösung, um die In-Store- und Curso
 <tr>
 <td><strong>[!UICONTROL Enabled]</strong></td>
 <td>Aktivieren oder deaktivieren Sie die Lösung. Wenn diese Option aktiviert ist, konfigurieren und verwenden Sie Store Fulfillment-Funktionen und stellen Sie die Verbindung zwischen Ihrem Adobe Commerce-Store und her. [!DNL Store Fulfillment] Dienste. Wenn diese Option deaktiviert ist, sind alle Funktionen zur Store-Erfüllung deaktiviert und es gibt keine Kommunikation zwischen Adobe Commerce und Store Fulfillment-Diensten. Bestellinformationen können nicht verarbeitet oder empfangen werden.</td>
-<td>Global</td>
+<td>Webseite</td>
 <td>Ja</td>
 </tr>
 </tbody>
