@@ -2,9 +2,9 @@
 title: Neue Empfehlung erstellen
 description: Erfahren Sie, wie Sie eine Produktempfehlungseinheit erstellen.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: d56fd57281a5b675e128cca75d4057756a0bf4bf
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Wenn Sie die Empfehlungseinheit aktivieren, beginnt Adobe Commerce [Daten erfass
 
    >[!NOTE]
    >
-   > Die Empfehlungseinheiten für den Seitenaufbau können nur für die standardmäßige Store-Ansicht erstellt werden. Weitere Informationen zum Erstellen von Produktempfehlungen mit Page Builder finden Sie unter [Hinzufügen von Inhalten - Produkt-Recommendations](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html).
+   > Die Empfehlungseinheiten für den Seitenaufbau müssen in der standardmäßigen Store-Ansicht erstellt werden, können dann jedoch überall verwendet werden. Weitere Informationen zum Erstellen von Produktempfehlungen mit Page Builder finden Sie unter [Hinzufügen von Inhalten - Produkt-Recommendations](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html).
 
 1. Klicken **Empfehlung erstellen**.
 
