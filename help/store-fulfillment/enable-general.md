@@ -4,9 +4,9 @@ description: Konfigurieren allgemeiner Einstellungen zum Aktivieren von [!DNL St
 role: User, Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: 81723645efc5dd1f0179e32ba80bc57fbfc9d799
+source-git-commit: e7493618e00e28e2de5043ae2d7e05a81110d8f1
 workflow-type: tm+mt
-source-wordcount: '2541'
+source-wordcount: '2440'
 ht-degree: 0%
 
 ---
@@ -337,39 +337,6 @@ Konfigurieren Sie die Einstellungen für das Benutzerkonto der Store Fulfillment
 <tr>
 <td><strong>[!UICONTROL Password Lifetime]</strong></td>
 <td>Die Anzahl der Tage, in denen ein Kennwort vor einer erforderlichen Kennwortänderung gültig bleibt. Lassen Sie es leer, um diese Option zu deaktivieren.</td>
-<td>Global</td>
-<td>Nein</td>
-</tr>
-</tbody>
-</table>
-
-### Zweifaktorauthentifizierung
-
-<table>
-<thead>
-<tr>
-<td><strong>Feld</strong></td>
-<td><strong>Beschreibung</strong></td>
-<td><strong>Anwendungsbereich</strong></td>
-<td><strong>Erforderlich</strong></td>
-</tr>
- </thead>
- <tbody>
-<tr>
-<td><strong>[!UICONTROL APP User 2FA]</strong></td>
-<td>Aktivieren oder deaktivieren Sie die Zwei-Faktor-Authentifizierung für Store-Zuordnung. Wenn diese Option aktiviert ist, wird der Storeverknüpfer aufgefordert, ein einmaliges Kennwort anzugeben, das von einem Authentifizierungsanbieter generiert wurde.</td>
-<td>Global</td>
-<td>Nein</td>
-</tr>
-<tr>
-<td><strong>[!UICONTROL APP 2FA Policy]</strong></td>
-<td>Legt die Durchsetzungsrichtlinie für die Authentifizierung mit zwei Faktoren fest.<br></br><strong>[!UICONTROL Optional]</strong>: Der Storeverknüpfer kann die Authentifizierung mit zwei Faktoren umgehen, wenn kein Provider festgelegt ist.<br></br><strong>[!UICONTROL Mandatory]</strong>: Das Store-Paar ist erforderlich, um die Authentifizierung mit zwei Faktoren abzuschließen.</td>
-<td>Global</td>
-<td>Nein</td>
-</tr>
-<tr>
-<td><strong>[!UICONTROL 2FA Providers]</strong></td>
-<td>Wählen Sie einen oder mehrere Authentifizierungsanbieter-Dienste aus, um Storeverknüpfungen anzubieten. Um die Authentifizierung mit zwei Faktoren einzurichten, müssen Store-Associates die Authentifizierungs-App von einem der verfügbaren Anbieter installieren, die auf ihren Mobilgeräten installiert sind.</td>
 <td>Global</td>
 <td>Nein</td>
 </tr>

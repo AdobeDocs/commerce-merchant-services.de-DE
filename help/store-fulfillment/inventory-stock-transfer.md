@@ -4,9 +4,9 @@ description: "Konfigurieren Sie die Lager für [!DNL Store Fulfillment solution]
 role: User, Admin
 level: Intermediate
 exl-id: 669d4dce-4cac-4bde-acc5-26c70a51f7f1
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: e7493618e00e28e2de5043ae2d7e05a81110d8f1
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 0%
 # Inventory management Source Transfer
 
 Die [!DNL Store Fulfillment] -Lösung verwendet die native Adobe Commerce Inventory management. Standardmäßig wird die [!DNL Commerce] -Konfiguration weist das gesamte Webinventar dem Standardbestand zu, dem keine zusätzlichen Quellen zugewiesen werden können. Da einer Website nur ein einzelnes Lager zugewiesen werden kann, muss ein Händler ein neues Lager konfigurieren und optional seinen Standardquellbestand an eine Quelle übertragen, die dem entsprechenden Umfang zugeordnet ist. Anschließend kann die Quelle dem neuen Lager zugewiesen werden.
+
+>[!IMPORTANT]
+>
+>Händler müssen die Standardquelle für alle Produkte beibehalten, die in Gruppen- und Bundle-Produktarten enthalten sind. Diese Produkte benötigen eine Lagerbestandsmenge, die den Mindestmengenschwellenwert für die Lagerpositionen erreicht und einen Lagerstatus von [!UICONTROL In Stock].
 
 Mit diesen Konfigurationsänderungen können Sie drei Dinge erreichen:
 
