@@ -4,9 +4,9 @@ description: Nach der Installation können Sie [!DNL Payment Services] in der St
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 482182dca95964e68f1637ff1cc7aad84b00e3eb
+source-git-commit: 7bd9212a4c215b4f39051ded0e95b2b7e96fb46f
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1898'
 ht-degree: 0%
 
 ---
@@ -153,7 +153,7 @@ Sie können die Zahlungsoptionen für PayPal-Smart-Schaltflächen aktivieren und
 
       >[!NOTE]
       >
-      > Verwenden von Apple Pay You [muss über ein Apple-Entwicklerkonto verfügen](test-validate.md#test-in-sandbox-environment) (mit gefälschten Kreditkarten- und Rechnungsinformationen), um sie zu testen. Wenn Sie bereit sind, Apple Pay in Sandbox zu verwenden _oder_ Produktionsmodus nach Abschluss [Tests und Validierung](test-validate.md)Wenden Sie sich an Ihren Vertriebsmitarbeiter, um ihn für Ihre Live-Stores zu aktivieren.
+      > Verwenden von Apple Pay You [muss über ein Apple-Sandbox-Tester-Konto verfügen](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account) (mit gefälschten Kreditkarten- und Rechnungsinformationen), um sie zu testen. Wenn Sie bereit sind, Apple Pay in Sandbox zu verwenden _oder_ Produktionsmodus nach Abschluss [Tests und Validierung](test-validate.md#test-in-sandbox-environment)Wenden Sie sich an Ihren Vertriebsmitarbeiter, um ihn für Ihre Live-Stores zu aktivieren.
 
       Wenn Sie die Sichtbarkeit auf die Zahlungsschaltflächen oder die PayPal PayPay-später-Nachricht aktivieren/deaktivieren, wird unten auf der Seite &quot;Einstellungen&quot;eine visuelle Vorschau dieser Konfiguration angezeigt.
 

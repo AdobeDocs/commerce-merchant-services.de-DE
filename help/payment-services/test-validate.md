@@ -2,9 +2,9 @@
 title: Testen und Validieren
 description: Durch Tests und Validierung wird sichergestellt, dass [!DNL Payment Services] Funktionen funktionieren erwartungsgemäß und bieten beste Zahlungsoptionen für Ihre Kunden
 exl-id: 95b4615e-73b0-41e8-83e2-e65a0b22f10f
-source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
+source-git-commit: 7bd9212a4c215b4f39051ded0e95b2b7e96fb46f
 workflow-type: tm+mt
-source-wordcount: '480'
+source-wordcount: '482'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Beim Testen und Validieren Ihrer Sandbox müssen Sie gefälschte Kreditkartennum
 
 Verwenden Sie den Kreditkartengenerator von PayPal, um [Generieren von zufälligen Kreditkarteninformationen](https://www.paypal.com/us/smarthelp/article/where-can-i-find-test-credit-card-numbers-ts2157) für Tests.
 
-Zum Testen der Apple-Bezahlung im Sandbox-Modus benötigen Sie eine [Apple-Entwicklerkonto](https://developer.apple.com/programs/enroll/), inklusive gefälschter Kreditkarten- und Rechnungsinformationen.
+Zum Testen der Apple-Bezahlung im Sandbox-Modus benötigen Sie eine [Apple-Sandbox-Tester-Konto](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account), inklusive gefälschter Kreditkarten- und Rechnungsinformationen.
 
 >[!NOTE]
 >
