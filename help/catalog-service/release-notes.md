@@ -2,9 +2,9 @@
 title: '''[!DNL Catalog Service] Versionshinweise'
 description: Die neuesten Versionsinformationen für [!DNL Catalog Service] für Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: 484319fc1df6c29c972b57c13bd0ed711e374e99
+source-git-commit: 40cf5c5dc6242b5efe3822b9c574fe5b219cfcd8
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,9 @@ Diese Versionshinweise beschreiben die neuesten Versionen von [!DNL Catalog Serv
 
 ### Version 1.5
 
-Releasedatum: 2023-3-6 Kompatibel mit Adobe Commerce (EE): 2.4.4+ Kompatibel mit Adobe Commerce for Cloud (ECE): 2.4.4+ Stabilität: Allgemeine Verfügbarkeit
+_6. März 2023_
+
+[!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"}
 
 ![Neu](../assets/new.svg) Hinzugefügt [`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) GraphQL-Funktionen.
 ![Fehlerbehebung](../assets/fix.svg) Verbesserte Leistung und API-Skalierbarkeit.
@@ -46,14 +48,18 @@ Die folgenden Einschränkungen können mit der GraphQL-Core-API behoben werden:
 
 ### Version 1.4
 
-Releasedatum: 2023-2-7 Kompatibel mit Adobe Commerce (EE): 2.4.x Kompatibel mit Adobe Commerce for Cloud (ECE): 2.4.x Stabilität: Allgemeine Verfügbarkeit
+_7. Februar 2023_
+
+[!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"}
 
 ![Neu](../assets/new.svg) Das Katalog-Service-Metapaket wurde veröffentlicht, um die Installationsschritte zu vereinfachen.
 ![Fehlerbehebung](../assets/fix.svg) API-Skalierbarkeit und Leistungsverbesserungen.
 
 ### Version 1.3
 
-Releasedatum: 2023-1-17 Kompatibel mit Adobe Commerce (EE): 2.4.x Kompatibel mit Adobe Commerce for Cloud (ECE): 2.4.x Stabilität: Allgemeine Verfügbarkeit
+_17. Januar 2023_
+
+[!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"}
 
 ![Neu](../assets/new.svg) Das Onboarding wurde vereinfacht und verbessert.
 ![Neu](../assets/new.svg) Neue Kunden-Sandbox-Endpunkte stehen für Vorproduktionstests zur Verfügung.
@@ -62,14 +68,18 @@ Releasedatum: 2023-1-17 Kompatibel mit Adobe Commerce (EE): 2.4.x Kompatibel mit
 
 ### Version 1.1
 
-Releasedatum: 2022-11-18 Kompatibel mit Adobe Commerce (EE): 2.4.x Kompatibel mit Adobe Commerce for Cloud (ECE): 2.4.x Stabilität: Allgemeine Verfügbarkeit
+_18. November 2022_
+
+[!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"}
 
 ![Neu](../assets/new.svg) Catalog Service unterstützt jetzt die Adobe [API-Mesh](https://developer.adobe.com/graphql-mesh-gateway/).
 ![Fehlerbehebung](../assets/fix.svg) Wir haben die API-Skalierbarkeit und die Gesamtleistung verbessert.
 
 ### Version 1.0
 
-Releasedatum: 2022-10-04 Kompatibel mit Adobe Commerce (EE): 2.4.x Kompatibel mit Adobe Commerce for Cloud (ECE): 2.4.x Stabilität: Allgemeine Verfügbarkeit
+_4. Oktober 2022_
+
+[!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"}
 
 ![Neu](../assets/new.svg) Unterstützt jetzt gebündelte und gruppierte Produkte.
 ![Neu](../assets/new.svg) Es wurden Sichtbarkeitsüberschreibungen für B2B hinzugefügt. Produkte sind nun durchsuchbar und können für bestimmte Kundengruppen zum Warenkorb hinzugefügt werden.
@@ -81,7 +91,9 @@ Releasedatum: 2022-10-04 Kompatibel mit Adobe Commerce (EE): 2.4.x Kompatibel mi
 
 ### Version 0.3 - Beta+
 
-Releasedatum: 2022-09-12 Kompatibel mit Adobe Commerce (EE): 2.4.x Kompatibel mit Adobe Commerce for Cloud (ECE): 2.4.x Stabilität: Beta
+_12. September 2022_
+
+[!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"}
 
 ![Neu](../assets/new.svg) Bilder für Varianten unterstützen: Produktbilder werden basierend auf den ausgewählten Optionen zurückgegeben
 ![Neu](../assets/new.svg) Preisstützung: nur Mitgliedern bestimmter Kundengruppen erlauben, den Preis der Produkte zu sehen
@@ -90,7 +102,9 @@ Releasedatum: 2022-09-12 Kompatibel mit Adobe Commerce (EE): 2.4.x Kompatibel mi
 
 ### Beta-Version
 
-Releasedatum: 2022-08-09 Kompatibel mit Adobe Commerce (EE): 2.4.x Kompatibel mit Adobe Commerce for Cloud (ECE): 2.4.x Stabilität: Beta
+_9. August 2022_
+
+[!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"}
 
 ![Neu](../assets/new.svg) Die `products` und `refineProduct` -Abfragen geben die folgenden Daten zurück:
 
