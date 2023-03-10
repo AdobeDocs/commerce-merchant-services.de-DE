@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] Versionshinweise"
 description: Informationen zu allen [!DNL Payment Services] veröffentlicht.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 39bd0763b7aa6f853d0bff80c8122e899c1c58d8
+source-git-commit: e076864a117be007eeb8003d9d6a472b704996ba
 workflow-type: tm+mt
-source-wordcount: '1590'
+source-wordcount: '1758'
 ht-degree: 0%
 
 ---
@@ -56,6 +56,26 @@ _28. Juni 2021_
 ![Neu](../assets/new.svg)<!-- Issue PAY-2761 --> Sie können jetzt die Daten anpassen, die im [Bestellstatusbericht](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) und [Zahlungsbericht](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) durch Einblenden oder Ausblenden von Spalten mithilfe des Steuerelements Spalteneinstellungen.
 
 +++
+
+## v2.0.0
+
+_10. März 2023_
+
+[!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"}
+
+![Neu](../assets/new.svg)<!-- Issue PAY-4152 --> Unterstützung für PHP 8.2 und Adobe Commerce 2.4.6 hinzugefügt. Nicht kompatibel mit PHP 7.x.
+
+## v1.6.1
+
+_10. März 2023_
+
+[!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"}
+
+![Fehlerbehebung](../assets/fix.svg)<!-- Issue PAY-4226 --> Es wurde ein Problem behoben, das verhinderte, dass neue Zahlungsdienst-Händler den Checkout im Admin verwenden konnten. Die Zahlungsdienste verwendeten zuvor die Commerce-Kunden-ID, die für neue Kunden nicht vorhanden ist.
+
+![Fehlerbehebung](../assets/fix.svg)<!-- Issue PAY-4205 --> Es wurde ein Fehler behoben, der dazu führte, dass der angegebene Versandadressenstatus beim Checkout mit dem Status in den Standardsteuereinstellungen durch den Status ersetzt wurde. [PayPal-Option](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#paypal-smart-buttons). Jetzt können Kunden ihre Bestellungen in einen anderen Staat verschicken lassen als den, der in den Steuereinstellungen des Händlers als Standard konfiguriert wurde.
+
+![Fehlerbehebung](../assets/fix.svg)<!-- Issue PAY-4202 --> Es wurde ein Problem behoben, das Kunden daran hinderte, einen Kartengewinn zu verwenden, um einen Kauf abzuschließen oder eine ungültige Zahlungsmethode für einen Store zu löschen [mithilfe der `Authorize and Capture` Zahlungsaktion](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method). Zuvor trat der Fehler &quot;Provider Vault ID not found&quot;auf, wenn der Kunde versuchte, seine ausgefüllten Kreditkarten zu verwenden oder zu ändern.
 
 ## v1.6.0
 
