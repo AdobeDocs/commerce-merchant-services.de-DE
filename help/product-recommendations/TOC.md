@@ -4,7 +4,7 @@ user-guide-description: In diesem Handbuch finden Sie detaillierte Anweisungen z
 breadcrumb-title: "[!DNL Product Recommendations] Guide"
 source-git-commit: d56fd57281a5b675e128cca75d4057756a0bf4bf
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '54'
 ht-degree: 0%
 
 ---
