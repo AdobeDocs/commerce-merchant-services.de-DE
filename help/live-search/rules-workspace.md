@@ -2,9 +2,9 @@
 title: "Arbeitsbereich für Regeln"
 description: '"Machen Sie sich mit dem [!DNL Live Search] Arbeitsbereich "Regeln".'
 exl-id: a52839fb-2264-4443-83c3-9eaa2ccb6996
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 91d0713a3e57a3748609b6b4bcb723c21a461519
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '573'
 ht-degree: 0%
 
 ---
@@ -30,20 +30,14 @@ Wenn Ihre Adobe Commerce-Installation mehrere Store-Ansichten enthält, legen Si
 1. Klicken Sie oben rechts auf **Einblenden/Ausblenden** ![Spaltenauswahl](assets/btn-show-hide-columns.png) Spalten.
 Die sichtbaren Spalten haben ein blaues Häkchen im Menü &quot;Optionen&quot;. Der Regelname ist die einzige Spalte, die nicht ausgeblendet werden kann.
 
-   ![Arbeitsbereich für Regeln](assets/rules-workspace-show-hide-columns.png)
-
 1. Führen Sie im Menü einen der folgenden Schritte aus:
 
    * Um eine ausgeblendete Spalte anzuzeigen, klicken Sie auf einen beliebigen Spaltennamen ohne Häkchen.
    * Um eine sichtbare Spalte auszublenden, klicken Sie auf einen beliebigen Spaltennamen mit einem Häkchen.
 
-   ![Arbeitsbereich für Regeln](assets/rules-workspace-all-columns.png)
-
 ## Regeln nach Status filtern
 
 1. Wenn Ihr Store viele Regeln enthält, können Sie die Regeln nach Status filtern, um die Liste zu verkürzen. Standardmäßig werden in der Liste Regeln alle Regeln angezeigt.
-
-   ![Regeln - nach Status filtern](assets/rules-workspace-filter-status.png)
 
 1. Um nur Regeln mit einer bestimmten Statuseinstellung aufzulisten, legen Sie **Status** auf einen der folgenden Werte:
 
@@ -51,8 +45,6 @@ Die sichtbaren Spalten haben ein blaues Häkchen im Menü &quot;Optionen&quot;. 
    * Aktiv
    * Inaktiv
    * Geplant
-
-   ![Regeln - nach Status filtern](assets/rules-workspace-filter-status-active.png)
 
 ## Regeln nach Namen durchsuchen
 

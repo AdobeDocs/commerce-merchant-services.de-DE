@@ -2,9 +2,9 @@
 title: "Arten von Synonymen"
 description: "Einweg- und Zweiwege [!DNL Live Search] Synonyme erweitern die Definition von Keywords."
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 9bacdb5fd232a3603bcb7abe2e93da9ead794d38
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: '512'
 ht-degree: 0%
 
 ---
@@ -29,11 +29,11 @@ Ein unidirektionales Synonym ist eine Teilmenge eines Suchbegriffs, jedoch mit e
 
 ## Best Practices
 
-Beachten Sie die folgenden Best Practices, um die Nutzung von Live Search-Synonymen optimal zu nutzen.
+Beachten Sie die folgenden Best Practices, um das Beste aus [!DNL Live Search] Synonyme.
 
 ### Vermeiden Sie &quot;Stoppwörter&quot;
 
-Die Live-Suche filtert häufig verwendete englische &quot;Stoppwörter&quot;aus Synonymen heraus, z. B.:
+[!DNL Live Search] filtert gängige englische &quot;Stoppwörter&quot;aus Synonymen heraus, z. B.:
 
 a, an und sind, wie es ist, aber durch, ob es, in, in, ist, nein, nicht, auf, oder so, dass die, ihre, dann, dort, diese, dies, zu, mit
 

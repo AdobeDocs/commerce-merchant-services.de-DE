@@ -2,16 +2,16 @@
 title: "Synonyme hinzufügen"
 description: "Hinzufügen [!DNL Live Search] Synonyme zur Verbesserung der Antwort auf Suchanfragen."
 exl-id: 6c277d88-cb22-4174-abda-6d6bb65fe3be
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: c4bca0c7238be653dd13b051634c662e5891767d
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
 
 # Synonyme hinzufügen
 
-Erhöhen Sie die Kundeninteraktion, indem Sie Ihre eigene kuratierte Liste mit Live-Suchsynonymen hinzufügen. [!DNL Live Search] kann bis zu 200 Synonyme pro `Data Space ID`.
+Erhöhen Sie die Kundeninteraktion durch Hinzufügen Ihrer eigenen kuratierten Liste von [!DNL Live Search] Synonyme. [!DNL Live Search] kann bis zu 200 Synonyme pro `Data Space ID`.
 
 ![[!DNL Live Search] Synonyme](assets/synonym-workspace.png)
 
@@ -50,7 +50,7 @@ Der Satz von Synonymen erscheint in der Liste mit einem Zwei-Wege-Pfeil zwischen
 
    ![Einwegsynonym hinzufügen](assets/synonym-add-one-way.png)
 
-1. Geben Sie die **Schlüsselwort** und **Erweiterung** Begriff(e). Trennen Sie mehrere Begriffe durch Kommas.
+1. Geben Sie die **Schlüsselwort** und **Erweiterung** Begriffe. Trennen Sie mehrere Begriffe durch Kommas.
 
    ![Beispiel für unidirektionale Synonyme](assets/synonym-add-one-way-example.png)
 
@@ -65,8 +65,6 @@ Die Gruppe von Synonymen wird in der Liste mit einem einseitigen Pfeil angezeigt
 
 1. Wenn Ihre Synonyme abgeschlossen sind, klicken Sie auf **Veröffentlichungsänderungen**.
 1. Warten Sie bis zu zwei Stunden, bis Ihre Updates in der Storefront verfügbar sind.
-
-![Veröffentlichungsänderungen](assets/synonym-publish.png)
 
 ## Feldbeschreibungen
 

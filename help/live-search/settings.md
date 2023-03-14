@@ -1,10 +1,10 @@
 ---
-title: '"[!DNL Live Search] Einstellungen"'
-description: '"Konfigurieren Sie Preisfacettenbereiche und -intervalle für [!DNL Live Search] Facetten."'
+title: "[!DNL Live Search] Einstellungen"
+description: "Konfigurieren Sie Preisfacettenbereiche und -intervalle für [!DNL Live Search] Facetten."
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 9bacdb5fd232a3603bcb7abe2e93da9ead794d38
 workflow-type: tm+mt
-source-wordcount: '242'
+source-wordcount: '240'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Sie können die Anzahl der Preisbereichsgruppen und die Verteilung der Preiswert
 
 ## Preisfacettengruppierungen konfigurieren
 
-1. Navigieren Sie im Admin zu **Marketing** > *SEO und Suche* > **Live Search**.
+1. Navigieren Sie im Admin zu **Marketing** > *SEO und Suche* > **[!DNL Live Search]**.
 1. Im **Einstellungen** Registerkarte unter *Preisfacetten* führen Sie folgende Schritte aus:
    * Geben Sie die **Anzahl der Auswahlen**, oder Preisgruppierungen, die verfügbar sein sollen. Es können bis zu 50 Preisgruppierungen definiert werden.
    * Geben Sie die **Intervallwert** oder Preisbereich für jede Gruppe. Der Höchstwert beträgt 10.000.

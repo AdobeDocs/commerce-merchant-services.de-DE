@@ -1,10 +1,10 @@
 ---
-title: '"Leistung"'
-description: '"Die [!DNL Live Search] Das Leistungs-Dashboard bietet Einblicke in die Suchbegriffe, die Käufer verwenden."'
+title: "Leistung"
+description: "Die [!DNL Live Search] Das Leistungs-Dashboard bietet Einblicke in die Suchbegriffe, die Käufer verwenden."
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 0b0bf898719338f5dacd55d8e89aaf2c9fa8a3c0
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '456'
 ht-degree: 0%
 
 ---
@@ -26,11 +26,10 @@ Die [!DNL Live Search] Das Leistungs-Dashboard bietet Einblicke in die Suchbegri
    * Um ein einzelnes Datum anzugeben, doppelklicken Sie auf das Datum im Kalender.
    * Um einen Datumsbereich festzulegen, klicken Sie auf das erste und letzte Datum im Kalender.
 
-   ![Zeitrahmen des Leistungsberichts](assets/performance-calendar.png)
+>[!NOTE]
+>
+>Das Leistungs-Dashboard wird alle 12 Stunden aktualisiert.
 
-1. Klicken Sie auf die Berichtregisterkarte, die Sie anzeigen möchten.
-
-   ![Leistungsorientierte Ergebnisse](assets/performance-popular-results.png)
 
 ## Feldbeschreibungen
 

@@ -2,9 +2,9 @@
 title: "Regeln hinzufügen"
 description: "Erfahren Sie, wie Sie [!DNL Live Search] Regeln."
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: e763eb8e283319b30b19dbb13284e9616196ae48
 workflow-type: tm+mt
-source-wordcount: '1290'
+source-wordcount: '1390'
 ht-degree: 0%
 
 ---
@@ -13,20 +13,22 @@ ht-degree: 0%
 
 Um eine Regel zu erstellen, verwenden Sie zunächst den Regeleditor, um die Bedingungen im Abfragetext des Käufers zu definieren, unter denen die zugehörigen Ereignisse Trigger werden. Schließen Sie dann die Regeldetails ab, testen Sie die Ergebnisse und veröffentlichen Sie die Regel.
 
-## Schritt 1: Regel hinzufügen
+## Regel hinzufügen
 
-1. Navigieren Sie im Admin zu **Marketing** > SEO &amp; Suche > **Live Search**.
+1. Navigieren Sie im Admin zu **Marketing** > SEO &amp; Suche > **[!DNL Live Search]**.
 1. Legen Sie die **Anwendungsbereich** zur Identifizierung der [Store-Ansicht](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) wo die Regel gilt.
 1. Klicken Sie auf **Regeln** Registerkarte.
 1. Klicken **Regel hinzufügen** , um den Regeleditor zu starten.
 
-   ![Arbeitsbereich für Regeln](assets/rules-workspace-add-rule.png)
-
-## Schritt 2: Bedingungen beschreiben
+## Bedingungen
 
 Bedingungen sind die Voraussetzungen für den Trigger eines Ereignisses. Eine Regel kann bis zu zehn Bedingungen und 25 Ereignisse enthalten.
 
 ![Regel - Regel erstellen](assets/rules-add-workspace.png)
+
+>[!NOTE]
+>
+>Derzeit ist es nicht möglich, Regeln auf eine bestimmte Kundengruppe auszurichten.
 
 ### Einzelbedingung
 
@@ -43,9 +45,6 @@ Bedingungen sind die Voraussetzungen für den Trigger eines Ereignisses. Eine Re
 
 1. Um andere Abfragen zu testen, ändern Sie den Abfragetext im *Regel testen* Suchfeld und drücken Sie **Rückgabe**.
 Zunächst rendert der Testbereich die Abfrage über das Suchfeld Bedingungen . Jetzt wird jedoch die Abfrage aus der Testabfrage gerendert. Im Testbereich wird jeweils nur eine Abfrage gerendert.
-
-   ![Regel - Aktualisierungstest](assets/rule-update-test.png)
-
 1. Wenn Ihnen das Ergebnis gefällt, aktualisieren Sie den Text im *Bedingungen* Suchfeld. Klicken Sie dann auf eine beliebige Stelle auf der Seite, um die Ergebnisse im Testbereich zu aktualisieren.
 1. Um eine einfache Regel mit einer Bedingung zu erstellen, gehen Sie zu Schritt 3: [Hinzufügen von Ereignissen](#events).
 
@@ -57,8 +56,6 @@ Eine Regel kann bis zu zehn Bedingungen enthalten. Der logische Operator, der zw
    ![Regeln - Suchabfrage enthält](assets/rules-search-query-contains-and.png)
 
 1. Wählen Sie die zweite Bedingung aus und geben Sie den gewünschten Abfragetext ein.
-
-   ![Regelbedingungen](assets/rules-add-condition.png)
 
 1. Um die Logik der Regel zu ändern, ändern Sie die **Übereinstimmung** -Einstellung, um zu bestimmen, wie eng die Suchkriterien des Käufers mit der Abfragebedingung übereinstimmen müssen. Satz **Übereinstimmung** auf einen der folgenden Werte:
 
@@ -73,25 +70,48 @@ Eine Regel kann bis zu zehn Bedingungen enthalten. Der logische Operator, der zw
 
 1. Um eine weitere Bedingung hinzuzufügen, klicken Sie auf **Bedingung hinzufügen** und wiederholen Sie den Vorgang.
 
-## Schritt 3: Hinzufügen von Ereignissen
+## Rangiertyp
 
--Ereignisse sind Aktionen, die die Suchergebnisse ändern, wenn die Bedingungen erfüllt sind. Eine einzelne Regel kann bis zu 25 Ereignisse enthalten.
+Das Ranking kombiniert Benutzerverhalten und Site-Statistiken, um das Produktranking zu bestimmen.
+Store-Eigentümer können die folgenden Ranking-Strategien einrichten:
 
-1. under *Veranstaltungen*, wählen Sie die **Ereignis** , um zu erfolgen, wenn die entsprechenden Bedingungen erfüllt sind.
+![Regeln - Übereinstimmung](assets/rules-ranking-type.png)
 
-   Wählen Sie beispielsweise `Pin a product`. Geben Sie dann den Namen des Produkts ein, das Sie veröffentlichen möchten. Wenn Sie Hilfe benötigen, finden Sie den Namen im Testbereich.
-Geben Sie dann die *Position* wo das eingeklemmte Produkt erscheinen soll. Das Produkt wird an die neue Position im Testbereich verschoben und mit einer *Angeheftet* Vorschau-Badge.
+* Am häufigsten gekauft: Dadurch werden Produkte nach Gesamtkäufen pro SKU in den letzten sieben Tagen sortiert.
+* Am häufigsten zum Warenkorb hinzugefügt - Dieser Wert wird in der Reihenfolge der gesamten &quot;Zum Warenkorb hinzufügen&quot;-Aktivitäten in den letzten 7 Tagen sortiert.
+* Am häufigsten angezeigt: Berechnet meine Gesamtansichten pro SKU in den letzten 7 Tagen.
+* Empfohlen für Sie - Verwendet das `viewed-viewed` Datenpunkt - Käufer, die diese SKU angesehen haben, haben sich auch mit diesen anderen SKUs befasst
+* Trends: blickt auf Seitenansichtsereignisse der letzten 72 Stunden für Hintergrundereignisse und 24 Stunden für Vordergrundereignisse zurück
+* Keine: Produkte werden nach Relevanz geordnet
+
+1. Wählen Sie den Typ der Strategie für die Regel aus. Im Fenster Regel testen werden die erwarteten Ergebnisse angezeigt.
+
+## Hinzufügen von Ereignissen
+
+Ereignisse sind Aktionen, die die Suchergebnisse ändern, wenn definierte Bedingungen erfüllt sind. Eine einzelne Regel kann bis zu 25 Ereignisse enthalten.
+
+* Verstärken - Verschiebt ein Produkt in den Suchergebnissen höher.
+* Bury - Verschiebt eine SKU in den Suchergebnissen nach unten.
+* Produkt fixieren - Das Produkt wird in der ausgewählten &quot;Position&quot;auf der Seite angezeigt.
+* Produkt ausblenden - Schließt eine SKU aus den Suchergebnissen aus.
+
+Am einfachsten können Sie ein Produkt durch Drag &amp; Drop anheften.
+
+1. Klicken Sie auf ein Produkt und ziehen Sie es in den Bereich Test . Ziehen Sie es an die gewünschte Position. Die Felder Produkt und Option werden automatisch im Bereich Ereignisse ausgefüllt.
 
    ![Regeln - Übereinstimmung](assets/rule-event-pin-product.png)
 
+Sie können auch auf das Pin-Symbol klicken, um ein Produkt an seiner aktuellen Position zu veröffentlichen. Verwenden Sie das Kontextmenü mit den Auslassungspunkten, um &quot;Nach oben pin&quot;oder &quot;Nach unten pinnen&quot;zu verwenden.
+
+Oder Ereignisse können manuell festgelegt werden:
+
+1. under *Veranstaltungen*, wählen Sie die **Ereignis** , um zu erfolgen, wenn die entsprechenden Bedingungen erfüllt sind.
+
+   Wählen Sie beispielsweise `Hide a product`. Geben Sie dann den Namen des Produkts ein, das Sie ausblenden möchten. Bei der Eingabe werden Produkte vorgeschlagen.
+
 1. Wählen Sie für mehrere Ereignisse alle anderen Ereignisse aus, die bei Erfüllung von Bedingungen Trigger werden sollen.
 
-   * Verstärken - Wählen Sie &quot;Verstärken&quot;. Geben Sie dann den Produktnamen oder die SKU ein, die bzw. die Sie in den Suchergebnissen weiter nach oben verschieben möchten. Im Testbereich verfügt jedes geboosterte Produkt über eine *Verstärkt* Vorschau-Badge.
-   * Bury - Verschiebt eine SKU in den Suchergebnissen nach unten. Jede SKU ist mit einer *Vergraben* Vorschau-Badge im Testbereich.
-   * Produkt fixieren - Geben Sie den Produktnamen oder die SKU ein. Wählen Sie dann die Position in den Suchergebnissen aus, an der das Produkt erscheinen soll. Das Produkt ist mit einer *Angeheftet* Vorschau-Badge im Testbereich.
-   * Produkt ausblenden - Schließt eine SKU aus den Suchergebnissen aus.
-
-## Schritt 4: Details ausfüllen
+## Zusätzliche Details
 
 Die hier eingegebenen Informationen werden im [Regeldetails](rules-workspace.md) Bereich.
 
@@ -103,13 +123,10 @@ Die hier eingegebenen Informationen werden im [Regeldetails](rules-workspace.md)
 
    ![Regel - Abgeschlossen](assets/rule-add-details.png)
 
-## Schritt 5: Regel testen
+## Fertigstellen der Regel
 
 1. Untersuchen Sie die Ergebnisse der Regel im Testbereich.
 1. Wenn die Regel mehrere Abfragen enthält, testen Sie jede, die von der Regel betroffen sein könnte.
-
-## Schritt 6: Speichern und veröffentlichen
-
 1. Wenn Sie fertig sind, klicken Sie auf **Speichern und veröffentlichen**.
 
    Die Regel wird der Liste im Arbeitsbereich &quot;Regeln&quot;hinzugefügt.

@@ -1,10 +1,10 @@
 ---
-title: '"Facets hinzufügen"'
-description: '"Erfahren Sie, wie Sie filterbare Produktattribute als [!DNL Live Search] Facetten."'
+title: "Facets hinzufügen"
+description: "Erfahren Sie, wie Sie filterbare Produktattribute als [!DNL Live Search] Facetten."
 exl-id: 0df6c21b-55b3-41ce-94f4-f70b70ffb84e
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 10edbb6127405d45c06d4c8ffc89d92a6ca061c3
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '588'
 ht-degree: 0%
 
 ---
@@ -19,16 +19,13 @@ Jedes filterbare Produktattribut kann als Facette verwendet werden. Die *Hinzuf�
 
 1. Navigieren Sie im Admin zu **Marketing** > SEO &amp; Suche > **[!DNL Live Search]**.
 1. Im *Facebook* Registerkarte, klicken Sie auf **Hinzufügen von Facetten**.
-1. Im *Hinzufügen von Facetten* enthält jedes verfügbare Attribut eine separate *Hinzufügen* Schaltfläche. Führen Sie einen der folgenden Schritte aus:
-
-   ![Facette hinzugefügt](assets/facets-list-add.png)
+1. Im *Hinzufügen von Facetten* enthält jedes verfügbare Attribut eine separate ![Schaltfläche hinzufügen](assets/btn-add.png). Führen Sie einen der folgenden Schritte aus:
 
    * Im *Facettenattribute* auflisten, das Produktattribut auswählen, das Sie als Facette verwenden möchten, und auf **Hinzufügen**.
    * Um ein bestimmtes Produktattribut zu finden, geben Sie die ersten Zeichen des Attributnamens in die *Suche* ankreuzen. Klicken Sie anschließend auf **Hinzufügen**.
 
       Informationen zum Konfigurieren von Preisfacettenintervallen und -gruppierungen finden Sie unter [Einstellungen](settings.md). Weitere Informationen finden Sie unter [Facettentypen](facets-type.md).
 Die Facette wird am unteren Rand des *Dynamische Facetten* und *Veröffentlichungsänderungen* -Schaltfläche verfügbar.
-   ![Facette hinzugefügt](assets/facet-added.png)
 
 1. Wenn die Facette, die Sie hinzufügen möchten, nicht gefunden werden kann, gehen Sie zu **Stores** > Attribute > **Produkt** und überprüfen Sie, ob das -Attribut die [erforderliche Eigenschaften](facets.md) als Facette verwendet werden. Aktualisieren Sie bei Bedarf die folgenden Storefront-Eigenschaften des Attributs:
 
@@ -46,7 +43,6 @@ Die Facette wird am unteren Rand des *Dynamische Facetten* und *Veröffentlichun
 1. Klicken Sie im Menü auf **Bearbeiten**. Passen Sie dann die folgenden Eigenschaften nach Bedarf an.
 
    * Titel - ([Headless](facets-type.md) nur) Geben Sie die Facettenbeschriftung ein, die Sie verwenden möchten.
-   * Typ auswählen - die *Typ auswählen* für alle [!DNL Commerce] storefronts is `single select`. Bei Headless-Implementierungen: `multi-select` Typ kann mit einem logischen Operator (`or` oder `and`), um den Satz der zurückgegebenen Produkte zu bestimmen.
    * Sortiertyp - Facets werden alphabetisch für alle sortiert [!DNL Commerce] Storefronts. Bei Headless-Implementierungen können Facetten entweder alphabetisch oder nach Anzahl sortiert werden. Optionen: Alphabetisch, Anzahl (nur Headless)
    * Max. Wert - Geben Sie die maximale Anzahl an Facettenwerten ein, die in der Storefront angezeigt werden. Gültige Einträge: 0-30; Standard: 8
 
@@ -68,7 +64,6 @@ Wenn die Facette nach zwei Stunden nicht verfügbar ist, lesen Sie [Export über
 | Feld | Beschreibung |
 |--- |--- |
 | Titel | ([Headless](facets-type.md) nur) Die [Facet-Bezeichnung](facets-type.md) die in der Storefront sichtbar sind, können zur Konsistenz mit Ihrer Marke bearbeitet werden. |
-| Typ auswählen | Zeigt die [Auswahlmethode](facets-type.md) das mit dem Produktattribut verknüpft ist. Alle Facetten im [!DNL Commerce] Storefronts sind `Single select` nur. Headless-Implementierungen unterstützen auch `Multi-select` mit den logischen Operatoren `OR` und `AND`. |
 | Sortiertyp | Die Methode, mit der [sort](facets-type.md) Facetten. Alle [!DNL Commerce] storefronts sortiert Facetten nur alphabetisch. Headless-Implementierungen können auch nach `Count`. Optionen:<br />Alphabetisch - Sortiert Facetten alphabetisch.<br />Anzahl - (nur Headless) Sortiert Facetten basierend auf der Anzahl der gefundenen Übereinstimmungen. |
 | Max. Wert | Die maximale Anzahl von Werten, die in der Storefront für jede Facette angezeigt werden können. Facets, die einen Wertebereich darstellen, sind gleichmäßig verteilt. Gültige Einträge: 0-30; Standard: 8 |
 

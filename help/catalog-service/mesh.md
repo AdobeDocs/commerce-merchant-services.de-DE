@@ -1,9 +1,9 @@
 ---
 title: '[!DNL Catalog Service and API Mesh]'
 description: '''[!DNL API Mesh] für Adobe Commerce bietet eine Möglichkeit, mehrere Datenquellen über einen gemeinsamen GraphQL-Endpunkt zu integrieren."'
-source-git-commit: bdceeeeb1ed58c4ffbc87bee24c1eb3754b1cde9
+source-git-commit: 41d6bed30769d3864d93d6b3d077987a810890cc
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '234'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,6 @@ Ersetzen Sie die `name `, `endpoint`und `x-api-key` -Werte.
               "Magento-Website-Code": "{context.headers['magento-website-code']}",
               "Magento-Store-Code": "{context.headers['magento-store-code']}",
               "Magento-Environment-Id": "{context.headers['magento-environment-id']}",
-              "x-api-key": "storefront-catalog-apollo",
               "Magento-Customer-Group": "{context.headers['magento-customer-group']}"
             },
             "schemaHeaders": {

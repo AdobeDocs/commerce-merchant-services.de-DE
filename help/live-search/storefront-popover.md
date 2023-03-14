@@ -2,9 +2,9 @@
 title: "[!DNL Storefront Popover]"
 description: "Die [!DNL Live Search storefront popover] gibt dynamisch vorgeschlagene Produkte und Miniaturansichten zurück."
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 92889130fd7482e0b99fb08746e6fd2830b0345e
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '364'
 ht-degree: 0%
 
 ---
@@ -14,10 +14,6 @@ ht-degree: 0%
 Wann [!DNL Live Search] is [installiert](install.md), [!DNL popover] erscheint in der Storefront, wenn der Käufer im Feld [Suche](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) ankreuzen. Mit jedem eingegebenen Zeichen muss die [!DNL popover] wird mit vorgeschlagenen Produkten und Miniaturbildern der wichtigsten Suchergebnisse aktualisiert.
 
 [!DNL Live Search] gibt Ergebnisse für eine Abfrage von zwei Zeichen oder mehr zurück. Bei einer teilweisen Übereinstimmung beträgt die maximale Anzahl von Zeichen pro Wort 20. Die Anzahl der Zeichen in einer Abfrage vom Typ &quot;Suche beim Eingeben&quot; ist nicht konfigurierbar.
-
->[!NOTE]
->
->Die [!DNL Live Search] [!DNL storefront popover] ist nur für Stores verfügbar, die *Luma* Design oder ein benutzerdefiniertes Design, das auf *Luma*. Die *Luma* -Design ist im [!DNL Commerce] Beispieldaten. Die [!DNL popover] unterstützt nicht die *Leer* Design. Siehe [Formatierung [!DNL Popover] Elemente](storefront-popover-styling.md) , um mehr zu erfahren.
 
 ## Durchsuchbare Attribute
 
@@ -42,3 +38,9 @@ Standardmäßig ist der Wert Katalogsuche - Automatische Vervollständigungsgren
 1. Erweitern Sie die *Katalogsuche* Abschnitt.
 1. Legen Sie die **Automatische Vervollständigungsgrenze** auf die Anzahl der Zeilen, die Sie in der [!DNL popover].
 1. Wenn Sie fertig sind, klicken Sie auf **Konfiguration speichern**.
+
+## Einschränkungen
+
+* Die [!DNL Live Search] [!DNL storefront popover] ist nur für Stores verfügbar, die *Luma* Design oder ein benutzerdefiniertes Design, das auf *Luma*.
+* Die [!DNL popover] unterstützt nicht die *Leer* Design. Siehe [Formatierung [!DNL Popover] Elemente](storefront-popover-styling.md) , um mehr zu erfahren.
+* Die [!DNL popover] wird im Schnellbestellformular nicht unterstützt.

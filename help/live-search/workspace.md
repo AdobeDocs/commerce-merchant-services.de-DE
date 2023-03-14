@@ -1,15 +1,15 @@
 ---
-title: Arbeitsbereich
-description: Der Arbeitsbereich "Live-Suche"wird zum Konfigurieren, Verwalten und Überwachen der Suchleistung verwendet.
+title: '[!DNL Live Search] Workspace'
+description: Die [!DNL Live Search] Workspace wird zum Konfigurieren, Verwalten und Überwachen der Suchleistung verwendet.
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 166665c3ee27ed7e07e00df0e3eab060f3686869
 workflow-type: tm+mt
-source-wordcount: '236'
+source-wordcount: '226'
 ht-degree: 0%
 
 ---
 
-# Arbeitsbereich
+# [!DNL Live Search] Arbeitsbereich
 
 Im Arbeitsbereich können Sie die Leistung von [!DNL Live Search]. Das Menü oben bietet Zugriff auf die Tools in den einzelnen Funktionsbereichen.  Die verfügbaren Funktionen spiegeln die aktuelle Menüauswahl wider.
 
@@ -28,5 +28,4 @@ Zunächst wird die [Umfang](https://experienceleague.adobe.com/docs/commerce-adm
 | [Synonyme](synonyms.md) | Erweitern Sie die Reichweite der Suche, um Wörter einzuschließen, mit denen Käufer Produkte finden können, die sich von denen in Ihrem Katalog unterscheiden. |
 | [Regeln](rules.md) | Gestalten Sie das Sucherlebnis mit logischen Regeln, die geplante Aktionen Trigger haben. Sie können Produkte steigern, begraben, anheften oder ausblenden, um Suchergebnisse zur Unterstützung Ihrer Geschäftsziele zu kalibrieren. |
 | [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) | Entwickler, die beim Administrator Ihres Stores angemeldet sind, können Abfragen mit tatsächlichen Katalogdaten erstellen und testen. Weitere Informationen finden Sie unter [Übersicht über GraphQL](https://developer.adobe.com/commerce/webapi/graphql/) im [!DNL Live Search] Entwicklerdokumentation. |
-| [Feedback](feedback.md) | Senden Sie Ihr Feedback direkt an die [!DNL Live Search] Team. |
 | [Einstellungen](settings.md) | Bestimmen Sie, wie Preisfacettenwerte nach Preisbereichen in der Storefront gruppiert werden. |

@@ -2,9 +2,9 @@
 title: "Facets verwalten"
 description: "Erfahren Sie, wie Sie vorhandene verwalten [!DNL Live Search] Facetten."
 exl-id: 1d51a36a-20d6-46b6-b379-11e46c8824a0
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 9bacdb5fd232a3603bcb7abe2e93da9ead794d38
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '461'
 ht-degree: 0%
 
 ---
@@ -64,6 +64,10 @@ Die Nadel wird grau und die Facette wechselt zur *Dynamische Facetten* Abschnitt
    ![Gesteitete und dynamische Facetten](assets/facets-pinned-unpinned.png)
 
 ## Fixierte Facette verschieben
+
+>[!NOTE]
+>
+>Die Reihenfolge von fixierten Facetten wird nur in Headless-Implementierungen unterstützt. Wenn geordnete Facetten benötigt werden, verwenden Sie die [!DNL Live Search] PLP-Widget.
 
 Die Reihenfolge der fixierten Facetten kann geändert werden, indem die Zeile an eine andere Position verschoben wird. Verfestigte Facetten haben eine *Verschieben* Symbol (![Auswahl verschieben](assets/btn-move.png)) am Anfang der Zeile. Im Gegensatz zu fixierten Facetten können dynamische Facetten nicht verschoben werden.
 

@@ -2,9 +2,9 @@
 title: "Faceting Workspace"
 description: '"Machen Sie sich mit dem [!DNL Live Search] Arbeitsbereich "facettieren".'
 exl-id: b47b5c19-59bb-41e4-9599-3b90cbc44b70
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: e166c8cb9d715dce573195a188b5335c02d8fd0c
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '224'
 ht-degree: 0%
 
 ---
@@ -28,8 +28,6 @@ Wenn Ihre Adobe Commerce-Installation mehrere Store-Ansichten enthält, legen Si
    * Angeheftet
    * Dynamik
 
-   ![Factory-Arbeitsbereich](assets/facets-filter-by.png)
-
 ## Facette hinzufügen
 
 1. Klicken **Hinzufügen von Facetten**.
@@ -40,7 +38,6 @@ Wenn Ihre Adobe Commerce-Installation mehrere Store-Ansichten enthält, legen Si
 | Spalte | Beschreibung |
 |--- |--- |
 | (erste Spalte) | Listet fixierte und dynamische Facetten von [label](facets-type.md) für den Käufer sichtbar ist. |
-| Typ auswählen | Die [Auswahlmethode](facets-type.md) , das dem entsprechenden Produktattribut zugewiesen ist. Die `single select` Typ wird für alle [!DNL Commerce] Storefronts. Bei Headless-Implementierungen: `multi-select` Typ kann mit einem logischen Operator (`or` oder `and`), um den Satz der zurückgegebenen Produkte zu bestimmen. |
 | Sortiertyp | Die [Sortierreihenfolge](facets-type.md) von Facettenwerten. Facets werden alphabetisch für alle sortiert [!DNL Commerce] Storefronts. Für [Headless] -Implementierungen können Facetten entweder alphabetisch oder nach Anzahl sortiert werden. Optionen: Alphabetisch, Anzahl (nur Headless) |
 | Max. Wert | Die Anzahl der Facettenwerte, die in der Storefront als Filter verfügbar sind, mit einer maximalen Anzahl von 10. |
 
