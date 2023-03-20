@@ -2,7 +2,7 @@
 title: Headless
 description: Informationen zur Integration [!DNL Product Recommendations] in einer Headless-Storefront.
 exl-id: 316d0b0c-5938-4e2f-9d0d-747746cf6056
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
 workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 0%
@@ -42,7 +42,7 @@ Sie können diese beiden Aktionen mit den verfügbaren SDKs ausführen, wie im f
    | `impression-render` | recommendations-unit |
    | `view` | recommendations-unit |
    | `rec-click` | recommendations-unit |
-   | `rec-add-to-cart-click` | Empfehlungseinheit (wenn eine Schaltfläche zum Warenkorb in der Empfehlungsvorlage vorhanden ist) |
+   | `rec-add-to-cart-click` | Empfehlungseinheiten (wenn die Schaltfläche &quot;Zum Warenkorb hinzufügen&quot;in der Empfehlungsvorlage vorhanden ist) |
 
 1. Wenn die Ereignisse ausgelöst werden, verwenden Sie die [Adobe Commerce Storefront Event Collector](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/) um die Ereignisse zu verarbeiten und an Adobe Sensei zu senden.
 

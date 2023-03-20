@@ -2,7 +2,7 @@
 title: Produkte filtern
 description: Definieren Sie Bedingungen, die Produkte entweder ein- oder ausschließen, um sie als Empfehlungen zu verwenden.
 exl-id: baab28ff-b529-4cbc-adb7-4fa225e87d4a
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
 workflow-type: tm+mt
 source-wordcount: '698'
 ht-degree: 0%
@@ -42,7 +42,7 @@ Logische Operatoren `AND` und `OR` werden verwendet, um mehrere Bedingungen zu v
 
 ### Kategorie
 
-Filter, die auf der Kategorie eines Produkts basieren, verwenden direkte Kategoriezuweisungen und deren Unterkategorien. Beispielsweise die Aktivierung einer Ausschlussbedingung für Kategorie `Gear` schließt Produkte aus, die `Gear` und all ihre Unterkategorien wie `Gear/Bags` oder `Gear/Fitness Equipment`. Bei B2B-Händlern erfüllt der Filter Kategorie alle [kundenspezifische Produktkategorien]https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html) haben Sie konfiguriert.
+Filter, die auf der Kategorie eines Produkts basieren, verwenden direkte Kategoriezuweisungen und deren Unterkategorien. Beispielsweise die Aktivierung einer Ausschlussbedingung für Kategorie `Gear` schließt Produkte aus, die `Gear` und all ihre Unterkategorien wie `Gear/Bags` oder `Gear/Fitness Equipment`. Bei B2B-Händlern erfüllt der Filter Kategorie alle [kundenspezifische Produktkategorien](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html) Sie haben konfiguriert.
 
 Adobe Commerce empfiehlt die Verwendung der folgenden Kategoriefilterkonfiguration, wenn Sie Empfehlungen für Ihre Seitentypen bereitstellen:
 

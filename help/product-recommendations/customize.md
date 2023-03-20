@@ -2,9 +2,9 @@
 title: Anpassen
 description: Erfahren Sie, wie Sie Ihre Produktempfehlungen anpassen können.
 exl-id: b1b8e770-45ec-4403-b79b-4f0a9f7bd959
-source-git-commit: a34c3c8a5caca1bbf611b2df650c562aeeab297b
+source-git-commit: acfaa1d72265e42b973677a7e014ba4b350ec56b
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '638'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ Wenn Sie [erstellen](create.md) eine Empfehlung, legen Sie die [location](placem
    >
    >Die Dateinamen im `layout` kann sich unterscheiden, wenn Ihr Store Drittanbietererweiterungen verwendet.
 
-1. Ändern wir die `catalog_product_view.xml` -Datei, damit die Empfehlungseinheit nach dem Produktbild auf der Produktdetailseite angezeigt wird. Bevor Sie diese XML-Datei anpassen, schauen wir uns die Datei an und lernen die Abschnitte kennen, die Sie ändern müssen:
+1. Ändern Sie die `catalog_product_view.xml` -Datei, damit die Empfehlungseinheit nach dem Produktbild auf der Produktdetailseite angezeigt wird. Bevor Sie diese XML-Datei anpassen, sollten Sie sich die Datei ansehen und die Abschnitte verstehen, die Sie ändern müssen:
 
    ```xml
    <?xml version="1.0"?>
@@ -81,7 +81,7 @@ Wenn Sie [erstellen](create.md) eine Empfehlung, legen Sie die [location](placem
 
 1. Ändern wir diese Datei, indem wir einen anderen Inhaltsbaustein angeben.
 
-   Sie ändern den Referenzblock `name` von `main.content` nach `product.info.media`.
+   Referenzblock ändern `name` von `main.content` nach `product.info.media`.
 
    ```xml
    <?xml version="1.0"?>

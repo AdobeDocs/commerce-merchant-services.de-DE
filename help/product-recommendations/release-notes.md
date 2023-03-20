@@ -2,9 +2,9 @@
 title: '''[!DNL Product Recommendations] Versionshinweise'
 description: Die neuesten Versionsinformationen für [!DNL Product Recommendations] aus Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
-source-git-commit: 40cf5c5dc6242b5efe3822b9c574fe5b219cfcd8
+source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
 workflow-type: tm+mt
-source-wordcount: '1029'
+source-wordcount: '1068'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,21 @@ Siehe die Entwicklerdokumentation zu [Informationen zur Produktkompatibilität](
 
 ## Aktuelle Hauptversion
 
+### 5.0.0 von Magento/Produktempfehlungen
+
+[!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"}
+
+![Neu](../assets/new.svg) Produkt-Recommendations wurde aktualisiert, um Adobe Commerce 2.4.6 zu unterstützen.
+![Neu](../assets/new.svg) Dies ist eine Hauptversion. [Bearbeiten](install-configure.md#update) der Stamm `composer.json` -Datei für Ihr Projekt.
+
+#### Bekannte Einschränkungen
+
+* Die `websiteCode` -Wert falsch zurückgegeben, wenn er einen Unterstrich (_) enthält.
+
+### Frühere Versionen
+
++ + + 4.0.1 und früher
+
 ### 4.0.1 von Magento/Produktempfehlungen
 
 [!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"}
@@ -42,10 +57,6 @@ Siehe die Entwicklerdokumentation zu [Informationen zur Produktkompatibilität](
 #### Bekannte Einschränkungen
 
 * Die `websiteCode` -Wert falsch zurückgegeben, wenn er einen Unterstrich (_) enthält.
-
-### Frühere Versionen
-
-+ + + 3.3.7 und früher
 
 ### 3.3.7 von Magento/Produktempfehlungen
 
