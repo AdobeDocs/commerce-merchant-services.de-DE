@@ -2,7 +2,7 @@
 title: "Installieren [!DNL Live Search]"
 description: "Erfahren Sie, wie Sie installieren, aktualisieren und deinstallieren [!DNL Live Search] von Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: a589956b5594283d7ceb620abc76b2c352f8f524
+source-git-commit: cccdcfe28150d929d9ff7de4459bbfef941860a4
 workflow-type: tm+mt
 source-wordcount: '1288'
 ht-degree: 0%
@@ -237,7 +237,7 @@ Um auf eine Hauptversion wie 2.0.0 auf 3.0.1 zu aktualisieren, bearbeiten Sie da
 1. **Speichern** `composer.json`. Führen Sie dann Folgendes über die Befehlszeile aus:
 
    ```bash
-   composer update magento/live-search –-with-dependencies
+   composer update magento/live-search --with-dependencies
    ```
 
 ## Deinstallation [!DNL Live Search] {#uninstall}
