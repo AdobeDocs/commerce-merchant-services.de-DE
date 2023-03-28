@@ -2,9 +2,9 @@
 title: '''[!DNL Catalog Service] Versionshinweise'
 description: Die neuesten Versionsinformationen für [!DNL Catalog Service] für Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: 40cf5c5dc6242b5efe3822b9c574fe5b219cfcd8
+source-git-commit: c65717c449793dccfed101e1411b22c69fba308d
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '425'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,31 @@ Diese Versionshinweise beschreiben die neuesten Versionen von [!DNL Catalog Serv
 
 ## Aktuelle Hauptversion
 
+### Version 1.6
+
+_28. März 2023_
+
+[!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"}
+
+![Neu](../assets/new.svg) Muster wurden zum [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) Abfrage.
+![Neu](../assets/new.svg) Die Möglichkeit wurde hinzugefügt, `entityId` using [API-Mesh](mesh.md).
+
+#### Bekannte Einschränkungen
+
+Diese Funktionen werden noch nicht unterstützt:
+
+* Bundle-Produkte mit Festpreis
+* Beim Löschen von Varianten aus dem Katalog werden keine Aktualisierungen empfangen.
+* Die maximale Größe für die Payload dynamischer Attribute beträgt 9 MB.
+* Gruppenproduktpreis. Kann mit einfachen Produktpreisen berechnet werden.
+* In einem Bild-Array enthält nur das erste Bild Rollen.
+
+Die folgenden Einschränkungen können mithilfe des API-Gitters und der GraphQL-Core-API behoben werden:
+
+* Mindestpreis für Werbung
+* [Kategoriekosten](mesh.md)
+* Herunterladbare Produkte und Geschenkkarten
+
 ### Version 1.5
 
 _6. März 2023_
@@ -27,24 +52,6 @@ _6. März 2023_
 
 ![Neu](../assets/new.svg) Hinzugefügt [`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) GraphQL-Funktionen.
 ![Fehlerbehebung](../assets/fix.svg) Verbesserte Leistung und API-Skalierbarkeit.
-
-#### Bekannte Einschränkungen
-
-Diese Funktionen werden noch nicht unterstützt:
-
-* Bundle-Produkte mit Festpreis
-* Beim Löschen von Varianten aus dem Katalog werden keine Aktualisierungen empfangen.
-* Die maximale Größe für die Nutzlast dynamischer Attribute beträgt 9 MB.
-* Gruppenproduktpreis. Kann mit einfachen Produktpreisen berechnet werden.
-* In einem Bild-Array enthält nur das erste Bild Rollen.
-* Farbmuster
-* Laden der Produktdetailseite über die Produkt-URL.
-
-Die folgenden Einschränkungen können mit der GraphQL-Core-API behoben werden:
-
-* Mindestpreis für Werbung
-* Kategoriekosten
-* Herunterladbare Produkte und Geschenkkarten
 
 ### Version 1.4
 
@@ -73,7 +80,7 @@ _18. November 2022_
 [!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"}
 
 ![Neu](../assets/new.svg) Catalog Service unterstützt jetzt die Adobe [API-Mesh](https://developer.adobe.com/graphql-mesh-gateway/).
-![Fehlerbehebung](../assets/fix.svg) Wir haben die API-Skalierbarkeit und die Gesamtleistung verbessert.
+![Fehlerbehebung](../assets/fix.svg) Verbesserte API-Skalierbarkeit und Gesamtleistung.
 
 ### Version 1.0
 

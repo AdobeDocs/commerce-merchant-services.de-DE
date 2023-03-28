@@ -1,9 +1,9 @@
 ---
 title: '[!DNL Catalog Service and API Mesh]'
 description: '''[!DNL API Mesh] für Adobe Commerce bietet eine Möglichkeit, mehrere Datenquellen über einen gemeinsamen GraphQL-Endpunkt zu integrieren."'
-source-git-commit: 41d6bed30769d3864d93d6b3d077987a810890cc
+source-git-commit: 1c377a9e5ad5d403e97d4dc7aa9c29c01ab8c819
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '256'
 ht-degree: 0%
 
 ---
@@ -35,9 +35,11 @@ Beispielsweise kann der API-Schlüssel in der Datei gespeichert werden:
 
 Nach Ausführung dieses Befehls sollte der Catalog Service über das API-Mesh ausgeführt werden. Sie können die `aio api-mesh:get` -Befehl, um die Konfiguration Ihres aktualisierten Netzwerks anzuzeigen.
 
-## API-Mesh verwenden
+## Beispiele für API-Gitter
 
 Mit dem API-Mesh können Benutzer externe Datenquellen nutzen, um Ihre Adobe Commerce-Instanz zu verbessern. Sie kann auch verwendet werden, um vorhandene Commerce-Daten zu konfigurieren und neue Funktionen zu aktivieren.
+
+### Ebenenpreise aktivieren
 
 In diesem Beispiel wird der API-Mesh verwendet, um die Ebenenpreise in Adobe Commerce zu aktivieren.
 Ersetzen Sie die `name `, `endpoint`und `x-api-key` -Werte.
@@ -126,7 +128,7 @@ Ersetzen Sie die `name `, `endpoint`und `x-api-key` -Werte.
 
 Abfragen Sie nach der Konfiguration das Mesh nach gestaffelten Preisen:
 
-```json
+```graphql
 query {
   products(skus: ["24-MB04"]) {
     sku
@@ -149,6 +151,98 @@ query {
         }
       }
     }
+  }
+}
+```
+
+### Entitäts-ID abrufen
+
+Dieses Gitter hängt die `entityId` zur ProductView-Benutzeroberfläche. Ersetzen Sie die `name `, `endpoint`und `x-api-key` -Werte.
+
+```json
+{
+    "meshConfig": {
+      "sources": [
+        {
+          "name": "<Commerce Instance Name>",
+          "handler": {
+            "graphql": {
+              "endpoint": "<Adobe Commerce GraphQL endpoint>"
+            }
+          },
+          "transforms": [
+              {
+                  "prefix": {
+                      "includeRootOperations": true,
+                        "value": "Core_"
+                  }
+              }
+          ]
+        },
+        {
+          "name": "CommerceCatalogServiceGraph",
+          "handler": {
+            "graphql": {
+              "endpoint": "https://catalog-service.adobe.io/graphql",
+              "operationHeaders": {
+                "Magento-Store-View-Code": "{context.headers['magento-store-view-code']}",
+                "Magento-Website-Code": "{context.headers['magento-website-code']}",
+                "Magento-Store-Code": "{context.headers['magento-store-code']}",
+                "Magento-Environment-Id": "{context.headers['magento-environment-id']}",
+                "x-api-key": "<YOUR_CATALOG_SERVICE_API_KEY>",
+                "Magento-Customer-Group": "{context.headers['magento-customer-group']}"
+              },
+              "schemaHeaders": {
+                "x-api-key": "<YOUR_CATALOG_SERVICE_API_KEY>"
+              }
+            }
+          }
+        }
+      ],
+      "additionalTypeDefs": "extend interface ProductView {\n  entityId: String\n}\n extend type SimpleProductView {\n  entityId: String\n}\n extend type ComplexProductView {\n  entityId: String\n}\n",
+      "additionalResolvers": [
+        {  
+            "targetTypeName": "ComplexProductView",
+            "targetFieldName": "entityId",
+            "sourceName": "MagentoCore",
+            "sourceTypeName": "Query",
+            "sourceFieldName": "Core_products",
+            "requiredSelectionSet": "{ sku\n }",
+            "sourceSelectionSet": "{\n    items {\n  sku\n uid\n  }\n    }",
+            "sourceArgs": {
+                "filter.sku.eq": "{root.sku}"
+            },
+            "result": "items[0].uid",
+            "resultType": "String"
+          },
+          {
+            "targetTypeName": "SimpleProductView",
+            "targetFieldName": "entityId",
+            "sourceName": "MagentoCore",
+            "sourceTypeName": "Query",
+            "sourceFieldName": "Core_products",
+            "requiredSelectionSet": "{ sku\n }",
+            "sourceSelectionSet": "{\n items {\n  sku\n uid\n }}",
+            "sourceArgs": {
+                "filter.sku.eq": "{root.sku}"
+            },
+            "result": "items[0].uid",
+            "resultType": "String"
+          }
+      ]
+    }
+  }
+```
+
+`entityId` kann jetzt abgefragt werden:
+
+```graphql
+query {
+  products(skus: ["MH07"]){
+    sku
+    name
+    id
+    entityId
   }
 }
 ```
