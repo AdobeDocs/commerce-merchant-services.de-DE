@@ -2,9 +2,9 @@
 title: Erfassen von Commerce-Daten mit Adobe Experience Platform Tags
 description: Erfahren Sie, wie Sie Commerce-Daten mithilfe von Adobe Experience Platform-Tags erfassen.
 exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
-source-git-commit: c9b1d7e34632f7a54544bc6944144b1833ecc5a5
+source-git-commit: bd4090c1b1ec417545e041a7c89f46019c07abea
 workflow-type: tm+mt
-source-wordcount: '2522'
+source-wordcount: '2535'
 ht-degree: 0%
 
 ---
@@ -559,6 +559,8 @@ Erstellen Sie die folgenden Datenelemente:
    - **value**: Noch nicht verfügbar
    - **Feldergruppe**: `siteSearch` > `sort`. Auswählen **Gesamtes Objekt bereitstellen**.
    - **Feldergruppe**: `siteSearch` > `filter`. Auswählen **Gesamtes Objekt bereitstellen**.
+   - **Feldergruppe**: `searchRequest` > `id`
+   - **Eindeutige Kennung**: **Wert** = `%search request ID%`
    - **Feldergruppe**: `searchRequest` > `value`
    - **value**: **Wert** = `1`
 
@@ -654,6 +656,8 @@ Erstellen Sie die folgenden Datenelemente:
    - **Feldergruppe**: `productListItems` > `ProductImageUrl`
    - **ProductImageUrl**: **Wert** = `%product image%`
    - **Datenelement**: `%search result products%`
+   - **Feldergruppe**: `searchResponse` > `id`
+   - **Eindeutige Kennung**: **Wert** = `%search response ID%`
    - **Feldergruppe**: `searchResponse` > `value`
    - **value**: **Wert** = `1`
 
@@ -1361,7 +1365,7 @@ Die folgenden Schritte zeigen, wie Sie eine `pageView` -Ereignis mit `identityMa
 
 ## Einverständniserklärung
 
-Die Datenerfassung für Adobe Commerce und Experience Platform Connector ist standardmäßig aktiviert. Die Opt-out-Funktion wird über das [`mg_dnt` Cookie](https://docs.magento.com/user-guide/stores/cookie-reference.html). Sie können die hier beschriebenen Schritte ausführen, wenn Sie `mg_dnt` um das Einverständnis zu verwalten. Die [Dokumentation zum Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html) verfügt über mehrere zusätzliche Optionen zur Verwaltung der Zustimmung.
+Die Datenerfassung für Adobe Commerce und Experience Platform Connector ist standardmäßig aktiviert. Die Opt-out-Funktion wird über das [`mg_dnt` Cookie](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html). Sie können die hier beschriebenen Schritte ausführen, wenn Sie `mg_dnt` um das Einverständnis zu verwalten. Die [Dokumentation zum Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html) verfügt über mehrere zusätzliche Optionen zur Verwaltung der Zustimmung.
 
 1. Erstellen Sie eine **Benutzerdefinierter Core-Code** Datenelement (`%do not track cookie%`) für die `mg_dnt` Cookie:
 

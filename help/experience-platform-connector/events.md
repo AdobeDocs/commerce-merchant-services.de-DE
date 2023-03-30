@@ -2,9 +2,9 @@
 title: Veranstaltungen
 description: Erfahren Sie, welche Daten von den einzelnen Ereignissen erfasst werden.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: 18edfec6dbc66ef0e94e9f54ca1061386104d90c
+source-git-commit: 76bc0650f32e99f568c061e67290de6c380f46a4
 workflow-type: tm+mt
-source-wordcount: '3141'
+source-wordcount: '4039'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Die Storefront-Ereignisse erfassen anonymisierte Verhaltensdaten von Ihren Käuf
 
 >[!NOTE]
 >
->Alle Storefront-Ereignisse enthalten `identityMap` -Feld, das eine eindeutige Kennung der Person darstellt.
+>Alle Storefront-Ereignisse enthalten [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) -Feld, das die E-Mail-Adresse des Käufers, sofern verfügbar, sowie die ECID enthält. Wenn Sie diese Profildaten in jedes Ereignis einbeziehen, benötigen Sie keinen separaten Benutzerkontoimport aus Adobe Commerce.
 
 ### addToCart
 
@@ -216,7 +216,6 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 | `productImageUrl` | Hauptbild-URL des Produkts |
 | `selectedOptions` | Feld, das für ein konfigurierbares Produkt verwendet wird. `attribute` identifiziert ein Attribut des konfigurierbaren Produkts, z. B. `size` oder `color` und `value` gibt den Wert des Attributs an, z. B. `small` oder `black`. |
 
-
 ## Profilereignisse
 
 Profilereignisse umfassen Kontoinformationen, z. B. `signIn`, `signOut`, `createAccount`und `editAccount`. Diese Daten werden verwendet, um wichtige Kundendetails auszufüllen, die zur besseren Definition von Segmenten oder zur Durchführung von Marketing-Kampagnen benötigt werden, z. B. wenn Sie Kunden ansprechen möchten, die in New York leben.
@@ -320,6 +319,8 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 
 Die Suchereignisse stellen Daten bereit, die für die Absicht des Käufers relevant sind. Einblicke in die Absichten eines Käufers helfen den Händlern zu sehen, wie Käufer nach Artikeln suchen, worauf sie klicken und letztlich kaufen oder aufgeben. Ein Beispiel dafür, wie Sie diese Daten verwenden können, ist, wenn Sie bestehende Käufer ansprechen möchten, die nach Ihrem Top-Produkt suchen, das Produkt jedoch nie kaufen.
 
+Verwenden Sie die `uniqueIdentifier` -Feld in beiden `searchRequestSent` und `searchResponseReceived` -Ereignisse, um eine Suchanfrage mit der entsprechenden Suchanfrage zu vergleichen.
+
 ### searchRequestSent
 
 | Beschreibung | XDM-Ereignisname |
@@ -337,6 +338,7 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 | Feld | Beschreibung |
 |---|---|
 | `searchRequest` | Gibt an, ob eine Suchanfrage gesendet wurde |
+| `uniqueIdentifier` | Die eindeutige ID für diese bestimmte Suchanfrage |
 | `filter` | Gibt an, ob Filter angewendet wurden, um Suchergebnisse zu begrenzen |
 | `attribute` (Filter) | Die Facette eines Elements, mit der bestimmt wird, ob es in Suchergebnisse aufgenommen werden soll |
 | `value` | Attributwerte, mit denen bestimmt wird, welche Elemente in Suchergebnissen enthalten sind |
@@ -363,6 +365,7 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 | Feld | Beschreibung |
 |---|---|
 | `searchResponse` | Gibt an, ob eine Suchanfrage empfangen wurde |
+| `uniqueIdentifier` | Die eindeutige ID für diese bestimmte Suchantwort |
 | `suggestions` | Ein Array von Zeichenfolgen, die die Namen der Produkte und Kategorien enthalten, die im Katalog vorhanden sind und der Suchabfrage ähnlich sind |
 | `numberOfResults` | Die Anzahl der zurückgegebenen Produkte |
 | `productListItems` | Eine Reihe von Produkten im Warenkorb. |
@@ -370,19 +373,89 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 | `name` | Der Anzeigename oder der für Menschen lesbare Name des Produkts |
 | `productImageUrl` | Hauptbild-URL des Produkts |
 
-## (Beta) Back-Office-Ereignisse
+## B2B-Ereignisse
+
+![B2B für Adobe Commerce](../assets/b2b.svg) Für B2B-Händler müssen Sie [install](install.md#install-the-b2b-extension) die `experience-platform-connector-b2b` -Erweiterung, um diese Ereignisse zu aktivieren.
+
+B2B-Ereignisse enthalten [Anforderungsliste](https://experienceleague.adobe.com/docs/commerce-admin/b2b/requisition-lists/requisition-lists.html) Informationen, z. B. ob eine Anforderungsliste erstellt, hinzugefügt oder gelöscht wurde. Durch die Verfolgung von Ereignissen, die speziell für Anforderungslisten gelten, können Sie sehen, welche Produkte Ihre Kunden häufig kaufen, und auf dieser Grundlage Kampagnen erstellen.
+
+### createRequisitionList
+
+| Beschreibung | XDM-Ereignisname |
+|---|---|
+| Wird ausgelöst, wenn ein Käufer eine neue Anforderungsliste erstellt. | `commerce.requisitionListOpens` |
+
+#### Von createRequisitionList erfasste Daten
+
+In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschrieben.
+
+| Feld | Beschreibung |
+|---|---|
+| `requisitionListOpens` | Ein Wert von `1` gibt an, dass eine Anforderungsliste geöffnet wurde |
+| `requisitionList` | Umfasst eine eindeutige `ID` , `name`und `description` für die Anforderungsliste |
+
+### addToRequisitionList
+
+| Beschreibung | XDM-Ereignisname |
+|---|---|
+| Wird ausgelöst, wenn ein Käufer ein Produkt zu einer vorhandenen Anforderungsliste hinzufügt oder wenn er eine neue Liste erstellt. | `commerce.requisitionListAdds` |
 
 >[!NOTE]
 >
->Für Händler, die sich bereits in unserem Back Office Beta Programm angemeldet haben, haben Sie Zugriff auf Backoffice-Veranstaltungen. Wenn Sie am Back Office Beta Programm teilnehmen möchten, wenden Sie sich an [drios@adobe.com](mailto:drios@adobe.com).
+>`addToRequisitionList` wird nicht auf Kategorieansichtsseiten oder für konfigurierbare Produkte unterstützt. Sie wird auf Produktansichtsseiten und für einfache Produkte unterstützt.
 
-Die Backoffice-Ereignisse enthalten Informationen über den Status einer Bestellung, z. B. ob eine Bestellung aufgegeben, storniert, rückerstattet oder versandt wurde. Die Daten, die diese serverseitigen Ereignisse erfassen, zeigen eine 360-Grad-Ansicht der Bestellung des Käufers. Dies kann Händlern bei der Entwicklung von Marketing-Kampagnen helfen, den gesamten Bestellstatus besser zu erreichen oder zu analysieren. Sie können beispielsweise Trends in bestimmten Produktkategorien erkennen, die zu unterschiedlichen Jahreszeiten gut abschneiden. Zum Beispiel Winterkleidung, die sich in kalten Monaten besser verkauft, oder bestimmte Produktfarben, an denen sich Kunden über die Jahre interessieren. Darüber hinaus können Sie mithilfe von Bestellstatusdaten den Kundenwert über die gesamte Lebensdauer berechnen, indem Sie die Tendenz eines Käufers verstehen, basierend auf früheren Bestellungen zu konvertieren.
+#### Von addToRequisitionList erfasste Daten
+
+In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschrieben.
+
+| Feld | Beschreibung |
+|---|---|
+| `requisitionListAdds` | Ein Wert von `1` gibt an, dass ein Produkt zur Anforderungsliste hinzugefügt wurde |
+| `requisitionList` | Umfasst eine eindeutige `ID`,  `name`und `description` für die Anforderungsliste |
+| `productListItems` | Eine Reihe von Produkten, die der Anforderungsliste hinzugefügt wurden |
+| `name` | Der Anzeigename oder der für Menschen lesbare Name des Produkts |
+| `SKU` | Lagereinheit. Die eindeutige Kennung für das Produkt. |
+| `quantity` | Anzahl der hinzugefügten Produkteinheiten |
+| `priceTotal` | Der Gesamtpreis für den Produktzeileneintrag |
+| `discountAmount` | Gibt den angewendeten Rabattbetrag an |
+| `currencyCode` | Die [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) Währungscode für dieses Zahlungselement |
+
+### removeFromRequisitionList
+
+| Beschreibung | XDM-Ereignisname |
+|---|---|
+| Wird ausgelöst, wenn ein Käufer ein Produkt aus einer Anforderungsliste entfernt. | `commerce.requisitionListRemovals` |
+
+#### Von removeFromRequisitionList erfasste Daten
+
+In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschrieben.
+
+| Feld | Beschreibung |
+|---|---|
+| `requisitionListRemovals` | Ein Wert von `1` gibt an, dass ein Produkt aus der Anforderungsliste entfernt wurde |
+| `requisitionList` | Umfasst eine eindeutige `ID`und `description` für die Anforderungsliste |
+| `productListItems` | Eine Reihe von Produkten, die der Anforderungsliste hinzugefügt wurden |
+| `name` | Der Anzeigename oder der für Menschen lesbare Name des Produkts |
+| `SKU` | Lagereinheit. Die eindeutige Kennung für das Produkt. |
+| `quantity` | Anzahl der hinzugefügten Produkteinheiten |
+| `priceTotal` | Der Gesamtpreis für den Produktzeileneintrag |
+| `discountAmount` | Gibt den angewendeten Rabattbetrag an |
+| `currencyCode` | Die [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) Währungscode für dieses Zahlungselement |
+| `selectedOptions` | Feld, das für ein konfigurierbares Produkt verwendet wird. `attribute` identifiziert ein Attribut des konfigurierbaren Produkts, z. B. `size` oder `color` und `value` gibt den Wert des Attributs an, z. B. `small` oder `black`. |
+
+## Backoffice-Ereignisse
+
+Die Backoffice-Ereignisse enthalten Informationen über den Status einer Bestellung, z. B. ob eine Bestellung aufgegeben, storniert, rückerstattet, versandt oder abgeschlossen wurde. Die Daten, die von diesen serverseitigen Ereignissen erfasst werden, zeigen eine 360-Grad-Ansicht der Bestellung des Käufers. Diese Ansicht hilft Händlern, bei der Entwicklung von Marketing-Kampagnen den gesamten Bestellstatus besser zu erreichen oder zu analysieren. Sie können beispielsweise Trends in bestimmten Produktkategorien erkennen, die zu unterschiedlichen Jahreszeiten gut abschneiden. Zum Beispiel Winterkleidung, die sich in kalten Monaten besser verkauft, oder bestimmte Produktfarben, an denen sich Kunden über die Jahre interessieren. Darüber hinaus können Sie mithilfe von Bestellstatusdaten den Kundenwert über die gesamte Lebensdauer berechnen, indem Sie die Tendenz eines Käufers verstehen, basierend auf früheren Bestellungen zu konvertieren.
+
+>[!NOTE]
+>
+>Alle Backoffice-Ereignisse enthalten [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) -Feld, das die E-Mail-Adresse des Käufers angibt. Wenn Sie diese Profildaten in jedes Ereignis einbeziehen, benötigen Sie keinen separaten Benutzerkontoimport aus Adobe Commerce.
 
 ### orderPlaced
 
 | Beschreibung | XDM-Ereignisname |
 |---|---|
-| Wird ausgelöst, wenn ein Käufer eine Bestellung aufgibt. | `commerce.orderPlaced` |
+| Wird ausgelöst, wenn ein Käufer eine Bestellung aufgibt. | `commerce.backofficeOrderPlaced` |
 
 #### Von orderPlaced erfasste Daten
 
@@ -390,9 +463,8 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 
 | Feld | Beschreibung |
 |---|---|
-| `identityMap` | Enthält die E-Mail-Adresse, die den Kunden identifiziert |
 | `address` | Die technische Adresse, z. B. `name@domain.com` wie allgemein in RFC2822 und nachfolgenden Standards definiert |
-| `eventType` | `commerce.orderPlaced` |
+| `eventType` | `commerce.backofficeOrderPlaced` |
 | `productListItems` | Eine Reihe von Produkten in der Reihenfolge |
 | `name` | Der Anzeigename oder der für Menschen lesbare Name des Produkts |
 | `SKU` | Lagereinheit. Die eindeutige Kennung für das Produkt. |
@@ -406,6 +478,8 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 | `paymentType` | Die Zahlungsmethode für diese Bestellung. Aufzählte, zulässige benutzerdefinierte Werte. |
 | `currencyCode` | Die [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) Währungscode für dieses Zahlungselement |
 | `paymentAmount` | Wert der Zahlung |
+| `taxAmount` | Der vom Käufer im Rahmen der Abschlusszahlung gezahlte Steuerbetrag |
+| `createdDate` | Datum und Uhrzeit der Erstellung einer neuen Bestellung im Commerce-System. Beispiel: `2022-10-15T20:20:39+00:00` |
 | `shipping` | Versanddetails für ein oder mehrere Produkte |
 | `shippingMethod` | Die vom Kunden gewählte Versandmethode, z. B. Standardversand, beschleunigte Auslieferung, Abholung im Geschäft usw. |
 | `shippingAddress` | Lieferadresse |
@@ -419,35 +493,46 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 | `postalCode` | Die Postleitzahl des Ortes. Postleitzahlen sind nicht für alle Länder verfügbar. In einigen Ländern wird dies nur einen Teil der Postleitzahl enthalten. |
 | `country` | Der Name des von der Regierung verwalteten Gebiets. Sonstige `xdm:countryCode`, ist dies ein Freiformfeld, das den Ländernamen in jeder Sprache enthalten kann. |
 
-### orderShipped
+### orderItemsShipped
 
 | Beschreibung | XDM-Ereignisname |
 |---|---|
-| Wird ausgelöst, wenn eine Bestellung versandt wird. | `commerce.orderLineItemShipped` |
+| Wird ausgelöst, wenn eine Bestellung versandt wird. | `commerce.backofficeOrderItemsShipped` |
 
-#### Von orderShipped erfasste Daten
+#### Von orderItemsShipped erfasste Daten
 
 In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschrieben.
-|Feld|Beschreibung| |—|—| |`identityMap`|Enthält die E-Mail-Adresse, die den Kunden identifiziert| |`address`|Die technische Adresse, z. B. `name@domain.com` wie allgemein in RFC2822 und nachfolgenden Standards definiert| |`eventType`|`commerce.orderLineItemShipped`| |`productListItems`|Ein Array von Produkten in der Reihenfolge| |`name`|Anzeigename oder für Menschen lesbarer Name des Produkts| |`SKU`|Lagereinheit. Die eindeutige Kennung für das Produkt.| |`quantity`|Anzahl der Produkteinheiten im Warenkorb| |`priceTotal`|Der Gesamtpreis für den Produktposten| |`discountAmount`|Gibt den angewendeten Abzinsungsbetrag an| |`order`|Enthält Informationen zur Bestellung| |`purchaseID`|Vom Verkäufer für diesen Kauf oder Vertrag zugewiesene eindeutige Kennung. Es gibt keine Garantie dafür, dass die ID eindeutig ist| |`purchaseOrderNumber`|Vom Käufer für diesen Kauf oder Vertrag zugewiesene eindeutige Kennung| |`payments`|Liste der Zahlungen für diesen Auftrag| |`paymentType`|Die Zahlungsmethode für diese Bestellung. Aufzählte, zulässige benutzerdefinierte Werte.| |`currencyCode`|Die [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) Währungscode für dieses Zahlungselement | |`paymentAmount`|Wert der Zahlung| |`shipping`|Versanddetails für ein oder mehrere Produkte| |`shippingMethod`|Die vom Kunden gewählte Versandmethode, z. B. Standardversand, beschleunigte Lieferung, Abholung im Geschäft usw.| |`shippingAddress`|Lieferadresse | |`street1`|Primäre Straßeninformationen, Wohnungsnummer, Straßennummer und Straßenname| |`shippingAmount`|Der Betrag, den der Kunde für den Versand zahlen musste.| |`billingAddress`|Abrechnungs-Postanschrift| |`street1`|Primäre Straßeninformationen, Wohnungsnummer, Straßennummer und Straßenname| |`street2`|Zusätzliches Feld für Informationen auf Straßenebene| |`city`|Name der Stadt| |`state`|Der Name des Status. Dies ist ein Freiformfeld.| |`postalCode`|Postleitzahl des Ortes. Postleitzahlen sind nicht für alle Länder verfügbar. In einigen Ländern wird dies nur einen Teil der Postleitzahl enthalten.| |`country`|Der Name des von der Regierung verwalteten Gebiets. Sonstige `xdm:countryCode`, ist dies ein Freiformfeld, das den Ländernamen in jeder Sprache enthalten kann.|
+|Feld|Beschreibung| |—|—| |`address`|Die technische Adresse, z. B. `name@domain.com` wie allgemein in RFC2822 und nachfolgenden Standards definiert| |`eventType`|`commerce.backofficeOrderItemsShipped`| |`productListItems`|Ein Array von Produkten in der Reihenfolge| |`name`|Anzeigename oder für Menschen lesbarer Name des Produkts| |`SKU`|Lagereinheit. Die eindeutige Kennung für das Produkt.| |`quantity`|Anzahl der Produkteinheiten im Warenkorb| |`priceTotal`|Der Gesamtpreis für den Produktposten| |`discountAmount`|Gibt den angewendeten Abzinsungsbetrag an| |`order`|Enthält Informationen zur Bestellung| |`purchaseID`|Vom Verkäufer für diesen Kauf oder Vertrag zugewiesene eindeutige Kennung. Es gibt keine Garantie dafür, dass die ID eindeutig ist| |`purchaseOrderNumber`|Vom Käufer für diesen Kauf oder Vertrag zugewiesene eindeutige Kennung| |`payments`|Liste der Zahlungen für diesen Auftrag| |`paymentType`|Die Zahlungsmethode für diese Bestellung. Aufzählte, zulässige benutzerdefinierte Werte.| |`currencyCode`|Die [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) Währungscode für dieses Zahlungselement | |`paymentAmount`|Wert der Zahlung| |`trackingNumber`|Die von der Reederei für die Lieferung eines Bestellartikels angegebene Trackingnummer| |`trackingURL`|URL zur Verfolgung des Versandstatus eines Bestellartikels| |`lastUpdatedDate`|Der Zeitpunkt, zu dem ein bestimmter Bestelldatensatz zuletzt im Commerce-System aktualisiert wird| |`shipping`|Versanddetails für ein oder mehrere Produkte| |`shippingMethod`|Die vom Kunden gewählte Versandmethode, z. B. Standardversand, beschleunigte Lieferung, Abholung im Geschäft usw.| |`shippingAddress`|Lieferadresse | |`street1`|Primäre Straßeninformationen, Wohnungsnummer, Straßennummer und Straßenname| |`shippingAmount`|Der Betrag, den der Kunde für den Versand zahlen musste.| |`billingAddress`|Abrechnungs-Postanschrift| |`street1`|Primäre Straßeninformationen, Wohnungsnummer, Straßennummer und Straßenname| |`street2`|Zusätzliches Feld für Informationen auf Straßenebene| |`city`|Name der Stadt| |`state`|Der Name des Status. Dies ist ein Freiformfeld.| |`postalCode`|Postleitzahl des Ortes. Postleitzahlen sind nicht für alle Länder verfügbar. In einigen Ländern wird dies nur einen Teil der Postleitzahl enthalten.| |`country`|Der Name des von der Regierung verwalteten Gebiets. Sonstige `xdm:countryCode`, ist dies ein Freiformfeld, das den Ländernamen in jeder Sprache enthalten kann.|
 
 ### orderCancelled
 
 | Beschreibung | XDM-Ereignisname |
 |---|---|
-| Wird ausgelöst, wenn ein Käufer eine Bestellung abbricht. | `commerce.orderCancelled` |
+| Wird ausgelöst, wenn ein Käufer eine Bestellung abbricht. | `commerce.backofficeOrderCancelled` |
 
 #### Von orderCancelled erfasste Daten
 
 In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschrieben.
-|Feld|Beschreibung| |—|—| |`identityMap`|Enthält die E-Mail-Adresse, die den Kunden identifiziert| |`address`|Die technische Adresse, z. B. `name@domain.com` wie allgemein in RFC2822 und nachfolgenden Standards definiert| |`eventType`|`commerce.orderCancelled`| |`productListItems`|Ein Array von Produkten in der Reihenfolge| |`name`|Anzeigename oder für Menschen lesbarer Name des Produkts| |`SKU`|Lagereinheit. Die eindeutige Kennung für das Produkt.| |`quantity`|Anzahl der Produkteinheiten im Warenkorb| |`priceTotal`|Der Gesamtpreis für den Produktposten| |`discountAmount`|Gibt den angewendeten Abzinsungsbetrag an| |`order`|Enthält Informationen zur Bestellung| |`purchaseID`|Vom Verkäufer für diesen Kauf oder Vertrag zugewiesene eindeutige Kennung. Es gibt keine Garantie dafür, dass die ID eindeutig ist| |`purchaseOrderNumber`|Vom Käufer für diesen Kauf oder Vertrag zugewiesene eindeutige Kennung|
+|Feld|Beschreibung| |—|—| |`address`|Die technische Adresse, z. B. `name@domain.com` wie allgemein in RFC2822 und nachfolgenden Standards definiert| |`eventType`|`commerce.backofficeOrderCancelled`| |`productListItems`|Ein Array von Produkten in der Reihenfolge| |`name`|Anzeigename oder für Menschen lesbarer Name des Produkts| |`SKU`|Lagereinheit. Die eindeutige Kennung für das Produkt.| |`quantity`|Anzahl der Produkteinheiten im Warenkorb| |`priceTotal`|Der Gesamtpreis für den Produktposten| |`discountAmount`|Gibt den angewendeten Abzinsungsbetrag an| |`order`|Enthält Informationen zur Bestellung| |`purchaseID`|Vom Verkäufer für diesen Kauf oder Vertrag zugewiesene eindeutige Kennung. Es gibt keine Garantie dafür, dass die ID eindeutig ist| |`purchaseOrderNumber`|Vom Käufer für diesen Kauf oder Vertrag zugewiesene eindeutige Kennung| |`cancelDate`|Datum und Uhrzeit der Stornierung einer Bestellung durch einen Käufer| |`lastUpdatedDate`|Der Zeitpunkt, zu dem ein bestimmter Bestelldatensatz zuletzt im Commerce-System aktualisiert wird|
 
-### orderRefund
+### creditMemoIssued
 
 | Beschreibung | XDM-Ereignisname |
 |---|---|
-| Wird ausgelöst, wenn ein Käufer ein Element in einer Reihenfolge zurückgibt. | `commerce.creditMemoIssued` |
+| Wird ausgelöst, wenn ein Käufer ein Element in einer Reihenfolge zurückgibt. | `commerce.backofficeCreditMemoIssued` |
 
-#### Daten, die bei orderRefund erfasst wurden
+#### Von CreditMemoIssued erfasste Daten
 
 In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschrieben.
-|Feld|Beschreibung| |—|—| |`identityMap`|Enthält die E-Mail-Adresse, die den Kunden identifiziert| |`address`|Die technische Adresse, z. B. `name@domain.com` wie allgemein in RFC2822 und nachfolgenden Standards definiert| |`eventType`|`commerce.creditMemoIssued`| |`productListItems`|Ein Array von Produkten in der Reihenfolge| |`order`|Enthält Informationen zur Bestellung| |`purchaseID`|Vom Verkäufer für diesen Kauf oder Vertrag zugewiesene eindeutige Kennung. Es gibt keine Garantie dafür, dass die ID eindeutig ist| |`purchaseOrderNumber`|Vom Käufer für diesen Kauf oder Vertrag zugewiesene eindeutige Kennung|
+|Feld|Beschreibung| |—|—| |`address`|Die technische Adresse, z. B. `name@domain.com` wie allgemein in RFC2822 und nachfolgenden Standards definiert| |`eventType`|`commerce.backofficeCreditMemoIssued`| |`productListItems`|Ein Array von Produkten in der Reihenfolge| |`order`|Enthält Informationen zur Bestellung| |`purchaseID`|Vom Verkäufer für diesen Kauf oder Vertrag zugewiesene eindeutige Kennung. Es gibt keine Garantie dafür, dass die ID eindeutig ist| |`purchaseOrderNumber`|Vom Käufer für diesen Kauf oder Vertrag zugewiesene eindeutige Kennung| |`lastUpdatedDate`|Der Zeitpunkt, zu dem ein bestimmter Bestelldatensatz zuletzt im Commerce-System aktualisiert wird|
+
+### orderShippingCompleted
+
+| Beschreibung | XDM-Ereignisname |
+|---|---|
+| Wird ausgelöst, wenn ein Käufer ein Element in einer Reihenfolge zurückgibt. | `commerce.backofficeOrderShipmentCompleted` |
+
+#### Von orderShippingCompleted erfasste Daten
+
+In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschrieben.
+|Feld|Beschreibung| |—|—| |`address`|Die technische Adresse, z. B. `name@domain.com` wie allgemein in RFC2822 und nachfolgenden Standards definiert| |`eventType`|`commerce.backofficeOrderShipmentCompleted`| |`productListItems`|Ein Array von Produkten in der Reihenfolge| |`name`|Anzeigename oder für Menschen lesbarer Name des Produkts| |`SKU`|Lagereinheit. Die eindeutige Kennung für das Produkt.| |`quantity`|Anzahl der Produkteinheiten im Warenkorb| |`priceTotal`|Der Gesamtpreis für den Produktposten| |`discountAmount`|Gibt den angewendeten Abzinsungsbetrag an| |`order`|Enthält Informationen zur Bestellung| |`purchaseID`|Vom Verkäufer für diesen Kauf oder Vertrag zugewiesene eindeutige Kennung. Es gibt keine Garantie dafür, dass die ID eindeutig ist| |`purchaseOrderNumber`|Vom Käufer für diesen Kauf oder Vertrag zugewiesene eindeutige Kennung| |`taxAmount`|Steuerbetrag, der vom Käufer im Rahmen der Abschlusszahlung gezahlt wurde.| |`createdDate`|Zeitpunkt und Datum der Erstellung einer neuen Bestellung im Commerce-System. Beispiel: `2022-10-15T20:20:39+00:00`| |`payments`|Liste der Zahlungen für diesen Auftrag| |`paymentType`|Die Zahlungsmethode für diese Bestellung. Aufzählte, zulässige benutzerdefinierte Werte.| |`currencyCode`|Die [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) Währungscode für dieses Zahlungselement | |`paymentAmount`|Wert der Zahlung| |`shipping`|Versanddetails für ein oder mehrere Produkte| |`shippingMethod`|Die vom Kunden gewählte Versandmethode, z. B. Standardversand, beschleunigte Lieferung, Abholung im Geschäft usw.| |`shippingAddress`|Lieferadresse | |`street1`|Primäre Straßeninformationen, Wohnungsnummer, Straßennummer und Straßenname| |`shippingAmount`|Der Betrag, den der Kunde für den Versand zahlen musste.| |`personalEmail`|Gibt die persönliche E-Mail-Adresse an| |`address`|Die technische Adresse, z. B. `name@domain.com` wie allgemein in RFC2822 und nachfolgenden Standards definiert| |`billingAddress`|Abrechnungs-Postanschrift| |`street1`|Primäre Straßeninformationen, Wohnungsnummer, Straßennummer und Straßenname| |`street2`|Zusätzliches Feld für Informationen auf Straßenebene| |`city`|Name der Stadt| |`state`|Der Name des Status. Dies ist ein Freiformfeld.| |`postalCode`|Postleitzahl des Ortes. Postleitzahlen sind nicht für alle Länder verfügbar. In einigen Ländern enthalten diese Daten nur einen Teil der Postleitzahl.| |`country`|Der Name des von der Regierung verwalteten Gebiets. Sonstige `xdm:countryCode`, ist dies ein Freiformfeld, das den Ländernamen in jeder Sprache enthalten kann.|
