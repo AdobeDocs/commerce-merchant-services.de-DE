@@ -2,9 +2,9 @@
 title: Hinzufügen von Feldgruppen zum XDM-Schema
 description: Erfahren Sie, wie Sie Adobe Commerce-spezifische Feldergruppen zu einem XDM-Schema hinzufügen.
 exl-id: 4401bbe7-1ccc-4349-a998-9e9ee9db590f
-source-git-commit: c9b1d7e34632f7a54544bc6944144b1833ecc5a5
+source-git-commit: 90356cc593653cf4583da86bc29d69112fc948ba
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Eines der [Onboarding-Schritte](overview.md#onboarding-steps) über den Experien
    - Referenzschlüssel
    - Persönliche Kontaktangaben
    - Commerce-Details
-   - Adobe Analytics Experience Event Commerce (wenn Sie Daten an Adobe Analytics senden möchten)
+   - Adobe Analytics ExperienceEvent Commerce (wenn Sie Daten an Adobe Analytics senden möchten)
    - Identitätszuordnung
 
    >[!NOTE]
