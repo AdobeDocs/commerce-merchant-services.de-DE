@@ -2,9 +2,9 @@
 title: Veranstaltungen
 description: Erfahren Sie, welche Daten von den einzelnen Ereignissen erfasst werden.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: 76bc0650f32e99f568c061e67290de6c380f46a4
+source-git-commit: 8e5fb65363b2fa39f44da86d7ba0cc5459b18768
 workflow-type: tm+mt
-source-wordcount: '4039'
+source-wordcount: '4100'
 ht-degree: 0%
 
 ---
@@ -338,7 +338,7 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 | Feld | Beschreibung |
 |---|---|
 | `searchRequest` | Gibt an, ob eine Suchanfrage gesendet wurde |
-| `uniqueIdentifier` | Die eindeutige ID für diese bestimmte Suchanfrage |
+| `id` | Die eindeutige ID für diese bestimmte Suchanfrage |
 | `filter` | Gibt an, ob Filter angewendet wurden, um Suchergebnisse zu begrenzen |
 | `attribute` (Filter) | Die Facette eines Elements, mit der bestimmt wird, ob es in Suchergebnisse aufgenommen werden soll |
 | `value` | Attributwerte, mit denen bestimmt wird, welche Elemente in Suchergebnissen enthalten sind |
@@ -365,7 +365,7 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 | Feld | Beschreibung |
 |---|---|
 | `searchResponse` | Gibt an, ob eine Suchanfrage empfangen wurde |
-| `uniqueIdentifier` | Die eindeutige ID für diese bestimmte Suchantwort |
+| `id` | Die eindeutige ID für diese bestimmte Suchantwort |
 | `suggestions` | Ein Array von Zeichenfolgen, die die Namen der Produkte und Kategorien enthalten, die im Katalog vorhanden sind und der Suchabfrage ähnlich sind |
 | `numberOfResults` | Die Anzahl der zurückgegebenen Produkte |
 | `productListItems` | Eine Reihe von Produkten im Warenkorb. |
@@ -391,8 +391,10 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 
 | Feld | Beschreibung |
 |---|---|
-| `requisitionListOpens` | Ein Wert von `1` gibt an, dass eine Anforderungsliste geöffnet wurde |
-| `requisitionList` | Umfasst eine eindeutige `ID` , `name`und `description` für die Anforderungsliste |
+| `requisitionList` | Die Eigenschaften der vom Kunden erstellten Anforderungsliste |
+| `ID` | Eindeutige Kennung der Anforderungsliste |
+| `name` | Name der vom Kunden angegebenen Anforderungsliste |
+| `description` | Beschreibung der vom Kunden angegebenen Anforderungsliste |
 
 ### addToRequisitionList
 
@@ -410,8 +412,10 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 
 | Feld | Beschreibung |
 |---|---|
-| `requisitionListAdds` | Ein Wert von `1` gibt an, dass ein Produkt zur Anforderungsliste hinzugefügt wurde |
-| `requisitionList` | Umfasst eine eindeutige `ID`,  `name`und `description` für die Anforderungsliste |
+| `requisitionList` | Die Eigenschaften der vom Kunden erstellten Anforderungsliste |
+| `ID` | Eindeutige Kennung der Anforderungsliste |
+| `name` | Name der vom Kunden angegebenen Anforderungsliste |
+| `description` | Beschreibung der vom Kunden angegebenen Anforderungsliste |
 | `productListItems` | Eine Reihe von Produkten, die der Anforderungsliste hinzugefügt wurden |
 | `name` | Der Anzeigename oder der für Menschen lesbare Name des Produkts |
 | `SKU` | Lagereinheit. Die eindeutige Kennung für das Produkt. |
@@ -419,6 +423,7 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 | `priceTotal` | Der Gesamtpreis für den Produktzeileneintrag |
 | `discountAmount` | Gibt den angewendeten Rabattbetrag an |
 | `currencyCode` | Die [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) Währungscode für dieses Zahlungselement |
+| `selectedOptions` | Feld, das für ein konfigurierbares Produkt verwendet wird. `attribute` identifiziert ein Attribut des konfigurierbaren Produkts, z. B. `size` oder `color` und `value` gibt den Wert des Attributs an, z. B. `small` oder `black`. |
 
 ### removeFromRequisitionList
 
@@ -432,8 +437,10 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 
 | Feld | Beschreibung |
 |---|---|
-| `requisitionListRemovals` | Ein Wert von `1` gibt an, dass ein Produkt aus der Anforderungsliste entfernt wurde |
-| `requisitionList` | Umfasst eine eindeutige `ID`und `description` für die Anforderungsliste |
+| `requisitionList` | Die Eigenschaften der vom Kunden erstellten Anforderungsliste |
+| `ID` | Eindeutige Kennung der Anforderungsliste |
+| `name` | Name der vom Kunden angegebenen Anforderungsliste |
+| `description` | Beschreibung der vom Kunden angegebenen Anforderungsliste |
 | `productListItems` | Eine Reihe von Produkten, die der Anforderungsliste hinzugefügt wurden |
 | `name` | Der Anzeigename oder der für Menschen lesbare Name des Produkts |
 | `SKU` | Lagereinheit. Die eindeutige Kennung für das Produkt. |
