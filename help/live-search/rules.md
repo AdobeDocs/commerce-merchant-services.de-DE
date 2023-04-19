@@ -2,9 +2,9 @@
 title: "Regeln"
 description: "[!DNL Live Search] Regeln kombinieren Logik mit Aktionen, um das Einkaufserlebnis zu gestalten."
 exl-id: d06a3040-6987-4813-90ae-2f7b3ad0b232
-source-git-commit: c4bca0c7238be653dd13b051634c662e5891767d
+source-git-commit: 7307702a62a6b2c3e6c6083a59f2ac3587b0985e
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '588'
 ht-degree: 0%
 
 ---
@@ -71,4 +71,4 @@ Die in der Admin-Konsole gestellten Anforderungen funktionieren etwas anders. Be
 ## Kategorieregeln und Kategorieproduktzuweisungen
 
 [!DNL Live Search] ermöglicht Ihnen, nach Kategorien zu filtern.
-In Adobe Commerce können Sie jedoch eine virtuelle Kategorie mit [Kategorieproduktzuweisungen](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html). Dieser Kategorietyp wird zur Laufzeit erstellt und existiert nicht in der Kategoriedatenbank. Daher[!DNL Live Search] kann diesen Kategorietyp nicht lesen oder verwenden.
+In Adobe Commerce können Sie jedoch eine virtuelle Kategorie mit [Kategorieproduktzuweisungen](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html). Dieser Kategorietyp wird zur Laufzeit erstellt und existiert nicht in der Kategoriedatenbank. Daher [!DNL Live Search] kann diesen Kategorietyp nicht lesen oder verwenden.
