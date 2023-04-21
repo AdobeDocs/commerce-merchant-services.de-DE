@@ -2,9 +2,9 @@
 title: "Regeln hinzufügen"
 description: "Erfahren Sie, wie Sie [!DNL Live Search] Regeln."
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: e763eb8e283319b30b19dbb13284e9616196ae48
+source-git-commit: 2d4c96679b93a97e032fcbb50a27cbd579554795
 workflow-type: tm+mt
-source-wordcount: '1390'
+source-wordcount: '1401'
 ht-degree: 0%
 
 ---
@@ -102,6 +102,10 @@ Am einfachsten können Sie ein Produkt durch Drag &amp; Drop anheften.
    ![Regeln - Übereinstimmung](assets/rule-event-pin-product.png)
 
 Sie können auch auf das Pin-Symbol klicken, um ein Produkt an seiner aktuellen Position zu veröffentlichen. Verwenden Sie das Kontextmenü mit den Auslassungspunkten, um &quot;Nach oben pin&quot;oder &quot;Nach unten pinnen&quot;zu verwenden.
+
+>[!NOTE]
+>
+>Sie können nur Produkte anheften, die in der Abfrage zurückgegeben werden.
 
 Oder Ereignisse können manuell festgelegt werden:
 
