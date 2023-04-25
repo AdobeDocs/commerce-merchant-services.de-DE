@@ -2,9 +2,9 @@
 title: Katalogsynchronisierung
 description: Erfahren Sie, wie Sie Produktdaten aus der [!DNL Commerce] Server zu [!DNL Commerce Services] laufend, um die Dienstleistungen auf dem neuesten Stand zu halten.
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
-source-git-commit: dd9ba7171cf6a199701b1abb8083a65326e89f5d
+source-git-commit: 3931a8c2e19f0024017682b029451bf1670d94b1
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '947'
 ht-degree: 0%
 
 ---
@@ -67,6 +67,7 @@ Wenn Sie eine Neusynchronisierung Ihres Katalogs starten müssen, bevor die stü
 1. Im _Daten neu synchronisieren_ Abschnitt, klicken Sie auf [!UICONTROL Resync].
 
    [!DNL Commerce] synchronisiert Ihren Katalog während des nächsten geplanten Synchronisierungsfensters. Je nach Größe Ihres Katalogs kann dieser Vorgang sehr lange dauern.
+
 
 ## Synchronisierte Katalogprodukte
 
@@ -132,6 +133,14 @@ Der Feed-Name kann einer der folgenden sein:
 - `productoverrides`— Kundenspezifische Preisbildungs- und Katalogsichtbarkeitsregeln, z. B. auf der Grundlage von Kategorieberechtigungen
 
 Wenn Sie eine erneute Synchronisierung von Daten über die Befehlszeile Trigger haben, kann es bis zu einer Stunde dauern, bis die Daten aktualisiert werden.
+
+Wenn Sie [SaaS-Preisindizierung](../price-index/index.md) und müssen erneut synchronisiert werden, führen Sie den folgenden Befehl aus:
+
+```bash
+bin/magento saas:resync --feed=scopesCustomerGroup
+bin/magento saas:resync --feed=scopesWebsite
+bin/magento saas:resync --feed=prices
+```
 
 ### Beispiele
 

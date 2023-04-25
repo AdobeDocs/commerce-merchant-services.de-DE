@@ -2,9 +2,9 @@
 title: '''[!DNL Live Search] Versionshinweise'
 description: "Die neuesten Versionsinformationen für [!DNL Live Search] von Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: 94e5d59061477440e62a8f1eb055090e0179d395
+source-git-commit: 6371d737ef9591e4ad647650c9c9974dbd8b4555
 workflow-type: tm+mt
-source-wordcount: '1208'
+source-wordcount: '1223'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,11 @@ Diese Versionshinweise beschreiben die neuesten Versionen von [!DNL Live Search]
 ![Neu](../assets/new.svg) Neue Funktionen
 ![Fehlerbehebung](../assets/fix.svg) Fehlerbehebungen und Verbesserungen
 ![Fehler](../assets/bug.svg) Bekannte Probleme
+
+
+_25. April 2023_
+
+![Neu](../assets/new.svg) Live Search-Kunden können jetzt die neue [SaaS-Preisindexer](../price-index/index.md).
 
 ## [!DNL Live Search] 3.0.1 {#301}
 
@@ -54,8 +59,8 @@ _14. März 2023_
 * Andere kleinere Fehlerbehebungen und Leistungsaktualisierungen
 
 
-* ![Fehler](../assets/bug.svg) - Die Rangordnung nach &quot;Empfohlen für Sie&quot;wird nur in den Live-Suche-Widgets unterstützt. Sie wird nicht von der standardmäßigen LUMA- und PWA-Suchfunktion unterstützt.
-* ![Fehler](../assets/bug.svg) - Benutzerdefinierte Preisattribut-Facetten werden in LUMA nicht korrekt dargestellt, aber die API filtert sie ordnungsgemäß.
+* ![Fehler](../assets/bug.svg) - Die Rangordnung nach &quot;Empfohlen für Sie&quot;wird nur in den Live-Suche-Widgets unterstützt. Sie wird von der standardmäßigen Luma- und PWA-Suchfunktion nicht unterstützt.
+* ![Fehler](../assets/bug.svg) - Benutzerdefinierte Preisattribut-Facetten werden in Luma nicht korrekt dargestellt, aber die API filtert sie ordnungsgemäß.
 
 Händler müssen das [!DNL Live Search] -Erweiterungsversion >= 3.0.1 verwenden, um auf diese Funktionen zuzugreifen.
 

@@ -2,9 +2,9 @@
 title: "Onboarding-Übersicht"
 description: "[!DNL Live Search] Onboarding-Fluss, Systemanforderungen, Grenzen und Einschränkungen"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: 41d6bed30769d3864d93d6b3d077987a810890cc
+source-git-commit: 86e6fdb653278f3e70640155d697897a2ea1b674
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
@@ -59,6 +59,10 @@ So beschränken Sie Kundengruppen mithilfe von Katalogberechtigungen:
 ### Synonyme
 
 * [!DNL Live Search] kann bis zu 200 Synonyme pro Store-Ansicht verwalten.
+
+## Preisindex
+
+Live Search-Kunden können die neue [SaaS-Preisindexer](../price-index/index.md), was schnellere Preisänderungen und Synchronisierungszeiten ermöglicht.
 
 ### PWA-Unterstützung
 

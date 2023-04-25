@@ -2,9 +2,9 @@
 title: "[!DNL Live Search] Indizierung"
 description: "Erfahren Sie wie [!DNL Live Search] indiziert Eigenschaften von Produktattributen."
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: 995f528abc0011c6ae7c4c524982c301072ec2eb
+source-git-commit: f310f840e286859070002ab0e23eda3787c89f36
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '575'
 ht-degree: 0%
 
 ---
@@ -21,9 +21,11 @@ Der Umfang der Attributmetadaten lautet `website/store/store view`.
 
 Die [!DNL Live Search] Mit der API kann ein Client nach jedem Produktattribut sortieren, das über die [storefront property](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) `Use in Search` auf `Yes` in der Adobe Commerce-Admin. Wenn aktiviert, `Search Weight` und `Visible in Advanced Search` kann für das -Attribut festgelegt werden.
 
+[!DNL Live Search] werden gelöschte Produkte oder die auf `Not Visible Individually`.
+
 >[!NOTE]
 >
->[!DNL Live Search] werden gelöschte Produkte oder die auf `Not Visible Individually`.
+> Commerce-Kunden mit [!DNL Live Search] kann von schnelleren Preisänderungen und Synchronisierungszeiten auf ihren Websites mit dem [SaaS-Preisindexer](../price-index/index.md).
 
 ## Indizierungs-Pipeline
 
