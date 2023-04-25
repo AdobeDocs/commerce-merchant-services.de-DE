@@ -4,9 +4,9 @@ description: Sammlung von Versionshinweisen für alle Commerce-Dienste
 seo-title: Adobe Commerce Services release notes
 seo-description: See a collated list of all release notes for Adobe Commerce Services and related data and integration services.
 exl-id: 2d0d2663-275d-4471-b47c-95a40b328b2b
-source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
+source-git-commit: ba0a3c10ffb90ca2d6e77367d4292600c37b2489
 workflow-type: tm+mt
-source-wordcount: '187'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -18,8 +18,8 @@ In der folgenden Tabelle finden Sie Versionshinweise und wichtige Informationen 
 <table>
   <tbody>
     <tr>
-      <td><strong>Dienste für Adobe Commerce</strong>
-        <p>Erfahren Sie mehr über die neuesten Verbesserungen bei innovativen Commerce-Diensten, die als Adobe Commerce- und Magento Open Source-Erweiterungen verfügbar sind.</p>
+      <td><strong>Handelsdienstleistungen</strong>
+        <p>Erfahren Sie mehr über die neuesten Verbesserungen innovativer Commerce-Dienste, die als Erweiterungen verfügbar sind.</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/release-notes.html">Amazon Sales Channel</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html">Catalog Service</a></li>
@@ -31,11 +31,16 @@ In der folgenden Tabelle finden Sie Versionshinweise und wichtige Informationen 
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/release-notes.html">Store Fulfillment</a></li>
           </ul>
         </td>
-      <td><strong>Daten- und Integrationsdienste</strong>
-        <p>Erfahren Sie mehr über die neuesten Verbesserungen bei den Daten- und Integrationsdiensten, die es unseren Commerce Services ermöglichen, mit anderen Diensten in Verbindung zu treten, sowie über die größere Adobe von Erweiterungen und Produkten.</p>
+      <td><strong>Integrationsdienste</strong>
+        <p>Erfahren Sie mehr über die neuesten Verbesserungen der Integrationsdienste, die es unseren Commerce Services ermöglichen, mit anderen Diensten und Adobe-Erweiterungen und -Produkten zu verbinden.</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/release-notes.html">Experience Platform Connector</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html">Services Connector</a></li>
+          </ul>
+      </td>
+      <td><strong>Datendienste</strong>
+        <p>Erfahren Sie mehr über die neuesten Verbesserungen des Datendienstes, mit dem unsere Commerce Services Produktdaten verwalten können.</p>
+          <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html">Katalogsynchronisierung</a></li>
           </ul>
       </td>
