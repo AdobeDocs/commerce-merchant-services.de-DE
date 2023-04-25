@@ -2,9 +2,9 @@
 title: Veranstaltungen
 description: Erfahren Sie, welche Daten von den einzelnen Ereignissen erfasst werden.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: e31c550416d29f7733c7da7f8895749487965e5d
+source-git-commit: ddacfc053f83be750c63ba376519169b38f7f478
 workflow-type: tm+mt
-source-wordcount: '4592'
+source-wordcount: '4596'
 ht-degree: 0%
 
 ---
@@ -236,10 +236,11 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 
 | Feld | Beschreibung |
 |---|---|
-| `eventType` | Der primäre Ereignistyp für diesen Zeitreihendatensatz, z. B.: `userAccount.login` |
 | `person` | Ein einzelner Schauspieler, Kontakt oder Eigentümer |
 | `accountID` | Erfasst die Benutzerkonto-ID |
-| `personalEmailID` | Gibt die eindeutige Kennung für die persönliche E-Mail an |
+| `accountType` | Erfasst den Benutzerkontotyp, z. B. `Personal` oder `Company`, falls zutreffend |
+| `personalEmailID` | Die technische Adresse, z. B. `name@domain.com` wie allgemein in RFC2822 und nachfolgenden Standards definiert |
+| `personalEmail` | Erfasst Kontaktdaten - eine E-Mail und zugehörige Informationen |
 | `address` | Die technische Adresse, z. B. `name@domain.com` wie allgemein in RFC2822 und nachfolgenden Standards definiert |
 | `userAccount` | Gibt Details zu Treueprogramm, Voreinstellungen, Anmeldeprozesse und andere Kontovoreinstellungen an |
 | `login` | Gibt an, ob ein Besucher versucht hat, sich anzumelden |
@@ -260,7 +261,6 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 
 | Feld | Beschreibung |
 |---|---|
-| `eventType` | Der primäre Ereignistyp für diesen Zeitreihendatensatz, z. B.: `userAccount.logout` |
 | `userAccount` | Gibt Details zu Treueprogramm, Voreinstellungen, Anmeldeprozesse und andere Kontovoreinstellungen an |
 | `logout` | Gibt an, ob ein Besucher versucht hat, sich abzumelden |
 
@@ -280,11 +280,11 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 
 | Feld | Beschreibung |
 |---|---|
-| `eventType` | Der primäre Ereignistyp für diesen Zeitreihendatensatz, z. B.: `account.createProfile` |
 | `person` | Ein einzelner Schauspieler, Kontakt oder Eigentümer |
 | `accountID` | Erfasst die Benutzerkonto-ID |
 | `accountType` | Erfasst den Benutzerkontotyp, z. B. `Personal` oder `Company`, falls zutreffend |
-| `personalEmailID` | Gibt die eindeutige Kennung für die persönliche E-Mail an |
+| `personalEmailID` | Die technische Adresse, z. B. `name@domain.com` wie allgemein in RFC2822 und nachfolgenden Standards definiert |
+| `personalEmail` | Erfasst Kontaktdaten - eine E-Mail und zugehörige Informationen |
 | `address` | Die technische Adresse, z. B. `name@domain.com` wie allgemein in RFC2822 und nachfolgenden Standards definiert |
 | `userAccount` | Gibt Details zu Treueprogramm, Voreinstellungen, Anmeldeprozesse und andere Kontovoreinstellungen an |
 | `createProfile` | Gibt an, ob ein Benutzer ein Kontoprofil erstellt hat |
@@ -305,12 +305,11 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 
 | Feld | Beschreibung |
 |---|---|
-| `eventType` | Der primäre Ereignistyp für diesen Zeitreihendatensatz, z. B.: `account.updateProfile` |
 | `person` | Ein einzelner Schauspieler, Kontakt oder Eigentümer |
 | `accountID` | Erfasst die Benutzerkonto-ID |
 | `accountType` | Erfasst den Benutzerkontotyp, z. B. `Personal` oder `Company`, falls zutreffend |
-| `personalEmailID` | Gibt die eindeutige Kennung für die persönliche E-Mail an |
-| `personalEmail` | Gibt die persönliche E-Mail-Adresse an |
+| `personalEmailID` | Die technische Adresse, z. B. `name@domain.com` wie allgemein in RFC2822 und nachfolgenden Standards definiert |
+| `personalEmail` | Erfasst Kontaktdaten - eine E-Mail und zugehörige Informationen |
 | `address` | Die technische Adresse, z. B. `name@domain.com` wie allgemein in RFC2822 und nachfolgenden Standards definiert |
 | `userAccount` | Gibt Details zu Treueprogramm, Voreinstellungen, Anmeldeprozesse und andere Kontovoreinstellungen an |
 | `updateProfile` | Gibt an, ob ein Benutzer sein Kontoprofil aktualisiert hat |
