@@ -3,9 +3,10 @@ title: SaaS-Preisindizierung
 description: Verwenden der SaaS-Preisindizierung zur Leistungsverbesserung
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
-source-git-commit: c13e836541c8f04c9621802e482754a483ef0a21
+exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
+source-git-commit: 45999b6499f248ea4138f7de4e910c274e747a04
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '763'
 ht-degree: 0%
 
 ---
@@ -43,9 +44,11 @@ Zur Verwendung der SaaS-Preisindizierung benötigen Sie:
 
 Die SaaS-Preisindizierung nutzt eine Reihe von Modulen, um Funktionen bereitzustellen. Die Liste der erforderlichen Module kann je nach Store-Einrichtung etwas anders aussehen.
 
-Diese beiden Module fügen die neuen Feeds zum Admin hinzu. Diese Feeds übertragen Daten, die für Preisberechnungen erforderlich sind, an den SaaS-Indexer und ignorieren den PHP Core-Preisindex.
+Diese Module fügen die neuen Feeds dem Administrator hinzu. Diese Feeds übertragen Daten, die für Preisberechnungen erforderlich sind, an den SaaS-Indexer und ignorieren den PHP Core-Preisindex.
 
 ```
+magento/module-product-override-price-remover
+magento/module-bundle-product-override-data-exporter
 magento/module-product-override-price-remover
 magento/module-bundle-product-override-data-exporter
 ```
