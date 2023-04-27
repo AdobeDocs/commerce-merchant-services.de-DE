@@ -2,9 +2,9 @@
 title: Installieren und Konfigurieren von Adobe Experience Platform Connector von Adobe Commerce
 description: Erfahren Sie, wie Sie den Adobe Experience Platform Connector von Adobe Commerce installieren, konfigurieren, aktualisieren und deinstallieren.
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
-source-git-commit: 76bc0650f32e99f568c061e67290de6c380f46a4
+source-git-commit: 898d49cbeb4711862a47693a0d608b74730dc845
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,12 @@ Vor der Installation der Erweiterung [Voraussetzungen überprüfen](overview.md#
 
 ## Installieren der Erweiterung
 
-Die Experience Platform Connector-Erweiterung wird über die Befehlszeile des Servers installiert und stellt eine Verbindung zu Ihrer Adobe Commerce-Installation als [service](../landing/saas.md). Wenn der Prozess abgeschlossen ist, **Experience Platform Connector** wird auf der **System** Menü unter **Dienste** im Handel _Admin_.
+Die Experience Platform Connector-Erweiterung ist über das [Adobe Marketplace](https://marketplace.magento.com/magento-experience-platform-connector.html). Wenn Sie diese Erweiterung über die Befehlszeile des Servers installieren, stellt sie eine Verbindung zu Ihrer Adobe Commerce-Installation als [service](../landing/saas.md). Wenn der Prozess abgeschlossen ist, **Experience Platform Connector** und **Commerce Services Connector** auf **System** Menü unter **Dienste** im Handel _Admin_.
 
-Der Experience Platform Connector wird als Erweiterung von [Adobe Marketplace](https://marketplace.magento.com/magento-experience-platform-connector.html).
+>[!NOTE]
+>
+>![B2B für Adobe Commerce](../assets/b2b.svg) Für B2B-Händler gibt es eine separate Erweiterung, die Sie installieren müssen. Diese Erweiterung unterstützt jetzt auch B2B-spezifische Ereignisse. [Weitere Infos](#install-the-b2b-extension).
 
-![B2B für Adobe Commerce](../assets/b2b.svg) Für B2B-Händler gibt es eine separate Erweiterung, die Sie installieren müssen. Diese Erweiterung unterstützt B2B-spezifische Ereignisse. [Weitere Infos](#install-the-b2b-extension).
 
 1. So laden Sie die `experience-platform-connector` -Paket, führen Sie Folgendes über die Befehlszeile aus:
 
@@ -80,11 +81,11 @@ Um auf eine Hauptversion wie 1.0.0 auf 2.0.0 zu aktualisieren, bearbeiten Sie da
    composer update magento/experience-platform-connector –-with-dependencies
    ```
 
-B2B-Händler:
+   B2B-Händler:
 
-```bash
-composer update magento/experience-platform-connector-b2b --with-dependencies
-```
+   ```bash
+   composer update magento/experience-platform-connector-b2b --with-dependencies
+   ```
 
 ## Experience Platform Connector deinstallieren {#uninstall}
 

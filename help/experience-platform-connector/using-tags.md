@@ -2,9 +2,9 @@
 title: Erfassen von Commerce-Daten mit Adobe Experience Platform Tags
 description: Erfahren Sie, wie Sie Commerce-Daten mithilfe von Adobe Experience Platform-Tags erfassen.
 exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
-source-git-commit: bd4090c1b1ec417545e041a7c89f46019c07abea
+source-git-commit: bdd1378dcbbe806c98e8486a985389b2d0d4f34e
 workflow-type: tm+mt
-source-wordcount: '2535'
+source-wordcount: '2650'
 ht-degree: 0%
 
 ---
@@ -1319,14 +1319,16 @@ Erstellen Sie die folgenden Datenelemente:
 - **Typ**: `commerce.order`
 - **XDM-Daten**: `%place order%`
 
-## Identität festlegen
+## Festlegen der Identität in Storefront-Ereignissen
 
-Experience Platform Connector-Profile werden verbunden und basierend auf dem `identityMap` und `personalEmail` Identitätsfelder in XDM-Erlebnisereignissen. 
+Storefront-Ereignisse enthalten Profilinformationen, die auf dem `personalEmail` (für Kontoereignisse) und `identityMap` (für alle anderen Storefront-Ereignisse). Der Experience Platform-Connector fügt sich in diese beiden Felder ein und erzeugt Profile. Für jedes Feld sind jedoch unterschiedliche Schritte zum Erstellen von Profilen erforderlich:
 
-Wenn Sie bereits über ein Setup verfügen, das auf verschiedenen Feldern basiert, können Sie diese weiterhin verwenden. Um die Identitätsfelder des Experience Platform Connector-Profils festzulegen, müssen Sie die folgenden Felder festlegen:
+>[!NOTE]
+>
+>Wenn Sie bereits über ein Setup verfügen, das auf verschiedenen Feldern basiert, können Sie diese weiterhin verwenden.
 
-- `personalEmail` - Nur Kontoereignisse - folgen Sie den oben beschriebenen Schritten für [Kontoereignisse](#createaccount)
-- `identityMap` - Alle anderen Ereignisse. Siehe folgendes Beispiel.
+- `personalEmail` - Gilt nur für Kontoereignisse. Befolgen Sie die beschriebenen Schritte, Regeln und Aktionen [above](#createaccount)
+- `identityMap` - Gilt für alle anderen Storefront-Ereignisse. Siehe folgendes Beispiel.
 
 ### Beispiel
 
@@ -1337,7 +1339,7 @@ Die folgenden Schritte zeigen, wie Sie eine `pageView` -Ereignis mit `identityMa
    ![Datenelement mit benutzerdefiniertem Code konfigurieren](assets/set-custom-code-ecid.png)
    _Datenelement mit benutzerdefiniertem Code konfigurieren_
 
-1. Fügen Sie benutzerdefinierten ECID-Code hinzu:
+1. Auswählen [!UICONTROL Open Editor] und fügen Sie den folgenden benutzerdefinierten Code hinzu:
 
    ```javascript
    return alloy("getIdentity").then((result) => {
@@ -1346,6 +1348,12 @@ Die folgenden Schritte zeigen, wie Sie eine `pageView` -Ereignis mit `identityMa
            {
                id: ecid,
                primary: true
+           }
+           ],
+           email: [
+           {
+               id: email,
+               primary: false
            }
            ]
        };
@@ -1362,6 +1370,43 @@ Die folgenden Schritte zeigen, wie Sie eine `pageView` -Ereignis mit `identityMa
 
    ![ECID abrufen](assets/rule-retrieve-ecid.png)
    _ECID abrufen_
+
+## Festlegen der Identität in Backoffice-Ereignissen
+
+Im Gegensatz zu Storefront-Ereignissen, die ECID zur Identifizierung und Verknüpfung von Profilinformationen verwenden, sind Back-Office-Ereignisdaten SaaS-basiert und daher keine ECID verfügbar. Für Backoffice-Ereignisse müssen Sie E-Mails verwenden, um Käufer eindeutig zu identifizieren. In diesem Abschnitt erfahren Sie, wie Sie Back-Office-Ereignisdaten per E-Mail mit einer ECID verknüpfen.
+
+1. Erstellen Sie ein Identitätszuordnungselement.
+
+   ![Identitätszuordnung für Back Office](assets/custom-code-backoffice.png)
+   _Back-Office-Identitätszuordnung erstellen_
+
+1. Auswählen [!UICONTROL Open Editor] und fügen Sie den folgenden benutzerdefinierten Code hinzu:
+
+```javascript
+const IdentityMap = {
+  "ECID": [
+    {
+      id:  _satellite.getVar('ECID'),
+      primary: true,
+    },
+  ],
+};
+ 
+if (_satellite.getVar('account email')) {
+    IdentityMap.email = [
+        {
+            id: _satellite.getVar('account email'),
+            primary: false,
+        },
+    ];
+}
+return IdentityMap;
+```
+
+1. Fügen Sie jedem Element dieses neue Element hinzu `identityMap` -Feld.
+
+   ![Jede identityMap aktualisieren](assets/add-element-back-office.png)
+   _Jede identityMap aktualisieren_
 
 ## Einverständniserklärung
 

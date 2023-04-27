@@ -2,9 +2,9 @@
 title: Versionshinweise
 description: Die aktuellen Versionsinformationen zum Adobe Experience Platform Connector von Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: 735fd14fad22826b04320644e120d296de19a211
+source-git-commit: 22823b662eefa953fcca6ae78f6c37ee8abff3d1
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '345'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ Diese Versionshinweise enthalten Aktualisierungen des Experience Platform-Connec
 
 Informationen zu Funktionsänderungen und Fehlerbehebungen im Zusammenhang mit vom Experience Platform-Connector verwendeten Erweiterungen finden Sie unter **Unterstützte Dienstaktualisierungen**.
 
-Siehe [Bevorstehende Versionen](https://experienceleague.adobe.com/docs/commerce-operations/release/schedule.html) , um mehr über die Veröffentlichungszeitpläne und die Unterstützung zu erfahren.
+Siehe [Bevorstehende Versionen](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) , um mehr über die Veröffentlichungszeitpläne und die Unterstützung zu erfahren.
 
 Siehe die Entwicklerdokumentation zu [Informationen zur Produktkompatibilität](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
@@ -45,6 +45,8 @@ _12. Oktober 2022_
 
 _30. März 2023_
 
+[!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"}
+
 * ![Neu](../assets/new.svg) - Die `commerce-data-export` und `saas-export` Abhängigkeiten mit `experience-platform-connector` -Erweiterung. Zuvor mussten Sie diese Abhängigkeiten separat installieren. Diese Abhängigkeiten ermöglichen zusammen mit der Merchant-Konfiguration die serverseitige Verarbeitung von [Backoffice-Ereignisse](events.md#back-office-events).
 * ![Neu](../assets/new.svg) - Es wurde ein neues Backoffice-Ereignis namens [`orderShipmentCompleted`](events.md#ordershipmentcompleted).
 
@@ -52,24 +54,32 @@ _30. März 2023_
 
 _28. Februar 2023_
 
+[!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"}
+
 * ![Neu](../assets/new.svg) - Unterstützung für PHP 8.2 für alle Experience Platform-Connector-Module hinzugefügt
 
 ## 2.1.0
 
 _17. Januar 2023_
 
-* ![Neu](../assets/new.svg) - Die [Experience Platform Connector-Admin](connect-data.md) damit Sie Ihr eigenes AEP Web SDK (Legierung) angeben können. Außerdem wurde eine Option für Händler hinzugefügt, die in unserem Back-Office-Betaprogramm angemeldet sind, um [Back-Office-Ereignisdaten](connect-data.md#data-collection) an die Kante. Diese Ereignisse enthalten [Bestellstatusinformationen](events.md#beta-order-status-events) über eine Bestellung, z. B. wenn eine Bestellung aufgegeben, storniert, rückerstattet oder versandt wurde.
+[!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"}
+
+* ![Neu](../assets/new.svg) - Die [Experience Platform Connector-Admin](connect-data.md) damit Sie Ihr eigenes AEP Web SDK (Legierung) angeben können.
 * ![Fehlerbehebung](../assets/fix.svg) Geändert zu mithilfe von `identityMap` anstelle von `personID` beim Festlegen der primären Identität für alle Daten, die an die Kante gesendet werden.
 
 ## 2.0.1
 
 _10. November 2022_
 
+[!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"}
+
 * ![Problem behoben](../assets/fix.svg) - Jetzt wird der Adobe Experience Platform-Kontext erst festgelegt, nachdem das Storefront Event Collector und Storefront Event SDK erfolgreich geladen wurden.
 
 ## 2.0.0
 
 _12. Oktober 2022_
+
+[!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"}
 
 * ![Neu](../assets/new.svg) - Zusätzliche Möglichkeit zur Angabe Ihres eigenen AEP Web SDK bei [Verbindung](connect-data.md) Ihre Adobe Commerce-Instanz an die Experience Platform
 * ![Fehlerbehebung](../assets/fix.svg) - Die Anforderung zum Datenspeicherbereich wurde aktualisiert, sodass die Datastream-IDs auf die Website übertragen werden müssen, anstatt sie zu speichern
@@ -78,11 +88,6 @@ _12. Oktober 2022_
 
 _9. August 2022_
 
+[!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"}
+
 * ![Neu](../assets/new.svg) - Allgemeine Verfügbarkeitsversion
-
-## Dokumentation
-
-Weitere Informationen:
-
-* [Adobe Commerce-Entwicklerdokumentation](https://devdocs.magento.com/)
-* [Adobe Commerce-Benutzerhandbuch](https://docs.magento.com/user-guide/)
