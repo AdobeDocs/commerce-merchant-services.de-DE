@@ -4,16 +4,16 @@ description: Verwenden der SaaS-Preisindizierung zur Leistungsverbesserung
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
-source-git-commit: 45999b6499f248ea4138f7de4e910c274e747a04
+source-git-commit: 7b2d90eb809eada732ed5d3ad4e038bd9733c440
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '764'
 ht-degree: 0%
 
 ---
 
 # SaaS-Preisindizierung
 
-Die SaaS-Preisindizierung beschleunigt die Zeit, die benötigt wird, um Preisänderungen auf der Website eines Kunden nach deren Übermittlung widerzuspiegeln. Dieses optionale Modul ermöglicht Händlern mit großen, komplexen Katalogen oder mit mehreren Websites oder Kundengruppen, Preisänderungen schneller und kontinuierlich zu verarbeiten.
+Die SaaS-Preisindizierung beschleunigt die Zeit, die benötigt wird, um Preisänderungen auf der Website eines SaaS-Kunden widerzuspiegeln, nachdem sie eingereicht wurden. Dieses optionale Modul ermöglicht Händlern mit großen, komplexen Katalogen oder mit mehreren Websites oder Kundengruppen, Preisänderungen schneller und kontinuierlich zu verarbeiten.
 
 Der größte Engpass der Pipeline: Rechenintensive Prozesse wie Indizierung und Preisberechnung wurden vom PHP-Kern in die Cloud-Infrastruktur der Adobe verschoben. Dadurch können Händler Ressourcen schnell skalieren, um die Indexierungszeiten zu erhöhen, und diese Änderungen an Websites mit viel schnelleren Geschwindigkeiten widerspiegeln.
 
@@ -47,8 +47,8 @@ Die SaaS-Preisindizierung nutzt eine Reihe von Modulen, um Funktionen bereitzust
 Diese Module fügen die neuen Feeds dem Administrator hinzu. Diese Feeds übertragen Daten, die für Preisberechnungen erforderlich sind, an den SaaS-Indexer und ignorieren den PHP Core-Preisindex.
 
 ```
-magento/module-product-override-price-remover
-magento/module-bundle-product-override-data-exporter
+magento/module-saas-price
+magento/module-saas-scopes
 magento/module-product-override-price-remover
 magento/module-bundle-product-override-data-exporter
 ```
