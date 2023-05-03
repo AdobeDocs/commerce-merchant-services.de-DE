@@ -2,9 +2,9 @@
 title: Konfigurieren Sie die [!DNL Quick Checkout] für die Adobe Commerce-Erweiterung
 description: Erfahren Sie mehr über die Konfigurationsoptionen für die [!DNL Quick Checkout] und wie Sie die Erweiterung erfolgreich integrieren und einrichten.
 exl-id: 892e04dc-17d6-45e9-b2ab-c7a0735a75bc
-source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
+source-git-commit: f790732804e110aad298689c0ddf74547ff17618
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ So greifen Sie auf diese Konfigurationseinstellungen zu:
 1. Im _Admin_ Seitenleiste, navigieren Sie zu **Stores** > _Einstellungen_ > **Konfiguration**.
 1. Erweitern Sie im linken Bereich **Vertrieb** und wählen Sie **Checkout**.
 
-   ![Quick Checkout](assets/configuration-view.png)
+   ![Quick Checkout](assets/config-new-logo-view.png)
 
 Siehe Abschnitt [Onboarding](../quick-checkout/onboarding.md) Thema für weitere Informationen zur Konfiguration der [!DNL Quick Checkout] für Adobe Commerce.
 
@@ -31,7 +31,7 @@ Siehe Abschnitt [Onboarding](../quick-checkout/onboarding.md) Thema für weitere
 | [!UICONTROL Enable] | website | Aktivieren oder Deaktivieren [!DNL Quick Checkout] für Ihre Website. Optionen: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Method] | website | Legen Sie die -Methode oder -Umgebung für Ihre [!DNL Quick Checkout]. Optionen: [!UICONTROL Sandbox] / [!UICONTROL Production] |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Kontoanmeldeinformationen
 
@@ -43,7 +43,7 @@ Siehe Abschnitt [Onboarding](../quick-checkout/onboarding.md) Thema für weitere
 | [!UICONTROL Publishable key] | website | Ein Schlüssel, mit dem Ihr Frontend interagiert [!DNL Bolt] APIs. |
 | [!UICONTROL Signing secret] | website | Dient zur Signaturüberprüfung von Anforderungen, die von empfangen wurden [!DNL Bolt]. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Diensteinstellungen
 
@@ -59,4 +59,4 @@ Siehe Abschnitt [Onboarding](../quick-checkout/onboarding.md) Thema für weitere
 | [!UICONTROL Automatic Login Enabled] | website | Definieren Sie, ob [!DNL Quick Checkout] ermöglicht die automatische Anmeldung beim Checkout. Standardmäßig aktiviert. Optionen: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Automatic Login Network] | website | Wählen Sie das Netzwerk aus, in dem sich der Kunde automatisch anmeldet. Standardmäßig &quot;Bolt&quot;aktiviert. Optionen: [!UICONTROL Bolt + Merchant] / [!UICONTROL Bolt] |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

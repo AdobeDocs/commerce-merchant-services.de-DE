@@ -2,9 +2,9 @@
 title: '''[!DNL Quick Checkout] Versionshinweise'
 description: Informationen zu allen [!DNL Quick Checkout] veröffentlicht.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 90cd508d7eb6033864d66c87fbc90eabd5ea304b
+source-git-commit: f790732804e110aad298689c0ddf74547ff17618
 workflow-type: tm+mt
-source-wordcount: '1364'
+source-wordcount: '1403'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,14 @@ Siehe [Verfügbarkeit](https://devdocs.magento.com/release/availability.html) in
 In diesen Versionshinweisen werden Funktionsänderungen und -korrekturen beschrieben, die außerhalb der regulären Versionen der versionierten Funktionen für das Admin-Bedienfeld veröffentlicht wurden.
 
 +++Admin-Bedienfeldaktualisierungen
+
+_25. April 2023_
+
+![Problem behoben](../assets/fix.svg)<!-- Issue BOLT-452 --> Die [!DNL Quick Checkout] **Tour** -Schaltfläche zeigt jetzt einen anklickbaren Handzeiger an, wenn Sie den Mauszeiger darüber bewegen.
+
+_19. April 2023_
+
+![Problem behoben](../assets/fix.svg)<!-- Issue BOLT-596 --> Die [!DNL Quick Checkout] Auf der Seite &quot;Berichte&quot;wird nun beim Analysieren von Datumsangaben im ISO 8601-Format das Diagramm &quot;Neue Konten&quot;korrekt angezeigt.
 
 _14. Dezember 2022_
 

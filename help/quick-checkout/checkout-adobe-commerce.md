@@ -2,9 +2,9 @@
 title: "Checkout-Fluss für einen Adobe Commerce-Benutzer"
 description: "Überblick über die [!DNL Quick Checkout] Fluss für einen Adobe Commerce-Benutzer."
 exl-id: 085e393b-15f6-4d5a-a04d-927b1f95b74e
-source-git-commit: 66082614ffe6456e2c24a1e8d9baaa1113fb7ffb
+source-git-commit: f790732804e110aad298689c0ddf74547ff17618
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '443'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Wenn eine [!DNL Bolt] -Konto beim Checkout gefunden werden, können Käufer ihre
 
 1. Geben Sie das einmalige Kennwort (OTP) ein, das an dieses gesendet wird. [!DNL Bolt] E-Mail-Adresse des Kontos oder Mobilgerät, je nach [Benutzereinstellungen in der [!DNL Bolt] account](https://help.bolt.com/shoppers/account/account-settings/#how-to-set-preferred-login-method){target=_blank}.
 
-![OTP-Popup](assets/pop-up.png)
+![OTP-Popup](assets/new-logo-otp-email.png)
 
 1. Nach der Anmeldung bei [!DNL Bolt] -Konto, werden die Details automatisch hinzugefügt:
 
