@@ -2,9 +2,9 @@
 title: Headless
 description: Informationen zur Integration [!DNL Product Recommendations] in einer Headless-Storefront.
 exl-id: 316d0b0c-5938-4e2f-9d0d-747746cf6056
-source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
+source-git-commit: 521ea4fc2cce809fc12d3958e37089f3e34e1068
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,13 @@ ht-degree: 0%
 
 Sie können [!DNL Product Recommendations] in einer Headless-Storefront mit [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) oder einer benutzerdefinierten Frontend-Technologie, z. B. React oder Vue JS.
 
+Benutzerdefinierte und Headless-Integratoren sollten als vorgeschlagene Implementierung auf diese Luma- und PWA-Anweisungen verweisen. Es gibt viele Möglichkeiten, Produkt Recommendations in Headless-Lösungen zu implementieren. Diese Dokumentation deckt nicht alle Szenarien ab. Integratoren müssen Veranstaltungen, Designs und Tests für ihre Implementierungen abdecken.
+
 [!DNL Product Recommendations] erfordern [Verhaltensdaten und Katalogdaten](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/development-overview.html) zum Betrieb. Der Vorgang zur Datensynchronisierung im Katalog bleibt in einer Headless-Implementierung unverändert, aber für die Erfassung von Verhaltensdaten sind Änderungen erforderlich.
+
+>[!NOTE]
+>
+>Headless-Instanzen müssen Eventing implementieren, um das Produkt-Recommendations-Dashboard zu aktivieren.
 
 Integration [!DNL Product Recommendations] In einer Headless-Storefront müssen Sie:
 

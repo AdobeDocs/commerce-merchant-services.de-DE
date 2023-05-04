@@ -2,9 +2,9 @@
 title: Entwicklung von Recommendations-Administratoren
 description: Eine Übersicht über die Architektur und Entwicklungsfunktionen von Recommendations.
 exl-id: caef5e0c-dd69-4846-8f85-b1c5e1c6a28f
-source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
+source-git-commit: e74bc4aeaa154e751f8d986e0426dd19d55d335e
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '397'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Product Recommendations ist ein leistungsstarkes Marketing-Tool, mit dem Sie Kon
 
 >[!NOTE]
 >
->Wenn Ihre Storefront mit PWA Studio implementiert ist, lesen Sie den Abschnitt [PWA-Dokumentation](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). Wenn Sie eine benutzerdefinierte Frontend-Technologie wie React oder Vue JS verwenden, erfahren Sie im Benutzerhandbuch , wie Sie Product Recommendations in eine [Headless](headless.md) Umgebung.
+>Wenn Ihre Storefront mit PWA Studio implementiert ist, lesen Sie den Abschnitt [PWA-Dokumentation](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). Wenn Sie eine benutzerdefinierte Frontend-Technologie wie React oder Vue JS verwenden, erfahren Sie im Benutzerhandbuch , wie Sie Product Recommendations in eine [Headless](headless.md) Umgebung. Headless-Instanzen müssen Eventing implementieren, um den Arbeitsbereich &quot;Produktempfehlungen&quot;zu erweitern.
 
 ## Architektonischer Überblick
 

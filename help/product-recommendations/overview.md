@@ -2,9 +2,9 @@
 title: Einführung in [!DNL Product Recommendations]
 description: '''[!DNL Product Recommendations] sind ein leistungsstarkes Marketing-Tool, mit dem Sie Konversionen steigern, den Umsatz steigern und die Interaktion mit Käufern fördern können."'
 exl-id: 818ac876-58c9-4c68-975e-53da59ed6b52
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 5359c737cc90135ab0db5c32aebcb0bb131d3671
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,11 @@ Produktempfehlungen sind ein leistungsstarkes Marketing-Tool, mit dem Sie Konver
 
 Produktempfehlungen werden in der Storefront als Einheiten mit Beschriftungen angezeigt, wie z. B. &quot;Kunden, die dieses Produkt angesehen haben, haben es auch angesehen&quot;. Sie können Empfehlungen in Ihren Store-Ansichten direkt über den Adobe Commerce-Administrator erstellen, verwalten und bereitstellen.
 
+Wenn Ihre Storefront mit PWA Studio implementiert ist, lesen Sie den Abschnitt [PWA-Dokumentation](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). Wenn Sie eine benutzerdefinierte Frontend-Technologie wie React oder Vue JS verwenden, erfahren Sie, wie Sie [integrieren](headless.md) [!DNL Product Recommendations] in Ihre Headless-Storefront.
+
 >[!NOTE]
 >
-> Wenn Ihre Storefront mit PWA Studio implementiert ist, lesen Sie den Abschnitt [PWA-Dokumentation](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). Wenn Sie eine benutzerdefinierte Frontend-Technologie wie React oder Vue JS verwenden, erfahren Sie, wie Sie [integrieren](headless.md) [!DNL Product Recommendations] in Ihre Headless-Storefront.
+>Es gibt viele Möglichkeiten, eine Headless- oder benutzerdefinierte Implementierung zu entwickeln. In diesem Handbuch wird eine Möglichkeit beschrieben, dies mithilfe von PWA Studio zu tun. Es werden nicht alle Szenarien oder Eventualitäten abgedeckt.
 
 ## Datenschutz
 

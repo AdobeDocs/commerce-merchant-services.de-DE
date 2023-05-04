@@ -2,9 +2,9 @@
 title: Daten erfassen
 description: Erfahren Sie, wie Ereignisse Daten für Produktempfehlungen erfassen.
 exl-id: b827d88c-327f-4986-8239-8f1921d8383c
-source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
+source-git-commit: e74bc4aeaa154e751f8d986e0426dd19d55d335e
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '411'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,13 @@ Die [Adobe Commerce Storefront Event Collector](https://developer.adobe.com/comm
 
 Wenn Ihre Storefront mit PWA Studio implementiert ist, lesen Sie den Abschnitt [PWA-Dokumentation](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). Wenn Sie eine benutzerdefinierte Frontend-Technologie wie React oder Vue JS verwenden, erfahren Sie im Benutzerhandbuch , wie Sie Product Recommendations in eine [Headless](headless.md) Umgebung.
 
+## Einschränkungen
+
 Anzeigensperren und Datenschutzeinstellungen können die `magento/product-recommendations` -Modul aus der Erfassung von Ereignissen verwenden und möglicherweise zu Interaktion und Umsatz führen [Metriken](workspace.md) nicht angegeben werden.
+
+Eventing erfasst nicht alle Transaktionen, die auf der Website des Händlers stattfinden. Eventing ist dazu gedacht, dem Händler eine allgemeine Vorstellung von Ereignissen zu vermitteln, die auf der Site stattfinden.
+
+Headless-Implementierungen müssen Eventing implementieren, um das Produkt-Recommendations-Dashboard zu aktivieren.
 
 >[!NOTE]
 >
