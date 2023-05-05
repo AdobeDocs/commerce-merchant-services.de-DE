@@ -2,9 +2,9 @@
 title: Commerce-Daten mit Adobe Experience Platform verbinden
 description: Erfahren Sie, wie Sie Ihre Commerce-Daten mit der Adobe Experience Platform verbinden.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
-source-git-commit: dead0b8dae69476c196652abd43c4966a38c4141
+source-git-commit: 386d5e4245401695d7123a87b7dfb703f1f849e9
 workflow-type: tm+mt
-source-wordcount: '1074'
+source-wordcount: '1307'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,11 @@ In diesem Abschnitt verbinden Sie Ihre Adobe Commerce-Instanz mit der Adobe Expe
 
 ## Datenerfassung
 
-Im **Datenerfassung** Wählen Sie Storefront- und/oder Back-Office-Daten aus, die an den Experience Platform Edge gesendet werden sollen. Um sicherzustellen, dass Ihre Adobe Commerce-Instanz mit der Datenerfassung beginnen kann, lesen Sie das [Voraussetzungen](overview.md#prerequisites).
+In diesem Abschnitt geben Sie den Datentyp an, den Sie an den Experience Platform Edge senden möchten. Es gibt zwei Datentypen: Client- und Server-seitig.
+
+Client-seitige Daten sind Daten, die in der Storefront erfasst werden. Dazu gehören Interaktionen mit Käufern, z. B. `View Page`, `View Product`, `Add to Cart`und [Anforderungsliste](events.md#b2b-events) Informationen (für B2B-Händler). Serverseitige Daten oder Back-Office-Daten sind Daten, die auf den Commerce-Servern erfasst werden. Dazu gehören Informationen über den Status einer Bestellung, z. B. ob eine Bestellung aufgegeben, storniert, rückerstattet, versandt oder abgeschlossen wurde.
+
+Im **Datenerfassung** wählen Sie den Datentyp aus, den Sie an den Experience Platform Edge senden möchten. Um sicherzustellen, dass Ihre Adobe Commerce-Instanz mit der Datenerfassung beginnen kann, lesen Sie das [Voraussetzungen](overview.md#prerequisites).
 
 Weitere Informationen finden Sie unter Ereignisthema . [storefront](events.md#storefront-events) und [Backoffice](events.md#back-office-events) -Ereignisse.
 
@@ -110,11 +114,32 @@ Weitere Informationen finden Sie unter Ereignisthema . [storefront](events.md#st
 | Back Office-Ereignisse | Wenn diese Option aktiviert ist, enthält die Ereignis-Payload anonymisierte Bestellstatusinformationen, z. B. ob eine Bestellung aufgegeben, storniert, zurückerstattet oder versandt wurde. |
 | Datastream-ID (Website) | ID, die den Datenfluss von Adobe Experience Platform zu anderen Adobe-DX-Produkten ermöglicht. Diese ID muss mit einer bestimmten Website in Ihrer jeweiligen Adobe Commerce-Instanz verknüpft sein. Wenn Sie Ihr eigenes Experience Platform Web SDK angeben, geben Sie in diesem Feld keine Datastream-ID an. Der Experience Platform-Connector verwendet die mit diesem SDK verknüpfte Datastream-ID und ignoriert alle in diesem Feld angegebenen Datastream-IDs (falls vorhanden). |
 
-## Überprüfen, ob Daten an Experience Platform gesendet werden
+>[!NOTE]
+>
+>Nach dem Onboarding fließen die Storefront-Daten an den Edge der Experience Platform. Es dauert etwa 5 Minuten, bis die Daten des Back Office am Rand angezeigt werden. Nachfolgende Aktualisierungen sind am Rand basierend auf dem Cron-Zeitplan sichtbar.
 
-Nach dem Onboarding fließen die Storefront-Daten an den Edge der Experience Platform. Nach dem Onboarding dauert es etwa 5 Minuten, bis die Daten an der Kante angezeigt werden. Nachfolgende Aktualisierungen sind am Rand basierend auf dem Cron-Zeitplan sichtbar.
+## Bestätigen der Erfassung von Ereignisdaten
 
-Wenn Commerce-Daten an den Experience Platform Edge gesendet werden, können Sie Berichte wie die folgenden erstellen:
+Um sicherzustellen, dass Daten aus Ihrem Commerce-Store erfasst werden, verwenden Sie die [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) , um Ihre Commerce-Site zu untersuchen. Nachdem Sie bestätigt haben, dass Daten erfasst werden, können Sie sicherstellen, dass Ihre Storefront- und Back-Office-Ereignisdaten am Edge angezeigt werden, indem Sie eine Abfrage ausführen, die Daten aus dem [von Ihnen erstellter Datensatz](overview.md#prerequisites).
 
-![Commerce-Daten in Adobe Experience Platform](assets/aem-data-1.png)
-_Commerce-Daten in Adobe Experience Platform_
+1. Auswählen **Abfragen** Klicken Sie im linken Navigationsbereich der Experience Platform auf [!UICONTROL Create Query].
+
+   ![Abfrage-Editor](assets/query-editor.png)
+
+1. Wenn der Abfrage-Editor geöffnet wird, geben Sie eine Abfrage ein, die Daten aus dem Datensatz auswählt.
+
+   ![Abfrage erstellen](assets/create-query.png)
+
+   Ihre Abfrage könnte beispielsweise wie folgt aussehen:
+
+   ```sql
+   SELECT * from `your_dataset_name` ORDER by TIMESTAMP DESC
+   ```
+
+1. Nach Ausführung der Abfrage werden die Ergebnisse im **Ergebnisse** neben dem **Konsole** Registerkarte. Diese Ansicht zeigt die tabellarische Ausgabe Ihrer Abfrage an.
+
+   ![Abfrage-Editor](assets/query-results.png)
+
+In diesem Beispiel werden Ereignisdaten aus der [`commerce.productListAdds`](events.md#addtocart), [`commerce.productViews`](events.md#productpageview), [`web.webpagedetails.pageViews`](events.md#pageview)usw. Mit dieser Ansicht können Sie überprüfen, ob Ihre Commerce-Daten am Edge angekommen sind.
+
+Wenn die Ergebnisse nicht Ihren Erwartungen entsprechen, öffnen Sie den Datensatz und suchen Sie nach fehlgeschlagenen Batch-Importen. Weitere Informationen [Fehlerbehebung bei Batch-Importen](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/troubleshooting.html).
