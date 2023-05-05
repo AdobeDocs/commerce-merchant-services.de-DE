@@ -2,9 +2,9 @@
 title: "[!DNL Storefront Popover]"
 description: "Die [!DNL Live Search storefront popover] gibt dynamisch vorgeschlagene Produkte und Miniaturansichten zurück."
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 92889130fd7482e0b99fb08746e6fd2830b0345e
+source-git-commit: 3820736a25942b147d6e2c7b8820c360d6a0a535
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -44,3 +44,4 @@ Standardmäßig ist der Wert Katalogsuche - Automatische Vervollständigungsgren
 * Die [!DNL Live Search] [!DNL storefront popover] ist nur für Stores verfügbar, die *Luma* Design oder ein benutzerdefiniertes Design, das auf *Luma*.
 * Die [!DNL popover] unterstützt nicht die *Leer* Design. Siehe [Formatierung [!DNL Popover] Elemente](storefront-popover-styling.md) , um mehr zu erfahren.
 * Die [!DNL popover] wird im Schnellbestellformular nicht unterstützt.
+* Merchants können Widgets oder Storefront-Elemente anpassen und erweitern (z. B.: Integrieren von Farbmustern in Live-Suchergebnisse) mithilfe der [Catalog Service](../catalog-service/overview.md) Storefront-API, aber dies ist für das Supportteam der Adobe nicht möglich.

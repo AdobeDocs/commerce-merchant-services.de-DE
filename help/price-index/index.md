@@ -4,9 +4,9 @@ description: Verwenden der SaaS-Preisindizierung zur Leistungsverbesserung
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
-source-git-commit: 7b2d90eb809eada732ed5d3ad4e038bd9733c440
+source-git-commit: 3820736a25942b147d6e2c7b8820c360d6a0a535
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '719'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ magento/module-product-override-price-remover
 magento/module-bundle-product-override-data-exporter
 ```
 
-Kunden, die Luma und Adobe Commerce Core GraphQL verwenden, können ein Modul installieren, das die Luma-Kompatibilität bietet und den PHP Core-Preisindex deaktiviert:
+Kunden, die Luma und Adobe Commerce Core GraphQL verwenden, können ein Modul installieren, das Luma- und Core GraphQL-Kompatibilität bietet und den PHP-Core-Preisindex deaktiviert:
 
 ```
 adobe-commerce/catalog-adapter
@@ -67,17 +67,7 @@ Der PHP Core-Preisindex kann bei Bedarf durch eine Drittanbietererweiterung oder
 Abhängig von Faktoren wie Produkttypen, Preiskomplexität und Kataloggröße kann die SaaS-Preisindizierung die richtige Lösung für Ihr Geschäft sein. Lesen Sie die folgenden Einschränkungen und stellen Sie fest, ob dies eine gute Lösung für Ihre Site ist.
 
 Derzeit unterstützt die SaaS-Preisindizierung einfache, gruppierte, virtuelle, konfigurierbare und gebündelte dynamische Produktarten.
-Die Unterstützung für herunterladbare, vergriffene Karten und behobene Produkttypen von Bundle wird in Kürze angeboten.
-
-Die SaaS-Preisindizierung unterstützt Basispreise:
-
-* Min./Max. regulärer Preis
-* Min./Max. Endpreis
-* Sonderpreise
-* Preise der Kundengruppen
-* Katalogregelpreise
-
-Sobald Sie sich für die Verwendung des neuen Preisangebots entschieden haben, können Sie sich an [Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) , damit Sie es rückgängig machen können.
+Die Unterstützung für herunterladbare, vergünstigte und gebündelte Produkttypen wird in Kürze bereitgestellt.s
 
 Neue Feeds sollten manuell mit der `resync` [CLI, Befehl](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html#resynccmdline). Andernfalls werden die Daten im standardmäßigen Synchronisierungsprozess aktualisiert. Weitere Informationen zu [Katalogsynchronisierung](../landing/catalog-sync.md) Prozess.
 
