@@ -2,9 +2,9 @@
 title: Verhaltensdaten
 description: Erfahren Sie mehr über Verhaltensdaten und wann Sie mit der Verwendung beginnen können.
 exl-id: d68a97b9-1497-4603-a72c-4aaaf6e048cb
-source-git-commit: 371ae21c97021912279381b5e32f953fe3b4f0dd
+source-git-commit: 840b091638aedd3f6ac097a010d035eff997ffe2
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -33,11 +33,14 @@ Andere Variablen, die sich auf die zum Trainieren benötigte Zeit auswirken kön
 
 - Höheres Traffic-Volumen trägt zu schnellerem Lernen bei
 - Einige Empfehlungstypen trainieren schneller als andere
-- Adobe Commerce berechnet Verhaltensdaten alle vier Stunden neu. Sie können Ihre Empfehlungseinheiten zwar technisch zu diesem Zeitpunkt bereitstellen, wissen jedoch, dass die Empfehlungen genauer werden, je länger sie auf Ihrer Site verwendet werden.
+- Adobe Commerce berechnet Verhaltensdaten alle vier Stunden neu. Je länger sie auf Ihrer Site verwendet werden, desto genauer wird Recommendations.
 
 Um den Trainings-Fortschritt der einzelnen Empfehlungstypen zu visualisieren, muss die [Empfehlung erstellen](create.md) Seite zeigt die Indikatoren zur Bereitschaft an.
 
 Während Daten auf Produktions- und maschinellen Lernmodellen erfasst werden, können Sie die [verbleibende Aufgaben](implementation-workflow.md) erforderlich, um Empfehlungen für Ihre Storefront bereitzustellen. Wenn Sie die Tests und Konfiguration von Empfehlungen abgeschlossen haben, haben die Modelle für maschinelles Lernen genügend Daten gesammelt und berechnet, um relevante Empfehlungen zu erstellen, sodass Sie die Empfehlungen in Ihrer Storefront bereitstellen können.
+
+Wenn der Traffic für die meisten SKUs unzureichend ist (Ansichten, gekaufte Produkte, Trends), liegen möglicherweise nicht genügend Daten vor, um den Lernprozess abzuschließen. Dies kann dazu führen, dass der Bereitschaftsindikator im Admin so aussieht, als wäre er blockiert.
+Die Bereitschaftsindikatoren sollen Händlern einen weiteren Datenpunkt bei der Auswahl des Empfehlungstyps bieten, der für ihren Store besser ist. Die Zahlen sind ein Leitfaden und werden möglicherweise nie 100 % erreichen.
 
 ## Reserveempfehlungen {#backuprecs}
 
