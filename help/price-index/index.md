@@ -4,9 +4,9 @@ description: Verwenden der SaaS-Preisindizierung zur Leistungsverbesserung
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
-source-git-commit: 3820736a25942b147d6e2c7b8820c360d6a0a535
+source-git-commit: 209bdf9c69ff81481d6df7cb8e8832deef13c9f4
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: '744'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,14 @@ ht-degree: 0%
 Die SaaS-Preisindizierung beschleunigt die Zeit, die benötigt wird, um Preisänderungen auf der Website eines SaaS-Kunden widerzuspiegeln, nachdem sie eingereicht wurden. Dieses optionale Modul ermöglicht Händlern mit großen, komplexen Katalogen oder mit mehreren Websites oder Kundengruppen, Preisänderungen schneller und kontinuierlich zu verarbeiten.
 
 Der größte Engpass der Pipeline: Rechenintensive Prozesse wie Indizierung und Preisberechnung wurden vom PHP-Kern in die Cloud-Infrastruktur der Adobe verschoben. Dadurch können Händler Ressourcen schnell skalieren, um die Indexierungszeiten zu erhöhen, und diese Änderungen an Websites mit viel schnelleren Geschwindigkeiten widerspiegeln.
+
+Der Datenfluss der Core-Indizierung zu SaaS-Diensten sieht wie folgt aus:
+
+![Standarddatenfluss](assets/old_way.png)
+
+Bei SaaS-Preisindizierung lautet der Fluss:
+
+![Datenfluss der SaaS-Preisindizierung](assets/new_way.png)
 
 Alle Händler, die die Anforderungen erfüllen, können von diesen Verbesserungen profitieren, aber diejenigen, die die größten Gewinne erzielen, sind Kunden mit:
 
