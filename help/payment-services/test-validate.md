@@ -2,9 +2,9 @@
 title: Testen und Validieren
 description: Durch Tests und Validierung wird sichergestellt, dass [!DNL Payment Services] Funktionen funktionieren erwartungsgemäß und bieten beste Zahlungsoptionen für Ihre Kunden
 exl-id: 95b4615e-73b0-41e8-83e2-e65a0b22f10f
-source-git-commit: 7bd9212a4c215b4f39051ded0e95b2b7e96fb46f
+source-git-commit: 0324c2d8e34fee0872d5f52ed3a246094b482aa2
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,10 @@ Beim Testen und Validieren Ihrer Sandbox müssen Sie gefälschte Kreditkartennum
 
 Verwenden Sie den Kreditkartengenerator von PayPal, um [Generieren von zufälligen Kreditkarteninformationen](https://www.paypal.com/us/smarthelp/article/where-can-i-find-test-credit-card-numbers-ts2157) für Tests.
 
-Zum Testen der Apple-Bezahlung im Sandbox-Modus benötigen Sie eine [Apple-Sandbox-Tester-Konto](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account), inklusive gefälschter Kreditkarten- und Rechnungsinformationen.
+So testen Sie Apple Pay im Sandbox-Modus:
+
+* Erstellen Sie eine [Apple-Sandbox-Tester-Konto](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account), inklusive gefälschter Kreditkarten- und Rechnungsinformationen.
+* [Sandbox-Domänen registrieren](https://developer.paypal.com/docs/checkout/apm/apple-pay/#link-registeryoursandboxdomains).
 
 >[!NOTE]
 >
@@ -47,6 +50,4 @@ Führen Sie Ihre Produktionstests mit echten Kreditkarten und PayPal-Konten durc
 
 Überprüfen Sie außerdem, ob die in den Bankausweisen angezeigten Informationen für die Zahlungsmethoden, die Sie in Produktionstests verwenden, korrekt und erwartet sind (einschließlich der Beschreibung Ihres Unternehmens).
 
->[!NOTE]
->
->Um die Produktionstests für Apple Pay abzuschließen, müssen Sie sich an den Vertrieb wenden, um Apple Pay für Ihre Produktionsumgebung zu aktivieren.
+Um die Apple-Zahlung im Produktionsmodus zu testen, müssen Sie [Produktionsdomänen registrieren](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain).
