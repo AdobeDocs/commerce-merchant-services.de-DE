@@ -2,7 +2,7 @@
 title: "Facets"
 description: "[!DNL Live Search] Facetten verwenden mehrere Dimensionen von Attributwerten als Suchkriterien."
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 9bacdb5fd232a3603bcb7abe2e93da9ead794d38
+source-git-commit: e1a512d2c9738f05bb8dcb929dccc7ad81cf7e3e
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Die Anforderungen an Kategorie- und Produktattribute für die Facettierung ähne
 
 [!DNL Live Search] unterstützt bis zu:
 
-* 100 Attribute, die als Facetten konfiguriert wurden
+* 200 Attribute, die als Facetten konfiguriert wurden
 * 50 sortierbare Attribute
 * 200 filterbare Attribute
 * 200 durchsuchbare Attribute
