@@ -2,9 +2,9 @@
 title: '''[!DNL Quick Checkout] Versionshinweise'
 description: Informationen zu allen [!DNL Quick Checkout] veröffentlicht.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: d58193b622a1851259b2191ea54ac6b59029dd64
+source-git-commit: 169b3e365d7f4c0c4cef19fa1941dfa0a95ea58b
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1422'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,10 @@ Siehe [Verfügbarkeit](https://devdocs.magento.com/release/availability.html) in
 In diesen Versionshinweisen werden Funktionsänderungen und -korrekturen beschrieben, die außerhalb der regulären Versionen der versionierten Funktionen für das Admin-Bedienfeld veröffentlicht wurden.
 
 +++Admin-Bedienfeldaktualisierungen
+
+23. Mai 2023_
+
+![Problem behoben](../assets/fix.svg)<!-- Issue BOLT-489 --> Nun, die **Neue Konten** -Komponente in [!DNL Quick Checkout] Berichtseite umfasst Funkfrequenzen [Workflow-Symbole](https://react-spectrum.adobe.com/react-spectrum/workflow-icons.html){target=_blank}.
 
 _25. April 2023_
 
