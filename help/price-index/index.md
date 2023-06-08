@@ -4,9 +4,9 @@ description: Verwenden der SaaS-Preisindizierung zur Leistungsverbesserung
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
-source-git-commit: 209bdf9c69ff81481d6df7cb8e8832deef13c9f4
+source-git-commit: a93ada3230d3d29dd6b79f67a61ede38de7dc250
 workflow-type: tm+mt
-source-wordcount: '744'
+source-wordcount: '752'
 ht-degree: 0%
 
 ---
@@ -74,8 +74,8 @@ Der PHP Core-Preisindex kann bei Bedarf durch eine Drittanbietererweiterung oder
 
 Abhängig von Faktoren wie Produkttypen, Preiskomplexität und Kataloggröße kann die SaaS-Preisindizierung die richtige Lösung für Ihr Geschäft sein. Lesen Sie die folgenden Einschränkungen und stellen Sie fest, ob dies eine gute Lösung für Ihre Site ist.
 
-Derzeit unterstützt die SaaS-Preisindizierung einfache, gruppierte, virtuelle, konfigurierbare und gebündelte dynamische Produktarten.
-Die Unterstützung für herunterladbare, vergünstigte und gebündelte Produkttypen wird in Kürze bereitgestellt.s
+Derzeit unterstützt die SaaS-Preisindizierung einfache, gruppierte, virtuelle, konfigurierbare und [Bundle dynamisch](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-bundle.html) Produktarten.
+Die Unterstützung für herunterladbare, vergriffene Karten und behobene Produkttypen von Bundle wird in Kürze angeboten.
 
 Neue Feeds sollten manuell mit der `resync` [CLI, Befehl](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html#resynccmdline). Andernfalls werden die Daten im standardmäßigen Synchronisierungsprozess aktualisiert. Weitere Informationen zu [Katalogsynchronisierung](../landing/catalog-sync.md) Prozess.
 
