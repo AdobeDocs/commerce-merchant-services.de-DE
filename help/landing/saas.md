@@ -2,9 +2,9 @@
 title: Commerce Services Connector
 description: Erfahren Sie, wie Sie Ihre Adobe Commerce- oder Magento Open Source-Instanz mithilfe von Produktions- und Sandbox-API-Schlüsseln in Dienste integrieren.
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 506b00e72d65fbafa071476608bb658cb59404b4
 workflow-type: tm+mt
-source-wordcount: '853'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -111,4 +111,4 @@ Um Ihre Adobe Commerce-Instanz mit Adobe Experience Platform zu verbinden, melde
 
 ## Katalogsynchronisierung
 
-Wenn [!DNL Commerce] -Instanz stellt erfolgreich eine Verbindung zu [!DNL Commerce Services], exportiert der Prozess der Katalogsynchronisierung Produktdaten aus Ihrer [!DNL Commerce] Server zu [!DNL Commerce Services]. [Weitere Infos](catalog-sync.md) Informationen zur Katalogsynchronisierung.
+Wenn [!DNL Commerce] -Instanz stellt erfolgreich eine Verbindung zu [!DNL Commerce Services], exportiert der Prozess der Katalogsynchronisierung Produktdaten aus Ihrer [!DNL Commerce] Server zu [!DNL Commerce Services]. Derzeit verwendet nur Product Recommendations den Dienst für die Katalogsynchronisierung. [Weitere Infos](catalog-sync.md) Informationen zur Katalogsynchronisierung.
