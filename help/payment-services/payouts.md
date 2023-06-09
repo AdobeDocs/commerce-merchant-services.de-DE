@@ -4,9 +4,9 @@ description: Verwenden Sie den Bericht "Auszahlungen", um vollständige Transpar
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
+source-git-commit: 8295b7c4ea407f0528d6be69655a8b12f7defe15
 workflow-type: tm+mt
-source-wordcount: '1335'
+source-wordcount: '1326'
 ht-degree: 0%
 
 ---
@@ -14,8 +14,6 @@ ht-degree: 0%
 # Payouts-Bericht
 
 [!DNL Payment Services] für [!DNL Adobe Commerce] und [!DNL Magento Open Source] bietet Ihnen eine umfassende Berichterstellung, damit Sie einen klaren Überblick über die Bestellungen und Zahlungen Ihres Geschäfts erhalten.
-
-![Übersicht über die Finanzberichte](assets/reports-justpayouts.png)
 
 Es gibt zwei verfügbare Ansichten zur Payouts-Berichterstellung, mit denen Sie detaillierte Informationen zu all Ihren Auszahlungen anzeigen können:
 
@@ -34,7 +32,7 @@ Die Ansicht Payouts-Daten-Visualisierung ist auf der Zahlungsdienst-Startseite v
 
 Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** um das Datenvisualisierungs-Diagramm von Gutschriften im Vergleich zu Lastschriften und die sich bewegenden Durchschnittswerte im Zeitverlauf anzuzeigen.
 
-![Payout-Datenvisualisierung in Admin](assets/payouts-report.png)
+![Payout-Datenvisualisierung in Admin](assets/payouts-report.png){zoomable=yes}
 
 Klicken **[!UICONTROL View Report]** zur detaillierten Tabelle navigieren [Ansicht des Payload-Berichts](#payouts-report-view).
 
@@ -70,13 +68,13 @@ Die Ansicht des Berichts &quot;Payouts&quot;ist in der Ansicht &quot;Payouts&quo
 
 Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]** um die detaillierte Tabellenansicht des Berichts &quot;Payouts&quot;anzuzeigen.
 
-![Zahlungsvorgänge im Admin](assets/payouts-report-new.png)
+![Zahlungsvorgänge im Admin](assets/payouts-report-new.png){zoomable=yes}
 
 Sie können diese Ansicht entsprechend den Abschnitten in diesem Thema konfigurieren, um die gewünschten Daten am besten darzustellen.
 
 Weitere Informationen finden Sie unter verknüpfte Commerce-Bestell- und Transaktions-IDs, Transaktionsbeträge, Zahlungsmethoden pro Transaktion und mehr im Payouts-Bericht in der Admin-Rubrik.
 
-Sie können Zahlungsvorgänge im .csv-Dateiformat herunterladen, um sie in der bestehenden Buchhaltungs- oder Auftragsverwaltungssoftware zu verwenden.
+Sie können [Download-Payload-Transaktionen](#download-transactions) im .csv-Dateiformat zur Verwendung in bestehenden Buchhaltungs- oder Auftragsverwaltungssoftware.
 
 >[!NOTE]
 >
@@ -86,9 +84,9 @@ Sie können Zahlungsvorgänge im .csv-Dateiformat herunterladen, um sie in der b
 
 In der Ansicht des Payouts-Berichts können Sie die Datenquelle auswählen._[!UICONTROL Live]_oder_[!UICONTROL Sandbox]_- für die Sie Berichtsergebnisse anzeigen möchten.
 
-![Auswahl von Datenquellen](assets/datasource.png)
+![Auswahl von Datenquellen](assets/datasource.png){width=400px}
 
-Wenn _[!UICONTROL Live]_die ausgewählte Datenquelle ist, können Sie Berichtinformationen für Ihre Live Stores anzeigen. Wenn [!UICONTROL Sandbox]_ die ausgewählte Datenquelle ist, können Sie Berichtinformationen für Ihre Sandbox-Umgebung anzeigen.
+Wenn _[!UICONTROL Live]_die ausgewählte Datenquelle ist, können Sie Berichtinformationen für Stores im Produktionsmodus anzeigen. Wenn_[!UICONTROL Sandbox]_ die ausgewählte Datenquelle ist, können Sie die Berichtinformationen sehen, die im Sandbox-Modus gespeichert sind.
 
 Datenquellenauswahlen funktionieren wie folgt:
 
@@ -154,27 +152,27 @@ Payout-Berichte enthalten die folgenden Informationen.
 | [!UICONTROL Code] | Transaktionscode, der entweder einen Kredit (*CR*) oder Schulden (*DR*) |
 | [!UICONTROL Reference ID] | Ursprüngliche Transaktions-ID, mit der dieses Ereignis verknüpft ist |
 | [!UICONTROL Invoice] | Rechnungskennung (eine pro Bestellung) der Transaktion |
-| [!UICONTROL Commerce order] | Commerce-Bestell-ID <br> <br>So sehen Sie verwandte [Bestellinformationen](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}klicken Sie auf die ID. |
-| [!UICONTROL Commerce trans] | Transaktions-ID <br> <br>So sehen Sie verwandte [Transaktionsinfo](https://docs.magento.com/user-guide/sales/transactions.html){target="_blank"}klicken Sie auf die ID. |
-| [!UICONTROL Pay method] | Kreditkartenart—*[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL APPLE_PAY]*, *[!UICONTROL CREDIT_CARD]*- und dem zugehörigen Kartenanbieter (z. B. *Visagebühren* oder *MasterCard*) |
-| [!UICONTROL Trans amt] | Transaktionsbetrag |
-| [!UICONTROL Cur] | Währungseinheit für Transaktionsbetrag |
-| [!UICONTROL Pending] | Noch auszuzahlender Betrag |
-| [!UICONTROL Cur] | Währungseinheit für den ausstehenden Betrag |
-| [!UICONTROL Seller amt] | Geldbetrag, der an einen Kunden oder von einem Kunden übertragen wird <br> <br>Fonds, die aus dem Verkaufskonto aussteigen, weisen ein Bindestrich (-)-Präfix auf. |
-| [!UICONTROL Cur] | Währungseinheit für den Verkäuferbetrag |
-| [!UICONTROL Partner fee] | Mit der Transaktion verbundene Partnergebühren <br> <br>Für Fonds, die aus dem Partnergebührenkonto aussteigen, wird ein Bindestrich (-)-Präfix angezeigt. |
-| [!UICONTROL Cur] | Währungseinheit für die Partnergebühr |
-| [!UICONTROL Prov fees] | Mit der Transaktion verbundene Gebühren <br> <br>Für Fonds, die aus dem Gebührenkonto des Providers aussteigen, wird ein Bindestrich (-)-Präfix angezeigt. |
-| [!UICONTROL Cur] | Währungseinheit für die Provider-Gebühr |
-| [!UICONTROL Fee %] | Prozentsatz des als Gebühr in Rechnung gestellten Transaktionsbetrags |
-| [!UICONTROL Fixed fee] | Feste Anbietergebühr |
-| [!UICONTROL Chbk fee] | Chargeback-Gebühr im Zusammenhang mit der Transaktion <br> <br>Ein Bindestrich (-)-Präfix zeigt an, dass die Chargeback-Gebühr umgekehrt wurde. |
-| [!UICONTROL Cur] | Währungseinheit für die Chargeback-Gebühr |
-| [!UICONTROL Hold amt] | Auf Lager gehaltene oder aus dem Wartezustand freigegebene Menge <br> <br>Ein Bindestrich (-)-Präfix gibt an, dass auf Eis gelegene Mittel freigegeben werden. |
-| [!UICONTROL Cur] | Währungseinheit für den Halten-Betrag |
-| [!UICONTROL Recoup amt] | Aus dem Konto eingezogener Betrag <br> <br>Bei aus dem Konto ausgehenden Fonds wird ein Bindestrich (-) vorangestellt. |
-| [!UICONTROL Cur] | Währungseinheit für den Rückforderungsbetrag |
+| [!UICONTROL Commerce order] | Commerce-Bestell-ID <br> <br>So sehen Sie verwandte [Bestellinformationen](https://docs.magento.com/user-guide/sales/orders.html)klicken Sie auf die ID. |
+| [!UICONTROL Commerce trans] | Transaktions-ID |
+| [!UICONTROL Pay method] | Kreditkartenart—*[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL CREDIT_CARD]*- und dem zugehörigen Kartenanbieter (z. B. *Visagebühren* oder *MasterCard*) |
+| [!UICONTROL TRANS AMT] | Transaktionsbetrag |
+| [!UICONTROL CUR] | Währungseinheit für Transaktionsbetrag |
+| [!UICONTROL PENDING] | Noch auszuzahlender Betrag |
+| [!UICONTROL CUR] | Währungseinheit für den ausstehenden Betrag |
+| [!UICONTROL SELLER AMT] | Geldbetrag, der an einen Kunden oder von einem Kunden übertragen wird <br> <br>Fonds, die aus dem Verkaufskonto aussteigen, weisen ein Bindestrich (-)-Präfix auf. |
+| [!UICONTROL CUR] | Währungseinheit für den Verkäuferbetrag |
+| [!UICONTROL PARTNER FEE] | Mit der Transaktion verbundene Partnergebühren <br> <br>Für Fonds, die aus dem Partnergebührenkonto aussteigen, wird ein Bindestrich (-)-Präfix angezeigt. |
+| [!UICONTROL CUR] | Währungseinheit für die Partnergebühr |
+| [!UICONTROL PROV FEES] | Mit der Transaktion verbundene Gebühren <br> <br>Für Fonds, die aus dem Gebührenkonto des Providers aussteigen, wird ein Bindestrich (-)-Präfix angezeigt. |
+| [!UICONTROL CUR] | Währungseinheit für die Provider-Gebühr |
+| [!UICONTROL FEE %] | Prozentsatz des als Gebühr in Rechnung gestellten Transaktionsbetrags |
+| [!UICONTROL FIXED FEE] | Feste Anbietergebühr |
+| [!UICONTROL CHBK FEE] | Chargeback-Gebühr im Zusammenhang mit der Transaktion <br> <br>Ein Bindestrich (-)-Präfix zeigt an, dass die Chargeback-Gebühr umgekehrt wurde. |
+| [!UICONTROL CUR] | Währungseinheit für die Chargeback-Gebühr |
+| [!UICONTROL HOLD AMT] | Auf Lager gehaltene oder aus dem Wartezustand freigegebene Menge <br> <br>Ein Bindestrich (-)-Präfix gibt an, dass auf Eis gelegene Mittel freigegeben werden. |
+| [!UICONTROL CUR] | Währungseinheit für den Halten-Betrag |
+| [!UICONTROL RECOUP AMT] | Aus dem Konto eingezogener Betrag <br> <br>Bei aus dem Konto ausgehenden Fonds wird ein Bindestrich (-) vorangestellt. |
+| [!UICONTROL CUR] | Währungseinheit für den Rückforderungsbetrag |
 
 ### Transaktionstypen
 

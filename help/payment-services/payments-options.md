@@ -2,9 +2,9 @@
 title: Zahlungsoptionen
 description: Legen Sie die Zahlungsoptionen fest, um die für Ihre Store-Kunden verfügbaren Methoden anzupassen.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: 9bc392f2ae12269ded6174b830562444d6827f5f
+source-git-commit: 44d36c530ba95f38c264ac40123ea12ec98c32b3
 workflow-type: tm+mt
-source-wordcount: '1041'
+source-wordcount: '1156'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Sie können auch das Layout, die Breite, die Höhe und den äußeren Stil der Kr
 
 [!DNL PayPal Smart Buttons], die PayPal verwenden, um einen Kauf abzuschließen, speichert die Lieferadresse Ihres Käufers, die Rechnungsadresse und Zahlungsdetails zur späteren Verwendung. Käufer können jede Zahlungsmethode verwenden, die zuvor von PayPal gespeichert oder angeboten wurde.
 
-![[!DNL PayPal Smart Buttons] options](assets/buttons-md.png)
+![[!DNL PayPal Smart Buttons] options](assets/payment-buttons.png){width="500"}
 
 Sie können [!UICONTROL PayPal Smart Buttons] in der Store-Konfiguration oder der Zahlungsdienst-Startseite.  Siehe [Einstellungen](settings.md#payment-buttons) für weitere Informationen.
 
@@ -67,6 +67,14 @@ Die [!DNL Apple Pay] -Schaltfläche ist von der Produktseite aus sichtbar, in de
 >
 > Verwendung [!DNL Apple Pay] für Ihre Filialen [Selbstregistrierung mit [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_Live-Domäne registrieren_ nur -Abschnitt) und [Konfigurieren Sie es für Ihre Stores in [!DNL Payment Services]](settings.md#payment-buttons).
 
+### Schaltfläche &quot;PayPal Debit&quot;oder &quot;Kreditkarte&quot;
+
+Kunden können mit der Schaltfläche PayPal Debit oder Kreditkarte auschecken.
+
+Die Schaltfläche PayPal Debit oder Kreditkarte ist auf der Checkout-Seite sichtbar.
+
+Diese Option kann verwendet werden, um Ihren Kunden eine PayPal Debit- oder Kreditkartenzahlungsoption zu präsentieren, wenn Sie keinen anderen Kreditkartenanbieter haben.
+
 ### [!DNL Pay Later] button
 
 Bieten Sie Ihren Kunden kurzfristige, zinsfreie Zahlungen und andere Finanzierungsoptionen an, damit sie jetzt kaufen und später mit dem [!DNL Pay Later] Schaltfläche.
@@ -76,9 +84,9 @@ Die [!DNL Pay Later] -Schaltfläche ist von der Produktseite aus sichtbar, in de
 * **Wenn ein Kunde ein Produkt zwischen 30 und 600 $ auswählt**, Nachrichten unter dem PayPal und [!DNL Pay Later] -Schaltflächen geben dem Kunden weitere Informationen zu [!DNL Pay in 4] Zahlungsoption. Kunden können auf **Weitere Infos** Informationen zum &quot;[!DNL Pay in 4]&quot;-Option _oder_ Klicken Sie auf den Text &quot;Oder sehen Sie 6 Monate Sonderfinanzierung&quot; im Popup, um mehr über die PayPal-Kreditoption zu erfahren und sie zu bewerben.
 * **Wenn ein Kunde ein Produkt oder Produkte auswählt, die über 98,99 USD hinausgehen**, Nachrichten unter dem PayPal und [!DNL Pay Later] -Schaltflächen bieten Kunden weitere Informationen zur Zahlungsoption PayPal Credit. Kunden können auf **Weitere Infos** Informationen zur PayPal-Kreditoption und deren Beantragung, _oder_ Klicken Sie auf den Text &quot;Oder sehen Sie Bezahlen in 4&quot;im Popup, um mehr über die [!DNL Pay in 4] -Option.
 
-   >[!NOTE]
-   >
-   >Die oben aufgeführten Beträge können sich ändern.
+  >[!NOTE]
+  >
+  >Die oben aufgeführten Beträge können sich ändern.
 
 Siehe [Einstellungen](settings.md#payment-buttons) , um zu erfahren, wie Sie die [!DNL Pay Later] Messaging.
 
@@ -93,6 +101,29 @@ Die [!DNL Pay Now] -Schaltfläche im PayPal-Popup-Fenster angezeigt, wenn ein Ku
 
 Wenn der endgültige Bestellbetrag noch nicht bekannt ist (z. B. wenn Sie noch keine Versandadressen-Informationen haben) und der Kunde gerade von der Produktseite, dem Mini-Warenkorb oder dem Warenkorb auscheckt, wird ein _Weiter_ -Schaltfläche verfügbar. Klickt ein Kunde _Weiter_, nachdem sie ihre Zahlungsmethode bestätigt haben, werden sie auf eine Bestellüberprüfungsseite geleitet, um die erforderlichen Details zu erfassen, bevor sie den Kassengang abschließen.
 
+## Verwenden Sie nur PayPal-Zahlungsschaltflächen
+
+Um Ihren Store schnell in den Produktionsmodus zu bringen, können Sie Folgendes konfigurieren: _only_ PayPal-Zahlungsschaltflächen (Venmo, PayPal usw.)—anstatt auch die Zahlungsoption PayPal Kreditkarte zu verwenden.
+
+Dies ermöglicht Ihnen Folgendes:
+
+* Stellen Sie eine Vielzahl von Zahlungsoptionen für Ihre Kunden bereit, ohne die Kreditkartengenehmigung über PayPal zu beantragen.
+* Nutzen Sie Ihren bestehenden Kreditkartenanbieter für Kreditkartenzahlungen und nutzen Sie gleichzeitig die anderen Zahlungsoptionen von PayPal.
+* Verwenden Sie die Zahlungsschaltflächen von PayPal in einer Region, in der PayPal keine Kreditkarten als Zahlungsoption unterstützt.
+
+nach **Erfassen von Zahlungen mit _only_ PayPal-Zahlungsschaltflächen (_not_ die Zahlungsoption PayPal für Kreditkarten)**:
+
+1. Stellen Sie sicher, dass Ihr Store [im Produktionsmodus](settings.md#enable-payment-services).
+1. [Konfigurieren der gewünschten PayPal-Zahlungsschaltflächen](settings.md#payment-buttons) in den Einstellungen.
+1. drehen _Aus_ die **[[!UICONTROL Show PayPal Credit and Debit card button]](settings.md#payment-buttons)** in der _[!UICONTROL Payment buttons]_Abschnitt.
+
+nach **Zahlungen mit Ihrem bestehenden Kreditkartenanbieter erfassen _und_ PayPal-Zahlungsschaltflächen**:
+
+1. Stellen Sie sicher, dass Ihr Store [im Produktionsmodus](settings.md#enable-payment-services).
+1. [Konfigurieren der gewünschten PayPal-Zahlungsschaltflächen](settings.md#payment-buttons).
+1. drehen _Aus_ die **[[!UICONTROL PayPal Show Credit and Debit card button]](settings.md#payment-buttons)** in der _[!UICONTROL Payment buttons]_Abschnitt.
+1. drehen _Aus_ die **[[!UICONTROL Show on checkout page]](settings.md#credit-card-fields)** in der _[!UICONTROL Credit card fields]_und verwenden Sie Ihre [bestehendes Kreditkartenkonto](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments).
+
 ## Auftragsumberechnung
 
 Wenn ein Kunde von der Mini-Warenkorb-, Warenkorb- oder Produktseite aus in den Kassengang wechselt, wird er auf eine Seite zur Überprüfung der Bestellung weitergeleitet, auf der er die ausgewählte Lieferadresse in einem PayPal-Popup-Fenster sehen kann. Nachdem der Kunde die Versandmethode ausgewählt hat, wird der Auftragsbetrag entsprechend neu berechnet und der Kunde kann Versandkosten und Steuern sehen.
@@ -100,14 +131,6 @@ Wenn ein Kunde von der Mini-Warenkorb-, Warenkorb- oder Produktseite aus in den 
 Wenn ein Kunde von der Checkout-Seite aus in den Checkout-Fluss eintritt, kennt das System bereits die Lieferadresse und den endgültigen berechneten Betrag und die Summen werden angemessen dargestellt.
 
 Steuerferien, Versandkosten und Umsatzsteuern können von Ort zu Ort sehr variieren. Nachher [!DNL Payment Services] die Lieferadresse und den Preis erhalten, berechnet sie schnell alle anwendbaren Kosten neu und zeigt sie in den letzten Phasen des Auscheckens entsprechend an.
-
-## Kasse von der Produktseite
-
-Wenn ein Kunde direkt von der Produktseite aus mit PayPal auscheckt oder [!DNL Pay Later] -Schaltflächen, wird nur der Artikel gekauft, der auf der aktuellen Produktseite dargestellt wird. Artikel, die sich bereits im Warenkorb des Kunden befinden, werden nicht zum Kassengang hinzugefügt und werden nicht gekauft.
-
-Wenn der Kunde die Bestellung storniert, wird der Artikel auf der aktuellen Produktseite zum Warenkorb des Kunden hinzugefügt, zusammen mit allen anderen Artikeln im Warenkorb. Mit dieser Funktion kann der Kunde den Artikel, den er gerade anzeigt, schnell kaufen und gleichzeitig alle anderen Artikel beibehalten, die er zuvor beim Durchsuchen von Produkten zum Warenkorb hinzugefügt hat.
-
-Wenn ein Kunde von der Produktseite aus in den Checkout-Fluss wechselt, wird die Checkout-Seite vereinfacht. In der Ansicht werden nur die bestellbaren Daten und Optionen angezeigt.
 
 ## Kreditkartenausnahme
 

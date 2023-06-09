@@ -4,9 +4,9 @@ description: Verwenden Sie den Bestellstatusbericht, um mehr über den Zahlungss
 role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
-source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
+source-git-commit: 8295b7c4ea407f0528d6be69655a8b12f7defe15
 workflow-type: tm+mt
-source-wordcount: '1416'
+source-wordcount: '1828'
 ht-degree: 0%
 
 ---
@@ -15,13 +15,12 @@ ht-degree: 0%
 
 [!DNL Payment Services] für [!DNL Adobe Commerce] und [!DNL Magento Open Source] bietet Ihnen eine umfassende Berichterstellung, damit Sie einen klaren Überblick über die Bestellungen und Zahlungen Ihres Geschäfts erhalten.
 
-![Übersicht über die Finanzberichte](assets/reports-justpayouts.png)
+Es gibt zwei verfügbare Ansichten zum Bestellstatus, mit denen Sie schnell den Zahlungsstatus Ihrer Bestellungen anzeigen können:
 
-Der Bericht über den Bestellstatus zeigt Ihnen, wo sich eine bestimmte Bestellung innerhalb des Bestellprozesses befindet. Dieser Bericht ermöglicht es Ihnen, schnell den Zahlungsstatus Ihrer Bestellungen anzuzeigen und potenzielle Probleme zu identifizieren.
+* **[Visualisierung des Bestellstatus](#order-payment-status-data-visualization-view)**—Auf der Zahlungsdienst-Startseite verfügbares Diagramm, das eine visuelle Darstellung des aggregierten Zahlungsstatus pro Tag in der Ansicht des Bestellstatus-Berichts darstellt
+* **[Berichtansicht zum Bestellstatus](#order-payment-status-report-view)**—Bericht verfügbar im Bestellstatus, der detaillierte Zahlungs-, Fakturierungs-, Versand-, Erstattungs- und Streitstatusangaben für alle Transaktionen anzeigt
 
-Sie müssen nicht mehrere Ansichten öffnen, um Referenzaufträge und Zahlungen manuell zu vergleichen. [!DNL Payment Services] für [!DNL Adobe Commerce] und [!DNL Magento Open Source] bietet Ihnen die Möglichkeit, sich einen Überblick über Ihre Bestellungen und Zahlungen zu verschaffen - alles im Bestellstatusbericht.
-
-Weitere Informationen finden Sie in diesem Bericht im Admin-Bereich unter Zahlungsstatus, Status der Fakturierung und des Versands, Status der Rückerstattung, Status von Streitigkeiten und mehr.
+Mit den Statusansichten für die Bestellzahlung können Sie leicht erkennen, wo sich eine bestimmte Bestellung innerhalb des Bestellablaufs befindet. Diese Berichte ermöglichen es Ihnen, Bestellungen schnell anzuzeigen - basierend auf ihrem Zahlungsstatus und Zahlungsdatum - und potenzielle Probleme zu identifizieren.
 
 Sie können Bestellungsstatustransaktionen im .csv-Dateiformat herunterladen, um sie in bestehenden Buchhaltungs- oder Auftragsverwaltungssoftware zu verwenden.
 
@@ -29,7 +28,61 @@ Sie können Bestellungsstatustransaktionen im .csv-Dateiformat herunterladen, um
 >
 >Sie können keine Finanzberichte anzeigen, wenn Sie [integrierte und aktivierte Livemodus](production.md#enable-live-payments) für [!DNL Payment Services].
 
-## Im Bericht verwendete Daten
+## Datenvisualisierung zum Bestellstatus
+
+Die Visualisierung der Daten zum Bestellstatus ist auf der Zahlungsdienst-Startseite verfügbar. Es handelt sich um eine visuelle Darstellung des aggregierten tägliche Zahlungsstatus aus der detaillierten Tabelle [Berichtansicht zum Bestellstatus](#order-payment-status-report-view).
+
+Im _Admin_ Seitenleiste, navigieren Sie zu **Vertrieb** > **Zahlungsdienste** um die Datenvisualisierung anzuzeigen [Grafik des Zahlungsstatus](#statuses-information).
+
+![Payout-Datenvisualisierung in Admin](assets/orderpayment-dataviz.png){zoomable=yes}
+
+Klicken **Bericht anzeigen** zur detaillierten Tabelle navigieren [Berichtansicht zum Bestellstatus](#order-payment-status-report-view).
+
+### Zeitrahmen für Status anpassen
+
+Standardmäßig werden 30 Tage Zahlungsstatus angezeigt.
+
+In der Visualisierung des Bestellstatus können Sie den Zeitrahmen für die Zahlungsstatus, die Sie anzeigen möchten, anpassen, indem Sie einen Datumsbereich auswählen:
+
+1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**. Die Visualisierung der Daten zum Bestellzahlungsstatus wird im Abschnitt Bestellzahlstatus angezeigt.
+1. Klicken Sie auf **[!UICONTROL Range]** Auswahlfilter.
+1. Wählen Sie den entsprechenden Datumsbereich aus: 30 Tage, 15 Tage oder 7 Tage.
+1. Zeigen Sie die Statusinformationen für die angegebenen Daten an.
+
+### Statusinformationen
+
+Die Zahlungsstatus für einen ausgewählten Datumsbereich werden links in der Datenvisualisierung Bestellstatus-Daten angezeigt. Die Datumsangaben für den ausgewählten Datumsbereich werden unten in der Ansicht angezeigt. Wenn an einem bestimmten Datum keine Bestellungen eingegangen sind, wird dieses Datum nicht angezeigt.
+
+Die Datenvisualisierung zum Bestellstatus enthält die folgenden Informationen.
+
+| Daten | Beschreibung |
+| ------------ | -------------------- |
+| [!UICONTROL Orders] | Umfang der Bestellungen im angegebenen Zeitrahmen; Daten auf der Y-Achse (links) |
+| Datumsbereich | Datumsbereich für den angegebenen Zeitraum; Daten auf der X-Achse (unten) |
+| Autorisiert | Auftrag |
+| Beantragte Aufnahme | Beantragte Aufnahme zur Bestellung |
+| Erfassung bestätigt | Auftragserfassung abgeschlossen |
+| Partielle Erfassung | Teilweise erfasste Reihenfolge |
+| Aufnahme fehlgeschlagen | Auftragserfassung fehlgeschlagen |
+| Voided | Reihenfolge aufgehoben |
+
+## Berichtansicht zum Bestellstatus
+
+Die Übersicht über den Bestellstatus-Bericht finden Sie in der Statusansicht der Zahlungsdienste. Sie enthält detaillierte Status für alle Transaktionen - Zahlung, Fakturierung, Versand, Rückerstattung, Streitigkeit und mehr. Die [Datenvisualisierung zum Bestellstatus](#order-payment-status-data-visualization-view) in der Zahlungsdienst-Startseite ist eine visuelle Darstellung des aggregierten Zahlungsstatus pro Tag aus der Berichtansicht des Bestellstatus.
+
+Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Order payment status]** um die detaillierte Tabellenansicht des Bestellstatus-Berichts anzuzeigen.
+
+![Bestellstatustransaktionen in der Admin-Konsole](assets/orders-report-data.png)
+
+Sie können diese Ansicht entsprechend den Abschnitten in diesem Thema konfigurieren, um die gewünschten Daten am besten darzustellen.
+
+Sie können [Download-Payload-Transaktionen](#download-order-payment-statuses) im .csv-Dateiformat zur Verwendung in bestehenden Buchhaltungs- oder Auftragsverwaltungssoftware.
+
+>[!NOTE]
+>
+>Die in dieser Tabelle angezeigten Daten werden in absteigender Reihenfolge sortiert (`DESC`) standardmäßig mithilfe der `TRANS DATE`. Die `TRANS DATE` ist das Datum und die Uhrzeit, zu der die Transaktion eingeleitet wurde.
+
+### Im Bericht verwendete Daten
 
 Die [!DNL Payment Services] -Modul verwendet Bestelldaten und kombiniert sie mit aggregierten Zahlungsdaten aus anderen Quellen (einschließlich PayPal), um aussagekräftige und sehr nützliche Berichte bereitzustellen.
 
@@ -49,7 +102,7 @@ Die einzigen Daten, die zu Berichtszwecken exportiert und erfasst werden, sind D
 >
 >Die in dieser Tabelle angezeigten Daten werden in absteigender Reihenfolge sortiert (`DESC`) standardmäßig mithilfe der `ORDER DATE`. Die `ORDER DATE` ist der Datum-Zeitstempel, an dem die Bestellung erstellt wurde.
 
-### Datenexport konfigurieren
+#### Datenexport konfigurieren
 
 Auch wenn die Neuindizierung standardmäßig in `ON SAVE` -Modus wird empfohlen, die Indizierung in `BY SCHEDULE` -Modus. Die `BY SCHEDULE` Der Index wird auf einem Cron-Zeitplan von einer Minute ausgeführt und alle geänderten Daten werden innerhalb von zwei Minuten nach jeder Datenänderung im Bestellstatusbericht angezeigt. Diese geplante Neuindizierung hilft Ihnen, den Aufwand für Ihren Store zu reduzieren, insbesondere wenn Sie eine große Menge eingehender Bestellungen haben, da dies planmäßig erfolgt (nicht bei jeder Bestellung).
 
@@ -57,19 +110,13 @@ Sie können den Indexmodus ändern.`ON SAVE` oder `BY SCHEDULE`—[im Admin](htt
 
 Informationen zum Konfigurieren des Datenexports finden Sie unter [Befehlszeilenkonfiguration](configure-cli.md#configure-data-export).
 
-## Verfügbarkeit
-
-Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Order payment status]** um den Zahlungsstatus Ihrer Bestellungen anzuzeigen.
-
-![Status der Bestellauszahlung in der Admin-Konsole](assets/order-payment-status-report.png)
-
-## Datenquelle auswählen
+### Datenquelle auswählen
 
 In der Berichtansicht Bestellzahlstatus können Sie die Datenquelle auswählen._[!UICONTROL Live]_oder_[!UICONTROL Sandbox]_- für die Sie Berichtsergebnisse anzeigen möchten.
 
-![Auswahl von Datenquellen](assets/datasource.png)
+![Auswahl von Datenquellen](assets/datasource.png){width=400px}
 
-Wenn _[!UICONTROL Live]_die ausgewählte Datenquelle ist, können Sie Berichtinformationen für Ihre Stores anzeigen, die [!DNL Payment Services] in_[!UICONTROL Live]_ -Modus. Wenn [!UICONTROL Sandbox]_ die ausgewählte Datenquelle ist, können Sie Berichtinformationen für Ihre Sandbox-Umgebung anzeigen.
+Wenn _[!UICONTROL Live]_die ausgewählte Datenquelle ist, können Sie Berichtinformationen für Ihre Stores anzeigen, die [!DNL Payment Services] im Produktionsmodus. Wenn_[!UICONTROL Sandbox]_ die ausgewählte Datenquelle ist, können Sie Berichtinformationen für den Sandbox-Modus anzeigen.
 
 Datenquellenauswahlen funktionieren wie folgt:
 
@@ -84,7 +131,7 @@ So wählen Sie die Datenquelle für Ihre [!UICONTROL Order Payment Status] Beric
 
    Die Berichtsergebnisse werden basierend auf der ausgewählten Datenquelle neu generiert.
 
-## Datum und Zeitrahmen anpassen
+### Datum und Zeitrahmen anpassen
 
 In der Berichtansicht Bestellzahlungsstatus können Sie den Zeitrahmen der Status, die Sie anzeigen möchten, anpassen, indem Sie bestimmte Daten auswählen. Standardmäßig werden 30 Tage Bestellzahlstatus im Raster angezeigt.
 
@@ -93,7 +140,7 @@ In der Berichtansicht Bestellzahlungsstatus können Sie den Zeitrahmen der Statu
 1. Wählen Sie den entsprechenden Datumsbereich aus.
 1. Zeigen Sie die Bestellzahlstatus für Ihre angegebenen Daten im Raster an.
 
-## Spalten ein- und ausblenden
+### Spalten ein- und ausblenden
 
 Der Bericht Bestellzahlstatus zeigt standardmäßig alle verfügbaren Informationsspalten an. Sie können jedoch anpassen, welche Spalten in Ihrem Bericht angezeigt werden.
 
@@ -103,11 +150,11 @@ Der Bericht Bestellzahlstatus zeigt standardmäßig alle verfügbaren Informatio
 
    Im Bericht Bestellzahlstatus werden alle Änderungen angezeigt, die Sie im Menü Spalteneinstellungen vorgenommen haben. Die Spaltenvoreinstellungen werden gespeichert und bleiben in Kraft, wenn Sie von der Berichtsansicht weg navigieren.
 
-## Status anzeigen
+### Status anzeigen
 
 Die Ansicht des Bestellstatus-Berichts zeigt für jede Bestellung von Zahlungsdiensten umfassende Informationen zum Transaktionsstatus und Zahlstatus an.
 
-### Transaktionsstatus
+#### Transaktionsstatus
 
 Standardmäßig werden 30 Tage Bestellzahlstatus im Raster angezeigt.
 
@@ -115,15 +162,15 @@ Scrollen Sie nach links und rechts, um [Bestellstatusangaben](#column-descriptio
 
 Die Anzahl der Zeilen, die bei einer Suche zurückgegeben oder in den standardmäßigen 30 Tagen des Bestellzahlstatus angezeigt werden, wird über dem Raster der Statusanzeige für Bestellungen neben dem Auswahlfilter für Bestelldaten-Kalender angezeigt.
 
-### Zahlungsstatus
+#### Zahlungsstatus
 
 In der Spalte Zahlungsstatus wird der aktuelle Status einer Zahlung angezeigt. A `Capture failed` Die Zahlung zeigt einen roten Warnstatus und eine `Voided` Die Zahlung zeigt einen grauen Warnstatus an.
 
-### Erstattungsstatus
+#### Erstattungsstatus
 
 In der Spalte Rückerstattungsstatus wird der aktuelle Status einer Rückerstattung angezeigt. A `Capture failed` Die Zahlung zeigt einen roten Warnstatus und eine `Voided` Die Zahlung zeigt einen grauen Warnstatus an.
 
-## Berichtdaten aktualisieren
+### Berichtdaten aktualisieren
 
 Die Ansicht des Bestellstatus-Berichts zeigt eine _[!UICONTROL Last updated]_Zeitstempel, der das letzte Mal angibt, dass die Berichtinformationen aktualisiert wurden. Standardmäßig werden die Daten des Berichts zum Bestellstatus alle drei Stunden automatisch aktualisiert.
 
@@ -134,7 +181,7 @@ Sie können auch manuell eine Aktualisierung der Berichtdaten zum Bestellzahlung
 
    Die Daten des Berichts zum Bestellstatus werden aktualisiert, und *[!UICONTROL Update complete]* -Bestätigung angezeigt und die neuesten Informationen im Raster vorhanden sind.
 
-## Streitigkeiten anzeigen
+### Streitigkeiten anzeigen
 
 Sie können alle Streitigkeiten bezüglich der Bestellungen Ihres Ladens einsehen und zum PayPal-Abwicklungszentrum navigieren, um über den Bestellstatusbericht darauf zu reagieren.
 
@@ -146,7 +193,7 @@ Sie können alle Streitigkeiten bezüglich der Bestellungen Ihres Ladens einsehe
 
    Klicken Sie auf die Spaltenüberschrift &quot;Streitigkeiten&quot;, um die Streitigkeiten nach Status zu sortieren.
 
-## Zahlungsstatus der Bestellung herunterladen
+### Zahlungsstatus der Bestellung herunterladen
 
 Sie können eine CSV-Datei mit allen Status herunterladen, die im Raster der Bestellzahlungsansicht angezeigt werden, unabhängig davon, ob Sie den standardmäßigen Status von 30 Tagen oder einen benutzerdefinierten Zeitrahmen anzeigen.
 
@@ -171,11 +218,7 @@ These order payment status timeframes are currently available in [!DNL Payment S
 | Custom range | Available from the Order payment status dates selector, this can be filtered to show a custom date range. |
 -->
 
-## Statusinformationen zur Bestellzahlung
-
-In der Statusansicht der Bestellzahlung werden für jeden Status, der im Raster angezeigt wird, umfangreiche Informationen angezeigt.
-
-### Spaltenbeschreibungen
+#### Statusinformationen
 
 Berichte zum Bestellstatus enthalten die folgenden Informationen.
 

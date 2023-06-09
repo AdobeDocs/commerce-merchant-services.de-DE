@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] Versionshinweise"
 description: Informationen zu allen [!DNL Payment Services] veröffentlicht.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: e076864a117be007eeb8003d9d6a472b704996ba
+source-git-commit: e9209d7361d0dd6b6f502df9a898a5a35c53ec1a
 workflow-type: tm+mt
-source-wordcount: '1758'
+source-wordcount: '1971'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,16 @@ Siehe [Verfügbarkeit](https://devdocs.magento.com/release/availability.html) in
 In diesen Versionshinweisen werden Funktionsänderungen und -korrekturen beschrieben, die außerhalb der regulären Versionen der gehosteten Funktionen für den gehosteten Dienst veröffentlicht wurden.
 
 +++Hosting-Dienstaktualisierungen
+
+_9. Juni 2023_
+
+![Neu](../assets/new.svg)<!-- Issue PAY-4288 --> Jetzt können Händler [konfigurieren _only_ PayPal-Zahlungsschaltflächen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#use-only-paypal-payment-buttons)—und _not_ Verwenden Sie die PayPal Kreditkartenzahlungsoption, um eine Vielzahl von Zahlungsoptionen bereitzustellen, ohne die Genehmigung der PayPal-Kreditkarte zu beantragen.
+
+![Neu](../assets/new.svg)<!-- Issue PAY-4050 --> Eine [Datenvisualisierungsansicht](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#order-payment-status-data-visualization-view), der auf der Zahlungsdienst-Startseite für den Bericht Bestellzahlstatus angezeigt wird.
+
+![Problem behoben](../assets/fix.svg)<!-- Issue PAY-4486--> Zuvor wurde die Schaltfläche PayPal PayLater nicht beim Checkout für Händler in Großbritannien angezeigt. Dieses Problem ist gelöst.
+
+![Problem behoben](../assets/fix.svg)<!-- Issue PAY-4485--> Visualisierungsansichten für Berichtsdaten werden jetzt auf der Zahlungsdienst-Startseite angezeigt, wenn Zahlungsdienste deaktiviert sind.
 
 _25. Januar 2023_
 
@@ -56,6 +66,22 @@ _28. Juni 2021_
 ![Neu](../assets/new.svg)<!-- Issue PAY-2761 --> Sie können jetzt die Daten anpassen, die im [Bestellstatusbericht](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) und [Zahlungsbericht](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) durch Einblenden oder Ausblenden von Spalten mithilfe des Steuerelements Spalteneinstellungen.
 
 +++
+
+## v2.1.0
+
+_9. Juni 2023_
+
+[!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"}
+
+![Neu](../assets/new.svg)<!-- Issue xxx --> Unterstützung für Adobe Commerce 2.4.7-beta1 hinzugefügt.
+
+![Neu](../assets/new.svg)<!-- Issue xxx --> Hinzugefügt [Verfügbarkeit in den folgenden Ländern und assoziierten Währungen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html#availability): Australien, Frankreich, Vereinigtes Königreich.
+
+![Neu](../assets/new.svg)<!-- Issue PAY-4296 --> Hinzugefügt [Erweiterte Ressourcen für Admin-Rollen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-roles) um sicherzustellen, dass Admin-Benutzer Bestellungen für Kunden erstellen und verwalten können und Zahlungsdienste im Menü &quot;Verkauf&quot;angezeigt werden.
+
+![Neu](../assets/new.svg)<!-- Issue PAY-4236 --> Hinzugefügt [automatische Aufhebung von Bestellungen, die beim Checkout Fehler verursachen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/checkout.html#order-auto-voided-if-error).
+
+![Neu](../assets/new.svg)<!-- Issue PAY-4183 --> Erstellte Funktionalität zu [Schaltfläche für die Zahlungsoption von Kredit-/Debitkarten anzeigen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#debit-or-credit-card-button) auf der Checkout-Seite.
 
 ## v2.0.0
 
