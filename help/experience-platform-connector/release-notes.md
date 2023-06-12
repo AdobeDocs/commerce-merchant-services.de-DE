@@ -2,9 +2,9 @@
 title: Versionshinweise
 description: Die aktuellen Versionsinformationen zum Adobe Experience Platform Connector von Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: 22823b662eefa953fcca6ae78f6c37ee8abff3d1
+source-git-commit: b48f9eadda233f4996f1e1d806ecc973cfd241c2
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '371'
 ht-degree: 1%
 
 ---
@@ -28,6 +28,11 @@ Siehe die Entwicklerdokumentation zu [Informationen zur Produktkompatibilität](
 In diesen Versionshinweisen werden Funktionsänderungen und Fehlerbehebungen im Zusammenhang mit Erweiterungen beschrieben, die vom Experience Platform-Connector verwendet werden.
 
 +++Unterstützte Dienstaktualisierungen
+
+_10. Juni 2023_
+
+* ![Fehlerbehebung](../assets/fix.svg) - Es wurde ein Problem behoben, das bei `orderId` aufgrund von Präfixen in der Commerce-Bestellkennung nicht im Kontext übergeben wurde.
+* ![Fehlerbehebung](../assets/fix.svg) - Konfigurationen der Inhaltssicherheitsrichtlinie wurden aktualisiert.
 
 _30. März 2023_
 

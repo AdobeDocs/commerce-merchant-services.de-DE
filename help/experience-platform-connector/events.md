@@ -2,9 +2,9 @@
 title: Veranstaltungen
 description: Erfahren Sie, welche Daten von den einzelnen Ereignissen erfasst werden.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: ddacfc053f83be750c63ba376519169b38f7f478
+source-git-commit: 7b34b66d5fb199e75b321a7d7ff0f98a3a0dcf8b
 workflow-type: tm+mt
-source-wordcount: '4596'
+source-wordcount: '4605'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Zusätzlich zu den Daten, die die folgenden Ereignisse erfassen, erhalten Sie au
 
 ## Storefront-Ereignisse
 
-Die Storefront-Ereignisse erfassen anonymisierte Verhaltensdaten von Ihren Käufern beim Durchsuchen Ihrer Site. Die von diesen Ereignissen erfassten Daten können verwendet werden, um Promotions und Kampagnen zu erstellen, die auf einen bestimmten Satz von Käufern ausgerichtet sind.
+Die Storefront-Ereignisse erfassen anonymisierte Verhaltensdaten von Ihren Käufern beim Durchsuchen Ihrer Site. Sie können die von diesen Ereignissen erfassten Daten verwenden, um Promotions und Kampagnen zu erstellen, die auf einen bestimmten Satz von Käufern ausgerichtet sind. Storefront-Ereignisdaten umfassen nur einfache und konfigurierbare Produkte.
 
 >[!NOTE]
 >
