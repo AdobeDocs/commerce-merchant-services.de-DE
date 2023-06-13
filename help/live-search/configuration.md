@@ -1,9 +1,10 @@
 ---
-title: "Commerce-Konfigurationseinstellungen und [!DNL Live Search] "
-description: "Beschreibt die Adobe Commerce-Konfigurationseinstellungen, die [!DNL Live Search] kann lesen."
-source-git-commit: 10edbb6127405d45c06d4c8ffc89d92a6ca061c3
+title: '"Commerce-Konfigurationseinstellungen und [!DNL Live Search] '''
+description: Beschreibt die Adobe Commerce-Konfigurationseinstellungen, die [!DNL Live Search] kann lesen.
+exl-id: a4e9e2dd-e912-4ced-a44a-091ac5334e50
+source-git-commit: c8303b11c7a274a3956a7336203aa34bd9d6a67f
 workflow-type: tm+mt
-source-wordcount: '195'
+source-wordcount: '229'
 ht-degree: 0%
 
 ---
@@ -16,18 +17,22 @@ Es gibt Commerce-Konfigurationseinstellungen, die [!DNL Live Search] unterstütz
 
 | Commerce-Konfigurationseinstellungen | Unterstützt von Popover | Vom Adapter unterstützt |
 |---|---|---|
-| Stores -> Konfiguration -> Katalog -> Katalog -> Katalogsuche -> Minimale Abfragelänge | Ja | Ja |
-| Stores -> Konfiguration -> Katalog -> Inventar -> Nicht vorrätige Produkte anzeigen | Ja w/ v2.0.4+ | Ja w/ v2.0.4+ |
-| Stores -> Konfiguration -> Allgemein -> Währungseinstellungen -> Währungsoptionen -> Basiswährung | Ja | Ja |
+| Stores > Konfiguration > Katalog > Katalog > Katalogsuche > Alle Produkte pro Seitenlänge zulassen | Ja. Max. 500 Produkte | Ja. Max. 500 Produkte |
+| Stores > Konfiguration > Katalog > Katalog > Katalogsuche > Minimale Abfragelänge | Ja | Ja |
+| Stores > Konfiguration > Katalog > Katalog > Katalogsuche > Produkte pro Seite - Zulässige Werte im Raster | Ja | Ja |
+| Stores > Konfiguration > Katalog > Katalog > Katalogsuche > Produkte pro Seite auf Raster Standardwert | Ja | Ja |
+| Stores > Konfiguration > Katalog > Bestand > Nicht vorrätige Produkte anzeigen | Ja w/ v2.0.4+ | Ja w/ v2.0.4+ |
+| Stores > Konfiguration > Währung > Standardanzeigewährung | Ja w/3.1.0+ | Ja w/3/1/0+ |
+| Stores > Konfiguration > Allgemein > Währungseinstellungen > Währungsoptionen > Basiswährung | Ja | Ja |
+
+Preise auf der Produktlistenseite und im Popover des Widgets werden jetzt mithilfe der konfigurierten Währungsraten in die Standardanzeigewährung konvertiert
 
 ## Nicht unterstützte Konfigurationswerte
 
 [!DNL Live Search] kann nicht alle Konfigurationswerte lesen. Diese Tabelle listet Werte auf, die für Entwickler von größerem Interesse sein können.
 
-| Magento-Konfigurationseinstellungen | Hinweise |
+| Commerce-Konfigurationseinstellungen | Hinweise |
 |---|---|
-| Stores -> Konfiguration -> Katalog -> Storefront -> Listenmodus | Wird korrekt gerendert, aber für einige Seiteninteraktionen werden keine Ereignisse gesendet |
-| Stores -> Konfiguration -> Katalog -> Storefront -> Alle Produkte pro Seite zulassen | nicht umgesetzt; sendet Anforderungen an den Suchdienst ohne Seitengröße und [!DNL Live Search] gibt eine standardmäßige Seitengröße von 20 zurück |
-| Stores -> Konfiguration -> Katalog -> Katalog -> Katalogsuche -> Maximale Abfragelänge | nicht umgesetzt; Search Services akzeptiert bis zu 255 Zeichen |
-| Stores -> Konfiguration -> Allgemein -> Währungseinstellungen -> Währungsoptionen -> Standardanzeigewährung | nicht umgesetzt; [!DNL Live Search] nur Zugriff auf die Basiswährung hat |
-| Konfiguration -> Vertrieb -> Steuern -> Preisanzeigeeinstellungen -> Produktpreise im Katalog anzeigen |  |
+| Stores > Konfiguration > Katalog > Storefront > Listenmodus | Wird korrekt gerendert, aber für einige Seiteninteraktionen werden keine Ereignisse gesendet |
+| Stores > Konfiguration > Katalog > Katalog > Katalogsuche > Maximale Abfragelänge | nicht umgesetzt; Search Services akzeptiert bis zu 255 Zeichen |
+| Konfiguration > Vertrieb > Steuern > Preisanzeigeeinstellungen > Produktpreise im Katalog anzeigen |  |

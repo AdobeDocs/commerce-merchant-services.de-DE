@@ -2,9 +2,9 @@
 title: "Facets verwalten"
 description: "Erfahren Sie, wie Sie vorhandene verwalten [!DNL Live Search] Facetten."
 exl-id: 1d51a36a-20d6-46b6-b379-11e46c8824a0
-source-git-commit: 9bacdb5fd232a3603bcb7abe2e93da9ead794d38
+source-git-commit: bce69f952e70e2e8dcb892357dea41e18f61e5f6
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '476'
 ht-degree: 0%
 
 ---
@@ -62,6 +62,10 @@ Der Stift wird blau und die Facette wechselt zur *Angeheftete Facetten* Abschnit
 Die Nadel wird grau und die Facette wechselt zur *Dynamische Facetten* Abschnitt.
 
    ![Gesteitete und dynamische Facetten](assets/facets-pinned-unpinned.png)
+
+>[!NOTE]
+>
+>Die Reihenfolge von fixierten Facetten kann inkonsistent sein, wenn es zwei Bezeichnungen mit demselben Namen gibt.
 
 ## Fixierte Facette verschieben
 

@@ -2,9 +2,9 @@
 title: "Regeln hinzufügen"
 description: "Erfahren Sie, wie Sie [!DNL Live Search] Regeln."
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 2d4c96679b93a97e032fcbb50a27cbd579554795
+source-git-commit: 0b0e9a630162c4c98c6a3af969002def03155267
 workflow-type: tm+mt
-source-wordcount: '1401'
+source-wordcount: '1419'
 ht-degree: 0%
 
 ---
@@ -85,6 +85,10 @@ Store-Eigentümer können die folgenden Ranking-Strategien einrichten:
 * Keine: Produkte werden nach Relevanz geordnet
 
 1. Wählen Sie den Typ der Strategie für die Regel aus. Im Fenster Regel testen werden die erwarteten Ergebnisse angezeigt.
+
+>[!NOTE]
+>
+>Apostrophe und Anführungszeichen in Abfragen können in einigen Sprachen zu kleineren Problemen mit Ranking und Relevanz führen.
 
 ## Hinzufügen von Ereignissen
 
