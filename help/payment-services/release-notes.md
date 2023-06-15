@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] Versionshinweise"
 description: Informationen zu allen [!DNL Payment Services] veröffentlicht.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: e9209d7361d0dd6b6f502df9a898a5a35c53ec1a
+source-git-commit: 36dd961d06f279143e90f3a1f5a6114db14e8c1b
 workflow-type: tm+mt
-source-wordcount: '1971'
+source-wordcount: '1989'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ In diesen Versionshinweisen werden Funktionsänderungen und -korrekturen beschri
 
 _9. Juni 2023_
 
-![Neu](../assets/new.svg)<!-- Issue PAY-4288 --> Jetzt können Händler [konfigurieren _only_ PayPal-Zahlungsschaltflächen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#use-only-paypal-payment-buttons)—und _not_ Verwenden Sie die PayPal Kreditkartenzahlungsoption, um eine Vielzahl von Zahlungsoptionen bereitzustellen, ohne die Genehmigung der PayPal-Kreditkarte zu beantragen.
+![Neu](../assets/new.svg)<!-- Issue PAY-4288 --> Jetzt können Händler [konfigurieren _only_ PayPal-Zahlungsschaltflächen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#use-only-paypal-payment-buttons)—und _not_ Verwenden Sie die Zahlungsoption PayPal Kreditkarte . Auf diese Weise können Händler eine Vielzahl von Zahlungsoptionen anbieten, einschließlich der Zahlungsschaltflächen Venmo und PayPal, und einen vorhandenen Kreditkartenanbieter anstelle der Zahlungsoption PayPal verwenden.
 
 ![Neu](../assets/new.svg)<!-- Issue PAY-4050 --> Eine [Datenvisualisierungsansicht](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#order-payment-status-data-visualization-view), der auf der Zahlungsdienst-Startseite für den Bericht Bestellzahlstatus angezeigt wird.
 

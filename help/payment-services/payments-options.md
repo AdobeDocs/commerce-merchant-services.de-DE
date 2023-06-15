@@ -2,9 +2,9 @@
 title: Zahlungsoptionen
 description: Legen Sie die Zahlungsoptionen fest, um die für Ihre Store-Kunden verfügbaren Methoden anzupassen.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: 44d36c530ba95f38c264ac40123ea12ec98c32b3
+source-git-commit: 36dd961d06f279143e90f3a1f5a6114db14e8c1b
 workflow-type: tm+mt
-source-wordcount: '1156'
+source-wordcount: '1171'
 ht-degree: 0%
 
 ---
@@ -107,7 +107,7 @@ Um Ihren Store schnell in den Produktionsmodus zu bringen, können Sie Folgendes
 
 Dies ermöglicht Ihnen Folgendes:
 
-* Stellen Sie eine Vielzahl von Zahlungsoptionen für Ihre Kunden bereit, ohne die Kreditkartengenehmigung über PayPal zu beantragen.
+* Stellen Sie eine Vielzahl von Zahlungsoptionen für Ihre Kunden bereit, einschließlich Venmo- und PayPal-Zahlungsschaltflächen, mit der Möglichkeit, gehostete PayPal-Kartenfelder zu deaktivieren und einen vorhandenen Kreditkartenanbieter zu verwenden.
 * Nutzen Sie Ihren bestehenden Kreditkartenanbieter für Kreditkartenzahlungen und nutzen Sie gleichzeitig die anderen Zahlungsoptionen von PayPal.
 * Verwenden Sie die Zahlungsschaltflächen von PayPal in einer Region, in der PayPal keine Kreditkarten als Zahlungsoption unterstützt.
 
