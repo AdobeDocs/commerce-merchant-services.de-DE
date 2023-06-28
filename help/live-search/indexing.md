@@ -2,9 +2,9 @@
 title: "[!DNL Live Search] Indizierung"
 description: "Erfahren Sie wie [!DNL Live Search] indiziert Eigenschaften von Produktattributen."
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: f310f840e286859070002ab0e23eda3787c89f36
+source-git-commit: 9be12e2ce8231dc188e3b79bba3e39d3cff52892
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '581'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Um eine dynamische Abfrage zu erstellen, muss der Suchdienst wissen, welche Attr
 
 ### Vollständiger Index
 
-Wann [!DNL Live Search] beim Onboarding konfiguriert und synchronisiert wird, kann es bis zu acht Stunden dauern, bis der anfängliche Index erstellt wird. Der Prozess beginnt nach `cron` sendet den Feed und endet mit der Ausführung.
+Wann [!DNL Live Search] beim Onboarding konfiguriert und synchronisiert wird, kann es bis zu 30 Minuten dauern, bis der anfängliche Index erstellt wird. Die Indizierung großer Kataloge kann länger dauern. Der Prozess beginnt nach `cron` sendet den Feed und endet mit der Ausführung.
 
 Mit den folgenden Ereignissen wird ein vollständiger Synchronisations- und Indexaufbau Trigger:
 
