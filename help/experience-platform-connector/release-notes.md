@@ -2,9 +2,9 @@
 title: Versionshinweise
 description: Die aktuellen Versionsinformationen zum Adobe Experience Platform Connector von Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: 520a05f4cf944261a5f35baae045318e836b4a4b
+source-git-commit: 9dcb5a38f6ec2ed13a07d80b6a9d5a64efcc13ee
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '465'
 ht-degree: 1%
 
 ---
@@ -36,23 +36,35 @@ _10. Juni 2023_
 
 _30. März 2023_
 
-* ![Neu](../assets/new.svg) - Eine neue Erweiterung namens wurde hinzugefügt. `data-services-b2b` , die [Ereignisse in der Anforderungsliste](events.md#b2b-events) für B2B-Händler
+* ![Neu](../assets/new.svg) - Eine neue Erweiterung namens wurde hinzugefügt. `data-services-b2b` , die [Ereignisse in der Anforderungsliste](events.md#b2b-events) für B2B-Händler.
 * ![Neu](../assets/new.svg) - Der `uniqueIdentifier` -Feld zu [suchen](events.md#search-events) -Ereignisse. Dieses neue Feld ermöglicht Händlern, Querverweise darauf zu erstellen, welche Suchanfragen zu welchen Suchanfragen passen.
 
 _12. Oktober 2022_
 
-* ![Neu](../assets/new.svg) - Zwei wurden hinzugefügt [Storefront-Ereignisse](events.md): `openCart` und `removeFromCart` zum Adobe Commerce Storefront Events SDK und Collector
-* ![Neu](../assets/new.svg) - Unterstützung für eine [AEM Storefront](overview.md#aem-support)
+* ![Neu](../assets/new.svg) - Zwei wurden hinzugefügt [Storefront-Ereignisse](events.md): `openCart` und `removeFromCart` zum Adobe Commerce Storefront Events SDK und Collector.
+* ![Neu](../assets/new.svg) - Unterstützung für eine [AEM Storefront](overview.md#aem-support).
 
 +++
 
-## 3.0.0-beta1
+## 2.3.0
+
+_27. Juni 2023_
+
+[!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"}
+
+* ![Neu](../assets/new.svg) - Zusätzliche Funktion für [Deaktivieren des Versands von Storefront-Ereignissen](connect-data.md#data-collection) zur Experience Platform.
+* ![Fehlerbehebung](../assets/fix.svg) - Konfigurationen der Inhaltssicherheitsrichtlinie wurden aktualisiert.
+* ![Fehlerbehebung](../assets/fix.svg) - Die Unterstützung für Back-Office-Ereignisse in Commerce 2.4.7 wurde korrigiert.
+* ![Neu](../assets/new.svg) - Es wurde eine Benachrichtigung zur Cache-Invalidierung hinzugefügt, wenn Sie Änderungen am Experience Platform Connector-Formular speichern.
+
+
+## 3.0.0-beta1 (nur intern)
 
 _13. Juni 2023_
 
 [!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"}
 
-* ![Neu](../assets/new.svg) - (Beta) Neue Möglichkeit zu [historische Reihenfolge senden](connect-data.md#beta-send-historical-order-data) Daten und Status an die Experience Platform.
+* ![Neu](../assets/new.svg) - (Beta) Neue Möglichkeit zu [historische Reihenfolge senden](connect-data.md#beta-send-historical-order-data) Daten und Status an die Experience Platform. Diese Funktion ist nur für Beta-Benutzer verfügbar. Sie können der Beta-Phase beitreten, indem Sie eine E-Mail an folgende Adresse senden: [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
 
 ## 2.2.0
 
@@ -69,7 +81,7 @@ _28. Februar 2023_
 
 [!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"}
 
-* ![Neu](../assets/new.svg) - Unterstützung für PHP 8.2 für alle Experience Platform-Connector-Module hinzugefügt
+* ![Neu](../assets/new.svg) - Unterstützung für PHP 8.2 für alle Experience Platform Connector-Erweiterungen hinzugefügt.
 
 ## 2.1.0
 
@@ -94,8 +106,8 @@ _12. Oktober 2022_
 
 [!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"}
 
-* ![Neu](../assets/new.svg) - Zusätzliche Möglichkeit zur Angabe Ihres eigenen AEP Web SDK bei [Verbindung](connect-data.md) Ihre Adobe Commerce-Instanz an die Experience Platform
-* ![Fehlerbehebung](../assets/fix.svg) - Die Anforderung zum Datenspeicherbereich wurde aktualisiert, sodass die Datastream-IDs auf die Website übertragen werden müssen, anstatt sie zu speichern
+* ![Neu](../assets/new.svg) - Zusätzliche Möglichkeit zur Angabe Ihres eigenen AEP Web SDK bei [Verbindung](connect-data.md) Ihre Adobe Commerce-Instanz zur Experience Platform hinzufügen.
+* ![Fehlerbehebung](../assets/fix.svg) - Die Anforderung zum Datenspeicherbereich wurde aktualisiert, sodass die Datastream-IDs auf die Website übertragen werden müssen, anstatt sie zu überprüfen.
 
 ## 1.0.0
 
@@ -103,4 +115,4 @@ _9. August 2022_
 
 [!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"}
 
-* ![Neu](../assets/new.svg) - Allgemeine Verfügbarkeitsversion
+* ![Neu](../assets/new.svg) - Allgemeines Release zur Verfügbarkeit.

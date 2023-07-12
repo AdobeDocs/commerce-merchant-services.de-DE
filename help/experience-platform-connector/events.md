@@ -2,7 +2,7 @@
 title: Veranstaltungen
 description: Erfahren Sie, welche Daten von den einzelnen Ereignissen erfasst werden.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: 7b34b66d5fb199e75b321a7d7ff0f98a3a0dcf8b
+source-git-commit: 1484a465f3ce5b5578a7c5cf3f5f3b7d68d69c41
 workflow-type: tm+mt
 source-wordcount: '4605'
 ht-degree: 0%
@@ -328,7 +328,7 @@ Verwenden Sie die `uniqueIdentifier` -Feld in beiden `searchRequestSent` und `se
 
 >[!NOTE]
 >
->Suchereignisse werden in einer Adobe Commerce Enterprise Edition nicht unterstützt, wenn das B2B-Modul installiert ist.
+>Suchereignisse werden in einer Adobe Commerce Enterprise Edition nicht unterstützt, wenn die B2B-Erweiterung installiert ist.
 
 #### Aus searchRequestSent erfasste Daten
 
@@ -355,7 +355,7 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 
 >[!NOTE]
 >
->Suchereignisse werden in einer Adobe Commerce Enterprise Edition nicht unterstützt, wenn das B2B-Modul installiert ist.
+>Suchereignisse werden in einer Adobe Commerce Enterprise Edition nicht unterstützt, wenn die B2B-Erweiterung installiert ist.
 
 #### Von searchResponseReceived erfasste Daten
 

@@ -1,10 +1,10 @@
 ---
 title: Erstellen benutzerdefinierter Ereignisse
-description: Erfahren Sie, wie Sie benutzerdefinierte Ereignisse erstellen, um Ihre Adobe Commerce-Daten mit anderen Adobe DX-Produkten zu verbinden.
+description: Erfahren Sie, wie Sie benutzerspezifische Ereignisse erstellen, um Ihre Adobe Commerce-Daten mit anderen Adobe DX-Produkten zu verbinden.
 exl-id: 5a754106-c66a-4280-9896-6d065df8a841
-source-git-commit: 2b735c292920bb0e9052d86bf152748e7ce96079
+source-git-commit: 2e1a0b2a79449562a2716929084f12eeee55a159
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '223'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ In Experience Platform Edge:
 >
 > Die Verwendung benutzerdefinierter Ereignisse kann sich auf standardmäßige Adobe Analytics-Berichte auswirken.
 
-## Verarbeiten von Ereignisüberschreibungen (benutzerdefinierte Attribute)
+## Überschreibungen von Ereignissen verarbeiten (benutzerdefinierte Attribute)
 
 Attributüberschreibungen für Standardereignisse werden nur für die Experience Platform unterstützt. Benutzerdefinierte Daten werden nicht an Commerce-Dashboards und -Metriken-Tracker weitergeleitet.
 

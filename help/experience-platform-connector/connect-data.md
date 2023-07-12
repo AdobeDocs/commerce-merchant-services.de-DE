@@ -2,7 +2,7 @@
 title: Commerce-Daten mit Adobe Experience Platform verbinden
 description: Erfahren Sie, wie Sie Ihre Commerce-Daten mit der Adobe Experience Platform verbinden.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
-source-git-commit: 8c2f275354eb4deba151ccdd83302e4b2cc5d4c9
+source-git-commit: 1484a465f3ce5b5578a7c5cf3f5f3b7d68d69c41
 workflow-type: tm+mt
 source-wordcount: '1952'
 ht-degree: 0%
@@ -162,7 +162,7 @@ Um die Datenerfassung zu historischen Bestellungen für die Beta-Version zu akti
 
 ### Betaversion für historische Bestellungen konfigurieren
 
-Damit der Auftragsverlauf Ihrer Kunden an Experience Platform gesendet werden kann, müssen Sie Anmeldedaten angeben, die Ihre Commerce-Instanz mit der Experience Platform verknüpfen. Wenn Sie bereits installiert und die [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) -Modul, haben Sie die erforderlichen Anmeldeinformationen angegeben und Sie können diesen Schritt überspringen. Wenn Sie das Audience Activation-Modul noch nicht installiert und aktiviert haben, führen Sie die folgenden Schritte aus:
+Damit der Auftragsverlauf Ihrer Kunden an Experience Platform gesendet werden kann, müssen Sie Anmeldedaten angeben, die Ihre Commerce-Instanz mit der Experience Platform verknüpfen. Wenn Sie bereits installiert und die [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) -Erweiterung, haben Sie bereits die erforderlichen Anmeldeinformationen angegeben und Sie können diesen Schritt überspringen. Wenn Sie die Audience Activation-Erweiterung noch nicht installiert und aktiviert haben, führen Sie die folgenden Schritte aus:
 
 >[!NOTE]
 >
