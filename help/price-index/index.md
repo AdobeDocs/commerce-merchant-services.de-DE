@@ -4,7 +4,7 @@ description: Verwenden der SaaS-Preisindizierung zur Leistungsverbesserung
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
-source-git-commit: a93ada3230d3d29dd6b79f67a61ede38de7dc250
+source-git-commit: 19c4d3263c22914672b38c5dc5ec9908889bb9b6
 workflow-type: tm+mt
 source-wordcount: '752'
 ht-degree: 0%
@@ -83,16 +83,16 @@ Neue Feeds sollten manuell mit der `resync` [CLI, Befehl](https://experienceleag
 
 ### Luma ohne Erweiterungsabhängigkeiten
 
-* Ein Luma- oder Abode Commerce Core GraphQL-Händler, auf dem ein erforderlicher Dienst installiert ist (Live Search, Product Recommendations, Catalog Service)
+* Ein Luma- oder Adobe Commerce Core GraphQL-Händler, auf dem ein erforderlicher Dienst installiert ist (Live Search, Product Recommendations, Catalog Service)
 * Keine Drittanbietererweiterungen, die auf den PHP-Core-Preisindex angewiesen sind
 * Verkaufen einfacher, konfigurierbarer, gruppierter, virtueller und gebündelter dynamischer Produkte
 
 1. Neue Feeds aktivieren.
 1. Installieren Sie den Katalogadapter.
 
-### Luma und Abode Commerce Core GraphQl mit PHP Core-Preisindexierabhängigkeiten
+### Grundlegende GraphQl-Abhängigkeiten von Luma und Adobe Commerce mit PHP-Kernpreisindizes
 
-* Ein Luma- oder Abode Commerce Core GraphQL-Händler, auf dem ein unterstützter Dienst installiert ist (Live Search, Product Recommendations, Catalog Service)
+* Ein Luma- oder Adobe Commerce Core GraphQL-Händler, der einen unterstützten Dienst installiert hat (Live Search, Product Recommendations, Catalog Service)
 * Mit einer Drittanbietererweiterung, die auf den PHP-Core-Preisindex angewiesen ist
 * Verkaufen einfacher, konfigurierbarer, gruppierter, virtueller und gebündelter dynamischer Produkte
 
