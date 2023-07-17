@@ -2,9 +2,10 @@
 title: "Testen der [!DNL Quick Checkout] für Adobe Commerce-Erweiterung"
 description: "Tests und Validierung stellen sicher, dass die [!DNL Quick Checkout] -Erweiterung funktioniert wie erwartet."
 exl-id: 308f39e1-e2f6-40d8-b876-0f9013effed3
-source-git-commit: bd02a8083d3f4c9cb0422b27d61bd5462187ffc3
+feature: Checkout, Services
+source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '429'
 ht-degree: 0%
 
 ---
@@ -14,7 +15,7 @@ ht-degree: 0%
 
 Bevor Sie die [!DNL Quick Checkout] Für Adobe Commerce-Erweiterungen für Ihre Kunden wird empfohlen, Tests in einer Sandbox-Umgebung und in Ihrer Produktionsumgebung durchzuführen. Durch Tests und Validierung wird sichergestellt, dass die [!DNL Quick Checkout] funktioniert erwartungsgemäß und bietet ein nahtloses Checkout-Erlebnis für Ihren Store und Ihre Kunden.
 
-Vor der Konfiguration [!DNL Quick Checkout] In Ihrem Adobe Commerce-Administrator muss die  [production](https://merchant.bolt.com/register){target=&quot;_blank&quot;} und [Sandbox](https://merchant-sandbox.bolt.com/register){target=&quot;_blank&quot;} Handelskonten in [!DNL Bolt].
+Vor der Konfiguration [!DNL Quick Checkout] In Ihrem Adobe Commerce-Administrator muss die  [production](https://merchant.bolt.com/register){target="_blank"} and [sandbox](https://merchant-sandbox.bolt.com/register){target="_blank"} Handelskonten in [!DNL Bolt].
 
 ## Test in Sandbox
 
@@ -22,7 +23,7 @@ Testen der [!DNL Quick Checkout] in einer Sandbox-Umgebung ist ein sehr wichtige
 
 ### Sandbox-Konto verwenden
 
-Wenn Sie Ihre Sandbox testen und validieren, müssen Sie eine falsche Kreditkartennummer und eine [Sandbox](https://merchant-sandbox.bolt.com/register){target=&quot;_blank&quot;} Handelskonto in [!DNL Bolt], sodass Sie keine echten Gebühren für ein bestehendes Kreditkartenkonto erstellen.
+Wenn Sie Ihre Sandbox testen und validieren, müssen Sie eine falsche Kreditkartennummer und eine [Sandbox](https://merchant-sandbox.bolt.com/register){target="_blank"} Handelskonto in [!DNL Bolt], sodass Sie keine echten Gebühren für ein bestehendes Kreditkartenkonto erstellen.
 
 ## Test in Produktion
 

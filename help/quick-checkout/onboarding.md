@@ -2,7 +2,8 @@
 title: "Onboard the [!DNL Quick Checkout] für Adobe Commerce-Erweiterung"
 description: "Erfahren Sie, wie die [!DNL Quick Checkout] kann von Ihrer Adobe Commerce-Instanz profitieren und zeigen, wie Sie die Erweiterung erfolgreich integrieren und einrichten können."
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
+feature: Checkout, Services
+source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 0%
@@ -68,7 +69,7 @@ So verwenden Sie die [!DNL Quick Checkout] benötigen [!DNL Bolt] eindeutige Sch
 - [!DNL Publishable key]: Ein Schlüssel, mit dem Ihr Frontend interagiert [!DNL Bolt] APIs.
 - [!DNL Signing secret]: Dient zur Signaturüberprüfung von Anforderungen, die von empfangen wurden [!DNL Bolt].
 
-   ![Quick Checkout](assets/account-credentials.png)
+  ![Quick Checkout](assets/account-credentials.png)
 
 Siehe [[!DNL Bolt] Umgebungsdetails](https://help.bolt.com/developers/references/environment-details/#about-keys){target="_blank"} Seite mit Informationen zu Schlüsseln und dem Signieren von Geheimnissen von [!DNL Bolt] für [!DNL Quick Checkout] -Erweiterung.
 
