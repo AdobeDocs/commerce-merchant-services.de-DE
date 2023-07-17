@@ -2,7 +2,8 @@
 title: Kreditkartenausfall
 description: Käufer können ihre Kreditkartendetails für zukünftige Käufe einbehalten (speichern).
 exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
-source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
+feature: Payments, Checkout
+source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 0%

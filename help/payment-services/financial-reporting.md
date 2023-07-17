@@ -1,12 +1,12 @@
 ---
 title: Rechnungslegung
-description: '"[!DNL Payment Services] bietet eine umfassende Berichterstellung, damit Sie einen klaren Überblick über die Bestellungen und Zahlungen Ihres Geschäfts erhalten."'
+description: "[!DNL Payment Services] bietet eine umfassende Berichterstellung, damit Sie einen klaren Überblick über die Bestellungen und Zahlungen Ihres Geschäfts erhalten."
 role: User
-feature: Payments
+feature: Payments, Checkout
 level: Intermediate
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 3f90e508e6cbb8d7a119587dabd86e709c08d508
 workflow-type: tm+mt
-source-wordcount: '78'
+source-wordcount: '79'
 ht-degree: 0%
 
 ---
@@ -17,4 +17,4 @@ ht-degree: 0%
 
 ![Übersicht über die Finanzberichte](assets/reports-view.png)
 
-Die Cashflow-Management-Berichte - Zahlungsstatus und Bestellstatus - synchronisieren Zahlungsdetails mit Bestellinformationen, um Ihnen vollständige Transparenz bezüglich des verarbeiteten Volumens, des Zahlungsbilds und der detaillierten Berichterstellung auf Transaktionsebene zur finanziellen Abstimmung zu bieten.
+Die Cashflow-Management-Berichte - Zahlungsvorgänge, Transaktionen und Bestellzahlstatus - synchronisieren Zahlungsdetails mit Bestellinformationen, um Ihnen vollständige Transparenz bezüglich des verarbeiteten Volumens, des Zahlungsbilds und der detaillierten Berichterstattung auf Transaktionsebene zur finanziellen Abstimmung zu bieten.

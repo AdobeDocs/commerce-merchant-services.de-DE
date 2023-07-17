@@ -1,7 +1,8 @@
 ---
 title: Checkout
 description: Passen Sie den Checkout an die Anforderungen Ihrer Kunden an.
-source-git-commit: b57c1e2b9d18ba3b843d18df7219efe3bade65e6
+feature: Payments, Checkout
+source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%
