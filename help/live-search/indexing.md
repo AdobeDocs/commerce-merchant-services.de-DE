@@ -2,7 +2,7 @@
 title: "[!DNL Live Search] Indizierung"
 description: "Erfahren Sie wie [!DNL Live Search] indiziert Eigenschaften von Produktattributen."
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: 9be12e2ce8231dc188e3b79bba3e39d3cff52892
+source-git-commit: 7eece9b341a27637d7ac00216f18b7fad7c50740
 workflow-type: tm+mt
 source-wordcount: '581'
 ht-degree: 0%
@@ -73,7 +73,7 @@ Workflow für Streaming-Update:
 
 ## Clientsuche
 
-Die [!DNL Live Search] Mit der API kann ein Client nach jedem beliebigen Produktattribut sortieren, indem er die [storefront property](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html), *Wird zum Sortieren in Produktlisten verwendet* nach `Yes`. Abhängig vom Design bewirkt diese Einstellung, dass das -Attribut als Option in die [Sortieren nach](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation.html) Paginierungssteuerung auf Katalogseiten. Bis zu 300 Produktattribute können durch [!DNL Live Search], mit [Storefront-Eigenschaften](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) die durchsuchbar und filterbar sind.
+Die [!DNL Live Search] Mit der API kann ein Client nach jedem beliebigen Produktattribut sortieren, indem er die [storefront property](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html), *Wird zum Sortieren in Produktlisten verwendet* nach `Yes`. Abhängig vom Design bewirkt diese Einstellung, dass das -Attribut als Option in die [Sortieren nach](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation.html) Paginierungssteuerung auf Katalogseiten. Bis zu 200 Produktattribute können durch [!DNL Live Search], mit [Storefront-Eigenschaften](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) die durchsuchbar und filterbar sind.
 Die Indexmetadaten werden in der Indizierungs-Pipeline gespeichert und sind für den Suchdienst verfügbar.
 
 ![[!DNL Live Search] Index-Metadaten-API-Diagramm](assets/index-metadata-api.svg)

@@ -2,9 +2,9 @@
 title: "[!DNL Storefront Popover]"
 description: "Die [!DNL Live Search storefront popover] gibt dynamisch vorgeschlagene Produkte und Miniaturansichten zurück."
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 3820736a25942b147d6e2c7b8820c360d6a0a535
+source-git-commit: 96a5791c5716f612f473540f27bd3f99b1bfe7c8
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '466'
 ht-degree: 0%
 
 ---
@@ -39,9 +39,20 @@ Standardmäßig ist der Wert Katalogsuche - Automatische Vervollständigungsgren
 1. Legen Sie die **Automatische Vervollständigungsgrenze** auf die Anzahl der Zeilen, die Sie in der [!DNL popover].
 1. Wenn Sie fertig sind, klicken Sie auf **Konfiguration speichern**.
 
+## Catalog Service
+
+Die [Catalog Service für Adobe Commerce](../catalog-service/overview.md) -Erweiterung bietet umfassende Ansicht-Modell-Katalogdaten, um produktbezogene Storefront-Erlebnisse schnell und vollständig zu rendern. Catalog Service kann in Verbindung mit Live Search verwendet werden, um Funktionen bereitzustellen, die derzeit von der nativen Erweiterung nicht unterstützt werden:
+
+* Farbmuster
+* Erweiterte Attribute
+* Andere Produktinformationen können
+
+Merchants können Widgets oder Storefront-Elemente mithilfe von Catalog Service anpassen und erweitern, dies ist jedoch für das Supportteam der Adobe nicht möglich.
+
 ## Einschränkungen
 
-* Die [!DNL Live Search] [!DNL storefront popover] ist nur für Stores verfügbar, die *Luma* Design oder ein benutzerdefiniertes Design, das auf *Luma*.
+* Die [!DNL Live Search] [!DNL storefront popover] ist nur für Stores verfügbar, die *Luma* Design oder ein benutzerdefiniertes Design, das auf *Luma*. Breadcrumbs auf der Suchergebnisseite haben keine *Lume* Stile.
 * Die [!DNL popover] unterstützt nicht die *Leer* Design. Siehe [Formatierung [!DNL Popover] Elemente](storefront-popover-styling.md) , um mehr zu erfahren.
 * Die [!DNL popover] wird im Schnellbestellformular nicht unterstützt.
-* Merchants können Widgets oder Storefront-Elemente anpassen und erweitern (z. B.: Integrieren von Farbmustern in Live-Suchergebnisse) mithilfe der [Catalog Service](../catalog-service/overview.md) Storefront-API, aber dies ist für das Supportteam der Adobe nicht möglich.
+* Wunschlisten und Produktvergleiche werden nicht unterstützt.
+* Es wird nur die Basiswährung unterstützt.
