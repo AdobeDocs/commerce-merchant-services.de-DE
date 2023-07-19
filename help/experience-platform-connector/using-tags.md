@@ -2,7 +2,9 @@
 title: Erfassen von Commerce-Daten mit Adobe Experience Platform Tags
 description: Erfahren Sie, wie Sie Commerce-Daten mithilfe von Adobe Experience Platform-Tags erfassen.
 exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
-source-git-commit: bdd1378dcbbe806c98e8486a985389b2d0d4f34e
+role: Admin, Developer
+feature: Personalization, Integration
+source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
 workflow-type: tm+mt
 source-wordcount: '2650'
 ht-degree: 0%
@@ -24,9 +26,9 @@ So erfassen Sie Commerce-Ereignisdaten:
 
 - Installieren Sie die [Adobe Commerce Events SDK](https://github.com/adobe/commerce-events/tree/main/packages/commerce-events-sdk). Informationen zu PHP-Storefronts finden Sie im Abschnitt [install](install.md) Thema. PWA Studio-Storefronts: [PWA Studio-Handbuch](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/).
 
-   >[!NOTE]
-   >
-   > Do **not** [konfigurieren](connect-data.md) die Organisations-ID und die Datastream-ID.
+  >[!NOTE]
+  >
+  > Do **not** [konfigurieren](connect-data.md) die Organisations-ID und die Datastream-ID.
 
 ## Zuordnen von Commerce-Storefront-Daten zu Adobe Experience Platform
 
@@ -843,13 +845,13 @@ Erstellen Sie die folgenden Datenelemente:
    - **Erweiterung**: `Adobe Client Data Layer`
    - **Datenelementtyp**: `Data Layer Computed State`
    - **[Optional] path**: `productContext.mainImageUrl`
+
    1. Warenkorb:
+
    - **Name**: `cart`
    - **Erweiterung**: `Adobe Client Data Layer`
    - **Datenelementtyp**: `Data Layer Computed State`
    - **[Optional] path**: `shoppingCartContext`
-
-
 
 1. Warenkorb-ID:
 
