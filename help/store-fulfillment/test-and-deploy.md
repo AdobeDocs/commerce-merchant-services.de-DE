@@ -3,8 +3,9 @@ title: Testen und Bereitstellen der Store-Erfüllung
 description: Testen Sie den Plan, um die Funktion zur Store-Erfüllung zu überprüfen. Tests umfassen die API zur Lagerbestandssynchronisierung, den End-to-End-Erfüllungs-Workflow für abgebrochene Bestellungen, die Benutzerverwaltung der App zur Inhaltsbearbeitung und das Customer Check-in-Erlebnis.
 role: User, Admin
 level: Intermediate
+feature: Shipping/Delivery, User Account, Roles/Permissions
 exl-id: 77285a66-5161-407b-94cd-b3f412d7949d
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '2660'
 ht-degree: 0%
@@ -84,7 +85,7 @@ In diesem Abschnitt des Testplans wird die Bestands- und Bestellsynchronisierung
 <td>Der Echtzeit-Synchronisierungsvorgang sendet die Details innerhalb von 5 Minuten an die Walmart-GIF</td>
 </tr>
 <tr>
-<td><strong>Abholquellenquelle</br><code>Is Synced</code> status</br><code>Is Synced</code></strong></td>
+<td><strong>Abholquellenquelle</br><code>Is Synced</code> status</strong></td>
 <td>Speichern Sie Aktualisierungen in einer vorhandenen Sicherungskopie-Datenquelle.</td>
 <td>Nach einem erfolgreichen Vorgang wird die <code>Is Synced</code> Spalte der Seite "Quelle verwalten"von <code>No</code> nach <code>Yes</code>.</td>
 </tr>
@@ -166,7 +167,7 @@ Dieser Abschnitt des Testplans enthält Szenarien zum Testen des End-to-End-Work
 </ul>
 </td>
 </tr>
-<td><strong>Bereit zum Abholen</br></br>Vollständige Stornierung</br>(alle Produkte werden mit 0 qty eingestellt)</br></strong></td>
+<td><strong>Bereit zum Abholen</br></br>Vollständige Stornierung</br>(alle Produkte werden mit 0 qty eingestellt)</strong></td>
 <td>
 <ol>
 <li>Platzieren Sie die Bestellung.</li>
@@ -250,7 +251,7 @@ Dieser Abschnitt des Testplans enthält Szenarien zum Testen des End-to-End-Work
 </tr>
 <tr>
 <td><strong>Verworfen (während der Entlassung)</br></br>Teilweiser Abbruch</br>(Einige Produkte werden vertrieben. einige werden abgelehnt.)</strong>
-</br></td>
+</td>
 <td>
 <ol>
 <li>Platzieren Sie die Bestellung.</li>
@@ -469,7 +470,7 @@ In diesem Abschnitt des Testplans wird das Check-in-Erlebnis für Store-Abholauf
 </tr>
 <tr>
 <td><strong>Alternativer Ansprechpartner</br>
-Einchecken</br><strong>
+Einchecken<strong>
 </td>
 <td>
 Ein Kunde sendet eine Bestellung mit der Option In-Store-Abholung .</td>

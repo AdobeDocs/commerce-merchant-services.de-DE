@@ -1,12 +1,13 @@
 ---
 title: App-Einrichtung
 description: Richten Sie die [!DNL Store Assist] App zur Verwaltung von End-to-End-Workflows und -Prozessen für Online-Käufe, Abruf von Kaufaufträgen.
-role: User, Admin
 level: Intermediate
+role: Admin
+feature: Shipping/Delivery, Configuration, Tools and External Services
 exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '625'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,7 @@ Die Store-Hilfe-App empfängt alle Bestellungen- und Kundeninformationen - von B
 
 >[!NOTE]
 >
->Siehe [Workflows zur Erfüllung von Store-Hilfe](store-assist-modules.md) , um mehr über die Store Assist-App zu erfahren.
+>Weitere Informationen zur Store Assist-App finden Sie unter [Workflows zur Erfüllung von Store-Hilfe](store-assist-modules.md) Thema.
 
 ## Konfigurieren der Store Assist App
 
@@ -42,9 +43,9 @@ Die Store-Hilfe-App erfordert zwei Arten von Konfiguration:
 
    - **Inaktivitätszeit**- Geben Sie die Zeit an, die die App inaktiv sein muss, bevor sie sich abmeldet.
 
-   - **Abbruch aus dem Store**—Geben Sie an, ob Bestellungen aus dem Store storniert werden können und welche Rollen über Abbruchsberechtigungen verfügen
+   - **Abbruch aus dem Store**—Geben Sie an, ob Bestellungen im Store abgebrochen werden können und welche Rollen über Abbruchsberechtigungen verfügen
 
-   - **Bestellbereinigungsfenster**—Geben Sie an, wie lange die [Geschätzte Abruf-Vorlaufzeit](enable-general.md#delivery-method-title-configuration) dass eine abgerufene Bestellung im Staging verbleibt, bevor sie wieder aufgestockt wird, z. B. drei Tage. Der Standardwert ist sieben Tage. Wenn diese Konfiguration aktiviert ist, wird die Bestellung nach Ablauf dieser Zeit automatisch abgebrochen. Die Artikel werden wieder aufgestockt und der Händler erhält eine Abmelde-E-Mail.
+   - **Bestellbereinigungsfenster**—Geben Sie an, wie lange die [Geschätzte Abruf-Vorlaufzeit](enable-general.md#delivery-method-title-configuration) dass eine abgerufene Bestellung im Staging verbleibt, bevor sie wieder aufgestockt wird, z. B. drei Tage. Der Standardwert ist sieben Tage. Wenn diese Konfiguration aktiviert ist, wird die Bestellung automatisch abgebrochen, wenn diese Zeit abläuft. Die Artikel werden wieder aufgestockt und der Händler erhält eine Abmelde-E-Mail.
 
    - Passen Sie alle Anweisungen in der App an (Auswählen, Staging, Übergabe).
 
@@ -55,7 +56,8 @@ Die Store-Hilfe-App erfordert zwei Arten von Konfiguration:
    - **Übergabe**—Aktivieren Sie optionale Prozesse, wenn Store Associate die Bestellung an den Kunden bereitstellt, z. B. eine Kundenunterschrift erforderlich ist oder die Zuordnung auffordert, die Kunden-ID zu überprüfen.
 
    - **Elementabweisung bei Übergabe aktivieren**- Ermöglichen Sie Kunden, während der Bestellübergabe Bestellartikel zurückzugeben oder abzubrechen.
-   Arbeiten Sie mit dem Team von Walmart Commerce Technologies Client Services zusammen, um die Frontend-Konfiguration für die Store Assist App abzuschließen.
+
+  Arbeiten Sie mit dem Team von Walmart Commerce Technologies Client Services zusammen, um die Frontend-Konfiguration für die Store Assist App abzuschließen.
 
 ## App-Download und -Installation
 
@@ -70,4 +72,5 @@ Nachdem die Store-Assist-App eingerichtet und konfiguriert wurde, können Store 
    - **[!UICONTROL Company name]** mit dem Store Assist-Konto verknüpft ist
 
    - **Anmeldeinformationen des Store-Assist-Kontos**—Benutzername und Passwort für ihr Konto.
-   Ein Adobe Commerce-Administrator kann [!DNL Store Assist app] Benutzerkonten für alle Speicherorte mit [In-Store-Abruf](merchant-store-configuration.md#pickup-location-configuration) in den Admin Stores-Einstellungen aktiviert wurde.
+
+  Ein Adobe Commerce-Administrator kann [!DNL Store Assist app] Benutzerkonten für alle Speicherorte mit [In-Store-Abruf](merchant-store-configuration.md#pickup-location-configuration) in den Admin Stores-Einstellungen aktiviert wurde.

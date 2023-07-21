@@ -1,10 +1,11 @@
 ---
 title: Onboarding-Übersicht für Store Fulfillment-Dienste
 description: '''[!DNL Live Search] Onboarding-Fluss, Systemanforderungen, Begrenzungen und Einschränkungen."'
-role: User, Admin
+role: Admin, Leader
 level: Intermediate
+feature: Shipping/Delivery, Install
 exl-id: f8e403ac-9bbd-4ea2-b209-9b1a8d1e32a2
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 0%
@@ -17,15 +18,15 @@ Erste Schritte mit [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerc
 
 - **Store Fulfillment-Erweiterung**-Installieren und konfigurieren Sie diese Drittanbietererweiterung auf Ihrer Adobe Commerce-Instanz. Nach der Installation können Sie die Lösung Store Fulfillment vom Administrator konfigurieren und verwalten, um [!DNL buys online, pickup in store] (BOPIS)-Szenarien in der Commerce-Storefront.
 
-   ![[!DNL Store Fulfillment Service] Konfiguration in der Admin-Ansicht](assets/store-fulfillment-admin-home.png)
+  ![[!DNL Store Fulfillment Service] Konfiguration in der Admin-Ansicht](assets/store-fulfillment-admin-home.png)
 
 - **Fulfillment-Konto speichern**-Während des Aktivierungsprozesses erstellt ein Kundenbetreuer Ihr Konto für die Store-Erfüllung und stellt Ihnen die Kontoinformationen und Anmeldeinformationen zur Verfügung. Diese Anmeldeinformationen sind erforderlich, um die Verbindung zwischen Adobe Commerce und der Store Fulfillment-Lösung zu aktivieren.
 
 - **Store Assist App**—Stellt Store-Zuordnungen mit einem End-to-End-Workflow zur Store-Erfüllung bereit, um BOPIS-Bestellungen von Mobilgeräten zu verwalten. Store Associates können Walmart&#39;s herunterladen und installieren [!DNL Store Assist] für iOS- und Android™-Geräte. Der Integrationsprozess der App wird vom Walmart Commerce Technologies Client Center als separater Prozess verwaltet. Allerdings [Einige App-Konfigurationseinstellungen](user-setup.md) vom Adobe Commerce-Administrator abgeschlossen.
 
-   | Store Assist App - Ansicht &quot;Erste Schritte&quot; | Store Assist App - Ansicht &quot;Module&quot; |
-   |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-   | ![[!DNL Store Assist App Getting Started] Ansicht auf Mobilgerät](assets/store-assist-get-started-small.png) | ![[!DNL Store Assist App Orders view] auf einem Mobilgerät](assets/store-assist-orders-small.png) |
+  | Store Assist App - Ansicht &quot;Erste Schritte&quot; | Store Assist App - Ansicht &quot;Module&quot; |
+  |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
+  | ![[!DNL Store Assist App Getting Started] Ansicht auf Mobilgerät](assets/store-assist-get-started-small.png) | ![[!DNL Store Assist App Orders view] auf einem Mobilgerät](assets/store-assist-orders-small.png) |
 
 ## Bereitstellungsschritte
 

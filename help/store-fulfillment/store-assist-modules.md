@@ -1,10 +1,11 @@
 ---
 title: Workflows zur Unterstützung bei der Ausführung von Speichern
 description: Erfahren Sie mehr über die Module "Pick", "Stage", "Hand-Off"und "Orders", die in der Store Assist App verfügbar sind. Diese Module ermöglichen den End-to-End-Workflow zur Store-Erfüllung für BOPIS-Bestellungen. Store Associates verwenden diese Module zur Verwaltung und Bereitstellung von Store-Pickup-Bestellungen für Kunden.
-role: User
+role: Leader, Admin, User
 level: Intermediate
+feature: Shipping/Delivery, Tools and External Services, Customer Service
 exl-id: a8414f19-5489-41e9-84d6-39d2e61c2b08
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '806'
 ht-degree: 0%
@@ -19,7 +20,7 @@ Die Store-Hilfe-App stellt Store Associates mit vier Modulen zur Verfügung, um 
 
 - **[Staging](#stage-module)**- Geben Sie einen Ort ein, an dem die Bestellungen platziert werden, während Kunden zum Geschäft reisen, damit Store Associates sie einfach zur Bestellübergabe finden können.
 
-- **[Hand aus](#hand-off-module)**- Rufen Sie Benachrichtigungen in Echtzeit ab, nachdem Kunden in den Speicher eintreffen, um ihre Wartezeit zu minimieren und Aufträge nahtlos abzugeben.
+- **[Hand aus](#hand-off-module)**- Rufen Sie Benachrichtigungen in Echtzeit ab, nachdem Kunden in den Speicher eintreffen, um ihre Wartezeit zu minimieren und die Übergabe von Bestellungen nahtlos zu gestalten.
 
 - **[Bestellungen](#orders-module)**—Zeigen Sie eine Liste aller Bestellungen an, die für einen Store aufgegeben werden, sodass jeder die Anzahl der Bestellungen und den Status jeder Bestellung kennt.
 
@@ -29,7 +30,7 @@ Die Store-Hilfe-App stellt Store Associates mit vier Modulen zur Verfügung, um 
 
 ## Auswahlmodul
 
-Mit dem Pick-Modul können Partner die vom Kunden bestellten Artikel suchen und scannen und zum Abholen bepacken. Sie können sehen, wie viele Bestellungen überfällig sind, und sofort mit der Auswahl beginnen. Sie können auch andere Bestellungen auswählen, um sie zuerst auszuwählen. Bestellungen werden nach Lieferzeiten mit überfälligen Bestellungen geordnet. Speicherverknüpfungen können auswählen, welche Bestellungen sie auswählen möchten, in welcher Reihenfolge sie Ihre Vorgänge benötigen.
+Mit dem Pick-Modul können Partner die vom Kunden bestellten Artikel suchen und scannen und zum Abholen bepacken. Sie können sehen, wie viele Bestellungen überfällig sind, und sofort mit der Auswahl beginnen. Sie können auch zuerst andere Bestellungen auswählen. Bestellungen werden nach Lieferzeiten mit überfälligen Bestellungen geordnet. Speicherverknüpfungen können auswählen, welche Bestellungen sie auswählen möchten, in welcher Reihenfolge sie Ihre Vorgänge benötigen.
 
 Ihre Partner können auch wählen, ob sie jeweils eine Bestellung oder mehrere Bestellungen gleichzeitig auswählen möchten.
 

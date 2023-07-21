@@ -1,10 +1,11 @@
 ---
 title: E-Mail-Vorlagen für Vertrieb
 description: Konfigurieren Sie die Transaktions-E-Mail-Vorlagen für die Kommunikation mit Kunden und Store-Administratoren während des Ausführungsprozesses für Store-Abholaufträge.
-role: User, Admin
+role: Admin
 level: Intermediate
+feature: Shipping/Delivery, Communications, Configuration
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 0%
@@ -312,7 +313,7 @@ Konfigurieren Sie die Vorlagen für Verkaufs-E-Mails über den Administrator: **
 <tbody><tr>
 <td><strong>Auftrag enthält Versand zum Speichern von Produkten E-Mail-Absender</strong></td>
 <td>E-Mail an spezifiziertes Handelspersonal als aggregierten Bericht aller offenen Aufträge, die erst dann in einem Händlerspeicher ausgewählt werden können, wenn ihr Inventar verfügbar ist. </br></br> Händler können diesen Bericht verwenden, um Lagerbestandsübertragungen oder -nachbefüllungen zu initiieren und zu verwalten. </br></br>Diese Benachrichtigung gilt nur, wenn die Variable [!DNL Ship-to-Store] -Funktionen aktiviert sind.
-</br></br>Dieses Etikett hat keine Auswirkungen auf den ausgewählten Versandunternehmen oder dessen verfügbare Versandmethodenbeschriftungen.</br></br></td>
+</br></br>Dieses Etikett hat keine Auswirkungen auf den ausgewählten Versandunternehmen oder dessen verfügbare Versandmethodenbeschriftungen.</td>
 <td>Store-Ansicht</td>
 <td>Nein</td>
 </tr>

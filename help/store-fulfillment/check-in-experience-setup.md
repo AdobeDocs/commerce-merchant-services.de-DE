@@ -1,10 +1,10 @@
 ---
 title: Einrichtung des Check-in-Erlebnisses
 description: Konfigurieren Sie die Auswahl der Automobil-Marke und des Modells], die verfügbar sind, um Kunden beim Ausfüllen des Formulars für die Abholbestellung zu unterstützen.
-role: User, Admin
+role: Admin
 level: Intermediate
 exl-id: 341b96cd-bb83-4d07-965c-b09fab24dc81
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 0%

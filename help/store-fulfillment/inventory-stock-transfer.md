@@ -1,10 +1,11 @@
 ---
 title: Inventory management Source Transfer
 description: "Konfigurieren Sie die Lager für [!DNL Store Fulfillment solution] mit Adobe Commerce Inventory management. Richten Sie ein neues Lager ein und übertragen Sie das Inventar aus dem Standardbestand, damit Sie es Quellen zuweisen können, die so konfiguriert sind, dass die für die Store-Fulfillment-Lösung erforderlichen Speicherabnahmefunktionen aktiviert werden."
-role: User, Admin
+role: Admin
 level: Intermediate
+feature: Shipping/Delivery, Inventory, Configuration
 exl-id: 669d4dce-4cac-4bde-acc5-26c70a51f7f1
-source-git-commit: e7493618e00e28e2de5043ae2d7e05a81110d8f1
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 0%
@@ -26,7 +27,7 @@ Mit diesen Konfigurationsänderungen können Sie drei Dinge erreichen:
 
 1. [Massenzuweisungsquellen](https://docs.magento.com/user-guide/catalog/inventory-bulk-assign-sources.html) , um die neuen Quellen für alle Ihre Produkte hinzuzufügen.
 
-1. [Vollständige Massenaktualisierungen für Produktattribute](https://docs.magento.com/user-guide/stores/bulk-product-attribute-update.html) , um `Allow Store Pickup` und `Allow Home Delivery` -Attributen vorhandenen Produkten zuordnen. Wenn die Lösung installiert ist, haben die Attribute die optimale *default* -Werte. Diese Attribute werden jedoch erst dann auf vorhandene Produkte angewendet, wenn Sie die Massenaktualisierungen abgeschlossen haben.
+1. [Vollständige Massenaktualisierungen für Produktattribute](https://docs.magento.com/user-guide/stores/bulk-product-attribute-update.html) , um `Allow Store Pickup` und `Allow Home Delivery` -Attributen vorhandenen Produkten zuordnen. Wenn die Lösung installiert ist, haben die Attribute die optimale *default* -Werte. Diese Attribute werden jedoch erst auf vorhandene Produkte angewendet, wenn Sie den Bulk-Prozess &quot;updaContes&quot;abgeschlossen haben.
 
 Der Bestand wird von der ausgewählten Quelle abgezogen (Einzelhandelsspeicherort oder E-Commerce-Warehouse). Als E-Commerce-Lager verwendete Quellen müssen demselben Lager wie der Speicherort für die Ladung zugeordnet und vor den Einzelhandelsstandorten priorisiert werden. Weitere Informationen finden Sie unter [Priorisieren von Quellen für einen Bestand](https://docs.magento.com/user-guide/catalog/inventory-stock-priority.html).
 

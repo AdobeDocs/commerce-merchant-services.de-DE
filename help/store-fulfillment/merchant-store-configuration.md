@@ -1,12 +1,13 @@
 ---
 title: Konfiguration von Merchant Stores
 description: Richten Sie erweiterte Inventory management-Quellen als Händler ein.
-role: User, Admin
-level: Intermediate
+role: Admin
+level: Experienced
+feature: Shipping/Delivery, Inventory, Configuration
 exl-id: 7c3444d0-5ecb-4ac1-aa81-e48eea290f5d
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
-source-wordcount: '1209'
+source-wordcount: '1224'
 ht-degree: 0%
 
 ---
@@ -94,7 +95,13 @@ Verwalten Sie die Konfiguration von Merchant Stores über den Administrator: **[
 <td>Nein</td>
 </tr>
 <tr>
-<td><strong>[!UICONTROL Enable Ship From Store]</strong><code>Extension Attribute: [!DNL use_as_shipping_source]</code></td><td></td><td></td><td></td></tr></tbody></table>
+<td><strong>[!UICONTROL Enable Ship From Store]</strong><code></br><code>Extension Attribute: [!DNL use_as_shipping_source]</code></td>
+<td>Konfigurieren Sie die Funktionen für den Versand aus dem Speicher auf der Quellebene. Weitere Informationen finden Sie unter der Option [Allgemeine Konfiguration](enable-general.md), [!UICONTROL Enable Ship From Store].</td>
+<td>Global</td>
+<td>Nein</td>
+</tr>
+</tbody>
+</table>
 
 
 
@@ -106,7 +113,7 @@ Verwalten Sie die Konfiguration von Merchant Stores über den Administrator: **[
 | **[!UICONTROL Enable Ship to Store]**</br>`Extension Attribute: [!DNL allow_ship_to_store]` | Konfigurieren Sie die Funktionen von Schiff zu Speicher auf der Quellebene. Weitere Informationen finden Sie unter [Allgemeine Konfiguration](enable-general.md) Option, **[!UICONTROL Enable Ship To Store]**. | Global | Nein |
 | **[!UICONTROL Enable Ship From Store]**</br>`Extension Attribute: [!DNL use_as_shipping_source]` | Konfigurieren Sie die Funktionen für den Versand aus dem Speicher auf der Quellebene. Weitere Informationen finden Sie unter [Allgemeine Konfiguration](enable-general.md) Option, [!UICONTROL Enable Ship From Store] | Global | Nein |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Konfiguration des Pickup-Standorts
 
