@@ -2,9 +2,9 @@
 title: Einstellungen
 description: Erfahren Sie, wie Sie die Quelle Ihrer [!DNL Product Recommendations] Daten und wie visuelle Empfehlungen aktiviert werden.
 exl-id: 8c074e11-e0cb-4d55-b646-30279c79bbc2
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 48e350167611a2737d79bf5decccd7f6f24c714c
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '437'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 0%
 Wenn Sie [Konfigurieren eines SaaS-Datenraums](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) für Recommendations erfasst der SaaS-Datenraum Katalogdaten und Storefront-Verhaltensdaten. [Adobe Sensei](https://www.adobe.com/sensei.html) analysiert diese Daten und berechnet Produktzuordnungen, die zur Bereitstellung von Product Recommendations verwendet werden.
 
 Nicht-Produktionsumgebungen für Tests oder Staging verfügen in der Regel nicht über die Menge oder Qualität der Storefront-Verhaltensdaten, um realistische Produktempfehlungen zu erhalten. Das tatsächliche Kaufverhalten in großem Maßstab kann nur in einer Produktionsumgebung erfasst werden. Um dieses Problem zu beheben, können Sie mit Adobe Commerce Produktempfehlungen aus Ihrer Produktionsumgebung mit anderen SaaS-Datenräumen ohne Produktionsumgebung verwenden. Durch die Verwendung der tatsächlichen Storefront-Daten in einer Nicht-Produktionsumgebung können Sie die Empfehlungen, die Ihre Kunden sehen, in der Vorschau anzeigen und mit verschiedenen Empfehlungstypen und Platzierungsorten experimentieren. Recommendations aus einem anderen SaaS-Datenraum kann von Käufern in der Vorschau angezeigt, aber nicht angeklickt werden.
+
+>[!NOTE]
+>
+>Bei der Verwendung von Product Recommendations über REST wird die `alternateEnvironmentId` kann verwendet werden, um andere Datenbereiche anzugeben. Bei Verwendung von Product Recommendations über GraphQL ist dieser Parameter nicht verfügbar.
 
 ## Empfehlungsquelle auswählen
 
