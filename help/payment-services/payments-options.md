@@ -3,9 +3,9 @@ title: Zahlungsoptionen
 description: Legen Sie die Zahlungsoptionen fest, um die für Ihre Store-Kunden verfügbaren Methoden anzupassen.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 27d121f862be99b41f467a00e5f6b9d28a40deab
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1034'
 ht-degree: 0%
 
 ---
@@ -46,6 +46,8 @@ Sie können auch das Layout, die Breite, die Höhe und den äußeren Stil der Kr
 
 Sie können [!UICONTROL PayPal Smart Buttons] in der Store-Konfiguration oder der Zahlungsdienst-Startseite.  Siehe [Einstellungen](settings.md#payment-buttons) für weitere Informationen.
 
+Siehe PayPal&#39;s [Dokumentation zu Zahlungsmethoden](https://developer.paypal.com/docs/checkout/payment-methods/) um zu erfahren, in welchen Ländern die einzelnen Zahlungsmethoden derzeit verfügbar sind.
+
 ### [!DNL PayPal] button
 
 Kunden können mit der Schaltfläche PayPal problemlos und sicher auschecken.
@@ -80,21 +82,11 @@ Diese Option kann verwendet werden, um Ihren Kunden eine PayPal Debit- oder Kred
 
 Bieten Sie Ihren Kunden kurzfristige, zinsfreie Zahlungen und andere Finanzierungsoptionen an, damit sie jetzt kaufen und später mit dem [!DNL Pay Later] Schaltfläche.
 
-Die [!DNL Pay Later] -Schaltfläche ist von der Produktseite aus sichtbar, in der Mini-Warenkorb-, Warenkorb- und Checkout-Ansicht:
+Die [!DNL Pay Later] -Schaltfläche ist von der Produktseite aus sichtbar, in der Mini-Warenkorb-, Warenkorb- und Checkout-Ansicht.
 
-* **Wenn ein Kunde ein Produkt zwischen 30 und 600 $ auswählt**, Nachrichten unter dem PayPal und [!DNL Pay Later] -Schaltflächen geben dem Kunden weitere Informationen zu [!DNL Pay in 4] Zahlungsoption. Kunden können auf **Weitere Infos** Informationen zum &quot;[!DNL Pay in 4]&quot;-Option _oder_ Klicken Sie auf den Text &quot;Oder sehen Sie 6 Monate Sonderfinanzierung&quot; im Popup, um mehr über die PayPal-Kreditoption zu erfahren und sie zu bewerben.
-* **Wenn ein Kunde ein Produkt oder Produkte auswählt, die über 98,99 USD hinausgehen**, Nachrichten unter dem PayPal und [!DNL Pay Later] -Schaltflächen bieten Kunden weitere Informationen zur Zahlungsoption PayPal Credit. Kunden können auf **Weitere Infos** Informationen zur PayPal-Kreditoption und deren Beantragung, _oder_ Klicken Sie auf den Text &quot;Oder sehen Sie Bezahlen in 4&quot;im Popup, um mehr über die [!DNL Pay in 4] -Option.
-
-  >[!NOTE]
-  >
-  >Die oben aufgeführten Beträge können sich ändern.
+Weitere Informationen zu den Pay-Later-Angeboten finden Sie unter [PayPal&#39;s Pay Later bietet Dokumentation](https://developer.paypal.com/docs/checkout/pay-later/us/). Verwenden Sie die **Land oder Region** zur Auswahl einer Zielregion.
 
 Siehe [Einstellungen](settings.md#payment-buttons) , um zu erfahren, wie Sie die [!DNL Pay Later] Messaging.
-
-Es gibt zwei Zahlungsoptionen mit der [!DNL Pay Later] Schaltfläche:
-
-* **Bezahlung in 4**—Kunden können ihren Bestellsaldo in vier zinsfreien Zahlungen (alle zwei Wochen) nach einer anfänglichen Anzahlung zahlen. Siehe [In 4 Dokumentation bezahlen](https://www.paypal.com/us/digital-wallet/ways-to-pay/buy-now-pay-later) für weitere Informationen.
-* **PayPal-Guthaben**- Kunden können ihren Bestellsaldo innerhalb von sechs Monaten vollständig, zinsfrei bezahlen. Siehe [PayPal-Kreditdokumentation](https://www.paypal.com/us/webapps/mpp/paypal-credit) für weitere Informationen.
 
 ### [!DNL Pay Now] button
 

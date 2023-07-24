@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
 feature: Payments, Checkout
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: b1984085fa5d10c8202d2a982227e183d0b169e8
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '459'
 ht-degree: 0%
 
 ---
@@ -54,13 +54,15 @@ Zurzeit [!DNL Payment Services] ist in den folgenden Ländern verfügbar:
 * Frankreich (FR)
 * Vereinigtes Königreich (Vereinigtes Königreich)
 
-Siehe [Lebenszyklusrichtlinie](https://devdocs.magento.com/release/lifecycle-policy.html){target="_blank"} und [[!DNL Payment Services] Versionshinweise](release-notes.md) Seiten , um mehr Versionsinformationen und versionsspezifische Informationen anzuzeigen.
+Siehe [Lebenszyklusrichtlinie](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html) und [[!DNL Payment Services] Versionshinweise](release-notes.md) Seiten , um mehr Versionsinformationen und versionsspezifische Informationen anzuzeigen.
 
 ### Angenommene Kreditkarten und Währungen
 
 [!DNL Payment Services] akzeptiert die Währungen der Länder [, in der sie verfügbar ist](#availability).
 
-Siehe [Verfügbarkeit der PayPal-Währung](https://developer.paypal.com/docs/platforms/checkout/reference/country-availability-advanced-cards/) Dokumentation finden Sie weitere Informationen.
+Informationen dazu, welche Währungen PayPal unterstützt, finden Sie unter [Dokumentation zu unterstützten Währungen](https://developer.paypal.com/docs/reports/reference/paypal-supported-currencies/).
+
+Informationen zu den von PayPal unterstützten Zahlungsmethoden finden Sie in den [Dokumentation zu Zahlungsmethoden](https://developer.paypal.com/docs/checkout/payment-methods/).
 
 ## Erste Schritte
 
