@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie den Adobe Experience Platform Connector von A
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 role: Admin, Developer
 feature: Install
-source-git-commit: 64273ad4c1a54b150746a54896caf73ed612c2d1
+source-git-commit: 0c8d9498ea7a30a99f834694ef8a865ad24466ab
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Vor der Installation der Erweiterung [Voraussetzungen überprüfen](overview.md#
 
 ## Installieren der Erweiterung
 
-Die Experience Platform Connector-Erweiterung ist über das [Adobe Marketplace](https://marketplace.magento.com/magento-experience-platform-connector.html). Wenn Sie diese Erweiterung über die Befehlszeile des Servers installieren, stellt sie eine Verbindung zu Ihrer Adobe Commerce-Installation als [service](../landing/saas.md). Wenn der Prozess abgeschlossen ist, **Experience Platform Connector** und **Commerce Services Connector** auf **System** Menü unter **Dienste** im Handel _Admin_.
+Die Experience Platform Connector-Erweiterung ist über das [Adobe Marketplace](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html). Wenn Sie diese Erweiterung über die Befehlszeile des Servers installieren, stellt sie eine Verbindung zu Ihrer Adobe Commerce-Installation als [service](../landing/saas.md). Wenn der Prozess abgeschlossen ist, **Experience Platform Connector** und **Commerce Services Connector** auf der **System** Menü unter **Dienste** im Handel _Admin_.
 
 >[!NOTE]
 >
@@ -65,7 +65,7 @@ composer update magento/experience-platform-connector-b2b --with-dependencies
 
 Um auf eine Hauptversion wie 1.0.0 auf 2.0.0 zu aktualisieren, bearbeiten Sie das Stammverzeichnis des Projekts [!DNL Composer] `.json` Datei wie folgt:
 
-1. Öffnen Sie den Stamm. `composer.json` Datei und suchen Sie nach `magento/experience-platform-connector`.
+1. Öffnen Sie den Stamm `composer.json` Datei und suchen Sie nach `magento/experience-platform-connector`.
 
 1. Im `require` aktualisieren Sie die Versionsnummer wie folgt:
 

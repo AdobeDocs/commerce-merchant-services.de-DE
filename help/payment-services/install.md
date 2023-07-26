@@ -4,7 +4,7 @@ description: Installieren Sie die Erweiterung "Payments Services".
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
 role: Admin
 feature: Payments, Checkout, Install, Upgrade
-source-git-commit: 30eae4c7d81ab6c2a7f04f4ff22c25e86934380a
+source-git-commit: 0c8d9498ea7a30a99f834694ef8a865ad24466ab
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 0%
@@ -19,11 +19,11 @@ Herunterladen und Installieren der [!DNL Payment Services] Erweiterung für [!DN
 
 ## Erweiterung herunterladen
 
-Sie müssen zuerst die Erweiterung von [Commerce Marketplace](https://experienceleague.adobe.com/docs/commerce-admin/start/resources/commerce-marketplace.html) vor der Installation.
+Sie müssen die Erweiterung zunächst von herunterladen [Commerce Marketplace](https://experienceleague.adobe.com/docs/commerce-admin/start/resources/commerce-marketplace.html) vor der Installation.
 
-1. Navigieren Sie zum [Zahlungsdiensterweiterung im Commerce Marketplace](https://marketplace.magento.com/magento-payment-services.html).
+1. Navigieren Sie zum [Zahlungsdiensterweiterung im Commerce Marketplace](https://commercemarketplace.adobe.com/magento-payment-services.html).
 1. Um die Bearbeitung und Version auszuwählen, schalten Sie **[!UICONTROL Edition]** und **[!UICONTROL Your store version]** zu Ihrer gewünschten Auswahl hinzufügen.
-1. Klicken **[!UICONTROL Add to Cart]**.
+1. Klicks **[!UICONTROL Add to Cart]**.
 1. Checkout abschließen und klicken **[!UICONTROL Place Order]**.
 1. Überprüfen Sie die mit Ihrem Marketplace-Download verknüpfte E-Mail, um eine Bestellbestätigung und Details zu erhalten.
 
@@ -142,7 +142,7 @@ Wenn Sie den folgenden Fehler sehen, der angibt, dass Sie nicht genügend Speich
 Fatal error: Allowed memory size of 2146435072 bytes exhausted (tried to allocate 4096 bytes) in phar:///usr/local/bin/composer/src/Composer/DependencyResolver/RuleWatchGraph.php on line 52
 ```
 
-[Erhöhen Sie die Speicherbegrenzung.](https://devdocs.magento.com/cloud/project/magento-app-php-ini.html#increase-php-memory-limit) für PHP in Ihrer Umgebung in `php.ini`.
+[Erhöhen Sie die Speicherbegrenzung](https://devdocs.magento.com/cloud/project/magento-app-php-ini.html#increase-php-memory-limit) für PHP in Ihrer Umgebung in `php.ini`.
 
 Alternativ können Sie die Speicherbegrenzung mit diesem Befehl angeben: `php -d memory_limit=-1 [path to composer]/composer require magento/payment-services`.
 

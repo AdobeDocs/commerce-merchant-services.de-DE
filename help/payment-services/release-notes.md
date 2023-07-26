@@ -1,9 +1,9 @@
 ---
 title: "[!DNL Payment Services] Versionshinweise"
-description: Informationen zu allen [!DNL Payment Services] veröffentlicht.
+description: In den Versionshinweisen finden Sie Informationen zu allen [!DNL Payment Services] veröffentlicht.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 0c8d9498ea7a30a99f834694ef8a865ad24466ab
 workflow-type: tm+mt
 source-wordcount: '1989'
 ht-degree: 0%
@@ -34,7 +34,7 @@ _9. Juni 2023_
 
 ![Neu](../assets/new.svg)<!-- Issue PAY-4288 --> Jetzt können Händler [konfigurieren _only_ PayPal-Zahlungsschaltflächen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#use-only-paypal-payment-buttons)—und _not_ Verwenden Sie die Zahlungsoption PayPal Kreditkarte . Auf diese Weise können Händler eine Vielzahl von Zahlungsoptionen anbieten, einschließlich der Zahlungsschaltflächen Venmo und PayPal, und einen vorhandenen Kreditkartenanbieter anstelle der Zahlungsoption PayPal verwenden.
 
-![Neu](../assets/new.svg)<!-- Issue PAY-4050 --> Eine [Datenvisualisierungsansicht](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#order-payment-status-data-visualization-view), der auf der Zahlungsdienst-Startseite für den Bericht Bestellzahlstatus angezeigt wird.
+![Neu](../assets/new.svg)<!-- Issue PAY-4050 --> Hinzufügung von [Datenvisualisierungsansicht](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#order-payment-status-data-visualization-view), der auf der Zahlungsdienst-Startseite für den Bericht Bestellzahlstatus angezeigt wird.
 
 ![Problem behoben](../assets/fix.svg)<!-- Issue PAY-4486--> Zuvor wurde die Schaltfläche PayPal PayLater nicht beim Checkout für Händler in Großbritannien angezeigt. Dieses Problem ist gelöst.
 
@@ -58,9 +58,9 @@ _9. August 2021_
 
 _28. Juni 2021_
 
-![Neu](../assets/new.svg)<!-- Issue PAY-1720 --> Streitigkeiten über Store-Bestellungen sind jetzt verfügbar unter [den Bericht über den Auftragszahlungsstatus](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#view-disputes). Sie können bei Streitigkeiten direkt zum PayPal-Abwicklungszentrum navigieren von [!DNL Payment Services].
+![Neu](../assets/new.svg)<!-- Issue PAY-1720 --> Streitigkeiten über Store-Bestellungen sind jetzt verfügbar unter [den Bericht über den Bestellstatus](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#view-disputes). Sie können bei Streitigkeiten direkt zum PayPal-Abwicklungszentrum navigieren von [!DNL Payment Services].
 
-![Neu](../assets/new.svg)<!-- Issue PAY-2854 --> Verbesserungen des Benutzererlebnisses aus [!DNL Payment Services] Zu den Startseiten gehören die Möglichkeit, eine Konfiguration auf der aktuellen Vererbungsebene zu ändern, sowie Verbesserungen bei der Anzeige der Kopfzeile und der Navigation.
+![Neu](../assets/new.svg)<!-- Issue PAY-2854 --> Verbesserungen der Benutzererfahrung [!DNL Payment Services] Zu den Startseiten gehören die Möglichkeit, eine Konfiguration auf der aktuellen Vererbungsebene zu ändern, sowie Verbesserungen bei der Anzeige der Kopfzeile und der Navigation.
 
 ![Neu](../assets/new.svg)<!-- Issue PAY-2854 --> Jetzt werden Warnungen angezeigt, wenn Sie vom Sandbox-Modus zum Produktionsmodus wechseln und versuchen, von einer Ansicht mit nicht gespeicherten Aktualisierungen weg zu navigieren.
 
@@ -76,11 +76,11 @@ _9. Juni 2023_
 
 ![Neu](../assets/new.svg)<!-- Issue xxx --> Unterstützung für Adobe Commerce 2.4.7-beta1 hinzugefügt.
 
-![Neu](../assets/new.svg)<!-- Issue xxx --> Hinzugefügt [Verfügbarkeit in den folgenden Ländern und assoziierten Währungen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html#availability): Australien, Frankreich, Vereinigtes Königreich.
+![Neu](../assets/new.svg)<!-- Issue xxx --> hinzugefügt [Verfügbarkeit in den folgenden Ländern und assoziierten Währungen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html#availability): Australien, Frankreich, Vereinigtes Königreich.
 
-![Neu](../assets/new.svg)<!-- Issue PAY-4296 --> Hinzugefügt [Erweiterte Ressourcen für Admin-Rollen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-roles) um sicherzustellen, dass Admin-Benutzer Bestellungen für Kunden erstellen und verwalten können und Zahlungsdienste im Menü &quot;Verkauf&quot;angezeigt werden.
+![Neu](../assets/new.svg)<!-- Issue PAY-4296 --> hinzugefügt [Erweiterte Ressourcen für Admin-Rollen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-roles) um sicherzustellen, dass Admin-Benutzer Bestellungen für Kunden erstellen und verwalten können und Zahlungsdienste im Menü &quot;Verkauf&quot;angezeigt werden.
 
-![Neu](../assets/new.svg)<!-- Issue PAY-4236 --> Hinzugefügt [automatische Aufhebung von Bestellungen, die beim Checkout Fehler verursachen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/checkout.html#order-auto-voided-if-error).
+![Neu](../assets/new.svg)<!-- Issue PAY-4236 --> hinzugefügt [automatische Aufhebung von Bestellungen, die beim Checkout Fehler verursachen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/checkout.html#order-auto-voided-if-error).
 
 ![Neu](../assets/new.svg)<!-- Issue PAY-4183 --> Erstellte Funktionalität zu [Schaltfläche für die Zahlungsoption von Kredit-/Debitkarten anzeigen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#debit-or-credit-card-button) auf der Checkout-Seite.
 
@@ -100,7 +100,7 @@ _10. März 2023_
 
 ![Fehlerbehebung](../assets/fix.svg)<!-- Issue PAY-4226 --> Es wurde ein Problem behoben, das verhinderte, dass neue Zahlungsdienst-Händler den Checkout im Admin verwenden konnten. Die Zahlungsdienste verwendeten zuvor die Commerce-Kunden-ID, die für neue Kunden nicht vorhanden ist.
 
-![Fehlerbehebung](../assets/fix.svg)<!-- Issue PAY-4205 --> Es wurde ein Fehler behoben, der dazu führte, dass der angegebene Versandadressenstatus beim Checkout mit dem Status in den Standardsteuereinstellungen durch den Status ersetzt wurde. [PayPal-Option](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#paypal-smart-buttons). Jetzt können Kunden ihre Bestellungen in einen anderen Staat verschicken lassen als den, der in den Steuereinstellungen des Händlers als Standard konfiguriert wurde.
+![Fehlerbehebung](../assets/fix.svg)<!-- Issue PAY-4205 --> Es wurde ein Fehler behoben, der dazu führte, dass der angegebene Versandadressenstatus beim Checkout mit der [PayPal-Option](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#paypal-smart-buttons). Jetzt können Kunden ihre Bestellungen in einen anderen Staat verschicken lassen als den, der in den Steuereinstellungen des Händlers als Standard konfiguriert wurde.
 
 ![Fehlerbehebung](../assets/fix.svg)<!-- Issue PAY-4202 --> Es wurde ein Problem behoben, das Kunden daran hinderte, einen Kartengewinn zu verwenden, um einen Kauf abzuschließen oder eine ungültige Zahlungsmethode für einen Store zu löschen [mithilfe der `Authorize and Capture` Zahlungsaktion](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method). Zuvor trat der Fehler &quot;Provider Vault ID not found&quot;auf, wenn der Kunde versuchte, seine ausgefüllten Kreditkarten zu verwenden oder zu ändern.
 
@@ -110,7 +110,7 @@ _17. Februar 2023_
 
 [!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"}
 
-![Neu](../assets/new.svg)<!-- Issue PAY-3540 --> Hinzugefügt [PCI-3DS-Compliance-Funktion für Händler, die in der Europäischen Union (EU) und Großbritannien tätig sind](security.md#3ds). Diese zusätzliche Sicherheitsebene, die die Authentifizierung von Käufern bei ihrem Kreditkartenaussteller erfordert, trägt zur Verhinderung von Online-Betrug bei und ist als Teil der EU-Vorschriften zur Einhaltung der Vorschriften erforderlich.
+![Neu](../assets/new.svg)<!-- Issue PAY-3540 --> hinzugefügt [PCI-3DS-Compliance-Funktion für Händler, die in der Europäischen Union (EU) und Großbritannien tätig sind](security.md#3ds). Diese zusätzliche Sicherheitsebene, die die Authentifizierung von Käufern bei ihrem Kreditkartenaussteller erfordert, trägt zur Verhinderung von Online-Betrug bei und ist als Teil der EU-Vorschriften zur Einhaltung der Vorschriften erforderlich.
 
 ![Neu](../assets/new.svg)<!-- Issue PAY-3609 --> Die Möglichkeit wurde hinzugefügt, [Aktivieren der Kartenüberprüfung in der Admin-Konsole](vaulting.md#use-vaulting-in-the-admin). Auf diese Weise können Händler mit ihren bewährten Zahlungsmethoden eine Bestellung für Kunden in der Admin erstellen.
 
@@ -138,7 +138,7 @@ _22. Dezember 2022_
 
 ![Problem behoben](../assets/fix.svg)<!-- Issue PAY-3992 --> Verbesserte Rechnungsstellung bei Zahlungsdiensten, wenn eine Zahlungsmethode abgelehnt wird.
 
-![Problem behoben](../assets/fix.svg)<!-- Issue PAY-3999 --> Zahlungsdienste zeigen Händlern jetzt die PayPal-Smart-Schaltflächen korrekt an, indem sie [Auslösen eines Checkouts](https://marketplace.magento.com/swissup-firecheckout.html){target=_blank} benutzerdefinierte Vorlage für die Checkout-Seite. Zuvor wurden die Schaltflächen im Minicart gelegentlich angezeigt.
+![Problem behoben](../assets/fix.svg)<!-- Issue PAY-3999 --> Zahlungsdienste zeigen Händlern jetzt die PayPal-Smart-Schaltflächen korrekt an, indem sie [Auslösen eines Checkouts](https://commercemarketplace.adobe.com/swissup-firecheckout.html){target=_blank} benutzerdefinierte Vorlage für die Checkout-Seite. Zuvor wurden die Schaltflächen im Minicart gelegentlich angezeigt.
 
 ## v1.5.1
 
@@ -216,7 +216,7 @@ _29. Juni 2022_
 
 ![Problem behoben](../assets/fix.svg)<!-- Issue PAY-3338 PAY-2502 --> Wenn die Anmeldedaten für Commerce Services ungültig sind, wird die [!DNL Payment Services] Die Startseite wird jetzt in der Admin-Konsole angezeigt. Es wird ein Berechtigungsfehler angezeigt, der Sie darauf hinweist, dass Ihre Anmeldedaten ungültig sind.
 
-![Bekanntes Problem](../assets/bug.svg)<!-- Issue PAY-0 --> [!DNL Payment Services] ist derzeit inkompatibel mit `commerce-data-export` v101.20 und höher, wodurch sie mit dem [[!DNL Channel manager] Erweiterung](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html).
+![Bekanntes Problem](../assets/bug.svg)<!-- Issue PAY-0 --> [!DNL Payment Services] ist derzeit mit `commerce-data-export` v101.20 und höher, wodurch sie mit dem [[!DNL Channel manager] Erweiterung](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html).
 
 ## v1.1.0
 
@@ -236,13 +236,13 @@ _31. März 2022_
 
 ![Problem behoben](../assets/fix.svg)<!-- Issue PAY-2710 --> [!DNL Payment Services] ist jetzt kompatibel mit [PHP 8.1](https://www.php.net/releases/8.1/en.php).
 
-![Problem behoben](../assets/fix.svg)<!-- Issue PAY-3017 --> Verbesserter Warnhinweis im Sandbox-Modus zur Anzeige ordnungsgemäßer Warnhinweise mit mehreren Stores.
+![Problem behoben](../assets/fix.svg)<!-- Issue PAY-3017 --> Verbesserter Warnhinweis im Sandbox-Modus zur Anzeige von Warnhinweisen mit mehreren Stores.
 
 ![Problem behoben](../assets/fix.svg)<!-- Issue PAY-2742 --> Sie können jetzt verfügbare Zahlungsmethoden wie Venmo auf der Store-Ansichtsebene aktivieren und deaktivieren. Bisher konnten Sie nur Zahlungsmethoden pro Website konfigurieren.
 
 ![Problem behoben](../assets/fix.svg)<!-- Issue PAY-2277 --> Sie können jetzt selektiv [Aktivieren oder Deaktivieren einzelner PayPal-Smart-Schaltflächen](settings.md#payment-buttons).
 
-![Problem behoben](../assets/fix.svg)<!-- Issue PAY-2561 --> Zuvor entfernte Produkte werden nicht im Warenkorb auf der _Überprüfungsreihenfolge_ Seite.
+![Problem behoben](../assets/fix.svg)<!-- Issue PAY-2561 --> Zuvor entfernte Produkte werden nicht im Warenkorb auf der _Bestellung überprüfen_ Seite.
 
 ![Bekanntes Problem](../assets/bug.svg)<!-- Issue PAY-2842 --> Testen von Kreditkartentransaktionen [kann bei PayPal fehlschlagen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html) bei der Verarbeitung von Zahlungen in einer Sandbox-Umgebung.
 
@@ -252,7 +252,7 @@ _29. November 2021_
 
 [!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"}
 
-![Neu](../assets/new.svg)<!-- Issue PAY-2127 --> Version der allgemeinen Verfügbarkeit -[[!DNL Payment Services]](https://marketplace.magento.com/magento-payment-services.html) ist jetzt kompatibel mit [!DNL Adobe Commerce] und [!DNL Magento Open Source] Versionen 2.4.0 bis 2.4.3-p1.
+![Neu](../assets/new.svg)<!-- Issue PAY-2127 --> Version der allgemeinen Verfügbarkeit -[[!DNL Payment Services]](https://commercemarketplace.adobe.com/magento-payment-services.html) ist jetzt kompatibel mit [!DNL Adobe Commerce] und [!DNL Magento Open Source] Versionen 2.4.0 bis 2.4.3-p1.
 
 ![Neu](../assets/new.svg)<!-- Issue PAY-124 --> Die [!DNL Payment Services] Erweiterung für [!DNL Adobe Commerce] und [!DNL Magento Open Source] kann entweder für [[!DNL Adobe Commerce] zur Cloud-Infrastruktur](install.md#adobe-commerce-on-cloud-infrastructure) oder [Vor Ort](install.md#on-premises) Instanzen. Diese Methoden erfordern die Verwendung einer Befehlszeilenschnittstelle.
 
@@ -268,7 +268,7 @@ _29. November 2021_
 
 ![Neu](../assets/new.svg)<!-- Issue PAY-1443 --> Sie können [Erscheinungsbild und Verhalten anpassen](payments-options.md) von PayPal-Smart-Schaltflächen und Kreditkartenfeldern für die [!DNL Payment Services] -Erweiterung.
 
-![Bekanntes Problem](../assets/bug.svg)<!-- Issue PAY-2473 --> Verwenden [falsche Composer-Schlüssel](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html) während der Installation der Erweiterung verhindert, dass der Benutzer [authentifizieren](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) mit der richtigen `MAGEID`.
+![Bekanntes Problem](../assets/bug.svg)<!-- Issue PAY-2473 --> Verwenden [falsche Composer-Schlüssel](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html) während der Installation der Erweiterung verhindert, dass der Benutzer [authentifizieren](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) mit der korrekten `MAGEID`.
 
 ![Bekanntes Problem](../assets/bug.svg)<!-- Issue PAY-2474 --> [!DNL Payment Services] Berichte [kann nicht sofort synchronisiert werden](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html).
 

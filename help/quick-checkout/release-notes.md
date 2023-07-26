@@ -1,9 +1,9 @@
 ---
 title: '''[!DNL Quick Checkout] Versionshinweise'
-description: Informationen zu allen [!DNL Quick Checkout] veröffentlicht.
+description: In den Versionshinweisen finden Sie Informationen zu allen [!DNL Quick Checkout] veröffentlicht.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
 feature: Release Notes, Services, Checkout
-source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
+source-git-commit: 0c8d9498ea7a30a99f834694ef8a865ad24466ab
 workflow-type: tm+mt
 source-wordcount: '1422'
 ht-degree: 0%
@@ -48,7 +48,7 @@ _30. November 2022_
 
 ![Neu](../assets/new.svg)<!-- Issue BOLT-502 --> Nun, die [Berichterstellung](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html) enthält eine neue Vorgabe vom Typ &quot;Letztes Jahr&quot;.
 
-![Neu](../assets/new.svg)<!-- Issue BOLT-471 --> Verbesserungen der Benutzererfahrung in [!DNL Quick Checkout] Admin-Bereich zeigt weitere Informationen in [QuickInfos](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html).
+![Neu](../assets/new.svg)<!-- Issue BOLT-471 --> Verbesserungen der Benutzererfahrung in [!DNL Quick Checkout] Admin-Bereich zeigt weitere Informationen in [Tooltips](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html).
 
 ![Problem behoben](../assets/fix.svg)<!-- Issue BOLT-514 --> Verbesserungen der Benutzererfahrung in [!DNL Quick Checkout] Im Admin-Bedienfeld werden die korrekten Gesamtbestellzahlen, die Farbkonsistenz und die korrekten Legenden für alle Diagramme angezeigt.
 
@@ -84,7 +84,7 @@ _24. Februar 2023_
 
 [!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"}
 
-![Neu](../assets/new.svg)<!-- Issue BOLT-520 --> Version der allgemeinen Verfügbarkeit -[[!DNL Quick Checkout]](https://marketplace.magento.com/magento-quick-checkout.html) ist jetzt in Adobe Commerce Cloud-Versionen 2.4.6 und höher vorinstalliert.
+![Neu](../assets/new.svg)<!-- Issue BOLT-520 --> Version der allgemeinen Verfügbarkeit -[[!DNL Quick Checkout]](https://commercemarketplace.adobe.com/magento-quick-checkout.html) ist jetzt in Adobe Commerce Cloud-Versionen 2.4.6 und höher vorinstalliert.
 
 ![Problem behoben](../assets/fix.svg)<!-- Issue BOLT-592 --> Verbesserungen beim Benutzererlebnis bei der Bestellung im [Admin Panel](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/create-order-admin.html) using [Braintree](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/stored-payment-methods.html) als Zahlungsmethode. Mit dieser Funktion können Kunden beim Checkout eine Bestellung mit Braintree als Zahlungsmethode aufgeben. [!DNL Quick Checkout] aktiviert ist.
 
@@ -102,7 +102,7 @@ _9. Februar 2023_
 
 [!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"}
 
-![Problem behoben](../assets/fix.svg)<!-- Issue BOLT-567 --> Verbesserungen der Benutzererfahrung bei [Bestellung](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html) mithilfe der [In-store-Versand](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/delivery/basic-methods/shipping-in-store-delivery.html) -Methode mit der [!DNL Quick Checkout] deaktiviert ist.
+![Problem behoben](../assets/fix.svg)<!-- Issue BOLT-567 --> Verbesserungen der Benutzererfahrung bei [Bestellung](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html) mithilfe der [In-store-Versand](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/delivery/basic-methods/shipping-in-store-delivery.html) -Methode mit [!DNL Quick Checkout] deaktiviert ist.
 
 ![Problem behoben](../assets/fix.svg)<!-- Issue BOLT-569 --> Die Abmeldefunktion wurde verbessert, sodass Käufer [Abmeldung vom Bolt Network](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/user-session-lifetime.html).
 
@@ -150,13 +150,13 @@ _8. September 2022_
 
 [!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"}
 
-![Neu](../assets/new.svg)<!-- Issue BOLT-341 --> Version der allgemeinen Verfügbarkeit -[[!DNL Quick Checkout]](https://marketplace.magento.com/magento-quick-checkout.html) ist jetzt mit Adobe Commerce-Versionen 2.4.5 kompatibel.
+![Neu](../assets/new.svg)<!-- Issue BOLT-341 --> Version der allgemeinen Verfügbarkeit -[[!DNL Quick Checkout]](https://commercemarketplace.adobe.com/magento-quick-checkout.html) ist jetzt mit Adobe Commerce-Versionen 2.4.5 kompatibel.
 
 ![Neu](../assets/new.svg)<!-- Issue BOLT-328 --> [!DNL Quick Checkout] für Adobe Commerce und Magento Open Source bietet eine [Ansicht des Admin-Bedienfelds](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html) mit allen erforderlichen Informationen zum Einrichten und Verwenden der Erweiterung.
 
 ![Neu](../assets/new.svg)<!-- Issue BOLT-364 --> Administratorbenutzer [kann Benutzerrollen und Berechtigungen einrichten](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/user-roles-setup.html) , damit andere Benutzer die [!DNL Quick Checkout] Admin-Bereich.
 
-![Neu](../assets/new.svg)<!-- Issue BOLT-377 --> [!DNL Quick Checkout] Das Admin-Bedienfeld enthält jetzt einen Seitenkopf, der bestimmte Abschnitte enthält, z. B. **Übersicht**, **Berichte** und **Einstellungen**.
+![Neu](../assets/new.svg)<!-- Issue BOLT-377 --> [!DNL Quick Checkout] Das Admin-Bedienfeld enthält jetzt einen Seitenkopf, der bestimmte Abschnitte enthält, z. B. **Übersicht**, **Berichte**, und **Einstellungen**.
 
 ![Neu](../assets/new.svg)<!-- Issue BOLT-379 --> Wenn ein neuer Händler auf die [!DNL Quick Checkout] Das Admin-Bedienfeld zeigt zum ersten Mal ein Begrüßungs-Widget an, das eine Übersicht über Funktionen bietet.
 
@@ -184,11 +184,11 @@ _9. August 2022_
 
 [!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"}
 
-![Neu](../assets/new.svg)<!-- Issue BOLT-341 --> Version der allgemeinen Verfügbarkeit -[[!DNL Quick Checkout]](https://marketplace.magento.com/magento-quick-checkout.html) ist jetzt mit den Adobe Commerce-Versionen 2.4.1 bis 2.4.4 kompatibel.
+![Neu](../assets/new.svg)<!-- Issue BOLT-341 --> Version der allgemeinen Verfügbarkeit -[[!DNL Quick Checkout]](https://commercemarketplace.adobe.com/magento-quick-checkout.html) ist jetzt mit den Adobe Commerce-Versionen 2.4.1 bis 2.4.4 kompatibel.
 
 ![Neu](../assets/new.svg)<!-- Issue BOLT-340 --> Die [!DNL Quick Checkout] für Adobe Commerce kann entweder für Adobe Commerce installiert werden [zur Cloud-Infrastruktur](install.md#adobe-commerce-on-cloud-infrastructure) oder [vor Ort](install.md#on-premises) Instanzen. Diese Methoden erfordern die Verwendung einer Befehlszeilenschnittstelle.
 
-![Neu](../assets/new.svg)<!-- Issue BOLT-1 --> Die [!DNL Quick Checkout] für Adobe Commerce bietet eine optimierte Storefront, die eine [Kasse mit einem Klick](overview.md) ohne für den Verbraucher erforderliche Füllfelder.
+![Neu](../assets/new.svg)<!-- Issue BOLT-1 --> Die [!DNL Quick Checkout] für Adobe Commerce bietet eine optimierte Storefront, die eine [Kassengang mit einem Klick](overview.md) ohne für den Verbraucher erforderliche Füllfelder.
 
 ![Neu](../assets/new.svg)<!-- Issue BOLT-1 --> Die [!DNL Quick Checkout] für Adobe Commerce erkennt jeden Käufer im Netzwerk automatisch für [Käufe mit einem Klick](checkout-flow.md) direkt auf Ihrer Site.
 

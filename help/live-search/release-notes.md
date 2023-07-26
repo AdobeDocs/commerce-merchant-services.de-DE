@@ -3,7 +3,7 @@ title: '''[!DNL Live Search] Versionshinweise'
 description: "Die neuesten Versionsinformationen für [!DNL Live Search] von Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: 0c8d9498ea7a30a99f834694ef8a865ad24466ab
 workflow-type: tm+mt
 source-wordcount: '1277'
 ht-degree: 0%
@@ -41,7 +41,7 @@ _14. März 2023_
 * Produktelementkarte in der Vorschau für Regeln
 * [Widget &quot;Seite für Produktauflistung&quot;](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-storefront/plp-styling.html)
 * [Filteroptionen für Kategorien](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#facets)
-* Die Möglichkeit, Pin-Ereignisse per Drag-and-Drop zu erstellen, wurde hinzugefügt
+* Die Möglichkeit, Pin-Ereignisse per Drag &amp; Drop zu erstellen, wurde hinzugefügt
 * Neue Pin-Aktionen:
    * An Ort und Stelle befestigen - Schaltfläche &quot;Pin&quot;zum Erstellen eines Pin-Ereignisses mit einem Klick
    * Nach oben pinnen - Setzt das Produkt an die erste Position
@@ -51,7 +51,7 @@ _14. März 2023_
 
 ### Updates
 
-* Regeln jetzt automatisch konfigurieren Sortieren von Positionen einmalig
+* Regeln jetzt automatisch konfigurieren Sortiert Positionen einmalig
 * Beim Löschen eines vorhandenen Ereignisses wird jetzt die Vorschau aktualisiert.
 * Regeln ohne Ereignisse können gespeichert werden
 * Facettenauswahl &quot;Typ auswählen&quot;entfernen
@@ -62,15 +62,15 @@ _14. März 2023_
 * Es wurde ein Serverfehler behoben, der auftrat, wenn beim Speichern ein nicht abgeschlossenes Ereignis auftrat
 * Korrektur des korrekten Löschens eines bestimmten Ereignisses bei mehreren Ereignissen
 * Fehlerkorrektur - Das vorhandene Regelereignis wird jetzt aktualisiert, wenn ein neues Ereignis hinzugefügt wird
-* Beim zweiten &quot;Bearbeiten&quot;-Klick aus Details behoben, [!DNL Live Search] Seite, die neu geladen werden muss
-* Synonyme: Es wurde ein Problem behoben, durch das ein Benutzer, der aus der Eingabe klickte, den Fokus nicht auf das Feld zurücksetzen konnte
+* Beim zweiten &quot;Bearbeiten&quot;-Klick aus Details behoben, [!DNL Live Search] Seite muss neu geladen werden
+* Synonyme: Es wurde ein Problem behoben, bei dem ein Benutzer, der auf die Eingabe klickte, den Fokus nicht auf das Feld zurücksetzen konnte.
 * Andere kleinere Fehlerbehebungen und Leistungsaktualisierungen
 
 
 * ![Fehler](../assets/bug.svg) - Die Rangordnung nach &quot;Empfohlen für Sie&quot;wird nur in den Live-Suche-Widgets unterstützt. Sie wird von der standardmäßigen Luma- und PWA-Suchfunktion nicht unterstützt.
 * ![Fehler](../assets/bug.svg) - Benutzerdefinierte Preisattribut-Facetten werden in Luma nicht korrekt dargestellt, aber die API filtert sie ordnungsgemäß.
 
-Händler müssen das [!DNL Live Search] -Erweiterungsversion >= 3.0.1 verwenden, um auf diese Funktionen zuzugreifen.
+Merchandising muss die [!DNL Live Search] -Erweiterungsversion >= 3.0.1 verwenden, um auf diese Funktionen zuzugreifen.
 
 Es wird empfohlen, ein Upgrade durchzuführen und zu testen, bevor Sie die Produktionsumgebung aktivieren. Erwägen Sie, die Produktionsumgebung außerhalb der Spitzenzeiten zu aktualisieren, nachdem Sie die Ergebnisse der Testumgebung überprüft haben.
 
@@ -94,11 +94,11 @@ Es wird empfohlen, ein Upgrade durchzuführen und zu testen, bevor Sie die Produ
 
 ![Neu](../assets/new.svg) Die Live-Suche unterstützt jetzt das Filtern nach der Einstellung &quot;Nicht vorrätige Produkte anzeigen&quot;im Admin. Wenn &quot;Nicht vorrätige Produkte anzeigen&quot;auf &quot;false&quot;gesetzt ist, `inStock = true` wird zum Filter hinzugefügt.
 ![Fehlerbehebung](../assets/fix.svg) Um die Leistung zu verbessern, wurde der Block &quot;Vorschläge&quot;aus dem Popup-Fenster &quot;Live-Suche&quot;entfernt. Die Daten werden weiterhin über GraphQL übergeben, falls Sie die Funktion ersetzen möchten.
-![Fehlerbehebung](../assets/fix.svg) `categories` und `categoryPath` ersetzt `categoryIds` für die Kategoriefilterung. Mehr dazu im [productSearch](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) Thema.
+![Fehlerbehebung](../assets/fix.svg) `categories` und `categoryPath` ersetzt `categoryIds` für die Kategoriefilterung. Weitere Informationen finden Sie unter [productSearch](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) Thema.
 ![Fehlerbehebung](../assets/fix.svg) Zuvor erhielt ein Benutzer, der an ein B2B-Unternehmen gebunden war, bei der Suche einen falschen Kundengruppen-Code. Die Live-Suche gibt jetzt den richtigen Wert zurück.
 ![Fehlerbehebung](../assets/fix.svg) Bisher gab die Live-Suche bei der Suche nach einem nicht vorhandenen Begriff einen Fehler zurück. Dieser Fehler wurde nun behoben.
 
-Händler müssen das [!DNL Live Search] Erweiterungsversion >= 2.0.4 verwenden, um auf diese Funktionen zuzugreifen.
+Merchandising muss die [!DNL Live Search] -Erweiterungsversion >= 2.0.4 verwenden, um auf diese Funktionen zuzugreifen.
 
 Benutzern wird empfohlen, ein Upgrade durchzuführen und zu testen, bevor sie zur Produktion wechseln. Erwägen Sie, die Produktionsumgebung außerhalb der Spitzenzeiten zu aktualisieren, nachdem Sie die Ergebnisse der Testumgebung überprüft haben.
 
@@ -108,7 +108,7 @@ Benutzern wird empfohlen, ein Upgrade durchzuführen und zu testen, bevor sie zu
 
 ![Neu](../assets/new.svg) Live Search unterstützt jetzt B2B-Funktionen durch Berücksichtigung von Kategorieberechtigungen, freigegebenen Katalogen und kundengruppenspezifischen Preisen.
 
-Händler müssen das [!DNL Live Search] Erweiterungsversion >= 2.0.3 verwenden, um auf diese Funktionen zuzugreifen.
+Merchandising muss die [!DNL Live Search] Erweiterungsversion >= 2.0.3 verwenden, um auf diese Funktionen zuzugreifen.
 
 Benutzern wird empfohlen, ein Upgrade durchzuführen und zu testen, bevor sie zur Produktion wechseln. Erwägen Sie, die Produktionsumgebung außerhalb der Spitzenzeiten zu aktualisieren, nachdem Sie die Ergebnisse der Testumgebung überprüft haben.
 
@@ -174,6 +174,6 @@ Bestehend [!DNL Live Search] -Installationen müssen aktualisiert werden auf [!D
 
 Weitere Informationen:
 
-* [Adobe Commerce-Entwicklerdokumentation](https://developer.adobe.com/commerce/docs)
+* [Dokumentation für Adobe Commerce-Entwickler](https://developer.adobe.com/commerce/docs)
 * [Adobe Commerce-Benutzerhandbuch](https://experienceleague.adobe.com/docs/commerce.html)
-* [[!DNL Live Search] auf Marketplace](https://marketplace.magento.com/magento-live-search.html)
+* [[!DNL Live Search] auf Marketplace](https://commercemarketplace.adobe.com/magento-live-search.html)
