@@ -1,7 +1,7 @@
 ---
 title: Feed-Erfassungsdienst
 description: Erfahren Sie mehr über den Feed-Erfassungsdienst für Adobe Commerce
-source-git-commit: b484429a529acfa95f70c5a55b6a5fcdedc887b3
+source-git-commit: 12b1e89924a2eb89494bcb884fc3bc14e87b2b1c
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 0%
@@ -42,4 +42,4 @@ Der Feed-Erfassungsdienst wurde für Folgendes entwickelt:
 * Kunden mit großen, komplexen Katalogen
 * Kunden, die zum Verwalten von Katalogdaten nicht den Adobe Commerce Admin verwenden, sondern ein ERP- oder Drittanbietersystem zur Verwaltung von Katalogdaten verwenden
 
-Wenn Sie Interesse haben, am Betaprogramm teilzunehmen, wenden Sie sich bitte unter XXXXX@adobe.com an das Team.
+Wenn Sie Interesse haben, am Betaprogramm teilzunehmen, wenden Sie sich bitte unter sagonzal@adobe.com an das Team.
