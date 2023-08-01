@@ -2,16 +2,16 @@
 title: Onboarding und Installation
 description: Erfahren Sie, wie Sie installieren [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 96a5791c5716f612f473540f27bd3f99b1bfe7c8
+source-git-commit: 04b1553e7cc16d142b72553ca2a6bb9d6a6b5eb4
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '639'
 ht-degree: 0%
 
 ---
 
 # Onboarding und Installation
 
-Sehen Sie sich eine exemplarische Vorgehensweise zum Catalog Service-Prozess an.
+Eine exemplarische Vorgehensweise zum Catalog Service-Prozess finden Sie.
 
 Teil 1:
 
@@ -33,7 +33,7 @@ Onboarding-Prozess für [!DNL Catalog Service] erfordert Zugriff auf die Befehls
 
 ### Unterstützte Plattformen
 
-- Adobe Commerce über Cloud-Infrastruktur: 2.4.4+
+- Adobe Commerce für Cloud-Infrastruktur: 2.4.4+
 - Adobe Commerce vor Ort: 2.4.4+
 
 ## Umgebungen
@@ -42,6 +42,8 @@ Catalog Service verfügt über zwei Umgebungen, die für das Onboarding verfügb
 
 - Sandbox (https://catalog-service-sandbox.adobe.io/graphql) - wird zum Testen und Validieren vor der Live-Schaltung verwendet
 - Produktion (https://catalog-service.adobe.io/graphql)- für Live-Traffic für Commerce-Händler und Websites verwendet
+
+Ladetests sollten nur in der Sandbox-Umgebung durchgeführt werden. Es wird empfohlen, dass ein [Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) beim Laden geöffnet werden, damit das Services-Team den zusätzlichen Server-Traffic vorhersehen kann.
 
 ## Installation und Konfiguration
 
@@ -81,7 +83,7 @@ composer update
 
 Der Befehl aktualisiert alle Abhängigkeiten.
 
-1. Übernehmen Sie Ihre Änderungen und übertragen Sie sie für `composer.json` und `composer.lock`.
+1. Übernehmen Sie Ihre Änderungen und übergeben Sie sie an `composer.json` und `composer.lock`.
 
 #### Vor Ort
 
@@ -123,9 +125,9 @@ Nachdem die SaaS-Konfiguration abgeschlossen ist, führen Sie eine erste Datensy
 
 So stellen Sie sicher, dass der Katalogexport ordnungsgemäß ausgeführt wird:
 
-- Vergewissern Sie sich, dass Cron-Aufträge ausgeführt werden.
+- Bestätigen Sie, dass Cron-Aufträge ausgeführt werden.
 - Überprüfen Sie, ob die Indexer ausgeführt werden.
-- Stellen Sie sicher, dass `Catalog Attributes Feed, Product Feed, Product Overrides Feed`und `Product Variant Feed` Indexer sind auf &quot;Nach Zeitplan aktualisieren&quot;eingestellt.
+- Stellen Sie sicher, dass `Catalog Attributes Feed, Product Feed, Product Overrides Feed`, und `Product Variant Feed` Indexer sind auf &quot;Nach Zeitplan aktualisieren&quot;eingestellt.
 
 Die anfängliche Synchronisation kann abhängig von der Kataloggröße einige Minuten bis Stunden dauern. Nach der ersten Synchronisierung exportiert der Katalog laufend Produktdaten vom Commerce-Server in Commerce-Dienste, um die Dienste auf dem neuesten Stand zu halten.
 
@@ -143,4 +145,4 @@ Um Catalog Service über eine Firewall zuzulassen, fügen Sie `commerce.adobe.io
 
 Die [API-Mesh für Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) ermöglicht es Entwicklern, mithilfe von Adobe IO private oder Drittanbieter-APIs und andere Schnittstellen mit Adobe-Produkten zu integrieren.
 
-Siehe  [Catalog Service und API-Mesh](mesh.md) Thema für Installations- und Konfigurationsdetails.
+Siehe  [Catalog Service und API-Mesh](mesh.md) Thema für die Installation und Konfiguration.

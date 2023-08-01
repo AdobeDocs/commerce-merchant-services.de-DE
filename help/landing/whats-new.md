@@ -5,9 +5,9 @@ seo-title: Adobe Commerce Services documentation changes
 seo-description: See a collated list of all documentation changes for Adobe Commerce Services and integration services.
 exl-id: dcc613e3-955e-4006-9984-bf05289d3bc1
 recommendations: noDisplay
-source-git-commit: 4dfc12993ff6a013ebc7ebb7641bf2e19b5fafc7
+source-git-commit: 04b1553e7cc16d142b72553ca2a6bb9d6a6b5eb4
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '66'
 ht-degree: 0%
 
 ---
@@ -16,12 +16,9 @@ ht-degree: 0%
 
 Bei den folgenden Elementen handelt es sich um aktuelle Änderungen an der Dokumentation:
 
-| Diensleistung | Änderung | Typ |
+| Dienst | Änderung | Typ |
 | -- | -- | -- |
-| [**Zahlungsdienste**](../payment-services/overview.md) | Es wurden Informationen zur neuen Datenvisualisierungsansicht für die [Bestellstatusbericht](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html). | Wichtige Aktualisierung |
-| [**Zahlungsdienste**](../payment-services/overview.md) | Eine [Checkout-Thema](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/checkout.html) , um Kasseninformationen und Abschnitte über automatische Löschaufträge zu sammeln, wenn beim Checkout ein Fehler auftritt. | Neues Thema |
-| [**Zahlungsdienste**](../payment-services/overview.md) | Hinzugefügt [Informationen zum Thema Einstellungen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-roles) über das Konfigurieren von Admin-Rollen mit Zahlungsdienst-Ressourcen, um sicherzustellen, dass Admin-Benutzer Bestellungen für Kunden erstellen und verwalten können. | Wichtige Aktualisierung |
-| [**Zahlungsdienste**](../payment-services/overview.md) | Fügt Informationen zum [Zahlungsoptionen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#debit-or-credit-card-button), [Legacy-Konfiguration](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/configure-admin.html#configure-paypal-smart-buttons)und [Einstellungen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#payment-buttons) Themen darüber, wie Sie die Schaltfläche mit der Option Kreditkartenzahlung aktivieren. | Wichtige Aktualisierung |
-| [**Zahlungsdienste**](../payment-services/overview.md) | Neuer Abschnitt zu [Thema &quot;Zahlungsoptionen&quot;](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#use-only-paypal-branded-payment-buttons) mit Informationen zur Konfiguration von Zahlungsdiensten, um nur die PayPal-Marken-Zahlungsschaltflächen zu verwenden. | Wichtige Aktualisierung |
+| [**Catalog Service**](../catalog-service/overview.md) | Es wurde ein neues Thema zum [Feed-Erfassungsdienst](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/feed-ingestion.html) Betaprogramm. | Neues Thema |
+
 
 Diese Tabelle wird am ersten Montag jedes Monats aktualisiert.
