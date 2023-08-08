@@ -3,9 +3,9 @@ title: '''[!DNL Live Search] Versionshinweise'
 description: "Die neuesten Versionsinformationen für [!DNL Live Search] von Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: e7e45863dced36ecbd508931df5141bb6f1d8e64
+source-git-commit: 3edbbc054fdadfeaa710b8c096db63e0d1961d02
 workflow-type: tm+mt
-source-wordcount: '1374'
+source-wordcount: '1390'
 ht-degree: 0%
 
 ---
@@ -55,6 +55,10 @@ Die folgenden Werte wurden zum `storeDetails` -Objekt:
 ### Updates
 
 * Dem Metapaket wurden Catalog Service-Module hinzugefügt, um den erweiterten Datenabruf zu unterstützen.
+
+### Fehlerbehebungen
+
+* Die **Mein Konto** Die Seitennavigation verschwindet nicht mehr bei Verwendung des Widgets &quot;Produktauflistungsseite&quot;.
 
 Merchandising muss die [!DNL Live Search] -Erweiterungsversion >= 3.0.2 verwenden, um auf diese Funktionen zuzugreifen.
 
