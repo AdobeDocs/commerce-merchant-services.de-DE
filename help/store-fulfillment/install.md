@@ -34,7 +34,7 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 - **Adobe Commerce-Kontoinformationen**- Installieren der [!DNL Store Fulfillment] -Lösung erfordert [[!DNL Commerce] account](https://docs.magento.com/user-guide/magento/magento-account.html){target="_blank"}. Sie benötigen eine Konto-ID und Anmeldedaten mit dem Inhaber- oder Administratorzugriff auf die [!DNL Adobe Commerce] Projekt.
 
-- Für [!DNL Adobe Commerce] Bei Cloud-Infrastrukturprojekten müssen Softwareinstallateure Administratorzugriff auf das Cloud-Projekt haben. Siehe [Benutzerzugriff verwalten](https://devdocs.magento.com/cloud/project/user-admin.html).
+- Für [!DNL Adobe Commerce] Bei Cloud-Infrastrukturprojekten müssen Softwareinstallateure Administratorzugriff auf das Cloud-Projekt haben. Siehe [Verwalten des Benutzerzugriffs](https://devdocs.magento.com/cloud/project/user-admin.html).
 
 - **Erlebnis mit Composer und dem[!DNL Commerce CLI]**—Siehe [Allgemeine CLI-Installation](https://devdocs.magento.com/extensions/install/){target="_blank"} Informationen zur Verwendung dieser Tools zum Installieren und Verwalten von Erweiterungen auf der [!DNL Adobe Commerce] Plattform.
 
@@ -44,7 +44,7 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
    - [Installieren einer Erweiterung für eine lokale Adobe Commerce-Instanz](https://devdocs.magento.com/extensions/install/).
 
-### Schritt 1: Herunterladen des Erweiterungspakets
+### Schritt 1: Herunterladen des Erweiterungs-Bundles
 
 Befolgen Sie die Anweisungen Ihrer Kundenbetreuer, um die Archivdatei herunterzuladen, die die Composer-Pakete für die Installation der Store Fulfillment Services-Erweiterung enthält.
 
@@ -99,9 +99,9 @@ Schließen Sie die Installation mit der `bin/magento setup:upgrade` , um das Dat
 >
 >Für Adobe Commerce in Cloud-Infrastrukturprojekten müssen Sie die Erweiterung nicht registrieren. Übernehmen Sie stattdessen die Codeänderungen aus dem vorherigen Schritt und übertragen Sie sie in Ihre Umgebungsverzweigung. Die Befehle zum Aktualisieren des Datenbankschemas und der Daten werden während des Build- und Bereitstellungsprozesses der Cloud automatisch ausgeführt.
 
-### Schritt 5: Schließen Sie die Installation ab
+### Schritt 5: Installation abschließen
 
-1. Registrieren Sie die Erweiterung bei Adobe Commerce mithilfe der `setup:upgrade` Magento-CLI-Befehl.
+1. Registrieren Sie die Erweiterung bei Adobe Commerce mithilfe der `setup:upgrade` Magento CLI-Befehl.
 
    ```terminal
    bin/magento setup:upgrade
@@ -131,7 +131,7 @@ Schließen Sie die Installation mit der `bin/magento setup:upgrade` , um das Dat
 
 1. Melden Sie sich beim Server an.
 
-   Für Installationen in Adobe Commerce auf Cloud-Infrastruktur: [Verwenden Sie SSH, um sich bei der Remote-Umgebung anzumelden.](https://devdocs.magento.com/cloud/env/environments-ssh.html#ssh).
+   Für Installationen in Adobe Commerce auf Cloud-Infrastruktur: [SSH zur Anmeldung in der Remote-Umgebung verwenden](https://devdocs.magento.com/cloud/env/environments-ssh.html#ssh).
 
 1. Stellen Sie sicher, dass die Module für Store Fulfillment Services aktiviert sind.
 

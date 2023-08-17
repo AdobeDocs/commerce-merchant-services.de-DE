@@ -1,7 +1,8 @@
 ---
 title: Seiten-Widget "Produktliste"
-description: "Aktivieren und Gestalten der [!DNL Live Search Product Listing Page Widget]"
-source-git-commit: c4bca0c7238be653dd13b051634c662e5891767d
+description: Aktivieren und Gestalten der [!DNL Live Search Product Listing Page Widget]
+exl-id: f7346a06-a8c7-4a33-8437-ea4f61d9281f
+source-git-commit: 368059d50133d8b01be83e1616044a61ab094e3c
 workflow-type: tm+mt
 source-wordcount: '252'
 ht-degree: 0%
@@ -14,7 +15,7 @@ Die [!DNL Live Search Product Listing Page Widget] (PLP) verwendet die Commerce 
 
 ## Aktivieren des PLP-Widgets
 
-Wenn die [!DNL Live Search] -Dienst installiert ist, wird die Standardsuchfunktion in [!DNL Live Search] automatisch.
+Wenn die Variable [!DNL Live Search] installiert ist, wird die Standardsuchfunktion in [!DNL Live Search] automatisch.
 Das PLP-Widget muss in der Admin-Konsole aktiviert sein.
 
 1. Navigieren Sie zu **Stores** > Einstellungen > **Konfiguration** > **[!DNL Live Search]** > **Storefront-Funktionen** und **Enable Product Listing Widgets** auf &quot;Ja&quot;.
@@ -26,7 +27,7 @@ Sie können das Erscheinungsbild des PLP-Widgets so anpassen, dass es zu Ihrer S
 
 >[!NOTE]
 >
->Elemente mit benutzerdefinierten Klassen innerhalb eines Adobe Commerce-Designs werden nicht vererbt. Diese Elemente müssen durch ihre spezifische Klasse als Ziel ausgewählt werden, um die benutzerdefinierten Klassen abzugleichen. Primäre Aktionsklassen funktionieren nicht auf einer Widget-Schaltfläche.
+>Elemente mit benutzerdefinierten Klassen innerhalb eines Adobe Commerce-Designs werden nicht vererbt. Diese Elemente müssen von ihrer jeweiligen Klasse angesprochen werden, um mit den benutzerdefinierten Klassen übereinstimmen. Primäre Aktionsklassen funktionieren nicht mit Widget-Schaltflächen.
 >Generische Targeting-Elemente innerhalb des CSS werden vererbt. `button` wird auf Widget-Schaltflächen angewendet.
 
 Die hervorgehobenen Divs enthalten die Zielklasse `ds-sdk-product-item__product-name`.
@@ -47,7 +48,7 @@ Passen Sie den Produktnamen an, indem Sie eine Regel hinzufügen, um sie in Gro�
 
 ### Produktliste
 
-* `.ds-sdk-product-list`: Außenbereich
+* `.ds-sdk-product-list`: Externes div
 * `.ds-sdk-product-list__grid`: Inner div
 
 ![Paginierung](assets/plp-css-product-list.png)
@@ -68,9 +69,9 @@ Passen Sie den Produktnamen an, indem Sie eine Regel hinzufügen, um sie in Gro�
 
 ### Widgets
 
-* `.ds-widgets`: Außenbereich
+* `.ds-widgets`: Externes div
 * `.ds-widgets__actions`: Linkes seitliches inneres Div
-* `.ds-widgets__results`: Rechtes inneres Div
+* `.ds-widgets__results`: Rechtsseitiges inneres Div
 
 ![Widget-Ergebnisse](assets/plp-css-widgets.png)
 

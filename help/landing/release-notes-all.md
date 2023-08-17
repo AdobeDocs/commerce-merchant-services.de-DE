@@ -35,7 +35,7 @@ In der folgenden Tabelle finden Sie Versionshinweise und wichtige Informationen 
       <td><strong>Integrationsdienste</strong>
         <p>Erfahren Sie mehr über die neuesten Verbesserungen der Integrationsdienste, die es unseren Commerce Services ermöglichen, mit anderen Diensten und Adobe-Erweiterungen und -Produkten zu verbinden.</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/release-notes.html">Experience Platform Connector</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/release-notes.html">Experience Platform-Connector</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html">Services Connector</a></li>
           </ul>
       </td>

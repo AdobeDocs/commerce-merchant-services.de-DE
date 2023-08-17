@@ -5,7 +5,7 @@ source-wordcount: '429'
 ht-degree: 0%
 
 ---
-# Verhaltenskodex der Adobe
+# Adobe-Verhaltenskodex
 
 ## Unser Versprechen
 

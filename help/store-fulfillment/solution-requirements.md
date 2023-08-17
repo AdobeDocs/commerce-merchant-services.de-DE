@@ -65,7 +65,7 @@ Ihr Unternehmen muss die folgenden Mindestkriterien erfüllen, um die Store Fulf
 
 - Möglichkeit zur Konsortimentierung des Händlerinventars
 
-- Die WLAN-Verfügbarkeit wird an allen Standorten gespeichert, die die Store Fulfillment-Lösung unterstützen: Internet-Geschwindigkeit von 3 MBit/s
+- Die Wi-Fi-Verfügbarkeit an allen Standorten, die die Store Fulfillment-Lösung unterstützen, speichern: 3 MBit/s Mindestinternetgeschwindigkeit
 
 - Store- und Warehouse-Mitarbeiter haben während ihres Verlags Zugriff auf Mobilgeräte mit iOS oder Android, die entweder persönlich oder vom Händler bereitgestellt werden
 

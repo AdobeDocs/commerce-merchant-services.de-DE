@@ -1,6 +1,6 @@
 ---
 title: Test in der Staging-Umgebung
-description: Erfahren Sie, wie Sie [!DNL Product Recommendations] aus Ihrer Produktionsumgebung in Ihrer Staging-Umgebung zu Testzwecken.
+description: Verwendung von [!DNL Product Recommendations] aus Ihrer Produktionsumgebung in Ihrer Staging-Umgebung zu Testzwecken.
 exl-id: 178ff2aa-7821-45f7-85f1-d490d8182817
 feature: Services, Recommendations, Staging
 source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
@@ -26,7 +26,7 @@ Wie können Sie Ihre Empfehlungen in einer Nicht-Produktionsumgebung mit Verhalt
 
 ## Abrufen von Empfehlungen aus der Produktionsumgebung (empfohlen)
 
-Mit Adobe Commerce können Sie Empfehlungen aus Ihrer Produktionsumgebung abrufen und in Ihrer Nicht-Produktionsumgebung von einer Vorschau anzeigen [Switching](settings.md) den SaaS-Datenraum.
+Adobe Commerce ermöglicht es Ihnen, Empfehlungen aus Ihrer Produktionsumgebung abzurufen und sie in Ihrer Nicht-Produktionsumgebung in der Vorschau anzuzeigen, indem Sie [Switching](settings.md) den SaaS-Datenraum.
 
 Um Empfehlungen aus Ihrer Produktionsumgebung abzurufen, müssen Sie Folgendes sicherstellen:
 

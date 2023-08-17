@@ -24,7 +24,7 @@ Wenn Sie die `recommendations.html` müssen Sie die folgenden Tags in der Datei 
 | `<div data-bind="attr : {'data-unit-id' : unitId }"...</div>` | Erfasst Ansichtsereignisse. |
 | `<a data-bind="attr : {'data-sku' : sku, 'data-unit-id'}"...</a>` | Erfasst Klickereignisse. <br/>**Hinweis:** Wenn Sie Anker-Tags hinzufügen, müssen Sie diese Attribute einbeziehen. |
 
-Zusätzlich zu den `recommendations.html` -Datei, die `ProductRecommendationsLayout` enthält die folgenden Unterverzeichnisse:
+Zusätzlich zu den `recommendations.html` -Datei, `ProductRecommendationsLayout` -Verzeichnis enthält die folgenden Unterverzeichnisse:
 
 | Verzeichnis | Zweck |
 |---|---|
@@ -37,7 +37,7 @@ Zusätzlich zu den `recommendations.html` -Datei, die `ProductRecommendationsLay
 
 Wenn Sie [erstellen](create.md) eine Empfehlung, legen Sie die [location](placement.md) wo sie auf der Seite angezeigt wird. Eine Empfehlungseinheit kann entweder oben oder unten im Hauptinhaltsbehälter platziert werden. Sie können diese Platzierung jedoch anpassen. Wenn Sie einen Inhaltstyp für Seitenaufbau-Empfehlungen erstellen, verwenden Sie die Seitenaufbau-Tools, um die Empfehlungseinheit auf der Seite zu positionieren. Für alle anderen Seitentypen bearbeiten Sie die `*.xml` -Dateien, die beim Erstellen der Empfehlung generiert werden.
 
-1. Änderung an `layout` directory:
+1. Ändern Sie die `layout` directory:
 
    ```bash
    cd `<your theme>/Magento_ProductRecommendationsLayout/layout`
@@ -103,7 +103,7 @@ Wenn Sie [erstellen](create.md) eine Empfehlung, legen Sie die [location](placem
 
    Diese Änderung führt dazu, dass Ihre Empfehlungseinheit nach dem Produktbild auf der Produktdetailseite angezeigt wird. Wenn Sie möchten, dass die Empfehlungseinheit vor der `product.info.media`, ändern Sie die `after="-"` Attribut `before="-"`. Die `pagePlacement` -Argument ist ein internes Argument, das nicht geändert werden sollte.
 
-Siehe [Layout-Übersicht](https://developer.adobe.com/commerce/frontend-core/guide/layouts/) für weitere Informationen zu den Bausteintypen auf der Seite.
+Siehe Abschnitt [Layoutübersicht](https://developer.adobe.com/commerce/frontend-core/guide/layouts/) für weitere Informationen zu den Bausteintypen auf der Seite.
 
 ## Benutzerdefinierte Produktattribute
 

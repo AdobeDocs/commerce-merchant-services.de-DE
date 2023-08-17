@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie eine Produktempfehlungseinheit erstellen.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
 source-git-commit: d56fd57281a5b675e128cca75d4057756a0bf4bf
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '853'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Wenn Sie eine Empfehlung erstellen, erstellen Sie eine _Empfehlungseinheit_ , da
 ![Empfehlungseinheit](assets/unit.png)
 _Empfehlungseinheit_
 
-Wenn Sie die Empfehlungseinheit aktivieren, beginnt Adobe Commerce [Daten erfassen](workspace.md) , um Impressionen, Ansichten, Klicks usw. zu messen. Die [!DNL Product Recommendations] zeigt die Metriken für jede Empfehlungseinheit an, damit Sie fundierte Geschäftsentscheidungen treffen können.
+Wenn Sie die Empfehlungseinheit aktivieren, beginnt Adobe Commerce [Daten erfassen](workspace.md) zum Messen von Impressionen, Ansichten, Klicks usw. Die [!DNL Product Recommendations] zeigt die Metriken für jede Empfehlungseinheit an, damit Sie fundierte Geschäftsentscheidungen treffen können.
 
 1. Im _Admin_ Seitenleiste, navigieren Sie zu **Marketing** > _Promotions_ > **Produkt-Recommendations** , um _Produkt-Recommendations_ Arbeitsbereich.
 
@@ -24,11 +24,11 @@ Wenn Sie die Empfehlungseinheit aktivieren, beginnt Adobe Commerce [Daten erfass
 
    >[!NOTE]
    >
-   > Die Empfehlungseinheiten für den Seitenaufbau müssen in der standardmäßigen Store-Ansicht erstellt werden, können dann jedoch überall verwendet werden. Weitere Informationen zum Erstellen von Produktempfehlungen mit Page Builder finden Sie unter [Hinzufügen von Inhalten - Produkt-Recommendations](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html).
+   > Die Empfehlungseinheiten für den Seitenaufbau müssen in der standardmäßigen Store-Ansicht erstellt werden, können dann jedoch überall verwendet werden. Weitere Informationen zum Erstellen von Produktempfehlungen mit Page Builder finden Sie unter [Inhalt hinzufügen - Produkt-Recommendations](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html).
 
-1. Klicken **Empfehlung erstellen**.
+1. Klicks **Empfehlung erstellen**.
 
-1. Im _Benennen Sie Ihre Empfehlung._ eingeben, einen beschreibenden Namen für die interne Referenz eingeben, z. B. `Home page most popular`.
+1. Im _Benennen Ihrer Empfehlung_ einen beschreibenden Namen für interne Verweise eingeben, z. B. `Home page most popular`.
 
 1. Im _Seitentyp auswählen_ wählen Sie aus den folgenden Optionen die Seite aus, auf der die Empfehlung angezeigt werden soll:
 
@@ -50,7 +50,7 @@ Wenn Sie die Empfehlungseinheit aktivieren, beginnt Adobe Commerce [Daten erfass
 
    - Ausreichende Ergebnissatzgröße: Gibt es in den meisten Szenarien genügend Ergebnisse, um die Verwendung von [Ersatzempfehlungen](behavioral-data.md#backuprecs)?
 
-   - Ausreichende Ergebnissatzvielfalt: Stellen die zurückgegebenen Produkte eine Vielzahl von Produkten aus Ihrem Katalog dar? Mit diesem Faktor soll verhindert werden, dass eine Minderheit von Produkten die einzigen Artikel ist, die auf der gesamten Site empfohlen werden.
+   - Ausreichende Ergebnismenge: Stellen die zurückgegebenen Produkte eine Vielzahl von Produkten aus Ihrem Katalog dar? Mit diesem Faktor soll verhindert werden, dass eine Minderheit von Produkten die einzigen Artikel ist, die auf der gesamten Site empfohlen werden.
 
    Basierend auf den oben genannten Faktoren wird ein Bereitschaftswert berechnet und angezeigt. Ein Empfehlungstyp gilt als bereitstellbar, wenn sein Bereitschaftswert 75 % oder höher beträgt. Ein Empfehlungstyp wird als teilweise fertig angesehen, wenn seine Bereitschaft mindestens 50 % beträgt. Schließlich gilt ein Empfehlungstyp als nicht bereit zur Bereitstellung, wenn sein Bereitschaftswert unter 50 % liegt.
 
@@ -75,14 +75,14 @@ Wenn Sie die Empfehlungseinheit aktivieren, beginnt Adobe Commerce [Daten erfass
    ![Empfehlungsauftrag](assets/create-recommendation-select-placement.png)
    _Empfehlungsauftrag auf Seite_
 
-1. (Optional) Im _Filter_ Abschnitt [Filter anwenden](filters.md) , um zu steuern, welche Produkte in der Empfehlungseinheit angezeigt werden.
+1. (Optional) Im _Filter_ Abschnitt, [Filter anwenden](filters.md) , um zu steuern, welche Produkte in der Empfehlungseinheit angezeigt werden.
 
    ![Empfehlungsfilter](assets/create-recommendation-filter-products.png)
    _Empfehlungs-Produktfilter_
 
 1. Klicken Sie nach Abschluss des Vorgangs auf eine der folgenden Optionen:
 
-   - **Als Entwurf speichern** um die Empfehlungseinheit später zu bearbeiten. Sie können den Seitentyp oder den Empfehlungstyp für eine Empfehlungseinheit nicht in einem Entwurfsstatus ändern.
+   - **Als Entwurf speichern** , um die Empfehlungseinheit später zu bearbeiten. Sie können den Seitentyp oder den Empfehlungstyp für eine Empfehlungseinheit nicht in einem Entwurfsstatus ändern.
 
    - **Aktivieren** , um die Empfehlungseinheit in Ihrer Storefront zu aktivieren.
 
@@ -97,7 +97,7 @@ Um eine Empfehlung zu testen, wenn Sie in einer Nicht-Produktionsumgebung arbeit
 | Name | Der Name des Produkts. |
 | SKU | Lagereinheit, die dem Produkt zugewiesen ist |
 | Preis | Der Preis des Produkts. |
-| Ergebnistyp | Primär - gibt an, dass ausreichend Schulungsdaten gesammelt wurden, um eine Empfehlung anzuzeigen.<br />Backup - zeigt an, dass nicht genügend Schulungsdaten erfasst wurden, sodass eine Reserveempfehlung zum Ausfüllen des Slots verwendet wird. Navigieren Sie zu [Verhaltensdaten](behavioral-data.md) , um mehr über Modelle für maschinelles Lernen und Ersatzempfehlungen zu erfahren. |
+| Ergebnistyp | Primär - gibt an, dass ausreichend Schulungsdaten gesammelt wurden, um eine Empfehlung anzuzeigen.<br />Backup - zeigt an, dass nicht genügend Schulungsdaten erfasst wurden, sodass eine Reserveempfehlung zum Ausfüllen des Slots verwendet wird. Navigieren Sie zu [Verhaltensdaten](behavioral-data.md) , um mehr über Modelle für maschinelles Lernen und Reserveempfehlungen zu erfahren. |
 
 Experimentieren Sie beim Erstellen Ihrer Empfehlungseinheit mit dem Seitentyp, Empfehlungstyp und Filtern, um sofort Echtzeit-Feedback zu den einzuschließenden Produkten zu erhalten. Sobald Sie wissen, welche Produkte angezeigt werden, können Sie die Empfehlungseinheit entsprechend Ihren Geschäftsanforderungen konfigurieren.
 

@@ -11,13 +11,13 @@ ht-degree: 0%
 
 ---
 
-# Installieren und Konfigurieren des Experience Platform Connectors
+# Installieren und Konfigurieren des Experience Platform-Connectors
 
 Vor der Installation der Erweiterung [Voraussetzungen überprüfen](overview.md#prereqs).
 
 ## Installieren der Erweiterung
 
-Die Experience Platform Connector-Erweiterung ist über das [Adobe Marketplace](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html). Wenn Sie diese Erweiterung über die Befehlszeile des Servers installieren, stellt sie eine Verbindung zu Ihrer Adobe Commerce-Installation als [service](../landing/saas.md). Wenn der Prozess abgeschlossen ist, **Experience Platform Connector** und **Commerce Services Connector** auf der **System** Menü unter **Dienste** im Handel _Admin_.
+Die Experience Platform-Connector-Erweiterung ist über das [Adobe Marketplace](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html). Wenn Sie diese Erweiterung über die Befehlszeile des Servers installieren, stellt sie eine Verbindung zu Ihrer Adobe Commerce-Installation als [service](../landing/saas.md). Wenn der Prozess abgeschlossen ist, **Experience Platform-Connector** und **Commerce Services Connector** auf der **System** Menü unter **Dienste** im Handel _Admin_.
 
 >[!NOTE]
 >
@@ -49,7 +49,7 @@ Laden Sie die `magento/experience-platform-connector-b2b` -Erweiterung durch Aus
 composer require magento/experience-platform-connector-b2b
 ```
 
-## Experience Platform Connector aktualisieren {#update}
+## Experience Platform-Connector aktualisieren {#update}
 
 Um den Experience Platform-Connector zu aktualisieren, führen Sie Folgendes über die Befehlszeile aus:
 
@@ -89,6 +89,6 @@ Um auf eine Hauptversion wie 1.0.0 auf 2.0.0 zu aktualisieren, bearbeiten Sie da
    composer update magento/experience-platform-connector-b2b --with-dependencies
    ```
 
-## Experience Platform Connector deinstallieren {#uninstall}
+## Deinstallieren des Experience Platform-Connectors {#uninstall}
 
-Informationen zum Deinstallieren des Experience Platform Connectors finden Sie unter [Deinstallationsmodule](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html).
+Informationen zum Deinstallieren des Experience Platform-Connectors finden Sie unter [Deinstallationsmodule](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html).

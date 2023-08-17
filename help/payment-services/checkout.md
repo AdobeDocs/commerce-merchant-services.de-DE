@@ -22,7 +22,7 @@ Auf der Checkout-Seite für den Käufer wird eine Fehlermeldung angezeigt. Die N
 
 ![Fehler bei Überprüfung](assets/user-checkout-error.png "Fehler beim Auschecken")
 
-Ein Kommentar zur stornierten Bestellung wird auch im Admin für eine bestimmte [order](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/orders.html?lang=en).
+Ein Kommentar zur stornierten Bestellung wird auch im Admin für eine bestimmte [bestellen](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/orders.html?lang=en).
 
 ![Abgebrochener Bestellkommentar in Admin zur Bestellung](assets/admin-checkout-error.png "Abgebrochener Bestellkommentar in Admin zur Bestellung")
 

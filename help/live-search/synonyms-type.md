@@ -31,7 +31,7 @@ Ein unidirektionales Synonym ist eine Teilmenge eines Suchbegriffs, jedoch mit e
 
 Beachten Sie die folgenden Best Practices, um das Beste aus [!DNL Live Search] Synonyme.
 
-### Vermeiden Sie &quot;Stoppwörter&quot;
+### Vermeiden von &quot;Stoppwörtern&quot;
 
 [!DNL Live Search] filtert gängige englische &quot;Stoppwörter&quot;aus Synonymen heraus, z. B.:
 

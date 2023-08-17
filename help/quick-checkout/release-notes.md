@@ -1,5 +1,5 @@
 ---
-title: '''[!DNL Quick Checkout] Versionshinweise'
+title: '[!DNL Quick Checkout] Versionshinweise'
 description: In den Versionshinweisen finden Sie Informationen zu allen [!DNL Quick Checkout] veröffentlicht.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
 feature: Release Notes, Services, Checkout

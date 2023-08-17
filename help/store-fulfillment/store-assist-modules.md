@@ -18,9 +18,9 @@ Die Store-Hilfe-App stellt Store Associates mit vier Modulen zur Verfügung, um 
 
 - **[Auswahl](#pick-module)**—Erhalten Sie vollständige Einsicht in alle bestellten Artikel und die Tools, um sicherzustellen, dass die richtigen Artikel und Mengen ausgewählt werden. Speicherverknüpfungen können eine oder mehrere Bestellungen gleichzeitig auswählen, um eine höhere Effizienz zu erzielen.
 
-- **[Staging](#stage-module)**- Geben Sie einen Ort ein, an dem die Bestellungen platziert werden, während Kunden zum Geschäft reisen, damit Store Associates sie einfach zur Bestellübergabe finden können.
+- **[Staging](#stage-module)**- Geben Sie einen Ort ein, an dem die Bestellungen platziert werden, während Kunden zum Geschäft reisen, damit Store Associates sie einfach zur Auftragserteilung finden können.
 
-- **[Hand aus](#hand-off-module)**- Rufen Sie Benachrichtigungen in Echtzeit ab, nachdem Kunden in den Speicher eintreffen, um ihre Wartezeit zu minimieren und die Übergabe von Bestellungen nahtlos zu gestalten.
+- **[Hand aus](#hand-off-module)**- Rufen Sie Benachrichtigungen in Echtzeit ab, nachdem Kunden in den Speicher eintreffen, um ihre Wartezeit zu minimieren und Aufträge nahtlos zu senden.
 
 - **[Bestellungen](#orders-module)**—Zeigen Sie eine Liste aller Bestellungen an, die für einen Store aufgegeben werden, sodass jeder die Anzahl der Bestellungen und den Status jeder Bestellung kennt.
 
@@ -36,7 +36,7 @@ Ihre Partner können auch wählen, ob sie jeweils eine Bestellung oder mehrere B
 
 Bei der Auswahl sehen Store-Mitarbeiter eine Liste aller Artikel, die für jede Bestellung ausgewählt werden sollen, deren Menge, Preis und die Produktbeschreibung aus Ihrem Katalog. Es wird eine Statusleiste angezeigt, die ihnen beim Navigieren in der Store-Hilfe beim Auswählen von Bestellungen hilft.
 
-Sobald Ihre Verknüpfungen mit der Auswahl und Auswahl der Elemente beginnen, werden ihnen alle relevanten Elementinformationen angezeigt, z. B.: Größe, Farbe, Menge, Preis, Beschreibung, Anpassung und SKU/UPC. Verknüpfungen haben beim Auswählen von Bestellungen zwei Aktionen verfügbar:
+Sobald Ihre Partner mit der Auswahl beginnen und die zu wählenden Elemente auswählen, werden ihnen alle relevanten Elementinformationen wie Größe, Farbe, Menge, Preis, Beschreibung, Anpassung und SKU/UPC angezeigt. Verknüpfungen haben beim Auswählen von Bestellungen zwei Aktionen verfügbar:
 
 - Geben Sie an, dass der Artikel nicht gefunden werden kann, und Trigger einer Rückerstattung.
 - Überprüfen Sie den Barcode auf das Element. Der Zweck des Scanvorgangs besteht darin, zu überprüfen, ob das richtige Element ausgewählt wurde. Falls die Kamera den Barcode nicht lesen kann, müssen Speicherverknüpfungen die SKU des Elements, das sie ausgewählt haben, manuell eingeben.
@@ -45,9 +45,9 @@ Wenn Verknüpfungen ein Element nicht finden können, können sie es überspring
 
 ## Staging-Modul
 
-Das Staging-Modul zeigt an, wo die Bestellung in das Gepäck gestellt wird, bis der Kunde ankommt, um sie abzurufen. Die Festlegung dieses Standorts ist ein wichtiger Schritt, um verlorene Bestellungen zu verhindern, wenn Store-Mitarbeiter ihre Verlagerung beenden, bevor der Kunde eintrifft, oder wenn Sie viele Bestellungen haben. In beiden Fällen soll dies Ihnen helfen, schnell die richtige Bestellung mit allen relevanten Informationen zu finden.
+Das Staging-Modul zeigt an, wo die Bestellung in das Gepäck gestellt wird, bis der Kunde ankommt, um sie abzurufen. Die Festlegung dieses Standorts ist ein wichtiger Schritt, um verlorene Bestellungen zu verhindern, wenn Store-Mitarbeiter ihre Verlagerung beenden, bevor der Kunde eintrifft, oder wenn Sie viele Bestellungen haben. In beiden Fällen soll Ihnen dies dabei helfen, schnell die richtige Bestellung mit allen relevanten Informationen zu finden.
 
-Sie können eine Textleiste in Freiform verwenden, um anzugeben, wo die Bestellung platziert wird: unter dem Zähler, im Hinterzimmer oder in Position B3 - alles basierend auf Ihren Operationen.
+Sie können eine freie Textleiste verwenden, um anzugeben, wo die Bestellung platziert wird: unter dem Zähler, im hinteren Raum oder an Position B3 - alles basierend auf Ihren Vorgängen.
 
 Sie können auch einfach den Staging-Speicherort in der App aktualisieren, wenn Ihre Mitarbeiter ihn an einer anderen Stelle platzieren müssen.
 

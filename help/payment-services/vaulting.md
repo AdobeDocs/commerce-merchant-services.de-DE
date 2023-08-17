@@ -20,13 +20,13 @@ Käufer verwenden das gespeicherte Token, um einen zukünftigen Checkout mit ihr
 
 ![Verwenden gespeicherter Anmeldedaten für zukünftige Käufe](assets/use-stored-card.png)
 
-Sie können ihre Kreditkarten auch einfach aus [Gespeicherte Zahlungsmethoden](https://docs.magento.com/user-guide/customers/account-dashboard-stored-payment-methods.html) in ihrem Konto.
+Sie können ihre Kreditkarten auch einfach aus [Gespeicherte Zahlungsmethoden](https://docs.magento.com/user-guide/customers/account-dashboard-stored-payment-methods.html) in ihrem Mein Konto.
 
 ![Gespeicherte Zahlungsmethoden in meinem Konto](assets/stored-payment-methods.png)
 
 ## Validierung aktivieren
 
-Sie können die Kreditkartenüberprüfung für Kunden aktivieren _und_ Händler in der Admin - für Ihre Geschäfte in [!DNL Payment Services] [Einstellungen](settings.md#card-vaulting).
+Sie können die Kreditkartenüberprüfung für Kunden aktivieren. _und_ Händler in der Admin - für Ihre Geschäfte in [!DNL Payment Services] [Einstellungen](settings.md#card-vaulting).
 
 ## Use vaulting in the Admin
 
@@ -41,8 +41,8 @@ So erstellen Sie im Admin eine Bestellung für einen Kunden mit seiner gültigen
 1. Wählen Sie die gewünschte Kreditkartenzahlmethode aus.
 1. Nachdem Sie alle weiteren erforderlichen Schritte für die Bestellung ausgeführt haben, [submit it](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=en#step-3%3A-submit-the-order).
 
-   ![Verwenden Sie eine ausgewertete Kreditkarte in Admin für Kunden](assets/admin-vaultedcard.png)
+   ![Verwenden Sie eine ausgewertete Kreditkarte in Admin für den Kunden](assets/admin-vaultedcard.png)
 
 ## Sicherheit
 
-Minimale Kreditkarteninformationen werden für den Käufer freigegeben. Sie sehen nur die letzten vier Ziffern, das Ablaufdatum und die Marke ihrer ausgefüllten Kreditkarte. Die Kreditkarteninformationen werden bei dem Zahlungsdienstleister gespeichert, um [PCI](security.md#PCI-compliance) Compliance-Standards.
+Minimale Kreditkarteninformationen werden für den Käufer freigegeben. Er sieht nur die letzten vier Ziffern, das Ablaufdatum und die Marke seiner ausgefüllten Kreditkarte. Die Kreditkarteninformationen werden bei dem Zahlungsdienstleister gespeichert, um [PCI](security.md#PCI-compliance) Compliance-Standards.

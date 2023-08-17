@@ -28,7 +28,7 @@ Siehe Abschnitt [Onboarding](../quick-checkout/onboarding.md) für weitere Infor
 | PWA | Nur Luma-Storefront wird unterstützt |
 | [!DNL 3D Secure] | [!DNL 3D Secure] wird nicht unterstützt |
 | B2B | B2B wird nicht unterstützt |
-| ISPU | [!DNL In-Store Pickup] (ISPU)-Funktionalität wird nicht unterstützt |
+| ISPU | [!DNL In-Store Pickup] ISPU-Funktionalität wird nicht unterstützt |
 | Multishipping | Multishipping wird nicht unterstützt |
 
 Siehe Abschnitt [[!DNL Bolt] Einschränkungen](https://help.bolt.com/integrations/adobe-quick-checkout/set-up/#limitations) Thema für weitere Informationen zu Kompatibilitätsbeschränkungen für [!DNL Bolt] und [!DNL Quick Checkout] -Erweiterung.

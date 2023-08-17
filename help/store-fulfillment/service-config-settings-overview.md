@@ -21,9 +21,9 @@ In Adobe Commerce Admin werden die Konfigurationseinstellungen für Store Fulfil
 | **Typ** | **Beschreibung** | **API konfigurierbar** |
 |--------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------|
 | [Allgemeine Konfiguration](enable-general.md) | Allgemeine Integration für die Store Fulfillment-Lösung, ihre aktiven Funktionen und Anmeldeinformationen, um eine Verbindung mit den Fulfillment-Diensten herzustellen. | Nein |
-| [E-Mail-Konfiguration für Vertrieb](sales-emails.md) | Richten Sie zusätzliche E-Mail-Vorlagen für Kundenbenachrichtigungen ein, die während des Eincheckvorgangs gesendet werden. | Nein |
+| [E-Mail-Konfiguration Vertrieb](sales-emails.md) | Richten Sie zusätzliche E-Mail-Vorlagen für Kundenbenachrichtigungen ein, die während des Eincheckvorgangs gesendet werden. | Nein |
 | [Merchant Store-Konfiguration](merchant-store-configuration.md) | Richten Sie erweiterte Inventory management-Quellen als Händler ein. | Ja |
-| [ProduktStock-Management](product-stock.md) | Konfigurieren Sie die für Kunden verfügbaren Merchant Stock Messaging und Funktionen. | Ja |
+| [Verwaltung von Produktbeständen](product-stock.md) | Konfigurieren Sie die für Kunden verfügbaren Merchant Stock Messaging und Funktionen. | Ja |
 | [Inventory management Source Transfer](inventory-stock-transfer.md) | Richten Sie ein neues Lager ein, übertragen Sie das Inventar aus dem Standardbestand. | Ja |
 | [Konfiguration mehrerer Websites/Bereiche](multi-site-and-scope-config.md) | Konfigurieren Sie Lager und Bereitstellungsmethoden für mehrere Websites/Storebereiche. | Nein |
 | [Systemkonfiguration für Hintergrundprozesse](background-processes.md) | Konfigurieren Sie die Zeitpläne für Hintergrundprozesse, die zum Synchronisieren von Daten mit den Fulfillment-Diensten verwendet werden. | Nein |

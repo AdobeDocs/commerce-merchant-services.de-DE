@@ -24,7 +24,7 @@ Bevor Sie Informationen, Stores oder Bestellungen testen oder synchronisieren, �
 
 - [Hinzufügen und Überprüfen der Kontoanmeldeinformationen und Verbindungsdetails für Ihre Sandbox- und Produktionsumgebungen](connect-set-up-service.md#configure-store-fulfillment-account-credentials)
 
-- Vergewissern Sie sich, dass die [Adobe Commerce-Integration](connect-set-up-service.md#configure-store-fulfillment-account-credentials) für die Lösung zur Herstellung einer Fulfillment-Lösung ist verfügbar und zugelassen.
+- Vergewissern Sie sich, dass [Adobe Commerce-Integration](connect-set-up-service.md#configure-store-fulfillment-account-credentials) für die Lösung zur Herstellung einer Fulfillment-Lösung ist verfügbar und zugelassen.
 
 ## Testvorbereitung
 
@@ -54,14 +54,14 @@ Dieser Stichprobenprüfplan umfasst die folgenden Funktionsbereiche:
 | End-to-End | Workflows zur Auftragsabbruch | Kunde, Admin, Store Associate |
 | Admin | App-Berechtigungen für die Store-Ausführung | Admin |
 | Adobe Commerce Frontend | Produkttypen | Kunde, Admin |
-| Frontend-Checkout</br>Formular für das Einchecken | Eincheckerlebnis | Kunde, Admin |
+| Frontend-Checkout</br>Formular für die Anmeldung | Eincheckerlebnis | Kunde, Admin |
 | Store Assist App | Bestellung</br>Auswahl</br>Staging</br>und Übergabe | Store Associate |
 
 ### Inventar-API-Synchronisierung
 
 In diesem Abschnitt des Testplans wird die Bestands- und Bestellsynchronisierung behandelt, um zu überprüfen, ob Aktualisierungen an Erfassungsquellen und Lagerbeständen korrekt zwischen Adobe Commerce und der Store Fulfillment-Lösung synchronisiert werden.
 
-**Funktionaler Bereich**: Bestand- und Auftragssynchronisierung</br>
+**Funktionaler Bereich**: Bestell- und Auftragssynchronisierung</br>
 **Rolle:** Admin</br>
 **Testtyp:** Alle positiven
 
@@ -81,12 +81,12 @@ In diesem Abschnitt des Testplans wird die Bestands- und Bestellsynchronisierung
 </tr>
 <tr>
 <td><strong>Vorhandene Freigabequelle aktualisieren</strong></td>
-<td>Speichern Sie Aktualisierungen in einer vorhandenen Sicherungskopie-Datenquelle.</td>
+<td>Speichern Sie Aktualisierungen in einer vorhandenen Sicherungskopie-Stammquelle.</td>
 <td>Der Echtzeit-Synchronisierungsvorgang sendet die Details innerhalb von 5 Minuten an die Walmart-GIF</td>
 </tr>
 <tr>
 <td><strong>Abholquellenquelle</br><code>Is Synced</code> status</strong></td>
-<td>Speichern Sie Aktualisierungen in einer vorhandenen Sicherungskopie-Datenquelle.</td>
+<td>Speichern Sie Aktualisierungen in einer vorhandenen Sicherungskopie-Stammquelle.</td>
 <td>Nach einem erfolgreichen Vorgang wird die <code>Is Synced</code> Spalte der Seite "Quelle verwalten"von <code>No</code> nach <code>Yes</code>.</td>
 </tr>
 <tr>
@@ -112,7 +112,7 @@ In diesem Abschnitt des Testplans wird die Bestands- und Bestellsynchronisierung
 </tbody>
 </table>
 
-### Workflows für die Auftragsabbruch
+### Workflows zum Auftragsabbruch
 
 Dieser Abschnitt des Testplans enthält Szenarien zum Testen des End-to-End-Workflows für Bestellungen, die über Adobe Commerce abgebrochen werden.
 
@@ -129,7 +129,7 @@ Dieser Abschnitt des Testplans enthält Szenarien zum Testen des End-to-End-Work
 <tr>
 <td><strong>Absage der vollständigen Bestellung</strong></td>
 <td><ol>
-<li>Bestellung aufgeben.</li>
+<li>Bestellung aufgeben</li>
 <li>Warten Sie, bis die Bestellung synchronisiert wurde.</li>
 <li>Überprüfen Sie die Rechnungserstellung (falls autorisiert und erfasst) des Quittierungs-E-Mails.</li>
 <li>Erstellen Sie ein Credit Memo mit allen bestellten Produkten aus der Rechnungsansicht.</li>
@@ -141,7 +141,7 @@ Dieser Abschnitt des Testplans enthält Szenarien zum Testen des End-to-End-Work
 <li>Bestellstatus: <code>Closed</code>. (Wir haben jetzt ZAHLUNGSÜBERPRÜFUNG festgelegt.)</li>
 <li>In Adobe Commerce erstelltes Credit Memo. (Warten Sie, bis das Cron funktioniert.)</li>
 <li>Wenn alle Elemente ausgewählt wurden, können Sie die E-Mail abrufen. <code>DISPLAY COMMENT HISTORY</code> zeigt <code>Order is ready for pickup</code> (<code>CUSTOMER NOTIFIED</code> Markierung ist <code>true</code>.</li>
-<li>Wenn alle Elemente nicht ausgewählt sind, wird die E-Mail zum Abbruch und die Anzeige des KOMMENTARVERLAUFS angezeigt <code>Order has been canceled - all items were not available</code></li>
+<li>Wenn alle Elemente nicht ausgewählt sind, wird die E-Mail zum Abbruch und die Anzeige des KOMMENTARVERLAUFS angezeigt. <code>Order has been canceled - all items were not available</code></li>
 <li><code>CUSTOMER NOTIFIED</code> Markierung ist <code>true</code>.</li>
 </ul>
 </td>
@@ -181,7 +181,7 @@ Dieser Abschnitt des Testplans enthält Szenarien zum Testen des End-to-End-Work
 <li>Auftragsverlauf aktualisiert: <code>We refunded $X offline</code></li>
 <li>Der Bestellstatus lautet <code>CLOSED</code>.
 <li>Das Credit Memo wird erstellt. (Warten Sie, bis das Cron funktioniert.)</li>
-<li>erhaltene Rückerstattungs-E-Mail: <code>$x amount was refunded</code></li>
+<li>Erwiderte E-Mail: <code>$x amount was refunded</code></li>
 <li>E-Mail zur Auftragsabbruch gesendet.</li>
 </ul>
 </td>
@@ -203,13 +203,13 @@ Dieser Abschnitt des Testplans enthält Szenarien zum Testen des End-to-End-Work
 <li>Der Bestellstatus ist FÜR PICKUP BEREIT. </li>
 <li>Auftragsverlauf aktualisiert: <code>We refunded $X offline.</code>
 <li>Auftragsverlauf aktualisiert: <code>Order notified as partly canceled at: Date and hour</code>
-<li>erhaltene Rückerstattungs-E-Mail: <code>$x amount was refunded</code>
+<li>Erwiderte E-Mail: <code>$x amount was refunded</code>
 <li>Das Kreditmemo wird erstellt. (Warten Sie, bis das Cron funktioniert.)</li>
 </ul>
 </td>
 </tr>
 <tr>
-<td><strong>Bereit für Abruf - Teilkündigungen</br></br>Einige Produkte werden gepflückt und einige werden mit <code>0 qty</code>)</strong>
+<td><strong>Bereit für Abruf - Teilstornierung</br></br>Einige Produkte werden gepflückt und einige werden mit <code>0 qty</code>)</strong>
 </td>
 <td><ol>
 <li>Platzieren Sie die Bestellung.</li>
@@ -223,7 +223,7 @@ Dieser Abschnitt des Testplans enthält Szenarien zum Testen des End-to-End-Work
 <li>Der Bestellstatus ist FÜR PICKUP BEREIT. </li>
 <li>Auftragsverlauf aktualisiert: <code>We refunded $X offline.</code>
 <li>Auftragsverlauf aktualisiert: <code>Order notified as partly canceled at: Date and hour</code>
-<li>erhaltene Rückerstattungs-E-Mail: <code>$x amount was refunded</code>
+<li>Erwiderte E-Mail: <code>$x amount was refunded</code>
 <li>Das Kreditmemo wird erstellt. (Warten Sie, bis das Cron funktioniert.)</li>
 </ul>
 </td>
@@ -243,14 +243,14 @@ Dieser Abschnitt des Testplans enthält Szenarien zum Testen des End-to-End-Work
 </ol>
 <td><ul>
 <li>Auftragsverlauf aktualisiert: <code>We refunded $X offline.</code></li>
-<li>erhaltene Rückerstattungs-E-Mail: <code>$x amount was refunded</code></li>
+<li>Erwiderte E-Mail: <code>$x amount was refunded</code></li>
 <li>Status festgelegt auf <code>CLOSED</code>.</li>
 <li>Credit Memo erstellt. (Warten Sie, bis das Cron funktioniert.)</li>
 </ul>
 </td>
 </tr>
 <tr>
-<td><strong>Verworfen (während der Entlassung)</br></br>Teilweiser Abbruch</br>(Einige Produkte werden vertrieben. einige werden abgelehnt.)</strong>
+<td><strong>Verworfen (während der Entlassung)</br></br>Teilweiser Abbruch</br>(Einige Produkte werden ausgegeben, andere werden abgelehnt.)</strong>
 </td>
 <td>
 <ol>
@@ -266,13 +266,13 @@ Dieser Abschnitt des Testplans enthält Szenarien zum Testen des End-to-End-Work
 <td>
 <li>Auftragsverlauf aktualisiert: <code>We refunded $X offline</code></li>
 <li><code>Order notified as partly canceled at: Date and Hour</code>
-<li>erhaltene Rückerstattungs-E-Mail: <code>$x amount was refunded</code>
+<li>Erwiderte E-Mail: <code>$x amount was refunded</code>
 <li>Bestellstatus auf <code>Ready for pickup Dispensed</code>
 <li>Credit Memo erstellt. (Warten Sie, bis das Cron funktioniert.)</li>
 </td>
 </tr>
 <tr>
-<td> <strong>Neue RMA nach Rückgabe (vollständig)</strong>
+<td> <strong>Neuer RMA nach Rückgabe (vollständig)</strong>
 </td>
 <td>
 <ol>
@@ -283,7 +283,7 @@ Dieser Abschnitt des Testplans enthält Szenarien zum Testen des End-to-End-Work
 <li>Einchecken.</li>
 <li>Richten Sie einen Verzicht!</li>
 <li>Gehen Sie zur Bestellung und wählen Sie<strong>[!UICONTROL Create returns]=
-<li>RMA erstellen.</li>
+<li>Erstellen Sie die RMA.</li>
 </ol>
 </td>
 <td>
@@ -311,7 +311,7 @@ Dieser Abschnitt des Testplans enthält Szenarien zum Testen des End-to-End-Work
 <ul>
 <li>RMA erstellt und unter dem <strong>[!UICONTROL Returns]</strong> in der Bestellansicht.</li>
 <li>Der Kunde hat die RMA-Bestätigungs-E-Mail erhalten.</li>
-<li>Rufen Sie nach der Erstellung von RMA die RMA-Autorisierung ab: Navigieren Sie vom Administrator zu <strong>[!UICONTROL Sales > Returns]</strong>. Wählen Sie die von Ihnen erstellte RMA aus und autorisieren Sie sie.</li>
+<li>Rufen Sie nach der Erstellung von RMA die RMA-Autorisierung ab: Wechseln Sie vom Administrator zu <strong>[!UICONTROL Sales > Returns]</strong>. Wählen Sie die von Ihnen erstellte RMA aus und autorisieren Sie sie.</li>
 <li>Stellen Sie sicher, dass der Kunde die E-Mail zur RMA-Autorisierungsbestätigung erhalten hat.</li>
 <li>Überprüfen Sie, ob die Rückerstattung dem Transaktionsverlauf und dem Auftragsverlauf hinzugefügt wurde.</li>
 </ul>
@@ -414,7 +414,7 @@ Die Testszenarios für Adobe Commerce-Produkttypen überprüfen, ob Kunden die r
 <ul>
 <li>Vergewissern Sie sich, dass die Versandmethoden und [!UICONTROL Add to cart] -Schaltfläche für den Kunden deaktiviert ist, wenn alle untergeordneten Produkte
 <code>qty</code> auf <code>0</code>.</li>
-<li>Stellen Sie sicher, dass die Versandmethoden für den Kunden aktiviert sind, wenn mindestens eines der untergeordneten Produkte <code>qty</code> auf <code>0.</code></li>
+<li>Vergewissern Sie sich, dass die Versandmethoden für den Kunden aktiviert sind, wenn mindestens eines der untergeordneten Produkte <code>qty</code> auf <code>0.</code></li>
 <li>Stellen Sie sicher, dass [!UICONTROL Store Pickup Delivery] -Methode nur für Produkte sichtbar und aktiv, die [!UICONTROL Available for Store Pickup] aktiviert. (Untergeordnetes Produkt überprüfen.)</li>
 </ul>
 </td>
@@ -429,7 +429,7 @@ Vergewissern Sie sich, dass virtuelle Produkte die  [!UICONTROL In-store Pickup]
 </td>
 </tr>
 <tr>
-<td><strong>Bundle-Produkte</strong>
+<td><strong>Paketprodukte</strong>
 </td>
 <td>
 <ul>
@@ -449,7 +449,7 @@ In diesem Abschnitt des Testplans wird das Check-in-Erlebnis für Store-Abholauf
 
 - Alternativer Abruf-Kontakt - Überprüfen Sie den Workflow für das Hinzufügen eines [!UICONTROL Alternate Pickup Contact] und wählen Sie eine [!UICONTROL Preferred Contact] bei Bestellungen zur Reservierung.
 
-- Formular für die Anmeldung - Überprüfen Sie den Workflow für die Übermittlung einer Eincheckanfrage für Store-Abholaufträge.
+- Formular für den Check-in - Überprüfen Sie den Workflow zum Senden einer Check-in-Anfrage für Store-Abholaufträge.
 
 **Funktionsbereiche:** Warenkorb zur Kasse, Formular zum Einchecken für Bestellungen zur Abholung von Geschäften</br>
 **Rolle:** Admin, Kunde, Store Associate</br>
@@ -490,7 +490,7 @@ Ein Kunde sendet eine Bestellung mit der Option In-Store-Abholung . Beim Checkou
 <td>
 Ein Kunde sendet eine Bestellung mit der Option In-Store-Abholung . Beim Checkout wählt der Kunde [!UICONTROL Alternate Pickup Contact] im Versandschritt.
 </td>
-<td>Der Kunde sieht Eingabeoptionen zur Eingabe von Kontaktdetails: [!UICONTROL First name], [!UICONTROL Last name], [!UICONTROL Phone]und [!UICONTROL Email].</td>
+<td>Der Kunde sieht Eingabeoptionen zur Eingabe von Kontaktdetails: [!UICONTROL First name], [!UICONTROL Last name], [!UICONTROL Phone], und [!UICONTROL Email].</td>
 </tr>
 <tr>
 <td><strong>Alternative Abholung, E-Mail einchecken</strong>
@@ -512,10 +512,10 @@ Ein Kunde sendet eine Bestellung mit der Option In-Store-Abholung . Beim Checkou
 </tbody>
 </table>
 
-### Formular für das Einchecken
+### Formular für die Anmeldung
 
 
-**Funktionaler Bereich:** Formular für das Einchecken</br>
+**Funktionaler Bereich:** Formular für die Anmeldung</br>
 **Rolle:** Kunde</br>
 **Testtyp:** Alle positiv
 
@@ -608,7 +608,7 @@ In diesem Abschnitt des Testplans werden Szenarien zum Testen der Reihenfolge, A
 <td></td>
 </tr>
 <tr>
-<td><strong>Bestellung platziert - vor Übergabe storniert</strong></td>
+<td><strong>Bestellung platziert - vor der Übergabe storniert</strong></td>
 <td></td>
 <td></td>
 </tr>

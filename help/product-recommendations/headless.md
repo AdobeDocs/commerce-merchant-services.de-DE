@@ -15,13 +15,13 @@ Sie können [!DNL Product Recommendations] in einer Headless-Storefront mit [PWA
 
 Benutzerdefinierte und Headless-Integratoren sollten als vorgeschlagene Implementierung auf diese Luma- und PWA-Anweisungen verweisen. Es gibt viele Möglichkeiten, Produkt Recommendations in Headless-Lösungen zu implementieren. Diese Dokumentation deckt nicht alle Szenarien ab. Integratoren müssen Veranstaltungen, Designs und Tests für ihre Implementierungen abdecken.
 
-[!DNL Product Recommendations] erfordern [Verhaltensdaten und Katalogdaten](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/development-overview.html) zum Betrieb. Der Vorgang zur Datensynchronisierung im Katalog bleibt in einer Headless-Implementierung unverändert, aber für die Erfassung von Verhaltensdaten sind Änderungen erforderlich.
+[!DNL Product Recommendations] erfordern [Verhaltens- und Katalogdaten](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/development-overview.html) zum Betrieb. Der Vorgang zur Datensynchronisierung im Katalog bleibt in einer Headless-Implementierung unverändert, aber für die Erfassung von Verhaltensdaten sind Änderungen erforderlich.
 
 >[!NOTE]
 >
 >Headless-Instanzen müssen Eventing implementieren, um das Produkt-Recommendations-Dashboard zu aktivieren.
 
-Integration [!DNL Product Recommendations] In einer Headless-Storefront müssen Sie:
+Zur Integration [!DNL Product Recommendations] In einer Headless-Storefront müssen Sie:
 
 1. Senden Sie Verhaltensdaten an Adobe Sensei, um Produktempfehlungsergebnisse zu analysieren und zu berechnen. Sie können auch zusätzliche Daten senden, um Produktempfehlungen zu ermöglichen [Metrikberichte](workspace.md).
 
@@ -31,7 +31,7 @@ Sie können diese beiden Aktionen mit den verfügbaren SDKs ausführen, wie im f
 
 1. [Installieren](install-configure.md) die [!DNL Product Recommendations] -Modul.
 
-1. Installieren und verwenden Sie die [Adobe Commerce Storefront Event SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) , um [Verhaltensereignisse](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/events.html).
+1. Installieren und verwenden Sie die [Adobe Commerce Storefront Event SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) , um die [Verhaltensereignisse](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/events.html).
 
    Die erforderlichen Mindestereignisse, die zurückgegeben werden [!DNL Product Recommendations] Ergebnisse:
 
@@ -54,4 +54,4 @@ Sie können diese beiden Aktionen mit den verfügbaren SDKs ausführen, wie im f
 
 1. Nachdem die Verhaltensdaten erfasst wurden, können Sie [erstellen](create.md) [!DNL Product Recommendations] im Admin.
 
-1. Verwenden Sie die [Recommendations SDK](https://developer.adobe.com/commerce/services/product-recommendations/) , um die Empfehlungseinheiten in die Storefront zu laden. Das SDK gibt die erforderlichen Produktdaten zum Rendern von Empfehlungseinheiten auf einer Seite zurück.
+1. Verwenden Sie die [RECOMMENDATIONS SDK](https://developer.adobe.com/commerce/services/product-recommendations/) , um die Empfehlungseinheiten in die Storefront zu laden. Das SDK gibt die erforderlichen Produktdaten zum Rendern von Empfehlungseinheiten auf einer Seite zurück.

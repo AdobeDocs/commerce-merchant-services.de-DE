@@ -1,5 +1,5 @@
 ---
-title: ProduktStock-Management
+title: Verwaltung von Produktbeständen
 description: Konfigurieren Sie die für Kunden verfügbaren Merchant Stock Messaging und Funktionen.
 role: Admin
 level: Intermediate
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 ---
 
-# ProduktStock-Management
+# Verwaltung von Produktbeständen
 
 Als Händler können Sie Adobe Commerce verwenden [Inventory management](https://docs.magento.com/user-guide/catalog/inventory-management.html) Lager- und Quelloptionen. Sie können auch die Lösung Store Fulfillment verwenden, um andere Lagerverfügbarkeitsoptionen im Zusammenhang mit Ihren Händlerstapeln zu steuern.
 

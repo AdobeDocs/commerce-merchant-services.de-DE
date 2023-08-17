@@ -31,4 +31,4 @@ Administratoren können die Automobil-Marke und die Modellauswahl verwalten, die
 
 ![[!DNL Check-In Experience system configuration for curbside pickup]](assets/check-in-experience-system-config.png)
 
-Die Standardkonfiguration enthält eine umfassende Liste von gängigen Automarken und Farben für den US-Markt. [!DNL Commerce] Administratoren können die Konfiguration verwalten, um die verfügbaren Optionen hinzuzufügen oder zu bearbeiten.
+Die Standardkonfiguration enthält eine umfassende Liste von gängigen Automarken und Farben für den US-Markt. [!DNL Commerce] Admin-Benutzer können die Konfiguration verwalten, um die verfügbaren Optionen hinzuzufügen oder zu bearbeiten.

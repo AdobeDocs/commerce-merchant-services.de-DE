@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # [!DNL Storefront Popover]
 
-Wann [!DNL Live Search] is [installiert](install.md), [!DNL popover] erscheint in der Storefront, wenn der Käufer im Feld [Suche](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) ankreuzen. Mit jedem eingegebenen Zeichen muss die [!DNL popover] wird mit vorgeschlagenen Produkten und Miniaturbildern der wichtigsten Suchergebnisse aktualisiert.
+Wann [!DNL Live Search] is [installiert](install.md), a [!DNL popover] erscheint in der Storefront, wenn der Käufer im Feld [Suche](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) ankreuzen. Mit jedem eingegebenen Zeichen muss die [!DNL popover] wird mit vorgeschlagenen Produkten und Miniaturbildern der wichtigsten Suchergebnisse aktualisiert.
 
 [!DNL Live Search] gibt Ergebnisse für eine Abfrage von zwei Zeichen oder mehr zurück. Bei einer teilweisen Übereinstimmung beträgt die maximale Anzahl von Zeichen pro Wort 20. Die Anzahl der Zeichen in einer Abfrage vom Typ &quot;Suche beim Eingeben&quot; ist nicht konfigurierbar.
 
@@ -34,9 +34,9 @@ Die Seitengröße der [!DNL popover] bestimmt, wie viele Zeilen von automatisch 
 Standardmäßig ist der Wert Katalogsuche - Automatische Vervollständigungsgrenze auf acht Zeilen (oder Zeilen) festgelegt. So ändern Sie die Seitengröße der [!DNL popover]führen Sie folgende Schritte aus:
 
 1. Im *Admin* Seitenleiste, navigieren Sie zu **Stores** > Einstellungen > **Konfiguration**.
-1. Erweitern Sie im linken Bereich **Katalog** und wählen Sie **Katalog** aus der Liste der Einstellungen.
+1. Erweitern Sie im linken Bereich **Katalog** und wählen **Katalog** aus der Liste der Einstellungen.
 1. Erweitern Sie die *Katalogsuche* Abschnitt.
-1. Legen Sie die **Automatische Vervollständigungsgrenze** auf die Anzahl der Zeilen, die Sie in der [!DNL popover].
+1. Legen Sie die **Automatische Vervollständigungsgrenze** auf die Anzahl der Zeilen, die Sie in der Variablen [!DNL popover].
 1. Wenn Sie fertig sind, klicken Sie auf **Konfiguration speichern**.
 
 ## Catalog Service
@@ -47,7 +47,7 @@ Die [Catalog Service für Adobe Commerce](../catalog-service/overview.md) -Erwei
 * Erweiterte Attribute
 * Andere Produktinformationen können
 
-Merchants können Widgets oder Storefront-Elemente mithilfe von Catalog Service anpassen und erweitern, dies ist jedoch für das Supportteam der Adobe nicht möglich.
+Merchants können Widgets oder Storefront-Elemente mithilfe des Katalogdienstes anpassen und erweitern. Dies ist jedoch für das Adobe-Supportteam nicht möglich.
 
 ## Einschränkungen
 

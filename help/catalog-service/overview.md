@@ -17,7 +17,7 @@ Die [!DNL Catalog Service] für die Adobe Commerce-Erweiterung bietet Rich-View-
 * Produktdetailseiten
 * Produktlisten- und Kategorieseiten
 * Suchergebnisseiten
-* Karusselle
+* Produktkarusselle
 * Produktvergleichsseiten
 * Alle anderen Seiten, die Produktdaten rendern, wie z. B. Warenkorb-, Bestell- und Wunschlistenseiten
 

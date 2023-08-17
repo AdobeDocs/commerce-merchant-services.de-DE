@@ -15,16 +15,16 @@ Jedes filterbare Produktattribut kann als Facette verwendet werden. Die *Hinzuf�
 
 ![Factory-Arbeitsbereich](assets/facets-add.png)
 
-## Schritt 1: Facette hinzufügen
+## Schritt 1: Hinzufügen einer Facette
 
 1. Navigieren Sie im Admin zu **Marketing** > SEO &amp; Suche > **[!DNL Live Search]**.
-1. Im *Facebook* Registerkarte, klicken Sie auf **Hinzufügen von Facetten**.
+1. Im *Facebook* Registerkarte, klicken **Hinzufügen von Facetten**.
 1. Im *Hinzufügen von Facetten* enthält jedes verfügbare Attribut eine separate ![Schaltfläche hinzufügen](assets/btn-add.png). Führen Sie einen der folgenden Schritte aus:
 
    * Im *Facettenattribute* auflisten, das Produktattribut auswählen, das Sie als Facette verwenden möchten, und auf **Hinzufügen**.
    * Um ein bestimmtes Produktattribut zu finden, geben Sie die ersten Zeichen des Attributnamens in die *Suche* ankreuzen. Klicken Sie anschließend auf **Hinzufügen**.
 
-      Informationen zum Konfigurieren von Preisfacettenintervallen und -gruppierungen finden Sie unter [Einstellungen](settings.md). Weitere Informationen finden Sie unter [Facettentypen](facets-type.md).
+     Informationen zum Konfigurieren von Preisfacettenintervallen und -gruppierungen finden Sie unter [Einstellungen](settings.md). Weitere Informationen finden Sie unter [Facettentypen](facets-type.md).
 Die Facette wird am unteren Rand des *Dynamische Facetten* und *Veröffentlichungsänderungen* -Schaltfläche verfügbar.
 
 1. Wenn die Facette, die Sie hinzufügen möchten, nicht gefunden werden kann, gehen Sie zu **Stores** > Attribute > **Produkt** und überprüfen Sie, ob das -Attribut die [erforderliche Eigenschaften](facets.md) als Facette verwendet werden. Aktualisieren Sie bei Bedarf die folgenden Storefront-Eigenschaften des Attributs:
@@ -42,9 +42,9 @@ Die Facette wird am unteren Rand des *Dynamische Facetten* und *Veröffentlichun
 1. Um die Facetteneigenschaften zu bearbeiten, klicken Sie auf **Mehr** (![Mehr Auswahl](assets/btn-more.png)) in der Spalte ganz rechts.
 1. Klicken Sie im Menü auf **Bearbeiten**. Passen Sie dann die folgenden Eigenschaften nach Bedarf an.
 
-   * Titel - ([Headless](facets-type.md) nur) Geben Sie die Facettenbeschriftung ein, die Sie verwenden möchten.
-   * Sortiertyp - Facets werden alphabetisch für alle sortiert [!DNL Commerce] Storefronts. Bei Headless-Implementierungen können Facetten entweder alphabetisch oder nach Anzahl sortiert werden. Optionen: Alphabetisch, Anzahl (nur Headless)
-   * Max. Wert - Geben Sie die maximale Anzahl an Facettenwerten ein, die in der Storefront angezeigt werden. Gültige Einträge: 0-30; Standard: 8
+   * Beschriftung - ([Headless](facets-type.md) nur) Geben Sie die Facettenbeschriftung ein, die Sie verwenden möchten.
+   * Sortiertyp - Facetten werden alphabetisch für alle sortiert [!DNL Commerce] Storefronts. Bei Headless-Implementierungen können Facetten entweder alphabetisch oder nach Anzahl sortiert werden. Optionen: Alphabetisch, Zählung (nur Headless)
+   * Max. Wert - Geben Sie die maximale Anzahl an Facettenwerten ein, die in der Storefront angezeigt werden. Gültige Einträge: 0 - 30; Standard: 8
 
 1. Wenn Sie fertig sind, klicken Sie auf **Speichern**.
 
@@ -53,7 +53,7 @@ Die Facette wird am unteren Rand des *Dynamische Facetten* und *Veröffentlichun
 1. So veröffentlichen Sie die Facette am oberen Rand des *Filter* Liste, klicken Sie auf die graue Push-Taste (![Pin-Auswahl](assets/btn-pin-gray.png)).
 1. Um die Reihenfolge der fixierten Facette zu ändern, klicken Sie auf die **Verschieben** (![Auswahl verschieben](assets/btn-move.png)) und ziehen Sie die Zeile an eine neue Position im *Angeheftete Facetten* Abschnitt.
 
-## Schritt 3: Veröffentlichungsänderungen
+## Schritt 3: Änderungen veröffentlichen
 
 1. Wenn die Facette abgeschlossen ist, klicken Sie auf **Veröffentlichungsänderungen**.
 1. Warten Sie, bis die Facette im Store angezeigt wird.
@@ -65,7 +65,7 @@ Wenn die Facette nach zwei Stunden nicht verfügbar ist, lesen Sie [Export über
 |--- |--- |
 | Titel | ([Headless](facets-type.md) nur) Die [Facet-Bezeichnung](facets-type.md) die in der Storefront sichtbar sind, können zur Konsistenz mit Ihrer Marke bearbeitet werden. |
 | Sortiertyp | Die Methode, mit der [sort](facets-type.md) Facetten. Alle [!DNL Commerce] storefronts sortiert Facetten nur alphabetisch. Headless-Implementierungen können auch nach `Count`. Optionen:<br />Alphabetisch - Sortiert Facetten alphabetisch.<br />Anzahl - (nur Headless) Sortiert Facetten basierend auf der Anzahl der gefundenen Übereinstimmungen. |
-| Max. Wert | Die maximale Anzahl von Werten, die in der Storefront für jede Facette angezeigt werden können. Facets, die einen Wertebereich darstellen, sind gleichmäßig verteilt. Gültige Einträge: 0-30; Standard: 8 |
+| Max. Wert | Die maximale Anzahl von Werten, die in der Storefront für jede Facette angezeigt werden können. Facets, die einen Wertebereich darstellen, sind gleichmäßig verteilt. Gültige Einträge: 0 - 30; Standard: 8 |
 
 ### Steuerelemente
 

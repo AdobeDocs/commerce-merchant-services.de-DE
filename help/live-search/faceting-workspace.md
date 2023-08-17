@@ -30,7 +30,7 @@ Wenn Ihre Adobe Commerce-Installation mehrere Store-Ansichten enthält, legen Si
 
 ## Facette hinzufügen
 
-1. Klicken **Hinzufügen von Facetten**.
+1. Klicks **Hinzufügen von Facetten**.
 1. Siehe [Facets hinzufügen](facets-add.md) für detaillierte Anweisungen.
 
 ## Spaltenbeschreibungen
@@ -38,7 +38,7 @@ Wenn Ihre Adobe Commerce-Installation mehrere Store-Ansichten enthält, legen Si
 | Spalte | Beschreibung |
 |--- |--- |
 | (erste Spalte) | Listet fixierte und dynamische Facetten von [label](facets-type.md) für den Käufer sichtbar ist. |
-| Sortiertyp | Die [Sortierreihenfolge](facets-type.md) von Facettenwerten. Facets werden alphabetisch für alle sortiert [!DNL Commerce] Storefronts. Für [Headless] -Implementierungen können Facetten entweder alphabetisch oder nach Anzahl sortiert werden. Optionen: Alphabetisch, Anzahl (nur Headless) |
+| Sortiertyp | Die [Sortierreihenfolge](facets-type.md) von Facettenwerten. Facets werden alphabetisch für alle sortiert [!DNL Commerce] Storefronts. Für [Headless] -Implementierungen können Facetten entweder alphabetisch oder nach Anzahl sortiert werden. Optionen: Alphabetisch, Zählung (nur Headless) |
 | Max. Wert | Die Anzahl der Facettenwerte, die in der Storefront als Filter verfügbar sind, mit einer maximalen Anzahl von 10. |
 
 ## Steuerelemente

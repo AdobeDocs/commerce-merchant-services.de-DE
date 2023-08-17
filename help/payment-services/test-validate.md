@@ -1,6 +1,6 @@
 ---
 title: Testen und Validieren
-description: Durch Tests und Validierung wird sichergestellt, dass [!DNL Payment Services] Funktionen funktionieren erwartungsgemäß und bieten beste Zahlungsoptionen für Ihre Kunden
+description: Durch Tests und Validierung kann sichergestellt werden, dass [!DNL Payment Services] Funktionen funktionieren erwartungsgemäß und bieten beste Zahlungsoptionen für Ihre Kunden
 exl-id: 95b4615e-73b0-41e8-83e2-e65a0b22f10f
 feature: Payments, Checkout
 source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
@@ -12,16 +12,16 @@ ht-degree: 0%
 
 # Testen und Validieren
 
-Bevor Sie [!DNL Payment Services] für [!DNL Adobe Commerce] und [!DNL Magento Open Source] Für Ihre Kunden ist es empfehlenswert, in Ihrer Sandbox-Umgebung zu testen. _und_ in der Produktion. Durch Tests und Validierung wird sichergestellt, dass [!DNL Payment Services] Funktionen funktionieren erwartungsgemäß und bieten die besten Zahlungsoptionen für Ihr Geschäft und Ihre Kunden.
+Bevor Sie [!DNL Payment Services] für [!DNL Adobe Commerce] und [!DNL Magento Open Source] Für Ihre Kunden ist es empfehlenswert, in Ihrer Sandbox-Umgebung zu testen. _und_ in der Produktion. Durch Tests und Validierung kann sichergestellt werden, dass [!DNL Payment Services] Funktionen funktionieren erwartungsgemäß und bieten die besten Zahlungsoptionen für Ihr Geschäft und Ihre Kunden.
 
 ## Test in Sandbox-Umgebung
 
 Test [!DNL Payment Services] in einer Sandbox-Umgebung ist ein wichtiger Validierungsschritt, auch wenn es sich um eine simulierte Umgebung handelt, die nur mit der PayPal-Sandbox verbunden ist, nicht mit echten Banken und Händlern.
 
 1. Führen Sie einen erfolgreichen Checkout aus Ihrem Store durch, indem Sie [Kreditkartenfelder](payments-options.md#credit-card-fields) oder eines der [PayPal Smart-Schaltflächen](payments-options.md#paypal-smart-buttons). Siehe [Testen von Anmeldeinformationen](#testing-credentials) für weitere Informationen zur Verwendung von gefälschten Kreditkarten zum Testen.
-1. Erfassen (wenn Ihre Zahlungsaktion ausgeführt wird) [auf `Authorize and Capture`](onboard.md#set-payment-services-as-payment-method)), [Rückerstattung](refunds.md)oder [void](voids.md) die gerade ausgefüllte Bestellung. Sie können auch einfach [eine Rechnung erstellen](https://docs.magento.com/user-guide/sales/invoice-create.html){target="_blank"} für eine Bestellung, wenn Ihre Zahlungsaktion auf `Authorize` anstelle von `Authorize and Capture`.
+1. Erfassen (wenn Ihre Zahlungsaktion ausgeführt wird) [auf `Authorize and Capture`](onboard.md#set-payment-services-as-payment-method)), [Erstattung](refunds.md)oder [void](voids.md) die gerade ausgefüllte Bestellung. Sie können [eine Rechnung erstellen](https://docs.magento.com/user-guide/sales/invoice-create.html){target="_blank"} für eine Bestellung, wenn Ihre Zahlungsaktion auf `Authorize` anstelle von `Authorize and Capture`.
 1. Zeigen Sie die Transaktion und andere Informationen innerhalb von 24-48 Stunden im [Zahlungsbericht](payouts.md).
-1. Weitere Informationen zur Bestellung finden Sie im Abschnitt [Bestellstatusbericht](order-payment-status.md).
+1. Weitere Informationen zur Bestellung finden Sie im [Bestellstatusbericht](order-payment-status.md).
 
 ### Testen von Anmeldeinformationen
 

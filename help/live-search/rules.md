@@ -42,7 +42,7 @@ Logische Operatoren `AND` und `OR` zwei Bedingungen verbinden und unterschiedlic
 
 Die Match-Operatoren `All` und `Any` den logischen Operator bestimmen, der zum Verbinden mehrerer Bedingungen in der Regel verwendet wird und zum Ändern des vorhandenen Operators verwendet werden kann.
 
-* `All` - Verwendet die `AND` logischen Operators, um mehrere Bedingungen zu verknüpfen. Eine Regel, die die `All` Der Übereinstimmungsoperator kann nur eine haben `Search query is` Bedingung.
+* `All` - Verwendet die `AND` logischen Operators, um mehrere Bedingungen zu verknüpfen. Eine Regel, die die `All` Der Übereinstimmungsoperator kann nur eine haben `Search query is` -Bedingung.
 * `Any` - Verwendet die `OR` logischen Operators, um mehrere Bedingungen zu verknüpfen.
 
 Beim Erstellen einer komplexen Regel kann es hilfreich sein, diese mit einem Einzug zu schreiben, um die Bedingungen, verknüpften Ereignisse sowie Produktnamen oder SKUs zu beschreiben, die zum Zurückgeben der gewünschten Ergebnisse erforderlich sind. Erstellen Sie dann die Regel und testen Sie das Ergebnis.
@@ -53,7 +53,7 @@ Es wird immer nur eine Regel auf einen Suchbegriff angewendet.
 Wenn festgestellt wird, dass mehrere Regeln auf einen Suchbegriff anwendbar sind, werden alle diese Regeln angewendet. Bei Kollision zwischen zwei Regeln:`rule 1` das die SKU1 erhöht, aber `rule 2` blendet dieselbe SKU aus - dann die zuletzt angewendete Regel (`rule 2`) hat Vorrang.
 
 * Regeln werden nach dem Zeitstempel &quot;Zuletzt geändert&quot;geordnet. Die zuletzt geänderte Regel wird zuerst angewendet und ältere Regeln danach in der Zeitstempelreihenfolge.
-* Die `query is` -Bedingung Vorrang vor anderen Bedingungen hat. Wenn eine neuere Regel eine `query contains` -Bedingung, aber eine ältere Regel hat eine `query is` -Bedingung, die `query is` -Regel angewendet wird.
+* Die `query is` -Bedingung Vorrang vor anderen -Bedingungen hat. Wenn eine neuere Regel eine `query contains` -Bedingung, aber eine ältere Regel hat eine `query is` -Bedingung, die `query is` angewendet wird.
 
 ### Storefront-Anforderungen
 
@@ -65,7 +65,7 @@ Andernfalls wird die zuletzt aktualisierte aktive Regel angewendet.
 Die in der Admin-Konsole gestellten Anforderungen funktionieren etwas anders. Bei der Vorschau in der Admin-Konsole werden alle Regeln angewendet, einschließlich der abgelaufenen und geplanten.
 
 * Wenn eine Regel in der Vorschau eine `query is` -Bedingung, wird sie angewendet.
-* Wenn die Vorschau einer Regel keine `query is` und einer nachfolgenden aktiven, übereinstimmenden Regel mit einer `query is` -Bedingung gefunden wird, wird die `query is` -Regel angewendet wird.
+* Wenn die Vorschau einer Regel keine `query is` und einer nachfolgenden aktiven, übereinstimmenden Regel mit einer `query is` -Bedingung gefunden wird, wird die `query is` angewendet wird.
 * Wenn die Vorschau einer Regel keine `query is` und keine andere Regel mit einer `query is` gefunden wird, wird die in der Vorschau angezeigte Regel angewendet.
 
 ## Kategorieregeln und Kategorieproduktzuweisungen

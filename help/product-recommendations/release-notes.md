@@ -1,5 +1,5 @@
 ---
-title: '''[!DNL Product Recommendations] Versionshinweise'
+title: '[!DNL Product Recommendations] Versionshinweise'
 description: Die neuesten Versionshinweise für [!DNL Product Recommendations] aus Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
@@ -135,7 +135,7 @@ _25. April 2023_
 
 [!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"}
 
-![Neu](../assets/new.svg) Umbenannte Magento Services in [Commerce-Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) und verbesserte Benutzerfreundlichkeit im Admin
+![Neu](../assets/new.svg) Umbenannte Magento-Dienste in [Commerce-Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) und verbesserte Benutzerfreundlichkeit im Admin
 
 ### 3.2.4 von Magento/Produktempfehlungen
 

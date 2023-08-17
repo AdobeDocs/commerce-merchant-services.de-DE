@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Die SaaS-Preisindizierung beschleunigt die Zeit, die benötigt wird, um Preisänderungen auf der Website eines SaaS-Kunden widerzuspiegeln, nachdem sie eingereicht wurden. Dieses optionale Modul ermöglicht Händlern mit großen, komplexen Katalogen oder mit mehreren Websites oder Kundengruppen, Preisänderungen schneller und kontinuierlich zu verarbeiten.
 
-Der größte Engpass der Pipeline: Rechenintensive Prozesse wie Indizierung und Preisberechnung wurden vom PHP-Kern in die Cloud-Infrastruktur der Adobe verschoben. Dadurch können Händler Ressourcen schnell skalieren, um die Indexierungszeiten zu erhöhen, und diese Änderungen an Websites mit viel schnelleren Geschwindigkeiten widerspiegeln.
+Der größte Engpass der Pipeline: Rechenschwere Prozesse wie Indexierung und Preisberechnung wurden vom PHP-Kern in die Adobe Cloud-Infrastruktur verschoben. Dadurch können Händler Ressourcen schnell skalieren, um die Indexierungszeiten zu erhöhen, und diese Änderungen an Websites mit viel schnelleren Geschwindigkeiten widerspiegeln.
 
 Der Datenfluss der Core-Indizierung zu SaaS-Diensten sieht wie folgt aus:
 
@@ -29,7 +29,7 @@ Alle Händler, die die Anforderungen erfüllen, können von diesen Verbesserunge
 
 * Konstante Preisänderungen: Händler, die wiederholte Preisänderungen erfordern, um strategische Ziele wie häufige Promotions, saisonale Rabatte oder Inventarmarkdowns zu erreichen.
 * Mehrere Websites und/oder Kundengruppen: Händler mit freigegebenen Produktkatalogen über mehrere Websites (Domänen/Marken) und/oder Kundengruppen hinweg.
-* Große Anzahl einzigartiger Preise für Websites oder Kundengruppen: Händler mit umfangreichen gemeinsamen Produktkatalogen, die individuelle Preise für Websites oder Kundengruppen enthalten, wie B2B-Händler mit vorab ausgehandelten Preisen, Marken mit unterschiedlichen Preisstrategien.
+* Große Anzahl einzigartiger Preise für Websites oder Kundengruppen: Händler mit umfangreichen gemeinsam genutzten Produktkatalogen, die individuelle Preise für Websites oder Kundengruppen enthalten, wie B2B-Händler mit vorab ausgehandelten Preisen, Marken mit unterschiedlichen Preisstrategien.
 
 Wenn Sie Anwendungen von Drittanbietern haben, die sich auf den PHP-Core-Preisindex verlassen, lesen Sie die Dokumentation und wenden Sie sich an den Erweiterungsanbieter, bevor Sie Änderungen vornehmen.
 
@@ -67,7 +67,7 @@ Kunden, die Luma und Adobe Commerce Core GraphQL verwenden, können ein Modul in
 adobe-commerce/catalog-adapter
 ```
 
-Die `catalog-adapter` ist nur mit Version 2.4.5 kompatibel. Die Unterstützung für 2.4.4 und 2.4.6 wird demnächst veröffentlicht.
+Die `catalog-adapter` ist nur mit 2.4.5 kompatibel. Die Unterstützung für 2.4.4 und 2.4.6 wird demnächst veröffentlicht.
 Der PHP Core-Preisindex kann bei Bedarf durch eine Drittanbietererweiterung oder aus anderen Gründen wieder aktiviert werden.
 
 ## Einschränkungen
@@ -77,14 +77,14 @@ Abhängig von Faktoren wie Produkttypen, Preiskomplexität und Kataloggröße ka
 Derzeit unterstützt die SaaS-Preisindizierung einfache, gruppierte, virtuelle, konfigurierbare und [Bundle dynamisch](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-bundle.html) Produktarten.
 Die Unterstützung für herunterladbare, vergriffene Karten und behobene Produkttypen von Bundle wird in Kürze angeboten.
 
-Neue Feeds sollten manuell mit der `resync` [CLI, Befehl](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html#resynccmdline). Andernfalls werden die Daten im standardmäßigen Synchronisierungsprozess aktualisiert. Weitere Informationen zu [Katalogsynchronisierung](../landing/catalog-sync.md) Prozess.
+Neue Feeds sollten manuell mit der `resync` [CLI, Befehl](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html#resynccmdline). Andernfalls werden die Daten im standardmäßigen Synchronisierungsprozess aktualisiert. Weitere Informationen zu [Katalogsynchronisierung](../landing/catalog-sync.md) -Prozess.
 
 ## Nutzungsszenarien
 
 ### Luma ohne Erweiterungsabhängigkeiten
 
-* Ein Luma- oder Adobe Commerce Core GraphQL-Händler, auf dem ein erforderlicher Dienst installiert ist (Live Search, Product Recommendations, Catalog Service)
-* Keine Drittanbietererweiterungen, die auf den PHP-Core-Preisindex angewiesen sind
+* Ein Luma- oder Adobe Commerce Core GraphQL-Händler, der einen erforderlichen Dienst installiert hat (Live Search, Product Recommendations, Catalog Service)
+* Keine Drittanbietererweiterungen, die auf den PHP Core-Preisindex angewiesen sind
 * Verkaufen einfacher, konfigurierbarer, gruppierter, virtueller und gebündelter dynamischer Produkte
 
 1. Neue Feeds aktivieren.

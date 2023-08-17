@@ -6,7 +6,7 @@ feature: Payments, Checkout
 source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
 workflow-type: tm+mt
 source-wordcount: '158'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -20,8 +20,8 @@ Sie können Zahlungsdienste an Ihre Anforderungen anpassen, indem Sie [[!DNL Pay
 
 [!DNL Payment Services] sind als Zahlungsmethode beim Erstellen einer Bestellung in der Admin-Konsole verfügbar:
 
-1. Im _Admin_ Seitenleiste, erweitern **[!UICONTROL Sales]** und wählen Sie **[!UICONTROL Orders]**.
+1. Im _Admin_ Seitenleiste, erweitern **[!UICONTROL Sales]** und wählen **[!UICONTROL Orders]**.
 1. Klicken **[!UICONTROL Create New Order]**.
 1. Füllen Sie die Abschnitte nach Bedarf für die Bestellung aus (Details siehe [Bestellung erstellen](https://docs.magento.com/user-guide/customers/customer-account-create-order.html){target="_blank"}).
-1. Im _[!UICONTROL Payment Method]_-Abschnitt, sollten Sie die [!DNL Payment Services] als Zahlungsmethode.
+1. Im _[!UICONTROL Payment Method]_-Abschnitt verwenden, sollten Sie die [!DNL Payment Services] als Zahlungsmethode.
 1. Klicken **[!UICONTROL Submit Order]**.

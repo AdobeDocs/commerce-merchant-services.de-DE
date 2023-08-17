@@ -12,10 +12,10 @@ ht-degree: 0%
 
 # Commerce-Daten mit Adobe Experience Platform verbinden
 
-Wenn Sie den Experience Platform Connector installieren, werden im **System** Menü unter **Dienste** im Handel _Admin_.
+Wenn Sie den Experience Platform-Connector installieren, werden im **System** Menü unter **Dienste** im Handel _Admin_.
 
 - Commerce Services Connector
-- Experience Platform Connector
+- Experience Platform-Connector
 
 Um Ihre Adobe Commerce-Instanz mit der Adobe Experience Platform zu verbinden, müssen Sie beide Connectoren konfigurieren, beginnend mit dem Commerce Services-Connector und schließlich mit dem Experience Platform-Connector.
 
@@ -29,31 +29,31 @@ Wenn Sie zuvor einen Adobe Commerce-Dienst installiert haben, haben Sie wahrsche
 
 Nachdem Sie den Commerce Services-Connector konfiguriert haben, konfigurieren Sie den Experience Platform-Connector.
 
-## Experience Platform Connector aktualisieren
+## Experience Platform-Connector aktualisieren
 
-In diesem Abschnitt verbinden Sie Ihre Adobe Commerce-Instanz mit der Adobe Experience Platform mithilfe Ihrer Organisations-ID. Anschließend können Sie den Datentyp - Storefront und Backoffice - festlegen, der an den Experience Platform Edge gesendet werden soll.
+In diesem Abschnitt verbinden Sie Ihre Adobe Commerce-Instanz mit der Adobe Experience Platform mithilfe Ihrer Organisations-ID. Anschließend können Sie den Datentyp - Storefront und Backoffice - angeben, der an den Experience Platform-Edge gesendet werden soll.
 
 ![Experience Platform-Connector-Konfiguration](assets/epc-config-dc.png)
 
 ## Allgemein
 
-1. Navigieren Sie im Admin zu **System** > Dienste > **Experience Platform Connector**.
+1. Navigieren Sie im Admin zu **System** > Dienste > **Experience Platform-Connector**.
 
 1. Im **Einstellungen** Registerkarte unter **Allgemein**&#x200B;überprüfen Sie die mit Ihrem Adobe Experience Platform-Konto verknüpfte ID, wie in der [Commerce Services Connector](../landing/saas.md#organizationid). Die Organisations-ID ist global. Pro Adobe Commerce-Instanz kann nur eine Organisations-ID zugeordnet werden.
 
-1. Im **Anwendungsbereich** in der Dropdown-Liste festlegen, setzen Sie den Kontext auf **Webseite**.
+1. Im **Anwendungsbereich** Dropdown-Liste festlegen, setzen Sie den Kontext auf **Webseite**.
 
-1. (Optional) Wenn Sie bereits über eine [AEP Web SDK (Legierung)](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html) auf Ihrer Site bereitgestellt, aktivieren Sie das Kontrollkästchen und fügen Sie den Namen Ihres AEP Web SDK hinzu. Lassen Sie diese Felder andernfalls leer, und der Experience Platform Connector stellt eines für Sie bereit.
+1. (Optional) Wenn Sie bereits über eine [AEP Web SDK (Legierung)](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html) auf Ihrer Site bereitgestellt, aktivieren Sie das Kontrollkästchen und fügen Sie den Namen Ihres AEP Web SDK hinzu. Lassen Sie diese Felder andernfalls leer, und der Experience Platform-Connector stellt eines für Sie bereit.
 
    >[!NOTE]
    >
-   >Wenn Sie Ihr eigenes AEP Web SDK angeben, verwendet der Experience Platform Connector die mit diesem SDK verknüpfte Datastraam-ID und nicht die auf dieser Seite angegebene Datastream-ID (falls vorhanden).
+   >Wenn Sie Ihr eigenes AEP Web SDK angeben, verwendet der Experience Platform-Connector die mit diesem SDK verknüpfte Datastraam-ID und nicht die auf dieser Seite angegebene Datastream-ID (falls vorhanden).
 
 ## Datenerfassung
 
-In diesem Abschnitt geben Sie den Datentyp an, den Sie an den Experience Platform Edge senden möchten. Es gibt zwei Datentypen: Client- und Server-seitig.
+In diesem Abschnitt geben Sie den Datentyp an, den Sie an den Experience Platform-Edge senden möchten. Es gibt zwei Datentypen: Client-seitig und Server-seitig.
 
-Client-seitige Daten sind Daten, die in der Storefront erfasst werden. Dazu gehören Interaktionen mit Käufern, z. B. `View Page`, `View Product`, `Add to Cart`und [Anforderungsliste](events.md#b2b-events) Informationen (für B2B-Händler). Serverseitige Daten oder Back-Office-Daten sind Daten, die auf den Commerce-Servern erfasst werden. Dazu gehören Informationen über den Status einer Bestellung, z. B. ob eine Bestellung aufgegeben, storniert, rückerstattet, versandt oder abgeschlossen wurde.
+Client-seitige Daten sind Daten, die in der Storefront erfasst werden. Dazu gehören Interaktionen mit Käufern, z. B. `View Page`, `View Product`, `Add to Cart`, und [Anforderungsliste](events.md#b2b-events) Informationen (für B2B-Händler). Serverseitige Daten oder Back-Office-Daten sind Daten, die auf den Commerce-Servern erfasst werden. Dazu gehören Informationen über den Status einer Bestellung, z. B. ob eine Bestellung aufgegeben, storniert, rückerstattet, versandt oder abgeschlossen wurde.
 
 Um sicherzustellen, dass Ihre Adobe Commerce-Instanz mit der Datenerfassung beginnen kann, lesen Sie das [Voraussetzungen](overview.md#prerequisites).
 
@@ -61,7 +61,7 @@ Weitere Informationen finden Sie unter Ereignisthema . [storefront](events.md#st
 
 >[!NOTE]
 >
->Alle Felder im **Datenerfassung** -Abschnitt auf die **Webseite** oder höher.
+>Alle Felder im **Datenerfassung** -Abschnitt auf die **Webseite** Umfang oder höher.
 
 1. Auswählen **Storefront-Ereignisse** , wenn Sie Verhaltensdaten zur Storefront senden möchten.
 
@@ -69,11 +69,11 @@ Weitere Informationen finden Sie unter Ereignisthema . [storefront](events.md#st
    >
    >Die **Storefront-Ereignisse** wird automatisch aktiviert, wenn das AEP Web SDK und die Organisations-ID gültig sind.
 
-1. Auswählen **Backoffice-Ereignisse** wenn Sie Bestellstatusinformationen senden möchten, z. B. wenn eine Bestellung aufgegeben, storniert, rückerstattet oder versandt wurde.
+1. Auswählen **Back-Office-Ereignisse** wenn Sie Bestellstatusinformationen senden möchten, z. B. wenn eine Bestellung aufgegeben, storniert, rückerstattet oder versandt wurde.
 
    >[!NOTE]
    >
-   >Wenn Sie **Backoffice-Ereignisse**, werden alle Backoffice-Daten an den Experience Platform Edge gesendet. Wenn sich ein Kunde dafür entscheidet, die Datenerfassung abzuwählen, müssen Sie in der Experience Platform ausdrücklich die Datenschutzeinstellung des Käufers festlegen. Dies unterscheidet sich von Storefront-Ereignissen, bei denen der Sammler die Zustimmung bereits auf der Grundlage der Kundeneinstellungen verarbeitet. [Weitere Infos](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset.html) über die Festlegung der Datenschutzeinstellungen eines Käufers in der Experience Platform.
+   >Wenn Sie **Back-Office-Ereignisse**, werden alle Backoffice-Daten an die Experience Platform-Edge gesendet. Wenn sich ein Kunde dafür entscheidet, die Datenerfassung abzuwählen, müssen Sie die Datenschutzeinstellung des Käufers explizit auf der Experience Platform festlegen. Dies unterscheidet sich von Storefront-Ereignissen, bei denen der Sammler die Zustimmung bereits auf der Grundlage der Kundeneinstellungen verarbeitet. [Weitere Infos](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset.html) über die Festlegung der Datenschutzeinstellungen eines Käufers auf der Experience Platform.
 
 1. So stellen Sie sicher, dass Back-Office-Ereignisdaten anhand eines Zeitplans gemäß [cron](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html) Auftrag, müssen Sie die `Sales Orders Feed` Index zu `Update by Schedule`.
 
@@ -104,14 +104,14 @@ Weitere Informationen finden Sie unter Ereignisthema . [storefront](events.md#st
 | Anwendungsbereich | Bestimmte Website, auf die die Konfigurationseinstellungen angewendet werden sollen. |
 | Organisations-ID (global) | ID, die zu der Organisation gehört, die das Adobe DX-Produkt erworben hat. Diese ID verknüpft Ihre Adobe Commerce-Instanz mit Adobe Experience Platform. |
 | Ist das AEP Web SDK bereits auf Ihrer Site bereitgestellt? | Aktivieren Sie dieses Kontrollkästchen, wenn Sie Ihr eigenes AEP Web SDK auf Ihrer Site bereitgestellt haben. |
-| AEP Web SDK Name (Global) | Wenn Sie bereits ein Experience Platform Web SDK auf Ihrer Site bereitgestellt haben, geben Sie in diesem Feld den Namen dieses SDK an. Dadurch kann das Storefront Event Collector und Storefront Event SDK Ihr Experience Platform Web SDK anstelle der vom Experience Platform Connector bereitgestellten Version verwenden. Wenn auf Ihrer Site kein Experience Platform Web SDK bereitgestellt ist, lassen Sie dieses Feld leer, und der Experience Platform Connector stellt eines für Sie bereit. |
-| Storefront-Ereignisse | Ist standardmäßig aktiviert, solange die Organisations-ID und die Datastream-ID gültig sind. Storefront-Ereignisse erfassen anonymisierte Verhaltensdaten von Ihren Käufern beim Durchsuchen Ihrer Site. |
+| AEP Web SDK Name (Global) | Wenn Sie bereits ein Experience Platform Web SDK auf Ihrer Site bereitgestellt haben, geben Sie den Namen dieses SDK in dieses Feld ein. Dadurch kann das Storefront Event Collector und Storefront Event SDK Ihr Experience Platform Web SDK anstelle der vom Experience Platform-Connector bereitgestellten Version verwenden. Wenn auf Ihrer Site kein Experience Platform Web SDK bereitgestellt ist, lassen Sie dieses Feld leer, und der Experience Platform-Connector stellt eines für Sie bereit. |
+| Storefront-Ereignisse | Ist standardmäßig aktiviert, solange die Organisations-ID und die Datenspeicher-ID gültig sind. Storefront-Ereignisse erfassen anonymisierte Verhaltensdaten von Ihren Käufern beim Durchsuchen Ihrer Site. |
 | Back Office-Ereignisse | Wenn diese Option aktiviert ist, enthält die Ereignis-Payload anonymisierte Bestellstatusinformationen, z. B. ob eine Bestellung aufgegeben, storniert, zurückerstattet oder versandt wurde. |
-| Datastream-ID (Website) | ID, die den Datenfluss von Adobe Experience Platform zu anderen Adobe-DX-Produkten ermöglicht. Diese ID muss mit einer bestimmten Website in Ihrer jeweiligen Adobe Commerce-Instanz verknüpft sein. Wenn Sie Ihr eigenes Experience Platform Web SDK angeben, geben Sie in diesem Feld keine Datastream-ID an. Der Experience Platform-Connector verwendet die mit diesem SDK verknüpfte Datastream-ID und ignoriert alle in diesem Feld angegebenen Datastream-IDs (falls vorhanden). |
+| Datastream-ID (Website) | ID, die den Datenfluss von Adobe Experience Platform zu anderen Adobe DX-Produkten ermöglicht. Diese ID muss mit einer bestimmten Website in Ihrer jeweiligen Adobe Commerce-Instanz verknüpft sein. Wenn Sie Ihr eigenes Experience Platform Web SDK angeben, geben Sie in diesem Feld keine Datastream-ID an. Der Experience Platform-Connector verwendet die mit diesem SDK verknüpfte Datastream-ID und ignoriert alle in diesem Feld angegebenen Datastream-ID (sofern vorhanden). |
 
 >[!NOTE]
 >
->Nach dem Onboarding fließen die Storefront-Daten an den Edge der Experience Platform. Es dauert etwa fünf Minuten, bis die Daten des Back Office am Rand angezeigt werden. Nachfolgende Aktualisierungen sind am Rand basierend auf dem Cron-Zeitplan sichtbar.
+>Nach dem Onboarding fließen die Storefront-Daten an den Experience Platform-Edge. Es dauert etwa fünf Minuten, bis die Daten des Back Office am Rand angezeigt werden. Nachfolgende Aktualisierungen sind am Rand basierend auf dem Cron-Zeitplan sichtbar.
 
 ## (Beta) Verlaufsordnungsdaten senden
 
@@ -119,7 +119,7 @@ Weitere Informationen finden Sie unter Ereignisthema . [storefront](events.md#st
 >
 >Diese Funktion ist nur für Beta-Benutzer verfügbar. Sie können der Beta-Phase beitreten, indem Sie eine E-Mail an folgende Adresse senden: [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
 
-Adobe Commerce erfasst bis zu fünf Jahre historischer Bestelldaten und -status. Sie können den Experience Platform Connector verwenden, um diese historischen Daten an die Experience Platform zu senden, um Ihre Kundenprofile auf der Grundlage dieser früheren Bestellungen anzureichern. Die Daten werden in einem Datensatz in Experience Platform gespeichert.
+Adobe Commerce erfasst bis zu fünf Jahre historischer Bestelldaten und -status. Sie können den Experience Platform-Connector verwenden, um diese historischen Daten an die Experience Platform zu senden, um Ihre Kundenprofile auf der Grundlage dieser früheren Bestellungen anzureichern. Die Daten werden in einem Datensatz innerhalb von Experience Platform gespeichert.
 
 Während Commerce bereits die historischen Bestelldaten erfasst, müssen Sie mehrere Aufgaben ausführen, um diese Daten an Experience Platform zu senden. Die folgenden Abschnitte führen Sie durch den Prozess.
 
@@ -127,7 +127,7 @@ Während Commerce bereits die historischen Bestelldaten erfasst, müssen Sie meh
 
 Um die Datenerfassung zu historischen Bestellungen für die Beta-Version zu aktivieren, müssen Sie den Stamm des Projekts aktualisieren [!DNL Composer] `.json` Datei wie folgt:
 
-1. Öffnen Sie den Stamm. `composer.json` Datei und suchen Sie nach `magento/experience-platform-connector`.
+1. Öffnen Sie den Stamm `composer.json` Datei und suchen Sie nach `magento/experience-platform-connector`.
 
 1. Im `require` aktualisieren Sie die Versionsnummer wie folgt:
 
@@ -163,7 +163,7 @@ Um die Datenerfassung zu historischen Bestellungen für die Beta-Version zu akti
 
 ### Betaversion für historische Bestellungen konfigurieren
 
-Damit der Auftragsverlauf Ihrer Kunden an Experience Platform gesendet werden kann, müssen Sie Anmeldedaten angeben, die Ihre Commerce-Instanz mit der Experience Platform verknüpfen. Wenn Sie bereits installiert und die [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) -Erweiterung, haben Sie bereits die erforderlichen Anmeldeinformationen angegeben und Sie können diesen Schritt überspringen. Wenn Sie die Audience Activation-Erweiterung noch nicht installiert und aktiviert haben, führen Sie die folgenden Schritte aus:
+Um sicherzustellen, dass der Auftragsverlauf Ihrer Kunden an Experience Platform gesendet werden kann, müssen Sie Anmeldeinformationen angeben, die Ihre Commerce-Instanz mit Experience Platform verknüpfen. Wenn Sie bereits installiert und die [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) -Erweiterung, haben Sie bereits die erforderlichen Anmeldeinformationen angegeben und Sie können diesen Schritt überspringen. Wenn Sie die Audience Activation-Erweiterung noch nicht installiert und aktiviert haben, führen Sie die folgenden Schritte aus:
 
 >[!NOTE]
 >
@@ -171,7 +171,7 @@ Damit der Auftragsverlauf Ihrer Kunden an Experience Platform gesendet werden ka
 
 1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 
-1. Erweitern **[!UICONTROL Services]** und wählen Sie **[!UICONTROL Experience Platform Connector]**.
+1. Erweitern **[!UICONTROL Services]** und wählen **[!UICONTROL Experience Platform Connector]**.
 
 1. Geben Sie die Konfigurationsanmeldeinformationen ein, die sich im Abschnitt [Entwicklerkonsole](https://developer.adobe.com/console/home).
 
@@ -181,7 +181,7 @@ Damit der Auftragsverlauf Ihrer Kunden an Experience Platform gesendet werden ka
    >
    >Für die Beta-Version verwendet Commerce die JSON Web Tokens (JWT)-Anmeldeinformationen in der Entwicklerkonsole. Nach der Beta-Version verwendet Commerce OAuth 2.0 in der Entwicklerkonsole.
 
-1. Klicken **Konfiguration speichern**.
+1. Klicks **Konfiguration speichern**.
 
 ### Einrichten des Auftragssynchronisierungsdienstes
 
@@ -206,15 +206,15 @@ Nachdem Sie Entwickleranmeldeinformationen eingegeben haben, können Sie den Die
    >
    >Siehe [Dokumentation zu Implementierungsvariablen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#cron_consumers_runner) , um mehr über alle verfügbaren Konfigurationsoptionen zu erfahren.
 
-Wenn der Synchronisierungsdienst für Bestellungen aktiviert ist, können Sie dann den Datumsbereich für die historische Bestellung auf der Experience Platform Connector-Seite angeben.
+Wenn der Synchronisierungsdienst für Bestellungen aktiviert ist, können Sie dann den Datumsbereich für die historische Bestellung auf der Experience Platform-Connector-Seite angeben.
 
-### Datumsbereich des Bestellverlaufs angeben
+### Angeben des Datumsbereichs für den Auftragsverlauf
 
 In diesem Abschnitt geben Sie den Datumsbereich für die historischen Bestellungen an, die Sie an Experience Platform senden möchten.
 
 ![Bestellverlauf synchronisieren](./assets/order-history.png){width="700" zoomable="yes"}
 
-1. Navigieren Sie im Admin zu **System** > Dienste > **Experience Platform Connector**.
+1. Navigieren Sie im Admin zu **System** > Dienste > **Experience Platform-Connector**.
 
 1. Wählen Sie die **Auftragsverlauf** Registerkarte.
 
@@ -228,7 +228,7 @@ In diesem Abschnitt geben Sie den Datumsbereich für die historischen Bestellung
 
 1. Im **Von** und **nach** -Felder geben den Datenbereich für die historischen Bestelldaten an, die Sie senden möchten. Sie können keinen Datumsbereich auswählen, der fünf Jahre überschreitet.
 
-1. Auswählen [!UICONTROL Start Sync] , um die Synchronisierung Trigger, die gestartet werden soll. Historische Bestelldaten sind Batch-Daten im Gegensatz zu Storefront- und Backoffice-Daten, die Streaming-Daten darstellen. Es dauert etwa 45 Minuten, bis die Batch-Daten in der Experience Platform ankommen.
+1. Auswählen [!UICONTROL Start Sync] , um die Synchronisierung Trigger, die gestartet werden soll. Historische Bestelldaten sind Batch-Daten im Gegensatz zu Storefront- und Backoffice-Daten, die Streaming-Daten darstellen. Es dauert etwa 45 Minuten, bis die Batch-Daten in Experience Platform ankommen.
 
    >[!NOTE]
    >
@@ -238,7 +238,7 @@ In diesem Abschnitt geben Sie den Datumsbereich für die historischen Bestellung
 
 Um sicherzustellen, dass Daten aus Ihrem Commerce-Store erfasst werden, verwenden Sie die [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) , um Ihre Commerce-Site zu untersuchen. Nachdem Sie bestätigt haben, dass Daten erfasst werden, können Sie sicherstellen, dass Ihre Storefront- und Back-Office-Ereignisdaten am Edge angezeigt werden, indem Sie eine Abfrage ausführen, die Daten aus dem [von Ihnen erstellter Datensatz](overview.md#prerequisites).
 
-1. Auswählen **Abfragen** Klicken Sie im linken Navigationsbereich der Experience Platform auf [!UICONTROL Create Query].
+1. Auswählen **Abfragen** im linken Navigationsbereich von Experience Platform und klicken Sie auf [!UICONTROL Create Query].
 
    ![Abfrage-Editor](assets/query-editor.png)
 

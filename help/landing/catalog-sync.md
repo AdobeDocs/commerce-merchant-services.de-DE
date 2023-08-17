@@ -26,13 +26,13 @@ Der Katalogsynchronisierungsprozess wird stündlich ausgeführt, um [!DNL Commer
 >
 > Die _Katalogsynchronisierung_ Dashboard ist nur verfügbar, wenn die _Produkt-Recommendations_ -Module installiert sind und nur Datenprojektionen für diese Funktion widerspiegeln. Unterstützung für andere Commerce-Dienste wie _Live Search_ und _Catalog Service_ sind für die Zukunft geplant.
 
-Um auf das Dashboard Katalogsynchronisierung zuzugreifen, wählen Sie **System** > _Datenübertragung_ > **Katalogsynchronisierung**.
+Um auf das Dashboard &quot;Katalogsynchronisierung&quot;zuzugreifen, wählen Sie **System** > _Datenübertragung_ > **Katalogsynchronisierung**.
 
-Mit dem **Katalogsynchronisierung** Dashboard:
+Mit dem **Katalogsynchronisierung** Dashboard können Sie:
 
 - Synchronisierungsstatus anzeigen (**In Bearbeitung**, **Erfolg**, **Fehlgeschlagen**)
 - Anzeigen der Gesamtzahl der synchronisierten Produkte bei Erfolg
-- Suchen Sie synchronisierte Produkte, um ihren aktuellen Status anzuzeigen.
+- Synchronisierte Produkte suchen, um ihren aktuellen Status anzuzeigen
 - Suchspeicherkatalog nach Name, SKU usw.
 - Anzeigen synchronisierter Produktdetails in JSON, um eine Synchronisierungsdiskrepanz zu diagnostizieren
 - Initialisieren des Synchronisierungsprozesses
@@ -41,8 +41,8 @@ Mit dem **Katalogsynchronisierung** Dashboard:
 
 Meldet einen Synchronisierungsstatus von:
 
-- **Erfolg** - Zeigt das Datum und die Uhrzeit der erfolgreichen Synchronisierung und die Anzahl der aktualisierten Produkte an
-- **Fehlgeschlagen** - Zeigt das Datum und die Uhrzeit des Synchronisierungsversuchs an
+- **Erfolg** - Zeigt Datum und Uhrzeit der erfolgreichen Synchronisierung und die Anzahl der aktualisierten Produkte an
+- **Fehlgeschlagen** - Zeigt Datum und Uhrzeit des Synchronisierungsversuchs an
 - **In Bearbeitung** - Zeigt Datum und Uhrzeit der letzten erfolgreichen Synchronisierung an
 
 >[!NOTE]
@@ -106,7 +106,7 @@ Wenn die Katalogsynchronisierung den Status **Fehlgeschlagen**, senden Sie eine 
 
 ## Befehlszeilenschnittstelle {#resynccmdline}
 
-Die `saas:resync` -Befehl ist Teil der `magento/saas-export` Paket. Sie können dieses Paket mit einem der [!DNL Commerce Services] Produkte wie [[!DNL Product Recommendations]](/help/product-recommendations/install-configure.md) oder [[!DNL Live Search]](/help/live-search/install.md).
+Die `saas:resync` -Befehl ist Teil der `magento/saas-export` Paket. Sie können dieses Paket mit einem der [!DNL Commerce Services] Produkte, wie [[!DNL Product Recommendations]](/help/product-recommendations/install-configure.md) oder [[!DNL Live Search]](/help/live-search/install.md).
 
 >[!NOTE]
 >

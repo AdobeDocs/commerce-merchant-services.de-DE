@@ -21,7 +21,7 @@ Die [!DNL Live Search] Das Leistungs-Dashboard bietet Einblicke in die Suchbegri
 
 ## Bericht anzeigen
 
-1. So geben Sie die **Datumsbereich** klicken Sie auf den Kalender (![Kalender](assets/btn-calendar.png)) und führen Sie einen der folgenden Schritte aus:
+1. So geben Sie **Datumsbereich** klicken Sie auf den Kalender (![Kalender](assets/btn-calendar.png)) und führen Sie einen der folgenden Schritte aus:
 
    * Um ein einzelnes Datum anzugeben, doppelklicken Sie auf das Datum im Kalender.
    * Um einen Datumsbereich festzulegen, klicken Sie auf das erste und letzte Datum im Kalender.
@@ -39,10 +39,10 @@ Die [!DNL Live Search] Das Leistungs-Dashboard bietet Einblicke in die Suchbegri
 | Clickthrough-Rate | Der Prozentsatz der Suchvorgänge, die mit dem Klick auf ein Produkt abgeschlossen werden. Die Clickthrough-Rate beträgt beispielsweise 50 %, wenn der Käufer nach &quot;Hosen&quot;und &quot;Hemd&quot;sucht und dann in der &quot;Shirt&quot;-Suche auf ein Ergebnis klickt. |
 | Konversionsrate | Der Prozentsatz der Produkte, die der Käufer kauft, im Vergleich zur Anzahl der Produkte, auf die der Käufer im angegebenen Datumsbereich klickt. Beispielsweise beträgt die Konversionsrate der Interaktion 100 %, wenn der Käufer sechs Produkte im Popover anzeigt, auf eins klickt und einen Kauf tätigt. <br /><br />Die Konversionsrate wird durch die Anzahl der Ansichten eines bestimmten Produkts nicht beeinflusst. Beispielsweise bleibt die Konversionsrate gleich, wenn der Käufer die Suche verwendet, aber auf keine Produkte klickt. |
 | Null-Ergebnisrate | Der Prozentsatz der eindeutigen Suchen, die für den angegebenen Datumsbereich keine Ergebnisse zurückgeben. Beispielsweise beträgt die Null-Ergebnisrate 66,67 %, wenn der Käufer zweimal nach &quot;fjjajfjfjf&quot; (ohne Ergebnisse) und einmal nach &quot;pants&quot; (mit Ergebnissen) sucht. |
-| Durchschn. Klickposition | Die relative Position der durchschnittlichen Clickthrough-Rate basierend auf eindeutigen Suchvorgängen für den angegebenen Datumsbereich. |
+| Durchschn. Klickposition | Die relative Position der durchschnittlichen Clickthrough-Rate basierend auf eindeutigen Suchen für den angegebenen Datumsbereich. |
 
 | Berichte | Beschreibung |
 |--- |--- |
-| Einzelsuche | Listet die eindeutigen Suchabfragen auf, die im angegebenen Datumsbereich verwendet wurden. Die Berichtsdaten werden auf die gleiche Weise wie die Daten der einzelnen Suchanzeigen berechnet. Wenn ein Käufer dieselbe Suchanfrage zweimal, aber im Abstand von mehr als einer Stunde eingibt, gilt die Suche als zwei eindeutige Suchen. Berichtslimit: Die 500 beliebtesten Begriffe |
-| Null Ergebnisse | Listet die Suchabfragen auf, die keine Ergebnisse zurückgeben, sowie die Anzahl der Male, die im angegebenen Datumsbereich verwendet wurden. Berichtslimit: Die 500 beliebtesten Begriffe |
-| Häufige Ergebnisse | Listet die Namen der Produkte auf, die im angegebenen Datumsbereich die meisten Ansichten erhalten haben. Die beliebten Ergebnisse werden nur anhand von Impressionen berechnet und sind nicht von der Anzahl der Klicks oder des erzielten Umsatzes betroffen. Berichtslimit: Die 500 beliebtesten Begriffe |
+| Einzelsuche | Listet die eindeutigen Suchabfragen auf, die im angegebenen Datumsbereich verwendet wurden. Die Berichtsdaten werden auf die gleiche Weise wie die Daten der einzelnen Suchanzeigen berechnet. Wenn ein Käufer dieselbe Suchanfrage zweimal, aber im Abstand von mehr als einer Stunde eingibt, gilt die Suche als zwei eindeutige Suchen. Berichtslimit: Die 500 wichtigsten Begriffe |
+| Null Ergebnisse | Listet die Suchabfragen auf, die keine Ergebnisse zurückgeben, sowie die Anzahl der Male, die im angegebenen Datumsbereich verwendet wurden. Berichtslimit: Die 500 wichtigsten Begriffe |
+| Häufige Ergebnisse | Listet die Namen der Produkte auf, die im angegebenen Datumsbereich die meisten Ansichten erhalten haben. Die beliebten Ergebnisse werden nur anhand von Impressionen berechnet und sind nicht von der Anzahl der Klicks oder des erzielten Umsatzes betroffen. Berichtslimit: Die 500 wichtigsten Begriffe |

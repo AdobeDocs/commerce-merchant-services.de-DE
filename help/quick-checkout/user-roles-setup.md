@@ -28,11 +28,11 @@ So gewähren Sie dem Benutzer Zugriff und Sichtbarkeit auf die [!DNL Quick Check
 
    ![Benutzerrollen](assets/user-roles-small.png)
 
-1. Im _Rollen_ Ansicht, klicken Sie auf **Neue Rolle hinzufügen**
+1. Im _Rollen_ Ansicht, klicken Sie **Neue Rolle hinzufügen**
 1. Wählen Sie die [!DNL Quick Checkout] Ressourcen:
 
    ![Quick Checkout-Rollen und -Berechtigungen](assets/role-resource-quick-checkout.png)
 
-1. Klicken **Speicherrolle**.
+1. Klicks **Speicherrolle**.
 
 Siehe Abschnitt [Benutzerrollen](https://docs.magento.com/user-guide/system/permissions-user-roles.html) Seite finden Sie weitere Informationen zum Definieren einer Rolle oder zum Zuweisen einer Rolle zu einem Benutzer.

@@ -1,6 +1,6 @@
 ---
-title: '''[!DNL Catalog Service] Versionshinweise'
-description: Die neuesten Versionsinformationen für [!DNL Catalog Service] für Adobe Commerce.
+title: '[!DNL Catalog Service] Versionshinweise'
+description: Die neuesten Versionshinweise für [!DNL Catalog Service] für Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
 source-git-commit: 7eece9b341a27637d7ac00216f18b7fad7c50740
@@ -69,7 +69,7 @@ _28. März 2023_
 [!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"}
 
 ![Neu](../assets/new.svg) Muster wurden zum [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) Abfrage.
-![Neu](../assets/new.svg) Die Möglichkeit wurde hinzugefügt, `entityId` using [API-Mesh](mesh.md).
+![Neu](../assets/new.svg) Zusätzliche Funktion für `entityId` using [API-Mesh](mesh.md).
 
 ### Version 1.5
 
@@ -77,7 +77,7 @@ _6. März 2023_
 
 [!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"}
 
-![Neu](../assets/new.svg) Hinzugefügt [`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) GraphQL-Funktionen.
+![Neu](../assets/new.svg) hinzugefügt [`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) GraphQL-Funktionen.
 ![Fehlerbehebung](../assets/fix.svg) Verbesserte Leistung und API-Skalierbarkeit.
 
 ### Version 1.4
@@ -106,7 +106,7 @@ _18. November 2022_
 
 [!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"}
 
-![Neu](../assets/new.svg) Catalog Service unterstützt jetzt die Adobe [API-Mesh](https://developer.adobe.com/graphql-mesh-gateway/).
+![Neu](../assets/new.svg) Catalog Service unterstützt jetzt Adobe [API-Mesh](https://developer.adobe.com/graphql-mesh-gateway/).
 ![Fehlerbehebung](../assets/fix.svg) Verbesserte API-Skalierbarkeit und Gesamtleistung.
 
 ### Version 1.0
@@ -129,8 +129,8 @@ _12. September 2022_
 
 [!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"}
 
-![Neu](../assets/new.svg) Bilder für Varianten unterstützen: Produktbilder werden basierend auf den ausgewählten Optionen zurückgegeben
-![Neu](../assets/new.svg) Preisstützung: nur Mitgliedern bestimmter Kundengruppen erlauben, den Preis der Produkte zu sehen
+![Neu](../assets/new.svg) Bilder für Variantenunterstützung: Produktbilder werden basierend auf den ausgewählten Optionen zurückgegeben
+![Neu](../assets/new.svg) Preisstützung durch Rollen: Ermöglicht es nur Mitgliedern bestimmter Kundengruppen, den Preis von Produkten zu sehen
 ![Fehlerbehebung](../assets/fix.svg) Verbesserte Stabilität und Leistung des Dienstes
 ![Neu](../assets/new.svg) Aktualisierungen werden empfangen, wenn Produkte aus dem Katalog gelöscht werden
 

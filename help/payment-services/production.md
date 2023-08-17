@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Aktivieren [!DNL Payment Services] für die Produktion
 
-Sie können den Dienst in die Produktion einbauen und die [Onboarding-Prozess](onboard.md)gemäß den Schritten in diesem Thema, nachdem Sie:
+Sie können den Dienst in die Produktionsumgebung übernehmen und die [Onboarding-Prozess](onboard.md)gemäß den Schritten in diesem Thema, nachdem Sie:
 
 * [Installieren](install.md) die Zahlungsdiensterweiterung
 * [Konfigurieren und Verbinden](connect.md) Ihre Instanz
@@ -38,7 +38,7 @@ Nach [Commerce-Dienste konfigurieren](connect.md#configure-commerce-services) un
    | `Authorize and Capture` | Genehmigt den Kauf und der Händler &quot;erfasst&quot; die Mittel. |
 
 1. Klicken **[!UICONTROL Save]**.
-1. Klicken **[!UICONTROL Go to Payment Services]** zurück an die [!DNL Payment Services] Home.
+1. Klicks **[!UICONTROL Go to Payment Services]** zurück an die [!DNL Payment Services] Home.
 1. [Cache löschen](https://docs.magento.com/user-guide/system/cache-management.html){target="_blank"}.
 
    Das Löschen sollte nach jeder Konfigurationsänderung erfolgen.
@@ -73,17 +73,17 @@ Siehe [Zahlungsdienste konfigurieren](settings.md) Weitere Informationen zur Kon
 
 ## Zahlungsanspruch von Adobe anfordern
 
-Um das Live-Onboarding zu aktivieren, müssen Sie einen Zahlungsanspruch von Adobe anfordern:
+Um das Live-Onboarding zu aktivieren, müssen Sie eine Zahlungsanforderung von Adobe anfordern:
 
 1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-1. Klicken **[!UICONTROL Get Live Payments]** in [!DNL Payment Services] Home.
+1. Klicks **[!UICONTROL Get Live Payments]** in [!DNL Payment Services] Home.
 
    ![Anforderungsberechtigungen](assets/request-entitlements.png)
 
 1. Füllen Sie das Formular aus.
 1. Ein Mitglied des Vertriebsteams wird sich mit Ihnen in Verbindung setzen.
 
-Alternativ können Sie Zahlungsansprüche von Adobe anfordern unter [business.adobe.com](https://business.adobe.com/resources/payment-services.html).
+Alternativ können Sie Zahlungsansprüche von Adobe unter anfordern. [business.adobe.com](https://business.adobe.com/resources/payment-services.html).
 
 >[!IMPORTANT]
 >
@@ -91,7 +91,7 @@ Alternativ können Sie Zahlungsansprüche von Adobe anfordern unter [business.ad
 
 ## Preisstufe konfigurieren
 
-Um [!DNL Payment Services] _Merchant-ID_:
+Um Ihre [!DNL Payment Services] _Merchant-ID_:
 
 
 1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
@@ -102,7 +102,7 @@ Um [!DNL Payment Services] _Merchant-ID_:
 
 A _Produktions-Merchant-ID_ automatisch generiert und in der [Konfiguration](configure-admin.md). Ändern oder ändern Sie diese ID nicht.
 
-So aktivieren Sie Live-Zahlungen:
+Live-Zahlungen aktivieren:
 
 1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Klicken Sie auf der Startseite auf **[!UICONTROL Settings]** oben rechts auf der Seite. Siehe [Startseite](payments-home.md) für weitere Informationen.

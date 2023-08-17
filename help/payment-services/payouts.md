@@ -25,7 +25,7 @@ Die Payouts-Ansichten zeigen umfassende Auszahlungsinformationen auf einen Blick
 
 >[!NOTE]
 >
->Payouts-Berichte zeigen nur erfasste Bestellungen an (Zahlungsaktion ist auf [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method)) - oder [markiert als `Invoiced`](https://docs.magento.com/user-guide/sales/invoice-create.html).
+>In den Payouts-Berichten werden nur die erfassten Bestellungen angezeigt (die Zahlungsaktion ist auf [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method)) - oder [markiert als `Invoiced`](https://docs.magento.com/user-guide/sales/invoice-create.html).
 
 ## Ansicht der Payouts-Daten
 
@@ -35,7 +35,7 @@ Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTRO
 
 ![Payout-Datenvisualisierung in Admin](assets/payouts-report.png){zoomable=yes}
 
-Klicken **[!UICONTROL View Report]** zur detaillierten Tabelle navigieren [Ansicht des Payload-Berichts](#payouts-report-view).
+Klicks **[!UICONTROL View Report]** zur detaillierten Tabelle navigieren [Ansicht des Payload-Berichts](#payouts-report-view).
 
 ### Zeitrahmen für Transaktionen anpassen
 
@@ -56,7 +56,7 @@ Die Ansicht Payouts-Datenvisualisierung enthält die folgenden Informationen.
 
 | Daten | Beschreibung |
 | ------------ | -------------------- |
-| [!UICONTROL Transaction amount] | Betrag für Transaktionen im festgelegten Zeitrahmen; Daten auf der Y-Achse (links) |
+| [!UICONTROL Transaction amount] | Datumsbereich für Transaktionen im angegebenen Zeitrahmen; Daten auf der Y-Achse (links) |
 | Datumsbereich | Datumsbereich für den angegebenen Zeitraum; Daten auf der X-Achse (unten) |
 | Kredit | Zahlungen für den angegebenen Zeitraum |
 | Schulden | Forderungen (Erstattungen) für den festgelegten Zeitraum |
@@ -67,7 +67,7 @@ Die Ansicht Payouts-Datenvisualisierung enthält die folgenden Informationen.
 
 Die Ansicht des Berichts &quot;Payouts&quot;ist in der Ansicht &quot;Payouts&quot;der Zahlungsdienste verfügbar. Sie enthält alle verfügbaren Informationen über die Auszahlungen für Ihre Geschäfte. Die [Ansicht der Payouts-Daten](#payouts-data-visualization-view) in der Zahlungsdienst-Startseite ist eine visuelle Darstellung der aggregierten Beträge pro Tag in dieser detaillierteren Berichtsansicht.
 
-Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]** um die detaillierte Tabellenansicht des Berichts &quot;Payouts&quot;anzuzeigen.
+Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]** , um die detaillierte Tabellenansicht des Berichts &quot;Payouts&quot;anzuzeigen.
 
 ![Zahlungsvorgänge im Admin](assets/payouts-report-new.png){zoomable=yes}
 
@@ -75,7 +75,7 @@ Sie können diese Ansicht entsprechend den Abschnitten in diesem Thema konfiguri
 
 Weitere Informationen finden Sie unter verknüpfte Commerce-Bestell- und Transaktions-IDs, Transaktionsbeträge, Zahlungsmethoden pro Transaktion und mehr im Payouts-Bericht in der Admin-Rubrik.
 
-Sie können [Download-Payload-Transaktionen](#download-transactions) im .csv-Dateiformat zur Verwendung in bestehenden Buchhaltungs- oder Auftragsverwaltungssoftware.
+Sie können [Download-Auszahlungstransaktionen](#download-transactions) im .csv-Dateiformat zur Verwendung in bestehenden Buchhaltungs- oder Auftragsverwaltungssoftware.
 
 >[!NOTE]
 >
@@ -98,7 +98,7 @@ Datenquellenauswahlen funktionieren wie folgt:
 So wählen Sie die Datenquelle für Ihren Bestellzahlstatus-Bericht aus:
 
 1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]**.
-1. Klicken **[!UICONTROL Data source]** und wählen Sie _[!UICONTROL Live]_oder_[!UICONTROL Sandbox]_.
+1. Klicks **[!UICONTROL Data source]** und wählen _[!UICONTROL Live]_oder_[!UICONTROL Sandbox]_.
 
    Die Berichtsergebnisse werden basierend auf der ausgewählten Datenquelle neu generiert.
 
@@ -135,7 +135,7 @@ Sie können eine CSV-Datei herunterladen, die alle im Raster Ansicht der Payouts
 
 1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]**.
 1. [Zeitrahmen für den Datumsbereich Ihrer Transaktionen anpassen](#customize-transactions-timeframe).
-1. Klicken Sie auf _Download_ (![](assets/icon-download.png)).
+1. Klicken Sie auf _Herunterladen_ (![](assets/icon-download.png)).
 
 Ihre Zahlungsvorgänge werden im .csv-Format heruntergeladen.
 
@@ -148,9 +148,9 @@ Payout-Berichte enthalten die folgenden Informationen.
 | [!UICONTROL Provider] | Zahlungsdienstleister |
 | [!UICONTROL Provider trans] | Transaktions-ID |
 | [!UICONTROL Trans date] | Datum und Uhrzeit der Initiierung der Transaktion |
-| [!UICONTROL Type] | Transaktionstyp—*[!UICONTROL PAYMENT]*, *[!UICONTROL BONUS]*, *[!UICONTROL CHARGEBACK]*, *[!UICONTROL CORRECTION]*, *[!UICONTROL CURRENCY_CONVERSATION]*, *[!UICONTROL DEPOSIT]*, *[!UICONTROL DISBURSEMENT]*, *[!UICONTROL DISPUTE]*, *[!UICONTROL FEES]*, *[!UICONTROL HOLD]*, *[!UICONTROL HOLD_RELEASE]*, *[!UICONTROL INCENTIVES]*, *[!UICONTROL OTHERS]*, *[!UICONTROL RECOUP]*, *[!UICONTROL REFUND]*, *[!UICONTROL REVERSAL]*, *[!UICONTROL WITHDRAWAL]* <br> <br>Siehe [Transaktionstypen](#transaction-types) für weitere Informationen. |
+| [!UICONTROL Type] | Transaktionstyp—*[!UICONTROL PAYMENT]*, *[!UICONTROL BONUS]*, *[!UICONTROL CHARGEBACK]*, *[!UICONTROL CORRECTION]*, *[!UICONTROL CURRENCY_CONVERSATION]*, *[!UICONTROL DEPOSIT]*, *[!UICONTROL DISBURSEMENT]*, *[!UICONTROL DISPUTE]*, *[!UICONTROL FEES]*, *[!UICONTROL HOLD]*, *[!UICONTROL HOLD_RELEASE]*, *[!UICONTROL INCENTIVES]*, *[!UICONTROL OTHERS]*, *[!UICONTROL RECOUP]*, *[!UICONTROL REFUND]*, *[!UICONTROL REVERSAL]*, *[!UICONTROL WITHDRAWAL]* <br> <br>Siehe [Transaktionsarten](#transaction-types) für weitere Informationen. |
 | [!UICONTROL Status] | Aktueller Status der Transaktion—*[!UICONTROL SUCCESS]*, *[!UICONTROL DENIED]*, *[!UICONTROL PENDING]* |
-| [!UICONTROL Code] | Transaktionscode, der entweder einen Kredit (*CR*) oder Schulden (*DR*) |
+| [!UICONTROL Code] | Transaktionscode, der entweder einen Kredit angibt (*CR*) oder Schulden (*DR*) |
 | [!UICONTROL Reference ID] | Ursprüngliche Transaktions-ID, mit der dieses Ereignis verknüpft ist |
 | [!UICONTROL Invoice] | Rechnungskennung (eine pro Bestellung) der Transaktion |
 | [!UICONTROL Commerce order] | Commerce-Bestell-ID <br> <br>So sehen Sie verwandte [Bestellinformationen](https://docs.magento.com/user-guide/sales/orders.html)klicken Sie auf die ID. |
@@ -166,7 +166,7 @@ Payout-Berichte enthalten die folgenden Informationen.
 | [!UICONTROL CUR] | Währungseinheit für die Partnergebühr |
 | [!UICONTROL PROV FEES] | Mit der Transaktion verbundene Gebühren <br> <br>Für Fonds, die aus dem Gebührenkonto des Providers aussteigen, wird ein Bindestrich (-)-Präfix angezeigt. |
 | [!UICONTROL CUR] | Währungseinheit für die Provider-Gebühr |
-| [!UICONTROL FEE %] | Prozentsatz des als Gebühr in Rechnung gestellten Transaktionsbetrags |
+| [!UICONTROL FEE %] | Prozentsatz des Transaktionsbetrags, der als Gebühr in Rechnung gestellt wird |
 | [!UICONTROL FIXED FEE] | Feste Anbietergebühr |
 | [!UICONTROL CHBK FEE] | Chargeback-Gebühr im Zusammenhang mit der Transaktion <br> <br>Ein Bindestrich (-)-Präfix zeigt an, dass die Chargeback-Gebühr umgekehrt wurde. |
 | [!UICONTROL CUR] | Währungseinheit für die Chargeback-Gebühr |
@@ -175,15 +175,15 @@ Payout-Berichte enthalten die folgenden Informationen.
 | [!UICONTROL RECOUP AMT] | Aus dem Konto eingezogener Betrag <br> <br>Bei aus dem Konto ausgehenden Fonds wird ein Bindestrich (-) vorangestellt. |
 | [!UICONTROL CUR] | Währungseinheit für den Rückforderungsbetrag |
 
-### Transaktionstypen
+### Transaktionsarten
 
-Diese Transaktionstypen können in den Auszahlungstransaktionen angegeben werden.
+Diese Transaktionstypen können in den Auszahlungstransaktionen vermerkt werden.
 
 | Bericht | Beschreibung |
 | ------------ | -------------------- |
 | [!UICONTROL PAYMENT] | Geld wechselt zwischen einem Käufer und einem Verkäufer für eine Bestellung |
 | [!UICONTROL AUTH] | Nichterfüllung der Zulassung und Genehmigung |
-| [!UICONTROL BONUS] | -- |
+| [!UICONTROL BONUS] | — |
 | [!UICONTROL CHARGEBACK] | Chargeback-Gebühr und Chargeback-Gebühr-Umrechnungstransaktionen |
 | [!UICONTROL CORRECTION] | -- |
 | [!UICONTROL CURRENCY_CONVERSION] | -- |

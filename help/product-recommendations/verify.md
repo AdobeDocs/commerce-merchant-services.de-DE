@@ -29,10 +29,10 @@ _Event Collector JS_
 So stellen Sie sicher, dass Ereignisse auf Seiten Ihrer Site (Startseite, Produkt, Checkout usw.) ausgelöst werden:
 
 1. Stellen Sie sicher, dass Sie alle Anzeigensperren in Ihrem Browser deaktivieren und Cookies auf der Site akzeptieren.
-1. Wählen Sie in Chrome **Anpassen und Steuern von Google Chrome** (die drei vertikalen Punkte in der oberen rechten Ecke des Browsers) und wählen Sie **Weitere Tools** > **Entwicklertools**.
+1. Wählen Sie in Chrome **Anpassen und Steuern von Google Chrome** (die drei vertikalen Punkte oben rechts im Browser) und wählen Sie **Weitere Tools** > **Entwicklertools**.
 1. Wählen Sie die **Netzwerk** Registerkarte und Filter für `tp2`.
 1. Laden Sie die Seite neu.
-1. Aufrufe werden unter angezeigt `tp2` im **Name** Spalte.
+1. Aufrufe werden unter angezeigt. `tp2` im **Name** Spalte.
 
 ![Auslösen von Ereignissen](assets/filter-tp2.png)
 _Sicherstellen, dass Ereignisse ausgelöst werden_
@@ -43,7 +43,7 @@ Installieren Sie die [Erweiterung &quot;Snowplow Analytics Debugger&quot;für Ch
 
 1. Stellen Sie sicher, dass Sie alle Anzeigensperren in Ihrem Browser deaktivieren und Cookies auf der Site akzeptieren.
 
-1. Wählen Sie in Chrome **Anpassen und Steuern von Google Chrome** (die drei vertikalen Punkte in der oberen rechten Ecke des Browsers) und wählen Sie **Weitere Tools** > **Entwicklertools**.
+1. Wählen Sie in Chrome **Anpassen und Steuern von Google Chrome** (die drei vertikalen Punkte oben rechts im Browser) und wählen Sie **Weitere Tools** > **Entwicklertools**.
 
 1. Wählen Sie die **Snowplow Analytics-Debugger** Registerkarte.
 
@@ -62,7 +62,7 @@ _Snowpflug-Filter_
 
 ## Sicherstellen, dass Ereignisse ordnungsgemäß ausgelöst werden
 
-Um sicherzustellen, dass die für Metriken verwendeten Ereignisse ordnungsgemäß ausgelöst werden, suchen Sie nach der `impression-render`, `view`und `rec-click` -Ereignisse im Snowplow Analytics-Debugger. Siehe [vollständige Liste der Ereignisse](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/events.html).
+Um sicherzustellen, dass die für Metriken verwendeten Ereignisse ordnungsgemäß ausgelöst werden, suchen Sie nach der `impression-render`, `view`, und `rec-click` -Ereignisse im Snowplow Analytics-Debugger. Siehe [vollständige Liste der Ereignisse](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/events.html).
 
 >[!NOTE]
 >

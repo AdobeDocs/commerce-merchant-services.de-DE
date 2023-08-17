@@ -40,7 +40,7 @@ Erste Schritte mit [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerc
 
 ## Onboarding-Schritte
 
-1. [Installieren Sie die Store Fulfillment-Erweiterung für Adobe Commerce](install.md).
+1. [Installieren der Erweiterung &quot;Store Fulfillment&quot;für Adobe Commerce](install.md).
 
 1. Wählen Sie vom Administrator aus [Lösung aktivieren](enable-general.md).
 
@@ -52,4 +52,4 @@ Erste Schritte mit [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerc
 
 1. [Walmart&#39;s herunterladen [!DNL Store Assist] App auf das gewünschte Gerät. Das Programm ist sowohl in der Apple-App (iOS) als auch in Google Play (Android™) verfügbar.](app-setup.md) Stores.
 
-Nachdem Sie erfolgreich installiert, konfiguriert, das Onboarding abgeschlossen und Zugriff auf die [!DNL Store Assist] App, können Sie [mit der Erstellung von Bestellungen und Tests beginnen](test-and-deploy.md).
+Nachdem Sie erfolgreich installiert, konfiguriert, das Onboarding abgeschlossen und Zugriff auf die [!DNL Store Assist] App, können Sie [Erstellen von Bestellungen und Tests beginnen](test-and-deploy.md).

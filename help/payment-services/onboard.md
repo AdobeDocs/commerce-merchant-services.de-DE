@@ -34,7 +34,7 @@ Zur Verwendung [!DNL Payment Services]muss für Ihre Instanz Folgendes verfügba
 * Dienst-ID-Modul
 * API-Schlüssel
 
-Die Dienste-Connector- und -Dienst-ID-Module werden während der [Installation [!DNL Payment Services]](install.md). Nach Abschluss der Installation wird in den Konfigurationseinstellungen ein neuer Abschnitt angezeigt (**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**) beim Erweitern **[!UICONTROL Services]**—**[!UICONTROL Commerce Services Connector]**.
+Die Dienste-Connector- und -Dienst-ID-Module werden während der [Installation von [!DNL Payment Services]](install.md). Nach Abschluss der Installation wird in den Konfigurationseinstellungen ein neuer Abschnitt angezeigt (**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**) beim Erweitern **[!UICONTROL Services]**—**[!UICONTROL Commerce Services Connector]**.
 
 Informationen zum Erstellen oder Zugreifen auf API-Schlüssel finden Sie unter [API-Anmeldeinformationen](#obtain-api-credentials).
 
@@ -46,8 +46,8 @@ Informationen zum Erstellen oder Zugreifen auf API-Schlüssel finden Sie unter [
 1. [Einrichten des Sandbox-Dienstes](sandbox.md#enable-sandbox-testing) (oder alternativ [Live-Zahlungen ermöglichen](sandbox.md#enable-live-payments) , wenn Sie Funktionalität in einer anderen Umgebung getestet haben) mit einem PayPal Zahlungskonto zu testen.
 1. [Satz [!DNL Payment Services] als Zahlungsmethode](production.md#set-payment-services-as-payment-method), um die Verarbeitung der Testzahlungen im Sandbox-Modus zu starten.
 1. [Zahlungsanspruch anfordern](production.md#request-payments-entitlement-from-adobe) , um das Live-Onboarding zu aktivieren.
-1. [Vollständige Onboarding des Händlers](production.md#complete-merchant-onboarding) um Live-Zahlungen für Ihre Commerce-Websites zu ermöglichen.
-1. [Holen Sie sich [!DNL Payment Services] Merchant-ID](production.md#configure-pricing-tier) und übergeben Sie es an Sales , um die richtige Preisebene zu konfigurieren.
+1. [Vollständige Onboarding des Händlers](production.md#complete-merchant-onboarding) , um Live-Zahlungen für Ihre Commerce-Websites zu ermöglichen.
+1. [Holen Sie sich Ihre [!DNL Payment Services] Merchant-ID](production.md#configure-pricing-tier) und übergeben Sie es an Sales , um die richtige Preisebene zu konfigurieren.
 1. [Aktivieren [!DNL Payment Services] im Livemodus](production.md#enable-live-payments) um mit der Verarbeitung von Live-Zahlungen zu beginnen.
 1. Testzahlungen, in beiden [Sandbox](sandbox.md#test-in-sandbox-environment) und [production](production.md#test-in-production) Umgebungen.
 

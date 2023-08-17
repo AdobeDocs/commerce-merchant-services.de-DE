@@ -1,7 +1,7 @@
 ---
 user-guide-title: "[!DNL Store FulFillment Guide]"
-user-guide-description: Detaillierte Informationen zur Installation, Konfiguration und Verwendung von Store Fulfillment für Adobe Commerce Stores.
-breadcrumb-title: Store Fulfillment for Adobe Commerce
+user-guide-description: Detaillierte Informationen zur Installation, Konfiguration und Verwendung der Store-Ausführung für Adobe Commerce Stores.
+breadcrumb-title: Store-Erfüllung für Adobe Commerce
 index: true
 feature: Shipping/Delivery
 role: Admin, User
@@ -9,19 +9,19 @@ recommendations: noDisplay
 source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '84'
-ht-degree: 0%
+ht-degree: 10%
 
 ---
 
 
-# Store Fulfillment for Commerce {#store-fulfillment}
+# Store-Erfüllung für Commerce {#store-fulfillment}
 
 - [Guide - Übersicht](guide-overview.md)
 - [Einführung in [!DNL Store Fulfillment]](introduction.md)
-- [Workflows zur Store-Hilfe](store-assist-modules.md)
+- [Workflows für die Store-Hilfe](store-assist-modules.md)
 - [Voraussetzungen](solution-requirements.md)
 - [Versionshinweise](release-notes.md)
-- Onboard Store Fulfillment {#onboarding}
+- Integrierte Store-Erfüllung {#onboarding}
    - [Onboarding-Übersicht](onboard.md)
    - [Installieren der Erweiterung](install.md)
    - [Store-Erfüllung verbinden](connect-set-up-service.md)

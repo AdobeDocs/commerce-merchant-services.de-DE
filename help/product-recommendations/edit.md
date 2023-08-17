@@ -19,7 +19,7 @@ Auf der Seite Empfehlung bearbeiten können Sie die einzelnen Einstellungen der 
 - [Platzierung und Position](#placement)
 - [Produkte filtern](#filters)
 
-Die Vorschau auf der rechten Seite der Seite zeigt, wie die Empfehlung mit den aktuellen Einstellungen im Storefront angezeigt werden kann. Die _Vorschau empfohlener Produkte_ bleibt als Referenz sichtbar, wenn Sie nach unten scrollen. In der Vorschau werden ein Miniaturbild für das Produkt, der Produktname, die SKU, der Preis und der Ergebnistyp für jedes zurückgegebene Produkt angezeigt. Der Ergebnistyp gibt an, ob ausreichend primäre Verhaltensdaten vorhanden sind, um die Empfehlung zu generieren, oder ob es Sicherungsverhaltensdaten verwendet.
+Die Vorschau auf der rechten Seite der Seite zeigt, wie die Empfehlung mit den aktuellen Einstellungen im Storefront angezeigt werden kann. Die _Vorschau empfohlener Produkte_ bleibt für einen Verweis sichtbar, wenn Sie nach unten scrollen. In der Vorschau werden ein Miniaturbild für das Produkt, der Produktname, die SKU, der Preis und der Ergebnistyp für jedes zurückgegebene Produkt angezeigt. Der Ergebnistyp gibt an, ob ausreichend primäre Verhaltensdaten vorhanden sind, um die Empfehlung zu generieren, oder ob es Sicherungsverhaltensdaten verwendet.
 
 ![Recommendations bearbeiten](assets/edit-recommendation.png)
 
@@ -29,7 +29,7 @@ Die Vorschau auf der rechten Seite der Seite zeigt, wie die Empfehlung mit den a
 
 1. Wählen Sie die Empfehlung aus, die Sie bearbeiten möchten.
 
-1. Klicken **Bearbeiten**. Folgen Sie dann den unten stehenden Anweisungen, um die gewünschten Änderungen vorzunehmen.
+1. Klicks **Bearbeiten**. Folgen Sie dann den unten stehenden Anweisungen, um die gewünschten Änderungen vorzunehmen.
 
 1. Wenn Sie fertig sind, klicken Sie auf **Änderungen speichern**.
 
@@ -60,18 +60,18 @@ Passen Sie den Schieberegler an, um bis zu 20 Produkte in der Empfehlungseinheit
 
    ![Platzierung bearbeiten](assets/edit-placement.png)
 
-1. Um die Reihenfolge der Empfehlungen zu ändern, die in der Einheit enthalten sind, verwenden Sie die **Verschieben** ![Auswahl verschieben](assets/icon-move.png) -Steuerelement, um die Empfehlungen an die gewünschte Position zu ziehen.
+1. Verwenden Sie zum Ändern der Reihenfolge der Empfehlungen in der Einheit die **Verschieben** ![Auswahl verschieben](assets/icon-move.png) -Steuerelement, um die Empfehlungen an die gewünschte Position zu ziehen.
 
    ![Position bearbeiten](assets/edit-position.png)
 
 ### Produkte filtern {#filters}
 
-Änderungen am Produkt [Filter](filters.md) werden in _Vorschau empfohlener Produkte_. Es dürfen nur Produkte empfohlen werden, die mit Einschlussfiltern übereinstimmen. Produkte, die mit Ausschlussfiltern übereinstimmen, werden nicht empfohlen.
+Alle Änderungen am Produkt [Filter](filters.md) werden in _Vorschau empfohlener Produkte_. Es dürfen nur Produkte empfohlen werden, die mit Einschlussfiltern übereinstimmen. Produkte, die mit Ausschlussfiltern übereinstimmen, werden nicht empfohlen.
 
 Die _Einschlüsse_ und _Ausnahmen_ in den Registerkarten werden die verfügbaren Filter jedes Typs aufgelistet. In der Liste ist jeder aktive Filter mit einem blauen Punkt markiert.
 
 - Um Details zu den einzelnen Filtern anzuzeigen, klicken Sie auf den Namen des Filters.
-- Um den Filterstatus zu ändern, legen Sie die **Filter aktivieren** Umschalten auf `on` oder `off` Position.
+- Um den Filterstatus zu ändern, legen Sie die **Filter aktivieren** zum Umschalten auf `on` oder `off` Position.
 
 ![Filter bearbeiten](assets/edit-filters.png)
 

@@ -34,13 +34,13 @@ Befolgen Sie die Anweisungen für das [Typ des Synonyms](synonyms-type.md) die S
 
 
 1. Geben Sie die **Schlüsselwort** Begriff oder Satz, der abgeglichen werden soll.
-1. Geben Sie die **Erweiterung** Begriffe, die Sie als Synonyme für den Suchbegriff hinzufügen möchten. Trennen Sie mehrere Begriffe durch Kommas.
+1. Geben Sie die **Erweiterung** Begriffe, die Sie als Synonyme für den Suchbegriff hinzufügen möchten. Trennen Sie mehrere Begriffe durch ein Komma.
 In diesem Beispiel lautet das passende Keyword &quot;Hosen&quot;und die Erweiterungsbegriffe lauten &quot;lange Hosen, Hosen, Slacks&quot;.
 
    ![Beispiel für bidirektionale Synonyme](assets/synonym-add-two-way-example.png)
 
 1. Wenn Sie fertig sind, klicken Sie auf **Speichern**.
-Der Satz von Synonymen erscheint in der Liste mit einem Zwei-Wege-Pfeil zwischen den einzelnen Begriffen, was bedeutet, dass die Begriffe austauschbar sind.
+Der Satz von Synonymen erscheint in der Liste mit einem Zwei-Wege-Pfeil zwischen jedem Begriff, was bedeutet, dass die Begriffe austauschbar sind.
 
    ![Zweiwegsynonym](assets/synonym-two-way.png)
 
@@ -50,7 +50,7 @@ Der Satz von Synonymen erscheint in der Liste mit einem Zwei-Wege-Pfeil zwischen
 
    ![Einwegsynonym hinzufügen](assets/synonym-add-one-way.png)
 
-1. Geben Sie die **Schlüsselwort** und **Erweiterung** Begriffe. Trennen Sie mehrere Begriffe durch Kommas.
+1. Geben Sie die **Schlüsselwort** und **Erweiterung** Begriffe. Trennen Sie mehrere Begriffe durch ein Komma.
 
    ![Beispiel für unidirektionale Synonyme](assets/synonym-add-one-way-example.png)
 
@@ -61,9 +61,9 @@ Die Gruppe von Synonymen wird in der Liste mit einem einseitigen Pfeil angezeigt
 
    ![Einwegsynonym](assets/synonym-one-way.png)
 
-## Schritt 3: Veröffentlichungsänderungen
+## Schritt 3: Änderungen veröffentlichen
 
-1. Wenn Ihre Synonyme abgeschlossen sind, klicken Sie auf **Veröffentlichungsänderungen**.
+1. Klicken Sie nach Abschluss Ihrer Synonyme auf **Veröffentlichungsänderungen**.
 1. Warten Sie bis zu zwei Stunden, bis Ihre Updates in der Storefront verfügbar sind.
 
 ## Feldbeschreibungen

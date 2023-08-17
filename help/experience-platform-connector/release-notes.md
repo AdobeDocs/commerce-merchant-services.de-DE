@@ -6,7 +6,7 @@ feature: Personalization, Integration, Release Notes
 source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
 workflow-type: tm+mt
 source-wordcount: '465'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -26,7 +26,7 @@ Siehe die Entwicklerdokumentation zu [Informationen zur Produktkompatibilität](
 
 ## Unterstützte Dienstaktualisierungen
 
-In diesen Versionshinweisen werden Funktionsänderungen und Fehlerbehebungen im Zusammenhang mit Erweiterungen beschrieben, die vom Experience Platform-Connector verwendet werden.
+In diesen Versionshinweisen werden Funktionsänderungen und Fehlerbehebungen im Zusammenhang mit vom Experience Platform-Connector verwendeten Erweiterungen beschrieben.
 
 +++Unterstützte Dienstaktualisierungen
 
@@ -38,12 +38,12 @@ _10. Juni 2023_
 _30. März 2023_
 
 * ![Neu](../assets/new.svg) - Eine neue Erweiterung namens wurde hinzugefügt. `data-services-b2b` , die [Ereignisse in der Anforderungsliste](events.md#b2b-events) für B2B-Händler.
-* ![Neu](../assets/new.svg) - Der `uniqueIdentifier` -Feld zu [suchen](events.md#search-events) -Ereignisse. Dieses neue Feld ermöglicht Händlern, Querverweise darauf zu erstellen, welche Suchanfragen zu welchen Suchanfragen passen.
+* ![Neu](../assets/new.svg) - Der `uniqueIdentifier` -Feld zu [suchen](events.md#search-events) -Ereignisse. Dieses neue Feld ermöglicht Händlern, Querverweise darauf zu erstellen, welche Suchanfragen den Suchanfragen entsprechen, die beantwortet werden.
 
 _12. Oktober 2022_
 
 * ![Neu](../assets/new.svg) - Zwei wurden hinzugefügt [Storefront-Ereignisse](events.md): `openCart` und `removeFromCart` zum Adobe Commerce Storefront Events SDK und Collector.
-* ![Neu](../assets/new.svg) - Unterstützung für eine [AEM Storefront](overview.md#aem-support).
+* ![Neu](../assets/new.svg) - Unterstützung für eine [AEM](overview.md#aem-support).
 
 +++
 
@@ -53,7 +53,7 @@ _27. Juni 2023_
 
 [!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"}
 
-* ![Neu](../assets/new.svg) - Zusätzliche Funktion für [Deaktivieren des Versands von Storefront-Ereignissen](connect-data.md#data-collection) zur Experience Platform.
+* ![Neu](../assets/new.svg) - Zusätzliche Funktion für [Deaktivieren des Versands von Storefront-Ereignissen](connect-data.md#data-collection) auf die Experience Platform.
 * ![Fehlerbehebung](../assets/fix.svg) - Konfigurationen der Inhaltssicherheitsrichtlinie wurden aktualisiert.
 * ![Fehlerbehebung](../assets/fix.svg) - Die Unterstützung für Back-Office-Ereignisse in Commerce 2.4.7 wurde korrigiert.
 * ![Neu](../assets/new.svg) - Es wurde eine Benachrichtigung zur Cache-Invalidierung hinzugefügt, wenn Sie Änderungen am Experience Platform Connector-Formular speichern.
@@ -65,7 +65,7 @@ _13. Juni 2023_
 
 [!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"}
 
-* ![Neu](../assets/new.svg) - (Beta) Neue Möglichkeit zu [historische Reihenfolge senden](connect-data.md#beta-send-historical-order-data) Daten und Status an die Experience Platform. Diese Funktion ist nur für Beta-Benutzer verfügbar. Sie können der Beta-Phase beitreten, indem Sie eine E-Mail an folgende Adresse senden: [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
+* ![Neu](../assets/new.svg) - (Beta) Neue Möglichkeit zu [historische Reihenfolge senden](connect-data.md#beta-send-historical-order-data) -Daten und -Status auf der Experience Platform. Diese Funktion ist nur für Beta-Benutzer verfügbar. Sie können der Beta-Phase beitreten, indem Sie eine E-Mail an folgende Adresse senden: [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
 
 ## 2.2.0
 
@@ -82,7 +82,7 @@ _28. Februar 2023_
 
 [!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"}
 
-* ![Neu](../assets/new.svg) - Unterstützung für PHP 8.2 für alle Experience Platform Connector-Erweiterungen hinzugefügt.
+* ![Neu](../assets/new.svg) - Unterstützung für PHP 8.2 für alle Experience Platform-Connector-Erweiterungen hinzugefügt.
 
 ## 2.1.0
 
@@ -90,7 +90,7 @@ _17. Januar 2023_
 
 [!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"}
 
-* ![Neu](../assets/new.svg) - Die [Experience Platform Connector-Admin](connect-data.md) damit Sie Ihr eigenes AEP Web SDK (Legierung) angeben können.
+* ![Neu](../assets/new.svg) - Die [Experience Platform-Connector-Admin](connect-data.md) damit Sie Ihr eigenes AEP Web SDK (Legierung) angeben können.
 * ![Fehlerbehebung](../assets/fix.svg) Geändert zu mithilfe von `identityMap` anstelle von `personID` beim Festlegen der primären Identität für alle Daten, die an die Kante gesendet werden.
 
 ## 2.0.1
@@ -107,7 +107,7 @@ _12. Oktober 2022_
 
 [!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"}
 
-* ![Neu](../assets/new.svg) - Zusätzliche Möglichkeit zur Angabe Ihres eigenen AEP Web SDK bei [Verbindung](connect-data.md) Ihre Adobe Commerce-Instanz zur Experience Platform hinzufügen.
+* ![Neu](../assets/new.svg) - Es wurde die Möglichkeit hinzugefügt, Ihr eigenes AEP Web SDK anzugeben, wenn [Verbindung](connect-data.md) Ihre Adobe Commerce-Instanz auf der Experience Platform.
 * ![Fehlerbehebung](../assets/fix.svg) - Die Anforderung zum Datenspeicherbereich wurde aktualisiert, sodass die Datastream-IDs auf die Website übertragen werden müssen, anstatt sie zu überprüfen.
 
 ## 1.0.0
@@ -116,4 +116,4 @@ _9. August 2022_
 
 [!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"}
 
-* ![Neu](../assets/new.svg) - Allgemeines Release zur Verfügbarkeit.
+* ![Neu](../assets/new.svg) - Allgemeines Release zur Verfügbarkeit

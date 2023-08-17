@@ -21,7 +21,7 @@ Der Umfang der Attributmetadaten lautet `website/store/store view`.
 
 Die [!DNL Live Search] Mit der API kann ein Client nach jedem Produktattribut sortieren, das über die [storefront property](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) `Use in Search` auf `Yes` in der Adobe Commerce-Admin. Wenn aktiviert, `Search Weight` und `Visible in Advanced Search` kann für das -Attribut festgelegt werden.
 
-[!DNL Live Search] werden gelöschte Produkte oder die auf `Not Visible Individually`.
+[!DNL Live Search] werden gelöschte Produkte nicht indiziert oder die auf `Not Visible Individually`.
 
 >[!NOTE]
 >
@@ -29,7 +29,7 @@ Die [!DNL Live Search] Mit der API kann ein Client nach jedem Produktattribut so
 
 ## Indizierungs-Pipeline
 
-Der Client ruft den Suchdienst aus der Storefront auf, um (filterbare, sortierbare) Indexmetadaten abzurufen. Nur durchsuchbare Produktattribute mit *Verwendung in mehrschichtiger Navigation* Eigenschaft auf `Filterable (with results)` und *Verwendung für die Sortierung in der Produktliste* auf `Yes` kann vom Suchdienst aufgerufen werden.
+Der Client ruft den Suchdienst aus der Storefront auf, um (filterbare, sortierbare) Indexmetadaten abzurufen. Nur durchsuchbare Produktattribute mit *Verwendung in mehrschichtiger Navigation* Eigenschaft festgelegt auf `Filterable (with results)` und *Verwendung für die Sortierung in der Produktliste* auf `Yes` kann vom Suchdienst aufgerufen werden.
 Um eine dynamische Abfrage zu erstellen, muss der Suchdienst wissen, welche Attribute durchsuchbar sind und wie groß sie sind. [!DNL Live Search] berücksichtigt die Adobe Commerce-Suchgewichtung (1-10, wobei 10 die höchste Priorität hat). Die Liste der Daten, die mit dem Katalogdienst synchronisiert und freigegeben werden, finden Sie im Schema, das definiert ist in:
 
 `vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`
@@ -59,7 +59,7 @@ Mit den folgenden Ereignissen wird ein vollständiger Synchronisations- und Inde
 
 ### Streaming-Produktaktualisierungen
 
-Nach der Erstellung des anfänglichen Index während [Onboarding](install.md#synchronize-catalog-data)werden die folgenden inkrementellen Produktupdates kontinuierlich synchronisiert und neu indiziert:
+Nachdem der anfängliche Index während [Onboarding](install.md#synchronize-catalog-data)werden die folgenden inkrementellen Produktaktualisierungen kontinuierlich synchronisiert und neu indiziert:
 
 * Neue Produkte zum Katalog hinzugefügt
 * Änderungen an Produktattributwerten
@@ -71,9 +71,9 @@ Workflow für Streaming-Update:
 1. Der Indizierungsdienst sucht kontinuierlich nach Produktaktualisierungen aus dem Katalogdienst. Aktualisierte Produkte werden indiziert, sobald sie im Katalogdienst ankommen.
 1. Es kann bis zu 15 Minuten dauern, bis eine Produktaktualisierung in [!DNL Live Search].
 
-## Clientsuche
+## Client-Suche
 
-Die [!DNL Live Search] Mit der API kann ein Client nach jedem beliebigen Produktattribut sortieren, indem er die [storefront property](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html), *Wird zum Sortieren in Produktlisten verwendet* nach `Yes`. Abhängig vom Design bewirkt diese Einstellung, dass das -Attribut als Option in die [Sortieren nach](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation.html) Paginierungssteuerung auf Katalogseiten. Bis zu 200 Produktattribute können durch [!DNL Live Search], mit [Storefront-Eigenschaften](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) die durchsuchbar und filterbar sind.
+Die [!DNL Live Search] Mit der API kann ein Client nach einem beliebigen sortierbaren Produktattribut sortieren, indem er die [storefront property](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html), *Wird zum Sortieren in Produktlisten verwendet* nach `Yes`. Abhängig vom Design bewirkt diese Einstellung, dass das -Attribut als Option in die [Sortieren nach](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation.html) Paginierungssteuerung auf Katalogseiten. Bis zu 200 Produktattribute können durch [!DNL Live Search], mit [Storefront-Eigenschaften](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) die durchsuchbar und filterbar sind.
 Die Indexmetadaten werden in der Indizierungs-Pipeline gespeichert und sind für den Suchdienst verfügbar.
 
 ![[!DNL Live Search] Index-Metadaten-API-Diagramm](assets/index-metadata-api.svg)
@@ -81,7 +81,7 @@ Die Indexmetadaten werden in der Indizierungs-Pipeline gespeichert und sind für
 ### Workflow für sortierbare Attribute
 
 1. Client ruft Suchdienst auf.
-1. Suchdienst ruft Suchadministratordienst auf.
+1. Der Suchdienst ruft den Suchadministratordienst auf.
 1. Suchdienst-Aufrufe Indizierung der Pipeline.
 
 ## Indexiert für alle Produkte

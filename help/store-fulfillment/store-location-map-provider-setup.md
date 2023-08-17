@@ -28,7 +28,7 @@ So konfigurieren Sie den Entfernungsanbieter:
 
    - Hinzufügen Ihres Google-API-Schlüssels zu **[!UICONTROL Google Maps API Key]** -Feld.
 
-1. Aus dem **[!UICONTROL Stores > Inventory]** -Konfiguration in der Admin-Konfiguration wählen Sie den Entfernungsanbieter für Store Fulfillment aus.
+1. Aus dem **[!UICONTROL Stores > Inventory]** -Konfiguration in der Admin-Konfiguration wählen Sie den Entfernungsanbieter für Store-Erfüllung aus.
 
    - Navigieren Sie zu **[!UICONTROL Stores > Configuration > Catalog > Inventory]**.
 

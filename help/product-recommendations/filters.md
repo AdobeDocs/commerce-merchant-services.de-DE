@@ -42,7 +42,7 @@ Logische Operatoren `AND` und `OR` werden verwendet, um mehrere Bedingungen zu v
 
 ### Kategorie
 
-Filter, die auf der Kategorie eines Produkts basieren, verwenden direkte Kategoriezuweisungen und deren Unterkategorien. Beispielsweise die Aktivierung einer Ausschlussbedingung für Kategorie `Gear` schließt Produkte aus, die `Gear` und all ihre Unterkategorien wie `Gear/Bags` oder `Gear/Fitness Equipment`. Bei B2B-Händlern erfüllt der Filter Kategorie alle [kundenspezifische Produktkategorien](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html) Sie haben konfiguriert.
+Filter, die auf der Kategorie eines Produkts basieren, verwenden direkte Kategoriezuweisungen und deren Unterkategorien. Beispielsweise die Aktivierung einer Ausschlussbedingung für Kategorie `Gear` schließt Produkte aus, die `Gear` und all ihre Unterkategorien wie `Gear/Bags` oder `Gear/Fitness Equipment`. Bei B2B-Händlern erfüllt der Kategoriefilter alle [kundenspezifische Produktkategorien](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html) Sie haben konfiguriert.
 
 Adobe Commerce empfiehlt die Verwendung der folgenden Kategoriefilterkonfiguration, wenn Sie Empfehlungen für Ihre Seitentypen bereitstellen:
 
@@ -60,7 +60,7 @@ Produktfilter geben an, welche spezifischen Produkte in Empfehlungen angezeigt w
 
 ### Typ
 
-Ein auf dem Produkttyp basierender Filter schließt alle Produkte eines bestimmten Typs ein oder aus. Zu den unterstützten Typen gehören _Einfach_, _Konfigurierbar_, _Virtual_, _herunterladbar_ oder _Geschenkkarte_. _Bundle_ und _gruppiert_ -Produkte werden noch nicht unterstützt.
+Ein auf dem Produkttyp basierender Filter schließt alle Produkte eines bestimmten Typs ein oder aus. Zu den unterstützten Typen gehören _Einfach_, _Konfigurierbar_, _Virtual_, _herunterladbar_ oder _Geschenkkarte_. _Paket_ und _gruppiert_ -Produkte werden noch nicht unterstützt.
 
 ### Sichtbarkeit
 

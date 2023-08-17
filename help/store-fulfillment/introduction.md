@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies ist eine fortschrittliche Omnichannel-Fulfillment-Lösung, die in Ihre [!DNL Commerce] Geschäft, um einen erstklassigen Online-Kauf zu liefern, holen Sie sich im Geschäft (BOPIS) Kundenerlebnis.
 
-![Admin-Konfiguration der Adobe der Store-Fulfillment-Lösung](assets/store-fulfillment-admin-home.png)
+![Adobe-Admin-Konfiguration der Fulfillment-Lösung speichern](assets/store-fulfillment-admin-home.png)
 
 Store Fulfillment bietet außerdem einen durchgängigen Erfüllungs-Workflow, mit dem Händler Kosten senken und gleichzeitig Konversionsraten, durchschnittlicher Bestellwert und Kundenzufriedenheitsraten steigern können. Dieser Workflow bietet Folgendes:
 
@@ -37,7 +37,7 @@ Die Store Fulfillment-Lösung unterstützt und erweitert native Adobe Commerce-F
 
 * Integriert mit [[!DNL Adobe Commerce] Inventory management](https://docs.magento.com/user-guide/catalog/inventory-learn-more.html)
 
-* Integriert mit POS (Point-Sale)-Bestandsmanagementsystemen für Händler wie ERP, OMS und WMS
+* Integriert mit POS (Point-Sale)-Bestandsmanagementsystemen wie ERP, OMS und WMS
 
 * Vollständig kompatibel mit dem Luma-Design
 
@@ -59,7 +59,7 @@ Die Store Assist App für iOS- und Android-Geräte interagiert mit [!DNL Walmart
 
 ## Verbessertes Benutzererlebnis
 
-Die Store-Erfüllung verbessert Adobe Commerce, indem Funktionen hinzugefügt werden, mit denen verbesserte Einkaufserlebnisse und optimierte Erfüllungs-Workflows bereitgestellt werden können.
+Die Store-Erfüllung verbessert Adobe Commerce, indem Funktionen hinzugefügt werden, mit denen verbesserte Einkaufserlebnisse und optimierte Erfüllung-Workflows bereitgestellt werden können.
 
 * **SLS (Store Location Selector)**- Fügt zusätzlich zum nativen Checkout Speicheroptionen, Lagerverfügbarkeit und Store-Selektoren zu den Produkt- und Einkaufswagenseiten hinzu.
 

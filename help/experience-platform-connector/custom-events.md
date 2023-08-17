@@ -47,7 +47,7 @@ In Experience Platform Edge:
 >
 > Die Verwendung benutzerdefinierter Ereignisse kann sich auf standardmäßige Adobe Analytics-Berichte auswirken.
 
-## Überschreibungen von Ereignissen verarbeiten (benutzerdefinierte Attribute)
+## Ereignisüberschreibungen verarbeiten (benutzerdefinierte Attribute)
 
 Attributüberschreibungen für Standardereignisse werden nur für die Experience Platform unterstützt. Benutzerdefinierte Daten werden nicht an Commerce-Dashboards und -Metriken-Tracker weitergeleitet.
 

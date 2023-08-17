@@ -24,7 +24,7 @@ Ob Sie ein kleines Unternehmen, ein mittelständisches Unternehmen oder ein gro�
 
 * Einfache Einrichtung und Wartung
 * Entwickelt, um Ihren Gewinn zu maximieren
-* Sicher und sicher
+* Sicher
 * Für alle Ihre Zahlungsbedürfnisse konzipiert
 * Innerhalb des Administrators eigenständig
 
@@ -39,7 +39,7 @@ Ob Sie ein kleines Unternehmen, ein mittelständisches Unternehmen oder ein gro�
 * [**Onboarding**](onboard.md)—Der Prozess führt Sie durch die kommerzielle Anmeldung, technische Konfiguration, Berechtigungen, Sandbox-Umgebungskonfiguration und die Live-Zahlungsaktivierung.
 * [**Zahlungsoptionen**](payments-options.md)—Legen Sie die Zahlungsoptionen fest, um die für Ihre Store- (oder Multistore-) Kunden verfügbaren Methoden anzupassen.
 * **Finanzberichte zum Cashflow-Management**—Synchronisieren [Zahlungsdetails](order-payment-status.md) mit Bestellungen, die eine vollständige Transparenz des verarbeiteten Volumens, des Zahlungsbilds und der detaillierten Informationen gewährleisten [Berichterstellung auf Transaktionsebene](payouts.md) zur finanziellen Aussöhnung.
-* **Transparente Preisgestaltung**—Die Preise sind klar und im Voraus festgelegt. Was du siehst ist, was du bekommst.
+* **Transparente Preisgestaltung**—Die Preise sind klar und vorab; was man sieht, ist, was man bekommt.
 * **Effizientes Checkout-Erlebnis**—Entfernen Sie alle Hindernisse für einen schnellen und einfachen Checkout und erstellen Sie treue Kunden mit [Kartengewölbe](https://experienceleague-review.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html) und [Sofortiger Kauf](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) (standardmäßig für Adobe Commerce aktiviert).
 
 ## Verfügbarkeit
@@ -51,8 +51,8 @@ Zurzeit [!DNL Payment Services] ist in den folgenden Ländern verfügbar:
 * Vereinigte Staaten (USA)
 * Kanada (CA)
 * Australien (AUS)
-* Frankreich (FR)
-* Vereinigtes Königreich (Vereinigtes Königreich)
+* Frankreich
+* Vereinigtes Königreich (UK)
 
 Siehe [Lebenszyklusrichtlinie](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html) und [[!DNL Payment Services] Versionshinweise](release-notes.md) Seiten , um mehr Versionsinformationen und versionsspezifische Informationen anzuzeigen.
 

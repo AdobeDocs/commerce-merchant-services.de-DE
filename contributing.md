@@ -24,7 +24,7 @@ Siehe [Mitarbeiter-Handbuch](https://experienceleague.adobe.com/docs/contributor
 
 Melden Sie zunächst ein Problem. Die vorhandenen Beitragenden zu diesem Projekt arbeiten daran, einen Konsens über die Projektausrichtung zu erzielen und gegebenenfalls Lösungen in Problemthreads zu finden.
 
-## Lizenzvereinbarung für Mitwirkende
+## Lizenzvereinbarung für Mitarbeiter
 
 Für alle Drittanbieter-Beiträge zu diesem Projekt muss eine unterzeichnete Lizenzvereinbarung für Mitwirkende (Contributor License Agreement, CLA) vorliegen. Dadurch erhält Adobe die Erlaubnis, Ihre Beiträge im Rahmen des Projekts zu veröffentlichen. [Unterschreiben Sie unsere CLA](https://opensource.adobe.com/cla.html). Sie müssen nur einmal eine Adobe-CLA übermitteln. Wenn Sie bereits eine eingereicht haben, sind Sie bereit zu gehen!
 

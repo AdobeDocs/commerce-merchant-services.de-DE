@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Handbücher für Adobe Commerce-Dienste
 
-Adobe bietet eine Sammlung von Commerce-, Integrations- und Datendiensten, die Händlern helfen, wichtige Geschäftskomponenten zu unterstützen.
+Adobe bietet eine Sammlung von Commerce-, Integrations- und Datendiensten, die Händlern helfen, wichtige Komponenten ihres Unternehmens zu unterstützen.
 
 >[!BEGINSHADEBOX &quot;Versionsinformationen&quot;]
 

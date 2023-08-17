@@ -6,7 +6,7 @@ feature: Checkout, Services
 source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
 source-wordcount: '198'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 0%
 
    ![Schnellauschecken im Menü](assets/admin-panel-view.png)
 
-Vergewissern Sie sich, dass dem Benutzer die richtigen Rollen und Berechtigungen zugewiesen wurden, damit er [!DNL Quick Checkout] Admin-Bereich, der angezeigt werden soll. Siehe [Benutzerrollen und -berechtigungen](../quick-checkout/user-roles-setup.md) für weitere Informationen.
+Vergewissern Sie sich, dass dem Benutzer die richtigen Rollen und Berechtigungen zugewiesen wurden, damit er [!DNL Quick Checkout] Admin-Bedienfeld anzeigen. Siehe [Benutzerrollen und Berechtigungen](../quick-checkout/user-roles-setup.md) für weitere Informationen.
 
 Siehe Abschnitt [Onboarding](../quick-checkout/onboarding.md) Thema für weitere Informationen zur Konfiguration der [!DNL Quick Checkout] für Adobe Commerce.
 
@@ -42,9 +42,9 @@ Siehe Abschnitt [Onboarding](../quick-checkout/onboarding.md) Thema für weitere
 | Feld | Beschreibung |
 |---|---|
 | [!UICONTROL Open documentation] | Aktuelle Dokumente finden Sie unter [!DNL Quick Checkout]. |
-| [!UICONTROL [!DNL Bolt] merchant dashboard] | Zugriff auf [!DNL Bolt] Händlerkonto und Dashboard. |
+| [!UICONTROL [!DNL Bolt] merchant dashboard] | Zugriff auf [!DNL Bolt] Handelskonto und Dashboard. |
 | [!UICONTROL Release notes] | Erfahren Sie mehr über die neuesten Änderungen für [!DNL Quick Checkout]. |
 
 ## Einstellungen
 
-Klicken Sie in der Ansicht des Admin-Bedienfelds auf **[!UICONTROL Settings]** , um auf die [!DNL Quick Checkout] Konfiguration. Siehe [Admin-Konfiguration](onboarding.md#complete-admin-configuration) für weitere Informationen.
+Klicken Sie in der Ansicht des Admin-Bedienfelds auf **[!UICONTROL Settings]** , um auf die [!DNL Quick Checkout] Konfiguration. Siehe [Administratorkonfiguration](onboarding.md#complete-admin-configuration) für weitere Informationen.

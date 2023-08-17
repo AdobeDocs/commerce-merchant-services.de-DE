@@ -16,7 +16,7 @@ ht-degree: 0%
 >
 >Das Adobe Experience Platform Mobile SDK für iOS unterstützt iOS 11 oder höher.
 
-Integrieren der [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/) mit der mobilen Commerce-App können Händler Commerce senden  [Ereignisdaten](events.md) zum Rand der Experience Platform.
+Integrieren der [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/) mit der mobilen Commerce-App können Händler Commerce senden  [Ereignisdaten](events.md) zum Experience Platform-Edge hinzu.
 
 Wenn Commerce-Ereignisdaten am Rande verfügbar sind, können sie von anderen Adobe Experience Cloud-Anwendungen aufgerufen werden. Beispielsweise können Sie die Daten zum Erstellen von Zielgruppen in Real-Time CDP verwenden und [Verwenden dieser Zielgruppen](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) , um Ihre mobile Commerce-App zu personalisieren.
 
@@ -32,7 +32,7 @@ Um mit der Verwendung des Adobe Experience Platform Mobile SDK mit Commerce zu b
 
    >[!NOTE]
    >
-   >Das Schema, das Sie in der Experience Platform erstellen und konfigurieren, entspricht dem Schema, das Sie im Anwendungscode in Ihrer Commerce-Mobile-App verwenden.
+   >Das Schema, das Sie auf der Experience Platform erstellen und konfigurieren, ist dasselbe Schema, das Sie im Anwendungscode in Ihrer Commerce-Mobile-App verwenden.
 
 ### Handel
 
@@ -154,6 +154,6 @@ Nachdem Sie die SDK-Konfiguration für die Experience Platform abgeschlossen hab
       }
       ```
 
-   Sie haben jetzt das Adobe Experience Platform Mobile SDK in Ihre Commerce Mobile App integriert. Ereignisdaten werden von Ihrer App an den Edge der Experience Platform übertragen.
+   Sie haben jetzt das Adobe Experience Platform Mobile SDK in Ihre Commerce Mobile App integriert. Ereignisdaten fließen von Ihrer App an die Experience Platform Edge.
 
 Informationen zum Abrufen von Real-Time CDP-Zielgruppen aus Ihrer mobilen Commerce-App, um Warenkorbpreisregeln und dynamische Bausteine zu informieren, finden Sie unter [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html).

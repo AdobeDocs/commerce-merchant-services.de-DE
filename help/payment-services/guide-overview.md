@@ -15,27 +15,27 @@ ht-degree: 0%
 
 # [!DNL Payment Services] Guide - Übersicht
 
-Dieses Handbuch richtet sich an Administratoren von [!DNL Adobe Commerce] und [!DNL Magento Open Source]. Sie enthält detaillierte Informationen zur Installation und zum Onboarding von [!DNL Payment Services]sowie Konfiguration und Verwaltung der Dienste. Es wird von einem grundlegenden Verständnis der Commerce-Konfiguration und -Funktionalität ausgegangen.
+Dieses Handbuch richtet sich an Administratoren von [!DNL Adobe Commerce] und [!DNL Magento Open Source]. Sie enthält detaillierte Informationen zur Installation und zum Onboarding von [!DNL Payment Services]sowie Konfiguration und Verwaltung der Dienste. Es wird von einem grundlegenden Verständnis der grundlegenden Commerce-Konfiguration und -Funktionalität ausgegangen.
 
 >[!TIP]
 >
->Hilfe zu Zahlungsdiensten erhalten Sie unter [Support](#support).
+>Informationen zur Unterstützung bei Zahlungsdiensten finden Sie unter [Support](#support).
 
 [!DNL Payment Services] verfügt über zwei Bereiche für Administratoren:
 
-* Der Administrator: Verwenden Sie diesen Bereich, um auf die Konfigurationsoberfläche und die Berichterstellung zuzugreifen.
-* Befehlszeilenschnittstelle (oder CLI): Verwenden Sie dieses Tool, um Installations- und Backend-Konfigurationsaufgaben auszuführen.
+* Admin: Verwenden Sie diesen Bereich, um auf die Konfigurationsoberfläche und die Berichterstellung zuzugreifen.
+* Befehlszeilenschnittstelle (oder CLI): Mit diesem Tool können Sie Installations- und Backend-Konfigurationsaufgaben ausführen.
 
 Dieses Handbuch behandelt:
 
 * Alle [!DNL Payment Services]-spezifische Aufgaben, die in Admin ausgeführt werden.
 * Alle [!DNL Payment Services]-spezifische Aufgaben, die über die Befehlszeile &quot;Commerce&quot;ausgeführt werden
 
-Die Kernfunktionen von [!DNL Adobe Commerce] und [!DNL Magento Open Source].
+In diesem Handbuch werden die Kernfunktionen von [!DNL Adobe Commerce] und [!DNL Magento Open Source].
 
 ## Zusätzliche Dokumentation
 
-| Handbuch | Beschreibung |
+| Handbuch zu  | Beschreibung |
 |------ | ----------- |
 | [[!DNL Adobe Commerce] 2.4-Benutzerhandbuch](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html) | Merchandising-fokussierte Dokumentation für beide [!DNL Adobe Commerce] und [!DNL Magento Open Source] |
 | [[!DNL Adobe Commerce] 2.4 Entwicklerhandbuch](https://developer.adobe.com/commerce/docs) | Entwickerorientierte Dokumentation zum Erstellen und Anpassen [!DNL Adobe Commerce] oder [!DNL Magento Open Source] |

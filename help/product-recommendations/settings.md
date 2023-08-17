@@ -30,21 +30,21 @@ Um die Quelle Ihrer Produktempfehlungsdaten zu ändern, wählen Sie den SaaS-Dat
 
 1. Im _Admin_ Seitenleiste, navigieren Sie zu **Marketing** > _Promotions_ > **Produkt-Recommendations**.
 
-1. Klicken **Einstellungen**.
+1. Klicks **Einstellungen**.
 
-   ![Einstellungen für Produktempfehlungen](assets/settings.png)
+   ![Produktempfehlungseinstellungen](assets/settings.png)
    _Einstellungen_
 
 1. Im _Recommendations-Quelle_ aktivieren Sie die **Abrufen von Empfehlungen aus einem anderen SaaS-Datenraum** -Option. Die _Recommendations-Quelle_ wird nur in einer Nicht-Produktionsumgebung angezeigt.
 
    Eine Liste von _Verfügbare SaaS-Datenräume_ angezeigt.
 
-   ![Einstellungen für Produktempfehlungen](assets/settings-select-saas.png)
+   ![Produktempfehlungseinstellungen](assets/settings-select-saas.png)
    _Einstellungen_
 
 1. Wählen Sie den SaaS-Datenraum aus, der über die zu verwendenden Kundendaten verfügt.
 
-1. Klicken **Änderungen speichern**.
+1. Klicks **Änderungen speichern**.
 
    Adobe Commerce ruft jetzt Empfehlungen aus dem ausgewählten Datenraum ab.
 
@@ -62,4 +62,4 @@ Um die Quelle Ihrer Produktempfehlungsdaten zu ändern, wählen Sie den SaaS-Dat
 
 Wenn die Variable [Visual Product Recommendations](install-configure.md) installiert ist, müssen Sie Visual Recommendations aktivieren, um die [Visuelle Ähnlichkeit](type.md#visualsim) Empfehlungstyp.
 
-Im _Visual Recommendations_ Abschnitt festlegen **Aktivieren von Visual Recommendations** zur aktiven Position.
+Im _Visual Recommendations_ Abschnitt, festlegen **Aktivieren von Visual Recommendations** an die aktive Position.

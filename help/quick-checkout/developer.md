@@ -25,7 +25,7 @@ Durch die Verwendung von Erweiterungspunkten können Sie Anpassungen vornehmen, 
 
 Ein Erweiterungspunkt kann verwendet werden, um die automatisierte Schrittnavigation nach der Anmeldung mit [!DNL Bolt].
 
-Sobald sich ein Käufer mit [!DNL Bolt], werden alle gültigen Informationen vorausgefüllt und zum Schritt Zahlungsdetails weitergeleitet, um die Bestellung zu tätigen. Siehe [Checkout](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/manage-checkout/checkout-flow.html) für weitere Informationen.
+Sobald sich ein Kunde anmeldet mit [!DNL Bolt], werden alle gültigen Informationen vorausgefüllt und zum Schritt Zahlungsdetails weitergeleitet, um die Bestellung zu tätigen. Siehe [Checkout](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/manage-checkout/checkout-flow.html) für weitere Informationen.
 
 Dieser Erweiterungspunkt verhindert die Navigation zu einem Zahlungsschritt und kann nützlich sein, wenn es Erweiterungen gibt, bei denen ein Käufer zusätzliche Aktionen für den Versandschritt ausführen muss. Sehen Sie sich unten ein Beispiel dazu an, wie Sie den Erweiterungspunkt mit einem Mixin verwenden können:
 
@@ -64,4 +64,4 @@ Dieser Erweiterungspunkt verhindert die Navigation zu einem Zahlungsschritt und 
 >
 > Dies ist ein Beispiel für einen Käufer in Deutschland (DE), der im Schritt Versanddetails bleiben möchte.
 
-Überprüfen [[!DNL Bolt] Entwicklerhilfe](https://help.bolt.com/developers/) Weitere Informationen zu [!DNL Bolt] für Entwickler.
+Überprüfen [[!DNL Bolt] Entwicklerhilfe](https://help.bolt.com/developers/) für weitere Informationen über [!DNL Bolt] für Entwickler.

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Erfassen von Commerce-Daten mit Adobe Experience Platform Tags
 
-Sie können zwar den Experience Platform-Connector zum Veröffentlichen und Abonnieren von Storefront-Ereignissen verwenden, aber einige Händler verwenden möglicherweise bereits eine Datenerfassungslösung, z. B. die [Adobe Experience Platform-Tags](https://experienceleague.adobe.com/docs/platform-learn/data-collection/tags/create-a-property.html). Für diese Händler bietet Adobe Commerce im Experience Platform-Connector, der das Adobe Commerce Event SDK verwendet, die Option &quot;Nur Veröffentlichung&quot;.
+Sie können zwar den Experience Platform-Connector zum Veröffentlichen und Abonnieren von Storefront-Ereignissen verwenden, einige Händler verwenden jedoch möglicherweise bereits eine Datenerfassungslösung, z. B. die [Adobe Experience Platform-Tags](https://experienceleague.adobe.com/docs/platform-learn/data-collection/tags/create-a-property.html). Für diese Händler bietet Adobe Commerce eine Veröffentlichungsoption nur im Experience Platform-Connector, der das Adobe Commerce Event SDK verwendet.
 
 ![Experience Platform Connector-Datenfluss](assets/tags-data-flow.png)
 _Experience Platform Connector-Datenfluss mit Tags_
@@ -71,7 +71,7 @@ Fügen wir beispielsweise die Adobe Commerce hinzu `signOut` -Ereignis auf Adobe
 
 1. Satz **Datenelementtyp** nach `XDM object`.
 
-1. Wählen Sie die **Sandbox** und **Schema** die Sie aktualisieren möchten.
+1. Wählen Sie die **Sandbox** und **Schema** , die Sie aktualisieren möchten.
 
 1. under **userAccount** > **Abmelden**, legen Sie die **value** in **Besucher-Abmeldung** nach `1`.
 
@@ -95,7 +95,7 @@ Fügen wir beispielsweise die Adobe Commerce hinzu `signOut` -Ereignis auf Adobe
 
 1. Auswählen **Änderungen beibehalten** , um die neue Regel zu speichern.
 
-1. Fügen Sie eine Aktion hinzu.
+1. Hinzufügen einer Aktion.
 
 1. Satz **Erweiterung** nach `Adobe Experience Platform Web SDK`.
 
@@ -107,7 +107,7 @@ Fügen wir beispielsweise die Adobe Commerce hinzu `signOut` -Ereignis auf Adobe
 
 1. Satz **XDM-Daten** nach `%sign out%`.
 
-1. Klicken **Speichern**.
+1. Klicks **Speichern**.
 
    Sie haben ein Datenelement in Ihrem Schema für die `signOut` -Ereignis aus Adobe Commerce. Außerdem haben Sie eine Regel mit einer bestimmten Aktion erstellt, die auftreten sollte, wenn dieses Ereignis aus der Adobe Commerce-Storefront ausgelöst wird.
 
@@ -201,7 +201,7 @@ Erstellen Sie die folgenden Datenelemente:
    - **Feldergruppe**: `person` > `accountType`
    - **Kontotyp**: **Wert** = `%account type%`
    - **Feldergruppe**: `person` > `personalEmailID`
-   - **Persönliche E-Mail-Adresse**: **Wert** = `%account email%`
+   - **Persönliche Email-Adresse**: **Wert** = `%account email%`
    - **Feldergruppe**: `personalEmail` > `address`
    - **Adresse**: **Wert** = `%account email%`
    - **Feldergruppe**: `userAccount` > `login`
@@ -260,7 +260,7 @@ Erstellen Sie die folgenden Datenelemente:
    - **Feldergruppe**: `person` > `accountType`
    - **Kontotyp**: **Wert** = `%account type%`
    - **Feldergruppe**: `person` > `personalEmailID`
-   - **Persönliche E-Mail-Adresse**: **Wert** = `%account email%`
+   - **Persönliche Email-Adresse**: **Wert** = `%account email%`
    - **Feldergruppe**: `personalEmail` > `address`
    - **Adresse**: **Wert** = `%account email%`
    - **Feldergruppe**: `userAccount` > `createProfile`
@@ -319,7 +319,7 @@ Erstellen Sie die folgenden Datenelemente:
    - **Feldergruppe**: `person` > `accountType`
    - **Kontotyp**: **Wert** = `%account type%`
    - **Feldergruppe**: `person` > `personalEmailID`
-   - **Persönliche E-Mail-Adresse**: **Wert** = `%account email%`
+   - **Persönliche Email-Adresse**: **Wert** = `%account email%`
    - **Feldergruppe**: `personalEmail` > `address`
    - **Adresse**: **Wert** = `%account email%`
    - **Feldergruppe**: `userAccount` > `updateProfile`
@@ -679,7 +679,7 @@ Erstellen Sie die folgenden Datenelemente:
 
 ### addToCart
 
-Wird ausgelöst, wenn ein Produkt einem Warenkorb hinzugefügt wird oder wenn die Menge eines Produkts im Warenkorb erhöht wird.
+Wird ausgelöst, wenn ein Produkt einem Warenkorb hinzugefügt oder die Menge eines Produkts im Warenkorb erhöht wird.
 
 #### Datenelemente
 
@@ -1286,7 +1286,7 @@ Erstellen Sie die folgenden Datenelemente:
    return returnList;
    ```
 
-1. Platzierungsreihenfolge:
+1. Platzierung:
 
    - **Name**: `place order`
    - **Erweiterung**: `Adobe Experience Platform Web SDK`
@@ -1303,7 +1303,7 @@ Erstellen Sie die folgenden Datenelemente:
    - **Promotion-ID**: **Wert** = `%promotion id%`
    - **Feldergruppe**: `commerce` > `purchases` > `value`
    - **value**: **Wert** = `1`
-   - **Persönliche E-Mail-Adresse**: **Wert** = `%account email%`
+   - **Persönliche Email-Adresse**: **Wert** = `%account email%`
    - **Feldergruppe**: `personalEmail` > `address`
    - **Adresse**: **Wert** = `%account email%`
 
@@ -1323,18 +1323,18 @@ Erstellen Sie die folgenden Datenelemente:
 
 ## Festlegen der Identität in Storefront-Ereignissen
 
-Storefront-Ereignisse enthalten Profilinformationen, die auf dem `personalEmail` (für Kontoereignisse) und `identityMap` (für alle anderen Storefront-Ereignisse). Der Experience Platform-Connector fügt sich in diese beiden Felder ein und erzeugt Profile. Für jedes Feld sind jedoch unterschiedliche Schritte zum Erstellen von Profilen erforderlich:
+Storefront-Ereignisse enthalten Profilinformationen, die auf dem `personalEmail` (für Kontoereignisse) und `identityMap` (für alle anderen Storefront-Ereignisse). Der Experience Platform-Connector fügt sich ein und erzeugt Profile, die auf diesen beiden Feldern basieren. Für jedes Feld sind jedoch unterschiedliche Schritte zum Erstellen von Profilen erforderlich:
 
 >[!NOTE]
 >
 >Wenn Sie bereits über ein Setup verfügen, das auf verschiedenen Feldern basiert, können Sie diese weiterhin verwenden.
 
-- `personalEmail` - Gilt nur für Kontoereignisse. Befolgen Sie die beschriebenen Schritte, Regeln und Aktionen [above](#createaccount)
+- `personalEmail` - Gilt nur für Kontoereignisse. Befolgen Sie die beschriebenen Schritte, Regeln und Aktionen. [above](#createaccount)
 - `identityMap` - Gilt für alle anderen Storefront-Ereignisse. Siehe folgendes Beispiel.
 
 ### Beispiel
 
-Die folgenden Schritte zeigen, wie Sie eine `pageView` -Ereignis mit `identityMap` in Experience Platform Connector:
+Die folgenden Schritte zeigen, wie Sie eine `pageView` -Ereignis mit `identityMap` im Experience Platform-Connector:
 
 1. Konfigurieren Sie das Datenelement mit benutzerdefiniertem Code für ECID:
 
@@ -1380,7 +1380,7 @@ Im Gegensatz zu Storefront-Ereignissen, die ECID zur Identifizierung und Verknü
 1. Erstellen Sie ein Identitätszuordnungselement.
 
    ![Identitätszuordnung für Back Office](assets/custom-code-backoffice.png)
-   _Back-Office-Identitätszuordnung erstellen_
+   _Identitätskarte für Back Office erstellen_
 
 1. Auswählen [!UICONTROL Open Editor] und fügen Sie den folgenden benutzerdefinierten Code hinzu:
 
@@ -1412,7 +1412,7 @@ return IdentityMap;
 
 ## Einverständniserklärung
 
-Die Datenerfassung für Adobe Commerce und Experience Platform Connector ist standardmäßig aktiviert. Die Opt-out-Funktion wird über das [`mg_dnt` Cookie](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html). Sie können die hier beschriebenen Schritte ausführen, wenn Sie `mg_dnt` um das Einverständnis zu verwalten. Die [Dokumentation zum Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html) verfügt über mehrere zusätzliche Optionen zur Verwaltung der Zustimmung.
+Die Datenerfassungszustimmung für Adobe Commerce- und Experience Platform-Connector ist standardmäßig aktiviert. Die Opt-out-Funktion wird über das [`mg_dnt` Cookie](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html). Sie können die hier beschriebenen Schritte ausführen, wenn Sie `mg_dnt` um das Einverständnis zu verwalten. Die [Dokumentation zum Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html) verfügt über mehrere zusätzliche Optionen zur Verwaltung der Zustimmung.
 
 1. Erstellen Sie eine **Benutzerdefinierter Core-Code** Datenelement (`%do not track cookie%`) für die `mg_dnt` Cookie:
 
@@ -1431,6 +1431,6 @@ Die Datenerfassung für Adobe Commerce und Experience Platform Connector ist sta
 
 ## Warnungen
 
-- Wenn Sie die Schritte zum Deaktivieren der Erfassung von Experience Platformen nicht ausführen, werden die Ereignisse doppelt gezählt
+- Wenn Sie die Schritte zum Deaktivieren der Experience Platform-Erfassung nicht ausführen, werden die Ereignisse doppelt gezählt
 - Das nicht wie in diesem Thema beschriebene Einrichten von Zuordnungen/Ereignissen kann sich auf Adobe Analytics-Pinnwände auswirken
 - Sie können Target nicht über den Experience Platform-Connector einrichten, wenn die Datenerfassung deaktiviert ist

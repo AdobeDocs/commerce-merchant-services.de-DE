@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie die Performance von Produktempfehlungen konfi
 exl-id: 85a06cc3-91b9-484a-96a9-fc85718e6d70
 source-git-commit: 25d5321b6f29bab5d8cf329170f3644f35100438
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '640'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Zunächst wird die [Umfang](https://experienceleague.adobe.com/docs/commerce-adm
    - Um eine ausgeblendete Spalte anzuzeigen, klicken Sie auf einen beliebigen Spaltennamen ohne Häkchen.
    - Um eine sichtbare Spalte auszublenden, klicken Sie auf einen beliebigen Spaltennamen mit einem Häkchen.
 
-   Die Tabelle wird aktualisiert und enthält nur die ausgewählten Spalten.
+   Die Tabelle wird aktualisiert und enthält jetzt nur die ausgewählten Spalten.
 
    ![Recommendations Workspace](assets/workspace-select-columns.png)
    _Spalten ein-/ausblenden_
@@ -92,15 +92,15 @@ Klicken Sie auf der Seite mit den Empfehlungsdetails auf **Erstellen**. Weitere 
 | Name | Der Name der Empfehlung. |
 | Seite | Die Seite, auf der die Empfehlung angezeigt wird. |
 | Typ | Der Empfehlungstyp. |
-| Status | Der Empfehlungsstatus. Optionen: Inaktiv/Aktiv/Entwurf |
-| Erstellt | Das Datum, an dem die Empfehlung erstellt wurde. |
+| Status | Der Empfehlungsstatus. Optionen: inaktiv/aktiv/Entwurf |
+| Erstellt | Das Datum der Erstellung der Empfehlung. |
 | Zuletzt bearbeitet | Das Datum, an dem die Empfehlung zuletzt bearbeitet wurde. |
 | Impressionen | Die Häufigkeit, mit der eine Empfehlungseinheit auf einer Seite geladen und gerendert wird. Eine Empfehlungseinheit, die sich unterhalb des Darstellungsbereichs des Browsers befindet, wird auf der Seite gerendert, aber nicht vom Käufer angezeigt. In diesem Fall wird die gerenderte Einheit als Impression gezählt, eine Ansicht wird jedoch nur gezählt, wenn der Benutzer die Einheit in die Ansicht scrollt. |
 | vImpressions | (Sichtbare Impressionen) Die Anzahl der Empfehlungseinheiten, die mindestens eine Ansicht registrieren. |
-| Ansichten | Die Anzahl der Empfehlungseinheiten, die im Viewport des Browsers des Käufers angezeigt werden. Dieses Ereignis kann mehrmals auf einer Seite ausgelöst werden. |
+| Ansichten | Die Anzahl der Empfehlungseinheiten, die im Viewport des Browsers des Kunden angezeigt werden. Dieses Ereignis kann mehrmals auf einer Seite ausgelöst werden. |
 | Klicks | Die Summe der Klicks eines Käufers auf einen Artikel in der Empfehlungseinheit und der Anzahl der Klicks des Käufers auf die **Zum Warenkorb hinzufügen** Schaltfläche in der Empfehlungseinheit |
 | Umsatz | Der Umsatz, der durch die Empfehlung für den aktuellen Zeitraum bedingt ist. |
-| LT Umsatz | (Lebensdauerumsatz) Der durch eine Empfehlung generierte Lebenszeitumsatz. |
+| LT Umsatz | (Lebensdauerumsatz) Der durch eine Empfehlung generierte Lebensdauerumsatz. |
 | Sichtbarkeit | Der Prozentsatz der Empfehlungseinheiten, die sich für die Ansicht registrieren. |
 | Ctr | (Clickthrough-Rate) Der Prozentsatz der Einheitenimpressionen für die Empfehlung, die einen Klick registriert. |
 | vCtr | (Sichtbare Clickthrough-Rate) Der Prozentsatz der sichtbaren Impressionen für die Empfehlungseinheit, die einen Klick registriert. |

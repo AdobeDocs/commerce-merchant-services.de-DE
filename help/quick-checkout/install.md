@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Installieren [!DNL Quick Checkout]
 
-Die [!DNL Quick Checkout] Erweiterung für Adobe Commerce und [!DNL Magento Open Source] kann mit [!DNL Composer keys], die mit dem Commerce-Konto verknüpft sind [`mageid`](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions){target="_blank"} im Anmeldeprozess bereitgestellt werden. Der Verfasser verwendet diese Schlüssel bei der Erstinstallation von Adobe Commerce oder in Situationen, in denen die [!DNL Composer keys] wurden zuvor nicht in der Variablen `auth.json` -Datei.
+Die [!DNL Quick Checkout] Erweiterung für Adobe Commerce und [!DNL Magento Open Source] kann mit [!DNL Composer keys], die mit dem Commerce-Konto verknüpft sind [`mageid`](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions){target="_blank"} im Anmeldeprozess bereitgestellt werden. Der Verfasser verwendet diese Schlüssel bei der Erstinstallation von Adobe Commerce oder in Situationen, in denen die [!DNL Composer keys] wurden zuvor nicht in der `auth.json` -Datei.
 
 Siehe [Abrufen der Authentifizierungsschlüssel](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html){target="_blank"} Thema für weitere Informationen zum Abrufen [!DNL Composer keys].
 
@@ -101,7 +101,7 @@ Wenn wir eine neue Version der [!DNL Quick Checkout]können Sie Ihre Erweiterung
 
 Beim Versuch, die [!DNL Quick Checkout] -Erweiterung.
 
-Wenn während der [!DNL Quick Checkout] Installationsprozess, siehe [Fehlerbehebung bei Problemen mit der Schnellüberprüfung](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/quick-checkout-issues.html) im Adobe Commerce Help Center.
+Wenn während der [!DNL Quick Checkout] Installationsprozess, siehe [Fehlerbehebung bei Problemen mit dem Schnellcheckout](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/quick-checkout-issues.html) im Adobe Commerce Help Center.
 
 ## Voraussetzungen
 

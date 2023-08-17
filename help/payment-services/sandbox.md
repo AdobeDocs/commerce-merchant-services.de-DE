@@ -14,14 +14,14 @@ ht-degree: 0%
 
 Bevor Sie mit dem Onboarding einer Sandbox beginnen, müssen Sie sich für ein kostenloses PayPal-Entwicklerkonto registrieren und sowohl Handelskonten (für das Onboarding) als auch Kaufkonten (für das Testen Ihres Checkouts) erstellen. Sie können bei Bedarf mehrere Entwicklerkonten erstellen.
 
-Mit einem PayPal-Sandbox-Konto können Sie [!DNL Payment Services] im Testmodus. PayPal erfordert die Verwendung eines von PayPal Developer Portal generierten Business Sandbox-Testkontos, einer E-Mail und eines Kennworts für das Onboarding von Sandboxes. *Erstellen Sie während des Sandbox-Onboarding-Prozesses kein anderes Konto.*
+Mit einem PayPal-Sandbox-Konto können Sie [!DNL Payment Services] im Testmodus. PayPal erfordert die Verwendung eines von PayPal Developer Portal generierten Business Sandbox-Testkontos, einer E-Mail-Adresse und eines Kennworts für das Onboarding einer Sandbox. *Erstellen Sie während des Sandbox-Onboarding-Prozesses kein anderes Konto.*
 
 ## Sandbox-Onboarding
 
 So schließen Sie das Onboarding einer Sandbox ab:
 
 1. Navigieren Sie zum [Seite &quot;PayPal-Entwicklerkonto&quot;](https://developer.paypal.com/developer/accounts/).
-1. Klicken **[!UICONTROL Log in to Dashboard]** und melden Sie sich mit Ihrem vorhandenen PayPal Developer Portal-generierten Business-Sandbox-Testkonto an oder klicken Sie auf **Anmelden** , um ein Konto zu erstellen.
+1. Klicks **[!UICONTROL Log in to Dashboard]** und melden Sie sich mit Ihrem vorhandenen PayPal Developer Portal-generierten Business-Sandbox-Testkonto an oder klicken Sie auf **Anmelden** , um ein Konto zu erstellen.
 1. Erstellen Sie ein PayPal-Sandbox-Konto:
    1. Navigieren Sie zu _[!UICONTROL Testing Tools]_>**[!UICONTROL Sandbox Accounts]**.
    1. Klicken **[!UICONTROL Create account]**.
@@ -43,9 +43,9 @@ So schließen Sie das Onboarding einer Sandbox ab:
 
    Eine Sandbox-Merchant-ID wird automatisch generiert und in [settings](settings.md). Ändern oder ändern Sie diese ID nicht.
 
-   Sie erhalten ein PayPal-Fenster, in dem Sie ein PayPal-Konto anschließen können, um Zahlungen zu akzeptieren.
+   Sie erhalten ein PayPal-Fenster, in dem Sie ein PayPal-Konto anschließen können, um mit der Annahme von Zahlungen zu beginnen.
 
-1. Geben Sie die E-Mail-Adresse und das Passwort des PayPal-Sandbox-Kontos ein, das Sie in Schritt 3 generiert haben (nicht die Informationen zu Ihrem PayPal-Geschäftskonto), sowie Ihr Land oder Ihre Region.
+1. Geben Sie die E-Mail-Adresse und das Kennwort des PayPal-Sandbox-Kontos ein, das Sie in Schritt 3 generiert haben (nicht die Informationen zu Ihrem PayPal-Geschäftskonto), und geben Sie Ihr Land oder Ihre Region an.
 1. Klicken **[!UICONTROL Next]**.
 
    ![PayPal - PayPal-Konto für Zahlungen verbinden](assets/paypal-connectacct.png)
@@ -68,7 +68,7 @@ Wenn Sie während des PayPal-Onboarding-Prozesses der Sandbox PayPal ein PayPal-
 So setzen Sie Ihr Sandbox-Konto zurück:
 
 1. Klicken **[!UICONTROL Reset sandbox]**. [PayPal-Business-Sandbox-Konto erstellen](https://developer.paypal.com/docs/api-basics/sandbox/accounts/#create-a-business-sandbox-account).
-1. Klicken **[!UICONTROL Sandbox onboarding]** und führen Sie die nächsten Schritte aus.
+1. Klicks **[!UICONTROL Sandbox onboarding]** und führen Sie die nächsten Schritte aus.
 
 ## Kontakttelefonnummer aktivieren
 

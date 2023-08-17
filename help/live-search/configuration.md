@@ -35,5 +35,5 @@ Preise auf der Produktlistenseite und im Popover des Widgets werden jetzt mithil
 | Commerce-Konfigurationseinstellungen | Hinweise |
 |---|---|
 | Stores > Konfiguration > Katalog > Storefront > Listenmodus | Wird korrekt gerendert, aber für einige Seiteninteraktionen werden keine Ereignisse gesendet |
-| Stores > Konfiguration > Katalog > Katalog > Katalogsuche > Maximale Abfragelänge | nicht umgesetzt; Search Services akzeptiert bis zu 255 Zeichen |
+| Stores > Konfiguration > Katalog > Katalog > Katalogsuche > Maximale Abfragelänge | Nicht implementiert. Search Services akzeptiert bis zu 255 Zeichen |
 | Konfiguration > Vertrieb > Steuern > Preisanzeigeeinstellungen > Produktpreise im Katalog anzeigen |  |

@@ -1,13 +1,13 @@
 ---
 user-guide-title: "[!DNL Quick Checkout] für Adobe Commerce"
 user-guide-description: "Erfahren Sie, wie die [!DNL Quick Checkout] kann von Ihrer Adobe Commerce-Instanz profitieren und zeigen, wie Sie die Erweiterung erfolgreich integrieren und einrichten können."
-breadcrumb-title: Handbuch für Merchant Services
+breadcrumb-title: Handbuch für Händler-Services
 role: Admin, Leader, User
 feature: Checkout, Services
 source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
 source-wordcount: '76'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 

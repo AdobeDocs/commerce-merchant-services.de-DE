@@ -6,7 +6,7 @@ feature: Checkout, Services
 source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
 source-wordcount: '294'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -29,7 +29,7 @@ Die Diagramme im Abschnitt Übersicht zeigen detaillierte Informationen zur Chec
 | Diagramm | Beschreibung |
 |---|---|
 | [!UICONTROL Checkout abandonment] | Der Prozentsatz der Besucher, die den Checkout-Prozess beenden, ohne einen Kauf abzuschließen. |
-| [!UICONTROL Checkout abandonment breakdown] | Der Abbruch des Checkout dividiert durch den Typ des Besuchers. QuickInfo zeigt einen prozentualen Unterschied zwischen Bolt und Gast an. Optionen: [!UICONTROL Bolt] / [!UICONTROL Merchant] / [!UICONTROL Guest] |
+| [!UICONTROL Checkout abandonment breakdown] | Der Abbruch des Checkout dividiert durch den Besuchertyp. QuickInfo zeigt einen prozentualen Unterschied zwischen Bolt und Gast an. Optionen: [!UICONTROL Bolt] / [!UICONTROL Merchant] / [!UICONTROL Guest] |
 | [!UICONTROL Average checkout time] | Die durchschnittliche Zeit, die ein Besucher benötigt, um den Checkout-Prozess abzuschließen. |
 | [!UICONTROL Average checkout time breakdown] | Durchschnittliche Checkout-Zeit dividiert durch den Besuchertyp. QuickInfo zeigt einen prozentualen Unterschied zwischen Bolt und Gast an. Optionen: [!UICONTROL Bolt] / [!UICONTROL Merchant] / [!UICONTROL Guest] |
 | [!UICONTROL Orders by account type] | Bestellungen dividiert durch den Besuchertyp. Optionen: [!UICONTROL Bolt] / [!UICONTROL Merchant] / [!UICONTROL Guest] |

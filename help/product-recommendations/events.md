@@ -28,8 +28,8 @@ Die [Adobe Commerce Storefront Event Collector](https://developer.adobe.com/comm
 
 | Ereignis | Beschreibung | [Wird für Metriken verwendet?](workspace.md) |
 | --- | --- | --- |
-| `impression-render` | Die Empfehlungseinheit wird auf der Seite gerendert. | Ja |
-| `rec-add-to-cart-click` | Der Kunde klickt auf die **Zum Warenkorb hinzufügen** -Schaltfläche für einen Artikel in der Empfehlungseinheit. | Ja, wenn ein **Zum Warenkorb hinzufügen** in der Recommendations-Vorlage vorhanden ist. |
+| `impression-render` | Die Empfehlungseinheit wird auf der Seite dargestellt. | Ja |
+| `rec-add-to-cart-click` | Der Kunde klickt auf **Zum Warenkorb hinzufügen** -Schaltfläche für einen Artikel in der Empfehlungseinheit. | Ja, wenn ein **Zum Warenkorb hinzufügen** in der Recommendations-Vorlage vorhanden ist. |
 | `rec-click` | Der Kunde klickt auf ein Produkt in der Empfehlungseinheit. | Ja |
 | `view` | Die Empfehlungseinheit wird auf der Seite sichtbar, z. B. durch Scrollen in die Ansicht. | Ja |
 
@@ -37,9 +37,9 @@ Wenn Ihre Storefront mit PWA Studio implementiert ist, lesen Sie den Abschnitt [
 
 ## Einschränkungen
 
-Anzeigensperren und Datenschutzeinstellungen können die `magento/product-recommendations` -Modul aus der Erfassung von Ereignissen verwenden und möglicherweise zu Interaktion und Umsatz führen [Metriken](workspace.md) nicht angegeben werden.
+Anzeigensperren und Datenschutzeinstellungen können die `magento/product-recommendations` -Modul aus der Erfassung von Ereignissen verwenden und möglicherweise zu Interaktion und Umsatz führen [Metriken](workspace.md) zu unterschätzen.
 
-Eventing erfasst nicht alle Transaktionen, die auf der Website des Händlers stattfinden. Eventing ist dazu gedacht, dem Händler eine allgemeine Vorstellung von Ereignissen zu vermitteln, die auf der Site stattfinden.
+Eventing erfasst nicht alle Transaktionen, die auf der Website des Händlers stattfinden. Eventing soll dem Händler eine allgemeine Vorstellung von Ereignissen auf der Site vermitteln.
 
 Headless-Implementierungen müssen Eventing implementieren, um das Produkt-Recommendations-Dashboard zu aktivieren.
 

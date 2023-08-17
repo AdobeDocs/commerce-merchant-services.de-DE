@@ -21,9 +21,9 @@ Herunterladen und Installieren der [!DNL Payment Services] Erweiterung für [!DN
 
 Sie müssen die Erweiterung zunächst von herunterladen [Commerce Marketplace](https://experienceleague.adobe.com/docs/commerce-admin/start/resources/commerce-marketplace.html) vor der Installation.
 
-1. Navigieren Sie zum [Zahlungsdiensterweiterung im Commerce Marketplace](https://commercemarketplace.adobe.com/magento-payment-services.html).
+1. Navigieren Sie zum [Zahlungsdiensterweiterung in der Commerce Marketplace](https://commercemarketplace.adobe.com/magento-payment-services.html).
 1. Um die Bearbeitung und Version auszuwählen, schalten Sie **[!UICONTROL Edition]** und **[!UICONTROL Your store version]** zu Ihrer gewünschten Auswahl hinzufügen.
-1. Klicks **[!UICONTROL Add to Cart]**.
+1. Klicken **[!UICONTROL Add to Cart]**.
 1. Checkout abschließen und klicken **[!UICONTROL Place Order]**.
 1. Überprüfen Sie die mit Ihrem Marketplace-Download verknüpfte E-Mail, um eine Bestellbestätigung und Details zu erhalten.
 
@@ -116,7 +116,7 @@ Wenn die folgende Fehlermeldung angibt, dass Sie über falsche Composer-Schlüss
 Could not find a matching version of package magento/payment-services. Check the package spelling, your version constraint and that the package is available in a stability which matches your minimum-stability (stable).
 ```
 
-Überprüfen Sie, ob Ihre Composer-Schlüssel gültig sind und Sie Zugriff auf andere Magento-Packages haben.
+Überprüfen Sie, ob Ihre Composer-Schlüssel gültig sind und Sie Zugriff auf andere Magento-Pakete haben.
 
 So sehen Sie, welche Composer-Schlüssel konfiguriert sind:
 

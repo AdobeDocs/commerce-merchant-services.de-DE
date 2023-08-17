@@ -18,7 +18,7 @@ Einige Daten zu Bestellungen und Auszahlungen stehen Ihnen zur Verfügung, damit
 
 ## Mit ERP-System abstimmen
 
-Sie können Adobe Commerce-Finanzberichte mit Ihrem Enterprise Resource Planning (ERP)-System abstimmen, das keine Adobe ist, indem Sie die Inkrement-ID verwenden, die einer bestimmten Bestellung zugeordnet ist.
+Sie können Adobe Commerce-Finanzberichte mit Ihrem ERP-System (Enterprise Resource Planning) abstimmen, das keine Adobe ist, indem Sie die Inkrement-ID verwenden, die einer bestimmten Bestellung zugeordnet ist.
 
 Wenn Zahlungsdienste die Commerce-Bestellung an PayPal sendet, wird die Inkrement-ID als `custom_id` _und_ im `invoice_id` (die auch eine zufällige Zeichenfolge nach der `increment_id`).
 
@@ -28,7 +28,7 @@ Die `invoice_id` und `custom_id` werden unten in den Details der Händleraktivit
 
 ![`custom_id` im Detail der Handelsaktivität](assets/merchant-activity-ids.png)
 
-`custom_id` und `invoice_id` im Webhook von PayPal:
+`custom_id` und `invoice_id` in den Details im Webhook von PayPal:
 
 ```json
    ...

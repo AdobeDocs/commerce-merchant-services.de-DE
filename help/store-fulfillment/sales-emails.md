@@ -34,7 +34,7 @@ Konfigurieren Sie die Vorlagen für Verkaufs-E-Mails über den Administrator: **
 </thead>
 <tbody><tr>
 <td><strong>Asynchrones Senden</strong></td>
-<td>Deaktivieren Sie diese Funktion. Der asynchrone E-Mail-Versand wird nicht unterstützt. Um die schnellste Kommunikations- und Reaktionszeit für die Store-Erfassung zu erhalten, senden Sie E-Mails sofort, anstatt sie stapelweise zu senden. </td>
+<td>Deaktivieren Sie diese Funktion. Der asynchrone E-Mail-Versand wird nicht unterstützt. Um die schnellste Kommunikations- und Reaktionszeit für die Store-Abholung zu erhalten, senden Sie E-Mails sofort, anstatt sie stapelweise zu senden. </td>
 <td>Store-Ansicht</td>
 <td>Nein</td>
 </tr>
@@ -59,7 +59,7 @@ Konfigurieren Sie die Vorlagen für Verkaufs-E-Mails über den Administrator: **
 </tr>
 <tr>
 <td><strong>Orderbereit für Abruf-E-Mail-Absender</strong></td>
-<td>Die Absenderkennung, die beim Senden der E-Mail-Benachrichtigung verwendet wird.</td>
+<td>Die beim Senden der E-Mail-Benachrichtigung verwendete Absenderkennung.</td>
 <td>Store-Ansicht</td>
 <td>Nein</td>
 </tr>
@@ -114,7 +114,7 @@ Konfigurieren Sie die Vorlagen für Verkaufs-E-Mails über den Administrator: **
 </tr>
 <tr>
 <td><strong>Die Bestellung wurde vom E-Mail-Absender erfasst</strong></td>
-<td>Die Absenderkennung, die beim Senden der E-Mail-Benachrichtigung verwendet wird.</td>
+<td>Die beim Senden der E-Mail-Benachrichtigung verwendete Absenderkennung.</td>
 <td>Store-Ansicht</td>
 <td>Nein</td>
 </tr>
@@ -136,7 +136,7 @@ Konfigurieren Sie die Vorlagen für Verkaufs-E-Mails über den Administrator: **
 <td>Nein</td>
 </tr>
 <tr>
-<td><strong>Die Methode zum Kopieren einer E-Mail wurde erfasst</strong></td>
+<td><strong>Die Methode zum Kopieren einer E-Mail wurde erfasst.</strong></td>
 <td>Die zu verwendende E-Mail-Copy-Methode - Carbon Copy.</td>
 <td>Store-Ansicht</td>
 <td>Nein</td>
@@ -163,7 +163,7 @@ Konfigurieren Sie die Vorlagen für Verkaufs-E-Mails über den Administrator: **
 <tr>
 <td><strong>Verspäteter E-Mail-Absender bestellen
 </strong></td>
-<td>Die Absenderkennung, die beim Senden der E-Mail-Benachrichtigung verwendet wird.</td>
+<td>Die beim Senden der E-Mail-Benachrichtigung verwendete Absenderkennung.</td>
 <td>Store-Ansicht</td>
 <td>Nein</td>
 </tr>
@@ -179,7 +179,7 @@ Konfigurieren Sie die Vorlagen für Verkaufs-E-Mails über den Administrator: **
 <td>Nein</td>
 </tr>
 <tr>
-<td><strong>Verspätete E-Mail-Kopie der Bestellung an senden</strong></td>
+<td><strong>Verspätete E-Mail-Kopie an senden</strong></td>
 <td>Eine kommagetrennte Liste von E-Mail-Adressen, an die eine Kopie jeder Benachrichtigung gesendet werden soll.</td>
 <td>Store-Ansicht</td>
 <td>Nein</td>
@@ -207,14 +207,14 @@ Konfigurieren Sie die Vorlagen für Verkaufs-E-Mails über den Administrator: **
 </thead>
 <tbody><tr>
 <td><strong>Aktiviert</strong></td>
-<td>Diese E-Mail wird an den Kunden gesendet, um ihn darüber zu informieren, dass sein Auftrag im Kaufhaus storniert wurde. Legen Sie fest auf <code>No</code> , um die E-Mail-Benachrichtigung zu deaktivieren. Wenn die E-Mail-Vorlage deaktiviert ist, verhindert diese Funktion nicht, dass eine Bestellung abgebrochen wird.</td>
+<td>Diese E-Mail wird an den Kunden gesendet, um ihn darüber zu informieren, dass sein Auftrag im Kaufhaus storniert wurde. Legen Sie <code>No</code> , um die E-Mail-Benachrichtigung zu deaktivieren. Wenn die E-Mail-Vorlage deaktiviert ist, verhindert diese Funktion nicht, dass eine Bestellung abgebrochen wird.</td>
 <td>Store-Ansicht</td>
 <td>Nein</td>
 </tr>
 <tr>
 <td><strong>Bestellung abgebrochen E-Mail-Absender
 </strong></td>
-<td>Die Absenderkennung, die beim Senden der E-Mail-Benachrichtigung verwendet wird.</td>
+<td>Die beim Senden der E-Mail-Benachrichtigung verwendete Absenderkennung.</td>
 <td>Store-Ansicht</td>
 <td>Nein</td>
 </tr>
@@ -257,14 +257,14 @@ Konfigurieren Sie die Vorlagen für Verkaufs-E-Mails über den Administrator: **
 </thead>
 <tbody><tr>
 <td><strong>Aktiviert</strong></td>
-<td>Diese E-Mail wird an den Kunden gesendet, um ihn darüber zu informieren, dass ein Teil seiner Bestellung im Kaufhaus storniert wurde. Legen Sie fest auf <code>No</code> , um die E-Mail-Benachrichtigung zu deaktivieren. Wenn die E-Mail-Vorlage deaktiviert ist, wird eine teilweise Stornierung einer Bestellung nicht verhindert.</td>
+<td>Diese E-Mail wird an den Kunden gesendet, um ihn darüber zu informieren, dass ein Teil seiner Bestellung im Kaufhaus storniert wurde. Legen Sie <code>No</code> , um die E-Mail-Benachrichtigung zu deaktivieren. Wenn die E-Mail-Vorlage deaktiviert ist, wird eine teilweise Stornierung einer Bestellung nicht verhindert.</td>
 <td>Store-Ansicht</td>
 <td>Nein</td>
 </tr>
 <tr>
 <td><strong>Teilweise stornierter E-Mail-Absender bestellen
 </strong></td>
-<td>Die Absenderkennung, die beim Senden der E-Mail-Benachrichtigung verwendet wird.</td>
+<td>Die beim Senden der E-Mail-Benachrichtigung verwendete Absenderkennung.</td>
 <td>Store-Ansicht</td>
 <td>Nein</td>
 </tr>
@@ -318,13 +318,13 @@ Konfigurieren Sie die Vorlagen für Verkaufs-E-Mails über den Administrator: **
 <td>Nein</td>
 </tr>
 <tr>
-<td><strong>Versand zum Speichern von E-Mail-Empfängern</strong></td>
+<td><strong>E-Mail-Empfänger speichern</strong></td>
 <td>Eine kommagetrennte Liste von E-Mail-Adressen, an die eine Kopie jeder Benachrichtigung gesendet werden soll.</td>
 <td>Store-Ansicht</td>
 <td>Nein</td>
 </tr>
 <tr>
-<td><strong>Email Template</strong></td>
+<td><strong>E-Mail-Vorlage</strong></td>
 <td>Die für die Empfängerbenachrichtigung verwendete E-Mail-Nachrichtenvorlage. Die Integration enthält eine Standardvorlage.</td>
 <td>Store-Ansicht</td>
 <td>Nein</td>

@@ -1,6 +1,6 @@
 ---
 title: Einführung in [!DNL Product Recommendations]
-description: '''[!DNL Product Recommendations] sind ein leistungsstarkes Marketing-Tool, mit dem Sie Konversionen steigern, den Umsatz steigern und die Interaktion mit Käufern fördern können."'
+description: '''[!DNL Product Recommendations] sind ein leistungsstarkes Marketing-Tool, mit dem Sie Konversionen steigern, den Umsatz steigern und die Interaktion mit Kunden fördern können."'
 exl-id: 818ac876-58c9-4c68-975e-53da59ed6b52
 recommendations: noCatalog
 source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
@@ -12,9 +12,9 @@ ht-degree: 0%
 
 # Einführung in [!DNL Product Recommendations]
 
-Produktempfehlungen sind ein leistungsstarkes Marketing-Tool, mit dem Sie Konversionen steigern, den Umsatz steigern und die Interaktion mit Käufern fördern können. Adobe Commerce-Produktempfehlungen basieren auf [Adobe Sensei](https://www.adobe.com/sensei.html), das künstliche Intelligenz und Algorithmen des maschinellen Lernens verwendet, um eine tiefgehende Analyse aggregierter Besucherdaten durchzuführen. Diese Daten führen in Kombination mit Ihrem Adobe Commerce-Katalog zu einem sehr ansprechenden, relevanten und personalisierten Erlebnis.
+Produktempfehlungen sind ein leistungsstarkes Marketing-Tool, mit dem Sie Konversionen steigern, den Umsatz steigern und die Interaktion mit Kunden fördern können. Adobe Commerce-Produktempfehlungen basieren auf [Adobe Sensei](https://www.adobe.com/sensei.html), das künstliche Intelligenz und Algorithmen des maschinellen Lernens verwendet, um eine tiefgehende Analyse aggregierter Besucherdaten durchzuführen. Diese Daten führen in Kombination mit Ihrem Adobe Commerce-Katalog zu einem sehr ansprechenden, relevanten und personalisierten Erlebnis.
 
-Produktempfehlungen werden in der Storefront als Einheiten mit Beschriftungen angezeigt, wie z. B. &quot;Kunden, die dieses Produkt angesehen haben, haben es auch angesehen&quot;. Sie können Empfehlungen in Ihren Store-Ansichten direkt über den Adobe Commerce-Administrator erstellen, verwalten und bereitstellen.
+Produktempfehlungen werden in der Storefront als Einheiten mit Beschriftungen angezeigt, z. B. &quot;Kunden, die dieses Produkt angesehen haben, haben es auch angesehen&quot;. Sie können Empfehlungen in Ihren Store-Ansichten direkt über den Adobe Commerce-Administrator erstellen, verwalten und bereitstellen.
 
 Wenn Ihre Storefront mit PWA Studio implementiert ist, lesen Sie den Abschnitt [PWA-Dokumentation](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). Wenn Sie eine benutzerdefinierte Frontend-Technologie wie React oder Vue JS verwenden, erfahren Sie, wie Sie [integrieren](headless.md) [!DNL Product Recommendations] in Ihre Headless-Storefront.
 
@@ -24,7 +24,7 @@ Wenn Ihre Storefront mit PWA Studio implementiert ist, lesen Sie den Abschnitt [
 
 ## Datenschutz
 
-Die Datenerfassung für die Zwecke von Produktempfehlungen umfasst keine persönlich identifizierbaren Informationen (PII). Außerdem werden alle Benutzer-IDs wie Cookie-IDs und IP-Adressen streng anonymisiert. Weitere Informationen finden Sie unter [Datenschutzrichtlinie für Adoben](https://www.adobe.com/privacy/policy.html).
+Die Datenerfassung für die Zwecke von Produktempfehlungen umfasst keine persönlich identifizierbaren Informationen (PII). Außerdem werden alle Benutzer-IDs wie Cookie-IDs und IP-Adressen streng anonymisiert. Weitere Informationen finden Sie unter [Datenschutzrichtlinie für Adobe](https://www.adobe.com/privacy/policy.html).
 
 ## Produktempfehlungen im Vergleich zu Produktbeziehungen
 
@@ -32,7 +32,7 @@ Angesichts der sich ständig ändernden Komplexität des Online-Shopping ist das
 
 Mit Produktempfehlungen können Sie:
 
-- Wählen Sie aus neun verschiedenen intelligenten Empfehlungstypen, die auf den folgenden Bereichen basieren: Kaufbasierte, artikelbasierte, populationsbasierte, Trend- und Ähnlichkeitsbasierte
+- Wählen Sie aus neun verschiedenen intelligenten Empfehlungstypen, die auf den folgenden Bereichen basieren: Käufer-basiert, artikelbasiert, Beliebtheitsbasiert, Trendbildung und Ähnlichkeitsbasiert.
 - Verwenden Sie Verhaltensdaten, um Empfehlungen auf der gesamten Storefront-Journey des Käufers zu personalisieren.
 - Messen Sie Schlüsselmetriken, die für jede Empfehlung relevant sind, damit Sie die Auswirkungen Ihrer Empfehlungen verstehen können.
 

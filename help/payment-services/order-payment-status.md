@@ -27,17 +27,17 @@ Sie können Bestellungsstatustransaktionen im .csv-Dateiformat herunterladen, um
 
 >[!NOTE]
 >
->Sie können keine Finanzberichte anzeigen, wenn Sie [integrierte und aktivierte Livemodus](production.md#enable-live-payments) für [!DNL Payment Services].
+>Wenn Sie keine [integrierte und aktivierte Livemodus](production.md#enable-live-payments) für [!DNL Payment Services].
 
 ## Datenvisualisierung zum Bestellstatus
 
-Die Visualisierung der Daten zum Bestellstatus ist auf der Zahlungsdienst-Startseite verfügbar. Es handelt sich um eine visuelle Darstellung des aggregierten tägliche Zahlungsstatus aus der detaillierten Tabelle [Berichtansicht zum Bestellstatus](#order-payment-status-report-view).
+Die Visualisierung der Daten zum Bestellstatus ist auf der Zahlungsdienst-Startseite verfügbar. Es handelt sich um eine visuelle Darstellung des aggregierten tägliche Zahlungsstatus aus der detaillierten Tabelle. [Berichtansicht zum Bestellstatus](#order-payment-status-report-view).
 
 Im _Admin_ Seitenleiste, navigieren Sie zu **Vertrieb** > **Zahlungsdienste** um die Datenvisualisierung anzuzeigen [Grafik des Zahlungsstatus](#statuses-information).
 
 ![Payout-Datenvisualisierung in Admin](assets/orderpayment-dataviz.png){zoomable=yes}
 
-Klicken **Bericht anzeigen** zur detaillierten Tabelle navigieren [Berichtansicht zum Bestellstatus](#order-payment-status-report-view).
+Klicks **Bericht anzeigen** zur detaillierten Tabelle navigieren [Berichtansicht zum Bestellstatus](#order-payment-status-report-view).
 
 ### Zeitrahmen für Status anpassen
 
@@ -58,10 +58,10 @@ Die Datenvisualisierung zum Bestellstatus enthält die folgenden Informationen.
 
 | Daten | Beschreibung |
 | ------------ | -------------------- |
-| [!UICONTROL Orders] | Umfang der Bestellungen im angegebenen Zeitrahmen; Daten auf der Y-Achse (links) |
+| [!UICONTROL Orders] | Datumsbereich für Bestellungen im angegebenen Zeitrahmen; Daten auf der Y-Achse (links) |
 | Datumsbereich | Datumsbereich für den angegebenen Zeitraum; Daten auf der X-Achse (unten) |
-| Autorisiert | Auftrag |
-| Beantragte Aufnahme | Beantragte Aufnahme zur Bestellung |
+| Autorisiert | Auftrag genehmigt |
+| Beantragte Aufnahme | Beantragte Aufnahme |
 | Erfassung bestätigt | Auftragserfassung abgeschlossen |
 | Partielle Erfassung | Teilweise erfasste Reihenfolge |
 | Aufnahme fehlgeschlagen | Auftragserfassung fehlgeschlagen |
@@ -73,11 +73,11 @@ Die Übersicht über den Bestellstatus-Bericht finden Sie in der Statusansicht d
 
 Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Order payment status]** um die detaillierte Tabellenansicht des Bestellstatus-Berichts anzuzeigen.
 
-![Bestellstatustransaktionen in der Admin-Konsole](assets/orders-report-data.png)
+![Bestellstatusvorgänge im Admin](assets/orders-report-data.png)
 
 Sie können diese Ansicht entsprechend den Abschnitten in diesem Thema konfigurieren, um die gewünschten Daten am besten darzustellen.
 
-Sie können [Download-Payload-Transaktionen](#download-order-payment-statuses) im .csv-Dateiformat zur Verwendung in bestehenden Buchhaltungs- oder Auftragsverwaltungssoftware.
+Sie können [Download-Auszahlungstransaktionen](#download-order-payment-statuses) im .csv-Dateiformat zur Verwendung in bestehenden Buchhaltungs- oder Auftragsverwaltungssoftware.
 
 >[!NOTE]
 >
@@ -128,7 +128,7 @@ Datenquellenauswahlen funktionieren wie folgt:
 So wählen Sie die Datenquelle für Ihre [!UICONTROL Order Payment Status] Bericht:
 
 1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
-1. Klicken **[!UICONTROL Data source]** und wählen Sie _[!UICONTROL Live]_oder_[!UICONTROL Sandbox]_.
+1. Klicks **[!UICONTROL Data source]** und wählen _[!UICONTROL Live]_oder_[!UICONTROL Sandbox]_.
 
    Die Berichtsergebnisse werden basierend auf der ausgewählten Datenquelle neu generiert.
 
@@ -180,7 +180,7 @@ Sie können auch manuell eine Aktualisierung der Berichtdaten zum Bestellzahlung
 1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
 1. Klicken Sie auf _Aktualisieren_ Symbol (![Aktualisierungssymbol](assets/refresh-button-med.png)).
 
-   Die Daten des Berichts zum Bestellstatus werden aktualisiert, und *[!UICONTROL Update complete]* -Bestätigung angezeigt und die neuesten Informationen im Raster vorhanden sind.
+   Die Daten des Berichts über den Bestellstatus werden aktualisiert, und *[!UICONTROL Update complete]* -Bestätigung angezeigt und die neuesten Informationen im Raster vorhanden sind.
 
 ### Streitigkeiten anzeigen
 
@@ -200,7 +200,7 @@ Sie können eine CSV-Datei mit allen Status herunterladen, die im Raster der Bes
 
 1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
 1. Wenn Sie Status für einen anderen Zeitraum als die letzten 30 Tage anzeigen möchten, [Datumsbereich-Zeitrahmen für Ihre Status anpassen](#customize-dates-timeframe).
-1. Klicken Sie auf _Download_ (![Download-Symbol](assets/icon-download.png)).
+1. Klicken Sie auf _Herunterladen_ (![Download-Symbol](assets/icon-download.png)).
 
 Ihr Bestellzahlstatus wird im .csv -Format heruntergeladen.
 
@@ -242,5 +242,5 @@ Berichte zum Bestellstatus enthalten die folgenden Informationen.
 | [!UICONTROL Disputes] | Stand der Streitigkeiten über einen Beschluss (Informationen aus Streitigkeiten und Chargebacks)—*[!UICONTROL Open]*, *[!UICONTROL Waiting for buyer response]*, *[!UICONTROL Waiting for seller response]*, *[!UICONTROL Under review]*, *[!UICONTROL Resolved]* oder *[!UICONTROL Other]* |
 | [!UICONTROL Payment Method] | Zahlungsmethode, die bei einer Bestellung im Commerce-Geschäft verwendet wird |
 | [!UICONTROL Website] | Website, von der aus die Bestellung aufgegeben wurde |
-| [!UICONTROL Store] | Store, aus dem die Bestellung aufgegeben wurde |
+| [!UICONTROL Store] | Store, in dem die Bestellung aufgegeben wurde |
 | [!UICONTROL Store View] | Store-Ansicht, aus der die Bestellung aufgegeben wurde |

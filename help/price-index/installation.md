@@ -66,10 +66,10 @@ Nach dem Upgrade sind drei neue Feeds verfügbar:
    bin/magento saas:resync --feed=prices
    ```
 
-Führen Sie die oben genannten Indexer nach Bedarf manuell aus. Andernfalls werden die Daten im standardmäßigen Synchronisierungsprozess aktualisiert. Mehr über [Katalogsynchronisierung](../landing/catalog-sync.md) Dienst.
+Führen Sie die oben genannten Indexer nach Bedarf manuell aus. Andernfalls werden die Daten im standardmäßigen Synchronisierungsprozess aktualisiert. Mehr über [Katalogsynchronisierung](../landing/catalog-sync.md) -Dienst.
 
 Benutzer von Luma und Adobe Commerce Core GraphQL können die `catalog-adapter` -Modul, das Luma- und Core-GraphQl-Kompatibilität bietet und den PHP Core-Preisindex deaktiviert.
-So verwenden Sie die `catalog-adapter` Modul, [!DNL Live Search] und [!DNL Catalog Service] muss zuerst installiert und konfiguriert werden. Befolgen Sie die [Installieren [!DNL Live Search]](../live-search/install.md) und [Installation des Katalogdienstes](../catalog-service/installation.md) Anweisungen vor dem Fortfahren.
+So verwenden Sie die `catalog-adapter` -Modul, [!DNL Live Search] und [!DNL Catalog Service] muss zuerst installiert und konfiguriert werden. Befolgen Sie die [Installieren [!DNL Live Search]](../live-search/install.md) und [Installation des Katalogdienstes](../catalog-service/installation.md) Anweisungen vor dem Fortfahren.
 
 Gehen Sie wie folgt vor, um die Live-Suche und den Katalog-Adapter zu konfigurieren [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html?lang=en) Anweisungen.
 

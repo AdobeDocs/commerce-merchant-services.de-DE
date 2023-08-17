@@ -1,6 +1,6 @@
 ---
 title: Entwicklung von Recommendations-Administratoren
-description: Eine Übersicht über die Architektur und Entwicklungsfunktionen von Recommendations.
+description: Eine Übersicht über die Architektur und Entwicklungsfunktionen von Product Recommendations.
 exl-id: caef5e0c-dd69-4846-8f85-b1c5e1c6a28f
 source-git-commit: e74bc4aeaa154e751f8d986e0426dd19d55d335e
 workflow-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Entwicklung von Recommendations-Administratoren
 
-Product Recommendations ist ein leistungsstarkes Marketing-Tool, mit dem Sie Konversionen steigern, den Umsatz steigern und die Interaktion mit Kunden fördern können. Produkt-Recommendations wird auf der Storefront in Form von Einheiten wie &quot;Kunden, die dieses Produkt angesehen haben, haben auch angesehen&quot;, &quot;Kunden, die dieses Produkt gekauft haben, haben auch gekauft&quot;, &quot;Für Sie empfohlen&quot;usw. angezeigt. Adobe Commerce Product Recommendations basiert auf [Adobe Sensei](https://www.adobe.com/sensei.html), das künstliche Intelligenz und Algorithmen für maschinelles Lernen verwendet, um eine tiefgehende Analyse aggregierter Kundendaten durchzuführen. Diese Daten führen in Kombination mit Ihrem Commerce-Katalog zu sehr ansprechenden, relevanten und personalisierten Erlebnissen für den Käufer.
+Product Recommendations ist ein leistungsstarkes Marketing-Tool, mit dem Sie Konversionen steigern, den Umsatz steigern und die Interaktion mit Kunden fördern können. Produkt-Recommendations wird auf der Storefront in Form von Einheiten wie &quot;Kunden, die dieses Produkt angesehen haben, haben auch angesehen&quot;, &quot;Kunden, die dieses Produkt gekauft haben, haben auch gekauft&quot;, &quot;Für Sie empfohlen&quot;usw. angezeigt. Adobe Commerce Product Recommendations basiert auf [Adobe Sensei](https://www.adobe.com/sensei.html), das künstliche Intelligenz und Algorithmen des maschinellen Lernens verwendet, um eine tiefgehende Analyse aggregierter Kundendaten durchzuführen. Diese Daten führen in Kombination mit Ihrem Commerce-Katalog zu sehr ansprechenden, relevanten und personalisierten Erlebnissen für den Käufer.
 
 >[!NOTE]
 >

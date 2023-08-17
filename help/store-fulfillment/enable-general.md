@@ -45,7 +45,7 @@ Verwalten Sie Einstellungen für Store Fulfillment-Dienste über [!DNL Commerce 
 <tbody>
 <tr>
 <td><strong>[!UICONTROL Price]</strong></td>
-<td>Der Preis, den Sie dem Kunden für die In-store-Abholung berechnen. Der Standardwert ist null.</td>
+<td>Der Preis, den Sie dem Kunden für die Abholung im Geschäft berechnen. Der Standardwert ist null.</td>
 <td>Webseite</td>
 <td>Nein</td>
 </tr>
@@ -165,7 +165,7 @@ Da die Protokolldatei der Anwendung schnell wachsen kann, aktivieren Sie bei Bed
 <tbody>
 <tr>
 <td><strong>[!UICONTROL Debug Mode]</strong></td>
-<td>Der Debug-Modus wird verwendet, um die protokollierte Aktivität innerhalb der Integration zu erhöhen. Wenn diese Option deaktiviert ist, werden keine Debugging-Informationen protokolliert. Wenn diese Option aktiviert ist, werden alle Debugging-Informationen protokolliert <br></br>Alle protokollierten Daten finden Sie in der Datei: <pre>var/log/walmart-bopis.log</pre>
+<td>Der Debug-Modus wird verwendet, um die protokollierte Aktivität innerhalb der Integration zu erhöhen. Wenn diese Option deaktiviert ist, werden keine Debugging-Informationen protokolliert. Bei Aktivierung werden alle Debugging-Informationen protokolliert <br></br>Alle protokollierten Daten finden Sie in der Datei: <pre>var/log/walmart-bopis.log</pre>
 <td>Global</td>
 <td>Nein</td>
 </tr>
@@ -196,7 +196,7 @@ Details zu Vorgängen zur Bestellsynchronisierung finden Sie im Dashboard Wartes
 </tr>
 <tr>
 <td><strong>[!UICONTROL Enable Error Notification Email]</strong></td>
-<td>Aktivieren Sie Fehlerbenachrichtigungen, um eine E-Mail zu erhalten, wenn die [!UICONTROL Retry Critical Error Threshold] wird für eine Bestellung erreicht. Die Benachrichtigung enthält alle verfügbaren Details zum Fehler.</td>
+<td>Aktivieren Sie Fehlerbenachrichtigungen, um eine E-Mail zu erhalten, wenn die Variable [!UICONTROL Retry Critical Error Threshold] wird für eine Bestellung erreicht. Die Benachrichtigung enthält alle verfügbaren Details zum Fehler.</td>
 <td>Global</td>
 <td>Nein</td>
 </tr>
@@ -286,7 +286,7 @@ Konfigurieren Sie die Versandoptionen Store-Erfüllung , die die Verfügbarkeit 
 <tbody>
 <tr>
 <td><strong>[!UICONTROL Enable Ship From Store]</strong></td>
-<td>Aktiviert oder deaktiviert die Option Home Delivery in Ihren Händlern. Wenn diese Option aktiviert ist, werden Ihre Händlerstätten zusammen mit anderen zugewiesenen Quellen im Lager betrachtet, das mit Ihrer Website verknüpft ist.<br></br>In standardmäßigen Inventory management-Diensten wird die [!DNL Ship from Store] ist eine Option, die inhärent ist und nicht deaktiviert werden kann. Mit der Lösung Store Fulfillment können Sie sie aktivieren oder deaktivieren.<br></br>Sie können diese Einstellung für jeden Händler anpassen.</td>
+<td>Aktiviert oder deaktiviert die Option Home Delivery in Ihren Händlern. Wenn diese Option aktiviert ist, werden Ihre Händlerstätten zusammen mit anderen zugewiesenen Quellen im Lager betrachtet, das mit Ihrer Website verknüpft ist.<br></br>In standardmäßigen Inventory management-Diensten wird die [!DNL Ship from Store] ist eine Option, die inhärent ist und nicht deaktiviert werden kann. Mit der Lösung Store Fulfillment können Sie sie aktivieren oder deaktivieren.<br></br>Sie können diese Einstellung für jeden Händler-Standort und jedes Produkt anpassen.</td>
 <td>Global</td>
 <td>Nein</td>
 </tr>
@@ -324,13 +324,13 @@ Konfigurieren Sie die Einstellungen für das Benutzerkonto der Store Fulfillment
 </tr>
 <tr>
 <td><strong>[!UICONTROL Lockout Time (minutes)]</strong></td>
-<td>Anzahl der Minuten, in denen ein Konto nach einem Anmeldefehler gesperrt werden soll.</td>
+<td>Anzahl der Minuten, in denen ein Konto nach einem Anmeldefehler gesperrt werden soll</td>
 <td>Global</td>
 <td>Nein</td>
 </tr>
 <tr>
 <td><strong>[!UICONTROL Force Password Change]</strong></td>
-<td><em>[!UICONTROL Yes]</em>: Der Benutzer muss nach der Kontoeinrichtung sein Kennwort ändern.<br></br><em>[!UICONTROL No]</em>: empfiehlt dem Benutzer, das Kennwort nach der Kontoeinrichtung zu ändern.</td>
+<td><em>[!UICONTROL Yes]</em>: Erfordert vom Benutzer, sein Kennwort nach der Kontoeinrichtung zu ändern.<br></br><em>[!UICONTROL No]</em>: empfiehlt dem Benutzer, das Kennwort nach der Kontoeinrichtung zu ändern.</td>
 <td>Global</td>
 <td>Nein</td>
 </tr>
@@ -400,7 +400,7 @@ Mit der Bereitstellungsmethode im Geschäft kann der Kunde eine Quelle auswähle
 </thead>
 <tbody><tr>
 <td><strong>Startseite - Versandtitel</strong></td>
-<td>Gibt den Titel an, der für die Option "Home Delivery"im Produkt-, Warenkorb- und Checkout-Bereich angezeigt werden soll. Der Home-Versand bezieht sich auf die standardmäßigen Versandfunktionen von Adobe Commerce - von einem Warehouse über einen Frachtführer oder direkt auf die vom Kunden bereitgestellte Lieferadresse. </br></br>Dieses Etikett wirkt sich nicht auf die Versandmethodenbeschriftungen für den ausgewählten Versandunternehmen aus.</td>
+<td>Gibt den Titel an, der für die Option "Home Delivery"in den Bereichen Produkt, Warenkorb und Checkout angezeigt werden soll. Der Home-Versand bezieht sich auf die standardmäßigen Versandfunktionen von Adobe Commerce - von einem Warehouse über einen Frachtführer oder direkt auf die vom Kunden bereitgestellte Lieferadresse. </br></br>Dieses Etikett wirkt sich nicht auf die Versandmethodenbeschriftungen für den ausgewählten Versandunternehmen aus.</td>
 <td>Store-Ansicht</td>
 <td>Nein</td>
 </tr>
@@ -435,8 +435,8 @@ Mit der Bereitstellungsmethode im Geschäft kann der Kunde eine Quelle auswähle
 <td>Nein</td>
 </tr>
 <tr>
-<td><strong>Anweisungen zur In-Store-Abholung</strong></td>
-<td>Wenn eine Bestellung in Ihren Einzelhandelsgeschäften abgeholt werden kann, wird der Kunde per E-Mail benachrichtigt. Wenn der Kunde ausgewählt hat [!DNL In-Store Pickup] während des Auscheckens können Sie hier die Pickup-Anweisungen anpassen. </br></br>Diese Anweisungen werden global festgelegt und gelten für alle Einzelhandelsspeicherorte. Sie können die Anweisungen auch auf der Ebene des Einzelhandelsspeicherorts anpassen.</td>
+<td><strong>Anweisungen zur Abholung im Store</strong></td>
+<td>Wenn eine Bestellung in Ihren Einzelhandelsgeschäften abgeholt werden kann, wird der Kunde per E-Mail benachrichtigt. Wenn der Kunde [!DNL In-Store Pickup] während des Auscheckens können Sie hier die Pickup-Anweisungen anpassen. </br></br>Diese Anweisungen werden global festgelegt und gelten für alle Einzelhandelsspeicherorte. Sie können die Anweisungen auch auf der Ebene des Einzelhandelsspeicherorts anpassen.</td>
 <td>Store-Ansicht</td>
 <td>Nein</td>
 </tr>
@@ -454,7 +454,7 @@ Mit der Bereitstellungsmethode im Geschäft kann der Kunde eine Quelle auswähle
 </tr>
 <tr>
 <td><strong>Geschätzte Zeitbeschriftung für die Abholung</strong></td>
-<td>Zeigt die geschätzte Zeit an, bis eine Bestellung für die Kundenabholung verfügbar ist. Diese Informationen werden Kunden angezeigt, wenn sie einen Einzelhandelsspeicherort für die [!DNL In-Store Pickup] Versandoption. </br></br>Bei der Anpassung dieser Beschriftung können Sie den Code verwenden <code>%1</code> um <strong>Geschätzte Abruf-Vorlaufzeit</strong>. Beispiel:</br></br><code>Ready for Pickup in %1 minutes.</code></br></br>Diese Einstellung gilt für alle Einzelhandelsspeicherorte. Sie können die Vorlaufzeit auch auf der Ebene des Einzelhandelsstandorts anpassen.</td>
+<td>Zeigt die geschätzte Zeit an, bis eine Bestellung für die Kundenabholung verfügbar ist. Diese Informationen werden Kunden angezeigt, wenn sie einen Einzelhandelsspeicherort für die [!DNL In-Store Pickup] Bereitstellungsoption. </br></br>Bei der Anpassung dieser Beschriftung können Sie den Code verwenden <code>%1</code> zum Einfügen Ihrer <strong>Geschätzte Abruf-Vorlaufzeit</strong>. Beispiel:</br></br><code>Ready for Pickup in %1 minutes.</code></br></br>Diese Einstellung gilt für alle Einzelhandelsspeicherorte. Sie können die Vorlaufzeit auch auf der Ebene des Einzelhandelsstandorts anpassen.</td>
 <td>Store-Ansicht</td>
 <td>Nein</td>
 <tr>

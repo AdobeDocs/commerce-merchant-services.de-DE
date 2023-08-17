@@ -15,8 +15,8 @@ Befolgen Sie diese Anweisungen, um die Eigenschaften vorhandener Regeln zu aktua
 
 ## Regel bearbeiten
 
-1. Im *Regeln* -Registerkarte, suchen Sie die Regel im Raster, das Sie bearbeiten möchten, und klicken Sie auf **Mehr** (...) Optionen.
-1. Klicken **Bearbeiten** , um auf den Regeleditor zuzugreifen.
+1. Im *Regeln* -Registerkarte die Regel im Raster suchen, das Sie bearbeiten möchten, und auf **Mehr** (...) Optionen.
+1. Klicks **Bearbeiten** , um auf den Regeleditor zuzugreifen.
 1. Aktualisieren Sie die Bedingungen, Operatoren und Ereignisse nach Bedarf.
 1. Aktualisieren Sie die Felder für Name, Start- und Enddatum sowie Beschreibung nach Bedarf. Alle Regelnamen müssen eindeutig sein.
 1. Testen Sie die Regel.
@@ -25,5 +25,5 @@ Die Regel wird der Liste im Arbeitsbereich &quot;Regeln&quot;hinzugefügt. Obwoh
 
 ## Regel löschen
 
-1. Im *Regeln* -Registerkarte, suchen Sie die Regel im Raster, das Sie bearbeiten möchten, und klicken Sie auf **Mehr** (...) Optionen.
-1. Klicken **Löschen**.
+1. Im *Regeln* -Registerkarte die Regel im Raster suchen, das Sie bearbeiten möchten, und auf **Mehr** (...) Optionen.
+1. Klicks **Löschen**.

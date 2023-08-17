@@ -45,7 +45,7 @@ Mit dem API-Mesh können Benutzer externe Datenquellen nutzen, um Ihre Adobe Com
 ### Ebenenpreise aktivieren
 
 In diesem Beispiel wird der API-Mesh verwendet, um die Ebenenpreise in Adobe Commerce zu aktivieren.
-Ersetzen Sie die `name `, `endpoint`und `x-api-key` -Werte.
+Ersetzen Sie die `name `, `endpoint`, und `x-api-key` -Werte.
 
 ```json
 {
@@ -160,7 +160,7 @@ query {
 
 ### Entitäts-ID abrufen
 
-Dieses Mesh hängt die `entityId` zur ProductView-Benutzeroberfläche. Ersetzen Sie die `name `, `endpoint`und `x-api-key` -Werte.
+Dieses Gitter hängt die `entityId` zur ProductView-Benutzeroberfläche. Ersetzen Sie die `name `, `endpoint`, und `x-api-key` -Werte.
 
 ```json
 {

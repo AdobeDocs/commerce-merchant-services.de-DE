@@ -27,7 +27,7 @@ Einige Storefront-Seiten beschränken, wo Sie die Empfehlungen platzieren könne
 - Am unteren Rand des Hauptinhalts (Standard): Recommendations wird unter dem Hauptinhaltsbereich und vor allen anderen Inhaltsbausteinen auf der Seite angezeigt, z. B. _Verwandte Produkte_.
 
 ![Empfehlungsplatzierung](assets/storefront-home-page-top.png)
-_Empfehlung oben auf der Startseite_
+_Empfehlung oben auf der Homepage_
 
 ## Empfehlungsbeschriftungen
 
@@ -52,7 +52,7 @@ _Empfehlung oben in den Suchergebnissen_
 
 In der folgenden Tabelle sind die Storefront-Seiten aufgeführt, auf denen Sie Empfehlungen platzieren können, sowie die auf den einzelnen Seiten zulässigen Empfehlungstypen.
 
-| Seite | Platzierungs-Recommendations |
+| Seite | Placement Recommendations |
 |---|---|
 | Startseite | Oben im Hauptinhalt<br>Am unteren Rand des Hauptinhalts (Standard) | Am häufigsten angezeigt<br>Am häufigsten gekauft<br>Am häufigsten zum Warenkorb hinzugefügt<br>Empfohlen für Sie<br>Trends |
 | Kategorie | Oben im Hauptinhalt<br>Am unteren Rand des Hauptinhalts (Standard) | Am häufigsten angezeigt<br>Am häufigsten gekauft<br>Am häufigsten zum Warenkorb hinzugefügt<br>Empfohlen für Sie<br>Trends |

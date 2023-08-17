@@ -20,13 +20,13 @@ Das Gastcheckout-Erlebnis unterscheidet sich vom Adobe-Benutzererlebnis. Wenn ei
 
 ## Angemeldet [!DNL Bolt] account
 
-Wenn eine [!DNL Bolt] -Konto gefunden werden, setzen die Käufer mit ihrer [!DNL Quick Checkout] nahtloses Checkout-Erlebnis:
+Wenn eine [!DNL Bolt] -Konto gefunden werden, setzen die Käufer mit ihrer [!DNL Quick Checkout] nahtloses Auschecken:
 
 1. Geben Sie das einmalige Kennwort (OTP) ein, das an dieses gesendet wird. [!DNL Bolt] E-Mail-Adresse des Kontos oder Mobilgerät, je nach [Benutzereinstellungen in der [!DNL Bolt] account](https://help.bolt.com/shoppers/account/account-settings/#how-to-set-preferred-login-method){target=_blank}.
 
 ![OTP-Popup](assets/new-logo-otp-email.png)
 
-1. Nach der Anmeldung bei [!DNL Bolt] -Konto, werden die Details automatisch hinzugefügt:
+1. Nach der Anmeldung bei Ihrem [!DNL Bolt] -Konto hinzugefügt werden, werden die Details automatisch hinzugefügt:
 
    - Versandinformationen
    - Zahlungsmethode
@@ -43,6 +43,6 @@ Wenn nicht [!DNL Bolt] -Konto gefunden wird, die Käufer mit ihrem standardmäß
 
 - Versand- und Rechnungsinformationen
 - Versandmethode
-- Überprüfungszahlungsmethode
-- Ein Kontrollkästchen erscheint bei [!DNL Bolt] für schnellere Checkouts vor der Bestellung. Der Käufer kann den Geschäftsbedingungen zustimmen, um seine [!DNL Bolt] -Konto.
+- Überprüfungszahlmethode
+- Es wird ein Kontrollkästchen angezeigt, in dem Sie sich registrieren [!DNL Bolt] für schnellere Checkouts vor der Bestellung. Der Käufer kann den Geschäftsbedingungen zustimmen, um seine [!DNL Bolt] -Konto.
 - Der Gastbenutzer gibt die Bestellung auf und kann sich optional in Adobe Commerce registrieren.

@@ -16,9 +16,9 @@ ht-degree: 0%
 
 Sie können die [Anwendungsbereich](https://docs.magento.com/user-guide/configuration/scope.html) für einige Elemente, um mehrere Websites, Stores und Store-Ansichten aufzunehmen:
 
-- [Verwalten von Lagern](https://docs.magento.com/user-guide/catalog/inventory-stock.html) pro Perimeter
+- [Verwalten von Lagern](https://docs.magento.com/user-guide/catalog/inventory-stock.html) Umfang
 
-- Verwalten [!DNL Delivery Methods] pro Perimeter
+- Verwalten [!DNL Delivery Methods] Umfang
 
 Sie können einem Website- oder Store-Bereich ein Lager zuweisen. Aktualisieren Sie dann die Store-Quellen, um verfügbare Bereitstellungsmethoden festzulegen (Startseite, Store-Abruf).
 

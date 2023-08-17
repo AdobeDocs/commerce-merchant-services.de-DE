@@ -1,12 +1,12 @@
 ---
-title: '''[!DNL Live Search] Versionshinweise'
+title: '[!DNL Live Search] Versionshinweise'
 description: "Die neuesten Versionsinformationen für [!DNL Live Search] von Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
 source-git-commit: 3edbbc054fdadfeaa710b8c096db63e0d1961d02
 workflow-type: tm+mt
 source-wordcount: '1390'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 

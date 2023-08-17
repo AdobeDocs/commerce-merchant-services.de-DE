@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # App-Einrichtung
 
-Die Store-Hilfe ist eine Fulfillment-as-a-Service-Plattformanwendung (FaaS), die von Walmart Commerce Technologies unterstützt wird. Das Programm bietet In-Store-Funktionen zur Erfüllung von Aufgaben, die [!DNL buy online, pick up in store] (BOPIS) Bestellungen. Mit der Store-Hilfe können Store-Mitarbeiter sehen, welche Artikel Kunden bestellt haben, die richtigen Artikel schneller auswählen und die ausgeführten Bestellungen für den In-Store- oder Cumulative Pickup-Versand an Kunden einrichten.
+Die Store-Hilfe ist eine Fulfillment-as-a-Service-Plattformanwendung (FaaS), die von Walmart Commerce Technologies unterstützt wird. Das Programm bietet In-Store-Funktionen zur Erfüllung von Aufgaben, die [!DNL buy online, pick up in store] Bestellungen. Mit der Store-Hilfe können Store-Mitarbeiter sehen, welche Artikel Kunden bestellt haben, die richtigen Artikel schneller auswählen und die ausgeführten Bestellungen für den In-Store- oder Cumulative Pickup-Versand an Kunden einrichten.
 
-Die Store-Hilfe-App empfängt alle Bestellungen- und Kundeninformationen - von Bestelldetails bis zur Abholung von Zeiten - und stellt die Daten über Mobilgeräte für die Online-Speicherung von Assoziationen zur Verfügung. Die App enthält [!UICONTROL Pick], [!UICONTROL Stage], [!UICONTROL Handoff]und [!UICONTROL Orders] -Module zur Unterstützung von Store-Zuordnungen zu Fulfillment-Aktivitäten wie den folgenden:
+Die Store-Hilfe-App empfängt alle Bestellungen- und Kundeninformationen - von Bestelldetails bis zur Abholung von Zeiten - und stellt die Daten über Mobilgeräte für die Online-Speicherung von Assoziationen zur Verfügung. Die App enthält [!UICONTROL Pick], [!UICONTROL Stage], [!UICONTROL Handoff], und [!UICONTROL Orders] -Module zur Unterstützung von Store-Zuordnungen zu Fulfillment-Aktivitäten wie den folgenden:
 
-- Weisen Sie Lieferdaten und -zeiten der Bestellung zu.
+- Datum und Uhrzeit des Bestellversands zuweisen.
 - Erhalten Sie Benachrichtigungen von Kunden, wenn sie zur Bestellabnahme eintreffen.
 - Staging-Bestellungen für die Übergabe an Kunden.
 - Verfolgen Sie den Bestellstatus für alle Bestellungen an ihren zugewiesenen Speicherorten.
@@ -31,7 +31,7 @@ Die Store-Hilfe-App empfängt alle Bestellungen- und Kundeninformationen - von B
 
 Die Store-Hilfe-App erfordert zwei Arten von Konfiguration:
 
-- Adobe Commerce-Systemeinstellungen auf [Verwalten von Benutzerkonten, Benutzerrollen, Ressourcenberechtigungen](user-setup.md)und [die Automarken- und Modellauswahlen, die den Kunden während des Eincheckvorgangs zur Verfügung stehen](check-in-experience-setup.md).
+- Systemeinstellungen von Adobe Commerce Admin auf [Verwalten von Benutzerkonten, Benutzerrollen, Ressourcenberechtigungen](user-setup.md), und [die Automarken- und Modellauswahlen, die den Kunden während des Eincheckvorgangs zur Verfügung stehen](check-in-experience-setup.md).
 
 - Frontend-Konfigurationseinstellungen zum Anpassen der Benutzeroberfläche der Store-Hilfe-App und anderer Einstellungen, darunter:
 
@@ -53,7 +53,7 @@ Die Store-Hilfe-App erfordert zwei Arten von Konfiguration:
 
    - **Benachrichtigungen einchecken**—Geben Sie an, ob eine Push-Benachrichtigung während des Eincheckvorgangs für die Bestellabholung nach dem Einchecken gesendet werden soll, nachdem die Wartezeit des Kunden einen bestimmten Zeitraum überschreitet. Oder deaktivieren Sie die Benachrichtigung.
 
-   - **Übergabe**—Aktivieren Sie optionale Prozesse, wenn Store Associate die Bestellung an den Kunden bereitstellt, z. B. eine Kundenunterschrift erforderlich ist oder die Zuordnung auffordert, die Kunden-ID zu überprüfen.
+   - **Übergabe-Prozess**—Aktivieren Sie optionale Prozesse, wenn Store Associate die Bestellung an den Kunden bereitstellt, z. B. eine Kundenunterschrift erforderlich ist oder die Zuordnung zur Prüfung der Kunden-ID auffordert.
 
    - **Elementabweisung bei Übergabe aktivieren**- Ermöglichen Sie Kunden, während der Bestellübergabe Bestellartikel zurückzugeben oder abzubrechen.
 

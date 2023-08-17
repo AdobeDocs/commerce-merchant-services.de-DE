@@ -26,7 +26,7 @@ Die Zielgruppe für dieses Handbuch sind E-Commerce-Manager, technische Direktor
 
 ### E-Commerce-Manager und technische Direktoren
 
-Dieses Handbuch hilft Kunden in diesen Rollen, die [!DNL Quick Checkout] Journey, die Wichtigkeit eines nahtlosen Checkout-Erlebnisses und wie Sie die Verwendung dieser Erweiterung für Adobe Commerce am besten planen und vorbereiten.
+Dieses Handbuch hilft Kunden in diesen Rollen, die [!DNL Quick Checkout] Journey, die Wichtigkeit eines nahtlosen Checkout-Erlebnisses und wie Sie die Verwendung dieser Erweiterung für Adobe Commerce am besten planen und vorbereiten können.
 
 ### Betriebs- und Entwicklungsteams
 

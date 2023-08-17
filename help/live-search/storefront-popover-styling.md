@@ -1,6 +1,6 @@
 ---
 title: "Stile [!DNL Popover] Elemente"
-description: "Technische Hinweise zur Anpassung der [!DNL Live Search storefront popover]"
+description: "Technische Hinweise zum Anpassen der [!DNL Live Search storefront popover]"
 exl-id: 033049f2-976e-4299-b026-333ac4b481a3
 source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Formatierung [!DNL Popover] Elemente
 
-Die [[!DNL storefront popover]](storefront-popover.md) zeigt immer das Produkt an `name` und `price`und die Feldauswahl nicht konfigurierbar ist. Allerdings [!DNL popover] -Elemente können mit CSS-Klassen formatiert werden. Beispielsweise ändern die folgenden Deklarationen die Hintergrundfarbe der [!DNL popover] Container und Fußzeile.
+Die [[!DNL storefront popover]](storefront-popover.md) zeigt immer das Produkt an `name` und `price`und die Feldauswahl nicht konfigurierbar ist. Allerdings [!DNL popover] -Elemente können mithilfe von CSS-Klassen formatiert werden. Beispielsweise ändern die folgenden Deklarationen die Hintergrundfarbe der [!DNL popover] Container und Fußzeile.
 
 ```css
 .livesearch.popover-container {
@@ -23,7 +23,7 @@ Die [[!DNL storefront popover]](storefront-popover.md) zeigt immer das Produkt a
 }
 ```
 
-## Container-Sichtbarkeit
+## Behälteranzeige
 
 Die übergeordnete Komponente der `.livesearch.popover-container` is `.search-autocomplete`.  Die `.active` -Klasse gibt die Sichtbarkeit des Containers an. Die `.active` -Klasse wird bedingt hinzugefügt, wenn die [!DNL popover] ist offen.
 
@@ -45,7 +45,7 @@ Die folgenden Klassenselektoren können verwendet werden, um den Container und d
 * `.livesearch.product-name`
 * `.livesearch.product-price`
 
-### Container-Klassenauswahl
+### Container-Klassen-Selektoren
 
 #### .livesearch.popover-container
 
@@ -75,7 +75,7 @@ Die folgenden Klassenselektoren können verwendet werden, um den Container und d
 
 ## Arbeiten mit einem geänderten Design {#working-with-modified-theme}
 
-Die [!DNL storefront popover] kann mit einer benutzerdefinierten [Design](https://developer.adobe.com/commerce/frontend-core/guide/themes/) , der die erforderlichen Dateien von *Luma*. Die `top.search` im `header-wrapper` des `Magento_Search` darf nicht geändert werden.
+Die [!DNL storefront popover] kann mit einer benutzerdefinierten [Design](https://developer.adobe.com/commerce/frontend-core/guide/themes/) , der die erforderlichen Dateien von *Luma*. Die `top.search` -Block im `header-wrapper` des `Magento_Search` darf nicht geändert werden.
 
 ```html
 <referenceContainer name="header-wrapper">
@@ -89,7 +89,7 @@ Die [!DNL storefront popover] kann mit einer benutzerdefinierten [Design](https:
 
 ## Deaktivieren der [!DNL popover]
 
-So deaktivieren Sie die [!DNL popover] und stellen Sie den Standard wieder her [Schnellsuche](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) verwenden, geben Sie den folgenden Befehl ein:
+So deaktivieren Sie die [!DNL popover] und den Standard wiederherstellen [Schnellsuche](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) verwenden, geben Sie den folgenden Befehl ein:
 
 ```bash
 bin/magento module:disable Magento_LiveSearchStorefrontPopover

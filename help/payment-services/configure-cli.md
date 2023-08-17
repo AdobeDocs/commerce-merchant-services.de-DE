@@ -22,7 +22,7 @@ Nach der Installation [!DNL Payment Services]können Sie sie einfach über [inne
 
 Informationen zu den in verwendeten Daten [!DNL Payment Services] Reporting, siehe [Bestellstatusbericht](order-payment-status.md#data-used-in-the-report).
 
-### CRON konfigurieren [!DNL Magento Open Source]
+### Cron konfigurieren on [!DNL Magento Open Source]
 
 Wenn Sie eine `BY SCHEDULE` Indexmodus auf [!DNL Magento Open Source], müssen Sie Cron konfigurieren. Siehe [Cron konfigurieren und ausführen](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html).
 
@@ -52,7 +52,7 @@ Weitere Informationen zum manuellen Ändern des Indexermodus finden Sie unter [I
 
 ### Daten manuell neu indizieren
 
-Sie können Daten manuell neu indizieren, anstatt darauf zu warten, dass sie automatisch vorgenommen werden. Siehe [Neuindizierung](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#reindex){target="_blank"} in [Manage the Indexers](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html){target="_blank"} für weitere Informationen.
+Sie können Daten manuell neu indizieren, anstatt darauf zu warten, dass sie automatisch vorgenommen werden. Siehe [Reindex](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#reindex){target="_blank"} in [Manage the Indexers](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html){target="_blank"} für weitere Informationen.
 
 Wann `BY SCHEDULE` -Modus festgelegt ist, verfolgt das System geänderte Entitäten und der Cron-Auftrag aktualisiert den Index für sie anhand eines festgelegten Zeitplans. Siehe [Ausführen von cron über die Befehlszeile](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html#config-cli-cron-group-run) in [Cron konfigurieren und ausführen](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html)), um zu erfahren, wie Sie die Indexierung manuell mit Cron-Aufträgen durchführen.
 

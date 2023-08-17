@@ -53,7 +53,7 @@ composer require magento/module-visual-product-recommendations
 
 Nach der Installation `magento/product-recommendations` -Modul, müssen Sie die [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) durch Angabe von API-Schlüsseln und Auswahl eines SaaS-Datenspeichers.
 
-Um sicherzustellen, dass der Katalogexport ordnungsgemäß ausgeführt wird, überprüfen Sie, ob die Variable [cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) und [Indexer](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) ausgeführt werden und die `Product Feed` Indexer ist auf `Update by Schedule`.
+Um sicherzustellen, dass der Katalogexport ordnungsgemäß ausgeführt wird, überprüfen Sie, ob die Variable [cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) und [Indexer](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) ausgeführt werden und die `Product Feed` indexer ist auf `Update by Schedule`.
 
 Wenn Sie über API-Schlüssel erfolgreich eine Verknüpfung zu Commerce Services herstellen und den SaaS-Datenraum angeben, beginnt die Katalogsynchronisierung. Sie können dann [verify](verify.md) dass Verhaltensdaten an Ihre Storefront gesendet werden.
 
@@ -107,4 +107,4 @@ Um Product Recommendations über eine Firewall zulassen, fügen Sie `commerce.ad
 
 ## Deinstallieren [!DNL Product Recommendations] {#uninstall}
 
-Bei Bedarf können Sie [uninstall](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html) das Modul &quot;Produktempfehlungen&quot;.
+Bei Bedarf können Sie [uninstall](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html) das Produkt-Recommendations-Modul.

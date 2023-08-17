@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Store-Hilfe-App-Benutzer werden in Adobe Commerce verwaltet. Diese Benutzer interagieren jedoch nicht direkt mit Adobe Commerce. Die Benutzerverwaltung ist in Adobe Commerce konfiguriert, um sichere Verbindungen zwischen Adobe Commerce und der App zu ermöglichen.
 
-Das Benutzermodell &quot;Store Fulfillment App User&quot;ist von anderen Adobe Commerce-Benutzermodellen getrennt. Die App verwaltet ihr eigenes Berechtigungsmodell über Benutzerrollen und Benutzer, die allen oder bestimmten Orten zugewiesen werden können. Die folgenden Berechtigungen werden unterstützt: Abwählreihenfolge, Abgabereihenfolge und Reduzierung der Elementmenge (und Abbruch).
+Das Benutzermodell &quot;Store Fulfillment App User&quot;ist von anderen Adobe Commerce-Benutzermodellen getrennt. Die App verwaltet ihr eigenes Berechtigungsmodell über Benutzerrollen und Benutzer, die allen oder bestimmten Orten zugewiesen werden können. Die folgenden Berechtigungen werden unterstützt: &quot;Reihenfolge auswählen&quot;, &quot;Reihenfolge der Bereitstellung&quot;und &quot;Reduzierung der Elementmenge&quot;(und &quot;Abbruch&quot;).
 
 >[!TIP]
 >

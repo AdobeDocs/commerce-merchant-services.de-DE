@@ -5,7 +5,7 @@ exl-id: a52839fb-2264-4443-83c3-9eaa2ccb6996
 source-git-commit: 91d0713a3e57a3748609b6b4bcb723c21a461519
 workflow-type: tm+mt
 source-wordcount: '573'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -39,11 +39,11 @@ Die sichtbaren Spalten haben ein blaues Häkchen im Menü &quot;Optionen&quot;. 
 
 1. Wenn Ihr Store viele Regeln enthält, können Sie die Regeln nach Status filtern, um die Liste zu verkürzen. Standardmäßig werden in der Liste Regeln alle Regeln angezeigt.
 
-1. Um nur Regeln mit einer bestimmten Statuseinstellung aufzulisten, legen Sie **Status** auf einen der folgenden Werte:
+1. Um nur Regeln mit einer bestimmten Statuseinstellung aufzulisten, legen Sie **Status** auf einen der folgenden Werte zu:
 
    * Alle
    * Aktiv
-   * Inaktiv
+   * Inaaktiv
    * Geplant
 
 ## Regeln nach Namen durchsuchen
@@ -58,7 +58,7 @@ Die Suche findet die entsprechenden Regeln während der Eingabe. Die Zeichenfolg
 Im Detailbereich werden der Regelname, der Status, die Bedingungen und Ereignisse, das Start- und Enddatum, die Beschreibung und das Datum der letzten Bearbeitung angezeigt. Regeln können im Detailbereich aktiviert, bearbeitet und gelöscht werden.
 
 1. Im *Regeln* -Registerkarte, suchen Sie die Regel im Raster, das Sie anzeigen möchten, und klicken Sie auf **Mehr** (...).
-1. Klicken **Details anzeigen**.
+1. Klicks **Details anzeigen**.
 Im Bereich Details anzeigen können Sie Folgendes tun:
 
    * Regel bearbeiten
@@ -74,10 +74,10 @@ Im Bereich Details anzeigen können Sie Folgendes tun:
 | Spalte | Beschreibung |
 |--- |--- |
 | Name | Der Name der Regel. |
-| Zuletzt aktualisiert | Das Datum, an dem die Regel zuletzt aktualisiert wurde. |
+| Zuletzt aktualisiert | Das Datum der letzten Aktualisierung der Regel. |
 | Startdatum | Das Startdatum einer geplanten Regel. |
 | Enddatum | Das Enddatum einer geplanten Regel. |
-| Status | Der farbkodierte Status gibt den aktuellen Status der Regel an. Verwenden Sie das Steuerelement Status oberhalb des Rasters, um Regeln nach Status zu filtern. Werte:<br />Alle Status - Zeigt alle Regeln unabhängig vom Status an.<br />Aktiv (blau) - Zeigt nur aktive Regeln an.<br />Geplant (orange) - zeigt nur geplante Regeln an.<br />Inaktiv (grau) - zeigt nur inaktive Regeln an. |
+| Status | Der farbkodierte Status gibt den aktuellen Status der Regel an. Verwenden Sie das Steuerelement Status oberhalb des Rasters, um Regeln nach Status zu filtern. Werte:<br />Gesamter Status - Zeigt alle Regeln unabhängig vom Status an.<br />Aktiv (blau) - Zeigt nur aktive Regeln an.<br />Geplant (orange) - zeigt nur geplante Regeln an.<br />Inaktiv (grau) - zeigt nur inaktive Regeln an. |
 
 ## Steuerelemente
 
@@ -99,4 +99,4 @@ Im Bereich Details anzeigen können Sie Folgendes tun:
 | Enddatum | Das Datum, an dem die Regel abläuft, falls geplant. |
 | Beschreibung | Eine kurze Beschreibung der Regel. |
 | Letzte Aktualisierung | Datum und Uhrzeit der letzten Aktualisierung der Regel. |
-| Aktiviert | Ein Steuerelement, das den Status der Regel ändert. Optionen: Aktiviert/Deaktiviert |
+| Aktiviert | Ein Steuerelement, das den Status der Regel ändert. Optionen: aktiviert/deaktiviert |

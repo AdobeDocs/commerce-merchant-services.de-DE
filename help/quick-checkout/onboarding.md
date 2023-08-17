@@ -20,12 +20,12 @@ Erste Schritte mit der Verwendung von [!DNL Quick Checkout] Für die Adobe Comme
 1. [Erstellen Sie ein Produktions- oder Sandbox-Handelskonto mit [!DNL Bolt]](#create-account-with-bolt). Geben Sie alle erforderlichen Informationen zur Überprüfung Ihrer Identität an.
 1. [Stellen Sie die eindeutige [!DNL API Key] und [!DNL Publishable Key]](#obtain-api-credentials) generiert in [!DNL Bolt].
 1. [Richten Sie einen Zahlungsdienstleister im [!DNL Bolt] account](#configure-payment-providers).
-1. [Setzen Sie das Dropdown-Menü &quot;Aktivieren&quot;auf &quot;Ja&quot;](#enable-extension) , um die Erweiterung zu aktivieren.
+1. [Setzen Sie das Dropdown-Menü Aktivieren auf Ja .](#enable-extension) , um die Erweiterung zu aktivieren.
 1. [Diensteinstellungen definieren](#complete-admin-configuration) , um die [!DNL Quick Checkout] -Erweiterung.
 1. [Klicken Sie auf Konfiguration speichern .](#enable-live-quick-checkout) -Schaltfläche, um die Erweiterung zu aktivieren.
 1. Scope auf **Hauptwebsite** und [Klicken Sie auf Callback-URL konfigurieren .](#check-shopper-valid-account) Schaltfläche.
 
-Wenn Gainsight aktiviert ist, wird die **Tour** -Schaltfläche in [!DNL Quick Checkout] Admin Panel Info [!DNL Quick Checkout] für Adobe Commerce:
+Wenn Gainsight aktiviert ist, wird die **Machen Sie die Tour** -Schaltfläche in [!DNL Quick Checkout] Admin Panel Info [!DNL Quick Checkout] für Adobe Commerce:
 
 1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > Erweitert:
 
@@ -41,7 +41,7 @@ Siehe [[!DNL Quick Checkout] Admin-Bereich](../quick-checkout/admin-panel.md) f�
 
 ## Voraussetzungen
 
-Um die [!DNL Quick Checkout]müssen Sie über Folgendes verfügen für [!DNL Bolt]:
+Um die [!DNL Quick Checkout], müssen Sie über Folgendes verfügen für [!DNL Bolt]:
 
 - Unterstützte Zahlungsdienstleister
 - Handels- und Produktionskonto in [!DNL Bolt]
@@ -55,7 +55,7 @@ Siehe [API-Anmeldeinformationen](#obtain-api-credentials) Hier erfahren Sie, wie
 
 Siehe [install](../quick-checkout/install.md) Thema für detaillierte Informationen zum Abrufen der Erweiterung.
 
-## Konto erstellen mit [!DNL Bolt]
+## Erstellen Sie ein Konto mit [!DNL Bolt]
 
 Vor der Konfiguration [!DNL Quick Checkout] In Ihrem Adobe Commerce-Administrator muss eine [Sandbox](https://merchant-sandbox.bolt.com/register?platform=magento2){target="_blank"} and [production](https://merchant.bolt.com/register?platform=magento2){target="_blank"}  Handelskonten in [!DNL Bolt]. Geben Sie alle erforderlichen Details an, um ein Konto in [!DNL Bolt].
 
@@ -65,13 +65,13 @@ Siehe Abschnitt [Testen und Validieren](../quick-checkout/testing.md) für weite
 
 So verwenden Sie die [!DNL Quick Checkout] benötigen [!DNL Bolt] eindeutige Schlüssel und [!DNL signing secret]. Folgendes abrufen [!DNL API keys] durch Navigation zu **Entwickler** > **API** > **Schlüssel** im **Bolt Merchant Dashboard**.
 
-- [!DNL API key]: Ein privater Schlüssel, der von Ihrem Backend für die Interaktion mit [!DNL Bolt] APIs.
+- [!DNL API key]: Ein privater Schlüssel, mit dem Ihr Backend interagiert [!DNL Bolt] APIs.
 - [!DNL Publishable key]: Ein Schlüssel, mit dem Ihr Frontend interagiert [!DNL Bolt] APIs.
-- [!DNL Signing secret]: Dient zur Signaturüberprüfung von Anforderungen, die von empfangen wurden [!DNL Bolt].
+- [!DNL Signing secret]: Dient zur Signaturüberprüfung von Anforderungen, die von empfangen wurden. [!DNL Bolt].
 
   ![Quick Checkout](assets/account-credentials.png)
 
-Siehe [[!DNL Bolt] Umgebungsdetails](https://help.bolt.com/developers/references/environment-details/#about-keys){target="_blank"} Seite mit Informationen zu Schlüsseln und dem Signieren von Geheimnissen von [!DNL Bolt] für [!DNL Quick Checkout] -Erweiterung.
+Siehe [[!DNL Bolt] Umgebungsdetails](https://help.bolt.com/developers/references/environment-details/#about-keys){target="_blank"} Seite mit Informationen zu Schlüsseln und dem Signieren von Geheimnissen von [!DNL Bolt] für die [!DNL Quick Checkout] -Erweiterung.
 
 >[!CAUTION]
 >
@@ -84,7 +84,7 @@ Gehen Sie wie im Abschnitt [Prozessoreinrichtung](https://help.bolt.com/integrat
 ## Erweiterung aktivieren
 
 1. Im _Admin_ Seitenleiste, navigieren Sie zu **Stores** > _Einstellungen_ > **Konfiguration**.
-1. Erweitern Sie im linken Bereich **Vertrieb** und wählen Sie **Checkout**.
+1. Erweitern Sie im linken Bereich **Vertrieb** und wählen **Checkout**.
 1. Im [!DNL Quick Checkout] Ansicht, festlegen **Aktivieren** nach `Yes`.
 
 ![Quick Checkout](assets/quick-checkout-view-no-enable.png)
@@ -115,7 +115,7 @@ Siehe Abschnitt [Einstellungen](../quick-checkout/settings-quick-checkout.md) Th
 1. Satz _Zahlungsaktion_ zu einer der beiden Optionen:
 
    - `Authorize`: Erfassen Sie Transaktionen nicht automatisch bei der Autorisierung.
-   - `Authorize and Capture`: Erfassen Sie die Transaktion automatisch nach Genehmigung.
+   - `Authorize and Capture`: Erfassen Sie die Transaktion automatisch bei der Autorisierung.
 
 Weitere Informationen zu den standardmäßigen Adobe Commerce-Checkout-Optionen finden Sie im Abschnitt [Kasse](https://docs.magento.com/user-guide/configuration/sales/checkout.html) Thema.
 
@@ -124,7 +124,7 @@ Weitere Informationen zu den standardmäßigen Adobe Commerce-Checkout-Optionen 
 So aktivieren Sie die [!DNL Quick Checkout] für die Adobe Commerce-Erweiterung:
 
 1. Stellen Sie sicher, dass die [!UICONTROL Enable] Dropdown-Liste auf **Ja** , um die Erweiterung zu aktivieren.
-1. Klicken **Konfiguration speichern**.
+1. Klicks **Konfiguration speichern**.
 
 ## Prüfen des gültigen Kontos des Käufers
 

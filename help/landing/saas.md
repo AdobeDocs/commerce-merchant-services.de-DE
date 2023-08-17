@@ -19,7 +19,7 @@ Einige Adobe Commerce- und Magento Open Source-Funktionen basieren auf [!DNL Com
 
 Im Folgenden werden die [!DNL Commerce] Funktionen, auf die Sie über [!DNL Commerce Services Connector]:
 
-| Diensleistung | Verfügbarkeit |
+| Dienst | Verfügbarkeit |
 | ---|--- |
 | [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) powered by Adobe Sensei | Adobe Commerce |
 | [[!DNL Live Search]](/help/live-search/overview.md) powered by Adobe Sensei | Adobe Commerce |
@@ -27,11 +27,11 @@ Im Folgenden werden die [!DNL Commerce] Funktionen, auf die Sie über [!DNL Comm
 | [[!DNL Channel Manager]](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/intro-to-channel-manager/overview.html) | Adobe Commerce und Magento Open Source |
 | [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html) | Adobe Commerce |
 | [[!DNL Catalog Service]](/help/catalog-service/overview.md) | Adobe Commerce |
-| [Experience Platform Connector](/help/experience-platform-connector/overview.md) | Adobe Commerce |
+| [Experience Platform-Connector](/help/experience-platform-connector/overview.md) | Adobe Commerce |
 
 ## Architektur
 
-Auf hoher Ebene wird die [!DNL Commerce Services Connector] besteht aus folgenden Kernelementen:
+Auf hoher Ebene wird die [!DNL Commerce Services Connector] besteht aus den folgenden Kernelementen:
 
 ![Connector-Architektur für Commerce Services](assets/saas-config-sync-workflow.png)
 
@@ -45,7 +45,7 @@ Die Produktions- und Sandbox-API-Schlüssel werden aus dem [!DNL Commerce] Konto
 
 1. Melden Sie sich bei Ihrer [!DNL Commerce] Konto unter [https://account.magento.com](https://account.magento.com/){:target=&quot;_blank&quot;}.
 
-1. Unter dem **Magento** Registerkarte, wählen Sie **API-Portal** auf der Seitenleiste.
+1. Unter dem **Magento** Registerkarte auswählen **API-Portal** auf der Seitenleiste.
 
 1. Aus dem _Umgebung_ Menü auswählen **Produktion** oder **Sandbox**.
 
@@ -59,7 +59,7 @@ Die Produktions- und Sandbox-API-Schlüssel werden aus dem [!DNL Commerce] Konto
    >
    > Dies ist die einzige Möglichkeit, dass Sie Ihre Schlüssel kopieren oder herunterladen müssen.
 
-1. Klicken **Download** Klicken Sie dann auf **Abbrechen**.
+1. Klicks **Herunterladen** Klicken Sie dann auf **Abbrechen**.
 
 1. Wiederholen Sie die obigen Schritte für jede Umgebung (Produktion und Sandbox).
 
@@ -67,7 +67,7 @@ Die Produktions- und Sandbox-API-Schlüssel werden aus dem [!DNL Commerce] Konto
 
 ## SaaS-Konfiguration {#saasenv}
 
-[!DNL Commerce] -Instanzen müssen mit einem SaaS-Projekt und einem SaaS-Datenraum konfiguriert werden, damit [!DNL Commerce Services] kann Daten an den richtigen Ort senden. Ein SaaS-Projekt gruppiert alle SaaS-Datenräume. Die SaaS-Datenräume werden verwendet, um Daten zu erfassen und zu speichern, die [!DNL Commerce Services] arbeiten. Einige dieser Daten können aus dem [!DNL Commerce] -Instanz und einige werden möglicherweise aus dem Kaufverhalten auf der Storefront erfasst. Diese Daten werden dann beibehalten, um den Cloud-Speicher zu sichern.
+[!DNL Commerce] -Instanzen müssen mit einem SaaS-Projekt und einem SaaS-Datenraum konfiguriert werden, damit [!DNL Commerce Services] kann Daten an den richtigen Ort senden. Ein SaaS-Projekt gruppiert alle SaaS-Datenräume. Die SaaS-Datenräume werden verwendet, um Daten zu erfassen und zu speichern, die [!DNL Commerce Services] zu arbeiten. Einige dieser Daten können aus dem [!DNL Commerce] -Instanz und einige werden möglicherweise aus dem Kaufverhalten auf der Storefront erfasst. Diese Daten werden dann beibehalten, um den Cloud-Speicher zu sichern.
 
 Für [!DNL Product Recommendations], enthält der SaaS-Datenraum Katalog- und Verhaltensdaten. Sie können einen Punkt [!DNL Commerce] -Instanz in einen SaaS-Datenraum von [auswählen](https://docs.magento.com/user-guide/configuration/services/saas.html) im [!DNL Commerce] Konfiguration.
 
@@ -89,7 +89,7 @@ Um ein SaaS-Projekt auszuwählen oder zu erstellen, fordern Sie die [!DNL Commer
 
    Private Schlüssel müssen enthalten sein `----BEGIN PRIVATE KEY---` am Anfang des Schlüssels und `----END PRIVATE KEY----` am Ende des privaten Schlüssels.
 
-1. Klicken **Speichern**.
+1. Klicks **Speichern**.
 
 Sämtliche SaaS-Projekte, die mit Ihren Schlüsseln verknüpft sind, werden im **Projekt** im Feld **SaaS-Kennung** Abschnitt.
 
@@ -97,7 +97,7 @@ Sämtliche SaaS-Projekte, die mit Ihren Schlüsseln verknüpft sind, werden im *
 
    Wenn Sie ein SaaS-Projekt erstellen, [!DNL Commerce] generiert je nach Ihrer [!DNL Commerce] -Lizenz:
    - Adobe Commerce - Ein Produktionsdatenraum; zwei Testdatenbereiche
-   - Magento Open Source - Ein Produktionsdatenraum; keine Testdatenräume
+   - Magento Open Source - Ein Produktionsdatenraum; keine Testdatenbereiche
 
 1. Wählen Sie die **Datenraum** zur Verwendung für die aktuelle Konfiguration Ihrer [!DNL Commerce] speichern.
 
@@ -109,7 +109,7 @@ Um die Namen des SaaS-Projekts oder der Datenspeicherorte zu ändern, klicken Si
 
 ## IMS-Organisation (optional) {#organizationid}
 
-Um Ihre Adobe Commerce-Instanz mit Adobe Experience Platform zu verbinden, melden Sie sich mit Ihrem Adobe ID-Konto bei Ihrem Adobe-Konto an. Nach der Anmeldung wird die mit Ihrem Adobe-Konto verknüpfte IMS-Organisation in diesem Abschnitt angezeigt.
+Um Ihre Adobe Commerce-Instanz mit Adobe Experience Platform zu verbinden, melden Sie sich mit Ihrem Adobe-Konto bei Ihrem Adobe ID an. Nach der Anmeldung wird die mit Ihrem Adobe-Konto verknüpfte IMS-Organisation in diesem Abschnitt angezeigt.
 
 ## Katalogsynchronisierung
 

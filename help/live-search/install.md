@@ -24,7 +24,7 @@ Dieses Thema enthält Anweisungen zu folgenden Aktionen:
 
 Gehen Sie wie folgt vor:
 
-1. Vergewissern Sie sich, dass [Cron-Aufträge](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) und [Indexer](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) laufen.
+1. Bestätigen Sie, dass [Cron-Aufträge](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) und [Indexer](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) laufen.
 
 1. Wählen Sie die Integrationsmethode aus, die Ihren Anforderungen entspricht, und befolgen Sie die Anweisungen.
 
@@ -66,7 +66,7 @@ In diesem Szenario werden Storefront-Vorgänge während der [!DNL Live Search] -
 
    >[!WARNING]
    >
-   > Während die Daten indiziert und synchronisiert sind, sind die Such- und Kategoriedurchsuchvorgänge nicht in der Storefront verfügbar. Je nach der Größe Ihres Katalogs kann der Vorgang mindestens eine Stunde dauern `cron` läuft, um Ihre Daten zu synchronisieren [!DNL Live Search] Dienste.
+   > Während die Daten indiziert und synchronisiert sind, sind die Such- und Kategoriedurchsuchvorgänge nicht in der Storefront verfügbar. Je nach der Größe Ihres Katalogs kann der Vorgang mindestens eine Stunde dauern. `cron` läuft, um Ihre Daten zu synchronisieren [!DNL Live Search] Dienste.
 
 1. Stellen Sie sicher, dass Folgendes [Indexer](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) auf `Update by Schedule`:
 
@@ -76,7 +76,7 @@ In diesem Szenario werden Storefront-Vorgänge während der [!DNL Live Search] -
 
 1. Konfigurieren Sie Ihre [API-Schlüssel](#configure-api-keys) und überprüfen Sie, ob Ihre Katalogdaten [synchronisiert](#synchronize-catalog-data) mit [!DNL Live Search] Dienste.
 
-1. Um Facetten als Filter in der Storefront verfügbar zu machen, fügen Sie die [facets](facets-add.md) Sie benötigen die [Facettenanforderungen](facets.md).
+1. Um Facetten als Filter im Storefront verfügbar zu machen, fügen Sie die [facets](facets-add.md) Sie benötigen je nach [Facettenanforderungen](facets.md).
 
    Sie sollten in der Lage sein, nach `cron` führt die Attributmetadaten für Feeds und Exporte aus.
 
@@ -124,7 +124,7 @@ In diesem Szenario [!DNL Elasticsearch] verwaltet vorübergehend Suchanfragen au
 
 1. Konfigurieren Sie Ihre [API-Schlüssel](#configure-api-keys) und überprüfen Sie, ob Ihre Katalogdaten [synchronisiert](#synchronize-catalog-data) mit [!DNL Live Search] Dienste.
 
-1. Um Facetten als Filter in der Storefront verfügbar zu machen, fügen Sie die [facets](facets-add.md) Sie benötigen die [Facettenanforderungen](facets.md).
+1. Um Facetten als Filter im Storefront verfügbar zu machen, fügen Sie die [facets](facets-add.md) Sie benötigen je nach [Facettenanforderungen](facets.md).
 
    Sie sollten in der Lage sein, nach `cron` führt die Produkt- und Attributfeeds aus und exportiert Attributmetadaten zu [!DNL Live Search] Dienste.
 
@@ -152,7 +152,7 @@ In diesem Szenario [!DNL Elasticsearch] verwaltet vorübergehend Suchanfragen au
 
 ## API-Schlüssel konfigurieren {#configure-api-keys}
 
-Der Adobe Commerce-API-Schlüssel und der zugehörige private Schlüssel sind erforderlich, um eine Verbindung herzustellen [!DNL Live Search] auf eine Installation von Adobe Commerce. Der API-Schlüssel wird im Konto der [!DNL Commerce] Lizenzinhaber, der sie für den Entwickler oder SI freigeben kann. Der Entwickler kann dann die SaaS-Datenräume im Auftrag des Lizenzinhabers erstellen und verwalten.  Wenn Sie bereits über eine Reihe von API-Schlüsseln verfügen, müssen Sie diese nicht neu generieren.
+Der Adobe Commerce-API-Schlüssel und der zugehörige private Schlüssel sind für die Verbindung erforderlich. [!DNL Live Search] auf eine Installation von Adobe Commerce. Der API-Schlüssel wird im Konto der [!DNL Commerce] Lizenzinhaber, der sie für den Entwickler oder SI freigeben kann. Der Entwickler kann dann die SaaS-Datenräume im Auftrag des Lizenzinhabers erstellen und verwalten.  Wenn Sie bereits über eine Reihe von API-Schlüsseln verfügen, müssen Sie diese nicht neu generieren.
 
 ### Adobe Commerce-Lizenzinhaber
 
@@ -170,14 +170,14 @@ Der Entwickler oder SI konfiguriert den SaaS-Datenraum wie im Abschnitt *Commerc
 
 ### Export überprüfen {#verify-export}
 
-So überprüfen Sie, ob die Katalogdaten aus Ihrer Adobe Commerce-Instanz exportiert wurden und für [!DNL Live Search], suchen Sie in den folgenden Tabellen nach Einträgen:
+So überprüfen Sie, ob die Katalogdaten aus Ihrer Adobe Commerce-Instanz exportiert wurden und synchronisiert werden für [!DNL Live Search], suchen Sie in den folgenden Tabellen nach Einträgen:
 
 * `catalog_data_exporter_products`
 * `catalog_data_exporter_product_attributes`
 
 Weitere Hilfe finden Sie unter [[!DNL Live Search] Katalog nicht synchronisiert](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync.html) in der Support-Wissensdatenbank.
 
-### Künftige Produktaktualisierungen
+### Zukünftige Produktaktualisierungen
 
 Nach der ersten Synchronisierung kann es bis zu 15 Minuten dauern, bis inkrementelle Produktaktualisierungen für die Storefront-Suche verfügbar sind. Weitere Informationen finden Sie unter [Indizierung - Streaming von Produktaktualisierungen](indexing.md).
 
@@ -213,7 +213,7 @@ composer update magento/live-search --with-dependencies
 
 Um auf eine Hauptversion wie 2.0.0 auf 3.0.1 zu aktualisieren, bearbeiten Sie das Stammverzeichnis des Projekts [!DNL Composer] `.json` Datei wie folgt:
 
-1. Wenn derzeit installiert `magento/live-search` Version ist `2.0.3` oder darunter, und Sie aktualisieren auf Version `3.0.0` oder höher führen Sie vor dem Upgrade den folgenden Befehl aus:
+1. Wenn derzeit installiert `magento/live-search` Version ist `2.0.3` und Sie aktualisieren auf Version `3.0.0` oder höher führen Sie vor dem Upgrade den folgenden Befehl aus:
 
    ```bash
    bin/magento module:enable Magento_AdvancedSearch
@@ -225,7 +225,7 @@ Um auf eine Hauptversion wie 2.0.0 auf 3.0.1 zu aktualisieren, bearbeiten Sie da
    composer show magento/live-search
    ```
 
-1. Öffnen Sie den Stamm. `composer.json` Datei und suchen Sie nach `magento/live-search`.
+1. Öffnen Sie den Stamm `composer.json` Datei und suchen Sie nach `magento/live-search`.
 
 1. Im `require` aktualisieren Sie die Versionsnummer wie folgt:
 
@@ -252,12 +252,12 @@ Deinstallation [!DNL Live Search], siehe [Module deinstallieren](https://experie
 | Paket | Beschreibung |
 |--- |--- |
 | `module-live-search` | Ermöglicht Händlern, ihre Sucheinstellungen für Facetten, Synonyme, Abfrageregeln usw. zu konfigurieren, und bietet Zugriff auf einen schreibgeschützten GraphQL-Spielplatz, auf dem Abfragen aus dem *Admin*. |
-| `module-live-search-adapter` | Routet Suchanforderungen von der Storefront zum [!DNL Live Search] und rendert die Ergebnisse in der Storefront. <br />- Kategoriesuche - Routen von Anforderungen aus der Storefront [obere Navigation](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html) zum Suchdienst hinzu.<br />- Globale Suche - Routen von Anfragen von der [Schnellsuche](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) in der oberen rechten Ecke des Storefront zur [!DNL Live Search] Dienst. |
+| `module-live-search-adapter` | Routet Suchanforderungen von der Storefront zum [!DNL Live Search] und rendert die Ergebnisse in der Storefront. <br />- Kategoriesuche - Routen von Anforderungen aus der Storefront [oberste Navigation](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html) zum Suchdienst hinzu.<br />- Globale Suche - Routen von Anfragen von der [Schnellsuche](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) in der oberen rechten Ecke des Storefront zur [!DNL Live Search] -Dienst. |
 | `module-live-search-storefront-popover` | Ein Popup &quot;Suche beim Eingeben&quot;ersetzt die standardmäßige Schnellsuche und gibt Daten und Miniaturansichten der Top-Suchergebnisse zurück. |
 
 ## [!DNL Live Search] dependencies {#dependencies}
 
-Folgendes [!DNL Live Search] Abhängigkeiten werden von [!DNL Composer]:
+Die folgenden [!DNL Live Search] Abhängigkeiten werden von [!DNL Composer]:
 
 | Abhängigkeit | Beschreibung |
 |--- |--- |

@@ -1,6 +1,6 @@
 ---
 title: "Testen der [!DNL Quick Checkout] für Adobe Commerce-Erweiterung"
-description: "Tests und Validierung stellen sicher, dass die [!DNL Quick Checkout] -Erweiterung funktioniert wie erwartet."
+description: "Durch Tests und Validierung wird sichergestellt, dass die [!DNL Quick Checkout] -Erweiterung funktioniert wie erwartet."
 exl-id: 308f39e1-e2f6-40d8-b876-0f9013effed3
 feature: Checkout, Services
 source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Testen Sie die [!DNL Quick Checkout] Erweiterung
 
-Bevor Sie die [!DNL Quick Checkout] Für Adobe Commerce-Erweiterungen für Ihre Kunden wird empfohlen, Tests in einer Sandbox-Umgebung und in Ihrer Produktionsumgebung durchzuführen. Durch Tests und Validierung wird sichergestellt, dass die [!DNL Quick Checkout] funktioniert erwartungsgemäß und bietet ein nahtloses Checkout-Erlebnis für Ihren Store und Ihre Kunden.
+Bevor Sie die [!DNL Quick Checkout] Für Adobe Commerce-Erweiterungen für Ihre Kunden wird empfohlen, Tests in einer Sandbox-Umgebung und in Ihrer Produktionsumgebung durchzuführen. Tests und Validierung helfen dabei sicherzustellen, dass die [!DNL Quick Checkout] funktioniert erwartungsgemäß und bietet ein nahtloses Checkout-Erlebnis für Ihren Store und Ihre Kunden.
 
 Vor der Konfiguration [!DNL Quick Checkout] In Ihrem Adobe Commerce-Administrator muss die  [production](https://merchant.bolt.com/register){target="_blank"} and [sandbox](https://merchant-sandbox.bolt.com/register){target="_blank"} Handelskonten in [!DNL Bolt].
 
@@ -55,9 +55,9 @@ Führen Sie einen erfolgreichen Checkout aus Ihrem Store durch:
 
 1. Platzieren Sie die Bestellung.
 
-Sobald eine Bestellung aufgegeben wurde, können Sie Details zu Ihren Bestellungen in Ihrer _Raster für Bestellungen_ Ansicht:
+Sobald eine Bestellung aufgegeben wurde, können Sie Details zu Ihren Bestellungen in Ihrer _Raster &quot;Bestellungen&quot;_ Ansicht:
 
 1. Navigieren Sie zu _Vertrieb_ > _Bestellungen_.
 1. Siehe Liste aller aufgegebenen Bestellungen.
 
-Siehe [Bestellungen](https://docs.magento.com/user-guide/sales/orders.html) Thema für weitere Informationen zu Ihrer _Raster für Bestellungen_ anzeigen.
+Siehe [Bestellungen](https://docs.magento.com/user-guide/sales/orders.html) Thema für weitere Informationen zu Ihrer _Raster &quot;Bestellungen&quot;_ anzeigen.

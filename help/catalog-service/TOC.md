@@ -1,20 +1,20 @@
 ---
-user-guide-title: "[!DNL Catalog Service] Guide"
+user-guide-title: „Handbuch zu [!DNL Catalog Service]“
 user-guide-description: "Dieses Handbuch enthält ausführliche Anweisungen zur Verwendung von [!DNL Catalog Service] für Adobe Commerce."
-breadcrumb-title: "[!DNL Catalog Service] Guide"
+breadcrumb-title: „Handbuch zu [!DNL Catalog Service]“
 hide: true
 role: Admin
 feature: Services, Catalog Service
 source-git-commit: c256252ea58b61e511034cd33d81e004acff96d2
 workflow-type: tm+mt
 source-wordcount: '79'
-ht-degree: 0%
+ht-degree: 7%
 
 ---
 
 # [!DNL Catalog Service] für Adobe Commerce {#catalog-service}
 
-- [Guide Overview](guide-overview.md)
+- [Handbuch-Übersicht](guide-overview.md)
 - [Einführung in [!DNL Catalog Service]](overview.md)
 - [Onboarding und Installieren](installation.md)
 - [Catalog Service und API-Mesh](mesh.md)

@@ -1,6 +1,6 @@
 ---
 title: "Checkout-Fluss in Adobe Commerce"
-description: "Überblick über die [!DNL Quick Checkout] Fluss in Adobe Commerce."
+description: "Übersicht über die [!DNL Quick Checkout] Fluss in Adobe Commerce."
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
 feature: Checkout, Services, Storefront
 source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
@@ -30,7 +30,7 @@ Erfolgreich [!DNL Quick Checkout] Fluss besteht aus folgenden Schritten:
 
 ![OTP-Popup](assets/new-logo-otp-email.png)
 
-1. Nach der Anmeldung bei [!DNL Bolt] -Konto, Checkout-Details werden automatisch ausgefüllt:
+1. Nach der Anmeldung bei Ihrem [!DNL Bolt] -Konto, Checkout-Details werden automatisch ausgefüllt:
 
    - Versandinformationen
    - Zahlungsmethode
@@ -41,7 +41,7 @@ Erfolgreich [!DNL Quick Checkout] Fluss besteht aus folgenden Schritten:
 
 1. Bestellung aufgeben.
 
-Die [!DNL Quick Checkout] ist mit standardmäßigen zusätzlichen Adobe Commerce-Checkout-Optionen kompatibel, z. B. [Geschenkgutscheine](https://docs.magento.com/user-guide/catalog/product-gift-card.html) oder [Rabattcodes](https://docs.magento.com/user-guide/marketing/price-rules-cart-coupon.html).
+Die [!DNL Quick Checkout] ist mit standardmäßigen zusätzlichen Adobe Commerce-Checkout-Optionen kompatibel, z. B. [Geschenkkarten](https://docs.magento.com/user-guide/catalog/product-gift-card.html) oder [Rabattcodes](https://docs.magento.com/user-guide/marketing/price-rules-cart-coupon.html).
 
 ## [!DNL Quick Checkout] Anwendungsfälle
 

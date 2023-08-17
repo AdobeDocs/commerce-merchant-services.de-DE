@@ -15,12 +15,12 @@ Befolgen Sie diese Anweisungen, um die Eigenschaften vorhandener Facetten zu akt
 
 ## Preisfacettengruppierungen konfigurieren
 
-Siehe [Einstellungen](settings.md) um Preisfacettenintervalle und -gruppierungen zu konfigurieren.
+Siehe Abschnitt [Einstellungen](settings.md) um Preisfacettenintervalle und -gruppierungen zu konfigurieren.
 
 ## Facette bearbeiten
 
 1. Suchen Sie die Facette, die Sie bearbeiten möchten.
-1. Wenn die Liste viele Facetten enthält, legen Sie *Filtern nach* auf einen der folgenden Werte:
+1. Wenn die Liste viele Facetten enthält, legen Sie *Filtern nach* auf einen der folgenden Werte zu:
 
    * Angeheftet
    * Dynamik
@@ -30,13 +30,13 @@ Siehe [Einstellungen](settings.md) um Preisfacettenintervalle und -gruppierungen
    ![Filterfacetten](assets/facets-filter-by-cropped.png)
 
 1. Um die Facetteneigenschaften zu bearbeiten, klicken Sie auf **Mehr** (...) Optionen.
-1. Klicken **Bearbeiten**
+1. Klicks **Bearbeiten**
 
    ![Optionen bearbeiten](assets/facet-edit-menu.png)
 
 1. Führen Sie einen der folgenden Schritte aus, um die Facettenbeschriftung zu bearbeiten:
 
-   * Für [!DNL Commerce] storefront, bearbeiten Sie die [Attributbezeichnung](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html).
+   * Für [!DNL Commerce] storefront, bearbeiten Sie [Attributbezeichnung](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html).
    * Klicken Sie bei einer Headless-Implementierung auf den Wert in der ersten Spalte und bearbeiten Sie den Text nach Bedarf.
 
    ![Titel bearbeiten](assets/facet-edit-label.png)
@@ -82,8 +82,8 @@ Nach der Veröffentlichung der Änderungen werden die neu sortierten Facetten in
 ## Facette löschen
 
 1. Suchen Sie die Facette in der Liste und klicken Sie auf **Mehr** (...) Optionen.
-1. Klicken **Löschen**.
-1. Wenn Sie zur Bestätigung aufgefordert werden, klicken Sie auf **Facette löschen**.
+1. Klicks **Löschen**.
+1. Klicken Sie bei Aufforderung zur Bestätigung auf **Facette löschen**.
 Die Facette wird aus der Storefront entfernt, nachdem die Änderungen veröffentlicht wurden.
 
 ## Veröffentlichungsänderungen

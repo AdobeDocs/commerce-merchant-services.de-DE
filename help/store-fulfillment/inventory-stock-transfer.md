@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Inventory management Source Transfer
 
-Die [!DNL Store Fulfillment] -Lösung verwendet die native Adobe Commerce Inventory management. Standardmäßig wird die [!DNL Commerce] -Konfiguration weist das gesamte Webinventar dem Standardbestand zu, dem keine zusätzlichen Quellen zugewiesen werden können. Da einer Website nur ein einzelnes Lager zugewiesen werden kann, muss ein Händler ein neues Lager konfigurieren und optional seinen Standardquellbestand an eine Quelle übertragen, die dem entsprechenden Umfang zugeordnet ist. Anschließend kann die Quelle dem neuen Lager zugewiesen werden.
+Die [!DNL Store Fulfillment] -Lösung verwendet die native Adobe Commerce Inventory management. Standardmäßig wird die Variable [!DNL Commerce] -Konfiguration weist das gesamte Webinventar dem Standardbestand zu, dem keine zusätzlichen Quellen zugewiesen werden können. Da einer Website nur ein einzelnes Lager zugewiesen werden kann, muss ein Händler ein neues Lager konfigurieren und optional seinen Standardquellbestand an eine Quelle übertragen, die dem entsprechenden Umfang zugeordnet ist. Anschließend kann die Quelle dem neuen Lager zugewiesen werden.
 
 >[!IMPORTANT]
 >

@@ -1,19 +1,19 @@
 ---
-user-guide-title: "[!DNL Product Recommendations] Guide"
-user-guide-description: In diesem Handbuch finden Sie detaillierte Anweisungen zur Verwendung von [!DNL Product Recommendations] aus Adobe Commerce.
-breadcrumb-title: "[!DNL Product Recommendations] Guide"
+user-guide-title: „Handbuch zu [!DNL Product Recommendations]“
+user-guide-description: Dieses Handbuch enthält ausführliche Anweisungen zur Verwendung von [!DNL Product Recommendations] aus Adobe Commerce.
+breadcrumb-title: „Handbuch zu [!DNL Product Recommendations]“
 role: Admin
 feature: Services, Recommendations
 source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
 workflow-type: tm+mt
 source-wordcount: '54'
-ht-degree: 0%
+ht-degree: 12%
 
 ---
 
 # [!DNL Product Recommendations] für Commerce {#product-recommendations}
 
-- [Guide Overview](guide-overview.md)
+- [Handbuch-Übersicht](guide-overview.md)
 - [Einführung in [!DNL Product Recommendations]](overview.md)
 - [Versionshinweise](release-notes.md)
 - Erste Schritte {#getting-started}
