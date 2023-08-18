@@ -5,9 +5,9 @@ role: Admin, Developer
 level: Intermediate
 feature: Shipping/Delivery, Install
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
 workflow-type: tm+mt
-source-wordcount: '660'
+source-wordcount: '715'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,13 @@ ht-degree: 0%
 
 Führen Sie die Erstinstallation des [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] -Erweiterung in einer Nicht-Produktionsumgebung mit ausgeführtem Warteschlangenmanager und konfigurierter Zwischenspeicherung, um die Ausnahmebehandlung zu ermöglichen. Stellen Sie sicher, dass Ihre Entwicklungsumgebung Entwicklungstools enthält, um Best Practices für den Betrieb und die Wartung Ihrer Adobe Commerce-Instanz sicherzustellen.
 
+>[!TIP]
+>
+>Aktualisieren Sie die Store Fulfillment-Erweiterung für Adobe Commerce auf einem lokalen Standort, indem Sie folgende Schritte ausführen: [Upgrade-Anweisungen](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html) im _Adobe Commerce Upgrade-Handbuch_. Informationen zu Adobe Commerce zur Cloud-Infrastruktur finden Sie unter [Aktualisierung einer Erweiterung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/extensions.html#upgrade-an-extension) im *Benutzerhandbuch zu Commerce on Cloud Infrastructure*.
+
 ## Voraussetzungen
 
-Überprüfen Sie die [Anforderungen](solution-requirements.md) für die Store Fulfillment-Lösung und sammeln Sie die erforderlichen Informationen, bevor Sie die [!DNL Store Fulfillment] Erweiterung für Adobe Commerce.
+Überprüfen Sie die [Anforderungen](solution-requirements.md) für die Store Fulfillment-Lösung verwenden und die erforderlichen Informationen erfassen, bevor Sie die [!DNL Store Fulfillment] Erweiterung für Adobe Commerce.
 
 Wenn Sie eine Vorabversion oder Betaversion der Erweiterung Store Fulfillment for Adobe Commerce installiert haben, verwenden Sie den folgenden Befehl, um sie zu entfernen, bevor Sie die aktuelle Version installieren.
 
@@ -196,4 +200,5 @@ Die `-f` ist erforderlich, wenn Sie ein leeres Design verwenden.
 >[!NOTE]
 >
 >Weitere Informationen finden Sie unter [Best Practices für die Bereitstellung statischer Inhalte in Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/static-content-deployment.html) Artikel im Adobe Commerce Help Center.
+
 

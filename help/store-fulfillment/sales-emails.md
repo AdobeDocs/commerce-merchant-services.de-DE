@@ -5,9 +5,9 @@ role: Admin
 level: Intermediate
 feature: Shipping/Delivery, Communications, Configuration
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
 workflow-type: tm+mt
-source-wordcount: '1202'
+source-wordcount: '1233'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Konfigurieren Sie die Vorlagen für Verkaufs-E-Mails über den Administrator: **
 </thead>
 <tbody><tr>
 <td><strong>Asynchrones Senden</strong></td>
-<td>Deaktivieren Sie diese Funktion. Der asynchrone E-Mail-Versand wird nicht unterstützt. Um die schnellste Kommunikations- und Reaktionszeit für die Store-Abholung zu erhalten, senden Sie E-Mails sofort, anstatt sie stapelweise zu senden. </td>
+<td>Bestimmt, ob Verkaufs-E-Mails asynchron gesendet werden. Optionen: <br/>**`Deaktivieren`** - (Standard) E-Mails zum Verkauf werden gesendet, wenn sie durch ein Ereignis ausgelöst werden. Verwenden Sie die Standardeinstellung, um die schnellste Kommunikations- und Reaktionszeit für die Store-Abholung zu erhalten. <br/>**`Enable`** - Durch Aktivierung dieser Option werden Prozesse, die E-Mail-Benachrichtigungen zum Checkout und zur Bestellverarbeitung in den Hintergrund versetzen und in vordefinierten, regelmäßigen Abständen gesendet werden.</td>
 <td>Store-Ansicht</td>
 <td>Nein</td>
 </tr>

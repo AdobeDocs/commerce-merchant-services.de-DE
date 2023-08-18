@@ -5,10 +5,10 @@ role: Leader, Admin, Developer
 level: Intermediate
 feature: Shipping/Delivery, Install
 exl-id: f9e05049-5904-4f6c-b45d-9f81fbc76b69
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 2%
+source-wordcount: '315'
+ht-degree: 0%
 
 ---
 
@@ -23,19 +23,14 @@ Die [!DNL Store Fulfillment] -Lösung ist für Adobe Commerce-Kunden auf den fol
 - Adobe Commerce über Cloud-Infrastruktur (ECE)
 - Adobe Commerce vor Ort (EE)
 
-Die Store Fulfillment-Lösung ist mit den Softwareversionen kompatibel, die im Abschnitt *Softwarekompatibilität* Tabelle.
+Lesen Sie vor der Installation oder Aktualisierung die Versionshinweise und Systemanforderungen von Adobe Commerce , um die aktuellsten Informationen zur Versionskompatibilität, zu Aktualisierungen oder Änderungen zu erhalten, die sich auf die Installations- oder Aktualisierungsanforderungen auswirken könnten.
 
-**Softwarekompatibilität**
+- [Versionshinweise zur Store-Erfüllung](release-notes.md)
 
-| **Software** | **Mindestversion** | **Maximale Version** |
-|----------------|---------------------|---------------------|
-| Adobe Commerce | 2.4.0 | 2.4.5 |
-| Verfasser | 1.x | 2.x |
-| MariaDB | 10.2 | 10.4 |
-| MySQL | 5.7 | 8.0 |
-| PHP | 7.4 | 8.1 |
+- [Versionshinweise zu Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html) im *Versionsinformationen zu Adobe Commerce*.
 
-Detaillierte Anforderungen finden Sie unter Adobe Commerce . [Systemanforderungen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) im *Adobe Commerce-Installationsanleitung*.
+- [Systemanforderungen von Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) im *Adobe Commerce-Installationsanleitung*.
+
 
 ## Anforderungen an Store Assist-Apps
 

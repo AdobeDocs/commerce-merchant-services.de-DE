@@ -5,7 +5,7 @@ role: Leader, Admin, User
 level: Intermediate
 feature: Shipping/Delivery, Tools and External Services, Customer Service
 exl-id: a8414f19-5489-41e9-84d6-39d2e61c2b08
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
 workflow-type: tm+mt
 source-wordcount: '806'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Die Store-Hilfe-App stellt Store Associates mit vier Modulen zur Verfügung, um 
 
 - **[Auswahl](#pick-module)**—Erhalten Sie vollständige Einsicht in alle bestellten Artikel und die Tools, um sicherzustellen, dass die richtigen Artikel und Mengen ausgewählt werden. Speicherverknüpfungen können eine oder mehrere Bestellungen gleichzeitig auswählen, um eine höhere Effizienz zu erzielen.
 
-- **[Staging](#stage-module)**- Geben Sie einen Ort ein, an dem die Bestellungen platziert werden, während Kunden zum Geschäft reisen, damit Store Associates sie einfach zur Auftragserteilung finden können.
+- **[Staging](#stage-module)**- Geben Sie den Ort ein, an dem Bestellungen aufgegeben werden, während Kunden zum Geschäft reisen, damit Store Associates Bestellungen schneller finden und abgeben können.
 
 - **[Hand aus](#hand-off-module)**- Rufen Sie Benachrichtigungen in Echtzeit ab, nachdem Kunden in den Speicher eintreffen, um ihre Wartezeit zu minimieren und Aufträge nahtlos zu senden.
 
