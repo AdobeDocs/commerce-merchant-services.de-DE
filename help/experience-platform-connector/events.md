@@ -4,9 +4,9 @@ description: Erfahren Sie, welche Daten die einzelnen Ereignisse erfassen.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
+source-git-commit: 0be39c5d46289a12bc2cfa704e942dc594fbded2
 workflow-type: tm+mt
-source-wordcount: '4779'
+source-wordcount: '6126'
 ht-degree: 0%
 
 ---
@@ -44,10 +44,17 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 | `priceTotal` | Der Gesamtpreis für den Produktzeileneintrag |
 | `quantity` | Die Anzahl der zum Warenkorb hinzugefügten Produkteinheiten |
 | `discountAmount` | Gibt den angewendeten Rabattbetrag an |
-| `currencyCode` | Die [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) Währung für das Produkt |
+| `currencyCode` | Die [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) verwendeter Währungscode, z. B. `USD` oder `EUR` |
 | `productImageUrl` | Hauptbild-URL des Produkts |
-| `selectedOptions` | Feld für ein konfigurierbares Produkt. `attribute` identifiziert ein Attribut des konfigurierbaren Produkts, z. B. `size` oder `color` und `value` gibt den Wert des Attributs an, z. B. `small` oder `black`. |
+| `selectedOptions` | Feld für ein konfigurierbares Produkt. |
+| `attribute` | Identifiziert ein Attribut des konfigurierbaren Produkts, z. B. `size` oder `color` |
+| `value` | Identifiziert den Wert des Attributs, z. B. `small` oder `black`. |
 | `cartID` | Die eindeutige ID, die den Warenkorb des Kunden identifiziert |
+| `commerceScope` | Gibt an, wo ein Ereignis aufgetreten ist (Store-Ansicht, Store, Website usw.). |
+| `environmentID` | Die Umgebungs-ID. Eine 32-stellige alphanumerische ID, getrennt durch Bindestriche. |
+| `storeCode` | Der eindeutige Store-Code. Sie können viele Geschäfte pro Website haben. |
+| `storeViewCode` | Der eindeutige Store-Ansichtscode. Sie können viele Store-Ansichten pro Store haben. |
+| `websiteCode` | Der eindeutige Website-Code. Sie können viele Websites in einer Umgebung haben. |
 
 ### openCart
 
@@ -68,10 +75,17 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 | `priceTotal` | Der Gesamtpreis für den Produktzeileneintrag |
 | `quantity` | Die Anzahl der zum Warenkorb hinzugefügten Produkteinheiten |
 | `discountAmount` | Gibt den angewendeten Rabattbetrag an |
-| `currencyCode` | Die [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) Währung für das Produkt |
+| `currencyCode` | Die [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) verwendeter Währungscode, z. B. `USD` oder `EUR` |
 | `productImageUrl` | Hauptbild-URL des Produkts |
-| `selectedOptions` | Feld für ein konfigurierbares Produkt. `attribute` identifiziert ein Attribut des konfigurierbaren Produkts, z. B. `size` oder `color` und `value` gibt den Wert des Attributs an, z. B. `small` oder `black`. |
+| `selectedOptions` | Feld für ein konfigurierbares Produkt. |
+| `attribute` | Identifiziert ein Attribut des konfigurierbaren Produkts, z. B. `size` oder `color` |
+| `value` | Identifiziert den Wert des Attributs, z. B. `small` oder `black`. |
 | `cartID` | Die eindeutige ID, die den Warenkorb des Kunden identifiziert |
+| `commerceScope` | Gibt an, wo ein Ereignis aufgetreten ist (Store-Ansicht, Store, Website usw.). |
+| `environmentID` | Die Umgebungs-ID. Eine 32-stellige alphanumerische ID, getrennt durch Bindestriche. |
+| `storeCode` | Der eindeutige Store-Code. Sie können viele Geschäfte pro Website haben. |
+| `storeViewCode` | Der eindeutige Store-Ansichtscode. Sie können viele Store-Ansichten pro Store haben. |
+| `websiteCode` | Der eindeutige Website-Code. Sie können viele Websites in einer Umgebung haben. |
 
 ### removeFromCart
 
@@ -92,10 +106,17 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 | `priceTotal` | Der Gesamtpreis für den Produktzeileneintrag |
 | `quantity` | Die Anzahl der aus dem Warenkorb entfernten Produkteinheiten |
 | `discountAmount` | Gibt den angewendeten Rabattbetrag an |
-| `currencyCode` | Die [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) Währung für das Produkt |
+| `currencyCode` | Die [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) verwendeter Währungscode, z. B. `USD` oder `EUR` |
 | `productImageUrl` | Hauptbild-URL des Produkts |
-| `selectedOptions` | Feld für ein konfigurierbares Produkt. `attribute` identifiziert ein Attribut des konfigurierbaren Produkts, z. B. `size` oder `color` und `value` gibt den Wert des Attributs an, z. B. `small` oder `black`. |
+| `selectedOptions` | Feld für ein konfigurierbares Produkt. |
+| `attribute` | Identifiziert ein Attribut des konfigurierbaren Produkts, z. B. `size` oder `color` |
+| `value` | Identifiziert den Wert des Attributs, z. B. `small` oder `black`. |
 | `cartID` | Die eindeutige ID, die den Warenkorb des Kunden identifiziert |
+| `commerceScope` | Gibt an, wo ein Ereignis aufgetreten ist (Store-Ansicht, Store, Website usw.). |
+| `environmentID` | Die Umgebungs-ID. Eine 32-stellige alphanumerische ID, getrennt durch Bindestriche. |
+| `storeCode` | Der eindeutige Store-Code. Sie können viele Geschäfte pro Website haben. |
+| `storeViewCode` | Der eindeutige Store-Ansichtscode. Sie können viele Store-Ansichten pro Store haben. |
+| `websiteCode` | Der eindeutige Website-Code. Sie können viele Websites in einer Umgebung haben. |
 
 ### shoppingCartView
 
@@ -116,10 +137,17 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 | `priceTotal` | Der Gesamtpreis für den Produktzeileneintrag |
 | `quantity` | Die Anzahl der Produkteinheiten im Warenkorb |
 | `discountAmount` | Gibt den angewendeten Rabattbetrag an |
-| `currencyCode` | Die [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) Währung für das Produkt |
+| `currencyCode` | Die [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) verwendeter Währungscode, z. B. `USD` oder `EUR` |
 | `productImageUrl` | Hauptbild-URL des Produkts |
-| `selectedOptions` | Feld für ein konfigurierbares Produkt. `attribute` identifiziert ein Attribut des konfigurierbaren Produkts, z. B. `size` oder `color` und `value` gibt den Wert des Attributs an, z. B. `small` oder `black`. |
+| `selectedOptions` | Feld für ein konfigurierbares Produkt. |
+| `attribute` | Identifiziert ein Attribut des konfigurierbaren Produkts, z. B. `size` oder `color` |
+| `value` | Identifiziert den Wert des Attributs, z. B. `small` oder `black`. |
 | `cartID` | Die eindeutige ID, die den Warenkorb des Kunden identifiziert |
+| `commerceScope` | Gibt an, wo ein Ereignis aufgetreten ist (Store-Ansicht, Store, Website usw.). |
+| `environmentID` | Die Umgebungs-ID. Eine 32-stellige alphanumerische ID, getrennt durch Bindestriche. |
+| `storeCode` | Der eindeutige Store-Code. Sie können viele Geschäfte pro Website haben. |
+| `storeViewCode` | Der eindeutige Store-Ansichtscode. Sie können viele Store-Ansichten pro Store haben. |
+| `websiteCode` | Der eindeutige Website-Code. Sie können viele Websites in einer Umgebung haben. |
 
 ### pageView
 
@@ -134,6 +162,11 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 | Feld | Beschreibung |
 |---|---|
 | `pageViews` | Gibt an, ob eine Seite geladen wurde. A `value` von `1` gibt an, dass die Seite geladen wurde. |
+| `commerceScope` | Gibt an, wo ein Ereignis aufgetreten ist (Store-Ansicht, Store, Website usw.). |
+| `environmentID` | Die Umgebungs-ID. Eine 32-stellige alphanumerische ID, getrennt durch Bindestriche. |
+| `storeCode` | Der eindeutige Store-Code. Sie können viele Geschäfte pro Website haben. |
+| `storeViewCode` | Der eindeutige Store-Ansichtscode. Sie können viele Store-Ansichten pro Store haben. |
+| `websiteCode` | Der eindeutige Website-Code. Sie können viele Websites in einer Umgebung haben. |
 
 ### productPageView
 
@@ -153,9 +186,16 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 | `name` | Der Anzeigename oder der für Menschen lesbare Name des Produkts |
 | `priceTotal` | Der Gesamtpreis für den Produktzeileneintrag |
 | `discountAmount` | Gibt den angewendeten Rabattbetrag an |
-| `currencyCode` | Die [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) Währung für das Produkt |
+| `currencyCode` | Die [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) verwendeter Währungscode, z. B. `USD` oder `EUR` |
 | `productImageUrl` | Hauptbild-URL des Produkts |
-| `selectedOptions` | Feld für ein konfigurierbares Produkt. `attribute` identifiziert ein Attribut des konfigurierbaren Produkts, z. B. `size` oder `color` und `value` gibt den Wert des Attributs an, z. B. `small` oder `black`. |
+| `selectedOptions` | Feld für ein konfigurierbares Produkt. |
+| `attribute` | Identifiziert ein Attribut des konfigurierbaren Produkts, z. B. `size` oder `color` |
+| `value` | Identifiziert den Wert des Attributs, z. B. `small` oder `black`. |
+| `commerceScope` | Gibt an, wo ein Ereignis aufgetreten ist (Store-Ansicht, Store, Website usw.). |
+| `environmentID` | Die Umgebungs-ID. Eine 32-stellige alphanumerische ID, getrennt durch Bindestriche. |
+| `storeCode` | Der eindeutige Store-Code. Sie können viele Geschäfte pro Website haben. |
+| `storeViewCode` | Der eindeutige Store-Ansichtscode. Sie können viele Store-Ansichten pro Store haben. |
+| `websiteCode` | Der eindeutige Website-Code. Sie können viele Websites in einer Umgebung haben. |
 
 ### startCheckout
 
@@ -176,10 +216,17 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 | `priceTotal` | Der Gesamtpreis für den Produktzeileneintrag |
 | `quantity` | Die Anzahl der Produkteinheiten im Warenkorb |
 | `discountAmount` | Gibt den angewendeten Rabattbetrag an |
-| `currencyCode` | Die [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) Währung für das Produkt |
+| `currencyCode` | Die [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) verwendeter Währungscode, z. B. `USD` oder `EUR` |
 | `productImageUrl` | Hauptbild-URL des Produkts |
-| `selectedOptions` | Feld für ein konfigurierbares Produkt. `attribute` identifiziert ein Attribut des konfigurierbaren Produkts, z. B. `size` oder `color` und `value` gibt den Wert des Attributs an, z. B. `small` oder `black`. |
+| `selectedOptions` | Feld für ein konfigurierbares Produkt. |
+| `attribute` | Identifiziert ein Attribut des konfigurierbaren Produkts, z. B. `size` oder `color` |
+| `value` | Identifiziert den Wert des Attributs, z. B. `small` oder `black`. |
 | `cartID` | Die eindeutige ID, die den Warenkorb des Kunden identifiziert |
+| `commerceScope` | Gibt an, wo ein Ereignis aufgetreten ist (Store-Ansicht, Store, Website usw.). |
+| `environmentID` | Die Umgebungs-ID. Eine 32-stellige alphanumerische ID, getrennt durch Bindestriche. |
+| `storeCode` | Der eindeutige Store-Code. Sie können viele Geschäfte pro Website haben. |
+| `storeViewCode` | Der eindeutige Store-Ansichtscode. Sie können viele Store-Ansichten pro Store haben. |
+| `websiteCode` | Der eindeutige Website-Code. Sie können viele Websites in einer Umgebung haben. |
 
 ### completeCheckout
 
@@ -198,13 +245,14 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 | `purchaseID` | Vom Verkäufer für diesen Kauf oder Vertrag zugewiesene eindeutige Kennung. Es gibt keine Garantie dafür, dass die ID eindeutig ist. |
 | `orderType` | Gibt den Typ der aufgegebenen Bestellung an, z. B. Checkout oder Sofortkauf |
 | `payments` | Liste der Zahlungen für diese Bestellung |
-| `currencyCode` | Die [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) Währungscode, der für diesen Zahlungseintrag verwendet wird. Beispiel: `USD` oder `EUR`. |
+| `currencyCode` | Die [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) verwendeter Währungscode, z. B. `USD` oder `EUR` |
 | `paymentAmount` | Wert der Zahlung |
 | `paymentType` | Die Zahlungsmethode für diese Bestellung. Optionen sind: `cash`, `credit_card`, `debit_card`, `gift_card`, `check`, `paypal`, `wire_transfer`, `credit_card_reference`, `other` |
 | `transactionID` | Die eindeutige Transaktionskennung für dieses Zahlungselement |
 | `shipping` | Versanddetails für ein oder mehrere Produkte. |
 | `shippingMethod` | Die vom Kunden gewählte Versandmethode, z. B. Standardversand, beschleunigte Auslieferung, Abholung im Geschäft usw. |
 | `shippingAmount` | Die Gesamtversandkosten für die Artikel im Warenkorb |
+| `currencyCode` | Die [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) verwendeter Währungscode, z. B. `USD` oder `EUR` |
 | `promotionID` | Eindeutige Kennung der Promotion, falls vorhanden |
 | `personalEmail` | Gibt die persönliche E-Mail-Adresse an |
 | `address` | Die technische Adresse, beispielsweise `name@domain.com` wie allgemein in RFC2822 und nachfolgenden Standards definiert |
@@ -214,9 +262,16 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 | `priceTotal` | Der Gesamtpreis für den Produktzeileneintrag |
 | `quantity` | Die Anzahl der Produkteinheiten im Warenkorb |
 | `discountAmount` | Gibt den angewendeten Rabattbetrag an |
-| `currencyCode` | Die [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) Währungscode, der für die Bestellsummen verwendet wird. |
+| `currencyCode` | Die [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) verwendeter Währungscode, z. B. `USD` oder `EUR` |
 | `productImageUrl` | Hauptbild-URL des Produkts |
-| `selectedOptions` | Feld für ein konfigurierbares Produkt. `attribute` identifiziert ein Attribut des konfigurierbaren Produkts, z. B. `size` oder `color` und `value` gibt den Wert des Attributs an, z. B. `small` oder `black`. |
+| `selectedOptions` | Feld für ein konfigurierbares Produkt. |
+| `attribute` | Identifiziert ein Attribut des konfigurierbaren Produkts, z. B. `size` oder `color` |
+| `value` | Identifiziert den Wert des Attributs, z. B. `small` oder `black`. |
+| `commerceScope` | Gibt an, wo ein Ereignis aufgetreten ist (Store-Ansicht, Store, Website usw.). |
+| `environmentID` | Die Umgebungs-ID. Eine 32-stellige alphanumerische ID, getrennt durch Bindestriche. |
+| `storeCode` | Der eindeutige Store-Code. Sie können viele Geschäfte pro Website haben. |
+| `storeViewCode` | Der eindeutige Store-Ansichtscode. Sie können viele Store-Ansichten pro Store haben. |
+| `websiteCode` | Der eindeutige Website-Code. Sie können viele Websites in einer Umgebung haben. |
 
 ## Profilereignisse
 
@@ -246,6 +301,11 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 | `address` | Die technische Adresse, beispielsweise `name@domain.com` wie allgemein in RFC2822 und nachfolgenden Standards definiert |
 | `userAccount` | Gibt Details zu Treueprogramm, Voreinstellungen, Anmeldeprozesse und andere Kontovoreinstellungen an |
 | `login` | Gibt an, ob ein Besucher versucht hat, sich anzumelden |
+| `commerceScope` | Gibt an, wo ein Ereignis aufgetreten ist (Store-Ansicht, Store, Website usw.). |
+| `environmentID` | Die Umgebungs-ID. Eine 32-stellige alphanumerische ID, getrennt durch Bindestriche. |
+| `storeCode` | Der eindeutige Store-Code. Sie können viele Geschäfte pro Website haben. |
+| `storeViewCode` | Der eindeutige Store-Ansichtscode. Sie können viele Store-Ansichten pro Store haben. |
+| `websiteCode` | Der eindeutige Website-Code. Sie können viele Websites in einer Umgebung haben. |
 
 ### signOut
 
@@ -265,6 +325,11 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 |---|---|
 | `userAccount` | Gibt Details zu Treueprogramm, Voreinstellungen, Anmeldeprozesse und andere Kontovoreinstellungen an |
 | `logout` | Gibt an, ob ein Besucher versucht hat, sich abzumelden |
+| `commerceScope` | Gibt an, wo ein Ereignis aufgetreten ist (Store-Ansicht, Store, Website usw.). |
+| `environmentID` | Die Umgebungs-ID. Eine 32-stellige alphanumerische ID, getrennt durch Bindestriche. |
+| `storeCode` | Der eindeutige Store-Code. Sie können viele Geschäfte pro Website haben. |
+| `storeViewCode` | Der eindeutige Store-Ansichtscode. Sie können viele Store-Ansichten pro Store haben. |
+| `websiteCode` | Der eindeutige Website-Code. Sie können viele Websites in einer Umgebung haben. |
 
 ### createAccount
 
@@ -290,6 +355,11 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 | `address` | Die technische Adresse, beispielsweise `name@domain.com` wie allgemein in RFC2822 und nachfolgenden Standards definiert |
 | `userAccount` | Gibt Details zu Treueprogramm, Voreinstellungen, Anmeldeprozesse und andere Kontovoreinstellungen an |
 | `createProfile` | Gibt an, ob ein Benutzer ein Kontoprofil erstellt hat |
+| `commerceScope` | Gibt an, wo ein Ereignis aufgetreten ist (Store-Ansicht, Store, Website usw.). |
+| `environmentID` | Die Umgebungs-ID. Eine 32-stellige alphanumerische ID, getrennt durch Bindestriche. |
+| `storeCode` | Der eindeutige Store-Code. Sie können viele Geschäfte pro Website haben. |
+| `storeViewCode` | Der eindeutige Store-Ansichtscode. Sie können viele Store-Ansichten pro Store haben. |
+| `websiteCode` | Der eindeutige Website-Code. Sie können viele Websites in einer Umgebung haben. |
 
 ### editAccount
 
@@ -315,6 +385,11 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 | `address` | Die technische Adresse, beispielsweise `name@domain.com` wie allgemein in RFC2822 und nachfolgenden Standards definiert |
 | `userAccount` | Gibt Details zu Treueprogramm, Voreinstellungen, Anmeldeprozesse und andere Kontovoreinstellungen an |
 | `updateProfile` | Gibt an, ob ein Benutzer sein Kontoprofil aktualisiert hat |
+| `commerceScope` | Gibt an, wo ein Ereignis aufgetreten ist (Store-Ansicht, Store, Website usw.). |
+| `environmentID` | Die Umgebungs-ID. Eine 32-stellige alphanumerische ID, getrennt durch Bindestriche. |
+| `storeCode` | Der eindeutige Store-Code. Sie können viele Geschäfte pro Website haben. |
+| `storeViewCode` | Der eindeutige Store-Ansichtscode. Sie können viele Store-Ansichten pro Store haben. |
+| `websiteCode` | Der eindeutige Website-Code. Sie können viele Websites in einer Umgebung haben. |
 
 ## Suchereignisse
 
@@ -348,6 +423,11 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 | `attribute` (sortieren) | Ein Attribut zum Sortieren von Elementen in Suchergebnissen |
 | `order` | Die Reihenfolge, in der Suchergebnisse zurückgegeben werden |
 | `query` | Die gesuchten Begriffe |
+| `commerceScope` | Gibt an, wo ein Ereignis aufgetreten ist (Store-Ansicht, Store, Website usw.). |
+| `environmentID` | Die Umgebungs-ID. Eine 32-stellige alphanumerische ID, getrennt durch Bindestriche. |
+| `storeCode` | Der eindeutige Store-Code. Sie können viele Geschäfte pro Website haben. |
+| `storeViewCode` | Der eindeutige Store-Ansichtscode. Sie können viele Store-Ansichten pro Store haben. |
+| `websiteCode` | Der eindeutige Website-Code. Sie können viele Websites in einer Umgebung haben. |
 
 ### searchResponseReceived
 
@@ -373,6 +453,11 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 | `SKU` | Lagereinheit. Die eindeutige Kennung für das Produkt. |
 | `name` | Der Anzeigename oder der für Menschen lesbare Name des Produkts |
 | `productImageUrl` | Hauptbild-URL des Produkts |
+| `commerceScope` | Gibt an, wo ein Ereignis aufgetreten ist (Store-Ansicht, Store, Website usw.). |
+| `environmentID` | Die Umgebungs-ID. Eine 32-stellige alphanumerische ID, getrennt durch Bindestriche. |
+| `storeCode` | Der eindeutige Store-Code. Sie können viele Geschäfte pro Website haben. |
+| `storeViewCode` | Der eindeutige Store-Ansichtscode. Sie können viele Store-Ansichten pro Store haben. |
+| `websiteCode` | Der eindeutige Website-Code. Sie können viele Websites in einer Umgebung haben. |
 
 ## B2B-Ereignisse
 
@@ -396,6 +481,11 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 | `ID` | Eindeutige Kennung der Anforderungsliste |
 | `name` | Name der vom Kunden angegebenen Anforderungsliste |
 | `description` | Beschreibung der vom Kunden angegebenen Anforderungsliste |
+| `commerceScope` | Gibt an, wo ein Ereignis aufgetreten ist (Store-Ansicht, Store, Website usw.). |
+| `environmentID` | Die Umgebungs-ID. Eine 32-stellige alphanumerische ID, getrennt durch Bindestriche. |
+| `storeCode` | Der eindeutige Store-Code. Sie können viele Geschäfte pro Website haben. |
+| `storeViewCode` | Der eindeutige Store-Ansichtscode. Sie können viele Store-Ansichten pro Store haben. |
+| `websiteCode` | Der eindeutige Website-Code. Sie können viele Websites in einer Umgebung haben. |
 
 ### addToRequisitionList
 
@@ -423,8 +513,15 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 | `quantity` | Anzahl der hinzugefügten Produkteinheiten |
 | `priceTotal` | Der Gesamtpreis für den Produktzeileneintrag |
 | `discountAmount` | Gibt den angewendeten Rabattbetrag an |
-| `currencyCode` | Die [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) Währungscode für dieses Zahlungselement |
-| `selectedOptions` | Feld für ein konfigurierbares Produkt. `attribute` identifiziert ein Attribut des konfigurierbaren Produkts, z. B. `size` oder `color` und `value` gibt den Wert des Attributs an, z. B. `small` oder `black`. |
+| `currencyCode` | Die [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) verwendeter Währungscode, z. B. `USD` oder `EUR` |
+| `selectedOptions` | Feld für ein konfigurierbares Produkt. |
+| `attribute` | Identifiziert ein Attribut des konfigurierbaren Produkts, z. B. `size` oder `color` |
+| `value` | Identifiziert den Wert des Attributs, z. B. `small` oder `black`. |
+| `commerceScope` | Gibt an, wo ein Ereignis aufgetreten ist (Store-Ansicht, Store, Website usw.). |
+| `environmentID` | Die Umgebungs-ID. Eine 32-stellige alphanumerische ID, getrennt durch Bindestriche. |
+| `storeCode` | Der eindeutige Store-Code. Sie können viele Geschäfte pro Website haben. |
+| `storeViewCode` | Der eindeutige Store-Ansichtscode. Sie können viele Store-Ansichten pro Store haben. |
+| `websiteCode` | Der eindeutige Website-Code. Sie können viele Websites in einer Umgebung haben. |
 
 ### removeFromRequisitionList
 
@@ -448,8 +545,15 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 | `quantity` | Anzahl der hinzugefügten Produkteinheiten |
 | `priceTotal` | Der Gesamtpreis für den Produktzeileneintrag |
 | `discountAmount` | Gibt den angewendeten Rabattbetrag an |
-| `currencyCode` | Die [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) Währungscode für dieses Zahlungselement |
-| `selectedOptions` | Feld für ein konfigurierbares Produkt. `attribute` identifiziert ein Attribut des konfigurierbaren Produkts, z. B. `size` oder `color` und `value` gibt den Wert des Attributs an, z. B. `small` oder `black`. |
+| `currencyCode` | Die [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) verwendeter Währungscode, z. B. `USD` oder `EUR` |
+| `selectedOptions` | Feld für ein konfigurierbares Produkt. |
+| `attribute` | Identifiziert ein Attribut des konfigurierbaren Produkts, z. B. `size` oder `color` |
+| `value` | Identifiziert den Wert des Attributs, z. B. `small` oder `black`. |
+| `commerceScope` | Gibt an, wo ein Ereignis aufgetreten ist (Store-Ansicht, Store, Website usw.). |
+| `environmentID` | Die Umgebungs-ID. Eine 32-stellige alphanumerische ID, getrennt durch Bindestriche. |
+| `storeCode` | Der eindeutige Store-Code. Sie können viele Geschäfte pro Website haben. |
+| `storeViewCode` | Der eindeutige Store-Ansichtscode. Sie können viele Store-Ansichten pro Store haben. |
+| `websiteCode` | Der eindeutige Website-Code. Sie können viele Websites in einer Umgebung haben. |
 
 ## Back-Office-Ereignisse
 
@@ -478,7 +582,12 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 | `SKU` | Lagereinheit. Die eindeutige Kennung für das Produkt. |
 | `quantity` | Die Anzahl der Produkteinheiten im Warenkorb |
 | `priceTotal` | Der Gesamtpreis für den Produktzeileneintrag |
-| `discountAmount` | Gibt den angewendeten Rabattbetrag an |
+| `discountAmount` | Gibt den auf das Element angewendeten Rabattbetrag an |
+| `currencyCode` | Die [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) verwendeter Währungscode, z. B. `USD` oder `EUR` |
+| `productImageUrl` | Hauptbild-URL des Produkts |
+| `selectedOptions` | Feld für ein konfigurierbares Produkt. |
+| `attribute` | Identifiziert ein Attribut des konfigurierbaren Produkts, z. B. `size` oder `color` |
+| `value` | Identifiziert den Wert des Attributs, z. B. `small` oder `black`. |
 | `commerceScope` | Gibt an, wo ein Ereignis aufgetreten ist (Store-Ansicht, Store, Website usw.). |
 | `environmentID` | Die Umgebungs-ID. Eine 32-stellige alphanumerische ID, getrennt durch Bindestriche. |
 | `storeCode` | Der eindeutige Store-Code. Sie können viele Geschäfte pro Website haben. |
@@ -487,17 +596,19 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 | `order` | Enthält Informationen zur Bestellung |
 | `purchaseID` | Vom Verkäufer für diesen Kauf oder Vertrag zugewiesene eindeutige Kennung. Es gibt keine Garantie dafür, dass die ID eindeutig ist |
 | `priceTotal` | Der Gesamtpreis dieser Bestellung nach Anwendung aller Rabatte und Steuern |
-| `currencyCode` | Der für die Bestellsummen verwendete Währungscode nach ISO 4217 |
+| `currencyCode` | Die [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) verwendeter Währungscode, z. B. `USD` oder `EUR` |
 | `purchaseOrderNumber` | Vom Käufer für diesen Kauf oder Vertrag zugewiesene eindeutige Kennung |
 | `payments` | Liste der Zahlungen für diese Bestellung |
 | `paymentType` | Die Zahlungsmethode für diese Bestellung. Aufzählte, zulässige benutzerdefinierte Werte. |
-| `currencyCode` | Die [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) Währungscode für dieses Zahlungselement |
+| `currencyCode` | Die [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) verwendeter Währungscode, z. B. `USD` oder `EUR` |
 | `paymentAmount` | Wert der Zahlung |
 | `taxAmount` | Der vom Käufer im Rahmen der Abschlusszahlung gezahlte Steuerbetrag |
+| `discountAmount` | Gibt den Rabattbetrag an, der auf die gesamte Bestellung angewendet wird |
 | `createdDate` | Uhrzeit und Datum der Erstellung einer neuen Bestellung im Commerce-System. Beispiel: `2022-10-15T20:20:39+00:00` |
 | `shipping` | Versanddetails für ein oder mehrere Produkte |
 | `shippingMethod` | Die vom Kunden gewählte Versandmethode, z. B. Standardversand, beschleunigte Auslieferung, Abholung im Geschäft usw. |
 | `shippingAmount` | Der Betrag, den der Kunde für den Versand zahlen musste. |
+| `currencyCode` | Die [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) verwendeter Währungscode, z. B. `USD` oder `EUR` |
 | `address` | Lieferadresse |
 | `street1` | Primäre Straßeninformationen, Wohnungsnummer, Straßennummer und Straßenname |
 | `street2` | Zusätzliche Felder für Informationen auf Straßenebene |
@@ -524,7 +635,7 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 #### Von orderItemsShipped erfasste Daten
 
 In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschrieben.
-|Feld|Beschreibung| |—|—| |`address`|Die technische Adresse, beispielsweise `name@domain.com` wie allgemein in RFC2822 und nachfolgenden Standards definiert| |`productListItems`|Ein Array von Produkten in der Reihenfolge| |`id`|Die Zeileneintrag-ID für diesen Produkteintrag. Das Produkt selbst wird durch die `product` -Feld.| |`name`|Anzeigename oder für Menschen lesbarer Name des Produkts| |`SKU`|Lagereinheit. Die eindeutige Kennung für das Produkt.| |`quantity`|Anzahl der Produkteinheiten im Warenkorb| |`priceTotal`|Der Gesamtpreis für den Produktposten| |`discountAmount`|Gibt den angewendeten Abzinsungsbetrag an| |`commerceScope`|Gibt an, wo ein Ereignis aufgetreten ist (Store-Ansicht, Store, Website usw.).| |`environmentID`|Die Umgebungs-ID. Eine 32-stellige alphanumerische ID, getrennt durch Bindestriche.| |`storeCode`|Der eindeutige Store-Code. Sie können viele Geschäfte pro Website haben.| |`storeViewCode`|Der eindeutige Store-Ansichtscode. Sie können viele Store-Ansichten pro Store haben.| |`websiteCode`|Der eindeutige Website-Code. Sie können viele Websites in einer Umgebung haben.| |`order`|Enthält Informationen zur Bestellung| |`purchaseID`|Vom Verkäufer für diesen Kauf oder Vertrag zugewiesene eindeutige Kennung. Es gibt keine Garantie dafür, dass die ID eindeutig ist| |`priceTotal`|Der Gesamtpreis dieser Bestellung nach Anwendung aller Rabatte und Steuern| |`currencyCode`|Der für die Bestellsummen verwendete Währungscode nach ISO 4217 | |`purchaseOrderNumber`|Vom Käufer für diesen Kauf oder Vertrag zugewiesene eindeutige Kennung| |`payments`|Liste der Zahlungen für diesen Auftrag| |`paymentType`|Die Zahlungsmethode für diese Bestellung. Aufzählte, zulässige benutzerdefinierte Werte.| |`currencyCode`|Die [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) Währungscode für dieses Zahlungselement | |`paymentAmount`|Wert der Zahlung| |`lastUpdatedDate`|Der Zeitpunkt, zu dem ein bestimmter Bestelldatensatz zuletzt im Commerce-System aktualisiert wird| |`shipping`|Versanddetails für ein oder mehrere Produkte| |`shippingMethod`|Die vom Kunden gewählte Versandmethode, z. B. Standardversand, beschleunigte Lieferung, Abholung im Geschäft usw.| |`trackingNumber`|Die von der Reederei für die Lieferung eines Bestellartikels angegebene Trackingnummer| |`trackingURL`|URL zur Verfolgung des Versandstatus eines Bestellartikels| |`shipDate`|Das Datum, an dem ein oder mehrere Artikel aus einer Bestellung versandt werden| |`address`|Lieferadresse | |`street1`|Primäre Straßeninformationen, Wohnungsnummer, Straßennummer und Straßenname| |`street2`|Zusätzliches Feld für Informationen auf Straßenebene| |`city`|Name der Stadt| |`state`|Der Name des Status. Dies ist ein Freiformfeld.| |`postalCode`|Postleitzahl des Ortes. Postleitzahlen sind nicht für alle Länder verfügbar. In einigen Ländern wird dies nur einen Teil der Postleitzahl enthalten.| |`country`|Der Name des von der Regierung verwalteten Gebiets. Andere als `xdm:countryCode`, ist dies ein Freiformfeld, das den Ländernamen in jeder Sprache enthalten kann.| |`shippingAmount`|Der Betrag, den der Kunde für den Versand zahlen musste.| |`billingAddress`|Abrechnungs-Postanschrift| |`street1`|Primäre Straßeninformationen, Wohnungsnummer, Straßennummer und Straßenname| |`street2`|Zusätzliches Feld für Informationen auf Straßenebene| |`city`|Name der Stadt| |`state`|Der Name des Status. Dies ist ein Freiformfeld.| |`postalCode`|Postleitzahl des Ortes. Postleitzahlen sind nicht für alle Länder verfügbar. In einigen Ländern wird dies nur einen Teil der Postleitzahl enthalten.| |`country`|Der Name des von der Regierung verwalteten Gebiets. Andere als `xdm:countryCode`, ist dies ein Freiformfeld, das den Ländernamen in jeder Sprache enthalten kann.| |`personalEmail`|Eine persönliche E-Mail-Adresse| |`address`|Die technische Adresse, z. B. &quot;name@domain.com&quot;, wie sie üblicherweise in RFC2822 und nachfolgenden Standards definiert ist|
+|Feld|Beschreibung| |—|—| |`address`|Die technische Adresse, beispielsweise `name@domain.com` wie allgemein in RFC2822 und nachfolgenden Standards definiert| |`productListItems`|Ein Array von Produkten in der Reihenfolge| |`id`|Die Zeileneintrag-ID für diesen Produkteintrag. Das Produkt selbst wird durch die `product` -Feld.| |`name`|Anzeigename oder für Menschen lesbarer Name des Produkts| |`SKU`|Lagereinheit. Die eindeutige Kennung für das Produkt.| |`quantity`|Anzahl der Produkteinheiten im Warenkorb| |`priceTotal`|Der Gesamtpreis für den Produktposten| |`discountAmount`|Gibt den angewendeten Abzinsungsbetrag an| |`currencyCode`|Die [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) verwendeter Währungscode, z. B. `USD` oder `EUR`| |`productImageUrl`|Hauptbild-URL des Produkts| |`selectedOptions`|Feld für ein konfigurierbares Produkt.| |`attribute`|Identifiziert ein Attribut des konfigurierbaren Produkts, z. B. `size` oder `color`| |`value`|Identifiziert den Wert des Attributs, z. B. `small` oder `black`.| |`commerceScope`|Gibt an, wo ein Ereignis aufgetreten ist (Store-Ansicht, Store, Website usw.).| |`environmentID`|Die Umgebungs-ID. Eine 32-stellige alphanumerische ID, getrennt durch Bindestriche.| |`storeCode`|Der eindeutige Store-Code. Sie können viele Geschäfte pro Website haben.| |`storeViewCode`|Der eindeutige Store-Ansichtscode. Sie können viele Store-Ansichten pro Store haben.| |`websiteCode`|Der eindeutige Website-Code. Sie können viele Websites in einer Umgebung haben.| |`order`|Enthält Informationen zur Bestellung| |`purchaseID`|Vom Verkäufer für diesen Kauf oder Vertrag zugewiesene eindeutige Kennung. Es gibt keine Garantie dafür, dass die ID eindeutig ist| |`priceTotal`|Der Gesamtpreis dieser Bestellung nach Anwendung aller Rabatte und Steuern| |`currencyCode`|Die [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) verwendeter Währungscode, z. B. `USD` oder `EUR`| |`purchaseOrderNumber`|Vom Käufer für diesen Kauf oder Vertrag zugewiesene eindeutige Kennung| |`payments`|Liste der Zahlungen für diesen Auftrag| |`paymentType`|Die Zahlungsmethode für diese Bestellung. Aufzählte, zulässige benutzerdefinierte Werte.| |`currencyCode`|Die [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) verwendeter Währungscode, z. B. `USD` oder `EUR`| |`paymentAmount`|Wert der Zahlung| |`lastUpdatedDate`|Der Zeitpunkt, zu dem ein bestimmter Bestelldatensatz zuletzt im Commerce-System aktualisiert wird| |`shipping`|Versanddetails für ein oder mehrere Produkte| |`shippingMethod`|Die vom Kunden gewählte Versandmethode, z. B. Standardversand, beschleunigte Lieferung, Abholung im Geschäft usw.| |`currencyCode`|Die [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) verwendeter Währungscode, z. B. `USD` oder `EUR`| |`trackingNumber`|Die von der Reederei für die Lieferung eines Bestellartikels angegebene Trackingnummer| |`trackingURL`|URL zur Verfolgung des Versandstatus eines Bestellartikels| |`shipDate`|Das Datum, an dem ein oder mehrere Artikel aus einer Bestellung versandt werden| |`address`|Lieferadresse | |`street1`|Primäre Straßeninformationen, Wohnungsnummer, Straßennummer und Straßenname| |`street2`|Zusätzliches Feld für Informationen auf Straßenebene| |`city`|Name der Stadt| |`state`|Der Name des Status. Dies ist ein Freiformfeld.| |`postalCode`|Postleitzahl des Ortes. Postleitzahlen sind nicht für alle Länder verfügbar. In einigen Ländern wird dies nur einen Teil der Postleitzahl enthalten.| |`country`|Der Name des von der Regierung verwalteten Gebiets. Andere als `xdm:countryCode`, ist dies ein Freiformfeld, das den Ländernamen in jeder Sprache enthalten kann.| |`shippingAmount`|Der Betrag, den der Kunde für den Versand zahlen musste.| |`currencyCode`|Die [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) verwendeter Währungscode, z. B. `USD` oder `EUR`| |`billingAddress`|Abrechnungs-Postanschrift| |`street1`|Primäre Straßeninformationen, Wohnungsnummer, Straßennummer und Straßenname| |`street2`|Zusätzliches Feld für Informationen auf Straßenebene| |`city`|Name der Stadt| |`state`|Der Name des Status. Dies ist ein Freiformfeld.| |`postalCode`|Postleitzahl des Ortes. Postleitzahlen sind nicht für alle Länder verfügbar. In einigen Ländern wird dies nur einen Teil der Postleitzahl enthalten.| |`country`|Der Name des von der Regierung verwalteten Gebiets. Andere als `xdm:countryCode`, ist dies ein Freiformfeld, das den Ländernamen in jeder Sprache enthalten kann.| |`personalEmail`|Eine persönliche E-Mail-Adresse| |`address`|Die technische Adresse, z. B. &quot;name@domain.com&quot;, wie sie üblicherweise in RFC2822 und nachfolgenden Standards definiert ist|
 
 ### orderCancelled
 
@@ -535,7 +646,7 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 #### Von orderCancelled erfasste Daten
 
 In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschrieben.
-|Feld|Beschreibung| |—|—| |`address`|Die technische Adresse, beispielsweise `name@domain.com` wie allgemein in RFC2822 und nachfolgenden Standards definiert| |`productListItems`|Ein Array von Produkten in der Reihenfolge| |`id`|Die Zeileneintrag-ID für diesen Produkteintrag. Das Produkt selbst wird durch die `product` -Feld.| |`name`|Anzeigename oder für Menschen lesbarer Name des Produkts| |`SKU`|Lagereinheit. Die eindeutige Kennung für das Produkt.| |`quantity`|Anzahl der Produkteinheiten im Warenkorb| |`priceTotal`|Der Gesamtpreis für den Produktposten| |`discountAmount`|Gibt den angewendeten Abzinsungsbetrag an| |`commerceScope`|Gibt an, wo ein Ereignis aufgetreten ist (Store-Ansicht, Store, Website usw.).| |`environmentID`|Die Umgebungs-ID. Eine 32-stellige alphanumerische ID, getrennt durch Bindestriche.| |`storeCode`|Der eindeutige Store-Code. Sie können viele Geschäfte pro Website haben.| |`storeViewCode`|Der eindeutige Store-Ansichtscode. Sie können viele Store-Ansichten pro Store haben.| |`websiteCode`|Der eindeutige Website-Code. Sie können viele Websites in einer Umgebung haben.| |`order`|Enthält Informationen zur Bestellung| |`purchaseID`|Vom Verkäufer für diesen Kauf oder Vertrag zugewiesene eindeutige Kennung. Es gibt keine Garantie dafür, dass die ID eindeutig ist| |`purchaseOrderNumber`|Vom Käufer für diesen Kauf oder Vertrag zugewiesene eindeutige Kennung| |`cancelDate`|Datum und Uhrzeit der Stornierung einer Bestellung durch einen Käufer| |`lastUpdatedDate`|Der Zeitpunkt, zu dem ein bestimmter Bestelldatensatz zuletzt im Commerce-System aktualisiert wird| |`personalEmail`|Eine persönliche E-Mail-Adresse| |`address`|Die technische Adresse, z. B. &quot;name@domain.com&quot;, wie sie üblicherweise in RFC2822 und nachfolgenden Standards definiert ist|
+|Feld|Beschreibung| |—|—| |`address`|Die technische Adresse, beispielsweise `name@domain.com` wie allgemein in RFC2822 und nachfolgenden Standards definiert| |`productListItems`|Ein Array von Produkten in der Reihenfolge| |`id`|Die Zeileneintrag-ID für diesen Produkteintrag. Das Produkt selbst wird durch die `product` -Feld.| |`name`|Anzeigename oder für Menschen lesbarer Name des Produkts| |`SKU`|Lagereinheit. Die eindeutige Kennung für das Produkt.| |`quantity`|Anzahl der Produkteinheiten im Warenkorb| |`priceTotal`|Der Gesamtpreis für den Produktposten| |`discountAmount`|Gibt den angewendeten Abzinsungsbetrag an| |`currencyCode`|Die [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) verwendeter Währungscode, z. B. `USD` oder `EUR`| |`productImageUrl`|Hauptbild-URL des Produkts| |`selectedOptions`|Feld für ein konfigurierbares Produkt.| |`attribute`|Identifiziert ein Attribut des konfigurierbaren Produkts, z. B. `size` oder `color`| |`value`|Identifiziert den Wert des Attributs, z. B. `small` oder `black`.| |`commerceScope`|Gibt an, wo ein Ereignis aufgetreten ist (Store-Ansicht, Store, Website usw.).| |`environmentID`|Die Umgebungs-ID. Eine 32-stellige alphanumerische ID, getrennt durch Bindestriche.| |`storeCode`|Der eindeutige Store-Code. Sie können viele Geschäfte pro Website haben.| |`storeViewCode`|Der eindeutige Store-Ansichtscode. Sie können viele Store-Ansichten pro Store haben.| |`websiteCode`|Der eindeutige Website-Code. Sie können viele Websites in einer Umgebung haben.| |`order`|Enthält Informationen zur Bestellung| |`purchaseID`|Vom Verkäufer für diesen Kauf oder Vertrag zugewiesene eindeutige Kennung. Es gibt keine Garantie dafür, dass die ID eindeutig ist| |`purchaseOrderNumber`|Vom Käufer für diesen Kauf oder Vertrag zugewiesene eindeutige Kennung| |`cancelDate`|Datum und Uhrzeit der Stornierung einer Bestellung durch einen Käufer| |`lastUpdatedDate`|Der Zeitpunkt, zu dem ein bestimmter Bestelldatensatz zuletzt im Commerce-System aktualisiert wird| |`personalEmail`|Eine persönliche E-Mail-Adresse| |`address`|Die technische Adresse, z. B. &quot;name@domain.com&quot;, wie sie üblicherweise in RFC2822 und nachfolgenden Standards definiert ist|
 
 ### creditMemoIssued
 
@@ -546,7 +657,7 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 #### Von CreditMemoIssued erfasste Daten
 
 In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschrieben.
-|Feld|Beschreibung| |—|—| |`address`|Die technische Adresse, beispielsweise `name@domain.com` wie allgemein in RFC2822 und nachfolgenden Standards definiert| |`productListItems`|Ein Array von Produkten in der Reihenfolge| |`id`|Die Zeileneintrag-ID für diesen Produkteintrag. Das Produkt selbst wird durch die `product` -Feld.| |`name`|Anzeigename oder für Menschen lesbarer Name des Produkts| |`SKU`|Lagereinheit. Die eindeutige Kennung für das Produkt.| |`quantity`|Anzahl der Produkteinheiten im Warenkorb| |`priceTotal`|Der Gesamtpreis für den Produktposten| |`discountAmount`|Gibt den angewendeten Abzinsungsbetrag an| |`order`|Enthält Informationen zur Bestellung| |`purchaseID`|Vom Verkäufer für diesen Kauf oder Vertrag zugewiesene eindeutige Kennung. Es gibt keine Garantie dafür, dass die ID eindeutig ist| |`purchaseOrderNumber`|Vom Käufer für diesen Kauf oder Vertrag zugewiesene eindeutige Kennung| |`lastUpdatedDate`|Der Zeitpunkt, zu dem ein bestimmter Bestelldatensatz zuletzt im Commerce-System aktualisiert wird| |`personalEmail`|Eine persönliche E-Mail-Adresse| |`address`|Die technische Adresse, z. B. &quot;name@domain.com&quot;, wie sie üblicherweise in RFC2822 und nachfolgenden Standards definiert ist|
+|Feld|Beschreibung| |—|—| |`address`|Die technische Adresse, beispielsweise `name@domain.com` wie allgemein in RFC2822 und nachfolgenden Standards definiert| |`productListItems`|Ein Array von Produkten in der Reihenfolge| |`id`|Die Zeileneintrag-ID für diesen Produkteintrag. Das Produkt selbst wird durch die `product` -Feld.| |`name`|Anzeigename oder für Menschen lesbarer Name des Produkts| |`SKU`|Lagereinheit. Die eindeutige Kennung für das Produkt.| |`quantity`|Anzahl der Produkteinheiten im Warenkorb| |`priceTotal`|Der Gesamtpreis für den Produktposten| |`discountAmount`|Gibt den angewendeten Abzinsungsbetrag an| |`currencyCode`|Die [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) verwendeter Währungscode, z. B. `USD` oder `EUR`| |`productImageUrl`|Hauptbild-URL des Produkts| |`selectedOptions`|Feld für ein konfigurierbares Produkt.| |`attribute`|Identifiziert ein Attribut des konfigurierbaren Produkts, z. B. `size` oder `color`| |`value`|Identifiziert den Wert des Attributs, z. B. `small` oder `black`.| |`order`|Enthält Informationen zur Bestellung| |`purchaseID`|Vom Verkäufer für diesen Kauf oder Vertrag zugewiesene eindeutige Kennung. Es gibt keine Garantie dafür, dass die ID eindeutig ist| |`purchaseOrderNumber`|Vom Käufer für diesen Kauf oder Vertrag zugewiesene eindeutige Kennung| |`lastUpdatedDate`|Der Zeitpunkt, zu dem ein bestimmter Bestelldatensatz zuletzt im Commerce-System aktualisiert wird| |`priceTotal`|Der Gesamtpreis für den Produktposten| |`discountAmount`|Gibt den angewendeten Abzinsungsbetrag an| |`currencyCode`|Die [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) verwendeter Währungscode, z. B. `USD` oder `EUR`| |`taxAmount`|Steuerbetrag, der vom Käufer im Rahmen der Abschlusszahlung gezahlt wurde.| |`refunds`| Liste der Erstattungen für diese Reihenfolge | |`refundPaymentType`|Die Zahlungsmethode für diese Bestellung. Aufzählte, zulässige benutzerdefinierte Werte.| |`refundAmount`|Wert der Erstattung.| |`currencyCode`|Die [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) verwendeter Währungscode, z. B. `USD` oder `EUR`| |`personalEmail`|Eine persönliche E-Mail-Adresse| |`address`|Die technische Adresse, beispielsweise `name@domain.com` wie allgemein in RFC2822 und nachfolgenden Standards definiert|
 
 ### orderShippingCompleted
 
@@ -557,4 +668,4 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 #### Von orderShippingCompleted erfasste Daten
 
 In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschrieben.
-|Feld|Beschreibung| |—|—| |`address`|Die technische Adresse, beispielsweise `name@domain.com` wie allgemein in RFC2822 und nachfolgenden Standards definiert| |`productListItems`|Ein Array von Produkten in der Reihenfolge| |`id`|Die Zeileneintrag-ID für diesen Produkteintrag. Das Produkt selbst wird durch die `product` -Feld.| |`name`|Anzeigename oder für Menschen lesbarer Name des Produkts| |`SKU`|Lagereinheit. Die eindeutige Kennung für das Produkt.| |`quantity`|Anzahl der Produkteinheiten im Warenkorb| |`priceTotal`|Der Gesamtpreis für den Produktposten| |`discountAmount`|Gibt den angewendeten Abzinsungsbetrag an| |`order`|Enthält Informationen zur Bestellung| |`purchaseID`|Vom Verkäufer für diesen Kauf oder Vertrag zugewiesene eindeutige Kennung. Es gibt keine Garantie dafür, dass die ID eindeutig ist| |`priceTotal`|Der Gesamtpreis dieser Bestellung nach Anwendung aller Rabatte und Steuern| |`currencyCode`|Der für die Bestellsummen verwendete Währungscode nach ISO 4217 | |`purchaseOrderNumber`|Vom Käufer für diesen Kauf oder Vertrag zugewiesene eindeutige Kennung| |`taxAmount`|Steuerbetrag, der vom Käufer im Rahmen der Abschlusszahlung gezahlt wurde.| |`createdDate`|Zeitpunkt und Datum der Erstellung einer neuen Bestellung im Commerce-System. Beispiel: `2022-10-15T20:20:39+00:00`| |`payments`|Liste der Zahlungen für diesen Auftrag| |`paymentType`|Die Zahlungsmethode für diese Bestellung. Aufzählte, zulässige benutzerdefinierte Werte.| |`currencyCode`|Die [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) Währungscode für dieses Zahlungselement | |`paymentAmount`|Wert der Zahlung| |`shipping`|Versanddetails für ein oder mehrere Produkte| |`shippingMethod`|Die vom Kunden gewählte Versandmethode, z. B. Standardversand, beschleunigte Lieferung, Abholung im Geschäft usw.| |`address`|Lieferadresse | |`street1`|Primäre Straßeninformationen, Wohnungsnummer, Straßennummer und Straßenname| |`street2`|Zusätzliches Feld für Informationen auf Straßenebene| |`city`|Name der Stadt| |`state`|Der Name des Status. Dies ist ein Freiformfeld.| |`postalCode`|Postleitzahl des Ortes. Postleitzahlen sind nicht für alle Länder verfügbar. In einigen Ländern wird dies nur einen Teil der Postleitzahl enthalten.| |`country`|Der Name des von der Regierung verwalteten Gebiets. Andere als `xdm:countryCode`, ist dies ein Freiformfeld, das den Ländernamen in jeder Sprache enthalten kann.| |`shippingAmount`|Der Betrag, den der Kunde für den Versand zahlen musste.| |`address`|Die technische Adresse, beispielsweise `name@domain.com` wie allgemein in RFC2822 und nachfolgenden Standards definiert| |`billingAddress`|Abrechnungs-Postanschrift| |`street1`|Primäre Straßeninformationen, Wohnungsnummer, Straßennummer und Straßenname| |`street2`|Zusätzliches Feld für Informationen auf Straßenebene| |`city`|Name der Stadt| |`state`|Der Name des Status. Dies ist ein Freiformfeld.| |`postalCode`|Postleitzahl des Ortes. Postleitzahlen sind nicht für alle Länder verfügbar. In einigen Ländern enthalten diese Daten nur einen Teil der Postleitzahl.| |`country`|Der Name des von der Regierung verwalteten Gebiets. Andere als `xdm:countryCode`, ist dies ein Freiformfeld, das den Ländernamen in jeder Sprache enthalten kann.| |`personalEmail`|Eine persönliche E-Mail-Adresse| |`address`|Die technische Adresse, z. B. &quot;name@domain.com&quot;, wie sie üblicherweise in RFC2822 und nachfolgenden Standards definiert ist|
+|Feld|Beschreibung| |—|—| |`address`|Die technische Adresse, beispielsweise `name@domain.com` wie allgemein in RFC2822 und nachfolgenden Standards definiert| |`productListItems`|Ein Array von Produkten in der Reihenfolge| |`id`|Die Zeileneintrag-ID für diesen Produkteintrag. Das Produkt selbst wird durch die `product` -Feld.| |`name`|Anzeigename oder für Menschen lesbarer Name des Produkts| |`SKU`|Lagereinheit. Die eindeutige Kennung für das Produkt.| |`quantity`|Anzahl der Produkteinheiten im Warenkorb| |`priceTotal`|Der Gesamtpreis für den Produktposten| |`discountAmount`|Gibt den angewendeten Abzinsungsbetrag an| |`currencyCode`|Die [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) verwendeter Währungscode, z. B. `USD` oder `EUR`| |`productImageUrl`|Hauptbild-URL des Produkts| |`selectedOptions`|Feld für ein konfigurierbares Produkt.| |`attribute`|Identifiziert ein Attribut des konfigurierbaren Produkts, z. B. `size` oder `color`| |`value`|Identifiziert den Wert des Attributs, z. B. `small` oder `black`.| |`order`|Enthält Informationen zur Bestellung| |`purchaseID`|Vom Verkäufer für diesen Kauf oder Vertrag zugewiesene eindeutige Kennung. Es gibt keine Garantie dafür, dass die ID eindeutig ist| |`priceTotal`|Der Gesamtpreis dieser Bestellung nach Anwendung aller Rabatte und Steuern| |`currencyCode`|Die [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) verwendeter Währungscode, z. B. `USD` oder `EUR`| |`purchaseOrderNumber`|Vom Käufer für diesen Kauf oder Vertrag zugewiesene eindeutige Kennung| |`taxAmount`|Steuerbetrag, der vom Käufer im Rahmen der Abschlusszahlung gezahlt wurde.| |`createdDate`|Zeitpunkt und Datum der Erstellung einer neuen Bestellung im Commerce-System. Beispiel: `2022-10-15T20:20:39+00:00`| |`payments`|Liste der Zahlungen für diesen Auftrag| |`paymentType`|Die Zahlungsmethode für diese Bestellung. Aufzählte, zulässige benutzerdefinierte Werte.| |`currencyCode`|Die [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) verwendeter Währungscode, z. B. `USD` oder `EUR`| |`paymentAmount`|Wert der Zahlung| |`shipping`|Versanddetails für ein oder mehrere Produkte| |`shippingMethod`|Die vom Kunden gewählte Versandmethode, z. B. Standardversand, beschleunigte Lieferung, Abholung im Geschäft usw.| |`address`|Lieferadresse | |`street1`|Primäre Straßeninformationen, Wohnungsnummer, Straßennummer und Straßenname| |`street2`|Zusätzliches Feld für Informationen auf Straßenebene| |`city`|Name der Stadt| |`state`|Der Name des Status. Dies ist ein Freiformfeld.| |`postalCode`|Postleitzahl des Ortes. Postleitzahlen sind nicht für alle Länder verfügbar. In einigen Ländern wird dies nur einen Teil der Postleitzahl enthalten.| |`country`|Der Name des von der Regierung verwalteten Gebiets. Andere als `xdm:countryCode`, ist dies ein Freiformfeld, das den Ländernamen in jeder Sprache enthalten kann.| |`shippingAmount`|Der Betrag, den der Kunde für den Versand zahlen musste.| |`currencyCode`|Die [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) verwendeter Währungscode, z. B. `USD` oder `EUR`| |`address`|Die technische Adresse, beispielsweise `name@domain.com` wie allgemein in RFC2822 und nachfolgenden Standards definiert| |`billingAddress`|Abrechnungs-Postanschrift| |`street1`|Primäre Straßeninformationen, Wohnungsnummer, Straßennummer und Straßenname| |`street2`|Zusätzliches Feld für Informationen auf Straßenebene| |`city`|Name der Stadt| |`state`|Der Name des Status. Dies ist ein Freiformfeld.| |`postalCode`|Postleitzahl des Ortes. Postleitzahlen sind nicht für alle Länder verfügbar. In einigen Ländern enthalten diese Daten nur einen Teil der Postleitzahl.| |`country`|Der Name des von der Regierung verwalteten Gebiets. Andere als `xdm:countryCode`, ist dies ein Freiformfeld, das den Ländernamen in jeder Sprache enthalten kann.| |`personalEmail`|Eine persönliche E-Mail-Adresse| |`address`|Die technische Adresse, z. B. &quot;name@domain.com&quot;, wie sie üblicherweise in RFC2822 und nachfolgenden Standards definiert ist|
