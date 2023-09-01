@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
 feature: Payments, Checkout
-source-git-commit: b1984085fa5d10c8202d2a982227e183d0b169e8
+source-git-commit: 9242e8eea078a00445c7f24ffc998b7d978a9775
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '466'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Ob Sie ein kleines Unternehmen, ein mittelständisches Unternehmen oder ein gro�
 
 * [**Onboarding**](onboard.md)—Der Prozess führt Sie durch die kommerzielle Anmeldung, technische Konfiguration, Berechtigungen, Sandbox-Umgebungskonfiguration und die Live-Zahlungsaktivierung.
 * [**Zahlungsoptionen**](payments-options.md)—Legen Sie die Zahlungsoptionen fest, um die für Ihre Store- (oder Multistore-) Kunden verfügbaren Methoden anzupassen.
-* **Finanzberichte zum Cashflow-Management**—Synchronisieren [Zahlungsdetails](order-payment-status.md) mit Bestellungen, die eine vollständige Transparenz des verarbeiteten Volumens, des Zahlungsbilds und der detaillierten Informationen gewährleisten [Berichterstellung auf Transaktionsebene](payouts.md) zur finanziellen Aussöhnung.
+* **Finanzberichte zum Cashflow-Management**—Synchronisieren [Zahlungsdetails](order-payment-status.md) mit den Bestellungen, die eine vollständige Transparenz des verarbeiteten Volumens und des Zahlungsbilds gewährleisten, [payouts](payouts.md)und detailliert [Berichterstellung auf Transaktionsebene](transactions.md) für die finanzielle Abstimmung und die größtmögliche Sichtbarkeit der Transaktionen.
 * **Transparente Preisgestaltung**—Die Preise sind klar und vorab; was man sieht, ist, was man bekommt.
 * **Effizientes Checkout-Erlebnis**—Entfernen Sie alle Hindernisse für einen schnellen und einfachen Checkout und erstellen Sie treue Kunden mit [Kartengewölbe](https://experienceleague-review.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html) und [Sofortiger Kauf](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) (standardmäßig für Adobe Commerce aktiviert).
 

@@ -3,9 +3,10 @@ title: Sicherheit und Compliance
 description: Überprüfen Sie die Sicherheits- und Compliance-Anforderungen für Ihre Site.
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
 feature: Payments, Checkout, Compliance
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+redirect_from: https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security.html
+source-git-commit: fef972355565472f0d0851a2e3cace692fb2db67
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '549'
 ht-degree: 0%
 
 ---
@@ -61,3 +62,10 @@ Mit PayPal Smart Buttons werden keine PCI-regulierten Daten über Ihre Dienste w
 Aus Sicherheitsgründen gibt PayPal die Rechnungsadresse beim Checkout nicht weiter - Land, E-Mail und Name sind die einzigen verwendeten Rechnungsinformationen. Sie können optional den PayPal-Checkout Ihrer Site aktivieren, um die vollständige Rechnungsadresse zurückzugeben, indem Sie PayPal kontaktieren und einen Prüfvorgang abschließen.
 
 PayPal verfügt auch über einen integrierten Betrugsschutz, der das maschinelle Lernen nutzt, um Betrug zu bekämpfen. Siehe PayPal&#39;s [Dokumentation zum Schutz von Verkäufern](https://www.paypal.com/us/webapps/mpp/security/seller-protection) für weitere Informationen.
+
+## Betrugsschutz
+
+Sie können den automatisierten Betrugsschutz für Zahlungsdienste mit dem [Signifyd-Erweiterung](https://commercemarketplace.adobe.com/signifyd-module-connect.html).
+
+Siehe [Schutz vor schweren Betrugsfällen](fraud-protection.md) für weitere Informationen.
+

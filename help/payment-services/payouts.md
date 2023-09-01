@@ -5,16 +5,16 @@ role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
 feature: Payments, Checkout
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 9242e8eea078a00445c7f24ffc998b7d978a9775
 workflow-type: tm+mt
-source-wordcount: '1326'
+source-wordcount: '1316'
 ht-degree: 0%
 
 ---
 
 # Payouts-Bericht
 
-[!DNL Payment Services] für [!DNL Adobe Commerce] und [!DNL Magento Open Source] bietet Ihnen eine umfassende Berichterstellung, damit Sie einen klaren Überblick über die Bestellungen und Zahlungen Ihres Geschäfts erhalten.
+[!DNL Payment Services] für [!DNL Adobe Commerce] und [!DNL Magento Open Source] bietet Ihnen umfassende Berichte, sodass Sie einen klaren Überblick über die Transaktionen, Bestellungen und Zahlungen Ihres Geschäfts erhalten.
 
 Es gibt zwei verfügbare Ansichten zur Payouts-Berichterstellung, mit denen Sie detaillierte Informationen zu all Ihren Auszahlungen anzeigen können:
 
@@ -22,6 +22,8 @@ Es gibt zwei verfügbare Ansichten zur Payouts-Berichterstellung, mit denen Sie 
 * **[Ansicht des Payload-Berichts](#payouts-report-view)**—Bericht verfügbar unter &quot;Auszahlungen&quot;, der detaillierte Payout-Informationen für alle Transaktionen anzeigt
 
 Die Payouts-Ansichten zeigen umfassende Auszahlungsinformationen auf einen Blick, sodass Sie vollständige Transparenz in Bezug auf den Zahlungsbetrag, das verarbeitete Volumen und detaillierte Berichte über die Transaktionsstufe zur finanziellen Abstimmung erhalten.
+
+Sie können [Download-Auszahlungstransaktionen](#download-transactions) im .csv-Dateiformat zur Verwendung in bestehenden Buchhaltungs- oder Auftragsverwaltungssoftware.
 
 >[!NOTE]
 >
@@ -65,15 +67,15 @@ Die Ansicht Payouts-Datenvisualisierung enthält die folgenden Informationen.
 
 ## Ansicht des Payload-Berichts
 
-Die Ansicht des Berichts &quot;Payouts&quot;ist in der Ansicht &quot;Payouts&quot;der Zahlungsdienste verfügbar. Sie enthält alle verfügbaren Informationen über die Auszahlungen für Ihre Geschäfte. Die [Ansicht der Payouts-Daten](#payouts-data-visualization-view) in der Zahlungsdienst-Startseite ist eine visuelle Darstellung der aggregierten Beträge pro Tag in dieser detaillierteren Berichtsansicht.
+Die Ansicht des Berichts &quot;Payouts&quot;ist in der Ansicht &quot;Payouts&quot;der Zahlungsdienste verfügbar. Sie enthält alle verfügbaren Informationen über die Auszahlungen für Ihre Geschäfte.
 
-Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]** , um die detaillierte Tabellenansicht des Berichts &quot;Payouts&quot;anzuzeigen.
+Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**, um die detaillierte Tabellenansicht des Berichts &quot;Payouts&quot;anzuzeigen.
 
 ![Zahlungsvorgänge im Admin](assets/payouts-report-new.png){zoomable=yes}
 
 Sie können diese Ansicht entsprechend den Abschnitten in diesem Thema konfigurieren, um die gewünschten Daten am besten darzustellen.
 
-Weitere Informationen finden Sie unter verknüpfte Commerce-Bestell- und Transaktions-IDs, Transaktionsbeträge, Zahlungsmethoden pro Transaktion und mehr im Payouts-Bericht in der Admin-Rubrik.
+Siehe verknüpfte Commerce-Bestell- und Transaktions-IDs, Transaktionsbeträge, Zahlungsmethoden pro Transaktion und mehr, alles in diesem Bericht.
 
 Sie können [Download-Auszahlungstransaktionen](#download-transactions) im .csv-Dateiformat zur Verwendung in bestehenden Buchhaltungs- oder Auftragsverwaltungssoftware.
 
@@ -83,7 +85,7 @@ Sie können [Download-Auszahlungstransaktionen](#download-transactions) im .csv-
 
 ### Datenquelle auswählen
 
-In der Ansicht des Payouts-Berichts können Sie die Datenquelle auswählen._[!UICONTROL Live]_oder_[!UICONTROL Sandbox]_- für die Sie Berichtsergebnisse anzeigen möchten.
+In der Ansicht des Payouts-Berichts können Sie die Datenquelle auswählen.**[!UICONTROL Live]** oder **[!UICONTROL Sandbox]**- für die Sie Berichtsergebnisse anzeigen möchten.
 
 ![Auswahl von Datenquellen](assets/datasource.png){width=400px}
 
@@ -97,8 +99,8 @@ Datenquellenauswahlen funktionieren wie folgt:
 
 So wählen Sie die Datenquelle für Ihren Bestellzahlstatus-Bericht aus:
 
-1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]**.
-1. Klicks **[!UICONTROL Data source]** und wählen _[!UICONTROL Live]_oder_[!UICONTROL Sandbox]_.
+1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**.
+1. Klicks **[!UICONTROL Data source]** und wählen **[!UICONTROL Live]** oder **[!UICONTROL Sandbox]**.
 
    Die Berichtsergebnisse werden basierend auf der ausgewählten Datenquelle neu generiert.
 
@@ -114,8 +116,8 @@ Scrollen Sie nach links und rechts, um [Informationen zu den einzelnen Auszahlun
 
 In der Ansicht des Payouts-Berichts können Sie den Zeitrahmen für die Payout-Transaktionen anpassen, die Sie anzeigen möchten, indem Sie bestimmte Daten eingeben oder einen Datumsbereich in der Datumsauswahl auswählen:
 
-1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]**.
-1. Klicken Sie auf den Filter Kalenderauswahl für Transaktionsdaten .
+1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**.
+1. Klicken Sie auf _[!UICONTROL Transaction dates]_Kalenderauswahl .
 1. Wählen Sie den entsprechenden Datumsbereich aus.
 1. Zeigen Sie die Payouts-Status im Raster für Ihre angegebenen Daten an.
 
@@ -123,7 +125,7 @@ In der Ansicht des Payouts-Berichts können Sie den Zeitrahmen für die Payout-T
 
 Die Ansicht des Payouts-Berichts zeigt standardmäßig die meisten verfügbaren Informationsspalten an. Sie können jedoch anpassen, welche Spalten im Bericht angezeigt werden.
 
-1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Payouts]**.
+1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**.
 1. Klicken Sie auf _Spalteneinstellungen_ Symbol (![Symbol für Spalteneinstellungen](assets/column-settings.png)).
 1. Um anzupassen, welche Spalten im Bericht angezeigt werden, aktivieren oder deaktivieren Sie die Spalten in der Liste.
 
@@ -133,7 +135,7 @@ Die Ansicht des Payouts-Berichts zeigt standardmäßig die meisten verfügbaren 
 
 Sie können eine CSV-Datei herunterladen, die alle im Raster Ansicht der Payouts sichtbaren Transaktionen enthält.
 
-1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]**.
+1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**.
 1. [Zeitrahmen für den Datumsbereich Ihrer Transaktionen anpassen](#customize-transactions-timeframe).
 1. Klicken Sie auf _Herunterladen_ (![](assets/icon-download.png)).
 

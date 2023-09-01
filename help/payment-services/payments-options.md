@@ -3,9 +3,9 @@ title: Zahlungsoptionen
 description: Legen Sie die Zahlungsoptionen fest, um die für Ihre Store-Kunden verfügbaren Methoden anzupassen.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 9a52976be16afa707b494f4da3b99192dd73b8f2
+source-git-commit: a9045c13d35797ce1a85697b70849d718dbc2e87
 workflow-type: tm+mt
-source-wordcount: '1035'
+source-wordcount: '1048'
 ht-degree: 0%
 
 ---
@@ -38,6 +38,18 @@ Sie können [!UICONTROL Credit Card Fields] in der Store-Konfiguration oder der 
 
 Sie können auch das Layout, die Breite, die Höhe und den äußeren Stil der Kreditkartenfelder ändern. Siehe [PayPal-Dokumentation](https://developer.paypal.com/docs/checkout/advanced/customize/card-field-style/) für weitere Informationen.
 
+## [!DNL Apple Pay] button
+
+Kunden können [[!DNL Apple Pay]](https://www.apple.com/apple-pay/), das die auf einem iOS- oder macOS-Gerät gespeicherten Zahlungsberechtigungen für Kredit- und Debitkarten verwendet, um Einkäufe zu tätigen.
+
+Die [!DNL Apple Pay] -Schaltfläche ist von der Produktseite aus sichtbar, in der Mini-Warenkorb-, Warenkorb- und Checkout-Ansicht.
+
+>[!NOTE]
+>
+> Verwendung [!DNL Apple Pay] für Ihre Filialen [Selbstregistrierung mit [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_Live-Domäne registrieren_ nur -Abschnitt) und [Konfigurieren Sie es für Ihre Stores in [!DNL Payment Services]](settings.md#payment-buttons).
+
+Sie können [!UICONTROL Apple Pay] in der Store-Konfiguration oder der Zahlungsdienst-Startseite. Siehe [Einstellungen](settings.md#apple-pay) für weitere Informationen.
+
 ## [!DNL PayPal Smart Buttons]
 
 [!DNL PayPal Smart Buttons], die PayPal verwenden, um einen Kauf abzuschließen, speichert die Lieferadresse Ihres Käufers, die Rechnungsadresse und Zahlungsdetails zur späteren Verwendung. Käufer können jede Zahlungsmethode verwenden, die zuvor von PayPal gespeichert oder angeboten wurde.
@@ -59,16 +71,6 @@ Die [!DNL PayPal] -Schaltfläche ist von der Produktseite aus sichtbar, in der M
 Kunden können mit dem [Venmo](https://venmo.com/) Schaltfläche.
 
 Die [!DNL Venmo] -Schaltfläche ist von der Produktseite aus sichtbar, in der Mini-Warenkorb-, Warenkorb- und Checkout-Ansicht.
-
-### [!DNL Apple Pay] button
-
-Kunden können die Touch-ID auf ihren Geräten verwenden, um [[!DNL Apple Pay]](https://www.apple.com/apple-pay/), die auf ihrem iOS- oder macOS-Gerät gespeicherte Zahlungsberechtigungen für Kredit- und Debitkarten verwendet.
-
-Die [!DNL Apple Pay] -Schaltfläche ist von der Produktseite aus sichtbar, in der Mini-Warenkorb-, Warenkorb- und Checkout-Ansicht.
-
->[!NOTE]
->
-> Verwendung [!DNL Apple Pay] für Ihre Filialen [Selbstregistrierung mit [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_Live-Domäne registrieren_ nur -Abschnitt) und [Konfigurieren Sie es für Ihre Stores in [!DNL Payment Services]](settings.md#payment-buttons).
 
 ### Schaltfläche &quot;PayPal Debit&quot;oder &quot;Kreditkarte&quot;
 
