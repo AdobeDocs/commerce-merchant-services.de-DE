@@ -3,7 +3,7 @@ title: "Checkout-Fluss in Adobe Commerce"
 description: "Übersicht über die [!DNL Quick Checkout] Fluss in Adobe Commerce."
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
 feature: Checkout, Services, Storefront
-source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '217'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Erfolgreich [!DNL Quick Checkout] Fluss besteht aus folgenden Schritten:
 1. Öffnen Sie Ihre Storefront und fügen Sie Artikel in Ihren Warenkorb ein.
 1. Fahren Sie mit dem Checkout fort.
 
-![Checkout](assets/proceed-checkout.png)
+![Checkout](assets/proceed-checkout.png){width="200" zoomable="yes"}
 
 >[!NOTE]
 >
@@ -28,7 +28,7 @@ Erfolgreich [!DNL Quick Checkout] Fluss besteht aus folgenden Schritten:
 1. Geben Sie bei Aufforderung eine E-Mail-Adresse ein, die mit einer [!DNL Bolt] -Konto.
 1. Geben Sie das einmalige Kennwort (OTP) ein, das an dieses gesendet wird. [!DNL Bolt] E-Mail-Adresse oder Telefonnummer des Kontos.
 
-![OTP-Popup](assets/new-logo-otp-email.png)
+![OTP-Popup](assets/new-logo-otp-email.png){width="300" zoomable="yes"}
 
 1. Nach der Anmeldung bei Ihrem [!DNL Bolt] -Konto, Checkout-Details werden automatisch ausgefüllt:
 

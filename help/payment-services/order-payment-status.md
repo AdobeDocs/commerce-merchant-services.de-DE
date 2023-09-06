@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
 feature: Payments, Checkout, Orders
-source-git-commit: 9242e8eea078a00445c7f24ffc998b7d978a9775
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
-source-wordcount: '1868'
+source-wordcount: '1864'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Die Visualisierung der Daten zum Bestellstatus ist auf der Zahlungsdienst-Starts
 
 Im _Admin_ Seitenleiste, navigieren Sie zu **Vertrieb** > **Zahlungsdienste** > _Bestellungen_ um die Datenvisualisierung anzuzeigen [Grafik des Zahlungsstatus](#statuses-information).
 
-![Payout-Datenvisualisierung in Admin](assets/orderpayment-dataviz.png){zoomable=yes}
+![Payout-Datenvisualisierung in Admin](assets/orderpayment-dataviz.png){width="800" zoomable="yes"}
 
 Klicks **[!UICONTROL View Report]** zur detaillierten Tabelle navigieren [Berichtansicht zum Bestellstatus](#order-payment-status-report-view).
 
@@ -73,7 +73,7 @@ Die Ansicht des Bestellstatus-Berichts ist in der Ansicht Home der Zahlungsdiens
 
 Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**um die detaillierte Tabellenansicht des Bestellstatus-Berichts anzuzeigen.
 
-![Bestellstatusvorgänge im Admin](assets/orders-report-data.png)
+![Bestellstatusvorgänge im Admin](assets/orders-report-data.png){width="800" zoomable="yes"}
 
 Sie können diese Ansicht entsprechend den Abschnitten in diesem Thema konfigurieren, um die gewünschten Daten am besten darzustellen.
 
@@ -115,7 +115,7 @@ Informationen zum Konfigurieren des Datenexports finden Sie unter [Befehlszeilen
 
 In der Berichtansicht Bestellzahlstatus können Sie die Datenquelle auswählen.**[!UICONTROL Live]** _ oder **[!UICONTROL Sandbox]**- für die Sie Berichtsergebnisse anzeigen möchten.
 
-![Auswahl von Datenquellen](assets/datasource.png){width=400px}
+![Auswahl von Datenquellen](assets/datasource.png){width="300" zoomable="yes"}
 
 Wenn _[!UICONTROL Live]_die ausgewählte Datenquelle ist, können Sie Berichtinformationen für Ihre Stores anzeigen, die [!DNL Payment Services] im Produktionsmodus. Wenn_[!UICONTROL Sandbox]_ die ausgewählte Datenquelle ist, können Sie Berichtinformationen für den Sandbox-Modus anzeigen.
 
@@ -156,7 +156,7 @@ In der Berichtansicht Bestellzahlungsstatus können Sie die anzuzeigenden Status
 Der Bericht Bestellzahlstatus zeigt standardmäßig alle verfügbaren Informationsspalten an. Sie können jedoch anpassen, welche Spalten in Ihrem Bericht angezeigt werden.
 
 1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
-1. Klicken Sie auf _Spalteneinstellungen_ Symbol (![Symbol für Spalteneinstellungen](assets/column-settings.png)).
+1. Klicken Sie auf _Spalteneinstellungen_ Symbol (![Symbol für Spalteneinstellungen](assets/column-settings.png){width="20" zoomable="yes"}).
 1. Um anzupassen, welche Spalten im Bericht angezeigt werden, aktivieren oder deaktivieren Sie die Spalten in der Liste.
 
    Im Bericht Bestellzahlstatus werden alle Änderungen angezeigt, die Sie im Menü Spalteneinstellungen vorgenommen haben. Die Spaltenvoreinstellungen werden gespeichert und bleiben in Kraft, wenn Sie von der Berichtsansicht weg navigieren.
@@ -186,7 +186,7 @@ Die Ansicht des Bestellstatus-Berichts zeigt eine _[!UICONTROL Last updated]_Zei
 Sie können auch manuell eine Aktualisierung der Berichtdaten zum Bestellzahlungsstatus erzwingen, um die aktuellsten Berichtinformationen anzuzeigen.
 
 1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
-1. Klicken Sie auf _Aktualisieren_ Symbol (![Aktualisierungssymbol](assets/refresh-button-med.png)).
+1. Klicken Sie auf _Aktualisieren_ Symbol (![Aktualisierungssymbol](assets/refresh-button-med.png){width="20" zoomable="yes"}).
 
    Die Daten des Berichts über den Bestellstatus werden aktualisiert, und *[!UICONTROL Update complete]* -Bestätigung angezeigt und die neuesten Informationen im Raster vorhanden sind.
 
@@ -208,7 +208,7 @@ Sie können eine CSV-Datei mit allen Status herunterladen, die im Raster der Bes
 
 1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. Wenn Sie Status für einen anderen Zeitraum als die letzten 30 Tage anzeigen möchten, [Datumsbereich-Zeitrahmen für Ihre Status anpassen](#customize-dates-timeframe).
-1. Klicken Sie auf _Herunterladen_ (![Download-Symbol](assets/icon-download.png)).
+1. Klicken Sie auf _Herunterladen_ (![Download-Symbol](assets/icon-download.png){width="20" zoomable="yes"}).
 
 Ihr Bestellzahlstatus wird im .csv -Format heruntergeladen.
 

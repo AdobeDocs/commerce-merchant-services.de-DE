@@ -3,7 +3,7 @@ title: Transaktionsbericht
 description: Verwenden Sie den Transaktionsbericht, um Einblicke in die Rate der Transaktionsautorisierungen und die Transaktionstrends zu erhalten.
 role: User
 level: Intermediate
-source-git-commit: dab47a7dcac5d32f4b10cd8b4ce1f7e5dc7fd6c9
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '1162'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 [!DNL Payment Services] für [!DNL Adobe Commerce] und [!DNL Magento Open Source] bietet Ihnen umfassende Berichte, sodass Sie einen klaren Überblick über die Transaktionen, Bestellungen und Zahlungen Ihres Geschäfts erhalten.
 
-![Transaktionsbericht](assets/transactions-report.png){width="600" zoomable="yes"}
+![Transaktionsbericht](assets/transactions-report.png){width="700" zoomable="yes"}
 
 Der Transaktionsbericht bietet Einblicke in die Rate der Transaktionsautorisierungen und negative Transaktionstrends, sodass Sie den Zustand Ihres Geschäfts effektiv überwachen und alle Transaktionsprobleme vorbeugend identifizieren und beheben können.
 
@@ -91,7 +91,7 @@ In der Ansicht des Transaktionsberichts können Sie die anzuzeigenden Statuserge
 Der Transaktionsbericht zeigt standardmäßig alle verfügbaren Informationsspalten an. Sie können jedoch anpassen, welche Spalten in Ihrem Bericht angezeigt werden.
 
 1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**.
-1. Klicken Sie auf **[!UICONTROL Column settings]** icon ![Symbol für Spalteneinstellungen](assets/column-settings.png){width="25"}.
+1. Klicken Sie auf **[!UICONTROL Column settings]** icon ![Symbol für Spalteneinstellungen](assets/column-settings.png){width="20" zoomable="yes"}.
 1. Um anzupassen, welche Spalten im Bericht angezeigt werden, aktivieren oder deaktivieren Sie die Spalten in der Liste.
 
    Der Transaktionsbericht zeigt sofort alle Änderungen an, die Sie im Menü Spalteneinstellungen vorgenommen haben. Die Spaltenvoreinstellungen werden gespeichert und bleiben in Kraft, wenn Sie von der Berichtsansicht weg navigieren.
@@ -103,7 +103,7 @@ Die Ansicht des Transaktionsberichts zeigt eine _[!UICONTROL Last updated]_Zeits
 Sie können auch manuell eine Aktualisierung der Berichtsdaten erzwingen, um die aktuellsten Berichtinformationen anzuzeigen.
 
 1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**.
-1. Klicken Sie auf _Aktualisieren_ Symbol (![Aktualisierungssymbol](assets/refresh-button-med.png)).
+1. Klicken Sie auf _Aktualisieren_ Symbol (![Aktualisierungssymbol](assets/refresh-button-med.png){width="20" zoomable="yes"}).
 
    Die Daten des Transaktionsberichts werden aktualisiert. *[!UICONTROL Update complete]* -Bestätigung angezeigt und die neuesten Informationen im Raster vorhanden sind.
 
@@ -113,7 +113,7 @@ Sie können eine .csv -Datei mit allen Transaktionen herunterladen, die im Raste
 
 1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Transactions]**.
 1. Wenn Sie Transaktionen für einen anderen Zeitraum als die letzten 30 Tage anzeigen möchten, [Datumsbereich-Zeitrahmen für Ihre Status anpassen](#customize-dates-timeframe).
-1. Klicken Sie auf _Herunterladen_ ![Download-Symbol](assets/icon-download.png){width="25"} Symbol.
+1. Klicken Sie auf _Herunterladen_ ![Download-Symbol](assets/icon-download.png){width="20" zoomable="yes"} Symbol.
 
 Ihre Transaktionen werden im .csv-Format heruntergeladen.
 

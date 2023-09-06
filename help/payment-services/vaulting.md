@@ -3,7 +3,7 @@ title: Kreditkartenausfall
 description: Käufer können ihre Kreditkartendetails für zukünftige Käufe einbehalten (speichern).
 exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
 feature: Payments, Checkout
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 0%
@@ -14,15 +14,15 @@ ht-degree: 0%
 
 Konvertieren von einmaligen Kunden in treue Kunden mit Kreditkartenausfall. Käufer können ihre Kreditkartenanmeldeinformationen während des Checkout speichern - oder &quot;Vault&quot;- um sie bei einem späteren Kauf für denselben oder einen anderen, innerhalb desselben Händlerkontos zu verwenden.
 
-![Beziehen der Kreditkarte zur späteren Verwendung](assets/save-card-for-later.png)
+![Beziehen der Kreditkarte zur späteren Verwendung](assets/save-card-for-later.png){width="400" zoomable="yes"}
 
 Käufer verwenden das gespeicherte Token, um einen zukünftigen Checkout mit ihren gespeicherten Kreditkarteninformationen abzuschließen.
 
-![Verwenden gespeicherter Anmeldedaten für zukünftige Käufe](assets/use-stored-card.png)
+![Verwenden gespeicherter Anmeldedaten für zukünftige Käufe](assets/use-stored-card.png){width="400" zoomable="yes"}
 
 Sie können ihre Kreditkarten auch einfach aus [Gespeicherte Zahlungsmethoden](https://docs.magento.com/user-guide/customers/account-dashboard-stored-payment-methods.html) in ihrem Mein Konto.
 
-![Gespeicherte Zahlungsmethoden in meinem Konto](assets/stored-payment-methods.png)
+![Gespeicherte Zahlungsmethoden in meinem Konto](assets/stored-payment-methods.png){width="400" zoomable="yes"}
 
 ## Validierung aktivieren
 
@@ -41,7 +41,7 @@ So erstellen Sie im Admin eine Bestellung für einen Kunden mit seiner gültigen
 1. Wählen Sie die gewünschte Kreditkartenzahlmethode aus.
 1. Nachdem Sie alle weiteren erforderlichen Schritte für die Bestellung ausgeführt haben, [submit it](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=en#step-3%3A-submit-the-order).
 
-   ![Verwenden Sie eine ausgewertete Kreditkarte in Admin für den Kunden](assets/admin-vaultedcard.png)
+   ![Verwenden Sie eine ausgewertete Kreditkarte in Admin für den Kunden](assets/admin-vaultedcard.png){width="600" zoomable="yes"}
 
 ## Sicherheit
 

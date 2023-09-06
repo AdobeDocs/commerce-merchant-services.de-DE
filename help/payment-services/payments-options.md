@@ -3,7 +3,7 @@ title: Zahlungsoptionen
 description: Legen Sie die Zahlungsoptionen fest, um die für Ihre Store-Kunden verfügbaren Methoden anzupassen.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: a9045c13d35797ce1a85697b70849d718dbc2e87
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '1048'
 ht-degree: 0%
@@ -54,7 +54,7 @@ Sie können [!UICONTROL Apple Pay] in der Store-Konfiguration oder der Zahlungsd
 
 [!DNL PayPal Smart Buttons], die PayPal verwenden, um einen Kauf abzuschließen, speichert die Lieferadresse Ihres Käufers, die Rechnungsadresse und Zahlungsdetails zur späteren Verwendung. Käufer können jede Zahlungsmethode verwenden, die zuvor von PayPal gespeichert oder angeboten wurde.
 
-![[!DNL PayPal Smart Buttons] options](assets/payment-buttons.png){width="500"}
+![[!DNL PayPal Smart Buttons] options](assets/payment-buttons.png){width="400" zoomable="yes"}
 
 Sie können [!UICONTROL PayPal Smart Buttons] in der Store-Konfiguration oder der Zahlungsdienst-Startseite.  Siehe [Einstellungen](settings.md#payment-buttons) für weitere Informationen.
 

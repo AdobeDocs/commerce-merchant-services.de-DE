@@ -3,7 +3,7 @@ title: "Onboard the [!DNL Quick Checkout] für Adobe Commerce-Erweiterung"
 description: "Erfahren Sie, wie die [!DNL Quick Checkout] kann von Ihrer Adobe Commerce-Instanz profitieren und zeigen, wie Sie die Erweiterung erfolgreich integrieren und einrichten können."
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
 feature: Checkout, Services
-source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Erste Schritte mit der Verwendung von [!DNL Quick Checkout] Für die Adobe Commerce-Erweiterung müssen Sie einige Onboarding-Schritte ausführen, um Ihre Instanz mit unserer Checkout-Funktion zu verbinden.
 
-![Quick Checkout](assets/overview-admin-panel.png)
+![Quick Checkout](assets/overview-admin-panel.png){width="800" zoomable="yes"}
 
 1. [Erweiterung abrufen](#get-extension).
 1. [Erstellen Sie ein Produktions- oder Sandbox-Handelskonto mit [!DNL Bolt]](#create-account-with-bolt). Geben Sie alle erforderlichen Informationen zur Überprüfung Ihrer Identität an.
@@ -29,7 +29,7 @@ Wenn Gainsight aktiviert ist, wird die **Machen Sie die Tour** -Schaltfläche in
 
 1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > Erweitert:
 
-   ![Quick Checkout](assets/gainsight-admin.png)
+   ![Quick Checkout](assets/gainsight-admin.png){width="500" zoomable="yes"}
 
 Wenn Gainsight nicht aktiviert ist, fahren Sie mit den Onboarding-Schritten fort.
 
@@ -69,7 +69,7 @@ So verwenden Sie die [!DNL Quick Checkout] benötigen [!DNL Bolt] eindeutige Sch
 - [!DNL Publishable key]: Ein Schlüssel, mit dem Ihr Frontend interagiert [!DNL Bolt] APIs.
 - [!DNL Signing secret]: Dient zur Signaturüberprüfung von Anforderungen, die von empfangen wurden. [!DNL Bolt].
 
-  ![Quick Checkout](assets/account-credentials.png)
+  ![Quick Checkout](assets/account-credentials.png){width="500" zoomable="yes"}
 
 Siehe [[!DNL Bolt] Umgebungsdetails](https://help.bolt.com/developers/references/environment-details/#about-keys){target="_blank"} Seite mit Informationen zu Schlüsseln und dem Signieren von Geheimnissen von [!DNL Bolt] für die [!DNL Quick Checkout] -Erweiterung.
 
@@ -87,7 +87,7 @@ Gehen Sie wie im Abschnitt [Prozessoreinrichtung](https://help.bolt.com/integrat
 1. Erweitern Sie im linken Bereich **Vertrieb** und wählen **Checkout**.
 1. Im [!DNL Quick Checkout] Ansicht, festlegen **Aktivieren** nach `Yes`.
 
-![Quick Checkout](assets/quick-checkout-view-no-enable.png)
+![Quick Checkout](assets/quick-checkout-view-no-enable.png){width="500" zoomable="yes"}
 
 >[!CAUTION]
 >
@@ -100,7 +100,7 @@ Gehen Sie wie im Abschnitt [Prozessoreinrichtung](https://help.bolt.com/integrat
 
 1. Validieren Sie die Anmeldeinformationen, nachdem Sie Ihre eindeutige API bereitgestellt haben und [!DNL Publishable keys].
 
-![Quick Checkout](assets/quick-checkout-main-view.png)
+![Quick Checkout](assets/quick-checkout-main-view.png){width="500" zoomable="yes"}
 
 Siehe Abschnitt [Einstellungen](../quick-checkout/settings-quick-checkout.md) Thema für weitere Informationen zu den Konfigurationsoptionen für die [!DNL Quick Checkout] für die Adobe Commerce-Erweiterung.
 
@@ -141,7 +141,7 @@ Siehe [Site-, Store- und Ansichtsbereich](https://experienceleague.adobe.com/doc
 
 ## Diensteinstellungen konfigurieren
 
-![Quick Checkout](assets/service-settings.png)
+![Quick Checkout](assets/service-settings.png){width="500" zoomable="yes"}
 
 1. Satz **Checkout-Tracking aktivieren** nach `Yes`.
 

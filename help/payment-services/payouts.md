@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
 feature: Payments, Checkout
-source-git-commit: 9242e8eea078a00445c7f24ffc998b7d978a9775
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
-source-wordcount: '1316'
+source-wordcount: '1310'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Die Ansicht Payouts-Daten-Visualisierung ist auf der Zahlungsdienst-Startseite v
 
 Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** um das Datenvisualisierungs-Diagramm von Gutschriften im Vergleich zu Lastschriften und die sich bewegenden Durchschnittswerte im Zeitverlauf anzuzeigen.
 
-![Payout-Datenvisualisierung in Admin](assets/payouts-report.png){zoomable=yes}
+![Payout-Datenvisualisierung in Admin](assets/payouts-report.png){width="800" zoomable="yes"}
 
 Klicks **[!UICONTROL View Report]** zur detaillierten Tabelle navigieren [Ansicht des Payload-Berichts](#payouts-report-view).
 
@@ -71,7 +71,7 @@ Die Ansicht des Berichts &quot;Payouts&quot;ist in der Ansicht &quot;Payouts&quo
 
 Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**, um die detaillierte Tabellenansicht des Berichts &quot;Payouts&quot;anzuzeigen.
 
-![Zahlungsvorgänge im Admin](assets/payouts-report-new.png){zoomable=yes}
+![Zahlungsvorgänge im Admin](assets/payouts-report-new.png){width="800" zoomable="yes"}
 
 Sie können diese Ansicht entsprechend den Abschnitten in diesem Thema konfigurieren, um die gewünschten Daten am besten darzustellen.
 
@@ -87,7 +87,7 @@ Sie können [Download-Auszahlungstransaktionen](#download-transactions) im .csv-
 
 In der Ansicht des Payouts-Berichts können Sie die Datenquelle auswählen.**[!UICONTROL Live]** oder **[!UICONTROL Sandbox]**- für die Sie Berichtsergebnisse anzeigen möchten.
 
-![Auswahl von Datenquellen](assets/datasource.png){width=400px}
+![Auswahl von Datenquellen](assets/datasource.png){width="300" zoomable="yes"}
 
 Wenn _[!UICONTROL Live]_die ausgewählte Datenquelle ist, können Sie Berichtinformationen für Stores im Produktionsmodus anzeigen. Wenn_[!UICONTROL Sandbox]_ die ausgewählte Datenquelle ist, können Sie die Berichtinformationen sehen, die im Sandbox-Modus gespeichert sind.
 
@@ -126,7 +126,7 @@ In der Ansicht des Payouts-Berichts können Sie den Zeitrahmen für die Payout-T
 Die Ansicht des Payouts-Berichts zeigt standardmäßig die meisten verfügbaren Informationsspalten an. Sie können jedoch anpassen, welche Spalten im Bericht angezeigt werden.
 
 1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**.
-1. Klicken Sie auf _Spalteneinstellungen_ Symbol (![Symbol für Spalteneinstellungen](assets/column-settings.png)).
+1. Klicken Sie auf _Spalteneinstellungen_ Symbol (![Symbol für Spalteneinstellungen](assets/column-settings.png){width="20" zoomable="yes"}).
 1. Um anzupassen, welche Spalten im Bericht angezeigt werden, aktivieren oder deaktivieren Sie die Spalten in der Liste.
 
    In der Ansicht des Berichts &quot;Payouts&quot;werden alle Änderungen, die Sie im Menü &quot;Spalteneinstellungen&quot;vorgenommen haben, sofort angezeigt. Die Spaltenvoreinstellungen werden gespeichert und bleiben in Kraft, wenn Sie von der Berichtsansicht weg navigieren.
@@ -137,7 +137,7 @@ Sie können eine CSV-Datei herunterladen, die alle im Raster Ansicht der Payouts
 
 1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**.
 1. [Zeitrahmen für den Datumsbereich Ihrer Transaktionen anpassen](#customize-transactions-timeframe).
-1. Klicken Sie auf _Herunterladen_ (![](assets/icon-download.png)).
+1. Klicken Sie auf _Herunterladen_ (![](assets/icon-download.png){width="20" zoomable="yes"}).
 
 Ihre Zahlungsvorgänge werden im .csv-Format heruntergeladen.
 

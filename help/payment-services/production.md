@@ -3,7 +3,7 @@ title: Aktivieren [!DNL Payment Services] für die Produktion
 description: Schließen Sie den Onboarding-Prozess ab, indem Sie [!DNL Payment Services] für die Produktion.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '702'
 ht-degree: 0%
@@ -78,7 +78,7 @@ Um das Live-Onboarding zu aktivieren, müssen Sie eine Zahlungsanforderung von A
 1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Klicks **[!UICONTROL Get Live Payments]** in [!DNL Payment Services] Home.
 
-   ![Anforderungsberechtigungen](assets/request-entitlements.png)
+   ![Anforderungsberechtigungen](assets/request-entitlements.png){width="500" zoomable="yes"}
 
 1. Füllen Sie das Formular aus.
 1. Ein Mitglied des Vertriebsteams wird sich mit Ihnen in Verbindung setzen.

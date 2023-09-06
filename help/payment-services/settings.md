@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
 feature: Payments, Checkout, Configuration
-source-git-commit: 4b70917ed09dcae72c3ec829db2e243fad7b14d3
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
-source-wordcount: '2387'
+source-wordcount: '2381'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Sie können [!DNL Payment Services] für Ihre Website hinzufügen und entweder S
 
 1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 
-   ![Startansicht](assets/payment-services-menu-small.png)
+   ![Startansicht](assets/payment-services-menu-small.png){width="400" zoomable="yes"}
 
 1. Klicken **[!UICONTROL Settings]**. Siehe [Einführung in [!DNL Payment Services] Startseite](payments-home.md) für weitere Informationen.
 
@@ -57,9 +57,6 @@ Sie können jetzt die Standardeinstellungen für [Zahlungsoptionen](#configure-p
 Sie können eine [!UICONTROL Soft Descriptor] zu Ihrer Website(s) oder Konfiguration einzelner Store-Ansichten hinzufügen. Softbounce-Deskriptoren werden in Kontoauszügen von Kunden angezeigt. Wenn Sie beispielsweise über mehrere Stores/Marken/Kataloge verfügen, können Sie diese einfach trennen, indem Sie benutzerdefinierten Text zum [!UICONTROL Soft Descriptor] -Feld.
 
 1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-
-   ![Startansicht](assets/payment-services-menu-small.png)
-
 1. Klicken **[!UICONTROL Settings]**. Siehe [Einführung in [!DNL Payment Services] Startseite](payments-home.md) für weitere Informationen.
 1. Wählen Sie die Website- oder Store-Ansicht im **[!UICONTROL Scope]** Dropdown-Menü, für das Sie einen weichen Deskriptor erstellen möchten. Behalten Sie für die Ersteinrichtung Folgendes bei: **[!UICONTROL Default]** , um den Standardwert festzulegen.
 1. Fügen Sie Ihren benutzerdefinierten Text (bis zu 22 Zeichen) in das Textfeld ein und ersetzen Sie `Custom descriptor`.
@@ -91,9 +88,6 @@ Sie können eine [!UICONTROL Soft Descriptor] zu Ihrer Website(s) oder Konfigura
 Nachdem Sie die [!UICONTROL Payment Services] für Ihre Website können Sie die Standardeinstellungen für Zahlungsfunktionen und Storefront-Anzeige ändern.
 
 1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-
-   ![Startansicht](assets/payment-services-menu-small.png)
-
 1. Klicken **[!UICONTROL Settings]**. Siehe [Einführung in [!DNL Payment Services] Startseite](payments-home.md) für weitere Informationen.
 1. Zahlungsoptionen konfigurieren für [Kreditkarten](#credit-card-fields), [Zahlungsschaltflächen](#payment-buttons), und [Schaltflächenstil](#button-style), entsprechend den folgenden Abschnitten.
 
@@ -104,9 +98,6 @@ Die _[!UICONTROL Credit Card Fields]_Einstellungen bieten eine einfache und sich
 Siehe [Zahlungsoptionen](payments-options.md#credit-card-fields) für weitere Informationen.
 
 1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-
-   ![Startansicht](assets/payment-services-menu-small.png)
-
 1. Wählen Sie die Store-Ansicht im **[!UICONTROL Scope]** Dropdown-Menü, für das Sie eine Zahlungsmethode aktivieren möchten.
 1. Im **[!UICONTROL Credit card fields]** Bearbeiten Sie den Wert im Abschnitt **[!UICONTROL Checkout title]** -Feld, um den Namen der Zahlungsmethode zu ändern, die beim Checkout angezeigt wird.
 1. nach [die Zahlungsaktion festlegen](production.md#set-payment-services-as-payment-method), Umschalten **[!UICONTROL Payment action]** nach `Authorize` oder `Authorize and Capture`.
@@ -241,7 +232,7 @@ Sie können auch die _[!UICONTROL Button style]_Optionen der Zahlungsschaltfläc
 
    Wenn Sie die Konfigurationsoptionen für Layout, Farbe, Form, Höhe und Beschriftung ändern, wird unten auf der Seite &quot;Einstellungen&quot;eine visuelle Vorschau dieser Konfiguration angezeigt.
 
-   ![[!DNL PayPal Smart Buttons] options](assets/payment-buttons.png){width="500"}
+   ![[!DNL PayPal Smart Buttons] options](assets/payment-buttons.png){width="400" zoomable="yes"}
 
 1. Klicken **[!UICONTROL Save]**.
 
@@ -274,7 +265,7 @@ Beim Zuweisen von Ressourcen zur Rolle müssen Sie Folgendes auswählen:
 - **Bezahlen mit[!DNL Payment Services]**—Diese Ressource stellt sicher, dass beim Erstellen einer Bestellung in der Admin-Konsole [!DNL Payment Services] Kreditkarten sind als Zahlungsmethode verfügbar. Wenn Sie die **Aktionen** übergeordnete Ressource, wird diese Ressource ebenfalls ausgewählt.
 - **[!DNL Payment Services]**—Diese Ressource enthält die **Dashboard** und **SaaS-Dienste-Proxy** Ressourcen, die ebenfalls ausgewählt werden müssen. Sie stellen sicher, dass [!DNL Payment Services] im _Vertrieb_ Menü.
 
-  ![Zahlungsdienste-Ressourcen](assets/roles-payments.png)
+  ![Zahlungsdienste-Ressourcen](assets/roles-payments.png){width="400" zoomable="yes"}
 
 ## Cache leeren
 

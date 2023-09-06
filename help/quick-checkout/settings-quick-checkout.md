@@ -3,7 +3,7 @@ title: Konfigurieren Sie die [!DNL Quick Checkout] für die Adobe Commerce-Erwei
 description: Erfahren Sie mehr über die Konfigurationsoptionen für die [!DNL Quick Checkout] und wie Sie die Erweiterung erfolgreich integrieren und einrichten können.
 exl-id: 892e04dc-17d6-45e9-b2ab-c7a0735a75bc
 feature: Checkout, Services
-source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 1%
@@ -19,13 +19,13 @@ So greifen Sie auf diese Konfigurationseinstellungen zu:
 1. Im _Admin_ Seitenleiste, navigieren Sie zu **Stores** > _Einstellungen_ > **Konfiguration**.
 1. Erweitern Sie im linken Bereich **Vertrieb** und wählen **Checkout**.
 
-   ![Quick Checkout](assets/config-new-logo-view.png)
+   ![Quick Checkout](assets/config-new-logo-view.png){width="800" zoomable="yes"}
 
 Siehe Abschnitt [Onboarding](../quick-checkout/onboarding.md) Thema für weitere Informationen zur Konfiguration der [!DNL Quick Checkout] für Adobe Commerce.
 
 ## Erweiterung aktivieren
 
-![Quick Checkout](assets/enable-method.png)
+![Quick Checkout](assets/enable-method.png){width="500" zoomable="yes"}
 
 | Feld | Anwendungsbereich | Beschreibung |
 |---|---|---|
@@ -36,7 +36,7 @@ Siehe Abschnitt [Onboarding](../quick-checkout/onboarding.md) Thema für weitere
 
 ## Kontoanmeldeinformationen
 
-![Quick Checkout](assets/account-creds.png)
+![Quick Checkout](assets/account-creds.png){width="500" zoomable="yes"}
 
 | Feld | Anwendungsbereich | Beschreibung |
 |---|---|---|
@@ -48,7 +48,7 @@ Siehe Abschnitt [Onboarding](../quick-checkout/onboarding.md) Thema für weitere
 
 ## Diensteinstellungen
 
-![Quick Checkout](assets/service-settings.png)
+![Quick Checkout](assets/service-settings.png){width="500" zoomable="yes"}
 
 | Feld | Anwendungsbereich | Beschreibung |
 |---|---|---|

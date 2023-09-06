@@ -2,7 +2,7 @@
 title: Checkout
 description: Passen Sie den Checkout an die Anforderungen Ihrer Kunden an.
 feature: Payments, Checkout
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%
@@ -20,11 +20,11 @@ Wenn beim Auschecken ein Fehler auftritt, [!DNL Payment Services] löscht/bricht
 
 Auf der Checkout-Seite für den Käufer wird eine Fehlermeldung angezeigt. Die Nachricht kann variieren.
 
-![Fehler bei Überprüfung](assets/user-checkout-error.png "Fehler beim Auschecken")
+![Fehler bei Überprüfung](assets/user-checkout-error.png "Fehler beim Auschecken"){width="600" zoomable="yes"}
 
 Ein Kommentar zur stornierten Bestellung wird auch im Admin für eine bestimmte [bestellen](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/orders.html?lang=en).
 
-![Abgebrochener Bestellkommentar in Admin zur Bestellung](assets/admin-checkout-error.png "Abgebrochener Bestellkommentar in Admin zur Bestellung")
+![Abgebrochener Bestellkommentar in Admin zur Bestellung](assets/admin-checkout-error.png "Abgebrochener Bestellkommentar in Admin zur Bestellung"){width="600" zoomable="yes"}
 
 Wenn ein Käufer die Autorisierung für eine Bestellung erhält, die Bestellung jedoch nicht erstellt und in eine `Capture`, wird die Reihenfolge automatisch aufgehoben. Auf diese Weise wird sichergestellt, dass keine Kreditkarte auf der Kreditkarte des Kunden reserviert wird und die Gebühr des Zahlungsdienstleisters vermieden wird, die eintritt, wenn die Genehmigung am Ende des standardmäßigen Zeitraums von 29 Tagen widerrufen wird.
 

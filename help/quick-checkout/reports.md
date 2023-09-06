@@ -3,7 +3,7 @@ title: '[!DNL Quick Checkout] reporting'
 description: '''[!DNL Quick Checkout] bietet umfassende Berichtsinformationen."'
 exl-id: 91c687f4-9953-4c2f-b240-73430603e6a1
 feature: Checkout, Services
-source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 [!DNL Quick Checkout] für Adobe Commerce und Magento Open Source bietet Ihnen umfassende Berichte, sodass Sie detaillierte Informationen zu den Erlebnisstatistiken Ihres Stores erhalten können.
 
-![Berichtansicht](assets/reports-view-big-checkout.png)
+![Berichtansicht](assets/reports-view-big-checkout.png){width="600" zoomable="yes"}
 
 >[!WARNING]
 >
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 Die Diagramme im Abschnitt Übersicht zeigen detaillierte Informationen zur Checkout-Leistung Ihres Stores, einschließlich der durchschnittlichen Checkout-Zeit, neuer Konten, die beim Checkout oder beim Checkout erstellt wurden.
 
-![Berichtübersicht](assets/overview-report-checkout.png)
+![Berichtübersicht](assets/overview-report-checkout.png){width="600" zoomable="yes"}
 
 | Diagramm | Beschreibung |
 |---|---|
@@ -38,7 +38,7 @@ Die Diagramme im Abschnitt Übersicht zeigen detaillierte Informationen zur Chec
 
 Die Diagramme im Abschnitt Trends zeigen die Trends Ihres Checkout-Erlebnisses, die nach Kontotyp gefiltert wurden, oder neue Konten, die beim Checkout erstellt wurden.
 
-![Berichtstrends](assets/trends-report-checkout.png)
+![Berichtstrends](assets/trends-report-checkout.png){width="600" zoomable="yes"}
 
 | Diagramm | Beschreibung |
 |---|---|
@@ -50,7 +50,7 @@ Die Diagramme im Abschnitt Trends zeigen die Trends Ihres Checkout-Erlebnisses, 
 
 Sie können die angezeigten Ergebnisse nach Datum oder vorhandenen Vorgaben filtern, z. B. **Letzte 30 Tage**.
 
-![Filteransicht](assets/filter-view.png)
+![Filteransicht](assets/filter-view.png){width="300" zoomable="yes"}
 
 | Feld | Beschreibung |
 |---|---|

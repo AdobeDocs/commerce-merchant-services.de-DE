@@ -3,7 +3,7 @@ title: "Checkout-Fluss für einen Adobe Commerce-Benutzer"
 description: "Übersicht über die [!DNL Quick Checkout] Fluss für einen Adobe Commerce-Benutzer."
 exl-id: 085e393b-15f6-4d5a-a04d-927b1f95b74e
 feature: Checkout, Services, Storefront
-source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Wenn eine [!DNL Bolt] -Konto beim Checkout gefunden werden, können Käufer ihre
 
 1. Geben Sie das einmalige Kennwort (OTP) ein, das an dieses gesendet wird. [!DNL Bolt] E-Mail-Adresse des Kontos oder Mobilgerät, je nach [Benutzereinstellungen in der [!DNL Bolt] account](https://help.bolt.com/shoppers/account/account-settings/#how-to-set-preferred-login-method){target=_blank}.
 
-![OTP-Popup](assets/new-logo-otp-email.png)
+![OTP-Popup](assets/new-logo-otp-email.png){width="300" zoomable="yes"}
 
 1. Nach der Anmeldung bei Ihrem [!DNL Bolt] -Konto hinzugefügt werden, werden die Details automatisch hinzugefügt:
 
@@ -65,4 +65,4 @@ Wenn nicht [!DNL Bolt] -Konto gefunden wird, haben die Käufer weiterhin den sta
 - Überprüfungszahlmethode
 - Die Option zur Registrierung in [!DNL Bolt] für schnellere Checkouts, bevor die Bestellung erscheint. Der Käufer kann den Geschäftsbedingungen zustimmen, um seine [!DNL Bolt] -Konto.
 
-  ![Angaben [!DNL Bolt]](assets/checkbox-remember-bolt.png)
+  ![Angaben [!DNL Bolt]](assets/checkbox-remember-bolt.png){width="300" zoomable="yes"}
