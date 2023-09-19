@@ -3,9 +3,9 @@ title: '[!DNL Live Search] Versionshinweise'
 description: "Die neuesten Versionsinformationen für [!DNL Live Search] von Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 74282ba307f22730e1f6bfcb9a590caee87ba073
+source-git-commit: add4d61f1e97bdf889ab0de694f8c3921caaab50
 workflow-type: tm+mt
-source-wordcount: '1403'
+source-wordcount: '1459'
 ht-degree: 1%
 
 ---
@@ -75,6 +75,16 @@ Die folgenden Werte wurden zum `storeDetails` -Objekt:
 * Die **Mein Konto** Die Seitennavigation verschwindet nicht mehr bei Verwendung des Widgets &quot;Produktauflistungsseite&quot;.
 
 Merchandising muss die [!DNL Live Search] -Erweiterungsversion >= 3.0.2 verwenden, um auf diese Funktionen zuzugreifen.
+
+Es wird empfohlen, ein Upgrade durchzuführen und zu testen, bevor Sie die Produktionsumgebung aktivieren. Erwägen Sie, die Produktionsumgebung außerhalb der Spitzenzeiten zu aktualisieren, nachdem Sie die Ergebnisse der Testumgebung überprüft haben.
+
+### Einschränkungen
+
+Die Verwendung des Widgets &quot;Live Search Product Listing Page&quot;führt dazu, dass der Google Tag Manager fehlschlägt. Verwenden Sie den standardmäßigen Such-Adapter, wenn Google Tag Manager erforderlich ist.
+
+## Frühere Versionen
+
++ + + 3.0.1 und früher
 
 ## [!DNL Live Search] 3.0.1 {#301}
 

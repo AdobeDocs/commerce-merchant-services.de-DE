@@ -2,9 +2,9 @@
 title: Onboarding und Installation
 description: Erfahren Sie, wie Sie installieren [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 04b1553e7cc16d142b72553ca2a6bb9d6a6b5eb4
+source-git-commit: 75ff893bf5867ededa49807835676ddf9b19adc9
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '649'
 ht-degree: 0%
 
 ---
@@ -36,14 +36,16 @@ Onboarding-Prozess für [!DNL Catalog Service] erfordert Zugriff auf die Befehls
 - Adobe Commerce für Cloud-Infrastruktur: 2.4.4+
 - Adobe Commerce vor Ort: 2.4.4+
 
-## Umgebungen
+## Endpunkte
 
-Catalog Service verfügt über zwei Umgebungen, die für das Onboarding verfügbar sind:
+Catalog Service verfügt über zwei Endpunkte, die für das Onboarding verfügbar sind:
 
 - Sandbox (https://catalog-service-sandbox.adobe.io/graphql) - wird zum Testen und Validieren vor der Live-Schaltung verwendet
 - Produktion (https://catalog-service.adobe.io/graphql)- für Live-Traffic für Commerce-Händler und Websites verwendet
 
-Ladetests sollten nur in der Sandbox-Umgebung durchgeführt werden. Es wird empfohlen, dass ein [Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) beim Laden geöffnet werden, damit das Services-Team den zusätzlichen Server-Traffic vorhersehen kann.
+Alle Testinstanzen von Commerce sollten den Sanbox-Endpunkt verwenden.
+
+Ladetests sollten nur am Sandbox-Endpunkt durchgeführt werden. Es wird empfohlen, dass ein [Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) beim Laden geöffnet werden, damit das Services-Team den zusätzlichen Server-Traffic vorhersehen kann.
 
 ## Installation und Konfiguration
 

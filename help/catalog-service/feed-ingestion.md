@@ -1,9 +1,9 @@
 ---
 title: Feed-Erfassungsdienst
 description: Erfahren Sie mehr über den Feed-Erfassungsdienst für Adobe Commerce
-source-git-commit: 12b1e89924a2eb89494bcb884fc3bc14e87b2b1c
+source-git-commit: b57fc43d23dbbcbcae31743fd0ab9c1b3d1c1084
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '404'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,11 @@ ht-degree: 0%
 >
 >Der Feed-Erfassungsdienst befindet sich derzeit in der privaten Beta-Phase. Es ist noch nicht für die allgemeine Anwendung verfügbar.
 
+Mit dem Feed-Erfassungsdienst können Kunden mit großen und/oder komplexen Katalogen Daten direkt an Adobe Commerce-Dienste senden.
+
 Der Feed-Erfassungsdienst verkürzt die Zeit für die Verarbeitung von Produktänderungen (Preisaktualisierungen, Hinzufügen neuer Attribute), indem die Adobe Commerce-Instanz umgangen und Katalogdaten von einer externen Enterprise Resource Planning (ERP) direkt zu Adobe Commerce-Diensten verschoben werden.
 
-Dieser Dienst richtet sich an Kunden, die ihren Produktkatalog in einem außerhalb der Adobe Commerce-Hauptanwendung gelegenen System speichern und verwalten.
+Dieser Dienst richtet sich an Kunden, die ihren Produktkatalog in einem außerhalb der Adobe Commerce-Hauptanwendung gelegenen System speichern und verwalten. Sie wird als API bereitgestellt, damit Kunden sie in ihre vorhandenen Systeme integrieren können, wodurch zusätzliche Flexibilität bei der Bereitstellung entsteht.
 
 Kunden mit großen, komplexen Katalogen oder Katalogen, die häufige Updates erhalten, befürchten, dass es länger dauern könnte, bis die neuen Daten im Live Store angezeigt werden. Da der Catalog Service weiß, welche Daten er für die Verarbeitung dieser Aktualisierungen benötigt, müssen die Daten nicht über das Commerce-Hauptprodukt gesendet werden, sondern nur an Catalog Service weitergeleitet werden. Wenn Sie diesen Zwischenschritt entfernen, werden Effizienzsteigerungen festgestellt.
 
