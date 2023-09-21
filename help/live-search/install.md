@@ -3,9 +3,9 @@ title: "Installieren [!DNL Live Search]"
 description: "Erfahren Sie, wie Sie installieren, aktualisieren und deinstallieren [!DNL Live Search] von Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 96a5791c5716f612f473540f27bd3f99b1bfe7c8
+source-git-commit: 97a743b1f7162af01930a37db448432acb9f89d5
 workflow-type: tm+mt
-source-wordcount: '1299'
+source-wordcount: '1323'
 ht-degree: 0%
 
 ---
@@ -73,6 +73,9 @@ In diesem Szenario werden Storefront-Vorgänge während der [!DNL Live Search] -
    * Produkt-Feed
    * Produktvarianten-Feed
    * Katalogattribut-Feed
+   * Produktpreis-Feed
+   * Bereich Website-Daten-Feed
+   * Umfang des Daten-Feeds für Kundengruppen
 
 1. Konfigurieren Sie Ihre [API-Schlüssel](#configure-api-keys) und überprüfen Sie, ob Ihre Katalogdaten [synchronisiert](#synchronize-catalog-data) mit [!DNL Live Search] Dienste.
 
@@ -121,6 +124,9 @@ In diesem Szenario [!DNL Elasticsearch] verwaltet vorübergehend Suchanfragen au
    * Produkt-Feed
    * Produktvarianten-Feed
    * Katalogattribut-Feed
+   * Produktpreis-Feed
+   * Umfang des Website-Daten-Feeds
+   * Umfang des Daten-Feeds von Kundengruppen
 
 1. Konfigurieren Sie Ihre [API-Schlüssel](#configure-api-keys) und überprüfen Sie, ob Ihre Katalogdaten [synchronisiert](#synchronize-catalog-data) mit [!DNL Live Search] Dienste.
 
@@ -211,7 +217,7 @@ Zu aktualisieren [!DNL Live Search], führen Sie Folgendes über die Befehlszeil
 composer update magento/live-search --with-dependencies
 ```
 
-Um auf eine Hauptversion wie 2.0.0 auf 3.0.1 zu aktualisieren, bearbeiten Sie das Stammverzeichnis des Projekts [!DNL Composer] `.json` Datei wie folgt:
+Um auf eine Hauptversion wie 2.0.0 auf 3.1.1 zu aktualisieren, bearbeiten Sie das Stammverzeichnis des Projekts [!DNL Composer] `.json` Datei wie folgt:
 
 1. Wenn derzeit installiert `magento/live-search` Version ist `2.0.3` und Sie aktualisieren auf Version `3.0.0` oder höher führen Sie vor dem Upgrade den folgenden Befehl aus:
 

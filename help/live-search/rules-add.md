@@ -2,9 +2,9 @@
 title: "Regeln hinzufügen"
 description: "Erfahren Sie, wie Sie [!DNL Live Search] Regeln."
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 0b0e9a630162c4c98c6a3af969002def03155267
+source-git-commit: 8093cf72e9adf846f4c40d302d20c77142368c8e
 workflow-type: tm+mt
-source-wordcount: '1419'
+source-wordcount: '1428'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Um eine Regel zu erstellen, verwenden Sie zunächst den Regeleditor, um die Bedi
 
 1. Navigieren Sie im Admin zu **Marketing** > SEO &amp; Suche > **[!DNL Live Search]**.
 1. Legen Sie die **Anwendungsbereich** zur Identifizierung der [Store-Ansicht](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) wo die Regel gilt.
-1. Klicken Sie auf **Regeln** Registerkarte.
+1. Klicken Sie auf **Suchregeln** Registerkarte.
 1. Klicks **Regel hinzufügen** , um den Regeleditor zu starten.
 
 ## Bedingungen
@@ -70,9 +70,9 @@ Eine Regel kann bis zu zehn Bedingungen enthalten. Der logische Operator, der zw
 
 1. Um eine weitere Bedingung hinzuzufügen, klicken Sie auf **Bedingung hinzufügen** und wiederholen Sie den Vorgang.
 
-## Rangiertyp
+## Intelligente Rangfolge
 
-Das Ranking kombiniert Benutzerverhalten und Site-Statistiken, um das Produktranking zu bestimmen.
+Das intelligente Ranking kombiniert Benutzerverhalten und Site-Statistiken, um das Produktranking zu bestimmen.
 Store-Eigentümer können die folgenden Ranking-Strategien einrichten:
 
 ![Regeln - Übereinstimmung](assets/rules-ranking-type.png)
@@ -90,9 +90,9 @@ Store-Eigentümer können die folgenden Ranking-Strategien einrichten:
 >
 >Apostrophe und Anführungszeichen in Abfragen können in einigen Sprachen zu kleineren Problemen mit Ranking und Relevanz führen.
 
-## Ereignisse hinzufügen
+## Manuelles Ranking
 
-Ereignisse sind Aktionen, die die Suchergebnisse ändern, wenn definierte Bedingungen erfüllt sind. Eine einzelne Regel kann bis zu 25 Ereignisse enthalten.
+Bei der manuellen Rangordnung (früher als Ereignisse bezeichnet) handelt es sich um Aktionen, die die Suchergebnisse ändern, wenn definierte Bedingungen erfüllt sind. Eine einzelne Regel kann bis zu 25 Ereignisse enthalten.
 
 * Verstärken - Verschiebt ein Produkt in den Suchergebnissen höher.
 * Bury - Verschiebt eine SKU in den Suchergebnissen nach unten.
@@ -166,7 +166,7 @@ Die hier eingegebenen Informationen werden im [Regeldetails](rules-workspace.md)
 | Alle | Ändert alle logischen Operatoren in der Regel in `OR` und gibt den Satz übereinstimmender Produkte zurück. |
 | Alle | Ändert alle logischen Operatoren in der Regel in `AND` und gibt den Satz übereinstimmender Produkte zurück. |
 
-### Veranstaltungen
+### Manuelles Ranking
 
 | Ereignis | Beschreibung |
 |--- |--- |

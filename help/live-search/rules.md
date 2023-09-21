@@ -1,15 +1,15 @@
 ---
-title: "Regeln"
+title: "Suchregeln"
 description: "[!DNL Live Search] Regeln kombinieren Logik mit Aktionen, um das Einkaufserlebnis zu gestalten."
 exl-id: d06a3040-6987-4813-90ae-2f7b3ad0b232
-source-git-commit: 7307702a62a6b2c3e6c6083a59f2ac3587b0985e
+source-git-commit: 40bcae7a792660f02390f4d55967767b15c84f38
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '592'
 ht-degree: 0%
 
 ---
 
-# Regeln
+# Suchregeln
 
 [!DNL Live Search] -Regeln kombinieren Logik mit Aktionen, um das Sucherlebnis eines Käufers in Ihrem Store zu gestalten. Sie können Regeln verwenden, um Produkte zu steigern, zu begraben, anzuheften oder auszublenden, um Suchergebnisse in Echtzeit zu kalibrieren, um Ihre Geschäftsziele zu unterstützen.
 
@@ -23,7 +23,7 @@ Sie können mehrere Bedingungen und Aktionen kombinieren und eine Regel so plane
 
 ## Voraussetzungen
 
-Eine einfache Regel kann eine einzelne Bedingung und ein einzelnes Ereignis enthalten, während eine komplexe Regel bis zu zehn Bedingungen haben kann, die bis zu 25 Ereignisse Trigger.
+Eine einfache Suchregel kann eine einzelne Bedingung und ein einzelnes Ereignis enthalten, während eine komplexe Regel bis zu zehn Bedingungen haben kann, die bis zu 25 Trigger umfassen.
 Regeln können Folgendes enthalten:
 
 * Bis zu zehn Bedingungen
@@ -49,7 +49,7 @@ Beim Erstellen einer komplexen Regel kann es hilfreich sein, diese mit einem Ein
 
 ## Rangfolge mit mehreren Regeln
 
-Es wird immer nur eine Regel auf einen Suchbegriff angewendet.
+Es wird immer nur eine Suchregel auf einen Suchbegriff angewendet.
 Wenn festgestellt wird, dass mehrere Regeln auf einen Suchbegriff anwendbar sind, werden alle diese Regeln angewendet. Bei Kollision zwischen zwei Regeln:`rule 1` das die SKU1 erhöht, aber `rule 2` blendet dieselbe SKU aus - dann die zuletzt angewendete Regel (`rule 2`) hat Vorrang.
 
 * Regeln werden nach dem Zeitstempel &quot;Zuletzt geändert&quot;geordnet. Die zuletzt geänderte Regel wird zuerst angewendet und ältere Regeln danach in der Zeitstempelreihenfolge.

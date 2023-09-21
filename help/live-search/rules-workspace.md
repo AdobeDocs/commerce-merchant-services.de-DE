@@ -1,17 +1,17 @@
 ---
-title: "Arbeitsbereich für Regeln"
+title: "Arbeitsbereich für Suchregeln"
 description: '"Machen Sie sich mit dem [!DNL Live Search] Arbeitsbereich "Regeln".'
 exl-id: a52839fb-2264-4443-83c3-9eaa2ccb6996
-source-git-commit: 91d0713a3e57a3748609b6b4bcb723c21a461519
+source-git-commit: 40bcae7a792660f02390f4d55967767b15c84f38
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '578'
 ht-degree: 1%
 
 ---
 
-# Arbeitsbereich für Regeln
+# Arbeitsbereich für Suchregeln
 
-Der Arbeitsbereich &quot;Regeln&quot;listet die aktuelle Auswahl der Regeln und deren Status auf und bietet Zugriff auf Tools, die Sie zum Erstellen und Verwalten von Regeln benötigen. Im Arbeitsbereich haben Sie folgende Möglichkeiten:
+Der Arbeitsbereich Suchregeln listet die aktuelle Auswahl der Regeln und deren Status auf und bietet Zugriff auf Tools, die Sie zum Erstellen und Verwalten von Regeln benötigen. Im Arbeitsbereich haben Sie folgende Möglichkeiten:
 
 * Nach Regeln suchen
 * Anzeigen von Regeldetails
@@ -46,18 +46,18 @@ Die sichtbaren Spalten haben ein blaues Häkchen im Menü &quot;Optionen&quot;. 
    * Inaaktiv
    * Geplant
 
-## Regeln nach Namen durchsuchen
+## Suchen nach Suchregeln nach Namen
 
 Beginnen Sie mit der Eingabe des Regelnamens oder eines beliebigen Wortes im Regelnamen.
 Die Suche findet die entsprechenden Regeln während der Eingabe. Die Zeichenfolge der übereinstimmenden Zeichen wird im Namen jeder gefundenen Regel hervorgehoben.
 
-![Regeln - Suche nach Namen](assets/rules-workspace-search-name.png)
+![Regeln - nach Namen suchen](assets/rules-workspace-search-name.png)
 
 ## Details anzeigen
 
 Im Detailbereich werden der Regelname, der Status, die Bedingungen und Ereignisse, das Start- und Enddatum, die Beschreibung und das Datum der letzten Bearbeitung angezeigt. Regeln können im Detailbereich aktiviert, bearbeitet und gelöscht werden.
 
-1. Im *Regeln* -Registerkarte, suchen Sie die Regel im Raster, das Sie anzeigen möchten, und klicken Sie auf **Mehr** (...).
+1. Im *Suchregeln* -Registerkarte, suchen Sie die Regel im Raster, das Sie anzeigen möchten, und klicken Sie auf **Mehr** (...).
 1. Klicks **Details anzeigen**.
 Im Bereich Details anzeigen können Sie Folgendes tun:
 

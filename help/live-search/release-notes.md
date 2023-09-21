@@ -3,10 +3,10 @@ title: '[!DNL Live Search] Versionshinweise'
 description: "Die neuesten Versionsinformationen für [!DNL Live Search] von Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: add4d61f1e97bdf889ab0de694f8c3921caaab50
+source-git-commit: 190ff4bd6442f77407675e48850e214e241b392a
 workflow-type: tm+mt
-source-wordcount: '1459'
-ht-degree: 1%
+source-wordcount: '1662'
+ht-degree: 0%
 
 ---
 
@@ -36,6 +36,52 @@ _25. April 2023_
 
 +++
 
+## [!DNL Live Search] 3.1.1 {#311}
+
+_15. September 2023_
+
+[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
+
+### Neue Funktionen
+
+* Die neue Registerkarte Kategorie-Merchandising wurde hinzugefügt. Benutzer können jetzt intelligente Ranglisten und manuelle Ranglisten (Pin, Verstärken, Begraben, Verbergen) pro Kategorie hinzufügen
+* Benutzer können eine einzelne Kategorieregel mit intelligentem oder manuellem Rang hinzufügen
+* Benutzer können nun intelligente Ranking-Regeln zu Unterkategorien hinzufügen
+* Beim Löschen von Unterkategorien mit intelligentem Rang werden detaillierte Informationen bereitgestellt.
+* Die Möglichkeit zum Löschen von Regeln für geerbte Ranking-Strategien wurde hinzugefügt.
+* Die Möglichkeit zum Löschen von Regeln für eine Kategorie wurde hinzugefügt.
+* Benutzer können jetzt beim Hinzufügen einer Regel nach Kategoriename suchen
+* Mit der Ansicht &quot;Kategoriestruktur&quot;können Benutzer jetzt anzeigen, auf welche Kategorie Regeln angewendet wurden.
+* Die Kategorievorschau zeigt nur die ausgewählte Kategorie an.
+
+### Updates
+
+* Die Registerkarte &quot;Regeln&quot;wird in &quot;Suchregeln&quot;umbenannt.
+* Bei der Rangfolge nach &quot;Trends&quot;können Sie jetzt zwischen folgenden Optionen wählen:
+   * 3 Tage (Standard)
+   * 14 Tage
+   * 30 Tage
+* &quot;Ereignisse&quot;(Verstärken/Einfügen/Verbergen/Ausblenden) wurde in &quot;Manuelles Ranking&quot;umbenannt.
+* &quot;Ranking Type&quot;wurde in &quot;Intelligent ranking&quot;umbenannt.
+
+### Fehlerbehebungen
+
+* Geringfügige Fehlerbehebungen
+
+Merchandising muss die [!DNL Live Search] -Erweiterungsversion >= 3.1.1 verwenden, um auf diese Funktionen zuzugreifen.
+
+Nach der Installation von Version 3.1.1 müssen diese neuen Indexer aktiviert werden:
+
+* Produktpreis-Feed
+* Umfang des Website-Daten-Feeds
+* Umfang des Daten-Feeds von Kundengruppen
+
+Es wird empfohlen, die Qualitätssicherung oder das Staging zu aktualisieren und zu testen, bevor Änderungen in die Produktion übernommen werden.
+
+## Frühere Versionen
+
++ + + 3.1.0 und früher
+
 ## [!DNL Live Search] 3.1.0 {#310}
 
 _1. September 2023_
@@ -45,10 +91,6 @@ _1. September 2023_
 ### Updates
 
 * Das Widget &quot;Produktliste&quot;wurde aktualisiert und verwendet nun die [Catalog Service-API](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/product-search/).
-
-## Frühere Versionen
-
-+ + + 3.0.2 und früher
 
 ## [!DNL Live Search] 3.0.2 {#302}
 
