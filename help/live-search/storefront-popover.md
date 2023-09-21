@@ -2,7 +2,7 @@
 title: "[!DNL Storefront Popover]"
 description: "Die [!DNL Live Search storefront popover] gibt dynamisch vorgeschlagene Produkte und Miniaturansichten zurück."
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 441f8c6c6113ce96c5353dcbde170ca600bb0abb
+source-git-commit: 44c5d3f73d9cf658a978829ffaef6a79c5d90216
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 0%
@@ -55,7 +55,7 @@ Bei Implementierungen ohne Headless ist es möglich, das Live Search-Popup mit e
 
 ## Einschränkungen
 
-* Die [!DNL Live Search] [!DNL storefront popover] ist nur für Stores verfügbar, die *Luma* Design oder ein benutzerdefiniertes Design, das auf *Luma*. Breadcrumbs auf der Suchergebnisseite haben keine *Lume* Stile.
+* Die [!DNL Live Search] [!DNL storefront popover] ist nur für Stores verfügbar, die *Luma* Design oder ein benutzerdefiniertes Design, das auf *Luma*. Breadcrumbs auf der Suchergebnisseite haben keine *Luma* Stile.
 * Die [!DNL popover] unterstützt nicht die *Leer* Design. Siehe [Formatierung [!DNL Popover] Elemente](storefront-popover-styling.md) , um mehr zu erfahren.
 * Die [!DNL popover] wird im Schnellbestellformular nicht unterstützt.
 * Wunschlisten und Produktvergleiche werden nicht unterstützt.

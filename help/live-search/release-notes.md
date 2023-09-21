@@ -3,9 +3,9 @@ title: '[!DNL Live Search] Versionshinweise'
 description: "Die neuesten Versionsinformationen für [!DNL Live Search] von Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 190ff4bd6442f77407675e48850e214e241b392a
+source-git-commit: 44c5d3f73d9cf658a978829ffaef6a79c5d90216
 workflow-type: tm+mt
-source-wordcount: '1662'
+source-wordcount: '1691'
 ht-degree: 0%
 
 ---
@@ -44,29 +44,23 @@ _15. September 2023_
 
 ### Neue Funktionen
 
-* Die neue Registerkarte Kategorie-Merchandising wurde hinzugefügt. Benutzer können jetzt intelligente Ranglisten und manuelle Ranglisten (Pin, Verstärken, Begraben, Verbergen) pro Kategorie hinzufügen
-* Benutzer können eine einzelne Kategorieregel mit intelligentem oder manuellem Rang hinzufügen
-* Benutzer können nun intelligente Ranking-Regeln zu Unterkategorien hinzufügen
-* Beim Löschen von Unterkategorien mit intelligentem Rang werden detaillierte Informationen bereitgestellt.
-* Die Möglichkeit zum Löschen von Regeln für geerbte Ranking-Strategien wurde hinzugefügt.
-* Die Möglichkeit zum Löschen von Regeln für eine Kategorie wurde hinzugefügt.
-* Benutzer können jetzt beim Hinzufügen einer Regel nach Kategoriename suchen
-* Mit der Ansicht &quot;Kategoriestruktur&quot;können Benutzer jetzt anzeigen, auf welche Kategorie Regeln angewendet wurden.
-* Die Kategorievorschau zeigt nur die ausgewählte Kategorie an.
+![Neu](../assets/new.svg) Die neue Registerkarte Kategorie-Merchandising wurde hinzugefügt. Benutzer können jetzt intelligente Ranglisten und manuelle Ranglisten (Pin, Verstärken, Begraben, Verbergen) pro Kategorie hinzufügen
+![Neu](../assets/new.svg) Benutzer können eine einzelne Kategorieregel mit intelligentem oder manuellem Rang hinzufügen
+![Neu](../assets/new.svg) Benutzer können nun intelligente Ranking-Regeln zu Unterkategorien hinzufügen
+![Neu](../assets/new.svg) Beim Löschen von Unterkategorien mit intelligentem Rang werden detaillierte Informationen bereitgestellt.
+![Neu](../assets/new.svg) Die Möglichkeit zum Löschen von Regeln für geerbte Ranking-Strategien wurde hinzugefügt.
+![Neu](../assets/new.svg) Die Möglichkeit zum Löschen von Regeln für eine Kategorie wurde hinzugefügt.
+![Neu](../assets/new.svg) Benutzer können jetzt beim Hinzufügen einer Regel nach Kategoriename suchen
+![Neu](../assets/new.svg) Mit der Ansicht &quot;Kategoriestruktur&quot;können Benutzer jetzt anzeigen, auf welche Kategorie Regeln angewendet wurden.
+![Neu](../assets/new.svg) Die Kategorievorschau zeigt nur die ausgewählte Kategorie an.
 
 ### Updates
 
-* Die Registerkarte &quot;Regeln&quot;wird in &quot;Suchregeln&quot;umbenannt.
-* Bei der Rangfolge nach &quot;Trends&quot;können Sie jetzt zwischen folgenden Optionen wählen:
-   * 3 Tage (Standard)
-   * 14 Tage
-   * 30 Tage
-* &quot;Ereignisse&quot;(Verstärken/Einfügen/Verbergen/Ausblenden) wurde in &quot;Manuelles Ranking&quot;umbenannt.
-* &quot;Ranking Type&quot;wurde in &quot;Intelligent ranking&quot;umbenannt.
-
-### Fehlerbehebungen
-
-* Geringfügige Fehlerbehebungen
+![Fehlerbehebung](../assets/fix.svg) Die Registerkarte &quot;Regeln&quot;wird in &quot;Suchregeln&quot;umbenannt.
+![Fehlerbehebung](../assets/fix.svg) Bei der Rangfolge nach &quot;Trend&quot;können Sie jetzt zwischen: * 3 Tage (Standard) * 14 Tage * 30 Tage auswählen
+![Fehlerbehebung](../assets/fix.svg) &quot;Ereignisse&quot;(Verstärken/Einfügen/Verbergen/Ausblenden) wurde in &quot;Manuelles Ranking&quot;umbenannt.
+![Fehlerbehebung](../assets/fix.svg) &quot;Ranking Type&quot;wurde in &quot;Intelligent ranking&quot;umbenannt.
+![Fehlerbehebung](../assets/fix.svg) Geringfügige Fehlerbehebungen
 
 Merchandising muss die [!DNL Live Search] -Erweiterungsversion >= 3.1.1 verwenden, um auf diese Funktionen zuzugreifen.
 
@@ -90,7 +84,7 @@ _1. September 2023_
 
 ### Updates
 
-* Das Widget &quot;Produktliste&quot;wurde aktualisiert und verwendet nun die [Catalog Service-API](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/product-search/).
+![Fehlerbehebung](../assets/fix.svg) Das Widget &quot;Produktliste&quot;wurde aktualisiert und verwendet nun die [Catalog Service-API](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/product-search/).
 
 ## [!DNL Live Search] 3.0.2 {#302}
 
@@ -100,7 +94,7 @@ _7. August 2023_
 
 ### Neue Funktionen
 
-Die folgenden Werte wurden zum `storeDetails` -Objekt:
+![Neu](../assets/new.svg) Die folgenden Werte wurden zum `storeDetails` -Objekt:
 
 * &quot;Alle Produkte pro Seite zulassen&quot;
 * Währungskurs
@@ -110,11 +104,8 @@ Die folgenden Werte wurden zum `storeDetails` -Objekt:
 
 ### Updates
 
-* Dem Metapaket wurden Catalog Service-Module hinzugefügt, um den erweiterten Datenabruf zu unterstützen.
-
-### Fehlerbehebungen
-
-* Die **Mein Konto** Die Seitennavigation verschwindet nicht mehr bei Verwendung des Widgets &quot;Produktauflistungsseite&quot;.
+![Fehlerbehebung](../assets/fix.svg) Dem Metapaket wurden Catalog Service-Module hinzugefügt, um den erweiterten Datenabruf zu unterstützen.
+![Fehlerbehebung](../assets/fix.svg) Die **Mein Konto** Die Seitennavigation verschwindet nicht mehr bei Verwendung des Widgets &quot;Produktauflistungsseite&quot;.
 
 Merchandising muss die [!DNL Live Search] -Erweiterungsversion >= 3.0.2 verwenden, um auf diese Funktionen zuzugreifen.
 
@@ -122,11 +113,7 @@ Es wird empfohlen, ein Upgrade durchzuführen und zu testen, bevor Sie die Produ
 
 ### Einschränkungen
 
-Die Verwendung des Widgets &quot;Live Search Product Listing Page&quot;führt dazu, dass der Google Tag Manager fehlschlägt. Verwenden Sie den standardmäßigen Such-Adapter, wenn Google Tag Manager erforderlich ist.
-
-## Frühere Versionen
-
-+ + + 3.0.1 und früher
+Die Verwendung des Widgets &quot;Live Search Product Listing Page&quot;führt dazu, dass der Google Tag Manager fehlschlägt. Verwenden Sie den standardmäßigen Suchadapter, wenn der Google Tag Manager erforderlich ist.
 
 ## [!DNL Live Search] 3.0.1 {#301}
 
@@ -136,37 +123,33 @@ _14. März 2023_
 
 ### Neue Funktionen
 
-* Produktelementkarte in der Vorschau für Regeln
-* [Widget &quot;Seite für Produktauflistung&quot;](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-storefront/plp-styling.html)
-* [Filteroptionen für Kategorien](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#facets)
-* Die Möglichkeit, Pin-Ereignisse per Drag &amp; Drop zu erstellen, wurde hinzugefügt
-* Neue Pin-Aktionen:
-   * An Ort und Stelle befestigen - Schaltfläche &quot;Pin&quot;zum Erstellen eines Pin-Ereignisses mit einem Klick
-   * Nach oben pinnen - Setzt das Produkt an die erste Position
-   * An den unteren Rand anheften - Setzt das Produkt am Ende der Ergebnisse
-   * Aufheben der Bindung eines Ereignisses mit einem Klick
-* [Intelligente Rangordnung für Regeln](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add.html#ranking-type)
+![Neu](../assets/new.svg) Produktelementkarte in der Vorschau für Regeln
+![Neu](../assets/new.svg) [Widget &quot;Seite für Produktauflistung&quot;](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-storefront/plp-styling.html)
+![Neu](../assets/new.svg) [Filteroptionen für Kategorien](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#facets)
+![Neu](../assets/new.svg) Die Möglichkeit, Pin-Ereignisse per Drag &amp; Drop zu erstellen, wurde hinzugefügt
+![Neu](../assets/new.svg) Neue Pin-Aktionen: * An Position fixieren - Schaltfläche &quot;Pin&quot;, um ein Pin-Ereignis mit einem Klick zu erstellen * Pin to top - Setzt das Produkt an die erste Position * Pin to bottom - Platziert das Produkt am unteren Ende der Ergebnisse * Passen Sie ein Ereignis mit einem Klick auf
+![Neu](../assets/new.svg) [Intelligente Rangordnung für Regeln](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add.html#ranking-type)
 
 ### Updates
 
-* Regeln jetzt automatisch konfigurieren Sortiert Positionen einmalig
-* Beim Löschen eines vorhandenen Ereignisses wird jetzt die Vorschau aktualisiert.
-* Regeln ohne Ereignisse können gespeichert werden
-* Facettenauswahl &quot;Typ auswählen&quot;entfernen
-* Neuer Status &quot;Bearbeiten&quot;für nicht gespeicherte Regeln hinzugefügt
+![Fehlerbehebung](../assets/fix.svg) Regeln jetzt automatisch konfigurieren Sortiert Positionen einmalig
+![Fehlerbehebung](../assets/fix.svg) Beim Löschen eines vorhandenen Ereignisses wird jetzt die Vorschau aktualisiert.
+![Fehlerbehebung](../assets/fix.svg) Regeln ohne Ereignisse können gespeichert werden
+![Fehlerbehebung](../assets/fix.svg) Facettenauswahl &quot;Typ auswählen&quot;entfernen
+![Fehlerbehebung](../assets/fix.svg) Neuer Status &quot;Bearbeiten&quot;für nicht gespeicherte Regeln hinzugefügt
 
 ### Fehlerbehebungen
 
-* Es wurde ein Serverfehler behoben, der auftrat, wenn beim Speichern ein nicht abgeschlossenes Ereignis auftrat
-* Korrektur des korrekten Löschens eines bestimmten Ereignisses bei mehreren Ereignissen
-* Fehlerkorrektur - Das vorhandene Regelereignis wird jetzt aktualisiert, wenn ein neues Ereignis hinzugefügt wird
-* Beim zweiten &quot;Bearbeiten&quot;-Klick aus Details behoben, [!DNL Live Search] Seite muss neu geladen werden
-* Synonyme: Es wurde ein Problem behoben, bei dem ein Benutzer, der auf die Eingabe klickte, den Fokus nicht auf das Feld zurücksetzen konnte.
-* Andere kleinere Fehlerbehebungen und Leistungsaktualisierungen
+![Fehlerbehebung](../assets/fix.svg) Es wurde ein Serverfehler behoben, der auftrat, wenn beim Speichern ein nicht abgeschlossenes Ereignis auftrat
+![Fehlerbehebung](../assets/fix.svg) Korrektur des korrekten Löschens eines bestimmten Ereignisses bei mehreren Ereignissen
+![Fehlerbehebung](../assets/fix.svg) Fehlerkorrektur - Das vorhandene Regelereignis wird jetzt aktualisiert, wenn ein neues Ereignis hinzugefügt wird
+![Fehlerbehebung](../assets/fix.svg) Beim zweiten &quot;Bearbeiten&quot;-Klick aus Details behoben, [!DNL Live Search] Seite muss neu geladen werden
+![Fehlerbehebung](../assets/fix.svg) Synonyme: Es wurde ein Problem behoben, bei dem ein Benutzer, der auf die Eingabe klickte, den Fokus nicht auf das Feld zurücksetzen konnte.
+![Fehlerbehebung](../assets/fix.svg) Andere kleinere Fehlerbehebungen und Leistungsaktualisierungen
 
 
-* ![Fehler](../assets/bug.svg) - Die Rangordnung nach &quot;Empfohlen für Sie&quot;wird nur in den Live-Suche-Widgets unterstützt. Sie wird von der standardmäßigen Luma- und PWA-Suchfunktion nicht unterstützt.
-* ![Fehler](../assets/bug.svg) - Benutzerdefinierte Preisattribut-Facetten werden in Luma nicht korrekt dargestellt, aber die API filtert sie ordnungsgemäß.
+![Fehler](../assets/bug.svg) - Die Rangordnung nach &quot;Empfohlen für Sie&quot;wird nur in den Live-Suche-Widgets unterstützt. Sie wird von der standardmäßigen Luma- und PWA-Suchfunktion nicht unterstützt.
+![Fehler](../assets/bug.svg) - Benutzerdefinierte Preisattribut-Facetten werden in Luma nicht korrekt dargestellt, aber die API filtert sie ordnungsgemäß.
 
 Merchandising muss die [!DNL Live Search] -Erweiterungsversion >= 3.0.1 verwenden, um auf diese Funktionen zuzugreifen.
 
@@ -176,7 +159,7 @@ Es wird empfohlen, ein Upgrade durchzuführen und zu testen, bevor Sie die Produ
 
 [!BADGE Unterstützt]{type="Informativ" tooltip="Unterstützt"}
 
-* ![Fehlerbehebung](../assets/fix.svg) - Die Live-Suche würde einen Fehler auslösen, wenn SDK-Ressourcen aufgrund von Netzwerkproblemen nicht verfügbar waren. Dieser Fehler wurde behoben.
+![Fehlerbehebung](../assets/fix.svg) - Die Live-Suche würde einen Fehler auslösen, wenn SDK-Ressourcen aufgrund von Netzwerkproblemen nicht verfügbar waren. Dieser Fehler wurde behoben.
 
 Händler müssen die Live Search-Erweiterung Version >= 2.0.5 aktualisieren, um auf diese Funktionen zugreifen zu können.
 
