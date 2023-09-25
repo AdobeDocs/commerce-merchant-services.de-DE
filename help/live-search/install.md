@@ -3,9 +3,9 @@ title: "Installieren [!DNL Live Search]"
 description: "Erfahren Sie, wie Sie installieren, aktualisieren und deinstallieren [!DNL Live Search] von Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 97a743b1f7162af01930a37db448432acb9f89d5
+source-git-commit: 017299c613cc010d96d90c9b1d88e43304d00e2b
 workflow-type: tm+mt
-source-wordcount: '1323'
+source-wordcount: '1301'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ In diesem Szenario werden Storefront-Vorgänge während der [!DNL Live Search] -
    >
    > Während die Daten indiziert und synchronisiert sind, sind die Such- und Kategoriedurchsuchvorgänge nicht in der Storefront verfügbar. Je nach der Größe Ihres Katalogs kann der Vorgang mindestens eine Stunde dauern. `cron` läuft, um Ihre Daten zu synchronisieren [!DNL Live Search] Dienste.
 
-1. Stellen Sie sicher, dass Folgendes [Indexer](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) auf `Update by Schedule`:
+1. Stellen Sie sicher, dass Folgendes [Indexer](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) auf &quot;Nach Zeitplan aktualisieren&quot;eingestellt sind:
 
    * Produkt-Feed
    * Produktvarianten-Feed
@@ -119,7 +119,7 @@ In diesem Szenario [!DNL Elasticsearch] verwaltet vorübergehend Suchanfragen au
 
    [!DNL Elasticsearch] verwaltet weiterhin Suchanforderungen aus dem Store, während die [!DNL Live Search] -Dienst synchronisiert Katalogdaten und indiziert Produkte im Hintergrund.
 
-1. Stellen Sie sicher, dass Folgendes [Indexer](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) auf `Update by Schedule`:
+1. Stellen Sie sicher, dass Folgendes [Indexer](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) auf &quot;Nach Zeitplan aktualisieren&quot;eingestellt sind:
 
    * Produkt-Feed
    * Produktvarianten-Feed
@@ -263,10 +263,21 @@ Deinstallation [!DNL Live Search], siehe [Module deinstallieren](https://experie
 
 ## [!DNL Live Search] dependencies {#dependencies}
 
-Die folgenden [!DNL Live Search] Abhängigkeiten werden von [!DNL Composer]:
+Die folgenden [!DNL Live Search] Abhängigkeiten werden von [!DNL Composer].
 
-| Abhängigkeit | Beschreibung |
-|--- |--- |
-| Exportmodule | Die folgenden Module erfassen und synchronisieren Katalogdaten:<br />`module-sass-catalog`<br />`module-sass-product-override`<br />`module-bundle-product-data-exporter`<br />`module-catalog-data-exporter`<br />`module-catalog-inventory-data-exporter`<br />`module-catalog-url-rewrite-data-exporter`<br />`module-configurable-product-data-exporter`<br />`module-data-exporter`<br />`module-parent-product-data-exporter`<br />`module-product-override-data-exporter` |
-| `data-services` | Erforderlich, um Ihre Verbindung zu Commerce Services zu konfigurieren. |
-| `services-id` | Erforderlich, um Ihre Verbindung zu Commerce Services zu konfigurieren. |
+* `magento/module-saas-catalog`
+* `magento/module-saas-category`
+* `magento/module-saas-category-permissions`
+* `magento/module-saas-product-override`
+* `magento/module-saas-product-variant`
+* `magento/module-saas-price`
+* `magento/module-saas-scopes`
+* `magento/module-bundle-product-data-exporter`
+* `magento/module-catalog-inventory-data-exporter`
+* `magento/module-catalog-url-rewrite-data-exporter`
+* `magento/module-configurable-product-data-exporter`
+* `magento/module-parent-product-data-exporter`
+* `magento/module-gift-card-product-data-exporter`
+* `magento/module-bundle-product-override-data-exporter`
+* `data-services`
+* `services-id`
