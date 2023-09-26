@@ -1,11 +1,11 @@
 ---
-title: '[!DNL Live Search] Versionshinweise'
+title: "[!DNL Live Search] Versionshinweise"
 description: "Die neuesten Versionsinformationen für [!DNL Live Search] von Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 44c5d3f73d9cf658a978829ffaef6a79c5d90216
+source-git-commit: 21170ecc66891d803b6c45dd8e2fa2135f0e5de1
 workflow-type: tm+mt
-source-wordcount: '1691'
+source-wordcount: '1712'
 ht-degree: 0%
 
 ---
@@ -129,6 +129,7 @@ _14. März 2023_
 ![Neu](../assets/new.svg) Die Möglichkeit, Pin-Ereignisse per Drag &amp; Drop zu erstellen, wurde hinzugefügt
 ![Neu](../assets/new.svg) Neue Pin-Aktionen: * An Position fixieren - Schaltfläche &quot;Pin&quot;, um ein Pin-Ereignis mit einem Klick zu erstellen * Pin to top - Setzt das Produkt an die erste Position * Pin to bottom - Platziert das Produkt am unteren Ende der Ergebnisse * Passen Sie ein Ereignis mit einem Klick auf
 ![Neu](../assets/new.svg) [Intelligente Rangordnung für Regeln](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add.html#ranking-type)
+![Neu](../assets/new.svg) [!DNL Live Search] unterstützt jetzt MSI (Multi-Source Inventory). Um MSI zu verwenden, müssen Sie [install](install.md#update) die `commerce-data-export` Modul 102.2.0+. Überprüfen Sie Ihre Version mit dem folgenden Befehl: `composer update magento/live-search --with-dependencies`.
 
 ### Updates
 

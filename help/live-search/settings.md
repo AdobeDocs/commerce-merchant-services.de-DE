@@ -2,9 +2,9 @@
 title: "[!DNL Live Search] Einstellungen"
 description: "Konfigurieren Sie die Einstellungen für [!DNL Live Search] Dienst."
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
-source-git-commit: d367fdb0cb0ddf67ee1ce31b178fcb29ec5283ad
+source-git-commit: eefae3c849545062012cea1a7092c27f7df56b58
 workflow-type: tm+mt
-source-wordcount: '310'
+source-wordcount: '246'
 ht-degree: 0%
 
 ---
@@ -38,11 +38,11 @@ Sie können die Anzahl der Preisbereichsgruppen und die Verteilung der Preiswert
 | Anzahl der Auswahlen | Gibt die Anzahl der Preisbereichsgruppen an, die als Suchfilter in der Storefront verwendet werden können. Standardwert: 8, Maximum value: 50 |
 | Intervallwert | Gibt das Preisbereichsintervall für jede Gruppe an. Beispielsweise werden bei fünf Auswahlen mit einem Intervallwert von 20 fünf Gruppierungen von 0-20, 20-40, 40-60, 60-80 und >80 erstellt. Standardwert: 5, Maximum value: 10.000 |
 
-## Sprache
+<!-- ## Language
 
-Die Spracheinstellung gibt Folgendes an: [!DNL Live Search] welche Sprache zu erwarten ist, wenn der Katalog gelesen und der Index geschrieben wird.
+The Language setting tells [!DNL Live Search] which language to expect when reading the catalog and writing the index. 
 
-Sprachen haben unterschiedliche Regeln für die Grammatik: wie Wörter getrennt werden, Verb-Sätze und Synonyme.
-Die Einstellung Sprache stellt sicher, dass der richtige Regelsatz auf den Indizierungsmechanismus angewendet wird.
+Languages have different sets of rules for grammar: how words are separated, verb tenses and synonyms, for example.
+The Language setting ensures that the correct set of rules are applied to the indexing mechanism.
 
-Die Spracheinstellungen sollten auf die primäre Sprache des Katalogs festgelegt werden.
+The Language settings should be set to the primary language of the catalog. -->

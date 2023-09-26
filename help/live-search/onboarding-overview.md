@@ -3,9 +3,9 @@ title: "Onboarding-Übersicht"
 description: "[!DNL Live Search] Onboarding-Fluss, Systemanforderungen, Grenzen und Einschränkungen"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: ee8c37dc5dab9fcbc47d3d66e3ae0f99c9cb82d8
+source-git-commit: 21170ecc66891d803b6c45dd8e2fa2135f0e5de1
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,6 @@ Derzeit wird die [!DNL Live Search] Die Such-/Kategorie-API weist die folgenden 
 
 * Indexiert bis zu 300 Produktattribute pro Store-Ansicht.
 * Indiziert nur Produkte aus der Adobe Commerce-Datenbank.
-* Produkte müssen sich im freigegebenen Standardkatalog befinden.
 * CMS-Seiten werden nicht indiziert.
 
 ### Abfrage
@@ -74,7 +73,7 @@ Live Search-Kunden können die neue [SaaS-Preisindexer](../price-index/index.md)
 [!DNL Live Search] funktioniert mit PWA Studio, aber die Benutzer sehen möglicherweise geringfügige Unterschiede im Vergleich zu anderen Commerce-Implementierungen. Grundlegende Funktionen wie Suche und Produktlistenseite funktionieren in Venia, aber einige Permutationen von Graphql funktionieren möglicherweise nicht ordnungsgemäß. Es kann auch Leistungsunterschiede geben.
 
 * Die aktuelle PWA-Implementierung von [!DNL Live Search] benötigt mehr Verarbeitungszeit, um Suchergebnisse zurückzugeben als [!DNL Live Search] mit der nativen Commerce-Storefront.
-* [!DNL Live Search] in PWA wird nicht unterstützt [Ereignisverarbeitung](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). Intelligente Merchandising-Funktionen funktionieren deshalb nicht.
+* [!DNL Live Search] in PWA wird nicht unterstützt [Ereignisverarbeitung](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). Daher funktioniert intelligentes Merchandising nicht.
 * Direktes Filtern auf `description`, `name`, `short_description` wird von GraphQL nicht unterstützt, wenn [PWA](https://developer.adobe.com/commerce/pwa-studio/), werden jedoch mit einem allgemeineren Filter zurückgegeben.
 
 Verwendung [!DNL Live Search] Mit PWA Studio müssen Integratoren auch:
@@ -100,7 +99,6 @@ Verwendung [!DNL Live Search] Mit PWA Studio müssen Integratoren auch:
 ### Derzeit nicht unterstützt
 
 * Die [Erweiterte Suche](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) -Modul deaktiviert ist, wenn [!DNL Live Search] installiert ist und der Link Erweiterte Suche in der Fußzeile der Storefront entfernt wird.
-* Mehrere Lagerorte, die von [MCOM](https://experienceleague.adobe.com/docs/commerce-admin/systems/integrations/mcom.html) oder anderen OMS-Erweiterungen
 * Die Produktpreise beinhalten nicht [Mehrwertsteuer](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/vat.html) (MwSt).
 * [Basispreis](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-tier.html) wird im Live Search Popover- und Product Listing-Seiten-Widget nicht unterstützt.
 
