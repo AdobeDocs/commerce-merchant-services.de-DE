@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] Versionshinweise"
 description: In den Versionshinweisen finden Sie Informationen zu allen [!DNL Payment Services] veröffentlicht.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: eb2d21193ee3bde5e52bddb738564f0265422fe4
+source-git-commit: a5bd06372678512062415702f83e57afb0eeb8da
 workflow-type: tm+mt
-source-wordcount: '2200'
+source-wordcount: '2247'
 ht-degree: 0%
 
 ---
@@ -71,6 +71,14 @@ _28. Juni 2021_
 ![Neu](../assets/new.svg)<!-- Issue PAY-2761 --> Sie können jetzt die Daten anpassen, die im [Bestellstatusbericht](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) und [Zahlungsbericht](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) durch Einblenden oder Ausblenden von Spalten mithilfe des Steuerelements Spalteneinstellungen.
 
 +++
+
+## v2.2.1
+
+_27. September 2023_
+
+[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
+
+![Problem behoben](../assets/fix.svg)<!-- Issue PAY-4870 --> Fehlerkorrektur - Das neue Kopfzeilenattribut wird jetzt beim Senden der Erweiterungsversion mit der neuesten Version korrekt in Storefront gefüllt. Zuvor wurde mit dem `1.3.0` Freigabe des Commerce Services Connectors konnten Sie die `User-Agent header` von der Zahlungsdienst-Erweiterung.
 
 ## v2.2.0
 
