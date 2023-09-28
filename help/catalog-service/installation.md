@@ -2,16 +2,16 @@
 title: Onboarding und Installation
 description: Erfahren Sie, wie Sie installieren [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 44c5d3f73d9cf658a978829ffaef6a79c5d90216
+source-git-commit: f2771983072848e0da4a51d06bec970737ef951a
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '624'
 ht-degree: 0%
 
 ---
 
 # Onboarding und Installation
 
-Eine exemplarische Vorgehensweise zum Catalog Service-Prozess finden Sie.
+Eine exemplarische Vorgehensweise finden Sie im [!DNL Catalog Service] -Prozess.
 
 Teil 1:
 
@@ -38,7 +38,7 @@ Onboarding-Prozess für [!DNL Catalog Service] erfordert Zugriff auf die Befehls
 
 ## Endpunkte
 
-Catalog Service verfügt über zwei Endpunkte, die für das Onboarding verfügbar sind:
+[!DNL Catalog Service] verfügt über zwei Endpunkte, die für das Onboarding verfügbar sind:
 
 - Sandbox (https://catalog-service-sandbox.adobe.io/graphql) - wird zum Testen und Validieren vor der Live-Schaltung verwendet
 - Produktion (https://catalog-service.adobe.io/graphql)- für Live-Traffic für Commerce-Händler und Websites verwendet
@@ -49,7 +49,7 @@ Ladetests sollten nur am Sandbox-Endpunkt durchgeführt werden. Es wird empfohle
 
 ## Installation und Konfiguration
 
-Um mit dem Catalog Service für Adobe Commerce zu beginnen, sind die folgenden Schritte erforderlich:
+Erste Schritte mit [!DNL Catalog Service] Für Adobe Commerce sind die folgenden Schritte erforderlich:
 
 - Installieren der Datenexport-Erweiterungen
 - Dienst und Datenexport konfigurieren
@@ -57,23 +57,23 @@ Um mit dem Catalog Service für Adobe Commerce zu beginnen, sind die folgenden S
 
 ### Installieren der Datenexport-Erweiterungen
 
-Der Integrationsprozess für Catalog Service erfordert Zugriff auf die Befehlszeile des Servers.
+Onboarding-Prozess für [!DNL Catalog Service] erfordert Zugriff auf die Befehlszeile des Servers.
 
-Die Catalog Service-Erweiterung kann sowohl auf der Adobe Commerce-Cloud-Infrastruktur als auch auf lokalen Instanzen installiert werden.
+Die [!DNL Catalog Service] -Erweiterung kann sowohl auf der Adobe Commerce-Cloud-Infrastruktur als auch auf lokalen Instanzen installiert werden.
 
-Der Catalog Service wird mit Composer-Schlüsseln installiert, die mit dem Commerce-Konto verknüpft sind [mageid](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-personal/#field-descriptions) während des Anmeldeprozesses bereitgestellt werden. Der Verfasser verwendet diese Schlüssel bei der Erstinstallation von Adobe Commerce oder in Situationen, in denen die Composer-Schlüssel zuvor nicht in einem externen Ordner gespeichert wurden `auth.json` -Datei.
+Die [!DNL Catalog Service] wird mit Composer-Schlüsseln installiert, die mit dem Commerce-Konto verknüpft sind. [mageid](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/) während des Anmeldeprozesses bereitgestellt werden. Der Verfasser verwendet diese Schlüssel bei der Erstinstallation von Adobe Commerce oder in Situationen, in denen die Composer-Schlüssel zuvor nicht in einem externen Ordner gespeichert wurden `auth.json` -Datei.
 
 Siehe [Abrufen der Authentifizierungsschlüssel](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html) für weitere Informationen zum Abrufen von Composer-Schlüsseln.
 
 #### Adobe Commerce auf Cloud-Infrastruktur
 
-Verwenden Sie diese Methode zum Installieren der Catalog Service-Erweiterung für eine Commerce Cloud-Instanz.
+Verwenden Sie diese Methode, um die [!DNL Catalog Service] -Erweiterung für eine Commerce Cloud-Instanz.
 
 1. Öffnen Sie die `<Commerce_root>/composer.json` in einem Texteditor erstellen und den erforderlichen Abschnitt wie folgt aktualisieren:
 
 ```json
 "require": {
-  "magento/catalog-service": "^2.2.0"
+  "magento/catalog-service": "^3.0.0"
 }
 ```
 
@@ -89,13 +89,13 @@ Der Befehl aktualisiert alle Abhängigkeiten.
 
 #### Vor Ort
 
-Verwenden Sie diese Methode zum Installieren der Catalog Service-Erweiterung für eine lokale Instanz.
+Verwenden Sie diese Methode, um die [!DNL Catalog Service] Erweiterung für eine lokale Instanz.
 
 1. Öffnen Sie die `<Commerce_root>/composer.json` in einem Texteditor erstellen und den erforderlichen Abschnitt wie folgt aktualisieren:
 
 ```json
 "require": {
-    "magento/catalog-service": "^2.2.0"
+    "magento/catalog-service": "^3.0.0"
 }
 ```
 
@@ -121,7 +121,7 @@ bin/magento cache:clean
 
 ### Dienst und Datenexport konfigurieren
 
-Nach der Installation von Catalog Service müssen Sie die [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#apikey) durch Angabe der API-Schlüssel und Auswahl eines SaaS-Datenspeichers.
+Nach der Installation [!DNL Catalog Service], müssen Sie die [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#apikey) durch Angabe der API-Schlüssel und Auswahl eines SaaS-Datenspeichers.
 
 Nachdem die SaaS-Konfiguration abgeschlossen ist, führen Sie eine erste Datensynchronisation durch, indem Sie der [Katalogsynchronisierung](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) Handbuch.
 
@@ -135,16 +135,16 @@ Die anfängliche Synchronisation kann abhängig von der Kataloggröße einige Mi
 
 ### Zugriff auf den Dienst
 
-Auf die Catalog Service-API kann über POST-Befehle über HTTPS zugegriffen werden.
+Die [!DNL Catalog Service] Auf die API kann über POST-Befehle über HTTPS zugegriffen werden.
 
 Um den API-Schlüssel zu erhalten, wechseln Sie im Admin zum Bereich Commerce Service Connector und kopieren Sie den öffentlichen API-Schlüssel.
 
 Lesen Sie die [GraphQL-Dokumentation](https://developer.adobe.com/commerce/webapi/graphql/) , um zu verstehen, wie Sie die Header abfragen und senden, die zum Generieren von API-Anfragen erforderlich sind.
 
-Um Catalog Service über eine Firewall zuzulassen, fügen Sie `commerce.adobe.io` zur Zulassungsliste.
+In [!DNL Catalog Service] durch eine Firewall hinzufügen `commerce.adobe.io` in die Zulassungsliste.
 
 ## Catalog Service und API-Mesh
 
 Die [API-Mesh für Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) ermöglicht es Entwicklern, mithilfe von Adobe IO private oder Drittanbieter-APIs und andere Schnittstellen mit Adobe-Produkten zu integrieren.
 
-Siehe  [Catalog Service und API-Mesh](mesh.md) Thema für die Installation und Konfiguration.
+Siehe  [[!DNL Catalog Service] und API-Mesh](mesh.md) Thema für die Installation und Konfiguration.
