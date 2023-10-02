@@ -4,9 +4,9 @@ description: Verwenden der SaaS-Preisindizierung zur Leistungsverbesserung
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
-source-git-commit: af57acec1208204128feec6c523e3745a9948d51
+source-git-commit: b7989b416f852d2c7164d21e8f0598373662b760
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '713'
 ht-degree: 0%
 
 ---
@@ -51,10 +51,13 @@ Benutzer von Luma und Adobe Commerce Core GraphQL können die [`catalog-adapter`
 
 Synchronisieren Sie nach dem Upgrade Ihrer Adobe Commerce-Instanz mit SaaS-Preisindizierungsunterstützung die neuen Feeds:
 
-```bash
-bin/magento saas:resync --feed=scopesCustomerGroup
-bin/magento saas:resync --feed=scopesWebsite
-bin/magento saas:resync --feed=prices
+```
+magento/module-saas-price
+magento/module-saas-scopes
+magento/module-product-override-price-remover
+magento/module-bundle-product-override-data-exporter
+magento/module-bundle-product-override-data-exporter
+magento/module-gift-card-product-data-exporter
 ```
 
 ## Preise für benutzerdefinierte Produktarten
@@ -63,33 +66,109 @@ Preisberechnungen werden für benutzerdefinierte Produktarten wie Basispreis, So
 
 Wenn Sie über einen benutzerdefinierten Produkttyp verfügen, der eine bestimmte Formel zur Berechnung des Endpreises verwendet, können Sie das Verhalten des Produktpreis-Feeds erweitern.
 
+## Nutzung
+
+```xml
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\ProductPriceDataExporter\Model\Provider\ProductPrice">
+        <plugin name="custom_type_price_feed" type="YourModule\CustomProductType\Plugin\UpdatePriceFromFeed" />
+    </type>
+</config>
+```
+
+Neue Feeds sollten manuell mit der `resync` [CLI, Befehl](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html#resynccmdline). Andernfalls werden die Daten im standardmäßigen Synchronisierungsprozess aktualisiert. Weitere Informationen zu [Katalogsynchronisierung](../landing/catalog-sync.md) -Prozess.
+
+## Nutzungsszenarien
+
+### Luma ohne Erweiterungsabhängigkeiten
+
+* Ein Luma- oder Adobe Commerce Core GraphQL-Händler, der einen erforderlichen Dienst installiert hat (Live Search, Product Recommendations, Catalog Service)
+* Keine Drittanbietererweiterungen, die auf den PHP Core-Preisindex angewiesen sind
+* Verkaufen einfacher, konfigurierbarer, gruppierter, virtueller und gebündelter dynamischer Produkte
+
+1. Neue Feeds aktivieren.
+1. Installieren Sie den Katalogadapter.
+
+### Grundlegende GraphQl-Abhängigkeiten von Luma und Adobe Commerce mit PHP-Kernpreisindizes
+
+* Ein Luma- oder Adobe Commerce Core GraphQL-Händler, der einen unterstützten Dienst installiert hat (Live Search, Product Recommendations, Catalog Service)
+* Mit einer Drittanbietererweiterung, die auf den PHP-Core-Preisindex angewiesen ist
+* Verkaufen einfacher, konfigurierbarer, gruppierter, virtueller und gebündelter dynamischer Produkte
+
+1. Neue Feeds aktivieren
+1. Installieren Sie den Katalogadapter.
+1. Aktivieren Sie den PHP Core-Preisindex erneut.
+1. Verwenden Sie neue Feeds und den Luma-Kompatibilitätscode im `catalog-adapter` -Modul.
+
+### Headless-Händler
+
+* Ein Headless-Händler, der einen unterstützten Dienst installiert hat (Live Search, Product Recommendations, Catalog Service)
+* Keine Abhängigkeit von PHP Core-Preisindex
+* Verkaufen einfacher, konfigurierbarer, gruppierter, virtueller und gebündelter dynamischer Produkte
+
+1. Neue Feeds aktivieren
+1. Installieren Sie den Katalog-Adapter, der den PHP Core-Preisindex deaktiviert.
+
+## Benutzerspezifische Preise
+
+Der SaaS-Preisindexer unterstützt in der Adobe Commerce verfügbare, benutzerdefinierte Produkttyppreisfunktionen wie Sonderpreise, Gruppenpreise und Katalogregelpreis.
+
+Beispiel: Es gibt einen benutzerdefinierten Produkttyp  `custom_type` und ein Produkt mit der SKU &quot;Custom Type Product&quot;.
+
+Standardmäßig sendet die Commerce Data Export-Erweiterung den folgenden Preis-Feed an den Preisindexer:
+
+```json
+{
+    "sku": "Custom Type Product",
+    "type": "SIMPLE", // must be "SIMPLE" regardless of the real product type
+    "customerGroupCode": "0",
+    "websiteCode": "base",
+    "regular": 123, // the regular base price found in catalog_product_entity_decimal table
+    "discounts":    // list of discounts: special_price, group, catalog_rule
+    [
+        {
+            "code": "catalog_rule",
+            "price": 102.09
+        }
+    ],
+    "deleted": false,
+    "updatedAt": "2023-07-31T13:07:54+00:00"
+}
+```
+
+Wenn &quot;Benutzerdefinierter Produkttyp&quot;eine eindeutige Formel zur Berechnung des Produktpreises verwendet, können Systemintegratoren die Preis- und Rabattfelder überschreiben, indem sie die Erweiterung &quot;Commerce Data Export&quot;erweitern.
+
 1. Erstellen Sie ein Plug-in im `Magento\ProductPriceDataExporter\Model\Provider\ProductPrice` -Klasse.
 
-   ```xml
-   <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-           xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
-       <type name="Magento\ProductPriceDataExporter\Model\Provider\ProductPrice">
-           <plugin name="custom_type_price_feed" type="YourModule\CustomProductType\Plugin\UpdatePriceFromFeed" />
-       </type>
-   </config>
-   ```
+`di.xml` Datei:
+
+```xml
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\ProductPriceDataExporter\Model\Provider\ProductPrice">
+        <plugin name="custom_type_price_feed" type="YourModule\CustomProductType\Plugin\UpdatePriceFromFeed" disabled="false" />
+    </type>
+</config>
+```
 
 1. Erstellen Sie eine Methode mit der benutzerdefinierten Formel:
 
-   ```php
-   class UpdatePriceFromFeed
-   {
-       /**
-       * @param ProductPrice $subject
-       * @param array $result
-       * @param array $values
-       *
-       * @return array
-       */
-       public function afterGet(ProductPrice $subject, array $result, array $values) : array
-       {
-           // Override the output $result with your data for the corresponding products (see original method for details) 
-           return $result;
-       }
-   }
-   ```
+```php
+class UpdatePriceFromFeed
+{
+    /**
+    * @param ProductPrice $subject
+    * @param array $result
+    * @param array $values
+    *
+    * @return array
+    */
+    public function afterGet(ProductPrice $subject, array $result, array $values) : array
+    {
+        // Get all custom products, prices and discounts per website and customer groups
+        // Override the output $result with your data for the corresponding products
+        return $result;
+    }
+}
+```

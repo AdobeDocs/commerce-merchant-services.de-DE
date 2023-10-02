@@ -2,9 +2,9 @@
 title: Neue Empfehlung erstellen
 description: Erfahren Sie, wie Sie eine Produktempfehlungseinheit erstellen.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: d56fd57281a5b675e128cca75d4057756a0bf4bf
+source-git-commit: 2b5ee71618055c48bf4d6a86dbbd4708647b5d7c
 workflow-type: tm+mt
-source-wordcount: '853'
+source-wordcount: '857'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,11 @@ Wenn Sie die Empfehlungseinheit aktivieren, beginnt Adobe Commerce [Daten erfass
 
    - Ausreichende Ergebnismenge: Stellen die zurückgegebenen Produkte eine Vielzahl von Produkten aus Ihrem Katalog dar? Mit diesem Faktor soll verhindert werden, dass eine Minderheit von Produkten die einzigen Artikel ist, die auf der gesamten Site empfohlen werden.
 
-   Basierend auf den oben genannten Faktoren wird ein Bereitschaftswert berechnet und angezeigt. Ein Empfehlungstyp gilt als bereitstellbar, wenn sein Bereitschaftswert 75 % oder höher beträgt. Ein Empfehlungstyp wird als teilweise fertig angesehen, wenn seine Bereitschaft mindestens 50 % beträgt. Schließlich gilt ein Empfehlungstyp als nicht bereit zur Bereitstellung, wenn sein Bereitschaftswert unter 50 % liegt.
+   Basierend auf den oben genannten Faktoren wird ein Bereitschaftswert berechnet und angezeigt. Ein Empfehlungstyp gilt als bereitstellbar, wenn sein Bereitschaftswert 75 % oder höher beträgt. Ein Empfehlungstyp wird als teilweise fertig angesehen, wenn seine Bereitschaft mindestens 50 % beträgt. Ein Empfehlungstyp gilt als nicht bereit zur Bereitstellung, wenn sein Bereitschaftswert unter 50 % liegt.
+
+   >[!NOTE]
+   >
+   >Der Indikator darf niemals 100 % erreichen.
 
    ![Empfehlungstyp](assets/create-recommendation-select-type.png)
    _Empfehlungstyp_
