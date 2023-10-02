@@ -3,9 +3,9 @@ title: "Onboarding-Übersicht"
 description: "[!DNL Live Search] Onboarding-Fluss, Systemanforderungen, Grenzen und Einschränkungen"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: 21170ecc66891d803b6c45dd8e2fa2135f0e5de1
+source-git-commit: 68c96b6fc74e60ddd44ab8e953c022b8244da281
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '548'
 ht-degree: 0%
 
 ---
@@ -64,11 +64,19 @@ So beschränken Sie Kundengruppen mithilfe von Katalogberechtigungen:
 
 * [!DNL Live Search] kann bis zu 200 Synonyme pro Store-Ansicht verwalten.
 
+## Kategorie-Merchandising
+
+KategorieMerchandising ermöglicht Ihnen die Konfiguration von [!DNL Live Search] , um auf der Produktkategorienebene zu arbeiten.
+
+Dieses Video ist eine Einführung in Kategorie-Merchandising.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424617)
+
 ## Preisindex
 
 Live Search-Kunden können die neue [SaaS-Preisindexer](../price-index/index.md), was schnellere Preisänderungen und Synchronisierungszeiten ermöglicht.
 
-### PWA-Unterstützung
+## PWA-Unterstützung
 
 [!DNL Live Search] funktioniert mit PWA Studio, aber die Benutzer sehen möglicherweise geringfügige Unterschiede im Vergleich zu anderen Commerce-Implementierungen. Grundlegende Funktionen wie Suche und Produktlistenseite funktionieren in Venia, aber einige Permutationen von Graphql funktionieren möglicherweise nicht ordnungsgemäß. Es kann auch Leistungsunterschiede geben.
 
@@ -96,7 +104,7 @@ Verwendung [!DNL Live Search] Mit PWA Studio müssen Integratoren auch:
        };
    ```
 
-### Derzeit nicht unterstützt
+## Derzeit nicht unterstützt
 
 * Die [Erweiterte Suche](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) -Modul deaktiviert ist, wenn [!DNL Live Search] installiert ist und der Link Erweiterte Suche in der Fußzeile der Storefront entfernt wird.
 * Die Produktpreise beinhalten nicht [Mehrwertsteuer](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/vat.html) (MwSt).
