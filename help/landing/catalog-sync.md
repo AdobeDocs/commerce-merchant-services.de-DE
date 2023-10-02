@@ -1,20 +1,21 @@
 ---
 title: Katalogsynchronisierung
-description: Erfahren Sie, wie Sie Produktdaten aus der [!DNL Commerce] Server zu [!DNL Commerce Services] laufend, um die Dienstleistungen auf dem neuesten Stand zu halten.
+description: Erfahren Sie, wie Sie Produktdaten aus der [!DNL Commerce] Server zu [!DNL Commerce Services].
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
 feature: Catalog Management, Data Import/Export, Catalog Service
-source-git-commit: 1fd5f25b88fa129cc136b93fdf88b981624f0678
+source-git-commit: 151b57d7b31637178c645149d78c0d3670ee1c3e
 workflow-type: tm+mt
-source-wordcount: '977'
+source-wordcount: '1166'
 ht-degree: 0%
 
 ---
 
+
 # Katalogsynchronisierung
 
-Adobe Commerce und Magento Open Source verwenden Indexer, um Katalogdaten in Tabellen zu kompilieren. Der Prozess wird automatisch von [events](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html#events-that-trigger-full-reindexing) wie eine Änderung des Produktpreises oder des Lagerbestands.
+Adobe Commerce verwendet Indexer, um Katalogdaten in Tabellen zu kompilieren. Der Prozess wird automatisch von [events](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html#events-that-trigger-full-reindexing) wie eine Änderung des Produktpreises oder des Lagerbestands.
 
-Der Katalogsynchronisierungsprozess wird stündlich ausgeführt, um [!DNL Commerce] Dienste zur Verwendung von Katalogdaten. Die Katalogsynchronisierung exportiert Produktdaten aus der [!DNL Commerce] Server zu [!DNL Commerce] Dienstleistungen, um die Dienstleistungen auf dem neuesten Stand zu halten. Beispiel: [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) benötigt aktuelle Kataloginformationen, um Empfehlungen mit korrekten Namen, Preisen und Verfügbarkeit exakt zurückzugeben. Sie können die _Katalogsynchronisierung_ Dashboard zur Beobachtung und Verwaltung des Synchronisierungsprozesses oder der [Befehlszeilenschnittstelle](#resynccmdline) zum Trigger der Katalogsynchronisierung und der Neuindizierung von Produktdaten für die Verwendung durch [!DNL Commerce] Dienste.
+Der Catalog Sync-Dienst verschiebt Produktdaten von einem [!DNL Adobe Commerce] -Instanz auf [!DNL Commerce Services] -Plattform auf dem neuesten Stand zu halten. Beispiel: [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) erfordert aktuelle Kataloginformationen, um Empfehlungen mit korrekten Namen, Preisen und Verfügbarkeit exakt zurückzugeben. Verwenden Sie die _Katalogsynchronisierung_ Dashboard zur Beobachtung und Verwaltung des Synchronisierungsprozesses oder der [Befehlszeilenschnittstelle](#resynccmdline) zum Trigger einer Katalogsynchronisierung und zur Neuindizierung von Produktdaten für den Verbrauch durch [!DNL Commerce Services].
 
 >[!NOTE]
 >
@@ -31,7 +32,7 @@ Um auf das Dashboard &quot;Katalogsynchronisierung&quot;zuzugreifen, wählen Sie
 Mit dem **Katalogsynchronisierung** Dashboard können Sie:
 
 - Synchronisierungsstatus anzeigen (**In Bearbeitung**, **Erfolg**, **Fehlgeschlagen**)
-- Anzeigen der Gesamtzahl der synchronisierten Produkte bei Erfolg
+- Gesamtanzahl der synchronisierten Produkte anzeigen
 - Synchronisierte Produkte suchen, um ihren aktuellen Status anzuzeigen
 - Suchspeicherkatalog nach Name, SKU usw.
 - Anzeigen synchronisierter Produktdetails in JSON, um eine Synchronisierungsdiskrepanz zu diagnostizieren
@@ -45,13 +46,11 @@ Meldet einen Synchronisierungsstatus von:
 - **Fehlgeschlagen** - Zeigt Datum und Uhrzeit des Synchronisierungsversuchs an
 - **In Bearbeitung** - Zeigt Datum und Uhrzeit der letzten erfolgreichen Synchronisierung an
 
->[!NOTE]
->
-> Der Vorgang zur Katalogsynchronisierung wird automatisch stündlich ausgeführt. Wenn Sie jedoch keine Produkte in Ihrer Storefront sehen oder die Produkte nicht die kürzlich vorgenommenen Änderungen widerspiegeln, können Sie [Probleme bei der Katalogsynchronisierung](#resolvesync).
+Der Vorgang zur Katalogsynchronisierung wird automatisch stündlich ausgeführt. Wenn Sie keine erwarteten Produkte auf der Storefront sehen oder wenn die Produkte nicht die kürzlich vorgenommenen Änderungen widerspiegeln, können Sie [Probleme bei der Katalogsynchronisierung](#resolvesync).
 
 ### Synchronisierte Produkte
 
-Zeigt die Gesamtzahl der mit Ihrer [!DNL Commerce] Katalog. Nach der ersten Synchronisierung sollten Sie erwarten, dass nur geänderte Produkte synchronisiert werden.
+Zeigt die Gesamtzahl der mit Ihrer [!DNL Commerce] Katalog. Nach der ersten Synchronisierung sollten nur geänderte Produkte synchronisiert werden.
 
 ## Neu synchronisieren {#resync}
 
@@ -78,7 +77,7 @@ Die **Synchronisierte Katalogprodukte** -Tabelle werden die folgenden Informatio
 |---|---|
 | ID | Eindeutige Kennung des Produkts |
 | Name | Storefront-Name des Produkts |
-| Typ | Identifiziert den Produkttyp, z. B. einfach, konfigurierbar, herunterladbar usw. |
+| Typ | Identifiziert den Produkttyp, z. B. einfach, konfigurierbar oder herunterladbar |
 | Zuletzt exportiert | Datum, an dem das Produkt zuletzt erfolgreich aus Ihrem Katalog exportiert wurde |
 | Zuletzt geändert | Datum der letzten Änderung des Produkts in Ihrem Katalog |
 | SKU | Zeigt die Lagereinheit für das Produkt an |
@@ -87,7 +86,7 @@ Die **Synchronisierte Katalogprodukte** -Tabelle werden die folgenden Informatio
 
 ## Beheben von Problemen bei der Katalogsynchronisierung {#resolvesync}
 
-Wenn Sie eine Datenresynchronisierung Trigger haben, kann es bis zu eine Stunde dauern, bis die Daten aktualisiert und in UI-Komponenten wie Empfehlungseinheiten angezeigt werden. Wenn Sie jedoch nach einer stündlichen Wartezeit immer noch Abweichungen zwischen Ihrem Katalog und dem, was auf Ihrer Storefront angezeigt wird, feststellen oder wenn die Katalogsynchronisierung fehlgeschlagen ist, sehen Sie sich Folgendes an:
+Wenn Sie eine erneute Synchronisierung von Daten Trigger haben, kann es bis zu eine Stunde dauern, bis die Daten aktualisiert werden und in UI-Komponenten wie Empfehlungseinheiten angezeigt werden. Wenn weiterhin Diskrepanzen zwischen Ihrem Katalog und den Daten in der Storefront auftreten oder die Katalogsynchronisierung fehlgeschlagen ist, lesen Sie Folgendes:
 
 ### Datendiskrepanz
 
@@ -98,7 +97,7 @@ Wenn Sie eine Datenresynchronisierung Trigger haben, kann es bis zu eine Stunde 
 
 ### Synchronisierung wird nicht ausgeführt
 
-Wenn die Synchronisierung nicht planmäßig ausgeführt wird oder nichts synchronisiert wird, lesen Sie den Abschnitt [KnowledgeBase](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html).
+Wenn die Synchronisierung nicht planmäßig ausgeführt wird oder nichts synchronisiert wird, lesen Sie dies [KnowledgeBase](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html) Artikel.
 
 ### Synchronisierung fehlgeschlagen
 
@@ -106,16 +105,16 @@ Wenn die Katalogsynchronisierung den Status **Fehlgeschlagen**, senden Sie eine 
 
 ## Befehlszeilenschnittstelle {#resynccmdline}
 
-Die `saas:resync` -Befehl ist Teil der `magento/saas-export` Paket. Sie können dieses Paket mit einem der [!DNL Commerce Services] Produkte, wie [[!DNL Product Recommendations]](/help/product-recommendations/install-configure.md) oder [[!DNL Live Search]](/help/live-search/install.md).
+Die `saas:resync` -Befehl ist Teil der `magento/saas-export` und ist standardmäßig mit einem der [!DNL Commerce Services] Produkte, wie [[!DNL Product Recommendations]](/help/product-recommendations/install-configure.md) oder [[!DNL Live Search]](/help/live-search/install.md).
 
 >[!NOTE]
 >
-> Beim erstmaligen Ausführen einer Datensynchronisation ist es wichtig, die `productattributes` Feed zuerst, gefolgt von `productoverrides`, bevor Sie die `products` Feed.
+> Führen Sie beim erstmaligen Ausführen einer Datensynchronisierung den `productattributes` Feed zuerst, gefolgt von `productoverrides`, bevor Sie die `products` Feed.
 
 Befehlsoptionen:
 
 ```bash
-bin/magento saas:resync --feed <feed name> [no-reindex]
+bin/magento saas:resync --feed <feed name> [no-reindex|cleanup-feed]
 ```
 
 Die folgende Tabelle beschreibt die `saas:resync` Parameter und Beschreibungen.
@@ -124,51 +123,86 @@ Die folgende Tabelle beschreibt die `saas:resync` Parameter und Beschreibungen.
 |---| ---| ---|
 | `feed` | Gibt an, welche Entität erneut synchronisiert werden soll, z. B. `products` | Ja |
 | `no-reindex` | Sendet die vorhandenen Katalogdaten an [!DNL Commerce Services] ohne Neuindizierung. Wenn dieser Parameter nicht angegeben ist, führt der Befehl vor der Synchronisierung von Daten eine vollständige Neuindizierung durch. | Nein |
+| `cleanup-feed` | Bereinigen Sie die Feed-Indexer-Tabelle vor einer Synchronisierung. | Nein |
 
 Der Feed-Name kann einer der folgenden sein:
 
-- `categories`— Kategorien in Ihrem Katalog
-- `categoryPermissions` - Berechtigungen für jede Kategorie
 - `products`- Produkte in Ihrem Katalog
 - `productattributes`- Produktattribute wie `activity`, `gender`, `tops`, `bottoms`, usw.
-- `productoverrides`— Kundenspezifische Preisbildungs- und Katalogsichtbarkeitsregeln, z. B. auf der Grundlage von Kategorieberechtigungen
 - `variants`— Produktvarianten eines konfigurierbaren Produkts wie Farbe und Größe
+- `prices` — Produktpreise
+- `scopesCustomerGroup` - Kundengruppen
+- `scopesWebsite` — Websites mit Store-Ansichten
+- `categories`— Kategorien in Ihrem Katalog
+- `categoryPermissions` - Berechtigungen für jede Kategorie
+- `productoverrides`— Kundenspezifische Preisbildungs- und Katalogsichtbarkeitsregeln, z. B. auf der Grundlage von Kategorieberechtigungen
 
-Wenn Sie eine erneute Synchronisierung von Daten über die Befehlszeile Trigger haben, kann es bis zu einer Stunde dauern, bis die Daten aktualisiert werden.
+Je nach [Commerce-Services](../landing/saas.md) installiert sind, stehen Ihnen möglicherweise verschiedene Feeds zur Verfügung für `saas:resync` Befehl.
 
-### Synchronisieren der SaaS-Preisindizierung
+Die Ausführung der `saas:resync` regulären Befehls. Möglicherweise müssen Sie den Befehl in zwei Szenarien manuell ausführen:
 
-Wenn Sie [SaaS-Preisindizierung](../price-index/index.md) und müssen erneut synchronisiert werden, führen Sie den folgenden Befehl aus:
+- Die erste Synchronisierung
+- Die [SaaS-Datenraum-ID](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) geändert wurde
 
-```bash
-bin/magento saas:resync --feed scopesCustomerGroup
-bin/magento saas:resync --feed scopesWebsite
-bin/magento saas:resync --feed prices
-```
+### Erstsynchronisierung
 
-### Synchronisieren des Katalogdienstes
+Beim Trigger eines `saas:resync` über die Befehlszeile kann es je nach Größe Ihres Katalogs einige Minuten bis einige Stunden dauern, bis die Daten aktualisiert werden.
 
-Um eine Neusynchronisierung für Catalog Service durchzuführen, müssen die Befehle in dieser Reihenfolge ausgeführt werden:
+Für die anfängliche Synchronisierung wird empfohlen, Befehle in der folgenden Reihenfolge auszuführen:
 
 ```bash
 bin/magento saas:resync --feed productattributes
 bin/magento saas:resync --feed products
+bin/magento saas:resync --feed scopesCustomerGroup
+bin/magento saas:resync --feed scopesWebsite
+bin/magento saas:resync --feed prices
 bin/magento saas:resync --feed productoverrides
 bin/magento saas:resync --feed variants
 bin/magento saas:resync --feed categories
 bin/magento saas:resync --feed categoryPermissions 
 ```
 
-### Beispiele
+### Fehlerbehebung
 
-Im folgenden Beispiel werden die Produktdaten aus der [!DNL Commerce] Kataloge erstellen und sie erneut mit Commerce-Diensten synchronisieren:
+Wenn die erwarteten Daten in [!DNL Commerce Service], überprüfen Sie, ob während der Synchronisierung aus dem [!DNL Adobe Commerce] -Instanz auf [!DNL Commerce Service] Plattform.
+
+Es gibt 2 Protokolldateien im `var/log/` directory:
+
+- `commerce-data-export-errors.log` - wenn während der _sammeln_ Phase
+- `saas-export-errors.log` - wenn während der _Sendung_ Phase
+
+#### Überprüfen der Feed-Payload
+
+Es kann nützlich sein, die Feed-Payload anzuzeigen, die an die [!DNL Commerce Service]. Dies kann durch Übergabe der Umgebungsvariablen erfolgen `EXPORTER_EXTENDED_LOG=1`. Die `no-reindex` Markierung bedeutet, dass nur die derzeit erfassten Daten gesendet werden.
 
 ```bash
-bin/magento saas:resync --feed products
+EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed=products --no-reindex
 ```
 
-Wenn Sie keine vollständige Neuindizierung der Produkte ausführen möchten, können Sie stattdessen die bereits generierten Produktdaten synchronisieren:
+Die Payload ist verfügbar in `var/log/saas-export.log`.
+
+#### Payload in Feed-Indextabelle beibehalten
+
+Staging von `magento/module-data-exporter:103.0.0` Einige Feeds: Produkt-Feed, Preis-Feeds, bewahren Sie nur die erforderlichen Mindestdaten in der Indextabelle auf.
+
+Die Beibehaltung von Payload-Daten in der Indextabelle wird für die Produktion nicht empfohlen, kann aber auf einer Entwicklerinstanz nützlich sein. Dies geschieht durch Übergabe der `PERSIST_EXPORTED_FEED=1` Umgebungsvariable:
 
 ```bash
-bin/magento saas:resync --feed products --no-reindex
+PERSIST_EXPORTED_FEED=1 bin/magento saas:resync --feed=products
 ```
+
+#### Profiling
+
+Wenn der Neuindizierungsprozess eines bestimmten Feeds unangemessen lange dauert, führen Sie den Profiler aus, um zusätzliche Daten zu erfassen, die für das Supportteam nützlich sein könnten. Übergeben Sie dazu die Variable `EXPORTER_PROFILER=1`Umgebungsvariable:
+
+```bash
+EXPORTER_PROFILER=1 bin/magento indexer:reindex catalog_data_exporter_products
+```
+
+Profildaten werden in gespeichert `var/log/commerce-data-export.log` mit dem Format:
+
+`<Provider class name>, <# of processed entities>, <execution time im ms>, <memory consumption in Mb>`
+
+#### Senden einer Support-Anfrage
+
+Wenn Fehler auftreten, die nicht mit der Konfiguration oder Drittanbietererweiterungen in Zusammenhang stehen, senden Sie eine [Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) mit so vielen Informationen wie möglich.

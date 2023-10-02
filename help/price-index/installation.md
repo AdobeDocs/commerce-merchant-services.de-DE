@@ -1,20 +1,21 @@
 ---
-title: Installation der SaaS-Preisindizierung
-description: Installieren der SaaS-Preisindizierung
+title: Manuelle Installation der SaaS-Preisindizierung
+description: Installieren der SaaS-Preisindizierung für ältere Versionen
 seo-title: SaaS Price Indexing installation
 seo-description: Installing SaaS Price indexing
 exl-id: a607e852-aa04-4be3-9576-a6bf45f8751f
 role: Admin, Developer
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: be0b8f4c26f11c31da3e5422bb4f4c4af10f2a00
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '291'
 ht-degree: 0%
 
 ---
 
-# Installation der SaaS-Preisindizierung
+# Manuelle Installation der SaaS-Preisindizierung
 
-Für die Einrichtung der SaaS-Preisindizierung müssen neue Module installiert und CLI-Befehle ausgeführt werden. Administratoren benötigen Befehlszeilenzugriff, um diese Installation abzuschließen.
+Die SaaS-Preisindizierung ist für unterstützte [neueste Version](index.md#Requirements) von Commerce Services.
+Wenn Sie nicht über die neueste Version verfügen und die SaaS-Preisindizierung für Ihre Adobe Commerce-Instanz aktivieren möchten, verwenden Sie bitte dieses Mini-Handbuch.
 
 ## Voraussetzungen
 
@@ -33,10 +34,10 @@ Es gibt Erweiterungen, die die neuen Feeds und den unterstützenden Code hinzuf�
 1. Fügen Sie die folgenden Module zu Ihrem `composer.json` Datei:
 
    ```json
-   "magento/module-saas-price": "102.2.0",
-   "magento/module-saas-scopes": "102.2.0",
-   "magento/module-product-override-price-remover": "102.2.0",
-   "magento/module-bundle-product-override-data-exporter": "102.2.0",
+   "magento/module-saas-price": "^102.2.0",
+   "magento/module-saas-scopes": ^"102.2.0",
+   "magento/module-product-override-price-remover": "^102.2.0",
+   "magento/module-bundle-product-override-data-exporter": "^102.2.0",
    ```
 
 1. Führen Sie den Aktualisierungsbefehl aus:
@@ -68,17 +69,12 @@ Nach dem Upgrade sind drei neue Feeds verfügbar:
 
 Führen Sie die oben genannten Indexer nach Bedarf manuell aus. Andernfalls werden die Daten im standardmäßigen Synchronisierungsprozess aktualisiert. Mehr über [Katalogsynchronisierung](../landing/catalog-sync.md) -Dienst.
 
-Benutzer von Luma und Adobe Commerce Core GraphQL können die `catalog-adapter` -Modul, das Luma- und Core-GraphQl-Kompatibilität bietet und den PHP Core-Preisindex deaktiviert.
-So verwenden Sie die `catalog-adapter` -Modul, [!DNL Live Search] und [!DNL Catalog Service] muss zuerst installiert und konfiguriert werden. Befolgen Sie die [Installieren [!DNL Live Search]](../live-search/install.md) und [Installation des Katalogdienstes](../catalog-service/installation.md) Anweisungen vor dem Fortfahren.
 
-Gehen Sie wie folgt vor, um die Live-Suche und den Katalog-Adapter zu konfigurieren [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html?lang=en) Anweisungen.
+Benutzer von Luma und Adobe Commerce Core GraphQL können die [`Catalog Adapter`](catalog-adapter.md) -Erweiterung, die Luma- und Core-GraphQl-Kompatibilität bietet und den Adobe Commerce Product Price-Indexer deaktiviert.
 
-```bash
-composer require adobe-commerce/catalog-adapter
-```
+## Einschränkungen
 
-Bei Bedarf kann der PHP Core-Preisindex mit dem folgenden Befehl reaktiviert werden:
+Vorher `103.0.0` -Version, SaaS-Preisindizierung unterstützt einfache, gruppierte, virtuelle, konfigurierbare und gebündelte dynamische Produktarten.
+Die Unterstützung für herunterladbare, vergünstigte und gebündelte feste Produkttypen ist ab `magento/module-saas-price:103.0.0` und für unterstützte Commerce Services standardmäßig verfügbar sind.
 
-```bash
-bin/magento module:disable Magento_PriceIndexerDisabler
-```
+Neue Feeds sollten manuell mit der `resync` [CLI, Befehl](../landing/catalog-sync.md#resynccmdline). Andernfalls werden die Daten im standardmäßigen Synchronisierungsprozess aktualisiert. Weitere Informationen zu [Katalogsynchronisierung](../landing/catalog-sync.md) -Prozess.

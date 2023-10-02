@@ -4,18 +4,19 @@ description: Verwenden der SaaS-Preisindizierung zur Leistungsverbesserung
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
-source-git-commit: 19c4d3263c22914672b38c5dc5ec9908889bb9b6
+source-git-commit: af57acec1208204128feec6c523e3745a9948d51
 workflow-type: tm+mt
-source-wordcount: '752'
+source-wordcount: '408'
 ht-degree: 0%
 
 ---
 
 # SaaS-Preisindizierung
 
-Die SaaS-Preisindizierung beschleunigt die Zeit, die benötigt wird, um Preisänderungen auf der Website eines SaaS-Kunden widerzuspiegeln, nachdem sie eingereicht wurden. Dieses optionale Modul ermöglicht Händlern mit großen, komplexen Katalogen oder mit mehreren Websites oder Kundengruppen, Preisänderungen schneller und kontinuierlich zu verarbeiten.
+Die SaaS-Preisindizierung beschleunigt die Zeit, die für Preisänderungen benötigt wird, um sie widerzuspiegeln. [Commerce-Services](../landing/saas.md) nachdem sie eingereicht wurden. So können Händler mit großen, komplexen Katalogen oder mit mehreren Websites oder Kundengruppen Preisänderungen kontinuierlich verarbeiten.
+Wenn Sie eine Headless-Storefront haben oder die [catalog-adapter](./catalog-adapter.md) -Erweiterung verwenden, können Kunden den Adobe Commerce-Core-Preisindex deaktivieren.
 
-Der größte Engpass der Pipeline: Rechenschwere Prozesse wie Indexierung und Preisberechnung wurden vom PHP-Kern in die Adobe Cloud-Infrastruktur verschoben. Dadurch können Händler Ressourcen schnell skalieren, um die Indexierungszeiten zu erhöhen, und diese Änderungen an Websites mit viel schnelleren Geschwindigkeiten widerspiegeln.
+Rechenintensive Prozesse wie Indizierung und Preisberechnung wurden vom Commerce-Kern in die Adobe Cloud-Infrastruktur verschoben. Dadurch können Händler Ressourcen schnell skalieren, um die Indexierungszeiten zu erhöhen und diese Änderungen schneller widerzuspiegeln.
 
 Der Datenfluss der Core-Indizierung zu SaaS-Diensten sieht wie folgt aus:
 
@@ -25,94 +26,70 @@ Bei SaaS-Preisindizierung lautet der Fluss:
 
 ![Datenfluss der SaaS-Preisindizierung](assets/new_way.png)
 
-Alle Händler, die die Anforderungen erfüllen, können von diesen Verbesserungen profitieren, aber diejenigen, die die größten Gewinne erzielen, sind Kunden mit:
+Alle Händler können von diesen Verbesserungen profitieren, aber diejenigen, die die größten Gewinne erzielen, sind Kunden mit:
 
 * Konstante Preisänderungen: Händler, die wiederholte Preisänderungen erfordern, um strategische Ziele wie häufige Promotions, saisonale Rabatte oder Inventarmarkdowns zu erreichen.
 * Mehrere Websites und/oder Kundengruppen: Händler mit freigegebenen Produktkatalogen über mehrere Websites (Domänen/Marken) und/oder Kundengruppen hinweg.
 * Große Anzahl einzigartiger Preise für Websites oder Kundengruppen: Händler mit umfangreichen gemeinsam genutzten Produktkatalogen, die individuelle Preise für Websites oder Kundengruppen enthalten, wie B2B-Händler mit vorab ausgehandelten Preisen, Marken mit unterschiedlichen Preisstrategien.
 
-Wenn Sie Anwendungen von Drittanbietern haben, die sich auf den PHP-Core-Preisindex verlassen, lesen Sie die Dokumentation und wenden Sie sich an den Erweiterungsanbieter, bevor Sie Änderungen vornehmen.
-
-Die SaaS-Preisindizierung ist für Kunden, die Adobe Commerce-Dienste nutzen, kostenlos verfügbar.
+Die SaaS-Preisindizierung ist für Kunden, die Adobe Commerce-Dienste verwenden, kostenlos verfügbar und unterstützt die Preisberechnung für alle integrierten Adobe Commerce-Produktarten.
 
 In diesem Mini-Handbuch wird beschrieben, wie die SaaS-Preisindizierung funktioniert und wie sie aktiviert wird.
 
-## Systemanforderungen
-
-Zur Verwendung der SaaS-Preisindizierung benötigen Sie:
+## Voraussetzungen
 
 * Adobe Commerce 2.4.4+
-* Mindestens einer der folgenden SaaS-Dienste installiert:
+* Mindestens einer der folgenden Commerce-Dienste mit der neuesten Version der Adobe Commerce-Erweiterung:
 
    * [Catalog Service](../catalog-service/overview.md)
    * [Live Search](../live-search/guide-overview.md)
    * [Produkt-Recommendations](../product-recommendations/guide-overview.md)
 
-## Module
+Benutzer von Luma und Adobe Commerce Core GraphQL können die [`catalog-adapter`](catalog-adapter.md) -Erweiterung, die Luma- und Core-GraphQl-Kompatibilität bietet und den Adobe Commerce Product Price-Indexer deaktiviert.
 
-Die SaaS-Preisindizierung nutzt eine Reihe von Modulen, um Funktionen bereitzustellen. Die Liste der erforderlichen Module kann je nach Store-Einrichtung etwas anders aussehen.
+## Nutzung
 
-Diese Module fügen die neuen Feeds dem Administrator hinzu. Diese Feeds übertragen Daten, die für Preisberechnungen erforderlich sind, an den SaaS-Indexer und ignorieren den PHP Core-Preisindex.
+Synchronisieren Sie nach dem Upgrade Ihrer Adobe Commerce-Instanz mit SaaS-Preisindizierungsunterstützung die neuen Feeds:
 
-```
-magento/module-saas-price
-magento/module-saas-scopes
-magento/module-product-override-price-remover
-magento/module-bundle-product-override-data-exporter
-```
-
-Kunden, die Luma und Adobe Commerce Core GraphQL verwenden, können ein Modul installieren, das Luma- und Core GraphQL-Kompatibilität bietet und den PHP-Core-Preisindex deaktiviert:
-
-```
-adobe-commerce/catalog-adapter
+```bash
+bin/magento saas:resync --feed=scopesCustomerGroup
+bin/magento saas:resync --feed=scopesWebsite
+bin/magento saas:resync --feed=prices
 ```
 
-Die `catalog-adapter` ist nur mit 2.4.5 kompatibel. Die Unterstützung für 2.4.4 und 2.4.6 wird demnächst veröffentlicht.
-Der PHP Core-Preisindex kann bei Bedarf durch eine Drittanbietererweiterung oder aus anderen Gründen wieder aktiviert werden.
+## Preise für benutzerdefinierte Produktarten
 
-## Einschränkungen
+Preisberechnungen werden für benutzerdefinierte Produktarten wie Basispreis, Sonderpreis, Gruppenpreis, Katalogregelpreis usw. unterstützt.
 
-Abhängig von Faktoren wie Produkttypen, Preiskomplexität und Kataloggröße kann die SaaS-Preisindizierung die richtige Lösung für Ihr Geschäft sein. Lesen Sie die folgenden Einschränkungen und stellen Sie fest, ob dies eine gute Lösung für Ihre Site ist.
+Wenn Sie über einen benutzerdefinierten Produkttyp verfügen, der eine bestimmte Formel zur Berechnung des Endpreises verwendet, können Sie das Verhalten des Produktpreis-Feeds erweitern.
 
-Derzeit unterstützt die SaaS-Preisindizierung einfache, gruppierte, virtuelle, konfigurierbare und [Bundle dynamisch](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-bundle.html) Produktarten.
-Die Unterstützung für herunterladbare, vergriffene Karten und behobene Produkttypen von Bundle wird in Kürze angeboten.
+1. Erstellen Sie ein Plug-in im `Magento\ProductPriceDataExporter\Model\Provider\ProductPrice` -Klasse.
 
-Neue Feeds sollten manuell mit der `resync` [CLI, Befehl](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html#resynccmdline). Andernfalls werden die Daten im standardmäßigen Synchronisierungsprozess aktualisiert. Weitere Informationen zu [Katalogsynchronisierung](../landing/catalog-sync.md) -Prozess.
+   ```xml
+   <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+       <type name="Magento\ProductPriceDataExporter\Model\Provider\ProductPrice">
+           <plugin name="custom_type_price_feed" type="YourModule\CustomProductType\Plugin\UpdatePriceFromFeed" />
+       </type>
+   </config>
+   ```
 
-## Nutzungsszenarien
+1. Erstellen Sie eine Methode mit der benutzerdefinierten Formel:
 
-### Luma ohne Erweiterungsabhängigkeiten
-
-* Ein Luma- oder Adobe Commerce Core GraphQL-Händler, der einen erforderlichen Dienst installiert hat (Live Search, Product Recommendations, Catalog Service)
-* Keine Drittanbietererweiterungen, die auf den PHP Core-Preisindex angewiesen sind
-* Verkaufen einfacher, konfigurierbarer, gruppierter, virtueller und gebündelter dynamischer Produkte
-
-1. Neue Feeds aktivieren.
-1. Installieren Sie den Katalogadapter.
-
-### Grundlegende GraphQl-Abhängigkeiten von Luma und Adobe Commerce mit PHP-Kernpreisindizes
-
-* Ein Luma- oder Adobe Commerce Core GraphQL-Händler, der einen unterstützten Dienst installiert hat (Live Search, Product Recommendations, Catalog Service)
-* Mit einer Drittanbietererweiterung, die auf den PHP-Core-Preisindex angewiesen ist
-* Verkaufen einfacher, konfigurierbarer, gruppierter, virtueller und gebündelter dynamischer Produkte
-
-1. Neue Feeds aktivieren
-1. Installieren Sie den Katalogadapter.
-1. Aktivieren Sie den PHP Core-Preisindex erneut.
-1. Verwenden Sie neue Feeds und den Luma-Kompatibilitätscode im `catalog-adapter` -Modul.
-
-### Headless-Händler
-
-* Ein Headless-Händler, der einen unterstützten Dienst installiert hat (Live Search, Product Recommendations, Catalog Service)
-* Keine Abhängigkeit von PHP Core-Preisindex
-* Verkaufen einfacher, konfigurierbarer, gruppierter, virtueller und gebündelter dynamischer Produkte
-
-1. Neue Feeds aktivieren
-1. Installieren Sie den Katalog-Adapter, der den PHP Core-Preisindex deaktiviert.
-
-### Luma/Core GraphQL/Headless mit nicht unterstützten Produktarten
-
-* Luma/Headless-Händler
-* Verkauf von Geschenkkarten, herunterladbaren oder gebündelten festen Produkten
-
-Warten Sie bei derzeit nicht unterstützten Produktarten auf die vollständige Unterstützung des Produkttyps.
+   ```php
+   class UpdatePriceFromFeed
+   {
+       /**
+       * @param ProductPrice $subject
+       * @param array $result
+       * @param array $values
+       *
+       * @return array
+       */
+       public function afterGet(ProductPrice $subject, array $result, array $values) : array
+       {
+           // Override the output $result with your data for the corresponding products (see original method for details) 
+           return $result;
+       }
+   }
+   ```
