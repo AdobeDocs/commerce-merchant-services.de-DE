@@ -2,20 +2,18 @@
 title: "[!DNL Live Search] Einstellungen"
 description: "Konfigurieren Sie die Einstellungen für [!DNL Live Search] Dienst."
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
-source-git-commit: 06dfc8fd5dc3619732a1f534e5770b6812eddc07
+source-git-commit: ba4836a67ffee5ae46b6c0efa1db3f1dcbd53116
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '226'
 ht-degree: 0%
 
 ---
 
 # Einstellungen
 
-Verwenden Sie die *Einstellungen* um die Preisfacettenbereiche und -intervalle sowie die Standardsprache für den Index zu konfigurieren.
+Verwenden Sie die *Einstellungen* um die Preisfacettenbereiche und -intervalle zu konfigurieren.
 
 Preisfacetten geben die Anzahl der Preisbereichsgruppen und die Verteilung der Preiswerte auf sie an.
-
-Die Spracheinstellungen bestimmen [!DNL Live Search] Dienst, der beim Schreiben des Index erwartet werden soll.
 
 ![Einstellungen](assets/settings.png)
 
