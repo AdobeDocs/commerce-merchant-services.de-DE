@@ -3,9 +3,10 @@ title: Transaktionsbericht
 description: Verwenden Sie den Transaktionsbericht, um Einblicke in die Rate der Transaktionsautorisierungen und die Transaktionstrends zu erhalten.
 role: User
 level: Intermediate
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
+source-git-commit: ffbc5ca30a092f5ef2642b051f080fe47ce0e815
 workflow-type: tm+mt
-source-wordcount: '1162'
+source-wordcount: '1216'
 ht-degree: 0%
 
 ---
@@ -40,7 +41,7 @@ Sie können diese Ansicht entsprechend den Abschnitten in diesem Thema konfiguri
 
 Siehe verknüpfte Commerce-Bestell- und Provider-Transaktions-IDs, Transaktionsbeträge, Zahlungsmethoden pro Transaktion und mehr, alles in diesem Bericht.
 
-Nicht alle Zahlungsmethoden bieten die gleiche Granularität von Informationen. Kreditkartentransaktionen bieten beispielsweise Antwort-, AVS- und CSV-Codes im Transaktionsbericht, PayPal Smart-Schaltflächen nicht.
+Nicht alle Zahlungsmethoden bieten die gleiche Granularität von Informationen. Kreditkartentransaktionen bieten beispielsweise Antwort-, AVS- und CSV-Codes sowie die letzten vier Ziffern der Karte im Transaktionsbericht. PayPal Smart-Schaltflächen nicht.
 
 Sie können [Download-Transaktionen](#download-transactions) im .csv-Dateiformat zur Verwendung in bestehenden Buchhaltungs- oder Auftragsverwaltungssoftware.
 
@@ -84,6 +85,7 @@ In der Ansicht des Transaktionsberichts können Sie die anzuzeigenden Statuserge
 1. Umschalten zwischen _[!UICONTROL Payment Method]_Optionen, um die Berichtsergebnisse nur für ausgewählte Zahlungsmethoden anzuzeigen.
 1. Geben Sie einen _Min. Bestellbetrag_ oder _Max. Bestellbetrag_ , um die Berichtsergebnisse innerhalb dieses Bestellwertbereichs anzuzeigen.
 1. Geben Sie eine _[!UICONTROL Order ID]_, um nach einer bestimmten Transaktion zu suchen.
+1. Geben Sie die _[!UICONTROL Card Last Four Digits]_um nach einer bestimmten Kredit- oder Debitkarte zu suchen.
 1. Klicks **[!UICONTROL Hide filters]** um den Filter auszublenden.
 
 ### Spalten ein- und ausblenden
@@ -126,7 +128,8 @@ Transaktionsberichte enthalten die folgenden Informationen.
 | [!UICONTROL Order ID] | Commerce-Bestell-ID (enthält nur Werte für erfolgreiche Transaktionen und ist bei abgelehnten Transaktionen leer)<br> <br>So sehen Sie verwandte [Bestellinformationen](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}klicken Sie auf die ID. |
 | [!UICONTROL Provider Transaction ID] | Vom Zahlungsdienstleister bereitgestellte Transaktions-ID, die nur Werte für erfolgreiche Transaktionen enthält und einen Bindestrich für zurückgewiesene Transaktionen enthält. |
 | [!UICONTROL Transaction Date] | Transaktionsdatumszeitstempel |
-| [!UICONTROL Payment Method] | Zahlungsmethode der Transaktion; verfügbar für Zahlungsdienste ab Version 1.6.0 |
+| [!UICONTROL Payment Method] | Zahlungsmethode der Transaktion mit detaillierten Informationen über Marke und Kartentyp. Siehe [Kartentypen](https://developer.paypal.com/docs/api/orders/v2/#definition-card_type) für weitere Informationen, verfügbar für Zahlungsdienste-Versionen 1.6.0 und höher |
+| [!UICONTROL Card Last Four Digits] | Letzte vier Stellen der Kredit- oder Debitkarten, die für die Transaktion verwendet werden |
 | [!UICONTROL Result] | Das Ergebnis der Transaktion —*[!UICONTROL OK]* (erfolgreiche Transaktion), *[!UICONTROL Rejected by Payment Provider]* (abgelehnt von PayPal), *[!UICONTROL Rejected by Bank]* (von einer Bank abgelehnt, die die Karte ausgestellt hat) |
 | [!UICONTROL Response Code] | Fehlercode, der den Grund für die Zurückweisung von Zahlungsdienstleistern oder Banken angibt; siehe Liste möglicher Antwortcodes und Beschreibungen für [`Rejected by Bank` status](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) und [`Rejected by Payment Provider` status](https://developer.paypal.com/api/rest/reference/orders/v2/errors/). |
 | [!UICONTROL AVS Code] | Adresse Verification Service-Code; die Antwortinformationen des Verarbeiters für Zahlungsanfragen. Siehe [Liste möglicher Codes und Beschreibungen](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) für weitere Informationen. |
@@ -147,4 +150,3 @@ Die _Antwortcode_ zeigt einen spezifischen Fehler- oder Erfolgscode im Zusammenh
 * `5650`—Die Transaktion wurde von der verbundenen Bank abgelehnt, da die Bank eine starke Kundenauthentifizierung erfordert ([3DS](security.md#3ds)).
 
 Detaillierte Fehlerantwort-Codes für fehlgeschlagene Transaktionen sind für Transaktionen verfügbar, die jünger als am 1. Juni 2023 sind. Teilberichtdaten werden für Transaktionen angezeigt, die vor dem 1. Juni 2023 stattgefunden haben.
-
