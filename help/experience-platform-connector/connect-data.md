@@ -3,9 +3,9 @@ title: Commerce-Daten mit Adobe Experience Platform verbinden
 description: Erfahren Sie, wie Sie Ihre Commerce-Daten mit der Adobe Experience Platform verbinden.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: 6044a60c60bf8f29295a14157230d85d0a1b9e07
+source-git-commit: bcee983ee7f40fbe2ea8eb96317b663ce7363ddd
 workflow-type: tm+mt
-source-wordcount: '2232'
+source-wordcount: '2246'
 ht-degree: 0%
 
 ---
@@ -118,9 +118,13 @@ Weitere Informationen finden Sie unter Ereignisthema . [storefront](events.md#st
 
 ## Verlaufsreihendaten senden
 
-Adobe Commerce sammelt bis zu fünf Jahre [historische Bestelldaten und -status](events.md#back-office-events). Sie können den Experience Platform-Connector verwenden, um diese historischen Daten an die Experience Platform zu senden, um Ihre Kundenprofile auf der Grundlage dieser früheren Bestellungen anzureichern. Die Daten werden in einem Datensatz innerhalb von Experience Platform gespeichert.
+Adobe Commerce sammelt bis zu fünf Jahre [historische Bestelldaten und -status](events.md#back-office-events). Sie können den Experience Platform-Connector verwenden, um diese historischen Daten an die Experience Platform zu senden, um Ihre Kundenprofile anzureichern und die Kundenerlebnisse anhand dieser früheren Bestellungen zu personalisieren. Die Daten werden in einem Datensatz innerhalb von Experience Platform gespeichert.
 
 Während Commerce bereits die historischen Bestelldaten erfasst, müssen Sie mehrere Schritte ausführen, um diese Daten an Experience Platform zu senden.
+
+Sehen Sie sich dieses Video an, um mehr über historische Bestellungen zu erfahren, und führen Sie dann die folgenden Schritte aus, um die Erfassung und Konfiguration historischer Bestellungen zu implementieren.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424672)
 
 ### Schritt 1: Installieren der Datenerfassung für die historische Reihenfolge
 
@@ -248,12 +252,6 @@ Geben Sie den Datumsbereich für die historischen Bestellungen an, die Sie an Ex
 | Von | Datum, ab dem Sie mit der Erfassung von Auftragsverlaufsdaten beginnen möchten. |
 | nach | Datum, ab dem die Erfassung von Auftragsverlaufsdaten beendet werden soll. |
 | Synchronisierung starten | Beginnt die Synchronisierung der Auftragsverlaufsdaten mit dem Experience Platform Edge. Diese Schaltfläche ist deaktiviert, wenn die **[!UICONTROL Dataset ID]** leer ist oder die Datensatz-ID ungültig ist. |
-
-### Demo zur historischen Reihenfolge
-
-In diesem Video erfahren Sie mehr über historische Bestellungen:
-
->[!VIDEO](https://video.tv.adobe.com/v/3424672)
 
 ## Bestätigen der Erfassung von Ereignisdaten
 
