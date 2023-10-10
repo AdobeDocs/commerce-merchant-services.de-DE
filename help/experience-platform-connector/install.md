@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie den Adobe Experience Platform Connector von A
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 role: Admin, Developer
 feature: Install
-source-git-commit: 0c8d9498ea7a30a99f834694ef8a865ad24466ab
+source-git-commit: 572df7558e825a7a7c442e47af787c209dbe4ee3
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '465'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,6 @@ Die Experience Platform-Connector-Erweiterung ist über das [Adobe Marketplace](
 >
 >![B2B für Adobe Commerce](../assets/b2b.svg) Für B2B-Händler gibt es eine separate Erweiterung, die Sie installieren müssen. Diese Erweiterung unterstützt jetzt auch B2B-spezifische Ereignisse. [Weitere Infos](#install-the-b2b-extension).
 
-
 1. So laden Sie die `experience-platform-connector` -Paket, führen Sie Folgendes über die Befehlszeile aus:
 
    ```bash
@@ -32,12 +31,45 @@ Die Experience Platform-Connector-Erweiterung ist über das [Adobe Marketplace](
 
    Dieses Metapaket enthält die folgenden Module und Erweiterungen:
 
-   * `module-experience-connector-admin` - Aktualisiert die Admin-Benutzeroberfläche, sodass Sie die Datastraam-ID für eine bestimmte Adobe Commerce-Instanz auswählen können.
-   * `module-experience-connector` - Legt die `Organization ID` und `datastreamId` im Storefront Events SDK
+   * `module-experience-connector-admin` - Aktualisiert die Admin-Benutzeroberfläche, sodass Sie die Datastream-ID für eine bestimmte Adobe Commerce-Instanz auswählen können.
+   * `module-experience-connector` - Legt die `Organization ID` und `datastreamId` im Storefront Events SDK.
    * `data-services` - Stellt Attributkontext für Storefront-Ereignisse bereit. Wenn beispielsweise ein Checkout-Ereignis eintritt, werden Informationen darüber eingeschlossen, wie viele Elemente sich im Warenkorb befanden und wie viele Produktattributdaten für diese Elemente vorhanden sind.
-   * `services-id` - Verbinden Sie Ihre Adobe Commerce-Instanz mit [Adobe Commerce SaaS](../landing/saas.md) Verwenden von Sandbox- und Produktions-API-Schlüsseln und zum Adobe Experience Platform zum Abrufen der IMS-Organisations-ID
+   * `services-id` - Verbinden Sie Ihre Adobe Commerce-Instanz mit [Adobe Commerce SaaS](../landing/saas.md) Verwendung von Sandbox- und Produktions-API-Schlüsseln sowie zum Abrufen der IMS-Organisations-ID in Adobe Experience Platform.
+   * `orders-connector` - Verbindet den Auftragsstatus-Dienst mit Ihrer Adobe Commerce-Instanz.
 
-1. (Optional) Einbeziehen [!DNL Live Search] -Daten, die Suchereignisse enthalten, installieren Sie die [[!DNL Live Search]](../live-search/install.md) -Erweiterung.
+1. (Optional) Einbeziehen [!DNL Live Search] Daten, die [Suchereignisse](events.md#search-events), installieren Sie die [[!DNL Live Search]](../live-search/install.md) -Erweiterung.
+
+### Konfigurieren des Auftrags-Connectors
+
+Nach der Installation `experience-platform-connector`, müssen Sie die Installation der `orders-connector` -Modul basierend auf dem Bereitstellungstyp: lokal oder Adobe Commerce auf Cloud-Infrastruktur.
+
+#### Vor Ort
+
+In lokalen Umgebungen müssen Sie die Codegenerierung und Adobe Commerce-Ereignisse manuell aktivieren:
+
+```bash
+bin/magento events:generate:module
+bin/magento module:enable Magento_AdobeCommerceEvents
+bin/magento setup:upgrade
+bin/magento setup:di:compile
+bin/magento config:set adobe_io_events/eventing/enabled 1
+```
+
+#### Über die Cloud-Infrastruktur
+
+Aktivieren Sie in der Cloud-Infrastruktur von Adobe Commerce die `ENABLE_EVENTING` globale Variable in `.magento.env.yaml`. [Weitere Infos](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-global.html#enable_eventing).
+
+```bash
+stage:
+   global:
+      ENABLE_EVENTING: true
+```
+
+Übernehmen und pushen Sie aktualisierte Dateien in die Cloud-Umgebung. Wenn die Bereitstellung abgeschlossen ist, aktivieren Sie das Senden von Ereignissen mit dem folgenden Befehl:
+
+```bash
+bin/magento config:set adobe_io_events/eventing/enabled 1
+```
 
 ### Installieren der B2B-Erweiterung
 
