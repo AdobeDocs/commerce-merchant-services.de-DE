@@ -5,10 +5,10 @@ breadcrumb-title: Adobe Experience Platform Connector für Adobe Commerce
 role: Admin
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: 91db0176b5ecf09ac403e6e91a4b4513dfb06ea0
+source-git-commit: 0b30d78602e6fc033a05178de8454b4dbf197911
 workflow-type: tm+mt
-source-wordcount: '75'
-ht-degree: 5%
+source-wordcount: '87'
+ht-degree: 4%
 
 ---
 
@@ -25,3 +25,5 @@ ht-degree: 5%
    - [Veranstaltungen](events.md)
    - [Benutzerspezifische Ereignisse](custom-events.md)
    - [Verwenden von Adobe Experience Platform-Tags](using-tags.md)
+- Anwendungsfall {#use-cases}
+   - [Verwenden von Adobe Journey Optimizer zum Senden einer E-Mail zum abgebrochenen Warenkorb](using-ajo.md)
