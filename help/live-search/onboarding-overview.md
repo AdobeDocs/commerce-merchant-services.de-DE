@@ -3,9 +3,9 @@ title: "Onboarding-Übersicht"
 description: "[!DNL Live Search] Onboarding-Fluss, Systemanforderungen, Grenzen und Einschränkungen"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: 68c96b6fc74e60ddd44ab8e953c022b8244da281
+source-git-commit: a6d8c259f232ab27d7ed64558d5d193d59d23cad
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '583'
 ht-degree: 0%
 
 ---
@@ -13,10 +13,6 @@ ht-degree: 0%
 # Onboarding-Übersicht
 
 Erste Schritte mit [!DNL Live Search] Führen Sie für Adobe Commerce den Onboarding-Prozess aus, um die Erweiterung zu installieren, Ihre API-Schlüssel zu konfigurieren und Ihren Katalog zu synchronisieren.
-
-## Onboarding-Fluss
-
-![[!DNL Live Search] Onboarding-Diagramm](assets/onboarding-flow.svg)
 
 ## Voraussetzungen {#requirements}
 
@@ -72,6 +68,12 @@ Dieses Video ist eine Einführung in Kategorie-Merchandising.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424617)
 
+## Inventory management
+
+[!DNL Live Search] unterstützt [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/introduction.html) Funktionen in Commerce (früher bekannt als Multi-Source-Bestand oder MSI). Um den vollständigen Support zu ermöglichen, müssen Sie [update](install.md#update) das Abhängigkeitsmodul `commerce-data-export` auf Version 102.2.0+.
+
+[!DNL Live Search] gibt einen booleschen Hinweis zurück, ob ein Produkt in Inventory management verfügbar ist, enthält jedoch keine Informationen darüber, welche Quelle über das Lager verfügt.
+
 ## Preisindex
 
 Live Search-Kunden können die neue [SaaS-Preisindexer](../price-index/index.md), was schnellere Preisänderungen und Synchronisierungszeiten ermöglicht.
@@ -107,7 +109,6 @@ Verwendung [!DNL Live Search] Mit PWA Studio müssen Integratoren auch:
 ## Derzeit nicht unterstützt
 
 * Die [Erweiterte Suche](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) -Modul deaktiviert ist, wenn [!DNL Live Search] installiert ist und der Link Erweiterte Suche in der Fußzeile der Storefront entfernt wird.
-* Die Produktpreise beinhalten nicht [Mehrwertsteuer](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/vat.html) (MwSt).
 * [Basispreis](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-tier.html) wird im Live Search Popover- und Product Listing-Seiten-Widget nicht unterstützt.
 
 ## Cookies

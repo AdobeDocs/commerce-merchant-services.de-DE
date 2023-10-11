@@ -2,9 +2,9 @@
 title: "Facets"
 description: "[!DNL Live Search] Facetten verwenden mehrere Dimensionen von Attributwerten als Suchkriterien."
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 9cf48f6f900385a5cb772adee8834ec9cfe5ee13
+source-git-commit: 4eddad715405f35ea063bab3cf4651fec3beeae5
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '517'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,8 @@ ht-degree: 0%
 # Facets
 
 Faceting ist eine Methode der Hochleistungsfilterung, bei der mehrere Dimensionen von Attributwerten als Suchkriterien verwendet werden. Die facettierte Suche ist ähnlich, aber deutlich &quot;schlauer&quot;als die Standardsuche [mehrstufige Navigation](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html). Die Liste der verfügbaren Filter wird durch die Variable [filterbare Attribute](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html#filterable-attributes) der in den Suchergebnissen zurückgegebenen Produkte.
+
+[!DNL Live Search] verwendet die `productSearch` Abfrage, die Facetten und andere spezifische Daten für [!DNL Live Search]. Siehe Abschnitt [`productSearch` Abfrage](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) in der Entwicklerdokumentation für Codebeispiele.
 
 ![Gefilterte Suchergebnisse](assets/storefront-search-results-run.png)
 
@@ -33,6 +35,14 @@ Die Anforderungen an Kategorie- und Produktattribute für die Facettierung ähne
 | [Anzeigeparameter der Kategorie](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-display-settings.html) | Anker - `Yes` |
 | [Attributeigenschaften](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) | [Katalogeingabetyp](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price`, `Visual swatch` (nur Widget), `Text swatch` (nur Widget) |
 | Eigenschaften von Attributspeicher | Verwendung in der Navigation mit Suchergebnisebenen - `Yes` |
+
+## Facettenaggregation
+
+Die Facettenaggregation wird wie folgt durchgeführt: Wenn die Storefront drei Facetten (Kategorien, Farbe und Preis) hat und die Käuferfilter für alle drei Facetten (Farbe = blau, der Preis liegt zwischen 10,00 und 50,00 USD, Kategorien = `promotions`).
+
+* `categories` aggregation - Aggregate `categories`, wendet dann die `color` und `price` Filter, aber nicht die `categories` Filter.
+* `color` aggregation - Aggregate `color`, wendet dann die`price` und `categories` Filter, aber nicht die `color` Filter.
+* `price` aggregation - Aggregate `price`, wendet dann die `color` und `categories` Filter, aber nicht die `price` Filter.
 
 ## Standardmäßige Attributwerte
 

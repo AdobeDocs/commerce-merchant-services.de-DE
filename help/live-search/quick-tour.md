@@ -2,9 +2,9 @@
 title: "Quick Tour"
 description: "Machen Sie einen kurzen Überblick über [!DNL Live Search] aus der Storefront."
 exl-id: bcb19506-6617-4c8a-83df-9d961f81e9e8
-source-git-commit: 9cf48f6f900385a5cb772adee8834ec9cfe5ee13
+source-git-commit: 9f045a049ac775ed4673e807ab5e21b8811cde2d
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
@@ -40,3 +40,7 @@ Verwenden Sie Facetten als URL-Parameter:`http://yourwebsite.com?color=red`und d
 ## Merchandising-Regeln
 
 Merchandising [Regeln](rules.md) gestalten Sie das Einkaufserlebnis mit if-then-Anweisungen, die Logik und Ereignisse zur Suche hinzufügen. Sie können Produkte für eine Promotion, eine Saison oder einen anderen Zeitraum einfach steigern oder begraben.
+
+## Suchbegriffe - Unterstützung
+
+[!DNL Live Search] unterstützt Commerce [Suchbegriffumleitungen](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html). Beispielsweise können Benutzer nach einem Begriff wie &quot;Versandtarife&quot;suchen und direkt zur Versandtarifseite gelangen.
