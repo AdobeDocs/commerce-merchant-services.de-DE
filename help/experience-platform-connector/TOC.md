@@ -5,9 +5,9 @@ breadcrumb-title: Adobe Experience Platform Connector für Adobe Commerce
 role: Admin
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: 0b30d78602e6fc033a05178de8454b4dbf197911
+source-git-commit: 24494546d6d21cf46e3cb9f0fdd503ec8007daf8
 workflow-type: tm+mt
-source-wordcount: '87'
+source-wordcount: '92'
 ht-degree: 4%
 
 ---
@@ -17,8 +17,8 @@ ht-degree: 4%
 - [Handbuch-Übersicht](overview.md)
 - [Versionshinweise](release-notes.md)
 - Grundlagen {#fundamentals}
-   - [Installieren des Experience Platform-Connectors](install.md)
-   - [Experience Platform Connector konfigurieren](connect-data.md)
+   - [Installieren der Adobe Experience Platform-Connector-Erweiterung](install.md)
+   - [Verbinden von Commerce-Daten mit Adobe Experience Platform](connect-data.md)
    - [Hinzufügen von Feldgruppen zum XDM-Schema](update-xdm.md)
    - [Integrieren des Adobe Experience Platform Mobile SDK mit Commerce](mobile-sdk-epc.md)
 - Erfassen von Daten {#event-forwarding}
