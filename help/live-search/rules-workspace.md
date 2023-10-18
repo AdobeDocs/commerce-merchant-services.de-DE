@@ -1,17 +1,17 @@
 ---
-title: "Arbeitsbereich für Suchregeln"
-description: '"Machen Sie sich mit dem [!DNL Live Search] Arbeitsbereich "Regeln".'
+title: "Search Merchandising Workspace"
+description: '"Erfahren Sie mehr über den Arbeitsbereich "Merchandising durchsuchen".'
 exl-id: a52839fb-2264-4443-83c3-9eaa2ccb6996
-source-git-commit: 40bcae7a792660f02390f4d55967767b15c84f38
+source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '580'
 ht-degree: 1%
 
 ---
 
-# Arbeitsbereich für Suchregeln
+# Search Merchandising Workspace
 
-Der Arbeitsbereich Suchregeln listet die aktuelle Auswahl der Regeln und deren Status auf und bietet Zugriff auf Tools, die Sie zum Erstellen und Verwalten von Regeln benötigen. Im Arbeitsbereich haben Sie folgende Möglichkeiten:
+Der Arbeitsbereich &quot;Merchandising durchsuchen&quot;listet die aktuelle Auswahl der Regeln und deren Status auf und bietet Zugriff auf Tools, die Sie zum Erstellen und Verwalten von Regeln benötigen. Im Arbeitsbereich haben Sie folgende Möglichkeiten:
 
 * Nach Regeln suchen
 * Anzeigen von Regeldetails
@@ -19,7 +19,7 @@ Der Arbeitsbereich Suchregeln listet die aktuelle Auswahl der Regeln und deren S
 * Regeln löschen
 * Zugriff auf den Regeleditor
 
-![Arbeitsbereich für Regeln](assets/rules-workspace.png)
+![Arbeitsbereich &quot;Merchandising durchsuchen&quot;](assets/rules-workspace.png)
 
 ## Festlegen des Umfangs
 
@@ -57,7 +57,7 @@ Die Suche findet die entsprechenden Regeln während der Eingabe. Die Zeichenfolg
 
 Im Detailbereich werden der Regelname, der Status, die Bedingungen und Ereignisse, das Start- und Enddatum, die Beschreibung und das Datum der letzten Bearbeitung angezeigt. Regeln können im Detailbereich aktiviert, bearbeitet und gelöscht werden.
 
-1. Im *Suchregeln* -Registerkarte, suchen Sie die Regel im Raster, das Sie anzeigen möchten, und klicken Sie auf **Mehr** (...).
+1. Im *Merchandising durchsuchen* -Registerkarte, suchen Sie die Regel im Raster, das Sie anzeigen möchten, und klicken Sie auf **Mehr** (...).
 1. Klicks **Details anzeigen**.
 Im Bereich Details anzeigen können Sie Folgendes tun:
 

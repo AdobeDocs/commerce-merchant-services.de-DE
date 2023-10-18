@@ -2,9 +2,9 @@
 title: "[!DNL Live Search] Indizierung"
 description: "Erfahren Sie wie [!DNL Live Search] indiziert Eigenschaften von Produktattributen."
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: 7eece9b341a27637d7ac00216f18b7fad7c50740
+source-git-commit: 5d76d5537c8625296663239195abd26d4ee24db4
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '590'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Die [!DNL Live Search] Mit der API kann ein Client nach jedem Produktattribut so
 ## Indizierungs-Pipeline
 
 Der Client ruft den Suchdienst aus der Storefront auf, um (filterbare, sortierbare) Indexmetadaten abzurufen. Nur durchsuchbare Produktattribute mit *Verwendung in mehrschichtiger Navigation* Eigenschaft festgelegt auf `Filterable (with results)` und *Verwendung für die Sortierung in der Produktliste* auf `Yes` kann vom Suchdienst aufgerufen werden.
-Um eine dynamische Abfrage zu erstellen, muss der Suchdienst wissen, welche Attribute durchsuchbar sind und wie groß sie sind. [!DNL Live Search] berücksichtigt die Adobe Commerce-Suchgewichtung (1-10, wobei 10 die höchste Priorität hat). Die Liste der Daten, die mit dem Katalogdienst synchronisiert und freigegeben werden, finden Sie im Schema, das definiert ist in:
+Um eine dynamische Abfrage zu erstellen, muss der Suchdienst wissen, welche Attribute durchsuchbar sind und welche [Gewichtung](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html#weighted-search). [!DNL Live Search] berücksichtigt die Adobe Commerce-Suchgewichtung (1-10, wobei 10 die höchste Priorität hat). Die Liste der Daten, die mit dem Katalogdienst synchronisiert und freigegeben werden, finden Sie im Schema, das definiert ist in:
 
 `vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`
 

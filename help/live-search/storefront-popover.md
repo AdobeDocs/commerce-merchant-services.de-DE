@@ -2,9 +2,9 @@
 title: "[!DNL Storefront Popover]"
 description: "Die [!DNL Live Search storefront popover] gibt dynamisch vorgeschlagene Produkte und Miniaturansichten zurück."
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: bf44c04771069fe6502257b35517c62a5161f81b
+source-git-commit: 5d76d5537c8625296663239195abd26d4ee24db4
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,10 @@ Standardmäßig ist [!DNL Live Search] unterstützt [Suchbegriffumleitungen](htt
 
 ## Durchsuchbare Attribute
 
-Um zielgerichtete Ergebnisse zu erzielen, lesen Sie den Abschnitt [durchsuchbar](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) (`searchable=true`) Produktattribute. Um die Relevanz sicherzustellen, sollten Attribute nur durchsuchbar sein, wenn sie Inhalte mit einer klaren und präzisen Bedeutung enthalten. Vermeiden Sie die Verwendung von Attributen, die weniger präzisen, langwierigen Text enthalten, z. B. `description`, die zwar standardmäßig für die Suche aktiviert ist, aber die Genauigkeit der Suchergebnisse verringern kann. Wenn beispielsweise eine Person nach &quot;Shorts&quot;sucht und es Hemden mit einer Beschreibung gibt, die den Begriff &quot;Kurzärmel&quot;enthält, werden die Hemden in die Suchergebnisse aufgenommen.
+Um zielgerichtete Ergebnisse zu erzielen, lesen Sie den Abschnitt [durchsuchbar](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) (`searchable=true`) Produktattribute. Um die Relevanz sicherzustellen, sollten Attribute nur durchsuchbar sein, wenn sie Inhalte mit einer klaren und präzisen Bedeutung enthalten. Vermeiden Sie die Verwendung von Attributen, die weniger präzisen, langwierigen Text enthalten, z. B. `description`, die zwar standardmäßig für die Suche aktiviert ist, aber die Genauigkeit der Suchergebnisse verringern kann.
+Wenn beispielsweise eine Person nach &quot;Shorts&quot;sucht und es Hemden mit einer Beschreibung gibt, die den Begriff &quot;Kurzärmel&quot;enthält, werden die Hemden in die Suchergebnisse aufgenommen.
+
+[!DNL Live Search] berücksichtigt auch [Gewichtung](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html#weighted-search) eines Produktattributs, wie in Adobe Commerce festgelegt. Attribute mit einer höheren Gewichtung werden in den Suchergebnissen höher angezeigt.
 
 Die folgenden Attribute sind immer durchsuchbar:
 

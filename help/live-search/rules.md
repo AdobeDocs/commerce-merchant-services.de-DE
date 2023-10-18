@@ -1,17 +1,17 @@
 ---
-title: "Suchregeln"
-description: "[!DNL Live Search] Regeln kombinieren Logik mit Aktionen, um das Einkaufserlebnis zu gestalten."
+title: "Search Merchandising"
+description: "[!DNL Live Search] Merchandising-Regeln kombinieren Logik mit Aktionen, um das Einkaufserlebnis zu gestalten."
 exl-id: d06a3040-6987-4813-90ae-2f7b3ad0b232
-source-git-commit: 40bcae7a792660f02390f4d55967767b15c84f38
+source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: '608'
 ht-degree: 0%
 
 ---
 
-# Suchregeln
+# Merchandising durchsuchen
 
-[!DNL Live Search] -Regeln kombinieren Logik mit Aktionen, um das Sucherlebnis eines Käufers in Ihrem Store zu gestalten. Sie können Regeln verwenden, um Produkte zu steigern, zu begraben, anzuheften oder auszublenden, um Suchergebnisse in Echtzeit zu kalibrieren, um Ihre Geschäftsziele zu unterstützen.
+Suchen-Merchandising bezieht sich auf einen Regelsatz, der Logik mit Aktionen kombiniert, um das Sucherlebnis eines Käufers in Ihrem Store zu gestalten. Sie können Merchandising-Regeln verwenden, um Produkte zu steigern, zu begraben, anzuheften oder auszublenden, um Suchergebnisse in Echtzeit zu kalibrieren, um Ihre Geschäftsziele zu unterstützen.
 
 Jede Regel umfasst drei Hauptkomponenten:
 
@@ -68,7 +68,7 @@ Die in der Admin-Konsole gestellten Anforderungen funktionieren etwas anders. Be
 * Wenn die Vorschau einer Regel keine `query is` und einer nachfolgenden aktiven, übereinstimmenden Regel mit einer `query is` -Bedingung gefunden wird, wird die `query is` angewendet wird.
 * Wenn die Vorschau einer Regel keine `query is` und keine andere Regel mit einer `query is` gefunden wird, wird die in der Vorschau angezeigte Regel angewendet.
 
-## Kategorieregeln und Kategorieproduktzuweisungen
+## KategorieMerchandising und Kategorieproduktzuweisungen
 
-[!DNL Live Search] ermöglicht Ihnen, nach Kategorien zu filtern.
+[!DNL Live Search] ermöglicht Ihnen, nach Kategorien zu filtern. Siehe [Kategorie-Merchandising](category-merch.md) für weitere Informationen.
 In Adobe Commerce können Sie jedoch eine virtuelle Kategorie mit [Kategorieproduktzuweisungen](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html). Dieser Kategorietyp wird zur Laufzeit erstellt und existiert nicht in der Kategoriedatenbank. Daher [!DNL Live Search] kann diesen Kategorietyp nicht lesen oder verwenden.

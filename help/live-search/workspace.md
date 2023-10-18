@@ -2,9 +2,9 @@
 title: '[!DNL Live Search] Workspace'
 description: Die [!DNL Live Search] Workspace wird zum Konfigurieren, Verwalten und Überwachen der Suchleistung verwendet.
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
-source-git-commit: 550c382671fd5bb611cb6c502204dacc9748cffc
+source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '243'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Zunächst wird die [Umfang](https://experienceleague.adobe.com/docs/commerce-adm
 | [Leistung](performance.md) | Dashboard bietet Einblicke in die Leistung bei der Produktsuche. |
 | [Facebook](facets.md) | Hochleistungsfilterung, bei der mehrere Dimensionen von Attributwerten verwendet werden, um Suchkriterien zu verfeinern. |
 | [Synonyme](synonyms.md) | Erweitern Sie die Reichweite der Suche, um Wörter einzuschließen, mit denen Käufer Produkte finden können, die sich von denen in Ihrem Katalog unterscheiden. |
-| [Suchregeln](rules.md) | Gestalten Sie das Sucherlebnis mit logischen Regeln, die geplante Aktionen Trigger haben. Sie können Produkte steigern, begraben, anheften oder ausblenden, um Suchergebnisse zur Unterstützung Ihrer Geschäftsziele zu kalibrieren. |
-| [Kategorie-Merchandising](category-merch.md) | Wenden Sie Regeln und intelligentes Merchandising auf Kategorieebene an. |
+| [Merchandising durchsuchen](rules.md) | Gestalten Sie das Sucherlebnis mit logischen Regeln, die geplante Aktionen Trigger haben. Sie können Produkte steigern, begraben, anheften oder ausblenden, um Suchergebnisse zur Unterstützung Ihrer Geschäftsziele zu kalibrieren. |
+| [Kategorie-Merchandising](category-merch.md) | Anwenden von Regeln und intelligentem Merchandising auf Kategorieebene. |
 | [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) | Entwickler, die beim Administrator Ihres Stores angemeldet sind, können Abfragen mit tatsächlichen Katalogdaten erstellen und testen. Weitere Informationen finden Sie unter [Übersicht über GraphQL](https://developer.adobe.com/commerce/webapi/graphql/) im [!DNL Live Search] Entwicklerdokumentation. |
-| [Einstellungen](settings.md) | Bestimmen Sie, wie Preisfacettenwerte nach Preisbereichen in der Storefront gruppiert werden. |
+| [Einstellungen](settings.md) | Bestimmen Sie, wie Preisfacettenwerte in der Storefront nach Preisbereichen gruppiert werden, und legen Sie die Indexsprache fest. |
