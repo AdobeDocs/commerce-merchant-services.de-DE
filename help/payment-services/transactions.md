@@ -4,9 +4,9 @@ description: Verwenden Sie den Transaktionsbericht, um Einblicke in die Rate der
 role: User
 level: Intermediate
 exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
-source-git-commit: ffbc5ca30a092f5ef2642b051f080fe47ce0e815
+source-git-commit: 91acc6e1dfd142caca77c0dc9ba55da34f75dd60
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1274'
 ht-degree: 0%
 
 ---
@@ -82,6 +82,8 @@ In der Ansicht des Transaktionsberichts können Sie die anzuzeigenden Statuserge
 1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**.
 1. Klicken Sie auf **[!UICONTROL Filter]** auswählen.
 1. Umschalten zwischen _[!UICONTROL Transaction Result]_Optionen, um die Berichtsergebnisse nur für ausgewählte Bestellvorgänge anzuzeigen.
+1. Wählen Sie die _[!UICONTROL Card Type]_, um die Berichtsergebnisse für den ausgewählten Kartentyp anzuzeigen. Eine QuickInfo mit weiteren Informationen wird angezeigt, wenn der Zahlungsverarbeiter den Kartentyp nicht identifizieren kann.
+1. Wählen Sie die _[!UICONTROL Card Brand]_, um die Berichtsergebnisse für die ausgewählte Kartenmarke anzuzeigen. Eine QuickInfo mit weiteren Informationen wird angezeigt, wenn der Zahlungsverarbeiter die Kartenmarke nicht identifizieren kann.
 1. Umschalten zwischen _[!UICONTROL Payment Method]_Optionen, um die Berichtsergebnisse nur für ausgewählte Zahlungsmethoden anzuzeigen.
 1. Geben Sie einen _Min. Bestellbetrag_ oder _Max. Bestellbetrag_ , um die Berichtsergebnisse innerhalb dieses Bestellwertbereichs anzuzeigen.
 1. Geben Sie eine _[!UICONTROL Order ID]_, um nach einer bestimmten Transaktion zu suchen.

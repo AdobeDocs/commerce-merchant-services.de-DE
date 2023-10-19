@@ -4,13 +4,13 @@ description: Automatisierten Schutz gegen Betrug aktivieren für [!DNL Payment S
 role: Admin, User
 level: Intermediate
 feature: Payments, Checkout, Configuration, Security
-source-git-commit: 400d1f8a384fceebcd13e9496f8e218e694d2752
+exl-id: 440296bb-a6ff-408b-8195-3027916e4f84
+source-git-commit: 480b35fbc57b8528dbc305aa7db52483ba49d98c
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '406'
 ht-degree: 0%
 
 ---
-
 
 # Schutz vor schweren Betrugsfällen
 
@@ -18,15 +18,9 @@ Sie können den automatisierten Schutz von Betrug für [!DNL Payment Services] m
 
 Adobe Commerce unterstützt Signifyd-Versionen 5.4.0 und höher. [!DNL Payment Services] unterstützt Signifyd-Flüsse vor und nach der Authentifizierung.
 
+Signifyd/[!DNL Payment Services] Integration bietet eine Abdeckung für Kreditkarten, Debitkarten, Visitenkarten, Checkout über die Zahlungsmethoden Admin, PayPal und Apple PayPay. Während einige Details der Transaktionen nicht zwischen Zahlungsdiensten und Signifyd geteilt werden, bietet Signifyd eine umfassende Risikoabdeckung für alle Zahlungsmethoden und gewährleistet so den größtmöglichen Schutz.
+
 Siehe [Signifikante Dokumentation](https://community.signifyd.com/support/s/article/magento-2-extension-install-guide?language=en_US#downloadandinstallingmagento2extension) , um mehr über die Installation und Konfiguration der Erweiterung zu erfahren.
-
-## Integrationsbeschränkungen
-
-Derzeit gelten die folgenden Einschränkungen für die Integration zwischen Signifyd und [!DNL Payment Services]:
-
-* Signifyd/[!DNL Payment Services] nur unterstützt [Kreditkartenfelder](../payment-services/payments-options.md#credit-card-fields) (nicht PayPal Zahlungsschaltflächen oder Apple Pay). [!DNL Payment Services] sendet Bestelldaten, die über PayPal-Zahlungsschaltflächen und Apple PayPal an Signifyd empfangen wurden. Die Integration stellt jedoch nur Details zu Bestellungen bereit, die über Kreditkartenfelder bestellt wurden.
-* Signifyd unterstützt keine Bestellungen, die von einem Händler für einen Kunden in der Admin-Konsole aufgegeben werden.
-* Signifikante Bestellungen werden nicht unterstützt bei [ausgefüllte Kreditkarten](../payment-services/vaulting.md).
 
 ## Onboarding
 
