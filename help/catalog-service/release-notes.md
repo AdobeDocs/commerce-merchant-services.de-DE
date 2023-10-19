@@ -3,10 +3,10 @@ title: '[!DNL Catalog Service] Versionshinweise'
 description: Die neuesten Versionshinweise für [!DNL Catalog Service] für Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 4e1e50aad831f04c0fee105e4c45a28ff5ca65af
+source-git-commit: ec8e37078cf1b5182036192a542fdbabe61e68dd
 workflow-type: tm+mt
-source-wordcount: '515'
-ht-degree: 0%
+source-wordcount: '548'
+ht-degree: 1%
 
 ---
 
@@ -22,14 +22,15 @@ Zu den Aktualisierungen gehören:
 
 ## Aktuelle Hauptversion
 
-### Version 1.12
+### Version 1.13
 
-_19. September 2023_
+_12. Oktober 2023_
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
 
-![Neu](../assets/new.svg) Catalog Service verwendet jetzt [SaaS-Preisindizierung](../price-index/index.md).
-![Fehlerbehebung](../assets/fix.svg) Diese Version enthält Fehlerbehebungen und Verbesserungen auf der Dienstseite.
+![Neu](../assets/new.svg) Catalog Service unterstützt die `inStock` Markierung für Produktvarianten.
+![Neu](../assets/new.svg) `urlKey` und `externalId` wurden zum GraphQL-Schema hinzugefügt.
+![Neu](../assets/new.svg) Catalog Service ist jetzt mit der Bereinigungs-API kompatibel.
 
 #### Bekannte Einschränkungen
 
@@ -49,6 +50,15 @@ Die folgenden Einschränkungen können mithilfe des API-Gitters und der GraphQL-
 ## Frühere Versionen
 
 +++ Frühere Versionen
+
+### Version 1.12
+
+_19. September 2023_
+
+[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
+
+![Neu](../assets/new.svg) Catalog Service verwendet jetzt [SaaS-Preisindizierung](../price-index/index.md).
+![Fehlerbehebung](../assets/fix.svg) Diese Version enthält Fehlerbehebungen und Verbesserungen auf der Dienstseite.
 
 ### Version 1.11
 
