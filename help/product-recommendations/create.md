@@ -2,9 +2,9 @@
 title: Neue Empfehlung erstellen
 description: Erfahren Sie, wie Sie eine Produktempfehlungseinheit erstellen.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 2b5ee71618055c48bf4d6a86dbbd4708647b5d7c
+source-git-commit: 24a930178873535f23331c9c5295c482d5b8e384
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '1007'
 ht-degree: 0%
 
 ---
@@ -32,12 +32,12 @@ Wenn Sie die Empfehlungseinheit aktivieren, beginnt Adobe Commerce [Daten erfass
 
 1. Im _Seitentyp auswählen_ wählen Sie aus den folgenden Optionen die Seite aus, auf der die Empfehlung angezeigt werden soll:
 
-   - Startseite
-   - Kategorie
-   - Produktdetails
-   - Warenkorb
-   - Bestätigung
-   - [Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html)
+   * Startseite
+   * Kategorie
+   * Produktdetails
+   * Warenkorb
+   * Bestätigung
+   * [Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html)
 
    Sie können bis zu fünf aktive Empfehlungseinheiten für jeden Seitentyp und bis zu 25 für Page Builder erstellen. Der Seitentyp ist grau ausgeblendet, wenn die Grenze erreicht ist.
 
@@ -45,21 +45,6 @@ Wenn Sie die Empfehlungseinheit aktivieren, beginnt Adobe Commerce [Daten erfass
    _Empfehlungsname und Seitenplatzierung_
 
 1. Im _Empfehlungstyp auswählen_ -Abschnitt, geben Sie die [Empfehlungstyp](type.md) Sie möchten auf der ausgewählten Seite angezeigt werden. Bei einigen Seiten wird die Variable [placement](placement.md) Empfehlungen sind auf bestimmte Typen beschränkt.
-
-   Einige Empfehlungstypen verwenden Verhaltensdaten von Ihren Kunden zu [Trainingsmodelle für maschinelles Lernen](behavioral-data.md) , um personalisierte Empfehlungen zu erstellen. Um Ihnen bei der Visualisierung des Trainings-Fortschritts für jeden Empfehlungstyp zu helfen, zeigt dieser Abschnitt die Bereitschaft für jeden Typ an. Diese Indikatoren werden anhand von zwei Faktoren berechnet:
-
-   - Ausreichende Ergebnissatzgröße: Gibt es in den meisten Szenarien genügend Ergebnisse, um die Verwendung von [Ersatzempfehlungen](behavioral-data.md#backuprecs)?
-
-   - Ausreichende Ergebnismenge: Stellen die zurückgegebenen Produkte eine Vielzahl von Produkten aus Ihrem Katalog dar? Mit diesem Faktor soll verhindert werden, dass eine Minderheit von Produkten die einzigen Artikel ist, die auf der gesamten Site empfohlen werden.
-
-   Basierend auf den oben genannten Faktoren wird ein Bereitschaftswert berechnet und angezeigt. Ein Empfehlungstyp gilt als bereitstellbar, wenn sein Bereitschaftswert 75 % oder höher beträgt. Ein Empfehlungstyp wird als teilweise fertig angesehen, wenn seine Bereitschaft mindestens 50 % beträgt. Ein Empfehlungstyp gilt als nicht bereit zur Bereitstellung, wenn sein Bereitschaftswert unter 50 % liegt.
-
-   >[!NOTE]
-   >
-   >Der Indikator darf niemals 100 % erreichen.
-
-   ![Empfehlungstyp](assets/create-recommendation-select-type.png)
-   _Empfehlungstyp_
 
 1. Im _Anzeigebezeichnung Storefront_ eingeben. [label](placement.md#recommendation-labels) die für Ihre Kunden sichtbar ist, z. B. &quot;Topverkäufe&quot;.
 
@@ -69,8 +54,8 @@ Wenn Sie die Empfehlungseinheit aktivieren, beginnt Adobe Commerce [Daten erfass
 
 1. Im _Platzierung auswählen_ geben Sie den Speicherort an, an dem die Empfehlungseinheit auf der Seite angezeigt werden soll.
 
-   - Am unteren Rand des Hauptinhalts
-   - Oben im Hauptinhalt
+   * Am unteren Rand des Hauptinhalts
+   * Oben im Hauptinhalt
 
 1. (Optional) Um die Reihenfolge der Empfehlungen zu ändern, wählen Sie die Zeilen aus und verschieben Sie sie in die _Position auswählen_ Tabelle.
 
@@ -86,9 +71,50 @@ Wenn Sie die Empfehlungseinheit aktivieren, beginnt Adobe Commerce [Daten erfass
 
 1. Klicken Sie nach Abschluss des Vorgangs auf eine der folgenden Optionen:
 
-   - **Als Entwurf speichern** , um die Empfehlungseinheit später zu bearbeiten. Sie können den Seitentyp oder den Empfehlungstyp für eine Empfehlungseinheit nicht in einem Entwurfsstatus ändern.
+   * **Als Entwurf speichern** , um die Empfehlungseinheit später zu bearbeiten. Sie können den Seitentyp oder den Empfehlungstyp für eine Empfehlungseinheit nicht in einem Entwurfsstatus ändern.
 
-   - **Aktivieren** , um die Empfehlungseinheit in Ihrer Storefront zu aktivieren.
+   * **Aktivieren** , um die Empfehlungseinheit in Ihrer Storefront zu aktivieren.
+
+## Bereitschaftsindikatoren
+
+Einige Empfehlungstypen verwenden Verhaltensdaten von Ihren Kunden zu [Trainingsmodelle für maschinelles Lernen](behavioral-data.md) , um personalisierte Empfehlungen zu erstellen.
+
+Erfordert nur Katalogdaten. Hierfür sind keine Verhaltensdaten erforderlich:
+
+* _Am meisten gefällt dies_
+* _Kürzlich angezeigt_
+* _Visuelle Ähnlichkeit_
+
+Basierend auf den letzten sechs Monaten von Storefront-Verhaltensdaten:
+
+* _Anzeige, Anzeige,_
+* _Anzeige: , gekauft als_
+* _kaufte das, kaufte es_
+* _Empfohlen für Sie_
+
+Popularitätsbasierte Empfehlungstypen verwenden die letzten sieben Tage von Storefront-Verhaltensdaten:
+
+* Am häufigsten angezeigt
+* Am häufigsten gekauft
+* Zum Warenkorb hinzugefügt
+* Trends
+
+Die Werte der Bereitschaftsindikatoren werden aufgrund von Faktoren wie der Gesamtgröße des Katalogs, dem Volumen der Interaktionsereignisse (Ansichten, Hinzufügung zum Warenkorb, Käufe) und dem Prozentsatz der Skus, die diese Ereignisse innerhalb eines bestimmten Zeitfensters registrieren, voraussichtlich schwanken. Beispielsweise können die Bereitschaftsindikatoren während des Traffics in der Hochsaison höhere Werte aufweisen als in Zeiten normalen Volumens.
+
+Um den Trainings-Fortschritt der einzelnen Empfehlungstypen zu visualisieren, muss die _Empfehlungstyp auswählen_ zeigt ein Maß an Bereitschaft für jeden Typ an. Diese Indikatoren werden anhand von zwei Faktoren berechnet:
+
+* Ausreichende Ergebnissatzgröße: Gibt es in den meisten Szenarien genügend Ergebnisse, um die Verwendung von [Ersatzempfehlungen](behavioral-data.md#backuprecs)?
+
+* Ausreichende Ergebnismenge: Stellen die zurückgegebenen Produkte eine Vielzahl von Produkten aus Ihrem Katalog dar? Mit diesem Faktor soll verhindert werden, dass eine Minderheit von Produkten die einzigen Artikel ist, die auf der gesamten Site empfohlen werden.
+
+Basierend auf den oben genannten Faktoren wird ein Bereitschaftswert berechnet und angezeigt. Ein Empfehlungstyp gilt als bereitstellbar, wenn sein Bereitschaftswert 75 % oder höher beträgt. Ein Empfehlungstyp wird als teilweise fertig angesehen, wenn seine Bereitschaft mindestens 50 % beträgt. Ein Empfehlungstyp gilt als nicht bereit zur Bereitstellung, wenn sein Bereitschaftswert unter 50 % liegt. Dies sind allgemeine Richtlinien, aber jeder Einzelfall kann je nach Art der erfassten Daten unterschiedlich sein, wie oben beschrieben.
+
+![Empfehlungstyp](assets/create-recommendation-select-type.png)
+_Empfehlungstyp_
+
+>[!NOTE]
+>
+>Die Indikatoren dürfen niemals 100 % erreichen.
 
 ## Recommendations-Vorschau {#preview}
 
