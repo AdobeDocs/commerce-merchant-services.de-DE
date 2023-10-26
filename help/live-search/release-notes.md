@@ -3,9 +3,9 @@ title: "[!DNL Live Search] Versionshinweise"
 description: "Die neuesten Versionsinformationen für [!DNL Live Search] von Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
+source-git-commit: 67b4f24828dfdda6bd166791d6c36922294b402f
 workflow-type: tm+mt
-source-wordcount: '1771'
+source-wordcount: '1797'
 ht-degree: 0%
 
 ---
@@ -58,6 +58,7 @@ _15. September 2023_
 ![Neu](../assets/new.svg) Benutzer können jetzt beim Hinzufügen einer Regel nach Kategoriename suchen
 ![Neu](../assets/new.svg) Mit der Ansicht &quot;Kategoriestruktur&quot;können Benutzer jetzt anzeigen, auf welche Kategorie Regeln angewendet wurden.
 ![Neu](../assets/new.svg) Die Kategorievorschau zeigt nur die ausgewählte Kategorie an.
+![Neu](../assets/new.svg) AEM CIF [Popover-Widget](https://github.com/adobe/aem-cif-guides-venia/pull/319) und [PLP-Widget](https://github.com/adobe/aem-cif-guides-venia/pull/320) Komponenten ermöglichen es AEM Sites, von [!DNL Live Search].
 
 ### Updates
 
