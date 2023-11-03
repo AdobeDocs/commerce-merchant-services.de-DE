@@ -5,10 +5,10 @@ breadcrumb-title: „Handbuch zu [!DNL Catalog Service]“
 hide: true
 role: Admin
 feature: Services, Catalog Service
-source-git-commit: c256252ea58b61e511034cd33d81e004acff96d2
+source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
 workflow-type: tm+mt
-source-wordcount: '79'
-ht-degree: 7%
+source-wordcount: '74'
+ht-degree: 8%
 
 ---
 
@@ -20,8 +20,8 @@ ht-degree: 7%
 - [Catalog Service und API-Mesh](mesh.md)
 - [Feed-Erfassungsdienst (Beta)](feed-ingestion.md)
 - GraphQL-Abfragen {#graphql}
-   - [categories query](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/)
-   - [Produktabfrage](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/)
-   - [productSearch-Abfrage](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/product-search/)
-   - [refineProduct query](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/refine-product/)
+   - [categories query](https://developer.adobe.com/commerce/services/graphql/catalog-service/categories/)
+   - [Produktabfrage](https://developer.adobe.com/commerce/services/graphql/catalog-service/queries/products/)
+   - [productSearch-Abfrage](https://developer.adobe.com/commerce/services/graphql/catalog-service/queries/product-search/)
+   - [refineProduct query](https://developer.adobe.com/commerce/services/graphql/catalog-service/queries/refine-product/)
 - [Versionshinweise](release-notes.md)

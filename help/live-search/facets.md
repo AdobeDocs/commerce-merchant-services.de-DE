@@ -2,9 +2,9 @@
 title: "Facets"
 description: "[!DNL Live Search] Facetten verwenden mehrere Dimensionen von Attributwerten als Suchkriterien."
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 4eddad715405f35ea063bab3cf4651fec3beeae5
+source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Faceting ist eine Methode der Hochleistungsfilterung, bei der mehrere Dimensionen von Attributwerten als Suchkriterien verwendet werden. Die facettierte Suche ist ähnlich, aber deutlich &quot;schlauer&quot;als die Standardsuche [mehrstufige Navigation](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html). Die Liste der verfügbaren Filter wird durch die Variable [filterbare Attribute](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html#filterable-attributes) der in den Suchergebnissen zurückgegebenen Produkte.
 
-[!DNL Live Search] verwendet die `productSearch` Abfrage, die Facetten und andere spezifische Daten für [!DNL Live Search]. Siehe Abschnitt [`productSearch` Abfrage](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) in der Entwicklerdokumentation für Codebeispiele.
+[!DNL Live Search] verwendet die `productSearch` Abfrage, die Facetten und andere spezifische Daten für [!DNL Live Search]. Siehe Abschnitt [`productSearch` Abfrage](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/) in der Entwicklerdokumentation für Codebeispiele.
 
 ![Gefilterte Suchergebnisse](assets/storefront-search-results-run.png)
 
