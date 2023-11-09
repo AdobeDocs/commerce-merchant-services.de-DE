@@ -3,9 +3,9 @@ title: Katalogadaptererweiterung
 description: Verwenden des Katalogadapters zum Rendern der Preise von Commerce Services
 seo-title: Catalog Adapter Extension
 seo-description: Using Catalog Adapter to render prices from Commerce Services
-source-git-commit: 6b578e7113c278a05a64f2db5e032bccc4a9580a
+source-git-commit: a637ece6e806771dfc6359dacececf8ccf05b983
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '330'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Der Adobe Commerce Product Price-Indexer ist deaktiviert und kann nicht aktivier
 ## Voraussetzungen
 
 * Adobe Commerce 2.4.4+
-* Einer der folgenden Commerce Services wird installiert:
+* beide der folgenden Commerce Services installiert haben:
 
    * [Catalog Service](../catalog-service/overview.md)
    * [Live Search](../live-search/guide-overview.md)
@@ -34,14 +34,14 @@ Führen Sie nach der Installation dieser Dienste den folgenden Befehl aus:
 composer require adobe-commerce/catalog-adapter
 ```
 
-## Adobe Commerce Product Price-Indexer erneut aktivieren
+## Aktivieren Sie den Adobe Commerce Product Price-Indexer erneut.
 
 Wenn Sie Anwendungen von Drittanbietern verwenden, die auf den standardmäßigen Adobe Commerce Product Price-Indexer angewiesen sind, können Sie ihn mit den folgenden Befehlen erneut aktivieren:
 
 ```bash
 # re-enable Product Price indexer
 bin/magento module:disable Magento_PriceIndexerDisabler
-# reindex Product Price indexer 
+# re-index Product Price indexer 
 bin/magento index:reindex catalog_product_price
 ```
 
@@ -78,4 +78,4 @@ Im Folgenden finden Sie einige häufige `Catalog Adapter` Szenarien.
 * Ein Händler mit einer Headless Commerce-Instanz mit installierten erforderlichen Diensten (Live Search, Product Recommendations, Catalog Service)
 * Keine Abhängigkeit vom standardmäßigen Adobe Commerce Product Price-Indexer
 
-1. Installieren Sie &quot;price disabler&quot;aus dem Katalogadapterpaket.
+1. Installieren Sie die `magento/module-price-indexer-disabler` -Modul aus dem Katalog-Adapterpaket.

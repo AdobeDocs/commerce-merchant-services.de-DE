@@ -3,9 +3,9 @@ title: Katalogsynchronisierung
 description: Erfahren Sie, wie Sie Produktdaten aus der [!DNL Commerce] Server zu [!DNL Commerce Services].
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
 feature: Catalog Management, Data Import/Export, Catalog Service
-source-git-commit: 151b57d7b31637178c645149d78c0d3670ee1c3e
+source-git-commit: 92129633adadd3ed699ae6427c01622dcb6ae3b4
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1167'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Mit dem **Katalogsynchronisierung** Dashboard können Sie:
 - Synchronisierte Produkte suchen, um ihren aktuellen Status anzuzeigen
 - Suchspeicherkatalog nach Name, SKU usw.
 - Anzeigen synchronisierter Produktdetails in JSON, um eine Synchronisierungsdiskrepanz zu diagnostizieren
-- Initialisieren des Synchronisierungsprozesses
+- Initiieren des Synchronisierungsprozesses
 
 ### Letzte Synchronisierung
 
@@ -67,7 +67,6 @@ Wenn Sie eine Neusynchronisierung Ihres Katalogs starten müssen, bevor die stü
 1. Im _Daten neu synchronisieren_ Abschnitt, klicken Sie auf [!UICONTROL Resync].
 
    [!DNL Commerce] synchronisiert Ihren Katalog während des nächsten geplanten Synchronisierungsfensters. Je nach Größe Ihres Katalogs kann dieser Vorgang sehr lange dauern.
-
 
 ## Synchronisierte Katalogprodukte
 
@@ -166,7 +165,7 @@ bin/magento saas:resync --feed categoryPermissions
 
 Wenn die erwarteten Daten in [!DNL Commerce Service], überprüfen Sie, ob während der Synchronisierung aus dem [!DNL Adobe Commerce] -Instanz auf [!DNL Commerce Service] Plattform.
 
-Es gibt 2 Protokolldateien im `var/log/` directory:
+Es gibt zwei Protokolldateien im `var/log/` directory:
 
 - `commerce-data-export-errors.log` - wenn während der _sammeln_ Phase
 - `saas-export-errors.log` - wenn während der _Sendung_ Phase
@@ -193,7 +192,7 @@ PERSIST_EXPORTED_FEED=1 bin/magento saas:resync --feed=products
 
 #### Profiling
 
-Wenn der Neuindizierungsprozess eines bestimmten Feeds unangemessen lange dauert, führen Sie den Profiler aus, um zusätzliche Daten zu erfassen, die für das Supportteam nützlich sein könnten. Übergeben Sie dazu die Variable `EXPORTER_PROFILER=1`Umgebungsvariable:
+Wenn der Neuindizierungsprozess bestimmter Feeds unangemessen lange dauert, führen Sie den Profiler aus, um zusätzliche Daten zu erfassen, die für das Supportteam nützlich sein könnten. Übergeben Sie dazu die Variable `EXPORTER_PROFILER=1`Umgebungsvariable:
 
 ```bash
 EXPORTER_PROFILER=1 bin/magento indexer:reindex catalog_data_exporter_products

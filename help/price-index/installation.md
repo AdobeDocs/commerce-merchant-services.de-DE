@@ -3,11 +3,11 @@ title: Manuelle Installation der SaaS-Preisindizierung
 description: Installieren der SaaS-Preisindizierung für ältere Versionen
 seo-title: SaaS Price Indexing installation
 seo-description: Installing SaaS Price indexing
-exl-id: 4577111a-64a4-4e20-b970-3abfa6758247
+exl-id: a607e852-aa04-4be3-9576-a6bf45f8751f
 role: Admin, Developer
-source-git-commit: 3809d27fc3689519e4a162aa52f481d254aec656
+source-git-commit: b2ebf26c9a34e5e2e08b7adbabcc780f24363e3c
 workflow-type: tm+mt
-source-wordcount: '276'
+source-wordcount: '291'
 ht-degree: 0%
 
 ---
@@ -15,12 +15,12 @@ ht-degree: 0%
 # Manuelle Installation der SaaS-Preisindizierung
 
 Die SaaS-Preisindizierung ist für unterstützte [neueste Version](index.md#Requirements) von Commerce Services.
-Wenn Sie nicht über die neueste Version verfügen und die SaaS-Preisindizierung für Ihre Adobe Commerce-Instanz aktivieren möchten, verwenden Sie bitte dieses Mini-Handbuch.
+Wenn Sie nicht über die neueste Version verfügen und die SaaS-Preisindizierung für Ihre Adobe Commerce-Instanz aktivieren möchten, verwenden Sie dieses Handbuch.
 
 ## Voraussetzungen
 
 * Adobe Commerce 2.4.4+
-* Mindestens einer der folgenden SaaS-Dienste ist installiert:
+* Mindestens einer der folgenden SaaS-Dienste installiert:
 
    * [Catalog Service](../catalog-service/overview.md)
    * [Live Search](../live-search/guide-overview.md)
@@ -29,7 +29,7 @@ Wenn Sie nicht über die neueste Version verfügen und die SaaS-Preisindizierung
 ## Installieren erforderlicher Module
 
 Abhängig von Ihrer Einrichtung unterscheidet sich der Installationsprozess möglicherweise geringfügig.
-Es gibt Erweiterungen, die die neuen Feeds und den unterstützenden Code hinzufügen.
+Es gibt Erweiterungen, die die neuen Feeds und den unterstützenden Code hinzufügen, und es gibt eine Erweiterung, die den Feed der Standardpreise entfernt.
 
 1. Fügen Sie die folgenden Module zu Ihrem `composer.json` Datei:
 
@@ -52,7 +52,6 @@ Nach dem Upgrade sind drei neue Feeds verfügbar:
 * `scopesCustomerGroup` - verantwortlich für die Zustellung von Kundengruppen an den Dienst
 * `scopesWebsite` - verantwortlich für die Bereitstellung von Websites, Store-Gruppen und Store-Ansichten an den Dienst
 
-
 1. Konfigurieren Sie die neuen Feeds, die auf den Modus &quot;Auf Zeitplan aktualisieren&quot;eingestellt werden sollen:
 
    ```bash
@@ -69,8 +68,7 @@ Nach dem Upgrade sind drei neue Feeds verfügbar:
 
 Führen Sie die oben genannten Indexer nach Bedarf manuell aus. Andernfalls werden die Daten im standardmäßigen Synchronisierungsprozess aktualisiert. Mehr über [Katalogsynchronisierung](../landing/catalog-sync.md) -Dienst.
 
-
-Um die Live-Suche und den Katalog-Adapter zu konfigurieren, folgen Sie dem [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) Anweisungen.
+Benutzer von Luma und Adobe Commerce Core GraphQL können die [`Catalog Adapter`](catalog-adapter.md) -Erweiterung, die Luma- und Core-GraphQl-Kompatibilität bietet und den Adobe Commerce Product Price-Indexer deaktiviert.
 
 ## Einschränkungen
 
