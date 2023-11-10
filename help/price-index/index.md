@@ -4,9 +4,9 @@ description: Verwenden der SaaS-Preisindizierung zur Leistungsverbesserung
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
-source-git-commit: 92129633adadd3ed699ae6427c01622dcb6ae3b4
+source-git-commit: d9a9137faac12cc1c42c1b41afbd9794dcb29189
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '408'
 ht-degree: 0%
 
 ---
@@ -43,6 +43,7 @@ In diesem Handbuch wird beschrieben, wie die SaaS-Preisindizierung funktioniert 
 
    * [Catalog Service](../catalog-service/overview.md)
    * [Live Search](../live-search/guide-overview.md)
+   * [Produkt-Recommendations](../product-recommendations/guide-overview.md)
 
 Benutzer von Luma und Adobe Commerce Core GraphQL können die [`catalog-adapter`](catalog-adapter.md) -Erweiterung, die Luma- und Core-GraphQl-Kompatibilität bietet und den Adobe Commerce Product Price-Indexer deaktiviert.
 
