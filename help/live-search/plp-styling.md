@@ -2,9 +2,9 @@
 title: Seiten-Widget "Produktliste"
 description: Aktivieren und Gestalten der [!DNL Live Search Product Listing Page Widget]
 exl-id: f7346a06-a8c7-4a33-8437-ea4f61d9281f
-source-git-commit: 368059d50133d8b01be83e1616044a61ab094e3c
+source-git-commit: c77b2f9cb55d3eb339dcc900ce606b94c592f559
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '273'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,12 @@ Die [!DNL Live Search Product Listing Page Widget] (PLP) verwendet die Commerce 
 ## Aktivieren des PLP-Widgets
 
 Wenn die Variable [!DNL Live Search] installiert ist, wird die Standardsuchfunktion in [!DNL Live Search] automatisch.
-Das PLP-Widget muss in der Admin-Konsole aktiviert sein.
 
-1. Navigieren Sie zu **Stores** > Einstellungen > **Konfiguration** > **[!DNL Live Search]** > **Storefront-Funktionen** und **Enable Product Listing Widgets** auf &quot;Ja&quot;.
+Die [!DNL Live Search] PLP-Widget ist für neue Installationen standardmäßig aktiviert. Wenn Sie ein Upgrade [!DNL Live Search] und das PLP-Widget bereits deaktiviert wurde, bleibt es so.
+
+So deaktivieren Sie das PLP-Widget:
+
+1. Navigieren Sie zu **Stores** > Einstellungen > **Konfiguration** > **[!DNL Live Search]** > **Storefront-Funktionen** und **Enable Product Listing Widgets** auf &quot;Nein&quot;.
 1. Auswählen **Konfiguration speichern** , um die Einstellung zu speichern.
 
 ## Stilbeispiel
@@ -28,7 +31,7 @@ Sie können das Erscheinungsbild des PLP-Widgets so anpassen, dass es zu Ihrer S
 >[!NOTE]
 >
 >Elemente mit benutzerdefinierten Klassen innerhalb eines Adobe Commerce-Designs werden nicht vererbt. Diese Elemente müssen von ihrer jeweiligen Klasse angesprochen werden, um mit den benutzerdefinierten Klassen übereinstimmen. Primäre Aktionsklassen funktionieren nicht mit Widget-Schaltflächen.
->Generische Targeting-Elemente innerhalb des CSS werden vererbt. `button` wird auf Widget-Schaltflächen angewendet.
+>Generische Targeting-Elemente innerhalb des CSS werden vererbt. `button` gilt für Widget-Schaltflächen.
 
 Die hervorgehobenen Divs enthalten die Zielklasse `ds-sdk-product-item__product-name`.
 
@@ -126,7 +129,8 @@ Passen Sie den Produktnamen an, indem Sie eine Regel hinzufügen, um sie in Gro�
 
 * `.ds-sdk-input`
 * `.ds-sdk-input__label`
-* `.ds-sdk-input__options`
+* `.ds-sdk-product-item__product-swatch-group`
+* `ds-sdk-product-item__product-swatch-item`
 * `.ds-sdk-input_fieldset_show-more`
 
 ![Eingabe](assets/plp-css-sdk-input.png)

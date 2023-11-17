@@ -2,9 +2,9 @@
 title: '[!DNL Live Search] Workspace'
 description: Die [!DNL Live Search] Workspace wird zum Konfigurieren, Verwalten und Überwachen der Suchleistung verwendet.
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
-source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
+source-git-commit: c77b2f9cb55d3eb339dcc900ce606b94c592f559
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '236'
 ht-degree: 0%
 
 ---
@@ -28,5 +28,5 @@ Zunächst wird die [Umfang](https://experienceleague.adobe.com/docs/commerce-adm
 | [Synonyme](synonyms.md) | Erweitern Sie die Reichweite der Suche, um Wörter einzuschließen, mit denen Käufer Produkte finden können, die sich von denen in Ihrem Katalog unterscheiden. |
 | [Merchandising durchsuchen](rules.md) | Gestalten Sie das Sucherlebnis mit logischen Regeln, die geplante Aktionen Trigger haben. Sie können Produkte steigern, begraben, anheften oder ausblenden, um Suchergebnisse zur Unterstützung Ihrer Geschäftsziele zu kalibrieren. |
 | [Kategorie-Merchandising](category-merch.md) | Anwenden von Regeln und intelligentem Merchandising auf Kategorieebene. |
-| [GraphQL](https://developer.adobe.com/commerce/services/graphql/live-search/) | Entwickler, die beim Administrator Ihres Stores angemeldet sind, können Abfragen mit tatsächlichen Katalogdaten erstellen und testen. Weitere Informationen finden Sie unter [Übersicht über GraphQL](https://developer.adobe.com/commerce/services/graphql/live-search/) im [!DNL Live Search] Entwicklerdokumentation. |
+| [GraphQL](graphql.md) | Entwickler, die beim Administrator Ihres Stores angemeldet sind, können Abfragen mit tatsächlichen Katalogdaten erstellen und testen. Weitere Informationen finden Sie unter [Übersicht über GraphQL](https://developer.adobe.com/commerce/webapi/graphql/) im [!DNL Live Search] Entwicklerdokumentation. |
 | [Einstellungen](settings.md) | Bestimmen Sie, wie Preisfacettenwerte in der Storefront nach Preisbereichen gruppiert werden, und legen Sie die Indexsprache fest. |

@@ -2,14 +2,16 @@
 title: "[!DNL Live Search] Indizierung"
 description: "Erfahren Sie wie [!DNL Live Search] indiziert Eigenschaften von Produktattributen."
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: a062133d94cb4898149b9cc878351ca2fad3c09e
+source-git-commit: c77b2f9cb55d3eb339dcc900ce606b94c592f559
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '614'
 ht-degree: 0%
 
 ---
 
 # Indizierung
+
+Die [!DNL Live Search] Der Indizierungsprozess liest durch den Katalog nach Produktattributen und erstellt einen Index, damit Produkte schnell durchsucht, gefiltert und präsentiert werden können.
 
 Die Produktattributeigenschaften (Metadaten) bestimmen:
 

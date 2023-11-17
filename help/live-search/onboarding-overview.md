@@ -3,9 +3,9 @@ title: "Onboarding-Übersicht"
 description: "[!DNL Live Search] Onboarding-Fluss, Systemanforderungen, Grenzen und Einschränkungen"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: a6d8c259f232ab27d7ed64558d5d193d59d23cad
+source-git-commit: 48f16a0c5ce6c2a3226acf4a61525cfbf4a0f35f
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '640'
 ht-degree: 0%
 
 ---
@@ -59,6 +59,22 @@ So beschränken Sie Kundengruppen mithilfe von Katalogberechtigungen:
 ### Synonyme
 
 * [!DNL Live Search] kann bis zu 200 Synonyme pro Store-Ansicht verwalten.
+
+## Sprachunterstützung
+
+[!DNL Live Search] -Widgets unterstützen die folgenden Sprachen:
+
+* en_US (Standard)
+* de_DE
+* es_MX
+* fr_FR
+* it_IT
+* ja_JA
+* nl_NL
+* no_NO
+* pt_PT
+
+Wenn das Widget erkennt, dass die Spracheinstellung &quot;Commerce Admin&quot;(_Stores_ > Einstellungen > _Konfiguration_ > _Allgemein_ > Länderoptionen) mit einer unterstützten Sprache übereinstimmen, wird standardmäßig diese Sprache verwendet. Andernfalls wird für die Widgets standardmäßig Englisch angezeigt.
 
 ## Kategorie-Merchandising
 

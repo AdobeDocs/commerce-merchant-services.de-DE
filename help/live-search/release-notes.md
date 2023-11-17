@@ -3,9 +3,9 @@ title: "[!DNL Live Search] Versionshinweise"
 description: "Die neuesten Versionsinformationen für [!DNL Live Search] von Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
+source-git-commit: ff7a2549893eab63f552a2a866939adc90de4a78
 workflow-type: tm+mt
-source-wordcount: '1798'
+source-wordcount: '1869'
 ht-degree: 0%
 
 ---
@@ -41,13 +41,47 @@ _25. April 2023_
 
 ![Neu](../assets/new.svg) [!DNL Live Search] Kunden können jetzt die neue [SaaS-Preisindexer](../price-index/index.md).
 
+## [!DNL Live Search] 4.0.0 {#400}
+
+_13. November 2023_
+
+[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
+
+### Neue Funktionen
+
+![Neu](../assets/new.svg) [!DNL Live Search] unterstützt jetzt Farbmuster im PLP-Widget.
+![Neu](../assets/new.svg) [!DNL Live Search] zeigt nun den Kategorienamen anstelle der Kategorie-ID an.
+![Neu](../assets/new.svg) [!DNL Live Search] unterstützt jetzt Durchstreichen-Preise im PLP-Widget.
+![Neu](../assets/new.svg) Die Schaltfläche &quot;Filter ausblenden&quot;wurde eingeführt, um den Filterbereich auszublenden.
+
+
+### Updates
+
+![Fehlerbehebung](../assets/fix.svg) Die [!DNL Live Search] PLP-Widget ist jetzt standardmäßig für neue Installationen aktiviert.
+![Fehlerbehebung](../assets/fix.svg) CSS-Stile wurden neu konfiguriert, um Widget-Klassen besser zu isolieren.
+![Fehlerbehebung](../assets/fix.svg) Geringfügige Fehlerbehebungen
+
+Merchandising muss die [!DNL Live Search] Erweiterung auf Version >= 4.0.0 , um auf diese Funktionen zuzugreifen.
+
+Aktivieren Sie nach der Installation von Version 3.1.1 oder höher die neuen Indexer:
+
+* Produktpreis-Feed
+* Umfang des Website-Daten-Feeds
+* Umfang des Daten-Feeds von Kundengruppen
+
+Testen Sie nach dem Upgrade die aktualisierte Konfiguration in QA oder Staging, bevor Sie die Änderungen in die Produktion übernehmen.
+
+## Frühere Versionen
+
++ + + 3.1.1 und früher
+
 ## [!DNL Live Search] 3.1.1 {#311}
 
 _15. September 2023_
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
 
-### Neue Funktionen
+
 
 ![Neu](../assets/new.svg) Die neue Registerkarte Kategorie-Merchandising wurde hinzugefügt. Benutzer können jetzt intelligente Ranglisten und manuelle Ranglisten (Pin, Verstärken, Begraben, Verbergen) pro Kategorie hinzufügen
 ![Neu](../assets/new.svg) Benutzer können eine einzelne Kategorieregel mit intelligentem oder manuellem Rang hinzufügen
@@ -68,20 +102,6 @@ _15. September 2023_
 ![Fehlerbehebung](../assets/fix.svg) &quot;Ereignisse&quot;(Verstärken/Einfügen/Verbergen/Ausblenden) wurde in &quot;Manuelles Ranking&quot;umbenannt.
 ![Fehlerbehebung](../assets/fix.svg) &quot;Ranking Type&quot;wurde in &quot;Intelligent ranking&quot;umbenannt.
 ![Fehlerbehebung](../assets/fix.svg) Geringfügige Fehlerbehebungen
-
-Merchandising muss die [!DNL Live Search] -Erweiterungsversion >= 3.1.1 verwenden, um auf diese Funktionen zuzugreifen.
-
-Nach der Installation von Version 3.1.1 müssen diese neuen Indexer aktiviert werden:
-
-* Produktpreis-Feed
-* Umfang des Website-Daten-Feeds
-* Umfang des Daten-Feeds von Kundengruppen
-
-Es wird empfohlen, die Qualitätssicherung oder das Staging zu aktualisieren und zu testen, bevor Änderungen in die Produktion übernommen werden.
-
-## Frühere Versionen
-
-+ + + 3.1.0 und früher
 
 ## [!DNL Live Search] 3.1.0 {#310}
 
