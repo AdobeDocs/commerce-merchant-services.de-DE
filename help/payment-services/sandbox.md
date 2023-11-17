@@ -3,9 +3,9 @@ title: Einrichten der Test-Sandbox
 description: Verwenden eines PayPal-Sandbox-Kontos zur Verwendung [!DNL Payment Services] im Testmodus.
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: bfb49e3602cc80f97817a8fd8d7c4684a3a3bcd2
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '594'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ So setzen Sie Ihr Sandbox-Konto zurück:
 
 ## Kontakttelefonnummer aktivieren
 
-Mit der Telefonnummer Kontakt können Sie die von PayPal gesammelten Telefonnummern von Ihren Kunden abrufen. PayPal sammelt immer Telefonnummern von PayPal-Kontoinhabern, um ihre Identitäten zu bestätigen und sie zu kontaktieren, um Probleme auf ihren Konten zu beheben oder ihre Erfüllung abzuschließen. PayPal rät jedoch von der Verwendung von Kontakttelefonnummern direkt vom Händler ab, da dies den Verkauf beeinträchtigen kann. Siehe [PayPal erhalten Telefonnummern](https://developer.paypal.com/docs/admin/checkout-settings/#get-contact-telephone-numbers) Dokumentation finden Sie weitere Informationen.
+Mit der Telefonnummer Kontakt können Sie die von PayPal gesammelten Telefonnummern von Ihren Kunden abrufen. PayPal sammelt immer Telefonnummern von PayPal-Kontoinhabern, um ihre Identitäten zu bestätigen und sie zu kontaktieren, um Probleme auf ihren Konten zu beheben oder ihre Erfüllung abzuschließen. PayPal rät jedoch von der Verwendung von Kontakttelefonnummern direkt vom Händler ab, da dies den Verkauf beeinträchtigen kann. Siehe [PayPal erhalten Telefonnummern](https://www.sandbox.paypal.com/businessmanage/preferences/website) Dokumentation finden Sie weitere Informationen.
 
 Diese Funktion ist `off` Standardmäßig. Wenn Sie diese Option aktivieren, können Store-Administratoren Telefonnummern anzeigen, wenn ein Kunde einen Branded Checkout-Fluss außerhalb der Checkout-Seite durchführt.
 
