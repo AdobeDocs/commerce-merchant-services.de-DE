@@ -3,9 +3,9 @@ title: "Onboarding-Übersicht"
 description: "[!DNL Live Search] Onboarding-Fluss, Systemanforderungen, Grenzen und Einschränkungen"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: 48f16a0c5ce6c2a3226acf4a61525cfbf4a0f35f
+source-git-commit: a98e8abe68b684dcddccbf7287126db159159bab
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '697'
 ht-degree: 0%
 
 ---
@@ -83,6 +83,15 @@ KategorieMerchandising ermöglicht Ihnen die Konfiguration von [!DNL Live Search
 Dieses Video ist eine Einführung in Kategorie-Merchandising.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424617)
+
+## Widget-Code-Repository
+
+Das Widget &quot;Seite der Produktauflistungen&quot;und das Widget &quot;Popover durchsuchen&quot;können über ihr GitHub-Repository heruntergeladen werden.
+
+Dadurch können Entwickler die Funktionalität und den Stil vollständig anpassen. Diese Benutzer hosten den Code selbst, während sie weiterhin die [!DNL Live Search] -Dienst.
+
+* [PLP-Widget](https://github.com/adobe/storefront-product-listing-page)
+* [Suchleiste](https://github.com/adobe/storefront-search-as-you-type)
 
 ## Inventory management
 

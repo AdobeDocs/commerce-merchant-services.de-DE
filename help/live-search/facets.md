@@ -2,9 +2,9 @@
 title: "Facets"
 description: "[!DNL Live Search] Facetten verwenden mehrere Dimensionen von Attributwerten als Suchkriterien."
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
+source-git-commit: a8643ca9567feb7dde67358eeae321825b0253f2
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '579'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,12 @@ Die Anforderungen an Kategorie- und Produktattribute für die Facettierung ähne
 * 50 sortierbare Attribute
 * 200 filterbare Attribute
 * 200 durchsuchbare Attribute
+
+>[!NOTE]
+>
+> Wenn mehr als 200 filterbare Attribute definiert sind, ist es nicht deterministisch, welcher 200 tatsächlich indiziert wird.
+
+Wenn Sie eine große Anzahl von Attributen haben, mit denen Sie konfrontiert werden können, sollten Sie Attribute zu einem einzelnen &quot;Meta-Attribut&quot;kombinieren. Schuhe haben beispielsweise im Allgemeinen numerische Größen, während Hemden häufig die Größe &quot;S/M/L/XL&quot;aufweisen. Diese beiden Größentypen können zu einem einzigen durchsuchbaren Attribut zusammengefasst werden.
 
 | Einstellung | Beschreibung |
 |--- |--- |
