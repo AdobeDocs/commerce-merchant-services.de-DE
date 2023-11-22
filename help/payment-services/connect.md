@@ -3,9 +3,9 @@ title: Instanz verbinden
 description: Verbinden Sie Ihre Commerce-Instanz mit einem API-Schlüssel und einem privaten Schlüssel und geben Sie den Datenraum in der Konfiguration an.
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
 feature: Payments, Checkout, Configuration, Saas
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '635'
 ht-degree: 0%
 
 ---
@@ -37,11 +37,16 @@ Siehe [Liste der verfügbaren Commerce-Services, die die API verwenden](https://
 Informationen zum Generieren eines API-Schlüssels für Sandbox- oder Produktionsumgebungen finden Sie unter [Anmeldeinformationen](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html#apikey).
 
 >[!IMPORTANT]
+>
 >Es wird empfohlen, kein API-Schlüsselpaar neu zu generieren *und* ändern Sie die SaaS-Kennung und/oder den Datenraum in einer aktiven Produktionsinstanz. Sie verlieren Daten für Ihre Instanz, wenn sie geändert werden.
 
 ## Commerce Services konfigurieren
 
 Derselbe API-Schlüssel kann über mehrere Instanzen hinweg verwendet werden, aber jede Instanz muss über einen eigenen [SaaS-Datenraum](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html#saasenv).
+
+>[!NOTE]
+>
+>Händler müssen für ihre Zahlungsansprüche dieselben Schlüssel verwenden, die für die MageID generiert wurden.
 
 Nachdem Sie Ihre Anmeldeinformationen erhalten haben, können Sie Ihr SaaS-Projekt und den Saas-Datenraum konfigurieren.
 

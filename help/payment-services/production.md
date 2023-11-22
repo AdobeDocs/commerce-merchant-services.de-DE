@@ -3,9 +3,9 @@ title: Aktivieren [!DNL Payment Services] für die Produktion
 description: Schließen Sie den Onboarding-Prozess ab, indem Sie [!DNL Payment Services] für die Produktion.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '731'
 ht-degree: 0%
 
 ---
@@ -36,6 +36,10 @@ Nach [Commerce-Dienste konfigurieren](connect.md#configure-commerce-services) un
    |---|---|
    | `Authorize` | Genehmigt den Kauf und legt die Mittel fest. Der Betrag wird erst dann zurückgezogen, wenn er vom Händler &quot;erfasst&quot;wurde. |
    | `Authorize and Capture` | Genehmigt den Kauf und der Händler &quot;erfasst&quot; die Mittel. |
+
+   >[!IMPORTANT]
+   >
+   >[!DNL Payment Services] unterstützt partielle Aufnahmen. Ein Händler kann Teile einer Bestellung teilweise erfassen (Rechnung). Sie können beispielsweise jedes Element einzeln erfassen oder ein Element jetzt und den Rest später.
 
 1. Klicken **[!UICONTROL Save]**.
 1. Klicks **[!UICONTROL Go to Payment Services]** zurück an die [!DNL Payment Services] Home.

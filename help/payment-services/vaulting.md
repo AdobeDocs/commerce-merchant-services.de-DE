@@ -3,9 +3,9 @@ title: Kreditkartenausfall
 description: Käufer können ihre Kreditkartendetails für zukünftige Käufe einbehalten (speichern).
 exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
 feature: Payments, Checkout
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '314'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,10 @@ Käufer verwenden das gespeicherte Token, um einen zukünftigen Checkout mit ihr
 Sie können ihre Kreditkarten auch einfach aus [Gespeicherte Zahlungsmethoden](https://docs.magento.com/user-guide/customers/account-dashboard-stored-payment-methods.html) in ihrem Mein Konto.
 
 ![Gespeicherte Zahlungsmethoden in meinem Konto](assets/stored-payment-methods.png){width="400" zoomable="yes"}
+
+>[!WARNING]
+>
+>PayPal kann derzeit maximal fünf gewölbte Karten speichern.
 
 ## Validierung aktivieren
 
