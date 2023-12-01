@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
 feature: Payments, Checkout
-source-git-commit: bc8428c619579fecbb5428ba59c76c7a8306659d
+source-git-commit: 03349802fb747028cbd66ed6ce3ca7ad247f4c07
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '475'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Ob Sie ein kleines Unternehmen, ein mittelständisches Unternehmen oder ein gro�
 * [**Zahlungsoptionen**](payments-options.md)—Legen Sie die Zahlungsoptionen fest, um die für Ihre Store- (oder Multistore-) Kunden verfügbaren Methoden anzupassen.
 * **Finanzberichte zum Cashflow-Management**—Synchronisieren [Zahlungsdetails](order-payment-status.md) mit den Bestellungen, die eine vollständige Transparenz des verarbeiteten Volumens und des Zahlungsbilds gewährleisten, [payouts](payouts.md)und detailliert [Berichterstellung auf Transaktionsebene](transactions.md) für die finanzielle Abstimmung und die größtmögliche Sichtbarkeit der Transaktionen.
 * **Transparente Preisgestaltung**—Die Preise sind klar und vorab; was man sieht, ist, was man bekommt.
-* **Effizientes Checkout-Erlebnis**—Entfernen Sie alle Hindernisse für einen schnellen und einfachen Checkout und erstellen Sie treue Kunden mit [Kartengewölbe](https://experienceleague-review.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html) und [Sofortiger Kauf](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) (standardmäßig für Adobe Commerce aktiviert).
+* **Effizientes Checkout-Erlebnis**—Entfernen Sie alle Hindernisse für einen schnellen und einfachen Checkout und erstellen Sie treue Kunden mit [Kartengewölbe](vaulting.md) und [Sofortiger Kauf](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) (standardmäßig für Adobe Commerce aktiviert).
 
 ## Verfügbarkeit
 
