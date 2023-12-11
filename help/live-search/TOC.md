@@ -4,10 +4,10 @@ user-guide-description: "Dieses Handbuch enthält ausführliche Anweisungen zur 
 breadcrumb-title: „Handbuch zu [!DNL Live Search]“
 role: Admin
 feature: Services, Search
-source-git-commit: ff7a2549893eab63f552a2a866939adc90de4a78
+source-git-commit: 06e06f8d8ee747f4bbe7a064af0dabc01efc31d2
 workflow-type: tm+mt
-source-wordcount: '96'
-ht-degree: 10%
+source-wordcount: '84'
+ht-degree: 11%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 10%
 - [Einführung in [!DNL Live Search]](overview.md)
 - [Versionshinweise](release-notes.md)
 - Onboard Live Search {#onboard}
-   - [Onboarding-Übersicht](onboarding-overview.md)
+   - [Technischer Überblick](technical-overview.md)
    - [Installieren [!DNL Live Search]](install.md)
 - [!DNL Live Search] Storefront {#live-search-storefront}
    - [Seiten-Widget &quot;Produktliste&quot;](plp-styling.md)

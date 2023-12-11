@@ -1,20 +1,20 @@
 ---
-title: "Category Merchandising"
-description: "Verwenden [!DNL Live Search] Kategorie-Merchandising für ein schnelleres Einkaufserlebnis."
+title: Kategorie-Merchandising
+description: Verwendung [!DNL Live Search] KategorieMerchandising für ein schnelleres Einkaufserlebnis.
 gourl: ls_catalog_merchandising
-source-git-commit: 97a743b1f7162af01930a37db448432acb9f89d5
+exl-id: 24f159c1-b175-47c1-aca1-8bada118b4b4
+source-git-commit: d5df2a098dbbb2ecfb68c36dd12843c963d46b17
 workflow-type: tm+mt
-source-wordcount: '1044'
+source-wordcount: '1045'
 ht-degree: 0%
 
 ---
-
 
 # Kategorie-Merchandising
 
 KategorieMerchandising ermöglicht es den Eigentümern von Geschäften, [!DNL Live Search] Intelligente Rangfolge [Regeln](rules.md) auf Produktkategorien und Unterkategorien.
 
-Auf die Funktion kann über den Admin unter **Marketing** > SEO &amp; Suche > **[!DNL Live Search]** > **Kategorie-Merchandising**.
+Auf die Funktion kann in Admin unter **Marketing** > SEO &amp; Suche > **[!DNL Live Search]** > **Kategorie-Merchandising**.
 
 >[!NOTE]
 >
