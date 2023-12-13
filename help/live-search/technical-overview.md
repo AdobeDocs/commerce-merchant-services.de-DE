@@ -3,9 +3,9 @@ title: "Technischer Überblick"
 description: "[!DNL Live Search] Onboarding-Fluss, Systemanforderungen, Grenzen und Einschränkungen"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: ab09bc53666915713bd0180d87b3e40aec430a86
+source-git-commit: 10b9f087da1346734735379846d50b53d36c1562
 workflow-type: tm+mt
-source-wordcount: '673'
+source-wordcount: '689'
 ht-degree: 0%
 
 ---
@@ -80,6 +80,8 @@ So beschränken Sie Kundengruppen mithilfe von Katalogberechtigungen:
 * pt_PT
 
 Wenn das Widget erkennt, dass die Spracheinstellung &quot;Commerce Admin&quot;(_Stores_ > Einstellungen > _Konfiguration_ > _Allgemein_ > Länderoptionen) mit einer unterstützten Sprache übereinstimmen, wird standardmäßig diese Sprache verwendet. Andernfalls wird für die Widgets standardmäßig Englisch angezeigt.
+
+Administratoren können auch die Sprache der [Suchindex](settings.md#language), um bessere Suchergebnisse sicherzustellen.
 
 ## Kategorie-Merchandising
 

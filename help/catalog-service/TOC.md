@@ -5,10 +5,10 @@ breadcrumb-title: „Handbuch zu [!DNL Catalog Service]“
 hide: true
 role: Admin
 feature: Services, Catalog Service
-source-git-commit: 0089d1bba0ebd18b0dbfea123ba8a6e0a33af1b2
+source-git-commit: 9460d7cf2de677557ee3792665c65d2a52a52569
 workflow-type: tm+mt
-source-wordcount: '71'
-ht-degree: 8%
+source-wordcount: '54'
+ht-degree: 11%
 
 ---
 
@@ -18,6 +18,7 @@ ht-degree: 8%
 - [Einführung in [!DNL Catalog Service]](overview.md)
 - [Onboarding und Installieren](installation.md)
 - [Catalog Service und API-Mesh](mesh.md)
+- [Steuern Preise mit dem API-Mesh anzeigen](taxes.md)
 - [Feed-Erfassungsdienst (Beta)](feed-ingestion.md)
 - GraphQL-Abfragen {#graphql}
    - [categories query](https://developer.adobe.com/commerce/services/graphql/catalog-service/categories/)
