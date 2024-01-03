@@ -3,9 +3,9 @@ title: "Technischer Überblick"
 description: "[!DNL Live Search] Onboarding-Fluss, Systemanforderungen, Grenzen und Einschränkungen"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: 10b9f087da1346734735379846d50b53d36c1562
+source-git-commit: 9b46ee98d0459b6a4cce2da51ac6308a1102ef30
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '691'
 ht-degree: 0%
 
 ---
@@ -115,7 +115,7 @@ Live Search-Kunden können die neue [SaaS-Preisindexer](../price-index/index.md)
 [!DNL Live Search] funktioniert mit PWA Studio, aber die Benutzer sehen möglicherweise geringfügige Unterschiede im Vergleich zu anderen Commerce-Implementierungen. Grundlegende Funktionen wie Suche und Produktlistenseite funktionieren in Venia, aber einige Permutationen von Graphql funktionieren möglicherweise nicht ordnungsgemäß. Es kann auch Leistungsunterschiede geben.
 
 * Die aktuelle PWA-Implementierung von [!DNL Live Search] benötigt mehr Verarbeitungszeit, um Suchergebnisse zurückzugeben als [!DNL Live Search] mit der nativen Commerce-Storefront.
-* [!DNL Live Search] in PWA wird nicht unterstützt [Ereignisverarbeitung](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). Daher funktioniert intelligentes Merchandising nicht.
+* [!DNL Live Search] in PWA wird nicht unterstützt [Ereignisverarbeitung](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). Daher funktionieren Suchberichte und intelligentes Merchandising.
 * Direktes Filtern auf `description`, `name`, `short_description` wird von GraphQL nicht unterstützt, wenn [PWA](https://developer.adobe.com/commerce/pwa-studio/), werden jedoch mit einem allgemeineren Filter zurückgegeben.
 
 Verwendung [!DNL Live Search] Mit PWA Studio müssen Integratoren auch:
