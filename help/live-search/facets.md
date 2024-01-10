@@ -2,9 +2,9 @@
 title: "Facets"
 description: "[!DNL Live Search] Facetten verwenden mehrere Dimensionen von Attributwerten als Suchkriterien."
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: a8643ca9567feb7dde67358eeae321825b0253f2
+source-git-commit: 460065ecf6478e4313bd31ea848e04c7e8e192a3
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '539'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Jede definierte Facette kann als URL-Parameter verwendet werden. Die Ergebnisse 
 
 ## Factoryanforderungen
 
-Die Anforderungen an Kategorie- und Produktattribute für die Facettierung ähneln den für die Navigation mit Ebenen verwendeten filterbaren Attributen. Die Storefront-Eigenschaften jedes Attributs müssen auf `filterable (with results)`.
+Die Anforderungen an Kategorie- und Produktattribute für die Facettierung ähneln den für die Navigation mit Ebenen verwendeten filterbaren Attributen. Für jede Storefront-Eigenschaft eines Attributs muss der Wert &quot;Use in Search Results Layered Navigation&quot;auf &quot;Yes&quot;gesetzt sein.
 
 [!DNL Live Search] unterstützt bis zu:
 

@@ -3,9 +3,9 @@ title: "Technischer Überblick"
 description: "[!DNL Live Search] Onboarding-Fluss, Systemanforderungen, Grenzen und Einschränkungen"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: 9b46ee98d0459b6a4cce2da51ac6308a1102ef30
+source-git-commit: 3d2b63280c2a890d7f84208efe3687c0d99e8e38
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '1007'
 ht-degree: 0%
 
 ---
@@ -29,9 +29,22 @@ In diesem Thema werden die technischen Anforderungen und Tipps für die Installa
 
 [!DNL Live Search] kommuniziert über den Endpunkt unter `https://catalog-service.adobe.io/graphql`.
 
->[!NOTE]
->
->As [!DNL Live Search] keinen Zugriff auf die vollständige Produktdatenbank hat, [!DNL Live Search] GraphQL und Commerce Core GraphQL werden nicht vollständig parity sein.
+As [!DNL Live Search] keinen Zugriff auf die vollständige Produktdatenbank hat, [!DNL Live Search] GraphQL und Commerce Core GraphQL werden nicht vollständig parity sein.
+
+Es wird empfohlen, die SaaS-APIs direkt aufzurufen - insbesondere den Catalog Service-Endpunkt.
+
+* Steigern Sie die Leistung und reduzieren Sie die Prozessorlast, indem Sie die Commerce-Datenbank/den Graphql-Prozess umgehen.
+* Nutzen Sie die Vorteile der [!DNL Catalog Service] Föderation anrufen [!DNL Live Search], [!DNL Catalog Service], und [!DNL Product Recommendations] von einem einzelnen Endpunkt aus.
+
+Für einige Anwendungsfälle ist es möglicherweise besser, [!DNL Catalog Service] für Produktdetails und ähnliche Fälle. Siehe [refineProduct](https://developer.adobe.com/commerce/services/graphql/catalog-service/refine-product/) für weitere Informationen.
+
+Wenn Sie über eine benutzerdefinierte Headless-Implementierung verfügen, überprüfen Sie die [!DNL Live Search] Referenzimplementierungen:
+
+* [PLP-Widget](https://github.com/adobe/storefront-product-listing-page)
+* [Live-Suchfeld](https://github.com/adobe/storefront-search-as-you-type)
+
+Wenn Sie nicht die Standardkomponenten wie Suchadapter oder Widgets auf Luma oder AEM CIF Widgets verwenden, beachten Sie, dass Eventing (Clickstream-Daten, die Adobe Sensei für intelligente Merchandising- und Leistungsmetriken speisen) nicht vorkonfiguriert funktioniert und benutzerdefinierte Entwicklung erfordert, um Headless-Eventing zu implementieren.
+Die neueste Version von [!DNL Live Search] bereits verwendet [!DNL Catalog Service] und die Installationen [!DNL Catalog Service] Module.
 
 ## Grenzen und Schwellenwerte
 
@@ -69,15 +82,42 @@ So beschränken Sie Kundengruppen mithilfe von Katalogberechtigungen:
 
 [!DNL Live Search] -Widgets unterstützen die folgenden Sprachen:
 
-* en_US (Standard)
-* de_DE
-* es_MX
-* fr_FR
-* it_IT
-* ja_JA
-* nl_NL
-* no_NO
-* pt_PT
+|  |  |  |  |
+|--- |--- |--- |--- |
+| Sprache | Region | Sprachcode | Magento Locale |
+| bulgarisch | Bulgarien | bg_BG | bg_BG |
+| Katalan | Spanien | ca_ES | ca_ES |
+| tschechisch | Tschechische Republik | cs_CZ | cs_CZ |
+| dänisch | Dänemark | da_DK | da_DK |
+| deutsch | Deutschland | de_DE | de_DE |
+| griechisch | Griechenland | el_GR | el_GR |
+| englisch | Vereinigtes | en_GB | en_GB |
+| englisch | Vereinigte Staaten | en_US | en_US |
+| spanisch | Spanien | es_ES | es_ES |
+| estnisch | Estland | et_EE | et_EE |
+| Baskisch | Spanien | eu_ES | eu_ES |
+| Persisch | Iran | fa_IR | fa_IR |
+| finnisch | Finnland | fi_FI | fi_FI |
+| französisch | Frankreich | fr_FR | fr_FR |
+| Galizisch | Spanien | gl_ES | gl_ES |
+| Hindi | Indien | hi_IN | hi_IN |
+| ungarisch | Ungarn | hu_HU | hu_HU |
+| Indonesisch | Indonesien | id_ID | id_ID |
+| italienisch | Italien | it_IT | it_IT |
+| Koreanisch | Südkorea | ko_KR | ko_KR |
+| litauisch | Litauen | lt_LT | lt_LT |
+| lettisch | Lettland | lv_LV | lv_LV |
+| norwegisch | Norwegen Bokmal | nb_NO | nb_NO |
+| holländisch | Niederlande | nl_NL | nl_NL |
+| portugiesisch | Brasilien | pt_BR | pt_BR |
+| portugiesisch | Portugal | pt_PT | pt_PT |
+| rumänisch | Rumänien | ro_RO | ro_RO |
+| Russisch | Russland | ru_RU | ru_RU |
+| schwedisch | Schweden | sv_SE | sv_SE |
+| Thailändisch | Thailand | th_TH | th_TH |
+| türkisch | Türkei | tr_TR | tr_TR |
+| Chinesisch | China | zh_CN | zh_Hans_CN |
+| Chinesisch | Taiwan | zh_TW | zh_Hant_TW |
 
 Wenn das Widget erkennt, dass die Spracheinstellung &quot;Commerce Admin&quot;(_Stores_ > Einstellungen > _Konfiguration_ > _Allgemein_ > Länderoptionen) mit einer unterstützten Sprache übereinstimmen, wird standardmäßig diese Sprache verwendet. Andernfalls wird für die Widgets standardmäßig Englisch angezeigt.
 
@@ -109,6 +149,17 @@ Dadurch können Entwickler die Funktionalität und den Stil vollständig anpasse
 ## Preisindex
 
 Live Search-Kunden können die neue [SaaS-Preisindexer](../price-index/index.md), was schnellere Preisänderungen und Synchronisierungszeiten ermöglicht.
+
+## Preisstützung
+
+Live Search-Widgets unterstützen die meisten, aber nicht alle von Adobe Commerce unterstützten Preistypen.
+
+Derzeit werden Basispreise unterstützt. Folgende erweiterte Preise werden nicht unterstützt:
+
+* Kosten
+* Mindestpreis für Werbung
+
+Sehen Sie sich an [API-Mesh](../catalog-service/mesh.md) für komplexere Preisberechnungen.
 
 ## PWA-Unterstützung
 
