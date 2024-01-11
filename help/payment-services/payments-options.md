@@ -3,9 +3,9 @@ title: Zahlungsoptionen
 description: Legen Sie die Zahlungsoptionen fest, um die für Ihre Store-Kunden verfügbaren Methoden anzupassen.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: c4068d71eba45ea45b1c1eefc324bf830479e0e3
+source-git-commit: 3276cdac48461cb61c8669e2019b567c70d6f493
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '944'
 ht-degree: 0%
 
 ---
@@ -32,6 +32,8 @@ Je nachdem, wo Sie sich im Checkout-Prozess befinden, gibt es für jede Zahlungs
 
 [!UICONTROL Credit Card Fields] bieten einen einfachen und sicheren Checkout für Kreditkarten- oder Debitkartenzahlmethoden. Wenn ein Kunde mit Kreditkartenfeldern zur Kasse geht, gibt er seinen Namen, seine Rechnungsadresse sowie seine Kredit- oder Debitkarteninformationen ein, um seine Bestellung aufzugeben. Ihre Kundeninformationen werden während der Kaufsitzung sicher verwendet, um sie nahtlos durch den Checkout-Fluss zu führen.
 
+![Kreditkartenfelder beim Checkout](assets/credit-card-fields.png){width="500" zoomable="yes"}
+
 Aktivieren [Kreditkartenausfall](#vaulting) für Ihre Geschäfte, damit die Käufer ihre Kreditkarteninformationen für einen schnellen Checkout zu einem späteren Zeitpunkt überprüfen können.
 
 Sie können [!UICONTROL Credit Card Fields] in der Store-Konfiguration oder der Zahlungsdienst-Startseite. Siehe [Einstellungen](settings.md#credit-card-fields) für weitere Informationen.
@@ -41,6 +43,10 @@ Sie können auch das Layout, die Breite, die Höhe und den äußeren Stil der Kr
 ## [!DNL Apple Pay] button
 
 Kunden können [[!DNL Apple Pay]](https://www.apple.com/apple-pay/), das die auf einem iOS- oder macOS-Gerät gespeicherten Zahlungsberechtigungen für Kredit- und Debitkarten verwendet, um Einkäufe zu tätigen.
+
+[!DNL Apple Pay] ist nur im Safari-Browser verfügbar.
+
+![Apple-Zahlungsschaltfläche im Minicart](assets/apple-pay-button.png){width="500" zoomable="yes"}
 
 Die [!DNL Apple Pay] -Schaltfläche ist von der Produktseite aus sichtbar, in der Mini-Warenkorb-, Warenkorb- und Checkout-Ansicht.
 
@@ -54,7 +60,7 @@ Sie können [!UICONTROL Apple Pay] in der Store-Konfiguration oder der Zahlungsd
 
 [!DNL PayPal Smart Buttons], die PayPal verwenden, um einen Kauf abzuschließen, speichert die Lieferadresse Ihres Käufers, die Rechnungsadresse und Zahlungsdetails zur späteren Verwendung. Käufer können jede Zahlungsmethode verwenden, die zuvor von PayPal gespeichert oder angeboten wurde.
 
-![[!DNL PayPal Smart Buttons] options](assets/payment-buttons.png){width="400" zoomable="yes"}
+![Schaltfläche &quot;PayPal&quot;](assets/paypal-button.png){width="350" zoomable="yes"}
 
 Sie können [!UICONTROL PayPal Smart Buttons] in der Store-Konfiguration oder der Zahlungsdienst-Startseite.  Siehe [Einstellungen](settings.md#payment-buttons) für weitere Informationen.
 
@@ -89,12 +95,6 @@ Die [!DNL Pay Later] -Schaltfläche ist von der Produktseite aus sichtbar, in de
 Weitere Informationen zu den Pay-Later-Angeboten finden Sie unter [PayPal&#39;s Pay Later bietet Dokumentation](https://developer.paypal.com/docs/checkout/pay-later/us/). Verwenden Sie die **Land oder Region** Dropdown-Liste, um eine Zielregion auszuwählen.
 
 Siehe [Einstellungen](settings.md#payment-buttons) , um zu erfahren, wie Sie die [!DNL Pay Later] Messaging.
-
-### [!DNL Pay Now] button
-
-Die [!DNL Pay Now] -Schaltfläche im PayPal-Popup-Fenster angezeigt, wenn ein Kunde auf eine Zahlungsschaltfläche auf dem Zahlungsbildschirm klickt.
-
-Wenn der endgültige Bestellbetrag noch nicht bekannt ist (z. B. wenn Sie noch keine Versandadressen-Informationen haben) und der Kunde gerade von der Produktseite, dem Mini-Warenkorb oder dem Warenkorb auscheckt, wird ein _Weiter_ -Schaltfläche verfügbar ist. Klickt ein Kunde _Weiter_, nachdem sie ihre Zahlungsmethode bestätigt haben, werden sie auf eine Bestellüberprüfungsseite geleitet, um die erforderlichen Details zu erfassen, bevor sie den Kassengang abschließen.
 
 ## Verwenden Sie nur PayPal-Zahlungsschaltflächen
 

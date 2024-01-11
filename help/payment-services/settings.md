@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
 feature: Payments, Checkout, Configuration
-source-git-commit: 85f8e158509231fb3b30c778309a9ac0fb468131
+source-git-commit: a7ad4130745957d596cba38892d77107e977e2e7
 workflow-type: tm+mt
-source-wordcount: '2410'
+source-wordcount: '2364'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Sie können [!DNL Payment Services] für Ihre Website hinzufügen und entweder S
 
    ![Startansicht](assets/payment-services-menu-small.png){width="400" zoomable="yes"}
 
-1. Klicken **[!UICONTROL Settings]**. Siehe [Einführung in [!DNL Payment Services] Startseite](payments-home.md) für weitere Informationen.
+1. Klicks **[!UICONTROL Settings]**. Siehe [Einführung in [!DNL Payment Services] Startseite](payments-home.md) für weitere Informationen.
 
    Die _[!UICONTROL General]_enthält Einstellungen, die zum Aktivieren von [!DNL Payment Services] als Zahlungsmethode.
 
@@ -44,7 +44,7 @@ Sie können [!DNL Payment Services] für Ihre Website hinzufügen und entweder S
    >
    >Ihre _[!UICONTROL Sandbox Merchant ID]_und_[!UICONTROL Production Merchant ID]_ werden automatisch generiert und in den entsprechenden Feldern angezeigt, wenn Sie das Onboarding für die Sandbox und/oder die Produktion abschließen.
 
-1. Klicken **[!UICONTROL Save]**.
+1. Klicks **[!UICONTROL Save]**.
 
    Wenn Sie versuchen, von dieser Ansicht weg zu navigieren, ohne Ihre Änderungen zu speichern, wird ein Modal angezeigt, in dem Sie aufgefordert werden, Änderungen zu verwerfen, die Bearbeitung fortzusetzen oder Änderungen zu speichern.
 
@@ -57,19 +57,19 @@ Sie können jetzt die Standardeinstellungen für [Zahlungsoptionen](#configure-p
 Sie können eine [!UICONTROL Soft Descriptor] zu Ihrer Website(s) oder Konfiguration einzelner Store-Ansichten hinzufügen. Softbounce-Deskriptoren werden in Kontoauszügen von Kunden angezeigt. Wenn Sie beispielsweise über mehrere Stores/Marken/Kataloge verfügen, können Sie diese einfach trennen, indem Sie benutzerdefinierten Text zum [!UICONTROL Soft Descriptor] -Feld.
 
 1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-1. Klicken **[!UICONTROL Settings]**. Siehe [Einführung in [!DNL Payment Services] Startseite](payments-home.md) für weitere Informationen.
+1. Klicks **[!UICONTROL Settings]**. Siehe [Einführung in [!DNL Payment Services] Startseite](payments-home.md) für weitere Informationen.
 1. Wählen Sie die Website- oder Store-Ansicht im **[!UICONTROL Scope]** Dropdown-Menü, für das Sie einen weichen Deskriptor erstellen möchten. Behalten Sie für die Ersteinrichtung Folgendes bei: **[!UICONTROL Default]** , um den Standardwert festzulegen.
 1. Fügen Sie Ihren benutzerdefinierten Text (bis zu 22 Zeichen) in das Textfeld ein und ersetzen Sie `Custom descriptor`.
-1. Klicken **[!UICONTROL Save]**.
+1. Klicks **[!UICONTROL Save]**.
 1. So erstellen Sie einen anderen Soft-Deskriptor als den konfigurierten Standard für eine Website- oder Store-Ansicht:
    1. Wählen Sie die Website- oder Store-Ansicht im **[!UICONTROL Scope]** Dropdown-Menü, für das Sie einen weichen Deskriptor erstellen möchten.
    1. Umschalten _off_ **[!UICONTROL Use website]** (oder **[!UICONTROL Use default]**, abhängig vom ausgewählten Bereich).
    1. Fügen Sie Ihren benutzerdefinierten Text in das Textfeld ein.
-   1. Klicken **[!UICONTROL Save]**.
+   1. Klicks **[!UICONTROL Save]**.
 1. So aktivieren Sie für eine Website oder eine Store-Ansicht den standardmäßigen Softdeskriptor _oder_ der für die übergeordnete Website verwendete Softdeskriptor:
    1. Wählen Sie die Website- oder Store-Ansicht im **[!UICONTROL Scope]** Dropdown-Menü, für das Sie einen vorhandenen Soft-Deskriptor aktivieren möchten.
    1. Umschalten _on_ **[!UICONTROL Use website]** (oder **[!UICONTROL Use default]** je nach ausgewähltem Bereich).
-   1. Klicken **[!UICONTROL Save]**.
+   1. Klicks **[!UICONTROL Save]**.
 
    Wenn Sie versuchen, von dieser Ansicht weg zu navigieren, ohne Ihre Änderungen zu speichern, wird ein Modal angezeigt, in dem Sie aufgefordert werden, Änderungen zu verwerfen, die Bearbeitung fortzusetzen oder Änderungen zu speichern.
 
@@ -88,7 +88,7 @@ Sie können eine [!UICONTROL Soft Descriptor] zu Ihrer Website(s) oder Konfigura
 Nachdem Sie die [!UICONTROL Payment Services] für Ihre Website können Sie die Standardeinstellungen für Zahlungsfunktionen und Storefront-Anzeige ändern.
 
 1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-1. Klicken **[!UICONTROL Settings]**. Siehe [Einführung in [!DNL Payment Services] Startseite](payments-home.md) für weitere Informationen.
+1. Klicks **[!UICONTROL Settings]**. Siehe [Einführung in [!DNL Payment Services] Startseite](payments-home.md) für weitere Informationen.
 1. Zahlungsoptionen konfigurieren für [Kreditkarten](#credit-card-fields), [Zahlungsschaltflächen](#payment-buttons), und [Schaltflächenstil](#button-style), entsprechend den folgenden Abschnitten.
 
 ### Kreditkartenfelder
@@ -107,7 +107,7 @@ Siehe [Zahlungsoptionen](payments-options.md#credit-card-fields) für weitere In
 1. Aktivieren oder Deaktivieren [Kartengewölbe](#card-vaulting), um die **[!UICONTROL Vault enabled]** auswählen.
 1. Aktivieren oder Deaktivieren [Gültige Zahlungsmethoden im Admin](#card-vaulting) (Damit Händler ihre Bestellungen für Kunden in der Admin-Konsole mit ihrer gültigen Zahlungsmethode abschließen können), schalten Sie die **[!UICONTROL Show vaulted methods in Admin]** auswählen.
 1. Um den Debug-Modus zu aktivieren bzw. zu deaktivieren, müssen Sie die **[!UICONTROL Debug Mode]** auswählen.
-1. Klicken **[!UICONTROL Save]**.
+1. Klicks **[!UICONTROL Save]**.
 
    Wenn Sie versuchen, von dieser Ansicht weg zu navigieren, ohne Ihre Änderungen zu speichern, wird ein Modal angezeigt, in dem Sie aufgefordert werden, Änderungen zu verwerfen, die Bearbeitung fortzusetzen oder Änderungen zu speichern.
 
@@ -128,7 +128,7 @@ Siehe [Zahlungsoptionen](payments-options.md#credit-card-fields) für weitere In
 
 ### Apple Pay
 
-Die [!UICONTROL Apple Pay] Die Zahlungsoption für Schaltflächen ermöglicht die Bereitstellung einer [!UICONTROL Apple Pay] Zahlungsschaltfläche im Checkout Ihres Geschäfts.
+Die [!UICONTROL Apple Pay] Die Zahlungsoption für Schaltflächen ermöglicht die Bereitstellung einer [!UICONTROL Apple Pay] Zahlungsschaltfläche im Checkout Ihres Stores vom Safari-Browser aus.
 
 Sie können Apple Pay nur verwenden, wenn Sie [Apple Pay-Selbstregistrierung über Paypal](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) und dann [Apple Pay konfigurieren](settings.md/#payment-buttons) für Ihre Geschäfte. Siehe [Zahlungsoptionen](payments-options.md#apple-pay-button) für weitere Informationen.
 
@@ -143,7 +143,7 @@ Sie können die [!UICONTROL Apple Pay] Schaltflächenzahloption:
 1. Um Apple Pay in der Vorschau des kleinen Warenkorbs zu aktivieren bzw. zu deaktivieren, aktivieren Sie die Option **[!UICONTROL Show Apple Pay on the mini cart preview]** auswählen.
 1. Um Apple Pay auf der Warenkorbseite zu aktivieren bzw. zu deaktivieren, aktivieren Sie die **[!UICONTROL Show Apple Pay on cart page]** auswählen.
 1. Um den Debug-Modus zu aktivieren bzw. zu deaktivieren, müssen Sie die **[!UICONTROL Debug Mode]** auswählen.
-1. Klicken **[!UICONTROL Save]**.
+1. Klicks **[!UICONTROL Save]**.
 
    Wenn Sie versuchen, von dieser Ansicht weg zu navigieren, ohne Ihre Änderungen zu speichern, wird ein Modal angezeigt, in dem Sie aufgefordert werden, Änderungen zu verwerfen, die Bearbeitung fortzusetzen oder Änderungen zu speichern.
 
@@ -190,7 +190,7 @@ Sie können die Zahlungsoptionen für PayPal-Smart-Schaltflächen aktivieren und
      Wenn Sie die Sichtbarkeit auf die Zahlungsschaltflächen oder die PayPal PayPay-später-Nachricht aktivieren/deaktivieren, wird unten auf der Seite &quot;Einstellungen&quot;eine visuelle Vorschau dieser Konfiguration angezeigt.
 
 1. Um den Debug-Modus zu aktivieren, schalten Sie die **[!UICONTROL Debug Mode]** auswählen.
-1. Klicken **[!UICONTROL Save]**.
+1. Klicks **[!UICONTROL Save]**.
 
    Wenn Sie versuchen, von dieser Ansicht weg zu navigieren, ohne Ihre Änderungen zu speichern, wird ein Modal angezeigt, in dem Sie aufgefordert werden, Änderungen zu verwerfen, die Bearbeitung fortzusetzen oder Änderungen zu speichern.
 
@@ -230,11 +230,11 @@ Sie können auch die _[!UICONTROL Button style]_Optionen der Zahlungsschaltfläc
 1. Um die Auswahl der Schaltflächenhöhe zu aktivieren, schalten Sie die **[!UICONTROL Responsive button height]** auswählen.
 1. So ändern Sie die **[!UICONTROL Label]** wählen Sie die gewünschte Beschriftungsoption aus.
 
-   Wenn Sie die Konfigurationsoptionen für Layout, Farbe, Form, Höhe und Beschriftung ändern, wird unten auf der Seite &quot;Einstellungen&quot;eine visuelle Vorschau dieser Konfiguration angezeigt.
+   Wenn Sie die Konfigurationsoptionen für Layout, Farbe, Form, Höhe und Beschriftung ändern, wird unten auf der Seite &quot;Einstellungen&quot;eine visuelle Vorschau dieser Konfiguration angezeigt. Im folgenden Bild wird die **[!UICONTROL Shape]** auf _Rechteck_ und **[!UICONTROL Label]** auf _PayPal (empfohlen)_.
 
    ![[!DNL PayPal Smart Buttons] options](assets/payment-buttons.png){width="400" zoomable="yes"}
 
-1. Klicken **[!UICONTROL Save]**.
+1. Klicks **[!UICONTROL Save]**.
 
    Wenn Sie versuchen, von dieser Ansicht weg zu navigieren, ohne Ihre Änderungen zu speichern, wird ein Modal angezeigt, in dem Sie aufgefordert werden, Änderungen zu verwerfen, die Bearbeitung fortzusetzen oder Änderungen zu speichern.
 
