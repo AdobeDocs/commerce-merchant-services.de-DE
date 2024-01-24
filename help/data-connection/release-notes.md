@@ -3,10 +3,10 @@ title: Versionshinweise
 description: Die neuesten Versionsinformationen für die [!DNL Data Connection] -Erweiterung von Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 69c1a5c00796f96cafe0169632ad5e1e3c53a297
+source-git-commit: 6378b89e5a077e35213f35e84be9a629c1bdc3ac
 workflow-type: tm+mt
-source-wordcount: '755'
-ht-degree: 1%
+source-wordcount: '774'
+ht-degree: 0%
 
 ---
 
@@ -33,6 +33,10 @@ Siehe die Entwicklerdokumentation zu [erfahren, welche Commerce-Versionen dieses
 In diesen Versionshinweisen werden Funktionsänderungen und Fehlerbehebungen im Zusammenhang mit den von der [!DNL Data Connection] -Erweiterung.
 
 +++Unterstützte Dienstaktualisierungen
+
+_24. Januar 2024_
+
+![Neu](../assets/new.svg) - Die `data-services-b2b` Erweiterung, um ein neues Anforderungsereignis mit dem Namen [deleteRequisitionList](events.md#deleterequisitionlist) für B2B-Händler.
 
 _16. November 2023_
 
@@ -78,7 +82,7 @@ _16. November 2023_
 ![Fehlerbehebung](../assets/new.svg) - Zusätzliche Möglichkeit zur Protokollierung der Fehlerantwort, wenn Adobe IMS das Zugriffstoken nicht generieren kann.
 ![Fehlerbehebung](../assets/new.svg) - Es wurde eine Benachrichtigung hinzugefügt, wenn Sie versuchen, historische Bestellungen zu synchronisieren, aber keine Kontoanmeldeinformationen angegeben haben.
 
-## 3.0.0
+## 3,0,0
 
 _10. Oktober 2023_
 
@@ -90,7 +94,7 @@ Dies ist eine Hauptversion. [Bearbeiten](install.md#update-the-data-connection) 
 ![Neu](../assets/new.svg) - Unterstützung für OAuth 2.0 bei [konfigurieren](connect-data.md#connect-commerce-data-to-adobe-experience-platform) die [!DNL Data Connection] -Erweiterung.
 ![Neu](../assets/new.svg) - Der Support für Adobe Commerce 2.4.3 wurde eingestellt.
 
-## 2.3.0
+## 2,3,0
 
 _27. Juni 2023_
 
@@ -110,7 +114,7 @@ _13. Juni 2023_
 
 ![Neu](../assets/new.svg) - (Beta) Neue Möglichkeit zu [historische Reihenfolge senden](connect-data.md#beta-send-historical-order-data) -Daten und -Status auf der Experience Platform. Diese Funktion ist nur für Beta-Benutzer verfügbar. Sie können der Beta-Phase beitreten, indem Sie eine E-Mail an folgende Adresse senden: `dataconnection@adobe.com`.
 
-## 2.2.0
+## 2,2,0
 
 _30. März 2023_
 
@@ -136,7 +140,7 @@ _17. Januar 2023_
 ![Neu](../assets/new.svg) - Die [[!DNL Data Connection] Erweiterungsadministrator](connect-data.md) damit Sie Ihr eigenes AEP Web SDK (Legierung) angeben können.
 ![Fehlerbehebung](../assets/fix.svg) Geändert zu mithilfe von `identityMap` anstelle von `personID` beim Festlegen der primären Identität für alle Daten, die an die Kante gesendet werden.
 
-## 2.0.1
+## 2,0,1
 
 _10. November 2022_
 
@@ -144,7 +148,7 @@ _10. November 2022_
 
 ![Fehlerbehebung](../assets/fix.svg) - Jetzt wird der Adobe Experience Platform-Kontext erst festgelegt, nachdem das Storefront Event Collector und Storefront Event SDK erfolgreich geladen wurden.
 
-## 2.0.0
+## 2,0,0
 
 _12. Oktober 2022_
 
@@ -153,7 +157,7 @@ _12. Oktober 2022_
 ![Neu](../assets/new.svg) - Es wurde die Möglichkeit hinzugefügt, Ihr eigenes AEP Web SDK anzugeben, wenn [Verbindung](connect-data.md) Ihre Adobe Commerce-Instanz auf der Experience Platform.
 ![Fehlerbehebung](../assets/fix.svg) - Die Anforderung zum Datenspeicherbereich wurde aktualisiert, sodass die Datastream-IDs auf die Website übertragen werden müssen, anstatt sie zu überprüfen.
 
-## 1.0.0
+## 1,0,0
 
 _9. August 2022_
 
