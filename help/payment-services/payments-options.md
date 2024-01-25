@@ -3,19 +3,18 @@ title: Zahlungsoptionen
 description: Legen Sie die Zahlungsoptionen fest, um die für Ihre Store-Kunden verfügbaren Methoden anzupassen.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 3276cdac48461cb61c8669e2019b567c70d6f493
+source-git-commit: ff83c83a054e5b14814cc3076744c5517081a80f
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '1044'
 ht-degree: 0%
 
 ---
 
 # Zahlungsoptionen
 
-Mit [!DNL Adobe Commerce] und [!DNL Magento Open Source] [!DNL Payment Services], haben Sie mehrere Zahlungsoptionen für Sie. Sie können diese Zahlungsoptionen wie folgt konfigurieren:
+Mit [!DNL Adobe Commerce] und [!DNL Magento Open Source] [!DNL Payment Services], haben Sie mehrere Zahlungsoptionen für Sie.
 
-* [Home settings](payments-home.md)
-* [Store-Konfiguration](configure-admin.md) (empfohlen für ältere Zahlungsoptionen oder ein Multistore-Setup)
+Sie können diese Zahlungsoptionen in [Home settings](payments-home.md) oder [Store-Konfiguration](configure-admin.md) (empfohlen für ältere Zahlungsoptionen oder ein Multi-Store-Setup).
 
 Je nachdem, wo Sie sich im Checkout-Prozess befinden, gibt es für jede Zahlungsmethode unterschiedliche Verhaltensweisen:
 
@@ -26,7 +25,16 @@ Je nachdem, wo Sie sich im Checkout-Prozess befinden, gibt es für jede Zahlungs
 
 >[!IMPORTANT]
 >
->Zahlungsdienste müssen vor der Abwicklung der Zahlungen abgeschlossen sein.
+>[!DNL Payment Services] Das Onboarding muss vor der Bearbeitung der Zahlungen abgeschlossen sein.
+
+## Erlebnis für Standardzahlungen im Vergleich zu erweiterten Zahlungen
+
+[!DNL Payment Services] stellt **Erweitert** (vollständig unterstützt) und **Standard** (Express-Checkout) Zahlungsoptionen und Onboarding-Flüsse, je nach Land, in dem Sie tätig sind.
+
+* **Erweitert** - Alle verfügbaren [Zahlungsoptionen](../payment-services/payments-options.md) sind verfügbar für aktuelle [vollständig unterstützte Länder](../payment-services/overview.md#availability). Wählen Sie beim Onboarding die Option Live-Zahlungen aus. [Erweiterte Onboarding-Option](../payment-services/production.md#advanced-onboarding).
+* **Standard** - Eine Untergruppe von Zahlungsoptionen (Express-Checkout) - PayPal-Kredit- und Debitkarten - ist für andere verfügbare unterstützte Länder verfügbar. [Kreditkartenfelder](#credit-card-fields) und [Apple Pay](#apple-pay-button) für diese Onboarding-Option nicht verfügbar sind. Wählen Sie beim Onboarding die Option Live-Zahlungen aus. [Standardmäßige Onboarding-Option](../payment-services/production.md#standard-onboarding).
+
+Siehe [Aktivieren [!DNL Payment Services] für die Produktion](../payment-services/production.md#complete-merchant-onboarding) für Informationen zum Abschluss des erweiterten und standardmäßigen Onboarding.
 
 ## [!UICONTROL Credit Card Fields]
 
@@ -36,7 +44,7 @@ Je nachdem, wo Sie sich im Checkout-Prozess befinden, gibt es für jede Zahlungs
 
 Aktivieren [Kreditkartenausfall](#vaulting) für Ihre Geschäfte, damit die Käufer ihre Kreditkarteninformationen für einen schnellen Checkout zu einem späteren Zeitpunkt überprüfen können.
 
-Sie können [!UICONTROL Credit Card Fields] in der Store-Konfiguration oder der Zahlungsdienst-Startseite. Siehe [Einstellungen](settings.md#credit-card-fields) für weitere Informationen.
+Sie können [!UICONTROL Credit Card Fields] in der Store-Konfiguration oder der [!DNL Payment Services] Home. Siehe [Einstellungen](settings.md#credit-card-fields) für weitere Informationen.
 
 Sie können auch das Layout, die Breite, die Höhe und den äußeren Stil der Kreditkartenfelder ändern. Siehe [PayPal-Dokumentation](https://developer.paypal.com/docs/checkout/advanced/customize/card-field-style/) für weitere Informationen.
 
@@ -62,7 +70,7 @@ Sie können [!UICONTROL Apple Pay] in der Store-Konfiguration oder der Zahlungsd
 
 ![Schaltfläche &quot;PayPal&quot;](assets/paypal-button.png){width="350" zoomable="yes"}
 
-Sie können [!UICONTROL PayPal Smart Buttons] in der Store-Konfiguration oder der Zahlungsdienst-Startseite.  Siehe [Einstellungen](settings.md#payment-buttons) für weitere Informationen.
+Sie können [!UICONTROL PayPal Smart Buttons] in der Store-Konfiguration oder der [!DNL Payment Services] Home.  Siehe [Einstellungen](settings.md#payment-buttons) für weitere Informationen.
 
 Siehe PayPal&#39;s [Dokumentation zu Zahlungsmethoden](https://developer.paypal.com/docs/checkout/payment-methods/) , um zu erfahren, in welchen Ländern die einzelnen Zahlungsmethoden derzeit verfügbar sind.
 
