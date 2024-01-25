@@ -1,47 +1,51 @@
 ---
 title: Onboarding und Installation
-description: Erfahren Sie, wie Sie installieren [!DNL Catalog Service]
+description: "Erfahren Sie, wie Sie installieren [!DNL Catalog Service]"
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 1bd618435df30772e29e5fc95b0536680c63b482
+source-git-commit: d02ffe4028bdf5765fb0f23fd210f398729bee62
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '578'
 ht-degree: 0%
 
 ---
 
 # Onboarding und Installation
 
-Eine exemplarische Vorgehensweise finden Sie im [!DNL Catalog Service] -Prozess.
+Die folgenden Videos führen Sie durch die [!DNL Catalog Service] -Prozess.
 
-Teil 1:
+**Teil 1**: Onboarding und Installieren
 
 >[!VIDEO](https://video.tv.adobe.com/v/3415599)
 
-Teil 2:
+**Teil 2**: Verwenden Sie die [!DNL Catalog Service]
 
 >[!VIDEO](https://video.tv.adobe.com/v/3415600)
+
+>[!BEGINSHADEBOX]
 
 ## Voraussetzungen
 
 Onboarding-Prozess für [!DNL Catalog Service] erfordert Zugriff auf die Befehlszeile des Servers. Wenn Sie nicht mit der Arbeit über die Befehlszeile vertraut sind, bitten Sie einen Entwickler oder Systemintegrator um Hilfe.
 
-### Softwareanforderungen
+**Softwareanforderungen**
 
 - Adobe Commerce 2.4.4+
 - PHP 8.1, 8.2
 - Verfasser: 2.x
 
-### Unterstützte Plattformen
+**Unterstützte Plattformen**
 
 - Adobe Commerce für Cloud-Infrastruktur: 2.4.4+
 - Adobe Commerce vor Ort: 2.4.4+
+
+>[!ENDSHADEBOX]
 
 ## Endpunkte
 
 [!DNL Catalog Service] verfügt über zwei Endpunkte, die für das Onboarding verfügbar sind:
 
-- Sandbox (https://catalog-service-sandbox.adobe.io/graphql) - wird zum Testen und Validieren vor der Live-Schaltung verwendet
-- Produktion (https://catalog-service.adobe.io/graphql)- für Live-Traffic für Commerce-Händler und Websites verwendet
+- Sandbox (`https://catalog-service-sandbox.adobe.io/graphql`) - wird vor der Live-Schaltung zum Testen und Validieren verwendet
+- Produktion (`https://catalog-service.adobe.io/graphql`) - wird für Live-Traffic für Commerce-Händler und Websites verwendet
 
 Alle Testinstanzen von Commerce sollten den Sandbox-Endpunkt verwenden.
 
@@ -61,7 +65,7 @@ Onboarding-Prozess für [!DNL Catalog Service] erfordert Zugriff auf die Befehls
 
 Die [!DNL Catalog Service] -Erweiterung kann sowohl auf der Adobe Commerce-Cloud-Infrastruktur als auch auf lokalen Instanzen installiert werden.
 
-Die [!DNL Catalog Service] wird mit Composer-Schlüsseln installiert, die mit dem Commerce-Konto verknüpft sind. [mageid](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/) während des Anmeldeprozesses bereitgestellt werden. Der Verfasser verwendet diese Schlüssel bei der Erstinstallation von Adobe Commerce oder in Situationen, in denen die Composer-Schlüssel zuvor nicht in einem externen Ordner gespeichert wurden `auth.json` -Datei.
+Die [!DNL Catalog Service] wird mit Composer-Schlüsseln installiert, die mit dem Commerce-Konto verknüpft sind. [`mageid`](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/) während des Anmeldeprozesses bereitgestellt werden. Der Verfasser verwendet diese Schlüssel bei der Erstinstallation von Adobe Commerce oder in Situationen, in denen die Composer-Schlüssel zuvor nicht in einem externen Ordner gespeichert wurden `auth.json` -Datei.
 
 Siehe [Abrufen der Authentifizierungsschlüssel](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html) für weitere Informationen zum Abrufen von Composer-Schlüsseln.
 
@@ -69,21 +73,20 @@ Siehe [Abrufen der Authentifizierungsschlüssel](https://experienceleague.adobe.
 
 Verwenden Sie diese Methode, um die [!DNL Catalog Service] -Erweiterung für eine Commerce Cloud-Instanz.
 
-1. Verwenden Sie Composer, um Ihrem Projekt das Catalog Service-Modul hinzuzufügen:
+1. Wechseln Sie auf Ihrer lokalen Workstation zum Projektverzeichnis.
+1. Fügen Sie das Modul Catalog Service hinzu.
 
-```bash
-composer require "magento/catalog-service" "^3.0.1"
-```
+   ```bash
+   composer require "magento/catalog-service" "^3.0.1"
+   ```
 
-1. Aktualisieren von Abhängigkeiten durch Ausführen:
+1. Aktualisieren Sie Package-Abhängigkeiten.
 
-```bash
-composer update
-```
+   ```bash
+   composer update
+   ```
 
-Der Befehl aktualisiert alle Abhängigkeiten.
-
-1. Übernehmen Sie Ihre Änderungen und übergeben Sie sie an `composer.json` und `composer.lock`.
+1. Änderungen am Zustimmungs- und Push-Code für die `composer.json` und `composer.lock` -Dateien.
 
 #### Vor Ort
 
@@ -91,29 +94,27 @@ Verwenden Sie diese Methode, um die [!DNL Catalog Service] Erweiterung für eine
 
 1. Verwenden Sie Composer, um Ihrem Projekt das Catalog Service-Modul hinzuzufügen:
 
-```bash
-composer require "magento/catalog-service" "^3.0.1"
-```
+   ```bash
+   composer require "magento/catalog-service" "^3.0.1"
+   ```
 
 1. Aktualisieren Sie die Abhängigkeiten und installieren Sie die Erweiterung:
 
-```bash
-composer update
-```
-
-Der Befehl aktualisiert alle Abhängigkeiten.
+   ```bash
+   composer update
+   ```
 
 1. Upgrade von Adobe Commerce:
 
-```bash
-bin/magento setup:upgrade
-```
+   ```bash
+   bin/magento setup:upgrade
+   ```
 
 1. Löschen Sie den Cache:
 
-```bash
-bin/magento cache:clean
-```
+   ```bash
+   bin/magento cache:clean
+   ```
 
 ### Dienst und Datenexport konfigurieren
 
@@ -143,4 +144,4 @@ In [!DNL Catalog Service] durch eine Firewall hinzufügen `commerce.adobe.io` in
 
 Die [API-Mesh für Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) ermöglicht es Entwicklern, mithilfe von Adobe IO private oder Drittanbieter-APIs und andere Schnittstellen mit Adobe-Produkten zu integrieren.
 
-Siehe  [[!DNL Catalog Service] und API-Mesh](mesh.md) Thema für die Installation und Konfiguration.
+Siehe [[!DNL Catalog Service] und API-Mesh](mesh.md) Thema für die Installation und Konfiguration.
