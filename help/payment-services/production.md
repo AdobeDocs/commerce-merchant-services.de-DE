@@ -3,7 +3,7 @@ title: Aktivieren [!DNL Payment Services] für die Produktion
 description: Schließen Sie den Onboarding-Prozess ab, indem Sie [!DNL Payment Services] für die Produktion.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: ff83c83a054e5b14814cc3076744c5517081a80f
+source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
 workflow-type: tm+mt
 source-wordcount: '1006'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Nach [Commerce-Dienste konfigurieren](connect.md#configure-commerce-services) un
    Sie werden zum Einstellungsbereich in der Startansicht geleitet, wobei die entsprechenden Optionen erweitert sind (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), wo Sie die [!DNL Payment Services] Optionen als [Zahlungsmethode](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target="_blank"}.
 
 1. In _[!UICONTROL General Configuration]_, set **[!UICONTROL Enable]**nach `Yes`.
-1. Satz **[!UICONTROL Payment Action]** für beide _[!UICONTROL Credit Card Fields]_und_[!UICONTROL PayPal Smart Buttons]_, zu einem der folgenden Elemente:
+1. Satz **[!UICONTROL Payment Action]** für beide _[!UICONTROL Credit Card Fields]_und_[!UICONTROL PayPal payment buttons]_, zu einem der folgenden Elemente:
 
    | Einstellung | Beschreibung |
    |---|---|
@@ -47,7 +47,7 @@ Nach [Commerce-Dienste konfigurieren](connect.md#configure-commerce-services) un
 
    Das Löschen sollte nach jeder Konfigurationsänderung erfolgen.
 
-Siehe [Zahlungsdienste konfigurieren](settings.md) Weitere Informationen zur Konfiguration von Kreditkartenfeldern und PayPal-Smart-Schaltflächen.
+Siehe [Zahlungsdienste konfigurieren](settings.md) für weitere Informationen zur Konfiguration von Kreditkartenfeldern und PayPal-Zahlungsschaltflächen.
 
 ## Vollständige Onboarding des Händlers
 

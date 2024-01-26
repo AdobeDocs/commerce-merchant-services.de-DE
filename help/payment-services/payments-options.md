@@ -3,7 +3,7 @@ title: Zahlungsoptionen
 description: Legen Sie die Zahlungsoptionen fest, um die für Ihre Store-Kunden verfügbaren Methoden anzupassen.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: ff83c83a054e5b14814cc3076744c5517081a80f
+source-git-commit: 7ea19e5c47142e31995c570c5e1efb50850d99b2
 workflow-type: tm+mt
 source-wordcount: '1044'
 ht-degree: 0%
@@ -64,13 +64,13 @@ Die [!DNL Apple Pay] -Schaltfläche ist von der Produktseite aus sichtbar, in de
 
 Sie können [!UICONTROL Apple Pay] in der Store-Konfiguration oder der Zahlungsdienst-Startseite. Siehe [Einstellungen](settings.md#apple-pay) für weitere Informationen.
 
-## [!DNL PayPal Smart Buttons]
+## [!DNL PayPal Payment Buttons]
 
-[!DNL PayPal Smart Buttons], die PayPal verwenden, um einen Kauf abzuschließen, speichert die Lieferadresse Ihres Käufers, die Rechnungsadresse und Zahlungsdetails zur späteren Verwendung. Käufer können jede Zahlungsmethode verwenden, die zuvor von PayPal gespeichert oder angeboten wurde.
+[!DNL PayPal payment buttons], die PayPal verwenden, um einen Kauf abzuschließen, speichert die Lieferadresse Ihres Käufers, die Rechnungsadresse und Zahlungsdetails zur späteren Verwendung. Käufer können jede Zahlungsmethode verwenden, die zuvor von PayPal gespeichert oder angeboten wurde.
 
 ![Schaltfläche &quot;PayPal&quot;](assets/paypal-button.png){width="350" zoomable="yes"}
 
-Sie können [!UICONTROL PayPal Smart Buttons] in der Store-Konfiguration oder der [!DNL Payment Services] Home.  Siehe [Einstellungen](settings.md#payment-buttons) für weitere Informationen.
+Sie können [!UICONTROL PayPal payment buttons] in der Store-Konfiguration oder der [!DNL Payment Services] Home.  Siehe [Einstellungen](settings.md#payment-buttons) für weitere Informationen.
 
 Siehe PayPal&#39;s [Dokumentation zu Zahlungsmethoden](https://developer.paypal.com/docs/checkout/payment-methods/) , um zu erfahren, in welchen Ländern die einzelnen Zahlungsmethoden derzeit verfügbar sind.
 

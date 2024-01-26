@@ -4,9 +4,9 @@ description: Verwenden Sie den Transaktionsbericht, um Einblicke in die Rate der
 role: User
 level: Intermediate
 exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
-source-git-commit: 91acc6e1dfd142caca77c0dc9ba55da34f75dd60
+source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
 workflow-type: tm+mt
-source-wordcount: '1274'
+source-wordcount: '1240'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Sie können diese Ansicht entsprechend den Abschnitten in diesem Thema konfiguri
 
 Siehe verknüpfte Commerce-Bestell- und Provider-Transaktions-IDs, Transaktionsbeträge, Zahlungsmethoden pro Transaktion und mehr, alles in diesem Bericht.
 
-Nicht alle Zahlungsmethoden bieten die gleiche Granularität von Informationen. Kreditkartentransaktionen bieten beispielsweise Antwort-, AVS- und CSV-Codes sowie die letzten vier Ziffern der Karte im Transaktionsbericht. PayPal Smart-Schaltflächen nicht.
+Nicht alle Zahlungsmethoden bieten die gleiche Granularität von Informationen. Kreditkartentransaktionen bieten beispielsweise Antwort-, AVS- und CCV-Codes sowie die letzten vier Ziffern der Karte im Transaktionsbericht; PayPal-Zahlungsschaltflächen nicht.
 
 Sie können [Download-Transaktionen](#download-transactions) im .csv-Dateiformat zur Verwendung in bestehenden Buchhaltungs- oder Auftragsverwaltungssoftware.
 

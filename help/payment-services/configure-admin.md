@@ -5,7 +5,7 @@ role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
 feature: Payments, Checkout, Configuration
-source-git-commit: a7ad4130745957d596cba38892d77107e977e2e7
+source-git-commit: 31c1c9a99e75feae7a2a81faf17921a63a03a526
 workflow-type: tm+mt
 source-wordcount: '1392'
 ht-degree: 0%
@@ -116,28 +116,28 @@ Siehe [Zahlungsoptionen](payments-options.md#apple-pay-button) für weitere Info
 | [!UICONTROL Show buttons on cart page] | Store-Ansicht | Aktivieren oder Deaktivieren [!DNL Apple Pay] auf der Warenkorbseite. Optionen: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Debug Mode] | website | Aktivieren oder deaktivieren Sie den Debug-Modus. Optionen: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 
-## [!DNL PayPal Smart Buttons]
+## [!DNL PayPal Payment Buttons]
 
-Die [!DNL PayPal Smart Buttons] Zahlungsoptionen bieten einen einfachen, schnellen und sicheren Checkout-Prozess für Ihren Kunden.
+Die [!DNL PayPal payment buttons] Zahlungsoptionen bieten einen einfachen, schnellen und sicheren Checkout-Prozess für Ihren Kunden.
 
 Siehe [Zahlungsoptionen](payments-options.md#paypal-smart-buttons) für weitere Informationen.
 
-Konfigurieren [!DNL PayPal Smart Buttons]
+Konfigurieren [!DNL PayPal payment buttons]
 
-Sie können die Zahlungsoptionen für PayPal Smart-Schaltflächen innerhalb des Administrators aktivieren und konfigurieren:
+Sie können die Zahlungsoptionen der PayPal-Zahlungsschaltflächen innerhalb des Administrators aktivieren und konfigurieren:
 
 1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. Erweitern Sie im linken Bereich **[!UICONTROL Sales]** und wählen **[!UICONTROL Payment Methods]**.
 1. Erweitern Sie die _[!UICONTROL Recommended Solutions]_Abschnitt.
-1. Im _[!UICONTROL Payment Services]_-Abschnitt, erweitern Sie die_[!UICONTROL PayPal Smart Buttons]_ Abschnitt.
+1. Im _[!UICONTROL Payment Services]_-Abschnitt, erweitern Sie die_[!UICONTROL PayPal payment buttons]_ Abschnitt.
 1. Um den Namen der Zahlungsmethode wie beim Checkout angezeigt zu ändern, bearbeiten Sie die _[!UICONTROL Title]_-Feld.
 1. nach [die Zahlungsaktion festlegen](production.md#set-payment-services-as-payment-method)auswählen **[!UICONTROL Authorize]** oder **[!UICONTROL Authorize and Capture]**.
 1. Um eine Zahlungsmethode auf der Checkout-Seite zu priorisieren, geben Sie eine `Numeric Only` Wert in **[!UICONTROL Sort order]** -Feld.
 1. So aktivieren/deaktivieren Sie die [Spätere Nachrichten bezahlen](payments-options.md#pay-later-button)auswählen `Yes`/`No` für **[!UICONTROL Display Pay Later Message]**.
-1. Um PayPal Smart-Schaltflächen auf der Checkout-Seite anzuzeigen, wählen Sie `Yes` für die **[!UICONTROL Show buttons on checkout page]**.
-1. Um PayPal Smart-Schaltflächen auf der Produktdetailseite anzuzeigen, wählen Sie `Yes` für die **[!UICONTROL Show buttons on product detail page]**.
-1. Um PayPal Smart-Schaltflächen in der Minikartvorschau anzuzeigen, wählen Sie `Yes` für **[!UICONTROL Show buttons in mini cart preview]**.
-1. Um PayPal Smart-Schaltflächen auf der Warenkorbseite anzuzeigen, wählen Sie `Yes` für die **[!UICONTROL Show buttons on cart page]**.
+1. Um PayPal-Zahlungsschaltflächen auf der Checkout-Seite anzuzeigen, wählen Sie `Yes` für die **[!UICONTROL Show buttons on checkout page]**.
+1. Um PayPal-Zahlungsschaltflächen auf der Produktdetailseite anzuzeigen, wählen Sie `Yes` für die **[!UICONTROL Show buttons on product detail page]**.
+1. Um PayPal-Zahlungsschaltflächen in der Vorschau des Mini-Warenkorbs anzuzeigen, wählen Sie `Yes` für **[!UICONTROL Show buttons in mini cart preview]**.
+1. Um PayPal-Zahlungsschaltflächen auf der Warenkorbseite anzuzeigen, wählen Sie `Yes` für die **[!UICONTROL Show buttons on cart page]**.
 1. Um Venmo als Zahlungsoption zu aktivieren, wählen Sie `Yes` für **[!UICONTROL Venmo Enabled]**.
 1. Um Kredit- und Debitkarten als Zahlungsoption zu aktivieren (Schaltfläche &quot;PayPal Smart&quot;), wählen Sie `Yes` für **[!UICONTROL Credit and Debit Card Enabled]**.
 1. So aktivieren/deaktivieren Sie die [PayPal Pay Später](payments-options.md#pay-later-button) Zahlungsoption, wählen Sie `Yes`/`No` für **[!UICONTROL PayPal Pay Later Enabled]**.
@@ -152,10 +152,10 @@ Sie können die Zahlungsoptionen für PayPal Smart-Schaltflächen innerhalb des 
 | [!UICONTROL Title] | Store-Ansicht | Fügen Sie den Text hinzu, der beim Checkout als Titel für diese Zahlungsoption angezeigt werden soll. Optionen: Textfeld |
 | [!UICONTROL Payment Action] | website | Die [Zahlungsaktion](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} für die angegebene Zahlungsmethode. Optionen: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Display Pay Later Message] | website | Aktivieren oder deaktivieren Sie die &quot;Später bezahlen&quot;-Benachrichtigung im Warenkorb, auf der Produktseite, im Mini-Warenkorb und während des Checkout-Verfahrens. Optionen: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
-| [!UICONTROL Show buttons on checkout page] | Store-Ansicht | Aktivieren oder Deaktivieren [!DNL PayPal Smart Buttons] auf der Checkout-Seite. Optionen: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
-| [!UICONTROL Show buttons on product detail page] | Store-Ansicht | Aktivieren oder Deaktivieren [!DNL PayPal Smart Buttons] auf der Produktdetailseite. Optionen: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
-| [!UICONTROL Show buttons in mini-cart preview] | Store-Ansicht | Aktivieren oder Deaktivieren [!DNL PayPal Smart Buttons] in der Vorschau des Mini-Warenkorbs. Optionen: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
-| [!UICONTROL Show buttons on cart page] | Store-Ansicht | Aktivieren oder Deaktivieren [!DNL PayPal Smart Buttons] auf der Warenkorbseite. Optionen: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Show buttons on checkout page] | Store-Ansicht | Aktivieren oder Deaktivieren [!DNL PayPal payment buttons] auf der Checkout-Seite. Optionen: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Show buttons on product detail page] | Store-Ansicht | Aktivieren oder Deaktivieren [!DNL PayPal payment buttons] auf der Produktdetailseite. Optionen: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Show buttons in mini-cart preview] | Store-Ansicht | Aktivieren oder Deaktivieren [!DNL PayPal payment buttons] in der Vorschau des Mini-Warenkorbs. Optionen: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Show buttons on cart page] | Store-Ansicht | Aktivieren oder Deaktivieren [!DNL PayPal payment buttons] auf der Warenkorbseite. Optionen: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Venmo Enabled] | Store-Ansicht | Aktivieren oder deaktivieren Sie die Zahlungsoption Venmo , wenn Zahlungsschaltflächen angezeigt werden. Optionen: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Credit and Debit Card Enabled] | Store-Ansicht | Aktivieren oder deaktivieren Sie die Optionen der Kredit- und Debitkarte, in denen Zahlungsschaltflächen angezeigt werden. Optionen: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL PayPal Pay Later Enabled] | Store-Ansicht | Aktivieren oder deaktivieren Sie die PayPal PayPal Pay Later Payment-Option, wenn Zahlungsschaltflächen angezeigt werden. Optionen: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
@@ -184,12 +184,12 @@ Sie können auch die Formatierung von Zahlungsschaltflächen konfigurieren [in E
 
 | Feld | Anwendungsbereich | Beschreibung |
 |--- |--- |--- |
-| [!UICONTROL Layout] | Store-Ansicht | Definieren Sie den Stil des Layouts für Paypal Smart Buttons. Optionen: `[!UICONTROL Vertical]` / `[!UICONTROL Horizontal]` |
-| [!UICONTROL Color] | Store-Ansicht | Definieren Sie die Farbe der Smart-Schaltflächen &quot;Paypal&quot;. Optionen: [!UICONTROL Blue] / `[!UICONTROL Gold]` / `[!UICONTROL Silver]` / `[!UICONTROL White]` / `[!UICONTROL Black]` |
-| [!UICONTROL Shape] | Store-Ansicht | Definieren Sie die Form der Paypal-Smart-Schaltflächen. Optionen: `[!UICONTROL Rectangular]` / `[!UICONTROL Pill]` |
-| [!UICONTROL Use Default Height] | Store-Ansicht | Definiert, ob PayPal Smart-Schaltflächen eine Standardhöhe verwenden. Optionen: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
-| [!UICONTROL Height] | Store-Ansicht | Definieren Sie die Höhe der PayPal-Smart-Schaltflächen. Standardwert: keiner |
-| [!UICONTROL Label] | Store-Ansicht | Definieren Sie eine Beschriftung, die in den PayPal-Smart-Schaltflächen angezeigt wird. Optionen: `[!UICONTROL PayPal]` / `[!UICONTROL Checkout]` / `[!UICONTROL Buynow]` / `[!UICONTROL Pay]` / `[!UICONTROL Installment]` |
+| [!UICONTROL Layout] | Store-Ansicht | Definieren Sie den Stil des Layouts für die PayPal-Zahlungsschaltflächen. Optionen: `[!UICONTROL Vertical]` / `[!UICONTROL Horizontal]` |
+| [!UICONTROL Color] | Store-Ansicht | Definieren Sie die Farbe der PayPal-Zahlungsschaltflächen. Optionen: [!UICONTROL Blue] / `[!UICONTROL Gold]` / `[!UICONTROL Silver]` / `[!UICONTROL White]` / `[!UICONTROL Black]` |
+| [!UICONTROL Shape] | Store-Ansicht | Definieren Sie die Form der PayPal-Zahlungsschaltflächen. Optionen: `[!UICONTROL Rectangular]` / `[!UICONTROL Pill]` |
+| [!UICONTROL Use Default Height] | Store-Ansicht | Definiert, ob PayPal-Zahlungsschaltflächen eine Standardhöhe verwenden. Optionen: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Height] | Store-Ansicht | Definieren Sie die Höhe der PayPal-Zahlungsschaltflächen. Standardwert: keiner |
+| [!UICONTROL Label] | Store-Ansicht | Definieren Sie den Titel, der auf den PayPal-Zahlungsschaltflächen angezeigt wird. Optionen: `[!UICONTROL PayPal]` / `[!UICONTROL Checkout]` / `[!UICONTROL Buynow]` / `[!UICONTROL Pay]` / `[!UICONTROL Installment]` |
 | [!UICONTROL Tagline] | Store-Ansicht | Aktiviert Tagline. Optionen: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 
 ## Cache leeren

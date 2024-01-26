@@ -3,7 +3,7 @@ title: "[!DNL Payment Services] Versionshinweise"
 description: In den Versionshinweisen finden Sie Informationen zu allen [!DNL Payment Services] veröffentlicht.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 75dbbe5a1b3bc9a84a5b26ac1b2cb6c0ec639027
+source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
 workflow-type: tm+mt
 source-wordcount: '2132'
 ht-degree: 0%
@@ -168,7 +168,7 @@ _29. Januar 2023_
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
 
-![Problem behoben](../assets/fix.svg)<!-- Issue PAY-4110 --> Fehlerkorrektur - Käufer können jetzt eine Bestellung mit intelligenten Schaltflächen auf der Produktseite, im Mini-Warenkorb und im Warenkorb platzieren. Käufer können Bestellungen nun erfolgreich abschließen.
+![Problem behoben](../assets/fix.svg)<!-- Issue PAY-4110 --> Fehlerkorrektur - Käufer können jetzt eine Bestellung über Zahlungsschaltflächen auf der Produktseite, im Mini-Warenkorb und im Warenkorb aufgeben. Käufer können Bestellungen nun erfolgreich abschließen.
 
 ## v1.5.3
 
@@ -186,7 +186,7 @@ _22. Dezember 2022_
 
 ![Problem behoben](../assets/fix.svg)<!-- Issue PAY-3992 --> Verbesserte Rechnungsstellung bei Zahlungsdiensten, wenn eine Zahlungsmethode abgelehnt wird.
 
-![Problem behoben](../assets/fix.svg)<!-- Issue PAY-3999 --> Zahlungsdienste zeigen Händlern jetzt die PayPal-Smart-Schaltflächen korrekt an, indem sie [Auslösen eines Checkouts](https://commercemarketplace.adobe.com/swissup-firecheckout.html){target=_blank} benutzerdefinierte Vorlage für die Checkout-Seite. Zuvor wurden die Schaltflächen im Minicart gelegentlich angezeigt.
+![Problem behoben](../assets/fix.svg)<!-- Issue PAY-3999 --> Zahlungsdienste zeigen Kaufhändlern jetzt die Zahlungsschaltflächen von PayPal korrekt an, indem sie [Auslösen eines Checkouts](https://commercemarketplace.adobe.com/swissup-firecheckout.html){target=_blank} benutzerdefinierte Vorlage für die Checkout-Seite. Zuvor wurden die Schaltflächen im Minicart gelegentlich angezeigt.
 
 ## v1.5.1
 
@@ -196,7 +196,7 @@ _23. November 2022_
 
 ![Neu](../assets/new.svg)<!-- Issue PAY-3923 --> Zahlungsdienste enthalten jetzt die Versionsnummer in der Kopfzeile des Benutzeragenten, damit Anfragen nicht verwendete Endpunkte verfolgen, filtern oder veralteten können.
 
-![Problem behoben](../assets/fix.svg)<!-- Issue PAY-3968 --> Die Zahlungsdienste zeigen jetzt korrekt Bestelldaten an, wenn eine Bestellung über Smart-Schaltflächen von der Produktseite aus platziert wird.
+![Problem behoben](../assets/fix.svg)<!-- Issue PAY-3968 --> Die Zahlungsdienste zeigen jetzt korrekt Bestelldaten an, wenn eine Bestellung über Zahlungsschaltflächen von der Produktseite aus aufgegeben wird.
 
 ## v1.5.0
 
@@ -226,7 +226,7 @@ _30. September 2022_
 
 ![Neu](../assets/new.svg)<!-- Issue PAY-3231 --> Händler können [hinzufügen [!UICONTROL Soft Descriptor]](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#add-soft-descriptor) auf Websites oder in der Konfiguration einzelner Store-Ansichten, die in Kundentransaktionsbankausweisen angezeigt werden, um Marken, Geschäfte oder Produktlinien zu unterscheiden.
 
-![Neu](../assets/new.svg)<!-- Issue PAY-3707 --> [Aktivieren oder Deaktivieren von Kreditkartenfeldern und PayPal-Smart-Schaltflächen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-payment-options) für den Checkout in den Zahlungsdiensteinstellungen.
+![Neu](../assets/new.svg)<!-- Issue PAY-3707 --> [Kreditkartenfelder und PayPal-Zahlungsschaltflächen aktivieren oder deaktivieren](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-payment-options) für den Checkout in den Zahlungsdiensteinstellungen.
 
 ![Problem behoben](../assets/fix.svg)<!-- Issue PAY-3546 --> Klickt ein Kunde **[!UICONTROL Edit cart]**, leitet die Seite zur Warenkorbseite um und zeigt die aktualisierten Elemente an, anstatt einen leeren Warenkorb anzuzeigen.
 
@@ -258,7 +258,7 @@ _29. Juni 2022_
 
 ![Problem behoben](../assets/fix.svg)<!-- Issue PAY-3264 --> Bisher ist der Checkout fehlgeschlagen, wenn ein angemeldeter Benutzer eine andere Abrechnungs-/Lieferadresse als die Standardadresse für sein Konto ausgewählt hat. Dieses Problem wurde behoben. Jetzt wird die ausgewählte Abrechnungs-/Lieferadresse gesendet (anstelle der gespeicherten Standardadresse) und der Checkout erfolgreich abgeschlossen.
 
-![Problem behoben](../assets/fix.svg)<!-- Issue PAY-3314 --> Wenn Sie die PayPal Smart-Schaltflächen zum Auschecken deaktivieren, werden keine Fehler angezeigt.
+![Problem behoben](../assets/fix.svg)<!-- Issue PAY-3314 --> Wenn Sie PayPal Zahlungsschaltflächen für den Checkout deaktivieren, werden keine Fehler angezeigt.
 
 ![Problem behoben](../assets/fix.svg)<!-- Issue PAY-3330 --> Zahlungen schlagen beim Checkout nicht mehr fehl, wenn ein Gastbenutzer eine Telefonnummer mit Bindestrichen eingibt.
 
@@ -288,7 +288,7 @@ _31. März 2022_
 
 ![Problem behoben](../assets/fix.svg)<!-- Issue PAY-2742 --> Sie können jetzt verfügbare Zahlungsmethoden wie Venmo auf der Store-Ansichtsebene aktivieren und deaktivieren. Bisher konnten Sie nur Zahlungsmethoden pro Website konfigurieren.
 
-![Problem behoben](../assets/fix.svg)<!-- Issue PAY-2277 --> Sie können jetzt selektiv [Aktivieren oder Deaktivieren einzelner PayPal-Smart-Schaltflächen](settings.md#payment-buttons).
+![Problem behoben](../assets/fix.svg)<!-- Issue PAY-2277 --> Sie können jetzt selektiv [Aktivieren oder Deaktivieren einzelner PayPal-Zahlungsschaltflächen](settings.md#payment-buttons).
 
 ![Problem behoben](../assets/fix.svg)<!-- Issue PAY-2561 --> Zuvor entfernte Produkte werden nicht im Warenkorb auf der _Bestellung überprüfen_ Seite.
 
@@ -314,7 +314,7 @@ _29. November 2021_
 
 ![Neu](../assets/new.svg)<!-- Issue PAY-311 --> [!DNL Payment Services] unterstützt flexible gestaffelte Preise, die auf dem gesamten Verarbeitungsvolumen basieren und an jeden Händler angepasst sind.
 
-![Neu](../assets/new.svg)<!-- Issue PAY-1443 --> Sie können [Erscheinungsbild und Verhalten anpassen](payments-options.md) von PayPal-Smart-Schaltflächen und Kreditkartenfeldern für die [!DNL Payment Services] -Erweiterung.
+![Neu](../assets/new.svg)<!-- Issue PAY-1443 --> Sie können [Erscheinungsbild und Verhalten anpassen](payments-options.md) von PayPal Zahlungsschaltflächen und Kreditkartenfeldern für die [!DNL Payment Services] -Erweiterung.
 
 ![Bekanntes Problem](../assets/bug.svg)<!-- Issue PAY-2473 --> Verwenden [falsche Composer-Schlüssel](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html) während der Installation der Erweiterung verhindert, dass der Benutzer [authentifizieren](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) mit der korrekten `MAGEID`.
 
