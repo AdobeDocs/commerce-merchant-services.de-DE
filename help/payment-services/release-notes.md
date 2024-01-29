@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] Versionshinweise"
 description: In den Versionshinweisen finden Sie Informationen zu allen [!DNL Payment Services] veröffentlicht.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
+source-git-commit: 8b619669ed0558fbd4769206e20062e819e1e6f3
 workflow-type: tm+mt
-source-wordcount: '2132'
+source-wordcount: '2153'
 ht-degree: 0%
 
 ---
@@ -75,6 +75,14 @@ _28. Juni 2021_
 ![Neu](../assets/new.svg)<!-- Issue PAY-2761 --> Sie können jetzt die Daten anpassen, die im [Bestellstatusbericht](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) und [Zahlungsbericht](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) durch Einblenden oder Ausblenden von Spalten mithilfe des Steuerelements Spalteneinstellungen.
 
 +++
+
+## v2.3.2
+
+_26. Januar 2024_
+
+[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
+
+![Fehlerbehebung](../assets/fix.svg)<!-- PAY-5183 --> Behebung von Leistungsproblemen bei REST/GraphQL. Jetzt wird die Kreditkartenschaltfläche gerendert, wenn sie über die API abgerufen wird.
 
 ## v2.3.1
 
