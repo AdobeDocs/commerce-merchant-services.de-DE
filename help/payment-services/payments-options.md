@@ -3,9 +3,9 @@ title: Zahlungsoptionen
 description: Legen Sie die Zahlungsoptionen fest, um die für Ihre Store-Kunden verfügbaren Methoden anzupassen.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 7ea19e5c47142e31995c570c5e1efb50850d99b2
+source-git-commit: 8dd4f629fa60959588cee4ea22f9fb577f338716
 workflow-type: tm+mt
-source-wordcount: '1044'
+source-wordcount: '1054'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Sie können auch das Layout, die Breite, die Höhe und den äußeren Stil der Kr
 
 Kunden können [[!DNL Apple Pay]](https://www.apple.com/apple-pay/), das die auf einem iOS- oder macOS-Gerät gespeicherten Zahlungsberechtigungen für Kredit- und Debitkarten verwendet, um Einkäufe zu tätigen.
 
-[!DNL Apple Pay] ist nur im Safari-Browser verfügbar.
+[!DNL Apple Pay] ist nur im Safari-Browser verfügbar. Händler können bis zu 99 Domänen pro Händlerkonto hinzufügen.
 
 ![Apple-Zahlungsschaltfläche im Minicart](assets/apple-pay-button.png){width="500" zoomable="yes"}
 

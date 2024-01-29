@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
 feature: Payments, Checkout, Configuration
-source-git-commit: 7ea19e5c47142e31995c570c5e1efb50850d99b2
+source-git-commit: 8dd4f629fa60959588cee4ea22f9fb577f338716
 workflow-type: tm+mt
-source-wordcount: '2364'
+source-wordcount: '2372'
 ht-degree: 0%
 
 ---
@@ -128,7 +128,7 @@ Siehe [Zahlungsoptionen](payments-options.md#credit-card-fields) für weitere In
 
 ### Apple Pay
 
-Die [!UICONTROL Apple Pay] Die Zahlungsoption für Schaltflächen ermöglicht die Bereitstellung einer [!UICONTROL Apple Pay] Zahlungsschaltfläche im Checkout Ihres Stores vom Safari-Browser aus.
+Die [!UICONTROL Apple Pay] Die Zahlungsoption für Schaltflächen ermöglicht die Bereitstellung einer [!UICONTROL Apple Pay] Zahlungsschaltfläche im Kassengang Ihres Stores aus dem Safari-Browser (für bis zu 99 Domänen pro Händlerkonto).
 
 Sie können Apple Pay nur verwenden, wenn Sie [Apple Pay-Selbstregistrierung über Paypal](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) und dann [Apple Pay konfigurieren](settings.md/#payment-buttons) für Ihre Geschäfte. Siehe [Zahlungsoptionen](payments-options.md#apple-pay-button) für weitere Informationen.
 

@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
 feature: Payments, Checkout, Configuration
-source-git-commit: 31c1c9a99e75feae7a2a81faf17921a63a03a526
+source-git-commit: 8dd4f629fa60959588cee4ea22f9fb577f338716
 workflow-type: tm+mt
-source-wordcount: '1392'
+source-wordcount: '1402'
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ Siehe [Zahlungsoptionen](payments-options.md#paypal-smart-buttons) für weitere 
 
 ## [!UICONTROL Apple Pay]
 
-Die [!UICONTROL Apple Pay] Mit der Zahlungsoption kann der Händler seinen Kunden Apple Pay anbieten, die über die Touch-ID auf ihren Geräten Käufe über den Safari-Browser tätigen können.
+Die [!UICONTROL Apple Pay] Mit der Zahlungsoption kann der Händler seinen Kunden Apple Pay anbieten, die über die Touch-ID auf ihren Geräten Käufe über den Safari-Browser tätigen können. Händler können bis zu 99 Domänen pro Händlerkonto hinzufügen.
 
 Siehe [Zahlungsoptionen](payments-options.md#apple-pay-button) für weitere Informationen.
 
