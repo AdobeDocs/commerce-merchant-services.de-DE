@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie die [!DNL Data Connection] -Erweiterung von A
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 role: Admin, Developer
 feature: Install
-source-git-commit: 688eabddaf4b3faab98c60cf440fe6e9c6772790
+source-git-commit: 9001cd24db0941b7c7edcfd5b10464dc90084fd7
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '481'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,8 @@ Vor der Installation der Erweiterung [Voraussetzungen überprüfen](overview.md#
 ## Installieren der Erweiterung
 
 Die [!DNL Data Connection] -Erweiterung ist im Abschnitt [Adobe Marketplace](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html). Wenn Sie diese Erweiterung über die Befehlszeile des Servers installieren, stellt sie eine Verbindung zu Ihrer Adobe Commerce-Installation als [service](../landing/saas.md). Wenn der Prozess abgeschlossen ist, **[!DNL Data Connection]** und **Commerce Services Connector** auf der **System** Menü unter **Dienste** im Handel _Admin_.
+
+![[!DNL Data Connection] Admin-Ansicht der Erweiterung](assets/epc-adminui.png)
 
 >[!IMPORTANT]
 >

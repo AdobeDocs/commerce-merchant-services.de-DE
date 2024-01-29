@@ -3,37 +3,82 @@ title: Handbuch-Übersicht
 description: Erfahren Sie, wie Sie Adobe Commerce-Daten mithilfe des [!DNL Data Connection] -Erweiterung.
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
 recommendations: noCatalog
-source-git-commit: 4a5877d6e1a5c7d840e36f4913306b0c440bbac5
+source-git-commit: 7d93b556881b3af5f6c8bceb5c9bb6af9ec0bc1c
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '1685'
 ht-degree: 0%
 
 ---
 
-# [!DNL Data Connection] Übersicht
+# [!DNL Data Connection] Einführung
 
 >[!IMPORTANT]
 >
 >Der Experience Platform-Connector wurde in [!DNL Data Connection].
 
-Die [!DNL Data Connection] -Erweiterung ermöglicht es Adobe Commerce-Händlern, [storefront](events.md#storefront-events) und [Backoffice](events.md#back-office-events) Daten an den Adobe Experience Platform-Edge übermitteln, damit andere Adobe Experience Cloud-Produkte wie Adobe Analytics und Adobe Journey Optimizer diese Commerce-Daten verwenden können. Durch die Verbindung Ihrer Commerce-Daten mit anderen Produkten in der Adobe Experience Cloud können Sie Aufgaben wie die Analyse des Benutzerverhaltens auf Ihrer Site, AB-Tests und die Erstellung personalisierter Kampagnen durchführen.
+Die [!DNL Data Connection] -Erweiterung verbindet Ihre Adobe Commerce-Webinstanz mit Adobe Experience Platform und dem Edge-Netzwerk. Erfahren Sie, wie [integrieren](./mobile-sdk-epc.md) das Adobe Experience Platform Mobile SDK mit Commerce.
 
-[Storefront-Ereignisse](events.md#storefront-events) Erfassen von Kundeninteraktionen, z. B. `View Page`, `View Product`, `Add to Cart`, und [Anforderungsliste](events.md#b2b-events) Informationen (für B2B-Händler). [Back Office](events.md#back-office-events) -Ereignisse erfassen Informationen zum Status einer Bestellung, z. B. wenn eine Bestellung aufgegeben, storniert, rückerstattet, versandt oder abgeschlossen wurde. Die erfassten Daten enthalten keine personenbezogenen Daten (PII). Alle Benutzer-IDs wie Cookie-IDs und IP-Adressen werden streng anonymisiert. [Weitere Infos](https://www.adobe.com/privacy/experience-cloud.html).
+Ihr Commerce-Store enthält eine Vielzahl von Daten. Informationen darüber, wie Ihre Kunden die Produkte auf Ihrer Site durchsuchen, anzeigen und letztendlich kaufen, können Möglichkeiten zur Schaffung eines personalisierteren Einkaufserlebnisses aufzeigen. Diese Daten können zwar zu nativen Commerce-Funktionen wie Warenkorbpreisregeln und dynamischen Bausteinen beitragen, doch bleiben die Daten in Ihrer Commerce-Instanz siloliert.
 
-Die [!DNL Data Connection] -Erweiterung wird in Commerce Admin unter **System** > Dienste > **[!DNL Data Connection]**.
+Die Adobe Experience Platform bietet eine Reihe von Technologien, die diese Daten über das Edge-Netzwerk an andere Adobe DX-Produkte verteilen können, wenn sie mit Daten aus Ihrem Commerce-Store bereitgestellt werden, um Einblicke in das Kaufverhalten Ihrer Kunden zu erhalten. Mit diesen tiefen Einblicken können Sie über alle Kanäle hinweg ein personalisierteres Einkaufserlebnis schaffen.
 
-![[!DNL Data Connection] Admin-Ansicht der Erweiterung](assets/epc-adminui.png)
+Die folgende Abbildung zeigt, wie Ihre Commerce-Daten von Ihrem Store zu anderen Adobe DX-Produkten übertragen werden:
 
-## Voraussetzungen {#prereqs}
+![Datenfluss zum Experience Platform-Edge](assets/commerce-edge.png)
+
+In der obigen Abbildung werden Ihre Storefront- und Backoffice-Daten mithilfe eines SDK, einer API und eines Quell-Connectors an die Experience Platform Edge gesendet. Sie müssen nicht vollständig verstehen, wie diese Teile funktionieren, da die Erweiterung die Komplexität der Datenweitergabe für Sie handhabt. Wenn sich die Ereignisdaten am Rand befinden, können Sie diese Daten in andere Experience Platform-Anwendungen ziehen. Beispiel:
+
+| Anwendung | Zweck | Nutzungsszenarios |
+|---|---|---|
+| [Adobe [!DNL Real-Time CDP]](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html) | Profilverwaltung und Segmentierungsdienst | **Segmentierung des Kaufverlaufs**: Händler können Kunden identifizieren, die einen Artikel über einen bestimmten Zeitraum (monatlich, vierteljährlich, jährlich usw.) erwerben. Händler können dann Segmente für diese Kunden erstellen und sie für Promotions, Kampagnen und als _oberste Ebene des Trichters_ Daten für Leads für Anmeldedienste.<br> **Kategoriebasierte Segmentierung**: Händler können sehen, welche Produktkategorie gekauft wurde.<br> **Angebotsbasierte Segmentierung**: Händler können Kunden identifizieren, die Produkte konsistent zurückgeben. Die ihnen gebotenen Angebote und Rabatte können nun intelligenter sein. Beispielsweise kann der kostenlose Versand für einen Kunden entfernt werden, der ständig Produkte zurückgibt.<br> **Lookalike-Targeting**: A _Lookalike-Zielgruppe_ ist eine Methode, die ein Händler für seine Promotions verwendet, um neue Personen zu erreichen, die wahrscheinlich an seinem Geschäft interessiert sind, da sie ähnliche Merkmale wie Ihre bestehenden Kunden aufweisen. Lookalike-Segmente können basierend auf Verhaltens- und Transaktionsdaten erstellt werden.<br> **Kundenneigung**: Änderungen am Kundenverhalten können durch tiefere Kundenprofile identifiziert werden, die anhand der Transaktionsdaten erstellt werden können. Der Tendenzwert wird stärker konfisiv sein, da mehr Daten in die Berechnungen fließen, wie z. B. Produktrückgaben und Produktkonfigurationen.<br> **Cross-Sell**: Ein Händler kann aus den detaillierten Informationen, die in Commerce erfasst werden, starke Crosssell- und Up-Sell-Chancen erkennen. |
+| [Kunde [!DNL Journey Analytics]](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html) | Detaillierte Analyse der vollständigen Commerce-Journey | **Saisonale Trends**: Ein Händler kann saisonale Trends identifizieren, die ihn bei der Vorbereitung auf die periodische Nachfrage nach bestimmten Produkten unterstützen. Außerdem können Händler Änderungen der allgemeinen Beliebtheit jedes Produkts über Jahre hinweg identifizieren.<br> **Konversionsanalyse**: Wenn Händler wissen, wann ein Produkt gekauft wurde, können sie in Verbindung mit dem Zugriff auf Store-Impressionsereignisse ein umfangreiches Profil des Kunden generieren, um Konversionsanalysen durchzuführen. |
+| [Adobe [!DNL Analytics]](https://experienceleague.adobe.com/docs/analytics/analyze/admin-overview/analytics-overview.html) | Detaillierte Analyse des Kundenverhaltens und der Kampagnenleistung | **Auftragseingabe**: Händler können Kunden und die größeren Kundensegmente identifizieren, die ein Muster wiederkehrender Produkte aufweisen. Dies hilft Händlern, ihre Commerce-Strategie zu verbessern, da sie verstehen, wie ihr Kundenbase-Verhalten aussieht.<br> **Bestelladresse**: Basierend auf der Lieferadresse kann ein Händler nachvollziehen, ob die Bestellungen von den Kunden selbst aufgegeben werden oder ob sie für eine andere Person oder Organisation bestimmt sind.<br> **Saisonabhängigkeit**: Ein Händler kann saisonale Trends identifizieren, die ihn bei der Vorbereitung auf die periodische Nachfrage nach bestimmten Produkten unterstützen. Außerdem können Händler Änderungen der allgemeinen Beliebtheit jedes Produkts über Jahre hinweg identifizieren.<br> **Konversionsanalyse**: Wenn Händler wissen, wann ein Produkt gekauft wurde, können sie in Verbindung mit dem Zugriff auf Store-Impressionsereignisse ein umfangreiches Profil des Kunden generieren, um Konversionsanalysen durchzuführen. **Hinweis** Adobe Analytics unterstützt nur verhaltensbezogene Ereignisdaten (Storefront). Adobe Analytics unterstützt keine Transaktionsdaten (Backoffice). |
+| [Adobe [!DNL Journey Optimizer]](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html) | Kanalübergreifende Kampagnenverwaltung | **Verhaltensbasierte Journey**: Ein Kunde, der vor zwei Jahren ein Mobiltelefon gekauft hat, kann für den Kauf eines neuen Mobiltelefons ausgewählt werden, da er wahrscheinlich nach einem neuen Mobiltelefon sucht. Außerdem können personalisierte Kampagnen und Promotions verwendet werden, um solche Kunden anzusprechen. [!DNL Journey Optimizer] kann seine E-Mail- und SMS-Funktion verwenden, um diese Kunden zu erreichen. Historische Daten zur Reihenfolge sowie Verhaltensdaten können verwendet werden, um Trends zu identifizieren. Ein Kunde, der bereits einen Artikel mit einer bestimmten Konfiguration gekauft hat und jetzt wieder dasselbe Produkt kauft, kann seine Journey erweitern, indem er ihm eine einfache Sichtbarkeit/Zugriff auf dieselben Produktkonfigurationen gewährt.<br> **Personalisierung**: Mit Zugriff auf Kundenprofilinformationen, [!DNL Journey Optimizer] kann hochgradig personalisierte Journey entsperren, sodass Händler über verschiedene Kanäle Kontakt zu den Kunden aufnehmen können.<br> **Neues Profil erstellt**: Willkommens-E-Mails und Werbeaktivitäten können neue Kunden in ihren Einkaufs-Journey ermutigen und beeinflussen.<br> **Profil gelöscht**: Händler können festlegen, dass sie keine Werbe-E-Mails mehr an Kunden senden, die ihr Konto geschlossen haben. Alternativ können Händler auch Kampagnen erstellen, um verlorene Kunden zurückzugewinnen. |
+
+## Experience Platform-Daten zurück in Commerce abrufen
+
+Senden Ihrer Commerce-Daten an die Experience Platform mithilfe der [!DNL Data Connection] -Erweiterung ist eine Seite der Datenfreigabe-Funktionen von Commerce. Die andere Seite, die eine optionale Erweiterung ist, wird als [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html). Mit dieser Erweiterung können Sie Zielgruppen in Real-Time CDP erstellen und diese Zielgruppen in Ihrem Commerce-Store bereitstellen, um über Preisregeln für Warenkorb und dynamische Bausteine zu informieren.
+
+Auf hoher Ebene sieht der Datenfluss von Ihrem Commerce-Store zum Experience Platform und zurück durch die Audience Activation-Erweiterung wie folgt aus:
+
+![[!DNL Data Connection] Fluss](assets/data-connection.png)
+
+Nachdem Sie die Verbindung zwischen Commerce zu Experience Platform und Experience Platform zu Commerce eingerichtet haben, fließen die Daten weiter. Sie müssen keine erneute Verbindung herstellen, es sei denn, dies ist durch ein Upgrade erforderlich.
+
+## Konzepte
+
+Für die Freigabe von Daten zwischen diesen beiden Systemen müssen Sie verschiedene Konzepte kennen.
+
+* **Daten** - Die Daten, die für die Experience Platform freigegeben werden, sind Daten, die aus Browserereignissen auf Ihrer Storefront und Backoffice-Ereignissen auf dem Server erfasst werden. Storefront-Ereignisse werden aus den Interaktionen der Kunden auf der Site erfasst und umfassen Ereignisse wie [`addToCart`](events.md#addtocart), [`pageView`](events.md#pageview), [`createAccount`](events.md#createaccount), [`editAccount`](events.md#editaccount), [`startCheckout`](events.md#startcheckout), [`completeCheckout`](events.md#completecheckout), [`signIn`](events.md#signin), [`signOut`](events.md#signout)usw. Siehe [Storefront-Ereignisse](events.md#storefront-events) für die vollständige Liste der Storefront-Ereignisse. Serverseitige oder Back-Office-Ereignisse umfassen [Bestellstatus](events.md#back-office-events) Informationen, wie [`orderPlaced`](events.md#orderplaced), [`orderReturned`](events.md#orderitemreturncompleted), [`orderShipped`](events.md#ordershipmentcompleted), [`orderCancelled`](events.md#ordercancelled)usw. Siehe [Backoffice-Ereignisse](events.md#back-office-events) für die vollständige Liste der Backoffice-Ereignisse.
+
+* **Experience Platform und Edge Network** - Das Data Warehouse für die meisten Adobe DX-Produkte. An die Experience Platform gesendete Daten werden dann über das Experience Platform Edge Network an die Adobe-DX-Produkte übertragen. Sie können beispielsweise Journey Optimizer starten, Ihre spezifischen Commerce-Ereignisdaten vom Edge abrufen und in Journey Optimizer eine E-Mail zum abgebrochenen Warenkorb erstellen. Journey Optimizer kann diese E-Mail dann senden, wenn in Ihrem Commerce-Store Warenkörbe stehen. Weitere Informationen zum [Experience Platform und Edge Network](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html).
+
+* **Schema** - Das Schema beschreibt die Struktur der gesendeten Daten. Bevor Experience Platform Ihre Commerce-Daten erfassen kann, müssen Sie ein Schema erstellen, um die Datenstruktur zu beschreiben und Einschränkungen für den Datentyp bereitzustellen, der in jedem Feld enthalten sein kann. Schemas bestehen aus einer Basisklasse und keiner oder mehr Schemafeldgruppen. Das Schema verwendet die XDM-Struktur, die alle Adobe DX-Produkte lesen können. Wenn Sie also Ihre Daten an die Experience Platform senden, können Sie sicherstellen, dass Ihre Daten über alle DX-Produkte hinweg verstanden werden. Weitere Informationen [Schemas](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html).
+
+* **Datensatz** - Ein Speicher- und Verwaltungskonstrukt für eine Datenerfassung, normalerweise eine Tabelle, die ein Schema (Spalten) und Felder (Zeilen) enthält. Datensätze enthalten auch Metadaten, die verschiedene Aspekte der in ihnen gespeicherten Daten beschreiben. Alle Daten, die erfolgreich in Adobe Experience Platform aufgenommen wurden, sind in Datensätzen enthalten. Weitere Informationen [Datensätze](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html).
+
+* **Datastream** - ID, die den Datenfluss von Adobe Experience Platform zu anderen Adobe DX-Produkten ermöglicht. Diese ID muss mit einer bestimmten Website in Ihrer jeweiligen Adobe Commerce-Instanz verknüpft sein. Wenn Sie diesen Datastream erstellen, geben Sie das oben erstellte XDM-Schema an. Weitere Informationen [datastreams](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html).
+
+## Unterstützte Architektur
+
+Die [!DNL Data Connection] -Erweiterung ist in den folgenden Architekturen verfügbar:
+
+* PHP/Luma
+* [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/)
+* [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/aep.html)
+
+## Voraussetzungen
 
 So verwenden Sie die [!DNL Data Connection] -Erweiterung verwenden, müssen Sie über Folgendes verfügen:
 
-- Adobe Commerce 2.4.3 oder höher
-- Adobe ID- und Organisations-ID
-- [Adobe Client Data Layer (ACDL)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/client-data-layer/overview.html). ACDL ist erforderlich, um Storefront-Ereignisdaten zu erfassen.
-- Berechtigungen für andere Adobe DX-Produkte
+* Adobe Commerce 2.4.4 oder höher
+* Adobe ID- und Organisations-ID
+* [Adobe Client Data Layer (ACDL)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/client-data-layer/overview.html), die zur Erfassung von Storefront-Ereignisdaten erforderlich ist
+* Berechtigungen für andere Adobe DX-Produkte.
 
 ## Onboarding-Schritte
+
+Auf hoher Ebene ermöglicht die [!DNL Data Connection] -Erweiterung umfasst die folgenden Schritte:
 
 1. [Installieren](install.md) die [!DNL Data Connection] -Erweiterung.
 1. [Anmelden](https://helpx.adobe.com/manage-account/using/access-adobe-id-account.html) auf Ihr Adobe-Konto und [Bestätigung anzeigen](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255) Ihre Organisations-ID. Die Organisations-ID ist die ID, die Ihrem bereitgestellten Experience Cloud-Unternehmen zugeordnet ist. Diese ID besteht aus einer 24-stelligen alphanumerischen Zeichenfolge gefolgt von (und muss enthalten) `@AdobeOrg`.
@@ -43,19 +88,19 @@ So verwenden Sie die [!DNL Data Connection] -Erweiterung verwenden, müssen Sie 
 1. [Verbindung zu Commerce Services herstellen](../landing/saas.md).
 1. [Verbindung zu Adobe Experience Platform herstellen](connect-data.md).
 
+Der Rest dieses Leitfadens führt Sie durch all diese Schritte, um sich auf den neuesten Stand zu bringen und die Leistungsfähigkeit von Adobe DX-Produkten in Ihrem Commerce-Geschäft zu nutzen.
+
+>[!NOTE]
+>
+>Erfahren Sie für Entwickler von Mobilgeräten, wie Sie [integrieren](./mobile-sdk-epc.md) das Adobe Experience Platform Mobile SDK mit Commerce.
+
 ## Zielgruppe
 
-Dieses Handbuch richtet sich an Adobe Commerce-Händler, die ihre Adobe Commerce-Daten mit anderen Adobe DX-Produkten verbinden möchten.
+Dieses Handbuch richtet sich an Adobe Commerce-Händler, die ihren Commerce-Store anreichern und personalisieren möchten, um das Einkaufserlebnis für ihre Kunden zu verbessern.
 
-### PWA Studio-Support
-
-Siehe [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/) Dokumentation für Informationen zur Verwendung der [!DNL Data Connection] -Erweiterung in einer PWA Studio-Storefront.
-
-### AEM {#aem-support}
-
-Siehe [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/aep.html) Dokumentation zum Senden von Storefront-Ereignisdaten von einer AEM Produktseite an die Experience Platform mithilfe des CIF - [!DNL Data Connection] -Erweiterung.
+## Support
 
 Verwenden Sie die folgenden Ressourcen, wenn Sie Informationen benötigen oder Fragen haben, die nicht in diesem Handbuch behandelt werden:
 
-- [Hilfezentrum](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html){target="_blank"}
-- [Support-Tickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"}—Senden Sie ein Ticket, um zusätzliche Hilfe zu erhalten.
+* [Hilfezentrum](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html){target="_blank"}
+* [Support-Tickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"}—Senden Sie ein Ticket, um zusätzliche Hilfe zu erhalten.

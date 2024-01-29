@@ -4,7 +4,7 @@ description: Erfahren Sie, welche Daten die einzelnen Ereignisse erfassen.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: 136cd11e65674ec6e797aeaabd80750a50324566
+source-git-commit: 9001cd24db0941b7c7edcfd5b10464dc90084fd7
 workflow-type: tm+mt
 source-wordcount: '6957'
 ht-degree: 0%
@@ -586,7 +586,7 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 
 ## Back-Office-Ereignisse
 
-Die Backoffice-Ereignisse enthalten Informationen über den Status einer Bestellung, z. B. ob eine Bestellung aufgegeben, storniert, rückerstattet, versandt oder abgeschlossen wurde. Die Daten, die von diesen serverseitigen Ereignissen erfasst werden, zeigen eine 360-Grad-Ansicht der Bestellung des Käufers. Diese Ansicht hilft Händlern, bei der Entwicklung von Marketing-Kampagnen den gesamten Bestellstatus besser zu erreichen oder zu analysieren. Sie können beispielsweise Trends in bestimmten Produktkategorien erkennen, die zu unterschiedlichen Jahreszeiten gut abschneiden. Zum Beispiel Winterbekleidung, die sich in kalten Monaten besser verkauft, oder bestimmte Produktfarben, an denen die Käufer über die Jahre interessiert sind. Darüber hinaus können Sie mithilfe von Bestellstatusdaten den Kundenwert über die gesamte Lebensdauer berechnen, indem Sie die Tendenz eines Käufers verstehen, basierend auf früheren Bestellungen zu konvertieren.
+Die Backoffice-Ereignisse enthalten Informationen zum Status einer Bestellung, z. B. ob eine Bestellung [platziert](#orderplaced), [abgebrochen](#ordercancelled), [zurückgezahlt](#orderitemreturncompleted), [versandt](#ordershipmentcompleted)oder [completed](#ordershipmentcompleted). Die Daten, die von diesen serverseitigen Ereignissen erfasst werden, zeigen eine 360-Grad-Ansicht der Bestellung des Käufers. Diese Ansicht hilft Händlern, bei der Entwicklung von Marketing-Kampagnen den gesamten Bestellstatus besser zu erreichen oder zu analysieren. Sie können beispielsweise Trends in bestimmten Produktkategorien erkennen, die zu unterschiedlichen Jahreszeiten gut abschneiden. Zum Beispiel Winterbekleidung, die sich in kalten Monaten besser verkauft, oder bestimmte Produktfarben, an denen die Käufer über die Jahre interessiert sind. Darüber hinaus können Sie mithilfe von Bestellstatusdaten den Kundenwert über die gesamte Lebensdauer berechnen, indem Sie die Tendenz eines Käufers verstehen, basierend auf früheren Bestellungen zu konvertieren.
 
 >[!NOTE]
 >
