@@ -2,9 +2,9 @@
 title: "Search Merchandising"
 description: "[!DNL Live Search] Merchandising-Regeln kombinieren Logik mit Aktionen, um das Einkaufserlebnis zu gestalten."
 exl-id: d06a3040-6987-4813-90ae-2f7b3ad0b232
-source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
+source-git-commit: 2b0ca3f5a68e75ef4b4e71ac7705b17534e16845
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '681'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Jede Regel umfasst drei Hauptkomponenten:
 * Ereignisse - Die Aktionen, die ausgeführt werden, wenn die Bedingungen erfüllt sind.
 * Details - Der Name der Regel sowie der optionale Zeitrahmen und die Beschreibung.
 
-Sie können mehrere Bedingungen und Aktionen kombinieren und eine Regel so planen, dass sie für einen bestimmten Zeitraum aktiv ist.
+Sie können mehrere Bedingungen und Aktionen kombinieren und eine Regel so planen, dass sie für einen bestimmten Zeitraum aktiv ist. Sie können auch eine Standardregel festlegen, die auch dann angewendet wird, wenn kein Suchbegriff festgelegt ist.
 
 ## Voraussetzungen
 
@@ -46,6 +46,10 @@ Die Match-Operatoren `All` und `Any` den logischen Operator bestimmen, der zum V
 * `Any` - Verwendet die `OR` logischen Operators, um mehrere Bedingungen zu verknüpfen.
 
 Beim Erstellen einer komplexen Regel kann es hilfreich sein, diese mit einem Einzug zu schreiben, um die Bedingungen, verknüpften Ereignisse sowie Produktnamen oder SKUs zu beschreiben, die zum Zurückgeben der gewünschten Ergebnisse erforderlich sind. Erstellen Sie dann die Regel und testen Sie das Ergebnis.
+
+## Standardregel
+
+Sie können eine Standardregel festlegen, die angewendet wird, wenn kein Suchbegriff angegeben oder keine andere Suchregel angewendet werden kann. Wenn Sie die Standardregel auf &quot;Am häufigsten gekauft&quot;setzen, wird für alle Abfragen standardmäßig dieser Ranglistentyp verwendet, es sei denn, es wird durch einen spezifischeren Suchbegriff Super-Caching durchgeführt. Für die Standardregel kann kein Suchbegriff festgelegt werden.
 
 ## Rangfolge mit mehreren Regeln
 

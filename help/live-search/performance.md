@@ -1,15 +1,15 @@
 ---
-title: "Leistung"
+title: "Leistungs-Dashboard"
 description: "Die [!DNL Live Search] Das Leistungs-Dashboard bietet Einblicke in die Suchbegriffe, die Käufer verwenden."
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
-source-git-commit: 0b0bf898719338f5dacd55d8e89aaf2c9fa8a3c0
+source-git-commit: d9d9506b2555bc30d6fbec67c65fa220d9a51e91
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '481'
 ht-degree: 0%
 
 ---
 
-# Leistung
+# Leistungs-Dashboard
 
 Die [!DNL Live Search] Das Leistungs-Dashboard bietet Einblicke in die Suchbegriffe, die von Käufern verwendet werden. Die Informationen können verwendet werden, um Trends zu identifizieren, die Clickthrough-Rate zu erhöhen und die Konversionsrate zu verbessern. Das Leistungs-Dashboard bietet eine Momentaufnahme der Suchmetriken für einen bestimmten Datumsbereich und enthält die folgenden Berichte:
 
@@ -18,6 +18,8 @@ Die [!DNL Live Search] Das Leistungs-Dashboard bietet Einblicke in die Suchbegri
 * Häufige Ergebnisse
 
 ![Leistung](assets/performance-unique-searches.png)
+
+Weitere Informationen finden Sie unter [Data Management Dashboard](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) für weitere Daten zur Datensynchronisation.
 
 ## Bericht anzeigen
 
@@ -29,7 +31,6 @@ Die [!DNL Live Search] Das Leistungs-Dashboard bietet Einblicke in die Suchbegri
 >[!NOTE]
 >
 >Das Leistungs-Dashboard wird alle 12 Stunden aktualisiert.
-
 
 ## Feldbeschreibungen
 

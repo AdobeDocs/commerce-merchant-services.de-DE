@@ -3,9 +3,9 @@ title: "[!DNL Live Search] Versionshinweise"
 description: "Die neuesten Versionsinformationen für [!DNL Live Search] von Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: ff7a2549893eab63f552a2a866939adc90de4a78
+source-git-commit: 2b0ca3f5a68e75ef4b4e71ac7705b17534e16845
 workflow-type: tm+mt
-source-wordcount: '1869'
+source-wordcount: '1822'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,39 @@ _25. April 2023_
 
 ![Neu](../assets/new.svg) [!DNL Live Search] Kunden können jetzt die neue [SaaS-Preisindexer](../price-index/index.md).
 
-## [!DNL Live Search] 4.0.0 {#400}
+## [!DNL Live Search] 4.1.0 {#410}
+
+_13. Februar 2024_
+
+[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
+
+### Neue Funktionen
+
+![Neu](../assets/new.svg) [!DNL Live Search] unterstützt jetzt das Festlegen einer Standardregel für [Merchandising durchsuchen](rules.md).
+![Neu](../assets/new.svg) Mehrere neue Funktionen wurden zum [PLP-Widget](plp-styling.md):
+
+* Umschalten zwischen Listen-/Rasteransicht
+* Schaltflächen &quot;Zum Warenkorb hinzufügen&quot;
+* Musterunterstützung
+* Mehrere Bilder pro Produkt
+* Preisregler
+* Sprachunterstützung
+
+Merchandising muss die [!DNL Live Search] Erweiterung auf Version >= 4.1.0 , um auf diese Funktionen zuzugreifen.
+
+Aktivieren Sie nach der Installation von Version 3.1.1 oder höher die neuen Indexer:
+
+* Produktpreis-Feed
+* Umfang des Website-Daten-Feeds
+* Umfang des Daten-Feeds von Kundengruppen
+
+Testen Sie nach dem Upgrade die aktualisierte Konfiguration in QA oder Staging, bevor Sie die Änderungen in die Produktion übernehmen.
+
+## Frühere Versionen
+
++ + + 4.0.0 und früher
+
+## [!DNL Live Search] 4,0,0 {#400}
 
 _13. November 2023_
 
@@ -61,27 +93,11 @@ _13. November 2023_
 ![Fehlerbehebung](../assets/fix.svg) CSS-Stile wurden neu konfiguriert, um Widget-Klassen besser zu isolieren.
 ![Fehlerbehebung](../assets/fix.svg) Geringfügige Fehlerbehebungen
 
-Merchandising muss die [!DNL Live Search] Erweiterung auf Version >= 4.0.0 , um auf diese Funktionen zuzugreifen.
-
-Aktivieren Sie nach der Installation von Version 3.1.1 oder höher die neuen Indexer:
-
-* Produktpreis-Feed
-* Umfang des Website-Daten-Feeds
-* Umfang des Daten-Feeds von Kundengruppen
-
-Testen Sie nach dem Upgrade die aktualisierte Konfiguration in QA oder Staging, bevor Sie die Änderungen in die Produktion übernehmen.
-
-## Frühere Versionen
-
-+ + + 3.1.1 und früher
-
 ## [!DNL Live Search] 3.1.1 {#311}
 
 _15. September 2023_
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
-
-
 
 ![Neu](../assets/new.svg) Die neue Registerkarte Kategorie-Merchandising wurde hinzugefügt. Benutzer können jetzt intelligente Ranglisten und manuelle Ranglisten (Pin, Verstärken, Begraben, Verbergen) pro Kategorie hinzufügen
 ![Neu](../assets/new.svg) Benutzer können eine einzelne Kategorieregel mit intelligentem oder manuellem Rang hinzufügen
@@ -113,7 +129,7 @@ _1. September 2023_
 
 ![Fehlerbehebung](../assets/fix.svg) Das Widget &quot;Produktliste&quot;wurde aktualisiert und verwendet nun die [Catalog Service-API](https://developer.adobe.com/commerce/services/graphql/catalog-service/product-search/).
 
-## [!DNL Live Search] 3.0.2 {#302}
+## [!DNL Live Search] 3,0,2 {#302}
 
 _7. August 2023_
 
@@ -142,7 +158,7 @@ Es wird empfohlen, ein Upgrade durchzuführen und zu testen, bevor Sie die Produ
 
 Die Verwendung des Widgets &quot;Live Search Product Listing Page&quot;führt dazu, dass der Google Tag Manager fehlschlägt. Verwenden Sie den standardmäßigen Suchadapter, wenn der Google Tag Manager erforderlich ist.
 
-## [!DNL Live Search] 3.0.1 {#301}
+## [!DNL Live Search] 3,0,1 {#301}
 
 _14. März 2023_
 
@@ -183,7 +199,7 @@ Merchandising muss die [!DNL Live Search] -Erweiterungsversion >= 3.0.1 verwende
 
 Es wird empfohlen, ein Upgrade durchzuführen und zu testen, bevor Sie die Produktionsumgebung aktivieren. Erwägen Sie, die Produktionsumgebung außerhalb der Spitzenzeiten zu aktualisieren, nachdem Sie die Ergebnisse der Testumgebung überprüft haben.
 
-## [!DNL Live Search] 2.0.5 {#205}
+## [!DNL Live Search] 2,0,5 {#205}
 
 [!BADGE Unterstützt]{type="Informativ" tooltip="Unterstützt"}
 
@@ -193,7 +209,7 @@ Händler müssen die Live Search-Erweiterung Version >= 2.0.5 aktualisieren, um 
 
 Es wird empfohlen, ein Upgrade durchzuführen und zu testen, bevor Sie die Produktionsumgebung aktivieren. Erwägen Sie, die Produktionsumgebung außerhalb der Spitzenzeiten zu aktualisieren, nachdem Sie die Ergebnisse der Testumgebung überprüft haben.
 
-### [!DNL Live Search] 2.0.4 {#204}
+### [!DNL Live Search] 2,0,4 {#204}
 
 [!BADGE Unterstützt]{type="Informativ" tooltip="Unterstützt"}
 
@@ -207,7 +223,7 @@ Merchandising muss die [!DNL Live Search] -Erweiterungsversion >= 2.0.4 verwende
 
 Benutzern wird empfohlen, ein Upgrade durchzuführen und zu testen, bevor sie zur Produktion wechseln. Erwägen Sie, die Produktionsumgebung außerhalb der Spitzenzeiten zu aktualisieren, nachdem Sie die Ergebnisse der Testumgebung überprüft haben.
 
-### [!DNL Live Search] 2.0.3 {#203}
+### [!DNL Live Search] 2,0,3 {#203}
 
 [!BADGE Unterstützt]{type="Informativ" tooltip="Unterstützt"}
 
@@ -217,7 +233,7 @@ Merchandising muss die [!DNL Live Search] Erweiterungsversion >= 2.0.3 verwenden
 
 Benutzern wird empfohlen, ein Upgrade durchzuführen und zu testen, bevor sie zur Produktion wechseln. Erwägen Sie, die Produktionsumgebung außerhalb der Spitzenzeiten zu aktualisieren, nachdem Sie die Ergebnisse der Testumgebung überprüft haben.
 
-### [!DNL Live Search] 2.0 {#20}
+### [!DNL Live Search] 2,0 {#20}
 
 [!BADGE Unterstützt]{type="Informativ" tooltip="Unterstützt"}
 
@@ -240,7 +256,7 @@ Bestehend [!DNL Live Search] -Installationen müssen aktualisiert werden auf [!D
 ![Fehlerbehebung](../assets/fix.svg) Es wurde ein Fehler behoben, der dazu führte, dass ein Fehler auftrat, wenn [Währungssymbol](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html#step-5%3A-customize-currency-symbols-(optional)) (`data-currency-symbol`) verfügbar ist.
 ![Fehlerbehebung](../assets/fix.svg) [[!DNL Storefront popover]](storefront-popover.md) zeigt nun die [Sonderpreis](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-special.html) (Endpreis), sofern verfügbar.
 
-### [!DNL Live Search] 1.3.0 {#130}
+### [!DNL Live Search] 1,3,0 {#130}
 
 [!BADGE Unterstützt]{type="Informativ" tooltip="Unterstützt"}
 
@@ -251,7 +267,7 @@ Bestehend [!DNL Live Search] -Installationen müssen aktualisiert werden auf [!D
 ![Fehler](../assets/bug.svg) Patch for Search Adapter handhabt doppelte Produkte.
 ![Fehler](../assets/bug.svg) [!DNL Live Search] unterstützt [einzelne Quelle](https://experienceleague.adobe.com/docs/commerce-admin/inventory/sources/sources-manage.html) (physische) Inventarstandorte mit mehreren (virtuellen) [Bestände](https://experienceleague.adobe.com/docs/commerce-admin/inventory/stocks/stocks-manage.html). Mehrere Inventarquellen werden jetzt nicht mehr unterstützt.
 
-### [!DNL Live Search] 1.2.0 {#120}
+### [!DNL Live Search] 1,2,0 {#120}
 
 [!BADGE Unterstützt]{type="Informativ" tooltip="Unterstützt"}
 

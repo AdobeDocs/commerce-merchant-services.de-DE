@@ -1,23 +1,19 @@
 ---
 title: Feed-Erfassungsdienst
 description: Erfahren Sie mehr über den Feed-Erfassungsdienst für Adobe Commerce
-source-git-commit: b57fc43d23dbbcbcae31743fd0ab9c1b3d1c1084
+exl-id: bb5aec74-faca-42ec-9fdb-3261677d451e
+source-git-commit: d3798efa038c35f71bb0bb6874d954a8e66c7467
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '348'
 ht-degree: 0%
 
 ---
 
-
 # Feed-Erfassungsdienst
-
->[!NOTE]
->
->Der Feed-Erfassungsdienst befindet sich derzeit in der privaten Beta-Phase. Es ist noch nicht für die allgemeine Anwendung verfügbar.
 
 Mit dem Feed-Erfassungsdienst können Kunden mit großen und/oder komplexen Katalogen Daten direkt an Adobe Commerce-Dienste senden.
 
-Der Feed-Erfassungsdienst verkürzt die Zeit für die Verarbeitung von Produktänderungen (Preisaktualisierungen, Hinzufügen neuer Attribute), indem die Adobe Commerce-Instanz umgangen und Katalogdaten von einer externen Enterprise Resource Planning (ERP) direkt zu Adobe Commerce-Diensten verschoben werden.
+Der Feed-Erfassungsdienst verkürzt die Zeit, die für die Verarbeitung von Produktänderungen (Preisaktualisierungen, Hinzufügen neuer Attribute) benötigt wird, indem die Adobe Commerce-Instanz umgangen und Katalogdaten von einer externen Enterprise Resource Planning (ERP) direkt zu Adobe Commerce-Diensten verschoben werden.
 
 Dieser Dienst richtet sich an Kunden, die ihren Produktkatalog in einem außerhalb der Adobe Commerce-Hauptanwendung gelegenen System speichern und verwalten. Sie wird als API bereitgestellt, damit Kunden sie in ihre vorhandenen Systeme integrieren können, wodurch zusätzliche Flexibilität bei der Bereitstellung entsteht.
 
@@ -36,12 +32,6 @@ Je nach Adobe Commerce-Konfiguration können Datenspeicher und Datenflüsse unte
 
 Durch Umgehung der Commerce-Hauptanwendung und direktes Verschieben von Daten in die Commerce-Dienste werden Produktaktualisierungen schneller im Speicher angezeigt. Kernkatalogdaten wie SKUs werden zur getrennten Verarbeitung an die Commerce-Hauptanwendung gesendet.
 
-## Betaversion
+## API
 
-Der Feed-Erfassungsdienst wurde für Folgendes entwickelt:
-
-* Unternehmensmäßige Kunden mit Headless-Implementierungen
-* Kunden mit großen, komplexen Katalogen
-* Kunden, die zum Verwalten von Katalogdaten nicht den Adobe Commerce Admin verwenden, sondern ein ERP- oder Drittanbietersystem zur Verwaltung von Katalogdaten verwenden
-
-Wenn Sie Interesse haben, am Betaprogramm teilzunehmen, wenden Sie sich bitte unter sagonzal@adobe.com an das Team.
+Die [Dokumentation zur Feed-Aufnahme-Service-API](https://developer.adobe.com/commerce/services/feed-ingestion) enthält Details zur Implementierung des Dienstes.

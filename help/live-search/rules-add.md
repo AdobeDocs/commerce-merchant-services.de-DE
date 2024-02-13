@@ -2,9 +2,9 @@
 title: "Regeln hinzufügen"
 description: "Erfahren Sie, wie Sie Merchandising-Suchregeln erstellen."
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
+source-git-commit: 4ce37b03937cf5a8413831c720d05387031a6094
 workflow-type: tm+mt
-source-wordcount: '1430'
+source-wordcount: '1536'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,16 @@ Um eine Regel zu erstellen, verwenden Sie zunächst den Regeleditor, um die Bedi
 1. Klicken Sie auf **Merchandising durchsuchen** Registerkarte.
 1. Klicks **Regel hinzufügen** , um den Regeleditor zu starten.
 
+## Regeltyp
+
+In einer Suchabfrage definieren Sie einen bestimmten Suchbegriff, Bedingungen und Rangtypen.
+
+Es kann eine Standardregel festgelegt werden, die auf alle Abfragen angewendet wird, es sei denn, eine spezifischere Suchabfrage ist definiert. Es kann nur eine Standardregel festgelegt werden, die keine Bedingungen enthalten darf. Wenn Sie &quot;Standard&quot;auswählen, wird die Benutzeroberfläche &quot;Bedingungen&quot;nicht angezeigt.
+Wählen Sie den standardmäßigen Rangtyp Intelligent und alle manuellen Ranglisten aus, die auf alle Standardsuchvorgänge angewendet werden sollen. Manuelle Rankings werden immer angewendet.
+
 ## Bedingungen
 
-Bedingungen sind die Voraussetzungen für den Trigger eines Ereignisses. Eine Regel kann bis zu zehn Bedingungen und 25 Ereignisse enthalten.
+Bedingungen sind die Voraussetzungen für den Trigger eines Ereignisses. Eine Regel kann bis zu zehn Bedingungen und 25 Ereignisse enthalten. Eine Standardregel kann keine Bedingungen enthalten.
 
 ![Regel - Regel erstellen](assets/rules-add-workspace.png)
 
@@ -52,8 +59,6 @@ Zunächst rendert der Testbereich die Abfrage über das Suchfeld Bedingungen . J
 
 1. Um eine Regel mit mehreren Bedingungen zu erstellen, klicken Sie auf **Bedingung hinzufügen**.
 Eine Regel kann bis zu zehn Bedingungen enthalten. Der logische Operator, der zwei Bedingungen verbindet, basiert auf dem aktuellen *Übereinstimmung* -Einstellung. Standardmäßig ist *Übereinstimmung* is `All` und der logische Operator `AND`.
-
-   ![Regeln - Suchabfrage enthält](assets/rules-search-query-contains-and.png)
 
 1. Wählen Sie die zweite Bedingung aus und geben Sie den gewünschten Abfragetext ein.
 
@@ -180,6 +185,7 @@ Die hier eingegebenen Informationen werden im [Regeldetails](rules-workspace.md)
 | Feld | Beschreibung |
 |--- |--- |
 | Name | Der Name der Regel. Regelnamen müssen eindeutig sein. |
+| Regeltyp | Standard oder Abfrage. Der Standardwert wird auf alle Regeln angewendet, es sei denn, es ist eine spezifischere Abfrageregel definiert. |
 | Startdatum | Das Startdatum der Regel, falls geplant. |
 | Enddatum | Das Enddatum der Regel, falls geplant. |
 | Beschreibung | Eine kurze Beschreibung der Regel. |

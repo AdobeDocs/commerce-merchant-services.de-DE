@@ -3,9 +3,9 @@ title: "Technischer Überblick"
 description: "[!DNL Live Search] Onboarding-Fluss, Systemanforderungen, Grenzen und Einschränkungen"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: 3d2b63280c2a890d7f84208efe3687c0d99e8e38
+source-git-commit: e235073031cae1304eaae4605d2f94332e52284f
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '1028'
 ht-degree: 0%
 
 ---
@@ -133,7 +133,7 @@ Dieses Video ist eine Einführung in Kategorie-Merchandising.
 
 ## Widget-Code-Repository
 
-Das Widget &quot;Seite der Produktauflistungen&quot;und das Widget &quot;Popover durchsuchen&quot;können über ihr GitHub-Repository heruntergeladen werden.
+Das Widget &quot;Seite der Produktauflistungen&quot;und das Widget &quot;Feld der Live-Suche&quot;können über ihr GitHub-Repository heruntergeladen werden.
 
 Dadurch können Entwickler die Funktionalität und den Stil vollständig anpassen. Diese Benutzer hosten den Code selbst, während sie weiterhin die [!DNL Live Search] -Dienst.
 
@@ -160,6 +160,8 @@ Derzeit werden Basispreise unterstützt. Folgende erweiterte Preise werden nicht
 * Mindestpreis für Werbung
 
 Sehen Sie sich an [API-Mesh](../catalog-service/mesh.md) für komplexere Preisberechnungen.
+
+Das Preisformat unterstützt die Gebietsschema-Konfigurationseinstellung innerhalb der Commerce-Instanz: *Stores* > Einstellungen > *Konfiguration* > Allgemein > *Allgemein* > Lokale Optionen > Gebietsschema.
 
 ## PWA-Unterstützung
 
@@ -192,7 +194,7 @@ Verwendung [!DNL Live Search] Mit PWA Studio müssen Integratoren auch:
 ## Derzeit nicht unterstützt
 
 * Die [Erweiterte Suche](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) -Modul deaktiviert ist, wenn [!DNL Live Search] installiert ist und der Link Erweiterte Suche in der Fußzeile der Storefront entfernt wird.
-* [Tier-Preise](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-tier.html) und [Sonderpreise](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-special.html) werden im [!DNL Live Search] Popover- und Produktanlistungs-Seiten-Widget.
+* [Tier-Preise](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-tier.html) und [Sonderpreise](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-special.html) werden im [!DNL Live Search] -Feld und das Widget zur Produktauflistungsseite.
 
 ## Cookies
 
