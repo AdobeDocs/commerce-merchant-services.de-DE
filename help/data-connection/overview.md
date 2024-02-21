@@ -3,9 +3,9 @@ title: Handbuch-Übersicht
 description: Erfahren Sie, wie Sie Adobe Commerce-Daten mithilfe des [!DNL Data Connection] -Erweiterung.
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
 recommendations: noCatalog
-source-git-commit: d54b7e894df4e6f64607afcfc6754b5a560b91e2
+source-git-commit: af54529ad037dc99dbc07cf1a6ac270d17f16870
 workflow-type: tm+mt
-source-wordcount: '1708'
+source-wordcount: '1732'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Nachdem Sie die Verbindung zwischen Commerce zu Experience Platform und Experien
 
 Für die Freigabe von Daten zwischen diesen beiden Systemen müssen Sie verschiedene Konzepte kennen.
 
-* **Daten** - Die Daten, die für die Experience Platform freigegeben werden, sind Daten, die aus Browserereignissen auf Ihrer Storefront und Backoffice-Ereignissen auf dem Server erfasst werden. Storefront-Ereignisse werden aus den Interaktionen der Kunden auf der Site erfasst und umfassen Ereignisse wie [`addToCart`](events.md#addtocart), [`pageView`](events.md#pageview), [`createAccount`](events.md#createaccount), [`editAccount`](events.md#editaccount), [`startCheckout`](events.md#startcheckout), [`completeCheckout`](events.md#completecheckout), [`signIn`](events.md#signin), [`signOut`](events.md#signout)usw. Siehe [Storefront-Ereignisse](events.md#storefront-events) für die vollständige Liste der Storefront-Ereignisse. Serverseitige oder Back-Office-Ereignisse umfassen [Bestellstatus](events.md#back-office-events) Informationen, wie [`orderPlaced`](events.md#orderplaced), [`orderReturned`](events.md#orderitemreturncompleted), [`orderShipped`](events.md#ordershipmentcompleted), [`orderCancelled`](events.md#ordercancelled)usw. Siehe [Backoffice-Ereignisse](events.md#back-office-events) für die vollständige Liste der Backoffice-Ereignisse.
+* **Daten** - Die Daten, die für die Experience Platform freigegeben werden, sind Daten, die aus Browserereignissen in Ihrer Storefront, Backoffice-Ereignissen auf dem Server und Profildatensätzen erfasst werden. Storefront-Ereignisse werden aus den Interaktionen der Kunden auf der Site erfasst und umfassen Ereignisse wie [`addToCart`](events.md#addtocart), [`pageView`](events.md#pageview), [`createAccount`](events.md#createaccount), [`editAccount`](events.md#editaccount), [`startCheckout`](events.md#startcheckout), [`completeCheckout`](events.md#completecheckout), [`signIn`](events.md#signin), [`signOut`](events.md#signout)usw. Siehe [Storefront-Ereignisse](events.md#storefront-events) für die vollständige Liste der Storefront-Ereignisse. Serverseitige oder Back-Office-Ereignisse umfassen [Bestellstatus](events-backoffice.md#order-status) Informationen, wie [`orderPlaced`](events-backoffice.md#orderplaced), [`orderReturned`](events-backoffice.md#orderitemreturncompleted), [`orderShipped`](events-backoffice.md#ordershipmentcompleted), [`orderCancelled`](events-backoffice.md#ordercancelled)usw. Siehe [Backoffice-Ereignisse](events-backoffice.md) für die vollständige Liste der Backoffice-Ereignisse. Profildatensatzdaten enthalten Informationen, wenn ein neues Profil erstellt, aktualisiert oder gelöscht wird. Siehe [Profildatensatzdaten](events-profilerecord.md) , um mehr zu erfahren.
 
 * **Experience Platform und Edge Network** - Das Data Warehouse für die meisten Adobe DX-Produkte. An die Experience Platform gesendete Daten werden dann über das Experience Platform Edge Network an die Adobe-DX-Produkte übertragen. Sie können beispielsweise Journey Optimizer starten, Ihre spezifischen Commerce-Ereignisdaten vom Edge abrufen und in Journey Optimizer eine E-Mail zum abgebrochenen Warenkorb erstellen. Journey Optimizer kann diese E-Mail dann senden, wenn in Ihrem Commerce-Store Warenkörbe stehen. Weitere Informationen zum [Experience Platform und Edge Network](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html).
 

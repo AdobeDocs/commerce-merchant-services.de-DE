@@ -3,7 +3,7 @@ title: Commerce-Daten mit Adobe Experience Platform verbinden
 description: Erfahren Sie, wie Sie Ihre Commerce-Daten mit der Adobe Experience Platform verbinden.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: 540c423ecf7e50a36c1137f43a9cf9673658c805
+source-git-commit: 655b5d18a4fb77232523c9c18a9fb362de93c70a
 workflow-type: tm+mt
 source-wordcount: '2501'
 ht-degree: 0%
@@ -101,7 +101,7 @@ In diesem Abschnitt geben Sie den Datentyp an, den Sie erfassen und an den Exper
 
 Um sicherzustellen, dass Ihre Adobe Commerce-Instanz mit der Datenerfassung beginnen kann, lesen Sie das [Voraussetzungen](overview.md#prerequisites).
 
-Weitere Informationen finden Sie unter Ereignisthema . [storefront](events.md#storefront-events), [Backoffice](events.md#back-office-events), und [profile](events.md#customer-profile-events-server-side) -Ereignisse.
+Weitere Informationen finden Sie unter Ereignisthema . [storefront](events.md#storefront-events), [Backoffice](events-backoffice.md), und [profile](events-backoffice.md#customer-profile-events-server-side) -Ereignisse.
 
 >[!NOTE]
 >
@@ -193,7 +193,7 @@ Es kann etwa 10 Minuten dauern, bis ein Profildatensatz in Real-Time CDP verfüg
 
 ### Verlaufsreihendaten senden
 
-Adobe Commerce sammelt bis zu fünf Jahre [historische Bestelldaten und -status](events.md#back-office-events). Sie können die [!DNL Data Connection] Erweiterung, um diese historischen Daten an die Experience Platform zu senden, um Ihre Kundenprofile anzureichern und die Kundenerlebnisse auf der Grundlage dieser früheren Bestellungen zu personalisieren. Die Daten werden in einem Datensatz innerhalb von Experience Platform gespeichert.
+Adobe Commerce sammelt bis zu fünf Jahre [historische Bestelldaten und -status](events-backoffice.md#back-office-events). Sie können die [!DNL Data Connection] Erweiterung, um diese historischen Daten an die Experience Platform zu senden, um Ihre Kundenprofile anzureichern und die Kundenerlebnisse auf der Grundlage dieser früheren Bestellungen zu personalisieren. Die Daten werden in einem Datensatz innerhalb von Experience Platform gespeichert.
 
 Während Commerce bereits die historischen Bestelldaten erfasst, müssen Sie mehrere Schritte ausführen, um diese Daten an Experience Platform zu senden.
 

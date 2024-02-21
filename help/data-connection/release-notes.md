@@ -3,7 +3,7 @@ title: Versionshinweise
 description: Die neuesten Versionsinformationen für die [!DNL Data Connection] -Erweiterung von Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: d54b7e894df4e6f64607afcfc6754b5a560b91e2
+source-git-commit: 655b5d18a4fb77232523c9c18a9fb362de93c70a
 workflow-type: tm+mt
 source-wordcount: '818'
 ht-degree: 0%
@@ -46,7 +46,7 @@ _16. November 2023_
 
 _10. Oktober 2023_
 
-![Neu](../assets/new.svg) - Neue Bestellstatus-Ereignisse hinzugefügt: [Rechnungsstellung](events-backoffice.md#orderinvoiced), [Rückgabe des Bestellartikels initiiert](events.md#orderitemsreturninitiated), und [Auftragsgegenstandsrückgabe abgeschlossen](events.md#orderitemreturncompleted).
+![Neu](../assets/new.svg) - Neue Bestellstatus-Ereignisse hinzugefügt: [Rechnungsstellung](events-backoffice.md#orderinvoiced), [Rückgabe des Bestellartikels initiiert](events-backoffice.md#orderitemsreturninitiated), und [Auftragsgegenstandsrückgabe abgeschlossen](events-backoffice.md#orderitemreturncompleted).
 ![Fehlerbehebung](../assets/fix.svg) - Es wurde ein Problem behoben, bei dem Änderungen der Währungskonfiguration nach der Aktualisierung des Caches nicht in den Ereignissen übernommen wurden.
 ![Fehlerbehebung](../assets/fix.svg) - Es wurde ein Fehler behoben, der auftrat, wenn bei Aktivierung der asynchronen Bestellplatzierung keine Bestellbestätigungsmeldung angezeigt wurde.
 ![Neu](../assets/new.svg) - Daten hinzugefügt zu [addToRequisitionList](events.md#addtorequisitionlist) -Ereignis für einfache Produkte auf der Seite &quot;Kategorieansicht&quot;ein.
