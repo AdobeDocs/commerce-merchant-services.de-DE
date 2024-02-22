@@ -3,9 +3,9 @@ title: '''[!DNL Catalog Service] Versionshinweise'
 description: Die neuesten Versionshinweise für [!DNL Catalog Service] für Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 4ce37b03937cf5a8413831c720d05387031a6094
+source-git-commit: 358dac1ce083023476022c968bc6a9debfadc119
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '570'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,18 @@ Zu den Aktualisierungen gehören:
 ![Fehler](../assets/bug.svg) Bekannte Probleme
 
 ## Aktuelle Hauptversion
+
+### Version 1.17
+
+_22.02.2023_
+
+[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
+
+![Neu](../assets/new.svg) Die [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) ist jetzt verfügbar. Dieses überarbeitete Dashboard bietet Einblicke in Datenströme für [!DNL Product Recommendations], [!DNL Live Search], und [!DNL Catalog Service].
+
+## Frühere Versionen
+
++++ Frühere Versionen
 
 ### Version 1.16
 
@@ -44,10 +56,6 @@ Die folgenden Einschränkungen können mithilfe des API-Gitters und der GraphQL-
 
 * Mindestpreis für Werbung
 * [Kategoriekosten](mesh.md)
-
-## Frühere Versionen
-
-+++ Frühere Versionen
 
 ### Version 1.13
 

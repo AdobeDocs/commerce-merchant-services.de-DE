@@ -2,9 +2,9 @@
 title: "Leistungs-Dashboard"
 description: "Die [!DNL Live Search] Das Leistungs-Dashboard bietet Einblicke in die Suchbegriffe, die Käufer verwenden."
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
-source-git-commit: a0dded0beac3d45f8944016bd73e4ec1ae3eae22
+source-git-commit: 289ac6ac464955f18f3a2448099ad459e6264941
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '481'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,8 @@ Die [!DNL Live Search] Das Leistungs-Dashboard bietet Einblicke in die Suchbegri
 * Häufige Ergebnisse
 
 ![Leistung](assets/performance-unique-searches.png)
+
+Weitere Informationen finden Sie unter [Data Management Dashboard](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) für weitere Daten zur Datensynchronisation.
 
 ## Bericht anzeigen
 

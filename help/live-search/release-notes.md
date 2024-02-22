@@ -3,9 +3,9 @@ title: "[!DNL Live Search] Versionshinweise"
 description: "Die neuesten Versionsinformationen für [!DNL Live Search] von Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 033fff8820b5467b5b24b03159e4141ff2e6d725
+source-git-commit: 89f0cd15e7eeb7f8f1f76df7a3612ba3ef02391e
 workflow-type: tm+mt
-source-wordcount: '1772'
+source-wordcount: '1900'
 ht-degree: 0%
 
 ---
@@ -45,26 +45,31 @@ _25. April 2023_
 
 ![Neu](../assets/new.svg) [!DNL Live Search] Kunden können jetzt die neue [SaaS-Preisindexer](../price-index/index.md).
 
-<!--## [!DNL Live Search] 4.1.0 {#410}
+## [!DNL Live Search] 4.1.0 {#410}
 
-_Feb 13, 2024_
+_22.02.2024_
 
-[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
 
-### New Features
+### Neue Funktionen
 
-![New](../assets/new.svg) Multiple new features have been added to the [PLP widget](plp-styling.md):
+![Neu](../assets/new.svg) Die [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) ist jetzt verfügbar. Dieses überarbeitete Dashboard bietet Einblicke in Datenströme für [!DNL Product Recommendations], [!DNL Live Search], und [!DNL Catalog Service].
+![Neu](../assets/new.svg) Mehrere neue Funktionen wurden zum [PLP-Widget](plp-styling.md):
 
-* List/grid view toggling
-* Add to Cart buttons
-* Swatch support
-* Multiple images per product
-* Price sliders
-* Language support
+* Umschalten zwischen Listen-/Rasteransicht
+* Schaltflächen &quot;Zum Warenkorb hinzufügen&quot;
+* Musterunterstützung
+* Mehrere Bilder pro Produkt
+* Preisregler
+* Sprachunterstützung
 
-Merchants must upgrade the [!DNL Live Search] extension to version >= 4.1.0 to access these features.
+Merchandising muss die [!DNL Live Search] Erweiterung auf Version >= 4.1.0 , um auf diese Funktionen zuzugreifen.
 
---->
+### Updates
+
+![Fehlerbehebung](../assets/fix.svg) Es wurde ein Fehler behoben, der zu einem Fehler führte, wenn Gastbenutzer Produkte in nicht standardmäßigen Store-Ansichten zum Warenkorb hinzugefügt haben.
+![Fehlerbehebung](../assets/fix.svg) Es wurde ein Fehler behoben, der dazu führte, dass im Suchmenü unabhängig von den Gebietsschemaeinstellungen immer das Währungssymbol vor dem Preiswert angezeigt wurde.
+![Fehlerbehebung](../assets/fix.svg) Es wurden unnötige Typdefinitionen für deaktivierte Core-Plug-ins entfernt, um Kompatibilitätsprobleme bei der Installation zu beheben.
 
 ## [!DNL Live Search] 4,0,0 {#400}
 

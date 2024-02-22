@@ -1,11 +1,11 @@
 ---
-title: '[!DNL Product Recommendations] Versionshinweise'
+title: '''[!DNL Product Recommendations] Versionshinweise'
 description: Die neuesten Versionshinweise für [!DNL Product Recommendations] aus Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
+source-git-commit: bf7dc316f7b7b702836441b35770403d75be6cfd
 workflow-type: tm+mt
-source-wordcount: '1233'
+source-wordcount: '1281'
 ht-degree: 0%
 
 ---
@@ -45,6 +45,19 @@ _25. April 2023_
 
 ## Aktuelle Hauptversion
 
+### 6.0.0 von Magento/Produktempfehlungen
+
+_22. Februar 2024_
+
+[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
+
+![Neu](../assets/new.svg) Die [!DNL Catalog Sync Dashboard] ist jetzt [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html). Dieses überarbeitete Dashboard bietet Einblicke in Datenströme für [!DNL Product Recommendations], [!DNL Live Search], und [!DNL Catalog Service].
+![Fehlerbehebung](../assets/fix.svg) Es wurde ein Fehler behoben, der zu Checkout-Fehlern für Product Recommendations führte.
+
+### Frühere Versionen
+
+++ 5.0.0 und früher
+
 ### 5.0.1 von Magento/Produktempfehlungen
 
 _15. September 2023_
@@ -58,10 +71,6 @@ _15. September 2023_
 #### Bekannte Einschränkungen
 
 * Die `websiteCode` -Wert falsch zurückgegeben, wenn er einen Unterstrich (_) enthält.
-
-### Frühere Versionen
-
-++ 5.0.0 und früher
 
 ### 5.0.0 von Magento/Produktempfehlungen
 
