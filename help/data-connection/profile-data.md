@@ -3,18 +3,14 @@ title: Aktualisieren des Profildatensatzschemas für die Commerce-Datenerfassung
 description: Erfahren Sie, wie Sie ein Schema, einen Datensatz und einen Datenspeicher erstellen, um Commerce-Profildatensätze zu erfassen und an die Experience Platform zu senden.
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: 8456f9b81812cf8ace55b7406d8b4fe50332c17a
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '242'
 ht-degree: 0%
 
 ---
 
 # Aktualisieren des Profildatensatzschemas für die Commerce-Datenerfassung
-
->[!NOTE]
->
->Diese Funktion befindet sich in der Beta-Phase. Wenn Sie dem Betaprogramm beitreten möchten, senden Sie eine Anfrage an [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
 
 Wenn Ihre Kunden ein Profil auf Ihrer Commerce-Site erstellen, wird ein Profildatensatz erstellt und Daten erfasst. Sie müssen ein für diesen Profildatensatz spezifisches Schema und einen Datensatz erstellen, bevor Sie diese Profildaten an die Experience Platform streamen können.
 

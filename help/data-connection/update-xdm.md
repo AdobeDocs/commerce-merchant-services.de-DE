@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie ein Schema, einen Datensatz und einen Datensp
 exl-id: 4401bbe7-1ccc-4349-a998-9e9ee9db590f
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: d5824e11b4961b518e35fcf56ff2c7ee00480617
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '978'
 ht-degree: 0%
 
 ---
@@ -76,10 +76,6 @@ Mit den für Verhaltens- und Back-Office-Daten konfigurierten Schemata, Datensä
 Informationen zum Einschließen der Profilinformationen Ihres Käufers finden Sie im nächsten Abschnitt.
 
 ## Zeitreihenprofilereignisdaten
-
->[!NOTE]
->
->Diese Funktion befindet sich in der Beta-Phase. Wenn Sie dem Betaprogramm beitreten möchten, senden Sie eine Anfrage an [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
 
 Zeitreihenprofilereignisdaten werden aus den folgenden Ereignissen generiert:
 

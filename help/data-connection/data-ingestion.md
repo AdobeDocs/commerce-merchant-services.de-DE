@@ -3,9 +3,9 @@ title: Typen von Commerce-Daten
 description: Erfahren Sie, welche Datentypen Sie erfassen und an die Experience Platform senden können.
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: d5824e11b4961b518e35fcf56ff2c7ee00480617
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '312'
 ht-degree: 0%
 
 ---
@@ -30,11 +30,7 @@ Erfahren Sie, wie [Schema erstellen](update-xdm.md) , mit dem Ereignisdaten aus 
 
 ## Daten aufzeichnen
 
->[!NOTE]
->
->Diese Funktion befindet sich in der Beta-Phase. Wenn Sie dem Betaprogramm beitreten möchten, senden Sie eine Anfrage an [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
-
-Datensatzdaten enthalten Informationen über die Attribute eines Subjekts. Ein Subjekt könnte eine Organisation oder eine Einzelperson sein. Beispielsweise erstellt ein Käufer auf Ihrer Site ein Konto und generiert Datensatzdaten. Diese Daten werden mithilfe eines Schemas in die Experience Platform aufgenommen, bei dem die Klasse auf **Individuelles Profil**. Sie können diese Datensatzdaten an den Adobe-Profilverwaltungs- und Segmentierungsdienst senden: [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html).
+Datensatzdaten enthalten Informationen über die Attribute eines Subjekts. Ein Subjekt könnte eine Organisation oder eine Einzelperson sein. Beispielsweise erstellt ein Käufer auf Ihrer Site ein Konto und generiert Datensatzdaten. Diese Daten werden mithilfe eines Schemas in die Experience Platform aufgenommen, bei dem die Klasse auf **Individuelles Profil**. Sie können diese Datensatzdaten an den Adobe-Profilverwaltungs- und Segmentierungsdienst senden: [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html?lang=de).
 
 ### Erfassen von Profildatensätzen
 

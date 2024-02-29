@@ -3,9 +3,9 @@ title: Commerce-Daten mit Adobe Experience Platform verbinden
 description: Erfahren Sie, wie Sie Ihre Commerce-Daten mit der Adobe Experience Platform verbinden.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: 655b5d18a4fb77232523c9c18a9fb362de93c70a
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '2501'
+source-wordcount: '2480'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ In diesem Abschnitt erfahren Sie, wie Sie die [!DNL Data Connection] -Erweiterun
 
 ### Hinzufügen von Dienstkonto- und Berechtigungsdetails
 
-Wenn Sie planen, [historische Bestelldaten](#send-historical-order-data) oder [(Beta) Kundenprofildaten](#send-customer-profile-data)müssen Sie Dienstkonto- und Berechtigungsdetails hinzufügen. Wenn Sie die [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) -Erweiterung hinzufügen, müssen Sie diese Schritte ausführen.
+Wenn Sie planen, [historische Bestelldaten](#send-historical-order-data) oder [Kundenprofildaten](#send-customer-profile-data)müssen Sie Dienstkonto- und Berechtigungsdetails hinzufügen. Wenn Sie die [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) -Erweiterung hinzufügen, müssen Sie diese Schritte ausführen.
 
 Wenn Sie nur Storefront- oder Backoffice-Daten erfassen und senden, können Sie zum [Allgemein](#general) Abschnitt.
 
@@ -97,7 +97,7 @@ In diesem Abschnitt geben Sie den Datentyp an, den Sie erfassen und an den Exper
 
 - **Backoffice** (Server-seitige Daten) sind Daten, die auf den Commerce-Servern erfasst werden. Dazu gehören Informationen über den Status einer Bestellung, z. B. ob eine Bestellung aufgegeben, storniert, rückerstattet, versandt oder abgeschlossen wurde. Er umfasst auch [historische Bestelldaten](#send-historical-order-data).
 
-- (**Beta**) **Profil** sind Daten, die sich auf die Profilinformationen Ihres Käufers beziehen. Lernen [more](#send-customer-profile-data).
+- **Profil** sind Daten, die sich auf die Profilinformationen Ihres Käufers beziehen. Lernen [more](#send-customer-profile-data).
 
 Um sicherzustellen, dass Ihre Adobe Commerce-Instanz mit der Datenerfassung beginnen kann, lesen Sie das [Voraussetzungen](overview.md#prerequisites).
 
@@ -158,13 +158,9 @@ Nach dem Onboarding fließen die Storefront-Daten an den Experience Platform-Edg
 
 ### Senden von Kundenprofildaten
 
->[!IMPORTANT]
->
->Diese Funktion befindet sich in der Beta-Phase. Wenn Sie dem Betaprogramm beitreten möchten, senden Sie eine Anfrage an [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
-
 Es gibt zwei Arten von Profildaten, die Sie an die Experience Platform senden können: Profildatensätze und Zeitreihenprofilereignisse.
 
-Ein Profildatensatz enthält Daten, die gespeichert werden, wenn ein Käufer ein Profil in Ihrer Commerce-Instanz erstellt, z. B. den Namen des Käufers. Wann Ihr Schema und Ihr Datensatz [ordnungsgemäß konfiguriert](profile-data.md), wird ein Profildatensatz an die Experience Platform gesendet und an den Adobe Profil-Management- und Segmentierungsdienst weitergeleitet: [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html).
+Ein Profildatensatz enthält Daten, die gespeichert werden, wenn ein Käufer ein Profil in Ihrer Commerce-Instanz erstellt, z. B. den Namen des Käufers. Wann Ihr Schema und Ihr Datensatz [ordnungsgemäß konfiguriert](profile-data.md), wird ein Profildatensatz an die Experience Platform gesendet und an den Adobe Profil-Management- und Segmentierungsdienst weitergeleitet: [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html?lang=de).
 
 Zeitreihenprofilereignisse enthalten Daten zu den Profilinformationen Ihres Käufers, z. B. ob er ein Konto auf Ihrer Site erstellt, bearbeitet oder löscht. Wenn Profilereignisdaten an die Experience Platform gesendet werden, befinden sie sich in einem Datensatz, in dem sie von anderen DX-Produkten verwendet werden können.
 

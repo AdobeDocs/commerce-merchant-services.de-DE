@@ -3,9 +3,9 @@ title: Zurück zu Office-Ereignissen
 description: Erfahren Sie, welche Daten jedes Back-Office-Ereignis erfasst.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: d5824e11b4961b518e35fcf56ff2c7ee00480617
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '3599'
+source-wordcount: '3573'
 ht-degree: 0%
 
 ---
@@ -402,10 +402,6 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 | `productListItems.categories.path` | Der Pfad zur Kategorie. |
 
 ## Kundenprofilereignisse (Back Office)
-
->[!NOTE]
->
->**Beta** Serverseitig generierte Profilereignisse stehen Beta-Teilnehmern zur Verfügung. Wenn Sie dem Betaprogramm beitreten möchten, senden Sie eine Anfrage an [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
 
 Von der serverseitigen Seite erfasste Profilereignisse enthalten Kontoinformationen, z. B. `accountCreated`, `accountUpdated`, und `accountDeleted`. Diese Daten werden verwendet, um wichtige Kundendetails auszufüllen, die für eine bessere Definition von Segmenten oder die Ausführung von Marketing-Kampagnen benötigt werden, z. B. das Senden von Rabattangeboten zur Anmeldung, von Kontoänderungsbestätigungen usw. Es gibt ähnliche Profilereignisse, die aus der [storefront](#customer-profile-events-storefront).
 

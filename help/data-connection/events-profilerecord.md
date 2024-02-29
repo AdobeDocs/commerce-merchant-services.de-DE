@@ -3,18 +3,14 @@ title: Profildatensätze
 description: Erfahren Sie, welche Daten ein Profildatensatz erfasst.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: 655b5d18a4fb77232523c9c18a9fb362de93c70a
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '212'
 ht-degree: 0%
 
 ---
 
-# [!DNL Data Connection] Profildatensätze (Beta)
-
->[!NOTE]
->
->Diese Funktion befindet sich in der Beta-Phase. Wenn Sie dem Betaprogramm beitreten möchten, senden Sie eine Anfrage an [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
+# [!DNL Data Connection] Profildatensätze
 
 Im Folgenden werden die Commerce-Profildatensätze beschrieben, die bei der Installation der [!DNL Data Connection] -Erweiterung. Die Daten in Profildatensätzen werden an die Adobe Experience Platform gesendet.
 
