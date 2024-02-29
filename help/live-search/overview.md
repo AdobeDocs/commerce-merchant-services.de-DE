@@ -3,7 +3,7 @@ title: Einführung in [!DNL Live Search]
 description: "[!DNL Live Search] von Adobe Commerce bietet eine schnelle, relevante und intuitive Sucherfahrung."
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: 12c9fa011662e2e9fd7bb088db97359dcde87915
+source-git-commit: 51ff52eba117fe438d592ca886dbca25304a0d15
 workflow-type: tm+mt
 source-wordcount: '722'
 ht-degree: 0%
@@ -57,7 +57,7 @@ Jedes dieser Attribute kann als [&quot;searchable&quot;](https://experienceleagu
 
 ## [!DNL Live Search] Arbeitsbereich
 
-Die [!DNL Live Search] [Arbeitsbereich](workspace.md) ist der Bereich im Amin, in dem Sie konfigurieren [!DNL Live Search] Funktionen wie Synonyme, Facetten und Kategorie-Merchandising.
+Die [!DNL Live Search] [Arbeitsbereich](workspace.md) ist der Bereich im Admin, in dem Sie [!DNL Live Search] Funktionen wie Synonyme, Facetten und Kategorie-Merchandising.
 
 ## Veranstaltungen
 

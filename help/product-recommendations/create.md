@@ -2,9 +2,9 @@
 title: Neue Empfehlung erstellen
 description: Erfahren Sie, wie Sie eine Produktempfehlungseinheit erstellen.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 24a930178873535f23331c9c5295c482d5b8e384
+source-git-commit: 51ff52eba117fe438d592ca886dbca25304a0d15
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '1022'
 ht-degree: 0%
 
 ---
@@ -31,6 +31,10 @@ Wenn Sie die Empfehlungseinheit aktivieren, beginnt Adobe Commerce [Daten erfass
 1. Im _Benennen Ihrer Empfehlung_ einen beschreibenden Namen für interne Verweise eingeben, z. B. `Home page most popular`.
 
 1. Im _Seitentyp auswählen_ wählen Sie aus den folgenden Optionen die Seite aus, auf der die Empfehlung angezeigt werden soll:
+
+   >[!NOTE]
+   >
+   > Produkt-Recommendations wird auf der Warenkorbseite nicht unterstützt, wenn Ihr Store für [Anzeigen der Warenkorbseite unmittelbar nach dem Hinzufügen eines Produkts zum Warenkorb](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration.html#redirect-to-cart).
 
    * Startseite
    * Kategorie
