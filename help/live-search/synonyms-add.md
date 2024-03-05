@@ -2,9 +2,9 @@
 title: "Synonyme hinzufügen"
 description: "Hinzufügen [!DNL Live Search] Synonyme zur Verbesserung der Antwort auf Suchanfragen."
 exl-id: 6c277d88-cb22-4174-abda-6d6bb65fe3be
-source-git-commit: c4bca0c7238be653dd13b051634c662e5891767d
+source-git-commit: 63318e2eb75bc5fb0a243b6430751b076e541b72
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '383'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Befolgen Sie die Anweisungen für das [Typ des Synonyms](synonyms-type.md) die S
 
 1. Geben Sie die **Schlüsselwort** Begriff oder Satz, der abgeglichen werden soll.
 1. Geben Sie die **Erweiterung** Begriffe, die Sie als Synonyme für den Suchbegriff hinzufügen möchten. Trennen Sie mehrere Begriffe durch ein Komma.
-In diesem Beispiel lautet das passende Keyword &quot;Hosen&quot;und die Erweiterungsbegriffe lauten &quot;lange Hosen, Hosen, Slacks&quot;.
+In diesem Beispiel lautet das passende Keyword &quot;Hosen&quot;und die Erweiterungsbegriffe lauten &quot;Hosen, Schläge&quot;.
 
    ![Beispiel für bidirektionale Synonyme](assets/synonym-add-two-way-example.png)
 
@@ -54,7 +54,7 @@ Der Satz von Synonymen erscheint in der Liste mit einem Zwei-Wege-Pfeil zwischen
 
    ![Beispiel für unidirektionale Synonyme](assets/synonym-add-one-way-example.png)
 
-   In diesem Beispiel ist das Keyword &quot;Hosen&quot;und die Einweg-Erweiterungsbegriffe &quot;Capris, Hosen mit Kalbslänge, Pädagogiker&quot;sind jeweils eine Untergruppe von &quot;Hosen&quot;, jedoch mit einer bestimmten Bedeutung.
+   In diesem Beispiel ist das Keyword &quot;Hosen&quot;und die unidirektionalen Erweiterungsbegriffe &quot;Capris, Peddle-Pushers&quot;sind jeweils eine Untergruppe von &quot;Hots&quot;, jedoch mit einer bestimmten Bedeutung.
 
 1. Wenn Sie fertig sind, klicken Sie auf **Speichern**.
 Die Gruppe von Synonymen wird in der Liste mit einem einseitigen Pfeil angezeigt, der von den Erweiterungsbegriffen zum Keyword zeigt, um anzugeben, dass es sich bei den Begriffen um Untergruppen des Keywords handelt. Ein Pluszeichen trennt jeden Erweiterungsbegriff.
