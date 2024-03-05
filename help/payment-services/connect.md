@@ -3,9 +3,9 @@ title: Instanz verbinden
 description: Verbinden Sie Ihre Commerce-Instanz mit einem API-Schlüssel und einem privaten Schlüssel und geben Sie den Datenraum in der Konfiguration an.
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
 feature: Payments, Checkout, Configuration, Saas
-source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
+source-git-commit: 57b140463d457404b57dd23d33c72e48b4c3ac89
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '590'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,10 @@ ht-degree: 0%
 * Wenn Sie *bereits mit Ihrer Instanz verbunden ist*, indem Sie Ihre API-Anmeldeinformationen abrufen und verwenden und Commerce Services konfigurieren, können Sie mit dem [Einrichten der Test-Sandbox](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/sandbox.html).
 * Wenn Sie *muss Ihre Instanz verbinden* Informationen finden Sie in diesem Thema zu [Abrufen von API-Anmeldeinformationen](#obtain-api-credentials) und [Konfigurieren von Commerce Services](#configure-commerce-services).
 * Wenn Sie *Unsicher, ob Ihre Instanz verbunden ist*, navigieren Sie zu **System** > Dienste > **Commerce Services Connector** und zeigen Sie die öffentlichen und privaten API-Schlüsselwerte im [!UICONTROL Sandbox Keys] und [!UICONTROL Production Keys] und die *Projekt* und *Datenraum* -Felder in der [!UICONTROL SaaS Identifier] Abschnitt. Wenn diese Werte vorhanden sind, ist Ihre Instanz verbunden.
+
+>[!NOTE]
+>
+>Alle Händler mit Berechtigung für Zahlungsdienste können einen Produktionsdatenraum und zwei Testdatenbereiche verwenden.
 
 ## API-Anmeldeinformationen abrufen
 
@@ -51,7 +55,7 @@ Derselbe API-Schlüssel kann über mehrere Instanzen hinweg verwendet werden, ab
 Nachdem Sie Ihre Anmeldeinformationen erhalten haben, können Sie Ihr SaaS-Projekt und den Saas-Datenraum konfigurieren.
 
 1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]**.
-1. Klicken **[!UICONTROL Configure Commerce Services]**.
+1. Klicks **[!UICONTROL Configure Commerce Services]**.
 
    Diese Option ist sichtbar, wenn Sie Commerce Services noch nicht für Ihr Konto konfiguriert haben.
 
