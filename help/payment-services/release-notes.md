@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] Versionshinweise"
 description: In den Versionshinweisen finden Sie Informationen zu allen [!DNL Payment Services] veröffentlicht.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 57b140463d457404b57dd23d33c72e48b4c3ac89
+source-git-commit: bcb111a409ee901a231d0bb4475b0c9ec728c95c
 workflow-type: tm+mt
-source-wordcount: '2209'
+source-wordcount: '2229'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,10 @@ Siehe [Produktverfügbarkeit](https://experienceleague.adobe.com/docs/commerce-o
 In diesen Versionshinweisen werden Funktionsänderungen und -korrekturen beschrieben, die außerhalb der regulären Versionen der gehosteten Funktionen für den gehosteten Dienst veröffentlicht wurden.
 
 +++Hosting-Dienstaktualisierungen
+
+_5. März 2024_
+
+![Problem behoben](../assets/fix.svg)<!-- Issue PAY-5252 --> Jetzt können Händler Daten aus den Dashboard-Rastern kopieren, indem sie den Inhalt einer einzelnen Zelle auswählen.
 
 _10. Oktober 2023_
 
