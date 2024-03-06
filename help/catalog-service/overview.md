@@ -3,7 +3,7 @@ title: '[!DNL Catalog Service]'
 description: '''[!DNL Catalog Service] für Adobe Commerce bietet eine Möglichkeit, den Inhalt von Produktansichtsseiten und Produktlistenseiten viel schneller abzurufen als die nativen Adobe Commerce GraphQL-Abfragen."'
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
 recommendations: noCatalog
-source-git-commit: d9d9506b2555bc30d6fbec67c65fa220d9a51e91
+source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
 workflow-type: tm+mt
 source-wordcount: '890'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Die [!DNL Catalog Service] uses [GraphQL](https://graphql.org/) , um Produktdate
 
 Adobe Commerce verfügt über zwei GraphQL-Systeme. Das GraphQL-Kernsystem bietet eine breite Palette von Abfragen (Lese-Vorgänge) und Mutationen (Schreibvorgänge), mit denen ein Käufer mit vielen Seitentypen interagieren kann, darunter Produkt, Kundenkonto, Warenkorb, Checkout und mehr. Die Abfragen, die Produktinformationen zurückgeben, sind jedoch nicht für die Geschwindigkeit optimiert. Das GraphQL-System für Dienste kann nur Abfragen zu Produkten und zugehörigen Informationen durchführen. Diese Abfragen sind leistungsfähiger als ähnliche Core-Abfragen.
 
-[!DNL Catalog Service] -Kunden können die neue [SaaS-Preisindexer](../price-index/index.md), was schnellere Preisänderungen und Synchronisierungszeiten ermöglicht.
+[!DNL Catalog Service] -Kunden können die neue [SaaS-Preisindexer](../price-index/price-indexing.md), was schnellere Preisänderungen und Synchronisierungszeiten ermöglicht.
 
 ## Architektur
 
@@ -68,7 +68,7 @@ Ein komplexes Produkt hat keinen festgelegten Preis. Stattdessen gibt Catalog Se
 
 >[!NOTE]
 >
-> Commerce-Kunden mit [!DNL Catalog Service] kann von schnelleren Preisänderungen und Synchronisierungszeiten auf ihren Websites mit dem [SaaS-Preisindexer](../price-index/index.md).
+> Commerce-Kunden mit [!DNL Catalog Service] kann von schnelleren Preisänderungen und Synchronisierungszeiten auf ihren Websites mit dem [SaaS-Preisindexer](../price-index/price-indexing.md).
 
 ## Implementierung
 

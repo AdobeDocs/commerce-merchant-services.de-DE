@@ -3,7 +3,7 @@ title: "Technischer Überblick"
 description: "[!DNL Live Search] Onboarding-Fluss, Systemanforderungen, Grenzen und Einschränkungen"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: e235073031cae1304eaae4605d2f94332e52284f
+source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
 workflow-type: tm+mt
 source-wordcount: '1028'
 ht-degree: 0%
@@ -148,7 +148,7 @@ Dadurch können Entwickler die Funktionalität und den Stil vollständig anpasse
 
 ## Preisindex
 
-Live Search-Kunden können die neue [SaaS-Preisindexer](../price-index/index.md), was schnellere Preisänderungen und Synchronisierungszeiten ermöglicht.
+Live Search-Kunden können die neue [SaaS-Preisindexer](../price-index/price-indexing.md), was schnellere Preisänderungen und Synchronisierungszeiten ermöglicht.
 
 ## Preisstützung
 

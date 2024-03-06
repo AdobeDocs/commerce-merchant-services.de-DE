@@ -2,9 +2,9 @@
 title: "[!DNL Live Search] Indizierung"
 description: "Erfahren Sie wie [!DNL Live Search] indiziert Eigenschaften von Produktattributen."
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: c77b2f9cb55d3eb339dcc900ce606b94c592f559
+source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '587'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Die [!DNL Live Search] Mit der API kann ein Client nach jedem Produktattribut so
 
 >[!NOTE]
 >
-> Commerce-Kunden mit [!DNL Live Search] kann von schnelleren Preisänderungen und Synchronisierungszeiten auf ihren Websites mit dem [SaaS-Preisindexer](../price-index/index.md).
+> Commerce-Kunden mit [!DNL Live Search] kann von schnelleren Preisänderungen und Synchronisierungszeiten auf ihren Websites mit dem [SaaS-Preisindexer](../price-index/price-indexing.md).
 
 ## Indizierungs-Pipeline
 
