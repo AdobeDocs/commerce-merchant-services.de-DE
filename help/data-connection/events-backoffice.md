@@ -3,9 +3,10 @@ title: Zurück zu Office-Ereignissen
 description: Erfahren Sie, welche Daten jedes Back-Office-Ereignis erfasst.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
+exl-id: a5a4f04b-89ac-4020-95ce-984f9f2d8385
+source-git-commit: 0ab1b4b23d25bee722b35fbc8b9717ad6d1c299e
 workflow-type: tm+mt
-source-wordcount: '3573'
+source-wordcount: '3571'
 ht-degree: 0%
 
 ---
@@ -16,7 +17,7 @@ Im Folgenden werden die Commerce-Back-Office-Ereignisse aufgelistet, die bei der
 
 Zusätzlich zu den Daten, die die folgenden Ereignisse erfassen, erhalten Sie auch [sonstige Daten](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) bereitgestellt vom Adobe Experience Platform Web SDK.
 
-Backoffice-Ereignisse enthalten serverseitige Daten. Diese Daten umfassen [Bestellstatus](#order-status) Informationen, z. B. ob eine Bestellung aufgegeben, storniert, zurückerstattet, versandt oder abgeschlossen wurde. Serverseitige Daten umfassen auch [Kundenprofilereignisse](#customer-profile-events-back-office) Informationen, beispielsweise ob ein Konto erstellt, aktualisiert oder gelöscht wurde.
+Backoffice-Ereignisse enthalten serverseitige Daten. Diese Daten umfassen [Bestellstatus](#order-status) Informationen, z. B. ob eine Bestellung aufgegeben, storniert, zurückerstattet, versandt oder abgeschlossen wurde. Serverseitige Daten umfassen auch [Kundenprofilereignisse](#customer-profile-events) Informationen, beispielsweise ob ein Konto erstellt, aktualisiert oder gelöscht wurde.
 
 >[!NOTE]
 >
@@ -401,9 +402,9 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 | `productListItems.categories.name` | Der Name der Kategorie. |
 | `productListItems.categories.path` | Der Pfad zur Kategorie. |
 
-## Kundenprofilereignisse (Back Office)
+## Kundenprofilereignisse
 
-Von der serverseitigen Seite erfasste Profilereignisse enthalten Kontoinformationen, z. B. `accountCreated`, `accountUpdated`, und `accountDeleted`. Diese Daten werden verwendet, um wichtige Kundendetails auszufüllen, die für eine bessere Definition von Segmenten oder die Ausführung von Marketing-Kampagnen benötigt werden, z. B. das Senden von Rabattangeboten zur Anmeldung, von Kontoänderungsbestätigungen usw. Es gibt ähnliche Profilereignisse, die aus der [storefront](#customer-profile-events-storefront).
+Von der serverseitigen Seite erfasste Profilereignisse enthalten Kontoinformationen, z. B. `accountCreated`, `accountUpdated`, und `accountDeleted`. Diese Daten werden verwendet, um wichtige Kundendetails auszufüllen, die für eine bessere Definition von Segmenten oder die Ausführung von Marketing-Kampagnen benötigt werden, z. B. das Senden von Rabattangeboten zur Anmeldung, von Kontoänderungsbestätigungen usw. Es gibt ähnliche Profilereignisse, die aus der [storefront](events.md#customer-profile-events).
 
 ### accountCreated
 

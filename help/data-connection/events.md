@@ -4,9 +4,9 @@ description: Erfahren Sie, welche Daten von den einzelnen Verhaltensereignissen 
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: 540c423ecf7e50a36c1137f43a9cf9673658c805
+source-git-commit: a433d970e83792a9f53b2a09afd84c335d980024
 workflow-type: tm+mt
-source-wordcount: '4497'
+source-wordcount: '4496'
 ht-degree: 0%
 
 ---
@@ -303,9 +303,9 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 | `productListItems.selectedOptions.attribute` | Identifiziert ein Attribut des konfigurierbaren Produkts, z. B. `size` oder `color`. |
 | `productListItems.selectedOptions.value` | Identifiziert den Wert des Attributs, z. B. `small` oder `black`. |
 
-## Kundenprofilereignisse (Verhalten)
+## Kundenprofilereignisse
 
-Zu den von der Storefront erfassten Profilereignissen gehören Kontoinformationen, z. B. `signIn`, `signOut`, `createAccount`, und `editAccount`. Diese Daten werden verwendet, um wichtige Kundendetails auszufüllen, die für eine bessere Definition von Segmenten oder die Ausführung von Marketing-Kampagnen benötigt werden, z. B. das Senden von Rabattangeboten zur Anmeldung, von Kontoänderungsbestätigungen usw. Es gibt ähnliche Profilereignisse, die aus der [serverseitig](events-backoffice.md#customer-profile-events-back-office).
+Zu den von der Storefront erfassten Profilereignissen gehören Kontoinformationen, z. B. `signIn`, `signOut`, `createAccount`, und `editAccount`. Diese Daten werden verwendet, um wichtige Kundendetails auszufüllen, die für eine bessere Definition von Segmenten oder die Ausführung von Marketing-Kampagnen benötigt werden, z. B. das Senden von Rabattangeboten zur Anmeldung, von Kontoänderungsbestätigungen usw. Es gibt ähnliche Profilereignisse, die aus der [serverseitig](events-backoffice.md#customer-profile-events).
 
 ### signIn
 
