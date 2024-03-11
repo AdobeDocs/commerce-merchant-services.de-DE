@@ -2,9 +2,9 @@
 title: "Arten von Synonymen"
 description: "Einweg- und Zweiwege [!DNL Live Search] Synonyme erweitern die Definition von Keywords."
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
-source-git-commit: 9bacdb5fd232a3603bcb7abe2e93da9ead794d38
+source-git-commit: cb5db979828eb0b678d19c926de2823829717c02
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '466'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,3 @@ Es ist nicht erforderlich, sowohl die Singular- als auch die Plural eines Wortes
 ### Konsistenz
 
 Konsistent mit der Verwendung von Terminologie in Ihrem Katalog sein. Beachten Sie, dass es regionale Unterschiede bei der Verwendung und manchmal Unterschiede innerhalb einer Branche geben kann.
-
-### Keyword-Zuordnung
-
-Bei dieser Technik werden anstelle von Synonymen durchsuchbare Produktattribute verwendet, um schlüsselwortbasierte Verknüpfungen zwischen Produkten zu erstellen. Daher kann ein zugeordnetes Produkt in den Suchergebnissen eines anderen Produkts angezeigt werden. Weitere Informationen finden Sie unter [Suchergebnisse](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html).
