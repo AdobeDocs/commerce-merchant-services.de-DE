@@ -4,9 +4,9 @@ description: Erfahren Sie, welche Daten von den einzelnen Verhaltensereignissen 
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: a433d970e83792a9f53b2a09afd84c335d980024
+source-git-commit: ace61fa579404962a9ca3eb97f61ed50bc43db52
 workflow-type: tm+mt
-source-wordcount: '4496'
+source-wordcount: '4516'
 ht-degree: 0%
 
 ---
@@ -151,6 +151,8 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 | `commerce.commerceScope.storeCode` | Der eindeutige Store-Code. Sie können viele Geschäfte pro Website haben. |
 | `commerce.commerceScope.storeViewCode` | Der eindeutige Store-Ansichtscode. Sie können viele Store-Ansichten pro Store haben. |
 | `commerce.commerceScope.websiteCode` | Der eindeutige Website-Code. Sie können viele Websites in einer Umgebung haben. |
+| `commerce.order` | Enthält Informationen zur ausstehenden Bestellung für ein oder mehrere Produkte. |
+| `commerce.order.discountAmount` | Gibt den Rabattbetrag an, der auf die gesamte Bestellung angewendet wird. |
 | `productListItems` | Eine Reihe von Produkten, die zum Warenkorb hinzugefügt wurden. |
 | `productListItems.SKU` | Lagereinheit. Die eindeutige Kennung für das Produkt. |
 | `productListItems.name` | Der Anzeigename oder für Menschen lesbare Name des Produkts. |

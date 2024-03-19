@@ -3,9 +3,9 @@ title: '''[!DNL Product Recommendations] Versionshinweise'
 description: Die neuesten Versionshinweise für [!DNL Product Recommendations] aus Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
+source-git-commit: ace61fa579404962a9ca3eb97f61ed50bc43db52
 workflow-type: tm+mt
-source-wordcount: '1281'
+source-wordcount: '1276'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Die Versionshinweise beinhalten:
 ![Fehlerbehebung](../assets/fix.svg) Fehlerbehebungen und Verbesserungen
 ![Fehler](../assets/bug.svg) Bekannte Probleme
 
-Siehe die Entwicklerdokumentation zu [Informationen zum Produktsupport](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
+Siehe die Entwicklerdokumentation zu [Informationen zum Produktsupport](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
 
 ## Aktualisierungen gehosteter Dienste
 
@@ -35,15 +35,25 @@ Diese Hinweise beschreiben Aktualisierungen, die außerhalb einer versionierten 
 
 _18. Juli 2023_
 
-![Neu](../assets/new.svg) Produkt Recommendations verfügt jetzt über eine GraphQL [`recommendations`](https://developer.adobe.com/commerce/services/graphql/recommendations/recommendations/) Abfrage.
+![Neu](../assets/new.svg) [!DNL Product Recommendations] verfügt jetzt über eine GraphQL [`recommendations`](https://developer.adobe.com/commerce/services/graphql/recommendations/recommendations/) Abfrage.
 
 _25. April 2023_
 
-![Neu](../assets/new.svg) Recommendations-Kunden können jetzt die Vorteile von [SaaS-Preisindizierung](../price-index/price-indexing.md).
+![Neu](../assets/new.svg) [!DNL Product Recommendations] -Kunden können jetzt [SaaS-Preisindizierung](../price-index/price-indexing.md).
 
 +++
 
 ## Aktuelle Hauptversion
+
+### 6.0.1 von Magento/Produktempfehlungen
+
+_19. März 2024_
+
+[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
+
+![Neu](../assets/new.svg) Unterstützung für PHP 8.3 hinzugefügt.
+
+### Frühere Versionen
 
 ### 6.0.0 von Magento/Produktempfehlungen
 
@@ -51,10 +61,8 @@ _22. Februar 2024_
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
 
-![Neu](../assets/new.svg) Die [!DNL Catalog Sync Dashboard] ist jetzt [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html). Dieses überarbeitete Dashboard bietet Einblicke in Datenströme für [!DNL Product Recommendations], [!DNL Live Search], und [!DNL Catalog Service].
-![Fehlerbehebung](../assets/fix.svg) Es wurde ein Fehler behoben, der zu Checkout-Fehlern für Product Recommendations führte.
-
-### Frühere Versionen
+![Neu](../assets/new.svg) Die [!DNL Catalog Sync Dashboard] ist jetzt [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard). Dieses überarbeitete Dashboard bietet Einblicke in Datenströme für [!DNL Product Recommendations], [!DNL Live Search], und [!DNL Catalog Service].
+![Fehlerbehebung](../assets/fix.svg) Es wurde ein Fehler behoben, der zu Checkout-Fehlern für [!DNL Product Recommendations].
 
 ++ 5.0.0 und früher
 
@@ -78,22 +86,22 @@ _20. März 2023_
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
 
-![Neu](../assets/new.svg) Produkt-Recommendations wurde aktualisiert, um Adobe Commerce 2.4.6 zu unterstützen.
+![Neu](../assets/new.svg) Aktualisiert [!DNL Product Recommendations] zur Unterstützung von Adobe Commerce 2.4.6.
 ![Neu](../assets/new.svg) Dies ist eine Hauptversion. [Bearbeiten](install-configure.md#update) der Stamm `composer.json` -Datei für Ihr Projekt.
-![Neu](../assets/new.svg) [!DNL Product Recommendations] unterstützt jetzt vollständig [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/introduction.html) Funktionen in Commerce (früher bekannt als Multi-Source-Bestand oder MSI). Um den vollständigen Support zu ermöglichen, müssen Sie [update](install-configure.md#update) das Abhängigkeitsmodul `commerce-data-export` auf Version 102.2.0+.
+![Neu](../assets/new.svg) [!DNL Product Recommendations] unterstützt jetzt vollständig [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) Funktionen in Commerce (früher bekannt als Multi-Source-Bestand oder MSI). Um den vollständigen Support zu ermöglichen, müssen Sie [update](install-configure.md#update) das Abhängigkeitsmodul `commerce-data-export` auf Version 102.2.0+.
 
 ### 4.0.1 von Magento/Produktempfehlungen
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
 
-![Fehlerbehebung](../assets/fix.svg) Zuvor wurde in der Produkt-Recommendations ein Fehler angezeigt, wenn die Anzeigewährung auf eine nicht standardmäßige Währung umgestellt wurde. Das Wechseln von Währungen funktioniert jetzt ordnungsgemäß.
+![Fehlerbehebung](../assets/fix.svg) Zuvor [!DNL Product Recommendations] wurde ein Fehler angezeigt, wenn die Anzeigewährung auf eine nicht standardmäßige Währung umgestellt wurde. Das Wechseln von Währungen funktioniert jetzt ordnungsgemäß.
 
 ### 4.0.0 von Magento/Produktempfehlungen
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
 
 ![Neu](../assets/new.svg) hinzugefügt [Bereitschaftsindikatoren](create.md) um Ihnen zu helfen, den Trainings-Fortschritt der einzelnen Empfehlungstypen zu visualisieren.
-![Neu](../assets/new.svg) Dies ist eine Hauptversion. [Bearbeiten](install-configure.md#update) der Stamm `composer.json` -Datei für Ihr Projekt. Für diese Version müssen Sie außerdem bei der Installation und Konfiguration von Product Recommendations zwei API-Schlüssel angeben: [einen Produktionsschlüssel und einen Sandbox-Schlüssel](../landing/saas.md).
+![Neu](../assets/new.svg) Dies ist eine Hauptversion. [Bearbeiten](install-configure.md#update) der Stamm `composer.json` -Datei für Ihr Projekt. Für diese Version müssen Sie außerdem bei der Installation und Konfiguration zwei API-Schlüssel angeben [!DNL Product Recommendations]: [einen Produktionsschlüssel und einen Sandbox-Schlüssel](../landing/saas.md).
 
 #### Bekannte Einschränkungen
 
@@ -116,8 +124,8 @@ _20. März 2023_
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
 
-![Neu](../assets/new.svg) hinzugefügt [B2B-Unterstützung](onboarding.md#b2bsupport) in Product Recommendations
-![Neu](../assets/new.svg) Neue Feeds zu [Katalogdaten synchronisieren](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) zu Commerce-Services über die Befehlszeile
+![Neu](../assets/new.svg) hinzugefügt [B2B-Unterstützung](onboarding.md#b2bsupport) in [!DNL Product Recommendations]
+![Neu](../assets/new.svg) Neue Feeds zu [Katalogdaten synchronisieren](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/data-services/catalog-sync) zu Commerce-Services über die Befehlszeile
 
 ### 3.3.3 von Magento/Produktempfehlungen
 
@@ -144,7 +152,7 @@ _20. März 2023_
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
 
-![Neu](../assets/new.svg) Adobe Client Data Layer wird nun unterstützt, um die verhaltensbasierte Datenerfassung über Adobe Commerce-Funktionen und -Dienste hinweg zu standardisieren. Siehe [Readme](https://github.com/adobe/magento-storefront-event-collector/blob/main/README.md) , um mehr zu erfahren.
+![Neu](../assets/new.svg) Adobe Client Data Layer wird nun unterstützt, um die verhaltensbasierte Datenerfassung über Adobe Commerce-Funktionen und -Dienste hinweg zu standardisieren. Siehe [Readme](https://github.com/adobe/commerce-events/blob/main/packages/storefront-events-collector/README.md) , um mehr zu erfahren.
 
 ### 3.2.6 von Magento/Produktempfehlungen
 
@@ -157,7 +165,7 @@ _20. März 2023_
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
 
-![Neu](../assets/new.svg) Umbenannte Magento-Dienste in [Commerce-Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) und verbesserte Benutzerfreundlichkeit im Admin
+![Neu](../assets/new.svg) Umbenannte Magento-Dienste in [Commerce-Services](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas) und verbesserte Benutzerfreundlichkeit im Admin
 
 ### 3.2.4 von Magento/Produktempfehlungen
 
@@ -178,7 +186,7 @@ _20. März 2023_
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
 
 ![Neu](../assets/new.svg) Die Möglichkeit wurde hinzugefügt, [Vorschau der Empfehlungsergebnisse](create.md) zum Zeitpunkt der Erstellung. Dies erfordert möglicherweise, dass Sie Ihr Modul auf die neueste Version aktualisieren.
-![Neu](../assets/new.svg) Die Möglichkeit wurde hinzugefügt, [überwachen und verwalten](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) den Vorgang zur Katalogsynchronisierung vom Administrator.
+![Neu](../assets/new.svg) Die Möglichkeit wurde hinzugefügt, [überwachen und verwalten](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/data-services/catalog-sync) den Vorgang zur Katalogsynchronisierung vom Administrator.
 ![Neu](../assets/new.svg) hinzugefügt [Filter](filters.md) um zu steuern, welche Produkte in Empfehlungen angezeigt werden.
 ![Neu](../assets/new.svg) Der [Visuelle Ähnlichkeit](type.md#visualsim) Empfehlungstyp.
 
@@ -192,7 +200,7 @@ _20. März 2023_
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
 
-![Neu](../assets/new.svg) Die Möglichkeit wurde hinzugefügt, [resync](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) Ihr Katalog zu SaaS-Diensten über die Befehlszeile.
+![Neu](../assets/new.svg) Die Möglichkeit wurde hinzugefügt, [resync](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/data-services/catalog-sync) Ihr Katalog zu SaaS-Diensten über die Befehlszeile.
 ![Neu](../assets/new.svg) Unterstützung für Datenbanktabellenpräfixe hinzugefügt
 ![Fehlerbehebung](../assets/fix.svg) PHP 7.1-Unterstützung wurde entfernt
 
@@ -219,7 +227,7 @@ _20. März 2023_
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
 
 ![Fehlerbehebung](../assets/fix.svg) Der Fehler &quot;Produktoptionen können nicht abgerufen werden&quot;wurde behoben, der beim Katalogexport auftreten konnte.
-![Fehlerbehebung](../assets/fix.svg) Das Währungssymbol im _Umsatz_ in der Spalte _Produkt-Recommendations_ Das Dashboard spiegelt nun die konfigurierte Basiswährung korrekt wider.
+![Fehlerbehebung](../assets/fix.svg) Das Währungssymbol im _Umsatz_ in der Spalte _[!DNL Product Recommendations]_Das Dashboard spiegelt nun die konfigurierte Basiswährung korrekt wider.
 
 ### 3.0.4 von Magento/Produktempfehlungen
 
@@ -252,7 +260,7 @@ _20. März 2023_
 
 Dies ist eine Hauptversion. [Bearbeiten](install-configure.md#update) die Datei &quot;root composer.json&quot;Ihres Projekts.
 
-![Neu](../assets/new.svg) Abrufen [!DNL Product Recommendations] von alternativen SaaS-Datenräumen aus. Auf diese Weise können Sie Produktempfehlungen verwenden, die in Ihrer Produktumgebung in anderen, nicht produktionsbezogenen Umgebungen berechnet wurden. [Wechseln von SaaS-Datenräumen](settings.md) beschreibt diese Funktion weiter.
+![Neu](../assets/new.svg) Abrufen [!DNL Product Recommendations] von alternativen SaaS-Datenräumen aus. Auf diese Weise können Sie [!DNL Product Recommendations] in Ihrer -Produktumgebung in anderen Nicht-Produktionsumgebungen berechnet werden. [Wechseln von SaaS-Datenräumen](settings.md) beschreibt diese Funktion weiter.
 
 ![Fehlerbehebung](../assets/fix.svg) Es wurde ein Problem behoben, bei dem das Auschecken für Käufer mit Block Origin verhindert wurde.
 ![Fehlerbehebung](../assets/fix.svg) Fehlerkorrektur - Es wurde ein Problem behoben, durch das irrelevante Ereignisse zum Warenkorb gesendet wurden
@@ -261,7 +269,7 @@ Dies ist eine Hauptversion. [Bearbeiten](install-configure.md#update) die Datei 
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
 
-![Neu](../assets/new.svg) Unterstützung von Page Builder. Mit der Integration von Page Builder können Sie Empfehlungseinheiten an einem beliebigen Ort in von Page Builder erstellten Inhalten genau und präzise platzieren. Sie können die Überschriften und Empfehlungseinheiten auch selbst gestalten. Navigieren Sie zu [Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) für weitere Informationen.
+![Neu](../assets/new.svg) Unterstützung von Page Builder. Mit der Integration von Page Builder können Sie Empfehlungseinheiten an einem beliebigen Ort in von Page Builder erstellten Inhalten genau und präzise platzieren. Sie können die Überschriften und Empfehlungseinheiten auch selbst gestalten. Navigieren Sie zu [Page Builder](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations) für weitere Informationen.
 
 ### 2.0.0 von Magento/Produktempfehlungen
 
@@ -276,4 +284,4 @@ Dies ist eine Hauptversion. [Bearbeiten](install-configure.md#update) die Datei 
 Weitere Informationen zu [!DNL Product Recommendations] und [!DNL Product Recommendations] Entwicklung:
 
 * [Benutzerhandbuch](overview.md)
-* [Entwicklerdokumentation](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/development-overview.html)
+* [Entwicklerdokumentation](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/developer/development-overview)

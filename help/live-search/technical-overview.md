@@ -3,9 +3,9 @@ title: "Technischer Überblick"
 description: "[!DNL Live Search] Onboarding-Fluss, Systemanforderungen, Grenzen und Einschränkungen"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
+source-git-commit: e8d4215b1f16f1cb34783674cabc046dec135729
 workflow-type: tm+mt
-source-wordcount: '1028'
+source-wordcount: '1023'
 ht-degree: 0%
 
 ---
@@ -43,8 +43,8 @@ Wenn Sie über eine benutzerdefinierte Headless-Implementierung verfügen, über
 * [PLP-Widget](https://github.com/adobe/storefront-product-listing-page)
 * [Live-Suchfeld](https://github.com/adobe/storefront-search-as-you-type)
 
-Wenn Sie nicht die Standardkomponenten wie Suchadapter oder Widgets auf Luma oder AEM CIF Widgets verwenden, beachten Sie, dass Eventing (Clickstream-Daten, die Adobe Sensei für intelligente Merchandising- und Leistungsmetriken speisen) nicht vorkonfiguriert funktioniert und benutzerdefinierte Entwicklung erfordert, um Headless-Eventing zu implementieren.
-Die neueste Version von [!DNL Live Search] bereits verwendet [!DNL Catalog Service] und die Installationen [!DNL Catalog Service] Module.
+Wenn Sie nicht die Standardkomponenten wie Suchadapter oder Widgets auf Luma oder AEM CIF Widgets verwenden, funktioniert Eventing (Clickstream-Daten, die Adobe Sensei für intelligente Merchandising- und Leistungsmetriken speisen) nicht standardmäßig und erfordert eine benutzerdefinierte Entwicklung, um Headless-Eventing zu implementieren.
+Die neueste Version von [!DNL Live Search] bereits verwendet [!DNL Catalog Service].
 
 ## Grenzen und Schwellenwerte
 
@@ -109,6 +109,7 @@ So beschränken Sie Kundengruppen mithilfe von Katalogberechtigungen:
 | lettisch | Lettland | lv_LV | lv_LV |
 | norwegisch | Norwegen Bokmal | nb_NO | nb_NO |
 | holländisch | Niederlande | nl_NL | nl_NL |
+| polnisch | Polen | pl_PL | pl_PL |
 | portugiesisch | Brasilien | pt_BR | pt_BR |
 | portugiesisch | Portugal | pt_PT | pt_PT |
 | rumänisch | Rumänien | ro_RO | ro_RO |
@@ -142,7 +143,7 @@ Dadurch können Entwickler die Funktionalität und den Stil vollständig anpasse
 
 ## Inventory management
 
-[!DNL Live Search] unterstützt [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/introduction.html) Funktionen in Commerce (früher bekannt als Multi-Source-Bestand oder MSI). Um den vollständigen Support zu ermöglichen, müssen Sie [update](install.md#update) das Abhängigkeitsmodul `commerce-data-export` auf Version 102.2.0+.
+[!DNL Live Search] unterstützt [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) Funktionen in Commerce (früher bekannt als Multi-Source-Bestand oder MSI). Um den vollständigen Support zu ermöglichen, müssen Sie [update](install.md#update) das Abhängigkeitsmodul `commerce-data-export` auf Version 102.2.0+.
 
 [!DNL Live Search] gibt einen booleschen Hinweis zurück, ob ein Produkt in Inventory management verfügbar ist, enthält jedoch keine Informationen darüber, welche Quelle über das Lager verfügt.
 
@@ -193,9 +194,9 @@ Verwendung [!DNL Live Search] Mit PWA Studio müssen Integratoren auch:
 
 ## Derzeit nicht unterstützt
 
-* Die [Erweiterte Suche](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) -Modul deaktiviert ist, wenn [!DNL Live Search] installiert ist und der Link Erweiterte Suche in der Fußzeile der Storefront entfernt wird.
-* [Tier-Preise](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-tier.html) und [Sonderpreise](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-special.html) werden im [!DNL Live Search] -Feld und das Widget zur Produktauflistungsseite.
+* Die [Erweiterte Suche](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) -Modul deaktiviert ist, wenn [!DNL Live Search] installiert ist und der Link Erweiterte Suche in der Fußzeile der Storefront entfernt wird.
+* [Tier-Preise](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier) und [Sonderpreise](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special) werden im [!DNL Live Search] -Feld und das Widget zur Produktauflistungsseite.
 
 ## Cookies
 
-[!DNL Live Search] erfasst Benutzerinteraktionsdaten im Rahmen der grundlegenden Funktionalität und Cookies werden zum Speichern dieser Daten verwendet. Beim Erfassen von Benutzerinformationen muss der Benutzer dem Speichern von Cookies zustimmen. [!DNL Live Search] und [!DNL Product Recommendations] den Datenstrom und damit denselben Cookie-Mechanismus teilen. Weitere Informationen dazu finden Sie unter [Umgang mit Cookie-Einschränkungen](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/setting-cookie.html).
+[!DNL Live Search] erfasst Benutzerinteraktionsdaten im Rahmen der grundlegenden Funktionalität und Cookies werden zum Speichern dieser Daten verwendet. Beim Erfassen von Benutzerinformationen muss der Benutzer dem Speichern von Cookies zustimmen. [!DNL Live Search] und [!DNL Product Recommendations] den Datenstrom und damit denselben Cookie-Mechanismus teilen. Weitere Informationen dazu finden Sie unter [Umgang mit Cookie-Einschränkungen](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/developer/setting-cookie).
