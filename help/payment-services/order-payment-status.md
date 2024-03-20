@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
 feature: Payments, Checkout, Orders
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: 0dc370409ace6ac6b0a56511cd0071cf525620f1
 workflow-type: tm+mt
-source-wordcount: '1864'
+source-wordcount: '2045'
 ht-degree: 0%
 
 ---
@@ -83,9 +83,36 @@ Sie können [Download-Auszahlungstransaktionen](#download-order-payment-statuses
 >
 >Die in dieser Tabelle angezeigten Daten werden in absteigender Reihenfolge sortiert (`DESC`) standardmäßig mithilfe der `TRANS DATE`. Die `TRANS DATE` ist das Datum und die Uhrzeit, zu der die Transaktion eingeleitet wurde.
 
+### Aktualisierungen des Zahlungsstatus
+
+Bestimmte Zahlungsmethoden erfordern einen Zeitraum, um die Zahlung zu erfassen. [!DNL Payment Services] erkennt nun die ausstehenden Status eines Zahlungsvorgangs in einer Bestellung durch:
+
+* Synchrone Erkennung `pending capture` Transaktionen
+* Asynchrone Überwachung `pending capture` Transaktionen
+
+>[!NOTE]
+>
+>Die Erkennung des ausstehenden Status von Zahlungsvorgängen in einer Bestellung verhindert versehentlich Versandaufträge, wenn die Zahlung noch nicht eingegangen ist. Dies kann bei E-Check- und PayPal-Transaktionen auftreten.
+
+#### Synchrone Erkennung von Transaktionen mit ausstehender Erfassung
+
+Automatische Erkennung von Transaktionen in einer `Pending` Status zu ändern und die Eingabe von Bestellungen zu verhindern, `Processing` Status, wenn eine solche Transaktion erkannt wird.
+
+Während des Auscheckens eines Kunden oder wenn ein Administrator eine Rechnung für eine zuvor autorisierte Zahlung erstellt, [!DNL Payment Services] erkennt automatisch Transaktionen in einer `Pending` Status und Verlagerungen der entsprechenden Bestellungen in `Payment Review` -Status.
+
+#### Asynchrone Überwachung von Transaktionen mit ausstehenden Datensätzen
+
+Erkennen, wenn eine ausstehende Capture-Transaktion eine `Completed` -Status, damit Händler die Verarbeitung der betroffenen Bestellung fortsetzen können.
+
+Um sicherzustellen, dass dieser Prozess erwartungsgemäß funktioniert, müssen Händler einen neuen Cron-Auftrag konfigurieren. Sobald der Auftrag für die automatische Ausführung konfiguriert wurde, werden vom Händler keine weiteren Eingriffe erwartet.
+
+Siehe [Konfigurieren von Cron-Aufträgen](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html). Nach der Konfiguration wird der neue Auftrag alle 30 Minuten ausgeführt, um Aktualisierungen für Bestellungen abzurufen, die sich in einer `Payment Review` -Status.
+
+Händler können den aktualisierten Zahlungsstatus über die Berichtansicht Bestellzahlstatus überprüfen.
+
 ### Im Bericht verwendete Daten
 
-Die [!DNL Payment Services] -Modul verwendet Bestelldaten und kombiniert sie mit aggregierten Zahlungsdaten aus anderen Quellen (einschließlich PayPal), um aussagekräftige und sehr nützliche Berichte bereitzustellen.
+[!DNL Payment Services] verwendet Bestelldaten und kombiniert sie mit aggregierten Zahlungsdaten aus anderen Quellen (einschließlich PayPal), um aussagekräftige und sehr nützliche Berichte bereitzustellen.
 
 Die Bestelldaten werden exportiert und im Zahlungsdienst beibehalten. Wenn Sie [Bestellstatus ändern oder hinzufügen](https://docs.magento.com/user-guide/sales/order-status-custom.html) oder [Bearbeiten einer Store-Ansicht](https://docs.magento.com/user-guide/stores/stores-all-view-edit.html), [store](https://docs.magento.com/user-guide/stores/store-information.html), oder Website-Name, dass die Daten mit den Zahlungsdaten kombiniert werden und der Bericht Bestellzahlstatus mit den kombinierten Informationen ausgefüllt wird.
 
@@ -132,9 +159,9 @@ So wählen Sie die Datenquelle für Ihre [!UICONTROL Order Payment Status] Beric
 
    Die Berichtsergebnisse werden basierend auf der ausgewählten Datenquelle neu generiert.
 
-### Datum und Zeitrahmen anpassen
+### Zeitrahmen für Bestelldaten anpassen
 
-In der Berichtansicht Bestellzahlungsstatus können Sie den Zeitrahmen der Status, die Sie anzeigen möchten, anpassen, indem Sie bestimmte Daten auswählen. Standardmäßig werden 30 Tage Bestellzahlstatus im Raster angezeigt.
+In der Berichtansicht Bestellzahlungsstatus können Sie den Zeitrahmen der Statusergebnisse, die Sie anzeigen möchten, anpassen, indem Sie bestimmte Daten auswählen. Standardmäßig werden 30 Tage Bestellzahlstatus im Raster angezeigt.
 
 1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. Klicken Sie auf _[!UICONTROL Order dates]_Kalenderauswahl .
@@ -148,7 +175,7 @@ In der Berichtansicht Bestellzahlungsstatus können Sie die anzuzeigenden Status
 1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. Klicken Sie auf **[!UICONTROL Filter]** auswählen.
 1. Umschalten zwischen _Zahlungsstatus_ Optionen, um die Berichtsergebnisse nur für ausgewählte Bestellzahlstatus anzuzeigen.
-1. Geben Sie einen _Min. Bestellbetrag_ oder _Max. Bestellbetrag_ , um die Berichtsergebnisse innerhalb dieses Bestellwertbereichs anzuzeigen.
+1. Zeigen Sie die Berichtsergebnisse innerhalb eines Bestellwertbereichs an, indem Sie eine _[!UICONTROL Min Order Amount]_oder _[!UICONTROL Max Order Amount_].
 1. Klicks **[!UICONTROL Hide filters]** um den Filter auszublenden.
 
 ### Spalten ein- und ausblenden
@@ -159,7 +186,7 @@ Der Bericht Bestellzahlstatus zeigt standardmäßig alle verfügbaren Informatio
 1. Klicken Sie auf _Spalteneinstellungen_ Symbol (![Symbol für Spalteneinstellungen](assets/column-settings.png){width="20" zoomable="yes"}).
 1. Um anzupassen, welche Spalten im Bericht angezeigt werden, aktivieren oder deaktivieren Sie die Spalten in der Liste.
 
-   Im Bericht Bestellzahlstatus werden alle Änderungen angezeigt, die Sie im Menü Spalteneinstellungen vorgenommen haben. Die Spaltenvoreinstellungen werden gespeichert und bleiben in Kraft, wenn Sie von der Berichtsansicht weg navigieren.
+   Im Bericht Bestellzahlstatus werden alle Änderungen, die Sie im Menü Spalteneinstellungen vorgenommen haben, sofort angezeigt. Die Spaltenvoreinstellungen werden gespeichert und bleiben in Kraft, wenn Sie von der Berichtsansicht weg navigieren.
 
 ### Status anzeigen
 
@@ -197,10 +224,10 @@ Sie können alle Streitigkeiten bezüglich der Bestellungen Ihres Ladens einsehe
 1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. Navigieren Sie zum **[!UICONTROL Disputes column]**.
 1. Anzeigen von Streitigkeiten für eine bestimmte Bestellung, siehe [den Streitstatus](#order-payment-status-information).
-1. Klicken Sie auf den Link zur Kennung des Streits (beginnend mit _PP-D-_), um zur [PayPal Resolution Center](https://www.paypal.com/us/smarthelp/article/what-is-the-resolution-center-faq3327).
+1. Überprüfung der Streitdetails von [PayPal Resolution Center](https://www.paypal.com/us/cshelp/article/what-is-the-resolution-center-help246) durch Klicken auf den Link zur Kennung des Streits, der mit _PP-D-_.
 1. Ergreifen Sie bei Bedarf geeignete Maßnahmen für den Streit.
 
-   Klicken Sie auf die Spaltenüberschrift &quot;Streitigkeiten&quot;, um die Streitigkeiten nach Status zu sortieren.
+   Klicken Sie auf die Schaltfläche [!UICONTROL Disputes] Spaltenüberschrift.
 
 ### Zahlungsstatus der Bestellung herunterladen
 

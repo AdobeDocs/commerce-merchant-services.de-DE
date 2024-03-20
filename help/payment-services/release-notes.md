@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] Versionshinweise"
 description: In den Versionshinweisen finden Sie Informationen zu allen [!DNL Payment Services] veröffentlicht.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: bcb111a409ee901a231d0bb4475b0c9ec728c95c
+source-git-commit: 0dc370409ace6ac6b0a56511cd0071cf525620f1
 workflow-type: tm+mt
-source-wordcount: '2229'
+source-wordcount: '2379'
 ht-degree: 0%
 
 ---
@@ -18,15 +18,13 @@ Diese Versionshinweise beschreiben die erste Version von [!DNL Payment Services]
 ![Problem behoben](../assets/fix.svg) Fehlerbehebungen und Verbesserungen
 ![Bekanntes Problem](../assets/bug.svg) Bekannte Probleme
 
-Informationen zu Funktionsänderungen und Fehlerbehebungen, die außerhalb der regulären Version der Funktionen veröffentlicht wurden, finden Sie in den Abschnitten gehostete Dienstaktualisierungen .
+Informationen zu Funktionsänderungen und Fehlerbehebungen, die außerhalb der regulären Version der Funktion veröffentlicht werden, finden Sie in der _Aktualisierungen gehosteter Dienste_ Abschnitte.
 
-Siehe [Bevorstehende Versionen](https://devdocs.magento.com/release/) , um mehr über die Veröffentlichungszeitpläne und die Unterstützung zu erfahren.
-
-Siehe [Produktverfügbarkeit](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html) , um zu erfahren, welche Adobe Commerce-Versionen diese Erweiterung unterstützen.
+Weitere Informationen zu kommenden Versionen, Produktsupport und dazu, welche Adobe Commerce-Versionen die Zahlungsdienst-Erweiterung unterstützen, finden Sie in der Adobe Commerce [Veröffentlichungszeitplan](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) und [Produktverfügbarkeit](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) Themen.
 
 ## Aktualisierungen gehosteter Dienste
 
-In diesen Versionshinweisen werden Funktionsänderungen und -korrekturen beschrieben, die außerhalb der regulären Versionen der gehosteten Funktionen für den gehosteten Dienst veröffentlicht wurden.
+In diesen Versionshinweisen werden Funktionsänderungen und -korrekturen beschrieben, die außerhalb der regulären Funktionsveröffentlichungen für den gehosteten Dienst veröffentlicht wurden.
 
 +++Hosting-Dienstaktualisierungen
 
@@ -44,7 +42,7 @@ _12. Juli 2023_
 
 _9. Juni 2023_
 
-![Neu](../assets/new.svg)<!-- Issue PAY-4288 --> Jetzt können Händler [konfigurieren _only_ PayPal-Zahlungsschaltflächen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#use-only-paypal-payment-buttons)—und _not_ Verwenden Sie die Zahlungsoption PayPal Kreditkarte . Auf diese Weise können Händler eine Vielzahl von Zahlungsoptionen anbieten, einschließlich der Zahlungsschaltflächen Venmo und PayPal, und einen vorhandenen Kreditkartenanbieter anstelle der Zahlungsoption PayPal verwenden.
+![Neu](../assets/new.svg)<!-- Issue PAY-4288 --> Jetzt können Händler [konfigurieren _only_ PayPal-Zahlungsschaltflächen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#use-only-paypal-payment-buttons)—und _not_ Verwenden Sie die Zahlungsoption PayPal Kreditkarte . Auf diese Weise können Händler verschiedene Zahlungsoptionen bereitstellen, einschließlich der Zahlungsschaltflächen Venmo und PayPal, und einen vorhandenen Kreditkartenanbieter anstelle der Zahlungsoption PayPal-Kreditkarte verwenden.
 
 ![Neu](../assets/new.svg)<!-- Issue PAY-4050 --> Hinzufügung von [Datenvisualisierungsansicht](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#order-payment-status-data-visualization-view), der auf der Zahlungsdienst-Startseite für den Bericht Bestellzahlstatus angezeigt wird.
 
@@ -70,7 +68,7 @@ _9. August 2021_
 
 _28. Juni 2021_
 
-![Neu](../assets/new.svg)<!-- Issue PAY-1720 --> Streitigkeiten über Store-Bestellungen sind jetzt verfügbar unter [den Bericht über den Bestellstatus](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#view-disputes). Sie können bei Streitigkeiten direkt zum PayPal-Abwicklungszentrum navigieren von [!DNL Payment Services].
+![Neu](../assets/new.svg)<!-- Issue PAY-1720 --> Streitigkeiten über Store-Bestellungen sind jetzt verfügbar unter [den Bericht über den Bestellstatus](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#view-disputes). Sie können Streitigkeiten beilegen, indem Sie direkt vom PayPal-Abwicklungszentrum aus [!DNL Payment Services].
 
 ![Neu](../assets/new.svg)<!-- Issue PAY-2854 --> Verbesserungen der Benutzererfahrung [!DNL Payment Services] Zu den Startseiten gehören die Möglichkeit, eine Konfiguration auf der aktuellen Vererbungsebene zu ändern, sowie Verbesserungen bei der Anzeige der Kopfzeile und der Navigation.
 
@@ -79,6 +77,20 @@ _28. Juni 2021_
 ![Neu](../assets/new.svg)<!-- Issue PAY-2761 --> Sie können jetzt die Daten anpassen, die im [Bestellstatusbericht](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) und [Zahlungsbericht](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) durch Einblenden oder Ausblenden von Spalten mithilfe des Steuerelements Spalteneinstellungen.
 
 +++
+
+## v2.4.0
+
+_14. März 2024_
+
+[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
+
+![Neu](../assets/new.svg)<!-- PAY-4868 --> Merchants können erfolgreich [Konfigurieren von Google Pay während des Kauferlebnisses](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html), ähnlich wie andere Zahlungsschaltflächen in den Zahlungsdiensten über den Administrator.
+
+![Neu](../assets/new.svg)<!-- PAY-4381 --> [Zahlungsdienste unterstützen Google Pay über GraphQL](https://developer.adobe.com/commerce/webapi/graphql/payment-services/) Ermöglicht Händlern, ein Headless Commerce-Erlebnis mit der Google Pay-Zahlungsmethode zu haben.
+
+![Neu](../assets/new.svg)<!-- PAY-4878 --> Jetzt ist die grundlegende Zahlungsdienst-Funktion für Adobe Commerce- und Magento Open Source-Händler gebündelt. Zahlungsdienste können jetzt Händler mit Unternehmen in 200 Ländern weltweit unterstützen. Der einfache Zahlungsdienst bietet Debit-/Credit-, PayPal-, Venmo- (sofern verfügbar) und PayLater-Optionen (sofern verfügbar) in einem Self-Service-Onboarding.
+
+![Fehlerbehebung](../assets/fix.svg)<!-- PAY-5291 --> Der Erhalt einer Zahlungsbestätigung für einige Transaktionen kann verspätet sein. In diesem Fall können Händler jetzt einen aktualisierten Zahlungsstatus für eine Bestellung erhalten. [Zahlungsdienste erkennen den Status eines Zahlungsvorgangs](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html) in einer Reihenfolge durch Aufspüren ausstehender Transaktionen und proaktive Überwachung dieser Transaktionen und Aktualisierung der Erfassung des Status &quot;Ausstehend&quot;.
 
 ## v2.3.4
 
@@ -114,7 +126,10 @@ _7. Dezember 2023_
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
 
-![Neu](../assets/new.svg)<!-- PAY-5047 --> Die Marken- oder Zahlungsart der Kreditkarte bzw. Debitkarte ist jetzt auf der Kundenbestellseite im Schaufenster, in der an den Käufer gesendeten Bestätigungs-E-Mail und im [Bestelldetailansicht](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-processing.html#view-an-order) im Commerce Admin.
+![Neu](../assets/new.svg)<!-- PAY-5047 --> Die Marken- oder Zahlungsart der Kredit-/Debitkarte ist jetzt an den folgenden Orten verfügbar:
+- die Kundenbestellseite auf der Storefront
+- die an den Käufer gesendete Bestätigungs-E-Mail
+- aus dem [Bestelldetailansicht](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-processing.html#view-an-order) im Commerce Admin.
 
 ## v2.3.0
 
@@ -146,7 +161,7 @@ _30. August 2023_
 
 ![Neu](../assets/new.svg)<!-- PAY-4002 --> Neue Funktion hinzugefügt, mit der Händler [die Reihenfolge ihrer Zahlungsoptionen zu sortieren](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#payment-buttons) um bestimmte Zahlungsoptionen zu priorisieren. Diese Funktion fördert eine höhere Konversationsrate beim Checkout.
 
-![Neu](../assets/new.svg)<!-- PAY-4035 --> Es wurde ein neuer [Transaktionsbericht](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html) zur Admin-Startseite des Zahlungsdienstes, um Informationen zu den Transaktionsautorisierungsraten und negativen Transaktionstrends zu erhalten, damit Händler den Zustand ihrer Geschäfte effektiv überwachen und Transaktionsprobleme identifizieren können.
+![Neu](../assets/new.svg)<!-- PAY-4035 --> Händler können jetzt effizient den Zustand ihrer Geschäfte überwachen und Transaktionsprobleme mithilfe der neuen [Transaktionsbericht](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html) auf der Homepage der Zahlungsdienst-Admin verfügbar. Der Bericht enthält auch Daten zu den Zulassungsraten von Transaktionen und zu negativen Transaktionstrends.
 
 ## v2.1.0
 
@@ -226,7 +241,7 @@ _23. November 2022_
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
 
-![Neu](../assets/new.svg)<!-- Issue PAY-3923 --> Zahlungsdienste enthalten jetzt die Versionsnummer in der Kopfzeile des Benutzeragenten, damit Anfragen nicht verwendete Endpunkte verfolgen, filtern oder veralteten können.
+![Neu](../assets/new.svg)<!-- Issue PAY-3923 --> Zahlungsdienste enthalten jetzt die Versionsnummer in der Kopfzeile des Benutzeragenten, sodass Anfragen nicht verwendete Endpunkte verfolgen, filtern oder veralteten können.
 
 ![Problem behoben](../assets/fix.svg)<!-- Issue PAY-3968 --> Die Zahlungsdienste zeigen jetzt korrekt Bestelldaten an, wenn eine Bestellung über Zahlungsschaltflächen von der Produktseite aus aufgegeben wird.
 
@@ -246,7 +261,7 @@ _14. Oktober 2022_
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
 
-![Fehlerbehebung](../assets/fix.svg)<!-- Issue PAY-3766 --> Wenn die Zahlungsmethode eines Kunden abgelehnt wird, ist die sichtbare Fehlermeldung beschreibender. Es empfiehlt dem Kunden, die Zahlungsinformationen erneut einzugeben und es erneut zu versuchen, eine andere Zahlungsmethode auszuprobieren oder seine Bank über die Ablehnung der Transaktion zu kontaktieren.
+![Fehlerbehebung](../assets/fix.svg)<!-- Issue PAY-3766 --> Wenn die Zahlungsmethode eines Kunden abgelehnt wird, ist die sichtbare Fehlermeldung beschreibender. Es empfiehlt dem Kunden, die Zahlungsinformationen erneut einzugeben und es erneut zu versuchen, eine andere Zahlungsmethode zu versuchen oder seine Bank über die Ablehnung der Transaktion zu kontaktieren.
 
 ## v1.4.0
 
@@ -288,15 +303,15 @@ _29. Juni 2022_
 
 ![Bekanntes Problem](../assets/bug.svg)<!-- Issue PAY-x --> Apple Pay ist nicht mit dem Safari-Browser Version 15.5 auf dem Mobilgerät und Desktop kompatibel. Bei Verwendung von Safari Version 15.5 können Sie den Checkout nicht mit Apple Pay abschließen.
 
-![Problem behoben](../assets/fix.svg)<!-- Issue PAY-3264 --> Bisher ist der Checkout fehlgeschlagen, wenn ein angemeldeter Benutzer eine andere Abrechnungs-/Lieferadresse als die Standardadresse für sein Konto ausgewählt hat. Dieses Problem wurde behoben. Jetzt wird die ausgewählte Abrechnungs-/Lieferadresse gesendet (anstelle der gespeicherten Standardadresse) und der Checkout erfolgreich abgeschlossen.
+![Problem behoben](../assets/fix.svg)<!-- Issue PAY-3264 --> Bisher ist der Checkout fehlgeschlagen, wenn ein angemeldeter Benutzer eine andere Abrechnungs-/Lieferadresse als die Standardadresse für sein Konto ausgewählt hat. Jetzt wird die ausgewählte Abrechnungs-/Lieferadresse gesendet (anstelle der gespeicherten Standardadresse) und der Checkout wurde erfolgreich abgeschlossen.
 
 ![Problem behoben](../assets/fix.svg)<!-- Issue PAY-3314 --> Wenn Sie PayPal Zahlungsschaltflächen für den Checkout deaktivieren, werden keine Fehler angezeigt.
 
 ![Problem behoben](../assets/fix.svg)<!-- Issue PAY-3330 --> Zahlungen schlagen beim Checkout nicht mehr fehl, wenn ein Gastbenutzer eine Telefonnummer mit Bindestrichen eingibt.
 
-![Problem behoben](../assets/fix.svg)<!-- Issue PAY-3338 PAY-2502 --> Wenn die Anmeldedaten für Commerce Services ungültig sind, wird die [!DNL Payment Services] Die Startseite wird jetzt in der Admin-Konsole angezeigt. Es wird ein Berechtigungsfehler angezeigt, der Sie darauf hinweist, dass Ihre Anmeldedaten ungültig sind.
+![Problem behoben](../assets/fix.svg)<!-- Issue PAY-3338 PAY-2502 --> Wenn die Anmeldedaten für Commerce Services ungültig sind, werden Sie von Payment Services jetzt benachrichtigt, indem ein Berechtigungsfehler aus dem [!DNL Payment Services] Home in der Admin.
 
-![Bekanntes Problem](../assets/bug.svg)<!-- Issue PAY-0 --> [!DNL Payment Services] ist derzeit mit `commerce-data-export` v101.20 und höher, wodurch sie mit dem [[!DNL Channel manager] Erweiterung](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html).
+![Bekanntes Problem](../assets/bug.svg)<!-- Issue PAY-0 --> [!DNL Payment Services] ist mit `commerce-data-export` v101.20 und höher, wodurch sie mit dem [[!DNL Channel manager] Erweiterung](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html).
 
 ## v1.1.0
 

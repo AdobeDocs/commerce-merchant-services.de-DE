@@ -3,9 +3,9 @@ title: Zahlungsoptionen
 description: Legen Sie die Zahlungsoptionen fest, um die für Ihre Store-Kunden verfügbaren Methoden anzupassen.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 8dd4f629fa60959588cee4ea22f9fb577f338716
+source-git-commit: 0dc370409ace6ac6b0a56511cd0071cf525620f1
 workflow-type: tm+mt
-source-wordcount: '1054'
+source-wordcount: '1150'
 ht-degree: 0%
 
 ---
@@ -64,15 +64,31 @@ Die [!DNL Apple Pay] -Schaltfläche ist von der Produktseite aus sichtbar, in de
 
 Sie können [!UICONTROL Apple Pay] in der Store-Konfiguration oder der Zahlungsdienst-Startseite. Siehe [Einstellungen](settings.md#apple-pay) für weitere Informationen.
 
+## [!DNL Google Pay] button
+
+Kunden können [[!DNL Google Pay]](https://pay.google.com/about/) indem Sie Zahlungsdetails zu ihrem Google-Konto hinzufügen, wo sie für ein nahtloses Checkout-Erlebnis sicher gespeichert sind.
+
+[!DNL Google Pay] ist nur in bestimmten Ländern oder Regionen und auf bestimmten Geräten verfügbar. Siehe [[!DNL Google Pay] Dokumentation](https://developer.paypal.com/docs/checkout/apm/google-pay/#link-googlepayintegration) für weitere Informationen.
+
+![Google-Zahlungsschaltfläche beim Checkout](assets/google-pay-button.png){width="500" zoomable="yes"}
+
+Die [!DNL Google Pay] -Schaltfläche ist von der Produktseite aus sichtbar, in der Mini-Warenkorb-, Warenkorb- und Checkout-Ansicht.
+
+Sie können [!UICONTROL Google Pay] in der Store-Konfiguration oder der Zahlungsdienst-Startseite. Siehe [Einstellungen](settings.md) für weitere Informationen.
+
+>[!NOTE]
+>
+> Die [!DNL Google Pay] Die API kann nur auf Websites in einem sicheren Kontext verwendet werden. Siehe [Fehlerbehebung](https://developers.google.com/pay/api/web/support/troubleshooting) Dokumentation finden Sie weitere Informationen.
+
 ## [!DNL PayPal Payment Buttons]
 
 [!DNL PayPal payment buttons], die PayPal verwenden, um einen Kauf abzuschließen, speichert die Lieferadresse Ihres Käufers, die Rechnungsadresse und Zahlungsdetails zur späteren Verwendung. Käufer können jede Zahlungsmethode verwenden, die zuvor von PayPal gespeichert oder angeboten wurde.
 
 ![Schaltfläche &quot;PayPal&quot;](assets/paypal-button.png){width="350" zoomable="yes"}
 
-Sie können [!UICONTROL PayPal payment buttons] in der Store-Konfiguration oder der [!DNL Payment Services] Home.  Siehe [Einstellungen](settings.md#payment-buttons) für weitere Informationen.
+Sie können [!UICONTROL PayPal payment buttons] in der Store-Konfiguration oder der [!DNL Payment Services] Home. Siehe [Einstellungen](settings.md#payment-buttons) für weitere Informationen.
 
-Siehe PayPal&#39;s [Dokumentation zu Zahlungsmethoden](https://developer.paypal.com/docs/checkout/payment-methods/) , um zu erfahren, in welchen Ländern die einzelnen Zahlungsmethoden derzeit verfügbar sind.
+Erfahren Sie mehr über die Verfügbarkeit der Zahlungsmethoden nach Ländern in der [Dokumentation zu Zahlungsmethoden](https://developer.paypal.com/docs/checkout/payment-methods/).
 
 ### [!DNL PayPal] button
 
@@ -102,7 +118,7 @@ Die [!DNL Pay Later] -Schaltfläche ist von der Produktseite aus sichtbar, in de
 
 Weitere Informationen zu den Pay-Later-Angeboten finden Sie unter [PayPal&#39;s Pay Later bietet Dokumentation](https://developer.paypal.com/docs/checkout/pay-later/us/). Verwenden Sie die **Land oder Region** Dropdown-Liste, um eine Zielregion auszuwählen.
 
-Siehe [Einstellungen](settings.md#payment-buttons) , um zu erfahren, wie Sie die [!DNL Pay Later] Messaging.
+Erfahren Sie, wie Sie die [!DNL Pay Later] Nachrichten durch Aktualisierung der [Einstellungen](settings.md#payment-buttons) Konfiguration.
 
 ## Verwenden Sie nur PayPal-Zahlungsschaltflächen
 
@@ -110,9 +126,9 @@ Um Ihren Store schnell in den Produktionsmodus zu bringen, können Sie Folgendes
 
 Dies ermöglicht Ihnen Folgendes:
 
-* Stellen Sie eine Vielzahl von Zahlungsoptionen für Ihre Kunden bereit, einschließlich Venmo- und PayPal-Zahlungsschaltflächen, mit der Möglichkeit, gehostete PayPal-Kartenfelder zu deaktivieren und einen vorhandenen Kreditkartenanbieter zu verwenden.
-* Nutzen Sie Ihren bestehenden Kreditkartenanbieter für Kreditkartenzahlungen und nutzen Sie gleichzeitig die anderen Zahlungsoptionen von PayPal.
-* Verwenden Sie die Zahlungsschaltflächen von PayPal in einer Region, in der PayPal keine Kreditkarten als Zahlungsoption unterstützt.
+* Stellen Sie verschiedene Zahlungsoptionen für Ihre Kunden bereit, einschließlich der Zahlungsschaltflächen Venmo und PayPal, mit der Option, gehostete PayPal-Kartenfelder zu deaktivieren und einen vorhandenen Kreditkartenanbieter zu verwenden.
+* Verwenden Sie Ihren bestehenden Kreditkartenanbieter für Kreditkartenzahlungen und gleichzeitig die anderen Zahlungsoptionen von PayPal.
+* Verwenden Sie die Zahlungsschaltflächen von PayPal in Regionen, in denen PayPal keine Kreditkarten als Zahlungsoption unterstützt.
 
 nach **Erfassen von Zahlungen mit _only_ PayPal-Zahlungsschaltflächen (_not_ die Zahlungsoption PayPal für Kreditkarten)**:
 
