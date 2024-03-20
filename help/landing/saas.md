@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Ihre Adobe Commerce- oder Magento Open Source
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 4a5877d6e1a5c7d840e36f4913306b0c440bbac5
+source-git-commit: 2d6b80b5133eb00ac42a5f2b64c5846ad30e56c4
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '866'
 ht-degree: 0%
 
 ---
@@ -105,7 +105,7 @@ Sämtliche SaaS-Projekte, die mit Ihren Schlüsseln verknüpft sind, werden im *
 >
 > Wenn Sie im Abschnitt &quot;Mein Konto&quot;im API-Portal neue Schlüssel generieren, aktualisieren Sie sofort die API-Schlüssel in der Admin-Konfiguration. Wenn Sie neue Schlüssel generieren und diese nicht im Admin aktualisieren, funktionieren Ihre SaaS-Erweiterungen nicht mehr und Sie verlieren wertvolle Daten.
 
-Um die Namen des SaaS-Projekts oder der Datenspeicherorte zu ändern, klicken Sie auf **Umbenennen**.
+Um die Namen Ihres SaaS-Projekts oder Ihres Datenraums zu ändern, klicken Sie auf **Umbenennen** neben einer der beiden. Das Ändern des Namens wirkt sich nicht auf Ihren Dienst aus, da der Name nur eine Bezeichnung ist, mit der Sie Projekte und Datenräume identifizieren und unterscheiden können.
 
 ## IMS-Organisation (optional) {#organizationid}
 
