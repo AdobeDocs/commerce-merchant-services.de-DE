@@ -3,9 +3,9 @@ title: '[!DNL Page Builder] Integration'
 description: Verwendung von [!DNL Product Recommendations] Einheiten in Page Builder.
 exl-id: dd972642-1fb4-426a-ac68-f56bb5fa2ecf
 feature: Services, Recommendations, Page Builder
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: 6bc8eb5ffbefc46c8666ead8c8ec8b274a0040e7
 workflow-type: tm+mt
-source-wordcount: '162'
+source-wordcount: '253'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,11 @@ Produkt-Recommendations kann in beliebige Seitenaufbau-Inhalte integriert werden
 ## Verwenden von Recommendations mit Page Builder-Inhalten
 
 1. Erstellen Sie eine Empfehlungseinheit in der standardmäßigen Store-Ansicht einer Website. Sie müssen in der standardmäßigen Store-Ansicht erstellt werden, selbst wenn Sie sie in unterschiedlichen Store-Ansichten verwenden möchten.
+
+   >[!NOTE]
+   >
+   >Metriken für Seitenaufbau-Empfehlungseinheiten werden nur in der standardmäßigen Store-Ansicht angezeigt [!DNL Product Recommendations] Arbeitsbereich. Selbst wenn Sie eine Seitenaufbau-Empfehlungseinheit in einer Store-Ansicht platzieren, die nicht die standardmäßige Store-Ansicht ist, werden Metriken, die sich auf diese Seitenaufbau-Empfehlungseinheiten beziehen, weiterhin nur in der standardmäßigen Store-Ansicht angezeigt [!DNL Product Recommendations] Arbeitsbereich. So zeigen Sie die Seitenaufbau-Metriken in einem nicht standardmäßigen Store an [!DNL Product Recommendations] Arbeitsbereich, öffnen und [edit](edit.md) Klicken Sie in der Empfehlungseinheit &quot;Seitenaufbau&quot;im nicht standardmäßigen Store auf [!UICONTROL **Speichern**]. Die Seitenerstellungsmetriken werden jetzt auf der Seite [!DNL Product Recommendations] Arbeitsbereich unter der nicht standardmäßigen Storeübersicht.
+
 1. Wählen Sie im Seitenaufbau das Inhaltswidget Produkt Recommendations aus und platzieren Sie es auf Ihrer Site.
 
 ![Empfehlungseinheit einfügen](assets/pb-insert.png)

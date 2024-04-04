@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie das Adobe Experience Platform Mobile SDK mit 
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: d1340b15-e7de-42b5-ad64-d4c31f0db029
-source-git-commit: 2afe6d36ada662500f5a4a08779664d6591271e8
+source-git-commit: 593e92ebf890bd7d9bfef1cd13be727ca6be172b
 workflow-type: tm+mt
-source-wordcount: '480'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---
@@ -157,4 +157,10 @@ Nachdem Sie die SDK-Konfiguration für die Experience Platform abgeschlossen hab
 
    Sie haben jetzt das Adobe Experience Platform Mobile SDK in Ihre Commerce Mobile App integriert. Ereignisdaten fließen von Ihrer App an die Experience Platform Edge.
 
-Informationen zum Abrufen von Real-Time CDP-Zielgruppen aus Ihrer mobilen Commerce-App, um Warenkorbpreisregeln und dynamische Bausteine zu informieren, finden Sie unter [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html#retrieve-audiences-using-the-adobe-experience-platform-mobile-sdk).
+## Unterscheidung von Commerce-Ereignissen, die aus Mobile Apps generiert wurden
+
+Alle [events](events.md) enthält ein Feld namens `channel`. Die `channel` -Feld enthält `channel._id` und `channel._type` , die für eine Luma-Storefront Namespace-Werte von `"https://ns.adobe.com/xdm/channels/web"` und `"https://ns.adobe.com/xdm/channel-types/web"` bzw. Bei einer mobilen Storefront sind die Namespace-Werte jedoch `"https://ns.adobe.com/xdm/channels/mobile-app"` und `"https://ns.adobe.com/xdm/channel-types/mobile"` bzw.
+
+## Nächste Schritte
+
+Informationen zum Abrufen von Real-Time CDP-Zielgruppen aus Ihrer mobilen Commerce-App, um Warenkorbpreisregeln, dynamische Bausteine und zugehörige Produktregeln zu informieren, finden Sie unter [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html#retrieve-audiences-using-the-adobe-experience-platform-mobile-sdk).
