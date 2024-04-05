@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] Versionshinweise"
 description: In den Versionshinweisen finden Sie Informationen zu allen [!DNL Payment Services] veröffentlicht.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 978340c03e05d29bae6ee872ae9c7332edcd7251
+source-git-commit: 370d86f32ba0969e2d69f8a9a94f2d47be820ade
 workflow-type: tm+mt
-source-wordcount: '2434'
+source-wordcount: '2433'
 ht-degree: 0%
 
 ---
@@ -80,7 +80,7 @@ _28. Juni 2021_
 
 ## v2.4.1
 
-5. April 2024_
+_4. April 2024_
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
 
