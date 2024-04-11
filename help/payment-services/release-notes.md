@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] Versionshinweise"
 description: In den Versionshinweisen finden Sie Informationen zu allen [!DNL Payment Services] veröffentlicht.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 370d86f32ba0969e2d69f8a9a94f2d47be820ade
+source-git-commit: bc38c01f429b4d20d4ba0d04c34932e1857a20cf
 workflow-type: tm+mt
-source-wordcount: '2433'
+source-wordcount: '2445'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ _9. Juni 2023_
 
 _25. Januar 2023_
 
-![Bekanntes Problem](../assets/bug.svg)<!-- Issue PAY-4102 --> Neue Installationen von Zahlungsdiensten können Commerce-Services nicht konfigurieren, sodass Zahlungsdienste nicht mehr funktionsfähig sind. Um dieses Problem zu beheben, aktualisieren Sie Ihre Zahlungsdiensterweiterung auf Version 1.5.3.
+![Bekanntes Problem](../assets/bug.svg)<!-- Issue PAY-4102 --> Neue Installationen von Zahlungsdiensten können die Commerce-Dienste nicht konfigurieren, wodurch Zahlungsdienste nicht mehr funktionsfähig sind. Um dieses Problem zu beheben, aktualisieren Sie Ihre Zahlungsdiensterweiterung auf Version 1.5.3.
 
 _12. September 2022_
 
@@ -78,6 +78,14 @@ _28. Juni 2021_
 
 +++
 
+## v2.4.2
+
+_11. April 2024_
+
+[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
+
+![Neu](../assets/new.svg)<!-- Issue xxx --> Adobe Commerce 2.4.7 wird nun unterstützt.
+
 ## v2.4.1
 
 _4. April 2024_
@@ -96,7 +104,7 @@ _20. März 2024_
 
 ![Neu](../assets/new.svg)<!-- PAY-4868 --> Merchants können erfolgreich [Konfigurieren von Google Pay während des Kauferlebnisses](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html), ähnlich wie andere Zahlungsschaltflächen in den Zahlungsdiensten über den Administrator.
 
-![Neu](../assets/new.svg)<!-- PAY-4381 --> [Zahlungsdienste unterstützen Google Pay über GraphQL](https://developer.adobe.com/commerce/webapi/graphql/payment-services/) Ermöglicht Händlern, ein Headless Commerce-Erlebnis mit der Google Pay-Zahlungsmethode zu haben.
+![Neu](../assets/new.svg)<!-- PAY-4381 --> [Zahlungsdienste unterstützen Google Pay über GraphQL](https://developer.adobe.com/commerce/webapi/graphql/payment-services/) Ermöglicht Händlern, ein Headless-Commerce-Erlebnis mit der Google-Zahlungsmethode zu erhalten.
 
 ![Neu](../assets/new.svg)<!-- PAY-4878 --> Jetzt ist die grundlegende Zahlungsdienst-Funktion für Adobe Commerce- und Magento Open Source-Händler gebündelt. Zahlungsdienste können jetzt Händler mit Unternehmen in 200 Ländern weltweit unterstützen. Der einfache Zahlungsdienst bietet Debit-/Credit-, PayPal-, Venmo- (sofern verfügbar) und PayLater-Optionen (sofern verfügbar) in einem Self-Service-Onboarding.
 
@@ -139,7 +147,7 @@ _7. Dezember 2023_
 ![Neu](../assets/new.svg)<!-- PAY-5047 --> Die Marken- oder Zahlungsart der Kredit-/Debitkarte ist jetzt an den folgenden Orten verfügbar:
 - die Kundenbestellseite auf der Storefront
 - die an den Käufer gesendete Bestätigungs-E-Mail
-- aus dem [Bestelldetailansicht](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-processing.html#view-an-order) im Commerce Admin.
+- aus dem [Bestelldetailansicht](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-processing.html#view-an-order) in der Commerce-Admin.
 
 ## v2.3.0
 
@@ -147,7 +155,7 @@ _1. Dezember 2023_
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
 
-![Neu](../assets/new.svg)<!-- PAY-4381 --> [Die Zahlungsdienste unterstützen jetzt die GraphQL-Integration](https://developer.adobe.com/commerce/webapi/graphql/payment-services/). Mit GraphQL-Unterstützung für PayPal-Zahlungsschaltflächen, gehostete Felder und Apple Pay unterstützt Payment Services jetzt ein Headless Commerce-Setup.
+![Neu](../assets/new.svg)<!-- PAY-4381 --> [Die Zahlungsdienste unterstützen jetzt die GraphQL-Integration](https://developer.adobe.com/commerce/webapi/graphql/payment-services/). Mit GraphQL-Unterstützung für PayPal-Zahlungsschaltflächen, gehostete Felder und Apple Pay unterstützt Payment Services jetzt ein Headless-Commerce-Setup.
 
 ## v2.2.1
 
@@ -203,7 +211,7 @@ _10. März 2023_
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
 
-![Fehlerbehebung](../assets/fix.svg)<!-- Issue PAY-4226 --> Es wurde ein Problem behoben, das verhinderte, dass neue Zahlungsdienst-Händler den Checkout im Admin verwenden konnten. Die Zahlungsdienste verwendeten zuvor die Commerce-Kunden-ID, die für neue Kunden nicht vorhanden ist.
+![Fehlerbehebung](../assets/fix.svg)<!-- Issue PAY-4226 --> Es wurde ein Problem behoben, das verhinderte, dass neue Zahlungsdienst-Händler den Checkout im Admin verwenden konnten. Die Zahlungsdienste verwendeten zuvor die Commerce-Kunden-ID, die für neue Kunden nicht vorhanden war.
 
 ![Fehlerbehebung](../assets/fix.svg)<!-- Issue PAY-4205 --> Es wurde ein Fehler behoben, der dazu führte, dass der angegebene Versandadressenstatus beim Checkout mit der [PayPal-Option](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#paypal-smart-buttons). Jetzt können Kunden ihre Bestellungen in einen anderen Staat verschicken lassen als den, der in den Steuereinstellungen des Händlers als Standard konfiguriert wurde.
 
@@ -233,7 +241,7 @@ _25. Januar 2023_
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
 
-![Problem behoben](../assets/fix.svg)<!-- Issue PAY-4102 --> Es wurde ein Problem behoben, das ein rückwärtsinkompatibles bekanntes Problem verursachte. In dieser Version wird die Version der Dienst-ID-Erweiterung auf die neueste stabile Version festgelegt, die es neuen Zahlungsdienst-Installationen ermöglicht, Commerce Services zu konfigurieren.
+![Problem behoben](../assets/fix.svg)<!-- Issue PAY-4102 --> Es wurde ein Problem behoben, das ein rückwärtsinkompatibles bekanntes Problem verursachte. In dieser Version wird die Version der Dienst-ID-Erweiterung auf die neueste stabile Version festgelegt, mit der neue Zahlungsdienstinstallationen Commerce Services konfigurieren können.
 
 ## v1.5.2
 
@@ -263,7 +271,7 @@ _18. November 2022_
 
 ![Neu](../assets/new.svg)<!-- Issue PAY-3880 --> Ein Käufer kann jetzt [Vault-Kreditkarteninformationen beim Checkout speichern](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html) , um in einem späteren Kauf für denselben oder einen anderen Store innerhalb desselben Händlers zu verwenden.
 
-![Neu](../assets/new.svg)<!-- Issue PAY-3950 --> Händler können jetzt die [Funktion &quot;Sofortiger Kauf - Commerce&quot;](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) für ihre Geschäfte, damit die Käufer [ungültige Kreditkarteninformationen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html)), um den Checkout zu beschleunigen.
+![Neu](../assets/new.svg)<!-- Issue PAY-3950 --> Händler können jetzt die [Commerce-Funktion für sofortigen Kauf](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) für ihre Geschäfte, damit die Käufer [ungültige Kreditkarteninformationen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html)), um den Checkout zu beschleunigen.
 
 ## v1.4.1
 
@@ -319,7 +327,7 @@ _29. Juni 2022_
 
 ![Problem behoben](../assets/fix.svg)<!-- Issue PAY-3330 --> Zahlungen schlagen beim Checkout nicht mehr fehl, wenn ein Gastbenutzer eine Telefonnummer mit Bindestrichen eingibt.
 
-![Problem behoben](../assets/fix.svg)<!-- Issue PAY-3338 PAY-2502 --> Wenn die Anmeldedaten für Commerce Services ungültig sind, werden Sie von Payment Services jetzt benachrichtigt, indem ein Berechtigungsfehler aus dem [!DNL Payment Services] Home in der Admin.
+![Problem behoben](../assets/fix.svg)<!-- Issue PAY-3338 PAY-2502 --> Wenn die Commerce Services-Anmeldedaten ungültig sind, werden Sie von Payment Services jetzt benachrichtigt, indem ein Berechtigungsfehler aus dem [!DNL Payment Services] Home in der Admin.
 
 ![Bekanntes Problem](../assets/bug.svg)<!-- Issue PAY-0 --> [!DNL Payment Services] ist mit `commerce-data-export` v101.20 und höher, wodurch sie mit dem [[!DNL Channel manager] Erweiterung](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html).
 
