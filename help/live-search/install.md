@@ -3,9 +3,9 @@ title: "Installieren [!DNL Live Search]"
 description: "Erfahren Sie, wie Sie installieren, aktualisieren und deinstallieren [!DNL Live Search] von Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: e8d4215b1f16f1cb34783674cabc046dec135729
+source-git-commit: 8a98e069cd9ec3d2c4fec33485e5c8186d94518f
 workflow-type: tm+mt
-source-wordcount: '1217'
+source-wordcount: '1240'
 ht-degree: 0%
 
 ---
@@ -188,13 +188,15 @@ Informationen zum Generieren eines API-Schlüssels und eines privaten Schlüssel
 
 ### Adobe Commerce-Entwickler oder SI
 
-Der Entwickler oder SI konfiguriert den SaaS-Datenraum wie im Abschnitt *Commerce-Services* -Abschnitt der Konfiguration. Im *Admin*, werden die Commerce-Services im *Konfiguration* Seitenleiste, wenn ein SaaS-Modul installiert ist.
+Der Entwickler oder SI konfiguriert den SaaS-Datenraum wie im Abschnitt *Commerce Services* -Abschnitt der Konfiguration. Im *Admin*, werden die Commerce-Dienste in der *Konfiguration* Seitenleiste, wenn ein SaaS-Modul installiert ist.
 
 ## Katalogdaten synchronisieren {#synchronize-catalog-data}
 
 [!DNL Live Search] erfordert synchronisierte Produktdaten für Suchvorgänge und synchronisierte Attributdaten zum Konfigurieren von Facetten. Die erste Synchronisierung zwischen dem Produktkatalog und dem Katalogdienst beginnt mit dem Datum [!DNL Live Search] ist zuerst verbunden. Je nach Installationsmethode und Größe des Katalogs kann es bis zu 30 Minuten dauern, bis die Daten exportiert und indiziert werden durch [!DNL Live Search]. Die Liste der mit dem Katalogdienst synchronisierten und freigegebenen Daten finden Sie im Schema, das in folgendem Verzeichnis definiert ist:
 
 `vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`
+
+Verwenden Sie die [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard) zur Überwachung des Synchronisierungsstatus für Produktdaten, die von der Commerce-Datenbank an Commerce SaaS-Dienste übertragen werden.
 
 ### Export überprüfen {#verify-export}
 

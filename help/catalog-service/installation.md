@@ -2,9 +2,9 @@
 title: Onboarding und Installation
 description: "Erfahren Sie, wie Sie installieren [!DNL Catalog Service]"
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 6a7efbe0424e35cdec9cb00275d9a953feccaa5b
+source-git-commit: 8a98e069cd9ec3d2c4fec33485e5c8186d94518f
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '629'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Onboarding-Prozess für [!DNL Catalog Service] erfordert Zugriff auf die Befehls
 [!DNL Catalog Service] verfügt über zwei Endpunkte, die für das Onboarding verfügbar sind:
 
 - Sandbox (`https://catalog-service-sandbox.adobe.io/graphql`) - wird vor der Live-Schaltung zum Testen und Validieren verwendet
-- Produktion (`https://catalog-service.adobe.io/graphql`) - wird für Live-Traffic für Commerce-Händler und Websites verwendet
+- Produktion (`https://catalog-service.adobe.io/graphql`) - wird für Live-Traffic für Commerce-Händler und -Websites verwendet
 
 Alle Testinstanzen von Commerce sollten den Sandbox-Endpunkt verwenden.
 
@@ -120,7 +120,7 @@ Verwenden Sie diese Methode, um die [!DNL Catalog Service] Erweiterung für eine
 
 Nach der Installation [!DNL Catalog Service], müssen Sie die [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#apikey) durch Angabe der API-Schlüssel und Auswahl eines SaaS-Datenspeichers.
 
-Nachdem die SaaS-Konfiguration abgeschlossen ist, führen Sie eine erste Datensynchronisation durch, indem Sie der [Katalogsynchronisierung](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) Handbuch.
+Nachdem die SaaS-Konfiguration abgeschlossen ist, führen Sie eine erste Datensynchronisation durch, indem Sie die [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard). Sie können dieses Dashboard verwenden, um den Synchronisierungsstatus für Produktdaten zu überwachen, die von der Commerce-Datenbank an Commerce SaaS-Dienste übertragen werden.
 
 So stellen Sie sicher, dass der Katalogexport ordnungsgemäß ausgeführt wird:
 
@@ -128,13 +128,13 @@ So stellen Sie sicher, dass der Katalogexport ordnungsgemäß ausgeführt wird:
 - Überprüfen Sie, ob die Indexer ausgeführt werden.
 - Stellen Sie sicher, dass `Catalog Attributes Feed, Product Feed, Product Overrides Feed`, und `Product Variant Feed` Indexer sind auf &quot;Nach Zeitplan aktualisieren&quot;eingestellt.
 
-Die anfängliche Synchronisation kann abhängig von der Kataloggröße einige Minuten bis Stunden dauern. Nach der ersten Synchronisierung exportiert der Katalog laufend Produktdaten vom Commerce-Server in Commerce-Dienste, um die Dienste auf dem neuesten Stand zu halten. Informationen zum Überwachen des Synchronisierungsstatus finden Sie im Abschnitt [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html).
+Die anfängliche Synchronisation kann abhängig von der Kataloggröße einige Minuten bis Stunden dauern. Nach der ersten Synchronisierung exportiert der Katalog laufend Produktdaten vom Commerce-Server an Commerce-Dienste, um die Dienste auf dem neuesten Stand zu halten. Informationen zum Überwachen des Synchronisierungsstatus finden Sie im Abschnitt [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html).
 
 ### Zugriff auf den Dienst
 
 Die [!DNL Catalog Service] Auf die API kann über POST-Befehle über HTTPS zugegriffen werden.
 
-Um den API-Schlüssel zu erhalten, wechseln Sie im Admin zum Bereich Commerce Service Connector und kopieren Sie den öffentlichen API-Schlüssel.
+Um den API-Schlüssel abzurufen, wechseln Sie im Admin zum Bereich &quot;Commerce Service Connector&quot;und kopieren Sie den öffentlichen API-Schlüssel.
 
 Lesen Sie die [GraphQL-Dokumentation](https://developer.adobe.com/commerce/services/graphql/) , um zu verstehen, wie Sie die Header abfragen und senden, die zum Generieren von API-Anfragen erforderlich sind.
 
