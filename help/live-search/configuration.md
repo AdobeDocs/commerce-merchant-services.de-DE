@@ -3,9 +3,9 @@ title: '"Commerce-Konfigurationseinstellungen und [!DNL Live Search] '''
 description: Beschreibt die Adobe Commerce-Konfigurationseinstellungen, die [!DNL Live Search] kann lesen.
 exl-id: a4e9e2dd-e912-4ced-a44a-091ac5334e50
 features: Services, Search, Configuration
-source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
+source-git-commit: d1cd70e66e616c052418c719f6da23b010a22241
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '279'
 ht-degree: 0%
 
 ---
@@ -41,3 +41,4 @@ Die Preise auf der Produktlistungsseite des Widgets und in Popover werden jetzt 
 | Stores > Konfiguration > Katalog > Storefront > Listenmodus | Wird korrekt gerendert, aber für einige Seiteninteraktionen werden keine Ereignisse gesendet |
 | Stores > Konfiguration > Katalog > Katalog > Katalogsuche > Maximale Abfragelänge | Nicht implementiert. Search Services akzeptiert bis zu 255 Zeichen |
 | Konfiguration > Vertrieb > Steuern > Preisanzeigeeinstellungen > Produktpreise im Katalog anzeigen |  |
+| Stores > Konfiguration > Katalog > Storefront > Produktlisten Sortieren nach | Gilt nicht für die [!DNL Live Search] [Seiten-Widget &quot;Produktliste&quot;](plp-styling.md) |
