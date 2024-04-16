@@ -3,9 +3,9 @@ title: "Technischer Überblick"
 description: "[!DNL Live Search] Onboarding-Fluss, Systemanforderungen, Grenzen und Einschränkungen"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: e8d4215b1f16f1cb34783674cabc046dec135729
+source-git-commit: 18a0e8abd5478963425c4d0030a9a0f1df9d599e
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1024'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ In diesem Thema werden die technischen Anforderungen und Tipps für die Installa
 ## Voraussetzungen {#requirements}
 
 * [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.4+
-* PHP 8.1 / 8.2
+* PHP 8.1 / 8.2 / 8.3
 * [!DNL Composer]
 
 ### Unterstützte Plattformen
@@ -29,11 +29,11 @@ In diesem Thema werden die technischen Anforderungen und Tipps für die Installa
 
 [!DNL Live Search] kommuniziert über den Endpunkt unter `https://catalog-service.adobe.io/graphql`.
 
-As [!DNL Live Search] keinen Zugriff auf die vollständige Produktdatenbank hat, [!DNL Live Search] GraphQL und Commerce Core GraphQL werden nicht vollständig parity sein.
+As [!DNL Live Search] keinen Zugriff auf die vollständige Produktdatenbank hat, [!DNL Live Search] GraphQL und Commerce Core GraphQL verfügen nicht über vollständige Parität.
 
 Es wird empfohlen, die SaaS-APIs direkt aufzurufen - insbesondere den Catalog Service-Endpunkt.
 
-* Steigern Sie die Leistung und reduzieren Sie die Prozessorlast, indem Sie die Commerce-Datenbank/den Graphql-Prozess umgehen.
+* Steigern Sie die Leistung und reduzieren Sie die Prozessorlast durch Umgehen der Commerce-Datenbank/des Graphql-Prozesses.
 * Nutzen Sie die Vorteile der [!DNL Catalog Service] Föderation anrufen [!DNL Live Search], [!DNL Catalog Service], und [!DNL Product Recommendations] von einem einzelnen Endpunkt aus.
 
 Für einige Anwendungsfälle ist es möglicherweise besser, [!DNL Catalog Service] für Produktdetails und ähnliche Fälle. Siehe [refineProduct](https://developer.adobe.com/commerce/services/graphql/catalog-service/refine-product/) für weitere Informationen.
@@ -120,7 +120,7 @@ So beschränken Sie Kundengruppen mithilfe von Katalogberechtigungen:
 | Chinesisch | China | zh_CN | zh_Hans_CN |
 | Chinesisch | Taiwan | zh_TW | zh_Hant_TW |
 
-Wenn das Widget erkennt, dass die Spracheinstellung &quot;Commerce Admin&quot;(_Stores_ > Einstellungen > _Konfiguration_ > _Allgemein_ > Länderoptionen) mit einer unterstützten Sprache übereinstimmen, wird standardmäßig diese Sprache verwendet. Andernfalls wird für die Widgets standardmäßig Englisch angezeigt.
+Wenn das Widget erkennt, dass die Commerce-Admin-Spracheinstellung (_Stores_ > Einstellungen > _Konfiguration_ > _Allgemein_ > Länderoptionen) mit einer unterstützten Sprache übereinstimmen, wird standardmäßig diese Sprache verwendet. Andernfalls wird für die Widgets standardmäßig Englisch angezeigt.
 
 Administratoren können auch die Sprache der [Suchindex](settings.md#language), um bessere Suchergebnisse sicherzustellen.
 
@@ -143,7 +143,7 @@ Dadurch können Entwickler die Funktionalität und den Stil vollständig anpasse
 
 ## Inventory management
 
-[!DNL Live Search] unterstützt [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) Funktionen in Commerce (früher bekannt als Multi-Source-Bestand oder MSI). Um den vollständigen Support zu ermöglichen, müssen Sie [update](install.md#update) das Abhängigkeitsmodul `commerce-data-export` auf Version 102.2.0+.
+[!DNL Live Search] unterstützt [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) Funktionen in Commerce (ehemals &quot;Multi-Source Inventory&quot;oder &quot;MSI&quot;). Um den vollständigen Support zu ermöglichen, müssen Sie [update](install.md#update) das Abhängigkeitsmodul `commerce-data-export` auf Version 102.2.0+.
 
 [!DNL Live Search] gibt einen booleschen Hinweis zurück, ob ein Produkt in Inventory management verfügbar ist, enthält jedoch keine Informationen darüber, welche Quelle über das Lager verfügt.
 
@@ -166,7 +166,7 @@ Das Preisformat unterstützt die Gebietsschema-Konfigurationseinstellung innerha
 
 ## PWA-Unterstützung
 
-[!DNL Live Search] funktioniert mit PWA Studio, aber die Benutzer sehen möglicherweise geringfügige Unterschiede im Vergleich zu anderen Commerce-Implementierungen. Grundlegende Funktionen wie Suche und Produktlistenseite funktionieren in Venia, aber einige Permutationen von Graphql funktionieren möglicherweise nicht ordnungsgemäß. Es kann auch Leistungsunterschiede geben.
+[!DNL Live Search] funktioniert mit PWA Studio, aber die Benutzer sehen möglicherweise leichte Unterschiede im Vergleich zu anderen Commerce-Implementierungen. Grundlegende Funktionen wie Suche und Produktlistenseite funktionieren in Venia, aber einige Permutationen von Graphql funktionieren möglicherweise nicht ordnungsgemäß. Es kann auch Leistungsunterschiede geben.
 
 * Die aktuelle PWA-Implementierung von [!DNL Live Search] benötigt mehr Verarbeitungszeit, um Suchergebnisse zurückzugeben als [!DNL Live Search] mit der nativen Commerce-Storefront.
 * [!DNL Live Search] in PWA wird nicht unterstützt [Ereignisverarbeitung](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). Daher funktionieren Suchberichte und intelligentes Merchandising.

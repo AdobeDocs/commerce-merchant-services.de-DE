@@ -2,22 +2,28 @@
 title: Seiten-Widget "Produktliste"
 description: Aktivieren und Gestalten der [!DNL Live Search Product Listing Page Widget]
 exl-id: f7346a06-a8c7-4a33-8437-ea4f61d9281f
-source-git-commit: 4c4facab0368bdeef70a5fd2925072e73d765707
+source-git-commit: d4511219a0244dca7db896419daba1e6694d80de
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
 
 # Seiten-Widget &quot;Produktliste&quot;
 
-Die [!DNL Live Search Product Listing Page Widget] (PLP) verwendet die Commerce Services-Plattform, um eine leistungsfähige, durchsuchbare und facettenfähige Produktanlistungsseite bereitzustellen. Hier wird beschrieben, wie Sie das PLP-Widget aktivieren und gestalten.
+Die [!DNL Live Search Product Listing Page Widget] (PLP) verwendet die Commerce Services-Plattform, um eine leistungsfähige, durchsuchbare und facettenfähige Produktseite bereitzustellen. Hier wird beschrieben, wie Sie das PLP-Widget aktivieren und gestalten.
 
 ## Aktivieren des PLP-Widgets
 
 Wenn die Variable [!DNL Live Search] installiert ist, wird die Standardsuchfunktion in [!DNL Live Search] automatisch.
 
 Die [!DNL Live Search] PLP-Widget ist für neue Installationen standardmäßig aktiviert. Wenn Sie ein Upgrade [!DNL Live Search] und das PLP-Widget bereits deaktiviert wurde, bleibt es so.
+
+>[!IMPORTANT]
+>
+>Wenn die Variable [!DNL Live Search Product Listing Page Widget] aktiviert ist, kann die Sortierreihenfolge auf einer Produktlistenseite nicht geändert werden.
+
+## Deaktivieren des PLP-Widgets
 
 So deaktivieren Sie das PLP-Widget:
 

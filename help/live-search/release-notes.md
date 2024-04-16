@@ -3,7 +3,7 @@ title: "[!DNL Live Search] Versionshinweise"
 description: "Die neuesten Versionsinformationen für [!DNL Live Search] von Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: ace61fa579404962a9ca3eb97f61ed50bc43db52
+source-git-commit: 20b4fc2dc0f6cba325e4bc79778ce4852eb189c2
 workflow-type: tm+mt
 source-wordcount: '1925'
 ht-degree: 0%
@@ -34,7 +34,7 @@ _27. Oktober 2023_
 
 _12. Oktober 2023_
 
-![Neu](../assets/new.svg) Commerce-Administratoren können jetzt die Sprache des Index für [!DNL Live Search]. Siehe [Einstellungen](settings.md).
+![Neu](../assets/new.svg) Commerce-Administratoren können jetzt die Indexsprache für [!DNL Live Search]. Siehe [Einstellungen](settings.md).
 ![Fehlerbehebung](../assets/fix.svg) Die Registerkarte &quot;Suchregeln&quot;wurde in &quot;Merchandising durchsuchen&quot;umbenannt.
 
 _13. Juni 2023_
@@ -54,7 +54,7 @@ _19.03.2024_
 ### Neue Funktionen
 
 ![Neu](../assets/new.svg) Sprachunterstützung für [polnisch](technical-overview.md#language-support).
-![Neu](../assets/new.svg) [!DNL Live Search] unterstützt jetzt PHP 8.3 für Installationen mit Adobe Commerce 2.4.4.
+![Neu](../assets/new.svg) [!DNL Live Search] unterstützt jetzt PHP 8.3 für Installationen mit Adobe Commerce 2.4.7.
 
 ## [!DNL Live Search] 4.1.0 {#410}
 
@@ -193,7 +193,7 @@ _14. März 2023_
 ![Neu](../assets/new.svg) Die Möglichkeit, Pin-Ereignisse per Drag &amp; Drop zu erstellen, wurde hinzugefügt
 ![Neu](../assets/new.svg) Neue Pin-Aktionen: * An Position fixieren - Schaltfläche &quot;Pin&quot;, um ein Pin-Ereignis mit einem Klick zu erstellen * Pin to top - Setzt das Produkt an die erste Position * Pin to bottom - Platziert das Produkt am unteren Ende der Ergebnisse * Passen Sie ein Ereignis mit einem Klick auf
 ![Neu](../assets/new.svg) [Intelligente Rangordnung für Regeln](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add)
-![Neu](../assets/new.svg) [!DNL Live Search] unterstützt jetzt vollständig [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) Funktionen in Commerce (früher bekannt als Multi-Source-Bestand oder MSI). Um den vollständigen Support zu ermöglichen, müssen Sie [update](install.md#update) das Abhängigkeitsmodul `commerce-data-export` auf Version 102.2.0+.
+![Neu](../assets/new.svg) [!DNL Live Search] unterstützt jetzt vollständig [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) Funktionen in Commerce (ehemals &quot;Multi-Source Inventory&quot;oder &quot;MSI&quot;). Um den vollständigen Support zu ermöglichen, müssen Sie [update](install.md#update) das Abhängigkeitsmodul `commerce-data-export` auf Version 102.2.0+.
 
 ### Updates
 
@@ -293,7 +293,7 @@ Bestehend [!DNL Live Search] -Installationen müssen aktualisiert werden auf [!D
 [!BADGE Unterstützt]{type="Informativ" tooltip="Unterstützt"}
 
 ![Neu](../assets/new.svg) [[!DNL Storefront popover]](storefront-popover.md) zeigt empfohlene Produkte und Miniaturansichten der wichtigsten Suchergebnisse an, wenn Käufer Abfragen in das Suchfeld eingeben.
-![Neu](../assets/new.svg) Handel *Admin* -Sitzung bleibt während längerer Zeiträume der Tastaturinaktivität geöffnet
+![Neu](../assets/new.svg) Commerce *Admin* -Sitzung bleibt während längerer Zeiträume der Tastaturinaktivität geöffnet
 ![Neu](../assets/new.svg) [!DNL Live Search] wird nach dem Onboarding automatisch aktiviert
 ![Fehlerbehebung](../assets/fix.svg) Die anfängliche Indizierungszeit beträgt weniger als eine Stunde
 ![Fehlerbehebung](../assets/fix.svg) Inkrementelle Produktupdates nahezu in Echtzeit (nach Installation und Einrichtung)
