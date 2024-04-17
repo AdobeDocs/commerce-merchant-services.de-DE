@@ -3,7 +3,7 @@ title: '''[!DNL Product Recommendations] Versionshinweise'
 description: Die neuesten Versionshinweise für [!DNL Product Recommendations] aus Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: ace61fa579404962a9ca3eb97f61ed50bc43db52
+source-git-commit: c3940c399c0639fe53e23cea96b347c7827ecb42
 workflow-type: tm+mt
 source-wordcount: '1276'
 ht-degree: 0%
@@ -88,7 +88,7 @@ _20. März 2023_
 
 ![Neu](../assets/new.svg) Aktualisiert [!DNL Product Recommendations] zur Unterstützung von Adobe Commerce 2.4.6.
 ![Neu](../assets/new.svg) Dies ist eine Hauptversion. [Bearbeiten](install-configure.md#update) der Stamm `composer.json` -Datei für Ihr Projekt.
-![Neu](../assets/new.svg) [!DNL Product Recommendations] unterstützt jetzt vollständig [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) Funktionen in Commerce (früher bekannt als Multi-Source-Bestand oder MSI). Um den vollständigen Support zu ermöglichen, müssen Sie [update](install-configure.md#update) das Abhängigkeitsmodul `commerce-data-export` auf Version 102.2.0+.
+![Neu](../assets/new.svg) [!DNL Product Recommendations] unterstützt jetzt vollständig [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) Funktionen in Commerce (ehemals &quot;Multi-Source Inventory&quot;oder &quot;MSI&quot;). Um den vollständigen Support zu ermöglichen, müssen Sie [update](install-configure.md#update) das Abhängigkeitsmodul `commerce-data-export` auf Version 102.2.0+.
 
 ### 4.0.1 von Magento/Produktempfehlungen
 
@@ -125,7 +125,7 @@ _20. März 2023_
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
 
 ![Neu](../assets/new.svg) hinzugefügt [B2B-Unterstützung](onboarding.md#b2bsupport) in [!DNL Product Recommendations]
-![Neu](../assets/new.svg) Neue Feeds zu [Katalogdaten synchronisieren](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/data-services/catalog-sync) zu Commerce-Services über die Befehlszeile
+![Neu](../assets/new.svg) Neue Feeds zu [Katalogdaten synchronisieren](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/data-services/catalog-sync) zu Commerce Services über die Befehlszeile
 
 ### 3.3.3 von Magento/Produktempfehlungen
 
@@ -165,7 +165,7 @@ _20. März 2023_
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
 
-![Neu](../assets/new.svg) Umbenannte Magento-Dienste in [Commerce-Services](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas) und verbesserte Benutzerfreundlichkeit im Admin
+![Neu](../assets/new.svg) Umbenannte Magento-Dienste in [Commerce Services](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas) und verbesserte Benutzerfreundlichkeit im Admin
 
 ### 3.2.4 von Magento/Produktempfehlungen
 
