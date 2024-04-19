@@ -4,14 +4,20 @@ description: Installieren Sie die Erweiterung "Payments Services".
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
 role: Admin
 feature: Payments, Checkout, Install, Upgrade
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: 5c4fe370507e4154d4495d4c09e2ff8705e53191
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '451'
 ht-degree: 0%
 
 ---
 
 # Installieren [!DNL Payment Services]
+
+Erste Schritte mit der Verwendung von Zahlungsdiensten für [!DNL Adobe Commerce] und [!DNL Magento Open Source]müssen Sie einige Onboarding-Schritte ausführen.
+
+>[!INFO]
+>
+> Siehe unsere [Konfigurieren [!DNL Payment Services] für Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-payment-services) Video für weitere Informationen.
 
 Herunterladen und Installieren der [!DNL Payment Services] Erweiterung für [!DNL Adobe Commerce] und [!DNL Magento Open Source] ist ein erforderlicher Schritt zur Verwendung von [!DNL Payment Services].
 
@@ -23,13 +29,14 @@ Sie müssen die Erweiterung zunächst von herunterladen [Commerce Marketplace](h
 
 1. Navigieren Sie zum [Zahlungsdiensterweiterung in der Commerce Marketplace](https://commercemarketplace.adobe.com/magento-payment-services.html).
 1. Um die Bearbeitung und Version auszuwählen, schalten Sie **[!UICONTROL Edition]** und **[!UICONTROL Your store version]** zu Ihrer gewünschten Auswahl hinzufügen.
-1. Klicken **[!UICONTROL Add to Cart]**.
+1. Klicks **[!UICONTROL Add to Cart]**.
 1. Checkout abschließen und klicken **[!UICONTROL Place Order]**.
 1. Überprüfen Sie die mit Ihrem Marketplace-Download verknüpfte E-Mail, um eine Bestellbestätigung und Details zu erhalten.
 
 ## Installieren der Erweiterung
 
-Sie können die [!DNL Payment Services] -Erweiterung für beide [!DNL Adobe Commerce] in der Cloud-Infrastruktur und in lokalen Instanzen, die mit Ihrem Commerce-Konto verknüpft sind [mageid](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions) im Anmeldeprozess bereitgestellt werden. [!DNL Magento Open Source] Kunden verwenden die Anweisungen vor Ort.
+Sie können die [!DNL Payment Services] -Erweiterung für beide [!DNL Adobe Commerce] über Cloud-Infrastrukturen und lokale Instanzen, die mit Ihrem Commerce-Konto verknüpft sind [mageid](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/#access-keys) im Anmeldeprozess bereitgestellt werden.
+[!DNL Magento Open Source] Kunden verwenden die Anweisungen vor Ort.
 
 Der Verfasser verwendet diese Schlüssel bei der ersten Installation von [!DNL Adobe Commerce]oder in Situationen, in denen die Composer-Schlüssel zuvor nicht im `auth.json` -Datei.
 

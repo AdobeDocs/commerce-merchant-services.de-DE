@@ -3,7 +3,7 @@ title: Zahlungsoptionen
 description: Legen Sie die Zahlungsoptionen fest, um die für Ihre Store-Kunden verfügbaren Methoden anzupassen.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 978340c03e05d29bae6ee872ae9c7332edcd7251
+source-git-commit: 5c4fe370507e4154d4495d4c09e2ff8705e53191
 workflow-type: tm+mt
 source-wordcount: '1150'
 ht-degree: 0%
@@ -54,7 +54,7 @@ Kunden können [[!DNL Apple Pay]](https://www.apple.com/apple-pay/), das die auf
 
 [!DNL Apple Pay] ist nur im Safari-Browser verfügbar. Händler können bis zu 99 Domänen pro Händlerkonto hinzufügen.
 
-![Apple-Zahlungsschaltfläche im Minicart](assets/apple-pay-button.png){width="500" zoomable="yes"}
+![Apple-Zahlungsschaltfläche im Minicart](assets/applepay-button.png){width="500" zoomable="yes"}
 
 Die [!DNL Apple Pay] -Schaltfläche ist von der Produktseite aus sichtbar, in der Mini-Warenkorb-, Warenkorb- und Checkout-Ansicht.
 
