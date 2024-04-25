@@ -3,9 +3,9 @@ title: '''[!DNL Catalog Service] Versionshinweise'
 description: Die neuesten Versionshinweise für [!DNL Catalog Service] für Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: a439df188f72d17a6a41fa248aa9957aaabd9e02
+source-git-commit: 0c4bd1aa58dced3d21edae529da367426c973034
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '605'
 ht-degree: 0%
 
 ---
@@ -22,9 +22,19 @@ Zu den Aktualisierungen gehören:
 
 ## Aktuelle Hauptversion
 
+### Version 1.18
+
+_11. April 2023_
+
+[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
+
+![Neu](../assets/new.svg) Unterstützung für PHP 8.3 hinzugefügt.
+
+![Neu](../assets/new.svg) Die [`products`](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/) -Abfrage gibt nun anpassbare Optionsdaten für einfache und komplexe Produkte zurück.<!--DATA-5538-->
+
 ### Version 1.17
 
-_22.02.2023_
+_22. Februar 2023_
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
 
@@ -49,10 +59,10 @@ _13. Februar 2023_
 Diese Funktionen werden noch nicht unterstützt:
 
 * Die maximale Größe für die Payload dynamischer Attribute beträgt 9 MB.
-* Gruppenproduktpreis. Kann mit einfachen Produktpreisen berechnet werden.
+* Gruppenproduktpreis. Dieser Wert kann mit einfachen Produktpreisen berechnet werden.
 * In einem Bild-Array enthält nur das erste Bild Rollen.
 
-Die folgenden Einschränkungen können mithilfe des API-Gitters und der GraphQL-Core-API behoben werden:
+Die folgenden Einschränkungen können mit API Measurement und der GraphQL-Core-API behoben werden:
 
 * Mindestpreis für Werbung
 * [Kategoriekosten](mesh.md)
@@ -64,7 +74,7 @@ _12. Oktober 2023_
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
 
 ![Neu](../assets/new.svg) Catalog Service unterstützt die `inStock` Markierung für Produktvarianten.
-![Neu](../assets/new.svg) `urlKey` und `externalId` wurden zum GraphQL-Schema hinzugefügt.
+![Neu](../assets/new.svg) Die `urlKey` und `externalId` -Felder wurden zum GraphQL-Schema hinzugefügt.
 ![Neu](../assets/new.svg) Herunterladbare Produkte und Geschenkkarten werden jetzt unterstützt.
 
 ### Version 1.12
@@ -90,7 +100,7 @@ _27. Juni 2023_
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
 
-![Neu](../assets/new.svg) Die Catalog Service API unterstützt jetzt &quot;verwandte Produkte&quot;.
+![Neu](../assets/new.svg) Die Catalog Service-API unterstützt jetzt `related products`.
 
 ### Version 1.7
 
@@ -184,5 +194,3 @@ _9. August 2022_
 * Ein spezifischer Preis für einfache Produkte und Preisspannen für konfigurierbare Produkte.
 * Kundengruppenpreise und Preisspannen. Sie geben einen Fallback-Standardpreis für Käufer ohne Kundengruppe zurück.
 * Produktarten, die B2B-kundenspezifische Preise verwenden.
-
-+++
