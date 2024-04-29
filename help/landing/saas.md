@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Ihre Adobe Commerce- oder Magento Open Source
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: b86464ac65aeb260930fa2f6fed0a4aedbd7eddf
+source-git-commit: e5d9576f0c326dd3a97eeaf9831db0d89b85caff
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '875'
 ht-degree: 0%
 
 ---
@@ -77,13 +77,11 @@ Für [!DNL Product Recommendations], enthält der SaaS-Datenraum Katalog- und Ve
 
 ### Auswählen oder Erstellen eines SaaS-Projekts {#createsaasenv}
 
->[!NOTE]
->
-> Wenn die Variable **[!UICONTROL Commerce Services Connector]** im Abschnitt [!DNL Commerce] -Konfiguration, müssen Sie die [!DNL Commerce] Module für Ihre gewünschten [[!DNL Commerce] service](#availableservices).
-
 Um ein SaaS-Projekt auszuwählen oder zu erstellen, fordern Sie die [!DNL Commerce] API-Schlüssel aus der [!DNL Commerce] Lizenzinhaber für Ihr Geschäft.
 
 1. Im _Admin_ Seitenleiste, navigieren Sie zu **System** > Dienste > **Commerce Services Connector**.
+
+   Wenn die Variable **[!UICONTROL Commerce Services Connector]** im Abschnitt [!DNL Commerce] -Konfiguration, installieren Sie die [!DNL Commerce] Module für Ihre gewünschten [[!DNL Commerce] service](#availableservices). Stellen Sie außerdem sicher, dass die Variable `magento/module-services-id` installiert ist.
 
 1. Im _Sandbox-API-Schlüssel_ und _Schlüssel der Produktions-API_ -Abschnitte, fügen Sie Ihre Schlüsselwerte ein.
 
