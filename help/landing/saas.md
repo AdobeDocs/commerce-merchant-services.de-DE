@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Ihre Adobe Commerce- oder Magento Open Source
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 2d6b80b5133eb00ac42a5f2b64c5846ad30e56c4
+source-git-commit: b86464ac65aeb260930fa2f6fed0a4aedbd7eddf
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '869'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Die Produktions- und Sandbox-API-Schlüssel werden aus dem [!DNL Commerce] Konto
 
 1. Wiederholen Sie die obigen Schritte für jede Umgebung (Produktion und Sandbox).
 
-   Die **API-Schlüssel** -Abschnitt zeigt nun Ihre API-Schlüssel an. Sie benötigen sowohl die Produktions- als auch die Sandbox-Schlüssel, wenn Sie [Auswählen oder Erstellen eines SaaS-Projekts](#createsaasenv).
+   Die **API-Schlüssel** -Abschnitt zeigt nun Ihre API-Schlüssel (Öffentlich) an. Sie benötigen sowohl die Produktions- als auch die Sandbox-Schlüssel (öffentlich+privat), wenn Sie [Auswählen oder Erstellen eines SaaS-Projekts](#createsaasenv).
 
 ## SaaS-Konfiguration {#saasenv}
 
