@@ -1,15 +1,15 @@
 ---
 title: Katalogadaptererweiterung
-description: Verwenden des Katalogadapters zum Rendern der Preise von Commerce Services
+description: Verwenden des Katalogadapters zum Rendern von Preisen über Commerce Services
 seo-title: Catalog Adapter Extension
 seo-description: Using Catalog Adapter to render prices from Commerce Services
-source-git-commit: a637ece6e806771dfc6359dacececf8ccf05b983
+exl-id: 2c9120eb-aa51-48e9-b6a4-fffe25fc31f2
+source-git-commit: 7d62f8d5539cd744e98d8d6c072d77a2a7c5a256
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '332'
 ht-degree: 0%
 
 ---
-
 
 # Katalogadapter
 
@@ -19,10 +19,10 @@ Der Adobe Commerce Product Price-Indexer ist deaktiviert und kann nicht aktivier
 ## Voraussetzungen
 
 * Adobe Commerce 2.4.4+
-* beide der folgenden Commerce Services installiert haben:
+* Installieren Sie beide der folgenden Commerce-Dienste:
 
    * [Catalog Service](../catalog-service/overview.md)
-   * [Live Search](../live-search/guide-overview.md)
+   * [Live Search](../live-search/overview.md)
 
 ## Installation
 
@@ -47,7 +47,7 @@ bin/magento index:reindex catalog_product_price
 
 ## Deaktivieren des Produktpreisindexers für das Headless-Storefront-Szenario
 
-Wenn Sie über eine Headless Commerce-Instanz verfügen, müssen Sie möglicherweise den Adobe Commerce Product Price-Indexer deaktivieren, um die Auslastung Ihrer Adobe Commerce-Instanz zu reduzieren.
+Wenn Sie über eine Headless-Commerce-Instanz verfügen, müssen Sie möglicherweise den Adobe Commerce-Produktpreisindex deaktivieren, um die Auslastung Ihrer Adobe Commerce-Instanz zu reduzieren.
 Dies geschieht durch Installation der `magento/module-price-indexer-disabler` -Modul:
 
 ```bash
@@ -75,7 +75,7 @@ Im Folgenden finden Sie einige häufige `Catalog Adapter` Szenarien.
 
 ### Headless-Commerce-Instanzen
 
-* Ein Händler mit einer Headless Commerce-Instanz mit installierten erforderlichen Diensten (Live Search, Product Recommendations, Catalog Service)
+* Ein Händler mit einer Headless-Commerce-Instanz mit installierten erforderlichen Diensten (Live Search, Product Recommendations, Catalog Service)
 * Keine Abhängigkeit vom standardmäßigen Adobe Commerce Product Price-Indexer
 
 1. Installieren Sie die `magento/module-price-indexer-disabler` -Modul aus dem Katalog-Adapterpaket.

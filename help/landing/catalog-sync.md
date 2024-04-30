@@ -3,7 +3,7 @@ title: Katalogsynchronisierung
 description: Erfahren Sie, wie Sie Produktdaten aus der [!DNL Commerce] Server zu [!DNL Commerce Services].
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
 feature: Catalog Management, Data Import/Export, Catalog Service
-source-git-commit: d95c11a35c78d72da8126affb0753d86aa695827
+source-git-commit: 7d62f8d5539cd744e98d8d6c072d77a2a7c5a256
 workflow-type: tm+mt
 source-wordcount: '1133'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> Das Dashboard für die Katalogsynchronisierung ist jetzt das Dashboard für die Datenverwaltung. Dieses überarbeitete Dashboard unterstützt jetzt [[!DNL Product Recommendations]](../product-recommendations/guide-overview.md), [[!DNL Live Search]](../live-search/guide-overview.md), und [[!DNL Catalog Service]](../catalog-service/overview.md). Kunden können das Data Management Dashboard abrufen, indem sie auf die neueste Version eines dieser Dienste aktualisieren. Mehr darüber erfahren Sie im Abschnitt [Data Management Dashboard](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) Dokumentation. Dieses aktuelle Thema richtet sich nach den Benutzern, die noch kein Upgrade durchführen müssen und noch über das Dashboard Katalogsynchronisierung verfügen.
+> Das Dashboard für die Katalogsynchronisierung ist jetzt das Dashboard für die Datenverwaltung. Dieses überarbeitete Dashboard unterstützt jetzt [[!DNL Product Recommendations]](../product-recommendations/guide-overview.md), [[!DNL Live Search]](../live-search/overview.md), und [[!DNL Catalog Service]](../catalog-service/overview.md). Kunden können das Data Management Dashboard abrufen, indem sie auf die neueste Version eines dieser Dienste aktualisieren. Mehr darüber erfahren Sie im Abschnitt [Data Management Dashboard](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) Dokumentation. Dieses aktuelle Thema richtet sich nach den Benutzern, die noch kein Upgrade durchführen müssen und noch über das Dashboard Katalogsynchronisierung verfügen.
 
 Adobe Commerce verwendet Indexer, um Katalogdaten in Tabellen zu kompilieren. Der Prozess wird automatisch von [events](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html#events-that-trigger-full-reindexing) wie eine Änderung des Produktpreises oder des Lagerbestands.
 
@@ -132,7 +132,7 @@ Der Feed-Name kann einer der folgenden sein:
 - `categoryPermissions` - Berechtigungen für jede Kategorie
 - `productoverrides`— Kundenspezifische Preisbildungs- und Katalogsichtbarkeitsregeln, z. B. auf der Grundlage von Kategorieberechtigungen
 
-Je nach [Commerce-Services](../landing/saas.md) installiert sind, stehen Ihnen möglicherweise verschiedene Feeds zur Verfügung für `saas:resync` Befehl.
+Je nach [Commerce Services](../landing/saas.md) installiert sind, stehen Ihnen möglicherweise verschiedene Feeds zur Verfügung für `saas:resync` Befehl.
 
 Die Ausführung der `saas:resync` regulären Befehls. Möglicherweise müssen Sie den Befehl in zwei Szenarien manuell ausführen:
 

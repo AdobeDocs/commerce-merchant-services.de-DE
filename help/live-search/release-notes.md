@@ -3,7 +3,7 @@ title: "[!DNL Live Search] Versionshinweise"
 description: "Die neuesten Versionsinformationen für [!DNL Live Search] von Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 20b4fc2dc0f6cba325e4bc79778ce4852eb189c2
+source-git-commit: 471bee273a82304ac35b0ca384a2161d7a3399d6
 workflow-type: tm+mt
 source-wordcount: '1925'
 ht-degree: 0%
@@ -53,8 +53,8 @@ _19.03.2024_
 
 ### Neue Funktionen
 
-![Neu](../assets/new.svg) Sprachunterstützung für [polnisch](technical-overview.md#language-support).
-![Neu](../assets/new.svg) [!DNL Live Search] unterstützt jetzt PHP 8.3 für Installationen mit Adobe Commerce 2.4.7.
+![Neu](../assets/new.svg) Sprachunterstützung für Polnisch hinzugefügt.
+![Neu](../assets/new.svg) [!DNL Live Search] unterstützt jetzt PHP 8.3 für Installationen mit Adobe Commerce 2.4.4.
 
 ## [!DNL Live Search] 4.1.0 {#410}
 
@@ -262,7 +262,7 @@ Bestehend [!DNL Live Search] -Installationen müssen aktualisiert werden auf [!D
 
 ![Neu](../assets/new.svg) [!DNL Live Search] unterstützt jetzt PHP 8.1 für Installationen mit Adobe Commerce 2.4.4.
 ![Neu](../assets/new.svg) Die `Magento_ElasticsearchCatalogPermissionsGraphQl` -Modul wird zur Liste der Module hinzugefügt, die während der Installation deaktiviert werden.
-![Neu](../assets/new.svg) Die Anzahl der verfügbaren Zeilen im [[!DNL storefront popover]](quick-tour.md) kann über die *Admin*.
+![Neu](../assets/new.svg) Die Anzahl der verfügbaren Zeilen im [[!DNL storefront popover]](overview.md) kann über die *Admin*.
 ![Neu](../assets/new.svg) Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/) unterstützt für [!DNL Live Search].
 ![Neu](../assets/new.svg) Die [!DNL Live Search] Der Installationsprozess wird mit erweiterten Prozessänderungen aktualisiert.
 ![Fehlerbehebung](../assets/fix.svg) [Erweiterte Suche](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) -Link aus der Fußzeile der Storefront entfernt.
