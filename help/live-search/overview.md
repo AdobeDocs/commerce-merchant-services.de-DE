@@ -3,9 +3,9 @@ title: Was ist [!DNL Live Search]?
 description: "[!DNL Live Search] von Adobe Commerce bietet eine schnelle, relevante und intuitive Sucherfahrung."
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: 8aca09aba13e32afb191169729dfc1fbd0087262
+source-git-commit: aba552808ea7af540f64f00a2ae4aeaf2b9cc52e
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '674'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,11 @@ Die Adobe Commerce-Seite der Architektur umfasst das Hosten der Suche *Admin*, S
 
 ## Quick Tour
 
-mit dem Schwerpunkt auf Geschwindigkeit, Relevanz und Benutzerfreundlichkeit, [!DNL Live Search] ist ein Spielveränderer für Käufer und Händler gleichermaßen. Folgen Sie dem Abschnitt für eine kurze Übersicht [!DNL Live Search] von der Schaufensterfront aus.
+mit dem Schwerpunkt auf Geschwindigkeit, Relevanz und Benutzerfreundlichkeit, [!DNL Live Search] ist ein Spielveränderer für Käufer und Händler gleichermaßen. Sehen Sie sich das folgende Video an und nehmen Sie eine kurze Tour durch [!DNL Live Search] von der Schaufensterfront aus.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3418679?quality=12&learn=on)
+
+Ein detaillierteres Video zur Verwendung und Konfiguration der Live-Suche finden Sie unter [Vollständige Demonstration auf [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration.html) Thema.
 
 ### Suchen nach der Eingabe
 
@@ -80,11 +84,3 @@ Die [!DNL Live Search] [Arbeitsbereich](workspace.md) ist der Bereich im Admin, 
 ## Veranstaltungen
 
 [!DNL Live Search] uses [events](events.md) berechnet [Intelligente Merchandising](category-merch.md) und [Leistung](performance.md) Dashboards. Eventing wird mit Standardimplementierungen bereitgestellt. Eventing für Headless-Storefronts sollte manuell aktiviert werden.
-
-## [!DNL Live Search] Demo
-
-In diesem Video erfahren Sie mehr über [!DNL Live Search]:
-
->[!VIDEO](https://video.tv.adobe.com/v/3418679?quality=12&learn=on)
-
-Ein detaillierteres Video zur Verwendung und Konfiguration der Live-Suche finden Sie unter [Vollständige Demonstration auf [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration.html) Thema.
