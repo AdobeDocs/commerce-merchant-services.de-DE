@@ -1,25 +1,25 @@
 ---
-title: Commerce-Daten mit Adobe Experience Platform verbinden
+title: Verbinden von Commerce-Daten mit Adobe Experience Platform
 description: Erfahren Sie, wie Sie Ihre Commerce-Daten mit der Adobe Experience Platform verbinden.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
+source-git-commit: 89607d22ba8e69e0c98fce97e041022e33d01c07
 workflow-type: tm+mt
-source-wordcount: '2480'
+source-wordcount: '2486'
 ht-degree: 0%
 
 ---
 
-# Commerce-Daten mit Adobe Experience Platform verbinden
+# Verbinden von Commerce-Daten mit Adobe Experience Platform
 
-Wenn Sie die [!DNL Data Connection] Erweiterung, werden zwei neue Konfigurationsseiten im **System** Menü unter **Dienste** im Handel _Admin_.
+Wenn Sie die [!DNL Data Connection] Erweiterung, werden zwei neue Konfigurationsseiten im **System** Menü unter **Dienste** in der Commerce _Admin_.
 
 - Commerce Services Connector
 - [!DNL Data Connection]
 
 Um Ihre Adobe Commerce-Instanz mit der Adobe Experience Platform zu verbinden, müssen Sie beide Connectoren konfigurieren, beginnend mit dem Commerce Services-Connector und schließlich mit dem [!DNL Data Connection] -Erweiterung.
 
-## Connector für Commerce Services konfigurieren
+## Konfigurieren des Commerce Services-Connectors
 
 Wenn Sie zuvor einen Adobe Commerce-Dienst installiert haben, haben Sie wahrscheinlich bereits den Commerce Services-Connector konfiguriert. Andernfalls müssen Sie die folgenden Aufgaben für die [Commerce Services-Connector](../landing/saas.md) Seite:
 
@@ -57,7 +57,7 @@ Das Ergebnis dieses Schritts erstellt eine Konfigurationsdatei, die Sie im näch
 
 Laden Sie die [Konfigurationsdatei für Workspace](https://developer.adobe.com/commerce/extensibility/events/project-setup/#download-the-workspace-configuration-file). Kopieren Sie den Inhalt dieser Datei und fügen Sie ihn in das **Details zu Dienstkonten/Berechtigungen** Seite des Commerce-Administrators.
 
-1. Navigieren Sie im Commerce Admin zu **Stores** > Einstellungen > **Konfiguration** > **Dienste** > **[!DNL Data Connection]**.
+1. Navigieren Sie in Commerce Admin zu **Stores** > Einstellungen > **Konfiguration** > **Dienste** > **[!DNL Data Connection]**.
 
 1. Wählen Sie die Server-zu-Server-Autorisierungsmethode aus, die Sie über die **Adobe Developer-Autorisierungstyp** Menü. Adobe empfiehlt die Verwendung von OAuth. JWT ist veraltet. [Weitere Infos](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/).
 
@@ -97,7 +97,7 @@ In diesem Abschnitt geben Sie den Datentyp an, den Sie erfassen und an den Exper
 
 - **Backoffice** (Server-seitige Daten) sind Daten, die auf den Commerce-Servern erfasst werden. Dazu gehören Informationen über den Status einer Bestellung, z. B. ob eine Bestellung aufgegeben, storniert, rückerstattet, versandt oder abgeschlossen wurde. Er umfasst auch [historische Bestelldaten](#send-historical-order-data).
 
-- **Profil** sind Daten, die sich auf die Profilinformationen Ihres Käufers beziehen. Lernen [more](#send-customer-profile-data).
+- **Profil (Beta)** sind Daten, die sich auf die Profilinformationen Ihres Käufers beziehen. Lernen [more](#send-customer-profile-data).
 
 Um sicherzustellen, dass Ihre Adobe Commerce-Instanz mit der Datenerfassung beginnen kann, lesen Sie das [Voraussetzungen](overview.md#prerequisites).
 
@@ -117,7 +117,7 @@ Weitere Informationen finden Sie unter Ereignisthema . [storefront](events.md#st
 
 1. (Überspringen Sie diesen Schritt, wenn Sie Ihr eigenes AEP Web SDK verwenden.) [Erstellen](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html#create) einen Datastream in der Adobe Experience Platform oder wählen Sie einen vorhandenen Datastream aus, den Sie für die Erfassung verwenden möchten. Geben Sie diese Datastream-ID in der **Datenspeicher-ID** -Feld.
 
-1. Geben Sie die **Datensatz-ID** die Ihre Commerce-Daten enthalten sollen. So suchen Sie die Datensatz-ID:
+1. Geben Sie die **Datensatz-ID** , die Sie Ihre Commerce-Daten enthalten möchten. So suchen Sie die Datensatz-ID:
 
    1. Öffnen Sie die Experience Platform-Benutzeroberfläche und wählen Sie **Datensätze** im linken Navigationsbereich, um die **Datensätze** Dashboard. Das Dashboard listet alle verfügbaren Datensätze für Ihre Organisation auf. Details werden für jeden aufgelisteten Datensatz angezeigt, einschließlich seines Namens, des Schemas, dem der Datensatz entspricht, und des Status des letzten Erfassungslaufs.
    1. Öffnen Sie den Datensatz, der Ihrem Datastream zugeordnet ist.
@@ -158,6 +158,10 @@ Nach dem Onboarding fließen die Storefront-Daten an den Experience Platform-Edg
 
 ### Senden von Kundenprofildaten
 
+>[!IMPORTANT]
+>
+>Diese Funktion befindet sich in der Beta-Phase.
+
 Es gibt zwei Arten von Profildaten, die Sie an die Experience Platform senden können: Profildatensätze und Zeitreihenprofilereignisse.
 
 Ein Profildatensatz enthält Daten, die gespeichert werden, wenn ein Käufer ein Profil in Ihrer Commerce-Instanz erstellt, z. B. den Namen des Käufers. Wann Ihr Schema und Ihr Datensatz [ordnungsgemäß konfiguriert](profile-data.md), wird ein Profildatensatz an die Experience Platform gesendet und an den Adobe Profil-Management- und Segmentierungsdienst weitergeleitet: [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html?lang=de).
@@ -191,7 +195,7 @@ Es kann etwa 10 Minuten dauern, bis ein Profildatensatz in Real-Time CDP verfüg
 
 Adobe Commerce sammelt bis zu fünf Jahre [historische Bestelldaten und -status](events-backoffice.md#back-office-events). Sie können die [!DNL Data Connection] Erweiterung, um diese historischen Daten an die Experience Platform zu senden, um Ihre Kundenprofile anzureichern und die Kundenerlebnisse auf der Grundlage dieser früheren Bestellungen zu personalisieren. Die Daten werden in einem Datensatz innerhalb von Experience Platform gespeichert.
 
-Während Commerce bereits die historischen Bestelldaten erfasst, müssen Sie mehrere Schritte ausführen, um diese Daten an Experience Platform zu senden.
+Commerce erfasst zwar bereits die historischen Bestelldaten, Sie müssen jedoch mehrere Schritte ausführen, um diese Daten an Experience Platform zu senden.
 
 Sehen Sie sich dieses Video an, um mehr über historische Bestellungen zu erfahren, und führen Sie dann die folgenden Schritte aus, um die Erfassung historischer Bestellungen zu implementieren.
 
@@ -250,7 +254,7 @@ Geben Sie den Datumsbereich für die historischen Bestellungen an, die Sie an Ex
 
 ## Bestätigen der Erfassung von Ereignisdaten
 
-Um sicherzustellen, dass Daten aus Ihrem Commerce-Store erfasst werden, verwenden Sie die [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) , um Ihre Commerce-Site zu untersuchen. Nachdem Sie bestätigt haben, dass Daten erfasst werden, können Sie sicherstellen, dass Ihre Storefront- und Back-Office-Ereignisdaten am Edge angezeigt werden, indem Sie eine Abfrage ausführen, die Daten aus dem [von Ihnen erstellter Datensatz](overview.md#prerequisites).
+Um sicherzustellen, dass Daten aus Ihrem Commerce-Store erfasst werden, verwenden Sie das [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) , um Ihre Commerce-Site zu untersuchen. Nachdem Sie bestätigt haben, dass Daten erfasst werden, können Sie sicherstellen, dass Ihre Storefront- und Back-Office-Ereignisdaten am Edge angezeigt werden, indem Sie eine Abfrage ausführen, die Daten aus dem [von Ihnen erstellter Datensatz](overview.md#prerequisites).
 
 1. Auswählen **Abfragen** im linken Navigationsbereich von Experience Platform und klicken Sie auf [!UICONTROL Create Query].
 
@@ -270,10 +274,10 @@ Um sicherzustellen, dass Daten aus Ihrem Commerce-Store erfasst werden, verwende
 
    ![Abfrage-Editor](assets/query-results.png)
 
-In diesem Beispiel werden Ereignisdaten aus der [`commerce.productListAdds`](events.md#addtocart), [`commerce.productViews`](events.md#productpageview), [`web.webpagedetails.pageViews`](events.md#pageview)usw. Mit dieser Ansicht können Sie überprüfen, ob Ihre Commerce-Daten am Edge angekommen sind.
+In diesem Beispiel werden Ereignisdaten aus der [`commerce.productListAdds`](events.md#addtocart), [`commerce.productViews`](events.md#productpageview), [`web.webpagedetails.pageViews`](events.md#pageview)usw. Mit dieser Ansicht können Sie überprüfen, ob Ihre Commerce-Daten am -Edge angekommen sind.
 
 Wenn die Ergebnisse nicht Ihren Erwartungen entsprechen, öffnen Sie den Datensatz und suchen Sie nach fehlgeschlagenen Batch-Importen. Weitere Informationen [Fehlerbehebung bei Batch-Importen](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/troubleshooting.html).
 
 ## Nächste Schritte
 
-Wenn Commerce-Daten an den Experience Platform Edge gesendet werden, können andere Adobe Experience Cloud-Produkte wie Adobe Journey Optimizer diese Daten verwenden. Sie können beispielsweise Journey Optimizer so konfigurieren, dass bestimmte Ereignisse überwacht werden. Auf der Grundlage dieser Ereignisdaten können Sie eine E-Mail für einen Erstbenutzer oder einen Transaktionsabbruch erstellen. Erfahren Sie, wie Sie Ihre Commerce-Plattform erweitern können durch [Erstellen von Journey für Kunden](using-ajo.md) in Journey Optimizer.
+Wenn Commerce-Daten an den Experience Platform-Edge gesendet werden, können andere Adobe Experience Cloud-Produkte wie Adobe Journey Optimizer diese Daten verwenden. Sie können beispielsweise Journey Optimizer so konfigurieren, dass bestimmte Ereignisse überwacht werden. Auf der Grundlage dieser Ereignisdaten können Sie eine E-Mail für einen Erstbenutzer oder einen Transaktionsabbruch erstellen. Erfahren Sie, wie Sie Ihre Commerce-Plattform erweitern [Erstellen von Journey für Kunden](using-ajo.md) in Journey Optimizer.

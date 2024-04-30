@@ -3,16 +3,17 @@ title: Profildatensätze
 description: Erfahren Sie, welche Daten ein Profildatensatz erfasst.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
+exl-id: bd04730d-e37a-48a9-822b-0f4aa68a4651
+source-git-commit: 89607d22ba8e69e0c98fce97e041022e33d01c07
 workflow-type: tm+mt
-source-wordcount: '212'
+source-wordcount: '418'
 ht-degree: 0%
 
 ---
 
-# [!DNL Data Connection] Profildatensätze
+# [!DNL Data Connection] Profildatensätze (Beta)
 
-Im Folgenden werden die Commerce-Profildatensätze beschrieben, die bei der Installation der [!DNL Data Connection] -Erweiterung. Die Daten in Profildatensätzen werden an die Adobe Experience Platform gesendet.
+Im Folgenden werden die Commerce-Profildatensatzdaten beschrieben, die bei der Installation der [!DNL Data Connection] -Erweiterung. Die Daten in Profildatensätzen werden an die Adobe Experience Platform gesendet.
 
 ## Profildatensatz
 
@@ -34,11 +35,27 @@ Im Folgenden werden die Daten beschrieben, die für einen Profildatensatz erfass
 | `person.birthDate` | Geburtsdatum des Käufers |
 | `personalEmail` | Eine persönliche E-Mail-Adresse. |
 | `personalEmail.address` | Die technische Adresse, beispielsweise `name@domain.com` wie allgemein in RFC2822 und nachfolgenden Standards definiert. |
+| `billingAddress` | Die Postadresse der Rechnungsstellung. |
+| `billingAddress.street1` | Primäre Straßeninformationen, Wohnungsnummer, Straßennummer und Straßenname. |
+| `billingAddress.street2` | Optionale Straßeninformationen, zweite Zeile. |
+| `billingAddress.city` | Der Name der Stadt. |
+| `billingAddress.state` | Der Name des Status. Dies ist ein Freiformfeld. |
+| `billingAddress.country` | Der Name des von der Regierung verwalteten Gebiets. Andere als `xdm:countryCode`, ist dies ein Freiformfeld, das den Ländernamen in jeder Sprache enthalten kann. |
+| `billingAddressPhone` | Die mit der Rechnungsadresse verknüpfte Telefonnummer. |
+| `billingAddressPhone.number` | Die Telefonnummer. Beachten Sie, dass die Telefonnummer eine Zeichenfolge ist und aussagekräftige Zeichen wie Klammern enthalten kann. `()`, Bindestriche `-`, oder Zeichen, um IDs für Unterwählungen wie Erweiterungen anzugeben `x` Beispiel:  `1-353(0)18391111` oder `+613 9403600x1234`. |
+| `shippingAddress` | Die Postanschrift des Versands. |
+| `shippingAddress.street1` | Primäre Straßeninformationen, Wohnungsnummer, Straßennummer und Straßenname. |
+| `shippingAddress.street2` | Optionale Straßeninformationen, zweite Zeile. |
+| `shippingAddress.city` | Der Name der Stadt. |
+| `shippingAddress.state` | Der Name des Status. Dies ist ein Freiformfeld. |
+| `shippingAddress.country` | Der Name des von der Regierung verwalteten Gebiets. Andere als `xdm:countryCode`, ist dies ein Freiformfeld, das den Ländernamen in jeder Sprache enthalten kann. |
+| `shippingAddressPhone` | Telefonnummer, die der Lieferadresse zugeordnet ist. |
+| `shippingAddressPhone.number` | Die Telefonnummer. Beachten Sie, dass die Telefonnummer eine Zeichenfolge ist und aussagekräftige Zeichen wie Klammern enthalten kann. `()`, Bindestriche `-`, oder Zeichen, um IDs für Unterwählungen wie Erweiterungen anzugeben `x` Beispiel:  `1-353(0)18391111` oder `+613 9403600x1234`. |
 | `userAccount` | Gibt Details zu Treueprogramm, Voreinstellungen, Anmeldeprozesse und andere Kontovoreinstellungen an. |
 | `userAccount.startDate` | Das Datum der ersten Erstellung des Profils. |
 
 >[!NOTE]
 >
->Jeder Profildatensatz enthält auch [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) -Feld, das die E-Mail-Adresse des Käufers, sofern verfügbar, sowie die ECID enthält.
+>Jeder Profildatensatz enthält auch [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) -Feld, das die systemgenerierte Commerce-Kunden-ID als primäre Kennung für das Profil und eine E-Mail-ID als sekundäre Kennung enthält.
 
 Erfahren Sie, wie [Erstellen eines profildatensatzspezifischen Schemas](profile-data.md) die die Daten aus Ihren Profildatensätzen aufnehmen können.

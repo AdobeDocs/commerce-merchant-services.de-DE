@@ -4,16 +4,16 @@ description: Erfahren Sie, welche Daten jedes Back-Office-Ereignis erfasst.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: a5a4f04b-89ac-4020-95ce-984f9f2d8385
-source-git-commit: 0ab1b4b23d25bee722b35fbc8b9717ad6d1c299e
+source-git-commit: 813be62b366b1c76a2b909079cfba31ef8000617
 workflow-type: tm+mt
-source-wordcount: '3571'
+source-wordcount: '3611'
 ht-degree: 0%
 
 ---
 
 # [!DNL Data Connection] Zurück zu Office-Ereignissen
 
-Im Folgenden werden die Commerce-Back-Office-Ereignisse aufgelistet, die bei der Installation von [!DNL Data Connection] -Erweiterung. Die von diesen Ereignissen erfassten Daten werden an die Adobe Experience Platform gesendet. Sie können auch [benutzerspezifische Ereignisse](custom-events.md) um zusätzliche Daten zu erfassen, die nicht vorkonfiguriert bereitgestellt wurden.
+Im Folgenden werden die Commerce-Backoffice-Ereignisse aufgelistet, die bei der Installation von [!DNL Data Connection] -Erweiterung. Die von diesen Ereignissen erfassten Daten werden an die Adobe Experience Platform gesendet. Sie können auch [benutzerspezifische Ereignisse](custom-events.md) um zusätzliche Daten zu erfassen, die nicht vorkonfiguriert bereitgestellt wurden.
 
 Zusätzlich zu den Daten, die die folgenden Ereignisse erfassen, erhalten Sie auch [sonstige Daten](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) bereitgestellt vom Adobe Experience Platform Web SDK.
 
@@ -404,7 +404,15 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 
 ## Kundenprofilereignisse
 
+>[!IMPORTANT]
+>
+>Diese Funktion befindet sich in der Beta-Phase.
+
 Von der serverseitigen Seite erfasste Profilereignisse enthalten Kontoinformationen, z. B. `accountCreated`, `accountUpdated`, und `accountDeleted`. Diese Daten werden verwendet, um wichtige Kundendetails auszufüllen, die für eine bessere Definition von Segmenten oder die Ausführung von Marketing-Kampagnen benötigt werden, z. B. das Senden von Rabattangeboten zur Anmeldung, von Kontoänderungsbestätigungen usw. Es gibt ähnliche Profilereignisse, die aus der [storefront](events.md#customer-profile-events).
+
+>[!NOTE]
+>
+>Jedes Kundenprofilereignis enthält auch [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) -Feld, das die systemgenerierte Commerce-Kunden-ID als primäre Kennung für das Profil und eine E-Mail-ID als sekundäre Kennung enthält.
 
 ### accountCreated
 
