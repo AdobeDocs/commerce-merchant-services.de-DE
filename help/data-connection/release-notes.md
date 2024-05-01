@@ -3,9 +3,9 @@ title: Versionshinweise
 description: Die neuesten Versionsinformationen für die [!DNL Data Connection] -Erweiterung von Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 2b168c0ef07324c7fc7b3cfd464742b257d073ec
+source-git-commit: 84094f4249eeb9f98a85e582c52e2c48e0dd9316
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: '838'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ _10. Oktober 2023_
 
 _10. Juni 2023_
 
-![Fehlerbehebung](../assets/fix.svg) - Es wurde ein Problem behoben, das bei `orderId` im Kontext aufgrund von Präfixen in der Commerce-Bestellkennung nicht übergeben wurde.
+![Fehlerbehebung](../assets/fix.svg) - Es wurde ein Problem behoben, das bei `orderId` hat aufgrund von Präfixen in der Commerce-Bestellkennung nicht im Kontext übergeben.
 ![Fehlerbehebung](../assets/fix.svg) - Konfigurationen der Inhaltssicherheitsrichtlinie wurden aktualisiert.
 
 _30. März 2023_
@@ -87,7 +87,7 @@ _4. März 2024_
 
 [!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"}
 
-![Neu](../assets/new.svg) - Wenn Sie an der Beta-Phase teilnehmen, stellen Sie sicher, dass Ihre `composer.json` -Datei hat Folgendes auf der Stammebene: ` "minimum-stability": "beta"`.
+![Neu](../assets/new.svg) - Wenn Sie an der Beta-Phase teilnehmen, stellen Sie sicher, dass Ihre `composer.json` -Datei hat Folgendes auf der Stammebene: ` "minimum-stability": "beta"`. Fügen Sie außerdem `composer require "magento/customers-connector: ^1.2.0"` , um Kundenprofile von Ihrer Commerce-Instanz an SaaS zu senden.
 ![Neu](../assets/new.svg) - Zusätzliche Funktion für [Hinzufügen benutzerdefinierter Attribute](update-xdm.md#update-schema-with-time-series-behavioral-and-back-office-event-data).
 ![Neu](../assets/new.svg) - Zusätzliche Funktion für [Profildatensätze erfassen und senden](connect-data.md#send-customer-profile-data) und Daten an Experience Platform.
 
@@ -121,7 +121,7 @@ _27. Juni 2023_
 
 ![Neu](../assets/new.svg) - Zusätzliche Funktion für [Deaktivieren des Versands von Storefront-Ereignissen](connect-data.md#data-collection) auf die Experience Platform.
 ![Fehlerbehebung](../assets/fix.svg) - Konfigurationen der Inhaltssicherheitsrichtlinie wurden aktualisiert.
-![Fehlerbehebung](../assets/fix.svg) - Die Unterstützung für Back-Office-Ereignisse in Commerce 2.4.7 wurde korrigiert.
+![Fehlerbehebung](../assets/fix.svg) - Feste Unterstützung für Backoffice-Ereignisse in Commerce 2.4.7.
 ![Neu](../assets/new.svg) - Es wurde eine Benachrichtigung zur Cache-Invalidierung hinzugefügt, wenn Sie Änderungen an der [!DNL Data Connection] Erweiterungsformular.
 
 
