@@ -2,9 +2,9 @@
 title: Seiten-Widget "Produktliste"
 description: Aktivieren und Gestalten der [!DNL Live Search Product Listing Page Widget]
 exl-id: f7346a06-a8c7-4a33-8437-ea4f61d9281f
-source-git-commit: d4511219a0244dca7db896419daba1e6694d80de
+source-git-commit: 1e0baa20defe4e50bd9e45c03ff7c5f758b24e5d
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '346'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,8 @@ Das PLP-Widget bietet eine Reihe von Funktionen, die auf einer durchsuchbaren Pr
 * Funktion &quot;Zum Warenkorb hinzufügen&quot;
 * Unterstützung mehrerer Sprachen
 * Preisregler
+
+Informationen zum Anpassen des PLP-Widgets für die oben genannten Funktionen finden Sie in der `storefront-product-listing-page` Lesen Sie die folgenden Informationen: [repo](https://github.com/adobe/storefront-product-listing-page/).
 
 ## Stilbeispiel
 
