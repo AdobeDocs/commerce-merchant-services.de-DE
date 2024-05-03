@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Ihre Adobe Commerce- oder Magento Open Source
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: e5d9576f0c326dd3a97eeaf9831db0d89b85caff
+source-git-commit: b6775b196ca36448f50a6fed283ef0626e03d286
 workflow-type: tm+mt
-source-wordcount: '875'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,11 @@ In den folgenden Abschnitten werden die einzelnen Elemente ausführlicher erläu
 
 ## Anmeldeinformationen {#apikey}
 
-Die Produktions- und Sandbox-API-Schlüssel werden aus dem [!DNL Commerce] Konto des Lizenzinhabers, das durch eine eindeutige [!DNL Commerce] ID (MageID). So übergeben Sie die Berechtigungsprüfung für Dienste wie [!DNL Product Recommendations] oder [!DNL Live Search]festgelegt ist, kann der Lizenzinhaber der Händlerorganisation den Satz von API-Schlüsseln generieren, solange das Konto gut aufgestellt ist. Die Schlüssel können auf der Grundlage des &quot;Bedarfs an Wissen&quot;an den Systemintegrator oder das Entwicklungsteam weitergegeben werden, der Projekte und Umgebungen im Auftrag des Lizenzinhabers verwaltet. Darüber hinaus sind Lösungsintegratoren auch berechtigt, [!DNL Commerce Services]. Wenn Sie ein Lösungsintegrator sind, ist der Unterzeichner der [!DNL Commerce] Der Partnervertrag sollte die API-Schlüssel generieren.
+Die Produktions- und Sandbox-API-Schlüssel werden aus dem [!DNL Commerce] des [Lizenzinhaber](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/start/onboarding) die durch eine eindeutige [!DNL Commerce] ID (MageID). So übergeben Sie die Berechtigungsprüfung für Dienste wie [!DNL Product Recommendations] oder [!DNL Live Search]festgelegt ist, kann der Lizenzinhaber für die Organisation des Händlers den Satz von API-Schlüsseln generieren, solange das Konto gut aufgestellt ist. Die Schlüssel können auf der Grundlage des &quot;Bedarfs an Wissen&quot;an den Systemintegrator oder das Entwicklungsteam weitergegeben werden, der Projekte und Umgebungen im Auftrag des Lizenzinhabers verwaltet. Darüber hinaus sind Lösungsintegratoren auch berechtigt, [!DNL Commerce Services]. Wenn Sie ein Lösungsintegrator sind, ist der Unterzeichner der [!DNL Commerce] Der Partnervertrag sollte die API-Schlüssel generieren.
+
+>[!NOTE]
+>
+>Der Lizenzinhaber ist in der Regel der Primäre Ansprechpartner für das Adobe Commerce-Konto und nicht immer derselbe wie der Projekteigentümer des Adobe Commerce-Projekts für Cloud-Infrastruktur.
 
 ### Generieren der Produktions- und Sandbox-API-Schlüssel {#genapikey}
 
