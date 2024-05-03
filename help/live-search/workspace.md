@@ -1,19 +1,19 @@
 ---
-title: '[!DNL Live Search] Workspace'
+title: "Workspace"
 description: Die [!DNL Live Search] Workspace wird zum Konfigurieren, Verwalten und Überwachen der Suchleistung verwendet.
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
-source-git-commit: c77b2f9cb55d3eb339dcc900ce606b94c592f559
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
-source-wordcount: '236'
+source-wordcount: '218'
 ht-degree: 0%
 
 ---
 
-# [!DNL Live Search] Arbeitsbereich
+# Arbeitsbereich
 
 Im Arbeitsbereich können Sie die Leistung von [!DNL Live Search]. Das Menü oben bietet Zugriff auf die Tools in den einzelnen Funktionsbereichen.  Die verfügbaren Funktionen spiegeln die aktuelle Menüauswahl wider.
 
-![Factory-Arbeitsbereich](assets/workspace.png)
+![Arbeitsbereich](assets/workspace.png)
 
 ## Festlegen des Umfangs
 

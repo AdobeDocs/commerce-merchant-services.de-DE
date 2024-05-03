@@ -1,17 +1,17 @@
 ---
-title: "Leistungs-Dashboard"
-description: "Die [!DNL Live Search] Das Leistungs-Dashboard bietet Einblicke in die Suchbegriffe, die Käufer verwenden."
+title: "Leistung"
+description: '"Die [!DNL Live Search] Der Arbeitsbereich "Leistung"bietet Einblicke in die Suchbegriffe, die Käufer verwenden."'
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
-source-git-commit: 289ac6ac464955f18f3a2448099ad459e6264941
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '479'
 ht-degree: 0%
 
 ---
 
-# Leistungs-Dashboard
+# Leistung
 
-Die [!DNL Live Search] Das Leistungs-Dashboard bietet Einblicke in die Suchbegriffe, die von Käufern verwendet werden. Die Informationen können verwendet werden, um Trends zu identifizieren, die Clickthrough-Rate zu erhöhen und die Konversionsrate zu verbessern. Das Leistungs-Dashboard bietet eine Momentaufnahme der Suchmetriken für einen bestimmten Datumsbereich und enthält die folgenden Berichte:
+Die *Leistung* Workspace bietet Einblicke in die Suchbegriffe, die von Käufern verwendet werden. Die Informationen können verwendet werden, um Trends zu identifizieren, die Clickthrough-Rate zu erhöhen und die Konversionsrate zu verbessern. Der Arbeitsbereich &quot;Leistung&quot;bietet eine Momentaufnahme der Suchmetriken für einen bestimmten Datumsbereich und enthält die folgenden Berichte:
 
 * Einzelsuche
 * Null Ergebnisse
@@ -30,7 +30,7 @@ Weitere Informationen finden Sie unter [Data Management Dashboard](https://exper
 
 >[!NOTE]
 >
->Das Leistungs-Dashboard wird alle 12 Stunden aktualisiert.
+>Der Arbeitsbereich für die Leistung wird alle 12 Stunden aktualisiert.
 
 ## Feldbeschreibungen
 

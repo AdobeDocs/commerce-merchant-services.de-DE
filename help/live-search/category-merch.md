@@ -3,7 +3,7 @@ title: Kategorie-Merchandising
 description: Verwendung [!DNL Live Search] KategorieMerchandising für ein schnelleres Einkaufserlebnis.
 gourl: ls_catalog_merchandising
 exl-id: 24f159c1-b175-47c1-aca1-8bada118b4b4
-source-git-commit: 109a4e79a7faac62a4d7c48cadcada1ec28f3c94
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
 source-wordcount: '1053'
 ht-degree: 0%
@@ -22,7 +22,7 @@ Auf die Funktion kann in Admin unter **Marketing** > SEO &amp; Suche > **[!DNL L
 
 >[!NOTE]
 >
->Kategorie-Merchandising ist verfügbar mit [!DNL Live Search] [3.0.0 oder höher](release-notes.md). Wenn die Registerkarte &quot;KategorieMerchandising&quot;angezeigt wird, aber keine Daten enthält, aktualisieren Sie die [!DNL Live Search] -Modul.
+>Kategorie-Merchandising ist verfügbar mit [!DNL Live Search] [3.0.0 oder höher](release-notes.md). Wenn der Arbeitsbereich &quot;KategorieMerchandising&quot;angezeigt wird, jedoch keine Daten enthält, aktualisieren Sie die [!DNL Live Search] -Modul.
 
 ![KategorieMerchandising](assets/category_workspace.png)
 

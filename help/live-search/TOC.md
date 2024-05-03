@@ -4,10 +4,10 @@ user-guide-description: "Dieses Handbuch enthält ausführliche Anweisungen zur 
 breadcrumb-title: „Handbuch zu [!DNL Live Search]“
 role: Admin
 feature: Services, Search
-source-git-commit: 4fd8c313c27756f6da42dd01e01506847d2b6975
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
-source-wordcount: '78'
-ht-degree: 10%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -17,34 +17,34 @@ ht-degree: 10%
 - [Installieren](install.md)
 - [Grenzen und Grenzen](boundaries-limits.md)
 - [Versionshinweise](release-notes.md)
-- [!DNL Live Search] Storefront {#live-search-storefront}
+- Storefront {#live-search-storefront}
    - [Seiten-Widget &quot;Produktliste&quot;](plp-styling.md)
    - [Storefront [!DNL Popover]](storefront-popover.md)
    - [Formatierung [!DNL Popover] Elemente](storefront-popover-styling.md)
-- [!DNL Live Search] Admin{#live-search-admin}
-   - [Commerce-Konfigurationseinstellungen](configuration.md)
+- Admin {#live-search-admin}
+   - [Arbeitsbereich](workspace.md)
+   - [Leistung](performance.md)
    - Facets {#facets}
       - [Übersicht](facets.md)
-      - [Factory Workspace](faceting-workspace.md)
+      - [Arbeitsbereich](faceting-workspace.md)
       - [Arten von Facetten](facets-type.md)
       - [Facets hinzufügen](facets-add.md)
       - [Facets verwalten](facets-manage.md)
-   - [Indizierung](indexing.md)
-   - [Leistung](performance.md)
-   - [GraphQL](graphql.md)
-   - [Kategorie-Merchandising](category-merch.md)
-   - Merchandising durchsuchen {#rules}
-      - [Übersicht](rules.md)
-      - [Search Merchandising Workspace](rules-workspace.md)
-      - [Regeln hinzufügen](rules-add.md)
-      - [Regeln verwalten](rules-manage.md)
-   - [Einstellungen](settings.md)
    - Synonyme {#synonyms}
       - [Übersicht](synonyms.md)
       - [Arten von Synonymen](synonyms-type.md)
       - [Synonyme hinzufügen](synonyms-add.md)
       - [Synonyme verwalten](synonyms-manage.md)
-   - [Arbeitsbereich](workspace.md)
+   - Merchandising durchsuchen {#rules}
+      - [Übersicht](rules.md)
+      - [Arbeitsbereich](rules-workspace.md)
+      - [Regeln hinzufügen](rules-add.md)
+      - [Regeln verwalten](rules-manage.md)
+   - [Kategorie-Merchandising](category-merch.md)
+   - [Indizierung](indexing.md)
+   - [GraphQL](graphql.md)
+   - [Einstellungen](settings.md)
+   - [Commerce-Konfigurationseinstellungen](configuration.md)
 - [Veranstaltungen](events.md)
 - GraphQL-Abfragen {#graphql}
    - [attributeMetadata](https://developer.adobe.com/commerce/services/graphql/live-search/attribute-metadata/)

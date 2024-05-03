@@ -2,7 +2,7 @@
 title: "Regeln hinzufügen"
 description: "Erfahren Sie, wie Sie Merchandising-Suchregeln erstellen."
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 4ce37b03937cf5a8413831c720d05387031a6094
+source-git-commit: 52be82fa080474d6df81fd16d1655a421771e5e2
 workflow-type: tm+mt
 source-wordcount: '1536'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Um eine Regel zu erstellen, verwenden Sie zunächst den Regeleditor, um die Bedi
 
 1. Navigieren Sie im Admin zu **Marketing** > SEO &amp; Suche > **[!DNL Live Search]**.
 1. Legen Sie die **Anwendungsbereich** zur Identifizierung der [Store-Ansicht](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) wo die Regel gilt.
-1. Klicken Sie auf **Merchandising durchsuchen** Registerkarte.
+1. Klicken Sie auf **Merchandising durchsuchen** Arbeitsbereich.
 1. Klicks **Regel hinzufügen** , um den Regeleditor zu starten.
 
 ## Regeltyp
@@ -142,7 +142,7 @@ Die hier eingegebenen Informationen werden im [Regeldetails](rules-workspace.md)
 1. Wenn die Regel mehrere Abfragen enthält, testen Sie jede, die von der Regel betroffen sein könnte.
 1. Wenn Sie fertig sind, klicken Sie auf **Speichern und veröffentlichen**.
 
-   Die Regel wird der Liste im Arbeitsbereich &quot;Regeln&quot;hinzugefügt.
+   Die Regel wird der Liste im *Regeln* Arbeitsbereich.
 
 1. Obwohl aktive Regeln sofort in Kraft treten, müssen Sie möglicherweise bis zu 15 Minuten warten, bis die zwischengespeicherten Abfrageergebnisse im Storefront aktualisiert werden.
 

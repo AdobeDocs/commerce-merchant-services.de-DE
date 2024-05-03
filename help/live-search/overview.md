@@ -3,16 +3,16 @@ title: Was ist [!DNL Live Search]?
 description: "[!DNL Live Search] von Adobe Commerce bietet eine schnelle, relevante und intuitive Sucherfahrung."
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: aba552808ea7af540f64f00a2ae4aeaf2b9cc52e
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
-source-wordcount: '674'
+source-wordcount: '667'
 ht-degree: 0%
 
 ---
 
 # Was ist [!DNL Live Search]?
 
-[!DNL Live Search] ist eine Erweiterung, die die standardmäßigen Suchfunktionen in Adobe Commerce ersetzt. Die [!DNL Live Search] -Erweiterung mit Composer installiert und verbindet Ihre [!DNL Commerce] -Installation [!DNL Live Search] [service](../landing/saas.md). Wenn es konfiguriert ist, wird das standardmäßige Suchtextfeld durch das [!DNL Live Search] Textfeld. [!DNL Live Search] installiert außerdem das Widget &quot;Product Listing Page&quot;(PLP), das beim Durchsuchen von Suchergebnissen robuste Filterfunktionen bietet.
+[!DNL Live Search] ist eine Funktion, die die standardmäßigen Suchfunktionen in Adobe Commerce ersetzt. Die [!DNL Live Search] -Funktion mit Composer installiert ist und Ihre [!DNL Commerce] speichern in [Commerce Services Connector](../landing/saas.md). Wenn es konfiguriert ist, wird das standardmäßige Suchtextfeld durch das [!DNL Live Search] Textfeld. [!DNL Live Search] installiert außerdem das Widget &quot;Product Listing Page&quot;(PLP), das beim Durchsuchen von Suchergebnissen robuste Filterfunktionen bietet.
 
 Mit [!DNL Live Search]können Sie:
 
@@ -75,7 +75,6 @@ Merchandising [Regeln](rules.md) gestalten Sie das Einkaufserlebnis mit if-then-
 
 - [!DNL Live Search] [Popover-Widget](storefront-popover.md) ist das Feld, das unter dem Suchfeld geöffnet wird, das die Suchergebnisse enthält.
 - [Widget &quot;Seite für Produktauflistung&quot;](plp-styling.md) bietet eine durchsuchbare Produktlistenseite mit Facetten- und Synonym-Unterstützung.
-- [[!DNL Live Search] Admin](workspace.md) ist der Ort, an dem Regeln, Facetten und Synonyme konfiguriert werden.
 
 ## [!DNL Live Search] Arbeitsbereich
 

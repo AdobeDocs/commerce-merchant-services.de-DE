@@ -1,8 +1,9 @@
 ---
-title: "[!DNL Live Search] Grenzen und Grenzen"
-description: "Erfahren Sie mehr über die Grenzen und Beschränkungen für [!DNL Live Search] , um sicherzustellen, dass sie den Anforderungen Ihres Unternehmens entspricht."
+title: "Grenzen und Grenzen"
+description: Erfahren Sie mehr über die Grenzen und Beschränkungen für [!DNL Live Search] um sicherzustellen, dass sie den Anforderungen Ihres Unternehmens entspricht.
 role: Admin, Developer
-source-git-commit: 8aca09aba13e32afb191169729dfc1fbd0087262
+exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
 source-wordcount: '566'
 ht-degree: 0%

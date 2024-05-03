@@ -3,9 +3,9 @@ title: '[!DNL Live Search] Ereignisse'
 description: Erfahren Sie, wie Ereignisse Daten erfassen für [!DNL Live Search].
 feature: Services, Eventing
 exl-id: b0c72212-9be0-432d-bb8d-e4c639225df3
-source-git-commit: 8d669cf6042340659574c86a43836a02954f24ce
+source-git-commit: 0d966c8dbd788563fa453912961fdc62a5a6c23e
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '461'
 ht-degree: 0%
 
 ---
@@ -15,8 +15,6 @@ ht-degree: 0%
 [!DNL Live Search] verwendet -Ereignisse, um Suchalgorithmen wie &quot;Am häufigsten angezeigt&quot;und &quot;Dies angezeigt, Anzeige darauf&quot;zu unterstützen. Während LUMA-Benutzer Ereignisse vorkonfiguriert finden, müssen Headless- und andere benutzerdefinierte Implementierungen Eventing für ihre eigenen Anforderungen implementieren.
 
 Seit [!DNL Live Search] und [!DNL Product Recommendations] denselben Backend-Algorithmus verwenden, werden einige Ereignisse von beiden Diensten freigegeben. Zum Ausfüllen des Recommendations-Dashboards sind einige Recommendations-Ereignisse erforderlich.
-
-## Veranstaltungen
 
 In dieser Tabelle werden die von [!DNL Live Search] Strategien.
 

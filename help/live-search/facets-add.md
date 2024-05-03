@@ -2,9 +2,9 @@
 title: "Facets hinzufügen"
 description: "Erfahren Sie, wie Sie filterbare Produktattribute als [!DNL Live Search] Facetten."
 exl-id: 0df6c21b-55b3-41ce-94f4-f70b70ffb84e
-source-git-commit: 10edbb6127405d45c06d4c8ffc89d92a6ca061c3
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '597'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Jedes filterbare Produktattribut kann als Facette verwendet werden. Die *Hinzufügen von Facetten* -Bedienfeld listet die aktuellen Facetten auf und erleichtert die Zuweisung zusätzlicher Produktattribute als Facetten. Während dieses dreistufigen Prozesses wird ein Attribut ausgewählt, das als Facette verwendet werden soll, Eigenschaften werden bei Bedarf bearbeitet und die Änderungen werden in der Storefront veröffentlicht.
 
-![Factory-Arbeitsbereich](assets/facets-add.png)
+![Facets hinzufügen](assets/facets-add.png)
 
 ## Schritt 1: Hinzufügen einer Facette
 
@@ -48,7 +48,7 @@ Die Facette wird am unteren Rand des *Dynamische Facetten* und *Veröffentlichun
 
 1. Wenn Sie fertig sind, klicken Sie auf **Speichern**.
 
-   ![Factory-Arbeitsbereich](assets/facet-edit.png)
+   ![Facets bearbeiten](assets/facet-edit.png)
 
 1. So veröffentlichen Sie die Facette am oberen Rand des *Filter* Liste, klicken Sie auf die graue Push-Taste (![Pin-Auswahl](assets/btn-pin-gray.png)).
 1. Um die Reihenfolge der fixierten Facette zu ändern, klicken Sie auf die **Verschieben** (![Auswahl verschieben](assets/btn-move.png)) und ziehen Sie die Zeile an eine neue Position im *Angeheftete Facetten* Abschnitt.

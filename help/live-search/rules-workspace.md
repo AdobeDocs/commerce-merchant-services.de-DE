@@ -2,16 +2,16 @@
 title: "Search Merchandising Workspace"
 description: '"Erfahren Sie mehr über den Arbeitsbereich "Merchandising durchsuchen".'
 exl-id: a52839fb-2264-4443-83c3-9eaa2ccb6996
-source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
+source-git-commit: 52be82fa080474d6df81fd16d1655a421771e5e2
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '573'
 ht-degree: 1%
 
 ---
 
 # Search Merchandising Workspace
 
-Der Arbeitsbereich &quot;Merchandising durchsuchen&quot;listet die aktuelle Auswahl der Regeln und deren Status auf und bietet Zugriff auf Tools, die Sie zum Erstellen und Verwalten von Regeln benötigen. Im Arbeitsbereich haben Sie folgende Möglichkeiten:
+Die *Merchandising durchsuchen* Der Arbeitsbereich listet die aktuelle Auswahl an Regeln und deren Status auf und bietet Zugriff auf Tools, die Sie zum Erstellen und Verwalten von Regeln benötigen. Im Arbeitsbereich haben Sie folgende Möglichkeiten:
 
 * Nach Regeln suchen
 * Anzeigen von Regeldetails
@@ -19,7 +19,7 @@ Der Arbeitsbereich &quot;Merchandising durchsuchen&quot;listet die aktuelle Ausw
 * Regeln löschen
 * Zugriff auf den Regeleditor
 
-![Arbeitsbereich &quot;Merchandising durchsuchen&quot;](assets/rules-workspace.png)
+![Search Merchandising Workspace](assets/rules-workspace.png)
 
 ## Festlegen des Umfangs
 
@@ -57,7 +57,7 @@ Die Suche findet die entsprechenden Regeln während der Eingabe. Die Zeichenfolg
 
 Im Detailbereich werden der Regelname, der Status, die Bedingungen und Ereignisse, das Start- und Enddatum, die Beschreibung und das Datum der letzten Bearbeitung angezeigt. Regeln können im Detailbereich aktiviert, bearbeitet und gelöscht werden.
 
-1. Im *Merchandising durchsuchen* -Registerkarte, suchen Sie die Regel im Raster, das Sie anzeigen möchten, und klicken Sie auf **Mehr** (...).
+1. Im *Merchandising durchsuchen* Arbeitsbereich die Regel im Raster suchen, das Sie anzeigen möchten, und auf **Mehr** (...).
 1. Klicks **Details anzeigen**.
 Im Bereich Details anzeigen können Sie Folgendes tun:
 

@@ -2,9 +2,9 @@
 title: "Facettentypen"
 description: "[!DNL Live Search] Facetten sind dynamisch und erscheinen bei Bedarf in der Filterliste."
 exl-id: 49fb7609-64b3-4ae8-928d-54c99032d919
-source-git-commit: 995f528abc0011c6ae7c4c524982c301072ec2eb
+source-git-commit: f96f94a16e1926b7dd2f1ee94f124ac0c823a9e0
 workflow-type: tm+mt
-source-wordcount: '389'
+source-wordcount: '374'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 * Angeheftete Facetten - Die am häufigsten verwendeten Facetten können an den Anfang der Liste eingefügt werden. Die verbleibenden Facetten sind in *Sortiertyp* nach den fixierten Facetten.
 * Dynamische Facetten - Produktattribute, die [Adobe Sensei](https://www.adobe.com/sensei.html) findet am relevantesten für einen Produktsatz und eine Abfrage. Die Berechnung berücksichtigt die Attributmetadaten des gesamten Katalogs und bestimmt zum Zeitpunkt der Abfrage die relevantesten Facetten für die Abfrage.
 * Beliebte Facetten: Produktattribute, die am häufigsten in Suchergebnissen vorhanden sind.
-* Preisfacetten - Rückgabe von Produkten nach Preisbereich. Sie können die Anzahl der Auswahlen und das Preisbereichsintervall im [*Einstellungen*](settings.md) Registerkarte.
+* Preisfacetten - Rückgabe von Produkten nach Preisbereich. Sie können die Anzahl der Auswahlen und das Preisbereichsintervall im [*Einstellungen*](settings.md) Arbeitsbereich.
 
 Zum Zeitpunkt der Abfrage [!DNL Live Search] generiert die Suchergebnisse in Gruppen dynamischer und beliebter Facetten.
 
