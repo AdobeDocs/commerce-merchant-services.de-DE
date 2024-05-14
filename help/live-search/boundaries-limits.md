@@ -3,9 +3,9 @@ title: "Grenzen und Grenzen"
 description: Erfahren Sie mehr über die Grenzen und Beschränkungen für [!DNL Live Search] um sicherzustellen, dass sie den Anforderungen Ihres Unternehmens entspricht.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
+source-git-commit: 589475cfc695cefb727176ee772c8d0d07e8e0a2
 workflow-type: tm+mt
-source-wordcount: '566'
+source-wordcount: '559'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,6 @@ Wenn es um die Site-Suche geht, bietet Ihnen Adobe Commerce Optionen. Überprüf
 
 - Die [Erweiterte Suche](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) -Modul deaktiviert ist, wenn [!DNL Live Search] installiert ist und der Link Erweiterte Suche in der Fußzeile der Storefront entfernt wird.
 - [Tier-Preise](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier) und [Sonderpreise](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special) werden im [!DNL Live Search] -Feld und das Widget zur Produktauflistungsseite.
-- [!DNL Live Search] kann keine Bestandsdaten aus mehreren Quellen aggregieren.
 - Die Produktpreise enthalten keine Mehrwertsteuer (MwSt.).
 - Die Inhaltssuche wird nicht unterstützt.
 - Es gibt eine Grenze von 10.000 Produkten, die paginiert werden können.
