@@ -3,9 +3,9 @@ title: "Grenzen und Grenzen"
 description: Erfahren Sie mehr über die Grenzen und Beschränkungen für [!DNL Live Search] um sicherzustellen, dass sie den Anforderungen Ihres Unternehmens entspricht.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 589475cfc695cefb727176ee772c8d0d07e8e0a2
+source-git-commit: b7e81acf3b3c4904f96e5e3b8cfbb49e5b3dddac
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '591'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,7 @@ Wenn es um die Site-Suche geht, bietet Ihnen Adobe Commerce Optionen. Überprüf
 - Die Produktpreise enthalten keine Mehrwertsteuer (MwSt.).
 - Die Inhaltssuche wird nicht unterstützt.
 - Es gibt eine Grenze von 10.000 Produkten, die paginiert werden können.
+- Der Suchadapter unterstützt keine Produktattribute, die mit einem benutzerdefinierten Quellmodell erstellt und als Facetten verwendet werden. Um diese Funktion zu unterstützen, müssen Sie die [Seiten-Widget &quot;Produktliste&quot;](plp-styling.md).
 
 ## Indizierung
 
