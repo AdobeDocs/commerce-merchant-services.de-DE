@@ -2,39 +2,35 @@
 title: Onboarding und Installation
 description: "Erfahren Sie, wie Sie installieren [!DNL Catalog Service]"
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: c33ec5a10f9f2570e971e968efd1524e0d384ecd
+source-git-commit: a2841b809cfc52798dc3f1bdcc033a77333bf0e5
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '797'
 ht-degree: 0%
 
 ---
 
 # Onboarding und Installation
 
-Installieren Sie den Katalogdienst , um Produktdaten von einer Commerce-Instanz mit der [Catalog Service GraphQL-API](https://developer.adobe.com/commerce/services/graphql/catalog-service/).
+Installieren Sie den Katalogdienst , um Produktdaten von einer Commerce-Instanz mit der [Catalog Service GraphQL-API](https://developer.adobe.com/commerce/services/graphql/catalog-service/). Der Catalog Service wird als Composer-Metapaket vom repo.magento.com Repository bereitgestellt.
 
 >[!NOTE]
 >
 >Wenn Ihre Commerce-Instanz die Live Search- oder Produkt-Recommendations verwendet, wird der Katalogdienst automatisch installiert oder aktualisiert, wenn Sie diese Dienste integrieren oder aktualisieren. Weitere Informationen finden Sie in den Installationsanweisungen für [Live Search](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/install) und [Produkt-Recommendations](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/getting-started/install-configure).
 
->[!BEGINSHADEBOX]
 
-## Voraussetzungen
 
-Onboarding-Prozess für [!DNL Catalog Service] erfordert Zugriff auf die Befehlszeile des Servers. Wenn Sie nicht mit der Arbeit über die Befehlszeile vertraut sind, bitten Sie einen Entwickler oder Systemintegrator um Hilfe.
+## Systemanforderungen
 
 **Softwareanforderungen**
 
 - Adobe Commerce 2.4.4+
-- PHP 8.1, 8.2
+- PHP 8.1, 8.2, 8.3
 - Verfasser: 2.x
 
 **Unterstützte Plattformen**
 
 - Adobe Commerce für Cloud-Infrastruktur: 2.4.4+
 - Adobe Commerce vor Ort: 2.4.4+
-
->[!ENDSHADEBOX]
 
 ## Endpunkte
 
@@ -51,19 +47,23 @@ Führen Sie alle Belastungstests für den Sandbox-Endpunkt durch. Bevor Sie mit 
 
 Erste Schritte mit [!DNL Catalog Service] Für Adobe Commerce sind die folgenden Schritte erforderlich:
 
-- Installieren der Datenexport-Erweiterungen
+- Installieren Sie die Catalog Service-Erweiterung (`magento/catalog-service`)
 - Dienst und Datenexport konfigurieren
 - Zugriff auf den Dienst
 
-### Installieren der Datenexport-Erweiterungen
+### Installieren der Catalog Service-Erweiterung
 
-Sie müssen Zugriff auf die Befehlszeile des Servers haben, um die [!DNL Catalog Service] Onboarding-Prozess.
+>[!BEGINSHADEBOX]
 
-Die [!DNL Catalog Service] wird mit Composer-Schlüsseln installiert, die mit dem Commerce-Konto verknüpft sind. [`mageid`](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/) während des Anmeldeprozesses bereitgestellt werden. Der Verfasser verwendet diese Schlüssel bei der Erstinstallation von Adobe Commerce oder in Situationen, in denen die Composer-Schlüssel zuvor nicht in einem externen Ordner gespeichert wurden `auth.json` -Datei.
+**Voraussetzung**
 
-Siehe [Abrufen der Authentifizierungsschlüssel](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html) für weitere Informationen zum Abrufen von Composer-Schlüsseln.
+- Zugriff [repo.magento.com](https://repo.magento.com) , um die Erweiterung zu installieren. Informationen zur Schlüsselgenerierung und zum Erhalt der erforderlichen Berechtigungen finden Sie unter [Abrufen der Authentifizierungsschlüssel](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys). Informationen zu Cloud-Installationen finden Sie unter [Handbuch zu Commerce on Cloud Infrastructure](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys)
 
-Die [!DNL Catalog Service] -Erweiterung kann sowohl auf der Adobe Commerce-Cloud-Infrastruktur als auch auf lokalen Instanzen installiert werden.
+- Zugriff auf die Befehlszeile des Adobe Commerce-Anwendungsservers.
+
+>[!ENDSHADEBOX]
+
+Installieren Sie die neueste Version der Catalog Services-Erweiterung (`magento/catalog-service`) auf einer Adobe Commerce-Instanz, auf der Adobe Commerce-Version 2.4.4 oder höher ausgeführt wird. Der Katalogdienst wird als Composer-Metapaket aus dem [repo.magento.com](https://repo.magento.com) Repository.
 
 >[!BEGINTABS]
 

@@ -3,9 +3,9 @@ title: '''[!DNL Catalog Service] Versionshinweise'
 description: Die neuesten Versionshinweise für [!DNL Catalog Service] für Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 187c3841a1682c53bb0f0e9c3f16cb43df146a58
+source-git-commit: a2841b809cfc52798dc3f1bdcc033a77333bf0e5
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '627'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,12 @@ Zu den Aktualisierungen gehören:
 ![Fehler](../assets/bug.svg) Bekannte Probleme
 
 ## Aktuelle Hauptversion
+
+### Version 1.19
+
+_23. Mai 2024_
+
+![Fehlerbehebung](../assets/fix.svg) Die `InStock` Markierung für Optionswerte berücksichtigt jetzt den Umfang `enabled` Status der Produktvariante.
 
 ### Version 1.18
 
