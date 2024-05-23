@@ -3,9 +3,9 @@ title: "Grenzen und Grenzen"
 description: Erfahren Sie mehr über die Grenzen und Beschränkungen für [!DNL Live Search] um sicherzustellen, dass sie den Anforderungen Ihres Unternehmens entspricht.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 0f4860afa38dc188c19ee8bcbd386d3fb5d0907f
+source-git-commit: 29983ec083a49859b99c9c906710ce0a01054a50
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '626'
 ht-degree: 0%
 
 ---
@@ -31,6 +31,7 @@ Wenn es um die Site-Suche geht, bietet Ihnen Adobe Commerce Optionen. Überprüf
    - 200 durchsuchbare Attribute
 - [!DNL Live Search] indiziert nur Produkte aus der Adobe Commerce-Datenbank.
 - CMS-Seiten werden nicht indiziert.
+- SKU-, Name- und Kategorieattribute sind standardmäßig durchsuchbar und können nicht aus der Suche ausgeschlossen werden. Achten Sie darauf, die Zuweisung der Produkte aus den Kategorien aufzuheben, wenn sie nicht in diesen Kategorien enthalten sein sollen.
 
 ## Facets
 
