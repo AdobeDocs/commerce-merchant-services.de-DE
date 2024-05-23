@@ -4,16 +4,16 @@ description: Erfahren Sie, wie Sie Ihre Adobe Commerce- oder Magento Open Source
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: b6775b196ca36448f50a6fed283ef0626e03d286
+source-git-commit: 5d3a89b2ef06b2c67ec715ce4f31f22249b336e0
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '907'
 ht-degree: 0%
 
 ---
 
 # [!DNL Commerce Services Connector]
 
-Einige Adobe Commerce- und Magento Open Source-Funktionen basieren auf [!DNL Commerce Services]  und als SaaS (Software as a Service) bereitgestellt werden. Um diese Dienste verwenden zu können, müssen Sie Ihre [!DNL Commerce] -Instanz mithilfe von Produktions- und Sandbox-API-Schlüsseln und geben Sie den Datenraum im [Konfiguration](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html). Sie müssen dies nur einmal einrichten.
+Einige Adobe Commerce- und Magento Open Source-Funktionen basieren auf [!DNL Commerce Services] und als SaaS (Software as a Service) bereitgestellt werden. Um diese Dienste verwenden zu können, müssen Sie Ihre [!DNL Commerce] -Instanz mithilfe von Produktions- und Sandbox-API-Schlüsseln und geben Sie den Datenraum im [Konfiguration](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html). Sie müssen dies nur einmal einrichten.
 
 ## Verfügbare Dienste {#availableservices}
 
