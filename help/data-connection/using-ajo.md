@@ -4,36 +4,85 @@ description: Erfahren Sie, wie Sie mit Adobe Journey Optimizer eine E-Mail verse
 role: Admin, Developer
 feature: Personalization, Integration
 exl-id: 5e4e7c0a-c00b-4278-bd73-6b6f2fcbe770
-source-git-commit: f90ef4d2732a0b0676e0899712f94b41a1c2d85a
+source-git-commit: a94f75dfab1f88f02e217b0e021cc2dfc94244c7
 workflow-type: tm+mt
-source-wordcount: '1046'
+source-wordcount: '1429'
 ht-degree: 0%
 
 ---
 
 # Verwenden von Adobe Journey Optimizer zum Senden einer E-Mail zum abgebrochenen Warenkorb
 
+Erfahren Sie, wie Sie eine personalisierte E-Mail zur erneuten Interaktion oder Benachrichtigung senden, wenn eine Warenkorb- oder Browsersitzung abgebrochen wurde. In diesem Artikel verwenden Sie Daten von Kunden, die eine Reihe von Produkten und Kategorien angesehen, mit einem Produkt interagiert oder auf einer Seite verbracht haben.
+
+## Welche Daten sollten verwendet werden?
+
+Erstellen Sie einen abgebrochenen Warenkorb, durchsuchen Sie E-Mails oder Benachrichtigungen mithilfe von Daten aus Storefront- und Back-Office-Ereignissen.
+
+| Datentypen | Storefront-Daten (Verhaltensereignisse) | Back Office Data (Server-Side Events) |
+|---|---|---|
+| **Definition** | Klicks oder Aktionen, die Kunden auf Ihrer Site ausführen. | Informationen zum Lebenszyklus und Details der einzelnen Bestellungen (Vergangenheit und aktuell). |
+| **Von Adobe Commerce erfasste Ereignisse** | [pageView](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#pageview)<br>[productPageView](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events)<br>[addToCart](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#addtocart)<br>[openCart](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#opencart)<br>[startCheckout](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#startcheckout)<br>[completeCheckout](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#completecheckout) | [orderPlaced](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events-backoffice#orderplaced)<br>[Auftragsverlauf](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/fundamentals/connect-data#send-historical-order-data) |
+
+### Was kann ich nur mit Adobe Commerce machen?
+
+Adobe verwenden [!DNL Commerce] zur Einrichtung regelbasierter E-Mail-Erinnerungen, die als Warenkorb dienen oder E-Mails zum Abbruch durchsuchen können. Hier erfahren Sie mehr dazu.
+
+### Was kann ich mit Adobe machen? [!DNL Commerce] und Experience Cloud?
+
+- **Adobe [!DNL Commerce] mit Adobe Journey Optimizer** - Verwendung von Adobe [!DNL Commerce] Mit Adobe Journey Optimizer können Sie [!DNL Commerce] -Daten als Trigger für eine kanalübergreifende Abbruch-Journey. Sie können diese Journey anhand von Kundenattributen, von ihnen abgebrochenen Artikeln, anderen Kaufverhaltensweisen und früheren Kaufverhaltensweisen personalisieren.
+
+- **Adobe Commerce, Adobe Journey Optimizer und Adobe Real-Time CDP** - Durch das Hinzufügen von Real-Time CDP können Sie Abbruchkampagnen weiter verfeinern, die auf einheitlichen Kundenprofilen und zentral verwalteten regelbasierten oder KI-gestützten Zielgruppen basieren. Sie können beispielsweise Folgendes erstellen:
+
+   - Zielgruppe &quot;starke Konverter&quot;, deren Abbruchrate niedrig ist
+   - Eine Zielgruppe mit hoher Berücksichtigung, die bestimmte Kategorien mehrmals neu besucht hat
+   - Eine Zielgruppe mit &quot;hohem Potenzial&quot;, die hohe Ausgaben und Loyalität aufweist, aber in letzter Zeit aufgegeben wurde
+
+### Was haben andere Kunden erreicht?
+
+Adobe [!DNL Commerce] Kunden haben durch die Implementierung personalisierter Abbruchkampagnen mit Adobe erhebliche geschäftliche Auswirkungen erzielt [!DNL Commerce], ADOBE [!DNL Journey Optimizer]und Adobe [!DNL Real-Time CDP].
+
+Ein weltweiter Bekleidungshändler mit mehreren Marken erzielte folgende Ergebnisse:
+
+- 1.9x Konversion bei Klick aus neuen Kampagnen
+- 57 % Anstieg des Umsatzes, der aus den Abbruch-Journey innerhalb von Kanälen stammt
+- 41% Steigerung der Konversionsrate von Rückgewinnungskampagnen
+- Mehr als 1000 neue Käufer pro Woche
+
+Ein weltweites Getränkeunternehmen erzielte:
+
+- 36 % E-Mail-Öffnungsraten zur erneuten Interaktion
+- 21 % Steigerung der Clickthrough-Raten
+- 8,5 % Steigerung der Konversionsrate
+- 89 % der rückbeschäftigten Verlassenen konvertieren
+
+## Fangen wir an
+
+Dieser besondere Anwendungsfall konzentriert sich auf die Erstellung einer E-Mail zum abgebrochenen Warenkorb mit Daten aus Ihrem [!DNL Commerce] -Instanz und Senden an Adobe [!DNL Journey Optimizer].
+
+### Was ist Adobe Journey Optimizer?
+
 [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html) hilft Ihnen bei der Personalisierung des Commerce-Erlebnisses für Ihre Kunden. Sie können beispielsweise Journey Optimizer verwenden, um geplante Marketingkampagnen zu erstellen und bereitzustellen, z. B. wöchentliche Promotions für einen Einzelhandelsgeschäft, oder eine E-Mail zu einem abgebrochenen Warenkorb zu generieren, wenn ein Kunde ein Produkt zu einem Warenkorb hinzugefügt, aber dann den Checkout-Prozess nicht abgeschlossen hat.
 
-Mit diesen Schritten können Sie lernen, wie Sie einen `checkout` -Ereignis, das von Ihrer Commerce-Instanz generiert wurde und auf dieses Ereignis in Journey Optimizer reagiert, um eine E-Mail mit abgebrochenem Warenkorb zu erstellen.
+In diesem Thema erfahren Sie, wie Sie eine E-Mail mit einem abgebrochenen Warenkorb erstellen, indem Sie eine `checkout` -Ereignis generiert aus Ihrem [!DNL Commerce] -Instanz und Reaktion auf dieses Ereignis in Journey Optimizer.
 
 >[!IMPORTANT]
 >
->Stellen Sie zu Demonstrationszwecken sicher, dass Sie Ihre Commerce-Sandbox-Umgebung verwenden. Dadurch wird sichergestellt, dass die an Experience Platform gesendeten Storefront- und Back-Office-Ereignisdaten Ihre Produktionsereignisdaten nicht verwässern.
+>Verwenden Sie zur Veranschaulichung Ihre [!DNL Commerce] Sandbox-Umgebung verwenden, sodass Sie Ihre Produktionsereignisdaten nicht mit den Storefront- und Back-Office-Ereignisdaten verdünnen, die Sie an Experience Platform senden.
 
-## Voraussetzungen
+### Voraussetzungen
 
 Bevor Sie mit diesen Schritten beginnen, stellen Sie Folgendes sicher:
 
-- Sie sind für die Verwendung von Adobe Journey Optimizer bereitgestellt.
-- You [konfiguriert](connect-data.md) die [!DNL Data Connection] Erweiterung
-- You [bestätigt](connect-data.md#confirm-that-event-data-is-collected) dass Ihre Commerce-Ereignisdaten am Experience Platform Edge eintreffen
+- Sie sind für die Verwendung von Adobe bereitgestellt [!DNL Journey Optimizer]. Wenn Sie sich nicht sicher sind, wenden Sie sich an Ihren Systemintegrator oder das Entwicklungsteam, das Projekte und Umgebungen verwaltet.
+- You [installiert](install.md) und [konfiguriert](connect-data.md) die [!DNL Data Connection] Erweiterung in [!DNL Commerce].
+- You [bestätigt](connect-data.md#confirm-that-event-data-is-collected) dass [!DNL Commerce] Ereignisdaten gelangen am Experience Platform-Edge.
 
-## Schritt 1: Benutzer in Ihrer Commerce-Sandbox-Umgebung erstellen
+## Schritt 1: Erstellen Sie einen Benutzer in Ihrer [!DNL Commerce] Sandbox-Umgebung
 
 Erstellen Sie einen Benutzer in Ihrer Sandbox-Umgebung und bestätigen Sie, dass diese Benutzerkontoinformationen auf dem Experience Platform angezeigt werden. Stellen Sie sicher, dass die angegebene E-Mail gültig ist, da sie später in diesem Abschnitt zum Senden der E-Mail zum abgebrochenen Warenkorb verwendet wird.
 
-1. Melden Sie sich an oder erstellen Sie ein Konto in Ihrer Commerce-Sandbox-Umgebung.
+1. Anmelden oder Konto in Ihrer [!DNL Commerce] Sandbox-Umgebung.
 
    ![Bei Ihrem Testkonto anmelden](assets/sign-in-account.png){width="700" zoomable="yes"}
 
@@ -47,7 +96,7 @@ Erstellen Sie einen Benutzer in Ihrer Sandbox-Umgebung und bestätigen Sie, dass
 
 ## Schritt 2: Anzeigen von Ereignissen in Journey Optimizer
 
-Zeigen Sie in Ihrer Commerce-Sandbox-Umgebung Produktseiten an, fügen Sie Artikel zu einem Warenkorb hinzu sowie verschiedene andere Aktivitäten, die ein Käufer durchführen würde. Diese Aktivitäten Trigger-Ereignisse auf Ihrer Storefront. Sie können jetzt bestätigen, dass diese Ereignisse an Journey Optimizer gesendet werden.
+In der [!DNL Commerce] Sandbox-Umgebung, Trigger-Ereignisse in Ihrem Storefront durch Anzeigen von Produktseiten, Hinzufügen von Artikeln zu einem Warenkorb und Ausführen verschiedener anderer Aktivitäten, die ein Käufer ausführen würde. Bestätigen Sie dann, dass diese Ereignisse an Journey Optimizer weitergeleitet werden.
 
 1. Launch [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/user-interface.html).
 1. Auswählen **[!UICONTROL Profiles]**.
@@ -59,18 +108,18 @@ Zeigen Sie in Ihrer Commerce-Sandbox-Umgebung Produktseiten an, fügen Sie Artik
 
    Suchen Sie nach `commerce.checkouts` -Ereignis und untersuchen Sie die Ereignis-Payload:
 
-   ```json
-   "personID": "84281643067178465783746543501073369488", 
-   "eventType": "commerce.checkouts", 
-   "_id": "4b41703f-e42e-485b-8d63-7001e3580856-0", 
-   "commerce": { 
-       "cart": {}, 
-       "checkouts": { 
-           "value": 1 
-       } 
-   ```
-
-   Wie Sie sehen können, enthält die vollständige Ereignis-Payload Rich-Event-Daten. Im nächsten Abschnitt konfigurieren Sie Ereignisse in Journey Optimizer, um auf die `commerce.checkouts` -Ereignis, das aus Ihrer Commerce-Storefront generiert wurde.
+       &quot;json
+       &quot;personID&quot;: &quot;84281643067178465783746543501073369488&quot;,
+       &quot;eventType&quot;: &quot;commerce.checkouts&quot;,
+       &quot;_id&quot;: &quot;4b41703f-e42e-485b-8d63-7001e3580856-0&quot;,
+       &quot;commerce&quot;: {
+       &quot;Warenkorb&quot; {},
+       &quot;checkouts&quot;: {
+       &quot;value&quot;: 1
+       }
+       &quot;
+   
+   Wie Sie sehen können, enthält die vollständige Ereignis-Payload Rich-Event-Daten. Im nächsten Abschnitt konfigurieren Sie Ereignisse in Journey Optimizer, um auf die `commerce.checkouts` -Ereignis generiert aus Ihrem [!DNL Commerce] Storefront.
 
 ## Schritt 3: Konfigurieren von Ereignissen in Journey Optimizer
 
@@ -93,14 +142,14 @@ Konfigurieren Sie zwei Ereignisse in Journey Optimizer: ein Ereignis überwacht 
    1. Legen Sie die **[!UICONTROL Name]** an: `firstname_lastname_checkout`.
    1. Satz **[!UICONTROL Type]** nach **[!UICONTROL Unitary]**.
    1. Satz **[!UICONTROL Event id typ]e** nach **[!UICONTROL Rule based]**.
-   1. Satz **[!UICONTROL Schema]** zu Ihrem Commerce [schema](update-xdm.md).
-   1. Auswählen **[!UICONTROL Fields]** und im **[!UICONTROL Fields]** angezeigt werden, wählen Sie die für dieses Ereignis nützlichen Felder aus. Wählen Sie beispielsweise alle Felder unter dem **[!UICONTROL Product list items]**, **[!UICONTROL Commerce]**, **[!UICONTROL eventType]**, und **[!UICONTROL Web]**.
+   1. Satz **[!UICONTROL Schema]** auf [!DNL Commerce] [schema](update-xdm.md).
+   1. Auswählen **[!UICONTROL Fields]** , um die **[!UICONTROL Fields]** Seite. Wählen Sie dann die für dieses Ereignis nützlichen Felder aus. Wählen Sie beispielsweise alle Felder unter dem **[!UICONTROL Product list items]**, **[!UICONTROL Commerce]**, **[!UICONTROL eventType]**, und **[!UICONTROL Web]**.
    1. Klicks **[!UICONTROL OK]** , um die ausgewählten Felder zu speichern.
-   1. Klicken Sie in die **[!UICONTROL Event id condition]** und erstellen Sie eine Bedingung von `eventType` ist gleich `commerce.checkouts` UND `personalEmail.address` entspricht der E-Mail-Adresse, die Sie beim Erstellen des Profils im vorherigen Abschnitt verwendet haben.
+   1. Klicken Sie in die **[!UICONTROL Event id condition]** -Feld. Erstellen Sie dann eine Bedingung: `eventType` ist gleich `commerce.checkouts` UND `personalEmail.address` entspricht der E-Mail-Adresse, die Sie beim Erstellen des Profils im vorherigen Abschnitt verwendet haben.
 
       ![Journey Optimizer Set-Bedingung](assets/ajo-set-condition.png){width="700" zoomable="yes"}
 
-   1. Klicken **[!UICONTROL OK]**.
+   1. Klicks **[!UICONTROL OK]**.
    1. Klicks **[!UICONTROL Save]** , um das Ereignis zu speichern.
 
 ### Timeout-Ereignis erstellen
@@ -111,8 +160,8 @@ Konfigurieren Sie zwei Ereignisse in Journey Optimizer: ein Ereignis überwacht 
 
    1. Legen Sie die **[!UICONTROL Name]** an: `firstname_lastname_timeout`.
    1. Satz **[!UICONTROL Type]** nach **[!UICONTROL Unitary]**.
-   1. Satz **[!UICONTROL Event id typ]e** nach **[!UICONTROL Rule based]**.
-   1. Satz **[!UICONTROL Schema]** zu Ihrem Commerce [schema](update-xdm.md).
+   1. Satz **[!UICONTROL Event id type]** nach **[!UICONTROL Rule based]**.
+   1. Satz **[!UICONTROL Schema]** auf [!DNL Commerce] [schema](update-xdm.md).
    1. Legen Sie die **[!UICONTROL Schema]**, **[!UICONTROL Fields]**, und **[!UICONTROL Event id condition]** auf das gleiche wie oben.
    1. Klicks **[!UICONTROL Save]** , um das Ereignis zu speichern.
 
@@ -123,7 +172,7 @@ Erstellen Sie mit den beiden konfigurierten Ereignissen eine Journey, die eine E
 Erstellen Sie eine Journey, die auf die `commerce.checkouts` -Ereignis und sendet dann eine E-Mail mit einem abgebrochenen Warenkorb, nachdem ein bestimmter Zeitraum verstrichen ist.
 
 1. Wählen Sie in Journey Optimizer **[!UICONTROL Journeys]** under **J[!UICONTROL OURNEY MANAGEMENT]**.
-1. Klicken **[!UICONTROL Create Journey]**.
+1. Klicks **[!UICONTROL Create Journey]**.
 1. Geben Sie den Namen Ihrer Journey an.
 1. Klicks **[!UICONTROL OK]** , um die Journey zu speichern.
 1. Im linken Navigationsbereich unter **[!UICONTROL EVENTS]** nach dem zuvor erstellten Checkout-Ereignis suchen: `firstname_lastname_checkout` und ziehen Sie sie per Drag-and-Drop auf die Arbeitsfläche.
@@ -153,7 +202,7 @@ Erstellen Sie eine E-Mail zum Verlassen des Warenkorbs, die gesendet wird, wenn 
 
 1. Befolgen Sie die [Schritte](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/personalization/personalization-use-cases/personalization-use-case-helper-functions.html#configure-email) im Journey Optimizer-Handbuch, um die E-Mail zum abgebrochenen Warenkorb zu erstellen.
 
-Sie verfügen jetzt über eine Journey in Journey Optimizer, die auf die `commerce.checkouts` -Ereignis aus Ihrem Commerce-Store und eine E-Mail mit stehendem Warenkorb, die nach Ablauf eines Zeitraums gesendet wird. Im nächsten Abschnitt testen Sie die Journey.
+Sie verfügen jetzt über eine Journey in Journey Optimizer, die auf die `commerce.checkouts` -Ereignis aus [!DNL Commerce] speichern und eine E-Mail mit stehendem Warenkorb erstellen, die nach Ablauf eines bestimmten Zeitraums gesendet wird. Im nächsten Abschnitt erfahren Sie, wie Sie die Journey testen.
 
 ## Schritt 5: Trigger des Checkout-Ereignisses in Echtzeit
 
@@ -163,7 +212,7 @@ In diesem Abschnitt testen Sie das Ereignis in Echtzeit.
 
    ![Testmodus aktivieren](assets/ajo-enable-test.png){width="700" zoomable="yes"}
 
-1. Um diese Journey in Echtzeit zu testen, öffnen Sie eine weitere Browser-Registerkarte und rufen Sie Ihre Sandbox Commerce-Website auf.
+1. Um dieses Journey in Echtzeit zu testen, öffnen Sie eine weitere Browser-Registerkarte und rufen Sie die [!DNL Commerce] Website in Ihrer Sandbox-Umgebung.
 
    1. Fügen Sie Ihrem Warenkorb ein Produkt hinzu.
    1. Gehen Sie zur Checkout-Seite.
