@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie mit Adobe Journey Optimizer eine E-Mail verse
 role: Admin, Developer
 feature: Personalization, Integration
 exl-id: 5e4e7c0a-c00b-4278-bd73-6b6f2fcbe770
-source-git-commit: ee84525a9146123d80c303e40acdc6baba098cdd
+source-git-commit: 6500aaa373d8e9abf88d1ca45dc2742c83bfeca3
 workflow-type: tm+mt
-source-wordcount: '1412'
+source-wordcount: '1262'
 ht-degree: 0%
 
 ---
@@ -23,20 +23,6 @@ Erstellen Sie einen abgebrochenen Warenkorb, durchsuchen Sie E-Mails oder Benach
 |---|---|---|
 | **Definition** | Klicks oder Aktionen, die Kunden auf Ihrer Site ausführen. | Informationen zum Lebenszyklus und Details der einzelnen Bestellungen (Vergangenheit und aktuell). |
 | **Von Adobe Commerce erfasste Ereignisse** | [pageView](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#pageview)<br>[productPageView](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events)<br>[addToCart](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#addtocart)<br>[openCart](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#opencart)<br>[startCheckout](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#startcheckout)<br>[completeCheckout](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#completecheckout) | [orderPlaced](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events-backoffice#orderplaced)<br>[Auftragsverlauf](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/fundamentals/connect-data#send-historical-order-data) |
-
-### Was kann ich nur mit Adobe Commerce machen?
-
-Adobe verwenden [!DNL Commerce] zur Einrichtung regelbasierter E-Mail-Erinnerungen, die als Warenkorb dienen oder E-Mails zum Abbruch durchsuchen können. Hier erfahren Sie mehr dazu.
-
-### Was kann ich mit Adobe machen? [!DNL Commerce] und Experience Cloud?
-
-- **Adobe [!DNL Commerce] mit Adobe Journey Optimizer** - Verwendung von Adobe [!DNL Commerce] Mit Adobe Journey Optimizer können Sie [!DNL Commerce] -Daten als Trigger für eine kanalübergreifende Abbruch-Journey. Sie können diese Journey anhand von Kundenattributen, von ihnen abgebrochenen Artikeln, anderen Kaufverhaltensweisen und früheren Kaufverhaltensweisen personalisieren.
-
-- **Adobe Commerce, Adobe Journey Optimizer und Adobe Real-Time CDP** - Durch das Hinzufügen von Real-Time CDP können Sie Abbruchkampagnen weiter verfeinern, die auf einheitlichen Kundenprofilen und zentral verwalteten regelbasierten oder KI-gestützten Zielgruppen basieren. Sie können beispielsweise Folgendes erstellen:
-
-   - Zielgruppe &quot;starke Konverter&quot;, deren Abbruchrate niedrig ist
-   - Eine Zielgruppe mit hoher Berücksichtigung, die bestimmte Kategorien mehrmals neu besucht hat
-   - Eine Zielgruppe mit &quot;hohem Potenzial&quot;, die hohe Ausgaben und Loyalität aufweist, aber in letzter Zeit aufgegeben wurde
 
 ### Was haben andere Kunden erreicht?
 
