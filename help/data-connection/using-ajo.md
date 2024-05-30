@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie mit Adobe Journey Optimizer eine E-Mail verse
 role: Admin, Developer
 feature: Personalization, Integration
 exl-id: 5e4e7c0a-c00b-4278-bd73-6b6f2fcbe770
-source-git-commit: a94f75dfab1f88f02e217b0e021cc2dfc94244c7
+source-git-commit: ee84525a9146123d80c303e40acdc6baba098cdd
 workflow-type: tm+mt
-source-wordcount: '1429'
+source-wordcount: '1412'
 ht-degree: 0%
 
 ---
@@ -108,17 +108,17 @@ In der [!DNL Commerce] Sandbox-Umgebung, Trigger-Ereignisse in Ihrem Storefront 
 
    Suchen Sie nach `commerce.checkouts` -Ereignis und untersuchen Sie die Ereignis-Payload:
 
-       &quot;json
-       &quot;personID&quot;: &quot;84281643067178465783746543501073369488&quot;,
-       &quot;eventType&quot;: &quot;commerce.checkouts&quot;,
-       &quot;_id&quot;: &quot;4b41703f-e42e-485b-8d63-7001e3580856-0&quot;,
-       &quot;commerce&quot;: {
-       &quot;Warenkorb&quot; {},
-       &quot;checkouts&quot;: {
-       &quot;value&quot;: 1
-       }
-       &quot;
-   
+   ```json
+   "personID": "84281643067178465783746543501073369488", 
+   "eventType": "commerce.checkouts", 
+   "_id": "4b41703f-e42e-485b-8d63-7001e3580856-0", 
+   "commerce": { 
+       "cart": {}, 
+       "checkouts": { 
+           "value": 1 
+       } 
+   ```
+
    Wie Sie sehen können, enthält die vollständige Ereignis-Payload Rich-Event-Daten. Im nächsten Abschnitt konfigurieren Sie Ereignisse in Journey Optimizer, um auf die `commerce.checkouts` -Ereignis generiert aus Ihrem [!DNL Commerce] Storefront.
 
 ## Schritt 3: Konfigurieren von Ereignissen in Journey Optimizer
