@@ -3,9 +3,9 @@ title: Aktivieren [!DNL Payment Services] für die Produktion
 description: Schließen Sie den Onboarding-Prozess ab, indem Sie [!DNL Payment Services] für die Produktion.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
+source-git-commit: d1379bb108f2259051641a7bf77cd8b459fd9cbf
 workflow-type: tm+mt
-source-wordcount: '1006'
+source-wordcount: '1019'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Sie können den Dienst in die Produktionsumgebung übernehmen und die [Onboardin
 
 ## Satz [!DNL Payment Services] als Zahlungsmethode
 
-Nach [Commerce-Dienste konfigurieren](connect.md#configure-commerce-services) und aktivieren Sie entweder [Sandbox-Tests](sandbox.md#enable-sandbox-testing) oder [Live-Zahlungen](#enable-live-payments)festlegen, müssen Sie [!DNL Payment Services] als Zahlungsmethode.
+Nach [Commerce Services konfigurieren](connect.md#configure-commerce-services) und aktivieren Sie entweder [Sandbox-Tests](sandbox.md#enable-sandbox-testing) oder [Live-Zahlungen](#enable-live-payments)festlegen, müssen Sie [!DNL Payment Services] als Zahlungsmethode.
 
 1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Klicks **[!UICONTROL Enable Payment Services]**.
@@ -144,6 +144,8 @@ Holen Sie sich Ihre [!DNL Payment Services] _Merchant-ID_:
 1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Klicken Sie in der Startansicht auf **[!UICONTROL Settings]**. Siehe [Startseite](payments-home.md) für weitere Informationen.
 1. Wählen Sie die erforderlichen _Merchant-ID_ und senden Sie es an Ihren Vertriebsmitarbeiter, der die richtige Preisebene konfiguriert.
+
+Siehe [Verarbeitung der Stufe 2 und Stufe 3](levels-card-payment-transactions.md) für weitere Informationen über Zahlungsvorgänge.
 
 ## Live-Zahlungen aktivieren
 

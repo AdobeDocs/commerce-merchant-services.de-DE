@@ -5,9 +5,9 @@ role: Admin, Developer
 level: Intermediate
 exl-id: 265ab1be-fe52-41f3-85cb-addbc2ddfb17
 feature: Payments, Checkout, Configuration, Integration
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: d1379bb108f2259051641a7bf77cd8b459fd9cbf
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '548'
 ht-degree: 0%
 
 ---
@@ -48,11 +48,11 @@ bin/magento indexer:set-mode schedule sales_order_data_exporter sales_order_stat
 >
 >Wenn Sie in Ihrem Befehl keine Indexer angeben, werden alle Indexer auf denselben Wert aktualisiert. Wenn Sie einen bestimmten Indexer ändern möchten, müssen Sie ihn in Ihrem -Befehl auflisten.
 
-Weitere Informationen zum manuellen Ändern des Indexermodus finden Sie unter [Indexer konfigurieren](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#configure-indexers){target="_blank"} in the developer documentation. To learn how to change it in the Admin, see [Index management](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target="_blank"} im Benutzerhandbuch zu zentralen Themen.
+Weitere Informationen zum manuellen Ändern des Indexermodus finden Sie unter [Indexer konfigurieren](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#configure-indexers){target="_blank"} in der Entwicklerdokumentation. Informationen dazu, wie Sie ihn im Admin ändern können, finden Sie unter [Indexverwaltung](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target="_blank"} im Benutzerhandbuch zu zentralen Themen.
 
 ### Daten manuell neu indizieren
 
-Sie können Daten manuell neu indizieren, anstatt darauf zu warten, dass sie automatisch vorgenommen werden. Siehe [Reindex](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#reindex){target="_blank"} in [Manage the Indexers](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html){target="_blank"} für weitere Informationen.
+Sie können Daten manuell neu indizieren, anstatt darauf zu warten, dass sie automatisch vorgenommen werden. Siehe [Reindex](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#reindex){target="_blank"} in [Indexer verwalten](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html){target="_blank"} für weitere Informationen.
 
 Wann `BY SCHEDULE` -Modus festgelegt ist, verfolgt das System geänderte Entitäten und der Cron-Auftrag aktualisiert den Index für sie anhand eines festgelegten Zeitplans. Siehe [Ausführen von cron über die Befehlszeile](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html#config-cli-cron-group-run) in [Cron konfigurieren und ausführen](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html)), um zu erfahren, wie Sie die Indexierung manuell mit Cron-Aufträgen durchführen.
 
@@ -89,3 +89,15 @@ bin/magento cron:run --group payment_services_data_export
 ```
 
 Weitere Informationen zur Neuindizierung und zu Indizes finden Sie unter [Indexer verwalten](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html) Thema in der Entwicklerdokumentation.
+
+## L2/L3-Verarbeitung konfigurieren
+
+[!DNL Payment Services] kann Daten der Stufe 2 und der Stufe 3 von Kartenzahlungen verarbeiten, um zusätzliche Informationen für Händler bereitzustellen.
+
+>[!WARNING]
+>
+> Die Integration mit der Verarbeitung auf Level 2 und Level 3 mit PayPal ist nur für US-Händler verfügbar. Siehe [Zahlungsverarbeitung](https://developer.paypal.com/docs/checkout/advanced/processing/){target=_blank} Weitere Informationen finden Sie in der PayPal Developer-Dokumentation .
+
+Wenn Sie Daten zur L2/L3-Verarbeitung für [!DNL Payment Services]oder bei Fragen wenden Sie sich bitte an Ihre [!DNL Payment Services] Kundenbetreuer.
+
+Erfahren Sie mehr über die in [!DNL Payment Services], siehe [Verarbeitung der Stufe 2 und Stufe 3](levels-card-payment-transactions.md).
