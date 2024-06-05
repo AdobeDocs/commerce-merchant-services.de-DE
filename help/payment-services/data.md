@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: dbf41ce9-01f9-45d0-b651-e4c499e83822
 feature: Payments, Checkout, Data Import/Export
-source-git-commit: c4068d71eba45ea45b1c1eefc324bf830479e0e3
+source-git-commit: 9a933d41bffc2af453eed00caeb941eb18b23852
 workflow-type: tm+mt
-source-wordcount: '172'
+source-wordcount: '152'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Einige Daten zu Bestellungen und Auszahlungen stehen Ihnen zur Verfügung, damit
 
 Sie können Adobe Commerce-Finanzberichte mit Ihrem ERP-System (Enterprise Resource Planning) abstimmen, das keine Adobe ist, indem Sie die Inkrement-ID verwenden, die einer bestimmten Bestellung zugeordnet ist.
 
-Wenn Zahlungsdienste die Commerce-Bestellung an PayPal sendet, wird die Inkrement-ID als `custom_id` _und_ im `invoice_id` (die auch eine zufällige Zeichenfolge nach der `increment_id`).
+Wenn Zahlungsdienste die Commerce-Bestellung an PayPal senden, wird die Inkrement-ID als `custom_id` _und_ im `invoice_id` (die auch eine zufällige Zeichenfolge nach der `increment_id`).
 
 Auf die IDs kann sowohl in den Details der Handelsaktivität für eine Auszahlung als auch im PayPal-Webhook zugegriffen werden.
 
@@ -79,5 +79,5 @@ Die `invoice_id` und `custom_id` werden unten in den Details der Händleraktivit
 
 Weitere Informationen finden Sie in der Dokumentation zu den REST-APIs von PayPal:
 
-* [`purchase_unit`, bei denen `custom_id` und `invoice_id` aufbewahren](https://developer.paypal.com/docs/api/orders/v2/#definition-purchase_unit:~:text=Read%20only.-,purchase_unit,-Collapse)
+* [`purchase_unit`, bei denen `custom_id` und `invoice_id` aufbewahren](https://developer.paypal.com/docs/api/orders/v2/#definition-purchase_unit)
 * [Bestelldetails anzeigen](https://developer.paypal.com/docs/api/orders/v2/#orders_get)
