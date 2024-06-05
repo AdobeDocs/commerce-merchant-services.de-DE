@@ -3,9 +3,9 @@ title: '[!DNL Catalog Service]'
 description: '''[!DNL Catalog Service] für Adobe Commerce bietet eine Möglichkeit, den Inhalt von Produktansichtsseiten und Produktlistenseiten viel schneller abzurufen als die nativen Adobe Commerce GraphQL-Abfragen."'
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
 recommendations: noCatalog
-source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
+source-git-commit: 7293914fab34381deb5bc841d147371f9f3470a5
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '918'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Das folgende Diagramm zeigt die beiden GraphQL-Systeme:
 
 ![Katalogarchitekturdiagramm](assets/catalog-service-architecture.png)
 
-Im Core-GraphQL-System sendet die PWA eine Anfrage an die Commerce-Anwendung, die jede Anfrage empfängt, verarbeitet sie, möglicherweise eine Anfrage über mehrere Subsysteme sendet und dann eine Antwort an die Storefront zurückgibt. Dieser Rundgang kann zu langsamen Seitenladezeiten führen, was möglicherweise zu niedrigeren Konversionsraten führt.
+Im GraphQL-Core-System sendet die PWA eine Anfrage an die Commerce-Anwendung, die jede Anfrage empfängt, verarbeitet sie, möglicherweise eine Anfrage über mehrere Subsysteme sendet und dann eine Antwort an die Storefront zurückgibt. Dieser Rundgang kann zu langsamen Seitenladezeiten führen, was möglicherweise zu niedrigeren Konversionsraten führt.
 
 [!DNL Catalog Service] ist ein Storefront Services Gateway. Der Dienst greift auf eine separate Datenbank zu, die Produktdetails und zugehörige Informationen wie Produktattribute, Varianten, Preise und Kategorien enthält. Der Dienst synchronisiert die Datenbank durch Indexierung mit der Adobe Commerce.
 Da der Dienst die direkte Kommunikation mit der Anwendung umgeht, kann er die Latenz des Anforderungs- und Antwortzyklus reduzieren.
@@ -65,6 +65,8 @@ Komplexe Produktoptionen sind vereinheitlicht und unterscheiden sich durch ihr V
 Einfache Produkte stellen die Basis-Verkaufseinheit dar, die einen Preis hat. [!DNL Catalog Service] berechnet den regulären Preis vor Rabatten sowie den Endpreis nach Rabatten. Preisberechnungen können feste Produktsteuern enthalten. Sie schließen personalisierte Promotions aus.
 
 Ein komplexes Produkt hat keinen festgelegten Preis. Stattdessen gibt Catalog Service die Preise verknüpfter Simples zurück. Beispielsweise kann ein Händler zunächst allen Varianten eines konfigurierbaren Produkts dieselben Preise zuweisen. Wenn bestimmte Größen oder Farben unbeliebt sind, kann der Händler die Preise dieser Varianten reduzieren. So zeigt der Preis des komplexen (konfigurierbaren) Produkts zunächst eine Preisspanne, die den Preis sowohl von Standard- als auch von unpopulären Varianten widerspiegelt. Nachdem der Käufer einen Wert für alle verfügbaren Optionen ausgewählt hat, zeigt die Storefront einen einzelnen Preis an.
+
+Der Katalogdienst sorgt für genaue Preisaktualisierungen und Berechnungen, indem er die Preise mit großen Werten (bis zu 16 Stellen) und einer hohen Dezimalgenauigkeit (bis zu 4 Dezimalstellen) unterstützt.
 
 >[!NOTE]
 >
