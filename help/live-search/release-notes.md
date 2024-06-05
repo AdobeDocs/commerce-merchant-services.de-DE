@@ -3,9 +3,9 @@ title: "[!DNL Live Search] Versionshinweise"
 description: "Die neuesten Versionsinformationen für [!DNL Live Search] von Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 228ce5f3df3cc020a260fdd710eac02433d7bf0a
+source-git-commit: fe261bfaf5a64c9501bc5523d29f9b6a9fc1a6a2
 workflow-type: tm+mt
-source-wordcount: '1946'
+source-wordcount: '1966'
 ht-degree: 0%
 
 ---
@@ -28,10 +28,6 @@ _13. Februar 2024_
 
 ![Neu](../assets/new.svg) [!DNL Live Search] unterstützt jetzt das Festlegen einer Standardregel für [Merchandising durchsuchen](rules.md).
 
-_27. Oktober 2023_
-
-![Neu](../assets/new.svg) Die [!DNL Live Search] Das PLP-Widget unterstützt jetzt Farbmuster.
-
 _12. Oktober 2023_
 
 ![Neu](../assets/new.svg) Commerce-Administratoren können jetzt die Indexsprache für [!DNL Live Search]. Siehe [Einstellungen](settings.md).
@@ -44,6 +40,28 @@ _13. Juni 2023_
 _25. April 2023_
 
 ![Neu](../assets/new.svg) [!DNL Live Search] Kunden können jetzt die neue [SaaS-Preisindexer](../price-index/price-indexing.md).
+
+### PLP-Widget
+
+_31. Mai 2024_
+
+![Neu](../assets/new.svg) Version 2.0.0 des PLP-Widgets wurde veröffentlicht, wodurch Unterstützung für die folgenden Funktionen hinzugefügt wird:
+
+- Zum Warenkorb hinzufügen - Nur für einfache Produkte verfügbar.
+- Mehrere Bilder pro Produkt - Das Bild kann sich ändern, wenn für ein konfigurierbares Produkt eine andere Farbe ausgewählt wird.
+
+_27. Oktober 2023_
+
+![Neu](../assets/new.svg) Die [!DNL Live Search] Das PLP-Widget unterstützt jetzt Farbmuster.
+
+
+## [!DNL Live Search] 4.2.0 {#420}
+
+_31. Mai 2024_
+
+[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
+
+![Neu](../assets/new.svg) Aktualisierung der Live Search-Erweiterung zur Verwendung von PLP-Widgets der Version 2.0.0.
 
 ## [!DNL Live Search] 4.1.2 {#412}
 
@@ -75,16 +93,6 @@ _22.02.2024_
 ### Neue Funktionen
 
 ![Neu](../assets/new.svg) Die [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard) ist jetzt verfügbar. Dieses überarbeitete Dashboard bietet Einblicke in Datenströme für [!DNL Product Recommendations], [!DNL Live Search], und [!DNL Catalog Service].
-![Neu](../assets/new.svg) Mehrere neue Funktionen wurden zum [PLP-Widget](plp-styling.md):
-
-* Umschalten zwischen Listen-/Rasteransicht
-* Schaltflächen &quot;Zum Warenkorb hinzufügen&quot;
-* Musterunterstützung
-* Mehrere Bilder pro Produkt
-* Preisregler
-* Sprachunterstützung
-
-Merchandising muss die [!DNL Live Search] Erweiterung auf Version >= 4.1.0 , um auf diese Funktionen zuzugreifen.
 
 ### Updates
 
@@ -114,9 +122,9 @@ _13. November 2023_
 
 Aktivieren Sie nach der Installation von Version 3.1.1 oder höher die neuen Indexer:
 
-* Produktpreis-Feed
-* Umfang des Website-Daten-Feeds
-* Umfang des Daten-Feeds von Kundengruppen
+- Produktpreis-Feed
+- Umfang des Website-Daten-Feeds
+- Umfang des Daten-Feeds von Kundengruppen
 
 Testen Sie nach dem Upgrade die aktualisierte Konfiguration in QA oder Staging, bevor Sie die Änderungen in die Produktion übernehmen.
 
@@ -145,7 +153,7 @@ _15. September 2023_
 
 ![Fehlerbehebung](../assets/fix.svg) Die Tabellengröße der Produkt- und Preis-Feeds wurde stark reduziert. Tabellen `catalog_data_exporter_products` und `catalog_data_exporter_product_prices` eine erhebliche Reduzierung der Größe vorsehen.
 ![Fehlerbehebung](../assets/fix.svg) Die Registerkarte &quot;Regeln&quot;wird in &quot;Suchregeln&quot;umbenannt.
-![Fehlerbehebung](../assets/fix.svg) Bei der Rangfolge nach &quot;Trend&quot;können Sie jetzt zwischen: * 3 Tage (Standard) * 14 Tage * 30 Tage auswählen
+![Fehlerbehebung](../assets/fix.svg) Bei der Rangfolge nach &quot;Trend&quot;können Sie jetzt zwischen: - 3 Tage (Standard) - 14 Tage - 30 Tage wählen.
 ![Fehlerbehebung](../assets/fix.svg) &quot;Ereignisse&quot;(Verstärken/Einfügen/Verbergen/Ausblenden) wurde in &quot;Manuelles Ranking&quot;umbenannt.
 ![Fehlerbehebung](../assets/fix.svg) &quot;Ranking Type&quot;wurde in &quot;Intelligent ranking&quot;umbenannt.
 ![Fehlerbehebung](../assets/fix.svg) Geringfügige Fehlerbehebungen
@@ -170,11 +178,11 @@ _7. August 2023_
 
 ![Neu](../assets/new.svg) Die folgenden Werte wurden zum `storeDetails` -Objekt:
 
-* &quot;Alle Produkte pro Seite zulassen&quot;
-* Währungskurs
-* &quot;Products per Page on Grid Allowed Values&quot;
-* &quot;Products per Page on Grid Default Value&quot;
-* Store language
+- &quot;Alle Produkte pro Seite zulassen&quot;
+- Währungskurs
+- &quot;Products per Page on Grid Allowed Values&quot;
+- &quot;Products per Page on Grid Default Value&quot;
+- Store language
 
 ### Updates
 
@@ -201,7 +209,7 @@ _14. März 2023_
 ![Neu](../assets/new.svg) [Widget &quot;Seite für Produktauflistung&quot;](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-storefront/plp-styling)
 ![Neu](../assets/new.svg) [Filteroptionen für Kategorien](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#facets)
 ![Neu](../assets/new.svg) Die Möglichkeit, Pin-Ereignisse per Drag &amp; Drop zu erstellen, wurde hinzugefügt
-![Neu](../assets/new.svg) Neue Pin-Aktionen: * An Position fixieren - Schaltfläche &quot;Pin&quot;, um ein Pin-Ereignis mit einem Klick zu erstellen * Pin to top - Setzt das Produkt an die erste Position * Pin to bottom - Platziert das Produkt am unteren Ende der Ergebnisse * Passen Sie ein Ereignis mit einem Klick auf
+![Neu](../assets/new.svg) Neue Pin-Aktionen: - An Ort fixieren - Schaltfläche &quot;Pin&quot;zum Erstellen eines Pin-Ereignisses mit einem Klick - Pin to top - Places product in the first position - Pin to bottom - Platziert das Produkt am unteren Ende der Ergebnisse - Passen Sie ein Ereignis mit einem Klick an.
 ![Neu](../assets/new.svg) [Intelligente Rangordnung für Regeln](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add)
 ![Neu](../assets/new.svg) [!DNL Live Search] unterstützt jetzt vollständig [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) Funktionen in Commerce (ehemals &quot;Multi-Source Inventory&quot;oder &quot;MSI&quot;). Um den vollständigen Support zu ermöglichen, müssen Sie [update](install.md#update) das Abhängigkeitsmodul `commerce-data-export` auf Version 102.2.0+.
 
@@ -326,6 +334,6 @@ Bestehend [!DNL Live Search] -Installationen müssen aktualisiert werden auf [!D
 
 Weitere Informationen:
 
-* [Dokumentation für Adobe Commerce-Entwickler](https://developer.adobe.com/commerce/docs)
-* [Adobe Commerce-Benutzerhandbuch](https://experienceleague.adobe.com/en/docs/commerce)
-* [[!DNL Live Search] auf Marketplace](https://commercemarketplace.adobe.com/magento-live-search.html)
+- [Dokumentation für Adobe Commerce-Entwickler](https://developer.adobe.com/commerce/docs)
+- [Adobe Commerce-Benutzerhandbuch](https://experienceleague.adobe.com/en/docs/commerce)
+- [[!DNL Live Search] auf Marketplace](https://commercemarketplace.adobe.com/magento-live-search.html)
