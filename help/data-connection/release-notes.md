@@ -3,9 +3,9 @@ title: Versionshinweise
 description: Die neuesten Versionsinformationen für die [!DNL Data Connection] -Erweiterung von Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 84094f4249eeb9f98a85e582c52e2c48e0dd9316
+source-git-commit: a2d5e695b3f6491d051da77bfc0fb596f5411c92
 workflow-type: tm+mt
-source-wordcount: '838'
+source-wordcount: '877'
 ht-degree: 0%
 
 ---
@@ -71,6 +71,15 @@ _12. Oktober 2022_
 ![Neu](../assets/new.svg) - Unterstützung für eine [AEM](overview.md#aem-support).
 
 +++
+
+## 3.1.2
+
+[!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"}
+
+_5. Juni 2024_
+
+![Fehlerbehebung](../assets/new.svg) - Es wurde ein Problem behoben, bei dem beim Initiieren eines [historische Synchronisierung](connect-data.md#specify-order-history-date-range).
+![Fehlerbehebung](../assets/new.svg) - Es wurde ein Problem behoben, bei dem die Variable [startCheckout](events.md#startcheckout) -Ereignis wurde in Adobe Commerce 2.4.7 nicht gesendet.
 
 ## 3.1.1
 
