@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Ihre Adobe Commerce- oder Magento Open Source
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 5d3a89b2ef06b2c67ec715ce4f31f22249b336e0
+source-git-commit: 448cfcc1297aba21383cdba3284aeb95095360b2
 workflow-type: tm+mt
-source-wordcount: '907'
+source-wordcount: '934'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,11 @@ In den folgenden Abschnitten werden die einzelnen Elemente ausführlicher erläu
 
 ## Anmeldeinformationen {#apikey}
 
-Die Produktions- und Sandbox-API-Schlüssel werden aus dem [!DNL Commerce] des [Lizenzinhaber](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/start/onboarding) die durch eine eindeutige [!DNL Commerce] ID (MageID). So übergeben Sie die Berechtigungsprüfung für Dienste wie [!DNL Product Recommendations] oder [!DNL Live Search]festgelegt ist, kann der Lizenzinhaber für die Organisation des Händlers den Satz von API-Schlüsseln generieren, solange das Konto gut aufgestellt ist. Die Schlüssel können auf der Grundlage des &quot;Bedarfs an Wissen&quot;an den Systemintegrator oder das Entwicklungsteam weitergegeben werden, der Projekte und Umgebungen im Auftrag des Lizenzinhabers verwaltet. Darüber hinaus sind Lösungsintegratoren auch berechtigt, [!DNL Commerce Services]. Wenn Sie ein Lösungsintegrator sind, ist der Unterzeichner der [!DNL Commerce] Der Partnervertrag sollte die API-Schlüssel generieren.
+Die Produktions- und Sandbox-API-Schlüssel werden aus dem [!DNL Commerce] des [Lizenzinhaber](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/start/onboarding) die durch eine eindeutige [!DNL Commerce] ID (MageID). So übergeben Sie die Berechtigungsprüfung für Dienste wie [!DNL Product Recommendations] oder [!DNL Live Search]festgelegt ist, kann der Lizenzinhaber für die Organisation des Händlers den Satz von API-Schlüsseln generieren, sofern das Konto gut aufgestellt ist.
+
+Die Schlüssel können &quot;bedarfsorientiert&quot;an den Systemintegrator oder das Entwicklungsteam weitergegeben werden, der im Auftrag des Lizenzinhabers Projekte und Umgebungen verwaltet. Für Entwickler, denen eine Finanzhilfe gewährt wurde [!DNL Shared Access] durch den Lizenzinhaber kann die Schlüssel nicht in ihrem Namen generieren, selbst wenn die Händlerorganisation in der [!DNL Switch Accounts] auf ihrem Konto.
+
+Darüber hinaus sind Lösungsintegratoren auch berechtigt, [!DNL Commerce Services]. Wenn Sie ein Lösungsintegrator sind, ist der Unterzeichner der [!DNL Commerce] Der Partnervertrag sollte die API-Schlüssel generieren.
 
 >[!NOTE]
 >
