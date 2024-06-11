@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Ihre Adobe Commerce- oder Magento Open Source
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 448cfcc1297aba21383cdba3284aeb95095360b2
+source-git-commit: 84238910d58e0635ae38a0ebe54903b2a2d9d666
 workflow-type: tm+mt
-source-wordcount: '934'
+source-wordcount: '1034'
 ht-degree: 0%
 
 ---
@@ -85,7 +85,11 @@ Für [!DNL Product Recommendations], enthält der SaaS-Datenraum Katalog- und Ve
 
 ### Auswählen oder Erstellen eines SaaS-Projekts {#createsaasenv}
 
-Um ein SaaS-Projekt auszuwählen oder zu erstellen, fordern Sie die [!DNL Commerce] API-Schlüssel aus der [!DNL Commerce] Lizenzinhaber für Ihr Geschäft.
+Um ein SaaS-Projekt auszuwählen oder zu erstellen, fordern Sie die [!DNL Commerce] API-Schlüssel aus der [!DNL Commerce] Lizenzinhaber für Ihren Store:
+
+>[!NOTE]
+>
+> Wenn die Variable **[!UICONTROL Commerce Services Connector]** im Abschnitt [!DNL Commerce] -Konfiguration, müssen Sie die [!DNL Commerce] Module für Ihre gewünschten [[!DNL Commerce] service](#availableservices).
 
 1. Im _Admin_ Seitenleiste, navigieren Sie zu **System** > Dienste > **Commerce Services Connector**.
 
@@ -102,10 +106,14 @@ Sämtliche SaaS-Projekte, die mit Ihren Schlüsseln verknüpft sind, werden im *
 1. Wenn keine SaaS-Projekte vorhanden sind, klicken Sie auf **Projekt erstellen**. Dann in der **Projekt** ein, geben Sie einen Namen für Ihr SaaS-Projekt ein.
 
    Wenn Sie ein SaaS-Projekt erstellen, [!DNL Commerce] generiert je nach Ihrer [!DNL Commerce] -Lizenz:
-   - Adobe Commerce - Ein Produktionsdatenraum; zwei Testdatenbereiche
+   - Adobe Commerce - Ein Produktionsdatenraum, nur zwei Testdatenbereiche. Bei Cloud Pro-Projekten mit mehreren Staging-Umgebungen können Sie zusätzliche Testdatenbereiche für jede Staging-Umgebung anfordern, indem Sie [Senden einer Support-Anfrage](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
    - Magento Open Source - Ein Produktionsdatenraum; keine Testdatenbereiche
 
 1. Wählen Sie die **Datenraum** zur Verwendung für die aktuelle Konfiguration Ihrer [!DNL Commerce] speichern.
+
+>[!NOTE]
+>
+>Wenn Sie separate Instanzen zur Integration mit Commerce Services haben, [Support-Ticket senden](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) , um für jede zusätzliche Instanz ein neues SaaS-Projekt anzufordern. Nachdem der Support das SaaS-Projekt erstellt hat, konfigurieren Sie die Commerce Services-Integration für die Instanz mit demselben API-Schlüssel und wählen Sie das neue SaaS-Projekt für den Datenraum aus.
 
 >[!WARNING]
 >
