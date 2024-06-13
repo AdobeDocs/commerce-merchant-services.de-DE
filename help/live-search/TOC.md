@@ -4,10 +4,10 @@ user-guide-description: "Dieses Handbuch enthält ausführliche Anweisungen zur 
 breadcrumb-title: „Handbuch zu [!DNL Live Search]“
 role: Admin
 feature: Services, Search
-source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
+source-git-commit: 5df5eef652212c095a8f46a8736e1e97426f631e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '72'
+ht-degree: 11%
 
 ---
 
@@ -44,7 +44,6 @@ ht-degree: 0%
    - [Indizierung](indexing.md)
    - [GraphQL](graphql.md)
    - [Einstellungen](settings.md)
-   - [Commerce-Konfigurationseinstellungen](configuration.md)
 - [Veranstaltungen](events.md)
 - GraphQL-Abfragen {#graphql}
    - [attributeMetadata](https://developer.adobe.com/commerce/services/graphql/live-search/attribute-metadata/)
