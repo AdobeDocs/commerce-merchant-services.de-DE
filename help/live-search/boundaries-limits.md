@@ -3,9 +3,9 @@ title: "Grenzen und Grenzen"
 description: Erfahren Sie mehr über die Grenzen und Beschränkungen für [!DNL Live Search] um sicherzustellen, dass sie den Anforderungen Ihres Unternehmens entspricht.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 099a4b9ce3ab71bc3c7ae181be242863a55d0ca9
+source-git-commit: ba7e92d5b3aaabe6a8c71f86b0e4eab38aec9adf
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: '710'
 ht-degree: 0%
 
 ---
@@ -72,5 +72,12 @@ Wenn es um die Site-Suche geht, bietet Ihnen Adobe Commerce Optionen. Überprüf
    - Produkte müssen der Kategorie Stammordner zugewiesen sein.
    - Die Kundengruppe &quot;Nicht angemeldet&quot;muss über Browserberechtigungen vom Typ &quot;Zulassen&quot;verfügen.
    - Um Produkte auf die Kundengruppe &quot;Nicht angemeldet&quot;zu beschränken, gehen Sie zu jeder Kategorie und legen Sie die Berechtigungen für jede Kundengruppe fest.
-- Die Unterstützung für B2B mit Live Search for PWA Studio wird derzeit nicht unterstützt.
+- Die native Unterstützung für B2B mit dem PLP-Widget auf PWA Studio wird derzeit nicht unterstützt. Sie können jedoch [API verwenden](install.md#pwa-support) , um diese Funktion zu implementieren.
 - Kategoriefacetten in [!DNL Live Search] kann Kategorien anzeigen, die für eine bestimmte Kundengruppe nicht angezeigt werden können.
+
+## [!DNL Storefront popover]
+
+- Die [[!DNL popover]](storefront-popover.md) ist nur für Stores verfügbar, die *Luma* Design oder ein benutzerdefiniertes Design, das auf *Luma*. Breadcrumbs auf der Suchergebnisseite haben keine *Luma* Stile.
+- Die [!DNL popover] unterstützt nicht die *Leer* Design.
+- Die [!DNL popover] wird im Schnellbestellformular nicht unterstützt.
+- Wunschlisten und Produktvergleiche werden nicht unterstützt.
