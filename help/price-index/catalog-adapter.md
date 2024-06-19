@@ -4,51 +4,139 @@ description: Verwenden des Katalogadapters zum Rendern von Preisen über Commerc
 seo-title: Catalog Adapter Extension
 seo-description: Using Catalog Adapter to render prices from Commerce Services
 exl-id: 2c9120eb-aa51-48e9-b6a4-fffe25fc31f2
-source-git-commit: 7d62f8d5539cd744e98d8d6c072d77a2a7c5a256
+source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '708'
 ht-degree: 0%
 
 ---
 
 # Katalogadapter
 
-Die `Catalog Adapter` -Erweiterung deaktiviert den standardmäßigen Adobe Commerce Product Price-Indexer und verwendet stattdessen die Preise, die über das [Catalog Service](../catalog-service/overview.md).
-Der Adobe Commerce Product Price-Indexer ist deaktiviert und kann nicht aktiviert werden, wenn diese Erweiterungsmodule installiert sind. Nur durch das Entfernen oder Deaktivieren dieser Erweiterung kann der standardmäßige Produktpreisindex erneut aktiviert werden.
+Die `[!DNL Catalog Adapter]` -Erweiterung deaktiviert den standardmäßigen Produktpreisindex, der in der Commerce-Anwendung enthalten ist, und verwendet die von der [Catalog Service](../catalog-service/overview.md) anstatt.
+
+Der Adapter ist für die Verwendung mit dem [SaaS-Datenexport](../data-export/overview.md) und dem Adobe Commerce-Dienst. Der SAAS-Datenexport ist für die Übermittlung der Preise und der [!DNL Catalog Adapter] ruft alle Preise vom Adobe Commerce-Dienst ab.
+
+Wenn Sie die [!DNL Catalog Adapter], sind die Preisindizierung und Vorgänge wie folgt betroffen:
+
+- Der in der Adobe Commerce-Anwendung enthaltene Preisindex ist deaktiviert.
+- Preise werden mithilfe des SaaS-Datenexports und der Variablen [SaaS-Preisindexer](price-indexing.md).
+- Wenn ein Kunde ein Produkt, eine Kategorie oder eine andere Seite öffnet, die die Produktpreise anzeigt, werden die Preise vom Adobe Commerce-Dienst abgerufen.
+- Die Preise werden durch Synchronisieren von Daten aus dem [SaaS-Datenexport](../data-export/overview.md).
+- Beim Checkout werden die Preise dynamisch neu berechnet.
+
+Sie können die Preisindizierung in der Commerce-Anwendung erneut aktivieren, indem Sie die Erweiterung des Katalogadapters entfernen oder deaktivieren.
 
 ## Voraussetzungen
 
-* Adobe Commerce 2.4.4+
-* Installieren Sie beide der folgenden Commerce-Dienste:
+- Adobe Commerce 2.4.4+
+- Installieren Sie einen der folgenden Commerce-Dienste:
 
-   * [Catalog Service](../catalog-service/overview.md)
-   * [Live Search](../live-search/overview.md)
+   - [Live Search](../live-search/install.md)
+   - [Produkt-Recommendations](../product-recommendations/install-configure.md)
+   - [Catalog Service](../catalog-service/installation.md)
 
 ## Installation
 
-So verwenden Sie die `catalog-adapter` -Modul, [!DNL Live Search] und [!DNL Catalog Service] muss zuerst installiert und konfiguriert werden. Befolgen Sie die [Installieren [!DNL Live Search]](../live-search/install.md) und [Installation des Katalogdienstes](../catalog-service/installation.md) Anweisungen vor dem Fortfahren.
+Die Catalog Adapter-Erweiterung ist ein Composer-Metapaket, das die folgenden Module installiert:
 
-Führen Sie nach der Installation dieser Dienste den folgenden Befehl aus:
+- **Price Indexer Disabler**-Dieses Modul deaktiviert den Preisindex in der Commerce-Anwendung, sodass Preise über die SaaS-Preisindizierung bereitgestellt werden. Der Produktpreisindex in der Commerce-Anwendung kann nicht aktiviert werden, wenn die SaaS-Preisindizierungserweiterung installiert ist.
+- **Preisanbieter**-Dieses Modul bietet Preise für Produkte des Adobe Commerce-Dienstes. Es bildet die Suchabfrage und erhält die Preise für die Produkte auf der Vorderseite.
+- **Catalog Service Search Adapter**-Dieses Modul überträgt Preise von der Adobe Commerce-Anwendung an einen Adobe Commerce-Dienst, wenn eine Produktsuchanfrage auftritt.
 
-```bash
-composer require adobe-commerce/catalog-adapter
-```
+## Installationsschritte
 
-## Aktivieren Sie den Adobe Commerce Product Price-Indexer erneut.
+>[!BEGINTABS]
 
-Wenn Sie Anwendungen von Drittanbietern verwenden, die auf den standardmäßigen Adobe Commerce Product Price-Indexer angewiesen sind, können Sie ihn mit den folgenden Befehlen erneut aktivieren:
+>[!TAB Cloud-Infrastruktur]
+
+Verwenden Sie diese Methode, um die [!DNL Catalog Adapter] für eine Commerce Cloud-Instanz.
+
+1. Wechseln Sie auf Ihrer lokalen Workstation zum Projektverzeichnis für Ihr Adobe Commerce-Projekt in der Cloud-Infrastruktur-Projekt.
+
+   >[!NOTE]
+   >
+   >Informationen zum lokalen Verwalten von Commerce-Projektumgebungen finden Sie unter [Verwalten von Verzweigungen mit der CLI](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches) im _Benutzerhandbuch zu Adobe Commerce on Cloud Infrastructure_.
+
+1. Sehen Sie sich die Umgebungsverzweigung an, die mit der Adobe Commerce Cloud-CLI aktualisiert werden soll.
+
+   ```shell
+   magento-cloud environment:checkout <environment-id>
+   ```
+
+1. Fügen Sie das Catalog Adapter-Modul hinzu.
+
+   ```bash
+   composer require magento/catalog-adapter --no-update
+   ```
+
+1. Aktualisieren Sie Package-Abhängigkeiten.
+
+   ```bash
+   composer update "magento/catalog-adapter"
+   ```
+
+1. Änderungen am Zustimmungs- und Push-Code für die `composer.json` und `composer.lock` -Dateien.
+
+1. Fügen Sie die Codeänderungen für die `composer.json` und `composer.lock` -Dateien in die Cloud-Umgebung.
+
+   ```shell
+   git add -A
+   git commit -m "Add catalog adapter module"
+   git push origin <branch-name>
+   ```
+
+   Wenn Sie die Aktualisierungen in die Cloud-Umgebung pushen, wird die [Commerce Cloud-Bereitstellungsprozess](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process) , um die Änderungen anzuwenden. Überprüfen Sie den Bereitstellungsstatus im [Bereitstellungsprotokoll](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
+
+>[!TAB Vor Ort]
+
+Verwenden Sie diese Methode, um die [!DNL Catalog Adapter] für eine örtliche Instanz.
+
+1. Fügen Sie Ihrem Projekt mithilfe von Composer den Katalogadapter hinzu:
+
+   ```bash
+   composer require magento/catalog-adapter --no-update
+   ```
+
+1. Aktualisieren Sie die Abhängigkeiten und installieren Sie die Erweiterung:
+
+   ```bash
+   composer update  "magento/catalog-adapter"
+   ```
+
+1. Upgrade von Adobe Commerce:
+
+   ```bash
+   bin/magento setup:upgrade
+   ```
+
+1. Löschen Sie den Cache:
+
+   ```bash
+   bin/magento cache:clean
+   ```
+
+   >[!TIP]
+   >
+   >In einigen Fällen, insbesondere bei der Bereitstellung in der Produktionsumgebung, sollten Sie das Löschen von kompiliertem Code vermeiden, da dies einige Zeit in Anspruch nehmen kann. Stellen Sie sicher, dass Sie Ihr System sichern, bevor Sie Änderungen vornehmen.
+
+>[!ENDTABS]
+
+
+## Aktivieren Sie den Adobe Commerce-Produktpreisindex erneut.
+
+Wenn Sie Anwendungen von Drittanbietern verwenden, die auf den standardmäßigen Adobe Commerce-Produktpreisindex angewiesen sind, können Sie ihn mit den folgenden Befehlen erneut aktivieren:
 
 ```bash
 # re-enable Product Price indexer
 bin/magento module:disable Magento_PriceIndexerDisabler
-# re-index Product Price indexer 
+# re-index Product Price indexer
 bin/magento index:reindex catalog_product_price
 ```
 
 ## Deaktivieren des Produktpreisindexers für das Headless-Storefront-Szenario
 
-Wenn Sie über eine Headless-Commerce-Instanz verfügen, müssen Sie möglicherweise den Adobe Commerce-Produktpreisindex deaktivieren, um die Auslastung Ihrer Adobe Commerce-Instanz zu reduzieren.
-Dies geschieht durch Installation der `magento/module-price-indexer-disabler` -Modul:
+Wenn Sie über eine Headless-Commerce-Instanz verfügen, müssen Sie möglicherweise den Adobe Commerce-Produktpreisindex deaktivieren, um die Auslastung Ihrer Adobe Commerce-Instanz zu reduzieren. Sie können diese Aufgabe abschließen, indem Sie die `magento/module-price-indexer-disabler` -Modul:
 
 ```bash
 composer require magento/module-price-indexer-disabler
@@ -56,26 +144,27 @@ composer require magento/module-price-indexer-disabler
 
 ## Nutzungsszenarien
 
-Im Folgenden finden Sie einige häufige `Catalog Adapter` Szenarien.
+Im Folgenden finden Sie einige häufige `[!DNL Catalog Adapter]` Szenarien.
 
-### Keine Abhängigkeiten von Adobe Commerce Product Price Index
+### Keine Abhängigkeiten vom Adobe Commerce-Produktpreisindex
 
-* Sie sind ein Händler von Luma oder Adobe Commerce Core GraphQL, auf dem ein erforderlicher Dienst installiert ist (Live Search, Product Recommendations, Catalog Service).
-* Keine Drittanbietererweiterungen, die auf den Adobe Commerce Product Price Indexer angewiesen sind
+- Sie sind ein Händler von Luma oder Adobe Commerce Core GraphQL, auf dem ein erforderlicher Dienst installiert ist (Live Search, Product Recommendations, Catalog Service).
+- Keine Integrationen mit Drittanbietererweiterungen, die auf dem Adobe Commerce-Produktpreisindex basieren
 
-1. Installieren Sie den Katalogadapter.
+1. Installieren Sie die [!DNL Catalog Adapter].
 
-### Abhängigkeiten vom Adobe Commerce Product Price-Indexer
+### Abhängigkeiten vom Adobe Commerce-Produktpreisindex
 
-* Sie sind ein Händler von Luma oder Adobe Commerce Core GraphQL, auf dem ein unterstützter Dienst installiert ist (Live Search, Product Recommendations, Catalog Service).
-* Sie verwenden eine Drittanbietererweiterung, die auf dem Adobe Commerce Product Price-Indexer basiert
+- Sie sind ein Händler von Luma oder Adobe Commerce Core GraphQL, auf dem ein unterstützter Dienst installiert ist (Live Search, Product Recommendations, Catalog Service).
+- Sie verwenden eine Drittanbietererweiterung, die auf dem Adobe Commerce-Produktpreisindex basiert
 
-1. Installieren Sie den Katalogadapter.
-1. Aktivieren Sie den standardmäßigen Adobe Commerce Product Price-Indexer erneut.
+1. Installieren Sie die [!DNL Catalog Adapter].
+1. Aktivieren Sie den standardmäßigen Adobe Commerce-Produktpreisindex erneut.
 
 ### Headless-Commerce-Instanzen
 
-* Ein Händler mit einer Headless-Commerce-Instanz mit installierten erforderlichen Diensten (Live Search, Product Recommendations, Catalog Service)
-* Keine Abhängigkeit vom standardmäßigen Adobe Commerce Product Price-Indexer
+- Ein Händler mit einer Headless-Commerce-Instanz mit installierten erforderlichen Diensten (Live Search, Product Recommendations, Catalog Service)
+- Keine Abhängigkeit vom standardmäßigen Adobe Commerce-Produktpreisindex
 
-1. Installieren Sie die `magento/module-price-indexer-disabler` -Modul aus dem Katalog-Adapterpaket.
+1. Installieren Sie die `magento/module-price-indexer-disabler` -Modul aus [!DNL Catalog Adapter] Paket.
+

@@ -2,9 +2,9 @@
 title: Onboarding und Installation
 description: "Erfahren Sie, wie Sie installieren [!DNL Catalog Service]"
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: a2841b809cfc52798dc3f1bdcc033a77333bf0e5
+source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '799'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ Installieren Sie die neueste Version der Catalog Services-Erweiterung (`magento/
 
 >[!TAB Cloud-Infrastruktur]
 
-Verwenden Sie diese Methode, um die [!DNL Catalog Service] -Erweiterung für eine Commerce Cloud-Instanz.
+Verwenden Sie diese Methode, um die [!DNL Catalog Adapter] für eine Commerce Cloud-Instanz.
 
 1. Wechseln Sie auf Ihrer lokalen Workstation zum Projektverzeichnis für Ihr Adobe Commerce-Projekt in der Cloud-Infrastruktur-Projekt.
 
@@ -83,16 +83,16 @@ Verwenden Sie diese Methode, um die [!DNL Catalog Service] -Erweiterung für ein
    magento-cloud environment:checkout <environment-id>
    ```
 
-1. Fügen Sie das Modul Catalog Service hinzu.
+1. Fügen Sie das Catalog Adapter-Modul hinzu.
 
    ```bash
-   composer require "magento/catalog-service" "^3.0.1" --no-update
+   composer require magento/catalog-adapter --no-update
    ```
 
 1. Aktualisieren Sie Package-Abhängigkeiten.
 
    ```bash
-   composer update "magento/catalog-service"
+   composer update "magento/catalog-adapter"
    ```
 
 1. Änderungen am Zustimmungs- und Push-Code für die `composer.json` und `composer.lock` -Dateien.
@@ -105,22 +105,22 @@ Verwenden Sie diese Methode, um die [!DNL Catalog Service] -Erweiterung für ein
    git push origin <branch-name>
    ```
 
-   Wenn Sie die Aktualisierungen pushen, wird die [Commerce Cloud-Bereitstellungsprozess](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process) , um die Änderungen anzuwenden. Überprüfen Sie den Bereitstellungsstatus im [Bereitstellungsprotokoll](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
+   Wenn Sie die Aktualisierungen in die Cloud-Umgebung pushen, wird die [Commerce Cloud-Bereitstellungsprozess](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process) , um die Änderungen anzuwenden. Überprüfen Sie den Bereitstellungsstatus im [Bereitstellungsprotokoll](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
 
 >[!TAB Vor Ort]
 
-Verwenden Sie diese Methode, um die [!DNL Catalog Service] Erweiterung für eine lokale Instanz.
+Verwenden Sie diese Methode, um die [!DNL Catalog Adapter] für eine örtliche Instanz.
 
 1. Verwenden Sie Composer, um Ihrem Projekt das Catalog Service-Modul hinzuzufügen:
 
    ```bash
-   composer require "magento/catalog-service" "^3.0.1"  --no-update
+   composer require magento/catalog-adapter --no-update
    ```
 
 1. Aktualisieren Sie die Abhängigkeiten und installieren Sie die Erweiterung:
 
    ```bash
-   composer update  "magento/catalog-service"
+   composer update  "magento/catalog-adapter"
    ```
 
 1. Upgrade von Adobe Commerce:

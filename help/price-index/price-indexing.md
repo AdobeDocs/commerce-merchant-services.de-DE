@@ -4,53 +4,55 @@ description: Verwenden der SaaS-Preisindizierung zur Leistungsverbesserung
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 5b92d6ea-cfd6-4976-a430-1a3aeaed51fd
-source-git-commit: 7293914fab34381deb5bc841d147371f9f3470a5
+source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '391'
 ht-degree: 0%
 
 ---
 
 # SaaS-Preisindizierung
 
-Die SaaS-Preisindizierung beschleunigt die Zeit, die für Preisänderungen benötigt wird, um sie widerzuspiegeln. [Commerce Services](../landing/saas.md) nachdem sie eingereicht wurden. So können Händler mit großen, komplexen Katalogen oder mit mehreren Websites oder Kundengruppen Preisänderungen kontinuierlich verarbeiten.
+Die Preisindizierung von SaaS verbessert die Site-Leistung, indem schwere Rechenvorgänge wie Indexierung und Preisberechnung von der Commerce-Anwendung in die Adobe Cloud-Infrastruktur verschoben werden. Dieser Ansatz ermöglicht es Händlern, Ressourcen schnell zu skalieren, um die Indexierungszeiten für Preise zu verkürzen, um Preisänderungen schneller widerzuspiegeln, wenn Daten an die Storefront und verbundene Commerce-Dienste gesendet werden.
 
-Wenn Sie eine Headless-Storefront haben oder die [catalog-adapter](./catalog-adapter.md) -Erweiterung verwenden, können Kunden die SaaS-Preisindizierung verwenden, indem sie den Adobe Commerce-Core-Preisindex deaktivieren.
-
-Rechenintensive Prozesse wie Indizierung und Preisberechnung wurden vom Commerce-Kern in die Adobe Cloud-Infrastruktur verschoben. Dadurch können Händler Ressourcen schnell skalieren, um die Indexierungszeiten zu erhöhen und diese Änderungen schneller widerzuspiegeln.
-
-Der Datenfluss der Core-Indizierung zu SaaS-Diensten sieht wie folgt aus:
+Das folgende Diagramm zeigt den indizierenden Datenfluss zu SaaS-Diensten, wenn Commerce die Variable [Preisindizierung](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) -Prozess, der in der Commerce-Anwendung enthalten ist:
 
 ![Standarddatenfluss](assets/old_way.png)
 
-Bei SaaS-Preisindizierung lautet der Fluss:
+Wenn die SaaS-Preisindizierung aktiviert ist, ändert sich der Datenfluss. Die Preisindizierung erfolgt mithilfe von [Commerce SaaS-Datenexport](../data-export/data-synchronization.md).
 
 ![Datenfluss der SaaS-Preisindizierung](assets/new_way.png)
 
-Alle Händler können von diesen Verbesserungen profitieren, aber diejenigen, die die größten Gewinne erzielen, sind Kunden mit:
+Alle Händler können von der Nutzung der SaaS-Preisindizierung profitieren, aber Händler mit Projekten mit den folgenden Eigenschaften können die größten Gewinne erzielen:
 
-* Konstante Preisänderungen: Händler, die wiederholte Preisänderungen erfordern, um strategische Ziele wie häufige Promotions, saisonale Rabatte oder Inventarmarkdowns zu erreichen.
-* Mehrere Websites und/oder Kundengruppen: Händler mit freigegebenen Produktkatalogen über mehrere Websites (Domänen/Marken) und/oder Kundengruppen hinweg.
-* Große Anzahl einzigartiger Preise für Websites oder Kundengruppen: Händler mit umfangreichen gemeinsam genutzten Produktkatalogen, die individuelle Preise für Websites oder Kundengruppen enthalten, wie B2B-Händler mit vorab ausgehandelten Preisen, Marken mit unterschiedlichen Preisstrategien.
+* **Konstante Preisänderungen**-Händler, die wiederholte Preisänderungen erfordern, um strategische Ziele wie häufige Promotions, saisonale Rabatte oder Inventarmarkdowns zu erreichen.
+* **Mehrere Websites und/oder Kundengruppen**-Händler mit freigegebenen Produktkatalogen über mehrere Websites (Domänen/Marken) und/oder Kundengruppen hinweg.
+* **Viele einzigartige Preise auf Websites oder Kundengruppen**-Händler mit umfangreichen freigegebenen Produktkatalogen, die einzigartige Preise für Websites oder Kundengruppen enthalten. Beispiele sind B2B-Händler mit vorverhandelten Preisen oder Marken mit unterschiedlichen Preisstrategien.
 
-Die SaaS-Preisindizierung ist für Kunden, die Adobe Commerce-Dienste verwenden, kostenlos verfügbar und unterstützt die Preisberechnung für alle integrierten Adobe Commerce-Produktarten.
+## SaaS-Preisindizierung verwenden
 
-In diesem Handbuch wird beschrieben, wie die SaaS-Preisindizierung funktioniert und wie sie aktiviert wird.
+Die SaaS-Preisindizierung wird bei der Installation von Adobe Commerce Services automatisch aktiviert. Es unterstützt die Preisberechnung für alle integrierten Adobe Commerce-Produktarten.
 
-## Voraussetzungen
+### Voraussetzungen
 
 * Adobe Commerce 2.4.4+
-* Mindestens einer der folgenden Commerce-Dienste mit der neuesten Version der Adobe Commerce-Erweiterung:
+
+### Voraussetzungen
+
+* Einer der folgenden Commerce-Dienste muss mit der neuesten Version der Commerce-Erweiterung installiert sein:
 
    * [Catalog Service](../catalog-service/overview.md)
    * [Live Search](../live-search/overview.md)
    * [Produkt-Recommendations](../product-recommendations/guide-overview.md)
 
-Benutzer von Luma und Adobe Commerce Core GraphQL können die [`catalog-adapter`](catalog-adapter.md) -Erweiterung, die Luma- und Core-GraphQl-Kompatibilität bietet und den Adobe Commerce Product Price-Indexer deaktiviert.
 
-## Nutzung
+>[!NOTE]
+>
+>Bei Bedarf kann der standardmäßige Preisindexer in der Commerce-Anwendung mithilfe der Variablen [Katalogadapter](catalog-adapter.md).
 
-Synchronisieren Sie nach dem Upgrade Ihrer Adobe Commerce-Instanz mit SaaS-Preisindizierungsunterstützung die neuen Feeds:
+## Preise mit SaaS-Preisindizierung synchronisieren
+
+Nachdem Sie die SaaS-Preisindizierung für Adobe Commerce aktiviert haben, aktualisieren Sie die Preise auf der Storefront und in Commerce Services, indem Sie die neuen Feeds synchronisieren:
 
 ```bash
 bin/magento saas:resync --feed=scopesCustomerGroup
@@ -58,7 +60,7 @@ bin/magento saas:resync --feed=scopesWebsite
 bin/magento saas:resync --feed=prices
 ```
 
-## Preise für benutzerdefinierte Produktarten
+### Preise für benutzerdefinierte Produktarten
 
 Preisberechnungen werden für benutzerdefinierte Produktarten wie Basispreis, Sonderpreis, Gruppenpreis, Katalogregelpreis usw. unterstützt.
 
@@ -94,3 +96,4 @@ Wenn Sie über einen benutzerdefinierten Produkttyp verfügen, der eine bestimmt
        }
    }
    ```
+
