@@ -3,9 +3,9 @@ title: "Erste Schritte mit [!DNL Live Search]"
 description: "Erfahren Sie mehr über die Systemanforderungen und Installationsschritte für [!DNL Live Search] von Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 099a4b9ce3ab71bc3c7ae181be242863a55d0ca9
+source-git-commit: aba1f41965e6c430f569adcf9d940cf399b50b73
 workflow-type: tm+mt
-source-wordcount: '2266'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -216,7 +216,7 @@ In [!DNL Live Search] durch eine Firewall hinzufügen `commerce.adobe.io` in die
 
 Sie haben die Variable [!DNL Live Search] Erweiterung, Synchronisierung, Validierung und Konfiguration Ihrer Daten. Jetzt möchten Sie sicherstellen, dass die Variable [!DNL Live Search] Widgets entsprechen dem Erscheinungsbild Ihres Stores.
 
-Sie können die Popover- und PLP-Widgets gestalten, indem Sie nach Bedarf benutzerdefinierte CSS-Regeln definieren. Siehe [Formatieren von Popover-Elementen](storefront-popover-styling.md) und [Seiten-Widget &quot;Produktliste&quot;](plp-styling.md).
+Sie können die Popover- und PLP-Widgets gestalten, indem Sie nach Bedarf benutzerdefinierte CSS-Regeln definieren. Siehe [Formatieren von Popover-Elementen](storefront-popover.md#styling-popover-example) und [Seiten-Widget &quot;Produktliste&quot;](plp-styling.md#styling-example).
 
 Wenn Sie die Funktionalität der Widgets erweitern möchten, ist der Quellcode für jedes in einem öffentlichen Repository verfügbar.
 In diesem Szenario können Sie das JavaScript für Ihre eigenen Anforderungen anpassen und dann Ihren benutzerdefinierten Code auf Ihrem CDN hosten. Dieses benutzerdefinierte Skript kommuniziert mit dem [!DNL Live Search] und gibt die Ergebnisse wie normal zurück, sodass Sie die Funktionalität des Widgets steuern können.

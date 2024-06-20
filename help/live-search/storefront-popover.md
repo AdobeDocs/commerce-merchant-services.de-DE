@@ -2,9 +2,9 @@
 title: "[!DNL Storefront Popover]"
 description: "Die [!DNL Live Search storefront popover] gibt dynamisch vorgeschlagene Produkte und Miniaturansichten zurück."
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 099a4b9ce3ab71bc3c7ae181be242863a55d0ca9
+source-git-commit: e375404a50dd4972ab584f69d7953aba2c8f4566
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '422'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,13 @@ Standardmäßig ist [!DNL Live Search] unterstützt [Suchbegriffumleitungen](htt
 
 ![[!DNL Live Search popover]](assets/storefront-search-as-you-type.png)
 
+>[!TIP]
+>
+>Erfahren Sie, wie Sie Produktattribute in der [Einrichten der Live-Suche](workspace.md) Artikel.
+
 ## [!DNL Popover] Seitengröße
 
-Die Seitengröße der [!DNL popover] bestimmt, wie viele Zeilen von automatisch ausgefüllten Produkten zurückgegeben werden können. Zuvor war die Seitengröße hartcodiert als sechs Zeilen. Die Variable `page_size` -Wert ist jetzt eine Einstellung, die über die *Admin*. Während der Live Search-Installation wird die Variable `page_size` -Wert ändert sich in den aktuellen Wert der [Katalogsuche](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/catalog.html) - `Autocomplete Limit` -Einstellung.
+Die Seitengröße der [!DNL popover] bestimmt, wie viele Zeilen von automatisch ausgefüllten Produkten zurückgegeben werden können. Während der Live Search-Installation wird die Variable `page_size` -Wert ändert sich in den aktuellen Wert der [Katalogsuche](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/catalog.html) - `Autocomplete Limit` -Einstellung.
 
 Standardmäßig ist der Wert Katalogsuche - Automatische Vervollständigungsgrenze auf acht Zeilen (oder Zeilen) festgelegt. So ändern Sie die Seitengröße der [!DNL popover]führen Sie folgende Schritte aus:
 
@@ -31,22 +35,98 @@ Standardmäßig ist der Wert Katalogsuche - Automatische Vervollständigungsgren
 1. Legen Sie die **Automatische Vervollständigungsgrenze** auf die Anzahl der Zeilen, die Sie in der Variablen [!DNL popover].
 1. Wenn Sie fertig sind, klicken Sie auf **Konfiguration speichern**.
 
-## Catalog Service
+## Formatierung [!DNL Popover] example
 
-Die [Catalog Service für Adobe Commerce](../catalog-service/overview.md) -Erweiterung bietet umfassende Ansicht-Modell-Katalogdaten, um produktbezogene Storefront-Erlebnisse schnell und vollständig zu rendern. Catalog Service kann in Verbindung mit Live Search verwendet werden, um Funktionen bereitzustellen, die derzeit von der nativen Erweiterung nicht unterstützt werden:
+Sie können das Erscheinungsbild der [!DNL Popover] -Widget an den Stil und die Branding-Richtlinien Ihres Unternehmens anzupassen.
 
-* Erweiterte Attribute
-* Andere Produktinformationen können
+Die [!DNL storefront popover] zeigt immer das Produkt an `name` und `price`und die Feldauswahl nicht konfigurierbar ist. Allerdings [!DNL popover] -Elemente können mit [CSS](https://developer.adobe.com/commerce/frontend-core/guide/css/) Klassen. Beispielsweise ändern die folgenden Deklarationen die Hintergrundfarbe der [!DNL popover] Container und Fußzeile.
 
-Merchants können Widgets oder Storefront-Elemente mithilfe des Katalogdienstes anpassen und erweitern. Dies ist jedoch für das Adobe-Supportteam nicht möglich.
+```css
+.livesearch.popover-container {
+    background-color: lavender;
+}
+
+.livesearch.view-all-footer {
+    background-color: magenta;
+}
+```
+
+## Behälteranzeige
+
+Die übergeordnete Komponente der `.livesearch.popover-container` is `.search-autocomplete`.  Die `.active` -Klasse gibt die Sichtbarkeit des Containers an. Die `.active` -Klasse wird bedingt hinzugefügt, wenn die [!DNL popover] ist offen.
+
+```css
+.search-autocomplete.active   /* visible */
+.search-autocomplete          /* not visible */
+```
+
+Weitere Informationen zum Formatieren von Storefront-Elementen finden Sie unter [Kaskadierende Stylesheets (CSS)](https://developer.adobe.com/commerce/frontend-core/guide/css/) im [Frontend-Entwicklerhandbuch](https://developer.adobe.com/commerce/frontend-core/guide/).
+
+## Klassenselektoren
+
+Sie können die folgenden Klassenselektoren verwenden, um den Container und die Produktelemente im [!DNL popover].
+
+- `.livesearch.popover-container`
+- `.livesearch.view-all-footer`
+- `.livesearch.products-container`
+- `.livesearch.product-result`
+- `.livesearch.product-name`
+- `.livesearch.product-price`
+
+### Container-Klassen-Selektoren
+
+#### .livesearch.popover-container
+
+![[!DNL Popover] container](assets/livesearch-popover-container.png)
+
+#### .livesearch.view-all-footer
+
+![Alle Fußzeilen anzeigen](assets/livesearch-view-all-footer.png)
+
+### Produktklassenauswahl
+
+#### .livesearch.products-container
+
+![Produktcontainer](assets/livesearch-product-container.png)
+
+#### .livesearch.product-result
+
+![Produktergebnis](assets/livesearch-product-result.png)
+
+#### .livesearch.product-name
+
+![Produktname](assets/livesearch-product-name.png)
+
+#### .livesearch.product-price
+
+![Produktpreis](assets/livesearch-product-price.png)
+
+#### .livesearch product-link
+
+![Produktergebnis](assets/livesearch-product-link.png)
+
+## Arbeiten mit einem geänderten Design {#working-with-modified-theme}
+
+Sie können die [!DNL storefront popover] mit einer benutzerdefinierten [Design](https://developer.adobe.com/commerce/frontend-core/guide/themes/) , der die erforderlichen Dateien von *Luma*. Die `top.search` -Block im `header-wrapper` des `Magento_Search` darf nicht geändert werden.
+
+```html
+<referenceContainer name="header-wrapper">
+   <block class="Magento\Framework\View\Element\Template" name="top.search" as="topSearch" template="Magento_Search::form.mini.phtml">
+      <arguments>
+         <argument name="configProvider" xsi:type="object">Magento\Search\ViewModel\ConfigProvider</argument>
+      </arguments>
+   </block>
+</referenceContainer>
+```
+
+## Deaktivieren der [!DNL popover]
+
+So deaktivieren Sie die [!DNL popover] und den Standard wiederherstellen [Schnellsuche](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) verwenden, geben Sie den folgenden Befehl ein:
+
+```bash
+bin/magento module:disable Magento_LiveSearchStorefrontPopover
+```
 
 ## Headless-Implementierungen
 
-Bei Implementierungen ohne Headless ist es möglich, das Live Search-Popup mit einer [npm package](https://www.npmjs.com/package/@magento/ds-livesearch-storefront-utils).
-
-## Einschränkungen
-
-* Die [!DNL Live Search] [!DNL storefront popover] ist nur für Stores verfügbar, die *Luma* Design oder ein benutzerdefiniertes Design, das auf *Luma*. Breadcrumbs auf der Suchergebnisseite haben keine *Luma* Stile.
-* Die [!DNL popover] unterstützt nicht die *Leer* Design. Siehe [Formatierung [!DNL Popover] Elemente](storefront-popover-styling.md) , um mehr zu erfahren.
-* Die [!DNL popover] wird im Schnellbestellformular nicht unterstützt.
-* Wunschlisten und Produktvergleiche werden nicht unterstützt.
+Für Implementierungen mit Headless können Sie die [!DNL Live Search popover] mithilfe einer [npm package](https://www.npmjs.com/package/@magento/ds-livesearch-storefront-utils).
