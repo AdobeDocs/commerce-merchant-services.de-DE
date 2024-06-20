@@ -1,15 +1,15 @@
 ---
 title: Protokolle überprüfen und Fehlerbehebung
-description: "Informationen zur Fehlerbehebung [!DNL data export] Fehler in den Logs zum Datenexport und SAAS-Export."
+description: Erfahren Sie, wie Sie Fehler beheben können. [!DNL data export] Fehler in den Logs zum Datenexport und SAAS-Export.
 feature: Services
 recommendations: noCatalog
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+exl-id: 55903c19-af3a-4115-a7be-9d1efaed8140
+source-git-commit: af9de40a717d2cb55a5f42483bd0e4cbcd913f64
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '1071'
 ht-degree: 0%
 
 ---
-
 
 # Überprüfen von Protokollen und Fehlerbehebung
 
@@ -26,9 +26,7 @@ Protokolle sind im Abschnitt `var/log` Ordner auf dem Commerce-Anwendungsserver.
 | SaaS-Exportprotokoll | `saas-export.log` | Bietet Informationen zu den Daten, die an Commerce SaaS-Dienste gesendet werden. |
 | Systemexport-Fehlerprotokoll | `saas-export-errors.log` | Enthält Informationen zu Fehlern, die beim Senden von Daten an Commerce SaaS-Dienste auftreten. |
 
-Wenn die erwarteten Daten für einen Adobe Commerce-Dienst nicht angezeigt werden, verwenden Sie die Fehlerprotokolle für die Datenexport-Erweiterung, um zu ermitteln, wo das Problem aufgetreten ist.
-
-Sie können Protokolle mit zusätzlichen Daten für die Verfolgung und Fehlerbehebung erweitern. Siehe [Erweiterte Protokollierung](#extended-logging).
+Wenn die erwarteten Daten für einen Adobe Commerce-Dienst nicht angezeigt werden, verwenden Sie die Fehlerprotokolle für die Datenexport-Erweiterung, um zu ermitteln, wo das Problem aufgetreten ist. Außerdem können Sie Protokolle mit zusätzlichen Daten für Tracking und Fehlerbehebung erweitern. Siehe [Erweiterte Protokollierung](#extended-logging).
 
 ### Protokollformat
 
@@ -85,7 +83,7 @@ In diesem Beispiel wird die `status` -Werte liefern Informationen zum Synchronis
    - **`"synced" < "processed"`** bedeutet, dass die Feed-Tabelle im Vergleich zur zuvor synchronisierten Version keine Änderungen am Element erkannt hat. Solche Elemente werden während des Synchronisierungsvorgangs ignoriert.
    - **`"synced" > "processed"`** dieselbe Entitäts-ID (z. B. `Product ID`) kann mehrere Werte in verschiedenen Bereichen aufweisen. Beispielsweise kann ein Produkt fünf Websites zugewiesen werden. In diesem Fall verfügen Sie möglicherweise über &quot;1 verarbeitetes&quot;Element und &quot;5 synchronisierte&quot;Elemente.
 
-+++ Beispiel: Vollständiges Resync-Protokoll für den Preisfeed
++++ **Beispiel: Vollständiges Resync-Protokoll für den Preisfeed**
 
 ```
 Price feed full resync:
@@ -125,7 +123,42 @@ In diesem Beispiel wird eine Regel hinzugefügt, mit der Sie New Relic-Protokoll
 
 **Beispielabfragezeichenfolge**—`feed.feed:"products" and feed.status:"Complete"`
 
+## Fehlerbehebung
+
+Wenn Daten in Commerce Services fehlen oder falsch sind, überprüfen Sie die Protokolle, um festzustellen, ob bei der Synchronisierung von der Adobe Commerce-Instanz mit der Commerce-Dienstplattform ein Problem aufgetreten ist. Verwenden Sie bei Bedarf die erweiterte Protokollierung, um den Protokollen zusätzliche Informationen zur Fehlerbehebung hinzuzufügen.
+
+- commerce-data-export-errors.log - wenn während der Erfassung ein Fehler aufgetreten ist
+- saas-export-errors.log - wenn während der Sendephase ein Fehler aufgetreten ist
+
+Wenn Fehler auftreten, die nicht mit der Konfiguration oder Erweiterungen von Drittanbietern in Zusammenhang stehen, senden Sie eine [Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) mit so vielen Informationen wie möglich.
+
+### Beheben von Problemen bei der Katalogsynchronisierung {#resolvesync}
+
+Wenn Sie eine Datenresynchronisierung Trigger haben, kann es bis zu eine Stunde dauern, bis die Daten aktualisiert und in UI-Komponenten wie Live-Suche und Empfehlungseinheiten angezeigt werden. Wenn weiterhin Diskrepanzen zwischen Ihrem Katalog und den Daten in der Commerce-Storefront auftreten oder die Katalogsynchronisierung fehlgeschlagen ist, lesen Sie Folgendes:
+
+#### Datendiskrepanz
+
+1. Zeigen Sie die detaillierte Ansicht des betreffenden Produkts in den Suchergebnissen an.
+1. Kopieren Sie die JSON-Ausgabe und stellen Sie sicher, dass der Inhalt mit dem übereinstimmt, den Sie im [!DNL Commerce] Katalog.
+1. Wenn der Inhalt nicht übereinstimmt, nehmen Sie eine geringfügige Änderung am Produkt in Ihrem Katalog vor, z. B. das Hinzufügen eines Leerzeichens oder eines Zeitraums.
+1. Warten Sie auf eine Neusynchronisierung oder [Trigger einer manuellen Neusynchronisierung](#resync).
+
+#### Synchronisierung wird nicht ausgeführt
+
+Wenn die Synchronisierung nicht planmäßig ausgeführt wird oder nichts synchronisiert wird, lesen Sie dies [KnowledgeBase](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html) Artikel.
+
+#### Synchronisierung fehlgeschlagen
+
+Wenn die Katalogsynchronisierung den Status **Fehlgeschlagen**, senden Sie eine [Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+
 ## Erweiterte Protokollierung
+
+Für zusätzliche Protokollinformationen können Sie Umgebungsvariablen verwenden, um Protokolle mit zusätzlichen Daten für die Verfolgung und Fehlerbehebung zu erweitern.
+
+Es gibt zwei Protokolldateien im `var/log/` directory:
+
+- commerce-data-export-errors.log - wenn während der Erfassung ein Fehler aufgetreten ist
+- saas-export-errors.log - wenn während der Sendephase ein Fehler aufgetreten ist
 
 Sie können Umgebungsvariablen verwenden, um Protokolle mit zusätzlichen Daten für Tracking und Fehlerbehebung zu erweitern.
 
@@ -164,7 +197,3 @@ Profildaten werden im Datenexport-Protokoll gespeichert (`var/log/commerce-data-
 ```
 <Provider class name>, <# of processed entities>, <execution time im ms>, <memory consumption in Mb>
 ```
-
-
-
-
