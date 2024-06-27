@@ -2,9 +2,9 @@
 title: "Einrichten der Live-Suche"
 description: Die [!DNL Live Search] Workspace wird zum Konfigurieren, Verwalten und Überwachen der Suchleistung verwendet.
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
-source-git-commit: 099a4b9ce3ab71bc3c7ae181be242863a55d0ca9
+source-git-commit: 5e79bb43449b95b4c6aa0e234a0dbc999c312e59
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '921'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,20 @@ ht-degree: 0%
 
 Im Arbeitsbereich können Sie die Leistung von [!DNL Live Search]. Das Menü oben bietet Zugriff auf die Tools in den einzelnen Funktionsbereichen. Die verfügbaren Funktionen spiegeln die aktuelle Menüauswahl wider.
 
-![Arbeitsbereich](assets/workspace.png)
+![Workspace](assets/workspace.png)
+
+## Datenerfassung
+
+Um sicherzustellen, dass jeder Funktionsbereich des Arbeitsbereichs die richtigen Daten enthält, müssen Sie die Datenerfassung auf der Grundlage der ausgewählten Storefront-Implementierung konfigurieren:
+
+1. Luma - Die Datenerfassung ist standardmäßig verfügbar.
+1. Headless - Die Datenerfassung muss je nach Storefront-Implementierung manuell konfiguriert werden.
+
+Wenn Sie eine Headless-Storefront verwenden, finden Sie in der folgenden Dokumentation weitere Informationen zu den erforderlichen Ereignissen, die Sie hinzufügen müssen:
+
+- [Erforderliche Ereignisse](events.md) für das Dashboard &quot;Live-Suche&quot;.
+- [Storefront-Ereignis-Wächter](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/) muss als Voraussetzung hinzugefügt werden.
+- [Beispiele](https://github.com/adobe/commerce-events/tree/main/examples) der Ereignisstruktur.
 
 ## Festlegen des Umfangs
 
@@ -41,15 +54,15 @@ Führen Sie die folgenden Schritte aus, um die Suche nach Attributen zu ermögli
 1. Wählen Sie das Attribut aus, nach dem Sie suchen möchten, z. B. `color`.
 1. Auswählen **Store-Eigenschaften** und **Verwendung in der Suche** nach `yes`.
 
-   ![Arbeitsbereich](assets/attribute-searchable.png)
+   ![Workspace](assets/attribute-searchable.png)
 
 [!DNL Live Search] berücksichtigt auch [Gewichtung](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html#weighted-search) eines Produktattributs, wie in Adobe Commerce festgelegt. Attribute mit einer höheren Gewichtung werden in den Suchergebnissen höher angezeigt.
 
 Die folgenden Attribute sind immer durchsuchbar:
 
-* `sku`
-* `name`
-* `categories`
+- `sku`
+- `name`
+- `categories`
 
 [Facets](facets.md) sind Produktattribute, die in [!DNL Live Search] gefilterbar sein. Sie können jedes filterbare Attribut als Facette in [!DNL Live Search], aber es gibt [limits](boundaries-limits.md) an, nach wie vielen Facetten Sie gleichzeitig suchen können.
 
