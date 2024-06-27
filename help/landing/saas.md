@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Ihre Adobe Commerce- oder Magento Open Source
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 84238910d58e0635ae38a0ebe54903b2a2d9d666
+source-git-commit: 3eb873c84edb56d2fc399c72296f2b545a78064e
 workflow-type: tm+mt
-source-wordcount: '1034'
+source-wordcount: '1051'
 ht-degree: 0%
 
 ---
@@ -125,6 +125,6 @@ Um die Namen Ihres SaaS-Projekts oder Ihres Datenraums zu ändern, klicken Sie a
 
 Um Ihre Adobe Commerce-Instanz mit Adobe Experience Platform zu verbinden, melden Sie sich mit Ihrem Adobe-Konto bei Ihrem Adobe ID an. Nach der Anmeldung wird die mit Ihrem Adobe-Konto verknüpfte IMS-Organisation in diesem Abschnitt angezeigt.
 
-## Katalogsynchronisierung
+## SaaS-Datenexport
 
-Wenn [!DNL Commerce] -Instanz stellt erfolgreich eine Verbindung zu [!DNL Commerce Services], exportiert der Prozess der Katalogsynchronisierung Produktdaten aus Ihrer [!DNL Commerce] Server zu [!DNL Commerce Services]. Derzeit verwendet nur Product Recommendations den Dienst für die Katalogsynchronisierung. [Weitere Infos](catalog-sync.md) Informationen zur Katalogsynchronisierung.
+Wenn [!DNL Commerce] -Instanz stellt erfolgreich eine Verbindung zu [!DNL Commerce Services], exportiert der SaaS-Datenexportprozess Commerce-Daten aus Ihren [!DNL Commerce] Server zu [!DNL Commerce SaaS Services] , damit sie mit verbundenen Commerce Services synchronisiert werden kann. Im Admin können Sie den Synchronisierungsstatus mithilfe des [Data Management-Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard). Weitere Informationen finden Sie unter [SaaS-Datenexportanleitung](../data-export/overview.md).
