@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] Versionshinweise"
 description: In den Versionshinweisen finden Sie Informationen zu allen [!DNL Payment Services] veröffentlicht.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 9b4ce379728b126390177d64c10d57b2c587619c
+source-git-commit: 9f0381546a98a8a5d72394adbd3ddd49daf539cb
 workflow-type: tm+mt
-source-wordcount: '2502'
+source-wordcount: '2547'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,10 @@ Erfahren Sie mehr über bevorstehende Versionen, Produktunterstützung und darü
 In diesen Versionshinweisen werden Funktionsänderungen und -korrekturen beschrieben, die außerhalb der regulären Funktionsveröffentlichungen für den gehosteten Dienst veröffentlicht wurden.
 
 +++Hosting-Dienstaktualisierungen
+
+_9. Juli 2024_
+
+![Neues Problem](../assets/new.svg)<!-- Issue PAY-5488 --> Jetzt können Händler die Commerce-Kunden-ID als Spalte im [Transaktionsbericht](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html) um Transaktionen zu identifizieren, die ein bestimmter Kunde getätigt hat. Darüber hinaus können Händler den Transaktionsbericht nach dieser Commerce-Kunden-ID nach zugehörigen Bestellungen filtern.
 
 _5. März 2024_
 
@@ -171,6 +175,7 @@ _7. Dezember 2023_
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
 
 ![Neu](../assets/new.svg)<!-- PAY-5047 --> Die Marken- oder Zahlungsart der Kredit-/Debitkarte ist jetzt an den folgenden Orten verfügbar:
+
 - die Kundenbestellseite auf der Storefront
 - die an den Käufer gesendete Bestätigungs-E-Mail
 - aus dem [Bestelldetailansicht](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-processing.html#view-an-order) in der Commerce-Admin.
