@@ -2,7 +2,7 @@
 title: Onboarding und Installation
 description: "Erfahren Sie, wie Sie installieren [!DNL Catalog Service]"
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: af9de40a717d2cb55a5f42483bd0e4cbcd913f64
+source-git-commit: 6ca91feefbfc2fbc4d5851040b9f1ca3de6a6560
 workflow-type: tm+mt
 source-wordcount: '823'
 ht-degree: 0%
@@ -69,7 +69,7 @@ Installieren Sie die neueste Version der Catalog Services-Erweiterung (`magento/
 
 >[!TAB Cloud-Infrastruktur]
 
-Verwenden Sie diese Methode, um die [!DNL Catalog Adapter] für eine Commerce Cloud-Instanz.
+Verwenden Sie diese Methode, um die [!DNL Catalog Service] für eine Commerce Cloud-Instanz.
 
 1. Wechseln Sie auf Ihrer lokalen Workstation zum Projektverzeichnis für Ihr Adobe Commerce-Projekt in der Cloud-Infrastruktur-Projekt.
 
@@ -83,16 +83,16 @@ Verwenden Sie diese Methode, um die [!DNL Catalog Adapter] für eine Commerce Cl
    magento-cloud environment:checkout <environment-id>
    ```
 
-1. Fügen Sie das Catalog Adapter-Modul hinzu.
+1. Fügen Sie das Modul Catalog Service hinzu.
 
    ```bash
-   composer require magento/catalog-adapter --no-update
+   composer require magento/catalog-service --no-update
    ```
 
 1. Aktualisieren Sie Package-Abhängigkeiten.
 
    ```bash
-   composer update "magento/catalog-adapter"
+   composer update "magento/catalog-service"
    ```
 
 1. Änderungen am Zustimmungs- und Push-Code für die `composer.json` und `composer.lock` -Dateien.
@@ -109,18 +109,18 @@ Verwenden Sie diese Methode, um die [!DNL Catalog Adapter] für eine Commerce Cl
 
 >[!TAB Vor Ort]
 
-Verwenden Sie diese Methode, um die [!DNL Catalog Adapter] für eine örtliche Instanz.
+Verwenden Sie diese Methode, um die [!DNL Catalog Service] für eine örtliche Instanz.
 
 1. Verwenden Sie Composer, um Ihrem Projekt das Catalog Service-Modul hinzuzufügen:
 
    ```bash
-   composer require magento/catalog-adapter --no-update
+   composer require magento/catalog-service --no-update
    ```
 
 1. Aktualisieren Sie die Abhängigkeiten und installieren Sie die Erweiterung:
 
    ```bash
-   composer update  "magento/catalog-adapter"
+   composer update  "magento/catalog-service"
    ```
 
 1. Upgrade von Adobe Commerce:
