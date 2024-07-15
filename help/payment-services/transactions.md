@@ -4,9 +4,9 @@ description: Verwenden Sie den Transaktionsbericht, um Einblicke in die Rate der
 role: User
 level: Intermediate
 exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
-source-git-commit: 9f0381546a98a8a5d72394adbd3ddd49daf539cb
+source-git-commit: 0800b4a0f9a3297a3490fa11f32e6af0abe67e2a
 workflow-type: tm+mt
-source-wordcount: '1264'
+source-wordcount: '1282'
 ht-degree: 0%
 
 ---
@@ -27,13 +27,13 @@ Sie können den Transaktionsbericht im .csv-Dateiformat herunterladen, um ihn in
 
 >[!NOTE]
 >
->Wenn Sie keine [integrierte und aktivierte Livemodus](production.md#enable-live-payments) für [!DNL Payment Services].
+>Finanzberichte können nicht angezeigt werden, wenn Sie nicht [den Live-Modus](production.md#enable-live-payments) für [!DNL Payment Services] integriert und aktiviert haben.
 
 ## Ansicht des Transaktionsberichts
 
 Die Ansicht des Transaktionsberichts ist in der Ansicht &quot;Transaktionen&quot;von Zahlungsdiensten verfügbar. Sie enthält alle verfügbaren Informationen über Transaktionen für Ihre Geschäfte.
 
-Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**um die detaillierte Ansicht des Berichts Transaktionen in der Tabelle anzuzeigen.
+Wechseln Sie in der Seitenleiste _Admin_ zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**, um die detaillierte Ansicht des Berichts &quot;Transaktionen&quot;in der Tabelle anzuzeigen.
 
 ![Ansicht des Transaktionsberichts](assets/transactions-report-view.png){width="600" zoomable="yes"}
 
@@ -43,30 +43,30 @@ Weitere Informationen finden Sie in diesem Bericht unter verknüpften Commerce-B
 
 Nicht alle Zahlungsmethoden bieten die gleiche Granularität von Informationen. Kreditkartentransaktionen bieten beispielsweise Antwort-, AVS- und CCV-Codes sowie die letzten vier Ziffern der Karte im Transaktionsbericht; PayPal-Zahlungsschaltflächen nicht.
 
-Sie können [Download-Transaktionen](#download-transactions) im .csv-Dateiformat zur Verwendung in bestehenden Buchhaltungs- oder Auftragsverwaltungssoftware.
+Sie können [Transaktionen herunterladen](#download-transactions) in einem CSV-Dateiformat, das in der bestehenden Buchhaltungs- oder Auftragsverwaltungssoftware verwendet werden kann.
 
 >[!WARNING]
 >
-> Der Transaktionsbericht enthält keine außerhalb der [!DNL Payment Services].
+> Der Transaktionsbericht enthält keine außerhalb von [!DNL Payment Services] durchgeführten Aufnahmen.
 
 ### Datenquelle auswählen
 
-In der Ansicht des Transaktionsberichts können Sie die Datenquelle auswählen.**[!UICONTROL Live]** oder **[!UICONTROL Sandbox]**- für die Sie Berichtsergebnisse anzeigen möchten.
+In der Berichtsansicht &quot;Transaktionen&quot;können Sie die Datenquelle **[!UICONTROL Live]** oder **[!UICONTROL Sandbox]** auswählen, für die Sie Berichtsergebnisse anzeigen möchten.
 
 ![Auswahl von Datenquellen](assets/datasource.png){width="300" zoomable="yes"}
 
-Wenn _[!UICONTROL Live]_die ausgewählte Datenquelle ist, können Sie Berichtinformationen für Ihre Stores anzeigen, die [!DNL Payment Services] im Produktionsmodus. Wenn_[!UICONTROL Sandbox]_ die ausgewählte Datenquelle ist, können Sie Berichtinformationen für Ihren Sandbox-Modus anzeigen.
+Wenn _[!UICONTROL Live]_die ausgewählte Datenquelle ist, können Sie Berichtinformationen für Ihre Stores anzeigen, die [!DNL Payment Services] im Produktionsmodus verwenden. Wenn_[!UICONTROL Sandbox]_ die ausgewählte Datenquelle ist, können Sie Berichtinformationen für Ihren Sandbox-Modus anzeigen.
 
 Datenquellenauswahlen funktionieren wie folgt:
 
-* Wenn Sie keine Stores haben, die [!DNL Payment Services] Im Produktionsmodus wird bei der Auswahl der Datenquelle standardmäßig _[!UICONTROL Sandbox]_.
-* Wenn Sie über Stores (einen oder mehrere) verfügen, die [!DNL Payment Services] Im Produktionsmodus wird bei der Auswahl der Datenquelle standardmäßig _[!UICONTROL Live]_.
+* Wenn keine Stores vorhanden sind, die im Produktionsmodus &quot;[!DNL Payment Services]&quot;verwenden, wird standardmäßig die Datenquelle &quot;_[!UICONTROL Sandbox]_&quot;ausgewählt.
+* Wenn Sie Stores (einen oder mehrere) haben, die im Produktionsmodus [!DNL Payment Services] verwenden, wird standardmäßig _[!UICONTROL Live]_als Datenquelle ausgewählt.
 * Beim Exportieren von Berichten wird immer die Auswahl der Datenquelle berücksichtigt.
 
-So wählen Sie die Datenquelle für Ihre [!UICONTROL Transactions] Bericht:
+So wählen Sie die Datenquelle für Ihren [!UICONTROL Transactions] -Bericht aus:
 
-1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**.
-1. Klicks **[!UICONTROL Data source]** und wählen **[!UICONTROL Live]** oder **[!UICONTROL Sandbox]**.
+1. Wechseln Sie auf der Seitenleiste _Admin_ zu **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**.
+1. Klicken Sie auf **[!UICONTROL Data source]** und wählen Sie **[!UICONTROL Live]** oder **[!UICONTROL Sandbox]** aus.
 
    Die Berichtsergebnisse werden basierend auf der ausgewählten Datenquelle neu generiert.
 
@@ -74,8 +74,8 @@ So wählen Sie die Datenquelle für Ihre [!UICONTROL Transactions] Bericht:
 
 In der Ansicht des Transaktionsberichts können Sie den Zeitrahmen der Transaktionen, die Sie anzeigen möchten, anpassen, indem Sie bestimmte Daten auswählen. Standardmäßig werden 30 Tage Transaktionen im Raster angezeigt.
 
-1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**.
-1. Klicken Sie auf **[!UICONTROL Transaction dates]** Kalenderauswahl .
+1. Wechseln Sie auf der Seitenleiste _Admin_ zu **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**.
+1. Klicken Sie auf den Kalender-Auswahlfilter **[!UICONTROL Transaction dates]** .
 1. Wählen Sie den entsprechenden Datumsbereich aus.
 1. Zeigen Sie die Transaktionen für die angegebenen Daten im Raster an.
 
@@ -83,45 +83,47 @@ In der Ansicht des Transaktionsberichts können Sie den Zeitrahmen der Transakti
 
 In der Ansicht des Transaktionsberichts können Sie die anzuzeigenden Statusergebnisse filtern, indem Sie Filterkriterien auswählen.
 
-1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**.
-1. Klicken Sie auf **[!UICONTROL Filter]** auswählen.
-1. Umschalten zwischen _[!UICONTROL Transaction Result]_Optionen, um die Berichtsergebnisse nur für ausgewählte Bestellvorgänge anzuzeigen.
-1. Wählen Sie die _[!UICONTROL Card Type]_, um die Berichtsergebnisse für den ausgewählten Kartentyp anzuzeigen. Eine QuickInfo mit weiteren Informationen wird angezeigt, wenn der Zahlungsverarbeiter den Kartentyp nicht identifizieren kann.
-1. Wählen Sie die _[!UICONTROL Card Brand]_, um die Berichtsergebnisse für die ausgewählte Kartenmarke anzuzeigen. Eine QuickInfo mit weiteren Informationen wird angezeigt, wenn der Zahlungsverarbeiter die Kartenmarke nicht identifizieren kann.
-1. Umschalten zwischen _[!UICONTROL Payment Method]_Optionen, um die Berichtsergebnisse nur für ausgewählte Zahlungsmethoden anzuzeigen.
-1. Geben Sie einen _Min. Bestellbetrag_ oder _Max. Bestellbetrag_ , um die Berichtsergebnisse innerhalb dieses Bestellwertbereichs anzuzeigen.
-1. Geben Sie eine _[!UICONTROL Order ID]_, um nach einer bestimmten Transaktion zu suchen.
-1. Geben Sie die _[!UICONTROL Card Last Four Digits]_um nach einer bestimmten Kredit- oder Debitkarte zu suchen.
-1. Klicks **[!UICONTROL Hide filters]** um den Filter auszublenden.
+1. Wechseln Sie auf der Seitenleiste _Admin_ zu **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**.
+1. Klicken Sie auf den Selektor **[!UICONTROL Filter]** .
+1. Schalten Sie die _[!UICONTROL Transaction Result]_-Optionen um, um die Berichtsergebnisse nur für ausgewählte Bestellvorgänge anzuzeigen.
+1. Wählen Sie &quot;_[!UICONTROL Card Type]_&quot;, um die Berichtsergebnisse für den ausgewählten Kartentyp anzuzeigen. Eine QuickInfo mit weiteren Informationen wird angezeigt, wenn der Zahlungsverarbeiter den Kartentyp nicht identifizieren kann.
+1. Wählen Sie &quot;_[!UICONTROL Card Brand]_&quot;, um die Berichtsergebnisse für die ausgewählte Kartenmarke anzuzeigen. Eine QuickInfo mit weiteren Informationen wird angezeigt, wenn der Zahlungsverarbeiter die Kartenmarke nicht identifizieren kann.
+1. Schalten Sie die _[!UICONTROL Payment Method]_-Optionen um, um die Berichtsergebnisse nur für ausgewählte Zahlungsmethoden anzuzeigen.
+1. Geben Sie einen _Min. Bestellbetrag_ oder _Max. Bestellbetrag_ ein, um die Berichtsergebnisse innerhalb dieses Bestellwertbereichs anzuzeigen.
+1. Geben Sie _[!UICONTROL Order ID]_ein, um nach einer bestimmten Transaktion zu suchen.
+1. Stellen Sie die _[!UICONTROL Card Last Four Digits]_ein, um nach einer bestimmten Kredit- oder Debitkarte zu suchen.
+1. Geben Sie einen _[!UICONTROL Customer ID]_ein, um alle Transaktionen eines bestimmten Kunden anzuzeigen.
+1. Geben Sie den Wert _[!UICONTROL Customer Email]_ein, um Transaktionen für diese E-Mail zu filtern.
+1. Klicken Sie auf **[!UICONTROL Hide filters]** , um den Filter auszublenden.
 
 ### Spalten ein- und ausblenden
 
 Der Transaktionsbericht zeigt standardmäßig alle verfügbaren Informationsspalten an. Sie können jedoch anpassen, welche Spalten in Ihrem Bericht angezeigt werden.
 
-1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**.
-1. Klicken Sie auf **[!UICONTROL Column settings]** icon ![Symbol für Spalteneinstellungen](assets/column-settings.png){width="20" zoomable="yes"}.
+1. Wechseln Sie auf der Seitenleiste _Admin_ zu **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**.
+1. Klicken Sie auf das Symbol **[!UICONTROL Column settings]** ![Spalteneinstellungen](assets/column-settings.png){width="20" zoomable="yes"}.
 1. Um anzupassen, welche Spalten im Bericht angezeigt werden, aktivieren oder deaktivieren Sie die Spalten in der Liste.
 
    Der Transaktionsbericht zeigt sofort alle Änderungen an, die Sie im Menü Spalteneinstellungen vorgenommen haben. Die Spaltenvoreinstellungen werden gespeichert und bleiben in Kraft, wenn Sie von der Berichtsansicht weg navigieren.
 
 ### Berichtdaten aktualisieren
 
-Die Ansicht des Transaktionsberichts zeigt eine _[!UICONTROL Last updated]_Zeitstempel, der das letzte Mal angibt, dass die Berichtinformationen aktualisiert wurden. Standardmäßig werden die Daten des Transaktionsberichts alle drei Stunden automatisch aktualisiert.
+Die Ansicht des Transaktionsberichts zeigt einen _[!UICONTROL Last updated]_-Zeitstempel an, der das letzte Mal anzeigt, dass die Berichtinformationen aktualisiert wurden. Standardmäßig werden die Daten des Transaktionsberichts alle drei Stunden automatisch aktualisiert.
 
 Sie können auch manuell eine Aktualisierung der Berichtsdaten erzwingen, um die aktuellsten Berichtinformationen anzuzeigen.
 
-1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**.
-1. Klicken Sie auf _Aktualisieren_ Symbol (![Aktualisierungssymbol](assets/refresh-button-med.png){width="20" zoomable="yes"}).
+1. Wechseln Sie auf der Seitenleiste _Admin_ zu **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**.
+1. Klicken Sie auf das Symbol _Aktualisieren_ (![Aktualisierungssymbol](assets/refresh-button-med.png){width="20" zoomable="yes"}).
 
-   Die Daten des Transaktionsberichts werden aktualisiert. *[!UICONTROL Update complete]* -Bestätigung angezeigt und die neuesten Informationen im Raster vorhanden sind.
+   Die Daten des Transaktionsberichts werden aktualisiert, eine *[!UICONTROL Update complete]* -Bestätigung wird angezeigt und die neuesten Informationen werden im Raster angezeigt.
 
 ### Herunterladen von Transaktionen
 
 Sie können eine .csv -Datei mit allen Transaktionen herunterladen, die im Raster der Ansicht der Transaktionen sichtbar sind, unabhängig davon, ob Sie die standardmäßigen 30-Tage-Transaktionen oder einen benutzerdefinierten Zeitrahmen anzeigen.
 
-1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Transactions]**.
-1. Wenn Sie Transaktionen für einen anderen Zeitraum als die letzten 30 Tage anzeigen möchten, [Datumsbereich-Zeitrahmen für Ihre Status anpassen](#customize-dates-timeframe).
-1. Klicken Sie auf _Herunterladen_ ![Download-Symbol](assets/icon-download.png){width="20" zoomable="yes"} Symbol.
+1. Wechseln Sie in der Seitenleiste _Admin_ zu **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Transactions]**.
+1. Wenn Sie Transaktionen für einen anderen Zeitraum als die letzten 30 Tage anzeigen möchten, passen Sie [den Zeitrahmen für den Datumsbereich für Ihren Status an](#customize-dates-timeframe).
+1. Klicken Sie auf das Symbol _Download_ ![Download-Symbol](assets/icon-download.png){width="20" zoomable="yes"}.
 
 Ihre Transaktionen werden im .csv-Format heruntergeladen.
 
@@ -131,29 +133,29 @@ Transaktionsberichte enthalten die folgenden Informationen.
 
 | Spalte | Beschreibung |
 | ------------ | -------------------- |
-| [!UICONTROL Order ID] | Commerce-Bestell-ID (enthält nur Werte für erfolgreiche Transaktionen und ist bei abgelehnten Transaktionen leer)<br> <br>So sehen Sie verwandte [Bestellinformationen](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}klicken Sie auf die ID. |
+| [!UICONTROL Order ID] | Commerce-Bestell-ID (enthält nur Werte für erfolgreiche Transaktionen und ist bei abgelehnten Transaktionen leer)<br> <br>Um verwandte [Bestellinformationen](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"} anzuzeigen, klicken Sie auf die ID. |
 | [!UICONTROL Provider Transaction ID] | Vom Zahlungsdienstleister bereitgestellte Transaktions-ID, die nur Werte für erfolgreiche Transaktionen enthält und einen Bindestrich für zurückgewiesene Transaktionen enthält. |
-| [!UICONTROL Customer ID] | Commerce-Kunden-ID einer Bestellung<br> <br>Siehe [Kundeninformationen](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/account-create){target="_blank"} für weitere Informationen. |
+| [!UICONTROL Customer ID] | Commerce-Kunden-ID einer Bestellung<br> Weitere Informationen finden Sie unter Thema [Kundeninformationen](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/account-create){target="_blank"} .<br> |
 | [!UICONTROL Transaction Date] | Transaktionsdatumszeitstempel |
-| [!UICONTROL Payment Method] | Zahlungsmethode der Transaktion mit detaillierten Informationen über Marke und Kartentyp. Siehe [Kartentypen](https://developer.paypal.com/docs/api/orders/v2/#definition-card_type) für weitere Informationen, verfügbar für Zahlungsdienste-Versionen 1.6.0 und höher |
+| [!UICONTROL Payment Method] | Zahlungsmethode der Transaktion mit detaillierten Informationen über Marke und Kartentyp. Weitere Informationen finden Sie unter [Kartentypen](https://developer.paypal.com/docs/api/orders/v2/#definition-card_type) . Verfügbar für Zahlungsdienste-Versionen 1.6.0 und höher |
 | [!UICONTROL Card Last Four Digits] | Letzte vier Stellen der Kredit- oder Debitkarten, die für die Transaktion verwendet werden |
-| [!UICONTROL Result] | Das Ergebnis der Transaktion —*[!UICONTROL OK]* (erfolgreiche Transaktion), *[!UICONTROL Rejected by Payment Provider]* (abgelehnt von PayPal), *[!UICONTROL Rejected by Bank]* (von einer Bank abgelehnt, die die Karte ausgestellt hat) |
-| [!UICONTROL Response Code] | Fehlercode, der den Grund für die Zurückweisung von Zahlungsdienstleistern oder Banken angibt; siehe Liste möglicher Antwortcodes und Beschreibungen für [`Rejected by Bank` status](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) und [`Rejected by Payment Provider` status](https://developer.paypal.com/api/rest/reference/orders/v2/errors/). |
-| [!UICONTROL AVS Code] | Adresse Verification Service-Code; die Antwortinformationen des Verarbeiters für Zahlungsanfragen. Siehe [Liste möglicher Codes und Beschreibungen](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) für weitere Informationen. |
-| [!UICONTROL CVV Code] | Kartenprüfungswertcode für Kredit- und Debitkarten, siehe [Liste möglicher Codes und Beschreibungen](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) für weitere Informationen. |
+| [!UICONTROL Result] | Das Ergebnis der Transaktion—*[!UICONTROL OK]* (erfolgreiche Transaktion), *[!UICONTROL Rejected by Payment Provider]* (abgelehnt von PayPal), *[!UICONTROL Rejected by Bank]* (abgelehnt von Bank, die die Karte ausgegeben hat) |
+| [!UICONTROL Response Code] | Fehlercode, der den Grund für die Zurückweisung von Zahlungsdienstleistern oder Banken angibt; siehe Liste möglicher Antwortcodes und Beschreibungen für [`Rejected by Bank` Status](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) und [`Rejected by Payment Provider` Status](https://developer.paypal.com/api/rest/reference/orders/v2/errors/) . |
+| [!UICONTROL AVS Code] | Adresse Verification Service-Code; die Antwortinformationen des Verarbeiters für Zahlungsanfragen. Weitere Informationen finden Sie unter [Liste der möglichen Codes und Beschreibungen](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response). |
+| [!UICONTROL CVV Code] | Kartenprüfungswertcode für Kredit- und Debitkarten; weitere Informationen finden Sie unter [Liste möglicher Codes und Beschreibungen](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response). |
 | [!UICONTROL Amount] | Bestellmenge |
 | [!UICONTROL Currency] | Währung, die für die Bestellung in der Transaktion verwendet wird |
-| [!UICONTROL Type] | [Zahlungsaktion](../payment-services/production.md#set-payment-services-as-payment-method) für Transaktionen—`Authorize` oder `Authorize and Capture` |
+| [!UICONTROL Type] | [Zahlungsaktion](../payment-services/production.md#set-payment-services-as-payment-method) für Transaktion—`Authorize` oder `Authorize and Capture` |
 
 ### Fehler-Antwortcodes
 
-Die _Antwortcode_ zeigt einen spezifischen Fehler- oder Erfolgscode im Zusammenhang mit der Transaktion an. Zu den gebräuchlichen Fehlercodes, die möglicherweise angezeigt werden, gehören:
+Die Spalte _Antwortcode_ enthält einen spezifischen Fehler- oder Erfolgscode im Zusammenhang mit der Transaktion. Zu den gebräuchlichen Fehlercodes, die möglicherweise angezeigt werden, gehören:
 
-* `PAYMENT_DENIED`—Transaktion wurde von PayPal abgelehnt, weil sie als Betrug vermutet wurde.
-* `INTERNAL_SERVER_ERROR`—Die Transaktion wurde von PayPal abgelehnt und ein PayPal-Server-Fehler aufgetreten. Die Transaktion kann wiederholt werden.
-* `INSTRUMENT_DECLINED`—Der Kunde wurde per PayPal pro ausgewählter Zahlungsmethode abgelehnt. Transaktionen können mit einer anderen Zahlungsmethode wiederholt werden.
+* `PAYMENT_DENIED`—Die Transaktion wurde von PayPal abgelehnt, weil sie als Betrug vermutet wurde.
+* `INTERNAL_SERVER_ERROR`: Die Transaktion wurde von PayPal abgelehnt und es kam ein PayPal-Server-Fehler auf. Die Transaktion kann wiederholt werden.
+* `INSTRUMENT_DECLINED`: Der Kunde wurde von PayPal pro ausgewählter Zahlungsmethode abgelehnt. Transaktionen können mit einer anderen Zahlungsmethode wiederholt werden.
 * `9500`—Die Transaktion wurde von der verbundenen Bank abgelehnt, weil sie verdächtigt wurde, betrügerisch zu sein.
 * `5120`—Die Transaktion wurde von der verbundenen Bank abgelehnt, da der Kunde nicht über ausreichende Mittel für die Zahlung verfügte.
-* `5650`—Die Transaktion wurde von der verbundenen Bank abgelehnt, da die Bank eine starke Kundenauthentifizierung erfordert ([3DS](security.md#3ds)).
+* `5650`: Die Transaktion wurde von der verbundenen Bank abgelehnt, da die Bank eine starke Kundenauthentifizierung erfordert ([3DS](security.md#3ds)).
 
 Detaillierte Fehlerantwort-Codes für fehlgeschlagene Transaktionen sind für Transaktionen verfügbar, die jünger als am 1. Juni 2023 sind. Teilberichtdaten werden für Transaktionen angezeigt, die vor dem 1. Juni 2023 stattgefunden haben.
