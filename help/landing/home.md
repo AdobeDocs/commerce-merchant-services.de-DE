@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Adobe bietet eine Sammlung von Commerce-, Integrations- und Datendiensten, die Händlern dabei helfen, wichtige Geschäftskomponenten zu unterstützen.
 
->[!BEGINSHADEBOX &quot;Versionsinformationen&quot;]
+>[!BEGINSHADEBOX &quot;Release information&quot;]
 
 Siehe [Neue Funktionen in unserer Dokumentation](whats-new.md) oder [Versionshinweise](release-notes-all.md) für jeden Commerce-Dienst.
 
@@ -44,14 +44,14 @@ Siehe [Neue Funktionen in unserer Dokumentation](whats-new.md) oder [Versionshin
 <tr>
     <td valign="top" width="200px">
        <img alt="Catalog Service" src="assets/catalog-service.png" width="170px"></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/catalog-service/guide-overview"> <strong>Catalog Service</strong></a> <br>
+   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/catalog-service/guide-overview"> <strong>Katalogdienst</strong></a> <br>
     <div>Geben Sie Ihren Kunden ein optimiertes Produkterlebnis, während Sie gleichzeitig die Leistung steigern, die Skalierbarkeit verbessern und Konversionen steigern.</div>
   </td>
    </tr>
 <tr>
   <td valign="top" width="200px">
     <img alt="Zahlungsdienste" src="assets/payment-services.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/guide-overview"><strong>Zahlungsdienste</strong></a>  <br><em>(Für Magento Open Source verfügbar)</em>
+   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/guide-overview"><strong>Zahlungsdienste</strong></a> <br><em>(für die Magento Open Source verfügbar)</em>
     <div>Steigern Sie die Kundenzufriedenheit, indem Sie einfach verschiedene Zahlungsmethoden anbieten, darunter auch zinsfreie Zahlungseinsätze und einen einheitlichen Einblick in die Zahlungsverarbeitung, Bestellungen und Rechnungen.</div>
   </td>
     </tr>
@@ -65,14 +65,14 @@ Siehe [Neue Funktionen in unserer Dokumentation](whats-new.md) oder [Versionshin
 <tr>
     <td valign="top" width="200px">
        <img alt="Amazon Sales Channel" src="assets/amazon-channel.png" width="170px"></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-channels/amazon/guide-overview"> <strong>Amazon-Vertriebskanal</strong></a> <br><em>(Für Magento Open Source verfügbar)</em>
+   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-channels/amazon/guide-overview"> <strong>Amazon-Verkaufskanal</strong></a> <br><em>(für Magento Open Source verfügbar)</em>
     <div>Integrieren Sie mit dem weltgrößten globalen Online-Shopping-Ziel, um Amazon-Verkäufe zu ermöglichen, Datenautomatisierung und -Synchronisation bereitzustellen, Amazon-Listen zu verwalten und vieles mehr über ein Dashboard.</div>
   </td>
    </tr>
 <tr>
     <td valign="top">
        <img alt="[!DNL Channel Manager]" src="assets/channel-manager.png" width="170px"></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-channels/channel-manager/guide-overview"> <strong>Kanal-Manager</strong></a> <br><em>(Für Magento Open Source verfügbar)</em>
+   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-channels/channel-manager/guide-overview"> <strong>Kanalmanager</strong></a> <br><em>(für Magento Open Source verfügbar)</em>
     <div>Steigern Sie den Umsatz, erreichen Sie neue Kunden, optimieren Sie den Betrieb und sparen Sie Zeit durch die Integration in den Walmart Marketplace. Ermöglichen Sie es Mitarbeitern, die Verkäufe, Inventare und Preise von Walmart Marketplace nahtlos zu verwalten - alles in Commerce.</div>
   </td>
    </tr>

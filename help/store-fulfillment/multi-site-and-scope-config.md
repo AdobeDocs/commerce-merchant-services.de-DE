@@ -7,18 +7,18 @@ feature: Shipping/Delivery, Inventory, Configuration
 exl-id: 8939046e-1c26-4380-83be-ff8e074e591d
 source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '181'
 ht-degree: 0%
 
 ---
 
 # Konfiguration mehrerer Websites und Perimeter
 
-Sie können die [Anwendungsbereich](https://docs.magento.com/user-guide/configuration/scope.html) für einige Elemente, um mehrere Websites, Stores und Store-Ansichten aufzunehmen:
+Sie können den [Umfang](https://docs.magento.com/user-guide/configuration/scope.html) für einige Elemente festlegen, um mehrere Websites, Stores und Store-Ansichten aufzunehmen:
 
-- [Verwalten von Lagern](https://docs.magento.com/user-guide/catalog/inventory-stock.html) Umfang
+- [ Stock verwalten](https://docs.magento.com/user-guide/catalog/inventory-stock.html) pro Umfang
 
-- Verwalten [!DNL Delivery Methods] Umfang
+- Verwalten von [!DNL Delivery Methods] pro Umfang
 
 Sie können einem Website- oder Store-Bereich ein Lager zuweisen. Aktualisieren Sie dann die Store-Quellen, um verfügbare Bereitstellungsmethoden festzulegen (Startseite, Store-Abruf).
 
@@ -26,16 +26,16 @@ Nach erfolgreicher Aktualisierung der Konfiguration können die Speicherbereinig
 
 ## Einstellungen zur In-Store-Abholung verwalten
 
-Aktivieren oder deaktivieren Sie die [!UICONTROL In-Store Pickup] Optionen für jede Website oder den Speicherbereich aus der [Konfigurationen für Bereitstellungsmethoden](enable-general.md#delivery-methods) im Admin.
+Aktivieren oder deaktivieren Sie die [!UICONTROL In-Store Pickup] -Optionen für jede Website oder jeden Speicherbereich in den [Konfigurationen für Bereitstellungsmethoden](enable-general.md#delivery-methods) im Admin.
 
 1. Navigieren Sie zu **[!UICONTROL Stores > Configuration]**.
 
 1. Wählen Sie den zu konfigurierenden Perimeter (Website zu Store) aus.
 
-1. Navigieren Sie mit ausgewähltem Bereich zu **[!UICONTROL Sales > Delivery Methods]**.
+1. Navigieren Sie bei ausgewähltem Bereich zu &quot;**[!UICONTROL Sales > Delivery Methods]**&quot;.
 
-1. Deaktivieren oder aktivieren Sie die **[!UICONTROL In-Store Pickup]** Versandmethode.
+1. Deaktivieren oder aktivieren Sie die Versandmethode **[!UICONTROL In-Store Pickup]** .
 
 In diesem Abschnitt können Sie auch verwalten, ob die Cursor- oder In-Store-Abholung global verfügbar ist.
 
-Verwalten Sie die [!UICONTROL In-Store Pickup] und [!UICONTROL Delivery Method] Einstellungen pro Lagerbestand. Es gibt zahlreiche weitere Konfigurationen, um die volle Flexibilität Ihrer Implementierung zu gewährleisten.
+Verwalten Sie die Einstellungen [!UICONTROL In-Store Pickup] und [!UICONTROL Delivery Method] pro Lagerbestand. Es gibt zahlreiche weitere Konfigurationen, um die volle Flexibilität Ihrer Implementierung zu gewährleisten.

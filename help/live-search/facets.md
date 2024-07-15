@@ -1,6 +1,6 @@
 ---
 title: "Facets"
-description: "[!DNL Live Search] Facetten verwenden mehrere Dimensionen von Attributwerten als Suchkriterien."
+description: "[!DNL Live Search] -Facetten verwenden mehrere Dimensionen von Attributwerten als Suchkriterien."
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
 source-git-commit: 460065ecf6478e4313bd31ea848e04c7e8e192a3
 workflow-type: tm+mt
@@ -11,13 +11,13 @@ ht-degree: 0%
 
 # Facets
 
-Faceting ist eine Methode der Hochleistungsfilterung, bei der mehrere Dimensionen von Attributwerten als Suchkriterien verwendet werden. Die facettierte Suche ist ähnlich, aber deutlich &quot;schlauer&quot;als die Standardsuche [mehrstufige Navigation](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html). Die Liste der verfügbaren Filter wird durch die Variable [filterbare Attribute](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html#filterable-attributes) der in den Suchergebnissen zurückgegebenen Produkte.
+Faceting ist eine Methode der Hochleistungsfilterung, bei der mehrere Dimensionen von Attributwerten als Suchkriterien verwendet werden. Die facettierte Suche ist ähnlich, aber deutlich &quot;schlauer&quot;als die standardmäßige Navigation mit [Ebenen](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html). Die Liste der verfügbaren Filter wird durch die [filterbaren Attribute](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html#filterable-attributes) der in den Suchergebnissen zurückgegebenen Produkte bestimmt.
 
-[!DNL Live Search] verwendet die `productSearch` Abfrage, die Facetten und andere spezifische Daten für [!DNL Live Search]. Siehe Abschnitt [`productSearch` Abfrage](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/) in der Entwicklerdokumentation für Codebeispiele.
+[!DNL Live Search] verwendet die `productSearch` -Abfrage, die Facetten und andere für [!DNL Live Search] spezifische Daten zurückgibt. Codebeispiele finden Sie in der Entwicklerdokumentation unter [`productSearch` query](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/) .
 
 ![Gefilterte Suchergebnisse](assets/storefront-search-results-run.png)
 
-Jede definierte Facette kann als URL-Parameter verwendet werden. Die Ergebnisse werden anhand der Parameterwerte gefiltert: `http://yourstore.com?brand=acme&color=red`.
+Jede definierte Facette kann als URL-Parameter verwendet werden. Die Ergebnisse werden anhand der Parameterwerte `http://yourstore.com?brand=acme&color=red` gefiltert.
 
 ## Factoryanforderungen
 
@@ -38,21 +38,21 @@ Wenn Sie eine große Anzahl von Attributen haben, mit denen Sie konfrontiert wer
 
 | Einstellung | Beschreibung |
 |--- |--- |
-| [Anzeigeparameter der Kategorie](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-display-settings.html) | Anker - `Yes` |
+| [Anzeigeeinstellungen für Kategorien](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-display-settings.html) | Anker - `Yes` |
 | [Attributeigenschaften](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) | [Katalogeingabetyp](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price`, `Visual swatch` (nur Widget), `Text swatch` (nur Widget) |
-| Eigenschaften von Attributspeicher | Verwendung in der Navigation mit Suchergebnisebenen - `Yes` |
+| Eigenschaften von Attributspeicher | Verwendung in mehrstufiger Navigation mit Suchergebnissen - `Yes` |
 
 ## Facettenaggregation
 
 Die Facettenaggregation wird wie folgt durchgeführt: Wenn die Storefront drei Facetten (Kategorien, Farbe und Preis) hat und die Käuferfilter für alle drei Facetten (Farbe = blau, der Preis liegt zwischen 10,00 und 50,00 USD, Kategorien = `promotions`).
 
-* `categories` aggregation - Aggregate `categories`, wendet dann die `color` und `price` Filter, aber nicht die `categories` Filter.
-* `color` aggregation - Aggregate `color`, wendet dann die`price` und `categories` Filter, aber nicht die `color` Filter.
-* `price` aggregation - Aggregate `price`, wendet dann die `color` und `categories` Filter, aber nicht die `price` Filter.
+* `categories` aggregation - Aggregiert `categories` und wendet dann die Filter `color` und `price` an, nicht aber den Filter `categories`.
+* `color` aggregation - Aggregiert `color` und wendet dann die Filter `price` und `categories` an, nicht aber den Filter `color`.
+* `price` aggregation - Aggregiert `price` und wendet dann die Filter `color` und `categories` an, nicht aber den Filter `price`.
 
 ## Standardmäßige Attributwerte
 
-Die folgenden Produktattribute haben [Storefront-Eigenschaften](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) , die von [!DNL Live Search] und standardmäßig aktiviert.
+Die folgenden Produktattribute verfügen über [Storefront-Eigenschaften](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) , die von [!DNL Live Search] verwendet und standardmäßig aktiviert werden.
 
 | Eigenschaft | Storefront-Eigenschaft | Attribut |
 |---|---|---|
@@ -62,7 +62,7 @@ Die folgenden Produktattribute haben [Storefront-Eigenschaften](https://experien
 
 ## Standardmäßige Eigenschaften von Nicht-Systemattributen
 
-Die folgende Tabelle zeigt die standardmäßigen, suchbaren und filterbaren Eigenschaften von Nicht-System-Attributen, einschließlich der Attribute, die für die Luma-Beispieldaten spezifisch sind. Festlegen der *Verwendung in der Suche* Attributeigenschaft auf `Yes` ermöglicht die Suche nach dem Attribut in [!DNL Live Search] und natives Adobe Commerce.
+Die folgende Tabelle zeigt die standardmäßigen, suchbaren und filterbaren Eigenschaften von Nicht-System-Attributen, einschließlich der Attribute, die für die Luma-Beispieldaten spezifisch sind. Wenn Sie die Attributeigenschaft *Use in Search* auf `Yes` setzen, ist das Attribut sowohl in [!DNL Live Search] als auch in nativem Adobe Commerce durchsuchbar.
 
 | Attributcode | Durchsuchbar | Verwendung in mehrschichtiger Navigation |
 |--- |--- |--- |

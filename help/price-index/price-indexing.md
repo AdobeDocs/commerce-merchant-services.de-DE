@@ -15,19 +15,19 @@ ht-degree: 0%
 
 Die Preisindizierung von SaaS verbessert die Site-Leistung, indem schwere Rechenvorgänge wie Indexierung und Preisberechnung von der Commerce-Anwendung in die Adobe Cloud-Infrastruktur verschoben werden. Dieser Ansatz ermöglicht es Händlern, Ressourcen schnell zu skalieren, um die Indexierungszeiten für Preise zu verkürzen, um Preisänderungen schneller widerzuspiegeln, wenn Daten an die Storefront und verbundene Commerce-Dienste gesendet werden.
 
-Das folgende Diagramm zeigt den indizierenden Datenfluss zu SaaS-Diensten, wenn Commerce die Variable [Preisindizierung](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) -Prozess, der in der Commerce-Anwendung enthalten ist:
+Das folgende Diagramm zeigt den indizierenden Datenfluss zu SaaS-Diensten, wenn Commerce den in der Commerce-Anwendung enthaltenen Prozess zur [Preisindizierung](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) verwendet:
 
 ![Standarddatenfluss](assets/old_way.png)
 
-Wenn die SaaS-Preisindizierung aktiviert ist, ändert sich der Datenfluss. Die Preisindizierung erfolgt mithilfe von [Commerce SaaS-Datenexport](../data-export/data-synchronization.md).
+Wenn die SaaS-Preisindizierung aktiviert ist, ändert sich der Datenfluss. Die Preisindizierung erfolgt über den [Commerce SaaS-Datenexport](../data-export/data-synchronization.md).
 
-![Datenfluss der SaaS-Preisindizierung](assets/new_way.png)
+![Datenfluss der Preisindizierung bei SaaS](assets/new_way.png)
 
 Alle Händler können von der Nutzung der SaaS-Preisindizierung profitieren, aber Händler mit Projekten mit den folgenden Eigenschaften können die größten Gewinne erzielen:
 
-* **Konstante Preisänderungen**-Händler, die wiederholte Preisänderungen erfordern, um strategische Ziele wie häufige Promotions, saisonale Rabatte oder Inventarmarkdowns zu erreichen.
-* **Mehrere Websites und/oder Kundengruppen**-Händler mit freigegebenen Produktkatalogen über mehrere Websites (Domänen/Marken) und/oder Kundengruppen hinweg.
-* **Viele einzigartige Preise auf Websites oder Kundengruppen**-Händler mit umfangreichen freigegebenen Produktkatalogen, die einzigartige Preise für Websites oder Kundengruppen enthalten. Beispiele sind B2B-Händler mit vorverhandelten Preisen oder Marken mit unterschiedlichen Preisstrategien.
+* **Konstante Preisänderungen** - Händler, die wiederholte Preisänderungen erfordern, um strategische Ziele wie häufige Promotions, saisonale Rabatte oder Inventarmarkdowns zu erreichen.
+* **Mehrere Websites und/oder Kundengruppen** - Händler mit freigegebenen Produktkatalogen über mehrere Websites (Domänen/Marken) und/oder Kundengruppen hinweg.
+* **Viele einzigartige Preise für Websites oder Kundengruppen**-Merchants mit umfangreichen freigegebenen Produktkatalogen, die individuelle Preise für Websites oder Kundengruppen enthalten. Beispiele sind B2B-Händler mit vorverhandelten Preisen oder Marken mit unterschiedlichen Preisstrategien.
 
 ## SaaS-Preisindizierung verwenden
 
@@ -48,7 +48,7 @@ Die SaaS-Preisindizierung wird bei der Installation von Adobe Commerce Services 
 
 >[!NOTE]
 >
->Bei Bedarf kann der standardmäßige Preisindexer in der Commerce-Anwendung mithilfe der Variablen [Katalogadapter](catalog-adapter.md).
+>Bei Bedarf kann der standardmäßige Preisindexer in der Commerce-Anwendung mithilfe des [Katalogadapters](catalog-adapter.md) deaktiviert werden.
 
 ## Preise mit SaaS-Preisindizierung synchronisieren
 
@@ -66,7 +66,7 @@ Preisberechnungen werden für benutzerdefinierte Produktarten wie Basispreis, So
 
 Wenn Sie über einen benutzerdefinierten Produkttyp verfügen, der eine bestimmte Formel zur Berechnung des Endpreises verwendet, können Sie das Verhalten des Produktpreis-Feeds erweitern.
 
-1. Erstellen Sie ein Plug-in im `Magento\ProductPriceDataExporter\Model\Provider\ProductPrice` -Klasse.
+1. Erstellen Sie ein Plug-in für die Klasse `Magento\ProductPriceDataExporter\Model\Provider\ProductPrice` .
 
    ```xml
    <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"

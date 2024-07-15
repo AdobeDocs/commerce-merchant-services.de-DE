@@ -1,6 +1,6 @@
 ---
 title: "Arten von Synonymen"
-description: "Einweg- und Zweiwege [!DNL Live Search] Synonyme erweitern die Definition von Keywords."
+description: "Einweg- und Zweiwege-Synonyme [!DNL Live Search] erweitern die Definition von Keywords."
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
 source-git-commit: cb5db979828eb0b678d19c926de2823829717c02
 workflow-type: tm+mt
@@ -17,19 +17,19 @@ Ein- und Zwei-Wege-Synonyme erweitern die Definition von Keywords. Einige sind m
 
 Zwei-Wege-Synonyme haben dieselbe Bedeutung und geben dieselben Suchergebnisse zurück. Im folgenden Beispiel ist das erste fett gedruckte Wort der im Katalog verwendete Suchbegriff, gefolgt von Wörtern, die dieselbe Bedeutung wie der ursprüngliche Suchbegriff haben. Sie können ein einfaches Paar aus bidirektionalen Synonymen oder eine Kette aus mehreren bidirektionalen Synonymen für dasselbe Keyword erstellen.
 
-**Jacke** ![Zweiwegauswahl](assets/btn-two-way.png) Mantel
-**pants** ![Zweiwegauswahl](assets/btn-two-way.png) Klappen ![Zweiwegauswahl](assets/btn-two-way.png) Hosenträger
+**Jacke** ![Zweiweg-Selektor](assets/btn-two-way.png) Mantel
+**pants** ![Zweiweg-Selektor](assets/btn-two-way.png) schleicht ![Zweiweg-Selektor](assets/btn-two-way.png) Hosen
 
 ## Einweg
 
 Ein unidirektionales Synonym ist eine Teilmenge eines Suchbegriffs, jedoch mit einer spezifischeren Bedeutung. Zum Beispiel sind Kapriolen und Kurzhosen Hosen, aber nicht alle Hosen sind Kapriolen oder Kurzhosen. Bei der Suche nach Hosen sind auch Kapriolen und Kurzkursen enthalten. Bei der Suche nach Shorts werden jedoch keine Capris zurückgegeben.
 
-**Pullover** ![Einwegauswahl](assets/btn-one-way.png) hoodie
-**pants** ![Einwegauswahl](assets/btn-one-way.png) Capris ![Mehrere Einweg-Selektoren](assets/btn-multiple-one-way.png) calf-length-pants ![Mehrere Einweg-Selektoren](assets/btn-multiple-one-way.png) Pädagogische Schubboote
+**Sweatshirt** ![Einweg-Selektor](assets/btn-one-way.png) hoodie
+**pants** ![Einweg-Selektor](assets/btn-one-way.png) capris ![Mehrere Einweg-Selektoren](assets/btn-multiple-one-way.png) calf-length-pants ![Mehrere Einweg-Selektoren](assets/btn-multiple-one-way.png) Peddle-Dushers
 
 ## Best Practices
 
-Beachten Sie die folgenden Best Practices, um das Beste aus [!DNL Live Search] Synonyme.
+Beachten Sie die folgenden Best Practices, um das Beste aus [!DNL Live Search] -Synonymen zu erhalten.
 
 ### Vermeiden von &quot;Stoppwörtern&quot;
 

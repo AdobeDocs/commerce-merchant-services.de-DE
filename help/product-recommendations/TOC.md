@@ -27,7 +27,7 @@ ht-degree: 12%
    - [Staging-Umgebung](staging-environment.md)
    - [Page Builder-Integration](page-builder.md)
 - [!DNL Product Recommendations] Admin {#admin}
-   - [Arbeitsbereich](workspace.md)
+   - [Workspace](workspace.md)
    - [Erstellen](create.md)
    - [Bearbeiten](edit.md)
    - [Empfehlungstypen](type.md)

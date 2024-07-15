@@ -20,11 +20,11 @@ Einige Daten zu Bestellungen und Auszahlungen stehen Ihnen zur Verfügung, damit
 
 Sie können Adobe Commerce-Finanzberichte mit Ihrem ERP-System (Enterprise Resource Planning) abstimmen, das keine Adobe ist, indem Sie die Inkrement-ID verwenden, die einer bestimmten Bestellung zugeordnet ist.
 
-Wenn Zahlungsdienste die Commerce-Bestellung an PayPal senden, wird die Inkrement-ID als `custom_id` _und_ im `invoice_id` (die auch eine zufällige Zeichenfolge nach der `increment_id`).
+Wenn Zahlungsdienste die Commerce-Bestellung an PayPal senden, wird die Inkrement-ID als `custom_id` _und_ in den `invoice_id` (die ebenfalls eine zufällige Zeichenfolge nach dem `increment_id` enthält) einbezogen.
 
 Auf die IDs kann sowohl in den Details der Handelsaktivität für eine Auszahlung als auch im PayPal-Webhook zugegriffen werden.
 
-Die `invoice_id` und `custom_id` werden unten in den Details der Händleraktivität für eine Auszahlung angezeigt:
+Die `invoice_id` und `custom_id` werden für eine Auszahlung unten in den Details der Handelsaktivität angezeigt:
 
 ![`custom_id` im Detail der Handelsaktivität](assets/merchant-activity-ids.png){width="600" zoomable="yes"}
 
@@ -79,5 +79,5 @@ Die `invoice_id` und `custom_id` werden unten in den Details der Händleraktivit
 
 Weitere Informationen finden Sie in der Dokumentation zu den REST-APIs von PayPal:
 
-* [`purchase_unit`, bei denen `custom_id` und `invoice_id` aufbewahren](https://developer.paypal.com/docs/api/orders/v2/#definition-purchase_unit)
+* [`purchase_unit`, in dem sich `custom_id` und `invoice_id` befinden](https://developer.paypal.com/docs/api/orders/v2/#definition-purchase_unit)
 * [Bestelldetails anzeigen](https://developer.paypal.com/docs/api/orders/v2/#orders_get)

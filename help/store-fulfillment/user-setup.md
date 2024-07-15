@@ -20,31 +20,31 @@ Das Benutzermodell &quot;Store Fulfillment App User&quot;ist von anderen Adobe C
 
 >[!TIP]
 >
->Für optimale Ergebnisse: [Verbindung konfigurieren](connect-set-up-service.md) bevor Sie Benutzer und Berechtigungen für Store Associates hinzufügen, die die Store-Hilfe-App verwenden.
+>Die besten Ergebnisse erzielen Sie, wenn Sie [Ihre Verbindung konfigurieren](connect-set-up-service.md), bevor Sie Benutzer und Berechtigungen für Store-Zugehörigkeiten hinzufügen, die die Store Assist-App verwenden.
 
 ## Store Assist App - Benutzerrollen
 
 Erstellen Sie bei der ersten Einrichtung der Store-Hilfe-App durch den Benutzer Benutzerrollen, um die Benutzerberechtigungen für die Store-Hilfe-App anzupassen. Sie können beispielsweise verschiedene Rollen für Store-Manager erstellen und Verknüpfungen speichern und verschiedene Rollenressourcen zuweisen, um Berechtigungen für jeden Benutzertyp zu verwalten.
 
-Konfigurieren von Benutzerrollen aus **[!UICONTROL System > Store Fulfillment App Permissions > All Store Fulfillment App Users]**.
+Konfigurieren Sie Benutzerrollen über &quot;**[!UICONTROL System > Store Fulfillment App Permissions > All Store Fulfillment App Users]**&quot;.
 
 ### Rolleninformationen
 
-| **Feld** | **Beschreibung** | **Anwendungsbereich** | **Erforderlich** |
+| **Feld** | **Beschreibung** | **Umfang** | **Erforderlich** |
 |----------------------------|-------------------------|-----------|--------------|
 | **[!UICONTROL Role Name]** | Benutzer aktivieren oder deaktivieren. | Global | Ja |
 
 ### Rollenressourcen
 
-| **Feld** | **Beschreibung** | **Anwendungsbereich** | **Erforderlich** |
+| **Feld** | **Beschreibung** | **Umfang** | **Erforderlich** |
 |----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
 | **[!UICONTROL Resource Access]** | Liste der verfügbaren Berechtigungsgruppen, die einer Benutzerrolle zugewiesen werden können. Derzeit sind für die Lösung zur Store-Erfüllung keine unterschiedlichen Berechtigungsstufen für Ressourcenrollen definiert. Alle Benutzerrollen haben denselben Ressourcenzugriff. | Global | Ja |
 
 ## Store Assist - Benutzerinformationen
 
-Verwalten Sie Benutzerprofile der Store-Hilfe-App über die Admin System-Einstellungen:  **[!UICONTROL System > Store Fulfillment App Permissions > All Store Fulfillment App Users]**.
+Verwalten Sie Benutzerprofile der Store Assist-App über die Admin System-Einstellungen: **[!UICONTROL System > Store Fulfillment App Permissions > All Store Fulfillment App Users]**.
 
-| **Feld** | **Beschreibung** | **Anwendungsbereich** | **Erforderlich** |
+| **Feld** | **Beschreibung** | **Umfang** | **Erforderlich** |
 |------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
 | **[!UICONTROL is Active]** | Benutzer aktivieren oder deaktivieren. | Global | Ja |
 | **[!UICONTROL User Name]** | Benutzername, der dem Benutzer zugeordnet ist | Global | Ja |
@@ -52,6 +52,6 @@ Verwalten Sie Benutzerprofile der Store-Hilfe-App über die Admin System-Einstel
 | **[!UICONTROL Last Name]** | Nachname, der dem Benutzer zugeordnet ist | Global | Nein |
 | **[!UICONTROL Role]** | Mit dem Benutzer verknüpfte Rolle | Global | Nein |
 | **[!UICONTROL Access to all locations]** | Weisen Sie Benutzern Zugriff auf alle Stores zu oder wählen Sie einzelne Stores aus. | Global | Nein |
-| **Gebietsschema der Benutzeroberfläche** | Wenn Ihr Store mehrere Sprachen hat, setzen Sie &quot;Interface Locale&quot;auf die Sprache, die für die Admin-Oberfläche verwendet werden soll. | Global | Nein |
+| **Gebietsschema der Schnittstelle** | Wenn Ihr Store mehrere Sprachen hat, setzen Sie &quot;Interface Locale&quot;auf die Sprache, die für die Admin-Oberfläche verwendet werden soll. | Global | Nein |
 | **Aktiv ab** | Um ein Startdatum festzulegen, wählen Sie das Kalendersymbol aus. | Global | Nein |
-| **Aktiv bis** | Legen Sie das Ablaufdatum fest, indem Sie auf das Kalendersymbol klicken. Das Festlegen eines Ablaufdatums ist nützlich, um temporäre Benutzer- oder Rollenzuweisungen einzurichten. Nach dem Ablaufdatum ändert sich der Benutzerkontenstatus in `Inactive`, aber das Konto kann bei Bedarf dennoch aktualisiert werden. | Global | Nein |
+| **Aktiv für** | Legen Sie das Ablaufdatum fest, indem Sie auf das Kalendersymbol klicken. Das Festlegen eines Ablaufdatums ist nützlich, um temporäre Benutzer- oder Rollenzuweisungen einzurichten. Nach dem Ablaufdatum ändert sich der Benutzerkontenstatus in `Inactive`, das Konto kann jedoch bei Bedarf dennoch aktualisiert werden. | Global | Nein |

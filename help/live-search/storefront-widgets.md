@@ -11,16 +11,16 @@ ht-degree: 0%
 
 # Storefront-Widgets
 
-Bei der Installation [!DNL Live Search] Sie erhalten zwei neue Widgets auf Ihrer Storefront:
+Wenn Sie [!DNL Live Search] installieren, erhalten Sie zwei neue Widgets auf Ihrer Storefront:
 
 - [!DNL Live Search] [Popover-Widget](storefront-popover.md) ist das Feld, das unter dem Suchfeld geöffnet wird, das die Suchergebnisse enthält.
-- [Widget &quot;Seite für Produktauflistung&quot;](plp-styling.md) (PLP) bietet eine durchsuchbare Produktlistenseite mit Facetten- und Synonym-Unterstützung. Das Widget wird in Live Search 4.0.0 oder höher installiert und aktiviert.
+- Das Widget [Seite mit Produktauflistungen](plp-styling.md) (PLP) bietet eine durchsuchbare Seite mit Produktauflistungen mit Facetten und Synonym-Unterstützung. Das Widget wird in Live Search 4.0.0 oder höher installiert und aktiviert.
 
 Sie können das Erscheinungsbild dieser Widgets so anpassen, dass es dem Stil und den Branding-Richtlinien Ihres Unternehmens am besten entspricht.
 
 ## Popover-Widget zur Live-Suche
 
-Wenn Sie mit der Eingabe in das Suchfeld &quot;Commerce Storefront&quot;beginnen, [!DNL Live Search] antwortet mit vorgeschlagenen Produkten und einem Miniaturbild der Top-Suchergebnisse in der [Popover-Widget](storefront-popover.md).
+Wenn Sie mit der Eingabe in das Suchfeld &quot;Commerce-Storefront&quot;beginnen, antwortet [!DNL Live Search] mit den vorgeschlagenen Produkten und einem Miniaturbild der Top-Suchergebnisse im [Popover-Widget](storefront-popover.md).
 
 ![Popover-Widget](assets/ls-search-popover.png)
 
@@ -30,6 +30,6 @@ Weitere Informationen zum Popover-Widget und zum Anpassen des Widgets für Ihre 
 
 Wenn Sie auf klicken, um alle Ergebnisse aus dem Storefront-Popover zu sehen, zeigt das Widget zur Produktlistenseite Funktionen an, mit denen Sie Ihre Suche kontinuierlich verfeinern können.
 
-![Widget zur Produktauflistungsseite](assets/ls-plp.png)
+![Seiten-Widget zur Produktliste](assets/ls-plp.png)
 
 Weitere Informationen zum Produktanlistungs-Seiten-Widget und zum Anpassen des Widgets für Ihre Storefront finden Sie unter [Widget zur Produktauflistungsseite](plp-styling.md).

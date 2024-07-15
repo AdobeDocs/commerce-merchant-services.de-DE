@@ -1,7 +1,7 @@
 ---
-user-guide-title: "[!DNL Data Connection] Erweiterung für Adobe Commerce"
+user-guide-title: "[!DNL Data Connection] extension for Adobe Commerce"
 user-guide-description: "Dieses Handbuch enthält ausführliche Anweisungen zur Verwendung der [!DNL Data Connection] Erweiterung für Adobe Commerce."
-breadcrumb-title: "[!DNL Data Connection] Erweiterung für Adobe Commerce"
+breadcrumb-title: "[!DNL Data Connection] extension for Adobe Commerce"
 role: Admin
 feature: Personalization, Integration
 recommendations: noDisplay
@@ -17,7 +17,7 @@ ht-degree: 3%
 - [Handbuch-Übersicht](overview.md)
 - [Versionshinweise](release-notes.md)
 - Grundlagen {#fundamentals}
-   - [Installieren Sie die [!DNL Data Connection] Erweiterung](install.md)
+   - [Installieren der [!DNL Data Connection] Erweiterung](install.md)
    - [Typen von Commerce-Daten](data-ingestion.md)
    - [Zeitreihen-Ereignisschemata für die Commerce-Datenerfassung aktualisieren](update-xdm.md)
    - [Aktualisieren des Profildatensatzschemas für die Commerce-Datenerfassung (Beta)](profile-data.md)
@@ -29,6 +29,6 @@ ht-degree: 3%
    - [Profildatensätze (Beta)](events-profilerecord.md)
    - [Benutzerspezifische Ereignisse](custom-events.md)
    - [Verwenden von Adobe Experience Platform-Tags](using-tags.md)
-- Nutzungsszenarios {#use-cases}
+- Anwendungsfälle {#use-cases}
    - [Verwenden von Adobe Journey Optimizer zum Senden einer E-Mail zum abgebrochenen Warenkorb](using-ajo.md)
    - [Erstellen einer Zielgruppe in Real-Time CDP mithilfe von Commerce-Ereignisdaten](create-audience.md)

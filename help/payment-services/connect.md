@@ -12,15 +12,15 @@ ht-degree: 0%
 
 # Instanz verbinden
 
-[!DNL Payment Services] wird von Commerce Services unterstützt und als SaaS (Software as a Service) bereitgestellt. Sie verbinden Ihre Commerce-Instanz mit einem API-Schlüssel und einem privaten Schlüssel und geben den Datenraum in der Konfiguration mithilfe der [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html). **Sie richten diese Verbindung nur einmal ein.**
+[!DNL Payment Services] wird von Commerce Services unterstützt und als SaaS (Software as a Service) bereitgestellt. Sie verbinden Ihre Commerce-Instanz mithilfe eines API-Schlüssels und eines privaten Schlüssels und geben den Datenraum in der Konfiguration mithilfe des [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html) an. **Sie richten diese Verbindung nur einmal ein.**
 
 >[!INFO]
 >
-> Siehe unsere [[!DNL Adobe Commerce] Services Connector](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector.html?lang=en) Video für weitere Informationen.
+> Weitere Informationen finden Sie in unserem Video [[!DNL Adobe Commerce] Services Connector](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector.html?lang=en) .
 
-* Wenn Sie *bereits mit Ihrer Instanz verbunden ist*, indem Sie Ihre API-Anmeldeinformationen abrufen und verwenden und Commerce Services konfigurieren, können Sie mit dem [Einrichten der Test-Sandbox](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/sandbox.html).
-* Wenn Sie *muss Ihre Instanz verbinden* Informationen finden Sie in diesem Thema zu [Abrufen von API-Anmeldeinformationen](#obtain-api-credentials) und [Konfigurieren von Commerce Services](#configure-commerce-services).
-* Wenn Sie *Unsicher, ob Ihre Instanz verbunden ist*, navigieren Sie zu **System** > Dienste > **Commerce Services Connector** und zeigen Sie die öffentlichen und privaten API-Schlüsselwerte im [!UICONTROL Sandbox Keys] und [!UICONTROL Production Keys] und die *Projekt* und *Datenraum* -Felder in der [!UICONTROL SaaS Identifier] Abschnitt. Wenn diese Werte vorhanden sind, ist Ihre Instanz verbunden.
+* Wenn Sie *bereits mit Ihrer Instanz verbunden haben*, können Sie mit der Einrichtung Ihrer Test-Sandbox ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/sandbox.html) fortfahren, indem Sie Ihre API-Anmeldeinformationen abrufen und verwenden und Commerce Services konfigurieren.[
+* Wenn Sie weiterhin *Ihre Instanz verbinden müssen*, finden Sie in diesem Thema Informationen zum [Abrufen von API-Anmeldeinformationen](#obtain-api-credentials) und zum [Konfigurieren von Commerce Services](#configure-commerce-services).
+* Wenn Sie *nicht sicher sind, ob Ihre Instanz verbunden ist, navigieren Sie zu **System**> Dienste >**Commerce Services Connector**und zeigen Sie die öffentlichen und privaten API-Schlüsselwerte in den Abschnitten [!UICONTROL Sandbox Keys] und [!UICONTROL Production Keys] sowie in den Abschnitten* Projekt *und* Datenraum *im Abschnitt [!UICONTROL SaaS Identifier] an.* Wenn diese Werte vorhanden sind, ist Ihre Instanz verbunden.
 
 >[!NOTE]
 >
@@ -28,29 +28,29 @@ ht-degree: 0%
 
 ## API-Anmeldeinformationen abrufen
 
-Um einen Commerce SaaS-Dienst zu nutzen, müssen Sie die API-Schlüssel Ihrer Instanz (öffentlicher Commerce-API-Schlüssel und privater Schlüssel) sowohl für die Sandbox als auch für die Produktion verwenden, die in Ihren [Mein Konto-Dashboard](https://account.magento.com/customer/account/login). [Das Schlüsselpaar](https://docs.magento.com/user-guide/configuration/services/saas.html) kann für ein Commerce-Konto erstellt werden - eines für Sandbox und eines für Produktion - wobei jeweils nur ein Paar aktiv verwendet werden kann.
+Um einen Commerce SaaS-Dienst zu nutzen, müssen Sie die API-Schlüssel Ihrer Instanz (öffentlicher Commerce-API-Schlüssel und privater Schlüssel) sowohl für die Sandbox als auch für die Produktion verwenden, die in Ihrem [Konto-Dashboard](https://account.magento.com/customer/account/login) erstellt und verwaltet werden. [Das Schlüsselpaar](https://docs.magento.com/user-guide/configuration/services/saas.html) kann für ein Commerce-Konto erstellt werden - eines für Sandbox und eines für Produktion - es kann jedoch immer nur ein Paar aktiv verwendet werden.
 
 >[!NOTE]
 >
->Sie benötigen Hilfe beim Zugriff auf Ihre [!UICONTROL My Account] Dashboard? Siehe [Erstellen eines Commerce-Kontos](https://docs.magento.com/user-guide/magento/magento-account-create.html).
+>Benötigen Sie Hilfe beim Zugriff auf Ihr [!UICONTROL My Account] Dashboard? Siehe [Erstellen eines Commerce-Kontos](https://docs.magento.com/user-guide/magento/magento-account-create.html).
 
 Nach der Erstellung ist in Ihrem Dashboard für Mein Konto immer ein öffentlicher API-Schlüssel verfügbar. Sie kann nach Bedarf kopiert oder gelöscht werden. Der private API-Schlüssel wird angezeigt, wenn Sie einen öffentlichen API-Schlüssel für Sandbox oder Produktion erstellen. Er ist nur zum Kopieren oder Speichern über das sich daraus ergebende Dialogfeld verfügbar und kann später nicht mehr aufgerufen werden.
 
 Ein bestimmtes API-Schlüsselpaar gilt für alle Commerce-Dienste in einer Umgebung. Wenn Sie Commerce Services bereits für Ihre Instanz konfiguriert haben, ist Ihr API-Schlüsselpaar bereits im Commerce Services Connector vorhanden.
 
-Wenn Ihr API-Schlüssel verloren geht, muss ein neues API-Schlüsselpaar [generiert](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#generate-an-api-key-and-private-key) und [angewendet](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#configure-saas-project) zur Commerce Services Connector-Konfiguration in Admin hinzugefügt. Wenn die falschen Schlüssel konfiguriert sind oder keine in der Konfiguration vorhanden sind, wird in den Zahlungsdiensten ein Dialogfeld mit einem Fehler bei der Kontoüberprüfung angezeigt, in dem Sie darüber informiert werden, dass das Konto nicht verifiziert wurde.
+Wenn Ihr API-Schlüssel verloren geht, muss ein neues API-Schlüsselpaar [generiert](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#generate-an-api-key-and-private-key) und [angewendet](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#configure-saas-project) werden, um die Commerce Services Connector-Konfiguration in der Admin-Konsole zu konfigurieren. Wenn die falschen Schlüssel konfiguriert sind oder keine in der Konfiguration vorhanden sind, wird in den Zahlungsdiensten ein Dialogfeld mit einem Fehler bei der Kontoüberprüfung angezeigt, in dem Sie darüber informiert werden, dass das Konto nicht verifiziert wurde.
 
-Siehe [Liste der verfügbaren Commerce-Dienste, die die API verwenden](https://docs.magento.com/user-guide/system/saas.html#available-services).
+Eine [ Liste der verfügbaren Commerce-Dienste anzeigen, die die API verwenden.](https://docs.magento.com/user-guide/system/saas.html#available-services)
 
-Informationen zum Generieren eines API-Schlüssels für Sandbox- oder Produktionsumgebungen finden Sie unter [Anmeldeinformationen](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html#apikey).
+Informationen zum Generieren eines API-Schlüssels für Sandbox- oder Produktionsumgebungen finden Sie unter [Anmeldedaten](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html#apikey).
 
 >[!IMPORTANT]
 >
->Es wird empfohlen, kein API-Schlüsselpaar neu zu generieren *und* ändern Sie die SaaS-Kennung und/oder den Datenraum in einer aktiven Produktionsinstanz. Sie verlieren Daten für Ihre Instanz, wenn sie geändert werden.
+>Es wird empfohlen, die API-Schlüsselpaar *und* nicht neu zu generieren und die SaaS-Kennung und/oder den Datenraum in einer aktiven Produktionsinstanz zu ändern. Sie verlieren Daten für Ihre Instanz, wenn sie geändert werden.
 
 ## Konfigurieren von Commerce Services
 
-Derselbe API-Schlüssel kann über mehrere Instanzen hinweg verwendet werden, aber jede Instanz muss über einen eigenen [SaaS-Datenraum](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html#saasenv).
+Derselbe API-Schlüssel kann für alle Instanzen verwendet werden, aber jede Instanz muss über einen eigenen [SaaS-Datenraum](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html#saasenv) verfügen.
 
 >[!NOTE]
 >
@@ -58,22 +58,22 @@ Derselbe API-Schlüssel kann über mehrere Instanzen hinweg verwendet werden, ab
 
 Nachdem Sie Ihre Anmeldeinformationen erhalten haben, können Sie Ihr SaaS-Projekt und den Saas-Datenraum konfigurieren.
 
-1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]**.
-1. Klicks **[!UICONTROL Configure Commerce Services]**.
+1. Wechseln Sie in der Seitenleiste _Admin_ zu **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]**.
+1. Klicken Sie auf **[!UICONTROL Configure Commerce Services]**.
 
    Diese Option ist sichtbar, wenn Sie Commerce Services noch nicht für Ihr Konto konfiguriert haben.
 
-   Sie werden zum Konfigurationsbereich in der Admin-Konsole weitergeleitet. **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**>**[!UICONTROL Commerce Services Connector]**, um Ihren Commerce Services Connector zu konfigurieren.
+   Sie werden zum Konfigurationsbereich unter Admin, **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**>**[!UICONTROL Commerce Services Connector]**geleitet, um Ihren Commerce Services Connector zu konfigurieren.
 
-1. Um Ihre Commerce-Dienste zu konfigurieren, führen Sie die Schritte aus, die unter [SaaS-Konfiguration](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#saasenv).
+1. Um Ihre Commerce-Dienste zu konfigurieren, führen Sie die unter [SaaS-Konfiguration](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#saasenv) beschriebenen Schritte aus.
 
    >[!INFO]
    >
-   > Siehe unsere [[!DNL Adobe Commerce] Services Connector](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector.html?lang=en#configuration-faqs) Video für weitere Informationen.
+   > Weitere Informationen finden Sie in unserem Video [[!DNL Adobe Commerce] Services Connector](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector.html?lang=en#configuration-faqs) .
 
 ## Endpunkt
 
-[!DNL Payment Services] verwendet die [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html) , um eine Verbindung zu Commerce Services herzustellen und als SaaS bereitzustellen. Diese [!DNL Commerce Services Connector] kommuniziert über den Endpunkt unter:
+[!DNL Payment Services] verwendet den [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html), um eine Verbindung zu Commerce Services herzustellen und als SaaS bereitzustellen. Dieser [!DNL Commerce Services Connector] kommuniziert über den Endpunkt unter:
 
 * `commerce-beta.adobe.io` für Sandbox-Umgebungen.
 * `commerce.adobe.io for` für Live-Umgebungen.

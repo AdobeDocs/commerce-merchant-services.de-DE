@@ -1,29 +1,29 @@
 ---
 title: Installieren und Konfigurieren
-description: Erfahren Sie, wie Sie installieren, aktualisieren und deinstallieren [!DNL Product Recommendations].
+description: Erfahren Sie, wie Sie [!DNL Product Recommendations] installieren, aktualisieren und deinstallieren.
 exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
 role: Admin, Developer
 source-git-commit: 96a5791c5716f612f473540f27bd3f99b1bfe7c8
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '486'
 ht-degree: 0%
 
 ---
 
 # Installieren und Konfigurieren
 
-Bereitstellen [!DNL Product Recommendations] müssen Sie das -Modul installieren und die [Commerce Services Connector](../landing/saas.md). Sobald Updates veröffentlicht sind, können Sie Ihre Installation einfach mit der neuesten Version aktualisieren.
+Wenn Sie [!DNL Product Recommendations] in Ihrer Storefront und in Ihrem Admin bereitstellen, müssen Sie das Modul installieren und den [Commerce Services Connector](../landing/saas.md) konfigurieren. Sobald Updates veröffentlicht sind, können Sie Ihre Installation einfach mit der neuesten Version aktualisieren.
 
 - [Installieren](#install)
 - [Konfigurieren](#configure)
 - [Aktualisieren](#update)
 - [Deinstallieren](#uninstall)
 
-## Installieren [!DNL Product Recommendations] {#install}
+## Installieren Sie [!DNL Product Recommendations] {#install}
 
-Da die [!DNL Product Recommendations] -Modul ist ein eigenständiges Metapaket. Aktualisierungen werden häufiger veröffentlicht als Adobe Commerce. Um sicherzustellen, dass Sie über die neuesten Fehlerbehebungen und Funktionen verfügen, lesen Sie den Abschnitt [Versionshinweise](release-notes.md).
+Da das [!DNL Product Recommendations] -Modul ein eigenständiges Metapaket ist, werden Aktualisierungen häufiger veröffentlicht als Adobe Commerce. Um sicherzustellen, dass Sie über die neuesten Fehlerbehebungen und Funktionen verfügen, lesen Sie die [Versionshinweise](release-notes.md).
 
-Installieren Sie die `magento/product-recommendations` -Modul mit Composer:
+Installieren Sie das Modul `magento/product-recommendations` mit Composer:
 
 ```bash
 composer require magento/product-recommendations
@@ -31,41 +31,41 @@ composer require magento/product-recommendations
 
 ### Unterstützung von Page Builder hinzufügen {#pbsupport}
 
-[!DNL Product Recommendations] für Page Builder ist ein optionales Modul und separat installiert. Verwendung [!DNL Product Recommendations] Installieren Sie das -Modul mit Page Builder, indem Sie den folgenden Befehl ausführen:
+[!DNL Product Recommendations] für Page Builder ist ein optionales Modul und separat installiert. Um [!DNL Product Recommendations] mit Page Builder zu verwenden, installieren Sie das Modul, indem Sie den folgenden Befehl ausführen:
 
 ```bash
 composer require magento/module-page-builder-product-recommendations
 ```
 
-Durch Aktivierung von [!DNL Product Recommendations] Im Seitenaufbau können Sie eine vorhandene, aktive [Empfehlungseinheit](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) zu allen Inhalten, die in Page Builder erstellt wurden, wie z. B. Seiten, Blöcken und dynamischen Bausteinen.
+Durch Aktivierung von &quot;[!DNL Product Recommendations]&quot;im Seitenaufbau können Sie allen Inhalten, die im Seitenaufbau erstellt wurden, eine vorhandene aktive [Empfehlungseinheit](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) hinzufügen, z. B. Seiten, Bausteine und dynamische Bausteine.
 
-Siehe [Verwenden [!DNL Product Recommendations] mit Seitenaufbau-Inhalten](page-builder.md) für weitere Anweisungen.
+Weitere Anweisungen finden Sie unter [Verwenden von [!DNL Product Recommendations] mit Seitenaufbau-Inhalt](page-builder.md) .
 
 ### Hinzufügen des Empfehlungstyps für visuelle Ähnlichkeit {#vissimsupport}
 
-Die _Visuelle Ähnlichkeit_ Mit dem Empfehlungstyp können Sie eine Empfehlungseinheit für Ihre Produktdetailseite bereitstellen, die Produkte anzeigt, die [visuell ähnlich](type.md#visualsim) zum angezeigten Produkt hinzu. Dieser Empfehlungstyp ist am nützlichsten, wenn Bilder und visuelle Aspekte der Produkte wichtige Teile des Einkaufserlebnisses sind. Installieren Sie die _Visuelle Ähnlichkeit_ Empfehlungstyp durch Ausführen des folgenden Befehls:
+Mit dem Empfehlungstyp _Visuelle Ähnlichkeit_ können Sie eine Empfehlungseinheit für Ihre Produktdetailseite bereitstellen, die Produkte anzeigt, die [visuell ähnlich](type.md#visualsim) wie das angezeigte Produkt sind. Dieser Empfehlungstyp ist am nützlichsten, wenn Bilder und visuelle Aspekte der Produkte wichtige Teile des Einkaufserlebnisses sind. Installieren Sie den Empfehlungstyp _Visuelle Ähnlichkeit_ , indem Sie den folgenden Befehl ausführen:
 
 ```bash
 composer require magento/module-visual-product-recommendations
 ```
 
-## Konfigurieren [!DNL Product Recommendations] {#configure}
+## Konfigurieren von [!DNL Product Recommendations] {#configure}
 
-Nach der Installation `magento/product-recommendations` -Modul, müssen Sie die [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) durch Angabe von API-Schlüsseln und Auswahl eines SaaS-Datenspeichers.
+Nach der Installation des Moduls `magento/product-recommendations` müssen Sie den [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) konfigurieren, indem Sie API-Schlüssel angeben und einen SaaS-Datenspeicher auswählen.
 
-Um sicherzustellen, dass der Katalogexport ordnungsgemäß ausgeführt wird, überprüfen Sie, ob die Variable [cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) und [Indexer](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) ausgeführt werden und die `Product Feed` indexer ist auf `Update by Schedule`.
+Um sicherzustellen, dass der Katalogexport ordnungsgemäß ausgeführt wird, stellen Sie sicher, dass die [cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html)-Aufträge und die [Indexer](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) ausgeführt werden und der `Product Feed` Indexer auf `Update by Schedule` eingestellt ist.
 
-Wenn Sie über API-Schlüssel erfolgreich eine Verknüpfung zu Commerce Services herstellen und den SaaS-Datenraum angeben, beginnt die Katalogsynchronisierung. Sie können dann [verify](verify.md) dass Verhaltensdaten an Ihre Storefront gesendet werden.
+Wenn Sie über API-Schlüssel erfolgreich eine Verknüpfung zu Commerce Services herstellen und den SaaS-Datenraum angeben, beginnt die Katalogsynchronisierung. Anschließend können Sie [verifizieren](verify.md), dass Verhaltensdaten an Ihre Storefront gesendet werden.
 
-## Aktualisieren Sie Ihre [!DNL Product Recommendations] Installation {#update}
+## Aktualisieren der [!DNL Product Recommendations]-Installation {#update}
 
-Wie alle Adobe Commerce [!DNL Product Recommendations] verwendet Composer für Installation und Aktualisierung. So aktualisieren Sie die `magento/product-recommendations` -Modul ausführen, führen Sie Folgendes aus:
+Wie alle Adobe Commerce verwendet [!DNL Product Recommendations] den Composer für die Installation und Aktualisierung. Um das Modul `magento/product-recommendations` zu aktualisieren, führen Sie Folgendes aus:
 
 ```bash
 composer update magento/product-recommendations --with-dependencies
 ```
 
-Um auf eine Hauptversion zu aktualisieren, z. B. von 3.0 auf 4.0, müssen Sie den Stamm bearbeiten `composer.json` -Datei für Ihr Projekt. (Siehe [Versionshinweise](release-notes.md) für Informationen zur neuesten Version.) Lassen Sie uns beispielsweise den `composer.json` Datei und suchen Sie nach `magento/product-recommendations` -Modul:
+Um auf eine Hauptversion zu aktualisieren, z. B. von 3.0 auf 4.0, müssen Sie die Stammdatei `composer.json` für Ihr Projekt bearbeiten. (Informationen zur neuesten Version finden Sie in den [Versionshinweisen](release-notes.md) .) Öffnen wir beispielsweise die Hauptdatei `composer.json` und suchen Sie nach dem Modul `magento/product-recommendations`:
 
 ```json
 "require": {
@@ -75,7 +75,7 @@ Um auf eine Hauptversion zu aktualisieren, z. B. von 3.0 auf 4.0, müssen Sie de
 }
 ```
 
-Überspringen wir die Hauptversion von `3.0` nach `4.0`:
+Bringen wir die Hauptversion von `3.0` in `4.0`:
 
 ```json
 "require": {
@@ -85,13 +85,13 @@ Um auf eine Hauptversion zu aktualisieren, z. B. von 3.0 auf 4.0, müssen Sie de
 }
 ```
 
-Speichern Sie die `composer.json` Datei und führen Sie Folgendes aus:
+Speichern Sie die Datei &quot;`composer.json`&quot; und führen Sie Folgendes aus:
 
 ```bash
 composer update magento/product-recommendations --with-dependencies
 ```
 
-Oder wenn Sie die `magento/module-visual-product-recommendations` und `magento/module-page-builder-product-recommendations` -Module:
+Oder wenn Sie die Module `magento/module-visual-product-recommendations` und `magento/module-page-builder-product-recommendations` installiert haben:
 
 ```bash
 composer update --with-dependencies magento/product-recommendations magento/module-visual-product-recommendations magento/module-page-builder-product-recommendations
@@ -103,8 +103,8 @@ composer update --with-dependencies magento/product-recommendations magento/modu
 
 ## Firewalls
 
-Um Product Recommendations über eine Firewall zulassen, fügen Sie `commerce.adobe.io` zur Zulassungsliste.
+Um Product Recommendations über eine Firewall zulassen, fügen Sie der Zulassungsliste `commerce.adobe.io` hinzu.
 
-## Deinstallieren [!DNL Product Recommendations] {#uninstall}
+## Deinstallieren von [!DNL Product Recommendations] {#uninstall}
 
-Bei Bedarf können Sie [uninstall](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html) das Produkt-Recommendations-Modul.
+Bei Bedarf können Sie das Modul &quot;Produktempfehlungen&quot;[deinstallieren](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html).

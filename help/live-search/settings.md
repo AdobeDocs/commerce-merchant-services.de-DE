@@ -1,6 +1,6 @@
 ---
 title: "Einstellungen"
-description: "Konfigurieren Sie die Einstellungen für [!DNL Live Search] Dienst."
+description: "Konfigurieren Sie die Einstellungen für den  [!DNL Live Search] Dienst."
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
 source-git-commit: ba7e92d5b3aaabe6a8c71f86b0e4eab38aec9adf
 workflow-type: tm+mt
@@ -11,11 +11,11 @@ ht-degree: 0%
 
 # Einstellungen
 
-Verwenden Sie die *Einstellungen* Arbeitsbereich zum Konfigurieren der Preisfacettenbereiche und -intervalle und der Standardsprache für den Index.
+Verwenden Sie den Arbeitsbereich *Einstellungen* , um die Preisfacettenbereiche und -intervalle sowie die Standardsprache für den Index zu konfigurieren.
 
 Preisfacetten geben die Anzahl der Preisbereichsgruppen und die Verteilung der Preiswerte auf sie an.
 
-Die Spracheinstellung gibt die [!DNL Live Search] Dienst, der beim Schreiben des Index erwartet werden soll.
+Die Einstellung Sprache gibt dem [!DNL Live Search]-Dienst an, welche Sprache beim Schreiben des Index erwartet werden soll.
 
 ![Einstellungen](assets/settings.png)
 
@@ -23,11 +23,11 @@ Die Spracheinstellung gibt die [!DNL Live Search] Dienst, der beim Schreiben des
 
 Sie können die Anzahl der Preisbereichsgruppen und die Verteilung der Preiswerte auf diese Gruppen festlegen. Jeder Preisbereich überschneidet die vorherige Gruppe um eins. Beispielsweise werden für fünf Gruppen mit einem Intervall von 20 die folgenden Preisbereiche erstellt: 0-20, 20-40, 40-60, 60-80 und >80. Wenn nicht genügend Produkte im Katalog vorhanden sind, um alle definierten Bereiche auszufüllen, wird die Anzeige der verfügbaren Gruppen entsprechend angepasst. Beispiel: 0-20, 60-80, >80.
 
-1. Navigieren Sie im Admin zu **Marketing** > *SEO und Suche* > **[!DNL Live Search]**.
-1. Im **Einstellungen** Arbeitsbereich unter *Preisfacetten* führen Sie folgende Schritte aus:
-   * Geben Sie die **Anzahl der Auswahlen**, oder Preisgruppierungen, die verfügbar sein sollen. Es können bis zu 50 Preisgruppierungen definiert werden.
-   * Geben Sie die **Intervallwert** oder Preisbereich für jede Gruppe. Der Höchstwert beträgt 10.000.
-1. Klicks **Speichern**.
+1. Wechseln Sie im Admin zu **Marketing** > *SEO &amp; Suche* > **[!DNL Live Search]**.
+1. Führen Sie im Arbeitsbereich **Einstellungen** unter *Preisfacettierung* folgende Schritte aus:
+   * Geben Sie die **Anzahl der Auswahlen** oder die zu verfügbaren Preisgruppierungen ein. Es können bis zu 50 Preisgruppierungen definiert werden.
+   * Geben Sie den **Intervallwert** oder den Preisbereich für jede Gruppe ein. Der Höchstwert beträgt 10.000.
+1. Klicken Sie auf **Speichern**.
 
    Es dauert etwa 15 Minuten, bis die aktualisierten Einstellungen in der Storefront verfügbar sind.
 
@@ -40,7 +40,7 @@ Sie können die Anzahl der Preisbereichsgruppen und die Verteilung der Preiswert
 
 ## Sprache
 
-Die Spracheinstellung gibt Folgendes an: [!DNL Live Search] welche Sprache zu erwarten ist, wenn der Katalog gelesen und der Index geschrieben wird.
+Die Spracheinstellung gibt [!DNL Live Search] an, welche Sprache beim Lesen des Katalogs und Schreiben des Index erwartet werden soll.
 
 Sprachen haben unterschiedliche Regeln für die Grammatik: wie Wörter getrennt werden, Verb-Sätze und Wortformen, zum Beispiel.
 Die Einstellung Sprache stellt sicher, dass der richtige Regelsatz auf den Indizierungsmechanismus angewendet wird.

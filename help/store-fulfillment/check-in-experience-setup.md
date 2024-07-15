@@ -15,11 +15,11 @@ ht-degree: 0%
 
 Wenn Kunden zur Abholung eintreffen, verwenden sie das Formular &quot;Abholauftrag&quot;, um sich einzuchecken und Informationen über ihren Standort, ihre Automobilindustrie und ihr Automodell bereitzustellen. Diese Informationen werden über die Store-Hilfe-App an Store Associates gesendet, damit diese schnell aktuelle Abholaufträge bereitstellen können.
 
-![[!DNL Check-In Experience Car Make] und [!DNL Model] Einstellungen für die Cursor-Auswahl](assets/checkin-system-settings-car-options.png)
+![[!DNL Check-In Experience Car Make] - und [!DNL Model] -Einstellungen für den aktuellen Abruf](assets/checkin-system-settings-car-options.png)
 
 >[!NOTE]
 >
->Sie konfigurieren die Benutzeroberfläche des Formulars &quot;Abholauftrag&quot;über [Menü &quot;Speicherkonfiguration&quot;](merchant-store-configuration.md#configure-check-in-experience-interface-options). Sie können beispielsweise angeben, welche Eingabefelder angezeigt werden sollen und ob sie erforderlich oder optional sind.
+>Sie konfigurieren die Benutzeroberfläche des Formulars &quot;Abholauftrag&quot;über das Menü [Speicherkonfiguration](merchant-store-configuration.md#configure-check-in-experience-interface-options). Sie können beispielsweise angeben, welche Eingabefelder angezeigt werden sollen und ob sie erforderlich oder optional sind.
 
 
 ## Autoproduktion und Farbauswahl konfigurieren

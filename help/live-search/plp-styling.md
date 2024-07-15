@@ -1,27 +1,27 @@
 ---
 title: Seiten-Widget "Produktliste"
-description: Aktivieren und Gestalten der [!DNL Live Search Product Listing Page Widget]
+description: Aktivieren und Gestalten des [!DNL Live Search Product Listing Page Widget]
 exl-id: f7346a06-a8c7-4a33-8437-ea4f61d9281f
 source-git-commit: faf217486d57588d8535c1d605e963c91ec3ee68
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
 
 # Seiten-Widget &quot;Produktliste&quot;
 
-Die [!DNL Live Search Product Listing Page Widget] (PLP) verwendet die Commerce Services-Plattform, um eine leistungsfähige, durchsuchbare und facettenfähige Produktseite bereitzustellen. Hier wird beschrieben, wie Sie das PLP-Widget aktivieren und gestalten.
+Die [!DNL Live Search Product Listing Page Widget] (PLP) verwendet die Commerce Services-Plattform, um eine leistungsfähige, durchsuchbare und facettenfähige Produktanlistungsseite bereitzustellen. Hier wird beschrieben, wie Sie das PLP-Widget aktivieren und gestalten.
 
 ## Aktivieren des PLP-Widgets
 
-Wenn die Variable [!DNL Live Search] installiert ist, wird die Standardsuchfunktion in [!DNL Live Search] automatisch.
+Wenn der [!DNL Live Search] -Dienst installiert ist, wird die Standardsuchfunktion automatisch in [!DNL Live Search] umgewandelt.
 
-Die [!DNL Live Search] PLP-Widget ist für neue Installationen standardmäßig aktiviert. Wenn Sie ein Upgrade [!DNL Live Search] und das PLP-Widget bereits deaktiviert wurde, bleibt es so.
+Das Widget [!DNL Live Search] PLP ist für neue Installationen standardmäßig aktiviert. Wenn Sie [!DNL Live Search] aktualisieren und das PLP-Widget bereits deaktiviert wurde, bleibt dies so.
 
 >[!IMPORTANT]
 >
->Wenn die Variable [!DNL Live Search Product Listing Page Widget] aktiviert ist, kann die Sortierreihenfolge auf einer Produktlistenseite nicht geändert werden.
+>Wenn [!DNL Live Search Product Listing Page Widget] aktiviert ist, kann die Sortierreihenfolge auf einer Produktlistenseite nicht geändert werden.
 
 ## Widget-Funktionen
 
@@ -29,7 +29,7 @@ Das PLP-Widget bietet die folgenden nativen Funktionen:
 
 - Zum Warenkorb hinzufügen - Nur für einfache Produkte verfügbar.
 - Mehrere Bilder pro Produkt - Das Bild kann sich ändern, wenn für ein konfigurierbares Produkt eine andere Farbe ausgewählt wird.
-- Unterstützung für Farbmuster - Beachten Sie, dass das Farbattribut geschrieben werden muss `color` , damit der Code ordnungsgemäß validiert wird.
+- Unterstützung für Farbmuster - Beachten Sie, dass das Farbattribut `color` geschrieben werden muss, damit der Code ordnungsgemäß validiert wird.
 
 ### Anpassen des Widgets
 
@@ -39,7 +39,7 @@ Zusätzlich zu den vordefinierten Funktionen des PLP-Widgets können Sie das Wid
 - Unterstützung mehrerer Sprachen
 - Preisregler
 
-Informationen zum Anpassen des PLP-Widgets für die oben genannten Funktionen finden Sie in der `storefront-product-listing-page` Lesen Sie die folgenden Informationen: [repo](https://github.com/adobe/storefront-product-listing-page/).
+Informationen zum Anpassen des PLP-Widgets für die oben genannten Funktionen finden Sie unter `storefront-product-listing-page` readme im folgenden [repo](https://github.com/adobe/storefront-product-listing-page/) .
 
 >[!WARNING]
 >
@@ -47,11 +47,11 @@ Informationen zum Anpassen des PLP-Widgets für die oben genannten Funktionen fi
 
 ## Stilbeispiel
 
-Sie können das Erscheinungsbild des PLP-Widgets so anpassen, dass es zu Ihrer Site passt, indem Sie [CSS](https://developer.adobe.com/commerce/frontend-core/guide/css/).
+Sie können das Erscheinungsbild des PLP-Widgets so anpassen, dass es mit [CSS](https://developer.adobe.com/commerce/frontend-core/guide/css/) Ihrer Site entspricht.
 
 >[!NOTE]
 >
->Elemente mit benutzerdefinierten Klassen innerhalb eines Adobe Commerce-Designs werden nicht vererbt. Diese Elemente müssen von ihrer jeweiligen Klasse angesprochen werden, um mit den benutzerdefinierten Klassen übereinstimmen. Primäre Aktionsklassen funktionieren nicht mit Widget-Schaltflächen. Generische Targeting-Elemente innerhalb des CSS werden vererbt. `button` gilt für Widget-Schaltflächen.
+>Elemente mit benutzerdefinierten Klassen innerhalb eines Adobe Commerce-Designs werden nicht vererbt. Diese Elemente müssen von ihrer jeweiligen Klasse angesprochen werden, um mit den benutzerdefinierten Klassen übereinstimmen. Primäre Aktionsklassen funktionieren nicht mit Widget-Schaltflächen. Generische Targeting-Elemente innerhalb des CSS werden übernommen; `button` gilt für Widget-Schaltflächen.
 
 Die hervorgehobenen Divs enthalten die Zielklasse `ds-sdk-product-item__product-name`.
 
@@ -71,7 +71,7 @@ Passen Sie den Produktnamen an, indem Sie eine Regel hinzufügen, um sie in Gro�
 
 ### Produktliste
 
-- `.ds-sdk-product-list`: Externes div
+- `.ds-sdk-product-list`: Äußeres div
 - `.ds-sdk-product-list__grid`: Inner div
 
 ![Paginierung](assets/plp-css-product-list.png)
@@ -88,21 +88,21 @@ Passen Sie den Produktnamen an, indem Sie eine Regel hinzufügen, um sie in Gro�
 
 - `.ds-plp-pagination_item--current`
 
-![Aktuelles Element &quot;Paginierung&quot;](assets/plp-css-pagination-item-current.png)
+![Paginierung des aktuellen Elements](assets/plp-css-pagination-item-current.png)
 
 ### Widgets
 
-- `.ds-widgets`: Externes div
+- `.ds-widgets`: Äußeres div
 - `.ds-widgets__actions`: Linkes seitliches inneres Div
-- `.ds-widgets__results`: Rechtsseitiges inneres Div
+- `.ds-widgets__results`: Rechtes seitliches inneres Div
 
-![Widget-Ergebnisse](assets/plp-css-widgets.png)
+![Widget results](assets/plp-css-widgets.png)
 
 ### Sortieren-Dropdown
 
 - `.ds-sdk-sort-dropdown`
 
-![Sortieren-Dropdown](assets/plp-css-dropdown.png)
+![Sortieren-Dropdown-Liste](assets/plp-css-dropdown.png)
 
 - `.ds-sdk-sort-dropdown__button`
 
@@ -118,11 +118,11 @@ Passen Sie den Produktnamen an, indem Sie eine Regel hinzufügen, um sie in Gro�
 
 - `.ds-sdk-sort-dropdown__items--item-selected`
 
-![Ausgewähltes Element Dropdown](assets/plp-css-dropdown-selected.png)
+![Ausgewähltes Dropdown-Element](assets/plp-css-dropdown-selected.png)
 
 - `.ds-sdk-sort-dropdown__items--item-active`
 
-![Dropdown-aktive Auswahl](assets/plp-css-dropdown-active.png)
+![Aktive Dropdown-Auswahl](assets/plp-css-dropdown-active.png)
 
 ### Facets
 
@@ -131,7 +131,7 @@ Passen Sie den Produktnamen an, indem Sie eine Regel hinzufügen, um sie in Gro�
 - `.ds-plp-facets__header_title`
 - `.ds-plp-facets__header__clear-all`
 
-![Facet-Kopfzeilentitel](assets/plp-css-facets-title-clear.png){width="350"}
+![Kopfzeilentitel &quot;Facets&quot;](assets/plp-css-facets-title-clear.png){width="350"}
 
 - `.ds-plp-facets__pills`
 - `.ds-sdk-pill`
@@ -141,7 +141,7 @@ Passen Sie den Produktnamen an, indem Sie eine Regel hinzufügen, um sie in Gro�
 - `.ds-sdk-pill__label`
 - `.ds-sdk-pill__cta`
 
-![Facette-Bezeichnung](assets/plp-css-pill-label-cta.png){width="350"}
+![Facets-Bezeichnung](assets/plp-css-pill-label-cta.png){width="350"}
 
 - `.ds-plp-facets__list`
 
@@ -153,7 +153,7 @@ Passen Sie den Produktnamen an, indem Sie eine Regel hinzufügen, um sie in Gro�
 - `ds-sdk-product-item__product-swatch-item`
 - `.ds-sdk-input_fieldset_show-more`
 
-![Eingabe](assets/plp-css-sdk-input.png)
+![Input](assets/plp-css-sdk-input.png)
 
 - `.ds-sdk-labelled-input`
 
@@ -162,7 +162,7 @@ Passen Sie den Produktnamen an, indem Sie eine Regel hinzufügen, um sie in Gro�
 - `.ds-sdk-labelled-input__input`
 - `.ds-sdk-labelled-input__label`
 
-![Eingabebezeichnung](assets/plp-css-labelled-input-label.png)
+![Input label](assets/plp-css-labelled-input-label.png)
 
 ### Produktelement
 
@@ -190,5 +190,5 @@ Passen Sie den Produktnamen an, indem Sie eine Regel hinzufügen, um sie in Gro�
 
 So deaktivieren Sie das PLP-Widget:
 
-1. Navigieren Sie zu **Stores** > Einstellungen > **Konfiguration** > **[!DNL Live Search]** > **Storefront-Funktionen** und **Enable Product Listing Widgets** auf &quot;Nein&quot;.
-1. Auswählen **Konfiguration speichern** , um die Einstellung zu speichern.
+1. Wechseln Sie zu **Stores** > Einstellungen > **Konfiguration** > **[!DNL Live Search]** > **Storefront-Funktionen** und setzen Sie **Enable Product Listing Widgets** auf &quot;Nein&quot;.
+1. Wählen Sie **Konfiguration speichern** aus, um die Einstellung zu speichern.

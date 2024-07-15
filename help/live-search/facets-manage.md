@@ -1,10 +1,10 @@
 ---
 title: "Facets verwalten"
-description: "Erfahren Sie, wie Sie vorhandene verwalten [!DNL Live Search] Facetten."
+description: "Erfahren Sie, wie Sie vorhandene [!DNL Live Search] Facetten verwalten."
 exl-id: 1d51a36a-20d6-46b6-b379-11e46c8824a0
 source-git-commit: bce69f952e70e2e8dcb892357dea41e18f61e5f6
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
@@ -15,12 +15,12 @@ Befolgen Sie diese Anweisungen, um die Eigenschaften vorhandener Facetten zu akt
 
 ## Preisfacettengruppierungen konfigurieren
 
-Siehe Abschnitt [Einstellungen](settings.md) um Preisfacettenintervalle und -gruppierungen zu konfigurieren.
+Informationen zum Konfigurieren von Preisfacettierungsintervallen und -gruppierungen finden Sie unter [Einstellungen](settings.md) .
 
 ## Facette bearbeiten
 
 1. Suchen Sie die Facette, die Sie bearbeiten möchten.
-1. Wenn die Liste viele Facetten enthält, legen Sie *Filtern nach* auf einen der folgenden Werte zu:
+1. Wenn die Liste viele Facetten enthält, setzen Sie *Filtern nach* auf eine der folgenden Optionen:
 
    * Angeheftet
    * Dynamik
@@ -29,39 +29,39 @@ Siehe Abschnitt [Einstellungen](settings.md) um Preisfacettenintervalle und -gru
 
    ![Filterfacetten](assets/facets-filter-by-cropped.png)
 
-1. Um die Facetteneigenschaften zu bearbeiten, klicken Sie auf **Mehr** (...) Optionen.
-1. Klicks **Bearbeiten**
+1. Um die Facetteneigenschaften zu bearbeiten, klicken Sie auf die Optionen **Mehr** (...) .
+1. Klicken Sie auf **Bearbeiten**
 
-   ![Optionen bearbeiten](assets/facet-edit-menu.png)
+   ![Bearbeitungsoptionen](assets/facet-edit-menu.png)
 
 1. Führen Sie einen der folgenden Schritte aus, um die Facettenbeschriftung zu bearbeiten:
 
-   * Für [!DNL Commerce] storefront, bearbeiten Sie [Attributbezeichnung](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html).
+   * Bearbeiten Sie für eine [!DNL Commerce] -Storefront die [Attributbezeichnung](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html).
    * Klicken Sie bei einer Headless-Implementierung auf den Wert in der ersten Spalte und bearbeiten Sie den Text nach Bedarf.
 
    ![Titel bearbeiten](assets/facet-edit-label.png)
 
-1. (Nur Headless) Um die Methode zu ändern, die zum Sortieren von Facettenwerten verwendet wird, klicken Sie auf den Wert im *Sortiertyp* und wählen Sie eine der folgenden Optionen:
+1. (Nur Headless) Um die Methode zu ändern, die zum Sortieren von Facettenwerten verwendet wird, klicken Sie auf den Wert in der Spalte *Sortiertyp* und wählen Sie eine der folgenden Optionen:
 
    * Alphabetisch
    * Count
 
    ![Anzahl bearbeiten](assets/facets-edit-count.png)
 
-1. Im **Max. Wert** festlegen, legen Sie die maximale Anzahl (von 0 bis 10) der Facettenfilterwerte fest, die im Storefront angezeigt werden sollen.
-1. Wenn Sie fertig sind, klicken Sie auf **Speichern**.
+1. Legen Sie in der Spalte **Max. Wert** die maximale Anzahl (von 0 bis 10) der Facettenfilterwerte fest, die im Storefront angezeigt werden sollen.
+1. Klicken Sie nach Abschluss des Vorgangs auf **Speichern**.
 Ihre Änderungen werden erst dann in der Storefront angezeigt, nachdem sie veröffentlicht wurden.
 
 ## Facette des Pins/Entpin
 
-Der Pin ändert die Farbe, wenn darauf geklickt wird, und wird verwendet, um die Facette in die *Angeheftete Facetten* oder *Dynamische Facetten* Abschnitt.
+Der Pin ändert die Farbe, wenn darauf geklickt wird, und wird verwendet, um die Facette in den Abschnitt *Pinned Facets* oder *Dynamische Facets* zu verschieben.
 
-1. So veröffentlichen Sie eine Facette am oberen Rand des *Filter* Liste, suchen Sie die Facette im *Dynamische Facetten* und klicken Sie auf die graue Nadel (![Pin-Auswahl](assets/btn-pin-gray.png)).
-Der Stift wird blau und die Facette wechselt zur *Angeheftete Facetten* Abschnitt.
-1. Um eine Facette zu entschlüsseln, suchen Sie die Facette im *Angeheftete Facetten* und klicken Sie auf den blauen Stift (![Pin-Auswahl](assets/btn-pin-blue.png)).
-Die Nadel wird grau und die Facette wechselt zur *Dynamische Facetten* Abschnitt.
+1. Um eine Facette am Anfang der Liste *Filter* zu veröffentlichen, suchen Sie die Facette in der Liste *Dynamische Facets* und klicken Sie auf den grauen Pin (![Pin-Selektor](assets/btn-pin-gray.png)).
+Der Stift wird blau und die Facette wechselt zum Abschnitt *Angeheftete Facets* .
+1. Um die Facette zu entsperren, suchen Sie die Facette in der Liste *Angeheftete Facets* und klicken Sie auf den blauen Pin (![Pin-Selektor](assets/btn-pin-blue.png)).
+Der Pin wird grau und die Facette wechselt zum Abschnitt *Dynamische Facets* .
 
-   ![Gesteitete und dynamische Facetten](assets/facets-pinned-unpinned.png)
+   ![Verpinnte und dynamische Facetten](assets/facets-pinned-unpinned.png)
 
 >[!NOTE]
 >
@@ -71,22 +71,22 @@ Die Nadel wird grau und die Facette wechselt zur *Dynamische Facetten* Abschnitt
 
 >[!NOTE]
 >
->Die Reihenfolge von fixierten Facetten wird nur in Headless-Implementierungen unterstützt. Wenn geordnete Facetten benötigt werden, verwenden Sie die [!DNL Live Search] PLP-Widget.
+>Die Reihenfolge von fixierten Facetten wird nur in Headless-Implementierungen unterstützt. Wenn geordnete Facetten benötigt werden, verwenden Sie das PLP-Widget [!DNL Live Search] .
 
-Die Reihenfolge der fixierten Facetten kann geändert werden, indem die Zeile an eine andere Position verschoben wird. Verfestigte Facetten haben eine *Verschieben* Symbol (![Auswahl verschieben](assets/btn-move.png)) am Anfang der Zeile. Im Gegensatz zu fixierten Facetten können dynamische Facetten nicht verschoben werden.
+Die Reihenfolge der fixierten Facetten kann geändert werden, indem die Zeile an eine andere Position verschoben wird. Versteckte Facetten haben am Anfang der Zeile ein *Verschieben* -Symbol (![Verschieben-Selektor](assets/btn-move.png)). Im Gegensatz zu fixierten Facetten können dynamische Facetten nicht verschoben werden.
 
-1. Suchen Sie die Facette im *Angeheftete Facetten* der Liste.
-1. Verwenden Sie die **Verschieben** (![Auswahl verschieben](assets/btn-move.png)), um die Zeile an eine neue Position im *Angeheftete Facetten* Abschnitt.
-Nach der Veröffentlichung der Änderungen werden die neu sortierten Facetten in der Storefront angezeigt *Filter* Liste.
+1. Suchen Sie die Facette im Abschnitt *Angeheftete Facets* der Liste.
+1. Verwenden Sie das Symbol **Verschieben** (![Auswahl verschieben](assets/btn-move.png)), um die Zeile an eine neue Position im Abschnitt *Angeheftete Facets* zu ziehen.
+Nachdem die Änderungen veröffentlicht wurden, werden die neu sortierten Facetten in der Storefront-Liste *Filter* angezeigt.
 
 ## Facette löschen
 
-1. Suchen Sie die Facette in der Liste und klicken Sie auf **Mehr** (...) Optionen.
-1. Klicks **Löschen**.
-1. Klicken Sie bei Aufforderung zur Bestätigung auf **Facette löschen**.
+1. Suchen Sie die Facette in der Liste und klicken Sie auf die Optionen **Mehr** (...).
+1. Klicken Sie auf **Löschen**.
+1. Wenn Sie zur Bestätigung aufgefordert werden, klicken Sie auf **Facette löschen**.
 Die Facette wird aus der Storefront entfernt, nachdem die Änderungen veröffentlicht wurden.
 
-## Veröffentlichungsänderungen
+## Publish-Änderungen
 
-1. Um die Storefront mit Ihren Änderungen zu aktualisieren, klicken Sie auf **Veröffentlichungsänderungen**.
+1. Um die Storefront mit Ihren Änderungen zu aktualisieren, klicken Sie auf **Publish changes**.
 1. Warten Sie etwa 15 Minuten, bis die Aktualisierungen in Ihrem Store angezeigt werden.

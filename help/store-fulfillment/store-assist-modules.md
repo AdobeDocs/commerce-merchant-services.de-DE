@@ -16,17 +16,17 @@ ht-degree: 0%
 
 Die Store-Hilfe-App stellt Store Associates mit vier Modulen zur Verfügung, um den In-Store-Erfüllungsprozess für Online-Käufe zu verwalten und Bestellungen im Geschäft abzuholen:
 
-- **[Auswahl](#pick-module)**—Erhalten Sie vollständige Einsicht in alle bestellten Artikel und die Tools, um sicherzustellen, dass die richtigen Artikel und Mengen ausgewählt werden. Speicherverknüpfungen können eine oder mehrere Bestellungen gleichzeitig auswählen, um eine höhere Effizienz zu erzielen.
+- **[Auswählen](#pick-module)**: Erhalten Sie vollständige Sichtbarkeit aller bestellten Artikel und der Tools, um sicherzustellen, dass die richtigen Artikel und Mengen ausgewählt werden. Speicherverknüpfungen können eine oder mehrere Bestellungen gleichzeitig auswählen, um eine höhere Effizienz zu erzielen.
 
-- **[Staging](#stage-module)**- Geben Sie den Ort ein, an dem Bestellungen aufgegeben werden, während Kunden zum Geschäft reisen, damit Store Associates Bestellungen schneller finden und abgeben können.
+- **[Bühne](#stage-module)**: Geben Sie den Ort ein, an dem Bestellungen aufgegeben werden, während Kunden zum Store reisen, damit Store Associates Bestellungen schneller finden und abgeben können.
 
-- **[Hand aus](#hand-off-module)**- Rufen Sie Benachrichtigungen in Echtzeit ab, nachdem Kunden in den Speicher eintreffen, um ihre Wartezeit zu minimieren und Aufträge nahtlos zu senden.
+- **[Aus](#hand-off-module)**: Rufen Sie Echtzeit-Benachrichtigungen ab, nachdem Kunden in den Speicher eintreffen, um ihre Wartezeit und die Übergabe von Bestellungen nahtlos zu minimieren.
 
-- **[Bestellungen](#orders-module)**—Zeigen Sie eine Liste aller Bestellungen an, die für einen Store aufgegeben werden, sodass jeder die Anzahl der Bestellungen und den Status jeder Bestellung kennt.
+- **[Bestellungen](#orders-module)**: Zeigen Sie eine Liste aller Bestellungen an, die für einen Store aufgegeben wurden, sodass jeder die Anzahl der Bestellungen und den Status jeder Bestellung kennt.
 
 >[!NOTE]
 >
->Bevor Store Associates die Store Assist-App verwenden können, muss ein Administrator die [App-Setup-Prozess](app-setup.md).
+>Bevor Store Associates die Store-Hilfe-App verwenden kann, muss ein Administrator den [App-Einrichtungsprozess](app-setup.md) abschließen.
 
 ## Auswahlmodul
 
@@ -53,7 +53,7 @@ Sie können auch einfach den Staging-Speicherort in der App aktualisieren, wenn 
 
 ## Hand-Aus-Modul
 
-Die [!UICONTROL Hand Off] zeigt an, welche Kunden eingecheckt haben, um ihre Bestellungen aufzunehmen, wo ihre Bestellungen abgespielt werden und auf sie warten. Die Kunden können Bestellungen entweder im Laden oder auf dem Parkplatz außerhalb/außerhalb abholen. Die Informationen über ihren genauen Standort werden in diesem Modul nach dem Einchecken angezeigt.
+Das Modul [!UICONTROL Hand Off] zeigt an, welche Kunden eingecheckt haben, um ihre Bestellungen aufzunehmen, wo ihre Bestellungen abgespielt werden und auf sie warten. Die Kunden können Bestellungen entweder im Laden oder auf dem Parkplatz außerhalb/außerhalb abholen. Die Informationen über ihren genauen Standort werden in diesem Modul nach dem Einchecken angezeigt.
 
 Sobald Sie eine Bestellung auswählen, die für die Kundenkasse bereit ist. Jeder kann die Bestellinformationen sehen, einschließlich aller Artikel, die nicht gefunden wurden, des Kundenstandorts, der Wartezeit, des Staging der Bestellung und der Telefonnummer des Kunden, sofern verfügbar.
 

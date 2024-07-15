@@ -19,7 +19,7 @@ Store Fulfillment bietet eine erweiterte Reihe von Transaktions-E-Mail-Vorlagen,
 
 E-Mail-Vorlagen für die Store-Erfüllung werden mit Standardnachrichten und -Einstellungen konfiguriert. Merchant-Administratoren in Adobe Commerce können Konfigurationen verwalten und ändern sowie E-Mail-Vorlagen auswählen, um mit Kunden in unterschiedlichen Szenarien zu kommunizieren. Administratoren können Vorlagen auch konfigurieren und anpassen.
 
-Konfigurieren Sie die Vorlagen für Verkaufs-E-Mails über den Administrator: **[!UICONTROL Stores > Configuration > Sales > Sales Emails]**.
+Konfigurieren Sie die Vorlagen für Verkaufs-E-Mails über Admin: **[!UICONTROL Stores > Configuration > Sales > Sales Emails]**.
 
 ## E-Mails - Allgemeine Einstellungen
 
@@ -34,7 +34,7 @@ Konfigurieren Sie die Vorlagen für Verkaufs-E-Mails über den Administrator: **
 </thead>
 <tbody><tr>
 <td><strong>Asynchrones Senden</strong></td>
-<td>Bestimmt, ob Verkaufs-E-Mails asynchron gesendet werden. Optionen: <br/>**`Deaktivieren`** - (Standard) E-Mails zum Verkauf werden gesendet, wenn sie durch ein Ereignis ausgelöst werden. Verwenden Sie die Standardeinstellung, um die schnellste Kommunikations- und Reaktionszeit für die Store-Abholung zu erhalten. <br/>**`Enable`** - Durch Aktivierung dieser Option werden Prozesse, die E-Mail-Benachrichtigungen zum Checkout und zur Bestellverarbeitung in den Hintergrund versetzen und in vordefinierten, regelmäßigen Abständen gesendet werden.</td>
+<td>Bestimmt, ob Verkaufs-E-Mails asynchron gesendet werden. Optionen: <br/>*** Deaktivieren`** - (Standard) E-Mails zum Verkauf werden gesendet, wenn sie durch ein Ereignis ausgelöst werden. Verwenden Sie die Standardeinstellung, um die schnellste Kommunikations- und Reaktionszeit für die Store-Abholung zu erhalten. <br/>***`Aktivieren`** - Durch Aktivierung dieser Option werden Prozesse, die E-Mail-Benachrichtigungen zum Checkout und zur Bestellverarbeitung verarbeiten, in vordefinierten, regelmäßigen Abständen in den Hintergrund verschoben.</td>
 <td>Store-Ansicht</td>
 <td>Nein</td>
 </tr>
@@ -207,7 +207,7 @@ Konfigurieren Sie die Vorlagen für Verkaufs-E-Mails über den Administrator: **
 </thead>
 <tbody><tr>
 <td><strong>Aktiviert</strong></td>
-<td>Diese E-Mail wird an den Kunden gesendet, um ihn darüber zu informieren, dass sein Auftrag im Kaufhaus storniert wurde. Legen Sie <code>No</code> , um die E-Mail-Benachrichtigung zu deaktivieren. Wenn die E-Mail-Vorlage deaktiviert ist, verhindert diese Funktion nicht, dass eine Bestellung abgebrochen wird.</td>
+<td>Diese E-Mail wird an den Kunden gesendet, um ihn darüber zu informieren, dass sein Auftrag im Kaufhaus storniert wurde. Setzen Sie dies auf <code>No</code> , um die E-Mail-Benachrichtigung zu deaktivieren. Wenn die E-Mail-Vorlage deaktiviert ist, verhindert diese Funktion nicht, dass eine Bestellung abgebrochen wird.</td>
 <td>Store-Ansicht</td>
 <td>Nein</td>
 </tr>
@@ -257,7 +257,7 @@ Konfigurieren Sie die Vorlagen für Verkaufs-E-Mails über den Administrator: **
 </thead>
 <tbody><tr>
 <td><strong>Aktiviert</strong></td>
-<td>Diese E-Mail wird an den Kunden gesendet, um ihn darüber zu informieren, dass ein Teil seiner Bestellung im Kaufhaus storniert wurde. Legen Sie <code>No</code> , um die E-Mail-Benachrichtigung zu deaktivieren. Wenn die E-Mail-Vorlage deaktiviert ist, wird eine teilweise Stornierung einer Bestellung nicht verhindert.</td>
+<td>Diese E-Mail wird an den Kunden gesendet, um ihn darüber zu informieren, dass ein Teil seiner Bestellung im Kaufhaus storniert wurde. Setzen Sie dies auf <code>No</code> , um die E-Mail-Benachrichtigung zu deaktivieren. Wenn die E-Mail-Vorlage deaktiviert ist, wird eine teilweise Stornierung einer Bestellung nicht verhindert.</td>
 <td>Store-Ansicht</td>
 <td>Nein</td>
 </tr>
@@ -312,8 +312,8 @@ Konfigurieren Sie die Vorlagen für Verkaufs-E-Mails über den Administrator: **
 </thead>
 <tbody><tr>
 <td><strong>Auftrag enthält Versand zum Speichern von Produkten E-Mail-Absender</strong></td>
-<td>E-Mail an spezifiziertes Handelspersonal als aggregierten Bericht aller offenen Aufträge, die erst dann in einem Händlerspeicher ausgewählt werden können, wenn ihr Inventar verfügbar ist. </br></br> Händler können diesen Bericht verwenden, um Lagerbestandsübertragungen oder -nachbefüllungen zu initiieren und zu verwalten. </br></br>Diese Benachrichtigung gilt nur, wenn die Variable [!DNL Ship-to-Store] -Funktionen aktiviert sind.
-</br></br>Dieses Etikett hat keine Auswirkungen auf den ausgewählten Versandunternehmen oder dessen verfügbare Versandmethodenbeschriftungen.</td>
+<td>E-Mail an spezifiziertes Handelspersonal als aggregierten Bericht aller offenen Aufträge, die erst dann in einem Händlerspeicher ausgewählt werden können, wenn ihr Inventar verfügbar ist. </br></br> Händler können diesen Bericht verwenden, um Lagerbestandsübertragungen oder -nachbefüllung zu initiieren und zu verwalten. </br></br>Diese Benachrichtigung gilt nur, wenn die [!DNL Ship-to-Store] -Funktionen aktiviert sind.
+</br></br>Diese Bezeichnung wirkt sich nicht auf den ausgewählten Versandunternehmen oder dessen verfügbare Versandmethodenbeschriftungen aus.</td>
 <td>Store-Ansicht</td>
 <td>Nein</td>
 </tr>
@@ -333,7 +333,7 @@ Konfigurieren Sie die Vorlagen für Verkaufs-E-Mails über den Administrator: **
 
 >[!NOTE]
 >
->Wenn Sie Aufstockungen zulassen, müssen Sie eine Administrator-E-Mail-Adresse angeben, um Benachrichtigungen zu diesen Bestellungen zu erhalten. Fügen Sie die Adresse den folgenden Konfigurationseinstellungen hinzu: **[!UICONTROL Send Order Delayed Email Copy To]** im [Bestellverzögerung](#order-delayed) Vorlage und [!UICONTROL Ship To Store Email Recipients] im [Zur Kasse schicken](#ship-to-store) Vorlage.
+>Wenn Sie Aufstockungen zulassen, müssen Sie eine Administrator-E-Mail-Adresse angeben, um Benachrichtigungen zu diesen Bestellungen zu erhalten. Fügen Sie die Adresse zu den folgenden Konfigurationseinstellungen hinzu: **[!UICONTROL Send Order Delayed Email Copy To]** in der Vorlage [Auftragsverzögerung](#order-delayed) und [!UICONTROL Ship To Store Email Recipients] in der Vorlage [Zum Speicher versenden](#ship-to-store) .
 
 
 

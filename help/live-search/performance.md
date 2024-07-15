@@ -1,6 +1,6 @@
 ---
 title: "Leistung"
-description: '"Die [!DNL Live Search] Der Arbeitsbereich "Leistung"bietet Einblicke in die Suchbegriffe, die Käufer verwenden."'
+description: '"Der Arbeitsbereich "Leistung"bietet Einblicke in die Suchbegriffe, die von Käufern verwendet werden." [!DNL Live Search] '
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
 source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Leistung
 
-Die *Leistung* Workspace bietet Einblicke in die Suchbegriffe, die von Käufern verwendet werden. Die Informationen können verwendet werden, um Trends zu identifizieren, die Clickthrough-Rate zu erhöhen und die Konversionsrate zu verbessern. Der Arbeitsbereich &quot;Leistung&quot;bietet eine Momentaufnahme der Suchmetriken für einen bestimmten Datumsbereich und enthält die folgenden Berichte:
+Der Arbeitsbereich *Leistung* bietet Einblicke in die Suchbegriffe, die von Käufern verwendet werden. Die Informationen können verwendet werden, um Trends zu identifizieren, die Clickthrough-Rate zu erhöhen und die Konversionsrate zu verbessern. Der Arbeitsbereich &quot;Leistung&quot;bietet eine Momentaufnahme der Suchmetriken für einen bestimmten Datumsbereich und enthält die folgenden Berichte:
 
 * Einzelsuche
 * Null Ergebnisse
@@ -19,11 +19,11 @@ Die *Leistung* Workspace bietet Einblicke in die Suchbegriffe, die von Käufern 
 
 ![Leistung](assets/performance-unique-searches.png)
 
-Weitere Informationen finden Sie unter [Data Management Dashboard](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) für weitere Daten zur Datensynchronisation.
+Weitere Informationen zur Datensynchronisation finden Sie auch im [Dashboard zur Datenverwaltung](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) .
 
 ## Bericht anzeigen
 
-1. So geben Sie **Datumsbereich** klicken Sie auf den Kalender (![Kalender](assets/btn-calendar.png)) und führen Sie einen der folgenden Schritte aus:
+1. Um den **Datumsbereich** einzugeben, klicken Sie auf den Kalender (![Kalender](assets/btn-calendar.png)) und führen Sie einen der folgenden Schritte aus:
 
    * Um ein einzelnes Datum anzugeben, doppelklicken Sie auf das Datum im Kalender.
    * Um einen Datumsbereich festzulegen, klicken Sie auf das erste und letzte Datum im Kalender.

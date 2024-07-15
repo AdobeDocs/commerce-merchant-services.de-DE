@@ -6,24 +6,24 @@ role: Admin, Developer
 feature: Personalization, Integration, Eventing
 source-git-commit: 4a5877d6e1a5c7d840e36f4913306b0c440bbac5
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
 
 # Erstellen benutzerdefinierter Ereignisse
 
-Sie können die [Eventplattform](events.md) durch Erstellung eigener Storefront-Ereignisse, um branchenspezifische Daten zu erfassen. Wenn Sie ein benutzerspezifisches Ereignis erstellen und konfigurieren, wird es an die [Adobe Commerce Events Collector](https://github.com/adobe/commerce-events/tree/main/packages/storefront-events-collector).
+Sie können die [Eventing-Plattform](events.md) erweitern, indem Sie eigene Storefront-Ereignisse erstellen, um branchenspezifische Daten zu erfassen. Wenn Sie ein benutzerspezifisches Ereignis erstellen und konfigurieren, wird es an den [Adobe Commerce-Ereigniskollektor](https://github.com/adobe/commerce-events/tree/main/packages/storefront-events-collector) gesendet.
 
 ## Umgang mit benutzerdefinierten Ereignissen
 
 Benutzerdefinierte Ereignisse werden nur für Adobe Experience Platform unterstützt. Benutzerdefinierte Daten werden nicht an Adobe Commerce-Dashboards und -Metriken-Tracker weitergeleitet.
 
-Für alle `custom` -Ereignis, der Kollektor:
+Für jedes `custom` -Ereignis führt der Kollektor Folgendes aus:
 
-- Hinzufügungen `identityMap` mit `ECID` als primäre Identität
-- Enthält `email` in `identityMap` als sekundäre Identität _if_ `personalEmail.address` im Ereignis festgelegt ist
-- Umfasst das vollständige Ereignis in einer `xdm` -Objekt vor der Weiterleitung an Edge
+- Fügt `identityMap` mit `ECID` als primäre Identität hinzu
+- Umfasst `email` in `identityMap` als sekundäre Identität _wenn_ `personalEmail.address` im Ereignis festgelegt ist
+- Schließt das vollständige Ereignis in ein `xdm` -Objekt ein, bevor es an die Edge weitergeleitet wird
 
 Beispiel:
 
@@ -75,7 +75,7 @@ In Experience Platform Edge:
 
 Attributüberschreibungen für Standardereignisse werden nur für die Experience Platform unterstützt. Benutzerdefinierte Daten werden nicht an Commerce-Dashboards und -Metriken-Tracker weitergeleitet.
 
-Für jedes Ereignis mit `customContext`, überschreibt der Kollektor die in den relevanten Kontexten festgelegten Verknüpfungsfelder mit Feldern in `customContext`. Der Anwendungsfall für Außerkraftsetzungen besteht darin, dass ein Entwickler Kontexte wiederverwenden und erweitern möchte, die von anderen Teilen der Seite in bereits unterstützten Ereignissen festgelegt wurden.
+Bei jedem Ereignis mit `customContext` überschreibt der Kollektor die in den relevanten Kontexten festgelegten Felder mit den Feldern in `customContext`. Der Anwendungsfall für Außerkraftsetzungen besteht darin, dass ein Entwickler Kontexte wiederverwenden und erweitern möchte, die von anderen Teilen der Seite in bereits unterstützten Ereignissen festgelegt wurden.
 
 >[!NOTE]
 >

@@ -7,37 +7,37 @@ feature: Shipping/Delivery, Integration, Tools and External Services, Configurat
 exl-id: d09c4652-e2eb-49dc-8c42-2aa9b6be5d6b
 source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '167'
 ht-degree: 0%
 
 ---
 
 # Speicherort und Einrichtung der Zuordnung
 
-Aktivieren Sie die Speicherstandort- und Zuordnungsfunktionen für die Store-Ausführung, indem Sie eine [Fernabsatzanbieter](https://docs.magento.com/user-guide/catalog/inventory-configure-distance-priority.html) , um nach Einzelhandelsspeicherorten zu suchen.
+Aktivieren Sie die Speicherstandort- und Zuordnungsfunktionen für die Store-Erfüllung, indem Sie einen [Entfernungsanbieter](https://docs.magento.com/user-guide/catalog/inventory-configure-distance-priority.html) konfigurieren, um nach Einzelhandelsspeicherorten zu suchen.
 
-**Voraussetzungen**
+**Anforderungen**
 
-Während des Konfigurationsprozesses stellen Sie einen Google-API-Schlüssel für die Google Maps-Plattform bereit. Wenn Sie keine haben, [eine aus der Google Maps-Plattform generieren](https://docs.magento.com/user-guide/catalog/inventory-configure-distance-priority.html#configure-google-maps).
+Während des Konfigurationsprozesses stellen Sie einen Google-API-Schlüssel für die Google Maps-Plattform bereit. Wenn Sie noch keine haben, generieren Sie [eine von der Google Maps-Plattform](https://docs.magento.com/user-guide/catalog/inventory-configure-distance-priority.html#configure-google-maps).
 
 So konfigurieren Sie den Entfernungsanbieter:
 
-1. Aus dem **[!UICONTROL Stores > General]** -Konfiguration in Admin die Google Maps-Integration für den Inhaltstyp &quot;Map&quot;hinzufügen.
+1. Fügen Sie aus der Konfiguration **[!UICONTROL Stores > General]** in Admin die Google Maps-Integration für den Inhaltstyp Zuordnung hinzu.
 
-   - Navigieren Sie zu **[!UICONTROL Stores > Configuration  > General > Content Management]**.
+   - Wechseln Sie zu &quot;**[!UICONTROL Stores > Configuration  > General > Content Management]**&quot;.
 
-   - Hinzufügen Ihres Google-API-Schlüssels zu **[!UICONTROL Google Maps API Key]** -Feld.
+   - Fügen Sie Ihren Google-API-Schlüssel zum Feld **[!UICONTROL Google Maps API Key]** hinzu.
 
-1. Aus dem **[!UICONTROL Stores > Inventory]** -Konfiguration in der Admin-Konfiguration wählen Sie den Entfernungsanbieter für Store-Erfüllung aus.
+1. Wählen Sie in der Konfiguration **[!UICONTROL Stores > Inventory]** in Admin den Entfernungsanbieter für Store Fulfillment aus.
 
-   - Navigieren Sie zu **[!UICONTROL Stores > Configuration > Catalog > Inventory]**.
+   - Wechseln Sie zu &quot;**[!UICONTROL Stores > Configuration > Catalog > Inventory]**&quot;.
 
-   - Erweitern Sie die **[!UICONTROL Distance Provider for Distance Based SSA]** Abschnitt.
+   - Erweitern Sie den Abschnitt **[!UICONTROL Distance Provider for Distance Based SSA]** .
 
-   - Legen Sie die **Anbieter** nach **Google Map**.
+   - Stellen Sie den **Provider** auf **Google Map** ein.
 
 1. Konfigurieren Sie die Einstellungen für **[!UICONTROL Google Distance Provider]**.
 
-   - Fügen Sie Ihre **Google-API-Schlüssel**.
+   - Fügen Sie Ihren **Google-API-Schlüssel** hinzu.
 
-   - Satz **[!UICONTROL Computation Mode]** nach `Driving` und **[!UICONTROL Value]** nach `Distance`
+   - Setzen Sie **[!UICONTROL Computation Mode]** auf `Driving` und **[!UICONTROL Value]** auf `Distance`

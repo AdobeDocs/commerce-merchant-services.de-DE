@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über Verhaltensdaten und wann Sie mit der Verwen
 exl-id: d68a97b9-1497-4603-a72c-4aaaf6e048cb
 source-git-commit: 840b091638aedd3f6ac097a010d035eff997ffe2
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '647'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,9 @@ Einige Empfehlungstypen verwenden Verhaltensdaten Ihrer Kunden, um Modelle für 
 - `More like this`
 - `Visual similarity`
 
-Wann können Sie also mit der Verwendung von Empfehlungstypen beginnen, die Verhaltensdaten verwenden? Es kommt darauf an. Dies wird als _Kaltstart_ Problem.
+Wann können Sie also mit der Verwendung von Empfehlungstypen beginnen, die Verhaltensdaten verwenden? Es kommt darauf an. Dies wird als das Problem _Cold Start_ bezeichnet.
 
-Die _Kaltstart_ -Problem ist ein Maß dafür, wie viel Zeit ein Modell trainieren muss, bevor es als qualitativ hochwertig betrachtet werden kann. In Produktempfehlungen bedeutet dies, dass darauf gewartet wird, dass Adobe Sensei seine maschinellen Lernmodelle trainiert, bevor Empfehlungseinheiten auf Ihrer Site bereitgestellt werden. Je mehr Daten diese Modelle haben, desto genauer und nützlicher sind die Empfehlungen. Die Erfassung dieser Daten nimmt Zeit in Anspruch und variiert je nach Traffic-Volumen. Da diese Daten nur auf einer Produktionssite erfasst werden können, ist es in Ihrem Interesse, die Datenerfassung dort so früh wie möglich bereitzustellen. Sie können dies durch [Installation und Konfiguration](install-configure.md) die `magento/production-recommendations` -Modul.
+Das Problem _Cold Start_ ist ein Maß dafür, wie viel Zeit ein Modell trainieren muss, bevor es als qualitativ hochwertig betrachtet werden kann. In Produktempfehlungen bedeutet dies, dass darauf gewartet wird, dass Adobe Sensei seine maschinellen Lernmodelle trainiert, bevor Empfehlungseinheiten auf Ihrer Site bereitgestellt werden. Je mehr Daten diese Modelle haben, desto genauer und nützlicher sind die Empfehlungen. Die Erfassung dieser Daten nimmt Zeit in Anspruch und variiert je nach Traffic-Volumen. Da diese Daten nur auf einer Produktionssite erfasst werden können, ist es in Ihrem Interesse, die Datenerfassung dort so früh wie möglich bereitzustellen. Dies können Sie tun, indem Sie [das Modul `magento/production-recommendations` installieren und konfigurieren.](install-configure.md)
 
 Die folgende Tabelle enthält einige allgemeine Anleitungen für die Zeit, die benötigt wird, um genügend Daten für jeden Empfehlungstyp zu sammeln:
 
@@ -35,18 +35,18 @@ Andere Variablen, die sich auf die zum Trainieren benötigte Zeit auswirken kön
 - Einige Empfehlungstypen trainieren schneller als andere
 - Adobe Commerce berechnet Verhaltensdaten alle vier Stunden neu. Je länger sie auf Ihrer Site verwendet werden, desto genauer wird Recommendations.
 
-Um den Trainings-Fortschritt der einzelnen Empfehlungstypen zu visualisieren, muss die [Empfehlung erstellen](create.md) Seite zeigt die Indikatoren zur Bereitschaft an.
+Um Ihnen bei der Visualisierung des Trainings-Fortschritts der einzelnen Empfehlungstypen zu helfen, zeigt die Seite [Empfehlung erstellen](create.md) Bereitschaftsindikatoren an.
 
-Während Daten auf Produktions- und maschinellen Lernmodellen erfasst werden, können Sie die [verbleibende Aufgaben](implementation-workflow.md) erforderlich, um Empfehlungen für Ihre Storefront bereitzustellen. Wenn Sie die Tests und Konfiguration von Empfehlungen abgeschlossen haben, haben die Modelle für maschinelles Lernen genügend Daten gesammelt und berechnet, um relevante Empfehlungen zu erstellen, sodass Sie die Empfehlungen in Ihrer Storefront bereitstellen können.
+Während Daten auf Produktions- und maschinellen Lernmodellen erfasst werden, können Sie die [verbleibenden Aufgaben](implementation-workflow.md) implementieren, die erforderlich sind, um Empfehlungen für Ihre Storefront bereitzustellen. Wenn Sie die Tests und Konfiguration von Empfehlungen abgeschlossen haben, haben die Modelle für maschinelles Lernen genügend Daten gesammelt und berechnet, um relevante Empfehlungen zu erstellen, sodass Sie die Empfehlungen in Ihrer Storefront bereitstellen können.
 
 Wenn der Traffic für die meisten SKUs unzureichend ist (Ansichten, gekaufte Produkte, Trends), liegen möglicherweise nicht genügend Daten vor, um den Lernprozess abzuschließen. Dies kann dazu führen, dass der Bereitschaftsindikator im Admin so aussieht, als wäre er blockiert.
 Die Bereitschaftsindikatoren sollen Händlern einen weiteren Datenpunkt bei der Auswahl des Empfehlungstyps bieten, der für ihren Store besser ist. Die Zahlen sind ein Leitfaden und werden möglicherweise nie 100 % erreichen.
 
 ## Reserveempfehlungen {#backuprecs}
 
-Wenn nicht genügend Eingabedaten vorhanden sind, um alle angeforderten Empfehlungselemente in einer Einheit bereitzustellen, bietet Adobe Commerce Ersatzempfehlungen zum Ausfüllen von Empfehlungseinheiten. Wenn Sie beispielsweise die `Recommended for you` Empfehlungstyp auf Ihrer Homepage verwenden, hat ein Erstkäufer Ihrer Site nicht genügend Verhaltensdaten generiert, um genau empfohlene personalisierte Produkte zu erzielen. In diesem Fall überdeckt Adobe Commerce Elemente basierend auf dem `Most viewed` Empfehlungstyp an diesen Kunden.
+Wenn nicht genügend Eingabedaten vorhanden sind, um alle angeforderten Empfehlungselemente in einer Einheit bereitzustellen, bietet Adobe Commerce Ersatzempfehlungen zum Ausfüllen von Empfehlungseinheiten. Wenn Sie beispielsweise den Empfehlungstyp &quot;`Recommended for you`&quot;auf Ihrer Homepage bereitstellen, hat ein Erstkäufer Ihrer Site nicht genügend Verhaltensdaten generiert, um genau empfohlene personalisierte Produkte zu erzielen. In diesem Fall überdeckt Adobe Commerce Artikel basierend auf dem Empfehlungstyp `Most viewed` für diesen Käufer.
 
-Die folgenden Empfehlungstypen fallen auf `Most viewed` Empfehlungstyp, wenn nicht genügend Eingabedaten erfasst wurden:
+Die folgenden Empfehlungstypen greifen auf den Empfehlungstyp `Most viewed` zurück, wenn nicht genügend Eingabedaten erfasst wurden:
 
 - `Recommended for you`
 - `Viewed this, viewed that`

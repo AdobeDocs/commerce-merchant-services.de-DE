@@ -8,37 +8,37 @@ feature: Payments, Checkout
 recommendations: noCatalog
 source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
-source-wordcount: '214'
+source-wordcount: '196'
 ht-degree: 0%
 
 ---
 
 # [!DNL Payment Services] Guide - Übersicht
 
-Dieses Handbuch richtet sich an Administratoren von [!DNL Adobe Commerce] und [!DNL Magento Open Source]. Sie enthält detaillierte Informationen zur Installation und zum Onboarding von [!DNL Payment Services]sowie Konfiguration und Verwaltung der Dienste. Es wird von einem grundlegenden Verständnis der grundlegenden Commerce-Konfiguration und -Funktionalität ausgegangen.
+Dieses Handbuch richtet sich an Administratoren von [!DNL Adobe Commerce] und [!DNL Magento Open Source]. Sie enthält detaillierte Informationen zur Installation und zum Onboarding von [!DNL Payment Services] sowie zur Konfiguration und Verwaltung der Dienste. Es wird von einem grundlegenden Verständnis der grundlegenden Commerce-Konfiguration und -Funktionalität ausgegangen.
 
 >[!TIP]
 >
 >Informationen zur Unterstützung bei Zahlungsdiensten finden Sie unter [Support](#support).
 
-[!DNL Payment Services] verfügt über zwei Bereiche für Administratoren:
+[!DNL Payment Services] hat zwei Bereiche für Administratoren:
 
 * Admin: Verwenden Sie diesen Bereich, um auf die Konfigurationsoberfläche und die Berichterstellung zuzugreifen.
 * Befehlszeilenschnittstelle (oder CLI): Mit diesem Tool können Sie Installations- und Backend-Konfigurationsaufgaben ausführen.
 
 Dieses Handbuch behandelt:
 
-* Alle [!DNL Payment Services]-spezifische Aufgaben, die in Admin ausgeführt werden.
-* Alle [!DNL Payment Services]-spezifische Aufgaben, die über die Befehlszeile &quot;Commerce&quot;ausgeführt werden
+* Alle [!DNL Payment Services]-spezifischen Aufgaben, die in Admin ausgeführt werden.
+* Alle [!DNL Payment Services]-spezifischen Aufgaben, die über die Commerce-Befehlszeile ausgeführt werden
 
-In diesem Handbuch werden die Kernfunktionen von [!DNL Adobe Commerce] und [!DNL Magento Open Source].
+Dieses Handbuch behandelt nicht die Kernfunktionen von [!DNL Adobe Commerce] und [!DNL Magento Open Source].
 
 ## Zusätzliche Dokumentation
 
-| Handbuch zu  | Beschreibung |
+| Handbuch | Beschreibung |
 |------ | ----------- |
-| [[!DNL Adobe Commerce] 2.4-Benutzerhandbuch](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html) | Merchandising-fokussierte Dokumentation für beide [!DNL Adobe Commerce] und [!DNL Magento Open Source] |
-| [[!DNL Adobe Commerce] 2.4 Entwicklerhandbuch](https://developer.adobe.com/commerce/docs) | Entwickerorientierte Dokumentation zum Erstellen und Anpassen [!DNL Adobe Commerce] oder [!DNL Magento Open Source] |
+| [[!DNL Adobe Commerce] 2.4 Benutzerhandbuch](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html) | Handelsorientierte Dokumentation für sowohl [!DNL Adobe Commerce] als auch [!DNL Magento Open Source] |
+| [[!DNL Adobe Commerce] 2.4 Entwicklerhandbuch](https://developer.adobe.com/commerce/docs) | Entwicklerorientierte Dokumentation zum Erstellen und Anpassen von [!DNL Adobe Commerce] oder [!DNL Magento Open Source] |
 
 ## Support
 
@@ -46,5 +46,5 @@ Wenn Sie Informationen benötigen oder Fragen haben, die nicht in diesem Handbuc
 
 ![Hilfe-Ressourcen](assets/help-resources.png){width="600" zoomable="yes"}
 
-* [Hilfezentrum](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html)—Suchen Sie nach [!DNL Payment Services]-zugehörige Artikel zur Fehlerbehebung in der Wissensdatenbank.
-* [Support-Tickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)—Senden Sie ein Ticket, um zusätzliche Hilfe zu erhalten.
+* [Hilfezentrum](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html)—Suchen Sie in der Wissensdatenbank nach [!DNL Payment Services] Artikeln zur Fehlerbehebung.
+* [Support-Tickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket): Senden Sie ein Ticket, um zusätzliche Hilfe zu erhalten.

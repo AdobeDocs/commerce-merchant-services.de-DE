@@ -7,7 +7,7 @@ feature: Shipping/Delivery, User Account, Roles/Permissions
 exl-id: 77285a66-5161-407b-94cd-b3f412d7949d
 source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
-source-wordcount: '2660'
+source-wordcount: '2661'
 ht-degree: 0%
 
 ---
@@ -20,11 +20,11 @@ Nachdem Sie das Onboarding in Ihrer Entwicklungsumgebung abgeschlossen haben, k�
 
 Bevor Sie Informationen, Stores oder Bestellungen testen oder synchronisieren, überprüfen Sie, ob Sie die folgenden Aufgaben ausgeführt haben:
 
-- Abgeschlossen wurde die [Allgemeine Konfiguration](enable-general.md) für Store Fulfillment-Dienste.
+- Die [allgemeine Konfiguration](enable-general.md) für Store Fulfillment-Dienste wurde abgeschlossen.
 
 - [Hinzufügen und Überprüfen der Kontoanmeldeinformationen und Verbindungsdetails für Ihre Sandbox- und Produktionsumgebungen](connect-set-up-service.md#configure-store-fulfillment-account-credentials)
 
-- Vergewissern Sie sich, dass [Adobe Commerce-Integration](connect-set-up-service.md#configure-store-fulfillment-account-credentials) für die Lösung zur Herstellung einer Fulfillment-Lösung ist verfügbar und zugelassen.
+- Vergewissern Sie sich, dass die [Adobe Commerce-Integration](connect-set-up-service.md#configure-store-fulfillment-account-credentials) für die Store Fulfillment-Lösung verfügbar und autorisiert ist.
 
 ## Testvorbereitung
 
@@ -32,11 +32,11 @@ Die Verbindungskonfiguration muss abgeschlossen sein, bevor Sie Testaufträge er
 
 1. Synchronisieren Sie die Store-Ausführungsquellen.
 
-   - Navigieren Sie zu **[!UICONTROL Stores > Sources]**.
+   - Wechseln Sie zu &quot;**[!UICONTROL Stores > Sources]**&quot;.
 
-   - Auswählen **[!UICONTROL Synchronize Store Fulfillment Sources]**.
+   - Wählen Sie **[!UICONTROL Synchronize Store Fulfillment Sources]** aus.
 
-1. Überprüfen Sie im Store-Raster, ob Stores als `Synced` vor der Erstellung von Testbestellungen.
+1. Überprüfen Sie im Store-Raster, ob Stores als `Synced` markiert wurden, bevor Sie Testaufträge erstellen.
 
 ## Beispieltestplan
 
@@ -54,16 +54,16 @@ Dieser Stichprobenprüfplan umfasst die folgenden Funktionsbereiche:
 | End-to-End | Workflows zur Auftragsabbruch | Kunde, Admin, Store Associate |
 | Admin | App-Berechtigungen für die Store-Ausführung | Admin |
 | Adobe Commerce Frontend | Produkttypen | Kunde, Admin |
-| Frontend-Checkout</br>Formular für die Anmeldung | Eincheckerlebnis | Kunde, Admin |
-| Store Assist App | Bestellung</br>Auswahl</br>Staging</br>und Übergabe | Store Associate |
+| Frontend-Checkout</br>Eincheckformular | Eincheckerlebnis | Kunde, Admin |
+| Store Assist App | Bestellung</br>Wählen Sie</br>Stage</br> und Übergabe aus | Store Associate |
 
 ### Inventar-API-Synchronisierung
 
 In diesem Abschnitt des Testplans wird die Bestands- und Bestellsynchronisierung behandelt, um zu überprüfen, ob Aktualisierungen an Erfassungsquellen und Lagerbeständen korrekt zwischen Adobe Commerce und der Store Fulfillment-Lösung synchronisiert werden.
 
-**Funktionaler Bereich**: Bestell- und Auftragssynchronisierung</br>
+**Funktionsbereich**: Bestand- und Auftragssynchronisierung</br>
 **Rolle:** Admin</br>
-**Testtyp:** Alle positiven
+**Testtyp:** Alle positiven Werte
 
 <table>
 <thead>
@@ -85,9 +85,9 @@ In diesem Abschnitt des Testplans wird die Bestands- und Bestellsynchronisierung
 <td>Der Echtzeit-Synchronisierungsvorgang sendet die Details innerhalb von 5 Minuten an die Walmart-GIF</td>
 </tr>
 <tr>
-<td><strong>Abholquellenquelle</br><code>Is Synced</code> status</strong></td>
+<td><strong>Status der Stammquelle abrufen</br><code>Is Synced</code></strong></td>
 <td>Speichern Sie Aktualisierungen in einer vorhandenen Sicherungskopie-Stammquelle.</td>
-<td>Nach einem erfolgreichen Vorgang wird die <code>Is Synced</code> Spalte der Seite "Quelle verwalten"von <code>No</code> nach <code>Yes</code>.</td>
+<td>Nach einem erfolgreichen Vorgang wird die Spalte <code>Is Synced</code> der Seite "Source verwalten"von <code>No</code> auf <code>Yes</code> aktualisiert.</td>
 </tr>
 <tr>
 <td><strong>Geänderter Lagerreservierungsprozess</strong></td>
@@ -97,12 +97,12 @@ In diesem Abschnitt des Testplans wird die Bestands- und Bestellsynchronisierung
 <tr>
 <td><strong>Neue Bestellaufgabe-Push, API-Synchronisierung - Kundenreihenfolge</strong></td>
 <td>Der Kunde sendet eine Store-Abholbestellung.</td>
-<td><ul><li>In der Ansicht "Admin Order"wird eine <strong>Adobe Commerce Admin-Benutzer</strong> erkennt, dass der Status "Bestellsynchronisierung"auf aktualisiert wurde. <code>Sent</code></li><li>Das Bestelldetailprotokoll enthält die Meldung <code>Order was sent to BOPIS solution for sync, it's not yet acknowledged yet.</code></li></ul></td>
+<td><ul><li>In der Ansicht "Admin Order"sieht ein <strong>Adobe Commerce Admin-Benutzer</strong>, dass der Status "Auftragssynchronisierung"auf <code>Sent</code></li><li>Das Bestelldetailprotokoll enthält die Meldung <code>Order was sent to BOPIS solution for sync, it's not yet acknowledged yet.</code></li></ul></td>
 </tr>
 <tr>
 <td><strong>Neue Bestellung Push, API Sync - Admin sendet die Bestellung</strong></td>
-<td>Eine Adobe Commerce <strong>Admin</strong> sendet eine Abholbestellung.</td>
-<td><ul><li>In der Ansicht "Admin Order"wird der Status "Auftragssynchronisierung"auf <code>Sent</code>.</li><li>Das Bestelldetailprotokoll enthält die Meldung <code>Order was sent to BOPIS solution for sync, it's not yet acknowledged yet.</code></li></ul></td>
+<td>Ein Adobe Commerce <strong>Admin</strong> sendet eine Abholbestellung.</td>
+<td><ul><li>In der Ansicht "Admin Order"wird der Status "Auftragssynchronisierung"auf <code>Sent</code> aktualisiert.</li><li>Das Bestelldetailprotokoll enthält die Meldung <code>Order was sent to BOPIS solution for sync, it's not yet acknowledged yet.</code></li></ul></td>
 </tr>
 <tr>
 <td><strong>Neue Auftragspush-, Ausnahmenwarteschlange<strong></td>
@@ -116,9 +116,9 @@ In diesem Abschnitt des Testplans wird die Bestands- und Bestellsynchronisierung
 
 Dieser Abschnitt des Testplans enthält Szenarien zum Testen des End-to-End-Workflows für Bestellungen, die über Adobe Commerce abgebrochen werden.
 
-**Funktionaler Bereich:** Adobe Commerce Admin</br>
-**Rolle:** End-to-End (Admin, Store Associate, Kunde)</br>
-**Testergebnistyp:** Positiv für alle Szenarien
+**Funktionsbereich:** Adobe Commerce-Administrator</br>
+**Rolle:** End-to-End (Admin, Store Associate, Customer)</br>
+**Testergebnis-Typ:** Positiv für alle Szenarien
 
 <table style="table-layout:fixed">
 <tr>
@@ -137,12 +137,12 @@ Dieser Abschnitt des Testplans enthält Szenarien zum Testen des End-to-End-Work
 </td>
 <td>
 <ul>
-<li>Auftragsverlauf aktualisiert mit <code>We refunded $X online. Transaction ID: transactionID</code> und <code>Received Cancel acknowledgment from the BOPIS solution.</code></li>
-<li>Bestellstatus: <code>Closed</code>. (Wir haben jetzt ZAHLUNGSÜBERPRÜFUNG festgelegt.)</li>
+<li>Auftragsverlauf mit <code>We refunded $X online. Transaction ID: transactionID</code> aktualisiert und <code>Received Cancel acknowledgment from the BOPIS solution.</code></li>
+<li>Der Bestellstatus lautet <code>Closed</code>. (Wir haben jetzt ZAHLUNGSÜBERPRÜFUNG festgelegt.)</li>
 <li>In Adobe Commerce erstelltes Credit Memo. (Warten Sie, bis das Cron funktioniert.)</li>
-<li>Wenn alle Elemente ausgewählt wurden, können Sie die E-Mail abrufen. <code>DISPLAY COMMENT HISTORY</code> zeigt <code>Order is ready for pickup</code> (<code>CUSTOMER NOTIFIED</code> Markierung ist <code>true</code>.</li>
+<li>Wenn alle ausgewählten Elemente ausgewählt sind, zeigt "Bereit für Abruf-E-Mail <code>DISPLAY COMMENT HISTORY</code> "<code>Order is ready for pickup</code> "(<code>CUSTOMER NOTIFIED</code> Markierung ist <code>true</code>)</li>
 <li>Wenn alle Elemente nicht ausgewählt sind, wird die E-Mail zum Abbruch und die Anzeige des KOMMENTARVERLAUFS angezeigt. <code>Order has been canceled - all items were not available</code></li>
-<li><code>CUSTOMER NOTIFIED</code> Markierung ist <code>true</code>.</li>
+<li><code>CUSTOMER NOTIFIED</code> Markierung ist <code>true</code>.)</li>
 </ul>
 </td>
 </tr>
@@ -160,20 +160,20 @@ Dieser Abschnitt des Testplans enthält Szenarien zum Testen des End-to-End-Work
 <li>Aktualisierung des Auftragsverlaufs: <code>We refunded $X online. Transaction ID: transactionID</code></li>
 <li>Aktualisierung des Auftragsverlaufs: <code>Order notified as partly canceled at: Date and Hour</code></li>
 <li>Erhalt der Bestellrückerstattungs-E-Mail: <code>$x amount was refunded</code></li>
-<li>Bestellstatus: <code>Processing</code>.</li>
+<li>Der Bestellstatus lautet <code>Processing</code>.</li>
 <li>In Adobe Commerce erstelltes Credit Memo (Warten Sie, bis Cron funktioniert).</li>
-<li>Wenn einige Elemente nicht ausgewählt wurden, bestätigen Sie, dass die [!UICONTROL Ready for Pickup] E-Mail mit dem Abschnitt "Auswahl oder Rückerstattung von Null" angezeigt. <code>DISPLAY COMMENT HISTORY</code> zeigt <code>Order is ready for pickup, but some items not available.</code>.</li>
+<li>Wenn einige Artikel nicht ausgewählt wurden, bestätigen Sie, dass die [!UICONTROL Ready for Pickup] E-Mail mit dem Abschnitt "Auswahl oder Erstattung bei Null"angezeigt wird. <code>DISPLAY COMMENT HISTORY</code> zeigt <code>Order is ready for pickup, but some items not available.</code> an.</li>
 <li><code>CUSTOMER NOTIFIED</code> Markierung ist <code>true</code>.</li>
 </ul>
 </td>
 </tr>
-<td><strong>Bereit zum Abholen</br></br>Vollständige Stornierung</br>(alle Produkte werden mit 0 qty eingestellt)</strong></td>
+<td><strong>Bereit für Abruf</br></br>vollständige Absage</br> (alle Produkte werden mit 0 qty ausgewählt)</strong></td>
 <td>
 <ol>
 <li>Platzieren Sie die Bestellung.</li>
 <li>Warten Sie, bis die Bestellung synchronisiert wurde.</li>
 <li>Überprüfen Sie, ob die Rechnung erstellt wurde (falls autorisiert und erfasst) und ob die E-Mail zur Rechnung eingegangen ist.</li>
-<li>Wechseln Sie zur Postman und führen Sie die Anfrage "Bereit für Abruf"mit allen Produkten aus, die als <code>picked</code> mit <code>0 qty</code>.</li>
+<li>Wechseln Sie zur Postman und führen Sie die Anfrage "Bereit für Abruf"aus, wobei für alle Produkte der Wert "<code>picked</code>"mit "<code>0 qty</code>"festgelegt ist.</li>
 </ol>
 </td>
 <td>
@@ -187,7 +187,7 @@ Dieser Abschnitt des Testplans enthält Szenarien zum Testen des End-to-End-Work
 </td>
 </tr>
 <tr>
-<td><strong>Bereit für Abruf - Teilstornierung</strong></br></br><strong>(Einige Produkte werden gepflückt und einige werden mit <code>0 qty</code>)</strong>
+<td><strong>Bereit für Abholung - Teilstornierung</strong></br></br><strong>(Einige Produkte werden ausgewählt, andere mit <code>0 qty</code>)</strong>
 </td>
 <td>
 <ol>
@@ -199,17 +199,17 @@ Dieser Abschnitt des Testplans enthält Szenarien zum Testen des End-to-End-Work
 </td>
 <td>
 <ul>
-<li><code>Your order is ready for pickup</code> mit [!UICONTROL Ready for Pickup Items] und [!UICONTROL Canceled Items] -Tabellen. </li>
+<li><code>Your order is ready for pickup</code> mit den Tabellen [!UICONTROL Ready for Pickup Items] und [!UICONTROL Canceled Items]. </li>
 <li>Der Bestellstatus ist FÜR PICKUP BEREIT. </li>
 <li>Auftragsverlauf aktualisiert: <code>We refunded $X offline.</code>
 <li>Auftragsverlauf aktualisiert: <code>Order notified as partly canceled at: Date and hour</code>
-<li>Erwiderte E-Mail: <code>$x amount was refunded</code>
+<li>erhaltene Rückerstattungs-E-Mail: <code>$x amount was refunded</code>
 <li>Das Kreditmemo wird erstellt. (Warten Sie, bis das Cron funktioniert.)</li>
 </ul>
 </td>
 </tr>
 <tr>
-<td><strong>Bereit für Abruf - Teilstornierung</br></br>Einige Produkte werden gepflückt und einige werden mit <code>0 qty</code>)</strong>
+<td><strong>Bereit für Abruf - Teilstornierung</br></br>Einige Produkte werden ausgewählt und einige werden mit <code>0 qty</code>)</strong> ausgewählt
 </td>
 <td><ol>
 <li>Platzieren Sie die Bestellung.</li>
@@ -219,17 +219,17 @@ Dieser Abschnitt des Testplans enthält Szenarien zum Testen des End-to-End-Work
 </ol>
 </td>
 <td><ul>
-<li><code>Your order is ready for pickup</code> mit [!UICONTROL Ready for Pickup Items] und [!UICONTROL Canceled Items] -Tabellen. </li>
+<li><code>Your order is ready for pickup</code> mit den Tabellen [!UICONTROL Ready for Pickup Items] und [!UICONTROL Canceled Items]. </li>
 <li>Der Bestellstatus ist FÜR PICKUP BEREIT. </li>
 <li>Auftragsverlauf aktualisiert: <code>We refunded $X offline.</code>
 <li>Auftragsverlauf aktualisiert: <code>Order notified as partly canceled at: Date and hour</code>
-<li>Erwiderte E-Mail: <code>$x amount was refunded</code>
+<li>erhaltene Rückerstattungs-E-Mail: <code>$x amount was refunded</code>
 <li>Das Kreditmemo wird erstellt. (Warten Sie, bis das Cron funktioniert.)</li>
 </ul>
 </td>
 </tr>
 <tr>
-<td><strong>Verworfen (während der Entlassung) </br></br>Vollständige Stornierung (alle Produkte werden als abgelehnt festgelegt)</strong>
+<td><strong>Verworfen (während des Rabatts) </br></br>Vollständige Stornierung (alle Produkte werden als abgelehnt festgelegt)</strong>
 </td>
 <td>
 <ol>
@@ -244,13 +244,13 @@ Dieser Abschnitt des Testplans enthält Szenarien zum Testen des End-to-End-Work
 <td><ul>
 <li>Auftragsverlauf aktualisiert: <code>We refunded $X offline.</code></li>
 <li>Erwiderte E-Mail: <code>$x amount was refunded</code></li>
-<li>Status festgelegt auf <code>CLOSED</code>.</li>
+<li>Status auf <code>CLOSED</code> gesetzt.</li>
 <li>Credit Memo erstellt. (Warten Sie, bis das Cron funktioniert.)</li>
 </ul>
 </td>
 </tr>
 <tr>
-<td><strong>Verworfen (während der Entlassung)</br></br>Teilweiser Abbruch</br>(Einige Produkte werden ausgegeben, andere werden abgelehnt.)</strong>
+<td><strong>Entsorgt (während der Freistellung)</br></br>Teilweise Stornierung</br>(Einige Produkte werden ausgegeben; einige werden abgelehnt.)</strong>
 </td>
 <td>
 <ol>
@@ -258,7 +258,7 @@ Dieser Abschnitt des Testplans enthält Szenarien zum Testen des End-to-End-Work
 <li>Warten Sie, bis die Bestellung synchronisiert wurde.</li>
 <li>Überprüfen Sie, ob die Rechnung erstellt wurde (falls autorisiert und erfasst) und ob die E-Mail zur Rechnung eingegangen ist.</li>
 <li>Wechseln Sie zu Postman und führen Sie die Anfrage "Bereit für Abruf"mit allen Produkten aus, die wie ausgewählt festgelegt sind.</li>
-<li>Öffnen Sie Ihren Posteingang. Suchen Sie die E-Mail "Bereit für Abruf"und wählen Sie <code>Confirm Arrival</code>.</li>
+<li>Öffnen Sie Ihren Posteingang. Suchen Sie die E-Mail "Bereit für Abruf"und wählen Sie <code>Confirm Arrival</code> aus.</li>
 <li>Einchecken.</li>
 <li>Wechseln Sie zur Postman und führen Sie die Anforderung "Lizenziert"aus, wobei einige Produkte auf "bereitgestellt"und einige auf "abgelehnt"eingestellt sind.</li>
 </ol>
@@ -266,8 +266,8 @@ Dieser Abschnitt des Testplans enthält Szenarien zum Testen des End-to-End-Work
 <td>
 <li>Auftragsverlauf aktualisiert: <code>We refunded $X offline</code></li>
 <li><code>Order notified as partly canceled at: Date and Hour</code>
-<li>Erwiderte E-Mail: <code>$x amount was refunded</code>
-<li>Bestellstatus auf <code>Ready for pickup Dispensed</code>
+<li>erhaltene Rückerstattungs-E-Mail: <code>$x amount was refunded</code>
+<li>Bestellstatus auf <code>Ready for pickup Dispensed</code> gesetzt
 <li>Credit Memo erstellt. (Warten Sie, bis das Cron funktioniert.)</li>
 </td>
 </tr>
@@ -282,19 +282,19 @@ Dieser Abschnitt des Testplans enthält Szenarien zum Testen des End-to-End-Work
 <li>Wählen Sie alle Produkte mit Postman aus.</li>
 <li>Einchecken.</li>
 <li>Richten Sie einen Verzicht!</li>
-<li>Gehen Sie zur Bestellung und wählen Sie<strong>[!UICONTROL Create returns]=
+<li>Gehen Sie zur Bestellung und wählen Sie<strong>[!UICONTROL Create returns]= aus.
 <li>Erstellen Sie die RMA.</li>
 </ol>
 </td>
 <td>
 <ul>
-<li>Die RMA wurde erstellt und wird unter dem <strong>[!UICONTROL Returns]</b> in der Bestellansicht.</li>
+<li>Die RMA wurde erstellt und wird unter der Registerkarte <strong>[!UICONTROL Returns]</b> in der Bestellansicht angezeigt.</li>
 <li>Der Kunde hat eine RMA-Bestätigungs-E-Mail erhalten.</li>
 </ul>
 </td>
 </tr>
 <tr>
-<td><strong>Neue RMA nach Rückgabe — Teil</strong>
+<td><strong>Neuer RMA nach Rückgabe — Teil</strong>
 </td>
 <td>
 <ol>
@@ -309,7 +309,7 @@ Dieser Abschnitt des Testplans enthält Szenarien zum Testen des End-to-End-Work
 </ol>
 <td>
 <ul>
-<li>RMA erstellt und unter dem <strong>[!UICONTROL Returns]</strong> in der Bestellansicht.</li>
+<li>RMA wurde erstellt und unter der Registerkarte <strong>[!UICONTROL Returns]</strong> in der Bestellansicht angezeigt.</li>
 <li>Der Kunde hat die RMA-Bestätigungs-E-Mail erhalten.</li>
 <li>Rufen Sie nach der Erstellung von RMA die RMA-Autorisierung ab: Wechseln Sie vom Administrator zu <strong>[!UICONTROL Sales > Returns]</strong>. Wählen Sie die von Ihnen erstellte RMA aus und autorisieren Sie sie.</li>
 <li>Stellen Sie sicher, dass der Kunde die E-Mail zur RMA-Autorisierungsbestätigung erhalten hat.</li>
@@ -327,9 +327,9 @@ In diesem Abschnitt des Testplans wird die Kontoverwaltung für Store Fulfillmen
 - Vergewissern Sie sich, dass sich ein Store-Associate mit einem neuen Benutzerkonto authentifizieren kann, das vom Adobe Commerce-Administrator erstellt wurde.
 - Vergewissern Sie sich, dass die Aktualisierungen der bestehenden Konten erfolgreich angewendet wurden.
 
-**Funktionaler Bereich:** Adobe Commerce Admin</br>
+**Funktionsbereich:** Adobe Commerce-Administrator</br>
 **Rolle:** Admin, Store Associate</br>
-**Testtyp:** Alle positiv
+**Testtyp:** Alle positiven
 
 <table style="table-layout:auto">
 <tr>
@@ -342,15 +342,15 @@ In diesem Abschnitt des Testplans wird die Kontoverwaltung für Store Fulfillmen
 </td>
 <td>
 <ol>
-<li><strong>Admin</strong> — Melden Sie sich bei Adobe Commerce Admin an.</li>
-<li>Navigieren Sie zu <strong>[!UICONTROL System] &gt; Store Fulfillment App-Berechtigungen &gt; Alle Store Fulfillment-App-Benutzer</strong></li>
+<li><strong>Admin</strong> - Melden Sie sich beim Adobe Commerce-Administrator an</li>
+<li>Navigieren Sie zu "<strong>[!UICONTROL System]"&gt; "App-Berechtigungen für Fulfillment-Store"&gt; "Alle Benutzer der Fulfillment-App für Store"</strong></li>
 <li><strong>Neuen Benutzer hinzufügen.</strong></li>
 </ol>
 <td>
 <ul>
 <li>Konto wurde erfolgreich erstellt.</li>
-<li>Neues Benutzerkonto wird auf der Seite [!UICONTROL Store Fulfillment Users] Dashboard.</li>
-<li><strong>Store Associate</strong> Melden Sie sich mit dem neuen Benutzerkonto bei der Store Assist-App an.</li>
+<li>Das neue Benutzerkonto wird im Dashboard [!UICONTROL Store Fulfillment Users] angezeigt.</li>
+<li><strong>Store Associate</strong> melden Sie sich bei der Store-Hilfe-App mit dem neuen Benutzerkonto an.</li>
 </ul>
 </td>
 </tr>
@@ -360,14 +360,14 @@ In diesem Abschnitt des Testplans wird die Kontoverwaltung für Store Fulfillmen
 <td>
 <ol>
 <li>Melden Sie sich mit dem Administratorkonto bei Adobe Commerce Admin an.</li>
-<li>Navigieren Sie zu <strong>[!UICONTROL System] &gt; Store Fulfillment App-Berechtigungen &gt; Alle Store Fulfillment-App-Benutzer</strong>.</li>
-<li>Öffnen Sie in der Liste Benutzerkonto ein vorhandenes aktives Benutzerkonto, indem Sie <strong>[!UICONTROL Edit]</strong>.
-<li>Deaktivieren Sie das Konto, indem Sie <strong>[!UICONTROL Is Active]</strong> nach <strong>Nein</strong>.</li>
+<li>Navigieren Sie zu "<strong>[!UICONTROL System]"&gt; "App-Berechtigungen für Fulfillment-Store"&gt; "Alle Benutzer der Fulfillment-App für Store"</strong>.</li>
+<li>Öffnen Sie in der Liste Benutzerkonto ein vorhandenes aktives Benutzerkonto, indem Sie <strong>[!UICONTROL Edit]</strong> auswählen.
+<li>Deaktivieren Sie das Konto, indem Sie <strong>[!UICONTROL Is Active]</strong> in <strong>Nein</strong> ändern.</li>
 </ol>
 </td>
 <td>
 <ul>
-<li>Im <strong>[!UICONTROL Store Fulfillment App Users]</strong> Dashboard, der Status des aktualisierten Kontos geändert in <strong>[!UICONTROL Inactive]</strong>.</li>
+<li>Im Dashboard <strong>[!UICONTROL Store Fulfillment App Users]</strong> wurde der Status für das aktualisierte Konto in <strong>[!UICONTROL Inactive]</strong> geändert.</li>
 <li>Store Associate kann sich nicht bei der Store Assist-App mit den inaktiven Kontoanmeldeinformationen anmelden.</li>
 </ul>
 </td>
@@ -383,9 +383,9 @@ Die Testszenarios für Adobe Commerce-Produkttypen überprüfen, ob Kunden die r
 - [!UICONTROL Virtual]
 - [!UICONTROL Bundle products] in der Adobe Commerce-Storefront.
 
-**Funktionaler Bereich:** Adobe Commerce Frontend</br>
+**Funktionsbereich:** Adobe Commerce-Frontend</br>
 **Rolle:** Store Assist App User (Store Associate)</br>
-**Testtyp:** Alle positiv
+**Testtyp:** Alle positiven
 
 <table style="table-layout:auto">
 <tr>
@@ -408,14 +408,14 @@ Die Testszenarios für Adobe Commerce-Produkttypen überprüfen, ob Kunden die r
 </td>
 </tr>
 <tr>
-<td><strong>Gruppierungsprodukte</strong>
+<td><strong>Gruppierte Produkte</strong>
 </td>
 <td>
 <ul>
-<li>Vergewissern Sie sich, dass die Versandmethoden und [!UICONTROL Add to cart] -Schaltfläche für den Kunden deaktiviert ist, wenn alle untergeordneten Produkte
-<code>qty</code> auf <code>0</code>.</li>
-<li>Vergewissern Sie sich, dass die Versandmethoden für den Kunden aktiviert sind, wenn mindestens eines der untergeordneten Produkte <code>qty</code> auf <code>0.</code></li>
-<li>Stellen Sie sicher, dass [!UICONTROL Store Pickup Delivery] -Methode nur für Produkte sichtbar und aktiv, die [!UICONTROL Available for Store Pickup] aktiviert. (Untergeordnetes Produkt überprüfen.)</li>
+<li>Stellen Sie sicher, dass die Versandmethoden und die Schaltfläche [!UICONTROL Add to cart] für den Kunden deaktiviert sind, wenn alle untergeordneten Produkte
+<code>qty</code> auf <code>0</code> gesetzt ist.</li>
+<li>Stellen Sie sicher, dass die Versandmethoden für den Kunden aktiviert sind, wenn für mindestens eines der untergeordneten Produkte <code>qty</code> auf <code>0.</code></li>
+<li>Stellen Sie sicher, dass die [!UICONTROL Store Pickup Delivery] -Methode nur für Produkte sichtbar und aktiv ist, für die [!UICONTROL Available for Store Pickup] aktiviert ist. (Untergeordnetes Produkt überprüfen.)</li>
 </ul>
 </td>
 <td></td>
@@ -424,18 +424,19 @@ Die Testszenarios für Adobe Commerce-Produkttypen überprüfen, ob Kunden die r
 <td><strong>Virtuelle Produkte</strong>
 </td>
 <td>
-Vergewissern Sie sich, dass virtuelle Produkte die  [!UICONTROL In-store Pickup] Versandmethode.
+Stellen Sie sicher, dass virtuelle Produkte nicht die Versandmethode [!UICONTROL In-store Pickup] anbieten.
 <td></td>
 </td>
 </tr>
 <tr>
-<td><strong>Paketprodukte</strong>
+<td><strong>Bundle-Produkte</strong>
 </td>
 <td>
 <ul>
-<li>Stellen Sie sicher, dass mindestens ein untergeordnetes Produkt [!UICONTROL Available for Store Pickup] deaktiviert ist, ist die Option Abholung speichern für den Kunden nicht verfügbar.</li>
-<li>Stellen Sie sicher, dass mindestens ein untergeordnetes Produkt [!UICONTROL Available for Home Delivery] deaktiviert ist, ist die Option Home Delivery für den Kunden nicht verfügbar.</li>
-<li>Überprüfen Sie, ob mindestens eines der untergeordneten Produkte in einem Bundle nicht vorrätig ist. Das Bundle (übergeordnete Produkt) wird auch als [!UICONTROL Out of stock].</li>
+<li>Vergewissern Sie sich, dass die Option Abruf speichern nicht für den Kunden verfügbar ist, wenn für mindestens ein untergeordnetes Produkt [!UICONTROL Available for Store Pickup] deaktiviert ist.</li>
+<li>Stellen Sie sicher, dass die Option Home Delivery für den Kunden nicht verfügbar ist, wenn für mindestens ein untergeordnetes Produkt [!UICONTROL Available for Home Delivery] deaktiviert ist.</li>
+<li>Überprüfen Sie, ob mindestens eines der untergeordneten Produkte in einem Bundle nicht vorrätig ist. Das Bundle (übergeordnetes Produkt) wird ebenfalls angezeigt.
+als [!UICONTROL Out of stock].</li>
 </ul>
 </td>
 <td></td>
@@ -447,20 +448,20 @@ Vergewissern Sie sich, dass virtuelle Produkte die  [!UICONTROL In-store Pickup]
 
 In diesem Abschnitt des Testplans wird das Check-in-Erlebnis für Store-Abholaufträge für die folgenden Funktionen behandelt:
 
-- Alternativer Abruf-Kontakt - Überprüfen Sie den Workflow für das Hinzufügen eines [!UICONTROL Alternate Pickup Contact] und wählen Sie eine [!UICONTROL Preferred Contact] bei Bestellungen zur Reservierung.
+- Alternativer Abholkontakt: Überprüfen Sie den Workflow für das Hinzufügen von &quot;[!UICONTROL Alternate Pickup Contact]&quot;und die Auswahl von &quot;[!UICONTROL Preferred Contact]&quot;bei Store-Abholbestellungen.
 
 - Formular für den Check-in - Überprüfen Sie den Workflow zum Senden einer Check-in-Anfrage für Store-Abholaufträge.
 
-**Funktionsbereiche:** Warenkorb zur Kasse, Formular zum Einchecken für Bestellungen zur Abholung von Geschäften</br>
-**Rolle:** Admin, Kunde, Store Associate</br>
-**Testtyp:** Alle positiv
+**Funktionsbereiche:** Checkout für Warenkorb, Formular für Einchecken für Bestellungen zur Datenspeicherung</br>
+**Rolle:** Admin, Kunde, Store-Partner</br>
+**Testtyp:** Alle positiven
 
 ### Alternativer Ansprechpartner
 
 
-**Funktionaler Bereich:** Warenkorb zur Kasse</br>
+**Funktionsbereich:** Warenkorb zur Kasse</br>
 **Rolle:** Kunde</br>
-**Testtyp:** Alle positiv
+**Testtyp:** Alle positiven
 
 <table style="table-layout:auto">
 <tr>
@@ -469,43 +470,43 @@ In diesem Abschnitt des Testplans wird das Check-in-Erlebnis für Store-Abholauf
 <th>Erwartete Ergebnisse</th>
 </tr>
 <tr>
-<td><strong>Alternativer Ansprechpartner</br>
+<td><strong>Alternativer Ansprechpartner für die Abholung</br>
 Einchecken<strong>
 </td>
 <td>
 Ein Kunde sendet eine Bestellung mit der Option In-Store-Abholung .</td>
-<td>Während des Checkout-Prozesses sieht der Kunde die [!UICONTROL Alternate Pickup Contact] die Option im Versandschritt.
+<td>Während des Checkout-Prozesses sieht der Kunde die Option "[!UICONTROL Alternate Pickup Contact]"im Versandschritt.
 </td>
 </tr>
 <tr>
-<td><strong>Alternativer Kontakt zur Auswahl bevorzugte Kontakte, Einchecken</strong>
+<td><strong>Bevorzugter Kontakt für die alternative Abholung, Einchecken</strong>
 <td>
-Ein Kunde sendet eine Bestellung mit der Option In-Store-Abholung . Beim Checkout fügt der Kunde eine [!UICONTROL Alternate Pickup Contact].</td>
-<td>Während des Checkout-Prozesses sieht der Kunde die [!UICONTROL Preferred Contact] im Versandschritt.</td>
+Ein Kunde sendet eine Bestellung mit der Option In-Store-Abholung . Beim Checkout fügt der Kunde den Wert [!UICONTROL Alternate Pickup Contact] hinzu.</td>
+<td>Während des Checkout-Prozesses wird dem Kunden die Option [!UICONTROL Preferred Contact] im Versandschritt angezeigt.</td>
 </td>
 </tr>
 <tr>
-<td><strong>Alternative Kontaktinformationen zur Abholung, Einchecken</strong>
+<td><strong>Alternative Abruf-Kontaktdetails, Einchecken in</strong>
 </td>
 <td>
-Ein Kunde sendet eine Bestellung mit der Option In-Store-Abholung . Beim Checkout wählt der Kunde [!UICONTROL Alternate Pickup Contact] im Versandschritt.
+Ein Kunde sendet eine Bestellung mit der Option In-Store-Abholung . Beim Checkout wählt der Kunde im Versandschritt [!UICONTROL Alternate Pickup Contact] aus.
 </td>
-<td>Der Kunde sieht Eingabeoptionen zur Eingabe von Kontaktdetails: [!UICONTROL First name], [!UICONTROL Last name], [!UICONTROL Phone], und [!UICONTROL Email].</td>
+<td>Der Kunde sieht Eingabeoptionen zur Eingabe von Kontaktdetails: [!UICONTROL First name], [!UICONTROL Last name], [!UICONTROL Phone] und [!UICONTROL Email].</td>
 </tr>
 <tr>
 <td><strong>Alternative Abholung, E-Mail einchecken</strong>
 </td>
-<td>Ein Kunde sendet eine Bestellung mit der Option In-Store-Abholung . Beim Checkout wählt der Kunde [!UICONTROL Alternate Pickup Contact] im Versandschritt die Kontaktdaten hinzu und sendet die Bestellung.</td>
+<td>Ein Kunde sendet eine Bestellung mit der Option In-Store-Abholung . Beim Checkout wählt der Kunde im Versandschritt [!UICONTROL Alternate Pickup Contact] aus, fügt die Kontaktdaten hinzu und sendet die Bestellung.</td>
 <td>Sowohl der Kunde als auch der alternative Kontakt erhalten eine Check-In-E-Mail für die Bestellung.</td>
 </tr>
 <td><strong>Alternative Auswahl, Auftragsdetails</strong></td>
-<td>Ein Kunde sendet eine Bestellung mit der Option In-Store-Abholung . Beim Checkout wählt der Kunde [!UICONTROL Alternate Pickup Contact] im Versandschritt die Kontaktdaten hinzu und sendet die Bestellung.</td>
+<td>Ein Kunde sendet eine Bestellung mit der Option In-Store-Abholung . Beim Checkout wählt der Kunde im Versandschritt [!UICONTROL Alternate Pickup Contact] aus, fügt die Kontaktdaten hinzu und sendet die Bestellung.</td>
 <td>Der Administrator sieht die zusätzlichen Kontaktinformationen zur gespeicherten Bestellung.</td>
 </tr>
 <tr>
-<td><strong>Alternative Abholkontakte, Ansicht "Store Associate Order"</strong>
+<td><strong>Alternativer Abholkontakt, Ansicht "Store Associate Order"</strong>
 </td>
-<td>Ein Kunde sendet eine Bestellung mit der Option In-Store-Abholung . Beim Checkout wählt der Kunde [!UICONTROL Alternate Pickup Contact] im Versandschritt die Kontaktdaten hinzu und sendet die Bestellung.</td>
+<td>Ein Kunde sendet eine Bestellung mit der Option In-Store-Abholung . Beim Checkout wählt der Kunde im Versandschritt [!UICONTROL Alternate Pickup Contact] aus, fügt die Kontaktdaten hinzu und sendet die Bestellung.</td>
 <td>Der Store Associate kann die zusätzlichen Kontaktinformationen über die Bestellung in FaaS/ChaaS sehen.</td>
 </td>
 </tr>
@@ -515,9 +516,9 @@ Ein Kunde sendet eine Bestellung mit der Option In-Store-Abholung . Beim Checkou
 ### Formular für die Anmeldung
 
 
-**Funktionaler Bereich:** Formular für die Anmeldung</br>
+**Funktionsbereich:** Formular für das Einchecken</br>
 **Rolle:** Kunde</br>
-**Testtyp:** Alle positiv
+**Testtyp:** Alle positiven
 
 <table style="table-layout:auto">
 <tr>
@@ -526,7 +527,7 @@ Ein Kunde sendet eine Bestellung mit der Option In-Store-Abholung . Beim Checkou
 <th>Erwartete Ergebnisse</th>
 </tr>
 <tr>
-<td><strong>Check in Action - Submit request</strong>
+<td><strong>Aktion einchecken—Anfrage senden</strong>
 </td>
 <td>Im Formular zum Einchecken füllt ein Kunde alle erforderlichen Felder aus und sendet die Anfrage.</td>
 <td>Der Kunde erhält eine Erfolgsantwort.</td>
@@ -544,7 +545,7 @@ Ein Kunde sendet eine Bestellung mit der Option In-Store-Abholung . Beim Checkou
 </tr>
 <tr>
 <td><strong>Einchecken in Aktion - Ankunft bestätigen</strong></td>
-<td>In der FAAs wird eine Lagerabholung zur Abholung markiert. Der Kunde erhält eine Bereit zum Abruf-E-Mail und wählt [!UICONTROL Confirm Arrival].</td>
+<td>In der FAAs wird eine Lagerabholung zur Abholung markiert. Der Kunde erhält die E-Mail "Bereit für Abruf"und wählt [!UICONTROL Confirm Arrival] aus.</td>
 <td>Der Kunde sieht das Eincheckformular für die Bestellung.</td>
 </tr>
 </tbody>
@@ -554,9 +555,9 @@ Ein Kunde sendet eine Bestellung mit der Option In-Store-Abholung . Beim Checkou
 
 In diesem Abschnitt des Testplans werden Szenarien zum Testen der Reihenfolge, Auswahl und Übergabe von Workflows in der Store Assist App behandelt.
 
-**Funktionaler Bereich:** Store Assist App</br>
+**Funktionsbereich:** Store Assist App</br>
 **Rolle:** Store Associate</br>
-**Testtyp:** Alle positiv
+**Testtyp:** Alle positiven
 
 <table style="table-layout:auto">
 <tr>
@@ -566,7 +567,7 @@ In diesem Abschnitt des Testplans werden Szenarien zum Testen der Reihenfolge, A
 </tr>
 <tr>
 <td>
-<strong>Einzelbestellauswahl - Happy Path, Cumulative Pickup</strong></td>
+<strong>Einzelne Bestellauswahl—glücklicher Pfad, paralleler Abruf</strong></td>
 <td>Wählen Sie einzelne und mehrere Elemente aus. Kein Nil-Picks und Cursor-Pickup (mit Staging).
 </td>
 <td>
@@ -644,4 +645,4 @@ Die Implementierung und Tests variieren je nach Infrastruktur und Funktionen.
 
 >[!TIP]
 >
->Bereitstellungsrichtlinien, Checklisten und Best Practices für Adobe Commerce bei Cloud-Infrastrukturprojekten finden Sie unter [Bereitstellen Ihres Stores](https://devdocs.magento.com/cloud/live/stage-prod-live.html) in der Adobe Commerce Developer-Dokumentation.
+>Informationen zu Implementierungsrichtlinien, Checklisten und Best Practices für Adobe Commerce in Cloud-Infrastrukturprojekten finden Sie unter [Bereitstellen Ihres Stores](https://devdocs.magento.com/cloud/live/stage-prod-live.html) in der Adobe Commerce-Entwicklerdokumentation.

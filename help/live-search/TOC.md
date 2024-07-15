@@ -1,13 +1,13 @@
 ---
 user-guide-title: „Handbuch zu [!DNL Live Search]“
-user-guide-description: "Dieses Handbuch enthält ausführliche Anweisungen zur Verwendung von [!DNL Live Search] von Adobe Commerce."
+user-guide-description: "Dieses Handbuch enthält ausführliche Anweisungen zur Verwendung von [!DNL Live Search] aus Adobe Commerce."
 breadcrumb-title: „Handbuch zu [!DNL Live Search]“
 role: Admin
 feature: Services, Search
 source-git-commit: a1d3e87f71a19df355009a7ae5d736b5d2dc7b15
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '74'
+ht-degree: 10%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 0%
    - [Leistung](performance.md)
    - Facets {#facets}
       - [Übersicht](facets.md)
-      - [Arbeitsbereich](faceting-workspace.md)
+      - [Workspace](faceting-workspace.md)
       - [Arten von Facetten](facets-type.md)
       - [Facets hinzufügen](facets-add.md)
       - [Facets verwalten](facets-manage.md)
@@ -35,9 +35,9 @@ ht-degree: 0%
       - [Arten von Synonymen](synonyms-type.md)
       - [Synonyme hinzufügen](synonyms-add.md)
       - [Synonyme verwalten](synonyms-manage.md)
-   - Merchandising durchsuchen {#rules}
+   - Search Merchandising {#rules}
       - [Übersicht](rules.md)
-      - [Arbeitsbereich](rules-workspace.md)
+      - [Workspace](rules-workspace.md)
       - [Regeln hinzufügen](rules-add.md)
       - [Regeln verwalten](rules-manage.md)
    - [Kategorie-Merchandising](category-merch.md)

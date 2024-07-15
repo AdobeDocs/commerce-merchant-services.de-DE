@@ -1,6 +1,6 @@
 ---
 title: Protokolle überprüfen und Fehlerbehebung
-description: Erfahren Sie, wie Sie Fehler beheben können. [!DNL data export] Fehler in den Logs zum Datenexport und SAAS-Export.
+description: Erfahren Sie, wie Sie mithilfe der Datenexport- und SAAS-Export-Protokolle Fehler beheben können. [!DNL data export]
 feature: Services
 recommendations: noCatalog
 exl-id: 55903c19-af3a-4115-a7be-9d1efaed8140
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Überprüfen von Protokollen und Fehlerbehebung
 
-Die [!DNL data export] -Erweiterung stellt Protokolle zur Verfolgung von Datenerfassungs- und Synchronisierungsprozessen bereit.
+Die Erweiterung [!DNL data export] bietet Protokolle zur Verfolgung von Datenerfassungs- und Synchronisierungsprozessen.
 
 ## Protokolle
 
-Protokolle sind im Abschnitt `var/log` Ordner auf dem Commerce-Anwendungsserver.
+Protokolle sind im Ordner &quot;`var/log`&quot;auf dem Commerce-Anwendungsserver verfügbar.
 
 | Protokollname | filename | description |
 |-----------------| ----------| -------------|
@@ -54,7 +54,7 @@ In der folgenden Tabelle werden die in den Protokollen aufgezeichneten Vorgangsa
 |----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
 | Vollständige Synchronisierung | Vollständige Synchronisierung erfasst und sendet alle Daten für einen bestimmten Feed an das SaaS. | `bin/magento saas:resync --feed=products` |
 | partieller Reindex | Teilsynchronisierung erfasst und sendet Daten nur für aktualisierte Entitäten in einem bestimmten Feed an SaaS. Dieses Protokoll ist nur vorhanden, wenn aktualisierte Entitäten vorhanden sind. | `bin/magento cron:run --group=index` |
-| Wiederholen fehlgeschlagener Elemente | Sendet Elemente für einen bestimmten Feed an SaaS, wenn der vorherige Synchronisierungsvorgang aufgrund eines Commerce-Anwendungs- oder Serverfehlers fehlgeschlagen ist. Dieses Protokoll ist nur vorhanden, wenn fehlgeschlagene Elemente vorhanden sind. | `bin/magento cron:run --group=saas_data_exporter`  (beliebige Cron-Gruppe &quot;*_data_exporting&quot;) |
+| Wiederholen fehlgeschlagener Elemente | Sendet Elemente für einen bestimmten Feed an SaaS, wenn der vorherige Synchronisierungsvorgang aufgrund eines Commerce-Anwendungs- oder Serverfehlers fehlgeschlagen ist. Dieses Protokoll ist nur vorhanden, wenn fehlgeschlagene Elemente vorhanden sind. | `bin/magento cron:run --group=saas_data_exporter` (beliebige Cron-Gruppe &quot;*_data_exporting&quot;) |
 | Vollständige Synchronisierung (alt) | Vollständige Synchronisierung für einen bestimmten Feed im alten Exportmodus. | `bin/magento saas:resync --feed=categories` |
 | partielle Neuindizierung (alt) | Sendet aktualisierte Entitäten an SaaS für einen bestimmten Feed im alten Exportmodus. Dieses Protokoll ist nur vorhanden, wenn aktualisierte Entitäten vorhanden sind. | `bin/magento cron:run --group=index` |
 | Partielle Synchronisierung (alt) | Sendet aktualisierte Entitäten an SaaS für einen bestimmten Feed im alten Exportmodus. Dieses Protokoll ist nur vorhanden, wenn aktualisierte Entitäten vorhanden sind. | `bin/magento cron:run --group=saas_data_exporter` (beliebige Cron-Gruppe &quot;*_data_exporting&quot;) |
@@ -75,15 +75,15 @@ Während einer vollständigen Neusynchronisierung wird der Fortschritt standardm
 }
 ```
 
-In diesem Beispiel wird die `status` -Werte liefern Informationen zum Synchronisierungsvorgang:
+In diesem Beispiel liefern die Werte `status` Informationen zum Synchronisierungsvorgang:
 
-- **`"Progress 2/5"`** gibt an, dass 2 von 5 Iterationen abgeschlossen sind. Die Anzahl der Iterationen hängt von der Anzahl der exportierten Entitäten ab.
+- **`"Progress 2/5"`** gibt an, dass 2 von 5 Iterationen abgeschlossen wurden. Die Anzahl der Iterationen hängt von der Anzahl der exportierten Entitäten ab.
 - **`"processed: 200"`** gibt an, dass 200 Elemente verarbeitet wurden.
-- **`"synced: 100"`** gibt an, dass 100 Elemente an SaaS gesendet wurden. Es wird erwartet, dass `"synced"` ist nicht gleich `"processed"`. Im Folgenden finden Sie ein Beispiel:
-   - **`"synced" < "processed"`** bedeutet, dass die Feed-Tabelle im Vergleich zur zuvor synchronisierten Version keine Änderungen am Element erkannt hat. Solche Elemente werden während des Synchronisierungsvorgangs ignoriert.
+- **`"synced: 100"`** gibt an, dass 100 Elemente an SaaS gesendet wurden. Es wird erwartet, dass `"synced"` nicht gleich `"processed"` ist. Im Folgenden finden Sie ein Beispiel:
+   - **`"synced" < "processed"`** bedeutet, dass die Feed-Tabelle im Vergleich zur zuvor synchronisierten Version keine Änderungen im Element erkannt hat. Solche Elemente werden während des Synchronisierungsvorgangs ignoriert.
    - **`"synced" > "processed"`** dieselbe Entitäts-ID (z. B. `Product ID`) kann mehrere Werte in verschiedenen Bereichen aufweisen. Beispielsweise kann ein Produkt fünf Websites zugewiesen werden. In diesem Fall verfügen Sie möglicherweise über &quot;1 verarbeitetes&quot;Element und &quot;5 synchronisierte&quot;Elemente.
 
-+++ **Beispiel: Vollständiges Resync-Protokoll für den Preisfeed**
++++ **Beispiel: Vollständiges Resync-Protokoll für den Preis-Feed**
 
 ```
 Price feed full resync:
@@ -105,9 +105,9 @@ Wenn Sie Adobe Commerce-Logs in der New Relic speichern, können Sie Parsing-Reg
 
 1. Melden Sie sich bei New Relic an.
 
-1. Navigieren Sie zu `Logs => Parsing`.
+1. Wechseln Sie zu &quot;`Logs => Parsing`&quot;.
 
-1. Klicks `Create parsing rule`.
+1. Klicken Sie auf `Create parsing rule`.
 
 1. Konfigurieren Sie die Parsing-Regel, indem Sie die folgenden Werte hinzufügen.
 
@@ -115,7 +115,7 @@ Wenn Sie Adobe Commerce-Logs in der New Relic speichern, können Sie Parsing-Reg
 
      `filePath LIKE '%commerce-data-export%.log'`
 
-   - **Parsing-Regel**
+   - **Parsing rule**
 
      `\[%{DATA:timestamp}\] report.%{DATA:logLevel} %{GREEDYDATA:feed:json}`
 
@@ -130,7 +130,7 @@ Wenn Daten in Commerce Services fehlen oder falsch sind, überprüfen Sie die Pr
 - commerce-data-export-errors.log - wenn während der Erfassung ein Fehler aufgetreten ist
 - saas-export-errors.log - wenn während der Sendephase ein Fehler aufgetreten ist
 
-Wenn Fehler auftreten, die nicht mit der Konfiguration oder Erweiterungen von Drittanbietern in Zusammenhang stehen, senden Sie eine [Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) mit so vielen Informationen wie möglich.
+Wenn Fehler auftreten, die nicht mit der Konfiguration oder Erweiterungen von Drittanbietern zusammenhängen, senden Sie ein [Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) mit so vielen Informationen wie möglich.
 
 ### Beheben von Problemen bei der Katalogsynchronisierung {#resolvesync}
 
@@ -139,23 +139,23 @@ Wenn Sie eine Datenresynchronisierung Trigger haben, kann es bis zu eine Stunde 
 #### Datendiskrepanz
 
 1. Zeigen Sie die detaillierte Ansicht des betreffenden Produkts in den Suchergebnissen an.
-1. Kopieren Sie die JSON-Ausgabe und stellen Sie sicher, dass der Inhalt mit dem übereinstimmt, den Sie im [!DNL Commerce] Katalog.
+1. Kopieren Sie die JSON-Ausgabe und stellen Sie sicher, dass der Inhalt mit dem im [!DNL Commerce] -Katalog vorhandenen übereinstimmt.
 1. Wenn der Inhalt nicht übereinstimmt, nehmen Sie eine geringfügige Änderung am Produkt in Ihrem Katalog vor, z. B. das Hinzufügen eines Leerzeichens oder eines Zeitraums.
-1. Warten Sie auf eine Neusynchronisierung oder [Trigger einer manuellen Neusynchronisierung](#resync).
+1. Warten Sie auf eine Neusynchronisierung oder einen [Trigger manuellen Resync](#resync).
 
 #### Synchronisierung wird nicht ausgeführt
 
-Wenn die Synchronisierung nicht planmäßig ausgeführt wird oder nichts synchronisiert wird, lesen Sie dies [KnowledgeBase](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html) Artikel.
+Wenn die Synchronisierung nicht nach einem Zeitplan ausgeführt wird oder nichts synchronisiert wird, finden Sie weitere Informationen in diesem Artikel [KnowledgeBase](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html) .
 
 #### Synchronisierung fehlgeschlagen
 
-Wenn die Katalogsynchronisierung den Status **Fehlgeschlagen**, senden Sie eine [Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+Wenn die Katalogsynchronisierung den Status **Fehlgeschlagen** aufweist, senden Sie ein [Supportticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
 
 ## Erweiterte Protokollierung
 
 Für zusätzliche Protokollinformationen können Sie Umgebungsvariablen verwenden, um Protokolle mit zusätzlichen Daten für die Verfolgung und Fehlerbehebung zu erweitern.
 
-Es gibt zwei Protokolldateien im `var/log/` directory:
+Es gibt zwei Protokolldateien im Ordner &quot;`var/log/`&quot;:
 
 - commerce-data-export-errors.log - wenn während der Erfassung ein Fehler aufgetreten ist
 - saas-export-errors.log - wenn während der Sendephase ein Fehler aufgetreten ist
@@ -164,19 +164,19 @@ Sie können Umgebungsvariablen verwenden, um Protokolle mit zusätzlichen Daten 
 
 ### Überprüfen der Feed-Payload
 
-Fügen Sie die Feed-Payload in das SaaS-Exportprotokoll ein, indem Sie die `EXPORTER_EXTENDED_LOG=1` Umgebungsvariable beim erneuten Synchronisieren des Feeds.
+Schließen Sie die Feed-Payload in das SaaS-Exportprotokoll ein, indem Sie die Umgebungsvariable `EXPORTER_EXTENDED_LOG=1` hinzufügen, wenn Sie den Feed erneut synchronisieren.
 
 ```shell script
 EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed=products
 ```
 
-Nach Abschluss des Vorgangs ist die Feed-Payload im SaaS-Exportprotokoll (`var/.log/saas-export.log`).
+Nach Abschluss des Vorgangs ist die Feed-Payload im SaaS-Exportprotokoll (`var/.log/saas-export.log`) zur Überprüfung verfügbar.
 
 ### Payload in Feed-Indextabelle beibehalten
 
-Für die Commerce SaaS-Datenexport-Erweiterung (`magento/module-data-exporter`) 103.3.0 und höher halten sofortige Export-Feeds nur die erforderlichen Mindestdaten in der Indextabelle. Die Feeds enthalten alle Katalog- und Bestandsstatus-Feeds.
+Für die Commerce SaaS-Datenexport-Erweiterung (`magento/module-data-exporter`) 103.3.0 und höher behalten sofortige Export-Feeds nur die erforderlichen Mindestdaten in der Indextabelle bei. Die Feeds enthalten alle Katalog- und Bestandsstatus-Feeds.
 
-Die Beibehaltung von Payload-Daten in der Indextabelle wird in Produktionsumgebungen nicht empfohlen, kann aber in einer Entwicklungsumgebung nützlich sein. Fügen Sie die Feed-Payload in den Index ein, indem Sie die `PERSIST_EXPORTED_FEED=1` Umgebungsvariable beim erneuten Synchronisieren des Feeds.
+Die Beibehaltung von Payload-Daten in der Indextabelle wird in Produktionsumgebungen nicht empfohlen, kann aber in einer Entwicklungsumgebung nützlich sein. Fügen Sie die Feed-Payload in den Index ein, indem Sie die Umgebungsvariable `PERSIST_EXPORTED_FEED=1` hinzufügen, wenn Sie den Feed erneut synchronisieren.
 
 ```shell script
 PERSIST_EXPORTED_FEED=1 bin/magento saas:resync --feed=products
@@ -186,13 +186,13 @@ PERSIST_EXPORTED_FEED=1 bin/magento saas:resync --feed=products
 
 Wenn der Neuindizierungsprozess eines bestimmten Feeds unangemessen lange dauert, führen Sie den Profiler aus, um zusätzliche Daten zu erfassen, die für das Supportteam nützlich sein könnten.
 
-Führen Sie den Profiler aus, indem Sie die `EXPORTER_PROFILER=1` Umgebungsvariable beim Ausführen des Befehls &quot;reindex&quot;.
+Führen Sie den Profiler aus, indem Sie die Umgebungsvariable `EXPORTER_PROFILER=1` hinzufügen, wenn Sie den reindex-Befehl ausführen.
 
 ```
 EXPORTER_PROFILER=1 bin/magento indexer:reindex catalog_data_exporter_products
 ```
 
-Profildaten werden im Datenexport-Protokoll gespeichert (`var/log/commerce-data-export.log`) im folgenden Format:
+Profilerdaten werden im Datenexport-Protokoll (`var/log/commerce-data-export.log`) im folgenden Format gespeichert:
 
 ```
 <Provider class name>, <# of processed entities>, <execution time im ms>, <memory consumption in Mb>

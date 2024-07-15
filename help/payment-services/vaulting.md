@@ -5,7 +5,7 @@ exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
 feature: Payments, Checkout
 source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '292'
 ht-degree: 0%
 
 ---
@@ -14,15 +14,15 @@ ht-degree: 0%
 
 Konvertieren von einmaligen Kunden in treue Kunden mit Kreditkartenausfall. Käufer können ihre Kreditkartenanmeldeinformationen während des Checkout speichern - oder &quot;Vault&quot;- um sie bei einem späteren Kauf für denselben oder einen anderen, innerhalb desselben Händlerkontos zu verwenden.
 
-![Beziehen der Kreditkarte zur späteren Verwendung](assets/save-card-for-later.png){width="400" zoomable="yes"}
+![Nimm ihre Kreditkarte für die spätere Verwendung ab](assets/save-card-for-later.png){width="400" zoomable="yes"}
 
 Käufer verwenden das gespeicherte Token, um einen zukünftigen Checkout mit ihren gespeicherten Kreditkarteninformationen abzuschließen.
 
-![Verwenden gespeicherter Anmeldedaten für zukünftige Käufe](assets/use-stored-card.png){width="400" zoomable="yes"}
+![Verwenden Sie gespeicherte Anmeldeinformationen für zukünftigen Kauf](assets/use-stored-card.png){width="400" zoomable="yes"}
 
-Sie können ihre Kreditkarten auch einfach aus [Gespeicherte Zahlungsmethoden](https://docs.magento.com/user-guide/customers/account-dashboard-stored-payment-methods.html) in ihrem Mein Konto.
+Außerdem können sie ihre Kreditkarten einfach aus den [gespeicherten Zahlungsmethoden](https://docs.magento.com/user-guide/customers/account-dashboard-stored-payment-methods.html) in ihrem Konto löschen.
 
-![Gespeicherte Zahlungsmethoden in meinem Konto](assets/stored-payment-methods.png){width="400" zoomable="yes"}
+![In meinem Konto gespeicherte Zahlungsmethoden](assets/stored-payment-methods.png){width="400" zoomable="yes"}
 
 >[!WARNING]
 >
@@ -30,7 +30,7 @@ Sie können ihre Kreditkarten auch einfach aus [Gespeicherte Zahlungsmethoden](h
 
 ## Validierung aktivieren
 
-Sie können die Kreditkartenüberprüfung für Kunden aktivieren. _und_ Händler in der Admin - für Ihre Geschäfte in [!DNL Payment Services] [Einstellungen](settings.md#card-vaulting).
+Sie können die Kreditkartenüberprüfung für Kunden _und_, die Händler in der Admin-Konsole sind, für Ihre Geschäfte in [!DNL Payment Services] [Einstellungen](settings.md#card-vaulting) aktivieren.
 
 ## Use vaulting in the Admin
 
@@ -40,13 +40,13 @@ Sie können im Admin nur dann gültige Karten verwenden, wenn der Kunde über ei
 
 So erstellen Sie im Admin eine Bestellung für einen Kunden mit seiner gültigen Kreditkarte:
 
-1. [Erstellen einer Bestellung und Hinzufügen von Produkten](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html).
-1. In _[!UICONTROL Payment & Shipping Information]_auswählen **[!UICONTROL Stored Cards]**als Zahlungsmethode.
+1. [Erstellen Sie eine Bestellung und fügen Sie Produkte hinzu](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html).
+1. Wählen Sie in _[!UICONTROL Payment & Shipping Information]_**[!UICONTROL Stored Cards]**als Zahlungsmethode aus.
 1. Wählen Sie die gewünschte Kreditkartenzahlmethode aus.
-1. Nachdem Sie alle weiteren erforderlichen Schritte für die Bestellung ausgeführt haben, [submit it](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=en#step-3%3A-submit-the-order).
+1. Nachdem Sie alle weiteren erforderlichen Schritte für die Bestellung ausgeführt haben, senden Sie [sie](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=en#step-3%3A-submit-the-order).
 
-   ![Verwenden Sie eine ausgewertete Kreditkarte in Admin für den Kunden](assets/admin-vaultedcard.png){width="600" zoomable="yes"}
+   ![Verwenden Sie eine gültige Kreditkarte in Admin für den Kunden](assets/admin-vaultedcard.png){width="600" zoomable="yes"}
 
 ## Sicherheit
 
-Minimale Kreditkarteninformationen werden für den Käufer freigegeben. Er sieht nur die letzten vier Ziffern, das Ablaufdatum und die Marke seiner ausgefüllten Kreditkarte. Die Kreditkarteninformationen werden bei dem Zahlungsdienstleister gespeichert, um [PCI](security.md#PCI-compliance) Compliance-Standards.
+Minimale Kreditkarteninformationen werden für den Käufer freigegeben. Er sieht nur die letzten vier Ziffern, das Ablaufdatum und die Marke seiner ausgefüllten Kreditkarte. Kreditkarteninformationen werden beim Zahlungsdienstleister gespeichert, um die [PCI](security.md#PCI-compliance)-Compliance-Standards zu erfüllen.

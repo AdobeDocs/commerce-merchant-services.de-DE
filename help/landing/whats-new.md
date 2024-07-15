@@ -18,6 +18,6 @@ Bei den folgenden Elementen handelt es sich um wichtige Änderungen an der Dokum
 
 | Dienst | Änderung | Typ |
 | -- | -- | -- |
-| [**Catalog Service**](../live-search/overview.md) | Der [Steuern mit Catalog Service und API-Mesh anzeigen](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/taxes.html) Thema. | Neues Thema |
+| [**Catalog Service**](../live-search/overview.md) | Das Thema [Steuern mit Catalog Service und API-Mesh anzeigen](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/taxes.html) wurde hinzugefügt. | Neues Thema |
 
 Diese Tabelle wird am ersten Montag jedes Monats aktualisiert.

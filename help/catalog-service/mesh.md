@@ -1,33 +1,33 @@
 ---
 title: '[!DNL Catalog Service and API Mesh]'
-description: '''[!DNL API Mesh] für Adobe Commerce bietet eine Möglichkeit, mehrere Datenquellen über einen gemeinsamen GraphQL-Endpunkt zu integrieren."'
+description: "[!DNL API Mesh] für Adobe Commerce bietet eine Möglichkeit, mehrere Datenquellen über einen gemeinsamen GraphQL-Endpunkt zu integrieren."
 exl-id: cdda4a83-3c5f-4a69-8279-b90464e16c0e
 role: Admin, Developer
 feature: Services, API Mesh, Catalog Service
 source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '241'
 ht-degree: 0%
 
 ---
 
 # [!DNL Catalog Service and API Mesh]
 
-Die [API-Mesh für Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) ermöglicht es Entwicklern, mithilfe von Adobe I/O Runtime private oder Drittanbieter-APIs und andere Schnittstellen mit Adobe-Produkten zu integrieren.
+Mit dem [API-Mesh für Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) können Entwickler private oder Drittanbieter-APIs und andere Schnittstellen mit Adobe-Produkten integrieren, die Adobe I/O Runtime verwenden.
 
 ![Katalogarchitekturdiagramm](assets/catalog-service-architecture-mesh.png)
 
 Der erste Schritt zur Verwendung des API-Meshs mit dem Catalog Service besteht darin, API-Mesh mit Ihrer Instanz zu verbinden. Detaillierte Anweisungen finden Sie unter [Erstellen eines Gitters](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/).
 
-Um das Setup abzuschließen, installieren Sie die [Adobe Developer CLI-Paket](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
+Um das Setup abzuschließen, installieren Sie das [Adobe Developer CLI-Paket](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
 
-Nachdem Mesh in Adobe I/O Runtime konfiguriert wurde, führen Sie den folgenden Befehl aus, um einen `CommerceCatalogServiceGraph` zu Ihrem Gitter.
+Nachdem der Mesh in Adobe I/O Runtime konfiguriert wurde, führen Sie den folgenden Befehl aus, um Ihrem Gitter eine `CommerceCatalogServiceGraph` -Quelle hinzuzufügen.
 
 ```bash
 aio api-mesh:source:install "CommerceCatalogServiceGraph" -f variables.json
 ```
 
-Wo `variables.json` ist eine separate Datei, in der häufig verwendete Werte für Adobe I/O Runtime gespeichert werden.
+Dabei ist `variables.json` eine separate Datei, in der häufig verwendete Werte für Adobe I/O Runtime gespeichert werden.
 Beispielsweise kann der API-Schlüssel in der Datei gespeichert werden:
 
 ```json
@@ -36,7 +36,7 @@ Beispielsweise kann der API-Schlüssel in der Datei gespeichert werden:
 }
 ```
 
-Nach Ausführung dieses Befehls sollte der Catalog Service über das API-Mesh ausgeführt werden. Sie können die `aio api-mesh:get` -Befehl, um die Konfiguration Ihres aktualisierten Netzwerks anzuzeigen.
+Nach Ausführung dieses Befehls sollte der Catalog Service über das API-Mesh ausgeführt werden. Sie können den Befehl `aio api-mesh:get` ausführen, um die Konfiguration Ihres aktualisierten Netzwerks anzuzeigen.
 
 ## Beispiele für API-Gitter
 
@@ -45,7 +45,7 @@ Mit dem API-Mesh können Benutzer externe Datenquellen nutzen, um Ihre Adobe Com
 ### Ebenenpreise aktivieren
 
 In diesem Beispiel wird der API-Mesh verwendet, um die Ebenenpreise in Adobe Commerce zu aktivieren.
-Ersetzen Sie die `name `, `endpoint`, und `x-api-key` -Werte.
+Ersetzen Sie die Werte `name `, `endpoint` und `x-api-key`.
 
 ```json
 {
@@ -160,7 +160,7 @@ query {
 
 ### Entitäts-ID abrufen
 
-Dieses Gitter hängt die `entityId` zur ProductView-Benutzeroberfläche. Ersetzen Sie die `name `, `endpoint`, und `x-api-key` -Werte.
+Dieser Mesh hängt die `entityId` an die ProductView-Oberfläche an. Ersetzen Sie die Werte `name `, `endpoint` und `x-api-key`.
 
 ```json
 {

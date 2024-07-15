@@ -1,9 +1,10 @@
 ---
 title: Geschätztes Datenvolumen und Übertragungszeit
-description: "Erfahren Sie, wie Sie das Datenvolumen und die Übertragungszeit für die [!DNL data export] Tool zum Synchronisieren von Feed-Daten zwischen Adobe Commerce und verbundenen Diensten."
+description: Erfahren Sie, wie Sie das Datenvolumen und die Übertragungszeit schätzen können, die für das [!DNL data export] Tool zur Synchronisierung von Feed-Daten zwischen Adobe Commerce und verbundenen Diensten erforderlich sind.
 role: Admin, Developer
 recommendations: noCatalog
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+exl-id: 51ea98fd-cf90-44bd-a639-992bfc7f3eca
+source-git-commit: 42a9ea0f62f35db451cd3e780adf530d0699a638
 workflow-type: tm+mt
 source-wordcount: '599'
 ht-degree: 0%
@@ -22,7 +23,7 @@ Standardmäßig verarbeitet das Datenexport-Tool Daten im Einzelthread-Modus mit
 Basierend auf der Standardkonfiguration wirken sich die folgenden Faktoren auf die Datenübertragungszeit während der Synchronisierung aus.
 
 - Die Thread-Anzahl ist auf 1 gesetzt (standardmäßig)
-- Die Stapelgröße ist auf _100_ für alle Feeds mit Ausnahme der `prices` Feed, in dem _500_.
+- Die Stapelgröße wird für alle Feeds mit Ausnahme des `prices` -Feeds auf _100_ festgelegt, wobei sie auf _500_ festgelegt ist.
 - Die Akzeptanzrate des Feeds beträgt 2 Anfragen pro Sekunden.
 - Alle Produkte werden allen vorhandenen Websites zugewiesen.
 - Für die Preisberechnungsszenarien werden allen Produkten spezielle und gruppierte Preise zugewiesen.
@@ -49,4 +50,3 @@ Verwenden Sie die Werte und Formeln in der folgenden Tabelle, um das Datenvolume
 | Kategorieberechtigungen | Zählung aller Kategorieberechtigungen + 4 Fallback-Datensätze (CP): 10000 | KP = 10000 | 10000 / Stapelgröße (100) = 100 Anforderungen | (100 Anforderungen * 0,5 Sekunden pro Anforderung) / 60 = 0,8 Minuten (50 Sekunden) |
 | Lagerbestandsstatus | Produkte (P): 10000, Lagerprodukte für (S): 5 (vorausgesetzt, jedes Produkt ist jedem Lager zugeordnet) | P * S = 50000 | 50000 / Stapelgröße (100) = 500 Anforderungen | (500 Anforderungen * 0,5 Sekunden pro Anforderung) / 60 = 4,2 Minuten |
 | Verkaufsaufträge | Alle Auftragsunterlagen (einschließlich Rechnungen, Sendungen usw.) (SO): 10000 | SO = 10000 | 10000 / Stapelgröße (100) = 100 Anforderungen | (100 Anforderungen * 0,5 Sekunden pro Anforderung) / 60 = 0,8 Minuten (50 Sekunden) |
-

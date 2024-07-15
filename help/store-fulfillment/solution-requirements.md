@@ -1,13 +1,13 @@
 ---
 title: Anforderungen an die Store-Erfüllung
-description: Anforderungen an die Bereitstellung und das Onboarding der [!DNL Store Fulfillment solution].
+description: Voraussetzungen für die Bereitstellung und das Onboarding des  [!DNL Store Fulfillment solution].
 role: Leader, Admin, Developer
 level: Intermediate
 feature: Shipping/Delivery, Install
 exl-id: f9e05049-5904-4f6c-b45d-9f81fbc76b69
 source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '306'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ In den folgenden Abschnitten werden die technischen und geschäftlichen Anforder
 
 ## Anforderungen an die Plattform- und Softwareversion
 
-Die [!DNL Store Fulfillment] -Lösung ist für Adobe Commerce-Kunden auf den folgenden Plattformen verfügbar.
+Die [!DNL Store Fulfillment] -Lösung steht Adobe Commerce-Kunden auf den folgenden Plattformen zur Verfügung.
 
 - Adobe Commerce über Cloud-Infrastruktur (ECE)
 - Adobe Commerce vor Ort (EE)
@@ -27,9 +27,9 @@ Lesen Sie vor der Installation oder Aktualisierung die Versionshinweise und Syst
 
 - [Versionshinweise zur Store-Erfüllung](release-notes.md)
 
-- [Versionshinweise zu Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html) im *Versionsinformationen zu Adobe Commerce*.
+- [Adobe Commerce-Versionshinweise](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html) in den *Adobe Commerce-Versionsinformationen*.
 
-- [Systemanforderungen von Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) im *Adobe Commerce-Installationsanleitung*.
+- [Adobe Commerce-Systemanforderungen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) im *Adobe Commerce-Installationshandbuch*.
 
 
 ## Anforderungen an Store Assist-Apps
@@ -38,7 +38,7 @@ Der End-to-End-Prozess zur Verwaltung von Store-Abruf-Bestellungen wird über di
 
 **Mindestanforderungen an das Betriebssystem**
 
-- Android 6
+- ANDROID 6
 - iOS 12
 
 **Mindestanforderungen an die Hardware**
@@ -62,6 +62,6 @@ Ihr Unternehmen muss die folgenden Mindestkriterien erfüllen, um die Store Fulf
 
 - Die Wi-Fi-Verfügbarkeit an allen Standorten, die die Store Fulfillment-Lösung unterstützen, speichern: 3 MBit/s Mindestinternetgeschwindigkeit
 
-- Store- und Warehouse-Mitarbeiter haben während ihres Verlags Zugriff auf Mobilgeräte mit iOS oder Android, die entweder persönlich oder vom Händler bereitgestellt werden
+- Store- und Warehouse-Mitarbeiter haben während ihres Verlags persönlichen oder vom Händler bereitgestellten Zugriff auf Mobilgeräte von iOS oder Android
 
 - Produkte, die mit der Store Fulfillment-Lösung verwaltet werden, müssen über Produktattribute verfügen, die entweder einen SKU- oder einen UPC-Produktcode enthalten

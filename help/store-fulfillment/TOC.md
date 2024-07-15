@@ -9,19 +9,19 @@ recommendations: noDisplay
 source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '84'
-ht-degree: 10%
+ht-degree: 8%
 
 ---
 
 
-# Store-Erfüllung für Commerce {#store-fulfillment}
+# Store Fulfillment for Commerce {#store-fulfillment}
 
 - [Guide - Übersicht](guide-overview.md)
 - [Einführung in [!DNL Store Fulfillment]](introduction.md)
 - [Workflows für die Store-Hilfe](store-assist-modules.md)
 - [Voraussetzungen](solution-requirements.md)
 - [Versionshinweise](release-notes.md)
-- Integrierte Store-Erfüllung {#onboarding}
+- Onboard Store Fulfillment {#onboarding}
    - [Onboarding-Übersicht](onboard.md)
    - [Installieren der Erweiterung](install.md)
    - [Store-Erfüllung verbinden](connect-set-up-service.md)
@@ -37,7 +37,7 @@ ht-degree: 10%
 - Systemkonfiguration {#system-configuration}
    - [Hintergrundprozesse](background-processes.md)
    - [Speicherort und Einrichtung der Zuordnung](store-location-map-provider-setup.md)
-   - [Einrichtung des Check-in-Erlebnisses](check-in-experience-setup.md)
+   - [Einrichtung des Eincheckerlebnisses](check-in-experience-setup.md)
    - [Benutzereinrichtung](user-setup.md)
    - [App-Einrichtung](app-setup.md)
 

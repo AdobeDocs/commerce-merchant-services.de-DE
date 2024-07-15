@@ -1,6 +1,6 @@
 ---
 title: Kategorie-Merchandising
-description: Verwendung [!DNL Live Search] KategorieMerchandising für ein schnelleres Einkaufserlebnis.
+description: Verwenden Sie [!DNL Live Search] Kategorie-Merchandising für ein schnelleres Einkaufserlebnis.
 gourl: ls_catalog_merchandising
 exl-id: 24f159c1-b175-47c1-aca1-8bada118b4b4
 source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
@@ -12,19 +12,19 @@ ht-degree: 0%
 
 # Kategorie-Merchandising
 
-KategorieMerchandising ermöglicht es den Eigentümern von Geschäften, [!DNL Live Search] Intelligente Rangfolge [Regeln](rules.md) auf Produktkategorien und Unterkategorien.
+Kategorievermarktung ermöglicht es den Eigentümern von Speichern, [!DNL Live Search] Intelligente Ranglisten [Regeln](rules.md) auf Produktkategorien und Unterkategorien anzuwenden.
 
 Dieses Video ist eine Einführung in Kategorie-Merchandising.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424617)
 
-Auf die Funktion kann in Admin unter **Marketing** > SEO &amp; Suche > **[!DNL Live Search]** > **Kategorie-Merchandising**.
+Der Zugriff auf die Funktion erfolgt im Admin unter **Marketing** > SEO &amp; Suche > **[!DNL Live Search]** > **Kategorie-Merchandising**.
 
 >[!NOTE]
 >
->Kategorie-Merchandising ist verfügbar mit [!DNL Live Search] [3.0.0 oder höher](release-notes.md). Wenn der Arbeitsbereich &quot;KategorieMerchandising&quot;angezeigt wird, jedoch keine Daten enthält, aktualisieren Sie die [!DNL Live Search] -Modul.
+>Kategorie-Merchandising ist mit [!DNL Live Search] [3.0.0 oder höher](release-notes.md) verfügbar. Wenn der Arbeitsbereich &quot;KategorieMerchandising&quot;angezeigt wird, jedoch keine Daten enthält, aktualisieren Sie das Modul [!DNL Live Search] .
 
-![KategorieMerchandising](assets/category_workspace.png)
+![Kategry Merchandising](assets/category_workspace.png)
 
 Die Ansicht &quot;Category Merchandising&quot;zeigt definierte Kategorieregeln mit Spalten für:
 
@@ -38,10 +38,10 @@ Sie können nach einer Kategorie oder Unterkategorie im Feld &quot;Suche nach Ka
 
 ## Rangstrategien
 
-Kategorie-Merchandising verwendet dieselben Ranking-Typen wie bei [Einzelprodukte](rules-workspace.md).
+Kategorievermarktung verwendet dieselben Ranglistentypen wie [einzelne Produkte](rules-workspace.md).
 Es gibt zwei Arten von Ranking: Intelligent und Manual.
 
-**Intelligente Rangfolge** nutzt die Verhaltensdatenanalyse der Storefront durch [Adobe Sensei](https://www.adobe.com/sensei.html) um alle Produkte innerhalb ausgewählter Kategorien nach einem bestimmten Algorithmus zu sortieren. Sobald ein intelligentes Ranking ausgewählt wurde, wird erwartet, dass sich die spezifische Reihenfolge der Produkte im Laufe der Zeit ändert, da die zugrunde liegenden Daten von Adobe Sensei fortlaufend neu analysiert werden. So ändern sich zum Beispiel die beliebtesten Produkte im Laufe der Zeit automatisch, wenn sich die Voreinstellungen der Kunden ändern.
+**Intelligente Rangfolge** nutzt die verhaltensbasierte Datenanalyse der Storefront von [Adobe Sensei](https://www.adobe.com/sensei.html), um alle Produkte innerhalb ausgewählter Kategorien nach einem bestimmten Algorithmus zu sortieren. Sobald ein intelligentes Ranking ausgewählt wurde, wird erwartet, dass sich die spezifische Reihenfolge der Produkte im Laufe der Zeit ändert, da die zugrunde liegenden Daten von Adobe Sensei fortlaufend neu analysiert werden. So ändern sich zum Beispiel die beliebtesten Produkte im Laufe der Zeit automatisch, wenn sich die Voreinstellungen der Kunden ändern.
 Intelligente Rangmethoden sind:
 
 * Am häufigsten gekauft: Sortiert Produkte nach der Häufigkeit, mit der sie von Käufern in den letzten sieben Tagen gekauft wurden.
@@ -51,25 +51,25 @@ Intelligente Rangmethoden sind:
 * Trends: Sortiert Produkte nach den jüngsten Popularitätssteigerungen basierend auf Ansichten.
 * Keine: Sortiert Produkte in ihrer Standardreihenfolge.
 
-**Manuelles Ranking** ermöglicht es Benutzern, die automatische Sortierungsreihenfolge des Produkts zu überschreiben, indem sie Regeln für manuelles Pin, Verstärken, Begraben und Ausblenden definieren.
+Mit der Funktion **Manuelles Ranking** können Benutzer die automatische Sortierungsreihenfolge des Produkts überschreiben, indem sie Regeln für manuelles Pin, Verstärken, Begraben und Ausblenden definieren.
 
 ## Übernommenes Ranking
 
 Als Merchandiser möchten Sie vielleicht alle Damenbekleidungskategorien nach &quot;Trends&quot;sortieren können. Dazu gehören die Unterkategorien &quot;Damenhose&quot;, &quot;Damenhemden&quot; und &quot;Damenzubehör&quot;. Männer sollten nicht betroffen sein. Sie können vererbte Rankings verwenden, um dies zu erreichen.
 
-Bei der Auswahl einer intelligenten Rangmethode für eine Kategorie oder Unterkategorie mit Unterkategorien können Sie die **Anwenden intelligenter Rankings auf Unterkategorien** -Option. Dadurch wird die Ranking-Methode auf alle Unterkategorien angewendet.
+Wenn Sie eine intelligente Ranking-Methode für eine Kategorie oder Unterkategorie mit Unterkategorien auswählen, können Sie die Option **Intelligente Ranglisten auf Unterkategorien anwenden** aktivieren. Dadurch wird die Ranking-Methode auf alle Unterkategorien angewendet.
 
-Diese Unterkategorien übernehmen diese Regel nun von der übergeordneten Kategorie (&quot;Ja&quot;in der Spalte &quot;Vererbte Rangfolge&quot;). In der Spalte Aktion sind nur folgende Optionen verfügbar: **Regel bearbeiten**, und **Details anzeigen**. Die **Löschen** für geerbte Regeln für Unterkategorien deaktiviert ist. Das Löschen der Vererbung von Unterkategorien erfordert das Rückgängigmachen der Vererbung von der übergeordneten Kategorie.
+Diese Unterkategorien übernehmen diese Regel nun von der übergeordneten Kategorie (&quot;Ja&quot;in der Spalte &quot;Vererbte Rangfolge&quot;). In der Spalte Aktion sind nur die Optionen **Regel bearbeiten** und **Details anzeigen** verfügbar. Die Option **Löschen** ist für geerbte Regeln für Unterkategorien deaktiviert. Das Löschen der Vererbung von Unterkategorien erfordert das Rückgängigmachen der Vererbung von der übergeordneten Kategorie.
 
 Für jede Kategorie oder Unterkategorie kann jeweils nur eine intelligente Rangfolge angewendet werden. Möglicherweise werden auch zusätzliche manuelle Ranglisten angewendet.
 
-Wenn Sie einen Intelligent-Rang auf eine Kategorie anwenden und die **Intelligente Rangfolge auf Unterkategorien anwenden** -Option, werden alle intelligenten Rangfolgen überschrieben, die bereits auf die Unterkategorien angewendet wurden.
+Wenn Sie eine intelligente Rangfolge auf eine Kategorie anwenden und die Option **Intelligente Rangfolge auf Unterkategorien anwenden** aktivieren, werden alle Intelligenten Rangzuweisungen, die bereits auf die Unterkategorien angewendet wurden, überschrieben.
 
-![Überschriebene Unterkategorien](assets/category_overwite_subs.png){width="700"}
+![Überschriebene Unterkategorienliste](assets/category_overwite_subs.png){width="700"}
 
-Wenn Sie auf **Alle anzeigen**, wird ein Dialogfeld mit Details zu den vorgeschlagenen Änderungen geöffnet.
+Wenn Sie auf **Alle anzeigen** klicken, wird ein Dialogfeld mit Details zu den vorgeschlagenen Änderungen geöffnet.
 
-![Details zu Ranganpassungen](assets/category_overwrite.png)
+![Details zu Ranking changes](assets/category_overwrite.png)
 
 Wenn Sie eine intelligente Rangfolge direkt zu einer Kategorie hinzufügen, die über ein geerbtes intelligentes Ranking verfügt, wird die Vererbung durch das neue Intelligent-Ranking überschrieben.
 
@@ -80,42 +80,42 @@ Wenn Sie einen Intelligent -Rang aus einer Kategorie entfernen und die Unterkate
 
 Es wird ein Dialogfeld angezeigt, in dem erklärt wird, welche geerbten Unterkategorien von allen Änderungen betroffen sind, die Sie an einer übergeordneten Kategorie vornehmen.
 
-![Modales Dialogfeld für Ranking-Änderungen](assets/category_overwrite_modal.png){width="1200"}
+![modales Dialogfeld für die Ranking-Änderungen](assets/category_overwrite_modal.png){width="1200"}
 
 ## Erstellen einer Kategorieregel
 
 So erstellen Sie eine Kategorieregel:
 
-1. Klicken Sie auf **Regel hinzufügen** Schaltfläche.
-1. Im _Kategorie auswählen_ Ansicht klicken Sie durch die Kategorien und Unterkategorien.
+1. Klicken Sie auf die Schaltfläche **Regel hinzufügen** .
+1. Klicken Sie in der Ansicht _Kategorie auswählen_ durch die Kategorien und Unterkategorien.
 1. Aktivieren Sie das Kontrollkästchen, um die Kategorie auszuwählen, die Sie bewerten möchten.
-1. Klicks **Anwenden**.
+1. Klicken Sie auf **Anwenden**.
 
    ![Kategorie auswählen](assets/category_select.png)
 
-1. Im _Kategorieregel hinzufügen_ -Ansicht die intelligente Ranking-Methode auswählen, die Sie auf die Kategorie anwenden möchten.
+1. Wählen Sie in der Ansicht _Kategorieregel hinzufügen_ die intelligente Rangmethode aus, die Sie auf die Kategorie anwenden möchten.
 Auf der Seite &quot;Kategorievorschau&quot;werden die tatsächlichen Ergebnisse des ausgewählten Ranges unter Verwendung Ihrer Live-Suchdaten angezeigt.
-1. Klicks **Speichern und veröffentlichen** , um die Regel zu speichern.
+1. Klicken Sie auf **Speichern und Publish** , um die Regel zu speichern.
 
-![Auswählen der Rangmethode &quot;Intelligent&quot;](assets/category_ranking.png)
+![Wählen Sie die intelligente Rangmethode aus](assets/category_ranking.png)
 
-Die [!DNL Live Search] -Dienst verarbeitet die Regel und aktiviert sie im Store, wenn sie fertig ist.
+Der Dienst [!DNL Live Search] verarbeitet die Regel und aktiviert sie im Speicher, wenn sie fertig ist.
 
 ## Kategorieregel ändern
 
 So ändern Sie eine vorhandene Regel:
 
-1. Klicken Sie auf **...** in der Spalte Aktion und wählen Sie **Bearbeiten**.
-1. Nehmen Sie in der Regelansicht &quot;Kategorie bearbeiten&quot;die erforderlichen Änderungen vor und klicken Sie auf **Speichern und veröffentlichen**.
+1. Klicken Sie in der Spalte Aktion auf den Wert **...** und wählen Sie **Bearbeiten** aus.
+1. Nehmen Sie in der Regelansicht &quot;Kategorie bearbeiten&quot;die erforderlichen Änderungen vor und klicken Sie auf **Speichern und Publish**.
 
-Die Änderungen werden im Speicher angezeigt, wenn [!DNL Live Search] hat die Änderung verarbeitet.
+Die Änderungen werden im Speicher angezeigt, wenn [!DNL Live Search] die Änderung verarbeitet hat.
 
 ## Kategorieregel löschen
 
 So löschen Sie eine Kategorieregel:
 
-1. Klicken Sie auf **...** in der Spalte Aktion und wählen Sie **Löschen**.
-1. Im _Regel löschen_ modal, wählen Sie **Löschen** , um die Regel zu entfernen oder **Abbrechen** , um die Aktion abzubrechen.
+1. Klicken Sie in der Spalte Aktion auf den Wert **...** und wählen Sie **Löschen** aus.
+1. Wählen Sie im Modal _Regel löschen_ die Option **Löschen** aus, um die Regel zu entfernen, oder **Abbrechen** , um die Aktion abzubrechen.
 
 ## Manuelles Ranking
 
@@ -138,6 +138,6 @@ Sie können auch auf das Pin-Symbol klicken, um ein Produkt an seiner aktuellen 
 
 So fügen Sie ein Ereignis manuell hinzu:
 
-1. Klicken Sie unter &quot;Manuelles Ranking&quot;auf die **Ereignis auswählen** und wählen Sie ein Ereignis aus, das ausgeführt werden soll, wenn die zugehörigen Bedingungen erfüllt sind.
+1. Klicken Sie unter &quot;Manuelles Ranking&quot;auf das Menü **Ereignis auswählen** und wählen Sie ein Ereignis aus, das ausgeführt werden soll, wenn die zugehörigen Bedingungen erfüllt sind.
 1. Geben Sie den Namen des Produkts ein, das Sie beeinflussen möchten. Bei der Eingabe werden Produkte vorgeschlagen.
 1. Wählen Sie für mehrere Ereignisse alle anderen Ereignisse aus, die bei Erfüllung von Bedingungen Trigger werden sollen.

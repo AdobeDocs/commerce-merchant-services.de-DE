@@ -11,15 +11,15 @@ ht-degree: 0%
 
 # Entwicklung von Recommendations-Administratoren
 
-Product Recommendations ist ein leistungsstarkes Marketing-Tool, mit dem Sie Konversionen steigern, den Umsatz steigern und die Interaktion mit Kunden fördern können. Produkt-Recommendations wird auf der Storefront in Form von Einheiten wie &quot;Kunden, die dieses Produkt angesehen haben, haben auch angesehen&quot;, &quot;Kunden, die dieses Produkt gekauft haben, haben auch gekauft&quot;, &quot;Für Sie empfohlen&quot;usw. angezeigt. Adobe Commerce Product Recommendations basiert auf [Adobe Sensei](https://www.adobe.com/sensei.html), das künstliche Intelligenz und Algorithmen des maschinellen Lernens verwendet, um eine tiefgehende Analyse aggregierter Kundendaten durchzuführen. Diese Daten führen in Kombination mit Ihrem Commerce-Katalog zu sehr ansprechenden, relevanten und personalisierten Erlebnissen für den Käufer.
+Product Recommendations ist ein leistungsstarkes Marketing-Tool, mit dem Sie Konversionen steigern, den Umsatz steigern und die Interaktion mit Kunden fördern können. Produkt-Recommendations wird auf der Storefront in Form von Einheiten wie &quot;Kunden, die dieses Produkt angesehen haben, haben auch angesehen&quot;, &quot;Kunden, die dieses Produkt gekauft haben, haben auch gekauft&quot;, &quot;Für Sie empfohlen&quot;usw. angezeigt. Adobe Commerce Product Recommendations basiert auf [Adobe Sensei](https://www.adobe.com/sensei.html), das mithilfe künstlicher Intelligenz und maschineller Lernalgorithmen eine tiefgehende Analyse aggregierter Kundendaten durchführt. Diese Daten führen in Kombination mit Ihrem Commerce-Katalog zu sehr ansprechenden, relevanten und personalisierten Erlebnissen für den Käufer.
 
 >[!NOTE]
 >
->Wenn Ihre Storefront mit PWA Studio implementiert ist, lesen Sie den Abschnitt [PWA-Dokumentation](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). Wenn Sie eine benutzerdefinierte Frontend-Technologie wie React oder Vue JS verwenden, erfahren Sie im Benutzerhandbuch , wie Sie Product Recommendations in eine [Headless](headless.md) Umgebung. Headless-Instanzen müssen Eventing implementieren, um den Arbeitsbereich &quot;Produktempfehlungen&quot;zu erweitern.
+>Wenn Ihre Storefront mit PWA Studio implementiert ist, lesen Sie die [PWA-Dokumentation](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). Wenn Sie eine benutzerdefinierte Frontend-Technologie wie React oder Vue JS verwenden, erfahren Sie im Benutzerhandbuch, wie Sie die Recommendations in eine [Headless](headless.md) -Umgebung integrieren. Headless-Instanzen müssen Eventing implementieren, um den Arbeitsbereich &quot;Produktempfehlungen&quot;zu erweitern.
 
 ## Architektonischer Überblick
 
-Auf hoher Ebene werden Commerce Product Recommendations als SaaS bereitgestellt. Die Commerce-Seite enthält die Storefront mit der Vorlage für den Event-Wächter und das Recommendations-Layout sowie das Backend, das das Data Services-, SaaS-Export- und die Admin-Benutzeroberfläche umfasst. Adobe Sensei-Nachrichtendienste werden auf der SaaS-Seite genutzt.
+Auf hoher Ebene wird Commerce Product Recommendations als SaaS bereitgestellt. Die Commerce-Seite enthält die Storefront mit der Vorlage für den Event-Wächter und das Recommendations-Layout sowie das Backend, zu dem das Data Services-, SaaS-Export- und die Admin-Benutzeroberfläche gehören. Adobe Sensei-Nachrichtendienste werden auf der SaaS-Seite genutzt.
 
 ![Architekturdiagramm für Produktempfehlungen](assets/arch-diag-sensei.svg)
 
@@ -29,11 +29,11 @@ Sobald die Empfehlungsmodule installiert und konfiguriert sind, beginnt Ihre Sto
 
 Für Produkt-Recommendations sind die folgenden Daten erforderlich:
 
-- **Verhalten** - Daten aus der Interaktion eines Käufers auf Ihrer Site, z. B. Produktansichten, zu einem Warenkorb hinzugefügte Artikel und Käufe. Commerce und Adobe Sensei erfassen keine personenbezogenen Daten.
+- **Verhalten** - Daten aus der Interaktion eines Käufers auf Ihrer Site, z. B. Produktansichten, zu einem Warenkorb hinzugefügte Artikel und Käufe. Commerce und Adobe Sensei erheben keine personenbezogenen Daten.
 
 - **Katalog** - Produktmetadaten wie Name, Preis, Verfügbarkeit usw.
 
-Wenn Sie die `magento/product-recommendations` -Modul aggregiert Adobe Sensei die Verhaltens- und Katalogdaten und erstellt so für jeden Empfehlungstyp eine Produkt-Recommendations. Der Product Recommendations-Dienst stellt diese Empfehlungen dann in Ihrem Storefront bereit.
+Wenn Sie das `magento/product-recommendations` -Modul installieren, aggregiert Adobe Sensei die Verhaltens- und Katalogdaten und erstellt so für jeden Empfehlungstyp Produkt-Recommendations. Der Product Recommendations-Dienst stellt diese Empfehlungen dann in Ihrem Storefront bereit.
 
 >[!NOTE]
 >

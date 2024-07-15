@@ -16,9 +16,9 @@ ht-degree: 0%
 
 Verbinden Sie Store Fulfillment Services mit Adobe Commerce, indem Sie die erforderlichen Authentifizierungsberechtigungen und Verbindungsdaten zum Adobe Commerce-Administrator hinzufügen.
 
-- **[Konfigurieren [!DNL Commerce integration settings]](#create-an-adobe-commerce-integration)**-Erstellen Sie eine Adobe Commerce-Integration für Store Fulfillment-Dienste und generieren Sie die Zugriffstoken, um eingehende Anfragen von den Store Fulfillment-Servern zu authentifizieren.
+- **[Konfigurieren [!DNL Commerce integration settings]](#create-an-adobe-commerce-integration)** - Erstellen Sie eine Adobe Commerce-Integration für Store Fulfillment-Dienste und generieren Sie die Zugriffstoken, um eingehende Anfragen von den Store-Fulfillment-Servern zu authentifizieren.
 
-- **[Kontoanmeldeinformationen für Store Fulfillment Services konfigurieren](#configure-store-fulfillment-account-credentials)**-Fügen Sie Ihre Anmeldedaten hinzu, um Adobe Commerce mit Ihrem Store-Fulfillment-Konto zu verbinden.
+- **[Kontoanmeldeinformationen für Store Fulfillment Services konfigurieren](#configure-store-fulfillment-account-credentials)** - Fügen Sie Ihre Anmeldedaten hinzu, um Adobe Commerce mit Ihrem Store Fulfillment-Konto zu verbinden.
 
 >[!NOTE]
 >
@@ -26,7 +26,7 @@ Verbinden Sie Store Fulfillment Services mit Adobe Commerce, indem Sie die erfor
 
 ## Erstellen einer Adobe Commerce-Integration
 
-Um Adobe Commerce mit Store Fulfillment-Diensten zu integrieren, erstellen Sie eine Commerce-Integration und generieren Sie Zugriffstoken, die zum Authentifizieren von Anforderungen von Store Fulfillment-Servern verwendet werden können. Sie müssen auch die Adobe Commerce aktualisieren [!UICONTROL Consumer Settings] Optionen zum Vermeiden `The consumer isn't authorized to access %resources.` Antwortfehler bei Anfragen von Adobe Commerce an [!DNL Store Fulfillment] Dienste.
+Um Adobe Commerce mit Store Fulfillment-Diensten zu integrieren, erstellen Sie eine Commerce-Integration und generieren Zugriffstoken, die zum Authentifizieren von Anforderungen von Store Fulfillment-Servern verwendet werden können. Sie müssen auch die Adobe Commerce [!UICONTROL Consumer Settings] -Optionen aktualisieren, um `The consumer isn't authorized to access %resources.` Antwortfehler bei Anfragen von Adobe Commerce an [!DNL Store Fulfillment] -Dienste zu vermeiden.
 
 1. Erstellen Sie aus dem Admin die Integration für die Store-Erfüllung.
 
@@ -45,15 +45,15 @@ Um Adobe Commerce mit Store Fulfillment-Diensten zu integrieren, erstellen Sie e
 
 1. Wenden Sie sich an Ihren Kundenbetreuer, um die Konfiguration auf der Seite Store-Erfüllung abzuschließen und die Integration zu autorisieren.
 
-1. Adobe Commerce aktivieren [!UICONTROL Consumer Settings] -Option [!UICONTROL Allow OAuth Access Tokens to be used as standalone Bearer tokens].
+1. Aktivieren Sie die Option Adobe Commerce [!UICONTROL Consumer Settings] auf [!UICONTROL Allow OAuth Access Tokens to be used as standalone Bearer tokens].
 
-   - Navigieren Sie vom Administrator zu **[!UICONTROL Stores]** >  [!UICONTROL Configuration] > **[!UICONTROL Services]** >  **[!UICONTROL OAuth]** > **[!UICONTROL Consumer Settings]**
+   - Wechseln Sie vom Administrator zu **[!UICONTROL Stores]** > [!UICONTROL Configuration] > **[!UICONTROL Services]** > **[!UICONTROL OAuth]** > **[!UICONTROL Consumer Settings]**
 
-   - Legen Sie die [!UICONTROL Allow OAuth Access Tokens to be used as standalone Bearer tokens] -Option **[!UICONTROL Yes]**.
+   - Setzen Sie die Option [!UICONTROL Allow OAuth Access Tokens to be used as standalone Bearer tokens] auf **[!UICONTROL Yes]**.
 
 >[!IMPORTANT]
 >
-> Das Integrations-Token ist umgebungsspezifisch. Wenn Sie die Datenbank für eine Umgebung mit Quelldaten aus einer anderen Umgebung wiederherstellen, z. B. die Wiederherstellung von Produktionsdaten aus einer Staging-Umgebung, schließen Sie die `oauth_token` aus dem Datenbankexport, sodass die Details des Integrationstokens beim Wiederherstellungsvorgang nicht überschrieben werden.
+> Das Integrations-Token ist umgebungsspezifisch. Wenn Sie die Datenbank für eine Umgebung mit Quelldaten aus einer anderen Umgebung wiederherstellen - z. B. die Wiederherstellung von Produktionsdaten aus einer Staging-Umgebung -, schließen Sie die Tabelle `oauth_token` aus dem Datenbankexport aus, damit die Details des Integrationstokens beim Wiederherstellungsvorgang nicht überschrieben werden.
 
 
 ## Konfigurieren der Anmeldedaten für das Store-Fulfillment-Konto
@@ -70,19 +70,19 @@ Diese Anmeldeinformationen sind erforderlich, um die Store-Ausführung zu konfig
 
 >[!NOTE]
 >
->Der Prozess der Kontoerstellung kann einige Zeit in Anspruch nehmen. Während Sie auf Anmeldeinformationen warten, [Überprüfen und konfigurieren Sie andere Einstellungen für die Lösung &quot;Store Fulfillment&quot;](service-config-settings-overview.md).
+>Der Prozess der Kontoerstellung kann einige Zeit in Anspruch nehmen. Während Sie auf Anmeldeinformationen warten, überprüfen und konfigurieren Sie [andere Einstellungen für die Lösung &quot;Store Fulfillment&quot;](service-config-settings-overview.md).
 
 ### Hinzufügen von Anmeldeinformationen zum Herstellen einer Verbindung zur Store-Erfüllung
 
-1. Konfigurieren [Kontoanmeldeinformationen](enable-general.md) für die Produktions- und Sandbox-Umgebungen.
+1. Konfigurieren Sie [Kontoanmeldeinformationen](enable-general.md) für die Produktions- und Sandbox-Umgebungen.
 
-1. Navigieren Sie vom Administrator zu **[!UICONTROL Stores > Configuration > Services > Store Fulfillment by Walmart Commerce Technologies]**
+1. Wechseln Sie vom Administrator zu **[!UICONTROL Stores > Configuration > Services > Store Fulfillment by Walmart Commerce Technologies]** .
 
-1. Geben Sie die Kontoanmeldeinformationen ein, die für die **[!UICONTROL Production environment]**. Alle Felder sind erforderlich.
+1. Geben Sie die für den **[!UICONTROL Production environment]** angegebenen Kontoanmeldeinformationen ein. Alle Felder sind erforderlich.
 
-1. Auswählen **[!UICONTROL Save Config]**.
+1. Wählen Sie **[!UICONTROL Save Config]** aus.
 
-1. Testen Sie die Verbindung, indem Sie **[!UICONTROL Validate Credentials]**.
+1. Testen Sie die Verbindung, indem Sie **[!UICONTROL Validate Credentials]** auswählen.
 
 >[!NOTE]
 >

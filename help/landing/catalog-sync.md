@@ -1,6 +1,6 @@
 ---
 title: Katalogsynchronisierung
-description: Erfahren Sie, wie Sie Produktdaten aus der [!DNL Commerce] Server zu [!DNL Commerce Services].
+description: Erfahren Sie, wie Sie Produktdaten vom  [!DNL Commerce] Server nach [!DNL Commerce Services] exportieren.
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
 feature: Catalog Management, Data Import/Export, Catalog Service
 source-git-commit: af9de40a717d2cb55a5f42483bd0e4cbcd913f64
@@ -15,19 +15,19 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> Das Dashboard für die Katalogsynchronisierung ist jetzt das Dashboard für die Datenverwaltung. Dieses überarbeitete Dashboard unterstützt jetzt [[!DNL Product Recommendations]](../product-recommendations/guide-overview.md), [[!DNL Live Search]](../live-search/overview.md), und [[!DNL Catalog Service]](../catalog-service/overview.md). Kunden können das Data Management Dashboard abrufen, indem sie auf die neueste Version eines dieser Dienste aktualisieren. Mehr darüber erfahren Sie im Abschnitt [Data Management Dashboard](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) Dokumentation. Dieses aktuelle Thema richtet sich nach den Benutzern, die noch kein Upgrade durchführen müssen und noch über das Dashboard Katalogsynchronisierung verfügen.
+> Das Dashboard für die Katalogsynchronisierung ist jetzt das Dashboard für die Datenverwaltung. Dieses überarbeitete Dashboard unterstützt jetzt [[!DNL Product Recommendations]](../product-recommendations/guide-overview.md), [[!DNL Live Search]](../live-search/overview.md) und [[!DNL Catalog Service]](../catalog-service/overview.md). Kunden können das Data Management Dashboard abrufen, indem sie auf die neueste Version eines dieser Dienste aktualisieren. Weitere Informationen dazu finden Sie in der Dokumentation zum [Data Management Dashboard](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) . Dieses aktuelle Thema richtet sich nach den Benutzern, die noch kein Upgrade durchführen müssen und noch über das Dashboard Katalogsynchronisierung verfügen.
 
-Adobe Commerce verwendet Indexer, um Katalogdaten in Tabellen zu kompilieren. Der Prozess wird automatisch von [events](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html#events-that-trigger-full-reindexing) wie eine Änderung des Produktpreises oder des Lagerbestands.
+Adobe Commerce verwendet Indexer, um Katalogdaten in Tabellen zu kompilieren. Der Prozess wird automatisch durch [Ereignisse](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html#events-that-trigger-full-reindexing) ausgelöst, z. B. eine Änderung an einem Produktpreis oder Lagerbestand.
 
-Der Catalog Sync-Dienst verschiebt Produktdaten von einem [!DNL Adobe Commerce] -Instanz auf [!DNL Commerce Services] -Plattform auf dem neuesten Stand zu halten. Beispiel: [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) erfordert aktuelle Kataloginformationen, um Empfehlungen mit korrekten Namen, Preisen und Verfügbarkeit exakt zurückzugeben. Verwenden Sie die _Katalogsynchronisierung_ Dashboard zur Beobachtung und Verwaltung des Synchronisierungsprozesses oder der Befehlszeilenschnittstelle zum Trigger einer Katalogsynchronisierung und zur Neuindizierung von Produktdaten zur Verwendung durch [!DNL Commerce Services]. Siehe [Befehlszeilenschnittstelle - Referenz](../data-export/data-export-cli-commands.md) im _SaaS-Datenexport_ Handbuch.
+Der Dienst zur Katalogsynchronisierung verschiebt Produktdaten laufend von einer [!DNL Adobe Commerce] -Instanz auf die [!DNL Commerce Services] -Plattform, um die Daten auf dem neuesten Stand zu halten. Beispielsweise erfordert [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) die aktuellen Kataloginformationen, um Empfehlungen mit korrekten Namen, Preisen und Verfügbarkeit genau zurückzugeben. Verwenden Sie das Dashboard _Katalogsynchronisierung_ , um den Synchronisierungsprozess oder die Befehlszeilenschnittstelle zu beobachten und zu verwalten, um eine Katalogsynchronisierung Trigger und Produktdaten für die Verwendung durch [!DNL Commerce Services] neu zu indizieren. Siehe [Befehlszeilenschnittstelle-Referenz](../data-export/data-export-cli-commands.md) im Handbuch _SAAS-Datenexport_ .
 
 ## Zugriff auf das Dashboard &quot;Katalogsynchronisierung&quot;
 
-Um auf das Dashboard &quot;Katalogsynchronisierung&quot;zuzugreifen, wählen Sie **System** > _Datenübertragung_ > **Katalogsynchronisierung**.
+Um auf das Dashboard &quot;Katalogsynchronisierung&quot;zuzugreifen, wählen Sie **System** > _Datenübertragung_ > **Katalogsynchronisierung** aus.
 
-Mit dem **Katalogsynchronisierung** Dashboard können Sie:
+Im Dashboard **Katalogsynchronisierung** haben Sie folgende Möglichkeiten:
 
-- Synchronisierungsstatus anzeigen (**In Bearbeitung**, **Erfolg**, **Fehlgeschlagen**)
+- Synchronisierungsstatus anzeigen (**Wird ausgeführt**, **Erfolg**, **Fehlgeschlagen**)
 - Gesamtanzahl der synchronisierten Produkte anzeigen
 - Synchronisierte Produkte suchen, um ihren aktuellen Status anzuzeigen
 - Suchspeicherkatalog nach Name, SKU usw.
@@ -38,15 +38,15 @@ Mit dem **Katalogsynchronisierung** Dashboard können Sie:
 
 Meldet einen Synchronisierungsstatus von:
 
-- **Erfolg** - Zeigt Datum und Uhrzeit der erfolgreichen Synchronisierung und die Anzahl der aktualisierten Produkte an
-- **Fehlgeschlagen** - Zeigt Datum und Uhrzeit des Synchronisierungsversuchs an
-- **In Bearbeitung** - Zeigt Datum und Uhrzeit der letzten erfolgreichen Synchronisierung an
+- **Erfolg** - Zeigt das Datum und die Uhrzeit an, zu der die Synchronisierung erfolgreich war und die Anzahl der aktualisierten Produkte.
+- **Fehlgeschlagen** - Zeigt das Datum und die Uhrzeit des Synchronisierungsversuchs an
+- **Wird ausgeführt** - Zeigt das Datum und die Uhrzeit der letzten erfolgreichen Synchronisierung an
 
-Der Vorgang zur Katalogsynchronisierung wird automatisch stündlich ausgeführt. Wenn die erwarteten Produkte nicht auf der Storefront angezeigt werden oder die Produkte die kürzlich vorgenommenen Änderungen nicht widerspiegeln, können Sie [Probleme bei der Katalogsynchronisierung](#resolvesync).
+Der Vorgang zur Katalogsynchronisierung wird automatisch stündlich ausgeführt. Wenn die erwarteten Produkte nicht auf der Storefront angezeigt werden oder die Produkte die kürzlich vorgenommenen Änderungen nicht widerspiegeln, können Sie [Probleme bei der Katalogsynchronisierung](#resolvesync) beheben.
 
 ### Synchronisierte Produkte
 
-Zeigt die Gesamtzahl der mit Ihrer [!DNL Commerce] Katalog. Nach der ersten Synchronisierung sollten nur geänderte Produkte synchronisiert werden.
+Zeigt die Gesamtzahl der Produkte an, die aus Ihrem [!DNL Commerce]-Katalog synchronisiert wurden. Nach der ersten Synchronisierung sollten nur geänderte Produkte synchronisiert werden.
 
 ## Neu synchronisieren {#resync}
 
@@ -56,17 +56,17 @@ Wenn Sie eine Neusynchronisierung Ihres Katalogs starten müssen, bevor die stü
 >
 > Erzwingen einer erneuten Synchronisierung von Triggern eine Neusynchronisierung des gesamten Produktkatalogs, was die Belastung der Hardware-Ressourcen erhöhen kann.
 
-1. Aus dem _Katalogsynchronisierung_ Dashboard, auswählen **Einstellungen**.
+1. Wählen Sie im Dashboard _Katalogsynchronisierung_ die Option **Einstellungen** aus.
 
-   Die _Einstellungen zur Katalogsynchronisierung_ angezeigt.
+   Die Seite _Einstellungen für die Katalogsynchronisierung_ wird angezeigt.
 
-1. Im _Daten neu synchronisieren_ Abschnitt, klicken Sie auf [!UICONTROL Resync].
+1. Klicken Sie im Abschnitt _Daten neu synchronisieren_ auf [!UICONTROL Resync].
 
-   [!DNL Commerce] synchronisiert Ihren Katalog während des nächsten geplanten Synchronisierungsfensters. Je nach Größe Ihres Katalogs kann dieser Vorgang sehr lange dauern.
+   [!DNL Commerce] synchronisiert Ihren Katalog im nächsten geplanten Synchronisierungsfenster. Je nach Größe Ihres Katalogs kann dieser Vorgang sehr lange dauern.
 
 ## Synchronisierte Katalogprodukte
 
-Die **Synchronisierte Katalogprodukte** -Tabelle werden die folgenden Informationen angezeigt.
+Die Tabelle **Synchronisierte Katalogprodukte** enthält die folgenden Informationen.
 
 | Feld | Beschreibung |
 |---|---|
@@ -77,8 +77,8 @@ Die **Synchronisierte Katalogprodukte** -Tabelle werden die folgenden Informatio
 | Zuletzt geändert | Datum der letzten Änderung des Produkts in Ihrem Katalog |
 | SKU | Zeigt die Lagereinheit für das Produkt an |
 | Preis | Preis der Ware |
-| Sichtbarkeit | Die Sichtbarkeitseinstellung eines Produkts, wie in der Variablen [!DNL Commerce] Katalog |
+| Sichtbarkeit | Sichtbarkeitseinstellung eines Produkts, wie im [!DNL Commerce]-Katalog definiert |
 
 ## Beheben von Problemen bei der Katalogsynchronisierung {#resolvesync}
 
-Siehe [Protokolle und Fehlerbehebung](../data-export/troubleshooting-logging.md#troubleshooting) im _SaaS-Datenexportanleitung_.
+Siehe [Protokolle und Fehlerbehebung](../data-export/troubleshooting-logging.md#troubleshooting) im _SAAS-Datenexport-Handbuch_.

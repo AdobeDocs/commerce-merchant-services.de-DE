@@ -1,35 +1,35 @@
 ---
 title: Allgemeine Konfiguration
-description: Konfigurieren allgemeiner Einstellungen zum Aktivieren von [!DNL Store Fulfillment] für Ihren Laden. Konfigurieren Sie globale Erweiterungseinstellungen, Systemeinstellungen für die Protokollierung, Datensynchronisation und Sicherheit. Stellen Sie wichtige Daten bereit, um die Integration zwischen Adobe Commerce und Store Fulfillment-Diensten zu ermöglichen.
+description: Konfigurieren Sie allgemeine Einstellungen, um [!DNL Store Fulfillment] für Ihren Store zu aktivieren. Konfigurieren Sie globale Erweiterungseinstellungen, Systemeinstellungen für die Protokollierung, Datensynchronisation und Sicherheit. Stellen Sie wichtige Daten bereit, um die Integration zwischen Adobe Commerce und Store Fulfillment-Diensten zu ermöglichen.
 role: Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
 source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
-source-wordcount: '2419'
+source-wordcount: '2405'
 ht-degree: 0%
 
 ---
 
 # Konfiguration von Store Service und Vertrieb
 
-Aktivieren [!DNL Store Fulfillment] -Erweiterung aus der [!DNL Commerce] Admin durch Konfiguration der Erweiterungseinstellungen, der Sicherheitseinstellungen für Benutzer der Store Assist-App und der Bereitstellungsmethode.
+Aktivieren Sie die Erweiterung [!DNL Store Fulfillment] über den Administrator [!DNL Commerce] , indem Sie die Erweiterungseinstellungen, die Sicherheitseinstellungen für Benutzer der Store Assist-App und die Bereitstellungsmethode konfigurieren.
 
 >[!IMPORTANT]
 >
->Die Konfiguration des Store Fulfillment-Dienstes gilt erst, nachdem Sie Ihre Adobe Commerce-Instanz mit der [!DNL Store Fulfillment] App. Siehe [Store-Erfüllung verbinden](connect-set-up-service.md).
+>Die Konfiguration des Store Fulfillment-Dienstes gilt erst, nachdem Sie Ihre Adobe Commerce-Instanz mit der [!DNL Store Fulfillment] -App verbunden haben. Siehe [Store-Erfüllung verbinden](connect-set-up-service.md).
 
 ## Einstellungen für Store Fulfillment-Dienste verwalten
 
-Verwalten Sie Einstellungen für Store Fulfillment-Dienste über [!DNL Commerce Admin Store Configuration] Menü.
+Verwalten Sie Einstellungen für Store Fulfillment-Dienste über das Menü [!DNL Commerce Admin Store Configuration] .
 
-- Aktivieren Sie die Erweiterung, konfigurieren Sie globale Einstellungen und legen Sie Sicherheitsoptionen für Benutzerverbindungen und Konten der Store Assist-App fest, indem Sie **[!UICONTROL Stores > Configuration > Services > Store Fulfillment by Walmart Commerce Technologies]**.
+- Aktivieren Sie die Erweiterung, konfigurieren Sie globale Einstellungen und legen Sie Sicherheitsoptionen für die Benutzerverbindungen und Konten der Store-Hilfe-App fest, indem Sie **[!UICONTROL Stores > Configuration > Services > Store Fulfillment by Walmart Commerce Technologies]** auswählen.
 
-  ![Konfiguration der Admin Store-Dienste für Store-Erfüllung](assets/store-services-admin-sf-config.png)
+  ![Konfiguration der Admin Store-Dienste für die Store-Erfüllung](assets/store-services-admin-sf-config.png)
 
-- Versandmethoden konfigurieren, indem Sie **[!UICONTROL Store > Configuration > Sales > Delivery Methods > In-Store Pickup]**.
+- Konfigurieren Sie die Versandmethoden durch Auswahl von **[!UICONTROL Store > Configuration > Sales > Delivery Methods > In-Store Pickup]**.
 
-  ![Admin Store-Verkaufskonfiguration für Store-Erfüllung](assets/store-sales-admin-sf-deliver-config.png)
+  ![Konfiguration der Verkaufsverkäufe im Admin Store für die Store-Erfüllung](assets/store-sales-admin-sf-deliver-config.png)
 
 ## Grundlegende Einstellungen
 
@@ -67,11 +67,11 @@ Verwalten Sie Einstellungen für Store Fulfillment-Dienste über [!DNL Commerce 
 
 >[!NOTE]
 >
->Die [!UICONTROL Search Radius] verwendet, wenn Sie die [Speicherort und Einrichtung der Zuordnung](store-location-map-provider-setup.md) für Adobe Commerce.
+>Die Einstellung [!UICONTROL Search Radius] wird nur verwendet, wenn Sie den [Speicherort und die Einrichtung der Zuordnung](store-location-map-provider-setup.md) für Adobe Commerce konfiguriert haben.
 
 ## Aktivieren Sie die Store Fulfillment-Lösung.
 
-Aktivieren Sie die [!DNL Store Fulfillment] -Lösung, um die In-Store- und Cursor-Pickup-Funktionen zu den Einkaufs- und Checkout-Erlebnissen in Ihrer Adobe Commerce-Storefront hinzuzufügen.
+Aktivieren Sie die Lösung &quot;[!DNL Store Fulfillment]&quot;, um die In-Store- und Cumulative-Pickup-Funktionen zum Einkaufs- und Checkout-Erlebnis in Ihrer Adobe Commerce-Storefront hinzuzufügen.
 
 <table>
 <thead>
@@ -85,7 +85,7 @@ Aktivieren Sie die [!DNL Store Fulfillment] -Lösung, um die In-Store- und Curso
  <tbody>
 <tr>
 <td><strong>[!UICONTROL Enabled]</strong></td>
-<td>Aktivieren oder deaktivieren Sie die Lösung. Wenn diese Option aktiviert ist, konfigurieren und verwenden Sie Store Fulfillment-Funktionen und stellen Sie die Verbindung zwischen Ihrem Adobe Commerce-Store und her. [!DNL Store Fulfillment] Dienste. Wenn diese Option deaktiviert ist, sind alle Funktionen zur Store-Erfüllung deaktiviert und es gibt keine Kommunikation zwischen Adobe Commerce und Store Fulfillment-Diensten. Bestellinformationen können nicht verarbeitet oder empfangen werden.</td>
+<td>Aktivieren oder deaktivieren Sie die Lösung. Wenn diese Option aktiviert ist, konfigurieren und verwenden Sie die Funktionen zur Store-Erfüllung und stellen Sie die Verbindung zwischen Ihrem Adobe Commerce-Store und den [!DNL Store Fulfillment] -Diensten her. Wenn diese Option deaktiviert ist, sind alle Funktionen zur Store-Erfüllung deaktiviert und es gibt keine Kommunikation zwischen Adobe Commerce und Store Fulfillment-Diensten. Bestellinformationen können nicht verarbeitet oder empfangen werden.</td>
 <td>Webseite</td>
 <td>Ja</td>
 </tr>
@@ -103,7 +103,7 @@ Aktivieren Sie die [!DNL Store Fulfillment] -Lösung, um die In-Store- und Curso
 </tr>
 <tr>
 <td><strong>[!UICONTROL Environment]</strong></td>
-<td>Wählen Sie entweder <i>[!UICONTROL Sandbox]</i> oder <i>[!UICONTROL Production]</i><br></br>Auswählen [!UICONTROL Sandbox] ermöglicht die Kommunikation mit Fulfillment-Diensten in einer Testumgebung.<br></br>Auswählen [!UICONTROL Production] ermöglicht die Kommunikation mit Fulfillment-Diensten in einer Live-Umgebung.<br></br>Sie erhalten eine Reihe von Anmeldeinformationen für jede Umgebung und können beide Sätze in derselben Installation verwalten. <br></br>Speichern Sie die Anmeldeinformationen, bevor Sie die Verbindung überprüfen.</td>
+<td>Wählen Sie entweder <i>[!UICONTROL Sandbox]</i> oder <i>[!UICONTROL Production]</i><br></br>Wenn Sie [!UICONTROL Sandbox] auswählen, wird die Kommunikation mit den Fulfillment-Diensten in einer Testumgebung aktiviert.<br></br>Durch die Auswahl von [!UICONTROL Production] wird die Kommunikation mit den Erfüllungsdiensten in einer Live-Umgebung aktiviert.<br></br>Sie erhalten eine Reihe von Anmeldeinformationen für jede Umgebung und können beide Sätze in derselben Installation verwalten. <br></br>Speichern Sie die Anmeldeinformationen, bevor Sie die Verbindung überprüfen.</td>
 <td>Global</td>
 <td>Ja</td>
 </tr>
@@ -139,19 +139,19 @@ Aktivieren Sie die [!DNL Store Fulfillment] -Lösung, um die In-Store- und Curso
 </tr>
 </table>
 
-Nachdem Sie die [!UICONTROL Account Credentials]auswählen <strong>[!UICONTROL Validate Credentials]</strong> , um erstmals eine Verbindung zum Store-Fulfillment-Dienst zu überprüfen und herzustellen.
+Nachdem Sie den [!UICONTROL Account Credentials] konfiguriert haben, wählen Sie <strong>[!UICONTROL Validate Credentials]</strong> aus, um eine Verbindung zum Store-Fulfillment-Dienst zum ersten Mal zu überprüfen und herzustellen.
 
 ## Protokollierung konfigurieren
 
-Protokolle für Store-Fulfillment-Dienste sind in der Protokolldatei verfügbar `var/log/walmart-bopis.log`.
+Protokolle für Store-Fulfillment-Dienste sind in der Protokolldatei `var/log/walmart-bopis.log` verfügbar.
 
 Bitten Sie den Systemadministrator, Ihre Umgebungen so zu konfigurieren, dass die Ausnahmebehandlung zugelassen wird, damit API-bezogene Ausnahmen über die Firewall oder den Cache erfasst werden können.
 
-Da die Protokolldatei der Anwendung schnell wachsen kann, aktivieren Sie bei Bedarf die Protokollierung für die Anwendung nur für kurze Zeit, z. B. bei der Fehlerbehebung von Problemen bei der Store-Erfüllung für eine [!DNL Commerce] bestellen. Diese Konfiguration verhindert Reaktionszeitprobleme in Produktionsumgebungen, die durch große Protokolldateien verursacht werden.
+Da die Protokolldatei der Anwendung schnell wachsen kann, aktivieren Sie die Protokollierung für die Anwendung nur für kurze Zeit, wenn dies erforderlich ist - z. B. bei der Fehlerbehebung von Problemen bei der Store-Erfüllung für eine [!DNL Commerce]-Bestellung. Diese Konfiguration verhindert Reaktionszeitprobleme in Produktionsumgebungen, die durch große Protokolldateien verursacht werden.
 
 >[!TIP]
 >
->Bitten Sie bei lokalen Installationen von Adobe Commerce Ihren Systemadministrator, eine Protokollrotation für die `var/log/walmart-bopis.log` -Datei, um die Größe zu minimieren. Informationen zu Vor-Ort-Installationen von Adobe Commerce finden Sie unter [Protokollrotation](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html#server-settings) im _Adobe Commerce-Installationsanleitung_. Informationen zu Adobe Commerce zu Cloud-Infrastrukturprojekten finden Sie unter [Protokolle anzeigen und verwalten](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html).
+>Bitten Sie bei lokalen Installationen von Adobe Commerce Ihren Systemadministrator, eine Protokollrotation für die Datei `var/log/walmart-bopis.log` einzurichten, um die Größe zu minimieren. Informationen zu lokalen Installationen von Adobe Commerce finden Sie unter [Protokollrotation](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html#server-settings) im _Adobe Commerce-Installationshandbuch_. Informationen zu Adobe Commerce in Cloud-Infrastrukturprojekten finden Sie unter [Anzeigen und Verwalten von Protokollen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html).
 
 <table>
 <thead>
@@ -165,7 +165,7 @@ Da die Protokolldatei der Anwendung schnell wachsen kann, aktivieren Sie bei Bed
 <tbody>
 <tr>
 <td><strong>[!UICONTROL Debug Mode]</strong></td>
-<td>Der Debug-Modus wird verwendet, um die protokollierte Aktivität innerhalb der Integration zu erhöhen. Wenn diese Option deaktiviert ist, werden keine Debugging-Informationen protokolliert. Bei Aktivierung werden alle Debugging-Informationen protokolliert <br></br>Alle protokollierten Daten finden Sie in der Datei: <pre>var/log/walmart-bopis.log</pre>
+<td>Der Debug-Modus wird verwendet, um die protokollierte Aktivität innerhalb der Integration zu erhöhen. Wenn diese Option deaktiviert ist, werden keine Debugging-Informationen protokolliert. Wenn diese Option aktiviert ist, werden alle Debugging-Informationen protokolliert <br></br>Alle protokollierten Daten finden Sie in der Datei: <pre>var/log/walmart-bopis.log</pre>
 <td>Global</td>
 <td>Nein</td>
 </tr>
@@ -190,13 +190,13 @@ Details zu Vorgängen zur Bestellsynchronisierung finden Sie im Dashboard Wartes
 </tr>
 <tr>
 <td><strong>[!UICONTROL Retry Critical Error]</strong></td>
-<td>Gibt die Wiederholungsversuche für einen Synchronisierungsvorgang für Datensätze an, nachdem ein kritischer Fehler aufgetreten ist.<br></br>Kritische Fehler treten immer dann auf, wenn die Integration keine positive Antwort vom Fulfillment-Dienst erhält. Diese Probleme treten auf, wenn der Dienst ausgefallen ist oder wenn die gesendeten Bestelldaten einen Fehler aufweisen.<br></br>Wenn die Wiederholungsschwelle erreicht ist, bleibt das Element in der Warteschlange, wird aber nicht erneut verarbeitet. Alle Elemente anzeigen, deren Fehler auftreten <strong>[!UICONTROL System > Tools > Store Fulfillment Queue]</strong> Verwaltung in der Admin-Konsole. Wenden Sie sich an Ihren Kundenbetreuer, um eine Fehlerbehebung bei konsistent fehlerhaften Elementen durchzuführen.</td>
+<td>Gibt die Wiederholungsversuche für einen Synchronisierungsvorgang für Datensätze an, nachdem ein kritischer Fehler aufgetreten ist.<br></br>Kritische Fehler treten immer dann auf, wenn die Integration keine positive Antwort vom Fulfillment-Dienst erhält. Diese Probleme treten auf, wenn der Dienst ausgefallen ist oder wenn die gesendeten Bestelldaten einen Fehler aufweisen.<br></br>Wenn der Schwellenwert für einen erneuten Versuch erreicht ist, bleibt das Element in der Warteschlange, wird aber nicht erneut verarbeitet. Zeigen Sie alle Elemente mit Fehlern aus der <strong>[!UICONTROL System > Tools > Store Fulfillment Queue]</strong> -Verwaltung im Admin an. Wenden Sie sich an Ihren Kundenbetreuer, um eine Fehlerbehebung bei konsistent fehlerhaften Elementen durchzuführen.</td>
 <td>Global</td>
 <td>Nein</td>
 </tr>
 <tr>
 <td><strong>[!UICONTROL Enable Error Notification Email]</strong></td>
-<td>Aktivieren Sie Fehlerbenachrichtigungen, um eine E-Mail zu erhalten, wenn die Variable [!UICONTROL Retry Critical Error Threshold] wird für eine Bestellung erreicht. Die Benachrichtigung enthält alle verfügbaren Details zum Fehler.</td>
+<td>Aktivieren Sie Fehlerbenachrichtigungen , um eine E-Mail zu erhalten, wenn der [!UICONTROL Retry Critical Error Threshold] für eine Bestellung erreicht wird. Die Benachrichtigung enthält alle verfügbaren Details zum Fehler.</td>
 <td>Global</td>
 <td>Nein</td>
 </tr>
@@ -228,13 +228,13 @@ Details zu Vorgängen zur Bestellsynchronisierung finden Sie im Dashboard Wartes
 <tbody>
 <tr>
 <td><strong>[!UICONTROL Barcode Source]</strong></td>
-<td>Das Katalogattribut, das den scannbaren Code für die entsprechenden Elemente an Ihren Händlern speichert.<br></br>Wenn Sie nur über einen vorhandenen Händler-Standort verfügen, verwenden Sie wahrscheinlich UPC-Codes, während Ihr E-Commerce-Kanal Produkte nach SKU identifiziert. Wählen Sie in diesem Szenario das Katalogattribut aus, das den UPC-Code enthält.<br></br>Diese Einstellung stellt sicher, dass an Ihre Stores gesendete Bestellungen Listenelemente mit der richtigen Kennung enthalten, sodass Storeverknüpfungen Elemente während des Pickings genau überprüfen können.<br></br>Wenn Sie sich nicht sicher sind, fragen Sie bei Ihren Fulfillment-Mitarbeitern in der Shipping and Picking-Abteilung nach, welches Attribut gesendet werden soll. Wenn das -Attribut derzeit nicht in der Datenbank enthalten ist, können Sie das -Attribut zum Adobe Commerce-Produktattributsatz hinzufügen.</td>
+<td>Das Katalogattribut, das den scannbaren Code für die entsprechenden Elemente an Ihren Händlern speichert.<br></br>Wenn Sie nur über einen vorhandenen Händler-Standort verfügen, verwenden Sie wahrscheinlich UPC-Codes, während Ihr E-Commerce-Kanal Produkte nach SKU identifiziert. Wählen Sie in diesem Szenario das Katalogattribut aus, das den UPC-Code enthält.<br></br>Diese Einstellung stellt sicher, dass an Ihre Stores gesendete Bestellungen Listenelemente mit der richtigen Kennung auflisten, damit Storeverknüpfungen Elemente während des Pickings genau überprüfen können.<br></br>Wenn Sie sich nicht sicher sind, fragen Sie bei Ihren Fulfillment-Mitarbeitern in der Versand- und Pickingabteilung nach, welches Attribut gesendet werden soll. Wenn das -Attribut derzeit nicht in der Datenbank enthalten ist, können Sie das -Attribut zum Adobe Commerce-Produktattributsatz hinzufügen.</td>
 <td>Webseite</td>
 <td>Ja</td>
 </tr>
 <tr>
 <td><strong>[!UICONTROL Barcode Type]</strong></td>
-<td>Das Katalogattribut, das die Barcode-Quelle für die entsprechenden Elemente an Ihren Händlern speichert.<br></br>Diese Einstellung stellt sicher, dass an Ihre Stores gesendete Bestellungen Listenelemente mit der richtigen Kennung enthalten, sodass Storeverknüpfer Elemente während des Pickings genau überprüfen können. Zu den Optionen gehören SKU, UPC, GTIN, UPCA, EAN13, UPCE0, DISA, UAB, CODABAR, Price Embedded UPC.<br></br>Wenn Sie sich nicht sicher sind, wählen Sie die Option aus, die den in Ihrer [!UICONTROL Barcode Source] -Attribut. Speicherverknüpfungen können Elemente weiterhin manuell über ihre Auswahlliste zuordnen.</td>
+<td>Das Katalogattribut, das die Barcode-Quelle für die entsprechenden Elemente an Ihren Händlern speichert.<br></br>Diese Einstellung stellt sicher, dass an Ihre Stores gesendete Bestellungen Elemente mit der richtigen Kennung auflisten, damit Storeverknüpfungen Elemente während des Pickings genau überprüfen können. Zu den Optionen gehören SKU, UPC, GTIN, UPCA, EAN13, UPCE0, DISA, UAB, CODABAR, Price Embedded UPC.<br></br>Wenn Sie sich nicht sicher sind, wählen Sie die Option aus, die den im [!UICONTROL Barcode Source] -Attribut enthaltenen Werten am ehesten ähnelt. Speicherverknüpfungen können Elemente weiterhin manuell über ihre Auswahlliste zuordnen.</td>
 <td>Webseite</td>
 <td>Ja</td>
 </tr>
@@ -265,7 +265,7 @@ Konfigurieren Sie die Versandoptionen Store-Erfüllung , die die Verfügbarkeit 
 <tbody>
 <tr>
 <td><strong>[!UICONTROL Enable Ship To Store]</strong></td>
-<td>Die Einstellung von Schiff zu Speicher basiert auf Ihren vorhandenen "Schiff zu Speicher"-Funktionen. Wenn Sie Inventory management verwenden oder Bestellungen an Händlern ohne Inventar über Bestandsübertragungen zwischen Lagern akzeptieren und erfüllen können, setzen Sie diese Option auf "Ja".<br></br>Wenn Sie die Option "Schiff zu Laden"nicht unterstützen oder nicht anbieten möchten, setzen Sie sie auf "Nein". Wenn diese Option deaktiviert ist, sind Elemente in Ihrem Katalog mit einem Nullbestand für einen Händlerspeicher oder Elemente, die unter der [!DNL Out of Stock Threshold] für diesen Speicherort nicht mit Optionen zur In-Store-Abholung verfügbar sind.<br></br>Sie können den Wert dieser Einstellung für jeden Händler anpassen.</td>
+<td>Die Einstellung von Schiff zu Speicher basiert auf Ihren vorhandenen "Schiff zu Speicher"-Funktionen. Wenn Sie Inventory management verwenden oder Bestellungen an Händlern ohne Inventar über Bestandsübertragungen zwischen Lagern akzeptieren und erfüllen können, setzen Sie diese Option auf "Ja".<br></br>Wenn Sie die Option "Schiff zu Speicher"nicht unterstützen oder sie nicht anbieten möchten, setzen Sie sie auf "Nein". Wenn diese Option deaktiviert ist, werden Artikel in Ihrem Katalog mit einem Nullbestand für einen Händler oder Artikel, die unter dem Wert "[!DNL Out of Stock Threshold]"für diesen Speicherort liegen, nicht mit Optionen zur Abholung im Geschäft angeboten.<br></br>Sie können den Wert dieser Einstellung pro Händlerstandort anpassen.</td>
 <td>Global</td>
 <td>Nein</td>
 </tr>
@@ -286,7 +286,7 @@ Konfigurieren Sie die Versandoptionen Store-Erfüllung , die die Verfügbarkeit 
 <tbody>
 <tr>
 <td><strong>[!UICONTROL Enable Ship From Store]</strong></td>
-<td>Aktiviert oder deaktiviert die Option Home Delivery in Ihren Händlern. Wenn diese Option aktiviert ist, werden Ihre Händlerstätten zusammen mit anderen zugewiesenen Quellen im Lager betrachtet, das mit Ihrer Website verknüpft ist.<br></br>In standardmäßigen Inventory management-Diensten wird die [!DNL Ship from Store] ist eine Option, die inhärent ist und nicht deaktiviert werden kann. Mit der Lösung Store Fulfillment können Sie sie aktivieren oder deaktivieren.<br></br>Sie können diese Einstellung für jeden Händler-Standort und jedes Produkt anpassen.</td>
+<td>Aktiviert oder deaktiviert die Option Home Delivery in Ihren Händlern. Wenn diese Option aktiviert ist, werden Ihre Händlerstätten zusammen mit anderen zugewiesenen Quellen im Lager betrachtet, das mit Ihrer Website verknüpft ist.<br></br>Bei standardmäßigen Inventory management-Diensten ist die Option [!DNL Ship from Store] inhärent und kann nicht deaktiviert werden. Mit der Lösung Store Fulfillment können Sie sie aktivieren oder deaktivieren.<br></br>Sie können diese Einstellung für jeden Händler anpassen.</td>
 <td>Global</td>
 <td>Nein</td>
 </tr>
@@ -330,7 +330,7 @@ Konfigurieren Sie die Einstellungen für das Benutzerkonto der Store Fulfillment
 </tr>
 <tr>
 <td><strong>[!UICONTROL Force Password Change]</strong></td>
-<td><em>[!UICONTROL Yes]</em>: Erfordert vom Benutzer, sein Kennwort nach der Kontoeinrichtung zu ändern.<br></br><em>[!UICONTROL No]</em>: empfiehlt dem Benutzer, das Kennwort nach der Kontoeinrichtung zu ändern.</td>
+<td><em>[!UICONTROL Yes]</em>: Erfordert vom Benutzer, sein Kennwort nach der Kontoeinrichtung zu ändern.<br></br><em>[!UICONTROL No]</em>: Empfiehlt dem Benutzer, das Kennwort nach der Kontoeinrichtung zu ändern.</td>
 <td>Global</td>
 <td>Nein</td>
 </tr>
@@ -345,17 +345,18 @@ Konfigurieren Sie die Einstellungen für das Benutzerkonto der Store Fulfillment
 
 ## Versandmethoden
 
-Store Fulfillment funktioniert durch Erweiterung des nativen Adobe Commerce [!DNL In-Store Delivery] Funktionen. Nachdem Sie die Erweiterung installiert haben, können Sie die Bereitstellungsmethoden im Store mithilfe der folgenden erweiterten Einstellungen konfigurieren, die zum Admin hinzugefügt werden.
+Die Store-Erfüllung funktioniert durch Erweiterung der nativen Adobe Commerce [!DNL In-Store Delivery]-Funktionen. Nachdem Sie die Erweiterung installiert haben, können Sie die Bereitstellungsmethoden im Store mithilfe der folgenden erweiterten Einstellungen konfigurieren, die zum Admin hinzugefügt werden.
 
-- **Abholung im Geschäft**—Angebotsoptionen für den In-Store-Versand während des Checkout-Prozesses Diese Einstellungen konfigurieren die häufigsten Versandszenarien für BOPIS-Bestellungen.
+- **In-store-Abruf** - Angebotsoptionen für die Bereitstellung im Store während des Checkout-Prozesses
+Diese Einstellungen konfigurieren die gängigsten Versandszenarien für BOPIS-Bestellungen.
 
-- **[!UICONTROL Curbside pick up]**-Angebotsoptionen für Kunden, die an einem Store-Speicherort parken und ihre Bestellung von einem Store-Mitarbeiter an sie senden lassen.
+- **[!UICONTROL Curbside pick up]**-Angebotsoptionen für Kunden, die an einem Store-Speicherort parken und ihre Bestellung ihnen von einem Store-Mitarbeiter zukommen lassen.
 
-Konfigurieren Sie diese Einstellungen über den Administrator, indem Sie <strong>[!UICONTROL Stores > Configuration > Sales > Delivery Methods > In-Store Pickup]</strong>.
+Konfigurieren Sie diese Einstellungen über den Admin, indem Sie <strong>[!UICONTROL Stores > Configuration > Sales > Delivery Methods > In-Store Pickup]</strong> auswählen.
 
 >[!NOTE]
 >
->Weitere Informationen zum Konfigurieren von In-Store-Bereitstellungsoptionen finden Sie unter [In-Store-Bereitstellung](https://docs.magento.com/user-guide/shipping/shipping-in-store-delivery.html) im _Adobe Commerce-Benutzerhandbuch_.
+>Weitere Informationen zum Konfigurieren von Bereitstellungsoptionen im Store finden Sie unter [In-Store-Bereitstellung](https://docs.magento.com/user-guide/shipping/shipping-in-store-delivery.html) im _Adobe Commerce-Benutzerhandbuch_.
 
 
 ### Konfiguration von Versandmethoden
@@ -400,7 +401,7 @@ Mit der Bereitstellungsmethode im Geschäft kann der Kunde eine Quelle auswähle
 </thead>
 <tbody><tr>
 <td><strong>Startseite - Versandtitel</strong></td>
-<td>Gibt den Titel an, der für die Option "Home Delivery"in den Bereichen Produkt, Warenkorb und Checkout angezeigt werden soll. Der Home-Versand bezieht sich auf die standardmäßigen Versandfunktionen von Adobe Commerce - von einem Warehouse über einen Frachtführer oder direkt auf die vom Kunden bereitgestellte Lieferadresse. </br></br>Dieses Etikett wirkt sich nicht auf die Versandmethodenbeschriftungen für den ausgewählten Versandunternehmen aus.</td>
+<td>Gibt den Titel an, der für die Option "Home Delivery"in den Bereichen Produkt, Warenkorb und Checkout angezeigt werden soll. Der Home-Versand bezieht sich auf die standardmäßigen Versandfunktionen von Adobe Commerce - von einem Warehouse über einen Frachtführer oder direkt auf die vom Kunden bereitgestellte Lieferadresse. </br></br>Diese Bezeichnung wirkt sich nicht auf die Versandmethodenbeschriftungen für den ausgewählten Versandunternehmen aus.</td>
 <td>Store-Ansicht</td>
 <td>Nein</td>
 </tr>
@@ -436,7 +437,7 @@ Mit der Bereitstellungsmethode im Geschäft kann der Kunde eine Quelle auswähle
 </tr>
 <tr>
 <td><strong>Anweisungen zur Abholung im Store</strong></td>
-<td>Wenn eine Bestellung in Ihren Einzelhandelsgeschäften abgeholt werden kann, wird der Kunde per E-Mail benachrichtigt. Wenn der Kunde [!DNL In-Store Pickup] während des Auscheckens können Sie hier die Pickup-Anweisungen anpassen. </br></br>Diese Anweisungen werden global festgelegt und gelten für alle Einzelhandelsspeicherorte. Sie können die Anweisungen auch auf der Ebene des Einzelhandelsspeicherorts anpassen.</td>
+<td>Wenn eine Bestellung in Ihren Einzelhandelsgeschäften abgeholt werden kann, wird der Kunde per E-Mail benachrichtigt. Wenn der Kunde beim Checkout [!DNL In-Store Pickup] ausgewählt hat, können Sie hier die Pickup-Anweisungen anpassen. </br></br>Diese Anweisungen werden global festgelegt und gelten für alle Einzelhandelsspeicherorte. Sie können die Anweisungen auch auf der Ebene des Einzelhandelsspeicherorts anpassen.</td>
 <td>Store-Ansicht</td>
 <td>Nein</td>
 </tr>
@@ -454,7 +455,7 @@ Mit der Bereitstellungsmethode im Geschäft kann der Kunde eine Quelle auswähle
 </tr>
 <tr>
 <td><strong>Geschätzte Zeitbeschriftung für die Abholung</strong></td>
-<td>Zeigt die geschätzte Zeit an, bis eine Bestellung für die Kundenabholung verfügbar ist. Diese Informationen werden Kunden angezeigt, wenn sie einen Einzelhandelsspeicherort für die [!DNL In-Store Pickup] Bereitstellungsoption. </br></br>Bei der Anpassung dieser Beschriftung können Sie den Code verwenden <code>%1</code> zum Einfügen Ihrer <strong>Geschätzte Abruf-Vorlaufzeit</strong>. Beispiel:</br></br><code>Ready for Pickup in %1 minutes.</code></br></br>Diese Einstellung gilt für alle Einzelhandelsspeicherorte. Sie können die Vorlaufzeit auch auf der Ebene des Einzelhandelsstandorts anpassen.</td>
+<td>Zeigt die geschätzte Zeit an, bis eine Bestellung für die Kundenabholung verfügbar ist. Diese Informationen werden Kunden angezeigt, wenn sie einen Einzelhandelsspeicherort für die Bereitstellungsoption [!DNL In-Store Pickup] auswählen. </br></br>Beim Anpassen dieser Beschriftung können Sie den Code <code>%1</code> verwenden, um Ihre <strong>geschätzte Abruf-Vorlaufzeit</strong> einzufügen. Beispiel:</br></br><code>Ready for Pickup in %1 minutes.</code></br></br>Diese Einstellung gilt für alle Einzelhandelsspeicherorte. Sie können die Vorlaufzeit auch auf der Ebene des Einzelhandelsstandorts anpassen.</td>
 <td>Store-Ansicht</td>
 <td>Nein</td>
 <tr>
@@ -480,7 +481,7 @@ Mit der Bereitstellungsmethode im Geschäft kann der Kunde eine Quelle auswähle
 </thead>
 <tbody><tr>
 <td><strong>Auf Lager</strong></td>
-<td>Wenn ein Kunde den Locator für Einzelhandelsgeschäfte verwendet, wird für jeden Standort die Lagerverfügbarkeit für die aktuellen Elemente angezeigt. </br></br>Sie können die <em>[!UICONTROL in-stock]</em> Statusbezeichnung hier.</td>
+<td>Wenn ein Kunde den Locator für Einzelhandelsgeschäfte verwendet, wird für jeden Standort die Lagerverfügbarkeit für die aktuellen Elemente angezeigt. </br></br>Hier können Sie die Statusbeschriftung <em>[!UICONTROL in-stock]</em> anpassen.</td>
 <td>Store-Ansicht</td>
 <td>Nein</td>
 </tr>
@@ -492,7 +493,7 @@ Mit der Bereitstellungsmethode im Geschäft kann der Kunde eine Quelle auswähle
 </tr>
 <tr>
 <td><strong>Teilweise auf Lager</strong></td>
-<td>Wenn ein Kunde den Locator für Einzelhandelsgeschäfte verwendet, wird die Lagerverfügbarkeit für alle aktuellen Elemente für jeden Standort angezeigt. </br></br>Sie können die <em>[!UICONTROL partially in-stock]</em> Statusbezeichnung hier.</td>
+<td>Wenn ein Kunde den Locator für Einzelhandelsgeschäfte verwendet, wird die Lagerverfügbarkeit für alle aktuellen Elemente für jeden Standort angezeigt. </br></br>Hier können Sie die Statusbeschriftung <em>[!UICONTROL partially in-stock]</em> anpassen.</td>
 <td>Store-Ansicht</td>
 <td>Nein</td>
 </tr>

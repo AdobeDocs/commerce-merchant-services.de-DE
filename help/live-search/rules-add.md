@@ -15,10 +15,10 @@ Um eine Regel zu erstellen, verwenden Sie zunächst den Regeleditor, um die Bedi
 
 ## Regel hinzufügen
 
-1. Navigieren Sie im Admin zu **Marketing** > SEO &amp; Suche > **[!DNL Live Search]**.
-1. Legen Sie die **Anwendungsbereich** zur Identifizierung der [Store-Ansicht](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) wo die Regel gilt.
-1. Klicken Sie auf **Merchandising durchsuchen** Arbeitsbereich.
-1. Klicks **Regel hinzufügen** , um den Regeleditor zu starten.
+1. Wechseln Sie im Admin zu **Marketing** > SEO &amp; Suche > **[!DNL Live Search]**.
+1. Legen Sie den **Umfang** fest, um die [Store-Ansicht](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) zu identifizieren, in der die Regel gilt.
+1. Klicken Sie auf den Arbeitsbereich **Merchandising durchsuchen** .
+1. Klicken Sie auf **Regel hinzufügen** , um den Regeleditor zu starten.
 
 ## Regeltyp
 
@@ -39,41 +39,41 @@ Bedingungen sind die Voraussetzungen für den Trigger eines Ereignisses. Eine Re
 
 ### Einzelbedingung
 
-1. under *Regel erstellen*, wählen Sie die **Bedingung** einzuhalten und den Anweisungen zu folgen, um die Anweisung auszufüllen.
+1. Wählen Sie unter *Regel erstellen* die zu erfüllende **Bedingung** aus und befolgen Sie die Anweisungen, um die Anweisung abzuschließen.
 
-   * Suchabfrage enthält - Geben Sie die Textzeichenfolge ein, die in der Abfrage des Käufers enthalten sein muss. Die Einstellung Übereinstimmung bestimmt, inwieweit die Abfrage des Käufers mit dem Katalog übereinstimmt. Optionen:<br /> Beliebig : Jeder Teil des Abfragetextes des Käufers kann mit der Bedingung übereinstimmen.<br />Alle - Die gesamte Abfrage des Käufers muss mit der Bedingung übereinstimmen.
-   * Suchabfrage lautet - Geben Sie eine Textzeichenfolge ein, die genau mit der Abfrage des Käufers übereinstimmt. Beispiel: &quot;Yoga pants&quot;. Regeln mit `Search query is` und Übereinstimmung `All` kann nur eine Bedingung aufweisen.
+   * Suchabfrage enthält - Geben Sie die Textzeichenfolge ein, die in der Abfrage des Käufers enthalten sein muss. Die Einstellung Übereinstimmung bestimmt, inwieweit die Abfrage des Käufers mit dem Katalog übereinstimmt. Optionen:<br /> Beliebig - Jeder Teil des Abfragetextes des Käufers kann mit der Bedingung übereinstimmen.<br />Alle - Die gesamte Abfrage des Käufers muss mit der Bedingung übereinstimmen.
+   * Suchabfrage lautet - Geben Sie eine Textzeichenfolge ein, die genau mit der Abfrage des Käufers übereinstimmt. Beispiel: &quot;Yoga pants&quot;. Regeln mit `Search query is` und Übereinstimmung `All` können nur eine Bedingung aufweisen.
    * Suchabfrage beginnt mit - Geben Sie ein Zeichen oder eine Textzeichenfolge ein, die am Anfang der Abfrage des Käufers stehen muss.
    * Suchabfrage endet mit - Geben Sie ein Zeichen oder eine Zeichenfolge von Text ein, der am Ende der Abfrage des Käufers stehen muss.
 
-   Die Ergebnisse erscheinen unmittelbar in der *Regel testen* und werden nach Priorität nummeriert. Sie können die *Ergebnisse pro Zeile* oben rechts, um die Anzahl der Produkte in jeder Zeile zu ändern.
+   Die Ergebnisse werden sofort im Bereich *Regel testen* angezeigt und nach Priorität nummeriert. Sie können den Schieberegler *Ergebnisse pro Zeile* oben verwenden    , um die Anzahl der Produkte in jeder Zeile zu ändern.
 
    ![Regel - einfach](assets/rule-simple-test.png)
 
-1. Um andere Abfragen zu testen, ändern Sie den Abfragetext im *Regel testen* Suchfeld und drücken Sie **Rückgabe**.
+1. Um andere Abfragen zu testen, ändern Sie den Abfragetext im Suchfeld *Regel testen* und drücken Sie die Taste **Zurück**.
 Zunächst rendert der Testbereich die Abfrage über das Suchfeld Bedingungen . Jetzt wird jedoch die Abfrage aus der Testabfrage gerendert. Im Testbereich wird jeweils nur eine Abfrage gerendert.
-1. Wenn Ihnen das Ergebnis gefällt, aktualisieren Sie den Text im *Bedingungen* Suchfeld. Klicken Sie dann auf eine beliebige Stelle auf der Seite, um die Ergebnisse im Testbereich zu aktualisieren.
+1. Wenn Ihnen das Ergebnis gefällt, aktualisieren Sie den Text im Suchfeld *Bedingungen* . Klicken Sie dann auf eine beliebige Stelle auf der Seite, um die Ergebnisse im Testbereich zu aktualisieren.
 1. Um eine einfache Regel mit einer Bedingung zu erstellen, gehen Sie zu Schritt 3: [Ereignisse hinzufügen](#events).
 
 ### Mehrere Bedingungen
 
 1. Um eine Regel mit mehreren Bedingungen zu erstellen, klicken Sie auf **Bedingung hinzufügen**.
-Eine Regel kann bis zu zehn Bedingungen enthalten. Der logische Operator, der zwei Bedingungen verbindet, basiert auf dem aktuellen *Übereinstimmung* -Einstellung. Standardmäßig ist *Übereinstimmung* is `All` und der logische Operator `AND`.
+Eine Regel kann bis zu zehn Bedingungen enthalten. Der logische Operator, der zwei Bedingungen verbindet, basiert auf der aktuellen Einstellung *Übereinstimmung* . Standardmäßig ist *Übereinstimmung* `All` und der logische Operator ist `AND`.
 
 1. Wählen Sie die zweite Bedingung aus und geben Sie den gewünschten Abfragetext ein.
 
-1. Um die Logik der Regel zu ändern, ändern Sie die **Übereinstimmung** -Einstellung, um zu bestimmen, wie eng die Suchkriterien des Käufers mit der Abfragebedingung übereinstimmen müssen. Satz **Übereinstimmung** auf einen der folgenden Werte zu:
+1. Um die Logik der Regel zu ändern, ändern Sie die Einstellung **Übereinstimmung** , um zu bestimmen, wie stark die Suchkriterien des Käufers mit der Abfragebedingung übereinstimmen müssen. Legen Sie **Übereinstimmung** auf einen der folgenden Werte fest:
 
-   * Beliebig - (Standard) Alle logischen Operatoren in der Regel sind auf `OR` und die Ergebnisse werden im Testbereich angezeigt.
-   * Alle - Alle logischen Operatoren in der Regel sind auf `AND` und die Ergebnisse werden im Testbereich angezeigt.
+   * Beliebig - (Standard) Alle logischen Operatoren in der Regel sind auf `OR` eingestellt und die Ergebnisse werden im Testbereich angezeigt.
+   * Alle - Alle logischen Operatoren in der Regel sind auf `AND` festgelegt und die Ergebnisse werden im Testbereich angezeigt.
 
-   Die *Übereinstimmung* bestimmt den logischen Operator, der zum Verknüpfen mehrerer Bedingungen verwendet wird. Ändern der *Übereinstimmung* Durch die Einstellung werden alle logischen Operatoren in der Regel geändert. Es ist nicht möglich `AND` und `OR` in derselben Regel.
+   Der Wert *Übereinstimmung* bestimmt den logischen Operator, der zum Verknüpfen mehrerer Bedingungen verwendet wird. Wenn Sie die Einstellung *Übereinstimmung* ändern, werden alle logischen Operatoren in der Regel geändert. Es ist nicht möglich, `AND` und `OR` in derselben Regel zu kombinieren.
 
    In diesem Beispiel gibt es zwei separate Abfragen, die nicht nach &quot;Yoga Hots&quot;suchen, sondern nach &quot;Yoga&quot;oder &quot;Hots&quot;. Diese Regel ist weniger spezifisch und wird häufiger in der Storefront ausgelöst als die andere.
 
    ![Regeln - Übereinstimmung](assets/rules-match.png)
 
-1. Um eine weitere Bedingung hinzuzufügen, klicken Sie auf **Bedingung hinzufügen** und wiederholen Sie den Vorgang.
+1. Um eine weitere Bedingung hinzuzufügen, klicken Sie auf **Bedingung hinzufügen** und wiederholen Sie den Prozess.
 
 ## Intelligente Rangfolge
 
@@ -85,7 +85,7 @@ Store-Eigentümer können die folgenden Ranking-Strategien einrichten:
 * Am häufigsten gekauft: Hiermit werden Produkte nach Gesamtkäufen pro SKU in den letzten sieben Tagen sortiert.
 * Am häufigsten zum Warenkorb hinzugefügt - Dieser Wert wird in der Reihenfolge der gesamten &quot;Zum Warenkorb hinzufügen&quot;-Aktivitäten in den letzten 7 Tagen sortiert.
 * Am häufigsten angezeigt: Berechnet meine Gesamtansichten pro SKU in den letzten 7 Tagen.
-* Empfohlen für Sie - Verwendet das `viewed-viewed` Datenpunkt - Käufer, die diese SKU angesehen haben, haben auch diese anderen SKUs angesehen
+* Empfohlen für Sie - Verwendet den `viewed-viewed` -Datenpunkt - Käufer, die diese SKU angesehen haben, haben sich auch mit diesen anderen SKUs befasst
 * Trends: Betrachtet die Seitenansichtsereignisse der letzten 72 Stunden für Hintergrundereignisse und 24 Stunden für Vordergrundereignisse
 * Keine: Produkte werden nach Relevanz geordnet
 
@@ -118,31 +118,31 @@ Sie können auch auf das Pin-Symbol klicken, um ein Produkt an seiner aktuellen 
 
 Oder Ereignisse können manuell festgelegt werden:
 
-1. under *Veranstaltungen*, wählen Sie die **Ereignis** , um zu erfolgen, wenn die entsprechenden Bedingungen erfüllt sind.
+1. Wählen Sie unter *Ereignisse* das **Ereignis** aus, das ausgeführt werden soll, wenn die zugehörigen Bedingungen erfüllt sind.
 
-   Wählen Sie beispielsweise `Hide a product`. Geben Sie dann den Namen des Produkts ein, das Sie ausblenden möchten. Bei der Eingabe werden Produkte vorgeschlagen.
+   Wählen Sie beispielsweise &quot;`Hide a product`&quot;. Geben Sie dann den Namen des Produkts ein, das Sie ausblenden möchten. Bei der Eingabe werden Produkte vorgeschlagen.
 
 1. Wählen Sie für mehrere Ereignisse alle anderen Ereignisse aus, die bei Erfüllung von Bedingungen Trigger werden sollen.
 
 ## Zusätzliche Details
 
-Die hier eingegebenen Informationen werden im [Regeldetails](rules-workspace.md) Bedienfeld.
+Die hier eingegebenen Informationen werden im Bereich [Regeldetails](rules-workspace.md) angezeigt.
 
-1. under *Details* eingeben, **Name** für die Regel. Alle Regelnamen müssen eindeutig sein.
-1. Kurzbeschreibung eingeben **Beschreibung** der Regel.
-1. Geben Sie die **Startdatum** und **Enddatum** , damit die Regel aktiv ist oder Sie die Daten aus dem Kalender auswählen.
+1. Geben Sie unter *Details* einen **Namen** für die Regel ein. Alle Regelnamen müssen eindeutig sein.
+1. Geben Sie eine kurze Beschreibung **Beschreibung** der Regel ein.
+1. Geben Sie das **Startdatum** und das **Enddatum** ein, damit die Regel aktiv ist, oder wählen Sie die Daten aus dem Kalender aus.
 
    Um einen Datumsbereich auszuwählen, klicken Sie auf das erste Datum und ziehen Sie, um den Datumsbereich auszuwählen.
 
-   ![Regel - Abgeschlossen](assets/rule-add-details.png)
+   ![Regel - Complete](assets/rule-add-details.png)
 
 ## Fertigstellen der Regel
 
 1. Untersuchen Sie die Ergebnisse der Regel im Testbereich.
 1. Wenn die Regel mehrere Abfragen enthält, testen Sie jede, die von der Regel betroffen sein könnte.
-1. Wenn Sie fertig sind, klicken Sie auf **Speichern und veröffentlichen**.
+1. Klicken Sie nach Abschluss des Vorgangs auf **Speichern und veröffentlichen**.
 
-   Die Regel wird der Liste im *Regeln* Arbeitsbereich.
+   Die Regel wird der Liste im Arbeitsbereich *Regeln* hinzugefügt.
 
 1. Obwohl aktive Regeln sofort in Kraft treten, müssen Sie möglicherweise bis zu 15 Minuten warten, bis die zwischengespeicherten Abfrageergebnisse im Storefront aktualisiert werden.
 
@@ -162,14 +162,14 @@ Die hier eingegebenen Informationen werden im [Regeldetails](rules-workspace.md)
 | Benutzerin oder Benutzer | Beschreibung |
 |--- |--- |
 | ODER | (Standard) Der logische Operator `OR` vergleicht zwei Bedingungen und erfüllt die Anforderungen zum Trigger eines Ereignisses, wenn mindestens eine Bedingung wahr ist. |
-| UND | Logischer Operator `AND` Vergleicht zwei Bedingungen und erfüllt die Anforderungen zum Trigger eines Ereignisses, wenn beide Bedingungen erfüllt sind. |
+| UND | Der logische Operator `AND` vergleicht zwei Bedingungen und erfüllt die Anforderungen zum Trigger eines Ereignisses, wenn beide Bedingungen erfüllt sind. |
 
 ### Übereinstimmungsoperatoren
 
 | Benutzerin oder Benutzer | Beschreibung |
 |--- |--- |
-| Alle | Ändert alle logischen Operatoren in der Regel in `OR` und gibt den Satz übereinstimmender Produkte zurück. |
-| Alle | Ändert alle logischen Operatoren in der Regel in `AND` und gibt den Satz übereinstimmender Produkte zurück. |
+| Alle | Ändert alle logischen Operatoren in der Regel in `OR` und gibt den Satz der übereinstimmenden Produkte zurück. |
+| Alle | Ändert alle logischen Operatoren in der Regel in `AND` und gibt den Satz der übereinstimmenden Produkte zurück. |
 
 ### Manuelles Ranking
 

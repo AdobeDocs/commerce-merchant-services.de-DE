@@ -1,6 +1,6 @@
 ---
 title: Rechnungslegung
-description: "[!DNL Payment Services] bietet eine umfassende Berichterstellung, damit Sie einen klaren Überblick über die Bestellungen und Zahlungen Ihres Geschäfts erhalten."
+description: "[!DNL Payment Services] bietet eine umfassende Berichterstellung, sodass Sie einen klaren Überblick über die Bestellungen und Zahlungen Ihres Geschäfts erhalten."
 role: User
 feature: Payments, Checkout
 level: Intermediate
@@ -13,8 +13,8 @@ ht-degree: 0%
 
 # Rechnungslegung
 
-[!DNL Payment Services] für [!DNL Adobe Commerce] und [!DNL Magento Open Source] bietet Ihnen eine umfassende Berichterstellung, damit Sie einen klaren Überblick über die Bestellungen und Zahlungen Ihres Geschäfts erhalten.
+[!DNL Payment Services] für [!DNL Adobe Commerce] und [!DNL Magento Open Source] bietet Ihnen umfassende Berichte, sodass Sie einen klaren Überblick über die Bestellungen und Zahlungen Ihres Geschäfts erhalten.
 
-![Übersicht über die Finanzberichte](assets/reports-view.png){width="600" zoomable="yes"}
+![Ansicht der Finanzberichte](assets/reports-view.png){width="600" zoomable="yes"}
 
 Die Cashflow-Management-Berichte - Zahlungsvorgänge, Transaktionen und Bestellzahlstatus - synchronisieren Zahlungsdetails mit Bestellinformationen, um Ihnen vollständige Transparenz bezüglich des verarbeiteten Volumens, des Zahlungsbilds und der detaillierten Berichterstattung auf Transaktionsebene zur finanziellen Abstimmung zu bieten.

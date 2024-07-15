@@ -1,6 +1,6 @@
 ---
-title: Aktivieren [!DNL Payment Services] für die Produktion
-description: Schließen Sie den Onboarding-Prozess ab, indem Sie [!DNL Payment Services] für die Produktion.
+title: Aktivieren von [!DNL Payment Services] für die Produktion
+description: Schließen Sie den Onboarding-Prozess ab, indem Sie [!DNL Payment Services] für die Produktion aktivieren.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 feature: Payments, Checkout, Configuration, Install
 source-git-commit: d1379bb108f2259051641a7bf77cd8b459fd9cbf
@@ -10,27 +10,27 @@ ht-degree: 0%
 
 ---
 
-# Aktivieren [!DNL Payment Services] für die Produktion
+# [!DNL Payment Services] für Produktion aktivieren
 
-Sie können den Dienst in die Produktionsumgebung übernehmen und die [Onboarding-Prozess](onboard.md)gemäß den Schritten in diesem Thema, nachdem Sie:
+Sie können den Dienst gemäß den Schritten in diesem Thema in die Produktionsumgebung übernehmen und den [Onboarding-Prozess](onboard.md) abschließen, nachdem Sie:
 
-* [Installieren](install.md) die Zahlungsdiensterweiterung
-* [Konfigurieren und Verbinden](connect.md) Ihre Instanz
-* [Einrichten](sandbox.md) und [test](test-validate.md) Ihre Sandbox
+* [Installieren](install.md) der Zahlungsdienst-Erweiterung
+* [Konfigurieren und Verbinden](connect.md) Ihrer Instanz
+* [ Richten Sie ](sandbox.md) und [test](test-validate.md) Ihre Sandbox ein.
 
-## Satz [!DNL Payment Services] als Zahlungsmethode
+## [!DNL Payment Services] als Zahlungsmethode festlegen
 
-Nach [Commerce Services konfigurieren](connect.md#configure-commerce-services) und aktivieren Sie entweder [Sandbox-Tests](sandbox.md#enable-sandbox-testing) oder [Live-Zahlungen](#enable-live-payments)festlegen, müssen Sie [!DNL Payment Services] als Zahlungsmethode.
+Nachdem Sie [Ihre Commerce-Dienste](connect.md#configure-commerce-services) konfiguriert und entweder [Sandbox-Tests](sandbox.md#enable-sandbox-testing) oder [Live-Zahlungen](#enable-live-payments) aktiviert haben, müssen Sie [!DNL Payment Services] als Zahlungsmethode festlegen.
 
-1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-1. Klicks **[!UICONTROL Enable Payment Services]**.
+1. Wechseln Sie in der Seitenleiste _Admin_ zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+1. Klicken Sie auf **[!UICONTROL Enable Payment Services]**.
 
-   Diese Option wird angezeigt, wenn Sie noch keine Konfiguration vorgenommen haben [!DNL Payment Services] als Zahlungsmethode für eine oder mehrere Ihrer Websites.
+   Diese Option ist sichtbar, wenn Sie [!DNL Payment Services] noch nicht als Zahlungsmethode für eine oder mehrere Ihrer Websites konfiguriert haben.
 
-   Sie werden zum Einstellungsbereich in der Startansicht geleitet, wobei die entsprechenden Optionen erweitert sind (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), wo Sie die [!DNL Payment Services] Optionen als [Zahlungsmethode](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target="_blank"}.
+   Sie werden zum Einstellungsbereich in der Startansicht weitergeleitet, wobei die entsprechenden Optionen erweitert sind (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), wo Sie die [!DNL Payment Services]-Optionen als Ihre [Zahlungsmethode](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target="_blank"} aktivieren können.
 
-1. In _[!UICONTROL General Configuration]_, set **[!UICONTROL Enable]**nach `Yes`.
-1. Satz **[!UICONTROL Payment Action]** für beide _[!UICONTROL Credit Card Fields]_und_[!UICONTROL PayPal payment buttons]_, zu einem der folgenden Elemente:
+1. Setzen Sie in _[!UICONTROL General Configuration]_**[!UICONTROL Enable]**auf `Yes`.
+1. Setzen Sie **[!UICONTROL Payment Action]** sowohl für _[!UICONTROL Credit Card Fields]_als auch für_[!UICONTROL PayPal payment buttons]_ auf einen der folgenden Werte:
 
    | Einstellung | Beschreibung |
    |---|---|
@@ -41,30 +41,30 @@ Nach [Commerce Services konfigurieren](connect.md#configure-commerce-services) u
    >
    >[!DNL Payment Services] unterstützt partielle Aufnahmen. Ein Händler kann Teile einer Bestellung teilweise erfassen (Rechnung). Sie können beispielsweise jedes Element einzeln erfassen oder ein Element jetzt und den Rest später.
 
-1. Klicks **[!UICONTROL Save]**.
-1. Klicks **[!UICONTROL Go to Payment Services]** zurück an die [!DNL Payment Services] Home.
-1. [Cache löschen](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html).
+1. Klicken Sie auf **[!UICONTROL Save]**.
+1. Klicken Sie auf **[!UICONTROL Go to Payment Services]** , um zur Startseite von [!DNL Payment Services] zurückzukehren.
+1. [Löschen Sie Ihren Cache](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html).
 
    Das Löschen sollte nach jeder Konfigurationsänderung erfolgen.
 
-Siehe [Zahlungsdienste konfigurieren](settings.md) für weitere Informationen zur Konfiguration von Kreditkartenfeldern und PayPal-Zahlungsschaltflächen.
+Weitere Informationen zum Konfigurieren von Kreditkartenfeldern und PayPal-Zahlungsschaltflächen finden Sie unter [Zahlungsdienste konfigurieren](settings.md) .
 
 ## Vollständige Onboarding des Händlers
 
 Der nächste Schritt bei der Live-Schaltung Ihrer Geschäfte mit Zahlungsdiensten besteht darin, das Live-Onboarding abzuschließen.
 
-Zahlungsdienste [**Erweitert** (vollständig unterstützt) und **Standard** Zahlungsoptionen (Express-Checkout)](../payment-services/payments-options.md#standard-vs-advanced-payments-experience) und Onboarding-Flüge, abhängig vom Land, in dem Sie tätig sind, und Ihrer bevorzugten Zahlungserfahrung.
+Die Zahlungsdienste bieten je nach dem Land, in dem Sie tätig sind, und Ihrer bevorzugten Zahlungserfahrung die Zahlungsoptionen [**Erweitert** (vollständig unterstützt) und **Standard** (Express-Checkout)](../payment-services/payments-options.md#standard-vs-advanced-payments-experience) sowie Onboarding-Datenflüsse.
 
-1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-1. Klicks **[!UICONTROL Live onboarding]**.
+1. Wechseln Sie in der Seitenleiste _Admin_ zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+1. Klicken Sie auf **[!UICONTROL Live onboarding]**.
 
-   Diese Option wird angezeigt, wenn Sie das Live-Onboarding für [!DNL Payment Services].
+   Diese Option ist sichtbar, wenn Sie das Live-Onboarding für [!DNL Payment Services] noch nicht abgeschlossen haben.
 
-1. Im _Land auswählen_ -Modal auswählen, wählen Sie das Land aus, aus dem Sie arbeiten.
+1. Wählen Sie im Modal _Land auswählen_ das Land aus, aus dem Sie arbeiten.
 
-   Zahlungsdienste bieten vollständige Unterstützung für alle Zahlungsoptionen in [fünf Länder](../payment-services/overview.md#availability) derzeit. Zahlungsdienste bieten Express-Checkout-Funktionen (eine Teilmenge an Zahlungsoptionen) für alle anderen Länder, die in der Länderliste aufgeführt sind.
+   Zahlungsdienste bieten derzeit volle Unterstützung für alle Zahlungsoptionen in [fünf Ländern](../payment-services/overview.md#availability). Zahlungsdienste bieten Express-Checkout-Funktionen (eine Teilmenge an Zahlungsoptionen) für alle anderen Länder, die in der Länderliste aufgeführt sind.
 
-   Das Land, das Sie aus der Liste auswählen, bestimmt die Zahlungsoptionen und den Onboarding-Fluss —[Erweitert](#advanced-onboarding) (vollständig unterstützt) oder [Standard](#standard-onboarding) (Express Checkout) - verfügbar für Sie.
+   Das Land, das Sie aus der Liste auswählen, bestimmt die Zahlungsoptionen und den für Sie verfügbaren Onboarding-Fluss:[Erweitert](#advanced-onboarding) (vollständig unterstützt) oder [Standard](#standard-onboarding) (Express Checkout).
 
 >[!TIP]
 >
@@ -72,107 +72,107 @@ Zahlungsdienste [**Erweitert** (vollständig unterstützt) und **Standard** Zahl
 
 ### Erweitertes Onboarding
 
-Dieser Onboarding-Ablauf steht Händlern in [vollständig unterstützte Länder](../payment-services/overview.md#availability).
+Dieser Onboarding-Fluss steht Händlern in [vollständig unterstützten Ländern](../payment-services/overview.md#availability) zur Verfügung.
 
 Nach der Auswahl des Landes:
 
-1. Wählen Sie im angezeigten Modal die Option **Erweitert**.
+1. Wählen Sie im angezeigten Modal **Erweitert** aus.
 
-   Für **Standard** -Option, fahren Sie mit dem [Standardmäßiger Onboarding-Fluss](#standard-onboarding).
+   Fahren Sie bei der Option **Standard** mit dem standardmäßigen Onboarding-Fluss [3} fort.](#standard-onboarding)
 
-1. Klicks **Weiter**.
-1. Fahren Sie mit dem PayPal-Fluss fort, um das vollständig unterstützte erweiterte Onboarding unter Verwendung Ihrer PayPal-Kontoanmeldeinformationen (nicht Ihrer Sandbox-Kontoanmeldeinformationen) durchzuführen. _oder_ Melden Sie sich für ein neues PayPal-Konto an.
+1. Klicken Sie auf **Weiter**.
+1. Fahren Sie mit dem PayPal-Fluss fort, um das vollständig unterstützte erweiterte Onboarding durchzuführen. Verwenden Sie dazu Ihre PayPal-Kontoanmeldeinformationen (nicht Ihre Sandbox-Kontoanmeldeinformationen) _oder_, und melden Sie sich für ein neues PayPal-Konto an.
 
 >[!IMPORTANT]
 >
->**Erweitertes Onboarding** erfordert, dass Händler [Zahlungsanspruch](#request-payments-entitlement-from-adobe) , um das Live-Onboarding zu aktivieren.
+>**Erweitertes Onboarding** erfordert, dass Händler die Berechtigung für Zahlungen anfordern](#request-payments-entitlement-from-adobe), um das Live-Onboarding zu aktivieren.[
 
 ### Standard-Onboarding
 
-Dieser standardmäßige Onboarding-Ablauf ist für Händler in verfügbaren Ländern verfügbar, für die [Nur Express-Checkout-Support](../payment-services/overview.md#availability) bereitgestellt wird.
+Dieser standardmäßige Onboarding-Fluss ist für Händler in verfügbaren Ländern verfügbar, für die [nur Express-Checkout-Unterstützung](../payment-services/overview.md#availability) bereitgestellt wird.
 
 Nach der Auswahl des Landes:
 
-1. Im _Vertrag über Zahlungsdienste_ modal, das angezeigt wird, klicken Sie auf das **Vertrag über Zahlungsdienste** -Link, um die Zahlungsdienstvereinbarung von Adobe Commerce anzuzeigen.
-1. Im _Vertrag über Zahlungsdienste_ modal, klicken Sie **Ich akzeptiere**.
+1. Klicken Sie im angezeigten Modal _Zahlungsdienstvereinbarung_ auf den Link **Zahlungsdienstvereinbarung** , um die Zahlungsdienstvereinbarung von Adobe Commerce anzuzeigen.
+1. Klicken Sie im Modal _Zahlungsdienstvereinbarung_ auf **Ich akzeptiere**.
 1. Fahren Sie mit dem PayPal-Fluss für das Express-Checkout-Onboarding fort, verwenden Sie Ihre PayPal-Kontoanmeldeinformationen (nicht Ihre Sandbox-Kontoanmeldeinformationen) oder melden Sie sich für ein neues PayPal-Konto an.
 
 >[!IMPORTANT]
 >
->[Apple-Zahlungs- und Kreditkartenfelder](../payment-services/payments-options.md) sind nicht verfügbar für **Standard-Onboarding**.
+>[Apple Pay and Credit card fields](../payment-services/payments-options.md) sind nicht für **Standard Onboarding** verfügbar.
 
 ## E-Mail-Adresse bestätigen
 
-1. Navigieren Sie in der Admin-Seitenleiste zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**
+1. Wechseln Sie in der Admin-Seitenleiste zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**
 
-   Die _[!UICONTROL Live onboarding]_-Schaltfläche nicht mehr sichtbar ist und ein &quot;[!UICONTROL Live payments pending]&quot;.
+   Die Schaltfläche &quot;_[!UICONTROL Live onboarding]_&quot; ist nicht mehr sichtbar, und das Textfeld &quot;[!UICONTROL Live payments pending]&quot; wird angezeigt.
 
    In diesem Textfeld werden Sie möglicherweise aufgefordert, Ihre E-Mail-Adresse mit PayPal zu bestätigen, um das Onboarding abzuschließen.
 
 1. Wenn Sie aufgefordert werden, Ihre E-Mail-Adresse zu bestätigen, überprüfen Sie Ihre E-Mail auf die von PayPal gesendete Bestätigungsnachricht und klicken Sie auf , um Ihre E-Mail-Adresse zu bestätigen.
-1. Navigieren Sie in der Admin-Seitenleiste zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+1. Wechseln Sie in der Admin-Seitenleiste zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Aktualisieren Sie das Browser-Fenster.
 
    Wenn Ihr PayPal-Händler das Onboarding genehmigt, sollte Ihnen eine Benachrichtigung angezeigt werden, dass Ihr Zahlungssystem sich im Sandbox-Modus befindet und keine Live-Zahlungen verarbeitet.
 
    >[!IMPORTANT]
    >
-   >Wenn Sie die Zustimmung zum [!DNL Payment Services] für [!DNL Adobe Commerce] und [!DNL Magento Open Source] für die Verarbeitung Ihrer Zahlungen (in den Einstellungen Ihres PayPal-Kontos) können Bestellungen in Ihrem Geschäft nicht von [!DNL Payment Services]. Auf Ihrer Zahlungsdienst-Startseite wird ein Warnhinweis über die widerrufene Zustimmung angezeigt.
+   >Wenn Sie die Einwilligung zu [!DNL Payment Services] für [!DNL Adobe Commerce] und [!DNL Magento Open Source] für die Verarbeitung Ihrer Zahlungen (in Ihren PayPal-Kontoeinstellungen) widerrufen, können Bestellungen in Ihrem Geschäft nicht von [!DNL Payment Services] verarbeitet werden. Auf Ihrer Zahlungsdienst-Startseite wird ein Warnhinweis über die widerrufene Zustimmung angezeigt.
 
 ## Zahlungsanspruch von Adobe anfordern
 
-Um Ihre Geschäfte live zu schalten, fordern Sie die Zahlungsansprüche von Adobe an (für [Nur erweitertes Onboarding](#advanced-onboarding)):
+Damit Ihre Stores live geschaltet werden können, fordern Sie die Zahlungsansprüche von Adobe an (nur für [Erweitertes Onboarding](#advanced-onboarding)):
 
-1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-1. Klicks **[!UICONTROL Get Live Payments]** in [!DNL Payment Services] Home.
+1. Wechseln Sie in der Seitenleiste _Admin_ zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+1. Klicken Sie auf **[!UICONTROL Get Live Payments]** auf Ihrer [!DNL Payment Services] Startseite.
 
    ![Anforderungsberechtigungen](assets/request-entitlements.png){width="500" zoomable="yes"}
 
 1. Füllen Sie das Formular aus.
 1. Ein Mitglied des Vertriebsteams wird sich mit Ihnen in Verbindung setzen.
 
-Alternativ können Sie die Zahlungsanforderung über Adobe unter anfordern. [business.adobe.com](https://business.adobe.com/resources/payment-services.html).
+Alternativ können Sie unter [business.adobe.com](https://business.adobe.com/resources/payment-services.html) eine Zahlungsanforderung von Adobe anfordern.
 
 >[!IMPORTANT]
 >
->**Live-Onboarding** ist erst nach Genehmigung des Zahlungsanspruchs zugänglich.
+>**Live-Onboarding** ist erst verfügbar, nachdem der Zahlungsanspruch genehmigt wurde.
 
 ## Preisstufe konfigurieren
 
-Holen Sie sich Ihre [!DNL Payment Services] _Merchant-ID_:
+[!DNL Payment Services] _Händler-ID_ abrufen:
 
-1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-1. Klicken Sie in der Startansicht auf **[!UICONTROL Settings]**. Siehe [Startseite](payments-home.md) für weitere Informationen.
-1. Wählen Sie die erforderlichen _Merchant-ID_ und senden Sie es an Ihren Vertriebsmitarbeiter, der die richtige Preisebene konfiguriert.
+1. Wechseln Sie in der Seitenleiste _Admin_ zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+1. Klicken Sie in der Startansicht auf **[!UICONTROL Settings]**. Weitere Informationen finden Sie unter [Startseite](payments-home.md) .
+1. Wählen Sie die erforderliche _Merchant-ID_ aus und senden Sie sie an Ihren Vertriebsmitarbeiter, der die richtige Preisebene konfiguriert.
 
-Siehe [Verarbeitung der Stufe 2 und Stufe 3](levels-card-payment-transactions.md) für weitere Informationen über Zahlungsvorgänge.
+Weitere Informationen zu Zahlungsvorgängen finden Sie unter [Verarbeitung auf Stufe 2 und Stufe 3](levels-card-payment-transactions.md) .
 
 ## Live-Zahlungen aktivieren
 
-A _Produktions-Merchant-ID_ automatisch generiert und in der [Konfiguration](configure-admin.md). Ändern oder ändern Sie diese ID nicht.
+Eine _Produktions-Merchant-ID_ wird automatisch generiert und in die [Konfiguration](configure-admin.md) eingefügt. Ändern oder ändern Sie diese ID nicht.
 
 Live-Zahlungen aktivieren:
 
-1. Im _Admin_ Seitenleiste, navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-1. Klicken Sie auf der Startseite auf **[!UICONTROL Settings]** oben rechts auf der Seite. Siehe [Startseite](payments-home.md) für weitere Informationen.
-1. Im _[!UICONTROL General Configuration]_Abschnittsset **[!UICONTROL Payment mode]**nach `Production`.
-1. Klicks **[!UICONTROL Save]**.
-1. [Cache löschen](https://docs.magento.com/user-guide/system/cache-management.html){target="_blank"}.
+1. Wechseln Sie in der Seitenleiste _Admin_ zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+1. Klicken Sie auf der Startseite oben rechts auf der Seite auf **[!UICONTROL Settings]** . Weitere Informationen finden Sie unter [Startseite](payments-home.md) .
+1. Setzen Sie im Abschnitt _[!UICONTROL General Configuration]_**[!UICONTROL Payment mode]**auf `Production`.
+1. Klicken Sie auf **[!UICONTROL Save]**.
+1. [Löschen Sie Ihren Cache](https://docs.magento.com/user-guide/system/cache-management.html){target="_blank"}.
 
    >[!IMPORTANT]
    >
    >Wenn Sie Ihren Cache nicht löschen, können Kunden beim Checkout keine PayPal-Zahlungsoptionen sehen.
 
-Wenn Sie zurück zu [!DNL Payment Services] Home: Die Sandbox-Zahlungsmodusmeldung wird nicht mehr angezeigt, da Sie jetzt Live-Zahlungen verarbeiten.
+Wenn Sie zurück zur Startseite von [!DNL Payment Services] navigieren, wird die Sandbox-Zahlungsmodusmeldung nicht mehr angezeigt, da Sie jetzt Live-Zahlungen verarbeiten.
 
-Siehe [In Admin konfigurieren](configure-admin.md) für ältere Konfigurationsoptionen.
+Weitere Informationen zu den alten Konfigurationsoptionen finden Sie unter [Konfigurieren in Admin](configure-admin.md) .
 
 >[!IMPORTANT]
 >
->Wenn Sie die Zustimmung zum [!DNL Payment Services] für die Verarbeitung Ihrer Zahlungen (in den Einstellungen Ihres PayPal-Kontos) können Bestellungen in Ihrem Geschäft nicht von [!DNL Payment Services]. Wenn Sie die Zahlungsverarbeitung erneut aktivieren möchten, müssen Sie das Onboarding erneut abschließen. Auf Ihrer Zahlungsdienst-Startseite wird ein Warnhinweis über die widerrufene Zustimmung angezeigt.
+>Wenn Sie die Einwilligung zu [!DNL Payment Services] für die Verarbeitung Ihrer Zahlungen (in Ihren PayPal-Kontoeinstellungen) widerrufen, können Bestellungen in Ihrem Geschäft nicht von [!DNL Payment Services] verarbeitet werden. Wenn Sie die Zahlungsverarbeitung erneut aktivieren möchten, müssen Sie das Onboarding erneut abschließen. Auf Ihrer Zahlungsdienst-Startseite wird ein Warnhinweis über die widerrufene Zustimmung angezeigt.
 
 ## Produktionstest
 
 Es wird dringend empfohlen, dass Sie Zahlungen in der Produktion mit echten Kreditkarten und Banken testen, bevor Sie diese Funktion den Käufern zur Verfügung stellen.
 
-Siehe [Testen und Validieren](test-validate.md) für weitere Informationen.
+Weitere Informationen finden Sie unter [Testen und Validieren](test-validate.md) .
