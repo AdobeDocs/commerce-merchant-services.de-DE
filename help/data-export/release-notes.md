@@ -4,9 +4,9 @@ description: Die neuesten Versionsinformationen für [!DNL Data Export Extension
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 0c7aeeda-e8a6-4740-b466-0661a6d2df07
-source-git-commit: 42a9ea0f62f35db451cd3e780adf530d0699a638
+source-git-commit: 051e558f9aa9760c2d6e993713e49a5997270f1b
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '498'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,17 @@ Zu den Aktualisierungen gehören:
 >Die SaaS-Datenexport-Erweiterung ist eine Sammlung von Modulen, die automatisch mit Live Search, Product Recommendations und dem Catalog Service installiert werden. Sie können die auf Ihrem System installierte Version mithilfe von Composer überprüfen. In einigen Fällen möchten Sie möglicherweise die Datenexport-Erweiterung auf Ihrem System aktualisieren, um Korrekturen oder neue Funktionen aufzunehmen, ohne die Version des Commerce-Dienstes zu aktualisieren.
 
 ## Aktuelle Hauptversion
+
+## Version 103.3.7
+
+![Korrektur](../assets/fix.svg) unnötige Abhängigkeiten aus dem Modul &quot;InventoryDataExporter&quot;entfernt.
+![Korrektur](../assets/fix.svg) Die erforderlichen Versionen für die im CatalogInventoryDataExporter-Modul enthaltenen Inventarmodule wurden geändert, um die Adobe Commerce-Version 2.4.4 zu unterstützen.
+
+## Version 103.3.6
+
+![Korrektur](../assets/fix.svg) Deadlocks behoben, die während der Neuindizierung von Feeds im Multi-Thread-Modus aufgetreten sind. Die Abfragen sind nun in die Vorgänge &quot;Einfügen&quot;und &quot;Aktualisieren&quot;unterteilt.
+![Korrektur](../assets/fix.svg) Die Preisabfrage für große Kataloge mit vielen Websites wurde optimiert.
+![Neu](../assets/new.svg) Eine Wiederholungslogik wurde hinzugefügt, um fehlgeschlagene Transaktionen bei Deadlocks erneut auszuführen.
 
 ## Version 103.3.5
 
