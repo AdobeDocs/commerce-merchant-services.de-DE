@@ -5,7 +5,7 @@ role: Admin, Developer
 level: Intermediate
 feature: Shipping/Delivery, Install
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
-source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
+source-git-commit: 8999d63319f627e0b56a0ef5a881d25dbeaf648f
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Schließen Sie die Erstinstallation der Erweiterung [!DNL Store Fulfillment for 
 
 Wenn Sie eine Vorabversion oder Betaversion der Erweiterung Store Fulfillment for Adobe Commerce installiert haben, verwenden Sie den folgenden Befehl, um sie zu entfernen, bevor Sie die aktuelle Version installieren.
 
-```terminal
+```bash
 rm -rf composer.lock vendor/walmart &&
 composer require walmart/magento-bopis-metapackage:1.0.0
 ```
@@ -107,7 +107,7 @@ Schließen Sie die Installation mit dem Wert &quot;`bin/magento setup:upgrade`&q
 
 1. Registrieren Sie die Erweiterung mithilfe des Befehls `setup:upgrade` Magento CLI bei Adobe Commerce.
 
-   ```terminal
+   ```bash
    bin/magento setup:upgrade
    ```
 
@@ -191,7 +191,7 @@ Schließen Sie die Installation mit dem Wert &quot;`bin/magento setup:upgrade`&q
 
 Verwenden Sie bei Bedarf den CLI-Befehl [setup:static-content:deploy](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html){target="_blank"} , um statische Ansichtsdateien für Ihre Produktionsumgebung bereitzustellen.
 
-```terminal
+```bash
 php bin/magento setup:static-content:deploy -f
 ```
 
