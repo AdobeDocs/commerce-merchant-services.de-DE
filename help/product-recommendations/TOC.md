@@ -4,10 +4,10 @@ user-guide-description: Dieses Handbuch enthält ausführliche Anweisungen zur V
 breadcrumb-title: „Handbuch zu [!DNL Product Recommendations]“
 role: Admin
 feature: Services, Recommendations
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
-source-wordcount: '54'
-ht-degree: 12%
+source-wordcount: '60'
+ht-degree: 11%
 
 ---
 
@@ -38,3 +38,4 @@ ht-degree: 12%
    - [Daten erfassen](events.md)
    - [Anpassen](customize.md)
    - [Umgang mit Cookie-Einschränkungen](setting-cookie.md)
+- [Kehren Sie zur Startseite der Commerce-Dienste zurück](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)

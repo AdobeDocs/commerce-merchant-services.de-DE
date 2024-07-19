@@ -2,9 +2,9 @@
 title: Onboarding und Installation
 description: "Erfahren Sie, wie Sie [!DNL Catalog Service] installieren."
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 6ca91feefbfc2fbc4d5851040b9f1ca3de6a6560
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '867'
 ht-degree: 0%
 
 ---
@@ -143,7 +143,7 @@ Verwenden Sie diese Methode, um die [!DNL Catalog Service] für eine lokale Inst
 
 ### Dienst und Datenexport konfigurieren
 
-Führen Sie nach der Installation von [!DNL Catalog Service] die folgenden Schritte aus, um den Catalog-Dienst in Ihre Adobe Commerce-Instanz zu integrieren. Diese Integration ermöglicht die Datensynchronisation und Kommunikation zwischen der Commerce-Instanz, dem Catalog Service und anderen unterstützenden Diensten.
+Führen Sie nach der Installation von [!DNL Catalog Service] die folgenden Schritte aus, um den Catalog-Dienst in Ihre Adobe Commerce-Instanz zu integrieren. Diese Integration ermöglicht die Datensynchronisation und Kommunikation zwischen der Commerce-Instanz, dem Catalog Service und anderen unterstützenden Diensten. Die Datensynchronisation wird von der [SAAS-Datenexport-Erweiterung](../data-export/overview.md) durchgeführt.
 
 1. Richten Sie den [Commerce Services Connector](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas) ein, indem Sie die API-Schlüssel angeben und einen SaaS-Datenraum auswählen.
 
@@ -162,6 +162,10 @@ So stellen Sie sicher, dass der Katalogexport ordnungsgemäß ausgeführt wird:
 - [Vergewissern Sie sich, dass Cron-Aufträge ausgeführt werden](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues).
 - Stellen Sie sicher, dass die Indexer über den Befehl [Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) oder den Commerce-CLI-Befehl `bin/magento indexer:info` ausgeführt werden.
 - Stellen Sie sicher, dass die Indexer `Catalog Attributes Feed, Product Feed, Product Overrides Feed` und `Product Variant Feed` auf `Update by Schedule` eingestellt sind.
+
+### Überwachung und Fehlerbehebung bei der Datensynchronisation
+
+Über den Commerce-Administrator können Sie den Synchronisierungsprozess mithilfe des [Daten-Management-Dashboards](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard) überwachen. Verwenden Sie die [Commerce-CLI](../data-export/data-export-cli-commands.md#troubleshooting) und Protokolle, um den Prozess zu verwalten und Fehler zu beheben.
 
 ### Zugriff auf den Dienst
 

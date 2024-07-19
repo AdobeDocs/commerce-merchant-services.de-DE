@@ -6,9 +6,9 @@ seo-description: Access the product documentation for hosted services that help 
 breadcrumb-title: Dokumentation
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
 recommendations: noCatalog
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '474'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Adobe bietet eine Sammlung von Commerce-, Integrations- und Datendiensten, die H
 
 >[!BEGINSHADEBOX &quot;Release information&quot;]
 
-Siehe [Neue Funktionen in unserer Dokumentation](whats-new.md) oder [Versionshinweise](release-notes-all.md) für jeden Commerce-Dienst.
+Weitere Informationen finden Sie in den [Versionshinweisen](release-notes-all.md) für jeden Commerce-Dienst.
 
 >[!ENDSHADEBOX]
 
@@ -98,9 +98,23 @@ Siehe [Neue Funktionen in unserer Dokumentation](whats-new.md) oder [Versionshin
    </tr>
 </table>
 
-## Datendienste
+## Datenwerkzeuge
 
 <table>
+<tr>
+   <td valign="top" width="200">
+      <img alt="[!DNL SaaS Data Export]" src="assets/live-search.png" width="170px"/></td>
+   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/overview"><strong>[!DNL SaaS Data Export]</strong></a>
+    <div>Der SaaS-Datenexport exportiert Katalog-, Bestell- und Bestandsdaten vom Commerce-Server in verbundene Commerce-Dienste, um die Dienste auf dem neuesten Stand zu halten. Indexer kompilieren Daten, wenn sie durch Ereignisse wie eine Änderung eines Produktpreises oder einer Lagerbestandsebene ausgelöst werden. Sie können diesen Prozess über das *Data Management Dashboard* oder die Befehlszeilenschnittstelle beobachten und verwalten.</div>
+  </td>
+</tr>
+<tr>
+   <td valign="top" width="200">
+      <img alt="[!DNL SaaS Price Indexer]" src="assets/live-search.png" width="170px"/></td>
+   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/price-index/price-indexing.md"><strong>[!DNL SaaS Price Indexer]</strong></a>
+    <div>Die Preisindizierung von SaaS optimiert die Site-Leistung durch Abladen ressourcenintensiver Aufgaben - wie Indizierung und Preisberechnung - von der Commerce-Anwendung zur Adobe Cloud-Infrastruktur. Dieser Ansatz ermöglicht es Händlern, Ressourcen schnell zu skalieren, um die Indexierungszeiten zu verkürzen und Preisaktualisierungen schneller an die Storefront und an die Commerce-Dienste angeschlossene Dienste bereitzustellen.</div>
+  </td>
+</tr>
 <tr>
    <td valign="top" width="200">
       <img alt="[!DNL Catalog Sync]" src="assets/live-search.png" width="170px"/></td>

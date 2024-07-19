@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über die Verwendung der [!DNL data export] Erwei
 role: Admin, Developer
 recommendations: noCatalog
 exl-id: c5711fa6-09e2-42b0-a7af-4d7b866c871d
-source-git-commit: 42a9ea0f62f35db451cd3e780adf530d0699a638
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 0%
@@ -13,16 +13,16 @@ ht-degree: 0%
 
 # Handbuch zu [!DNL SaaS Data Export]
 
-[!DNL SaaS data export] verbessert die Frontend-Leistung, indem die Datensynchronisation zwischen einer Adobe Commerce-Instanz und verbundenen Commerce-Diensten optimiert wird. Wenn Sie einer Adobe Commerce-Installation Live Search, Product Recommendations oder den Catalog Service hinzufügen, wird die Erweiterung [!DNL Data export] automatisch installiert.
+[!DNL SaaS data export] synchronisiert Daten zwischen einer Adobe Commerce-Instanz und verbundenen Commerce Services. Wenn Sie einer Adobe Commerce-Installation Live Search, Product Recommendations oder den Catalog Service hinzufügen, wird die Erweiterung [!DNL Data export] automatisch installiert.
 
-Beim SAAS-Datenexport werden verschiedene Datentypen erfasst und exportiert, die als _Feeds_ bezeichnet werden und bestimmte Arten von Informationen aggregieren. Je nachdem, welche Commerce-Dienste installiert sind, umfassen die SaaS-Datenexport-Feeds Folgendes:
+Der SAAS-Datenexport erfasst und exportiert verschiedene Datentypen, die als _Feeds_ bezeichnet werden und bestimmte Arten von Informationen aggregieren. Je nachdem, welche Commerce-Dienste installiert sind, umfassen die SaaS-Datenexport-Feeds Folgendes:
 
 - **Katalogentitäts-Feeds** aggregierte Produktdaten. Die Daten umfassen Produkte, Produktattribute, Produktpreise, Produktvarianten, Kategorien, Kategorieberechtigungen und Produktberechtigungen.
 - Der **Scopes-Feed** aggregiert Daten für Kundengruppen, Websites, Stores und Store-Ansichten.
 - Der **Feed &quot;Verkaufsaufträge&quot;** aggregiert Auftragsdaten einschließlich der zugehörigen Entitäten wie Rechnungen, Sendungen, Kreditkarten usw.
 - Der **Multi-Source Inventar-Feed** aggregiert Daten zu Lagerbestandsstatuselementen.
 
-Die Datenexport-Erweiterung unterstützt mehrere Methoden zum Initiieren und Verwalten des Datensynchronisierungsprozesses.
+Der SaaS-Datenexport wird als PHP-Erweiterung geliefert. Es unterstützt mehrere Methoden zum Initiieren und Verwalten des Datensynchronisierungsprozesses.
 
 - **Manuelle Synchronisation über den Administrator oder die Befehlszeile**
 
