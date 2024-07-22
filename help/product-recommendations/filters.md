@@ -2,9 +2,9 @@
 title: Produkte filtern
 description: Definieren Sie Bedingungen, die Produkte entweder ein- oder ausschließen, um sie als Empfehlungen zu verwenden.
 exl-id: baab28ff-b529-4cbc-adb7-4fa225e87d4a
-source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
+source-git-commit: aa036228bb4040de5a8d4d159727fa0c4c6d99e1
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '704'
 ht-degree: 0%
 
 ---
@@ -57,6 +57,10 @@ Adobe Commerce empfiehlt die Verwendung der folgenden Kategoriefilterkonfigurati
 ### Produkt
 
 Produktfilter geben an, welche spezifischen Produkte in Empfehlungen angezeigt werden dürfen oder nicht. Sie können keine Produkte auswählen, die deaktiviert sind oder nicht einzeln sichtbar sind, da diese Produkte nie in Empfehlungen angezeigt werden können.
+
+>[!NOTE]
+>
+>Untergeordnete Produkte eines konfigurierbaren Produkts werden nicht in einer Empfehlungseinheit angezeigt, da diese untergeordneten Produkte die Sichtbarkeit von _Nicht einzeln sichtbar_ haben.
 
 ### Typ
 

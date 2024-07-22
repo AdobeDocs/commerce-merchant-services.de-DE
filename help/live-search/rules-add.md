@@ -2,9 +2,9 @@
 title: "Regeln hinzufügen"
 description: "Erfahren Sie, wie Sie Merchandising-Suchregeln erstellen."
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 52be82fa080474d6df81fd16d1655a421771e5e2
+source-git-commit: 0b099bf6a306806b5aa24261e6c125d43d528207
 workflow-type: tm+mt
-source-wordcount: '1536'
+source-wordcount: '1604'
 ht-degree: 0%
 
 ---
@@ -84,16 +84,23 @@ Store-Eigentümer können die folgenden Ranking-Strategien einrichten:
 
 * Am häufigsten gekauft: Hiermit werden Produkte nach Gesamtkäufen pro SKU in den letzten sieben Tagen sortiert.
 * Am häufigsten zum Warenkorb hinzugefügt - Dieser Wert wird in der Reihenfolge der gesamten &quot;Zum Warenkorb hinzufügen&quot;-Aktivitäten in den letzten 7 Tagen sortiert.
-* Am häufigsten angezeigt: Berechnet meine Gesamtansichten pro SKU in den letzten 7 Tagen.
-* Empfohlen für Sie - Verwendet den `viewed-viewed` -Datenpunkt - Käufer, die diese SKU angesehen haben, haben sich auch mit diesen anderen SKUs befasst
-* Trends: Betrachtet die Seitenansichtsereignisse der letzten 72 Stunden für Hintergrundereignisse und 24 Stunden für Vordergrundereignisse
-* Keine: Produkte werden nach Relevanz geordnet
+* Am häufigsten angezeigt: Berechnet die Gesamtanzahl der Ansichten pro SKU in den letzten 7 Tagen.
+* Empfohlen für Sie - Verwendet den `viewed-viewed` -Datenpunkt - Käufer, die diese SKU angesehen haben, haben sich auch mit diesen anderen SKUs befasst.
+* Trends: Betrachtet die Seitenansichtsereignisse der letzten 72 Stunden für Hintergrundereignisse und 24 Stunden für Vordergrundereignisse.
+* Keine: Produkte werden nach Relevanz sortiert.
 
-1. Wählen Sie den Typ der Strategie für die Regel aus. Im Fenster Regel testen werden die erwarteten Ergebnisse angezeigt.
+Wählen Sie den Typ der Strategie für die Regel aus. Im Fenster **Regel testen** werden die erwarteten Ergebnisse angezeigt.
 
->[!NOTE]
->
->Apostrophe und Anführungszeichen in Abfragen können in einigen Sprachen zu kleineren Problemen mit Ranking und Relevanz führen.
+### Einschränkungen
+
+* Apostrophe und Anführungszeichen in Abfragen können in einigen Sprachen zu kleineren Problemen mit Ranking und Relevanz führen.
+* Um sicherzustellen, dass das intelligente Ranking ordnungsgemäß funktioniert, stellen Sie sicher, dass das **Suchgewicht** für alle Produktattribute, die für die Suche oder Filterung (Facetten) verwendet werden, `5` oder weniger ist. So finden Sie diese Einstellung in der [!DNL Commerce] -Admin:
+
+   1. Wählen Sie **Stores** > _Attribute_ > **Produkt** aus.
+   1. Suchen Sie nach dem -Attribut, z. B. &quot;name&quot;.
+   1. Stellen Sie auf der Seite **Attributinformationen** > **Storefront-Eigenschaften** die Suchgewichtung auf kleiner oder gleich `5` ein.
+
+      ![Produkt - Suchgewichtung](assets/set-search-weight.png)
 
 ## Manuelles Ranking
 

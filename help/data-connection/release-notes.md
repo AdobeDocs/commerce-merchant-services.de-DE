@@ -3,9 +3,9 @@ title: Versionshinweise
 description: Die neuesten Versionsinformationen für die [!DNL Data Connection] Erweiterung von Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: a2d5e695b3f6491d051da77bfc0fb596f5411c92
+source-git-commit: c736647fc148a02803bc458b16ff1f3419dc1fe1
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '896'
 ht-degree: 0%
 
 ---
@@ -72,20 +72,28 @@ _12. Oktober 2022_
 
 +++
 
-## 3.1.2
+## 3.1.3
+
+_22. Juli 2024_
 
 [!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"}
 
+![Korrektur](../assets/new.svg) - Das Experience Platform Connector-Metapaket wurde aktualisiert, um nicht verwendete Datenexporteure und -indizes zu entfernen.
+
+## 3.1.2
+
 _5. Juni 2024_
+
+[!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"}
 
 ![Korrektur](../assets/new.svg) - Es wurde ein Problem behoben, bei dem beim Initiieren einer [historischen Synchronisierung](connect-data.md#specify-order-history-date-range) das falsche Datumsformat verwendet wurde.
 ![Korrektur](../assets/new.svg) - Es wurde ein Problem behoben, bei dem das [startCheckout](events.md#startcheckout) -Ereignis nicht in Adobe Commerce 2.4.7 gesendet wurde.
 
 ## 3.1.1
 
-[!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"}
-
 _4. April 2024_
+
+[!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"}
 
 ![Neu](../assets/new.svg) - Unterstützung für PHP 8.3 für alle [!DNL Data Connection] Erweiterungen hinzugefügt.
 ![Neu](../assets/new.svg) - Es wurde ein Artikel zur [Integration](mobile-sdk-epc.md) des Adobe Experience Platform Mobile SDK mit Commerce hinzugefügt.
@@ -132,7 +140,6 @@ _27. Juni 2023_
 ![Fehlerbehebung](../assets/fix.svg) - Aktualisierte Konfigurationen für Inhaltssicherheitsrichtlinien.
 ![Fehlerbehebung](../assets/fix.svg) - Die Unterstützung für Backoffice-Ereignisse in Commerce 2.4.7 wird jetzt nicht mehr unterstützt.
 ![Neu](../assets/new.svg) - Es wurde eine Benachrichtigung zur Cache-Invalidierung hinzugefügt, wenn Sie Änderungen am [!DNL Data Connection]-Erweiterungsformular speichern.
-
 
 ## 3.0.0-beta1 (nur intern)
 
