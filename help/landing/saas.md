@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Ihre Adobe Commerce- oder Magento Open Source
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 391208f63c092f1eebb7330e2445079e09594890
+source-git-commit: 1089ba268866ef3097a909440a06587dc1987fc5
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1026'
 ht-degree: 0%
 
 ---
@@ -102,9 +102,7 @@ Alle SaaS-Projekte, die mit Ihren Schlüsseln verknüpft sind, werden im Feld **
 
 1. Wenn keine SaaS-Projekte vorhanden sind, klicken Sie auf **Projekt erstellen**. Geben Sie dann im Feld **Projekt** einen Namen für Ihr SaaS-Projekt ein.
 
-   Wenn Sie ein SaaS-Projekt erstellen, generiert [!DNL Commerce] je nach Ihrer [!DNL Commerce]-Lizenz einen oder mehrere SaaS-Datenräume:
-   - Adobe Commerce - Ein Produktionsdatenraum, nur zwei Testdatenbereiche. Bei Cloud Pro-Projekten mit mehreren Staging-Umgebungen können Sie zusätzliche Testdatenbereiche für jede Staging-Umgebung anfordern, indem Sie [eine Support-Anfrage senden](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
-   - Magento Open Source - Ein Produktionsdatenraum; keine Testdatenbereiche
+   Alle Händler können pro SaaS-Projekt auf einen Produktionsdatenraum und zwei Testdatenbereiche zugreifen. Bei On Cloud Pro-Projekten mit mehreren Staging-Umgebungen können Sie zusätzliche Testdatenräume für jede Staging-Umgebung anfordern, indem Sie [eine Support-Anfrage senden](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/).
 
 1. Wählen Sie den **Datenraum** aus, der für die aktuelle Konfiguration Ihres [!DNL Commerce]-Stores verwendet werden soll.
 
