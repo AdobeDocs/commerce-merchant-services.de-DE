@@ -3,16 +3,16 @@ title: Installieren und Konfigurieren
 description: Erfahren Sie, wie Sie [!DNL Product Recommendations] installieren, aktualisieren und deinstallieren.
 exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
 role: Admin, Developer
-source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
+source-git-commit: 3a5dec9422aa34eeb204b9fe6f089551e4038f1c
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '554'
 ht-degree: 0%
 
 ---
 
 # Installieren und Konfigurieren
 
-Wenn Sie [!DNL Product Recommendations] in Ihrer Storefront und in Ihrem Admin bereitstellen, müssen Sie das Modul installieren und den [Commerce Services Connector](../landing/saas.md) konfigurieren. Sobald Updates veröffentlicht sind, können Sie Ihre Installation einfach mit der neuesten Version aktualisieren.
+Wenn Sie [!DNL Product Recommendations] in Ihrer Storefront und in Ihrem Admin bereitstellen, müssen Sie das Modul installieren und den [Commerce Services Connector](../landing/saas.md) konfigurieren. Sobald Updates veröffentlicht sind, können Sie die Installation einfach mit der neuesten Version aktualisieren.
 
 - [Installieren](#install)
 - [Konfigurieren](#configure)
@@ -37,7 +37,7 @@ composer require magento/product-recommendations
 composer require magento/module-page-builder-product-recommendations
 ```
 
-Durch Aktivierung von &quot;[!DNL Product Recommendations]&quot;im Seitenaufbau können Sie allen Inhalten, die im Seitenaufbau erstellt wurden, eine vorhandene aktive [Empfehlungseinheit](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) hinzufügen, z. B. Seiten, Bausteine und dynamische Bausteine.
+Durch Aktivierung von &quot;[!DNL Product Recommendations]&quot;im Seitenaufbau können Sie allen Inhalten, die im Seitenaufbau erstellt wurden, eine vorhandene aktive [Empfehlungseinheit](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations) hinzufügen, z. B. Seiten, Bausteine und dynamische Bausteine.
 
 Weitere Anweisungen finden Sie unter [Verwenden von [!DNL Product Recommendations] mit Seitenaufbau-Inhalt](page-builder.md) .
 
@@ -51,13 +51,13 @@ composer require magento/module-visual-product-recommendations
 
 ## Konfigurieren von [!DNL Product Recommendations] {#configure}
 
-1. Konfigurieren Sie nach der Installation des Moduls `magento/product-recommendations` den Connector für Commerce-Dienste ](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html), indem Sie API-Schlüssel angeben und einen SaaS-Datenspeicher auswählen.[
+1. Konfigurieren Sie nach der Installation des Moduls `magento/product-recommendations` den Connector für Commerce-Dienste ](../landing/saas.md), indem Sie API-Schlüssel angeben und einen SaaS-Datenspeicher auswählen.[
 
    Die Konfiguration dieser Verbindung ermöglicht die Datensynchronisation und Kommunikation zwischen der Commerce-Instanz, dem Catalog Service und anderen unterstützenden Diensten. Die Datensynchronisation wird von der [SAAS-Datenexport-Erweiterung](../data-export/overview.md) durchgeführt.
 
-1. Um sicherzustellen, dass der Katalogexport ordnungsgemäß ausgeführt werden kann, stellen Sie sicher, dass die [cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html)-Aufträge und die [Indexer](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) ausgeführt werden und der `Product Feed`-Indexer auf `Update by Schedule` eingestellt ist.
+1. Um sicherzustellen, dass der Katalogexport ordnungsgemäß ausgeführt werden kann, stellen Sie sicher, dass die [cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)-Aufträge und die [Indexer](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) ausgeführt werden und der `Product Feed`-Indexer auf `Update by Schedule` eingestellt ist.
 
-Nachdem Sie die Commerce-Anwendung erfolgreich mit Commerce Services verknüpft und den SaaS-Datenraum angegeben haben, beginnt die Katalogsynchronisierung. Anschließend können Sie [verifizieren](verify.md), dass Verhaltensdaten an Ihre Storefront gesendet werden.
+Nachdem Sie die Commerce-Anwendung erfolgreich mit Commerce Services verknüpft und den [SaaS-Datenspeicher](../landing/saas.md#saas-configuration) angegeben haben, beginnt die Katalogsynchronisierung. Anschließend können Sie [verifizieren](verify.md), dass Verhaltensdaten an Ihre Storefront gesendet werden.
 
 ## Überwachung und Fehlerbehebung bei der Datensynchronisation
 
@@ -107,7 +107,7 @@ composer update --with-dependencies magento/product-recommendations magento/modu
 
 >[!NOTE]
 >
-> In den Versionen 3.x.x von Product Recommendations benötigen Sie nur einen einzigen API-Schlüssel. In den Versionen 4.x.x und höher müssen Sie öffentliche und private API-Schlüssel für die Produktion sowie öffentliche und private Sandbox-API-Schlüssel bereitstellen. Wenn Sie nicht beide API-Schlüsselpaare bereitstellen, können Sie nicht in Admin auf die Funktion &quot;Product Recommendations&quot;zugreifen. Die Datenerfassung wird jedoch in Ihrer Storefront fortgesetzt und vorhandene Empfehlungen werden Ihren Käufern weiterhin angezeigt.
+> In den Versionen 3.x.x von Product Recommendations benötigen Sie nur einen einzigen API-Schlüssel. In den Versionen 4.x.x und höher müssen Sie öffentliche und private API-Schlüssel für die Sandbox- und Produktionsumgebungen bereitstellen. Wenn Sie nicht beide API-Schlüsselpaare bereitstellen, können Sie nicht in Admin auf die Funktion &quot;Product Recommendations&quot;zugreifen. Die Datenerfassung wird jedoch in Ihrer Storefront fortgesetzt und vorhandene Empfehlungen werden Ihren Kunden weiterhin angezeigt.
 
 ## Firewalls
 
@@ -115,4 +115,4 @@ Um Product Recommendations über eine Firewall zulassen, fügen Sie der Zulassun
 
 ## Deinstallieren von [!DNL Product Recommendations] {#uninstall}
 
-Bei Bedarf können Sie das Modul &quot;Produktempfehlungen&quot;[deinstallieren](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html).
+Bei Bedarf können Sie das Modul &quot;Produktempfehlungen&quot;[deinstallieren](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall-modules).
