@@ -3,9 +3,9 @@ title: Verbinden von Commerce-Daten mit Adobe Experience Platform
 description: Erfahren Sie, wie Sie Ihre Commerce-Daten mit der Adobe Experience Platform verbinden.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: 89607d22ba8e69e0c98fce97e041022e33d01c07
+source-git-commit: c252c2fb614ec74f1bdd11cc482066a7133dd523
 workflow-type: tm+mt
-source-wordcount: '2486'
+source-wordcount: '2532'
 ht-degree: 0%
 
 ---
@@ -182,6 +182,10 @@ Zeitreihenprofilereignisse enthalten Daten zu den Profilinformationen Ihres Käu
 
 Es kann etwa 10 Minuten dauern, bis ein Profildatensatz in Real-Time CDP verfügbar ist. Profilereignisse beginnen sofort mit dem Streaming.
 
+>[!TIP]
+>
+>Wenn keine Profildaten auf der Experience Platform angezeigt werden, finden Sie in der [Commerce KnowledgeBase](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-connection-customer-profiles-not-exported) Empfehlungen zur Fehlerbehebung.
+
 #### Feldbeschreibungen
 
 | Feld | Beschreibung |
@@ -277,6 +281,10 @@ Um sicherzustellen, dass Daten aus Ihrem Commerce-Store erfasst werden, verwende
 In diesem Beispiel werden Ereignisdaten aus den [`commerce.productListAdds`](events.md#addtocart), [`commerce.productViews`](events.md#productpageview), [`web.webpagedetails.pageViews`](events.md#pageview) usw. angezeigt. Mit dieser Ansicht können Sie überprüfen, ob Ihre Commerce-Daten am -Edge angekommen sind.
 
 Wenn die Ergebnisse nicht Ihren Erwartungen entsprechen, öffnen Sie den Datensatz und suchen Sie nach fehlgeschlagenen Batch-Importen. Erfahren Sie mehr über [Fehlerbehebung bei Batch-Importen](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/troubleshooting.html).
+
+### Überprüfen, ob die Profildaten auf der Experience Platform angezeigt werden
+
+Wenn keine Profildaten auf der Experience Platform angezeigt werden, finden Sie in der [Commerce KnowledgeBase](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-connection-customer-profiles-not-exported) Empfehlungen zur Fehlerbehebung.
 
 ## Nächste Schritte
 
