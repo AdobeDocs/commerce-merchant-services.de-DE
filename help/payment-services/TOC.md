@@ -6,10 +6,10 @@ index: true
 role: Admin, Leader, User
 feature: Payments, Checkout
 recommendations: noDisplay
-source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
+source-git-commit: 5481b19f95908b441e12c4700c51649921dabb08
 workflow-type: tm+mt
-source-wordcount: '97'
-ht-degree: 4%
+source-wordcount: '103'
+ht-degree: 3%
 
 ---
 
@@ -19,10 +19,6 @@ ht-degree: 4%
 - [Guide - Übersicht](guide-overview.md)
 - [Einführung in [!DNL Payment Services]](overview.md)
 - [Versionshinweise](release-notes.md)
-- Zahlungen und Auschecken {#payments-checkout}
-   - [Zahlungsoptionen](payments-options.md)
-   - [Kreditkartenausnahme](vaulting.md)
-   - [Checkout](checkout.md)
 - Onboard [!DNL Payment Services] {#get-started}
    - [Onboarding-Übersicht](onboard.md)
    - [Installieren der [!DNL Payment Services] Erweiterung](install.md)
@@ -34,18 +30,23 @@ ht-degree: 4%
    - [[!DNL Payment Services] Einstellungen](settings.md)
    - [Befehlszeilenkonfiguration](configure-cli.md)
    - [Alte Konfiguration](configure-admin.md)
-- [Testen und Validieren](test-validate.md)
-- [Bestellung erstellen](create-order.md)
+   - [Testen und Validieren](test-validate.md)
+- Zahlungen und Auschecken {#payments-checkout}
+   - [Zahlungsoptionen](payments-options.md)
+   - [Kreditkartenausnahme](vaulting.md)
+   - [Checkout](checkout.md)
+   - [Erstellen einer Bestellung im Admin](create-order.md)
+   - Zahlungen verwalten {#manage}
+      - [Linienelemente für  [!DNL Payment Services]](line-items.md)
+      - [Erstattungen](refunds.md)
+      - [Voids](voids.md)
 - Rechnungslegung {#reporting}
    - [Transaktionsbericht](transactions.md)
    - [Bestellstatusbericht](order-payment-status.md)
    - [Zahlungsbericht](payouts.md)
    - [Verfügbare Daten](data.md)
    - [Verarbeitung der Stufe 2 und Stufe 3](levels-card-payment-transactions.md)
-- Zahlungen verwalten {#manage}
-   - [Erstattungen](refunds.md)
-   - [Voids](voids.md)
-- Sicherheit {#security-compliance}
-   - [Sicherheit und Einhaltung](security.md)
+- Sicherheit und Compliance {#security-compliance}
+   - [Sicherheit](security.md)
    - [Schutz vor schweren Betrugsfällen](fraud-protection.md)
 - [Kehren Sie zur Startseite der Commerce-Dienste zurück](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)
