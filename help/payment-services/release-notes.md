@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] Versionshinweise"
 description: Informationen zu allen [!DNL Payment Services] Versionen finden Sie in den Versionshinweisen .
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 5481b19f95908b441e12c4700c51649921dabb08
+source-git-commit: c02c7c8700c9aa2157b296b8995c05805e371941
 workflow-type: tm+mt
-source-wordcount: '2576'
+source-wordcount: '2787'
 ht-degree: 0%
 
 ---
@@ -87,6 +87,26 @@ _28. Juni 2021_
 
 +++
 
+## v2.7.0
+
+_2. August 2024_
+
+[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
+
+![Neu](../assets/new.svg)<!-- PAY-4844 --> [!DNL Payment Services] unterstützt jetzt [Zeilenelementdaten auf Bestellebene](line-items.md). Diese Funktion ermöglicht es Händlern, detaillierte Informationen zu den Artikeln in einer Bestellung anzuzeigen, wie Produktdetails, Menge und Preis (einschließlich Umsatzsteuer, Rabatte und andere relevante Informationen).
+
+![Neu](../assets/new.svg)<!-- PAY-5380 --> [!DNL Payment Services] verbessert die [Konfiguration im Admin](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/configure/configure-admin#general-configuration) -Erlebnis für Händler und ermöglicht so einen einfacheren und intuitiveren Onboarding-Prozess. Mit dieser Funktion können Händler ihre [!DNL Payment Services] -IDs zurücksetzen.
+
+![Neu](../assets/new.svg)<!-- PAY-5255 --> [!DNL Payment Services] enthält eine [Benachrichtigung über Zahlungsfehler](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/checkout/checkout-payment-failed-emails). Diese Funktion bietet nahezu in Echtzeit Benachrichtigungen über Zahlungsausfälle an Händler, sodass Bestellungen gespeichert werden können, indem man sich an den Käufer wendet und die Problemlösung potenziell verbessert.
+
+![Korrektur](../assets/fix.svg)<!-- PAY-5469 --> Es wurde ein Problem behoben, bei dem das Popup-Fenster für die Bezahlung mit Google von Safari blockiert wurde **.** Käufer können jetzt ihre Google Pay-Payment-Transaktionen in Safari abschließen.
+
+![Korrektur](../assets/fix.svg)<!-- PAY-5492 --> Korrektur eines Problems, das auftrat, wenn ein Händler der Checkout-Seite benutzerdefinierte Geschäftsbedingungen hinzufügte. Während eines [Express-Checkouts](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options#standard-vs-advanced-payments-experience) kann ein Käufer jetzt diese Bedingungen akzeptieren, um den Checkout ohne Probleme abzuschließen.
+
+![Korrektur](../assets/fix.svg)<!-- PAY-5532 --> Verbesserte In-Store-Abruf-Funktionen (ISPU) mit **InstantPurchase**. **ISPU-Bereitstellungsmethoden** werden nicht mehr angezeigt, wenn ein Käufer eine Bestellung mit **InstantPurchase** aufgibt.
+
+![Korrektur](../assets/fix.svg)<!-- PAY-5606 --> Korrektur eines Problems innerhalb der Länderauswahl auf der **Konfigurationsseite** , das auftrat, wenn das Land des Händlers auf **Deutschland** festgelegt war.
+
 ## v2.6.0
 
 _4. Juni 2024_
@@ -137,7 +157,7 @@ _20. März 2024_
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
 
-![Neu](../assets/new.svg)<!-- PAY-4868 --> Händler können Google-Bezahlung erfolgreich [über das gesamte Kauferlebnis hinweg konfigurieren](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html), ähnlich wie andere Zahlungsschaltflächen in[!DNL Payment Services] über den Administrator.
+![Neu](../assets/new.svg)<!-- PAY-4868 --> Händler können Google-Bezahlung erfolgreich [über das gesamte Kauferlebnis hinweg konfigurieren](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html), ähnlich wie andere Zahlungsschaltflächen in [!DNL Payment Services] über den Administrator.
 
 ![Neu](../assets/new.svg)<!-- PAY-4381 --> [Zahlungsdienste unterstützen Google Pay über GraphQL](https://developer.adobe.com/commerce/webapi/graphql/payment-services/), sodass Händler Headless Commerce-Erlebnisse mit der Zahlungsmethode Google Pay haben können.
 
