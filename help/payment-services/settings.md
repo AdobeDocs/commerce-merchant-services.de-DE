@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
 feature: Payments, Checkout, Configuration
-source-git-commit: 8dd4f629fa60959588cee4ea22f9fb577f338716
+source-git-commit: 7a886679ad00f9b29e6ffd7d8bc8e2f6fc0082d4
 workflow-type: tm+mt
-source-wordcount: '2372'
+source-wordcount: '2404'
 ht-degree: 0%
 
 ---
@@ -30,9 +30,9 @@ Sie können [!DNL Payment Services] für Ihre Website aktivieren und entweder Sa
 
 1. Wechseln Sie in der Seitenleiste _Admin_ zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 
-   ![Home view](assets/payment-services-menu-small.png){width="400" zoomable="yes"}
-
 1. Klicken Sie auf **[!UICONTROL Settings]**. Weitere Informationen finden Sie unter [Einführung in  [!DNL Payment Services] Startseite](payments-home.md) .
+
+   ![Ansicht &quot;React settings&quot;](assets/react-settings-view.png){width="500" zoomable="yes"}
 
    Der Abschnitt _[!UICONTROL General]_enthält Einstellungen, mit denen [!DNL Payment Services] als Zahlungsmethode aktiviert wird.
 
@@ -40,9 +40,11 @@ Sie können [!DNL Payment Services] für Ihre Website aktivieren und entweder Sa
 
 1. Wenn Sie weiterhin [!DNL Payment Services] für Ihren Store testen, setzen Sie **Zahlungsmodus** auf `Sandbox`. Wenn Sie bereit sind, Live-Zahlungen zu aktivieren, setzen Sie sie auf `Production`.
 
-   >[!NOTE]
+1. Ihre Werte **[!UICONTROL Payment Services Sandbox ID]** und **[!UICONTROL Payment Services Production ID]** werden automatisch ausgefüllt, sobald Sie den [Commerce Services Connector](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas){target=_blank} eingerichtet und das Dashboard [!DNL Payment Services] zum ersten Mal aufgerufen haben. Führen Sie diese Schritte aus, um das Onboarding für Ihre Sandbox- und/oder Produktionsumgebungen abzuschließen. Diese Werte verknüpfen Ihre SaaS-ID mit [!DNL Payment Services].
+
+   >[!WARNING]
    >
-   >Ihre _[!UICONTROL Sandbox Merchant ID]_und_[!UICONTROL Production Merchant ID]_ werden automatisch generiert und in ihren entsprechenden Feldern angezeigt, wenn Sie das Onboarding für die Sandbox und/oder die Produktion abschließen.
+   > Wenn Sie Ihre [!DNL Payment Services] -IDs zurücksetzen, müssen Sie erneut eingebunden werden.
 
 1. Klicken Sie auf **[!UICONTROL Save]**.
 
@@ -59,7 +61,7 @@ Sie können Ihrer Website(n) oder einzelnen Speicheransichtskonfigurationen eine
 1. Wechseln Sie in der Seitenleiste _Admin_ zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Klicken Sie auf **[!UICONTROL Settings]**. Weitere Informationen finden Sie unter [Einführung in  [!DNL Payment Services] Startseite](payments-home.md) .
 1. Wählen Sie im Dropdown-Menü **[!UICONTROL Scope]** die Website- oder Store-Ansicht aus, für die Sie einen weichen Deskriptor erstellen möchten. Lassen Sie bei der Ersteinrichtung diesen Wert auf **[!UICONTROL Default]**, um den Standardwert festzulegen.
-1. Fügen Sie Ihren benutzerdefinierten Text (bis zu 22 Zeichen) in das Textfeld ein und ersetzen Sie dadurch `Custom descriptor`.
+1. Fügen Sie Ihren benutzerdefinierten Text (bis zu 22 Zeichen) in das Textfeld ein und ersetzen Sie dadurch `Soft descriptor`.
 1. Klicken Sie auf **[!UICONTROL Save]**.
 1. So erstellen Sie einen anderen Soft-Deskriptor als den konfigurierten Standard für eine Website- oder Store-Ansicht:
    1. Wählen Sie im Dropdown-Menü **[!UICONTROL Scope]** die Website- oder Store-Ansicht aus, für die Sie einen weichen Deskriptor erstellen möchten.
@@ -79,8 +81,8 @@ Sie können Ihrer Website(n) oder einzelnen Speicheransichtskonfigurationen eine
 |---|---|---|
 | [!UICONTROL Enable] | website | Aktivieren oder deaktivieren Sie [!DNL Payment Services] für Ihre Website. Optionen: [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Payment mode] | Store-Ansicht | Legen Sie die -Methode oder -Umgebung für Ihren Store fest. Optionen: [!UICONTROL Sandbox] / [!UICONTROL Production] |
-| [!UICONTROL Sandbox Merchant ID] | Store-Ansicht | Ihre Sandbox-Händler-ID, die beim Sandbox-Onboarding automatisch generiert wird. |
-| [!UICONTROL Production Merchant ID] | Store-Ansicht | Ihre Produktions-Händler-ID, die beim Sandbox-Onboarding automatisch generiert wird. |
+| [!UICONTROL Payment Services Sandbox ID] | Store-Ansicht | Ihre Sandbox-Händler-ID, die beim Sandbox-Onboarding automatisch generiert wird. |
+| [!UICONTROL Payment Services Production ID] | Store-Ansicht | Ihre Produktions-Händler-ID, die beim Sandbox-Onboarding automatisch generiert wird. |
 | [!UICONTROL Soft Descriptor] | Website- oder Store-Ansicht | Fügen Sie Ihren Websites einen weichen Deskriptor hinzu und speichern Sie diese, um Informationen zu Kundentransaktionen hinzuzufügen, die Marken, Stores oder Produktlinien voneinander trennen. Mit dem Umschalter [!UICONTROL Use website] wird jeder weiche Deskriptor angewendet, der auf Website-Ebene hinzugefügt wird. Mit dem Umschalter [!UICONTROL Use default] wird jeder weiche Deskriptor angewendet, der als Standard hinzugefügt wurde. |
 
 ## Zahlungsoptionen konfigurieren
