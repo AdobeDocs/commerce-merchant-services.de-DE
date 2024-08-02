@@ -3,9 +3,9 @@ title: Versionshinweise
 description: Die neuesten Versionsinformationen für die [!DNL Data Connection] Erweiterung von Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: c736647fc148a02803bc458b16ff1f3419dc1fe1
+source-git-commit: 8dc6aa5ab2472d1282fbf65605fd511250816af7
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '937'
 ht-degree: 0%
 
 ---
@@ -24,15 +24,21 @@ Diese Versionshinweise enthalten Aktualisierungen der [!DNL Data Connection] -Er
 
 Informationen zu Funktionsänderungen und Fehlerbehebungen im Zusammenhang mit Erweiterungen, die von der Erweiterung [!DNL Data Connection] verwendet werden, finden Sie unter **Unterstützte Dienstaktualisierungen**.
 
-Unter [Bevorstehende Versionen](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) erfahren Sie mehr über die Veröffentlichungszeitpläne und die Unterstützung.
+Unter [Bevorstehende Versionen](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) erfahren Sie mehr über die Veröffentlichungszeitpläne und die Unterstützung.
 
-Informationen dazu, welche Commerce-Versionen dieses Modul unterstützen, finden Sie in der Entwicklerdokumentation von [.](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html)
+Informationen dazu, welche Commerce-Versionen dieses Modul unterstützen, finden Sie in der Entwicklerdokumentation von [.](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability)
 
 ## Unterstützte Dienstaktualisierungen
 
 In diesen Versionshinweisen werden Funktionsänderungen und Fehlerbehebungen im Zusammenhang mit Erweiterungen beschrieben, die von der [!DNL Data Connection] -Erweiterung verwendet werden.
 
 +++Unterstützte Dienstaktualisierungen
+
+_2. August 2024_
+
+![Korrektur](../assets/fix.svg) - Korrektur des Gesamtbetrags der Zahlungen, wenn die Bestellsumme so konfiguriert ist, dass Steuern einbezogen werden.
+![Neu](../assets/new.svg) - Ein `taxAmount` -Feld wurde hinzugefügt, um Kaufereignisse zu bestellen.
+![Neu](../assets/new.svg) - Es wurde die Möglichkeit hinzugefügt, benutzerspezifische Daten zu Ereignissen hinzuzufügen. Im Folgenden finden Sie ein [Beispiel](https://github.com/adobe/commerce-events/blob/main/examples/events/custom-event-override.md).
 
 _24. Januar 2024_
 
@@ -78,7 +84,7 @@ _22. Juli 2024_
 
 [!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"}
 
-![Korrektur](../assets/new.svg) - Das Experience Platform Connector-Metapaket wurde aktualisiert, um nicht verwendete Datenexporteure und -indizes zu entfernen.
+![Korrektur](../assets/fix.svg) - Das Experience Platform Connector-Metapaket wurde aktualisiert, um nicht verwendete Datenexporteure und -indizes zu entfernen.
 
 ## 3.1.2
 
@@ -86,8 +92,8 @@ _5. Juni 2024_
 
 [!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"}
 
-![Korrektur](../assets/new.svg) - Es wurde ein Problem behoben, bei dem beim Initiieren einer [historischen Synchronisierung](connect-data.md#specify-order-history-date-range) das falsche Datumsformat verwendet wurde.
-![Korrektur](../assets/new.svg) - Es wurde ein Problem behoben, bei dem das [startCheckout](events.md#startcheckout) -Ereignis nicht in Adobe Commerce 2.4.7 gesendet wurde.
+![Korrektur](../assets/fix.svg) - Es wurde ein Problem behoben, bei dem beim Initiieren einer [historischen Synchronisierung](connect-data.md#specify-order-history-date-range) das falsche Datumsformat verwendet wurde.
+![Korrektur](../assets/fix.svg) - Es wurde ein Problem behoben, bei dem das [startCheckout](events.md#startcheckout) -Ereignis nicht in Adobe Commerce 2.4.7 gesendet wurde.
 
 ## 3.1.1
 
@@ -115,8 +121,8 @@ _16. November 2023_
 [!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"}
 
 ![Neu](../assets/new.svg) - Der Experience Platform-Connector wurde in [!DNL Data Connection] umbenannt.
-![Fehlerbehebung](../assets/new.svg) - Es wurde die Möglichkeit hinzugefügt, Fehlerantworten zu protokollieren, wenn Adobe IMS das Zugriffstoken nicht generieren kann.
-![Fehlerbehebung](../assets/new.svg) - Es wurde eine Benachrichtigungsmeldung hinzugefügt, wenn Sie versuchen, historische Bestellungen zu synchronisieren, aber keine Kontoanmeldeinformationen angegeben haben.
+![Fehlerbehebung](../assets/fix.svg) - Es wurde die Möglichkeit hinzugefügt, Fehlerantworten zu protokollieren, wenn Adobe IMS das Zugriffstoken nicht generieren kann.
+![Fehlerbehebung](../assets/fix.svg) - Es wurde eine Benachrichtigungsmeldung hinzugefügt, wenn Sie versuchen, historische Bestellungen zu synchronisieren, aber keine Kontoanmeldeinformationen angegeben haben.
 
 ## 3,0,0
 
