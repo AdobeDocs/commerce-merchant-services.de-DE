@@ -2,9 +2,9 @@
 title: "Indizierung"
 description: "Erfahren Sie, wie [!DNL Live Search] die Eigenschaften von Produktattributen indiziert."
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
+source-git-commit: 920324dbad62adaee5c7db688e59398557e03663
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '586'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Die Produktattributeigenschaften (Metadaten) bestimmen:
 
 Der Umfang der Attributmetadaten ist `website/store/store view`.
 
-Mit der API [!DNL Live Search] kann ein Client nach jedem Produktattribut sortieren, für das die Eigenschaft [storeFront](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) `Use in Search` im Adobe Commerce Admin auf `Yes` festgelegt ist. Wenn diese Option aktiviert ist, können `Search Weight` und `Visible in Advanced Search` für das Attribut festgelegt werden.
+Mit der API [!DNL Live Search] kann ein Client nach jedem Produktattribut sortieren, für das die Eigenschaft [storeFront](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) `Use in Search` im Adobe Commerce Admin auf `Yes` festgelegt ist. Wenn diese Option aktiviert ist, kann `Search Weight` für das Attribut festgelegt werden.
 
 [!DNL Live Search] indiziert keine gelöschten oder auf `Not Visible Individually` gesetzten Produkte.
 

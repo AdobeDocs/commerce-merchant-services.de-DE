@@ -2,7 +2,7 @@
 title: "Einstellungen"
 description: "Konfigurieren Sie die Einstellungen für den  [!DNL Live Search] Dienst."
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
-source-git-commit: ba7e92d5b3aaabe6a8c71f86b0e4eab38aec9adf
+source-git-commit: 55b90f0025f69137d50fa1cacd80a2b655eb39dc
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Sie können die Anzahl der Preisbereichsgruppen und die Verteilung der Preiswert
 1. Wechseln Sie im Admin zu **Marketing** > *SEO &amp; Suche* > **[!DNL Live Search]**.
 1. Führen Sie im Arbeitsbereich **Einstellungen** unter *Preisfacettierung* folgende Schritte aus:
    * Geben Sie die **Anzahl der Auswahlen** oder die zu verfügbaren Preisgruppierungen ein. Es können bis zu 50 Preisgruppierungen definiert werden.
-   * Geben Sie den **Intervallwert** oder den Preisbereich für jede Gruppe ein. Der Höchstwert beträgt 10.000.
+   * Geben Sie den **Intervallwert** oder den Preisbereich für jede Gruppe ein. Der Höchstwert beträgt 40.000.000.
 1. Klicken Sie auf **Speichern**.
 
    Es dauert etwa 15 Minuten, bis die aktualisierten Einstellungen in der Storefront verfügbar sind.
