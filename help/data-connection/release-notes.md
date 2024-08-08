@@ -3,9 +3,9 @@ title: Versionshinweise
 description: Die neuesten Versionsinformationen für die [!DNL Data Connection] Erweiterung von Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 8dc6aa5ab2472d1282fbf65605fd511250816af7
+source-git-commit: f894a1a192f648df01e1f869bec9c8a4c66803e1
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '951'
 ht-degree: 0%
 
 ---
@@ -78,13 +78,21 @@ _12. Oktober 2022_
 
 +++
 
+## 3.1.4
+
+_9. August 2024_
+
+[!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"}
+
+![Korrektur](../assets/fix.svg) - Das `experience-platform-connector` -Metapaket wurde aktualisiert, um zusätzliche nicht verwendete Datenexporteure und -indizierer zu entfernen.
+
 ## 3.1.3
 
 _22. Juli 2024_
 
 [!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"}
 
-![Korrektur](../assets/fix.svg) - Das Experience Platform Connector-Metapaket wurde aktualisiert, um nicht verwendete Datenexporteure und -indizes zu entfernen.
+![Korrektur](../assets/fix.svg) - Das `experience-platform-connector` -Metapaket wurde aktualisiert, um nicht verwendete Datenexporteure und Indexer zu entfernen.
 
 ## 3.1.2
 
