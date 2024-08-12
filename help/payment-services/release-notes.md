@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] Versionshinweise"
 description: Informationen zu allen [!DNL Payment Services] Versionen finden Sie in den Versionshinweisen .
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: c02c7c8700c9aa2157b296b8995c05805e371941
+source-git-commit: 73a48822a7df6999ddb597e53cd6b869b1b97222
 workflow-type: tm+mt
-source-wordcount: '2787'
+source-wordcount: '2788'
 ht-degree: 0%
 
 ---
@@ -93,7 +93,7 @@ _2. August 2024_
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
 
-![Neu](../assets/new.svg)<!-- PAY-4844 --> [!DNL Payment Services] unterstützt jetzt [Zeilenelementdaten auf Bestellebene](line-items.md). Diese Funktion ermöglicht es Händlern, detaillierte Informationen zu den Artikeln in einer Bestellung anzuzeigen, wie Produktdetails, Menge und Preis (einschließlich Umsatzsteuer, Rabatte und andere relevante Informationen).
+![Neu](../assets/new.svg)<!-- PAY-4844 --> [!DNL Payment Services] unterstützt jetzt [Zeilenelementdaten auf Bestellebene](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/payments-checkout/manage/line-items). Diese Funktion ermöglicht es Händlern, detaillierte Informationen zu den Artikeln in einer Bestellung anzuzeigen, wie Produktdetails, Menge und Preis (einschließlich Umsatzsteuer, Rabatte und andere relevante Informationen).
 
 ![Neu](../assets/new.svg)<!-- PAY-5380 --> [!DNL Payment Services] verbessert die [Konfiguration im Admin](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/configure/configure-admin#general-configuration) -Erlebnis für Händler und ermöglicht so einen einfacheren und intuitiveren Onboarding-Prozess. Mit dieser Funktion können Händler ihre [!DNL Payment Services] -IDs zurücksetzen.
 
