@@ -3,9 +3,9 @@ title: "Grenzen und Grenzen"
 description: Erfahren Sie mehr über die Grenzen und Beschränkungen für [!DNL Live Search] s, um sicherzustellen, dass sie den Anforderungen Ihres Unternehmens entsprechen.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 61ebda0015c6d5a7c0bb08f7aae9a4593bca84a4
+source-git-commit: b24b2f79c56d43a20f4e5a3367ac07d00e3aed55
 workflow-type: tm+mt
-source-wordcount: '748'
+source-wordcount: '767'
 ht-degree: 0%
 
 ---
@@ -54,6 +54,7 @@ Wenn es um die Site-Suche geht, bietet Ihnen Adobe Commerce Optionen. Überprüf
 - Kategorievermarktung kann eine Regel pro Kategorie enthalten.
 - Die maximale Anzahl von Bedingungen pro Regel beträgt 10.
 - Die maximale Anzahl von Ereignissen pro Regel beträgt 25.
+- Um unvorhersehbare Ergebnisse bei paginierten Antworten zu vermeiden, sollte die Anzahl der fixierten Produkte die angeforderte Seitengröße nicht überschreiten.
 
 ## Synonyme
 
