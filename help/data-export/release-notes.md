@@ -4,9 +4,9 @@ description: Die neuesten Versionsinformationen für [!DNL Data Export Extension
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 0c7aeeda-e8a6-4740-b466-0661a6d2df07
-source-git-commit: 11ea98069dcc6d06e9ab90add8239fef2c8edc7d
+source-git-commit: 38a4e795200e368e91cd3075c611656e852b73f1
 workflow-type: tm+mt
-source-wordcount: '570'
+source-wordcount: '629'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,16 @@ Zu den Aktualisierungen gehören:
 
 ![Neu](../assets/new.svg): Umbenannte Cron-Aufträge für den sofortigen Export-Feed in `*_feed_resend_failed_items`.
 
-![Neu](../assets/new.svg) Umbenannte sofortige Export-Feeds und Änderung von Protokolltabellen.
+![Neu](../assets/new.svg) Umbenannte unmittelbare Export-Feeds, Indexer-Ansicht-IDs und Änderung von Protokolltabellen.
+- Feed-Tabellen (und Indexansicht-IDs):
+   - `catalog_data_exporter_products` -> `cde_products_feed`
+   - `catalog_data_exporter_product_attributes` -> `cde_product_attributes_feed`
+   - `catalog_data_exporter_categories` -> `cde_categories_feed`
+   - `catalog_data_exporter_product_prices` -> `cde_product_prices_feed`
+   - `catalog_data_exporter_product_variants` -> `cde_product_variants_feed`
+   - `inventory_data_exporter_stock_status` -> `inventory_data_exporter_stock_status_feed`
+- Name der Protokolltabelle ändern - Entspricht dem Namensmuster der Feed-Tabellen, ändert jedoch die Protokolltabellennamen, fügt das Suffix `_cl` hinzu.  Beispiel: `catalog_data_exporter_products_cl`-> `cde-products_feed_cl`
+Wenn Sie über benutzerdefinierten Code verfügen, der auf eine dieser Entitäten verweist, aktualisieren Sie die Verweise mit den neuen Namen, um sicherzustellen, dass Ihr Code weiterhin ordnungsgemäß funktioniert.
 
 ![Korrektur](../assets/fix.svg) Setzen Sie das Feld `modified_at` nur für Feeds, für die dies erforderlich ist, in den Feed-Daten.
 
