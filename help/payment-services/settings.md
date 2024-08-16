@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
 feature: Payments, Checkout, Configuration
-source-git-commit: 7a886679ad00f9b29e6ffd7d8bc8e2f6fc0082d4
+source-git-commit: 09944ccad182e7f83c722ca6619a414416015ab4
 workflow-type: tm+mt
-source-wordcount: '2404'
+source-wordcount: '2405'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,7 @@ Sie können Ihrer Website(n) oder einzelnen Speicheransichtskonfigurationen eine
 | [!UICONTROL Enable] | website | Aktivieren oder deaktivieren Sie [!DNL Payment Services] für Ihre Website. Optionen: [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Payment mode] | Store-Ansicht | Legen Sie die -Methode oder -Umgebung für Ihren Store fest. Optionen: [!UICONTROL Sandbox] / [!UICONTROL Production] |
 | [!UICONTROL Payment Services Sandbox ID] | Store-Ansicht | Ihre Sandbox-Händler-ID, die beim Sandbox-Onboarding automatisch generiert wird. |
-| [!UICONTROL Payment Services Production ID] | Store-Ansicht | Ihre Produktions-Händler-ID, die beim Sandbox-Onboarding automatisch generiert wird. |
+| [!UICONTROL Payment Services Production ID] | Store-Ansicht | Ihre Produktions-Merchant-ID, die beim (Live-)Onboarding der Produktion automatisch generiert wird. |
 | [!UICONTROL Soft Descriptor] | Website- oder Store-Ansicht | Fügen Sie Ihren Websites einen weichen Deskriptor hinzu und speichern Sie diese, um Informationen zu Kundentransaktionen hinzuzufügen, die Marken, Stores oder Produktlinien voneinander trennen. Mit dem Umschalter [!UICONTROL Use website] wird jeder weiche Deskriptor angewendet, der auf Website-Ebene hinzugefügt wird. Mit dem Umschalter [!UICONTROL Use default] wird jeder weiche Deskriptor angewendet, der als Standard hinzugefügt wurde. |
 
 ## Zahlungsoptionen konfigurieren
