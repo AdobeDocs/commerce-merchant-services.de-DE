@@ -3,7 +3,7 @@ title: "Grenzen und Grenzen"
 description: Erfahren Sie mehr über die Grenzen und Beschränkungen für [!DNL Live Search] s, um sicherzustellen, dass sie den Anforderungen Ihres Unternehmens entsprechen.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: ffbb41ef2bc940982b4acb33623ef689542617c1
+source-git-commit: 2f28b77691e5b125875f1ce39301bfebd093a922
 workflow-type: tm+mt
 source-wordcount: '777'
 ht-degree: 0%
@@ -70,12 +70,12 @@ Wenn es um die Site-Suche geht, bietet Ihnen Adobe Commerce Optionen. Überprüf
 ## B2B- und Kategorieberechtigungen
 
 - Produkte werden nicht angezeigt, wenn sie nicht zu einem standardmäßigen freigegebenen Katalog hinzugefügt wurden.
-- So beschränken Sie Kundengruppen mithilfe von [Kategorieberechtigungen](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions):
+- So beschränken Sie Kundengruppen mithilfe von [Kategorieberechtigungen](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-permissions):
    - Produkte müssen der Stammkategorie zugeordnet werden.
    - Die Kundengruppe &quot;Nicht angemeldet&quot;muss über Browserberechtigungen vom Typ &quot;Zulassen&quot;verfügen.
-   - Um Produkte auf die Kundengruppe &quot;Nicht angemeldet&quot;zu beschränken, gehen Sie zu jeder Kategorie und legen Sie die Berechtigung für jede [Kundengruppe](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage) fest.
+   - Um Produkte auf die Kundengruppe &quot;Nicht angemeldet&quot;zu beschränken, gehen Sie zu jeder Kategorie und legen Sie die Berechtigung für jede [Kundengruppe](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage) fest.
 - Die native Unterstützung für B2B mit dem PLP-Widget auf PWA Studio wird derzeit nicht unterstützt. Sie können diese Funktion jedoch [mit der API](install.md#pwa-support) implementieren.
-- Kategoriefacetten in [!DNL Live Search] zeigen möglicherweise Kategorien an, die für eine bestimmte [Kundengruppe](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage) nicht angezeigt werden können.
+- Kategoriefacetten in [!DNL Live Search] zeigen möglicherweise Kategorien an, die für eine bestimmte [Kundengruppe](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage) nicht angezeigt werden können.
 - [!DNL Live Search] kann bis zu 1.000 Kundengruppen unterstützen.
 
 ## [!DNL Storefront popover]
