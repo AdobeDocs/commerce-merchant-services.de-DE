@@ -2,9 +2,9 @@
 title: '[!DNL Live Search] Best Practices'
 description: Erfahren Sie mehr über die Best Practices zur Implementierung von [!DNL Live Search] in Ihrem Store.
 role: Admin, Developer
-source-git-commit: 88be2212f3a992e7a2d18bf1d5c2e8d5d2b64b80
+source-git-commit: 77d12a1294c87089ce806615f92bf89396bfc43b
 workflow-type: tm+mt
-source-wordcount: '2355'
+source-wordcount: '2349'
 ht-degree: 0%
 
 ---
@@ -38,9 +38,9 @@ Das Widget [!DNL Live Search] [[!DNL popover]](storefront-popover.md) ermöglich
 
 Erfahren Sie mehr über das Widget [popover](storefront-popover.md) .
 
-### Synonyme und Schreibweisen
+### Synonyme und Rechtschreibfehler
 
-Integrieren Sie Synonyme und gängige Rechtschreibfehler, um umfassende Suchergebnisse sicherzustellen. Darüber hinaus können Sie die Suchabfrage erweitern, um Wörter einzuschließen, die von den in Ihrem Katalog angegebenen Wörtern abweichen. Sie wollen keinen Verkauf verlieren, weil jemand nach einem &quot;Sofa&quot; sucht, während Ihr Produkt als &quot;Sofa&quot; aufgeführt ist. Sie können eine breite Palette von Suchbegriffen erfassen, indem Sie alle möglichen Wörter eingeben, die Kunden bei der Suche nach Ihren Produkten verwenden können. Sie können [Synonyme auf eine oder zwei Arten setzen](synonyms-add.md#step-2-define-the-synonym-by-type), um die Ergebnisse zu verbessern.
+Die Live-Suche verwaltet Rechtschreibfehler standardmäßig. Sie können Synonyme einrichten, um Wörter einzuschließen, die von den in Ihrem Katalog angegebenen Wörtern abweichen. Sie wollen keinen Verkauf verlieren, weil jemand nach einem &quot;Sofa&quot; sucht, während Ihr Produkt als &quot;Sofa&quot; aufgeführt ist. Sie können eine breite Palette von Suchbegriffen erfassen, indem Sie alle möglichen Wörter eingeben, die Kunden bei der Suche nach Ihren Produkten verwenden können. Sie können [Synonyme auf eine oder zwei Arten setzen](synonyms-add.md#step-2-define-the-synonym-by-type), um die Ergebnisse zu verbessern.
 
 #### Tipps zur Optimierung von Synonymen
 
