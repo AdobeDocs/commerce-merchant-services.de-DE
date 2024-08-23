@@ -4,9 +4,9 @@ description: Erfahren Sie, wie [!DNL SaaS Data Export] Daten zwischen Adobe Comm
 role: Admin, Developer
 recommendations: noCatalog
 exl-id: 530a6ed7-46ec-45fc-94e9-c850168e8aed
-source-git-commit: af9de40a717d2cb55a5f42483bd0e4cbcd913f64
+source-git-commit: 4b579b7ec7698f32b5f2254f20514cedbbb50cdd
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '822'
 ht-degree: 0%
 
 ---
@@ -92,3 +92,22 @@ Die Synchronisierung fehlerhafter Elemente teilweise synchronisieren und erneut 
 - Stellen Sie sicher, dass die Indexer über den Befehl [Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) oder den Commerce-CLI-Befehl `bin/magento indexer:info` ausgeführt werden.
 
 - Stellen Sie sicher, dass die Indexer für die folgenden Feeds auf &quot;`Update by Schedule`&quot; eingestellt sind: Katalogattribute, Produkt, Produktüberschreibungen und Produktvarianten. Sie können die Indexer über die [Indexverwaltung](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) im Admin oder über die CLI (`bin/magento indexer:show-mode | grep -i feed`) überprüfen.
+
+### Benachrichtigungen des Ereignismanagers für die Datenübertragungsprotokollierung
+
+In Version 103.3.4 und höher sendet der SaaS-Datenexport das `data_sent_outside` -Ereignis, wenn Daten von der Commerce-Instanz an Adobe Commerce-Dienste gesendet werden.
+
+```php
+$this->eventManager->dispatch(
+   "data_sent_outside",
+   [
+       "timestamp" => time(),
+       "type" => $metadata->getFeedName(),
+       "data" => $data
+   ]
+);
+```
+
+>[!NOTE]
+>
+>Weitere Informationen zu Ereignissen und deren Abonnement finden Sie unter [Ereignisse und Beobachter](https://developer.adobe.com/commerce/php/development/components/events-and-observers) in der Adobe Commerce-Entwicklerdokumentation.
