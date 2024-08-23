@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Ihre Adobe Commerce- oder Magento Open Source
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 34d4fdffbfaf85e28df4500298411258b2dab2c2
+source-git-commit: bfb839c25a378eedd3a20fd01f12f7398c6568b9
 workflow-type: tm+mt
-source-wordcount: '1157'
+source-wordcount: '1213'
 ht-degree: 0%
 
 ---
@@ -105,7 +105,12 @@ Um ein SaaS-Projekt auszuwählen oder zu erstellen, fordern Sie den API-Schlüss
 
 1. Fügen Sie in den Abschnitten _[!UICONTROL Sandbox API Keys]_und_[!UICONTROL Production API Keys]_ Ihre Schlüsselwerte ein.
 
-   Private Schlüssel müssen &quot;`----BEGIN PRIVATE KEY---`&quot; am Anfang des Schlüssels und &quot;`----END PRIVATE KEY----`&quot; am Ende des Schlüssels enthalten.
+   - Private Schlüssel müssen &quot;`----BEGIN PRIVATE KEY---`&quot; am Anfang des Schlüssels und &quot;`----END PRIVATE KEY----`&quot; am Ende des Schlüssels enthalten.
+   - Wenn Sie keine Kopie der tatsächlichen Schlüssel haben, fragen Sie den Kontoinhaber nach diesen und schließen Sie die Werte in die Konfiguration ein.
+
+   >[!WARNING]
+   >
+   > Wenn Sie Schlüsselwerte hinzufügen, indem Sie eine Datenbanksicherung oder einen Schnappschuss abfragen und die Werte in die Konfiguration einfügen, wird eine zusätzliche Verschlüsselungsschicht angewendet, und die Schlüssel funktionieren nicht.
 
 1. Klicken Sie auf **Speichern**.
 
