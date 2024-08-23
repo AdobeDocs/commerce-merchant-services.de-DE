@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Ihre Adobe Commerce- oder Magento Open Source
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 3a5dec9422aa34eeb204b9fe6f089551e4038f1c
+source-git-commit: 34d4fdffbfaf85e28df4500298411258b2dab2c2
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1157'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Darüber hinaus sind Lösungsintegratoren auch berechtigt, [!DNL Commerce Servic
 
 ### Generieren der Produktions- und Sandbox-API-Schlüssel {#genapikey}
 
-1. Melden Sie sich bei Ihrem [!DNL Commerce]-Konto unter [https://account.magento.com](https://account.magento.com/customer/account/login){:target=&quot;_blank&quot;} an.
+1. Melden Sie sich bei Ihrem [!DNL Commerce] -Konto unter [https://account.magento.com](https://account.magento.com/customer/account/login){:target="_blank"} an.
 
 1. Wählen Sie auf der Registerkarte **Magento** in der Seitenleiste die Option **API-Portal** aus.
 
@@ -79,10 +79,17 @@ Für [!DNL Product Recommendations] enthält der SaaS-Datenraum Katalog- und Ver
 >[!WARNING]
 >
 > Verwenden Sie Ihren Produktions-SaaS-Datenraum nur in Ihrer Produktions- [!DNL Commerce]-Installation, um Datenkollisionen zu vermeiden. Andernfalls riskieren Sie, Ihre Produktionsstandortdaten mit Testdaten zu verschmutzen, was zu Bereitstellungsverzögerungen führt. Beispielsweise können Ihre Produktionsproduktdaten fälschlicherweise aus Staging-Daten wie Staging-URLs überschrieben werden.
+> Sollte dies der Fall sein, senden [eine Support-Anfrage](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview), um eine Datenbereinigung anzufordern.
 
 ### SaaS-Datenspeicherbereitstellung
 
-Alle Händler können pro SaaS-Projekt auf einen Produktionsdatenraum und zwei Testdatenbereiche zugreifen. Bei Adobe Commerce Cloud Pro-Projekten mit mehreren Staging-Umgebungen können Sie zusätzliche Testdatenbereiche für jede Staging-Umgebung anfordern, indem Sie [eine Support-Anfrage senden](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview).
+Alle Adobe Commerce-Händler können pro SaaS-Projekt auf einen Produktionsdatenraum und zwei Testdatenbereiche zugreifen.
+
+Sie können die Testdatenräume in jeder Nicht-Produktionsumgebung verwenden, sofern Sie nicht denselben Datenraum in mehreren Umgebungen gleichzeitig verwenden. Um den Testdatenraum in einer anderen Umgebung zu verwenden, führen Sie eine Datenbereinigung durch, bevor Sie den Datenraum in dieser Umgebung auswählen und konfigurieren.
+
+Bei Adobe Commerce Cloud Pro-Projekten mit mehreren Staging-Umgebungen können Sie zusätzliche Testdatenbereiche für jede Staging-Umgebung anfordern, indem Sie [eine Support-Anfrage senden](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview). Wenn Sie jedoch nur eine Staging-Umgebung haben und zusätzliche Testdatenräume benötigen, haben Sie die folgenden Optionen:
+- Wenden Sie sich an das Customer Success-Team oder Ihren benannten Customer Success Manager, um eine zusätzliche Staging-Umgebung anzufordern. Es entstehen zusätzliche Kosten.
+- [Senden Sie eine Support-Anfrage](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) für einen zusätzlichen Testdatenraum und geben Sie die geschäftliche Begründung für den zusätzlichen Datenbereich an. Diese Anfrage muss genehmigt werden.
 
 ### Auswählen oder Erstellen eines SaaS-Projekts {#createsaasenv}
 
