@@ -3,9 +3,9 @@ title: '[!DNL Catalog Service] Versionshinweise'
 description: Die neuesten Versionsinformationen für [!DNL Catalog Service] für Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 6ca91feefbfc2fbc4d5851040b9f1ca3de6a6560
+source-git-commit: 58d5abf84a190b203661606c439beb088b7ee20d
 workflow-type: tm+mt
-source-wordcount: '741'
+source-wordcount: '765'
 ht-degree: 0%
 
 ---
@@ -22,9 +22,25 @@ Zu den Aktualisierungen gehören:
 
 ## Aktuelle Hauptversion
 
+### Version 1.22
+
+_13. August 2024_
+
+[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
+
+![Neu](../assets/new.svg) Unterstützung zum Abrufen aller Varianten nach Produkt-SKU hinzugefügt. Siehe die [Referenz zur Catalog Service-API](https://developer.adobe.com/commerce/services/graphql/catalog-service/). <!--DATA-6067-->
+
+
+## Frühere Versionen
+
++++ Frühere Versionen
+
 ### Version 1.19
 
 _23. Mai 2024_
+
+[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
+
 
 ![Korrektur](../assets/fix.svg) <!--DATA-5033-->Das `InStock` -Flag für Optionswerte berücksichtigt jetzt den Gültigkeitsstatus `enabled` der Produktvariante.
 
@@ -45,10 +61,6 @@ Beheben Sie die folgenden Einschränkungen mithilfe von API Measurement und der 
 * Bundle-Produkte mit Fixpreisen
 
 Weitere Informationen und Beispiele finden Sie unter [Catalog Service and API Mesh](mesh.md)
-
-## Frühere Versionen
-
-+++ Frühere Versionen
 
 ### Version 1.18
 
