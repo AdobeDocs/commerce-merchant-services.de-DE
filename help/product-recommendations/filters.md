@@ -2,9 +2,9 @@
 title: Produkte filtern
 description: Definieren Sie Bedingungen, die Produkte entweder ein- oder ausschließen, um sie als Empfehlungen zu verwenden.
 exl-id: baab28ff-b529-4cbc-adb7-4fa225e87d4a
-source-git-commit: aa036228bb4040de5a8d4d159727fa0c4c6d99e1
+source-git-commit: b602385b956b6af131b008428d1182a586303bc7
 workflow-type: tm+mt
-source-wordcount: '704'
+source-wordcount: '734'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,11 @@ Die logischen Operatoren `AND` und `OR` werden verwendet, um mehrere Bedingungen
 
 ### Kategorie
 
-Filter, die auf der Kategorie eines Produkts basieren, verwenden direkte Kategoriezuweisungen und deren Unterkategorien. Wenn Sie beispielsweise eine Ausschlussbedingung für die Kategorie `Gear` aktivieren, werden die `Gear` zugewiesenen Produkte sowie alle zugehörigen Unterkategorien wie `Gear/Bags` oder `Gear/Fitness Equipment` ausgeschlossen. Bei B2B-Händlern erfüllt der Kategoriefilter alle [kundenspezifischen Produktkategorien](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html), die Sie konfiguriert haben.
+Filter, die auf der Kategorie eines Produkts basieren, verwenden direkte Kategoriezuweisungen und deren Unterkategorien. Wenn Sie beispielsweise eine Ausschlussbedingung für die Kategorie `Gear` aktivieren, werden die `Gear` zugewiesenen Produkte sowie alle zugehörigen Unterkategorien wie `Gear/Bags` oder `Gear/Fitness Equipment` ausgeschlossen. Dasselbe gilt für einen Einschlussfilter für eine Kategorie. Wenn Sie beispielsweise eine Aufnahmebedingung für die Kategorie `Gear` aktivieren, werden `Gear` zugewiesene Produkte sowie alle zugehörigen Unterkategorien wie `Gear/Bags` oder `Gear/Fitness Equipment` eingeschlossen.
+
+>[!NOTE]
+>
+>Bei B2B-Händlern erfüllt der Kategoriefilter alle [kundenspezifischen Produktkategorien](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html), die Sie konfiguriert haben.
 
 Adobe Commerce empfiehlt die Verwendung der folgenden Kategoriefilterkonfiguration, wenn Sie Empfehlungen für Ihre Seitentypen bereitstellen:
 

@@ -2,9 +2,9 @@
 title: Neue Empfehlung erstellen
 description: Erfahren Sie, wie Sie eine Produktempfehlungseinheit erstellen.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 51ff52eba117fe438d592ca886dbca25304a0d15
+source-git-commit: 5266ca2766697fc0fd8baf236a5ae83a26528977
 workflow-type: tm+mt
-source-wordcount: '1022'
+source-wordcount: '1438'
 ht-degree: 0%
 
 ---
@@ -20,11 +20,11 @@ Wenn Sie die Empfehlungseinheit aktivieren, beginnt Adobe Commerce mit [Datenerf
 
 1. Wechseln Sie in der Seitenleiste _Admin_ zu **Marketing** > _Promotions_ > **Produkt-Recommendations** , um den Arbeitsbereich _Produkt-Recommendations_ anzuzeigen.
 
-1. Geben Sie die [Store-Ansicht](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) an, in der die Empfehlungen angezeigt werden sollen.
+1. Geben Sie die [Store-Ansicht](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views) an, in der die Empfehlungen angezeigt werden sollen.
 
    >[!NOTE]
    >
-   > Die Empfehlungseinheiten für den Seitenaufbau müssen in der standardmäßigen Store-Ansicht erstellt werden, können dann jedoch überall verwendet werden. Weitere Informationen zum Erstellen von Produktempfehlungen mit Page Builder finden Sie unter [Content hinzufügen - Product Recommendations](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html).
+   > Die Empfehlungseinheiten für den Seitenaufbau müssen in der standardmäßigen Store-Ansicht erstellt werden, können dann jedoch überall verwendet werden. Weitere Informationen zum Erstellen von Produktempfehlungen mit Page Builder finden Sie unter [Content hinzufügen - Product Recommendations](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations).
 
 1. Klicken Sie auf **Empfehlung erstellen**.
 
@@ -34,14 +34,14 @@ Wenn Sie die Empfehlungseinheit aktivieren, beginnt Adobe Commerce mit [Datenerf
 
    >[!NOTE]
    >
-   > Produkt-Recommendations wird auf der Warenkorbseite nicht unterstützt, wenn Ihr Store so konfiguriert ist, dass [die Warenkorbseite unmittelbar nach dem Hinzufügen eines Produkts zum Warenkorb angezeigt wird](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration.html#redirect-to-cart).
+   > Produkt-Recommendations wird auf der Warenkorbseite nicht unterstützt, wenn Ihr Store so konfiguriert ist, dass [die Warenkorbseite unmittelbar nach dem Hinzufügen eines Produkts zum Warenkorb angezeigt wird](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration).
 
    * Startseite
    * Kategorie
    * Produktdetails
    * Warenkorb
    * Bestätigung
-   * [Seitenaufbau](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html)
+   * [Seitenaufbau](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)
 
    Sie können bis zu fünf aktive Empfehlungseinheiten für jeden Seitentyp und bis zu 25 für Page Builder erstellen. Der Seitentyp ist grau ausgeblendet, wenn die Grenze erreicht ist.
 
@@ -81,37 +81,56 @@ Wenn Sie die Empfehlungseinheit aktivieren, beginnt Adobe Commerce mit [Datenerf
 
 ## Bereitschaftsindikatoren
 
-Einige Empfehlungstypen verwenden Verhaltensdaten von Ihren Kunden zum [Trainieren von maschinellen Lernmodellen](behavioral-data.md), um personalisierte Empfehlungen zu erstellen.
+Bereitschaftsindikatoren zeigen, welche Empfehlungstypen basierend auf dem verfügbaren Katalog und den verfügbaren Verhaltensdaten am besten funktionieren. Sie können Bereitschaftsindikatoren auch verwenden, um festzustellen, ob Sie Probleme mit Ihrem Ereignis haben oder nicht über ausreichend Traffic verfügen, um den Empfehlungstyp auszufüllen.
 
-Erfordert nur Katalogdaten. Hierfür sind keine Verhaltensdaten erforderlich:
+Bereitschaftsindikatoren werden entweder in [statisch-basiert](#static-based) oder in [dynamisch-basiert](#dynamic-based) kategorisiert. Statische Katalogdaten werden nur verwendet, während dynamische Verhaltensdaten von Ihren Käufern verwenden. Diese Verhaltensdaten werden verwendet, um [Modelle für maschinelles Lernen zu trainieren](behavioral-data.md), um personalisierte Empfehlungen zu erstellen und deren Bereitschaftsbewertung zu berechnen.
+
+Die Indikatoren für die Bereitschaft werden anhand von zwei Faktoren berechnet:
+
+* Ausreichende Ergebnissatzgröße: Gibt es in den meisten Szenarien genügend Ergebnisse, um die Verwendung von [Reserveempfehlungen](behavioral-data.md#backuprecs) zu vermeiden?
+
+* Ausreichende Ergebnismenge: Stellen die zurückgegebenen Produkte eine Vielzahl von Produkten aus Ihrem Katalog dar? Mit diesem Faktor soll verhindert werden, dass eine Minderheit von Produkten die einzigen Artikel ist, die auf der gesamten Site empfohlen werden.
+
+Basierend auf den oben genannten Faktoren wird ein Bereitschaftswert wie folgt berechnet und angezeigt:
+
+* 75 % oder mehr bedeutet, dass die für diesen Empfehlungstyp vorgeschlagenen Empfehlungen von höchster Relevanz sein werden.
+* Mindestens 50 % bedeutet, dass die für diesen Empfehlungstyp vorgeschlagenen Empfehlungen weniger relevant sind.
+* Weniger als 50 % bedeutet, dass die für diesen Empfehlungstyp vorgeschlagenen Empfehlungen nicht relevant sind.
+
+Dies sind allgemeine Richtlinien, aber jeder einzelne Fall kann je nach Art der erfassten Daten unterschiedlich sein, wie oben beschrieben. Erfahren Sie mehr über [die Berechnung der Bereitschaftsindikatoren](#understand-how-readiness-indicators-are-calculated) und [die Frage, warum die Bereitschaftsindikatoren niedrig sein könnten](#what-to-do-if-the-readiness-indicator-percent-is-low).
+
+### Statisch
+
+Die folgenden Empfehlungstypen sind statisch, da sie nur Katalogdaten erfordern. Es werden keine Verhaltensdaten verwendet.
 
 * _Am meisten gefällt dies_
-* _Kürzlich angezeigt_
 * _Visuelle Ähnlichkeit_
 
-Basierend auf den letzten sechs Monaten von Storefront-Verhaltensdaten:
+### Dynamisch-basiert
+
+Die folgenden Empfehlungstypen sind dynamisch, da sie Verhaltensdaten aus Storefront verwenden.
+
+Letzte sechs Monate mit Storefront-Verhaltensdaten:
 
 * _Betrachtet dies, hat diesen_ angesehen
 * _Betrachtet dies, kaufte diesen_
 * _kaufte dies, kaufte diesen_
 * _Für Sie empfohlen_
 
-Popularitätsbasierte Empfehlungstypen verwenden die letzten sieben Tage von Storefront-Verhaltensdaten:
+Letzte sieben Tage mit Storefront-Verhaltensdaten:
 
 * Am häufigsten angezeigt
 * Am häufigsten gekauft
 * Zum Warenkorb hinzugefügt
 * Trends
 
-Die Werte der Bereitschaftsindikatoren werden aufgrund von Faktoren wie der Gesamtgröße des Katalogs, dem Volumen der Interaktionsereignisse (Ansichten, Hinzufügung zum Warenkorb, Käufe) und dem Prozentsatz der Skus, die diese Ereignisse innerhalb eines bestimmten Zeitfensters registrieren, voraussichtlich schwanken. Beispielsweise können die Bereitschaftsindikatoren während des Traffics in der Hochsaison höhere Werte aufweisen als in Zeiten normalen Volumens.
+Letzte Verhaltensdaten von Kunden (nur Ansichten):
 
-Um Ihnen bei der Visualisierung des Trainings-Fortschritts für jeden Empfehlungstyp zu helfen, zeigt der Abschnitt _Empfehlungstyp auswählen_ ein Maß an Bereitschaft für jeden Typ an. Diese Indikatoren werden anhand von zwei Faktoren berechnet:
+* _Kürzlich angezeigt_
 
-* Ausreichende Ergebnissatzgröße: Gibt es in den meisten Szenarien genügend Ergebnisse, um die Verwendung von [Reserveempfehlungen](behavioral-data.md#backuprecs) zu vermeiden?
+### Fortschritt visualisieren
 
-* Ausreichende Ergebnismenge: Stellen die zurückgegebenen Produkte eine Vielzahl von Produkten aus Ihrem Katalog dar? Mit diesem Faktor soll verhindert werden, dass eine Minderheit von Produkten die einzigen Artikel ist, die auf der gesamten Site empfohlen werden.
-
-Basierend auf den oben genannten Faktoren wird ein Bereitschaftswert berechnet und angezeigt. Ein Empfehlungstyp gilt als bereitstellbar, wenn sein Bereitschaftswert 75 % oder höher beträgt. Ein Empfehlungstyp wird als teilweise fertig angesehen, wenn seine Bereitschaft mindestens 50 % beträgt. Ein Empfehlungstyp gilt als nicht bereit zur Bereitstellung, wenn sein Bereitschaftswert unter 50 % liegt. Dies sind allgemeine Richtlinien, aber jeder Einzelfall kann je nach Art der erfassten Daten unterschiedlich sein, wie oben beschrieben.
+Um Ihnen bei der Visualisierung des Trainings-Fortschritts für jeden Empfehlungstyp zu helfen, zeigt der Abschnitt _Empfehlungstyp auswählen_ ein Maß an Bereitschaft für jeden Typ an.
 
 ![Empfehlungstyp](assets/create-recommendation-select-type.png)
 _Empfehlungstyp_
@@ -119,6 +138,29 @@ _Empfehlungstyp_
 >[!NOTE]
 >
 >Die Indikatoren dürfen niemals 100 % erreichen.
+
+Der Prozentsatz des Bereitschaftsindikators für Empfehlungstypen, die von Katalogdaten abhängen, ändert sich nicht besonders, da sich der Katalog des Händlers nicht häufig ändert. Der Prozentsatz des Bereitschaftsindikators für Empfehlungstypen, der auf Verhaltensdaten von Käufern basiert, kann sich jedoch je nach täglicher Aktivität des Käufers häufig ändern.
+
+#### Was zu tun ist, wenn der Bereitschaftsindikator-Prozentsatz niedrig ist?
+
+Ein geringer Prozentsatz an Bereitschaft zeigt an, dass nicht viele Produkte aus Ihrem Katalog in Empfehlungen für diesen Empfehlungstyp aufgenommen werden können. Dies bedeutet, dass mit hoher Wahrscheinlichkeit [Reserveempfehlungen](behavioral-data.md#backuprecs) zurückgegeben werden, wenn Sie diesen Empfehlungstyp trotzdem bereitstellen.
+
+Im Folgenden werden mögliche Gründe und Lösungen für häufige niedrige Bereitschaft-Bewertungen aufgelistet:
+
+* **Statisch-basiert** - Geringe Prozentwerte für diese Indikatoren können durch fehlende Katalogdaten für die anzeigbaren Produkte verursacht werden. Wenn sie niedriger sind als erwartet, kann dieses Problem durch eine vollständige Synchronisierung behoben werden.
+* **Dynamisch-basiert** - Geringe Prozentwerte für dynamische Indikatoren können durch Folgendes verursacht werden:
+
+   * Fehlende Felder in den erforderlichen Storefront-Ereignissen für die jeweiligen Empfehlungstypen (requestId, Produktkontext usw.)
+   * Geringer Traffic auf dem Store, sodass das Volumen der verhaltensbezogenen Ereignisse, die wir empfangen, gering ist.
+   * Die Vielfalt der verhaltensbezogenen Ereignisse in Storefront in verschiedenen Produkten in Ihrem Geschäft ist gering. Wenn beispielsweise nur zehn Prozent Ihrer Produkte mehrmals angezeigt oder gekauft werden, sind die entsprechenden Bereitschaftsindikatoren gering.
+
+#### Berechnung der Bereitschaftsindikatoren
+
+Die Bereitschaftsindikatoren geben an, wie viel das Modell trainiert wird. Indikatoren sind unabhängig von der Art der erfassten Ereignisse, der Breite der interagierten Produkte und der Größe des Katalogs.
+
+Der Prozentsatz des Bereitschaftsindikators wird aus einer Berechnung abgeleitet, die angibt, wie viele Produkte je nach Empfehlungstyp empfohlen werden könnten. Statistiken werden auf Produkte angewendet, die auf der Gesamtgröße des Katalogs, dem Interaktionsvolumen (wie Ansichten, Klicks, Add-zu-Warenkorb) und dem Prozentsatz der SKUs basieren, die diese Ereignisse innerhalb eines bestimmten Zeitfensters registrieren. Beispielsweise können die Bereitschaftsindikatoren während des Traffics in der Hochsaison höhere Werte aufweisen als in Zeiten normalen Volumens.
+
+Infolge dieser Variablen kann der Prozentsatz des Bereitschaftsindikators schwanken. Dies erklärt, warum Sie möglicherweise feststellen, dass Empfehlungstypen &quot;bereit zur Bereitstellung&quot;ein- und ausgehen.
 
 ## Recommendations-Vorschau {#preview}
 

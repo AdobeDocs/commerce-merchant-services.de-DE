@@ -2,9 +2,9 @@
 title: "Einrichten der Live-Suche"
 description: Der Arbeitsbereich [!DNL Live Search] dient zum Konfigurieren, Verwalten und Überwachen der Suchleistung.
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
-source-git-commit: 5e79bb43449b95b4c6aa0e234a0dbc999c312e59
+source-git-commit: cacef0f205729fa4e05ec3c468594e1eaaf8c560
 workflow-type: tm+mt
-source-wordcount: '921'
+source-wordcount: '949'
 ht-degree: 0%
 
 ---
@@ -74,14 +74,18 @@ Im folgenden Abschnitt werden die unterstützten und nicht unterstützten Commer
 
 ### Unterstützte Konfigurationswerte
 
+>[!IMPORTANT]
+>
+>Es wird dringend empfohlen, die Widgets zur Produktliste zu verwenden, die standardmäßig in Live Search 4.0.0 aktiviert sind. Die Widgets sollen die Adapterimplementierung in zukünftigen Versionen vollständig ersetzen. Weitere Informationen finden Sie unter [Aktivieren von Widgets zur Produktliste](install.md#enable-product-listing-widgets) .
+
 | Commerce-Konfigurationseinstellungen | Beschreibung | Unterstützt von Popover | Vom Adapter unterstützt |
 |---|---|---|---|
 | Stores > Konfiguration > Katalog > Katalog > Katalogsuche > Alle Produkte pro Seite zulassen | Wenn auf `Yes` gesetzt, enthält die Option `ALL` im Steuerelement &quot;Pro Seite anzeigen&quot;. | Ja. Max. 500 Produkte | Ja. Max. 500 Produkte |
 | Stores > Konfiguration > Katalog > Katalog > Katalogsuche > Minimale Abfragelänge | Die Mindestanzahl von Zeichen, die bei einer Katalogsuche zulässig ist. | Ja | Ja |
 | Stores > Konfiguration > Katalog > Katalog > Katalogsuche > Produkte pro Seite - Zulässige Werte im Raster | Bestimmt die Anzahl der Produkte, die in der Rasteransicht angezeigt werden. | Ja | Ja |
 | Stores > Konfiguration > Katalog > Katalog > Katalogsuche > Produkte pro Seite auf Raster Standardwert | Bestimmt die Anzahl der Produkte, die standardmäßig in der Rasteransicht pro Seite angezeigt werden. | Ja. Max. 500 Produkte | Ja. Max. 500 Produkte |
-| Stores > Konfiguration > Katalog > Bestand > Nicht vorrätige Produkte anzeigen | Zeigt nicht vorrätige Produkte an. | Ja w/ v2.0.4+ | Ja w/ v2.0.4+ |
-| Stores > Konfiguration > Währung > Standardanzeigewährung | Die Primärwährung, die zur Anzeige der Preise verwendet wird. | Ja w/3.1.0+ | Ja w/3.1.0+ |
+| Stores > Konfiguration > Katalog > Bestand > Nicht vorrätige Produkte anzeigen | Zeigt nicht vorrätige Produkte an. | Ja | Ja |
+| Stores > Konfiguration > Währung > Standardanzeigewährung | Die Primärwährung, die zur Anzeige der Preise verwendet wird. | Ja | Ja |
 | Stores > Konfiguration > Allgemein > Währungseinstellungen > Währungsoptionen > Basiswährung | Die Primärwährung, die für alle Online-Zahlungsvorgänge verwendet wird. | Ja | Ja |
 
 Die Preise auf der Produktlistungsseite des Widgets und in Popover werden mithilfe der konfigurierten Währungsraten in die Standardanzeigewährung konvertiert.

@@ -3,9 +3,9 @@ title: "Grenzen und Grenzen"
 description: Erfahren Sie mehr über die Grenzen und Beschränkungen für [!DNL Live Search] s, um sicherzustellen, dass sie den Anforderungen Ihres Unternehmens entsprechen.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 4898d426a3d5fd2ea9059d200ebf8ba45d0d65df
+source-git-commit: 562af9995b49f4c0fddc76c2ae1c53dd928b1daa
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '887'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,10 @@ Wenn es um die Site-Suche geht, bietet Ihnen Adobe Commerce Optionen. Überprüf
 - [Tier-Preise](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier) und [Sonderpreise](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special) werden im Feld [!DNL Live Search] und im Widget &quot;Seite der Produktliste&quot;nicht unterstützt.
 - Die Produktpreise enthalten keine Mehrwertsteuer (MwSt.).
 - Die Inhaltssuche wird nicht unterstützt.
-- Es gibt eine Grenze von 10.000 Produkten, die paginiert werden können.
+- Es gibt eine Grenze von 10.000 Produkten, die paginiert werden können. Diese Grenze kann zwar erhöht werden, aber sie kann sich auf die Leistung auswirken. Stellen Sie sicher, dass Sie aussagekräftige Methoden zum Filtern von Produkten bereitstellen, falls eine Kategorie oder ein Suchergebnis über eine große Anzahl von Produkten verfügt, sodass Käufer keine Deep-Paginierung verwenden müssen.
 - Pro Attribut gibt es eine feste Grenze von 1 MB, einschließlich Beschreibungen und benutzerdefinierten Attributen.
 - Der Suchadapter unterstützt keine Produktattribute, die mit einem benutzerdefinierten Quellmodell erstellt und als Facetten verwendet werden. Um diese Funktion zu unterstützen, müssen Sie das Widget [Produktanlistungsseite](plp-styling.md) verwenden.
+- Benutzerdefinierte Produktarten werden nicht unterstützt.
 
 ## Indizierung
 
@@ -84,3 +85,15 @@ Wenn es um die Site-Suche geht, bietet Ihnen Adobe Commerce Optionen. Überprüf
 - Das Design *Leer* wird vom [!DNL popover] nicht unterstützt.
 - Die [!DNL popover] wird im Schnellbestellformular nicht unterstützt.
 - Wunschlisten und Produktvergleiche werden nicht unterstützt.
+- Das Währungssymbol für das peruanische Sol (PEN) wird nicht unterstützt.
+
+## Fehlerbehebung
+
+Hilfe zur Behebung einiger häufiger Probleme in [!DNL Live Search] finden Sie in den folgenden Knowledgebase-Artikeln:
+
+- [[!DNL Live Search] Katalog nicht synchronisiert](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync)
+- [[!DNL Live Search] Das Dashboard und die Rangfolge der Suchergebnisse sind falsch](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-dashboard-ranking-incorrect)
+- [[!DNL Live Search] zeigt nicht vorrätige Produkte unabhängig von den Einstellungen für den Lagerstatus in Admin an](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-displays-out-of-stock-products)
+- [[!DNL Live Search] Facetten sind nicht alphabetisch sortiert](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-facets-not-sorted)
+
+Wenn Sie zusätzliche Unterstützung benötigen, wenden Sie sich an [support](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
