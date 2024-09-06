@@ -3,7 +3,7 @@ title: "Grenzen und Grenzen"
 description: Erfahren Sie mehr über die Grenzen und Beschränkungen für [!DNL Live Search] s, um sicherzustellen, dass sie den Anforderungen Ihres Unternehmens entsprechen.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 2f28b77691e5b125875f1ce39301bfebd093a922
+source-git-commit: 4898d426a3d5fd2ea9059d200ebf8ba45d0d65df
 workflow-type: tm+mt
 source-wordcount: '777'
 ht-degree: 0%
@@ -37,7 +37,7 @@ Wenn es um die Site-Suche geht, bietet Ihnen Adobe Commerce Optionen. Überprüf
 ## Facets
 
 - Maximal 100 Attribute können als Facetten aus den 200 filterbaren Attributen konfiguriert werden, die indiziert werden können.
-- Innerhalb einer Facette können maximal 30 Buckets zurückgegeben werden. Wenn mehr als 30 Behälter zurückgegeben werden müssen, erstellen Sie ein Support-Ticket ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) , damit Adobe die Leistungsbeeinträchtigung analysieren und feststellen kann, ob es möglich ist, diese Grenze für Ihre Umgebung zu erhöhen.[
+- Innerhalb einer Facette können maximal 100 Buckets zurückgegeben werden. Wenn Sie mehr als 100 Buckets zurückgeben müssen, erstellen Sie ein Support-Ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide), damit Adobe die Leistungsbeeinträchtigung analysieren und feststellen kann, ob es möglich ist, diese Grenze für Ihre Umgebung zu erhöhen.[
 - Dynamische Facetten können Leistungsprobleme in großen Indizes und Indizes mit hoher Ordnungsmäßigkeit verursachen. Wenn Sie dynamische Facetten erstellt haben und eine Leistungsbeeinträchtigung feststellen oder eine Seite nicht mit Zeitüberschreitungsfehlern geladen wird, versuchen Sie, Ihre Facetten so zu ändern, dass sie angeheftet werden, um festzustellen, ob dadurch Ihr Leistungsproblem behoben wird.
 - Der Lagerstatus (`quantity_and_stock_status`) wird nicht als Facette unterstützt. Sie können `inStock: 'true'` verwenden, um aus Lagerprodukten zu filtern. Dies wird im Modul `LiveSearchAdapter` standardmäßig unterstützt, wenn &quot;Nicht vorrätige Produkte anzeigen&quot;in der Admin-Aktivität von [!DNL Commerce] auf &quot;True&quot;gesetzt ist.
 - Attribute vom Typ Datum werden nicht als Facette unterstützt.
