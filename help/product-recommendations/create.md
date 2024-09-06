@@ -2,9 +2,9 @@
 title: Neue Empfehlung erstellen
 description: Erfahren Sie, wie Sie eine Produktempfehlungseinheit erstellen.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 5266ca2766697fc0fd8baf236a5ae83a26528977
+source-git-commit: 0940e0049d8fb388b40b828250b7955eabfd583f
 workflow-type: tm+mt
-source-wordcount: '1438'
+source-wordcount: '1428'
 ht-degree: 0%
 
 ---
@@ -81,9 +81,17 @@ Wenn Sie die Empfehlungseinheit aktivieren, beginnt Adobe Commerce mit [Datenerf
 
 ## Bereitschaftsindikatoren
 
-Bereitschaftsindikatoren zeigen, welche Empfehlungstypen basierend auf dem verfügbaren Katalog und den verfügbaren Verhaltensdaten am besten funktionieren. Sie können Bereitschaftsindikatoren auch verwenden, um festzustellen, ob Sie Probleme mit Ihrem Ereignis haben oder nicht über ausreichend Traffic verfügen, um den Empfehlungstyp auszufüllen.
+Bereitschaftsindikatoren zeigen, welche Empfehlungstypen basierend auf dem verfügbaren Katalog und den verfügbaren Verhaltensdaten am besten funktionieren. Sie können Bereitschaftsindikatoren auch verwenden, um festzustellen, ob Sie Probleme mit Ihrem [Eventing](events.md) haben oder ob Sie nicht über ausreichend Traffic verfügen, um den Empfehlungstyp auszufüllen.
 
 Bereitschaftsindikatoren werden entweder in [statisch-basiert](#static-based) oder in [dynamisch-basiert](#dynamic-based) kategorisiert. Statische Katalogdaten werden nur verwendet, während dynamische Verhaltensdaten von Ihren Käufern verwenden. Diese Verhaltensdaten werden verwendet, um [Modelle für maschinelles Lernen zu trainieren](behavioral-data.md), um personalisierte Empfehlungen zu erstellen und deren Bereitschaftsbewertung zu berechnen.
+
+### Berechnung der Bereitschaftsindikatoren
+
+Die Bereitschaftsindikatoren geben an, wie viel das Modell trainiert wird. Indikatoren hängen von den erfassten Ereignistypen, der Breite der jeweils verwendeten Produkte und der Größe des Katalogs ab.
+
+Der Prozentsatz des Bereitschaftsindikators wird aus einer Berechnung abgeleitet, die angibt, wie viele Produkte je nach Empfehlungstyp empfohlen werden könnten. Statistiken werden auf Produkte angewendet, die auf der Gesamtgröße des Katalogs, dem Interaktionsvolumen (wie Ansichten, Klicks, Add-zu-Warenkorb) und dem Prozentsatz der SKUs basieren, die diese Ereignisse innerhalb eines bestimmten Zeitfensters registrieren. Beispielsweise können die Bereitschaftsindikatoren während des Traffics in der Hochsaison höhere Werte aufweisen als in Zeiten normalen Volumens.
+
+Infolge dieser Variablen kann der Prozentsatz des Bereitschaftsindikators schwanken. Dies erklärt, warum Sie möglicherweise feststellen, dass Empfehlungstypen &quot;bereit zur Bereitstellung&quot;ein- und ausgehen.
 
 Die Indikatoren für die Bereitschaft werden anhand von zwei Faktoren berechnet:
 
@@ -95,15 +103,15 @@ Basierend auf den oben genannten Faktoren wird ein Bereitschaftswert wie folgt b
 
 * 75 % oder mehr bedeutet, dass die für diesen Empfehlungstyp vorgeschlagenen Empfehlungen von höchster Relevanz sein werden.
 * Mindestens 50 % bedeutet, dass die für diesen Empfehlungstyp vorgeschlagenen Empfehlungen weniger relevant sind.
-* Weniger als 50 % bedeutet, dass die für diesen Empfehlungstyp vorgeschlagenen Empfehlungen nicht relevant sind.
+* Weniger als 50 % bedeutet, dass die für diesen Empfehlungstyp vorgeschlagenen Empfehlungen möglicherweise nicht relevant sind. In diesem Fall werden [Reserveempfehlungen](behavioral-data.md#backuprecs) verwendet.
 
-Dies sind allgemeine Richtlinien, aber jeder einzelne Fall kann je nach Art der erfassten Daten unterschiedlich sein, wie oben beschrieben. Erfahren Sie mehr über [die Berechnung der Bereitschaftsindikatoren](#understand-how-readiness-indicators-are-calculated) und [die Frage, warum die Bereitschaftsindikatoren niedrig sein könnten](#what-to-do-if-the-readiness-indicator-percent-is-low).
+Erfahren Sie mehr über [warum Bereitschaftsindikatoren niedrig sein könnten](#what-to-do-if-the-readiness-indicator-percent-is-low).
 
 ### Statisch
 
 Die folgenden Empfehlungstypen sind statisch, da sie nur Katalogdaten erfordern. Es werden keine Verhaltensdaten verwendet.
 
-* _Am meisten gefällt dies_
+* _Mehr wie dieser_
 * _Visuelle Ähnlichkeit_
 
 ### Dynamisch-basiert
@@ -119,10 +127,12 @@ Letzte sechs Monate mit Storefront-Verhaltensdaten:
 
 Letzte sieben Tage mit Storefront-Verhaltensdaten:
 
-* Am häufigsten angezeigt
-* Am häufigsten gekauft
-* Zum Warenkorb hinzugefügt
-* Trends
+* _Am häufigsten angezeigt_
+* _Am häufigsten gekauft_
+* _Am meisten zum Warenkorb hinzugefügt_
+* _Trending_
+* _Zur Kaufkonversion anzeigen_
+* _Zur Warenkorbkonvertierung anzeigen_
 
 Letzte Verhaltensdaten von Kunden (nur Ansichten):
 
@@ -150,17 +160,9 @@ Im Folgenden werden mögliche Gründe und Lösungen für häufige niedrige Berei
 * **Statisch-basiert** - Geringe Prozentwerte für diese Indikatoren können durch fehlende Katalogdaten für die anzeigbaren Produkte verursacht werden. Wenn sie niedriger sind als erwartet, kann dieses Problem durch eine vollständige Synchronisierung behoben werden.
 * **Dynamisch-basiert** - Geringe Prozentwerte für dynamische Indikatoren können durch Folgendes verursacht werden:
 
-   * Fehlende Felder in den erforderlichen Storefront-Ereignissen für die jeweiligen Empfehlungstypen (requestId, Produktkontext usw.)
+   * Fehlende Felder in den erforderlichen [storefront-Ereignissen](events.md) für die jeweiligen Empfehlungstypen (requestId, product context usw.)
    * Geringer Traffic auf dem Store, sodass das Volumen der verhaltensbezogenen Ereignisse, die wir empfangen, gering ist.
    * Die Vielfalt der verhaltensbezogenen Ereignisse in Storefront in verschiedenen Produkten in Ihrem Geschäft ist gering. Wenn beispielsweise nur zehn Prozent Ihrer Produkte mehrmals angezeigt oder gekauft werden, sind die entsprechenden Bereitschaftsindikatoren gering.
-
-#### Berechnung der Bereitschaftsindikatoren
-
-Die Bereitschaftsindikatoren geben an, wie viel das Modell trainiert wird. Indikatoren sind unabhängig von der Art der erfassten Ereignisse, der Breite der interagierten Produkte und der Größe des Katalogs.
-
-Der Prozentsatz des Bereitschaftsindikators wird aus einer Berechnung abgeleitet, die angibt, wie viele Produkte je nach Empfehlungstyp empfohlen werden könnten. Statistiken werden auf Produkte angewendet, die auf der Gesamtgröße des Katalogs, dem Interaktionsvolumen (wie Ansichten, Klicks, Add-zu-Warenkorb) und dem Prozentsatz der SKUs basieren, die diese Ereignisse innerhalb eines bestimmten Zeitfensters registrieren. Beispielsweise können die Bereitschaftsindikatoren während des Traffics in der Hochsaison höhere Werte aufweisen als in Zeiten normalen Volumens.
-
-Infolge dieser Variablen kann der Prozentsatz des Bereitschaftsindikators schwanken. Dies erklärt, warum Sie möglicherweise feststellen, dass Empfehlungstypen &quot;bereit zur Bereitstellung&quot;ein- und ausgehen.
 
 ## Recommendations-Vorschau {#preview}
 
