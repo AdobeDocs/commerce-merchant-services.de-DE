@@ -4,9 +4,9 @@ description: Die neuesten Versionsinformationen für [!DNL Data Export Extension
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 0c7aeeda-e8a6-4740-b466-0661a6d2df07
-source-git-commit: 915f6c5580f2976edde6609b8fd1c0ba4b09aade
+source-git-commit: aaa3673154345207a90eaa9fea6384330420bfe5
 workflow-type: tm+mt
-source-wordcount: '670'
+source-wordcount: '715'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,11 @@ Zu den Aktualisierungen gehören:
 >Die SaaS-Datenexport-Erweiterung ist eine Sammlung von Modulen, die automatisch mit Live Search, Product Recommendations und dem Catalog Service installiert werden. Sie können die auf Ihrem System installierte Version mithilfe von Composer überprüfen. In einigen Fällen möchten Sie möglicherweise die Datenexport-Erweiterung auf Ihrem System aktualisieren, um Korrekturen oder neue Funktionen aufzunehmen, ohne die Version des Commerce-Dienstes zu aktualisieren.
 
 ## Aktuelle Hauptversion
+
+## Version 103.3.11
+
+![Fehlerbehebung](../assets/fix.svg) Der Datenexport-Dienst sendet jetzt spezielle Preisdaten für Bundle-Produkte in Prozent, wodurch ein vorheriges Problem behoben wird, bei dem es als Endpreis gesendet wurde.&lt;!-MDEE-854—>
+![Fehlerbehebung](../assets/fix.svg) Die Monolog-Implementierung wurde für die Kompatibilität mit Monolog 3 aktualisiert.&lt;!-MDEE-858—>
 
 ## Version 103.3.10
 
