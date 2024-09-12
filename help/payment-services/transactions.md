@@ -4,9 +4,9 @@ description: Verwenden Sie den Transaktionsbericht, um Einblicke in die Rate der
 role: User
 level: Intermediate
 exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
-source-git-commit: 0800b4a0f9a3297a3490fa11f32e6af0abe67e2a
+source-git-commit: 153e6a82134a34737529f4e1a135eb7803b20e05
 workflow-type: tm+mt
-source-wordcount: '1282'
+source-wordcount: '1272'
 ht-degree: 0%
 
 ---
@@ -35,11 +35,11 @@ Die Ansicht des Transaktionsberichts ist in der Ansicht &quot;Transaktionen&quot
 
 Wechseln Sie in der Seitenleiste _Admin_ zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**, um die detaillierte Ansicht des Berichts &quot;Transaktionen&quot;in der Tabelle anzuzeigen.
 
-![Ansicht des Transaktionsberichts](assets/transactions-report-view.png){width="600" zoomable="yes"}
+![Ansicht des Transaktionsberichts](assets/transactions-report-view.png){width="800" zoomable="yes"}
 
 Sie können diese Ansicht entsprechend den Abschnitten in diesem Thema konfigurieren, um die gewünschten Daten am besten darzustellen.
 
-Weitere Informationen finden Sie in diesem Bericht unter verknüpften Commerce-Bestell- und Provider-Transaktions-IDs, Transaktionsbeträge, Zahlungsmethoden pro Transaktion und mehr.
+Siehe verknüpfte Commerce-Bestell- und PayPal-Transaktions-IDs, Transaktionsbeträge, Zahlungsmethoden pro Transaktion und mehr, alles in diesem Bericht.
 
 Nicht alle Zahlungsmethoden bieten die gleiche Granularität von Informationen. Kreditkartentransaktionen bieten beispielsweise Antwort-, AVS- und CCV-Codes sowie die letzten vier Ziffern der Karte im Transaktionsbericht; PayPal-Zahlungsschaltflächen nicht.
 
@@ -86,12 +86,11 @@ In der Ansicht des Transaktionsberichts können Sie die anzuzeigenden Statuserge
 1. Wechseln Sie auf der Seitenleiste _Admin_ zu **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**.
 1. Klicken Sie auf den Selektor **[!UICONTROL Filter]** .
 1. Schalten Sie die _[!UICONTROL Transaction Result]_-Optionen um, um die Berichtsergebnisse nur für ausgewählte Bestellvorgänge anzuzeigen.
-1. Wählen Sie &quot;_[!UICONTROL Card Type]_&quot;, um die Berichtsergebnisse für den ausgewählten Kartentyp anzuzeigen. Eine QuickInfo mit weiteren Informationen wird angezeigt, wenn der Zahlungsverarbeiter den Kartentyp nicht identifizieren kann.
-1. Wählen Sie &quot;_[!UICONTROL Card Brand]_&quot;, um die Berichtsergebnisse für die ausgewählte Kartenmarke anzuzeigen. Eine QuickInfo mit weiteren Informationen wird angezeigt, wenn der Zahlungsverarbeiter die Kartenmarke nicht identifizieren kann.
-1. Schalten Sie die _[!UICONTROL Payment Method]_-Optionen um, um die Berichtsergebnisse nur für ausgewählte Zahlungsmethoden anzuzeigen.
+1. Schalten Sie die _[!UICONTROL Payment Method]_-Optionen um, um die Berichtsergebnisse für die Art der für die Transaktion verwendeten Zahlung anzuzeigen.
+1. Schalten Sie die _[!UICONTROL Payment Detail]_-Optionen um, um zusätzliche Informationen für die verwendete Zahlungsart anzuzeigen, sofern verfügbar.
 1. Geben Sie einen _Min. Bestellbetrag_ oder _Max. Bestellbetrag_ ein, um die Berichtsergebnisse innerhalb dieses Bestellwertbereichs anzuzeigen.
 1. Geben Sie _[!UICONTROL Order ID]_ein, um nach einer bestimmten Transaktion zu suchen.
-1. Stellen Sie die _[!UICONTROL Card Last Four Digits]_ein, um nach einer bestimmten Kredit- oder Debitkarte zu suchen.
+1. Stellen Sie die _[!UICONTROL Card Last Four]_ein, um nach einer bestimmten Kredit- oder Debitkarte zu suchen.
 1. Geben Sie einen _[!UICONTROL Customer ID]_ein, um alle Transaktionen eines bestimmten Kunden anzuzeigen.
 1. Geben Sie den Wert _[!UICONTROL Customer Email]_ein, um Transaktionen für diese E-Mail zu filtern.
 1. Klicken Sie auf **[!UICONTROL Hide filters]** , um den Filter auszublenden.
@@ -134,11 +133,12 @@ Transaktionsberichte enthalten die folgenden Informationen.
 | Spalte | Beschreibung |
 | ------------ | -------------------- |
 | [!UICONTROL Order ID] | Commerce-Bestell-ID (enthält nur Werte für erfolgreiche Transaktionen und ist bei abgelehnten Transaktionen leer)<br> <br>Um verwandte [Bestellinformationen](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"} anzuzeigen, klicken Sie auf die ID. |
-| [!UICONTROL Provider Transaction ID] | Vom Zahlungsdienstleister bereitgestellte Transaktions-ID, die nur Werte für erfolgreiche Transaktionen enthält und einen Bindestrich für zurückgewiesene Transaktionen enthält. |
+| [!UICONTROL PayPal Transaction ID] | Vom Zahlungsdienstleister bereitgestellte Transaktions-ID, die nur Werte für erfolgreiche Transaktionen enthält und einen Bindestrich für zurückgewiesene Transaktionen enthält. Sie können auf diese ID klicken, um auf die Detailseite der PayPal-Transaktion zuzugreifen. |
 | [!UICONTROL Customer ID] | Commerce-Kunden-ID einer Bestellung<br> Weitere Informationen finden Sie unter Thema [Kundeninformationen](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/account-create){target="_blank"} .<br> |
 | [!UICONTROL Transaction Date] | Transaktionsdatumszeitstempel |
-| [!UICONTROL Payment Method] | Zahlungsmethode der Transaktion mit detaillierten Informationen über Marke und Kartentyp. Weitere Informationen finden Sie unter [Kartentypen](https://developer.paypal.com/docs/api/orders/v2/#definition-card_type) . Verfügbar für Zahlungsdienste-Versionen 1.6.0 und höher |
-| [!UICONTROL Card Last Four Digits] | Letzte vier Stellen der Kredit- oder Debitkarten, die für die Transaktion verwendet werden |
+| [!UICONTROL Payment Method] | Art der für die Transaktion verwendeten Zahlung mit Informationen über Marke und Kartentyp. Weitere Informationen finden Sie unter [Kartentypen](https://developer.paypal.com/docs/api/orders/v2/#definition-card_type) . Verfügbar für Zahlungsdienste-Versionen 1.6.0 und höher |
+| [!UICONTROL Payment Detail] | Enthält zusätzliche Informationen zur Art der für die Transaktion verwendeten Zahlung, sofern verfügbar. |
+| [!UICONTROL Card Last Four] | Letzte vier Stellen der Kredit- oder Debitkarten, die für die Transaktion verwendet werden |
 | [!UICONTROL Result] | Das Ergebnis der Transaktion—*[!UICONTROL OK]* (erfolgreiche Transaktion), *[!UICONTROL Rejected by Payment Provider]* (abgelehnt von PayPal), *[!UICONTROL Rejected by Bank]* (abgelehnt von Bank, die die Karte ausgegeben hat) |
 | [!UICONTROL Response Code] | Fehlercode, der den Grund für die Zurückweisung von Zahlungsdienstleistern oder Banken angibt; siehe Liste möglicher Antwortcodes und Beschreibungen für [`Rejected by Bank` Status](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) und [`Rejected by Payment Provider` Status](https://developer.paypal.com/api/rest/reference/orders/v2/errors/) . |
 | [!UICONTROL AVS Code] | Adresse Verification Service-Code; die Antwortinformationen des Verarbeiters für Zahlungsanfragen. Weitere Informationen finden Sie unter [Liste der möglichen Codes und Beschreibungen](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response). |

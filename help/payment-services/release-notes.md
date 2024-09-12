@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] Versionshinweise"
 description: Informationen zu allen [!DNL Payment Services] Versionen finden Sie in den Versionshinweisen .
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 73a48822a7df6999ddb597e53cd6b869b1b97222
+source-git-commit: 153e6a82134a34737529f4e1a135eb7803b20e05
 workflow-type: tm+mt
-source-wordcount: '2788'
+source-wordcount: '2968'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,10 @@ Weitere Informationen zu künftigen Versionen, zur Produktunterstützung und daz
 In diesen Versionshinweisen werden Funktionsänderungen und -korrekturen beschrieben, die außerhalb der regulären Funktionsveröffentlichungen für den gehosteten Dienst veröffentlicht wurden.
 
 +++Hosting-Dienstaktualisierungen
+
+_30. August 2024_
+
+![Neues Problem](../assets/new.svg)<!-- Issue PAY-5658 --> Jetzt können Händler Transaktionen anhand der Zahlungsdetails im [Transaktionsbericht](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html) filtern, um detailliertere und genauere Daten zu Zahlungsmethoden zu erhalten.
 
 _15. Juli 2024_
 
@@ -86,6 +90,20 @@ _28. Juni 2021_
 ![Neu](../assets/new.svg)<!-- Issue PAY-2761 --> Sie können jetzt die Daten anpassen, die im Bericht [Bestellzahlstatus-Bericht](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) und im Bericht [Auszahlungen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) angezeigt werden, indem Sie Spalten mithilfe des Steuerelements für Spalteneinstellungen ein- oder ausblenden.
 
 +++
+
+## v2.8.0
+
+_13. September 2024_
+
+[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
+
+![Neu](../assets/new.svg)<!-- PAY-5499 --> [!DNL Payment Services] unterstützt jetzt das Senden von Trackingnummerninformationen an PayPal, wenn in Adobe Commerce eine [Trackingnummer eingegeben wird](track-shipment.md).
+
+![Fix](../assets/fix.svg)<!-- PAY-5626 --> [!DNL Payment Services] hat den Anforderungsprozess für die Händlerregistrierung optimiert, wenn Kunden die Commerce-Checkout-Seite besuchen. Zuvor wurden für jede Zahlungsmethode (gehostete Felder, Google-Bezahlung, Apple-Bezahlung und intelligente Schaltflächen) separate Anfragen gestellt. Diese Verbesserung reduziert die Anzahl der Aufrufe und verbessert die Leistung und Effizienz während des Checkout-Prozesses.
+
+![Fix](../assets/fix.svg)<!-- PAY-5645 --> [!DNL Payment Services] verhindert nun, dass das Popup-Fenster für PayPal-/Google-Bezahlung geöffnet wird, wenn der Käufer nicht zugestimmt hat, dass der Händler benutzerdefinierte Geschäftsbedingungen auf der Checkout-Seite erstellt hat.
+
+![Fix](../assets/fix.svg)<!-- PAY-5648 -->  [!DNL Payment Services] hat ein Problem im Zusammenhang mit der Aufschlüsselung des Zeileneintrags der Steuern im PayPal-Portal behoben. Wenn die Versandkosten einer Bestellung mit einer Steuer verbunden sind, wird die Steuer als Teil der Versandkosten einbezogen und auf diese Weise in den im PayPal-Portal angezeigten Zeileneinträgen angezeigt.
 
 ## v2.7.0
 
