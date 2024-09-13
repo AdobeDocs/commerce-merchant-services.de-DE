@@ -2,7 +2,7 @@
 title: Verfolgen Ihrer Sendungen in [!DNL Payment Services]
 description: Passen Sie die im PayPal-Merchant-Dashboard angezeigten Sendungen und Tracking-Informationen an. [!DNL Payment Services]
 feature: Payments
-source-git-commit: 153e6a82134a34737529f4e1a135eb7803b20e05
+source-git-commit: 2169907d7200a0937ce5a3ddf9634423cc8c2f5f
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 0%
@@ -48,4 +48,4 @@ Die folgenden Anweisungen führen Sie durch den Prozess zum Erstellen einer Send
 
 ### Vereinbarkeit mit Dritten
 
-Jede Erweiterung von Drittanbietern ist mit der Funktionalität kompatibel, wenn eine Sendungsentität über die [Commerce API](https://developer.adobe.com/commerce/webapi/rest/attributes/#magentosalesapishipmentrepositoryinterface-shipmentrepositoryinterface){target=_blank} erstellt wird.
+Jede Erweiterung von Drittanbietern ist mit der Funktionalität kompatibel, wenn eine Sendungsentität über die [Commerce API](https://developer.adobe.com/commerce/webapi/rest/attributes/#ShipmentRepositoryInterface){target=_blank} erstellt wird.
