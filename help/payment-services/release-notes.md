@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] Versionshinweise"
 description: Informationen zu allen [!DNL Payment Services] Versionen finden Sie in den Versionshinweisen .
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 153e6a82134a34737529f4e1a135eb7803b20e05
+source-git-commit: a5963055a17b5af0c30f3d5f6236d1524e028b22
 workflow-type: tm+mt
-source-wordcount: '2968'
+source-wordcount: '3017'
 ht-degree: 0%
 
 ---
@@ -90,6 +90,14 @@ _28. Juni 2021_
 ![Neu](../assets/new.svg)<!-- Issue PAY-2761 --> Sie können jetzt die Daten anpassen, die im Bericht [Bestellzahlstatus-Bericht](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) und im Bericht [Auszahlungen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) angezeigt werden, indem Sie Spalten mithilfe des Steuerelements für Spalteneinstellungen ein- oder ausblenden.
 
 +++
+
+## v2.8.1
+
+_13. September 2024_
+
+[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
+
+![Korrektur](../assets/fix.svg)<!-- PAY-5644 --> Korrektur eines Problems mit dem Cache von SDK-Parametern bei der Verwendung mehrerer Bereiche in [!DNL Payment Services]. Die SDK-Konfiguration wird jetzt für jeden Bereich separat zwischengespeichert und nicht unter einem einzelnen Schlüssel. Dadurch wird sichergestellt, dass der Cache jedes Perimeters unabhängig invalidiert wird, was die Zuverlässigkeit bei der Verwaltung mehrerer Perimeter verbessert.
 
 ## v2.8.0
 
