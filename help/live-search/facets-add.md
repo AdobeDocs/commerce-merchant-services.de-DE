@@ -2,7 +2,7 @@
 title: "Facets hinzufügen"
 description: "Erfahren Sie, wie Sie filterbare Produktattribute als [!DNL Live Search] Facetten hinzufügen."
 exl-id: 0df6c21b-55b3-41ce-94f4-f70b70ffb84e
-source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
+source-git-commit: 2439e9c2b38269e1cf9761d2b662abce76b8304e
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 0%
@@ -44,7 +44,7 @@ Die Facette wird am unteren Rand der Liste *Dynamische Facets* hinzugefügt und 
 
    * Beschriftung - ([Headless](facets-type.md)) Geben Sie die Facettenbeschriftung ein, die Sie verwenden möchten.
    * Sortiertyp - Facets werden für alle [!DNL Commerce] Storefronts alphabetisch sortiert. Bei Headless-Implementierungen können Facetten entweder alphabetisch oder nach Anzahl sortiert werden. Optionen: Alphabetisch, Zählung (nur Headless)
-   * Max. Wert - Geben Sie die maximale Anzahl an Facettenwerten ein, die in der Storefront angezeigt werden. Gültige Einträge: 0 - 30; Standard: 8
+   * Max. Wert - Geben Sie die maximale Anzahl an Facettenwerten ein, die in der Storefront angezeigt werden. Gültige Einträge: 0 - 100; Standard: 8
 
 1. Klicken Sie nach Abschluss des Vorgangs auf **Speichern**.
 
@@ -65,7 +65,7 @@ Wenn die Facette nach zwei Stunden nicht verfügbar ist, lesen Sie den Abschnitt
 |--- |--- |
 | Titel | ([Headless](facets-type.md) only) Die in der Storefront sichtbare [Facettenbeschriftung](facets-type.md) kann bearbeitet werden, um eine Konsistenz mit Ihrer Marke zu gewährleisten. |
 | Sortiertyp | Die Methode, die für [sort](facets-type.md) -Facetten verwendet wird. Alle [!DNL Commerce] -Storefronts sortieren Facetten nur alphabetisch. Headless-Implementierungen können auch nach `Count` sortiert werden. Optionen:<br />Alphabetisch - Sortiert Facetten alphabetisch.<br />Zählung - (nur Headless) Sortiert Facetten basierend auf der Anzahl der gefundenen Übereinstimmungen. |
-| Max. Wert | Die maximale Anzahl von Werten, die in der Storefront für jede Facette angezeigt werden können. Facets, die einen Wertebereich darstellen, sind gleichmäßig verteilt. Gültige Einträge: 0 - 30; Standard: 8 |
+| Max. Wert | Die maximale Anzahl von Werten, die in der Storefront für jede Facette angezeigt werden können. Facets, die einen Wertebereich darstellen, sind gleichmäßig verteilt. Gültige Einträge: 0 - 100; Standard: 8 |
 
 ### Steuerelemente
 

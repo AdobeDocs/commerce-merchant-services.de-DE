@@ -3,9 +3,9 @@ title: "Grenzen und Grenzen"
 description: Erfahren Sie mehr über die Grenzen und Beschränkungen für [!DNL Live Search] s, um sicherzustellen, dass sie den Anforderungen Ihres Unternehmens entsprechen.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 562af9995b49f4c0fddc76c2ae1c53dd928b1daa
+source-git-commit: 2feb97bf6aa41e5b99d3dcbc51ef3c1cdc05d8da
 workflow-type: tm+mt
-source-wordcount: '887'
+source-wordcount: '905'
 ht-degree: 0%
 
 ---
@@ -17,13 +17,14 @@ Wenn es um die Site-Suche geht, bietet Ihnen Adobe Commerce Optionen. Überprüf
 ## Allgemein
 
 - Das Modul [Erweiterte Suche](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) ist deaktiviert, wenn [!DNL Live Search] installiert ist, und der Link Erweiterte Suche in der Fußzeile der Storefront wird entfernt.
-- [Tier-Preise](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier) und [Sonderpreise](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special) werden im Feld [!DNL Live Search] und im Widget &quot;Seite der Produktliste&quot;nicht unterstützt.
+- [Tier-Preise](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier) werden im Feld [!DNL Live Search] und im Widget zur Produktlisten-Seite nicht unterstützt.
 - Die Produktpreise enthalten keine Mehrwertsteuer (MwSt.).
-- Die Inhaltssuche wird nicht unterstützt.
+- Die Inhaltssuche (CMS-Seiten und -Blöcke) wird nicht unterstützt.
 - Es gibt eine Grenze von 10.000 Produkten, die paginiert werden können. Diese Grenze kann zwar erhöht werden, aber sie kann sich auf die Leistung auswirken. Stellen Sie sicher, dass Sie aussagekräftige Methoden zum Filtern von Produkten bereitstellen, falls eine Kategorie oder ein Suchergebnis über eine große Anzahl von Produkten verfügt, sodass Käufer keine Deep-Paginierung verwenden müssen.
 - Pro Attribut gibt es eine feste Grenze von 1 MB, einschließlich Beschreibungen und benutzerdefinierten Attributen.
 - Der Suchadapter unterstützt keine Produktattribute, die mit einem benutzerdefinierten Quellmodell erstellt und als Facetten verwendet werden. Um diese Funktion zu unterstützen, müssen Sie das Widget [Produktanlistungsseite](plp-styling.md) verwenden.
 - Benutzerdefinierte Produktarten werden nicht unterstützt.
+- Sie können Ergebnisse mit den Bedingungen &quot;beginnt mit&quot;oder &quot;enthält&quot;mit einigen Einschränkungen filtern, wie [hier](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#limitations) beschrieben.
 
 ## Indizierung
 
