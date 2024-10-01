@@ -4,9 +4,9 @@ description: Die neuesten Versionsinformationen für [!DNL Data Export Extension
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 0c7aeeda-e8a6-4740-b466-0661a6d2df07
-source-git-commit: ade4837a3b8ed4800fa73f16c1083885306c7389
+source-git-commit: 1ef9e27bfe92da801225ca8b2da998fd771479f7
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '751'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,10 @@ Zu den Aktualisierungen gehören:
 >Die SaaS-Datenexport-Erweiterung ist eine Sammlung von Modulen, die automatisch mit Live Search, Product Recommendations und dem Catalog Service installiert werden. Sie können die auf Ihrem System installierte Version mithilfe von Composer überprüfen. In einigen Fällen möchten Sie möglicherweise die Datenexport-Erweiterung auf Ihrem System aktualisieren, um Korrekturen oder neue Funktionen aufzunehmen, ohne die Version des Commerce-Dienstes zu aktualisieren.
 
 ## Aktuelle Hauptversion
+
+## Version 103.3.13
+
+![Korrektur](../assets/fix.svg) Die Leistung des Datensynchronisierungsprozesses wurde verbessert, indem ein lokaler Cache für Attributoptionen-Daten hinzugefügt wurde.&lt;!-MDEE-864—>
 
 ## Version 103.3.12
 
