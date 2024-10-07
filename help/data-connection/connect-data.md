@@ -3,9 +3,9 @@ title: Verbinden von Commerce-Daten mit Adobe Experience Platform
 description: Erfahren Sie, wie Sie Ihre Commerce-Daten mit der Adobe Experience Platform verbinden.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: c252c2fb614ec74f1bdd11cc482066a7133dd523
+source-git-commit: 15b1c90cb60094d7f4a4da6435c5262f75cf0081
 workflow-type: tm+mt
-source-wordcount: '2532'
+source-wordcount: '2910'
 ht-degree: 0%
 
 ---
@@ -75,9 +75,13 @@ Laden Sie die [Workspace-Konfigurationsdatei](https://developer.adobe.com/commer
 
 1. Klicken Sie auf **Konfiguration speichern**.
 
+1. Klicken Sie auf die Schaltfläche **[!UICONTROL Test connection]** , um sicherzustellen, dass das von Ihnen eingegebene Dienstkonto und die eingegebenen Anmeldeinformationen korrekt sind.
+
 ### Allgemein
 
 1. Wechseln Sie im Admin zu **System** > Dienste > **[!DNL Data Connection]**.
+
+   ![[!DNL Data Connection] Einstellungen](./assets/epc-settings.png){width="700" zoomable="yes"}
 
 1. Überprüfen Sie auf der Registerkarte **Einstellungen** unter **Allgemein** die Ihrem Adobe Experience Platform-Konto zugeordnete ID, wie im Abschnitt [Commerce Services Connector](../landing/saas.md#organizationid) konfiguriert. Die Organisations-ID ist global. Pro Adobe Commerce-Instanz kann nur eine Organisations-ID zugeordnet werden.
 
@@ -97,7 +101,7 @@ In diesem Abschnitt geben Sie den Datentyp an, den Sie erfassen und an den Exper
 
 - **Back Office** (Server-seitige Daten) sind Daten, die auf den Commerce-Servern erfasst werden. Dazu gehören Informationen über den Status einer Bestellung, z. B. ob eine Bestellung aufgegeben, storniert, rückerstattet, versandt oder abgeschlossen wurde. Sie enthält auch [historische Bestelldaten](#send-historical-order-data).
 
-- **Profil (Beta)** sind Daten, die sich auf die Profilinformationen Ihres Käufers beziehen. Lernen Sie [mehr](#send-customer-profile-data).
+- **Profil** sind Daten, die sich auf die Profilinformationen Ihres Käufers beziehen. Lernen Sie [mehr](#send-customer-profile-data).
 
 Um sicherzustellen, dass Ihre Adobe Commerce-Instanz mit der Datenerfassung beginnen kann, überprüfen Sie die [Voraussetzungen](overview.md#prerequisites).
 
@@ -157,10 +161,6 @@ Weitere Informationen zu den Ereignissen [storefront](events.md#storefront-event
 Nach dem Onboarding fließen die Storefront-Daten an den Experience Platform-Edge. Es dauert etwa fünf Minuten, bis die Daten des Back Office am Rand angezeigt werden. Nachfolgende Aktualisierungen sind am Rand basierend auf dem Cron-Zeitplan sichtbar.
 
 ### Senden von Kundenprofildaten
-
->[!IMPORTANT]
->
->Diese Funktion befindet sich in der Beta-Phase.
 
 Es gibt zwei Arten von Profildaten, die Sie an die Experience Platform senden können: Profildatensätze und Zeitreihenprofilereignisse.
 
@@ -240,6 +240,8 @@ Geben Sie den Datumsbereich für die historischen Bestellungen an, die Sie an Ex
 
 1. Wählen Sie die Registerkarte **Auftragsverlauf** aus.
 
+   ![[!DNL Data Connection] Auftragsverlauf](./assets/epc-order-history.png){width="700" zoomable="yes"}
+
 1. Unter **Auftragsverlauf-Synchronisation** ist das Kontrollkästchen **Datensatz-ID aus Einstellungen kopieren** bereits aktiviert. Dadurch wird sichergestellt, dass Sie denselben Datensatz verwenden, der auf der Registerkarte **Einstellungen** angegeben ist.
 
 1. Geben Sie in den Feldern **Von** und **bis** den Datumsbereich für die historischen Bestelldaten an, die Sie senden möchten. Sie können keinen Datumsbereich auswählen, der fünf Jahre überschreitet.
@@ -255,6 +257,36 @@ Geben Sie den Datumsbereich für die historischen Bestellungen an, die Sie an Ex
 | Von | Datum, ab dem Sie mit der Erfassung von Auftragsverlaufsdaten beginnen möchten. |
 | nach | Datum, ab dem die Erfassung von Auftragsverlaufsdaten beendet werden soll. |
 | Synchronisierung starten | Beginnt die Synchronisierung der Auftragsverlaufsdaten mit dem Experience Platform Edge. Diese Schaltfläche ist deaktiviert, wenn das Feld **[!UICONTROL Dataset ID]** leer ist oder die Datensatz-ID ungültig ist. |
+
+### Datenanpassung
+
+Auf der Registerkarte **Datenanpassung** können Sie alle benutzerdefinierten Attribute anzeigen, die in [!DNL Commerce] konfiguriert und an Experience Platform gesendet wurden.
+
+![[!DNL Data Connection] Datenanpassung](./assets/epc-data-customization.png){width="700" zoomable="yes"}
+
+>[!IMPORTANT]
+>
+>Stellen Sie sicher, dass die auf der Registerkarte **Datenerfassung** angegebene Datastream-ID [Angegeben](#data-collection) mit der Kennung übereinstimmt, die mit dem Schema für die Aufnahme benutzerdefinierter Attribute verknüpft ist.
+
+Beim Erstellen benutzerdefinierter Attribute für Bestellungen und Senden an die Experience Platform müssen die Attributnamen in Commerce mit denen im Schema [!DNL Commerce] auf der Experience Platform übereinstimmen. Wenn sie nicht übereinstimmen, kann es schwierig sein, die Unterschiede zu ermitteln. Wenn Sie nicht übereinstimmende Namen haben, kann die Tabelle **Benutzerdefinierte Bestellattribute** dazu beitragen, das Problem zu lösen.
+
+Die Tabelle **Benutzerdefinierte Bestellattribute** bietet Einblick in die Konfiguration und Zuordnung von benutzerdefinierten Bestellattributen zwischen dem [!DNL Commerce] Back Office und dem [!DNL Commerce]-Schema im Experience Platform. Diese Tabelle ermöglicht es Ihnen, benutzerdefinierte Attribute auf Bestellebene und Bestellartikelebene über verschiedene Quellen hinweg anzuzeigen, um die Identifizierung fehlender oder falsch ausgerichteter Attribute zu erleichtern. Außerdem werden Datensatz-IDs angezeigt, um zwischen Live- und historischen Datensätzen zu unterscheiden, da jeder Datensatz über eigene benutzerdefinierte Attribute verfügen kann.
+
+Wenn neben einem benutzerdefinierten Attributnamen in der Tabelle kein grünes Häkchen angezeigt wird, deutet dies auf eine Diskrepanz zwischen den Attributnamen in den Quellen hin. Korrigieren Sie den Attributnamen in einer Quelle, und ein grünes Häkchen wird angezeigt, das angibt, dass die Namen nun übereinstimmen.
+
+- Wenn der Attributname im Schema auf Experience Platform aktualisiert wird, müssen Sie die Konfiguration auf der Registerkarte **Datenanpassung** speichern, um die Experience Platform-Schemaänderung Trigger. Diese Änderung wird in der Tabelle **Benutzerdefinierte Bestellattribute** angezeigt, wenn Sie auf die Schaltfläche **[!UICONTROL Refresh]** klicken.
+- Wenn der Attributname in [!DNL Commerce] aktualisiert wird, muss ein Bestellereignis generiert werden, um den Namen in der Tabelle **Benutzerdefinierte Bestellattribute** zu aktualisieren. Die Änderung wird sich in etwa 60 Minuten widerspiegeln.
+
+Erfahren Sie mehr darüber, wie Sie [benutzerdefinierte Attribute einrichten](custom-attributes.md).
+
+#### Feldbeschreibungen
+
+| Feld | Beschreibung |
+|--- |--- |
+| Datensatz | Zeigt die Datensätze an, die die benutzerdefinierten Attribute enthalten. Live- und historische Datensätze können über eigene benutzerdefinierte Attribute verfügen. |
+| Adobe Commerce | Zeigt alle benutzerdefinierten Attribute an, die im Backoffice [!DNL Commerce] erstellt wurden. |
+| Experience Platform | Zeigt alle benutzerdefinierten Attribute an, die im [!DNL Commerce]-Schema in Experience Platform angegeben sind. |
+| Aktualisieren | Ruft alle benutzerdefinierten Attributnamen aus dem Schema [!DNL Commerce] im Experience Platform ab. |
 
 ## Bestätigen der Erfassung von Ereignisdaten
 

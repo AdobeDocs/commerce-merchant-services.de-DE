@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie ein Schema, einen Datensatz und einen Datensp
 exl-id: 4401bbe7-1ccc-4349-a998-9e9ee9db590f
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: 90ddfdd41958b254fc0c2f3e0891385193f1bb9c
+source-git-commit: b5727c90737ecfd237dd143801152f25600c3f97
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '898'
 ht-degree: 0%
 
 ---
@@ -66,33 +66,6 @@ In diesem Abschnitt erfahren Sie, wie Sie Ihr vorhandenes Schema aktualisieren o
 Mit den für Verhaltens- und Back-Office-Daten konfigurierten Schemata, Datensätzen und Datensätzen können Sie [konfigurieren](connect-data.md#data-collection), dass Ihre Commerce-Instanz diese Daten erfasst und an die Experience Platform sendet.
 
 Informationen zum Einschließen der Profilinformationen Ihres Käufers finden Sie unter [Ereignisdaten des Zeitreihenprofils](#time-series-profile-event-data).
-
-### Hinzufügen benutzerdefinierter Attribute
-
-Sie können benutzerdefinierte Attribute verwenden, wenn Sie benutzerdefinierte Back-Office-Ereignisdaten von Ihrer Commerce-Instanz an die Experience Platform übergeben möchten.
-
-Benutzerdefinierte Attribute werden auf zwei Ebenen unterstützt:
-
-- Bestellebene
-- Bestellelementebene
-
->[!NOTE]
->
->Adobe Commerce unterstützt benutzerdefinierte Attribute mit einem Datentyp aus Zeichenfolge oder Zeichenfolge-Array.
-
-1. Fügen Sie ein zusätzliches Modul in Ihrer [!DNL Commerce] -Anwendung hinzu und aktivieren Sie es. Siehe folgendes [Beispiel](https://github.com/shiftedreality/beacon-backoffice-custom-events/blob/main/BeaconDemo/Plugin/ModifyOrder.php).
-
-   Sie müssen den Beispielcode ändern, um zusätzliche benutzerdefinierte Attribute verfügbar zu machen. Die Implementierung variiert je nachdem, wo diese Attribute gespeichert werden und welche Logik für ihre Extraktion erforderlich ist.
-
-1. Erweitern Sie Ihr vorhandenes XDM-Schema. Im folgenden [Handbuch](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups) finden Sie Informationen zum Erstellen benutzerdefinierter Attribute für die Bestellungs- und Bestellelementebenen. Das Feld Mandanten-ID wird dynamisch generiert, die Feldstruktur sollte jedoch dem angegebenen Beispiel ähneln.
-
-   >[!IMPORTANT]
-   >
-   >Benutzerdefinierte XDM-Attribute müssen mit den von [!DNL Commerce] gesendeten Attributen übereinstimmen.
-
-1. Stellen Sie sicher, dass der Ihrem XDM-Schema zugeordnete Datastream mit dem auf der Registerkarte [Datenerfassung](connect-data.md#data-collection) angegebenen Datastream übereinstimmt.
-
-1. Klicken Sie auf der Registerkarte **Datenerfassung** auf **[!UICONTROL Save]** , um alle von Ihnen angegebenen benutzerdefinierten Attribute abzurufen.
 
 ## Zeitreihenprofilereignisdaten
 

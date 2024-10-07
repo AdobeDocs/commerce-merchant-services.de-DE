@@ -3,9 +3,9 @@ title: Versionshinweise
 description: Die neuesten Versionsinformationen für die [!DNL Data Connection] Erweiterung von Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 92140fccc8099979d604c7cb86ed5bd7086be29b
+source-git-commit: 15b1c90cb60094d7f4a4da6435c5262f75cf0081
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '1055'
 ht-degree: 0%
 
 ---
@@ -78,6 +78,16 @@ _12. Oktober 2022_
 
 +++
 
+## 3.2.0
+
+_7. Oktober 2024_
+
+[!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"}
+
+![Neu](../assets/new.svg) - Es wurde die Möglichkeit hinzugefügt, [benutzerdefinierte Bestellattribute](custom-attributes.md) zu erstellen, um Bürodaten zu sichern.
+![Neu](../assets/new.svg) - Die neue Tabelle [Benutzerdefinierte Bestellattribute](connect-data.md#data-customization) wurde hinzugefügt, damit Sie alle benutzerdefinierten Attribute anzeigen können, die in [!DNL Commerce] konfiguriert und an Experience Platform gesendet wurden.
+![Neu](../assets/new.svg) - [Möglichkeit zum Sammeln und Senden von Profildatensätzen](connect-data.md#send-customer-profile-data) und Daten an Experience Platform hinzugefügt.
+
 ## 3.2.0-beta3
 
 _27. August 2024_
@@ -128,7 +138,7 @@ _4. März 2024_
 [!BADGE Kompatibilität]{type=Informative tooltip="Kompatibilität"}
 
 ![Neu](../assets/new.svg) - Wenn Sie an der Beta-Phase teilnehmen, stellen Sie sicher, dass Ihre `composer.json`-Datei auf der Stammebene Folgendes aufweist: ` "minimum-stability": "beta"`. Fügen Sie außerdem `composer require "magento/customers-connector: ^1.2.0"` hinzu, um Kundenprofile von Ihrer Commerce-Instanz an SaaS zu senden.
-![Neu](../assets/new.svg) - Zusätzliche Funktion zum Hinzufügen benutzerdefinierter Attribute [](update-xdm.md#update-schema-with-time-series-behavioral-and-back-office-event-data).
+![Neu](../assets/new.svg) - Zusätzliche Funktion zum Hinzufügen benutzerdefinierter Attribute [](custom-attributes.md).
 ![Neu](../assets/new.svg) - [Möglichkeit zum Sammeln und Senden von Profildatensätzen](connect-data.md#send-customer-profile-data) und Daten an Experience Platform hinzugefügt.
 
 ## 3.1.0

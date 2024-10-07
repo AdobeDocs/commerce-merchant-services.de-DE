@@ -4,9 +4,9 @@ description: Erfahren Sie, welche Daten jedes Back-Office-Ereignis erfasst.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: a5a4f04b-89ac-4020-95ce-984f9f2d8385
-source-git-commit: 813be62b366b1c76a2b909079cfba31ef8000617
+source-git-commit: b5727c90737ecfd237dd143801152f25600c3f97
 workflow-type: tm+mt
-source-wordcount: '3611'
+source-wordcount: '3606'
 ht-degree: 0%
 
 ---
@@ -403,10 +403,6 @@ In der folgenden Tabelle werden die für dieses Ereignis erfassten Daten beschri
 | `productListItems.categories.path` | Der Pfad zur Kategorie. |
 
 ## Kundenprofilereignisse
-
->[!IMPORTANT]
->
->Diese Funktion befindet sich in der Beta-Phase.
 
 Von der Server-seitigen Seite erfasste Profilereignisse enthalten Kontoinformationen wie `accountCreated`, `accountUpdated` und `accountDeleted`. Diese Daten werden verwendet, um wichtige Kundendetails auszufüllen, die für eine bessere Definition von Segmenten oder die Ausführung von Marketing-Kampagnen benötigt werden, z. B. das Senden von Rabattangeboten zur Anmeldung, von Kontoänderungsbestätigungen usw. Es gibt ähnliche Profilereignisse, die aus der [Storefront](events.md#customer-profile-events) erfasst werden.
 
