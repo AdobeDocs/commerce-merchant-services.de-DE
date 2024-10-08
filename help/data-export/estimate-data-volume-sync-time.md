@@ -2,9 +2,8 @@
 title: Geschätztes Datenvolumen und Übertragungszeit
 description: Erfahren Sie, wie Sie das Datenvolumen und die Übertragungszeit schätzen können, die für das [!DNL data export] Tool zur Synchronisierung von Feed-Daten zwischen Adobe Commerce und verbundenen Diensten erforderlich sind.
 role: Admin, Developer
-recommendations: noCatalog
 exl-id: 51ea98fd-cf90-44bd-a639-992bfc7f3eca
-source-git-commit: 42a9ea0f62f35db451cd3e780adf530d0699a638
+source-git-commit: b80bc2867f44e6123adb104eb148ac5e8f80b63d
 workflow-type: tm+mt
 source-wordcount: '599'
 ht-degree: 0%

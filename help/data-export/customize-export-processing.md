@@ -2,9 +2,8 @@
 title: Verbessern der SAAs-Datenexportleistung
 description: Erfahren Sie, wie Sie die Leistung des SAAS-Datenexports für Commerce Services verbessern können, indem Sie den Datenexport-Modus mit mehreren Threads verwenden.
 role: Admin, Developer
-recommendations: noCatalog
 exl-id: 20c81ef4-5a97-45cd-9401-e82910a2ccc3
-source-git-commit: 42a9ea0f62f35db451cd3e780adf530d0699a638
+source-git-commit: b80bc2867f44e6123adb104eb148ac5e8f80b63d
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 0%
