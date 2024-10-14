@@ -2,9 +2,9 @@
 title: Implementierungsarbeitsablauf
 description: Erfahren Sie mehr über die Schritte zur erfolgreichen Implementierung von [!DNL Product Recommendations] auf Ihrer Storefront.
 exl-id: 766e1191-0330-4515-9331-e45318539dc9
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 91e19e30d55259d3287404895d1d893c480743b6
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '534'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Wenn Sie den `magento/product-recommendations module` installieren, aggregiert A
 
 1. **Bereitstellen der Datenerfassung für die Produktion**
 
-   Für die Bereitstellung von [!DNL Product Recommendations] sind zwei wichtige [Datenquellen](type.md) erforderlich: der Katalog und das Verhalten. Da die Produktion die einzige Umgebung ist, in der die Aktionen Ihrer Kunden erfasst und analysiert werden, ist es in Ihrem Interesse, so früh wie möglich mit der Datenerfassung in der Produktion zu beginnen. [Erfahren Sie ](behavioral-data.md), wie Adobe Sensei maschinelle Lernmodelle trainiert, die zu Empfehlungen mit höherer Qualität führen. Als zusätzlichen Vorteil können Sie beim Erfassen von Verhaltensdaten über die Produktion [Empfehlungen](verify.md) auf Grundlage dieser Produktionsdaten abrufen, während Sie in Nicht-Produktionsumgebungen arbeiten. Anschließend können Sie verschiedene Empfehlungen testen und mit ihnen experimentieren, die anhand von in der Produktion erfassten echten Käuferdaten berechnet werden.
+   Für die Bereitstellung von [!DNL Product Recommendations] sind zwei wichtige [Datenquellen](type.md) erforderlich: der Katalog und das Verhalten. Da die Produktion die einzige Umgebung ist, in der die Aktionen Ihrer Kunden erfasst und analysiert werden, sollten Sie die Datenerfassung so früh wie möglich in der Produktion starten. [Erfahren Sie ](events.md), wie Adobe Sensei maschinelle Lernmodelle trainiert, die zu Empfehlungen mit höherer Qualität führen. Als zusätzlichen Vorteil können Sie beim Erfassen von Verhaltensdaten über die Produktion [Empfehlungen](verify.md) auf Grundlage dieser Produktionsdaten abrufen, während Sie in Nicht-Produktionsumgebungen arbeiten. Anschließend können Sie verschiedene Empfehlungen testen und mit ihnen experimentieren, die anhand von in der Produktion erfassten echten Käuferdaten berechnet werden.
 
    Um die Datenerfassung für die Produktion bereitzustellen, müssen Sie [das ](install-configure.md) -Modul installieren und konfigurieren, indem Sie einen [API-Schlüssel](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) angeben.[!DNL Product Recommendations]
 

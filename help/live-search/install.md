@@ -3,9 +3,9 @@ title: "Erste Schritte mit [!DNL Live Search]"
 description: "Erfahren Sie mehr über die Systemanforderungen und Installationsschritte für [!DNL Live Search] von Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 9a10613db182d0d6bf8dad2bbcd1fd9023804370
+source-git-commit: 89dd5ae305563e5f6bbcdb80764fd9eeb177b491
 workflow-type: tm+mt
-source-wordcount: '3000'
+source-wordcount: '3093'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,14 @@ Dieser Artikel richtet sich an Entwickler oder Systemintegratoren in Ihrem Team,
 
 Auf hoher Ebene erfordert das Onboarding von [!DNL Live Search], dass Sie:
 
-![Live Search-Workflow](assets/livesearch-workflow.png)
+1. [Installieren](#1-install-the-live-search-extension) der [!DNL Live Search]-Erweiterung
+1. [Konfigurieren](#2-configure-api-keys) der API-Schlüssel
+1. [Synchronisieren](#3-sync-your-catalog-data) Ihrer Katalogdaten
+1. [Überprüfen](#4-verify-that-the-data-was-exported) , ob die Katalogdaten exportiert wurden
+1. [Konfigurieren](#5-configure-the-data) der Daten
+1. [Testen](#6-test-the-connection) der Verbindung
+1. [Überprüfen](#7-validate-events-are-capturing-data), ob Ereignisse Daten erfassen
+1. [Anpassen](#8-customize-for-your-storefront) der Storefront
 
 ## 1. Installieren Sie die [!DNL Live Search] -Erweiterung
 
@@ -272,7 +279,15 @@ Wenn Sie im Storefront auf Probleme stoßen, überprüfen Sie die Datei &quot;`v
 
 Um [!DNL Live Search] über eine Firewall zuzulassen, fügen Sie `commerce.adobe.io` zur Zulassungsliste hinzu.
 
-## 7. Benutzerspezifisch für Ihre Storefront
+## 7. Stellen Sie sicher, dass Ereignisse Daten erfassen.
+
+Stellen Sie sicher, dass die auf Ihrer Site bereitgestellten Storefront-Ereignisse funktionieren. Dies ist besonders für Headless-Implementierungen wichtig.
+
+- Überprüfen Sie die für [!DNL Live Search] erforderlichen [Ereignisse](events.md).
+- Stellen Sie sicher, dass das Dashboard [Live-Suche](performance.md) Daten aus Ihrer/Ihren Nicht-Produktionsumgebung(en) anzeigt.
+- [Ereignisabruf überprüfen](../product-recommendations/verify.md). Während sich diese Seite im [!DNL Product Recommendations] -Handbuch befindet, gelten auch die Überprüfungsschritte für [!DNL Live Search].
+
+## 8. Benutzerspezifisch für Ihre Storefront
 
 Sie haben Ihre Daten installiert, synchronisiert, validiert und konfiguriert. [!DNL Live Search] Der nächste Schritt besteht darin sicherzustellen, dass die [!DNL Live Search] -Widgets dem Aussehen und dem Erscheinungsbild Ihres Stores entsprechen.
 

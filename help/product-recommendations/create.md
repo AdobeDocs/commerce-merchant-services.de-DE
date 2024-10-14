@@ -2,21 +2,25 @@
 title: Neue Empfehlung erstellen
 description: Erfahren Sie, wie Sie eine Produktempfehlungseinheit erstellen.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 0940e0049d8fb388b40b828250b7955eabfd583f
+source-git-commit: 0b651189184a107dec8452d5b0d588f52d689605
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1457'
 ht-degree: 0%
 
 ---
 
 # Neue Empfehlung erstellen
 
-Wenn Sie eine Empfehlung erstellen, erstellen Sie eine _Empfehlungseinheit_, die die empfohlenen Artikel _Artikel_ enthält.
+Wenn Sie eine Empfehlung erstellen, erstellen Sie eine _Empfehlungseinheit_ oder ein Widget, die das empfohlene Produkt _Artikel_ enthält.
 
 ![Empfehlungseinheit](assets/unit.png)
 _Empfehlungseinheit_
 
 Wenn Sie die Empfehlungseinheit aktivieren, beginnt Adobe Commerce mit [Datenerfassung](workspace.md), um Impressionen, Ansichten, Klicks usw. zu messen. Die Tabelle [!DNL Product Recommendations] enthält die Metriken für jede Empfehlungseinheit, damit Sie fundierte Geschäftsentscheidungen treffen können.
+
+>[!NOTE]
+>
+>Die Metriken zur Produktempfehlung sind für Luma-Storefronts optimiert. Wenn Ihre Storefront nicht auf Luma basiert, hängt die Art und Weise, wie die Metriken Daten verfolgen, davon ab, wie Sie [die Ereigniskollektion implementieren](events.md).
 
 1. Wechseln Sie in der Seitenleiste _Admin_ zu **Marketing** > _Promotions_ > **Produkt-Recommendations** , um den Arbeitsbereich _Produkt-Recommendations_ anzuzeigen.
 
@@ -83,7 +87,7 @@ Wenn Sie die Empfehlungseinheit aktivieren, beginnt Adobe Commerce mit [Datenerf
 
 Bereitschaftsindikatoren zeigen, welche Empfehlungstypen basierend auf dem verfügbaren Katalog und den verfügbaren Verhaltensdaten am besten funktionieren. Sie können Bereitschaftsindikatoren auch verwenden, um festzustellen, ob Sie Probleme mit Ihrem [Eventing](events.md) haben oder ob Sie nicht über ausreichend Traffic verfügen, um den Empfehlungstyp auszufüllen.
 
-Bereitschaftsindikatoren werden entweder in [statisch-basiert](#static-based) oder in [dynamisch-basiert](#dynamic-based) kategorisiert. Statische Katalogdaten werden nur verwendet, während dynamische Verhaltensdaten von Ihren Käufern verwenden. Diese Verhaltensdaten werden verwendet, um [Modelle für maschinelles Lernen zu trainieren](behavioral-data.md), um personalisierte Empfehlungen zu erstellen und deren Bereitschaftsbewertung zu berechnen.
+Bereitschaftsindikatoren werden entweder in [statisch-basiert](#static-based) oder in [dynamisch-basiert](#dynamic-based) kategorisiert. Statische Katalogdaten werden nur verwendet, während dynamische Verhaltensdaten von Ihren Käufern verwenden. Diese Verhaltensdaten werden verwendet, um [Modelle für maschinelles Lernen zu trainieren](events.md), um personalisierte Empfehlungen zu erstellen und deren Bereitschaftsbewertung zu berechnen.
 
 ### Berechnung der Bereitschaftsindikatoren
 
@@ -95,7 +99,7 @@ Infolge dieser Variablen kann der Prozentsatz des Bereitschaftsindikators schwan
 
 Die Indikatoren für die Bereitschaft werden anhand von zwei Faktoren berechnet:
 
-* Ausreichende Ergebnissatzgröße: Gibt es in den meisten Szenarien genügend Ergebnisse, um die Verwendung von [Reserveempfehlungen](behavioral-data.md#backuprecs) zu vermeiden?
+* Ausreichende Ergebnissatzgröße: Gibt es in den meisten Szenarien genügend Ergebnisse, um die Verwendung von [Reserveempfehlungen](events.md#backuprecs) zu vermeiden?
 
 * Ausreichende Ergebnismenge: Stellen die zurückgegebenen Produkte eine Vielzahl von Produkten aus Ihrem Katalog dar? Mit diesem Faktor soll verhindert werden, dass eine Minderheit von Produkten die einzigen Artikel ist, die auf der gesamten Site empfohlen werden.
 
@@ -103,7 +107,7 @@ Basierend auf den oben genannten Faktoren wird ein Bereitschaftswert wie folgt b
 
 * 75 % oder mehr bedeutet, dass die für diesen Empfehlungstyp vorgeschlagenen Empfehlungen von höchster Relevanz sein werden.
 * Mindestens 50 % bedeutet, dass die für diesen Empfehlungstyp vorgeschlagenen Empfehlungen weniger relevant sind.
-* Weniger als 50 % bedeutet, dass die für diesen Empfehlungstyp vorgeschlagenen Empfehlungen möglicherweise nicht relevant sind. In diesem Fall werden [Reserveempfehlungen](behavioral-data.md#backuprecs) verwendet.
+* Weniger als 50 % bedeutet, dass die für diesen Empfehlungstyp vorgeschlagenen Empfehlungen möglicherweise nicht relevant sind. In diesem Fall werden [Reserveempfehlungen](events.md#backuprecs) verwendet.
 
 Erfahren Sie mehr über [warum Bereitschaftsindikatoren niedrig sein könnten](#what-to-do-if-the-readiness-indicator-percent-is-low).
 
@@ -153,7 +157,7 @@ Der Prozentsatz des Bereitschaftsindikators für Empfehlungstypen, die von Katal
 
 #### Was zu tun ist, wenn der Bereitschaftsindikator-Prozentsatz niedrig ist?
 
-Ein geringer Prozentsatz an Bereitschaft zeigt an, dass nicht viele Produkte aus Ihrem Katalog in Empfehlungen für diesen Empfehlungstyp aufgenommen werden können. Dies bedeutet, dass mit hoher Wahrscheinlichkeit [Reserveempfehlungen](behavioral-data.md#backuprecs) zurückgegeben werden, wenn Sie diesen Empfehlungstyp trotzdem bereitstellen.
+Ein geringer Prozentsatz an Bereitschaft zeigt an, dass nicht viele Produkte aus Ihrem Katalog in Empfehlungen für diesen Empfehlungstyp aufgenommen werden können. Dies bedeutet, dass mit hoher Wahrscheinlichkeit [Reserveempfehlungen](events.md#backuprecs) zurückgegeben werden, wenn Sie diesen Empfehlungstyp trotzdem bereitstellen.
 
 Im Folgenden werden mögliche Gründe und Lösungen für häufige niedrige Bereitschaft-Bewertungen aufgelistet:
 
@@ -175,7 +179,7 @@ Um eine Empfehlung bei der Arbeit in einer Nicht-Produktionsumgebung zu testen, 
 | Name | Der Name des Produkts. |
 | SKU | Lagereinheit, die dem Produkt zugewiesen ist |
 | Preis | Der Preis des Produkts. |
-| Ergebnistyp | Primär - gibt an, dass ausreichend Schulungsdaten gesammelt wurden, um eine Empfehlung anzuzeigen.<br />Backup - gibt an, dass nicht genügend Schulungsdaten erfasst wurden, sodass eine Reserveempfehlung zum Ausfüllen des Slots verwendet wird. Navigieren Sie zu [Verhaltensdaten](behavioral-data.md) , um mehr über Modelle für maschinelles Lernen und Reserveempfehlungen zu erfahren. |
+| Ergebnistyp | Primär - gibt an, dass ausreichend Schulungsdaten gesammelt wurden, um eine Empfehlung anzuzeigen.<br />Backup - gibt an, dass nicht genügend Schulungsdaten erfasst wurden, sodass eine Reserveempfehlung zum Ausfüllen des Slots verwendet wird. Navigieren Sie zu [Verhaltensdaten](events.md) , um mehr über Modelle für maschinelles Lernen und Reserveempfehlungen zu erfahren. |
 
 Experimentieren Sie beim Erstellen Ihrer Empfehlungseinheit mit dem Seitentyp, Empfehlungstyp und Filtern, um sofort Echtzeit-Feedback zu den einzuschließenden Produkten zu erhalten. Sobald Sie wissen, welche Produkte angezeigt werden, können Sie die Empfehlungseinheit entsprechend Ihren Geschäftsanforderungen konfigurieren.
 

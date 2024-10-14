@@ -3,7 +3,7 @@ title: Test in der Staging-Umgebung
 description: Erfahren Sie, wie Sie [!DNL Product Recommendations] aus Ihrer Produktionsumgebung für Testzwecke in Ihrer Staging-Umgebung verwenden können.
 exl-id: 178ff2aa-7821-45f7-85f1-d490d8182817
 feature: Services, Recommendations, Staging
-source-git-commit: 3a5dec9422aa34eeb204b9fe6f089551e4038f1c
+source-git-commit: 4a5c3550b03651279c24de6b6361ffa6dc28776e
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Bevor Sie Empfehlungen in Ihrer Produktionsumgebung bereitstellen, testen Sie den Dienst in einer Nicht-Produktionsumgebung, um sicherzustellen, dass alles wie erwartet funktioniert.
 
-[!DNL Product Recommendations] gibt Produkte basierend auf [Verhaltensdaten von Käufern](behavioral-data.md) zurück, die aus Ihrer Storefront erfasst wurden. In einer Nicht-Produktionsumgebung verfügen Sie jedoch wahrscheinlich nicht über Verhaltensdaten von Käufern. Der einzige Empfehlungstyp, den Sie ohne Verhaltensdaten testen können, ist `More like this`. Für diesen Empfehlungstyp sind keine Eingabedaten erforderlich, da er eine Übereinstimmung mit der direkten Ähnlichkeit von Inhalten verwendet.
+[!DNL Product Recommendations] gibt Produkte basierend auf [Verhaltensdaten von Käufern](events.md) zurück, die aus Ihrer Storefront erfasst wurden. In einer Nicht-Produktionsumgebung verfügen Sie jedoch wahrscheinlich nicht über Verhaltensdaten von Käufern. Der einzige Empfehlungstyp, den Sie ohne Verhaltensdaten testen können, ist `More like this`. Für diesen Empfehlungstyp sind keine Eingabedaten erforderlich, da er eine Übereinstimmung mit der direkten Ähnlichkeit von Inhalten verwendet.
 
 Die folgenden Empfehlungstypen erfordern Verhaltensdaten:
 

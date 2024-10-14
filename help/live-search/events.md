@@ -3,34 +3,25 @@ title: '[!DNL Live Search] events'
 description: Erfahren Sie, wie Ereignisse Daten für [!DNL Live Search] erfassen.
 feature: Services, Eventing
 exl-id: b0c72212-9be0-432d-bb8d-e4c639225df3
-source-git-commit: 0d966c8dbd788563fa453912961fdc62a5a6c23e
+source-git-commit: 45a7d101c28eb9cd1404090c3ea5024652a97913
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '288'
 ht-degree: 0%
 
 ---
 
 # [!DNL Live Search] Ereignisse
 
-[!DNL Live Search] verwendet Ereignisse, um Suchalgorithmen wie &quot;Am häufigsten angezeigt&quot;und &quot;Dies angezeigt, Anzeige auch&quot; zu unterstützen. Während LUMA-Benutzer Ereignisse vorkonfiguriert finden, müssen Headless- und andere benutzerdefinierte Implementierungen Eventing für ihre eigenen Anforderungen implementieren.
+[!DNL Live Search] verwendet Ereignisse, um Suchalgorithmen wie &quot;Am häufigsten angezeigt&quot;und &quot;Dies angezeigt, Anzeige auch&quot; zu unterstützen. Während das Beispiel-Luma-Design ](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/design/themes/themes#the-default-theme) für [Commerce vorkonfiguriert ist, müssen Headless- und andere benutzerdefinierte Implementierungen Eventing für ihre eigenen Anforderungen implementieren.
 
-Da [!DNL Live Search] und [!DNL Product Recommendations] denselben Backend-Algorithmus verwenden, werden einige Ereignisse von beiden Diensten gemeinsam genutzt. Zum Ausfüllen des Recommendations-Dashboards sind einige Recommendations-Ereignisse erforderlich.
+In dieser Tabelle werden die Ereignisse beschrieben, die von [!DNL Live Search] [Rangstrategien](rules-add.md#intelligent-ranking) verwendet werden.
 
-In dieser Tabelle werden die von [!DNL Live Search] -Strategien verwendeten Ereignisse beschrieben.
-
-| Strategie | Produkte | Veranstaltungen | Seite |
+| Ranking Strategy | Veranstaltungen | Seite |
 | --- | --- | --- | ---|
-| Am häufigsten angezeigt | Live Search<br>Produktrecs | Seitenansicht<br>Produktansicht | Produktdetailseite |
-| Am häufigsten gekauft | Live Search<br>Produktrecs | Seitenansicht<br> Checkout | Warenkorb/Checkout |
-| Am häufigsten zum Warenkorb hinzugefügt | Live Search<br>Produktrecs | Seitenansicht<br>zum Warenkorb hinzufügen | Produktdetailseite<br>Seite mit Produktliste<br>Warenkorb<br>Wunschliste |
-| Anzeige, Anzeige, | Live Search<br>Produktrecs | Seitenansicht<br>Produktansicht | Produktdetailseite |
-| Trends | Live Search<br>Produktrecs | Seitenansicht<br>Produktansicht | Produktdetailseite |
-| Anzeige: , gekauft als | Produkt-Recs | Seitenansicht<br>Produktansicht | Produktdetailseite<br>Warenkorb/Checkout |
-| kaufte das, kaufte es | Produkt-Recs | Seitenansicht<br>Produktansicht | Produktdetailseite |
-| Konversion: Zu erwerbende Ansicht | Produkt-Recs | Seitenansicht<br>Produktansicht | Produktdetailseite |
-| Konversion: Zu erwerbende Ansicht | Produkt-Recs | Seitenansicht<br> Checkout | Warenkorb/Checkout |
-| Konversion: In den Warenkorb | Produkt-Recs | Seitenansicht<br>Produktansicht | Produktdetailseite |
-| Konversion: In den Warenkorb | Produkt-Recs | Seitenansicht<br>zum Warenkorb hinzufügen | Seite mit Produktdetails<br>Seite mit Produktliste<br>Warenkorb<br>Wunschliste |
+| Am häufigsten angezeigt | `page-view`<br>`product-view` | Produktdetailseite |
+| Am häufigsten gekauft | `page-view`<br>`complete-checkout` | Warenkorb/Checkout |
+| Am häufigsten zum Warenkorb hinzugefügt | `page-view`<br>`add-to-cart` | Produktdetailseite<br>Seite mit Produktliste<br>Warenkorb<br>Wunschliste |
+| Anzeige, Anzeige, | `page-view`<br>`product-view` | Produktdetailseite |
 
 >[!NOTE]
 >
@@ -42,13 +33,13 @@ Zum Ausfüllen des Dashboards [Live-Suche](performance.md) sind einige Ereigniss
 
 | Dashboard-Bereich | Veranstaltungen | Feld &quot;Join&quot; |
 | ------------------- | ------------- | ---------- |
-| Einzelsuche | `page-view`, `search-request-sent` | searchRequestId |
-| Suchvorgänge mit null Ergebnissen | `page-view`, `search-request-sent` | searchRequestId |
-| Null-Ergebnisrate | `page-view`, `search-request-sent` | searchRequestId |
-| Häufige Suchvorgänge | `page-view`, `search-request-sent` | searchRequestId |
+| Einzelsuche | `page-view`, `search-request-sent`, `search-response-received` | `searchRequestId` |
+| Suchvorgänge mit null Ergebnissen | `page-view`, `search-request-sent`, `search-response-received` | `searchRequestId` |
+| Null-Ergebnisrate | `page-view`, `search-request-sent`, `search-response-received` | `searchRequestId` |
+| Häufige Suchvorgänge | `page-view`, `search-request-sent`, `search-response-received` | `searchRequestId` |
 | Durchschn. Klickposition | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click` | searchRequestId |
-| Clickthrough-Rate | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click` | searchRequestId, sku |
-| Konversionsrate | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click`, `product-view`, `add-to-cart`, `place-order` | searchRequestId, sku |
+| Clickthrough-Rate | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click` | `searchRequestId`, `sku`, `parentSku` |
+| Konversionsrate | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click`, `product-view`, `add-to-cart`, `place-order` | `searchRequestId`, `sku`, `parentSku` |
 
 ### Erforderliche Kontexte
 
@@ -72,11 +63,8 @@ mse.publish.searchRequestSent("search-bar");
 
 ## Einschränkungen
 
-Anzeigensperren und Datenschutzeinstellungen können verhindern, dass Ereignisse erfasst werden, und können dazu führen, dass die Interaktion und die Umsatzmetriken [Metriken](workspace.md) nicht ausreichend gemeldet werden.
-
-Eventing erfasst nicht alle Transaktionen, die auf der Website des Händlers stattfinden. Eventing soll dem Händler eine allgemeine Vorstellung von Ereignissen auf der Site vermitteln.
-
-Headless-Implementierungen müssen Eventing implementieren, um das [Produkt-Recommendations-Dashboard](../product-recommendations/events.md) zu aktivieren.
+- Anzeigensperren und Datenschutzeinstellungen können verhindern, dass Ereignisse erfasst werden, und können dazu führen, dass die Interaktion und die Umsatzmetriken [Metriken](performance.md) nicht ausreichend gemeldet werden. Außerdem werden einige Ereignisse möglicherweise nicht gesendet, weil Käufer die Seite verlassen oder Netzwerkprobleme haben.
+- Headless-Implementierungen müssen Eventing implementieren, um intelligentes Merchandising zu ermöglichen.
 
 >[!NOTE]
 >

@@ -2,9 +2,9 @@
 title: '[!DNL Product Recommendations] Workspace'
 description: Erfahren Sie, wie Sie die Performance von Produktempfehlungen konfigurieren, verwalten und überwachen.
 exl-id: 85a06cc3-91b9-484a-96a9-fc85718e6d70
-source-git-commit: 25d5321b6f29bab5d8cf329170f3644f35100438
+source-git-commit: 91e19e30d55259d3287404895d1d893c480743b6
 workflow-type: tm+mt
-source-wordcount: '633'
+source-wordcount: '781'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,10 @@ ht-degree: 0%
 # [!DNL Product Recommendations] Workspace
 
 Der Arbeitsbereich &quot;[!DNL Product Recommendations]&quot; zeigt eine Liste der zuvor konfigurierten Empfehlungen mit Metriken an, mit denen Sie den Erfolg jeder Empfehlung verfolgen können. Die Liste kann so konfiguriert werden, dass sie Metriken für den letzten Tag, die letzte Woche oder den letzten Monat berechnet. Sie können die Metriken verwenden, um praktische Einblicke darauf zu erhalten, wie häufig eine Empfehlungseinheit angezeigt oder angeklickt wird, oder um zu analysieren, wie gut Ihre Empfehlungen funktionieren.
+
+>[!INFO]
+>
+>Eine Empfehlungseinheit ist ein Widget, das das empfohlene Produkt _items_ enthält.
 
 ![Recommendations-Arbeitsbereich](assets/workspace.png)
 _Recommendations Workspace_
@@ -31,6 +35,10 @@ Zunächst ist der [Bereich](https://experienceleague.adobe.com/docs/commerce-adm
    - Letzte 30 Tage
 
    Die berechneten Werte in den Metrikspalten ändern sich entsprechend dem aktuellen Datumsbereich.
+
+   >[!NOTE]
+   >
+   >Die Metriken zur Produktempfehlung sind für Luma-Storefronts optimiert. Wenn Ihre Storefront nicht auf Luma basiert, hängt die Art und Weise, wie die Metriken Daten verfolgen, davon ab, wie Sie [die Ereigniskollektion implementieren](events.md).
 
 ## Spalten ein-/ausblenden
 
@@ -95,12 +103,12 @@ Klicken Sie auf der Seite mit den Empfehlungsdetails auf **Erstellen**. Weitere 
 | Status | Der Empfehlungsstatus. Optionen: inaktiv/aktiv/Entwurf |
 | Erstellt | Das Datum der Erstellung der Empfehlung. |
 | Zuletzt bearbeitet | Das Datum, an dem die Empfehlung zuletzt bearbeitet wurde. |
-| Impressionen | Die Häufigkeit, mit der eine Empfehlungseinheit auf einer Seite geladen und gerendert wird. Eine Empfehlungseinheit, die sich unterhalb des Darstellungsbereichs des Browsers befindet, wird auf der Seite gerendert, aber nicht vom Käufer angezeigt. In diesem Fall wird die gerenderte Einheit als Impression gezählt, eine Ansicht wird jedoch nur gezählt, wenn der Benutzer die Einheit in die Ansicht scrollt. |
-| vImpressions | (Sichtbare Impressionen) Die Anzahl der Empfehlungseinheiten, die mindestens eine Ansicht registrieren. |
-| Ansichten | Die Anzahl der Empfehlungseinheiten, die im Viewport des Browsers des Kunden angezeigt werden. Dieses Ereignis kann mehrmals auf einer Seite ausgelöst werden. |
+| Impressionen | Die Häufigkeit, mit der eine Empfehlungseinheit auf einer Seite geladen und gerendert wird. Eine Empfehlungseinheit, die sich unterhalb des Darstellungsbereichs des Browsers befindet, wird auf der Seite gerendert, auch wenn sie nicht vom Käufer angezeigt wird. In diesem Fall wird die gerenderte Einheit als Impression gezählt, eine Ansicht wird jedoch nur gezählt, wenn der Käufer die Einheit in die Ansicht scrollt. |
+| vImpressions | (Sichtbare Impressionen) Die Anzahl der Empfehlungseinheiten, die mindestens eine Ansicht registrieren. Wenn die Empfehlungseinheit beispielsweise zwei Zeilen hat, von denen jede zwei Produkte enthält und die letzten beiden Produkte vom Käufer nicht gesehen werden, die ersten beiden jedoch, zählt die Aktivität weiterhin als Impression. |
+| Ansichten | Die Anzahl der Empfehlungseinheiten, die im Viewport des Browsers des Kunden angezeigt werden. Wenn der Käufer die Seite mehrmals nach oben oder unten scrollt, wird das Ereignis mehrmals ausgelöst, sobald die Einheit sichtbar ist. |
 | Klicks | Die Summe der Klicks eines Käufers auf einen Artikel in der Empfehlungseinheit und der Anzahl der Klicks des Käufers auf die Schaltfläche **Zum Warenkorb hinzufügen** in der Empfehlungseinheit |
 | Umsatz | Der Umsatz, der durch die Empfehlung für den aktuellen Zeitraum bedingt ist. |
 | LT Umsatz | (Lebensdauerumsatz) Der durch eine Empfehlung generierte Lebensdauerumsatz. |
 | Sichtbarkeit | Der Prozentsatz der Empfehlungseinheiten, die sich für die Ansicht registrieren. |
-| Ctr | (Clickthrough-Rate) Der Prozentsatz der Einheitenimpressionen für die Empfehlung, die einen Klick registriert. |
-| vCtr | (Sichtbare Clickthrough-Rate) Der Prozentsatz der sichtbaren Impressionen für die Empfehlungseinheit, die einen Klick registriert. |
+| CTR | (Clickthrough-Rate) Der Prozentsatz der Einheitenimpressionen für die Empfehlung, die einen Klick registriert. CTR zählt alle Impressionen, auch wenn das Gerät nicht in die Ansicht des Käufers gelangt. Wird die Empfehlungseinheit nicht angezeigt, wird sie wahrscheinlich nicht angeklickt. Diese unsichtbaren Impressionen zählen jedoch zum CTR-Wert und reduzieren den gesamten CTR-Prozentsatz. |
+| vCTR | (Sichtbare Clickthrough-Rate) misst Klicks nur auf Grundlage sichtbarer Impressionen (Empfehlungen, die tatsächlich im sichtbaren Teil des Bildschirms des Käufers angezeigt wurden) und liefert so eine genauere Messung der Kundeninteraktion. |
