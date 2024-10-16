@@ -2,9 +2,9 @@
 title: Empfehlungstypen
 description: Erfahren Sie mehr über die Empfehlungen, die Sie auf verschiedenen Seiten Ihrer Site bereitstellen können.
 exl-id: c3b16307-479b-4736-968b-b6ab38233a48
-source-git-commit: 42cb709f4699fcdd56df7ca02466ab416f01cab2
+source-git-commit: 3d931a0fd40ef488bcdf7d94e71bdabe8a998ed0
 workflow-type: tm+mt
-source-wordcount: '1575'
+source-wordcount: '1596'
 ht-degree: 0%
 
 ---
@@ -41,11 +41,15 @@ Diese Empfehlungstypen empfehlen Produkte, die auf dem Verhaltensverlauf des jew
 
 Diese Empfehlungstypen sind sozial unbedenklich, um Kunden zu helfen, herauszufinden, was andere mögen oder produktgesteuert sind, um sie bei der Suche nach anderen ähnlichen Produkten zu unterstützen
 
+>[!NOTE]
+>
+>Die Empfehlungstypen &quot;Dies angesehen, darauf angesehen&quot;, &quot;Dies angesehen, gekauft, das gekauft&quot;und &quot;Dies gekauft, gekauft, darauf&quot;basieren nicht auf einer einfachen Metrik für das Vorkommen, sondern auf einem komplexeren Algorithmus für kollaboratives Filtern des maschinellen Lernens, der nach *interessanten Ähnlichkeiten* sucht, die nicht mit gängigen Produkten verwechselt werden.
+
 | Typ | Beschreibung |
 |---|---|
 | Anzeige, Anzeige, | Empfiehlt Produkte, die Kunden mit dem derzeit angezeigten Produkt überproportional häufiger betrachten.<br/><br/>**Verwendet:**<br/>- Produktdetails<br/>- Warenkorb<br/>- Bestätigung <br/><br/>**Vorgeschlagene Beschriftungen:**<br/>- Kunden, die dieses Produkt angesehen haben, haben auch (PDP) angezeigt. |
 | Anzeige: , gekauft als | Empfiehlt Produkte, die Kunden nach der Anzeige des aktuellen Produkts in der Regel unverhältnismäßig häufiger kaufen. Hilft Kunden, Produkte zu entdecken, die sie sonst möglicherweise nicht bemerkt haben.<br/><br/>**Wo verwendet:**<br/>- Produktdetails<br/>- Warenkorb<br/>- Bestätigung <br/><br/>**Vorgeschlagene Beschriftungen:**<br/>- Kunden, die dieses ultimative Produkt angesehen haben, kauften<br/>- Kunden kauften schließlich<br/> - Was kaufen andere Kunden nach Ansicht dieses Produkts? |
-| kaufte das, kaufte es | Empfiehlt Produkte, die Käufer unverhältnismäßig häufiger mit dem aktuell angezeigten Produkt kaufen. Die meisten werden häufig auf der Einkaufswagen- oder Produktdetailseite verwendet, um die Exposition gegenüber verwandten Querverkaufsprodukten zu erhöhen und so den durchschnittlichen Bestellwert zu erhöhen. Zeigt hochrelevante Produkte an, die Kunden zum Warenkorb hinzufügen können, indem sie zusammenfassen, was andere Käufer mit dem aktuellen Produkt gekauft haben.<br/><br/>**Wo verwendet:**<br/>- Produktdetails<br/>- Warenkorb<br/>- Bestätigung <br/><br/>**Vorgeschlagene Beschriftungen:**<br/>- Besorgen Sie sich alles, was Sie benötigen<br/>- Vergessen Sie diese <br/> nicht - Häufig zusammen gekauft |
+| kaufte das, kaufte es | Empfiehlt Produkte, die Käufer unverhältnismäßig häufiger mit dem aktuell angezeigten Produkt kaufen. Zeigt hochrelevante Produkte an, die Kunden zum Warenkorb hinzufügen können, indem sie zusammenfassen, was andere Käufer mit dem aktuellen Produkt gekauft haben.<br/><br/>**Wo verwendet:**<br/>- Produktdetails<br/>- Warenkorb<br/>- Bestätigung <br/><br/>**Vorgeschlagene Beschriftungen:**<br/>- Besorgen Sie sich alles, was Sie benötigen<br/>- Vergessen Sie diese <br/> nicht - Häufig zusammen gekauft |
 | Mehr dazu | Empfiehlt Produkte auf Grundlage ähnlicher Metadaten wie Name, Beschreibung, Kategoriezuweisung und Attribute. empfiehlt, ähnliche Produkte derselben Kategorie zu bewerten, indem die Attribute für die angezeigten Produkte ausgewertet werden. Wenn beispielsweise ein Käufer Yoga-Matten durchsucht, werden andere Produkte der Gerätegruppe empfohlen. Da dieser Empfehlungstyp keine Geschlechter unterscheidet, wird er nicht für Bekleidung, Mode oder andere geschlechtsspezifische Vertikale empfohlen.<br/><br/>**Verwendet:**<br/>- Produktdetails<br/>- Warenkorb<br/>- Bestätigung <br/><br/>**Vorgeschlagene Beschriftungen:**<br/> - Weitere Produkte wie dieser<br/> - Ähnlich wie diese |
 | [Visuelle Ähnlichkeit](#visualsim) | Empfiehlt ähnlich aussehende Produkte dem angezeigten Produkt. Dieser Empfehlungstyp ist am nützlichsten, wenn Bilder und visuelle Aspekte von Produkten für das Einkaufserlebnis wichtig sind. |
 
