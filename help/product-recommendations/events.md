@@ -3,7 +3,7 @@ title: Daten erfassen
 description: Erfahren Sie, wie Ereignisse Daten für Produktempfehlungen erfassen.
 exl-id: b827d88c-327f-4986-8239-8f1921d8383c
 feature: Services, Recommendations, Eventing
-source-git-commit: 87db52e0c851b56c9a8ceba1bf25c222c6d63cda
+source-git-commit: cd1ce643d7c1ffeec8e9853cfc6ffc5519ce8f7a
 workflow-type: tm+mt
 source-wordcount: '1316'
 ht-degree: 0%
@@ -78,7 +78,7 @@ Bei unzureichender Eingabe-Datenerfassung greifen die folgenden Empfehlungstypen
 Der [Adobe Commerce Storefront Event Collector](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/#quick-start) listet alle Ereignisse auf, die in Ihrer Storefront bereitgestellt wurden. In dieser Liste finden Sie jedoch eine Untergruppe von Ereignissen, die spezifisch für Product Recommendations sind. Diese Ereignisse erfassen Daten, wenn Kunden mit Empfehlungseinheiten im Storefront interagieren, und nutzen die Metriken, die Ihnen bei der Analyse der Performance Ihrer Empfehlungen helfen.
 
 | Ereignis | Beschreibung |
-| --- | --- | --- |
+| --- | --- |
 | `impression-render` | Wird gesendet, wenn die Empfehlungseinheit auf der Seite gerendert wird. Wenn eine Seite zwei Empfehlungseinheiten enthält (gekauft, Ansicht), werden zwei `impression-render` -Ereignisse gesendet. Dieses Ereignis wird verwendet, um die Metrik für Impressionen zu verfolgen. |
 | `rec-add-to-cart-click` | Der Käufer klickt für einen Artikel in der Empfehlungseinheit auf die Schaltfläche **Zum Warenkorb hinzufügen** . |
 | `rec-click` | Der Käufer klickt auf ein Produkt in der Empfehlungseinheit. |
@@ -113,7 +113,7 @@ Die folgenden Ereignisse beziehen sich nicht auf Product Recommendations, sind j
 In dieser Tabelle werden die von den einzelnen Empfehlungstypen verwendeten Ereignisse beschrieben.
 
 | Empfehlungstyp | Veranstaltungen | Seite |
-| --- | --- | --- | ---|
+| --- | --- | --- |
 | Am häufigsten angezeigt | `page-view`<br>`product-view` | Produktdetailseite |
 | Am häufigsten gekauft | `page-view`<br>`complete-checkout` | Warenkorb/Checkout |
 | Am häufigsten zum Warenkorb hinzugefügt | `page-view`<br>`add-to-cart` | Produktdetailseite<br>Seite mit Produktliste<br>Warenkorb<br>Wunschliste |
