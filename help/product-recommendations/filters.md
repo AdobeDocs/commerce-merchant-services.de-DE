@@ -2,9 +2,9 @@
 title: Produkte filtern
 description: Definieren Sie Bedingungen, die Produkte entweder ein- oder ausschließen, um sie als Empfehlungen zu verwenden.
 exl-id: baab28ff-b529-4cbc-adb7-4fa225e87d4a
-source-git-commit: b602385b956b6af131b008428d1182a586303bc7
+source-git-commit: e42b9524fb2e8518576935bc0cd378eca9a579c5
 workflow-type: tm+mt
-source-wordcount: '734'
+source-wordcount: '748'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,9 @@ Die logischen Operatoren `AND` und `OR` werden verwendet, um mehrere Bedingungen
 
 ### Kategorie
 
-Filter, die auf der Kategorie eines Produkts basieren, verwenden direkte Kategoriezuweisungen und deren Unterkategorien. Wenn Sie beispielsweise eine Ausschlussbedingung für die Kategorie `Gear` aktivieren, werden die `Gear` zugewiesenen Produkte sowie alle zugehörigen Unterkategorien wie `Gear/Bags` oder `Gear/Fitness Equipment` ausgeschlossen. Dasselbe gilt für einen Einschlussfilter für eine Kategorie. Wenn Sie beispielsweise eine Aufnahmebedingung für die Kategorie `Gear` aktivieren, werden `Gear` zugewiesene Produkte sowie alle zugehörigen Unterkategorien wie `Gear/Bags` oder `Gear/Fitness Equipment` eingeschlossen.
+Filtert Produkte nach ihrer Kategorie. Der Kategoriefilter verwendet direkte Kategoriezuweisungen und deren Unterkategorien. Wenn Sie beispielsweise eine Ausschlussbedingung für die Kategorie `Gear` aktivieren, werden die `Gear` zugewiesenen Produkte sowie alle zugehörigen Unterkategorien wie `Gear/Bags` oder `Gear/Fitness Equipment` ausgeschlossen. Dasselbe gilt für einen Einschlussfilter für eine Kategorie. Wenn Sie beispielsweise eine Aufnahmebedingung für die Kategorie `Gear` aktivieren, werden `Gear` zugewiesene Produkte sowie alle zugehörigen Unterkategorien wie `Gear/Bags` oder `Gear/Fitness Equipment` eingeschlossen.
+
+Das Kategoriefeld zeigt Kategorien an, die zum aktuellen Store gehören.
 
 >[!NOTE]
 >
