@@ -2,9 +2,9 @@
 title: Empfehlungstypen
 description: Erfahren Sie mehr über die Empfehlungen, die Sie auf verschiedenen Seiten Ihrer Site bereitstellen können.
 exl-id: c3b16307-479b-4736-968b-b6ab38233a48
-source-git-commit: 3d931a0fd40ef488bcdf7d94e71bdabe8a998ed0
+source-git-commit: 60e75d626f142002e327b96062bacd5d2e686df2
 workflow-type: tm+mt
-source-wordcount: '1596'
+source-wordcount: '1713'
 ht-degree: 0%
 
 ---
@@ -28,9 +28,13 @@ Als Best Practice empfiehlt Adobe bei der Verwendung von Empfehlungen die folgen
 
 - Wenn Ihr Store Kleidung verkauft, kann die Empfehlung `More like this` geschlechtsspezifische Produkte vorschlagen, die nicht mit dem Geschlecht des angezeigten Produkts übereinstimmen. Erwägen Sie die Verwendung dieses Empfehlungstyps nur für Nicht-Bekleidungskategorien.
 
+>[!NOTE]
+>
+>Weitere Informationen zu den in diesem Artikel beschriebenen Ereignissen finden Sie unter [Ereignisse](events.md).
+
 ## Personalisierte {#personalized}
 
-Diese Empfehlungstypen empfehlen Produkte, die auf dem Verhaltensverlauf des jeweiligen Käufers auf Ihrer Site basieren.
+Diese Empfehlungstypen empfehlen Produkte, die auf dem Verhaltensverlauf des jeweiligen Käufers auf Ihrer Site basieren. Wenn beispielsweise ein Käufer zuvor nach einer Jacke auf Ihrer Site gesucht oder eine Jacke gekauft hat, nehmen diese Empfehlungen im Wesentlichen an, wo er aufgehört hat, und empfehlen andere Jacken oder ähnliche Produkte.
 
 | Typ | Beschreibung |
 |---|---|
@@ -39,18 +43,18 @@ Diese Empfehlungstypen empfehlen Produkte, die auf dem Verhaltensverlauf des jew
 
 ## Cross-Sells und Up-Sells {#crossup}
 
-Diese Empfehlungstypen sind sozial unbedenklich, um Kunden zu helfen, herauszufinden, was andere mögen oder produktgesteuert sind, um sie bei der Suche nach anderen ähnlichen Produkten zu unterstützen
+Diese Empfehlungstypen sind sozial unbedenklich, um Kunden zu helfen, herauszufinden, was andere mögen oder produktgesteuert sind, um sie bei der Suche nach anderen ähnlichen Produkten zu unterstützen. Die empfohlenen Produkte ergänzen häufig das ausgewählte Produkt.
 
 >[!NOTE]
 >
->Die Empfehlungstypen &quot;Dies angesehen, darauf angesehen&quot;, &quot;Dies angesehen, gekauft, das gekauft&quot;und &quot;Dies gekauft, gekauft, darauf&quot;basieren nicht auf einer einfachen Metrik für das Vorkommen, sondern auf einem komplexeren Algorithmus für kollaboratives Filtern des maschinellen Lernens, der nach *interessanten Ähnlichkeiten* sucht, die nicht mit gängigen Produkten verwechselt werden.
+>Die Empfehlungstypen &quot;Anzeige, Anzeige, Anzeige, Kauf, Kauf usw.&quot;verwenden keine einfache Metrik für das Vorkommen, sondern einen komplexeren kollaborativen Filteralgorithmus, der nach *interessanten Ähnlichkeiten* sucht, die nicht mit gängigen Produkten verwechselt werden. Die Daten, die zur Information dieser Empfehlungstypen verwendet werden, basieren auf dem aggregierten Verhalten des Käufers, das von mehreren Sitzungen auf Ihrer Site abgeleitet wurde. Die Daten basieren nicht auf dem Kaufverhalten, das von einem einzelnen Vorkommen in einer Sitzung auf Ihrer Site abgeleitet wurde. Diese Empfehlungstypen helfen Käufern dabei, die angrenzenden Produkte zu finden, die nicht offensichtlich mit dem aktuell angezeigten Produkt verbunden werden können.
 
 | Typ | Beschreibung |
 |---|---|
 | Anzeige, Anzeige, | Empfiehlt Produkte, die Kunden mit dem derzeit angezeigten Produkt überproportional häufiger betrachten.<br/><br/>**Verwendet:**<br/>- Produktdetails<br/>- Warenkorb<br/>- Bestätigung <br/><br/>**Vorgeschlagene Beschriftungen:**<br/>- Kunden, die dieses Produkt angesehen haben, haben auch (PDP) angezeigt. |
-| Anzeige: , gekauft als | Empfiehlt Produkte, die Kunden nach der Anzeige des aktuellen Produkts in der Regel unverhältnismäßig häufiger kaufen. Hilft Kunden, Produkte zu entdecken, die sie sonst möglicherweise nicht bemerkt haben.<br/><br/>**Wo verwendet:**<br/>- Produktdetails<br/>- Warenkorb<br/>- Bestätigung <br/><br/>**Vorgeschlagene Beschriftungen:**<br/>- Kunden, die dieses ultimative Produkt angesehen haben, kauften<br/>- Kunden kauften schließlich<br/> - Was kaufen andere Kunden nach Ansicht dieses Produkts? |
-| kaufte das, kaufte es | Empfiehlt Produkte, die Käufer unverhältnismäßig häufiger mit dem aktuell angezeigten Produkt kaufen. Zeigt hochrelevante Produkte an, die Kunden zum Warenkorb hinzufügen können, indem sie zusammenfassen, was andere Käufer mit dem aktuellen Produkt gekauft haben.<br/><br/>**Wo verwendet:**<br/>- Produktdetails<br/>- Warenkorb<br/>- Bestätigung <br/><br/>**Vorgeschlagene Beschriftungen:**<br/>- Besorgen Sie sich alles, was Sie benötigen<br/>- Vergessen Sie diese <br/> nicht - Häufig zusammen gekauft |
-| Mehr dazu | Empfiehlt Produkte auf Grundlage ähnlicher Metadaten wie Name, Beschreibung, Kategoriezuweisung und Attribute. empfiehlt, ähnliche Produkte derselben Kategorie zu bewerten, indem die Attribute für die angezeigten Produkte ausgewertet werden. Wenn beispielsweise ein Käufer Yoga-Matten durchsucht, werden andere Produkte der Gerätegruppe empfohlen. Da dieser Empfehlungstyp keine Geschlechter unterscheidet, wird er nicht für Bekleidung, Mode oder andere geschlechtsspezifische Vertikale empfohlen.<br/><br/>**Verwendet:**<br/>- Produktdetails<br/>- Warenkorb<br/>- Bestätigung <br/><br/>**Vorgeschlagene Beschriftungen:**<br/> - Weitere Produkte wie dieser<br/> - Ähnlich wie diese |
+| Anzeige: , gekauft als | Empfiehlt Produkte, die Kunden nach der Anzeige des aktuellen Produkts in der Regel unverhältnismäßig häufiger kaufen. Dieser Typ hilft Käufern, Produkte zu finden, die sie sonst möglicherweise nicht bemerkt haben.<br/><br/>**Wo verwendet:**<br/>- Produktdetails<br/>- Warenkorb<br/>- Bestätigung <br/><br/>**Vorgeschlagene Beschriftungen:**<br/>- Kunden, die dieses ultimative Produkt angesehen haben, kauften<br/>- Kunden kauften schließlich<br/> - Was kaufen andere Kunden nach Ansicht dieses Produkts? |
+| kaufte das, kaufte es | Empfiehlt Produkte, die Käufer unverhältnismäßig häufiger mit dem aktuell angezeigten Produkt kaufen. Dieser Typ zeigt hochrelevante Produkte an, die Kunden zum Warenkorb hinzufügen können, indem sie zusammenfassen, was andere Käufer mit dem aktuellen Produkt gekauft haben.<br/><br/>**Wo verwendet:**<br/>- Produktdetails<br/>- Warenkorb<br/>- Bestätigung <br/><br/>**Vorgeschlagene Beschriftungen:**<br/>- Besorgen Sie sich alles, was Sie benötigen<br/>- Vergessen Sie diese <br/> nicht - Häufig zusammen gekauft |
+| Mehr dazu | Empfiehlt Produkte auf Grundlage ähnlicher Metadaten wie Name, Beschreibung, Kategoriezuweisung und Attribute. Durch die Bewertung der Attribute für die angezeigten Produkte empfiehlt dieser Typ ähnliche Produkte in derselben Kategorie. Wenn beispielsweise ein Käufer Yoga-Matten durchsucht, werden andere Produkte der Gerätegruppe empfohlen. Da dieser Empfehlungstyp keine Geschlechter unterscheidet, wird er nicht für Bekleidung, Mode oder andere geschlechtsspezifische Vertikale empfohlen.<br/><br/>**Verwendet:**<br/>- Produktdetails<br/>- Warenkorb<br/>- Bestätigung <br/><br/>**Vorgeschlagene Beschriftungen:**<br/> - Weitere Produkte wie dieser<br/> - Ähnlich wie diese |
 | [Visuelle Ähnlichkeit](#visualsim) | Empfiehlt ähnlich aussehende Produkte dem angezeigten Produkt. Dieser Empfehlungstyp ist am nützlichsten, wenn Bilder und visuelle Aspekte von Produkten für das Einkaufserlebnis wichtig sind. |
 
 ## Beliebtheit {#popularity}
