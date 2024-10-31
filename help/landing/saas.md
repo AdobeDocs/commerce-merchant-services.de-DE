@@ -4,16 +4,16 @@ description: Erfahren Sie, wie Sie Ihre Adobe Commerce- oder Magento Open Source
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: bfb839c25a378eedd3a20fd01f12f7398c6568b9
+source-git-commit: adf5691a1bdfd35ffa7612d732cc149fd7594e9f
 workflow-type: tm+mt
-source-wordcount: '1213'
+source-wordcount: '1259'
 ht-degree: 0%
 
 ---
 
 # [!DNL Commerce Services Connector]
 
-Einige Adobe Commerce- und Magento Open Source-Funktionen werden von [!DNL Commerce Services] unterstützt und als SaaS (Software as a service) bereitgestellt. Um diese Dienste zu verwenden, müssen Sie Ihre [!DNL Commerce] -Instanz mithilfe der Produktions- und Sandbox-API-Schlüssel verbinden und den Datenraum in der [Konfiguration](#saas-configuration) angeben. Sie müssen die Verbindung nur einmal für jede Commerce-Instanz konfigurieren.
+Einige Adobe Commerce- und Magento Open Source-Funktionen werden von [!DNL Commerce Services] unterstützt und als SaaS (Software as a service) bereitgestellt. Um diese Dienste zu verwenden, müssen Sie Ihre [!DNL Commerce] -Instanz mithilfe der Produktions- und Sandbox-API-Schlüssel verbinden und den Datenraum in der [Konfiguration](#saas-configuration) angeben. Sie müssen die Verbindung nur einmal für jede Instanz konfigurieren.
 
 ## Verfügbare Dienste {#availableservices}
 
@@ -45,6 +45,7 @@ Die Schlüssel können &quot;bedarfsorientiert&quot;an den Systemintegrator oder
 Darüber hinaus sind Lösungsintegratoren auch berechtigt, [!DNL Commerce Services] zu verwenden. Wenn Sie Lösungsintegrator sind, sollte der Unterzeichner des [!DNL Commerce] -Partnervertrags die API-Schlüssel generieren.
 
 >[!NOTE]
+>Die Schlüsselkennungen *Produktion* und *Sandbox* beziehen sich nicht auf Ihre Umgebung. Sie verwenden dieselben API-Schlüssel für jede Ihrer Umgebungen, z. B. lokale Umgebungen, Entwicklungs-, Staging- oder Produktionsumgebungen.
 >
 >Der Lizenzinhaber ist in der Regel der Primäre Ansprechpartner für das Adobe Commerce-Konto und nicht immer derselbe wie der Projekteigentümer des Adobe Commerce-Projekts für Cloud-Infrastruktur.
 
@@ -68,7 +69,7 @@ Darüber hinaus sind Lösungsintegratoren auch berechtigt, [!DNL Commerce Servic
 
 1. Wiederholen Sie die obigen Schritte für jede Umgebung (Produktion und Sandbox).
 
-   Im Abschnitt **API-Schlüssel** werden jetzt Ihre API-Schlüssel (öffentlichen) angezeigt. Sie benötigen sowohl die Produktions- als auch die Sandbox-Schlüssel (öffentlich+privat), wenn Sie [ein SaaS-Projekt auswählen oder erstellen](#createsaasenv).
+   Im Abschnitt **API-Schlüssel** werden jetzt Ihre API-Schlüssel (öffentlichen) angezeigt. Sie benötigen alle vier Schlüssel (sowohl die Produktions- als auch die Sandbox-Schlüssel, Öffentlich+Privat), wenn Sie [ein SaaS-Projekt auswählen oder erstellen](#createsaasenv) in einer der mit der Lizenz verknüpften Umgebungen/Installationen.
 
 ## SaaS-Konfiguration {#saasenv}
 
@@ -78,7 +79,7 @@ Für [!DNL Product Recommendations] enthält der SaaS-Datenraum Katalog- und Ver
 
 >[!WARNING]
 >
-> Verwenden Sie Ihren Produktions-SaaS-Datenraum nur in Ihrer Produktions- [!DNL Commerce]-Installation, um Datenkollisionen zu vermeiden. Andernfalls riskieren Sie, Ihre Produktionsstandortdaten mit Testdaten zu verschmutzen, was zu Bereitstellungsverzögerungen führt. Beispielsweise können Ihre Produktionsproduktdaten fälschlicherweise aus Staging-Daten wie Staging-URLs überschrieben werden.
+> Verwenden Sie Ihren **Produktions-SaaS-Datenraum** nur in Ihrer Produktions-[!DNL Commerce]-Installation, um Datenkollisionen zu vermeiden. Andernfalls riskieren Sie, Ihre Produktionsstandortdaten mit Testdaten zu verschmutzen, was zu Bereitstellungsverzögerungen führt. Beispielsweise können Ihre Produktionsproduktdaten fälschlicherweise aus Staging-Daten wie Staging-URLs überschrieben werden.
 > Sollte dies der Fall sein, senden [eine Support-Anfrage](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview), um eine Datenbereinigung anzufordern.
 
 ### SaaS-Datenspeicherbereitstellung
