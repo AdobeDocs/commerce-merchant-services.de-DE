@@ -3,9 +3,9 @@ title: Geschätztes Datenvolumen und Übertragungszeit
 description: Erfahren Sie, wie Sie das Datenvolumen und die Übertragungszeit schätzen können, die für das [!DNL data export] Tool zur Synchronisierung von Feed-Daten zwischen Adobe Commerce und verbundenen Diensten erforderlich sind.
 role: Admin, Developer
 exl-id: 51ea98fd-cf90-44bd-a639-992bfc7f3eca
-source-git-commit: b80bc2867f44e6123adb104eb148ac5e8f80b63d
+source-git-commit: 7e33b1d5dfc825f8a4d252bcfcbd4f591e337aed
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '559'
 ht-degree: 0%
 
 ---
@@ -14,12 +14,12 @@ ht-degree: 0%
 
 Adobe empfiehlt die Schätzung des Datenvolumens und der Synchronisierungszeit vor Beginn der Daten-Feed-Synchronisation, um eine reibungslose Planung zu gewährleisten und Unterbrechungen bei Site-Vorgängen zu vermeiden. Diese Schätzung ist bei der Planung von anfänglichen Synchronisierungen oder umfangreichen Katalogaktualisierungen, wie z. B. Massenpreisänderungen, wichtig.
 
-Standardmäßig verarbeitet das Datenexport-Tool Daten im Einzelthread-Modus mit einer standardmäßigen Batch-Größe. Mit der Standardkonfiguration gibt es keine Parallelisierung des Feed-Sendeprozesses. Darüber hinaus ermöglicht es die standardmäßige Einschränkungsrichtlinie Adobe Commerce, zwei Anfragen pro Sekunde (RPS) zu akzeptieren, was Folgendes bedeutet:
+Standardmäßig verarbeitet das Datenexport-Tool Daten im Einzelthread-Modus mit einer standardmäßigen Batch-Größe. Mit der Standardkonfiguration gibt es keine Parallelisierung des Feed-Sendeprozesses. Darüber hinaus akzeptiert diese Komponente Anforderungen pro Sekunde (RPS), was Folgendes bedeutet:
 
 - Bis zu 10.000 Produkte pro Minute, bei denen ein Produkt eine SKU mit Attributen in einem bestimmten Store ist
 - Bis zu 50.000 Preise pro Minute
 
-Basierend auf der Standardkonfiguration wirken sich die folgenden Faktoren auf die Datenübertragungszeit während der Synchronisierung aus.
+Die folgenden Faktoren beeinflussen die Datenübertragungszeit während der Synchronisierung.
 
 - Die Thread-Anzahl ist auf 1 gesetzt (standardmäßig)
 - Die Stapelgröße wird für alle Feeds mit Ausnahme des `prices` -Feeds auf _100_ festgelegt, wobei sie auf _500_ festgelegt ist.
@@ -27,9 +27,6 @@ Basierend auf der Standardkonfiguration wirken sich die folgenden Faktoren auf d
 - Alle Produkte werden allen vorhandenen Websites zugewiesen.
 - Für die Preisberechnungsszenarien werden allen Produkten spezielle und gruppierte Preise zugewiesen.
 
->[!NOTE]
->
->Bei Bedarf kann die Grenze für Einschränkungsrichtlinien basierend auf einer Analyse der Leistungsauswirkungen erhöht werden. Wenden Sie sich zur Unterstützung an Ihren technischen Kundenbetreuer (TAM) oder senden Sie ein Support-Ticket.
 
 ## Datenübertragung pro Feed berechnen
 
