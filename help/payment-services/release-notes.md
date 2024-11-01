@@ -3,7 +3,7 @@ title: "[!DNL Payment Services] Versionshinweise"
 description: Informationen zu allen [!DNL Payment Services] Versionen finden Sie in den Versionshinweisen .
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: a5963055a17b5af0c30f3d5f6236d1524e028b22
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '3017'
 ht-degree: 0%
@@ -391,7 +391,7 @@ _9. August 2022_
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
 
-![Neu](../assets/new.svg)<!-- Issue PAY-XX --> Allgemeines Release zur Verfügbarkeit—[!DNL Payment Services] wird jetzt [ von den Versionen  [!DNL Adobe Commerce]  und [!DNL Magento Open Source] 2.4.0 bis 2.4.5](https://devdocs.magento.com/release/availability.html#compatibility) unterstützt.
+![Neu](../assets/new.svg)<!-- Issue PAY-XX --> Allgemeines Release zur Verfügbarkeit—[!DNL Payment Services] wird jetzt [ von den Versionen  [!DNL Adobe Commerce]  und [!DNL Magento Open Source] 2.4.0 bis 2.4.5](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) unterstützt.
 
 ![Problem behoben](../assets/fix.svg)<!-- Issue PAY-x --> Apple Pay ist jetzt mit dem Safari-Browser Version 15.5 auf dem Mobilgerät und Desktop kompatibel.
 
@@ -419,7 +419,7 @@ _31. März 2022_
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
 
-![Neu](../assets/new.svg)<!-- Issue PAY-2127 --> Allgemeines Verfügbarkeitsrelease—[!DNL Payment Services] wird jetzt [ von den Versionen  [!DNL Adobe Commerce] und [!DNL Magento Open Source] 2.4.0 bis 2.4.4](https://devdocs.magento.com/release/availability.html#compatibility) unterstützt.
+![Neu](../assets/new.svg)<!-- Issue PAY-2127 --> Allgemeines Verfügbarkeitsrelease—[!DNL Payment Services] wird jetzt [ von den Versionen  [!DNL Adobe Commerce] und [!DNL Magento Open Source] 2.4.0 bis 2.4.4](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) unterstützt.
 
 ![Neu](../assets/new.svg)<!-- Issue PAY-2682 --> Die [!DNL Payment Services] -Erweiterung für [!DNL Adobe Commerce] und [!DNL Magento Open Source] ist jetzt für kanadische Händler verfügbar. Händler können die Zahlungskonfiguration entweder in [Französisch](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html?lang=fr#carte-de-cr%C3%A9dit-et-devises-accept%C3%A9es) oder in [Englisch](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html#accepted-credit-cards-and-currencies) anzeigen.
 
@@ -463,7 +463,7 @@ _29. November 2021_
 
 ![Neu](../assets/new.svg)<!-- Issue PAY-1443 --> Sie können [einfach das Erscheinungsbild](payments-options.md) der PayPal-Zahlungsschaltflächen und Kreditkartenfelder für die [!DNL Payment Services] -Erweiterung anpassen.
 
-![Bekanntes Problem](../assets/bug.svg)<!-- Issue PAY-2473 --> Die Verwendung von [falschen Composer-Schlüsseln](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html) während der Installation der Erweiterung verhindert, dass der Benutzer [sich mit dem richtigen `MAGEID` authentifiziert.](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html)
+![Bekanntes Problem](../assets/bug.svg)<!-- Issue PAY-2473 --> Die Verwendung von [falschen Composer-Schlüsseln](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html) während der Installation der Erweiterung verhindert, dass der Benutzer [sich mit dem richtigen `MAGEID` authentifiziert.](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)
 
 ![Bekanntes Problem](../assets/bug.svg)<!-- Issue PAY-2474 --> [!DNL Payment Services] reports [ darf nicht sofort synchronisiert werden](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html).
 

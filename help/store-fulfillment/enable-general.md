@@ -4,7 +4,7 @@ description: Konfigurieren Sie allgemeine Einstellungen, um [!DNL Store Fulfillm
 role: Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '2405'
 ht-degree: 0%
@@ -38,7 +38,7 @@ Verwalten Sie Einstellungen für Store Fulfillment-Dienste über das Menü [!DNL
 <tr>
 <td><strong>Feld</strong></td>
 <td><strong>Beschreibung</strong></td>
-<td><strong>Anwendungsbereich</strong></td>
+<td><strong>Umfang</strong></td>
 <td><strong>Erforderlich</strong></td>
 </tr>
 </thead>
@@ -78,7 +78,7 @@ Aktivieren Sie die Lösung &quot;[!DNL Store Fulfillment]&quot;, um die In-Store
 <tr>
 <td><strong>Feld</strong></td>
 <td><strong>Beschreibung</strong></td>
-<td><strong>Anwendungsbereich</strong></td>
+<td><strong>Umfang</strong></td>
 <td><strong>Erforderlich</strong></td>
 </tr>
  </thead>
@@ -98,7 +98,7 @@ Aktivieren Sie die Lösung &quot;[!DNL Store Fulfillment]&quot;, um die In-Store
 <tr>
 <td><strong>Feld</strong></td>
 <td><strong>Beschreibung</strong></td>
-<td><strong>Anwendungsbereich</strong></td>
+<td><strong>Umfang</strong></td>
 <td><strong>Erforderlich</strong></td>
 </tr>
 <tr>
@@ -158,7 +158,7 @@ Da die Protokolldatei der Anwendung schnell wachsen kann, aktivieren Sie die Pro
 <tr>
 <td><strong>Feld</strong></td>
 <td><strong>Beschreibung</strong></td>
-<td><strong>Anwendungsbereich</strong></td>
+<td><strong>Umfang</strong></td>
 <td><strong>Erforderlich</strong></td>
 </tr>
 </thead>
@@ -185,7 +185,7 @@ Details zu Vorgängen zur Bestellsynchronisierung finden Sie im Dashboard Wartes
 <tr>
 <td><strong>Feld</strong></td>
 <td><strong>Beschreibung</strong></td>
-<td><strong>Anwendungsbereich</strong></td>
+<td><strong>Umfang</strong></td>
 <td><strong>Erforderlich</strong></td>
 </tr>
 <tr>
@@ -221,7 +221,7 @@ Details zu Vorgängen zur Bestellsynchronisierung finden Sie im Dashboard Wartes
 <tr>
 <td><strong>Feld</strong></td>
 <td><strong>Beschreibung</strong></td>
-<td><strong>Anwendungsbereich</strong></td>
+<td><strong>Umfang</strong></td>
 <td><strong>Erforderlich</strong></td>
 </tr>
 </thead>
@@ -258,7 +258,7 @@ Konfigurieren Sie die Versandoptionen Store-Erfüllung , die die Verfügbarkeit 
 <tr>
 <td><strong>Feld</strong></td>
 <td><strong>Beschreibung</strong></td>
-<td><strong>Anwendungsbereich</strong></td>
+<td><strong>Umfang</strong></td>
 <td><strong>Erforderlich</strong></td>
 </tr>
 </thead>
@@ -279,7 +279,7 @@ Konfigurieren Sie die Versandoptionen Store-Erfüllung , die die Verfügbarkeit 
 <tr>
 <td><strong>Feld</strong></td>
 <td><strong>Beschreibung</strong></td>
-<td><strong>Anwendungsbereich</strong></td>
+<td><strong>Umfang</strong></td>
 <td><strong>Erforderlich</strong></td>
 </tr>
 </thead>
@@ -305,7 +305,7 @@ Konfigurieren Sie die Einstellungen für das Benutzerkonto der Store Fulfillment
 <tr>
 <td><strong>Feld</strong></td>
 <td><strong>Beschreibung</strong></td>
-<td><strong>Anwendungsbereich</strong></td>
+<td><strong>Umfang</strong></td>
 <td><strong>Erforderlich</strong></td>
 </tr>
  </thead>
@@ -356,7 +356,7 @@ Konfigurieren Sie diese Einstellungen über den Admin, indem Sie <strong>[!UICON
 
 >[!NOTE]
 >
->Weitere Informationen zum Konfigurieren von Bereitstellungsoptionen im Store finden Sie unter [In-Store-Bereitstellung](https://docs.magento.com/user-guide/shipping/shipping-in-store-delivery.html) im _Adobe Commerce-Benutzerhandbuch_.
+>Weitere Informationen zum Konfigurieren von Bereitstellungsoptionen im Store finden Sie unter [In-Store-Bereitstellung](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/delivery/basic-methods/shipping-in-store-delivery) im _Adobe Commerce-Benutzerhandbuch_.
 
 
 ### Konfiguration von Versandmethoden
@@ -368,7 +368,7 @@ Mit der Bereitstellungsmethode im Geschäft kann der Kunde eine Quelle auswähle
 <tr>
 <td><strong>Feld</strong></td>
 <td><strong>Beschreibung</strong></td>
-<td><strong>Anwendungsbereich</strong></td>
+<td><strong>Umfang</strong></td>
 <td><strong>Erforderlich</strong></td>
 </tr>
  </thead>
@@ -395,7 +395,7 @@ Mit der Bereitstellungsmethode im Geschäft kann der Kunde eine Quelle auswähle
 <tr>
 <th><strong>Feld</strong></th>
 <th><strong>Beschreibung</strong></th>
-<th><strong>Anwendungsbereich</strong></th>
+<th><strong>Umfang</strong></th>
 <th><strong>Erforderlich</strong></th>
 </tr>
 </thead>
@@ -475,7 +475,7 @@ Mit der Bereitstellungsmethode im Geschäft kann der Kunde eine Quelle auswähle
 <tr>
 <th><strong>Feld</strong></th>
 <th><strong>Beschreibung</strong></th>
-<th><strong>Anwendungsbereich</strong></th>
+<th><strong>Umfang</strong></th>
 <th><strong>Erforderlich</strong></th>
 </tr>
 </thead>

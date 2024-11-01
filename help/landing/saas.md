@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie Ihre Adobe Commerce- oder Magento Open Source
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: adf5691a1bdfd35ffa7612d732cc149fd7594e9f
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '1259'
 ht-degree: 0%
@@ -75,7 +75,7 @@ Darüber hinaus sind Lösungsintegratoren auch berechtigt, [!DNL Commerce Servic
 
 [!DNL Commerce] -Instanzen müssen mit einem SaaS-Projekt und einem SaaS-Datenraum konfiguriert werden, damit [!DNL Commerce Services] Daten an den richtigen Speicherort senden kann. Ein SaaS-Projekt gruppiert alle SaaS-Datenräume. Die SaaS-Datenräume werden verwendet, um Daten zu erfassen und zu speichern, die das Funktionieren von [!DNL Commerce Services] ermöglichen. Einige dieser Daten können aus der [!DNL Commerce] -Instanz exportiert werden, andere aus dem Kaufverhalten in der Storefront. Diese Daten werden dann beibehalten, um den Cloud-Speicher zu sichern.
 
-Für [!DNL Product Recommendations] enthält der SaaS-Datenraum Katalog- und Verhaltensdaten. Sie können eine [!DNL Commerce] -Instanz auf einen SaaS-Datenraum verweisen, indem Sie [sie in der [!DNL Commerce] -Konfiguration auswählen.](https://docs.magento.com/user-guide/configuration/services/saas.html)
+Für [!DNL Product Recommendations] enthält der SaaS-Datenraum Katalog- und Verhaltensdaten. Sie können eine [!DNL Commerce] -Instanz auf einen SaaS-Datenraum verweisen, indem Sie [sie in der [!DNL Commerce] -Konfiguration auswählen.](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas)
 
 >[!WARNING]
 >

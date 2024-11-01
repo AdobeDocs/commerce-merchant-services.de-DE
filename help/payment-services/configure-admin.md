@@ -5,7 +5,7 @@ role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
 feature: Payments, Checkout, Configuration
-source-git-commit: 09944ccad182e7f83c722ca6619a414416015ab4
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '1703'
 ht-degree: 0%
@@ -43,7 +43,7 @@ Sie können [!DNL Payment Services] für Ihren Store und Ihre _[!UICONTROL Merch
 
 ### Konfigurationsoptionen
 
-| Feld | Anwendungsbereich | Beschreibung |
+| Feld | Umfang | Beschreibung |
 |---|---|---|
 | [!UICONTROL Enable] | website | Aktivieren oder deaktivieren Sie [!DNL Payment Services] für Ihre Website. Optionen: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Method] | Store-Ansicht | Legen Sie die -Methode oder -Umgebung für Ihren Store fest. Optionen: [!UICONTROL Sandbox] / [!UICONTROL Production] |
@@ -74,7 +74,7 @@ Weitere Informationen finden Sie unter [Zahlungsoptionen](payments-options.md#pa
 
 ### Konfigurationsoptionen
 
-| Feld | Anwendungsbereich | Beschreibung |
+| Feld | Umfang | Beschreibung |
 |---|---|---|
 | [!UICONTROL Title] | Store-Ansicht | Fügen Sie den Text hinzu, der beim Checkout als Titel für diese Zahlungsoption in der Ansicht Zahlungsmethode angezeigt werden soll. Optionen: [!UICONTROL text field] |
 | [!UICONTROL Payment Action] | website | Die [Zahlungsaktion](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html) für die angegebene Zahlungsmethode. Optionen: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
@@ -108,7 +108,7 @@ Weitere Informationen finden Sie unter [Zahlungsoptionen](payments-options.md#ap
 
 ### Konfigurationsoptionen
 
-| Feld | Anwendungsbereich | Beschreibung |
+| Feld | Umfang | Beschreibung |
 |---|---|---|
 | [!UICONTROL Title] | Store-Ansicht | Fügen Sie den Text hinzu, der beim Checkout als Titel für diese Zahlungsoption in der Ansicht Zahlungsmethode angezeigt werden soll. Optionen: [!UICONTROL text field] |
 | [!UICONTROL Payment Action] | website | Die [Zahlungsaktion](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html) für die angegebene Zahlungsmethode. Optionen: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
@@ -144,7 +144,7 @@ Weitere Informationen finden Sie unter [Zahlungsoptionen](payments-options.md#go
 
 ### Konfigurationsoptionen
 
-| Feld | Anwendungsbereich | Beschreibung |
+| Feld | Umfang | Beschreibung |
 |---|---|---|
 | [!UICONTROL Title] | Store-Ansicht | Gibt die Textbeschriftung an, die während des Checkouts in der Ansicht &quot;Zahlungsmethode&quot;für diese Zahlungsoption angezeigt wird. Optionen: `[!UICONTROL text field]` |
 | [!UICONTROL Payment Action] | website | Die [Zahlungsaktion](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html) für die angegebene Zahlungsmethode. Optionen: `[!UICONTROL Authorize]` / `[!UICONTROL Authorize and Capture]` |
@@ -191,10 +191,10 @@ Sie können die Zahlungsoptionen der PayPal-Zahlungsschaltflächen innerhalb des
 
 ### Konfigurationsoptionen
 
-| Feld | Anwendungsbereich | Beschreibung |
+| Feld | Umfang | Beschreibung |
 |---|---|---|
 | [!UICONTROL Title] | Store-Ansicht | Fügen Sie den Text hinzu, der beim Checkout als Titel für diese Zahlungsoption angezeigt werden soll. Optionen: Textfeld |
-| [!UICONTROL Payment Action] | website | Die [Zahlungsaktion](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} für die angegebene Zahlungsmethode. Optionen: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | website | Die [Zahlungsaktion](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods#payment-actions){target="_blank"} für die angegebene Zahlungsmethode. Optionen: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Display Pay Later Message] | website | Aktivieren oder deaktivieren Sie die &quot;Später bezahlen&quot;-Benachrichtigung im Warenkorb, auf der Produktseite, im Mini-Warenkorb und während des Checkout-Verfahrens. Optionen: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show buttons on checkout page] | Store-Ansicht | Aktivieren oder deaktivieren Sie [!DNL PayPal payment buttons] auf der Checkout-Seite. Optionen: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show buttons on product detail page] | Store-Ansicht | Aktivieren oder deaktivieren Sie [!DNL PayPal payment buttons] auf der Produktdetailseite. Optionen: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
@@ -226,7 +226,7 @@ Sie können auch den Stil der Zahlungsschaltfläche [in Einstellungen](settings.
 
 ### Konfigurationsoptionen
 
-| Feld | Anwendungsbereich | Beschreibung |
+| Feld | Umfang | Beschreibung |
 |--- |--- |--- |
 | [!UICONTROL Layout] | Store-Ansicht | Definieren Sie den Stil des Layouts für die PayPal-Zahlungsschaltflächen. Optionen: `[!UICONTROL Vertical]` / `[!UICONTROL Horizontal]` |
 | [!UICONTROL Color] | Store-Ansicht | Definieren Sie die Farbe der PayPal-Zahlungsschaltflächen. Optionen: [!UICONTROL Blue] / `[!UICONTROL Gold]` / `[!UICONTROL Silver]` / `[!UICONTROL White]` / `[!UICONTROL Black]` |

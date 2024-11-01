@@ -4,7 +4,7 @@ description: Verwenden Sie den Transaktionsbericht, um Einblicke in die Rate der
 role: User
 level: Intermediate
 exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
-source-git-commit: 153e6a82134a34737529f4e1a135eb7803b20e05
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '1272'
 ht-degree: 0%
@@ -132,7 +132,7 @@ Transaktionsberichte enthalten die folgenden Informationen.
 
 | Spalte | Beschreibung |
 | ------------ | -------------------- |
-| [!UICONTROL Order ID] | Commerce-Bestell-ID (enthält nur Werte für erfolgreiche Transaktionen und ist bei abgelehnten Transaktionen leer)<br> <br>Um verwandte [Bestellinformationen](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"} anzuzeigen, klicken Sie auf die ID. |
+| [!UICONTROL Order ID] | Commerce-Bestell-ID (enthält nur Werte für erfolgreiche Transaktionen und ist bei abgelehnten Transaktionen leer)<br> <br>Um verwandte [Bestellinformationen](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"} anzuzeigen, klicken Sie auf die ID. |
 | [!UICONTROL PayPal Transaction ID] | Vom Zahlungsdienstleister bereitgestellte Transaktions-ID, die nur Werte für erfolgreiche Transaktionen enthält und einen Bindestrich für zurückgewiesene Transaktionen enthält. Sie können auf diese ID klicken, um auf die Detailseite der PayPal-Transaktion zuzugreifen. |
 | [!UICONTROL Customer ID] | Commerce-Kunden-ID einer Bestellung<br> Weitere Informationen finden Sie unter Thema [Kundeninformationen](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/account-create){target="_blank"} .<br> |
 | [!UICONTROL Transaction Date] | Transaktionsdatumszeitstempel |

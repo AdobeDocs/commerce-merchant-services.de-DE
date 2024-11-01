@@ -5,7 +5,7 @@ role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
 feature: Payments, Checkout, Configuration
-source-git-commit: 09944ccad182e7f83c722ca6619a414416015ab4
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '2405'
 ht-degree: 0%
@@ -77,7 +77,7 @@ Sie können Ihrer Website(n) oder einzelnen Speicheransichtskonfigurationen eine
 
 ### Konfigurationsoptionen
 
-| Feld | Anwendungsbereich | Beschreibung |
+| Feld | Umfang | Beschreibung |
 |---|---|---|
 | [!UICONTROL Enable] | website | Aktivieren oder deaktivieren Sie [!DNL Payment Services] für Ihre Website. Optionen: [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Payment mode] | Store-Ansicht | Legen Sie die -Methode oder -Umgebung für Ihren Store fest. Optionen: [!UICONTROL Sandbox] / [!UICONTROL Production] |
@@ -117,10 +117,10 @@ Weitere Informationen finden Sie unter [Zahlungsoptionen](payments-options.md#cr
 
 #### Konfigurationsoptionen
 
-| Feld | Anwendungsbereich | Beschreibung |
+| Feld | Umfang | Beschreibung |
 |---|---|---|
 | [!UICONTROL Title] | Store-Ansicht | Fügen Sie den Text für die Anzeige als Titel für diese Zahlungsoption in der Ansicht Zahlungsmethode während des Checkouts hinzu. Optionen: [!UICONTROL text field] |
-| [!UICONTROL Payment Action] | website | Die [Zahlungsaktion](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} für die angegebene Zahlungsmethode. Optionen: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | website | Die [Zahlungsaktion](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods#payment-actions){target="_blank"} für die angegebene Zahlungsmethode. Optionen: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Sort order] | Store-Ansicht | Die Sortierreihenfolge für die angegebene Zahlungsmethode auf der Kassenseite. `Numeric Only` Wert |
 | [!UICONTROL 3DS Secure authentication] | website | Aktivieren oder deaktivieren Sie die sichere [3DS-Authentifizierung](security.md#3ds). Optionen: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Show on checkout page] | website | Aktivieren oder deaktivieren Sie Kreditkartenfelder, die auf der Checkout-Seite angezeigt werden. Optionen: [!UICONTROL Off] / [!UICONTROL On] |
@@ -153,10 +153,10 @@ Sie können die Zahlungsoption für die Schaltfläche [!UICONTROL Apple Pay] akt
 
 #### Konfigurationsoptionen
 
-| Feld | Anwendungsbereich | Beschreibung |
+| Feld | Umfang | Beschreibung |
 |---|---|---|
 | [!UICONTROL Checkout title] | Store-Ansicht | Fügen Sie den Text für die Anzeige als Titel für diese Zahlungsoption in der Ansicht Zahlungsmethode während des Checkouts hinzu. Optionen: [!UICONTROL text field] |
-| [!UICONTROL Payment Action] | website | Die [Zahlungsaktion](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions) für die angegebene Zahlungsmethode. Optionen: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | website | Die [Zahlungsaktion](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods#payment-actions) für die angegebene Zahlungsmethode. Optionen: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Show on checkout page] | website | Aktivieren oder deaktivieren Sie die Apple-Zahlungsschaltfläche , um sie auf der Checkout-Seite anzuzeigen. Optionen: [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Show on checkout page] | website | Aktivieren oder deaktivieren Sie die Apple-Zahlungsschaltfläche , um sie auf der Produktdetailseite anzuzeigen. Optionen: [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Show on mini cart preview] | website | Aktivieren oder deaktivieren Sie die Apple-Schaltfläche &quot;Bezahlen&quot;, um sie in der Vorschau des kleinen Warenkorbs anzuzeigen. Optionen: [!UICONTROL Off] / [!UICONTROL On] |
@@ -200,10 +200,10 @@ Sie können die Zahlungsoptionen der PayPal-Zahlungsschaltflächen aktivieren un
 
 #### Konfigurationsoptionen
 
-| Feld | Anwendungsbereich | Beschreibung |
+| Feld | Umfang | Beschreibung |
 |---|---|---|
 | [!UICONTROL Title] | Store-Ansicht | Fügen Sie den Text hinzu, der beim Checkout als Titel für diese Zahlungsoption angezeigt werden soll. Optionen: Textfeld |
-| [!UICONTROL Payment Action] | website | Die [Zahlungsaktion](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} für die angegebene Zahlungsmethode. Optionen: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | website | Die [Zahlungsaktion](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods#payment-actions){target="_blank"} für die angegebene Zahlungsmethode. Optionen: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Sort order] | Store-Ansicht | Die Sortierreihenfolge für die angegebene Zahlungsmethode auf der Kassenseite. `Numeric Only` Wert |
 | [!UICONTROL Show PayPal buttons on checkout page] | Store-Ansicht | Aktivieren oder deaktivieren Sie [!DNL PayPal payment buttons] auf der Checkout-Seite. Optionen: [!UICONTROL  Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal buttons on product detail page] | Store-Ansicht | Aktivieren oder deaktivieren Sie [!DNL PayPal payment buttons] auf der Produktdetailseite. Optionen: [!UICONTROL  Yes] / [!UICONTROL No] |
@@ -246,7 +246,7 @@ Sie können den Stil der Zahlungsschaltfläche [in der alten Konfiguration in Ad
 
 #### Konfigurationsoptionen
 
-| Feld | Anwendungsbereich | Beschreibung |
+| Feld | Umfang | Beschreibung |
 |--- |--- |--- |
 | [!UICONTROL Layout] | Store-Ansicht | Definieren Sie den Stil des Layouts für Zahlungsschaltflächen. Optionen: [!UICONTROL Vertical] / [!UICONTROL Horizontal] |
 | [!UICONTROL Tagline] | Store-Ansicht | Aktivieren/deaktivieren Sie die Tagline. Optionen: [!UICONTROL Off] / [!UICONTROL On] |
@@ -278,7 +278,7 @@ Wenn Sie die Konfiguration in _Einstellungen_ ändern (z. B. durch Umschalten de
 
 Wenn ein beliebiger Cache-Typ in der Tabelle &quot;Cache Management&quot;den Status &quot;`INVALIDATED`&quot;aufweist, zeigt Ihr Store möglicherweise nicht die neueste Konfiguration für dieses Element an. Leeren Sie den Cache, um Ihren Store zu aktualisieren und die neueste Konfiguration anzuzeigen.
 
-Um sicherzustellen, dass Ihr Store die richtige Konfiguration anzeigt, leeren Sie den Cache regelmäßig [.](https://docs.magento.com/user-guide/system/cache-management.html)
+Um sicherzustellen, dass Ihr Store die richtige Konfiguration anzeigt, leeren Sie den Cache regelmäßig [.](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management)
 
 ## Kartengewölbe
 
@@ -300,7 +300,7 @@ Weitere Informationen finden Sie unter [3DS in Sicherheit](security.md#3ds) .
 
 ## Verwenden mehrerer PayPal-Konten
 
-In [!UICONTROL Payment Services] können Sie mehrere PayPal-Konten innerhalb von **ein** Handelskonto auf der Website-Ebene verwenden. Wenn Sie beispielsweise Ihre Geschäfte in mehreren Ländern betreiben (die unterschiedliche [Währungen](https://docs.magento.com/user-guide/stores/currency.html) verwenden) oder Adobe Commerce für einige Teile Ihres Unternehmens, aber nicht für _alle_ verwenden möchten, können Sie Ihr Händlerkonto so einrichten, dass mehrere PayPal-Konten verwendet werden.
+In [!UICONTROL Payment Services] können Sie mehrere PayPal-Konten innerhalb von **ein** Handelskonto auf der Website-Ebene verwenden. Wenn Sie beispielsweise Ihre Geschäfte in mehreren Ländern betreiben (die unterschiedliche [Währungen](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency) verwenden) oder Adobe Commerce für einige Teile Ihres Unternehmens, aber nicht für _alle_ verwenden möchten, können Sie Ihr Händlerkonto so einrichten, dass mehrere PayPal-Konten verwendet werden.
 
 Weitere Informationen zur Hierarchie von Websites, Stores und Store-Ansichten finden Sie unter [Site-, Store- und View-Umfang](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) .
 

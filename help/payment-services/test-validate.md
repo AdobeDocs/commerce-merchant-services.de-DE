@@ -3,7 +3,7 @@ title: Testen und Validieren
 description: Tests und Validierungen helfen sicherzustellen, dass die [!DNL Payment Services] Funktionen erwartungsgemäß funktionieren und die besten Zahlungsoptionen für Ihre Kunden bieten
 exl-id: 95b4615e-73b0-41e8-83e2-e65a0b22f10f
 feature: Payments, Checkout
-source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Bevor Sie Ihren Kunden [!DNL Payment Services] für [!DNL Adobe Commerce] und [!
 Das Testen von [!DNL Payment Services] in einer Sandbox-Umgebung ist ein wichtiger Validierungsschritt, auch wenn es sich um eine simulierte Umgebung handelt, die nur mit der PayPal-Sandbox verbunden ist, nicht mit echten Banken und Händlern.
 
 1. Führen Sie einen erfolgreichen Checkout aus Ihrem Geschäft durch, entweder mit [Kreditkartenfeldern](payments-options.md#credit-card-fields) oder mit einem der [PayPal-Zahlungsschaltflächen](payments-options.md#paypal-smart-buttons). Weitere Informationen zur Verwendung gefälschter Kreditkarten zum Testen finden Sie unter [Testen von Anmeldeinformationen](#testing-credentials) .
-1. Erfassen (wenn Ihre Zahlungsaktion auf `Authorize and Capture`](onboard.md#set-payment-services-as-payment-method) eingestellt ist), [Rückerstattung](refunds.md) oder [void](voids.md) die gerade ausgefüllte Bestellung. [ Sie können auch einfach [eine Rechnung ](https://docs.magento.com/user-guide/sales/invoice-create.html){target="_blank"} für eine Bestellung erstellen, wenn Ihre Zahlungsaktion auf `Authorize` anstelle von `Authorize and Capture` eingestellt ist.
+1. Erfassen (wenn Ihre Zahlungsaktion auf `Authorize and Capture`](onboard.md#set-payment-services-as-payment-method) eingestellt ist), [Rückerstattung](refunds.md) oder [void](voids.md) die gerade ausgefüllte Bestellung. [ Sie können auch einfach [eine Rechnung ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice){target="_blank"} für eine Bestellung erstellen, wenn Ihre Zahlungsaktion auf `Authorize` anstelle von `Authorize and Capture` eingestellt ist.
 1. Sehen Sie sich die Transaktion und andere Informationen innerhalb von 24-48 Stunden im Bericht [Auszahlungen](payouts.md) an.
 1. Weitere Informationen finden Sie im Bericht [Bestellstatus-Bericht](order-payment-status.md).
 

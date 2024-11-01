@@ -4,7 +4,7 @@ description: Überprüfen Sie die Sicherheits- und Compliance-Anforderungen für
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
 feature: Payments, Checkout, Compliance
 redirect_from: https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security.html
-source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '525'
 ht-degree: 0%
@@ -19,13 +19,13 @@ Die Sicherheit ist in [!DNL Payment Services] von größter Bedeutung und es wer
 
 [!DNL Adobe Commerce] und [!DNL Magento Open Source] unterstützen mehrere Sicherheitsfunktionen.
 
-Siehe [Sicherheit](https://docs.magento.com/user-guide/stores/security.html){target="_blank"} im Benutzerhandbuch zu zentralen Sicherheitsvorkehrungen, um mehr über die Verwaltung von Admin-Sitzungen und -Anmeldedaten zu erfahren, CAPTCHA zu implementieren und Website-Einschränkungen zu verwalten.
+Siehe [Sicherheit](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security){target="_blank"} im Benutzerhandbuch zu zentralen Sicherheitsvorkehrungen, um mehr über die Verwaltung von Admin-Sitzungen und -Anmeldedaten zu erfahren, CAPTCHA zu implementieren und Website-Einschränkungen zu verwalten.
 
 ## PCI-Compliance
 
 Die Payment Card Industry (PCI) hat eine Reihe von Anforderungen für Unternehmen festgelegt, die Zahlungen per Kreditkarte über das Internet akzeptieren. Neben einer sicheren Umgebung sind Händler, die mit Kreditkarteninformationen von Kunden umgehen, für die Einhaltung einiger Standardrichtlinien verantwortlich.
 
-Weitere Informationen finden Sie unter [PCI Compliance Guidelines](https://docs.magento.com/user-guide/stores/compliance-pci.html){target="_blank"} .
+Weitere Informationen finden Sie unter [PCI Compliance Guidelines](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/payments/compliance-pci){target="_blank"} .
 
 Händler können einen [Fragebogen zur Selbstbewertung (SAQ)](https://www.pcisecuritystandards.org/pci_security/completing_self_assessment){target="_blank"} ausfüllen, der ein Tool zur Selbstvalidierung zur Bewertung der Sicherheit von Karteninhaberdaten darstellt.
 

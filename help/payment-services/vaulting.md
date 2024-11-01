@@ -3,7 +3,7 @@ title: Kreditkartenausfall
 description: Käufer können ihre Kreditkartendetails für zukünftige Käufe einbehalten (speichern).
 exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
 feature: Payments, Checkout
-source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '292'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Käufer verwenden das gespeicherte Token, um einen zukünftigen Checkout mit ihr
 
 ![Verwenden Sie gespeicherte Anmeldeinformationen für zukünftigen Kauf](assets/use-stored-card.png){width="400" zoomable="yes"}
 
-Außerdem können sie ihre Kreditkarten einfach aus den [gespeicherten Zahlungsmethoden](https://docs.magento.com/user-guide/customers/account-dashboard-stored-payment-methods.html) in ihrem Konto löschen.
+Außerdem können sie ihre Kreditkarten einfach aus den [gespeicherten Zahlungsmethoden](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/stored-payment-methods) in ihrem Konto löschen.
 
 ![In meinem Konto gespeicherte Zahlungsmethoden](assets/stored-payment-methods.png){width="400" zoomable="yes"}
 

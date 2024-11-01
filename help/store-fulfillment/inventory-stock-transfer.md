@@ -5,7 +5,7 @@ role: Admin
 level: Intermediate
 feature: Shipping/Delivery, Inventory, Configuration
 exl-id: 669d4dce-4cac-4bde-acc5-26c70a51f7f1
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 0%
@@ -23,27 +23,27 @@ Die [!DNL Store Fulfillment] -Lösung verwendet den nativen Adobe Commerce Inven
 
 Mit diesen Konfigurationsänderungen können Sie drei Dinge erreichen:
 
-1. [Übertragen des Bestands an die Quelle](https://docs.magento.com/user-guide/catalog/inventory-bulk-transfer-inventory.html) , um den Bestand aus dem Standardbestand/der Standardquelle in den neuen Bestand/die neue Quelle zu verschieben.
+1. [Übertragen des Bestands an die Quelle](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/quantities/inventory-transfer) , um den Bestand aus dem Standardbestand/der Standardquelle in den neuen Bestand/die neue Quelle zu verschieben.
 
-1. [Zuweisen von Massenquellen](https://docs.magento.com/user-guide/catalog/inventory-bulk-assign-sources.html) zum Hinzufügen der neuen Quellen für alle Produkte.
+1. [Zuweisen von Massenquellen](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/quantities/bulk-assignment) zum Hinzufügen der neuen Quellen für alle Produkte.
 
-1. [Umfassende Massenaktualisierungen für Produktattribute](https://docs.magento.com/user-guide/stores/bulk-product-attribute-update.html) , um die Attribute `Allow Store Pickup` und `Allow Home Delivery` zu vorhandenen Produkten hinzuzufügen. Wenn die Lösung installiert ist, verfügen die Attribute über die optimalen Werte für *Standard*. Diese Attribute werden jedoch erst auf vorhandene Produkte angewendet, wenn Sie den Bulk-Prozess &quot;updaContes&quot;abgeschlossen haben.
+1. [Umfassende Massenaktualisierungen für Produktattribute](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/bulk-product-attribute-update) , um die Attribute `Allow Store Pickup` und `Allow Home Delivery` zu vorhandenen Produkten hinzuzufügen. Wenn die Lösung installiert ist, verfügen die Attribute über die optimalen Werte für *Standard*. Diese Attribute werden jedoch erst auf vorhandene Produkte angewendet, wenn Sie den Bulk-Prozess &quot;updaContes&quot;abgeschlossen haben.
 
-Der Bestand wird von der ausgewählten Quelle abgezogen (Einzelhandelsspeicherort oder E-Commerce-Warehouse). Als E-Commerce-Lager verwendete Quellen müssen demselben Lager wie der Speicherort für die Ladung zugeordnet und vor den Einzelhandelsstandorten priorisiert werden. Weitere Informationen finden Sie unter [Priorisieren von Quellen für einen Stock](https://docs.magento.com/user-guide/catalog/inventory-stock-priority.html).
+Der Bestand wird von der ausgewählten Quelle abgezogen (Einzelhandelsspeicherort oder E-Commerce-Warehouse). Als E-Commerce-Lager verwendete Quellen müssen demselben Lager wie der Speicherort für die Ladung zugeordnet und vor den Einzelhandelsstandorten priorisiert werden. Weitere Informationen finden Sie unter [Priorisieren von Quellen für einen Stock](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-prioritize-sources).
 
 Weitere Informationen zum Verwalten von Beständen, Lagern und Quellen finden Sie in der Adobe Commerce-Benutzerdokumentation:
 
-- [Verwalten des Bestands](https://docs.magento.com/user-guide/catalog/inventory-management.html)
+- [Verwalten des Bestands](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction)
 
-- [Verwalten der Lagerbestandsmengen](https://docs.magento.com/user-guide/catalog/inventory-manage-inventory-quantities.html)
+- [Verwalten der Lagerbestandsmengen](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/quantities/quantities-manage)
 
-- [Verwalten von Lagern](https://docs.magento.com/user-guide/catalog/inventory-stock.html)
+- [Verwalten von Lagern](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-manage)
 
-- [Verwalten von Quellen](https://docs.magento.com/user-guide/catalog/inventory-sources.html)
+- [Verwalten von Quellen](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/sources/sources-manage)
 
-- [Priorisieren von Quellen für einen Bestand](https://docs.magento.com/user-guide/catalog/inventory-stock-priority.html)
+- [Priorisieren von Quellen für einen Bestand](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-prioritize-sources)
 
-- [Massenaktualisierungen für Produktattribute](https://docs.magento.com/user-guide/stores/bulk-product-attribute-update.html)
+- [Massenaktualisierungen für Produktattribute](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/bulk-product-attribute-update)
 
 
 >[!IMPORTANT]

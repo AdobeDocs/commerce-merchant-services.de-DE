@@ -3,7 +3,7 @@ title: Instanz verbinden
 description: Verbinden Sie Ihre Commerce-Instanz mit einem API-Schlüssel und einem privaten Schlüssel und geben Sie den Datenraum in der Konfiguration an.
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
 feature: Payments, Checkout, Configuration, Saas
-source-git-commit: 5d3a89b2ef06b2c67ec715ce4f31f22249b336e0
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 0%
@@ -28,11 +28,11 @@ ht-degree: 0%
 
 ## API-Anmeldeinformationen abrufen
 
-Um einen Commerce SaaS-Dienst zu nutzen, müssen Sie die API-Schlüssel Ihrer Instanz (öffentlicher Commerce-API-Schlüssel und privater Schlüssel) sowohl für die Sandbox als auch für die Produktion verwenden, die in Ihrem [Konto-Dashboard](https://account.magento.com/customer/account/login) erstellt und verwaltet werden. [Das Schlüsselpaar](https://docs.magento.com/user-guide/configuration/services/saas.html) kann für ein Commerce-Konto erstellt werden - eines für Sandbox und eines für Produktion - es kann jedoch immer nur ein Paar aktiv verwendet werden.
+Um einen Commerce SaaS-Dienst zu nutzen, müssen Sie die API-Schlüssel Ihrer Instanz (öffentlicher Commerce-API-Schlüssel und privater Schlüssel) sowohl für die Sandbox als auch für die Produktion verwenden, die in Ihrem [Konto-Dashboard](https://account.magento.com/customer/account/login) erstellt und verwaltet werden. [Das Schlüsselpaar](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas) kann für ein Commerce-Konto erstellt werden - eines für Sandbox und eines für Produktion - es kann jedoch immer nur ein Paar aktiv verwendet werden.
 
 >[!NOTE]
 >
->Benötigen Sie Hilfe beim Zugriff auf Ihr [!UICONTROL My Account] Dashboard? Siehe [Erstellen eines Commerce-Kontos](https://docs.magento.com/user-guide/magento/magento-account-create.html).
+>Benötigen Sie Hilfe beim Zugriff auf Ihr [!UICONTROL My Account] Dashboard? Siehe [Erstellen eines Commerce-Kontos](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create).
 
 Nach der Erstellung ist in Ihrem Dashboard für Mein Konto immer ein öffentlicher API-Schlüssel verfügbar. Sie kann nach Bedarf kopiert oder gelöscht werden. Der private API-Schlüssel wird angezeigt, wenn Sie einen öffentlichen API-Schlüssel für Sandbox oder Produktion erstellen. Er ist nur zum Kopieren oder Speichern über das sich daraus ergebende Dialogfeld verfügbar und kann später nicht mehr aufgerufen werden.
 
@@ -40,7 +40,7 @@ Ein bestimmtes API-Schlüsselpaar gilt für alle Commerce-Dienste in einer Umgeb
 
 Wenn Ihr API-Schlüssel verloren geht, muss ein neues API-Schlüsselpaar [generiert](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#generate-an-api-key-and-private-key) und [angewendet](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#configure-saas-project) werden, um die Commerce Services Connector-Konfiguration in der Admin-Konsole zu konfigurieren. Wenn die falschen Schlüssel konfiguriert sind oder keine in der Konfiguration vorhanden sind, wird in den Zahlungsdiensten ein Dialogfeld mit einem Fehler bei der Kontoüberprüfung angezeigt, in dem Sie darüber informiert werden, dass das Konto nicht verifiziert wurde.
 
-Eine [ Liste der verfügbaren Commerce-Dienste anzeigen, die die API verwenden.](https://docs.magento.com/user-guide/system/saas.html#available-services)
+Eine [ Liste der verfügbaren Commerce-Dienste anzeigen, die die API verwenden.](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas#availableservices)
 
 Informationen zum Generieren eines API-Schlüssels für Sandbox- oder Produktionsumgebungen finden Sie unter [Anmeldedaten](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html#apikey).
 

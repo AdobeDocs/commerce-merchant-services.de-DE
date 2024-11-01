@@ -5,7 +5,7 @@ role: Admin
 level: Intermediate
 feature: Shipping/Delivery, Inventory, Configuration
 exl-id: 3ac217f7-e823-4578-8416-5ecceb76aa87
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Verwaltung von Produktbeständen
 
-Als Händler können Sie die Lager- und Quelloptionen von Adobe Commerce [Inventory management](https://docs.magento.com/user-guide/catalog/inventory-management.html) verwenden. Sie können auch die Lösung Store Fulfillment verwenden, um andere Lagerverfügbarkeitsoptionen im Zusammenhang mit Ihren Händlerstapeln zu steuern.
+Als Händler können Sie die Lager- und Quelloptionen von Adobe Commerce [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) verwenden. Sie können auch die Lösung Store Fulfillment verwenden, um andere Lagerverfügbarkeitsoptionen im Zusammenhang mit Ihren Händlerstapeln zu steuern.
 
 - Option für den Home-Versand in den Merchant Stores
 

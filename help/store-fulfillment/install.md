@@ -5,7 +5,7 @@ role: Admin, Developer
 level: Intermediate
 feature: Shipping/Delivery, Install
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
-source-git-commit: 8999d63319f627e0b56a0ef5a881d25dbeaf648f
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 0%
@@ -36,17 +36,17 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 - **Zugriff auf das Softwarearchiv für die Store-Ausführung von Walmart Commerce Technologies (.zip-Datei)** - Wenden Sie sich während des Onboarding- und Aktivierungsprozesses an Ihren Kundenbetreuer, um Zugriff auf die Installationsdatei für die Store Fulfillment-Erweiterung zu erhalten.
 
-- **Adobe Commerce-Kontoinformationen** - Für die Installation der [!DNL Store Fulfillment] -Lösung ist ein [[!DNL Commerce] Konto](https://docs.magento.com/user-guide/magento/magento-account.html){target="_blank"} erforderlich. Sie benötigen eine Konto-ID und Anmeldeinformationen mit dem Inhaber- oder Administratorzugriff auf das [!DNL Adobe Commerce] -Projekt.
+- **Adobe Commerce-Kontoinformationen** - Für die Installation der [!DNL Store Fulfillment] -Lösung ist ein [[!DNL Commerce] Konto](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create){target="_blank"} erforderlich. Sie benötigen eine Konto-ID und Anmeldeinformationen mit dem Inhaber- oder Administratorzugriff auf das [!DNL Adobe Commerce] -Projekt.
 
-- Für [!DNL Adobe Commerce] bei Cloud-Infrastrukturprojekten müssen Softwareinstallateure Administratorzugriff auf das Cloud-Projekt haben. Siehe [Verwalten des Benutzerzugriffs](https://devdocs.magento.com/cloud/project/user-admin.html).
+- Für [!DNL Adobe Commerce] bei Cloud-Infrastrukturprojekten müssen Softwareinstallateure Administratorzugriff auf das Cloud-Projekt haben. Siehe [Verwalten des Benutzerzugriffs](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/user-access).
 
-- **Erlebnis mit Composer und dem[!DNL Commerce CLI]** - Informationen zur Verwendung dieser Tools zum Installieren und Verwalten von Erweiterungen auf der [!DNL Adobe Commerce]-Plattform finden Sie unter [Allgemeine CLI-Installation](https://devdocs.magento.com/extensions/install/){target="_blank"} .
+- **Erlebnis mit Composer und dem[!DNL Commerce CLI]** - Informationen zur Verwendung dieser Tools zum Installieren und Verwalten von Erweiterungen auf der [!DNL Adobe Commerce]-Plattform finden Sie unter [Allgemeine CLI-Installation](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions){target="_blank"} .
 
 - **Erlebnis der Installation von Drittanbietererweiterungen auf Adobe Commerce** - Weitere Informationen finden Sie in der Adobe Commerce-Dokumentation.
 
-   - [Installieren Sie eine Erweiterung für eine Adobe Commerce in der Cloud-Infrastrukturinstanz](https://devdocs.magento.com/cloud/howtos/install-components.html#install-an-extension).
+   - [Installieren Sie eine Erweiterung für eine Adobe Commerce in der Cloud-Infrastrukturinstanz](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#install-an-extension).
 
-   - [Installieren Sie eine Erweiterung für eine lokale Adobe Commerce-Instanz](https://devdocs.magento.com/extensions/install/).
+   - [Installieren Sie eine Erweiterung für eine lokale Adobe Commerce-Instanz](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions).
 
 ### Schritt 1: Herunterladen des Erweiterungs-Bundles
 
@@ -135,7 +135,7 @@ Schließen Sie die Installation mit dem Wert &quot;`bin/magento setup:upgrade`&q
 
 1. Melden Sie sich beim Server an.
 
-   Bei Installationen in Adobe Commerce auf Cloud-Infrastruktur verwenden Sie [SSH, um sich bei der Remote-Umgebung anzumelden](https://devdocs.magento.com/cloud/env/environments-ssh.html#ssh).
+   Bei Installationen in Adobe Commerce auf Cloud-Infrastruktur verwenden Sie [SSH, um sich bei der Remote-Umgebung anzumelden](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections#ssh).
 
 1. Stellen Sie sicher, dass die Module für Store Fulfillment Services aktiviert sind.
 

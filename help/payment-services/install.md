@@ -4,7 +4,7 @@ description: Installieren Sie die Erweiterung "Payments Services".
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
 role: Admin
 feature: Payments, Checkout, Install, Upgrade
-source-git-commit: 5481b19f95908b441e12c4700c51649921dabb08
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '494'
 ht-degree: 0%
@@ -42,9 +42,9 @@ Sie können die Erweiterung [!DNL Payment Services] sowohl für [!DNL Adobe Comm
 
 Der Composer verwendet diese Schlüssel während der ersten Installation von [!DNL Adobe Commerce] oder in Situationen, in denen die Composer-Schlüssel zuvor nicht in der Datei `auth.json` gespeichert wurden.
 
-Weitere Informationen zum Abrufen von Composer-Schlüsseln finden Sie unter [Abrufen Ihrer Authentifizierungsschlüssel](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) .
+Weitere Informationen zum Abrufen von Composer-Schlüsseln finden Sie unter [Abrufen Ihrer Authentifizierungsschlüssel](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) .
 
-Weitere Informationen dazu, was Sie beachten sollten, bevor Sie eine Erweiterung herunterladen und installieren, finden Sie unter [Installieren einer Erweiterung](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/extensions.html) .
+Weitere Informationen dazu, was Sie beachten sollten, bevor Sie eine Erweiterung herunterladen und installieren, finden Sie unter [Installieren einer Erweiterung](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions) .
 
 ### [!DNL Adobe Commerce] in der Cloud-Infrastruktur
 
@@ -155,7 +155,7 @@ So sehen Sie, welche Composer-Schlüssel konfiguriert sind:
    cat /path/to/auth.json
    ```
 
-1. Siehe [Welche Schlüssel mit Ihrem Commerce-Konto verknüpft sind `MageID`](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html).
+1. Siehe [Welche Schlüssel mit Ihrem Commerce-Konto verknüpft sind `MageID`](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys).
 
 ### Nicht genügend Speicher für PHP
 
@@ -165,7 +165,7 @@ Wenn Sie den folgenden Fehler sehen, der angibt, dass Sie nicht genügend Speich
 Fatal error: Allowed memory size of 2146435072 bytes exhausted (tried to allocate 4096 bytes) in phar:///usr/local/bin/composer/src/Composer/DependencyResolver/RuleWatchGraph.php on line 52
 ```
 
-[Erhöhen Sie die Speicherbegrenzung](https://devdocs.magento.com/cloud/project/magento-app-php-ini.html#increase-php-memory-limit) für PHP in Ihrer Umgebung in `php.ini`.
+[Erhöhen Sie die Speicherbegrenzung](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/php-settings#increase-php-memory-limit) für PHP in Ihrer Umgebung in `php.ini`.
 
 Alternativ können Sie die Speicherbegrenzung mit diesem Befehl angeben: `php -d memory_limit=-1 [path to composer]/composer require magento/payment-services`.
 

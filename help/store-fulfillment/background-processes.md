@@ -4,7 +4,7 @@ description: "Konfigurieren Sie die Zeitpläne für [!DNL Store Fulfillment] Hin
 role: Admin, Developer
 level: Intermediate
 exl-id: 742ae59e-77a0-4db6-b156-2992d4403be7
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 0%
@@ -14,9 +14,9 @@ ht-degree: 0%
 
 # Konfiguration des Hintergrundprozesses
 
-Die Integration von Store Fulfillment verwendet Hintergrundprozesse und Nachrichtenwarteschlangen für optimale Leistung und Skalierung. Erstellen Sie Umgebungen für Ihre Adobe Commerce-Stores mithilfe von [Bereitstellungsvariablen](https://devdocs.magento.com/cloud/env/variables-deploy.html#cron_consumers_runner) , die automatisch [Nachrichtenwarteschlangen-Läufern](https://devdocs.magento.com/guides/v2.4/config-guide/mq/rabbitmq-overview.html) starten.
+Die Integration von Store Fulfillment verwendet Hintergrundprozesse und Nachrichtenwarteschlangen für optimale Leistung und Skalierung. Erstellen Sie Umgebungen für Ihre Adobe Commerce-Stores mithilfe von [Bereitstellungsvariablen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#cron_consumers_runner) , die automatisch [Nachrichtenwarteschlangen-Läufern](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework) starten.
 
-Hintergrundprozesse werden mit der standardmäßigen Adobe Commerce [Geplante Aufgaben](https://docs.magento.com/user-guide/system/cron.html) -Funktion verwaltet. Diese Prozesse sind für die Synchronisierung von Bestell- und Merchant Store-Konfigurationsdaten mit Store-Erfüllungs-Webdiensten verantwortlich.
+Hintergrundprozesse werden mit der standardmäßigen Adobe Commerce [Geplante Aufgaben](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cron) -Funktion verwaltet. Diese Prozesse sind für die Synchronisierung von Bestell- und Merchant Store-Konfigurationsdaten mit Store-Erfüllungs-Webdiensten verantwortlich.
 
 ## Geplante Aufgaben für die Store-Erfüllung verwalten
 
