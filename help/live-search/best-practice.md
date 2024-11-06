@@ -2,9 +2,10 @@
 title: '[!DNL Live Search] Best Practices'
 description: Erfahren Sie mehr über die Best Practices zur Implementierung von [!DNL Live Search] in Ihrem Store.
 role: Admin, Developer
-source-git-commit: 77d12a1294c87089ce806615f92bf89396bfc43b
+exl-id: 69b2c2a6-c8a9-4640-8d2b-08fcd7a96034
+source-git-commit: 834935abc55e21863c83e82dae8ec79e70e67220
 workflow-type: tm+mt
-source-wordcount: '2349'
+source-wordcount: '2359'
 ht-degree: 0%
 
 ---
@@ -137,7 +138,7 @@ Weitere Informationen zu Suchregeln:
 
 ### Nutzung von Produktmetadaten
 
-Stellen Sie sicher, dass genaue und detaillierte Produktattribute [als durchsuchbar ](workspace.md#set-attributes-as-searchable) eingerichtet sind. Beachten Sie, dass SKU-, Name- und Kategorieattribute standardmäßig durchsuchbar sind und nicht von der Suche ausgeschlossen werden können. 
+Stellen Sie sicher, dass genaue und detaillierte Produktattribute [als durchsuchbar ](workspace.md#set-attributes-as-searchable) eingerichtet sind. Beachten Sie, dass SKU-, Name- und Kategorieattribute standardmäßig durchsuchbar sind und nicht von der Suche ausgeschlossen werden können. Verwenden Sie für optimale Ergebnisse keine Leerzeichen in Ihren SKUs.
 
 Um die Suchrelevanz zu erhöhen, weisen Sie jedem durchsuchbaren Attribut eine Gewichtung zu. Attribute mit einer höheren Gewichtung sollten in den Suchergebnissen höher angezeigt werden. Die Sortierung nach Relevanz wird durch mehrere Kriterien beeinflusst, z. B. die Suchgewichtung. Das bedeutet, dass Attribute mit geringerer Suchgewichtung manchmal immer noch eine größere Relevanz haben können als Attribute mit höherer Suchgewichtung. Andere Kriterien können die Anzahl der Übereinstimmungen in einem beliebigen Attribut, die Position des gefundenen Suchbegriffs und die gesamte Textstruktur vor und nach einem Suchbegriff sein.
 

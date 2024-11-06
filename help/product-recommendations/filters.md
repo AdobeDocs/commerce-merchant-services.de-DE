@@ -2,9 +2,9 @@
 title: Produkte filtern
 description: Definieren Sie Bedingungen, die Produkte entweder ein- oder ausschließen, um sie als Empfehlungen zu verwenden.
 exl-id: baab28ff-b529-4cbc-adb7-4fa225e87d4a
-source-git-commit: e42b9524fb2e8518576935bc0cd378eca9a579c5
+source-git-commit: 0d6e935fc5812efd7d3359a4fa242f8d5d85043e
 workflow-type: tm+mt
-source-wordcount: '748'
+source-wordcount: '749'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ Produktfilter geben an, welche spezifischen Produkte in Empfehlungen angezeigt w
 
 ### Typ
 
-Ein auf dem Produkttyp basierender Filter schließt alle Produkte eines bestimmten Typs ein oder aus. Zu den unterstützten Typen gehören _Einfach_, _Konfigurierbar_, _Virtual_, _herunterladbar_ oder _Geschenkkarte_. Die Produkte _Bundle_ und _Grouped_ werden noch nicht unterstützt.
+Ein auf dem Produkttyp basierender Filter schließt alle Produkte eines bestimmten Typs ein oder aus. Zu den unterstützten Typen gehören _simple_, _konfigurierbar_, _virtual_, _downloadable_ oder _geschenkkarte_. _Bundle_, _grouped_ und benutzerdefinierte Produktarten werden nicht unterstützt.
 
 ### Sichtbarkeit
 

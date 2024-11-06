@@ -3,9 +3,9 @@ title: '[!DNL Product Recommendations] Versionshinweise'
 description: Die neuesten Versionsinformationen für [!DNL Product Recommendations] aus Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: 6f31361e95b17ee3fa19ff3c2f4a7e2d6d9bc091
+source-git-commit: 0e0f67c01c49c8d8c0ac4967eda0bde8685b2980
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1410'
 ht-degree: 0%
 
 ---
@@ -45,6 +45,15 @@ _25. April 2023_
 ![Neu](../assets/new.svg) [!DNL Product Recommendations] -Kunden können jetzt die [SaaS-Preisindizierung](../price-index/price-indexing.md) nutzen.
 
 ## Aktuelle Hauptversion
+
+### 6.0.3 von Magento/Produktempfehlungen
+
+_6. November 2024_
+
+[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
+
+![Korrektur](../assets/fix.svg) Es wurde ein Problem behoben, bei dem der [Kategoriefilter](filters.md#category) Kategorien enthielt, die nicht zum aktuellen Storebericht gehörten.
+![Korrektur](../assets/fix.svg) Korrektur eines Abhängigkeitsproblems im `magento/product-recommendations` -Metapaket.
 
 ### 6.0.2 von Magento/Produktempfehlungen
 
@@ -169,7 +178,7 @@ _20. März 2023_
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
 
 ![Korrektur](../assets/fix.svg) Korrektur eines modalen JavaScript-Fehlers
-![Korrektur](../assets/fix.svg) Korrektur eines Problems, bei dem die Fastly&#39;s Web Application Firewall (WAF) ein Cookie fälschlicherweise blockierte
+![Korrektur](../assets/fix.svg) Korrektur eines Problems, bei dem die Fastly&#39;s Web Application Firewall (WAF) fälschlicherweise ein Cookie blockierte
 
 ### 3.2.5 von Magento/Produktempfehlungen
 

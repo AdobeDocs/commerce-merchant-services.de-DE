@@ -3,9 +3,9 @@ title: "[!DNL Live Search] Versionshinweise"
 description: "Die neuesten Versionsinformationen für [!DNL Live Search] aus Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: a68fe02be6e207b323d600910cba62992edd6725
+source-git-commit: 7f536c93ab1c87bf88bc892b2a485067fa8f8110
 workflow-type: tm+mt
-source-wordcount: '2046'
+source-wordcount: '2042'
 ht-degree: 0%
 
 ---
@@ -318,8 +318,8 @@ Der Link ![Korrektur](../assets/fix.svg) [Erweiterte Suche](https://experiencele
 
 [!BADGE Unterstützt]{type="Informativ" tooltip="Unterstützt"}
 
-![Korrektur](../assets/fix.svg) [Benutzerdefiniertes Preisattribut](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types) gibt keinen Fehler mehr zurück, wenn es als [facet] konfiguriert wurde ({% link live-search/facets-add.md %}).
-![Korrektur](../assets/fix.svg) Korrektur eines Fehlers, der dazu führte, dass ein Fehler auftrat, wenn kein [Währungssymbol](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration(optional)) (`data-currency-symbol`) verfügbar war.
+![Korrektur](../assets/fix.svg) [Benutzerdefiniertes Preisattribut](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types) gibt keinen Fehler mehr zurück, wenn es als [facet](facets-add.md) konfiguriert wurde.
+![Korrektur](../assets/fix.svg) Korrektur eines Fehlers, der dazu führte, dass ein Fehler auftrat, wenn kein [Währungssymbol](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration#step-5-customize-currency-symbols-optional) (`data-currency-symbol`) verfügbar war.
 ![Korrektur](../assets/fix.svg) [[!DNL Storefront popover]](storefront-popover.md) zeigt jetzt den [Sonderpreis](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special) (den letzten Mindestpreis) an, sofern verfügbar.
 
 ### [!DNL Live Search] 1.3.0 {#130}

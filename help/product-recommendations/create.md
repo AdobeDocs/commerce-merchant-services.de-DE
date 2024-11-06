@@ -2,9 +2,9 @@
 title: Neue Empfehlung erstellen
 description: Erfahren Sie, wie Sie eine Produktempfehlungseinheit erstellen.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 0b651189184a107dec8452d5b0d588f52d689605
+source-git-commit: 0d6e935fc5812efd7d3359a4fa242f8d5d85043e
 workflow-type: tm+mt
-source-wordcount: '1457'
+source-wordcount: '1497'
 ht-degree: 0%
 
 ---
@@ -158,6 +158,10 @@ Der Prozentsatz des Bereitschaftsindikators für Empfehlungstypen, die von Katal
 #### Was zu tun ist, wenn der Bereitschaftsindikator-Prozentsatz niedrig ist?
 
 Ein geringer Prozentsatz an Bereitschaft zeigt an, dass nicht viele Produkte aus Ihrem Katalog in Empfehlungen für diesen Empfehlungstyp aufgenommen werden können. Dies bedeutet, dass mit hoher Wahrscheinlichkeit [Reserveempfehlungen](events.md#backuprecs) zurückgegeben werden, wenn Sie diesen Empfehlungstyp trotzdem bereitstellen.
+
+>[!IMPORTANT]
+>
+>_Bundle_, _grouped_ und benutzerdefinierte Produktarten werden nicht unterstützt. Wenn Ihr Katalog eine große Anzahl dieser Produktarten enthält, können Sie mit einem niedrigen Bereitschaftswert rechnen. Darüber hinaus können alle SKUs mit Leerzeichen die Empfehlungsrelevanz reduzieren und sollten vermieden werden.
 
 Im Folgenden werden mögliche Gründe und Lösungen für häufige niedrige Bereitschaft-Bewertungen aufgelistet:
 
