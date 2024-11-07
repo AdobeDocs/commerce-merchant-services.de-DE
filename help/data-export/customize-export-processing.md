@@ -3,7 +3,7 @@ title: Verbessern der SAAs-Datenexportleistung
 description: Erfahren Sie, wie Sie die Leistung des SAAS-Datenexports für Commerce Services verbessern können, indem Sie den Datenexport-Modus mit mehreren Threads verwenden.
 role: Admin, Developer
 exl-id: 20c81ef4-5a97-45cd-9401-e82910a2ccc3
-source-git-commit: b80bc2867f44e6123adb104eb148ac5e8f80b63d
+source-git-commit: 6f67ea717595fe517d751ae14bf8123c7d05831b
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 0%
@@ -41,8 +41,8 @@ Beachten Sie, dass eine sorgfältige Planung, einschließlich der Schätzung des
 
 Der Multi-Thread-Modus wird für alle [Synchronisierungsmethoden](data-synchronization.md#synchronization-process) unterstützt - vollständige Synchronisierung, teilweise Synchronisierung und Synchronisation fehlgeschlagener Elemente. Um die Multithreading-Funktion zu konfigurieren, geben Sie die Anzahl der Threads und die Stapelgröße an, die bei der Synchronisierung verwendet werden sollen.
 
-- `threadCount` ist die Anzahl der Threads, die für Prozessentitäten aktiviert sind. Der Standardwert `threadCount` ist `1`.
-- `batchSize` ist die Anzahl der Entitäten, die in einer Iteration verarbeitet werden. Der Standardwert `batchSize` ist `100` -Datensätze für alle Feeds außer dem Preis-Feed. Für den Preis-Feed ist der Standardwert `500` Datensätze.
+- `thread-count` ist die Anzahl der Threads, die für Prozessentitäten aktiviert sind. Der Standardwert `thread-count` ist `1`.
+- `batch-size` ist die Anzahl der Entitäten, die in einer Iteration verarbeitet werden. Der Standardwert `batch-size` ist `100` -Datensätze für alle Feeds außer dem Preis-Feed. Für den Preis-Feed ist der Standardwert `500` Datensätze.
 
 Sie können Multi-Threading als temporäre Option konfigurieren, wenn Sie einen Resync-Befehl ausführen, oder indem Sie die Multi-Thread-Konfiguration zur Adobe Commerce-Anwendungskonfiguration hinzufügen.
 
@@ -52,10 +52,10 @@ Sie können Multi-Threading als temporäre Option konfigurieren, wenn Sie einen 
 
 ### Multithreading zur Laufzeit konfigurieren
 
-Wenn Sie einen vollständigen Synchronisierungsbefehl über die Befehlszeile ausführen, geben Sie die Verarbeitung mit mehreren Threads an, indem Sie die Optionen `threadCount` und `batchSize` zum CLI-Befehl hinzufügen.
+Wenn Sie einen vollständigen Synchronisierungsbefehl über die Befehlszeile ausführen, geben Sie die Verarbeitung mit mehreren Threads an, indem Sie die Optionen `thread-count` und `batch-size` zum CLI-Befehl hinzufügen.
 
 ```
-bin/magento saas:resync --feed=products --threadCount=2 --batchSize=200
+bin/magento saas:resync --feed=products --thread-count=2 --batch-size=200
 ```
 
 Die in der Befehlszeile angegebenen Optionen überschreiben die in der Datei mit der Adobe Commerce-Anwendung `config.php` angegebene Datenexportkonfiguration.
