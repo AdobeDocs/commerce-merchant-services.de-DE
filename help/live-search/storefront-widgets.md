@@ -2,9 +2,9 @@
 title: Storefront-Widgets
 description: Erfahren Sie mehr über das Storefront-Popover und die Widgets der Produktlistenseite.
 exl-id: 689f0faa-8b0e-4945-9889-503e1eed5960
-source-git-commit: 9f5990309dc952b2e9d8545532487d990d40b0ad
+source-git-commit: 256a1891a4769dcb3f5fa3e78bf1300190363c10
 workflow-type: tm+mt
-source-wordcount: '195'
+source-wordcount: '194'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Sie können das Erscheinungsbild dieser Widgets so anpassen, dass es dem Stil un
 
 Wenn Sie mit der Eingabe in das Suchfeld &quot;Commerce-Storefront&quot;beginnen, antwortet [!DNL Live Search] mit den vorgeschlagenen Produkten und einem Miniaturbild der Top-Suchergebnisse im [Popover-Widget](storefront-popover.md).
 
-![Popover-Widget](assets/ls-search-popover.png)
+![[!DNL Live Search popover]](assets/storefront-search-as-you-type.png)
 
 Weitere Informationen zum Popover-Widget und zum Anpassen des Widgets für Ihre Storefront finden Sie unter [[!DNL Storefront Popover]](storefront-popover.md).
 
@@ -30,6 +30,6 @@ Weitere Informationen zum Popover-Widget und zum Anpassen des Widgets für Ihre 
 
 Wenn Sie auf klicken, um alle Ergebnisse aus dem Storefront-Popover zu sehen, zeigt das Widget zur Produktlistenseite Funktionen an, mit denen Sie Ihre Suche kontinuierlich verfeinern können.
 
-![Seiten-Widget zur Produktliste](assets/ls-plp.png)
+![Ergebnisse des Widgets zur Produktauflistungsseite](assets/plp-css-widgets.png)
 
 Weitere Informationen zum Produktanlistungs-Seiten-Widget und zum Anpassen des Widgets für Ihre Storefront finden Sie unter [Widget zur Produktauflistungsseite](plp-styling.md).
