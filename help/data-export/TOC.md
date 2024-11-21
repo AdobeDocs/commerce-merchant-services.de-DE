@@ -4,9 +4,9 @@ user-guide-description: "Dieses Handbuch enthält ausführliche Anweisungen zur 
 breadcrumb-title: "[!DNL Data Export] Handbuch für SaaS-Dienste"
 role: Admin
 feature: Services
-source-git-commit: b80bc2867f44e6123adb104eb148ac5e8f80b63d
+source-git-commit: 06ef294d2670e5d36bbb6cd18deafce2cc751772
 workflow-type: tm+mt
-source-wordcount: '70'
+source-wordcount: '75'
 ht-degree: 5%
 
 ---
@@ -21,6 +21,8 @@ ht-degree: 5%
 - [CLI-Befehlsreferenz](data-export-cli-commands.md)
 - [Protokolle überprüfen und Fehlerbehebung](troubleshooting-logging.md)
 - [Verwalten der SaaS-Datenexport-Erweiterung](manage-extension.md)
-- [Erweitern und Anpassen von SaaS-Datenexport-Feeds](extensibility-and-customizations.md)
+- Erweiterbarkeit {#extensibility}
+   - [Erweitern und Anpassen von SaaS-Datenexport-Feeds](extensibility-and-customizations.md)
+   - [Produktattribut dynamisch hinzufügen](add-attribute-dynamically.md)
 - [Versionshinweise](release-notes.md)
 - [Kehren Sie zur Startseite der Commerce-Dienste zurück](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)
