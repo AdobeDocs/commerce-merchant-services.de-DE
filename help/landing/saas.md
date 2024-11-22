@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Ihre Adobe Commerce- oder Magento Open Source
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
+source-git-commit: daad5bb1ce74126d727207812abebdcf0cbf72c0
 workflow-type: tm+mt
-source-wordcount: '1259'
+source-wordcount: '1304'
 ht-degree: 0%
 
 ---
@@ -118,6 +118,10 @@ Um ein SaaS-Projekt auszuwählen oder zu erstellen, fordern Sie den API-Schlüss
 Alle SaaS-Projekte, die mit Ihren Schlüsseln verknüpft sind, werden im Feld **Projekt** im Abschnitt **SaaS-Kennung** angezeigt.
 
 1. Wenn keine SaaS-Projekte vorhanden sind, klicken Sie auf **Projekt erstellen**. Geben Sie dann im Feld **Projekt** einen Namen für Ihr SaaS-Projekt ein.
+
+>[!NOTE]
+>
+>Um Verwirrung zu vermeiden, verwenden Sie keinen bestimmten Commerce-Dienst als Projektnamen, z. B. *Live Search*, *Product Recommendations* oder *Data Connection*.  Sofern Ihre Lizenz nicht für mehrere SaaS-Projekte bereitgestellt wurde, können Sie dasselbe SaaS-Projekt für mehrere Dienste verwenden.
 
 1. Wählen Sie den **Datenraum** aus, der für die aktuelle Konfiguration Ihres [!DNL Commerce]-Stores verwendet werden soll.
 
