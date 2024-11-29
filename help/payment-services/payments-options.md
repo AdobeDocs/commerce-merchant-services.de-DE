@@ -3,9 +3,9 @@ title: Zahlungsoptionen
 description: Legen Sie die Zahlungsoptionen fest, um die für Ihre Store-Kunden verfügbaren Methoden anzupassen.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 5c4fe370507e4154d4495d4c09e2ff8705e53191
+source-git-commit: 17c8d16a2593f7bb6015f5b2968fc4c67be8ed5b
 workflow-type: tm+mt
-source-wordcount: '1150'
+source-wordcount: '1174'
 ht-degree: 0%
 
 ---
@@ -58,9 +58,11 @@ Kunden können [[!DNL Apple Pay]](https://www.apple.com/apple-pay/) verwenden, d
 
 Die Schaltfläche &quot;[!DNL Apple Pay]&quot; ist von der Produktseite aus sichtbar, in den Miniaturausschnitten, im Warenkorb und in den Checkout-Ansichten.
 
+Um [!DNL Apple Pay] für Ihre Stores zu verwenden, führen Sie die [ Selbstregistrierung mit  [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) durch (_Nur die Live-Domäne registrieren_ ) und konfigurieren Sie sie für Ihre Stores in  [!DNL Payment Services]](settings.md#payment-buttons).[
+
 >[!NOTE]
 >
-> Um [!DNL Apple Pay] für Ihre Stores zu verwenden, führen Sie die [ Selbstregistrierung mit  [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) durch (_Nur die Live-Domäne registrieren_ ) und konfigurieren Sie sie für Ihre Stores in  [!DNL Payment Services]](settings.md#payment-buttons).[
+> Weitere Informationen dazu, wie Sie Käufern die Zahlung mit Apple PayPal auf Ihrer Site ermöglichen, finden Sie unter [Erweiterter Checkout](https://www.paypal.com/us/cshelp/article/what-is-paypal-advanced-checkout-and-how-do-i-get-started-help953){target=_blank} in der PayPal-Entwicklerdokumentation.
 
 Sie können [!UICONTROL Apple Pay] in der Store-Konfiguration oder auf der Zahlungsdienst-Startseite konfigurieren. Weitere Informationen finden Sie unter [Einstellungen](settings.md#apple-pay) .
 
