@@ -1,6 +1,6 @@
 ---
 title: Inventory management Source Transfer
-description: "Konfigurieren von Lagern für die  [!DNL Store Fulfillment solution]  mit Adobe Commerce Inventory management. Richten Sie ein neues Lager ein und übertragen Sie das Inventar aus dem Standardbestand, damit Sie es Quellen zuweisen können, die so konfiguriert sind, dass die für die Store-Fulfillment-Lösung erforderlichen Speicherabnahmefunktionen aktiviert werden."
+description: Konfigurieren von Lagern für die  [!DNL Store Fulfillment solution]  mit Adobe Commerce Inventory management. Richten Sie ein neues Lager ein und übertragen Sie das Inventar aus dem Standardbestand, damit Sie es Quellen zuweisen können, die so konfiguriert sind, dass die für die Store Fulfillment-Lösung erforderlichen Speicherabnahmefunktionen aktiviert werden.
 role: Admin
 level: Intermediate
 feature: Shipping/Delivery, Inventory, Configuration

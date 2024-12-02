@@ -1,6 +1,6 @@
 ---
-title: "Facets"
-description: "[!DNL Live Search] -Facetten verwenden mehrere Dimensionen von Attributwerten als Suchkriterien."
+title: Facets
+description: '[!DNL Live Search] -Facetten verwenden mehrere Dimensionen von Attributwerten als Suchkriterien.'
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
 source-git-commit: 460065ecf6478e4313bd31ea848e04c7e8e192a3
 workflow-type: tm+mt

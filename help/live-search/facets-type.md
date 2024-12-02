@@ -1,6 +1,6 @@
 ---
-title: "Facettentypen"
-description: "[!DNL Live Search] Facetten sind dynamisch und werden ggf. in der Filterliste angezeigt."
+title: Arten von Facetten
+description: '[!DNL Live Search] -Facetten sind dynamisch und erscheinen in der Filterliste, falls relevant.'
 exl-id: 49fb7609-64b3-4ae8-928d-54c99032d919
 source-git-commit: ffbb41ef2bc940982b4acb33623ef689542617c1
 workflow-type: tm+mt

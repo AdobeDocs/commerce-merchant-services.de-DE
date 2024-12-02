@@ -1,6 +1,6 @@
 ---
 title: Onboarding-Übersicht für Store Fulfillment-Dienste
-description: '[!DNL Live Search] Onboarding-Fluss, Systemanforderungen, Grenzen und Einschränkungen.'
+description: '[!DNL Live Search] Onboarding-Fluss, Systemanforderungen, Begrenzungen und Einschränkungen.'
 role: Admin, Leader
 level: Intermediate
 feature: Shipping/Delivery, Install
