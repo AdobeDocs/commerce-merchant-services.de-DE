@@ -3,9 +3,9 @@ title: '[!DNL Live Search] Best Practices'
 description: Erfahren Sie mehr über die Best Practices zur Implementierung von [!DNL Live Search] in Ihrem Store.
 role: Admin, Developer
 exl-id: 69b2c2a6-c8a9-4640-8d2b-08fcd7a96034
-source-git-commit: 834935abc55e21863c83e82dae8ec79e70e67220
+source-git-commit: ba2b798f2e7d5716be0d1686359ac8382f6cf8e4
 workflow-type: tm+mt
-source-wordcount: '2359'
+source-wordcount: '2426'
 ht-degree: 0%
 
 ---
@@ -106,6 +106,14 @@ Erfahren Sie, wie Sie [Suchumleitungen verwalten](https://experienceleague.adobe
 ## Relevanz der Suchergebnisse verbessern
 
 In diesem Abschnitt wird erläutert, wie Sie die Relevanz der Suchergebnisse verbessern können, indem Sie effektive Suchregeln implementieren und Produktmetadaten verwenden, um sicherzustellen, dass genaue und detaillierte Attribute durchsuchbar sind.
+
+### Bilder
+
+Stellen Sie sicher, dass die untergeordneten Produkte konfigurierbarer Produkte über Bilder mit den richtigen Rollen verfügen. Das Vorhandensein von übergeordneten oder untergeordneten Produkten kann dazu führen, dass das Suchergebnis keine Bilder enthält.
+
+>[!NOTE]
+>
+>Bilder in Suchergebnissen können je nach Suchbegriff unterschiedlich sein. Wenn der Suchbegriff feststellt, dass ein untergeordnetes Produkt relevanter ist, werden Bilder vom untergeordneten Produkt anstelle von Bildern vom übergeordneten Produkt verwendet.
 
 ### Suchregeln
 
