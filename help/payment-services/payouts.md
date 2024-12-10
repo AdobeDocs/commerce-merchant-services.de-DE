@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
 feature: Payments, Checkout
-source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
+source-git-commit: 9ccf4707ae46d2df52a5510c774688fe6da1d951
 workflow-type: tm+mt
-source-wordcount: '1301'
+source-wordcount: '1303'
 ht-degree: 0%
 
 ---
@@ -137,7 +137,7 @@ Sie können eine CSV-Datei herunterladen, die alle im Raster Ansicht der Payouts
 
 1. Wechseln Sie auf der Seitenleiste _Admin_ zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**.
 1. [Passen Sie den Zeitrahmen des Datumsbereichs für Ihre Transaktionen an](#customize-transactions-timeframe).
-1. Klicken Sie auf das Symbol _Download_ (![](assets/icon-download.png){width="20" zoomable="yes"}).
+1. Klicken Sie auf das Symbol _Herunterladen_ (![Symbol &quot;Herunterladen&quot;](assets/icon-download.png){width="20" zoomable="yes"}).
 
 Ihre Zahlungsvorgänge werden im .csv-Format heruntergeladen.
 
