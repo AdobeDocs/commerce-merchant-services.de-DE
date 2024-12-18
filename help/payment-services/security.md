@@ -13,64 +13,64 @@ ht-degree: 0%
 
 # Sicherheit und Compliance
 
-Die Sicherheit ist in [!DNL Payment Services] von größter Bedeutung und es werden keine privaten oder PCI-basierten Informationen (Payment Card Industry) über Ihre [!DNL Payment Services] weitergegeben.
+Die Sicherheit ist in [!DNL Payment Services] von größter Wichtigkeit, und es werden keine von der Private oder Payment Card Industry (PCI) regulierten Informationen über Ihre [!DNL Payment Services] weitergegeben.
 
 ## Commerce-Sicherheit
 
-[!DNL Adobe Commerce] und [!DNL Magento Open Source] unterstützen mehrere Sicherheitsfunktionen.
+[!DNL Adobe Commerce] und [!DNL Magento Open Source] unterstützen verschiedene Sicherheitsfunktionen.
 
-Siehe [Sicherheit](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security){target="_blank"} im Benutzerhandbuch zu zentralen Sicherheitsvorkehrungen, um mehr über die Verwaltung von Admin-Sitzungen und -Anmeldedaten zu erfahren, CAPTCHA zu implementieren und Website-Einschränkungen zu verwalten.
+Siehe [Sicherheit](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security){target="_blank"} im Core-Benutzerhandbuch, um die Best Practices für die Sicherheit zu überprüfen und zu erfahren, wie Sie Admin-Sitzungen und Anmeldeinformationen verwalten, CAPTCHA implementieren und Website-Einschränkungen verwalten.
 
 ## PCI-Compliance
 
-Die Payment Card Industry (PCI) hat eine Reihe von Anforderungen für Unternehmen festgelegt, die Zahlungen per Kreditkarte über das Internet akzeptieren. Neben einer sicheren Umgebung sind Händler, die mit Kreditkarteninformationen von Kunden umgehen, für die Einhaltung einiger Standardrichtlinien verantwortlich.
+Die Zahlungskartenbranche (Payment Card Industry, PCI) hat eine Reihe von Anforderungen für Unternehmen festgelegt, die Zahlungen per Kreditkarte über das Internet akzeptieren. Neben der Aufrechterhaltung einer sicheren Umgebung sind Händler, die mit Kreditkarteninformationen von Kunden umgehen, dafür verantwortlich, einige Standardrichtlinien zu erfüllen.
 
-Weitere Informationen finden Sie unter [PCI Compliance Guidelines](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/payments/compliance-pci){target="_blank"} .
+Weitere Informationen finden [ unter ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/payments/compliance-pci){target="_blank"} für PCI-Compliance .
 
-Händler können einen [Fragebogen zur Selbstbewertung (SAQ)](https://www.pcisecuritystandards.org/pci_security/completing_self_assessment){target="_blank"} ausfüllen, der ein Tool zur Selbstvalidierung zur Bewertung der Sicherheit von Karteninhaberdaten darstellt.
+Händler können einen [Selbstbewertungsfragebogen (SAQ) ausfüllen](https://www.pcisecuritystandards.org/pci_security/completing_self_assessment){target="_blank"} bei dem es sich um ein Selbstvalidierungstool zur Bewertung der Sicherheit von Karteninhaberdaten handelt.
 
 ### Kreditkartenfelder
 
-Mit Kreditkartenfeldern werden keine PCI-regulierten Daten über Ihre Dienste weitergegeben. Diese Daten müssen nicht gespeichert oder gepflegt werden, was die PCI-Compliance-Probleme erheblich verringert.
+Bei Kreditkartenfeldern werden keine PCI-regulierten Daten über Ihre Services weitergeleitet. Sie müssen diese Daten nicht speichern oder pflegen, was die Bedenken hinsichtlich der PCI-Compliance erheblich verringert.
 
 ### 3DS
 
-PCI 3-D Secure (3DS) ermöglicht die Authentifizierung von Käufern mit ihrem Kreditkartenaussteller bei Online-Kreditkartenkäufen. Diese zusätzliche Sicherheitsstufe trägt zur Vermeidung von Online-Betrug bei und ist als Teil der EU-Vorschriften zur Einhaltung der Vorschriften erforderlich.
+PCI 3-D Secure (3DS) ermöglicht die Authentifizierung des Käufers bei seinem Kreditkartenaussteller bei Online-Kreditkartenkäufen. Diese zusätzliche Sicherheitsebene trägt dazu bei, Online-Betrug zu verhindern, und ist im Rahmen der EU-Compliance-Vorschriften erforderlich.
 
 [!UICONTROL Payment Services] bietet 3DS-Funktionen, mit denen Händler die EU-Vorschriften einhalten und Kunden und Händler vor betrügerischen Aktivitäten in ihren Geschäften schützen können.
 
-Wenn Sie Händler in der EU oder in Großbritannien sind, für die die Einhaltung der 3DS-Vorschriften erforderlich ist, müssen Sie 3DS manuell aktivieren (standardmäßig ist dies &quot;`Off`&quot;) in den [Einstellungen](settings.md#credit-card-fields).
+Wenn Sie ein Händler in der EU oder Großbritannien sind, für den die 3DS-Konformität erforderlich ist, müssen Sie 3DS (standardmäßig `Off`) in [Einstellungen](settings.md#credit-card-fields) manuell aktivieren.
 
 >[!IMPORTANT]
 >
->Die 3DS-Anforderung gilt für Transaktionen, bei denen sich die Bank des Unternehmens und des Karteninhabers im [Europäischen Wirtschaftsraum](https://www.efta.int/eea) (EWR) und in Großbritannien befindet. US-Händler benötigen keine 3DS, können sie jedoch für ihre Transaktionen aktivieren.
+>Die 3DS-Anforderung gilt für Transaktionen, bei denen sich das Unternehmen und die Bank des Karteninhabers im [Europäischen Wirtschaftsraum](https://www.efta.int/eea) (EWR) und in Großbritannien befinden. Händler in den Vereinigten Staaten benötigen kein 3DS, können es aber bei Bedarf für ihre Transaktionen aktivieren.
 
-Bestellungen, die für den Käufer von Händlern/Ladenbesitzern abgegeben werden, sind nicht mit den 3DS-Compliance-Maßnahmen konfiguriert.
+Bestellungen, die vom Händler-/Ladenpersonal für den Käufer aufgegeben werden, sind nicht mit 3DS-Compliance-Maßnahmen konfiguriert.
 
 >[!MORELIKETHIS]
 >
-> * Weitere Informationen finden Sie unter [3DS in den Einstellungen](settings.md#3ds) .
-> * Weitere Informationen zu bestimmten Kreditkarten für 3DS-Tests finden Sie unter [Testkarten](https://developer.paypal.com/docs/checkout/advanced/customize/3d-secure/test/) in der PayPal-Entwicklerdokumentation.
+> * Siehe [3DS in Einstellungen](settings.md#3ds) für weitere Informationen.
+> * Weitere [ zu bestimmten Kreditkarten für 3DS-Tests finden Sie ](https://developer.paypal.com/docs/checkout/advanced/customize/3d-secure/test/) der PayPal-Entwicklerdokumentation unter „Testkarten“.
 
 ### Kartengewölbe
 
-Wenn ein Kunde [seine Kreditkarteninformationen ](vaulting.md) für zukünftige Käufe in Ihren Geschäften speichert, werden dem Käufer nur minimale Kreditkarteninformationen (letzte vier Stellen, Ablaufdatum der Karte und Marke der Karte) zur Verfügung gestellt. Kreditkarteninformationen werden beim Zahlungsdienstleister gespeichert. Wenn eine Karte abläuft oder sie die Informationen nicht mehr speichern müssen, können sie dieses Token löschen, damit die Informationen nicht mehr vom Zahlungsdienstleister gespeichert werden.
+Wenn ein Käufer [tresor - oder „speichert“ - seine Kreditkarteninformationen](vaulting.md) für zukünftige Käufe in Ihren Geschäften werden nur minimale Kreditkarteninformationen mit dem Käufer geteilt (letzte vier Ziffern, Kartenablaufdatum und Kartenmarke). Kreditkartenangaben werden beim Zahlungsdienstleister gespeichert. Wenn eine Karte abläuft oder sie die gespeicherten Informationen nicht mehr benötigen, können sie dieses Token löschen, damit die Informationen vom Zahlungsdienstleister nicht mehr gespeichert werden.
 
-Weitere Informationen finden Sie unter [Kreditkartenausnahme](vaulting.md) .
+Weitere Informationen [ Sie unter ](vaulting.md)Kreditkartenabwicklung).
 
-### PayPal-Zahlungsschaltflächen
+### PayPal-Zahlungstasten
 
-Mit PayPal Zahlungsschaltflächen werden keine PCI-regulierten Daten über Ihre Dienste weitergegeben. Diese Daten müssen nicht gespeichert oder gepflegt werden, was die PCI-Compliance-Probleme erheblich verringert.
+Mit PayPal-Zahlungs-Buttons werden keine PCI-regulierten Daten über Ihre Services weitergeleitet. Sie müssen diese Daten nicht speichern oder pflegen, was die Bedenken hinsichtlich der PCI-Compliance erheblich verringert.
 
-Aus Sicherheitsgründen gibt PayPal die Rechnungsadresse beim Checkout nicht weiter - Land, E-Mail und Name sind die einzigen verwendeten Rechnungsinformationen. Sie können optional den PayPal-Checkout Ihrer Site aktivieren, um die vollständige Rechnungsadresse zurückzugeben, indem Sie PayPal kontaktieren und einen Prüfvorgang abschließen.
+Aus Sicherheitsgründen gibt PayPal die Rechnungsadresse beim Checkout nicht weiter - nur Land, E-Mail und Name werden verwendet. Optional können Sie den PayPal-Checkout Ihrer Website aktivieren, um die vollständige Rechnungsadresse zurückzugeben, indem Sie sich an PayPal wenden und einen Prüfprozess durchführen.
 
-PayPal verfügt auch über einen integrierten Betrugsschutz, der das maschinelle Lernen nutzt, um Betrug zu bekämpfen. Weitere Informationen finden Sie in der PayPal-Dokumentation zum [Schutz von Verkäufern](https://www.paypal.com/us/webapps/mpp/security/seller-protection) .
+PayPal bietet auch einen integrierten Betrugsschutz, der maschinelles Lernen nutzt, um Sie bei der Betrugsbekämpfung zu unterstützen. Weitere Informationen finden Sie in der [ zum ](https://www.paypal.com/us/webapps/mpp/security/seller-protection) von PayPal.
 
-## Betrugsschutz
+## Schutz vor Betrug
 
-Sie können den automatisierten Betrugsschutz für Zahlungsdienste mit der Erweiterung [Signifyd](https://commercemarketplace.adobe.com/signifyd-module-connect.html) aktivieren. Weitere Informationen finden Sie unter [Signifikanter Betrugsschutz](fraud-protection.md) .
+Mit der Erweiterung „Signifyd[ können Sie den automatischen Schutz vor Betrug für Zahlungs-Services ](https://commercemarketplace.adobe.com/signifyd-module-connect.html). Weitere Informationen [ Sie unter ](fraud-protection.md)Signifikante Betrugssicherheit“.
 
-PayPal bietet in der Entwicklerdokumentation weitere Optionen für den [Betrugsschutz](https://www.paypal.com/us/cshelp/article/what-is-fraud-protection-help1014){target=_blank}:
+PayPal bietet in der Entwicklerdokumentation weitere Optionen [Betrugsschutz](https://www.paypal.com/us/cshelp/article/what-is-fraud-protection-help1014){target=_blank}:
 
-* Weitere Informationen finden Sie unter [Betrugsschutz erweitert](https://www.paypal.com/us/enterprise/fraud-protection-advanced#fraud-protection-advanced){target=_blank} .
-* Weitere Informationen finden Sie unter [Chargeback-Schutz](https://www.paypal.com/us/cshelp/article/what-is-chargeback-protection-help608){target=_blank} .
+* Weitere [ finden Sie unter ](https://www.paypal.com/us/enterprise/fraud-protection-advanced#fraud-protection-advanced){target=_blank} für Betrug.
+* Weitere Informationen [ Sie unter ](https://www.paypal.com/us/cshelp/article/what-is-chargeback-protection-help608){target=_blank}Chargeback-Schutz).

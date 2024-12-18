@@ -1,6 +1,6 @@
 ---
 title: '[!DNL Catalog Service and API Mesh]'
-description: "[!DNL API Mesh] für Adobe Commerce bietet eine Möglichkeit, mehrere Datenquellen über einen gemeinsamen GraphQL-Endpunkt zu integrieren."
+description: '[!DNL API Mesh] für Adobe Commerce bietet eine Möglichkeit, mehrere Datenquellen über einen gemeinsamen GraphQL-Endpunkt zu integrieren.'
 exl-id: cdda4a83-3c5f-4a69-8279-b90464e16c0e
 role: Admin, Developer
 feature: Services, API Mesh, Catalog Service
@@ -13,21 +13,21 @@ ht-degree: 0%
 
 # [!DNL Catalog Service and API Mesh]
 
-Mit dem [API-Mesh für Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) können Entwickler private oder Drittanbieter-APIs und andere Schnittstellen mit Adobe-Produkten integrieren, die Adobe I/O Runtime verwenden.
+Das [API Mesh für Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) ermöglicht Entwicklern die Integration von privaten oder Drittanbieter-APIs und anderen Benutzeroberflächen mit Adobe-Produkten, die Adobe I/O Runtime verwenden.
 
-![Katalogarchitekturdiagramm](assets/catalog-service-architecture-mesh.png)
+![Katalog-Architekturdiagramm](assets/catalog-service-architecture-mesh.png)
 
-Der erste Schritt zur Verwendung des API-Meshs mit dem Catalog Service besteht darin, API-Mesh mit Ihrer Instanz zu verbinden. Detaillierte Anweisungen finden Sie unter [Erstellen eines Gitters](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/).
+Der erste Schritt zur Verwendung der API Mesh mit dem Katalog-Service besteht darin, API Mesh mit Ihrer Instanz zu verbinden. Detaillierte Anweisungen finden Sie unter [Erstellen eines Netzes](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/).
 
-Um das Setup abzuschließen, installieren Sie das [Adobe Developer CLI-Paket](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
+Um die Einrichtung abzuschließen, installieren Sie das [Adobe Developer-CLI-Paket](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
 
-Nachdem der Mesh in Adobe I/O Runtime konfiguriert wurde, führen Sie den folgenden Befehl aus, um Ihrem Gitter eine `CommerceCatalogServiceGraph` -Quelle hinzuzufügen.
+Nachdem Mesh in Adobe I/O Runtime konfiguriert wurde, führen Sie den folgenden Befehl aus, um dem Netz eine `CommerceCatalogServiceGraph` hinzuzufügen.
 
 ```bash
 aio api-mesh:source:install "CommerceCatalogServiceGraph" -f variables.json
 ```
 
-Dabei ist `variables.json` eine separate Datei, in der häufig verwendete Werte für Adobe I/O Runtime gespeichert werden.
+Dabei ist `variables.json` eine separate Datei, die häufig verwendete Werte für Adobe I/O Runtime speichert.
 Beispielsweise kann der API-Schlüssel in der Datei gespeichert werden:
 
 ```json
@@ -36,15 +36,15 @@ Beispielsweise kann der API-Schlüssel in der Datei gespeichert werden:
 }
 ```
 
-Nach Ausführung dieses Befehls sollte der Catalog Service über das API-Mesh ausgeführt werden. Sie können den Befehl `aio api-mesh:get` ausführen, um die Konfiguration Ihres aktualisierten Netzwerks anzuzeigen.
+Nach Ausführung dieses Befehls sollte der Katalog-Service über das API-Mesh ausgeführt werden. Sie können den Befehl `aio api-mesh:get` ausführen, um die Konfiguration Ihres aktualisierten Netzes anzuzeigen.
 
-## Beispiele für API-Gitter
+## API-Mesh-Beispiele
 
-Mit dem API-Mesh können Benutzer externe Datenquellen nutzen, um Ihre Adobe Commerce-Instanz zu verbessern. Sie kann auch verwendet werden, um vorhandene Commerce-Daten zu konfigurieren und neue Funktionen zu aktivieren.
+Mit der API Mesh können Benutzer externe Datenquellen nutzen, um Ihre Adobe Commerce-Instanz zu verbessern. Sie können damit auch vorhandene Commerce-Daten konfigurieren, um neue Funktionen zu aktivieren.
 
-### Ebenenpreise aktivieren
+### Stufenpreise aktivieren
 
-In diesem Beispiel wird der API-Mesh verwendet, um die Ebenenpreise in Adobe Commerce zu aktivieren.
+In diesem Beispiel wird die API Mesh verwendet, um Preisstufen in Adobe Commerce zu aktivieren.
 Ersetzen Sie die Werte `name `, `endpoint` und `x-api-key`.
 
 ```json
@@ -129,7 +129,7 @@ Ersetzen Sie die Werte `name `, `endpoint` und `x-api-key`.
 }
 ```
 
-Abfragen Sie nach der Konfiguration das Mesh nach gestaffelten Preisen:
+Fragen Sie nach der Konfiguration das Netz nach gestaffelten Preisen ab:
 
 ```graphql
 query {
@@ -160,7 +160,7 @@ query {
 
 ### Entitäts-ID abrufen
 
-Dieser Mesh hängt die `entityId` an die ProductView-Oberfläche an. Ersetzen Sie die Werte `name `, `endpoint` und `x-api-key`.
+Dieses Mesh fügt die `entityId` an die ProductView-Schnittstelle an. Ersetzen Sie die Werte `name `, `endpoint` und `x-api-key`.
 
 ```json
 {
@@ -237,7 +237,7 @@ Dieser Mesh hängt die `entityId` an die ProductView-Oberfläche an. Ersetzen Si
   }
 ```
 
-`entityId` kann jetzt abgefragt werden:
+`entityId` können jetzt abgefragt werden:
 
 ```graphql
 query {

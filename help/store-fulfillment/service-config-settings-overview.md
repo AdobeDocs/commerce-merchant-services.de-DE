@@ -1,6 +1,6 @@
 ---
-title: Konfigurationsübersicht für die Store-Erfüllung
-description: Erfahren Sie mehr über die Typen von Admin-Konfigurationseinstellungen, die verfügbar sind, um die erweiterten Erfüllungsfunktionen anzupassen, die von der Store Fulfillment-Lösung bereitgestellt werden, und über den Link zu Anweisungen zum Abschluss der Konfiguration.
+title: Konfigurationsübersicht für Store Fulfillment
+description: Erfahren Sie mehr über die Arten von Admin-Konfigurationseinstellungen, die zum Anpassen der erweiterten Fulfillment-Funktionen der Store-Fulfillment-Lösung verfügbar sind, und erhalten Sie einen Link zu Anweisungen zum Abschließen der Konfiguration.
 role: Admin
 level: Intermediate
 feature: Shipping/Delivery, Configuration
@@ -14,27 +14,27 @@ ht-degree: 0%
 
 # Konfigurationsübersicht für Store Fulfillment
 
-In Adobe Commerce Admin werden die Konfigurationseinstellungen für Store Fulfillment Services von Walmart Commerce Technologies nach Typ kategorisiert.
+Im Adobe Commerce Admin werden die Konfigurationseinstellungen für Store Fulfillment Services von Walmart Commerce Technologies nach Typ kategorisiert.
 
-**Konfigurationseinstellungen für die Store-Erfüllung nach Typ**
+**Store Fulfillment-Konfigurationseinstellungen nach Typ**
 
-| **Typ** | **Beschreibung** | **API-Konfigurierbar** |
+| **Typ** | **Beschreibung** | **API konfigurierbar** |
 |--------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------|
-| [Allgemeine Konfiguration](enable-general.md) | Allgemeine Integration für die Store Fulfillment-Lösung, ihre aktiven Funktionen und Anmeldeinformationen, um eine Verbindung mit den Fulfillment-Diensten herzustellen. | Nein |
+| [Allgemeine Konfiguration](enable-general.md) | Allgemeine Integrationskonfiguration für die Store-Fulfillment-Lösung, ihre aktiven Funktionen und Anmeldedaten für die Verbindung mit Fulfillment-Services. | Nein |
 | [E-Mail-Konfiguration für Vertrieb](sales-emails.md) | Richten Sie zusätzliche E-Mail-Vorlagen für Kundenbenachrichtigungen ein, die während des Eincheckvorgangs gesendet werden. | Nein |
-| [Konfiguration des Merchant Store](merchant-store-configuration.md) | Richten Sie erweiterte Inventory management-Quellen als Händler ein. | Ja |
-| [Verwaltung der Produktbestände](product-stock.md) | Konfigurieren Sie die für Kunden verfügbaren Merchant Stock Messaging und Funktionen. | Ja |
-| [Inventory management Source-Übertragung](inventory-stock-transfer.md) | Richten Sie ein neues Lager ein, übertragen Sie das Inventar aus dem Standardbestand. | Ja |
-| [Konfiguration mehrerer Websites/Bereiche](multi-site-and-scope-config.md) | Konfigurieren Sie Lager und Bereitstellungsmethoden für mehrere Websites/Storebereiche. | Nein |
-| [Systemkonfiguration des Hintergrundprozesses](background-processes.md) | Konfigurieren Sie die Zeitpläne für Hintergrundprozesse, die zum Synchronisieren von Daten mit den Fulfillment-Diensten verwendet werden. | Nein |
-| [Speicherort und Zuordnungseinstellungen](store-location-map-provider-setup.md) | Konfigurieren Sie die Möglichkeit, mithilfe eines Entfernungsanbieters nach Einzelhandelsgeschäften zu suchen und diese Informationen auf der SLS-Karte anzuzeigen | Ja |
-| [Einrichtung des Eincheckerlebnisses](check-in-experience-setup.md) | Konfigurieren Sie die Auto-Farbe und die Automake-Optionen, die während des Eincheckvorgangs verfügbar sein werden. | Ja |
-| [Benutzereinstellungen](user-setup.md) | Verwalten Sie Benutzerkonten, Rollen und Berechtigungen für Storeverknüpfungen, die die Store-Hilfe-App verwenden. Bereiche. | Ja |
-| [App-Einrichtung](app-setup.md) | Überprüfen Sie die verfügbaren Konfigurationen für die Store Assist App, die zum Abschließen des Onboarding-Prozesses erforderlich sind. Diese Einstellungen können nicht über den Adobe Commerce-Administrator konfiguriert werden. | Ja |
+| [Konfiguration für Händler](merchant-store-configuration.md) | Richten Sie erweiterte Inventory management-Quellen als Händler ein. | Ja |
+| [Verwaltung von Produktbeständen](product-stock.md) | Konfigurieren Sie die für Kunden verfügbaren Merchant Stock-Nachrichten und -Funktionen. | Ja |
+| [Inventory management Source-Übertragung](inventory-stock-transfer.md) | Richten Sie ein neues Lager ein und übertragen Sie Inventar aus dem Standardlager. | Ja |
+| [Konfiguration mehrerer Websites/Bereiche](multi-site-and-scope-config.md) | Konfigurieren Sie Lager- und Versandmethoden für mehrere Websites/Store-Bereiche. | Nein |
+| [Systemkonfiguration für Hintergrundprozesse](background-processes.md) | Konfigurieren Sie die Zeitpläne für Hintergrundprozesse, die für die Synchronisierung von Daten mit den Fulfillment-Services verwendet werden. | Nein |
+| [Store-Speicherort und Zuordnungseinrichtung](store-location-map-provider-setup.md) | Konfigurieren Sie die Möglichkeit, einen Entfernungsanbieter zu verwenden, um nach Einzelhandelsgeschäften zu suchen und diese Informationen in der SSL-Karte anzuzeigen. | Ja |
+| [Einchecken von Experience Setup](check-in-experience-setup.md) | Konfigurieren Sie die Autofarbe und die Autoherstellungs-Optionen, die während des Eincheckvorgangs verfügbar sein werden | Ja |
+| [Benutzereinrichtung](user-setup.md) | Verwalten Sie Benutzerkonten, Rollen und Berechtigungen für Store-Associates, die die Store Assist-App verwenden. Bereiche. | Ja |
+| [App-Setup](app-setup.md) | Überprüfen Sie die verfügbaren Konfigurationen für die Store Assist-App, die für den Abschluss des Onboarding-Prozesses erforderlich sind. Diese Einstellungen können nicht über Adobe Commerce Admin konfiguriert werden. | Ja |
 
-## Verwenden Sie die Konfigurationsreferenz
+## Verwenden der Konfigurationsreferenz
 
-Zeigen Sie die Konfigurationsreferenz für jeden Einstellungstyp an, indem Sie den Typnamen in den Konfigurationseinstellungen für die Speicherbearbeitung nach Typ _auswählen._
+Zeigen Sie die Konfigurationsreferenz für jeden Einstellungstyp an, indem Sie den Typnamen in der Tabelle _Store Fulfillment-Konfigurationseinstellungen nach Typ_ auswählen.
 
 In der Konfigurationsreferenz für jeden Typ werden die Konfigurationsdetails in einer Tabelle mit den folgenden Spaltenüberschriften angezeigt:
 
@@ -42,8 +42,8 @@ In der Konfigurationsreferenz für jeden Typ werden die Konfigurationsdetails in
 
 - **Beschreibung** enthält wichtige Details zum Zweck und Verhalten des Felds
 
-- **Umfang** gibt den Adobe Commerce-Konfigurationsbereich für die Einstellung an (global, website, store)
+- **Scope** gibt den Adobe Commerce-Konfigurationsbereich für die Einstellung an (global, Website, Store)
 
-- Der Wert **Erforderlich** gibt an, ob für das Feld ein Wert festgelegt werden muss
+- **Erforderlich** Wert gibt an, ob für das Feld ein Wert festgelegt werden muss
 
-Als technische Referenz können Sie auch den internen Konfigurationspfad für jedes Feld finden.
+Als technische Referenz finden Sie auch den internen Konfigurationspfad für jedes Feld.

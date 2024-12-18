@@ -1,6 +1,6 @@
 ---
-title: Onboard [!DNL Payment Services]
-description: Verbinden Sie Ihre Instanz mit der [!DNL Payment Services] Funktionalität, indem Sie einige Onboarding-Schritte ausführen.
+title: an Bord [!DNL Payment Services]
+description: Verbinden Sie Ihre -Instanz mit  [!DNL Payment Services] -Funktionalität, indem Sie einige Onboarding-Schritte ausführen.
 role: User
 level: Intermediate
 exl-id: 1ee8c660-0941-4378-a1d7-ae45de3de211
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 ---
 
-# Onboard [!DNL Payment Services]
+# Onboard-[!DNL Payment Services]
 
 Um mit der Verwendung von [!DNL Payment Services] für [!DNL Adobe Commerce] und [!DNL Magento Open Source] zu beginnen, müssen Sie einige Onboarding-Schritte ausführen, um Ihre Instanz mit der Zahlungsfunktion zu verbinden.
 
@@ -24,21 +24,21 @@ Dieses Flussdiagramm zeigt den allgemeinen Prozess für das Onboarding von [!DNL
 
 >[!NOTE]
 >
-> Bei Adobe Commerce-Versionen 2.4.7 oder höher können Sie den Schritt der Marketplace-Erweiterung überspringen, da [!DNL Payment Services] standardmäßig verfügbar ist.
+> Bei Adobe Commerce-Versionen 2.4.7 oder neuer können Sie den Schritt „Marketplace-Erweiterung“ überspringen, da [!DNL Payment Services] vorkonfiguriert verfügbar ist.
 
-Nachdem Sie das Onboarding für Sandbox- oder Live-Zahlungen abgeschlossen haben, können Sie über &quot;[!DNL Payment Services]&quot;in der Admin-Konsole auf Finanzberichte zugreifen.
+Nach Abschluss des Onboardings für Sandbox- oder Live-Zahlungen ist die Finanzberichterstattung über [!DNL Payment Services] in der Admin Console verfügbar.
 
-Wenn sowohl Sandbox- als auch Live-Zahlungen integriert und aktiviert sind, können Sie über die Startseite von [!DNL Payment Services] einfach zwischen diesen Modi wechseln.
+Wenn sowohl Sandbox- als auch Live-Zahlungen integriert und aktiviert sind, können Sie einfach von der [!DNL Payment Services] aus zwischen diesen Modi wechseln.
 
 ## Voraussetzungen
 
-Um [!DNL Payment Services] verwenden zu können, müssen alle abhängigen Module aktiviert sein und die folgenden für Ihre Instanz verfügbar sein:
+Um [!DNL Payment Services] verwenden zu können, müssen alle abhängigen Module aktiviert sein und Folgendes für Ihre Instanz verfügbar sein:
 
-* Dienste-Connector-Modul
-* Dienst-ID-Modul
+* Services-Connector-Modul
+* Dienste-ID-Modul
 * API-Schlüssel
 
-Die Dienste-Connector- und -Dienst-ID-Module werden während der [Installation von [!DNL Payment Services]](install.md) automatisch installiert.
+Die Dienste-Connector- und Dienste-ID-Module werden während der [ von automatisch  [!DNL Payment Services]](install.md).
 
 Nach Abschluss der Installation wird in den Konfigurationseinstellungen (**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**) ein neuer Abschnitt angezeigt, wenn Sie **[!UICONTROL Services]**—**[!UICONTROL Commerce Services Connector]**erweitern.
 
@@ -46,24 +46,24 @@ Informationen zum Erstellen oder Zugreifen auf API-Schlüssel finden Sie unter [
 
 ## Onboarding-Schritte
 
-1. [Installieren Sie die  [!DNL Payment Services] Erweiterung](install.md#get-payment-services).
+1. [Installieren der  [!DNL Payment Services] -Erweiterung](install.md#get-payment-services).
 1. [API-Anmeldeinformationen abrufen](connect.md#obtain-api-credentials).
-1. [Verbinden Sie Ihre Instanz](connect.md#configure-commerce-services) mit Commerce Services. Diese Verbindung darf nur einmal pro Commerce-Instanz hergestellt werden.
-1. [Richten Sie den Sandbox-Dienst](sandbox.md#enable-sandbox-testing) ein (oder fahren Sie alternativ mit [Aktivieren von Live-Zahlungen](sandbox.md#enable-live-payments) fort, wenn Sie die Funktionalität in einer anderen Umgebung getestet haben), indem Sie ein PayPal-Zahlungskonto testen.
-1. [Legen Sie  [!DNL Payment Services]  als Zahlungsmethode fest](production.md#set-payment-services-as-payment-method), um im Sandbox-Modus mit der Verarbeitung der Testzahlungen zu beginnen.
-1. [Fordern Sie den Zahlungsanspruch an](production.md#request-payments-entitlement-from-adobe), um das Live-Onboarding zu aktivieren.
-1. [Vervollständigen Sie das Onboarding des Händlers](production.md#complete-merchant-onboarding) , um Live-Zahlungen für Ihre Commerce-Websites zu ermöglichen.
-1. [Besorgen Sie sich Ihre  [!DNL Payment Services] Merchant-ID](production.md#configure-pricing-tier) und geben Sie sie an Sales weiter, um die richtige Preisebene zu konfigurieren.
-1. [Aktivieren Sie [!DNL Payment Services] im Live-Modus](production.md#enable-live-payments) , um mit der Verarbeitung von Live-Zahlungen zu beginnen.
-1. Testen von Zahlungen in den Umgebungen [sandbox](sandbox.md#test-in-sandbox-environment) und [production](production.md#test-in-production) .
+1. [Instanz mit ](connect.md#configure-commerce-services) Services von Commerce verbinden Diese Verbindung darf nur einmal pro Commerce-Instanz hergestellt werden.
+1. [Richten Sie den Sandbox-](sandbox.md#enable-sandbox-testing) ein (oder fahren Sie alternativ mit [Aktivieren von Live-Zahlungen](sandbox.md#enable-live-payments) fort, wenn Sie die Funktionalität in einer anderen Umgebung getestet haben) mit einem PayPal-Zahlungsverarbeitungskonto.
+1. [Als  [!DNL Payment Services]  festlegen](production.md#set-payment-services-as-payment-method) im Sandbox-Modus, um mit der Verarbeitung von Testzahlungen zu beginnen.
+1. [Berechtigung für Zahlungen anfordern](production.md#request-payments-entitlement-from-adobe) um das Live-Onboarding zu aktivieren.
+1. [Umfassendes Onboarding von Händlern](production.md#complete-merchant-onboarding), um Live-Zahlungen für Ihre Commerce-Websites zu aktivieren.
+1. [Erhalten Sie Ihre  [!DNL Payment Services] -Händler-ID](production.md#configure-pricing-tier) und übergeben Sie sie an den Vertrieb, um die richtige Preisstufe zu konfigurieren.
+1. [Aktivieren [!DNL Payment Services] im Live-Modus](production.md#enable-live-payments), um mit der Verarbeitung von Live-Zahlungen zu beginnen.
+1. Testen Sie Zahlungen sowohl in [Sandbox](sandbox.md#test-in-sandbox-environment)- als auch [](production.md#test-in-production).
 
 >[!NOTE]
 >
->Wenn Sie Ihre Commerce-Dienste nicht in Admin (Schritt 3) konfigurieren, können Sie keine Sandbox- oder Live-Zahlungen einrichten.
+>Wenn Sie Ihre Commerce-Services nicht im Admin-Bereich konfigurieren (Schritt 3), können Sie keine Sandbox- oder Live-Zahlungen einrichten.
 
 ## Fehlerbehebung
 
-* [Fehlerbehebung bei der [!DNL Payment Services] Installation](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html?lang=en)
+* [Fehlerbehebung [!DNL Payment Services] Installation](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html?lang=en)
 * [PayPal-Sandbox-Konto nicht verifiziert](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html)
 * [Verzögerte [!DNL Payment Services] Berichtsdaten](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html)
-* [Testen der Kreditkarte schlägt mit PayPal fehl, wenn Zahlungen in einer Sandbox-Umgebung verarbeitet werden](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html?lang=en)
+* [Testkreditkarte schlägt mit PayPal bei der Verarbeitung von Zahlungen in einer Sandbox-Umgebung fehl](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html?lang=en)

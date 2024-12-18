@@ -1,6 +1,6 @@
 ---
 title: Verfügbare Daten
-description: Verwenden Sie Reporting-Daten zur Abstimmung von Berichten mit Nicht-Commerce-Systemen.
+description: Finanzberichterstattungsdaten verwenden, um die Berichterstellung mit Nicht-Commerce-Systemen abzustimmen.
 role: User
 level: Intermediate
 exl-id: dbf41ce9-01f9-45d0-b651-e4c499e83822
@@ -14,19 +14,19 @@ ht-degree: 0%
 
 # Verfügbare Daten
 
-Einige Daten zu Bestellungen und Auszahlungen stehen Ihnen zur Verfügung, damit Sie die Adobe Commerce-Finanzberichterstattung über externe Systeme hinweg koordinieren können.
+Einige Auftrags- und Auszahlungsdaten stehen Ihnen zur Verfügung, damit Sie die Finanzberichterstattung von Adobe Commerce über externe Systeme hinweg koordinieren können.
 
 ## Mit ERP-System abstimmen
 
-Sie können Adobe Commerce-Finanzberichte mit Ihrem ERP-System (Enterprise Resource Planning) abstimmen, das keine Adobe ist, indem Sie die Inkrement-ID verwenden, die einer bestimmten Bestellung zugeordnet ist.
+Sie können die Finanzberichterstattung von Adobe Commerce mit Ihrem Nicht-Adobe-ERP-System (Enterprise Resource Planning) abstimmen, indem Sie die Inkrement-ID verwenden, die mit einer bestimmten Bestellung verknüpft ist.
 
-Wenn Zahlungsdienste die Commerce-Bestellung an PayPal senden, wird die Inkrement-ID als `custom_id` _und_ in den `invoice_id` (die ebenfalls eine zufällige Zeichenfolge nach dem `increment_id` enthält) einbezogen.
+Wenn Payment Services die Commerce-Bestellung an PayPal sendet, wird die Inkrement-ID als `custom_id` _und_ in die `invoice_id` aufgenommen (die auch eine zufällige Zeichenfolge nach dem `increment_id` enthält).
 
-Auf die IDs kann sowohl in den Details der Handelsaktivität für eine Auszahlung als auch im PayPal-Webhook zugegriffen werden.
+Die IDs sind sowohl im Detail der Händleraktivität für eine Auszahlung als auch im PayPal-Webhook leicht zugänglich.
 
-Die `invoice_id` und `custom_id` werden für eine Auszahlung unten in den Details der Handelsaktivität angezeigt:
+Die `invoice_id` und `custom_id` werden unten in den Details zur Händleraktivität für eine Auszahlung angezeigt:
 
-![`custom_id` im Detail der Handelsaktivität](assets/merchant-activity-ids.png){width="600" zoomable="yes"}
+![`custom_id` Details zur Aktivität Händler](assets/merchant-activity-ids.png){width="600" zoomable="yes"}
 
 `custom_id` und `invoice_id` in den Details im Webhook von PayPal:
 

@@ -1,6 +1,6 @@
 ---
-title: Einrichtung des Check-in-Erlebnisses
-description: Konfigurieren Sie die Auswahl der Automobil-Marke und des Modells], die verfügbar sind, um Kunden beim Ausfüllen des Formulars für die Abholbestellung zu unterstützen.
+title: Einchecken des Erlebnisses
+description: Konfigurieren Sie die Autos- und Modellauswahl], die für Kunden von Randabholungen verfügbar ist, wenn sie das Formular für die Abholung ausfüllen.
 role: Admin
 level: Intermediate
 exl-id: 341b96cd-bb83-4d07-965c-b09fab24dc81
@@ -11,22 +11,22 @@ ht-degree: 0%
 
 ---
 
-# Einrichtung des Check-in-Erlebnisses
+# Einchecken des Erlebnisses
 
-Wenn Kunden zur Abholung eintreffen, verwenden sie das Formular &quot;Abholauftrag&quot;, um sich einzuchecken und Informationen über ihren Standort, ihre Automobilindustrie und ihr Automodell bereitzustellen. Diese Informationen werden über die Store-Hilfe-App an Store Associates gesendet, damit diese schnell aktuelle Abholaufträge bereitstellen können.
+Wenn Kunden für die Abholung am Bordstein ankommen, verwenden sie das Formular „Abholauftrag“, um einzuchecken und Informationen über ihren Standort, die Automarke und das Automodell bereitzustellen. Diese Informationen werden über die App „Store Assist“ an Store Associates gesendet, damit diese schnell Abholaufträge am Bordrand bereitstellen können.
 
-![[!DNL Check-In Experience Car Make] - und [!DNL Model] -Einstellungen für den aktuellen Abruf](assets/checkin-system-settings-car-options.png)
+![[!DNL Check-In Experience Car Make]- und [!DNL Model] für den Bordsteinabtaster](assets/checkin-system-settings-car-options.png)
 
 >[!NOTE]
 >
->Sie konfigurieren die Benutzeroberfläche des Formulars &quot;Abholauftrag&quot;über das Menü [Speicherkonfiguration](merchant-store-configuration.md#configure-check-in-experience-interface-options). Sie können beispielsweise angeben, welche Eingabefelder angezeigt werden sollen und ob sie erforderlich oder optional sind.
+>Sie konfigurieren die Benutzeroberfläche des Formulars für Abholaufträge über das Menü [Store-Konfiguration](merchant-store-configuration.md#configure-check-in-experience-interface-options). Sie können beispielsweise angeben, welche Eingabefelder angezeigt werden sollen und ob sie erforderlich oder optional sind.
 
 
-## Autoproduktion und Farbauswahl konfigurieren
+## Konfigurieren der Auto- und Farbauswahl
 
-Administratoren können die Automobil-Marke und die Modellauswahl verwalten, die im Abruf-Formular in den Systemeinstellungen von Adobe Commerce verfügbar sind:
+Admin-Benutzer können die Autos und Modellauswahlen verwalten, die in den Adobe Commerce-Systemeinstellungen im Pickup-Formular verfügbar sind:
 
-- **[!UICONTROL System]> Einchecken > Autohersteller**
+- **[!UICONTROL System]> Einchecken > Automarken**
 - **[!UICONTROL System]> Einchecken > Autofarben**
 
 ![[!DNL Check-In Experience system configuration for curbside pickup]](assets/check-in-experience-system-config.png)

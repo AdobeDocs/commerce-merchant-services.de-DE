@@ -1,5 +1,5 @@
 ---
-title: Erstellen benutzerdefinierter Ereignisse
+title: Benutzerdefinierte Ereignisse erstellen
 description: Erfahren Sie, wie Sie benutzerspezifische Ereignisse erstellen, um Ihre Adobe Commerce-Daten mit anderen Adobe DX-Produkten zu verbinden.
 exl-id: 5a754106-c66a-4280-9896-6d065df8a841
 role: Admin, Developer
@@ -11,23 +11,23 @@ ht-degree: 0%
 
 ---
 
-# Erstellen benutzerdefinierter Ereignisse
+# Benutzerdefinierte Ereignisse erstellen
 
-Sie können die [Eventing-Plattform](events.md) erweitern, indem Sie eigene Storefront-Ereignisse erstellen, um branchenspezifische Daten zu erfassen. Wenn Sie ein benutzerspezifisches Ereignis erstellen und konfigurieren, wird es an den [Adobe Commerce-Ereigniskollektor](https://github.com/adobe/commerce-events/tree/main/packages/storefront-events-collector) gesendet.
+Sie können die [Eventing-Plattform](events.md) erweitern, indem Sie Ihre eigenen Storefront-Ereignisse erstellen, um branchenspezifische Daten zu erfassen. Wenn Sie ein benutzerdefiniertes Ereignis erstellen und konfigurieren, wird es an den [Adobe Commerce Events Collector gesendet](https://github.com/adobe/commerce-events/tree/main/packages/storefront-events-collector).
 
-## Umgang mit benutzerdefinierten Ereignissen
+## Verarbeiten benutzerdefinierter Ereignisse
 
-Benutzerdefinierte Ereignisse werden nur für Adobe Experience Platform unterstützt. Benutzerdefinierte Daten werden nicht an Adobe Commerce-Dashboards und -Metriken-Tracker weitergeleitet.
+Benutzerdefinierte Ereignisse werden nur für die Adobe Experience Platform unterstützt. Benutzerdefinierte Daten werden nicht an Adobe Commerce-Dashboards und Metrik-Tracker weitergeleitet.
 
-Für jedes `custom` -Ereignis führt der Kollektor Folgendes aus:
+Für jedes `custom`-Ereignis gibt der Collector Folgendes aus:
 
 - Fügt `identityMap` mit `ECID` als primäre Identität hinzu
-- Umfasst `email` in `identityMap` als sekundäre Identität _wenn_ `personalEmail.address` im Ereignis festgelegt ist
-- Schließt das vollständige Ereignis in ein `xdm` -Objekt ein, bevor es an die Edge weitergeleitet wird
+- Enthält `email` in `identityMap` als sekundäre Identität _wenn_ `personalEmail.address` im Ereignis festgelegt ist
+- Schließt das vollständige Ereignis in ein `xdm` ein, bevor es an Edge weitergeleitet wird
 
 Beispiel:
 
-Benutzerspezifisches Ereignis, das über das Adobe Commerce Events SDK veröffentlicht wird:
+Benutzerspezifisches Ereignis, das über Adobe Commerce Events SDK veröffentlicht wurde:
 
 ```javascript
 mse.publish.custom({
@@ -69,21 +69,21 @@ In Experience Platform Edge:
 
 >[!NOTE]
 >
-> Die Verwendung benutzerdefinierter Ereignisse kann sich auf standardmäßige Adobe Analytics-Berichte auswirken.
+> Die Verwendung benutzerdefinierter Ereignisse kann sich auf die standardmäßigen Adobe Analytics-Berichte auswirken.
 
-## Ereignisüberschreibungen verarbeiten (benutzerdefinierte Attribute)
+## Überschreibungen von Ereignissen behandeln (benutzerdefinierte Attribute)
 
-Attributüberschreibungen für Standardereignisse werden nur für die Experience Platform unterstützt. Benutzerdefinierte Daten werden nicht an Commerce-Dashboards und -Metriken-Tracker weitergeleitet.
+Attributüberschreibungen für Standardereignisse werden nur für den Experience Platform unterstützt. Benutzerdefinierte Daten werden nicht an Commerce-Dashboards und Metrik-Tracker weitergeleitet.
 
-Bei jedem Ereignis mit `customContext` überschreibt der Kollektor die in den relevanten Kontexten festgelegten Felder mit den Feldern in `customContext`. Der Anwendungsfall für Außerkraftsetzungen besteht darin, dass ein Entwickler Kontexte wiederverwenden und erweitern möchte, die von anderen Teilen der Seite in bereits unterstützten Ereignissen festgelegt wurden.
+Für jedes Ereignis mit `customContext` überschreibt der Collector Felder, die in den relevanten Kontexten festgelegt sind, mit Feldern in `customContext`. Der Anwendungsfall für Überschreibungen besteht darin, dass ein Entwickler Kontexte, die von anderen Teilen der Seite in bereits unterstützten Ereignissen festgelegt wurden, wiederverwenden und erweitern möchte.
 
 >[!NOTE]
 >
->Beim Überschreiben benutzerspezifischer Ereignisse sollte die Ereignisweiterleitung an Experience Platform für diesen Ereignistyp deaktiviert werden, um eine doppelte Zählung zu vermeiden.
+>Beim Überschreiben benutzerdefinierter Ereignisse sollte die Ereignisweiterleitung an Experience Platform für diesen Ereignistyp deaktiviert sein, um eine doppelte Zählung zu vermeiden.
 
 Beispiele:
 
-Produktansicht mit Überschreibungen, die über das Adobe Commerce Events SDK veröffentlicht werden:
+Produktansicht mit Überschreibungen, die über Adobe Commerce Events SDK veröffentlicht wurden:
 
 ```javascript
 mse.publish.productPageView({

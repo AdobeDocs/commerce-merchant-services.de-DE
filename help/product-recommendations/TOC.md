@@ -1,6 +1,6 @@
 ---
 user-guide-title: Handbuch zu [!DNL Product Recommendations]
-user-guide-description: Dieses Handbuch enthält ausführliche Anweisungen zur Verwendung von [!DNL Product Recommendations] aus Adobe Commerce.
+user-guide-description: Dieses Handbuch enthält detaillierte Anweisungen zur Verwendung von  [!DNL Product Recommendations]  von Adobe Commerce.
 breadcrumb-title: Handbuch zu [!DNL Product Recommendations]
 role: Admin
 feature: Services, Recommendations
@@ -18,9 +18,9 @@ ht-degree: 13%
 - [Versionshinweise](release-notes.md)
 - Erste Schritte {#getting-started}
    - [Onboarding](onboarding.md)
-   - [Implementierungsarbeitsablauf](implementation-workflow.md)
+   - [Implementierungs-Workflow](implementation-workflow.md)
    - [Headless](headless.md)
-   - [Installieren](install-configure.md)
+   - [Installieren von](install-configure.md)
    - [Einstellungen](settings.md)
    - [Staging-Umgebung](staging-environment.md)
    - [Page Builder-Integration](page-builder.md)
@@ -31,10 +31,10 @@ ht-degree: 13%
    - [Empfehlungstypen](type.md)
    - [Filter](filters.md)
    - [Platzierung und Beschriftungen](placement.md)
-- [!DNL Product Recommendations] Entwickler {#developer}
+- [!DNL Product Recommendations] Developer {#developer}
    - [Übersicht](development-overview.md)
-   - [Daten erfassen](events.md)
+   - [Erfassen von Daten](events.md)
    - [Überprüfen](verify.md)
-   - [Anpassen](customize.md)
-   - [Umgang mit Cookie-Einschränkungen](setting-cookie.md)
-- [Kehren Sie zur Startseite der Commerce-Dienste zurück](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)
+   - [Customize](customize.md)
+   - [Handhabung von Cookie-Einschränkungen](setting-cookie.md)
+- [Zurück zur Commerce Services-Startseite](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)

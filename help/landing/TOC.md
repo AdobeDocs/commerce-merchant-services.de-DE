@@ -12,21 +12,21 @@ ht-degree: 48%
 
 ---
 
-# Dienste für die Dokumentation zu Adobe Commerce {#user-guides}
+# Dokumentation zu Services für Adobe Commerce {#user-guides}
 
 - [Übersicht](home.md)
 - Versionsinformationen {#release-information}
    - [Versionshinweise](/help/landing/release-notes-all.md)
-- Commerce-Dienste {#commerce-services}
+- Commerce Services-{#commerce-services}
    - [[!DNL Live Search]](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/overview)
    - [[!DNL Product Recommendations]](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/guide-overview)
    - [[!DNL Catalog Service]](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/catalog-service/guide-overview)
    - [[!DNL Payment Services]](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/guide-overview)
-- Integrationsdienste {#integration-services}
+- Integration Services-{#integration-services}
    - [[!DNL Data Connection]](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/overview)
-   - [Services Connector](/help/landing/saas.md)
-- Datenwerkzeuge {#data-services}
-   - [SAAs-Datenexport](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/overview)
+   - [Services-Connector](/help/landing/saas.md)
+- Data Tools-{#data-services}
+   - [SaaS-Datenexport](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/overview)
    - [SaaS-Preisindizierung](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/price-indexer/price-indexing)
    - [Katalogsynchronisierung](/help/landing/catalog-sync.md)
 

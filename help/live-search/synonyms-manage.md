@@ -1,6 +1,6 @@
 ---
-title: Synonyme verwalten
-description: Erfahren Sie, wie Sie vorhandene [!DNL Live Search] Synonyme verwalten.
+title: Verwalten von Synonymen
+description: Erfahren Sie, wie Sie bestehende  [!DNL Live Search]  verwalten.
 exl-id: 9f910b3c-ea28-4a50-9d3f-24b4812c0e75
 source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
@@ -9,43 +9,43 @@ ht-degree: 0%
 
 ---
 
-# Synonyme verwalten
+# Verwalten von Synonymen
 
-Befolgen Sie diese Anweisungen, um vorhandene [!DNL Live Search] [Synonyme](synonyms.md) zu verwalten.
+Befolgen Sie diese Anweisungen, um bestehende [!DNL Live Search] ([) ](synonyms.md) verwalten.
 
 ## Synonym suchen
 
-Um die Suche nach einem Synonym zu vereinfachen, können Sie die Liste nach Typ filtern und nach Keyword oder Erweiterungsbegriff suchen.  Diese Methoden können einzeln oder gemeinsam verwendet werden.
+Um das Auffinden eines Synonyms zu erleichtern, können Sie die Liste nach Typ filtern und nach Keyword oder Expansionsbegriff suchen.  Diese Methoden können einzeln oder gemeinsam verwendet werden.
 
-1. Um die Liste zu filtern, setzen Sie **Typ** auf einen der folgenden Werte:
+1. Um die Liste zu filtern, setzen **Typ** auf einen der folgenden Werte:
 
    * Alle
-   * Einweg
-   * Zweiweg
+   * unidirektional
+   * wechselseitig
 
-1. Um nach einem Suchbegriff oder Erweiterungsbegriff zu suchen, geben Sie mindestens drei Zeichen in das Feld **Suche nach** ein.
+1. Um nach einem Keyword oder einem Erweiterungsbegriff zu suchen, geben Sie mindestens drei Zeichen in das Feld **Suchen nach** ein.
 
 ## Synonym bearbeiten
 
-1. Suchen Sie das Synonym, das Sie bearbeiten möchten, und klicken Sie auf die Optionen **Mehr** (...).
+1. Suchen Sie das Synonym, das Sie bearbeiten möchten, und klicken Sie auf **Optionen** Mehr…).
 
-1. Klicken Sie auf **Bearbeiten**.
-Das Keyword ist der erste Begriff in der Liste und jeder Begriff wird durch ein Komma getrennt. Das Keyword und die Erweiterungsbegriffe können aktualisiert werden, der Typ des Synonyms kann jedoch nicht geändert werden.
+1. Klicken Sie **Bearbeiten**.
+Das Keyword ist der erste Begriff in der Liste, und jeder Begriff wird durch ein Komma getrennt. Die Schlüsselwort- und Erweiterungsbegriffe können aktualisiert werden, der Typ des Synonyms kann jedoch nicht geändert werden.
 1. Klicken Sie auf das Element, das Sie bearbeiten möchten. Aktualisieren Sie dann den Text nach Bedarf.
 
-   ![Zweiweg-Synonym bearbeiten](assets/synonym-two-way-edit.png)
+   ![Zwei-Wege-Synonym bearbeiten](assets/synonym-two-way-edit.png)
 
-1. Klicken Sie nach Abschluss des Vorgangs auf **Speichern**.
+1. Klicken Sie abschließend auf **Speichern**.
 
 ## Synonym löschen
 
-1. Suchen Sie das Synonym, das Sie löschen möchten, in der Liste und klicken Sie auf die Optionen **Mehr** (...).
-1. Klicken Sie auf **Löschen**.
-1. Klicken Sie bei Aufforderung zur Bestätigung auf **Synonym löschen** .
+1. Suchen Sie das Synonym, das Sie löschen möchten, in der Liste und klicken Sie auf **Mehr** (…) Optionen.
+1. Klicken Sie **Löschen**.
+1. Wenn Sie dazu aufgefordert werden, klicken **zur Bestätigung auf** Synonym löschen.
 
 ## Publish-Änderungen
 
-Um den Prozess abzuschließen, müssen Ihre gespeicherten Änderungen in der Storefront veröffentlicht werden. Es kann bis zu zwei Stunden dauern, bis die Updates verfügbar sind.
+Um den Vorgang abzuschließen, müssen Ihre gespeicherten Änderungen in der Storefront veröffentlicht werden. Es kann bis zu zwei Stunden dauern, bis die Aktualisierungen live geschaltet werden.
 
-1. Klicken Sie auf **Publish changes**.
+1. Klicken Sie auf **Publish-**.
 1. Suchen Sie oben auf der Seite nach der Meldung, die bestätigt, dass Ihre Änderungen veröffentlicht wurden.

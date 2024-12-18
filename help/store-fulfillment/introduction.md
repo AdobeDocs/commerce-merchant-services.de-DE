@@ -1,6 +1,6 @@
 ---
-title: "Einführung in [!DNL Store Fulfillment]"
-description: "Erfahren Sie, wie [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] Online-Käufe unterstützt, im Geschäft abholen (BOPIS) für Kunden. Verwenden Sie die Store-Hilfe für mobile Apps, um die BOPIS-Erfüllung und Auftragsverarbeitung für Store-Mitarbeiter und Commerce-Kunden zu optimieren."
+title: Einführung in [!DNL Store Fulfillment]
+description: Erfahren Sie [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies]  wie Kunden Online-Einkäufe, Pick-up-in-Store (BOPIS) unterstützen. Verwenden Sie Store Assist Mobile, um die BOPIS-Erfüllung und Auftragsverarbeitung für Store-Mitarbeiter und Commerce-Kunden zu optimieren.
 role: Leader, Admin, Developer, User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c
@@ -13,70 +13,70 @@ ht-degree: 0%
 
 # Einführung in [!DNL Store Fulfillment]
 
-Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies ist eine fortschrittliche Omnichannel-Fulfillment-Lösung, die in Ihren [!DNL Commerce] -Store integriert ist, um ein überlegenes Online-Kauferlebnis zu bieten und das Kundenerlebnis im Geschäft (BOPIS) zu nutzen.
+Store Fulfillment für Adobe Commerce von Walmart Commerce Technologies ist eine fortschrittliche Omnichannel-Fulfillment-Lösung, die mit Ihrem [!DNL Commerce] Store integriert wird, um ein überlegenes Online-Kauferlebnis zu bieten, das durch Abholung im Store (BOPIS) entsteht.
 
-![Adobe der Admin-Konfiguration für die Store-Fulfillment-Lösung](assets/store-fulfillment-admin-home.png)
+![Store Fulfillment Solution Adobe Admin Configuration](assets/store-fulfillment-admin-home.png)
 
-Store Fulfillment bietet außerdem einen durchgängigen Erfüllungs-Workflow, mit dem Händler Kosten senken und gleichzeitig Konversionsraten, durchschnittlicher Bestellwert und Kundenzufriedenheitsraten steigern können. Dieser Workflow bietet Folgendes:
+Store Fulfillment bietet außerdem einen End-to-End-Erfüllungs-Workflow, der Händlern hilft, Kosten zu senken und gleichzeitig die Konversionsraten, den durchschnittlichen Bestellwert und die Kundenzufriedenheitsraten zu erhöhen. Dieser Workflow bietet:
 
-* **Omnichannel-Flexibilität**-Drehe Geschäfte und Lagerhäuser in Abholpunkte und Fulfillment-Zentren um.
+* **Omni-Channel-Flexibilität** Verwandeln Sie Geschäfte und Lager in Abholpunkte und Fulfillment-Center.
 
-* **Bequeme Kunden-Abholoptionen** - Bei der Auswahl von Online-Käufen können Kunden die Produktverfügbarkeit einfach sehen und einen Store für die In-Store- oder Cursor-Abholung auswählen.
+* **Praktische Optionen für die Kundenabholung**-Bei der Auswahl von Online-Käufen können Kunden einfach die Produktverfügbarkeit sehen und einen Store für die In-Store- oder Bordabholung auswählen.
 
-* **Erfüllungseffizienz**: Die Mobile App &quot;Store Assist&quot;hilft, assoziierte Elemente zu speichern, um die Erfüllungsgeschwindigkeit und Genauigkeit von Aufträgen zu erhöhen.
+* **Fulfillment Efficiency** - Die Mobile App Store Assist hilft Store Associates, die Auftragsabwicklung zu beschleunigen und die Genauigkeit zu erhöhen.
 
-* **Mobile Bequemlichkeit** - Kunden erhalten bei jedem Schritt Bestellbenachrichtigungen. Von der Bestellbestätigung bis zur Bestellabnahme können sie den Bestellstatus verfolgen, Eincheckanweisungen erhalten und mit Store-Mitarbeitern kommunizieren, wenn sie im Geschäft ankommen.
+* **Mobile Convenience**-Kunden erhalten bei jedem Schritt Bestellbenachrichtigungen. Von der Bestellbestätigung bis zur Abholung der Bestellung können sie den Bestellstatus verfolgen, Anweisungen zum Einchecken erhalten und mit den Filialpartnern kommunizieren, wenn sie im Geschäft ankommen.
 
-* **Betriebliche Sichtbarkeit**: Verbessern Sie die Lagerbestandszuordnung, um eine zeitnahe lokale Erfüllung zu fördern.
+* **Operative Sichtbarkeit** - Verbessern Sie die Inventarzuweisung auf Filialebene, um die rechtzeitige lokale Erfüllung zu fördern.
 
 ## Store Fulfillment-Erweiterung
 
-Die Store Fulfillment-Lösung unterstützt und erweitert native Adobe Commerce-Funktionen.
+Die Store Fulfillment-Lösung unterstützt native Adobe Commerce-Funktionen und erweitert diese.
 
 * Unterstützt die meisten Produkttypen - einfach, konfigurierbar, gruppiert, gebündelt und virtuell
 
 * Integration mit [[!DNL Adobe Commerce] Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/basics/sources-stocks)
 
-* Integriert mit POS (Point-Sale)-Bestandsmanagementsystemen wie ERP, OMS und WMS
+* Integration mit Point-of-Sale (POS)-Systemen zur Verwaltung von Händlerbeständen wie ERP, OMS und WMS
 
 * Vollständig kompatibel mit dem Luma-Design
 
-* Teilkompatibilität mit PWA- und Headless-Storefronts
+* Teilweise Kompatibilität mit PWA- und Headless-Storefronts
 
-* Unterstützt die Store-Hilfe-App von Walmart Commerce Technologies. Diese App stellt Informationen zu Sammelbestellungen direkt an das Handheld-Gerät Ihres Mitarbeiters am ausgewählten Store-Speicherort bereit. Mit diesen Informationen können sie schnell und präzise Artikel auswählen, bereitstellen und an Kunden übergeben, wenn sie im Geschäft ankommen.
+* Unterstützt die Store Assist-App von Walmart Commerce Technologies. Diese App liefert Abholauftragsinformationen direkt an das Handheld-Gerät Ihres Mitarbeiters am ausgewählten Store-Standort. Mit diesen Informationen können sie schnell und präzise Artikel auswählen, bereitstellen und an Kunden weitergeben, wenn sie im Geschäft ankommen.
 
-## Store Assist App
+## Store-Assist-App
 
-Die Store Assist App für iOS- und Android-Geräte interagiert mit [!DNL Walmart Commerce Technologies], um Omnichannel-Ausführungsfunktionen in Ihre Einzelhandelsgeschäfte zu integrieren.
+Die Store Assist-App für iOS- und Android-Geräte interagiert mit [!DNL Walmart Commerce Technologies], um Omni-Channel-Fulfillment-Funktionen in Ihre Einzelhandelsgeschäfte zu bringen.
 
-* Senden Sie In-Store- und curbside-Abholaufträge direkt an die Mobilgeräte Ihrer Partner.
+* Senden Sie Abholaufträge im Geschäft und am Bordrand direkt an die mobilen Geräte von Geschäftspartnern
 
-* Stellen Sie sicher, dass Lageraufträge schnell und präzise ausgewählt, inszeniert und an Kunden weitergegeben werden, wenn sie zur Bestellabnahme im Geschäft ankommen.
+* Stellen Sie sicher, dass Bestellungen schnell und präzise ausgewählt, bereitgestellt und an Kunden weitergeleitet werden, wenn sie zur Bestellabholung im Geschäft ankommen
 
-* Verwalten Sie den Benutzerzugriff von Storeverknüpfungen, einschließlich Sicherheitsrichtlinien, Authentifizierung mit zwei Faktoren und mehr
+* Verwalten Sie den Benutzerzugriff für Store-Associate, einschließlich Sicherheitsrichtlinien, Zwei-Faktor-Authentifizierung und mehr
 
-* Daten zu Ihren Einzelhandelsspeicherorten und -beständen automatisch mit Adobe Commerce synchronisieren
+* Daten über die Standorte und den Bestand Ihrer Einzelhandelsgeschäfte automatisch mit Adobe Commerce synchronisieren
 
 ## Verbessertes Benutzererlebnis
 
-Die Store-Erfüllung verbessert Adobe Commerce, indem Funktionen hinzugefügt werden, mit denen verbesserte Einkaufserlebnisse und optimierte Erfüllung-Workflows bereitgestellt werden können.
+Store Fulfillment verbessert Adobe Commerce durch zusätzliche Funktionen, die ein verbessertes Einkaufserlebnis und optimierte Fulfillment-Workflows ermöglichen.
 
-* **Store Location Selector (SLS)** - Fügt neben dem nativen Checkout auch Store-Optionen, Lagerverfügbarkeit und Store-Selektoren zu den Produkt- und Warenkorbseiten hinzu.
+* **Store Location Selector (SLS)** - Fügt zusätzlich zum nativen Checkout zu den Produkt- und Warenkorbseiten Optionen für die Store-Abholung, Lagerverfügbarkeit und Store-Selektoren hinzu.
 
-* **Lagerverfügbarkeit** - Fügt zusätzliche Produkt- und globale Konfigurationsoptionen zu Adobe Commerce Inventory management hinzu. Diese Optionen unterstützen die Lagerbestandszuordnung, um die zeitnahe lokale Erfüllung zu fördern.
+* **Inventarverfügbarkeit** - Fügt zusätzliche Produkt- und globale Konfigurationsoptionen zu Adobe Commerce Inventory management hinzu. Diese Optionen unterstützen die Inventarzuweisung auf Store-Ebene, um eine zeitnahe lokale Erfüllung zu fördern.
 
-* **Verbesserungen am Warenkorb und Checkout** - Kommuniziert Kunden während ihrer Online-Shopping-Sitzung die schnellsten verfügbaren Abholzeiten, Orte und Kosten.
+* **Warenkorb- und Checkout-**: Informiert Kunden während ihrer Online-Shopping-Sitzung über die schnellsten verfügbaren Abholzeiten, Standorte und Kosten.
 
-* **Eincheckvorgang-Prozessablauf** - Fügt Schnittstellen hinzu, um den Prozess zum Einchecken von Kunden und die Interaktionen mit Storeverknüpfungen zu verbessern, wenn diese zur In-Store- oder Cursor-Aufnahme gelangen.
+* **Eincheckvorgang-Fluss** Fügt Schnittstellen hinzu, um den Eincheckvorgang des Kunden und die Interaktionen mit Geschäftspartnern zu verbessern, wenn sie zur In-Store- oder Bordabholung ankommen.
 
-* **Mein Kontoverlauf** - Erweitert den [!DNL Commerce] Kontoverlauf, um die Schritte im Auftragsverlauf anzuzeigen.
+* **Mein Kontoverlauf**-Erweitert den [!DNL Commerce] Kontoverlauf, um Schritte im Bestellverlauf anzuzeigen.
 
-* **Transaktions-E-Mails** - Erweitert die Admin-Funktionen für [!UICONTROL Sales Emails], um E-Mail-Vorlagen für Online-Käufe hinzuzufügen und in Store-Transaktionen zu übernehmen. Die Vorlagen unterstützen die Echtzeit-Kommunikation zwischen Kunden und Store-Mitarbeitern während des Bestellabnahmeprozesses.
+* **Transaktions-E** Mails: Erweitert die Admin-Funktionen für [!UICONTROL Sales Emails], um E-Mail-Vorlagen für Online-Käufe und Abholungen im Geschäft hinzuzufügen. Die Vorlagen unterstützen die Echtzeit-Kommunikation zwischen Kunden und Filialpartnern während des Abholvorgangs der Bestellung.
 
-* **Flexible Erfüllung**-Erweitert [!DNL Commerce] Funktionen, um Szenarien für die Verarbeitung von Rückständen, Mengenreduzierungen und teilweisen Auftragserfüllung zu unterstützen und gleichzeitig alle Stornierungen und Kreditkarten zu erleichtern, die zur Unterstützung dieser Szenarien erforderlich sind.
+* **Flexible Fulfillment** - Erweitert [!DNL Commerce] Funktionen zur Unterstützung von Szenarien für die Verarbeitung von Auftragsrückständen, Mengenreduzierungen und die teilweise Auftragserfüllung und erleichtert gleichzeitig Stornierungen und Gutschriften, die zur Unterstützung dieser Szenarien erforderlich sind.
 
 >[!TIP]
 >
-> Eine kurze Demo der Lösung zur Store-Erfüllung finden Sie in der [Übersicht zur Store-Erfüllung](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/orders/store-fulfillment.html), die in _Adobe Commerce-Videos und -Tutorials_ verfügbar ist.
+> Eine kurze Demo der Store Fulfillment-Lösung finden Sie in der [Store Fulfillment-Übersicht](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/orders/store-fulfillment.html) die in _Adobe Commerce-Videos und -Tutorials_ verfügbar ist.
 
 

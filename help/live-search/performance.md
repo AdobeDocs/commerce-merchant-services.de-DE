@@ -1,6 +1,6 @@
 ---
 title: Leistung
-description: Der Arbeitsbereich [!DNL Live Search] Leistung bietet Einblicke in die Suchbegriffe, die von Käufern verwendet werden.
+description: Der  [!DNL Live Search]  „Performance“ bietet Einblicke in die Suchbegriffe, die Kundinnen und Kunden verwenden.
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
 source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
@@ -11,39 +11,39 @@ ht-degree: 0%
 
 # Leistung
 
-Der Arbeitsbereich *Leistung* bietet Einblicke in die Suchbegriffe, die von Käufern verwendet werden. Die Informationen können verwendet werden, um Trends zu identifizieren, die Clickthrough-Rate zu erhöhen und die Konversionsrate zu verbessern. Der Arbeitsbereich &quot;Leistung&quot;bietet eine Momentaufnahme der Suchmetriken für einen bestimmten Datumsbereich und enthält die folgenden Berichte:
+Der *Performance*-Arbeitsbereich bietet Einblicke in die Suchbegriffe, die Kundinnen und Kunden verwenden. Die Informationen können verwendet werden, um Trends zu identifizieren, den Clickthrough zu erhöhen und die Konversionsrate zu verbessern. Der Arbeitsbereich Leistung bietet eine Momentaufnahme der Suchmetriken für einen bestimmten Datumsbereich und umfasst die folgenden Berichte:
 
-* Einzelsuche
-* Null Ergebnisse
-* Häufige Ergebnisse
+* Eindeutige Suchvorgänge
+* Keine Ergebnisse
+* Beliebte Ergebnisse
 
 ![Leistung](assets/performance-unique-searches.png)
 
-Weitere Informationen zur Datensynchronisation finden Sie auch im [Dashboard zur Datenverwaltung](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) .
+Weitere Informationen zur Datensynchronisation finden [ auch im ](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html)Daten-Management-Dashboard).
 
-## Bericht anzeigen
+## Anzeigen eines Berichts
 
-1. Um den **Datumsbereich** einzugeben, klicken Sie auf den Kalender (![Kalender](assets/btn-calendar.png)) und führen Sie einen der folgenden Schritte aus:
+1. Um den **Datumsbereich“**, klicken Sie auf den Kalender ![Kalender](assets/btn-calendar.png) und führen Sie einen der folgenden Schritte aus:
 
    * Um ein einzelnes Datum anzugeben, doppelklicken Sie auf das Datum im Kalender.
-   * Um einen Datumsbereich festzulegen, klicken Sie auf das erste und letzte Datum im Kalender.
+   * Um einen Datumsbereich anzugeben, klicken Sie auf das erste und letzte Datum im Kalender.
 
 >[!NOTE]
 >
->Der Arbeitsbereich für die Leistung wird alle 12 Stunden aktualisiert.
+>Der Leistungsarbeitsbereich wird alle 12 Stunden aktualisiert.
 
 ## Feldbeschreibungen
 
 | Momentaufnahmen-Daten | Beschreibung |
 |--- |--- |
-| Einzelsuche | Die Gesamtzahl der eindeutigen Suchvorgänge für den angegebenen Datumsbereich. Mehrere Suchen desselben Käufers werden als eindeutig betrachtet, selbst wenn sie für dieselbe Abfrage im Abstand von mehr als einer Stunde gesendet werden. |
-| Clickthrough-Rate | Der Prozentsatz der Suchvorgänge, die mit dem Klick auf ein Produkt abgeschlossen werden. Die Clickthrough-Rate beträgt beispielsweise 50 %, wenn der Käufer nach &quot;Hosen&quot;und &quot;Hemd&quot;sucht und dann in der &quot;Shirt&quot;-Suche auf ein Ergebnis klickt. |
-| Konversionsrate | Der Prozentsatz der Produkte, die der Käufer kauft, im Vergleich zur Anzahl der Produkte, auf die der Käufer im angegebenen Datumsbereich klickt. Beispielsweise beträgt die Konversionsrate der Interaktion 100 %, wenn der Käufer sechs Produkte im Popover anzeigt, auf eins klickt und einen Kauf tätigt. <br /><br />Die Konversionsrate wird durch die Anzahl der Ansichten eines bestimmten Produkts nicht beeinflusst. Beispielsweise bleibt die Konversionsrate gleich, wenn der Käufer die Suche verwendet, aber auf keine Produkte klickt. |
-| Null-Ergebnisrate | Der Prozentsatz der eindeutigen Suchen, die für den angegebenen Datumsbereich keine Ergebnisse zurückgeben. Beispielsweise beträgt die Null-Ergebnisrate 66,67 %, wenn der Käufer zweimal nach &quot;fjjajfjfjf&quot; (ohne Ergebnisse) und einmal nach &quot;pants&quot; (mit Ergebnissen) sucht. |
-| Durchschn. Klickposition | Die relative Position der durchschnittlichen Clickthrough-Rate basierend auf eindeutigen Suchen für den angegebenen Datumsbereich. |
+| Eindeutige Suchvorgänge | Die Gesamtzahl der eindeutigen Suchvorgänge für den angegebenen Datumsbereich. Mehrere Suchvorgänge desselben Kunden, selbst wenn sie für dieselbe Abfrage durchgeführt werden, gelten als eindeutig, wenn sie im Abstand von mehr als einer Stunde eingereicht werden. |
+| Clickthrough-Rate | Der Prozentsatz der Suchvorgänge, die damit enden, dass der Einkäufer auf ein Produkt klickt. Die Clickthrough-Rate beträgt zum Beispiel 50 %, wenn der Käufer nach „pants“ und „shirt“ sucht und dann auf ein Ergebnis in der „shirt“-Suche klickt. |
+| Konversionsrate | Der Prozentsatz der Produkte, die der Einkäufer kauft, im Vergleich zur Anzahl der Produkte, auf die der Einkäufer für den angegebenen Datumsbereich klickt. Beispielsweise liegt die Konversionsrate der Interaktion bei 100 %, wenn der Käufer sechs Produkte im Popover anzeigt, auf eines klickt und einen Kauf tätigt. <br /><br />Die Konversionsrate wird durch die Anzahl der Ansichten eines bestimmten Produkts nicht beeinflusst. Beispielsweise bleibt die Konversionsrate gleich, wenn der Käufer die Suche verwendet, aber nicht auf Produkte klickt. |
+| Rate der Nullergebnisse | Der Prozentsatz der eindeutigen Suchvorgänge, die für den angegebenen Datumsbereich keine Ergebnisse zurückgeben. Beispielsweise liegt die Null-Ergebnisrate bei 66,67 %, wenn der Käufer zweimal (ohne Ergebnisse) nach „fjjajfjfjf“ und einmal (mit Ergebnissen) nach „pants“ sucht. |
+| Durchschnitt Klick-Position | Die relative Position der durchschnittlichen Klickrate auf der Grundlage eindeutiger Suchvorgänge für den angegebenen Datumsbereich. |
 
 | Berichte | Beschreibung |
 |--- |--- |
-| Einzelsuche | Listet die eindeutigen Suchabfragen auf, die im angegebenen Datumsbereich verwendet wurden. Die Berichtsdaten werden auf die gleiche Weise wie die Daten der einzelnen Suchanzeigen berechnet. Wenn ein Käufer dieselbe Suchanfrage zweimal, aber im Abstand von mehr als einer Stunde eingibt, gilt die Suche als zwei eindeutige Suchen. Berichtslimit: Die 500 wichtigsten Begriffe |
-| Null Ergebnisse | Listet die Suchabfragen auf, die keine Ergebnisse zurückgeben, sowie die Anzahl der Male, die im angegebenen Datumsbereich verwendet wurden. Berichtslimit: Die 500 wichtigsten Begriffe |
-| Häufige Ergebnisse | Listet die Namen der Produkte auf, die im angegebenen Datumsbereich die meisten Ansichten erhalten haben. Die beliebten Ergebnisse werden nur anhand von Impressionen berechnet und sind nicht von der Anzahl der Klicks oder des erzielten Umsatzes betroffen. Berichtslimit: Die 500 wichtigsten Begriffe |
+| Eindeutige Suchvorgänge | Listet die eindeutigen Suchanfragen auf, die im angegebenen Datumsbereich verwendet wurden. Die Berichtsdaten werden auf die gleiche Weise berechnet wie die Daten eindeutiger Such-Momentaufnahmen. Wenn ein Käufer dieselbe Suchanfrage zweimal, aber im Abstand von mehr als einer Stunde eingibt, wird die Suche als zwei eindeutige Suchvorgänge betrachtet. Bericht-Limit: Die 500 wichtigsten Begriffe |
+| Keine Ergebnisse | Listet die Suchabfragen auf, die keine Ergebnisse zurückgeben, und gibt an, wie oft im angegebenen Datumsbereich verwendet wurde. Bericht-Limit: Die 500 wichtigsten Begriffe |
+| Beliebte Ergebnisse | Listet die Namen von Produkten auf, die im angegebenen Datumsbereich die meisten Ansichten erhalten haben. Beliebte Ergebnisse werden nur auf der Grundlage von Impressions berechnet und sind von der Anzahl der Klicks oder des generierten Umsatzes nicht betroffen. Bericht-Limit: Die 500 wichtigsten Begriffe |

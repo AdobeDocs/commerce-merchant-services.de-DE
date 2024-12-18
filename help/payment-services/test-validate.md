@@ -1,6 +1,6 @@
 ---
 title: Testen und Validieren
-description: Tests und Validierungen helfen sicherzustellen, dass die [!DNL Payment Services] Funktionen erwartungsgemäß funktionieren und die besten Zahlungsoptionen für Ihre Kunden bieten
+description: Tests und Validierungen helfen sicherzustellen,  [!DNL Payment Services]  die Funktionen erwartungsgemäß funktionieren und die besten Zahlungsoptionen für Ihre Kunden bereitstellen
 exl-id: 95b4615e-73b0-41e8-83e2-e65a0b22f10f
 feature: Payments, Checkout
 source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
@@ -12,43 +12,43 @@ ht-degree: 0%
 
 # Testen und Validieren
 
-Bevor Sie Ihren Kunden [!DNL Payment Services] für [!DNL Adobe Commerce] und [!DNL Magento Open Source] bereitstellen, sollten Sie in Ihrer Sandbox-Umgebung _und_ in der Produktion testen. Tests und Validierungen helfen sicherzustellen, dass die Funktionen von [!DNL Payment Services] erwartungsgemäß funktionieren und die besten Zahlungsoptionen für Ihren Store und Ihre Kunden bieten.
+Bevor Sie Ihren Käufern [!DNL Payment Services] für [!DNL Adobe Commerce] und [!DNL Magento Open Source] zur Verfügung stellen, empfiehlt es sich, diese in Ihrer Sandbox-Umgebung _und)_ Produktion zu testen. Tests und Validierung helfen sicherzustellen, dass [!DNL Payment Services] Funktionen erwartungsgemäß funktionieren und die besten Zahlungsoptionen für Ihr Geschäft und Ihre Kunden bieten.
 
-## Test in Sandbox-Umgebung
+## Testen in Sandbox-Umgebung
 
-Das Testen von [!DNL Payment Services] in einer Sandbox-Umgebung ist ein wichtiger Validierungsschritt, auch wenn es sich um eine simulierte Umgebung handelt, die nur mit der PayPal-Sandbox verbunden ist, nicht mit echten Banken und Händlern.
+Das Testen von [!DNL Payment Services] in einer Sandbox-Umgebung ist ein wichtiger Validierungsschritt, auch wenn es sich um eine simulierte Umgebung handelt, die nur mit der PayPal-Sandbox und nicht mit echten Banken und Händlern verbunden ist.
 
-1. Führen Sie einen erfolgreichen Checkout aus Ihrem Geschäft durch, entweder mit [Kreditkartenfeldern](payments-options.md#credit-card-fields) oder mit einem der [PayPal-Zahlungsschaltflächen](payments-options.md#paypal-smart-buttons). Weitere Informationen zur Verwendung gefälschter Kreditkarten zum Testen finden Sie unter [Testen von Anmeldeinformationen](#testing-credentials) .
-1. Erfassen (wenn Ihre Zahlungsaktion auf `Authorize and Capture`](onboard.md#set-payment-services-as-payment-method) eingestellt ist), [Rückerstattung](refunds.md) oder [void](voids.md) die gerade ausgefüllte Bestellung. [ Sie können auch einfach [eine Rechnung ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice){target="_blank"} für eine Bestellung erstellen, wenn Ihre Zahlungsaktion auf `Authorize` anstelle von `Authorize and Capture` eingestellt ist.
-1. Sehen Sie sich die Transaktion und andere Informationen innerhalb von 24-48 Stunden im Bericht [Auszahlungen](payouts.md) an.
-1. Weitere Informationen finden Sie im Bericht [Bestellstatus-Bericht](order-payment-status.md).
+1. Schließen Sie einen erfolgreichen Checkout aus Ihrem Geschäft ab, entweder mit [Kreditkartenfeldern](payments-options.md#credit-card-fields) oder einer der [PayPal-Zahlungsschaltflächen](payments-options.md#paypal-smart-buttons). Weitere Informationen [ Verwendung gefälschter Kreditkarten zum Testen finden ](#testing-credentials) unter „Testen von Anmeldeinformationen“.
+1. Erfassen Sie (wenn Ihre Zahlungsaktion [auf `Authorize and Capture`](onboard.md#set-payment-services-as-payment-method) eingestellt), [Rückerstattung](refunds.md) oder [Annullierung](voids.md) die gerade abgeschlossene Bestellung. Sie können auch einfach [Rechnung erstellen](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice){target="_blank"} für eine Bestellung, wenn Ihre Zahlungsaktion auf `Authorize` statt auf `Authorize and Capture` gesetzt ist.
+1. Zeigen Sie die Transaktion und andere Informationen innerhalb von 24-48 Stunden im [Auszahlungsbericht](payouts.md) an.
+1. Weitere Informationen zur Bestellung finden Sie im [Bericht zum Status der ](order-payment-status.md).
 
 ### Testen von Anmeldeinformationen
 
-Beim Testen und Validieren Ihrer Sandbox müssen Sie gefälschte Kreditkartennummern verwenden, damit Sie keine echten Gebühren für ein bestehendes Kreditkartenkonto erstellen.
+Beim Testen und Validieren Ihrer Sandbox müssen Sie gefälschte Kreditkartennummern verwenden, damit Sie keine echten Gebühren für ein vorhandenes Kreditkartenkonto erstellen.
 
-Verwenden Sie den Kreditkartengenerator von PayPal, um [zufällige Kreditkarteninformationen zu generieren](https://www.paypal.com/us/smarthelp/article/where-can-i-find-test-credit-card-numbers-ts2157), um sie zu testen.
+Verwenden Sie den Kreditkartengenerator von PayPal, um [zufällige Kreditkarteninformationen) zum Testen ](https://www.paypal.com/us/smarthelp/article/where-can-i-find-test-credit-card-numbers-ts2157) generieren.
 
 So testen Sie Apple Pay im Sandbox-Modus:
 
-* Erstellen Sie ein [Apple-Sandbox-Tester-Konto](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account) mit gefälschten Kreditkarten- und Rechnungsinformationen.
-* [Registrieren Sie Ihre Sandbox-Domänen](https://developer.paypal.com/docs/checkout/apm/apple-pay/#link-registeryoursandboxdomains).
+* Erstellen Sie ein [Apple Sandbox-Tester](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account)Konto, einschließlich gefälschter Kreditkarten- und Rechnungsinformationen.
+* [Registrieren von Sandbox-Domains](https://developer.paypal.com/docs/checkout/apm/apple-pay/#link-registeryoursandboxdomains).
 
 >[!NOTE]
 >
->PayPals Sandbox-Zahlungsverarbeitung ist manchmal langsam und der Service kann gelegentlich ausfallen. Diese Situation ist kein Hinweis auf die Geschwindigkeit und Effizienz der Verarbeitung der Zahlungen für lebende Erzeugnisse.
+>Die Sandbox-Zahlungsabwicklung von PayPal ist manchmal langsam, und der Service kann gelegentlich ausfallen. Diese Situation ist kein Hinweis auf die Geschwindigkeit und Effizienz der Verarbeitung von Live-Produktzahlungen.
 
-## Produktionstest
+## Test in Produktion
 
-Es wird dringend empfohlen, [!DNL Payment Services] in der Produktion mit echten Kreditkarten und Banken zu testen, bevor Sie diese Funktion den Käufern zur Verfügung stellen. Obwohl das Testen von [!DNL Payment Services] in der Sandbox wichtig ist, ist das Testen in der Produktion die törichteste Methode, um sicherzustellen, dass [!DNL Payment Services] erwartungsgemäß funktioniert.
+Es wird dringend empfohlen, [!DNL Payment Services] in der Produktion mit echten Kreditkarten und Banken zu testen, bevor Sie diese Funktion Käufern offenlegen. Obwohl das Testen von [!DNL Payment Services] in Sandbox wichtig ist, ist das Testen in der Produktion die sicherste Methode, um sicherzustellen, [!DNL Payment Services] wie erwartet funktioniert.
 
-Sie können [!DNL Payment Services] in der Produktion auf zwei Arten testen:
+Sie haben zwei Möglichkeiten, [!DNL Payment Services] in der Produktion zu testen:
 
-* Wählen Sie einen Zeitpunkt aus, zu dem Sie wissen, dass die Käufer keine Bestellungen tätigen.
-* Verwenden Sie einen Webstore, auf den Kunden vorübergehend nicht zugreifen können, der Ihnen aber zum Testen zur Verfügung steht.
+* Wählen Sie einen Zeitpunkt aus, zu dem keine Bestellungen von Käufern aufgegeben werden.
+* Verwenden Sie einen Webstore, auf den Käufer vorübergehend nicht zugreifen können, der Ihnen jedoch zum Testen zur Verfügung steht.
 
-Führen Sie Ihre Produktionstests mit echten Kreditkarten und PayPal-Konten durch und testen Sie den gesamten Lebenszyklus einer Zahlung, einschließlich Erfassung und Rückerstattung. Wenn Sie den gesamten Checkout- und Zahlungsfluss während des Tests abschließen, erhalten Sie ein klares Bild davon, wie Ihre [!DNL Payment Services]-Funktion funktioniert, wenn Live-Käufer sie verwenden.
+Testen Sie Ihre Produktion mit echten Kreditkarten und PayPal-Konten und testen Sie den gesamten Lebenszyklus einer Zahlung, einschließlich Erfassung und Rückerstattung. Wenn Sie den gesamten Checkout- und Zahlungsfluss während des Tests abschließen, erhalten Sie ein klares Bild davon, wie Ihre [!DNL Payment Services]-Funktionalität funktionieren wird, wenn Live-Shopper sie verwenden.
 
-Überprüfen Sie außerdem, ob die in den Bankausweisen angezeigten Informationen für die Zahlungsmethoden, die Sie in Produktionstests verwenden, korrekt und erwartet sind (einschließlich der Beschreibung Ihres Unternehmens).
+Sie sollten auch überprüfen, ob die Informationen, die auf den Kontoauszügen für die Zahlungsmethoden angezeigt werden, die Sie in Produktionstests verwenden, korrekt und erwartet sind (einschließlich der Beschreibung Ihres Unternehmens).
 
-Um die Apple-Zahlung im Produktionsmodus zu testen, müssen Sie [Ihre Produktionsdomänen registrieren](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain).
+Um Apple Pay im Produktionsmodus zu testen, müssen Sie [Ihre Produktionsdomänen registrieren](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain).

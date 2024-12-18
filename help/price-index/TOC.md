@@ -1,7 +1,7 @@
 ---
-user-guide-title: "SaaS-Preisindizierungshandbuch"
-user-guide-description: "Dieses Handbuch enthält ausführliche Anweisungen zur Verwendung des SaaS-Preisindexers."
-breadcrumb-title: "Saas Price Indexer Guide"
+user-guide-title: SaaS-Preisindizierungshandbuch
+user-guide-description: Dieses Handbuch enthält detaillierte Anweisungen zur Verwendung des SaaS-Preisindexers.
+breadcrumb-title: SaaS-Preisindexierhandbuch
 hide: true
 role: Admin
 feature: Services, Price Indexer
@@ -12,10 +12,10 @@ ht-degree: 8%
 
 ---
 
-# Saas-Preis-Indexer {#price-indexer}
+# SaaS-Preisindexer {#price-indexer}
 
-- [Übersicht über die SaaS-Preisindizierung](price-indexing.md)
-- Katalogadapter {#catalog-adapter}
+- [SaaS-Preisindizierung - Übersicht](price-indexing.md)
+- {#catalog-adapter} für Katalogadapter
    - [Übersicht](catalog-adapter.md)
    - [Versionshinweise](release-notes.md)
-- [Kehren Sie zur Startseite der Commerce-Dienste zurück](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)
+- [Zurück zur Commerce Services-Startseite](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)

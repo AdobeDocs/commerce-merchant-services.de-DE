@@ -1,6 +1,6 @@
 ---
-title: Systemkonfiguration - Übersicht
-description: Erfahren Sie mehr über die Kategorien für die Admin-Konfigurationseinstellungen, die für die Store Fulfillment-Lösung verfügbar sind, und wie sie konfiguriert sind.
+title: Übersicht über die Systemkonfiguration
+description: Erfahren Sie mehr über die Kategorien der Admin-Konfigurationseinstellungen, die für die Store-Fulfillment-Lösung verfügbar sind, und darüber, wie sie konfiguriert werden.
 role: Admin
 feature: Shipping/Delivery, System, Configuration
 level: Intermediate
@@ -11,22 +11,22 @@ ht-degree: 0%
 
 ---
 
-# Systemkonfiguration - Übersicht
+# Übersicht über die Systemkonfiguration
 
-In Adobe Commerce Admin werden die Konfigurationseinstellungen für Store Fulfillment Services von Walmart Commerce Technologies nach Typ kategorisiert.
+Im Adobe Commerce Admin werden die Konfigurationseinstellungen für Store Fulfillment Services von Walmart Commerce Technologies nach Typ kategorisiert.
 
-**Konfigurationseinstellungen für die Store-Erfüllung nach Typ**
+**Store Fulfillment-Konfigurationseinstellungen nach Typ**
 
-| **Typ** | **Beschreibung** | **API-Konfigurierbar** |
+| **Typ** | **Beschreibung** | **API konfigurierbar** |
 |-------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------|
-| [Einrichtung des Eincheckerlebnisses](store-location-map-provider-setup.md) | Konfigurieren Sie die Auto-Farbe und die Automake-Optionen, die während des Eincheckvorgangs verfügbar sein werden. | Ja |
-| [Benutzereinstellungen](user-setup.md) | Verwalten Sie Benutzerkonten, Rollen und Berechtigungen für Storeverknüpfungen, die die Store-Hilfe-App verwenden. Bereiche. | Ja |
-| [App-Einrichtung](app-setup.md) | Überprüfen Sie die verfügbaren Konfigurationen für die Store Assist App, die zum Abschließen des Onboarding-Prozesses erforderlich sind. Diese Einstellungen können nicht über den Adobe Commerce-Administrator konfiguriert werden. | Ja |
+| [Einchecken von Experience Setup](store-location-map-provider-setup.md) | Konfigurieren Sie die Autofarbe und die Autoherstellungs-Optionen, die während des Eincheckvorgangs verfügbar sein werden | Ja |
+| [Benutzereinrichtung](user-setup.md) | Verwalten Sie Benutzerkonten, Rollen und Berechtigungen für Store-Associates, die die Store Assist-App verwenden. Bereiche. | Ja |
+| [App-Setup](app-setup.md) | Überprüfen Sie die verfügbaren Konfigurationen für die Store Assist-App, die für den Abschluss des Onboarding-Prozesses erforderlich sind. Diese Einstellungen können nicht über Adobe Commerce Admin konfiguriert werden. | Ja |
 
 
-## Verwenden Sie die Konfigurationsreferenz
+## Verwenden der Konfigurationsreferenz
 
-Zeigen Sie die Konfigurationsreferenz für jeden Einstellungstyp an, indem Sie den Typnamen in den Konfigurationseinstellungen für die Speicherbearbeitung nach Typ _auswählen._
+Zeigen Sie die Konfigurationsreferenz für jeden Einstellungstyp an, indem Sie den Typnamen in der Tabelle _Store Fulfillment-Konfigurationseinstellungen nach Typ_ auswählen.
 
 In der Konfigurationsreferenz für jeden Typ werden die Konfigurationsdetails in einer Tabelle mit den folgenden Spaltenüberschriften angezeigt:
 
@@ -34,9 +34,9 @@ In der Konfigurationsreferenz für jeden Typ werden die Konfigurationsdetails in
 
 - **Beschreibung** enthält wichtige Details zum Zweck und Verhalten des Felds
 
-- **Umfang** gibt den Adobe Commerce-Konfigurationsbereich für die Einstellung an (global, website, store)
+- **Scope** gibt den Adobe Commerce-Konfigurationsbereich für die Einstellung an (global, Website, Store)
 
-- Der Wert **Erforderlich** gibt an, ob für das Feld ein Wert festgelegt werden muss
+- **Erforderlich** Wert gibt an, ob für das Feld ein Wert festgelegt werden muss
 
-Als technische Referenz können Sie auch den internen Konfigurationspfad für jedes Feld finden.
+Als technische Referenz finden Sie auch den internen Konfigurationspfad für jedes Feld.
 

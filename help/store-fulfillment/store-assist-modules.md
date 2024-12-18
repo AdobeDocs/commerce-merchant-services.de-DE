@@ -1,6 +1,6 @@
 ---
-title: Workflows zur Unterstützung bei der Ausführung von Speichern
-description: Erfahren Sie mehr über die Module "Pick", "Stage", "Hand-Off"und "Orders", die in der Store Assist App verfügbar sind. Diese Module ermöglichen den End-to-End-Workflow zur Store-Erfüllung für BOPIS-Bestellungen. Store Associates verwenden diese Module zur Verwaltung und Bereitstellung von Store-Pickup-Bestellungen für Kunden.
+title: Workflows zur Unterstützung der Speichererfüllung
+description: Erfahren Sie mehr über die in der Store Assist-App verfügbaren Module „Pick“, „Staging“, „Hand-Off“ und „Orders“. Diese Module ermöglichen den End-to-End-Store-Erfüllungs-Workflow für BOPIS-Bestellungen. Store Associates verwenden diese Module, um Abholaufträge zu verwalten und an Kunden zu liefern.
 role: Leader, Admin, User
 level: Intermediate
 feature: Shipping/Delivery, Tools and External Services, Customer Service
@@ -12,59 +12,59 @@ ht-degree: 0%
 
 ---
 
-# Workflows zur Unterstützung bei der Ausführung von Speichern
+# Workflows zur Unterstützung der Speichererfüllung
 
-Die Store-Hilfe-App stellt Store Associates mit vier Modulen zur Verfügung, um den In-Store-Erfüllungsprozess für Online-Käufe zu verwalten und Bestellungen im Geschäft abzuholen:
+Die Store Assist-App bietet Store Associates vier Module, mit denen der In-Store-Erfüllungsprozess für Online-Käufe, Abholungen in Store-Bestellungen verwaltet werden kann:
 
-- **[Auswählen](#pick-module)**: Erhalten Sie vollständige Sichtbarkeit aller bestellten Artikel und der Tools, um sicherzustellen, dass die richtigen Artikel und Mengen ausgewählt werden. Speicherverknüpfungen können eine oder mehrere Bestellungen gleichzeitig auswählen, um eine höhere Effizienz zu erzielen.
+- **[Auswahl](#pick-module)** - Erhalten Sie vollständige Einblicke in alle bestellten Artikel und die Tools, um sicherzustellen, dass die richtigen Artikel und die richtigen Mengen ausgewählt werden. Store-Mitarbeiter können eine oder mehrere Bestellungen gleichzeitig auswählen, um eine höhere Effizienz zu erzielen.
 
-- **[Bühne](#stage-module)**: Geben Sie den Ort ein, an dem Bestellungen aufgegeben werden, während Kunden zum Store reisen, damit Store Associates Bestellungen schneller finden und abgeben können.
+- **[Phase](#stage-module)** - Geben Sie den Ort ein, an dem Bestellungen aufgegeben werden, während Kunden zum Geschäft reisen, damit Store Associates Bestellungen schneller finden und weitergeben können.
 
-- **[Aus](#hand-off-module)**: Rufen Sie Echtzeit-Benachrichtigungen ab, nachdem Kunden in den Speicher eintreffen, um ihre Wartezeit und die Übergabe von Bestellungen nahtlos zu minimieren.
+- **[Hand Off](#hand-off-module)** - Erhalten Sie Echtzeit-Benachrichtigungen, nachdem Kundinnen und Kunden im Geschäft ankommen, um ihre Wartezeit und Übergabeaufträge nahtlos zu minimieren.
 
-- **[Bestellungen](#orders-module)**: Zeigen Sie eine Liste aller Bestellungen an, die für einen Store aufgegeben wurden, sodass jeder die Anzahl der Bestellungen und den Status jeder Bestellung kennt.
+- **[Bestellungen](#orders-module)** - Zeigt eine Liste aller Bestellungen für ein Geschäft an, sodass jeder die Anzahl der Bestellungen und den Status jeder Bestellung kennt.
 
 >[!NOTE]
 >
->Bevor Store Associates die Store-Hilfe-App verwenden kann, muss ein Administrator den [App-Einrichtungsprozess](app-setup.md) abschließen.
+>Bevor Store Associates die Store Assist-App verwenden kann, muss ein Administrator den [App-Einrichtungsprozess“ ](app-setup.md).
 
 ## Auswahlmodul
 
-Mit dem Pick-Modul können Partner die vom Kunden bestellten Artikel suchen und scannen und zum Abholen bepacken. Sie können sehen, wie viele Bestellungen überfällig sind, und sofort mit der Auswahl beginnen. Sie können auch zuerst andere Bestellungen auswählen. Bestellungen werden nach Lieferzeiten mit überfälligen Bestellungen geordnet. Speicherverknüpfungen können auswählen, welche Bestellungen sie auswählen möchten, in welcher Reihenfolge sie Ihre Vorgänge benötigen.
+Das Pick-Modul hilft Mitarbeitern, die vom Kunden bestellten Artikel zu finden und zu scannen und sie für die Abholung zu verpacken. Sie können sehen, wie viele Bestellungen überfällig sind, und sofort damit beginnen, sie auszuwählen. Sie können auch andere Bestellungen auswählen, die zuerst ausgewählt werden sollen. Bestellungen werden nach Lieferfrist sortiert, wobei überfällige Bestellungen zuerst berücksichtigt werden. Store-Mitarbeiter können auswählen, welche Bestellungen sie für die von Ihren Vorgängen benötigte Bestellung auswählen möchten.
 
-Ihre Partner können auch wählen, ob sie jeweils eine Bestellung oder mehrere Bestellungen gleichzeitig auswählen möchten.
+Ihre Mitarbeiter können auch eine Bestellung oder mehrere Bestellungen gleichzeitig auswählen.
 
-Bei der Auswahl sehen Store-Mitarbeiter eine Liste aller Artikel, die für jede Bestellung ausgewählt werden sollen, deren Menge, Preis und die Produktbeschreibung aus Ihrem Katalog. Es wird eine Statusleiste angezeigt, die ihnen beim Navigieren in der Store-Hilfe beim Auswählen von Bestellungen hilft.
+Bei der Auswahl sehen die Verkaufsmitarbeiter eine Liste aller Artikel, die für jede Bestellung ausgewählt werden können, sowie deren Mengen, Preise und die Produktbeschreibung aus Ihrem Katalog. Es wird eine Fortschrittsleiste angezeigt, die beim Navigieren im Shop hilft, während Bestellungen ausgewählt werden.
 
-Sobald Ihre Partner mit der Auswahl beginnen und die zu wählenden Elemente auswählen, werden ihnen alle relevanten Elementinformationen wie Größe, Farbe, Menge, Preis, Beschreibung, Anpassung und SKU/UPC angezeigt. Verknüpfungen haben beim Auswählen von Bestellungen zwei Aktionen verfügbar:
+Sobald Ihre Mitarbeiter mit der Auswahl beginnen und die Artikel auswählen, die ausgewählt werden sollen, werden ihnen alle relevanten Artikelinformationen angezeigt, wie z. B. Größe, Farbe, Menge, Preis, Beschreibung, Passform und SKU/UPC. Verknüpfte Benutzer haben zwei Aktionen, die bei der Auswahl von Bestellungen verfügbar sind:
 
-- Geben Sie an, dass der Artikel nicht gefunden werden kann, und Trigger einer Rückerstattung.
-- Überprüfen Sie den Barcode auf das Element. Der Zweck des Scanvorgangs besteht darin, zu überprüfen, ob das richtige Element ausgewählt wurde. Falls die Kamera den Barcode nicht lesen kann, müssen Speicherverknüpfungen die SKU des Elements, das sie ausgewählt haben, manuell eingeben.
+- Geben Sie an, dass der Artikel nicht gefunden werden kann, und Trigger einer Erstattung.
+- Scannen Sie den Barcode auf dem Element. Der Zweck des Scannens ist es, zu überprüfen, ob sie das richtige Element ausgewählt haben. Wenn die Kamera den Barcode nicht lesen kann, müssen die Verkaufsassistenten die SKU des von ihnen ausgewählten Artikels manuell eingeben.
 
-Wenn Verknüpfungen ein Element nicht finden können, können sie es überspringen und später zu ihm zurückkehren.  Die oben genannte Rückerstattung wird erst erteilt, wenn sie ihre Abholung abgeschlossen haben.
+Wenn Associates ein Element nicht finden können, können sie es überspringen und später zu ihm zurückkehren.  Die oben genannte Rückerstattung wird nur ausgestellt, nachdem sie ihre Pick-Walk-Phase der Bestellung abgeschlossen haben.
 
 ## Staging-Modul
 
-Das Staging-Modul zeigt an, wo die Bestellung in das Gepäck gestellt wird, bis der Kunde ankommt, um sie abzurufen. Die Festlegung dieses Standorts ist ein wichtiger Schritt, um verlorene Bestellungen zu verhindern, wenn Store-Mitarbeiter ihre Verlagerung beenden, bevor der Kunde eintrifft, oder wenn Sie viele Bestellungen haben. In beiden Fällen soll Ihnen dies dabei helfen, schnell die richtige Bestellung mit allen relevanten Informationen zu finden.
+Das Staging-Modul zeigt an, wo die Bestellung in Säcken aufgegeben wird, bis der Kunde ankommt, um sie abzuholen. Die Einstellung dieses Standorts ist ein wichtiger Schritt, um verlorene Bestellungen zu verhindern, wenn Ladenmitarbeiter ihre Schicht beenden, bevor der Kunde ankommt, oder wenn Sie viele Bestellungen haben. In beiden Fällen ist dies so konzipiert, dass Sie schnell die richtige Reihenfolge mit allen relevanten Informationen darüber finden.
 
-Sie können eine freie Textleiste verwenden, um anzugeben, wo die Bestellung platziert wird: unter dem Zähler, im hinteren Raum oder an Position B3 - alles basierend auf Ihren Vorgängen.
+Sie können eine Freiform-Textleiste verwenden, um anzugeben, wo die Bestellung platziert wird: unter dem Tresen, im Hinterzimmer oder an der Position B3 - alles basierend auf Ihren Vorgängen.
 
-Sie können auch einfach den Staging-Speicherort in der App aktualisieren, wenn Ihre Mitarbeiter ihn an einer anderen Stelle platzieren müssen.
+Sie können den Staging-Speicherort in der App auch einfach aktualisieren, wenn Ihre Partner ihn an einem anderen Ort ablegen mussten.
 
-## Hand-Aus-Modul
+## Handoff-Modul
 
-Das Modul [!UICONTROL Hand Off] zeigt an, welche Kunden eingecheckt haben, um ihre Bestellungen aufzunehmen, wo ihre Bestellungen abgespielt werden und auf sie warten. Die Kunden können Bestellungen entweder im Laden oder auf dem Parkplatz außerhalb/außerhalb abholen. Die Informationen über ihren genauen Standort werden in diesem Modul nach dem Einchecken angezeigt.
+Das Modul [!UICONTROL Hand Off] zeigt an, welche Kunden eingecheckt haben, um ihre Bestellungen abzuholen, und wo ihre Bestellungen bereitgestellt werden und auf sie warten. Kunden können Bestellungen entweder im Geschäft oder auf dem Parkplatz außerhalb/am Bordstein abholen. Die Informationen über ihren genauen Speicherort werden in diesem Modul angezeigt, sobald sie eingecheckt haben.
 
-Sobald Sie eine Bestellung auswählen, die für die Kundenkasse bereit ist. Jeder kann die Bestellinformationen sehen, einschließlich aller Artikel, die nicht gefunden wurden, des Kundenstandorts, der Wartezeit, des Staging der Bestellung und der Telefonnummer des Kunden, sofern verfügbar.
+Nachdem Sie eine Bestellung ausgewählt haben, die für die Kundenübergabe bereit ist. Jeder kann die Bestellinformationen einsehen, einschließlich aller nicht gefundenen Artikel, des Kunden-Warteorts, der Wartezeit, wo die Bestellung bereitgestellt wird, und der Kunden-Telefonnummer, falls verfügbar.
 
-Der Kunde hat möglicherweise eine alternative Person ausgewählt, um die Bestellung aufzunehmen. In diesem Fall sehen Sie den Namen und die Kontaktinformationen der Person, die die Bestellung auswählen soll.
+Der Kunde hat möglicherweise eine andere Person für die Abholung der Bestellung ausgewählt. In diesem Fall sehen Sie den Namen und die Kontaktinformationen der Person, die die Bestellung auswählen soll.
 
-Nach Übergabe der Bestellung an den Kunden muss der Store Associate entweder die Bestellung annehmen oder bestimmte Artikel ablehnen. Sobald der Kunde zufrieden ist, muss er auf dem Gerät Ihres Mitarbeiters für die Bestellung unterschreiben, wenn eine Unterschrift für Ihr Unternehmen erforderlich ist.
+Nach Übergabe der Bestellung an den Kunden muss der Store Associate entweder die Bestellung annehmen oder bestimmte Artikel ablehnen. Sobald der Kunde zufrieden ist, muss er die Bestellung auf dem Gerät Ihres Partners signieren, wenn eine Signatur Ihres Unternehmens eine Signatur erfordert.
 
-Wenn Kunden eintreffen, ohne einchecken zu müssen, können ihre Mitarbeiter sie manuell einchecken.
+Wenn Kunden ohne Check-in ankommen, können Ihre Mitarbeiter sie manuell einchecken.
 
-## Bestellmodul
+## Modul Bestellungen
 
-Das Modul Bestellungen zeigt alle bestehenden Bestellungen und deren Status an. Wenn ein Kunde aufruft, um seine Bestellung zu überprüfen, können Store Associates die Informationen schnell finden, indem er die Nummer durchsucht oder im Bestellmodul sucht.
+Das Modul Bestellungen zeigt alle vorhandenen Bestellungen und deren Status an. Wenn ein Kunde anruft, um seine Bestellung zu überprüfen, können Store Associates die Informationen schnell finden, indem sie die Nummer nachschlagen oder im Modul Bestellungen suchen.
 
-Store Associates können auch Bestellungen von der Seite Bestellungen in der Store-Hilfe-App abbrechen.
+Store Associates können Bestellungen auch über die Seite „Bestellungen“ in der Store-Assist-App stornieren.

@@ -1,6 +1,6 @@
 ---
-title: Seiten-Widget "Produktliste"
-description: Aktivieren und Gestalten des [!DNL Live Search Product Listing Page Widget]
+title: Widget „Produktlistenseite“
+description: Aktivieren und Formatieren des  [!DNL Live Search Product Listing Page Widget]
 exl-id: f7346a06-a8c7-4a33-8437-ea4f61d9281f
 source-git-commit: aa036228bb4040de5a8d4d159727fa0c4c6d99e1
 workflow-type: tm+mt
@@ -9,27 +9,27 @@ ht-degree: 0%
 
 ---
 
-# Seiten-Widget &quot;Produktliste&quot;
+# Widget „Produktlistenseite“
 
-Die [!DNL Live Search Product Listing Page Widget] (PLP) verwendet die Commerce Services-Plattform, um eine leistungsfähige, durchsuchbare und facettenfähige Produktanlistungsseite bereitzustellen. Hier wird beschrieben, wie Sie das PLP-Widget aktivieren und gestalten.
+Das [!DNL Live Search Product Listing Page Widget] (PLP) verwendet die Commerce Services-Plattform, um eine leistungsstarke, durchsuchbare und facettenfähige Produktlistenseite bereitzustellen. In diesem Thema wird beschrieben, wie Sie das PLP-Widget aktivieren und gestalten.
 
 ## Aktivieren des PLP-Widgets
 
-Wenn der [!DNL Live Search] -Dienst installiert ist, wird die Standardsuchfunktion automatisch in [!DNL Live Search] umgewandelt.
+Wenn der [!DNL Live Search]-Service installiert ist, wird die Standardsuchfunktion automatisch in [!DNL Live Search] konvertiert.
 
-Das Widget [!DNL Live Search] PLP ist für neue Installationen standardmäßig aktiviert. Wenn Sie [!DNL Live Search] aktualisieren und das PLP-Widget bereits deaktiviert wurde, bleibt dies so.
+Das [!DNL Live Search] PLP-Widget ist bei Neuinstallationen standardmäßig aktiviert. Wenn Sie ein Upgrade von [!DNL Live Search] durchführen und das PLP-Widget bereits deaktiviert wurde, wird es so bleiben.
 
 >[!IMPORTANT]
 >
->Wenn [!DNL Live Search Product Listing Page Widget] aktiviert ist, kann die Sortierreihenfolge auf einer Produktlistenseite nicht geändert werden.
+>Wenn die [!DNL Live Search Product Listing Page Widget] aktiviert ist, kann die Sortierreihenfolge auf einer Produktlistenseite nicht geändert werden.
 
 ## Widget-Funktionen
 
-Das PLP-Widget bietet die folgenden nativen Funktionen:
+Das PLP-Widget bietet die folgenden vordefinierten Funktionen:
 
-- Zum Warenkorb hinzufügen - Nur für einfache Produkte verfügbar.
+- Schaltflächen zum Warenkorb hinzufügen - Nur für einfache Produkte verfügbar.
 - Mehrere Bilder pro Produkt - Das Bild kann sich ändern, wenn für ein konfigurierbares Produkt eine andere Farbe ausgewählt wird.
-- Unterstützung für Farbmuster - Beachten Sie, dass das Farbattribut `color` geschrieben werden muss, damit der Code ordnungsgemäß validiert wird.
+- Unterstützung für Farbfelder - Beachten Sie, dass das Farbattribut `color` geschrieben werden muss, damit der Code ordnungsgemäß validiert werden kann.
 
 ### Anpassen des Widgets
 
@@ -39,25 +39,25 @@ Zusätzlich zu den vordefinierten Funktionen des PLP-Widgets können Sie das Wid
 - Unterstützung mehrerer Sprachen
 - Preisregler
 
-Informationen zum Anpassen des PLP-Widgets für die oben genannten Funktionen finden Sie unter `storefront-product-listing-page` readme im folgenden [repository](https://github.com/adobe/storefront-product-listing-page/). Die Readme in diesem Repository bietet ein Beispiel für die Anpassung des PLP-Widgets und die Bereitstellung dieser Anpassungen auf Ihrer Site.
+Informationen zum Anpassen des PLP-Widgets für die oben genannten Funktionen finden Sie in der `storefront-product-listing-page` Readme-Datei im folgenden [Repository](https://github.com/adobe/storefront-product-listing-page/). Die Readme-Datei in diesem Repository enthält ein Beispiel für die Anpassung des PLP-Widgets und die Bereitstellung dieser Anpassungen auf Ihrer Site.
 
 >[!WARNING]
 >
->Wenn Sie das PLP-Widget mithilfe des im Repository verfügbaren Codes anpassen, sind Sie für die Wartung und erforderliche Updates verantwortlich. Alle neuen PLP-Widget-Funktionen, die von Adobe veröffentlicht werden, sind möglicherweise nicht mit Ihrer benutzerdefinierten Implementierung kompatibel.
+>Wenn Sie das PLP-Widget mithilfe des im Repository verfügbaren Codes anpassen, sind Sie für die Wartung und alle erforderlichen Aktualisierungen verantwortlich. Alle neuen PLP-Widget-Funktionen, die Adobe-Versionen veröffentlichen, sind möglicherweise nicht mit Ihrer benutzerdefinierten Implementierung kompatibel.
 
-## Stilbeispiel
+## Beispiel für einen Stil
 
-Sie können das Erscheinungsbild des PLP-Widgets so anpassen, dass es mit [CSS](https://developer.adobe.com/commerce/frontend-core/guide/css/) Ihrer Site entspricht.
+Sie können das Erscheinungsbild des PLP-Widgets mit (CSS) an Ihre [ anpassen](https://developer.adobe.com/commerce/frontend-core/guide/css/).
 
 >[!NOTE]
 >
->Elemente mit benutzerdefinierten Klassen innerhalb eines Adobe Commerce-Designs werden nicht vererbt. Diese Elemente müssen von ihrer jeweiligen Klasse angesprochen werden, um mit den benutzerdefinierten Klassen übereinstimmen. Primäre Aktionsklassen funktionieren nicht mit Widget-Schaltflächen. Generische Targeting-Elemente innerhalb des CSS werden übernommen; `button` gilt für Widget-Schaltflächen.
+>Elemente mit benutzerdefinierten Klassen in einem Adobe Commerce-Design werden nicht vererbt. Diese Elemente müssen durch ihre spezifische Klasse angesprochen werden, damit sie mit den benutzerdefinierten Klassen übereinstimmen. Primäre Aktionsklassen funktionieren nicht auf einer Widget-Schaltfläche. Generische zielgerichtete Elemente innerhalb des CSS werden übernommen. `button` gilt für Widget-Schaltflächen.
 
-Die hervorgehobenen Divs enthalten die Zielklasse `ds-sdk-product-item__product-name`.
+Die hervorgehobenen DIVs enthalten die `ds-sdk-product-item__product-name` der Zielklasse.
 
 ![Paginierung](assets/plp-css-example.png)
 
-Passen Sie den Produktnamen an, indem Sie eine Regel hinzufügen, um sie in Großbuchstaben zu versetzen.
+Passen Sie den Produktnamen an, indem Sie eine Regel hinzufügen, um sie in Großbuchstaben zu ändern.
 
 ```css
 .ds-sdk-product-item__product-name {
@@ -72,11 +72,11 @@ Passen Sie den Produktnamen an, indem Sie eine Regel hinzufügen, um sie in Gro�
 ### Produktliste
 
 - `.ds-sdk-product-list`: Äußeres div
-- `.ds-sdk-product-list__grid`: Inner div
+- `.ds-sdk-product-list__grid`: Innerer div
 
 ![Paginierung](assets/plp-css-product-list.png)
 
-#### Paginierung von Produktlisten
+#### Seitenumbruch für Produktliste
 
 - `.ds-plp-pagination`
 
@@ -93,16 +93,16 @@ Passen Sie den Produktnamen an, indem Sie eine Regel hinzufügen, um sie in Gro�
 ### Widgets
 
 - `.ds-widgets`: Äußeres div
-- `.ds-widgets__actions`: Linkes seitliches inneres Div
-- `.ds-widgets__results`: Rechtes seitliches inneres Div
+- `.ds-widgets__actions`: Innerer div auf der linken Seite
+- `.ds-widgets__results`: Rechter innerer Div
 
-![Widget results](assets/plp-css-widgets.png)
+![Widget-Ergebnisse](assets/plp-css-widgets.png)
 
-### Sortieren-Dropdown
+### Dropdown sortieren
 
 - `.ds-sdk-sort-dropdown`
 
-![Sortieren-Dropdown-Liste](assets/plp-css-dropdown.png)
+![Dropdown sortieren](assets/plp-css-dropdown.png)
 
 - `.ds-sdk-sort-dropdown__button`
 
@@ -118,30 +118,30 @@ Passen Sie den Produktnamen an, indem Sie eine Regel hinzufügen, um sie in Gro�
 
 - `.ds-sdk-sort-dropdown__items--item-selected`
 
-![Ausgewähltes Dropdown-Element](assets/plp-css-dropdown-selected.png)
+![Dropdown-Element ausgewählt](assets/plp-css-dropdown-selected.png)
 
 - `.ds-sdk-sort-dropdown__items--item-active`
 
-![Aktive Dropdown-Auswahl](assets/plp-css-dropdown-active.png)
+![Dropdown-Auswahl aktiv](assets/plp-css-dropdown-active.png)
 
-### Facets
+### Facetten
 
 - `.ds-plp-facets`
 - `.ds-plp-facets__header`
 - `.ds-plp-facets__header_title`
 - `.ds-plp-facets__header__clear-all`
 
-![Kopfzeilentitel &quot;Facets&quot;](assets/plp-css-facets-title-clear.png){width="350"}
+![Facetten-Header-Titel](assets/plp-css-facets-title-clear.png){width="350"}
 
 - `.ds-plp-facets__pills`
 - `.ds-sdk-pill`
 
-![Facettentabletten](assets/plp-css-facets-pill.png){width="350"}
+![Facettenpille](assets/plp-css-facets-pill.png){width="350"}
 
 - `.ds-sdk-pill__label`
 - `.ds-sdk-pill__cta`
 
-![Facets-Bezeichnung](assets/plp-css-pill-label-cta.png){width="350"}
+![Facettenbezeichnung](assets/plp-css-pill-label-cta.png){width="350"}
 
 - `.ds-plp-facets__list`
 
@@ -153,7 +153,7 @@ Passen Sie den Produktnamen an, indem Sie eine Regel hinzufügen, um sie in Gro�
 - `ds-sdk-product-item__product-swatch-item`
 - `.ds-sdk-input_fieldset_show-more`
 
-![Input](assets/plp-css-sdk-input.png)
+![Eingabe](assets/plp-css-sdk-input.png)
 
 - `.ds-sdk-labelled-input`
 
@@ -162,9 +162,9 @@ Passen Sie den Produktnamen an, indem Sie eine Regel hinzufügen, um sie in Gro�
 - `.ds-sdk-labelled-input__input`
 - `.ds-sdk-labelled-input__label`
 
-![Input label](assets/plp-css-labelled-input-label.png)
+![Beschriftung eingeben](assets/plp-css-labelled-input-label.png)
 
-### Produktelement
+### Produktartikel
 
 - `.ds-sdk-product-item`
 - `.ds-sdk-product-item__image`
@@ -178,7 +178,7 @@ Passen Sie den Produktnamen an, indem Sie eine Regel hinzufügen, um sie in Gro�
 
 ![Produkt](assets/plp-css-product.png)
 
-### Laden
+### Wird geladen
 
 - `.ds-sdk-loading`
 - `.ds-sdk-loading__spinner`
@@ -188,7 +188,7 @@ Passen Sie den Produktnamen an, indem Sie eine Regel hinzufügen, um sie in Gro�
 
 ## Deaktivieren des PLP-Widgets
 
-So deaktivieren Sie das PLP-Widget:
+Deaktivieren des PLP-Widgets:
 
-1. Wechseln Sie zu **Stores** > Einstellungen > **Konfiguration** > **[!DNL Live Search]** > **Storefront-Funktionen** und setzen Sie **Enable Product Listing Widgets** auf &quot;Nein&quot;.
-1. Wählen Sie **Konfiguration speichern** aus, um die Einstellung zu speichern.
+1. Gehen Sie zu **Stores** > Einstellungen > **Konfiguration** > **[!DNL Live Search]** > **Storefront-Funktionen** und setzen Sie **Produktlisten-Widgets aktivieren** auf „Nein“.
+1. Wählen **Konfiguration speichern** um die Einstellung zu speichern.

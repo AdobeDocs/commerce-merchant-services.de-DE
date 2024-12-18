@@ -1,6 +1,6 @@
 ---
-title: Speicherstandort und Systemkonfiguration für die Zuordnung
-description: Konfigurieren Sie einen Entfernungsanbieter, um die Zuordnung von Speicherorten in der Storefront-Benutzeroberfläche zu unterstützen. Für die Lösungen zur Store-Erfüllung ist ein Fernanbieter erforderlich, der die Einzelhandelssuche sowie andere Zuordnungs- und Planungsfunktionen für den End-to-End-Workflow zur Erfüllung von Anforderungen ermöglicht.
+title: Konfiguration des Speicherorts und des Zuordnungssystems
+description: Konfigurieren Sie einen Entfernungsanbieter, um die Speicherortzuordnung in der Storefront-Benutzeroberfläche zu unterstützen. Die Store-Fulfillment-Lösungen erfordern einen Fernanbieter, um die Suche im Einzelhandel und andere Zuordnungs- und Planungsfunktionen für den End-to-End-Fulfillment-Workflow zu ermöglichen.
 role: Admin
 level: Intermediate
 feature: Shipping/Delivery, Integration, Tools and External Services, Configuration
@@ -12,32 +12,32 @@ ht-degree: 0%
 
 ---
 
-# Speicherort und Einrichtung der Zuordnung
+# Store-Standort und Zuordnungseinrichtung
 
-Aktivieren Sie die Speicherstandort- und Zuordnungsfunktionen für die Store-Erfüllung, indem Sie einen [Entfernungsanbieter](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/distance-priority-algorithm) konfigurieren, um nach Einzelhandelsspeicherorten zu suchen.
+Aktivieren Sie den Store-Standort und die Zuordnungsfunktionen für Store Fulfillment, indem Sie einen [Distanzanbieter](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/distance-priority-algorithm) konfigurieren, um nach Einzelhandelsspeicherorten zu suchen.
 
 **Anforderungen**
 
-Während des Konfigurationsprozesses stellen Sie einen Google-API-Schlüssel für die Google Maps-Plattform bereit. Wenn Sie noch keine haben, generieren Sie [eine von der Google Maps-Plattform](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/distance-priority-algorithm#configure-google-maps).
+Während des Konfigurationsprozesses geben Sie einen Google-API-Schlüssel für die Google Maps-Plattform an. Wenn Sie noch keinen haben, [ Sie einen über die Google Maps-Plattform ](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/distance-priority-algorithm#configure-google-maps).
 
 So konfigurieren Sie den Entfernungsanbieter:
 
-1. Fügen Sie aus der Konfiguration **[!UICONTROL Stores > General]** in Admin die Google Maps-Integration für den Inhaltstyp Zuordnung hinzu.
+1. Fügen Sie in der **[!UICONTROL Stores > General]** in der Admin Console die Google Maps-Integration für den Inhaltstyp „Zuordnung“ hinzu.
 
-   - Wechseln Sie zu &quot;**[!UICONTROL Stores > Configuration  > General > Content Management]**&quot;.
+   - Gehe zu **[!UICONTROL Stores > Configuration  > General > Content Management]**.
 
-   - Fügen Sie Ihren Google-API-Schlüssel zum Feld **[!UICONTROL Google Maps API Key]** hinzu.
+   - Fügen Sie Ihren Google-API-Schlüssel zu **[!UICONTROL Google Maps API Key]** Feld hinzu.
 
-1. Wählen Sie in der Konfiguration **[!UICONTROL Stores > Inventory]** in Admin den Entfernungsanbieter für Store Fulfillment aus.
+1. Wählen Sie in der **[!UICONTROL Stores > Inventory]** im Admin-Bereich den Entfernungsanbieter für Store Fulfillment aus.
 
-   - Wechseln Sie zu &quot;**[!UICONTROL Stores > Configuration > Catalog > Inventory]**&quot;.
+   - Gehe zu **[!UICONTROL Stores > Configuration > Catalog > Inventory]**.
 
    - Erweitern Sie den Abschnitt **[!UICONTROL Distance Provider for Distance Based SSA]** .
 
-   - Stellen Sie den **Provider** auf **Google Map** ein.
+   - Legen Sie den **Provider** auf **Google Map** fest.
 
-1. Konfigurieren Sie die Einstellungen für **[!UICONTROL Google Distance Provider]**.
+1. Konfigurieren Sie die Einstellungen für die **[!UICONTROL Google Distance Provider]**.
 
-   - Fügen Sie Ihren **Google-API-Schlüssel** hinzu.
+   - Fügen Sie Ihren **Google-API-Schlüssel hinzu**.
 
-   - Setzen Sie **[!UICONTROL Computation Mode]** auf `Driving` und **[!UICONTROL Value]** auf `Distance`
+   - **[!UICONTROL Computation Mode]** auf `Driving` und **[!UICONTROL Value]** auf `Distance` setzen

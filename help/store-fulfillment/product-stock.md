@@ -1,6 +1,6 @@
 ---
-title: Verwaltung von Produktbeständen
-description: Konfigurieren Sie die für Kunden verfügbaren Merchant Stock Messaging und Funktionen.
+title: Lagerverwaltung für Produkte
+description: Konfigurieren Sie die für Kunden verfügbaren Merchant Stock-Nachrichten und -Funktionen.
 role: Admin
 level: Intermediate
 feature: Shipping/Delivery, Inventory, Configuration
@@ -12,38 +12,38 @@ ht-degree: 0%
 
 ---
 
-# Verwaltung von Produktbeständen
+# Lagerverwaltung für Produkte
 
-Als Händler können Sie die Lager- und Quelloptionen von Adobe Commerce [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) verwenden. Sie können auch die Lösung Store Fulfillment verwenden, um andere Lagerverfügbarkeitsoptionen im Zusammenhang mit Ihren Händlerstapeln zu steuern.
+Als Händler können Sie Adobe Commerce [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) Stock- und Quelloptionen verwenden. Darüber hinaus können Sie mit der Store Fulfillment-Lösung andere Optionen für die Verfügbarkeit von Inventaren steuern, die mit Ihrem Händlergeschäft verbunden sind.
 
-- Option für den Home-Versand in den Merchant Stores
+- Heimlieferoption von Kaufhäusern
 
-- Zulassen/Verfügbar für Store-Abruf
+- Für Store-Abholung zulassen/verfügbar
 
-- UPC/SKU/Andere eindeutige Produkt-IDs
+- UPC/SKU/Andere eindeutige Produktkennungen
 
-- Nicht vorrätiger Schwellenwert
+- Schwellenwert für nicht vorrätige Artikel
 
-- Dekrementieren des Bestands von bestimmten Positionen nach Bestellung
+- Verringern des Lagerbestands von bestimmten Lagerorten auf Bestellung
 
-Konfigurieren Sie die Optionen für den Produktbestand über den Administrator: **[!UICONTROL Catalog > Products > Select Product]**
+Konfigurieren Sie die Stock-Optionen für Produkte über den Administrator: **[!UICONTROL Catalog > Products > Select Product]**
 
-## **Optionen für Produktspeicher**
+## **Produktaktienoptionen**
 
 | **Feld** | **Beschreibung** | **Umfang** | **Erforderlich** |
 |----------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|--------------|
-| **Verfügbar für die Home-Bereitstellung** | <p>Legt die Verfügbarkeit der Home Delivery (Ship-from-Store) für das Produkt fest. Wenn diese Option aktiviert ist, gelten alle zugewiesenen Händlerstätten mit verfügbarem Inventar für das Produkt als für die Option &quot;Home Delivery&quot;geeignet. Wenn diese Option deaktiviert ist, ist das Produkt nie für den Heimversand qualifiziert.</p>Normalerweise reicht es aus, diese Option auf der Ebene des Händlers festzulegen. Es kann jedoch individuelle Fälle für bestimmte Produkte geben, z. B. für Produkte, die unter Bundesversandbeschränkungen fallen und die nicht für den Heimversand infrage kommen.</p> | Webseite | Nein |
-| **[!UICONTROL Available for Store Pickup]** | <p>Legen Sie die Verfügbarkeit der Store-Abholung für das Produkt fest. Wenn diese Option aktiviert ist, gelten alle zugewiesenen Händler-Store-Standorte mit verfügbarem Inventar für das Produkt als für die Option &quot;Store Pickup&quot;geeignet. Wenn diese Option deaktiviert ist, ist das Produkt nie für die Store-Abholung qualifiziert.</p><p>Diese Option kann nützlich sein, um Handelsbestand im System zu verfolgen, den Sie nicht über Ihren E-Commerce-Kanal verkaufen möchten.</p> | Webseite | Nein |
-| **[!UICONTROL UPC / SKU / Custom Scannable Identifier]** | Dieses Attribut sollte als Produktattribut vorhanden sein und sich auf die Einstellung **[!UICONTROL Barcode Source / Barcode Type]** beziehen. Dieses Attribut wird verwendet, um einen scannbaren Barcode für Ihre Produkte zu verfolgen. Dieser Wert wird möglicherweise gesendet, wenn eine Bestellung zur Auswahl an Ihre Händler gesendet wird. Speicherverknüpfungen können den Wert mit der Auswahlliste verwenden, um Produkte auf der Ablage mit einem Barcode-Scanner abzugleichen. | Store-Ansicht | Nein |
+| **Verfügbar für den Versand zu Hause** | <p>Legt die Verfügbarkeit des heimischen Versands (Ship-from-Store) für das Produkt fest. Wenn diese Option aktiviert ist, werden alle zugewiesenen Händlerlagerstandorte mit verfügbarem Inventar für das Produkt als für die Heimlieferung geeignet erachtet. Wenn diese Option deaktiviert ist, ist das Produkt nie für den Heimversand geeignet.</p>Normalerweise reicht es aus, diese Option auf Händlerebene festzulegen. Es kann jedoch Einzelfälle für bestimmte Produkte geben, z. B. solche, die unter Bundesversandbeschränkungen fallen. Diese sollten nicht für die Lieferung nach Hause infrage kommen.</p> | Website | Nein |
+| **[!UICONTROL Available for Store Pickup]** | <p>Legen Sie die Verfügbarkeit der Store-Abholung für das Produkt fest. Wenn diese Option aktiviert ist, werden alle zugewiesenen Händlerstandorte mit verfügbarem Inventar für das Produkt als für die Option „Store-Abholung“ geeignet erachtet. Wenn diese Option deaktiviert ist, ist das Produkt nie für die Abholung vom Store geeignet.</p><p>Diese Option kann nützlich sein, um den Händlerbestand im System zu verfolgen, den Sie nicht über Ihren E-Commerce-Kanal verkaufen möchten.</p> | Website | Nein |
+| **[!UICONTROL UPC / SKU / Custom Scannable Identifier]** | Dieses Attribut sollte als Produktattribut vorhanden sein und sich auf die **[!UICONTROL Barcode Source / Barcode Type]**-Einstellung beziehen. Dieses Attribut wird verwendet, um einen scannbaren Barcode für Ihre Produkte zu verfolgen. Dieser Wert wird möglicherweise gesendet, wenn eine Bestellung zur Kommissionierung an Ihre Händlerläden gesendet wird. Store-Associates können den Wert mit der Auswahlliste verwenden, um Produkte im Regal mithilfe eines Barcode-Scanners abzugleichen. | Shop-Ansicht | Nein |
 
 {style="table-layout:auto"}
 
-## Quellen für Inventare auf Produktebene
+## Quellen für Inventar auf Produktebene
 
 | **Feld** | **Beschreibung** | **Umfang** | **Erforderlich** |
 |-----------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
-| **[!UICONTROL Out of Stock Threshold]** | <p>Legen Sie den Schwellenwert für das Lager für das Element in jeder Quelle fest. Fällt der Bestand unter den Schwellenwert, wird er an der Quelle als nicht vorrätig betrachtet.</p><p>Um die globale Speicherkonfigurationseinstellung zu verwenden, aktivieren Sie die Option **[!UICONTROL Use Default]** .</p> | Global | Nein |
-| **[!UICONTROL Allow Store Pickup]** | <p>Legen Sie explizit fest, ob das Element für die Store-Erfassung verfügbar ist, unabhängig von der Konfiguration des Lagerbestands oder des Händlers.</p><p>Um die Einstellung auf Produktebene zu verwenden, deaktivieren Sie die Option [!UICONTROL Use Default] und treffen Sie Ihre Auswahl. Andernfalls wird diese Einstellung basierend auf der Konfiguration für **[!UICONTROL Allow In-Store Pickup]** ausgewählt, die in der Stock-Quelle festgelegt ist.</p> | Global | Nein |
+| **[!UICONTROL Out of Stock Threshold]** | <p>Legen Sie den Lagerschwellenwert für den Artikel innerhalb jeder Quelle fest. Wenn der Bestand unter den Schwellenwert fällt, wird er an der Quelle als nicht vorrätig angesehen.</p><p>Um die globale Store-Konfigurationseinstellung zu verwenden, aktivieren Sie die Option **[!UICONTROL Use Default]** .</p> | Global | Nein |
+| **[!UICONTROL Allow Store Pickup]** | <p>Legen Sie explizit fest, ob der Artikel unabhängig vom verfügbaren Inventar oder der Konfiguration des Händlerstandorts für die Abholung im Geschäft verfügbar ist.</p><p>Um die Einstellung auf Produktebene zu verwenden, deaktivieren Sie die Option [!UICONTROL Use Default] und treffen Sie Ihre Auswahl. Andernfalls wird diese Einstellung basierend auf der Konfiguration für **[!UICONTROL Allow In-Store Pickup]** ausgewählt, die für die Stock-Quelle festgelegt wird.</p> | Global | Nein |
 
 {style="table-layout:auto"}
 

@@ -1,51 +1,51 @@
 ---
-title: Verfolgen Ihrer Sendungen in [!DNL Payment Services]
-description: Passen Sie die im PayPal-Merchant-Dashboard angezeigten Sendungen und Tracking-Informationen an. [!DNL Payment Services]
+title: Verfolgen Sie Ihre Sendungen in [!DNL Payment Services]
+description: ' [!DNL Payment Services]  Sendungen anpassen und Tracking-Informationen im PayPal-Händler-Dashboard angezeigt.'
 feature: Payments
-source-git-commit: 2169907d7200a0937ce5a3ddf9634423cc8c2f5f
+exl-id: 17aede1f-56ae-441a-b723-3193e865e469
+source-git-commit: 8cf67ed76e191b03ddfbfb68ed4ba07e456a3c35
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 0%
 
 ---
 
+# Verfolgen von Sendungen in [!DNL Payment Services]
 
-# Versandverfolgung in [!DNL Payment Services]
+[!DNL Payment Services] können Händler die Tracking-Informationen für eine Sendung in ihrem PayPal-Händler-Dashboard einsehen.
 
-[!DNL Payment Services] ermöglicht es Händlern, die Tracking-Informationen für eine Sendung im PayPal Merchant Dashboard anzuzeigen.
+Weitere [ zum Versandraster für Adobe Commerce finden ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/shipments){target=_blank} unter dem Thema „Sendungen“.
 
-Weitere Informationen zum Versandraster für Adobe Commerce finden Sie unter [Sendungen](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/shipments){target=_blank} .
+## Funktionsweise der Sendungsverfolgung
 
-## Funktionsweise der Versandverfolgung
-
-Diese Funktion hängt davon ab, ob die Bestellung in Rechnung gestellt wurde, da PayPal eine `capture_id` erhalten muss, um die Tracking-Informationen zu verarbeiten. Wenn ein Händler seine Produkte vor der Erfassung aussendet, werden die Tracking-Informationen nicht an PayPal gesendet.
+Diese Funktionalität hängt davon ab, ob die Bestellung in Rechnung gestellt wurde, da PayPal eine `capture_id` zur Verarbeitung der Tracking-Informationen erhalten muss. Wenn ein Händler seine Produkte vor der Erfassung ausliefert, werden die Tracking-Informationen nicht an PayPal gesendet.
 
 >[!NOTE]
 >
-> Es wird empfohlen, eine Sendung pro Trackingnummer zu erstellen und die richtigen Artikel mit der Sendung zu verknüpfen.
+> Es wird empfohlen, pro Tracking-Nummer eine Sendung zu erstellen und der Sendung die richtigen Artikel zuzuordnen.
 
-## Trackingnummer hinzufügen
+## Tracking-Nummer hinzufügen
 
 Die folgenden Anweisungen führen Sie durch den Prozess zum Erstellen einer Sendung in Adobe Commerce mit [!DNL Payment Services]:
 
-1. Wechseln Sie in der Seitenleiste _Admin_ zu **[!UICONTROL Sales]** > **[!UICONTROL Orders]**.
+1. Navigieren Sie in der _Admin_-Seitenleiste zu **[!UICONTROL Sales]** > **[!UICONTROL Orders]**.
 
-1. Klicken Sie in der Spalte **[!UICONTROL Action]** für die ausgewählte Reihenfolge auf **[!UICONTROL View]**.
+1. Klicken Sie in der Spalte **[!UICONTROL Action]** für die ausgewählte Bestellung auf **[!UICONTROL View]**.
 
 1. Klicken Sie auf **[!UICONTROL Ship]**.
 
-1. Scrollen Sie nach unten zum Block **[!UICONTROL Payment & Shipping Method]** und klicken Sie auf **[!UICONTROL Add Tracking Number]** in **[!UICONTROL Shipping Information]**.
+1. Scrollen Sie nach unten zum **[!UICONTROL Payment & Shipping Method]** Block und klicken Sie in **[!UICONTROL Shipping Information]** auf **[!UICONTROL Add Tracking Number]** .
 
-1. Legen Sie den Wert **[!UICONTROL Carrier]** fest.
+1. Legen Sie die **[!UICONTROL Carrier]** fest.
 
-1. Um die Sendung zu verfolgen, geben Sie die Werte **[!UICONTROL Title]** und **[!UICONTROL Number]** ein.
+1. Geben Sie **[!UICONTROL Title]** und **[!UICONTROL Number]** ein, um die Sendung zu verfolgen.
 
 1. Klicken Sie auf **[!UICONTROL Submit Shipment]**.
 
 >[!NOTE]
 >
-> Alternativ können Sie ein Versandmodul verwenden, um die Trackingnummerninformationen einzugeben. Stellen Sie sicher, dass das Versandmodul die Trackingnummerninformationen im Feld `tracking_number` speichert.
+> Alternativ können Sie ein Versandmodul verwenden, um die Tracking-Nummer einzugeben. Vergewissern Sie sich, dass das Versandmodul die Tracking-Nummer im Feld `tracking_number` speichert.
 
-### Vereinbarkeit mit Dritten
+### Kompatibilität mit Dritten
 
-Jede Erweiterung von Drittanbietern ist mit der Funktionalität kompatibel, wenn eine Sendungsentität über die [Commerce API](https://developer.adobe.com/commerce/webapi/rest/attributes/#ShipmentRepositoryInterface){target=_blank} erstellt wird.
+Jede Erweiterung eines Drittanbieters ist mit der Funktionalität kompatibel, wenn eine Versandentität über die [Commerce-API erstellt ](https://developer.adobe.com/commerce/webapi/rest/attributes/#ShipmentRepositoryInterface){target=_blank}.

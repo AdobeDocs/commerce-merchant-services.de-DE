@@ -1,7 +1,7 @@
 ---
-user-guide-title: "[!DNL Data Export] Handbuch für SaaS-Dienste"
-user-guide-description: "Dieses Handbuch enthält ausführliche Anweisungen zur Verwendung der [!DNL Data Export] Erweiterung für Adobe Commerce SaaS-Dienste."
-breadcrumb-title: "[!DNL Data Export] Handbuch für SaaS-Dienste"
+user-guide-title: '[!DNL Data Export] für SaaS-Services'
+user-guide-description: Dieses Handbuch enthält detaillierte Anweisungen zur Verwendung der  [!DNL Data Export] -Erweiterung für Adobe Commerce SaaS-Services.
+breadcrumb-title: '[!DNL Data Export] für SaaS-Services'
 role: Admin
 feature: Services
 source-git-commit: 06ef294d2670e5d36bbb6cd18deafce2cc751772
@@ -15,14 +15,14 @@ ht-degree: 5%
 
 - [Handbuch-Übersicht](overview.md)
 - [Datensynchronisation](data-synchronization.md)
-- Exportplanung und -leistung {#performance}
-   - [Geschätztes Datenvolumen und Übertragungszeit](estimate-data-volume-sync-time.md)
+- Exportplanung und -{#performance}
+   - [Schätzen des Datenvolumens und der Übertragungszeit](estimate-data-volume-sync-time.md)
    - [Verbessern der Exportleistung](customize-export-processing.md)
 - [CLI-Befehlsreferenz](data-export-cli-commands.md)
-- [Protokolle überprüfen und Fehlerbehebung](troubleshooting-logging.md)
-- [Verwalten der SaaS-Datenexport-Erweiterung](manage-extension.md)
-- Erweiterbarkeit {#extensibility}
+- [Überprüfen von Protokollen und Fehlerbehebung](troubleshooting-logging.md)
+- [Verwalten der SaaS-Datenexporterweiterung](manage-extension.md)
+- {#extensibility}
    - [Erweitern und Anpassen von SaaS-Datenexport-Feeds](extensibility-and-customizations.md)
-   - [Produktattribut dynamisch hinzufügen](add-attribute-dynamically.md)
+   - [Dynamisches Hinzufügen des Produktattributs](add-attribute-dynamically.md)
 - [Versionshinweise](release-notes.md)
-- [Kehren Sie zur Startseite der Commerce-Dienste zurück](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)
+- [Zurück zur Commerce Services-Startseite](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)

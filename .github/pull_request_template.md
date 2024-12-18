@@ -5,15 +5,15 @@ source-wordcount: '11'
 ht-degree: 0%
 
 ---
-## Zweck der Pull-Anforderung
+## Zweck der Pull-Anfrage
 
-Diese Pull-Anforderung (PR) ...
+Diese Pull-Anfrage (PR) …
 
 ## Betroffene Seiten
 
 <!-- It is a best practice to list the affected pages on experienceleague.adobe.com (URLs). Not necessary for large numbers of files. Including both production and staging/review URLs is most helpful. -->
 
-- ...
+- …
 
 
 <!--

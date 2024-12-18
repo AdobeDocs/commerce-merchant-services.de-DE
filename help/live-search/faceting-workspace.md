@@ -1,6 +1,6 @@
 ---
-title: "Faceting Workspace"
-description: '"Erfahren Sie mehr über den Arbeitsbereich für die facettierte Arbeit." [!DNL Live Search] '
+title: Faceting Workspace
+description: Lernen Sie den Facettenarbeitsbereich  [!DNL Live Search] .
 exl-id: b47b5c19-59bb-41e4-9599-3b90cbc44b70
 source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
@@ -9,41 +9,41 @@ ht-degree: 0%
 
 ---
 
-# Facebook Workspace
+# Faceting Workspace
 
-Der Arbeitsbereich *Faceting* listet alle derzeit verfügbaren Facetten auf und bietet Zugriff auf die Tools, die Sie zum Einrichten und Verwalten von Facetten benötigen. Angeheftete Facetten erscheinen zuerst in der Liste vorhandener Facetten, gefolgt von dynamischen Facetten. Die Liste kann gefiltert werden, um alle Facetten anzuzeigen, oder nur diejenigen, die fixiert oder dynamisch sind.
+Der Arbeitsbereich *Facettieren* listet alle derzeit verfügbaren Facetten auf und bietet Zugriff auf die Tools, die Sie zum Einrichten und Verwalten von Facetten benötigen. Angeheftete Facetten werden zuerst in der Liste der vorhandenen Facetten angezeigt, gefolgt von dynamischen Facetten. Die Liste kann gefiltert werden, um alle Facetten oder nur die angehefteten oder dynamischen Facetten anzuzeigen.
 
-![Faceting-Arbeitsbereich](assets/faceting-workspace.png)
+![Facettierender Arbeitsbereich](assets/faceting-workspace.png)
 
 ## Festlegen des Umfangs
 
-Wenn Ihre Adobe Commerce-Installation mehrere Store-Ansichten enthält, setzen Sie **Umfang** auf die [Store-Ansicht](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings), in der Ihre Facetteneinstellungen gelten.
+Wenn Ihre Adobe Commerce-Installation mehrere Store-Ansichten enthält, setzen Sie **Umfang** auf die [Store-](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings), für die Ihre Facetteneinstellungen gelten.
 
-## Liste filtern
+## Filtern der Liste
 
-1. Klicken Sie auf das Steuerelement **Filtern nach** .
-1. Wählen Sie eine der folgenden Optionen aus:
+1. Klicken Sie auf **Steuerelement** Filtern nach“.
+1. Wählen Sie eine der folgenden Optionen:
 
    * Alle Filter
-   * Angeheftet
-   * Dynamik
+   * angeheftet
+   * Dynamisch
 
 ## Facette hinzufügen
 
-1. Klicken Sie auf **Facetten hinzufügen**.
-1. Detaillierte Anweisungen finden Sie unter [Facets hinzufügen](facets-add.md) .
+1. Klicken Sie **Facetten hinzufügen**.
+1. Detaillierte Anweisungen finden [ unter ](facets-add.md) von Facetten hinzufügen .
 
 ## Spaltenbeschreibungen
 
 | Spalte | Beschreibung |
 |--- |--- |
-| (erste Spalte) | Listet fixierte und dynamische Facetten mit der [Beschriftung](facets-type.md) auf, die für den Käufer sichtbar ist. |
-| Sortiertyp | Die [Sortierreihenfolge](facets-type.md) der Facettenwerte. Facets werden alphabetisch nach allen [!DNL Commerce] Storefronts sortiert. Bei Implementierungen von [Headless] können Facetten entweder alphabetisch oder nach Anzahl sortiert werden. Optionen: Alphabetisch, Zählung (nur Headless) |
-| Max. Wert | Die Anzahl der Facettenwerte, die in der Storefront als Filter verfügbar sind, mit einer maximalen Anzahl von 10. |
+| (erste Spalte) | Listet angeheftete und dynamische Facetten auf, indem [label](facets-type.md) angegeben wird, dass sie für den Erstkäufer sichtbar sind. |
+| Sortiertyp | Die [Sortierreihenfolge](facets-type.md) der Facettenwerte. Facetten werden alphabetisch für alle [!DNL Commerce] sortiert. Bei [Headless]-Implementierungen können Facetten entweder alphabetisch oder nach Anzahl sortiert werden. Optionen: Alphabetisch, Anzahl (nur Headless) |
+| Maximaler Wert | Die Anzahl der Facettenwerte, die in der Storefront als Filter verfügbar sind, maximal aber 10. |
 
-## Steuerelemente
+## Kontrollen
 
 | Kontrolle | Beschreibung |
 |--- |--- |
-| Hinzufügen von Facetten | Öffnet den [Facetteneditor](facets-add.md). |
-| Filtern nach | Bestimmt den [Typ der in der Liste angezeigten Facetten](facets-type.md). Optionen: Alle, angeheftet, dynamisch |
+| Facetten hinzufügen | Öffnet den [Facetteneditor](facets-add.md). |
+| Filtern nach | Bestimmt den [Typ von Facetten](facets-type.md) die in der Liste angezeigt werden. Optionen: Alle, angeheftet, dynamisch |

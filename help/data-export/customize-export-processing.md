@@ -1,6 +1,6 @@
 ---
-title: Verbessern der SAAs-Datenexportleistung
-description: Erfahren Sie, wie Sie die Leistung des SAAS-Datenexports für Commerce Services verbessern können, indem Sie den Datenexport-Modus mit mehreren Threads verwenden.
+title: Verbessern der SaaS-Datenexportleistung
+description: Erfahren Sie, wie Sie die SaaS-Datenexportleistung für Commerce Services mithilfe des Multithread-Datenexportmodus verbessern können.
 role: Admin, Developer
 exl-id: 20c81ef4-5a97-45cd-9401-e82910a2ccc3
 source-git-commit: 6f67ea717595fe517d751ae14bf8123c7d05831b
@@ -10,61 +10,61 @@ ht-degree: 0%
 
 ---
 
-# Verbessern der SAAs-Datenexportleistung
+# Verbessern der SaaS-Datenexportleistung
 
-**Datenexportmodus mit mehreren Threads** beschleunigt den Exportvorgang, indem Feed-Daten in Batches aufgeteilt und parallel verarbeitet werden.
+**Multi-Thread-Datenexportmodus** Beschleunigt den Exportvorgang, indem Feed-Daten in Batches aufgeteilt und parallel verarbeitet werden.
 
-Entwickler oder Systemintegratoren können die Leistung verbessern, indem sie den Datenexport-Modus mit mehreren Threads anstelle des standardmäßigen Einzelthread-Modus verwenden. Im Single-Thread-Modus gibt es keine Parallelisierung des Feed-Sendeprozesses. Aufgrund der festgelegten Standardbeschränkungen sind außerdem alle Clients darauf beschränkt, nur einen Thread zu verwenden. In den meisten Fällen ist eine Anpassung der Konfiguration nicht erforderlich.
+Entwickler oder Systemintegratoren können die Leistung verbessern, indem sie den Multithread-Datenexportmodus anstelle des standardmäßigen Einzelthread-Modus verwenden. Im Single-Thread-Modus gibt es keine Parallelisierung des Feed-Übermittlungsprozesses. Darüber hinaus sind aufgrund der standardmäßig festgelegten Beschränkungen alle Clients auf die Verwendung nur eines Threads beschränkt. In den meisten Fällen ist keine Anpassung der Konfiguration erforderlich.
 
 ## Überlegungen zur Verwendung des Multi-Thread-Modus
 
-Beim Arbeiten mit Datenexportdiensten möchten Sie die Leistung optimieren und gleichzeitig eine genaue Synchronisierung sicherstellen.
-Adobe empfiehlt die Verwendung der Standardkonfiguration für die Datenerfassung, die normalerweise den Synchronisierungsanforderungen für Commerce-Händler entspricht. Es gibt jedoch Szenarien, in denen die Anpassung die Verarbeitungszeit verkürzen kann.
+Beim Arbeiten mit Datenexportdiensten ist es wichtig, die Leistung zu optimieren und gleichzeitig eine genaue Synchronisierung sicherzustellen.
+Adobe empfiehlt die Verwendung der Standardkonfiguration für die Datenaufnahme, die in der Regel die Synchronisierungsanforderungen für Commerce-Händler erfüllt. Es gibt jedoch Szenarien, in denen die Anpassung die Verarbeitungszeit beschleunigen kann.
 
-Beachten Sie bei der Entscheidung, ob die Konfiguration des Datenexports angepasst werden soll, die folgenden Schlüsselfaktoren:
+Beachten Sie bei der Entscheidung, ob die Datenexportkonfiguration angepasst werden soll, die folgenden Schlüsselfaktoren:
 
-- **Erstsynchronisierung** - Evaluieren Sie die Anzahl der Produkte und [schätzen Sie das Datenvolumen und die Übertragungszeit](estimate-data-volume-sync-time.md) anhand der Standardkonfiguration. Fragen Sie sich selbst: Können Sie nach dem Einstieg in einen Commerce-Dienst auf diese erste Datensynchronisation warten?
+- **Erstsynchronisierung**-Bewerten Sie die Anzahl der Produkte und [schätzen Sie das Datenvolumen und die Übertragungszeit](estimate-data-volume-sync-time.md) basierend auf der Standardkonfiguration. Fragen Sie sich: Können Sie nach der Einführung in einen Commerce-Service auf diese erste Datensynchronisation warten?
 
-- **Hinzufügen neuer Store-Ansichten oder Websites** - Wenn Sie Store-Ansichten oder Websites mit derselben Produktanzahl nach der Live-Schaltung hinzufügen möchten, schätzen Sie das Datenvolumen und die Übertragungszeit. Bestimmen Sie, ob die Synchronisierungszeit mit der Standardkonfiguration akzeptabel ist oder ob eine Verarbeitung mit mehreren Threads erforderlich ist.
+- **Hinzufügen neuer Store-Ansichten oder Websites**-Wenn Sie nach der Live-Schaltung Shop-Ansichten oder Websites mit derselben Produktanzahl hinzufügen möchten, schätzen Sie das Datenvolumen und die Übertragungszeit. Stellen Sie fest, ob die Synchronisierungszeit mit der Standardkonfiguration akzeptabel ist oder ob eine Verarbeitung mit mehreren Threads erforderlich ist.
 
-- **Reguläre Importe** - Vorwegige regelmäßige Importe, wie Preisaktualisierungen oder Änderungen des Lagerstatus. Überprüfen Sie, ob diese Aktualisierungen innerhalb eines akzeptablen Zeitrahmens angewendet werden können oder ob eine schnellere Verarbeitung erforderlich ist.
+- **Reguläre Importe:** Sie regelmäßige Importe voraus, z. B. Preisaktualisierungen oder Änderungen des Lagerstatus. Beurteilen, ob diese Aktualisierungen innerhalb eines akzeptablen Zeitraums angewendet werden können oder ob eine schnellere Verarbeitung erforderlich ist.
 
-- **Produktgewicht** - Überlegen Sie, ob Ihre Produkte leicht oder schwer sind. Passen Sie die Stapelgröße entsprechend an, wenn Produktbeschreibungen oder Attribute die Produktgröße erhöhen.
+- **Produktgewicht** - Überlegen Sie, ob Ihre Produkte leicht oder schwer sind. Passen Sie die Stapelgröße entsprechend an, wenn die Produktbeschreibungen oder Attribute die Produktgröße erhöhen.
 
-Beachten Sie, dass eine sorgfältige Planung, einschließlich der Schätzung des Datenvolumens und der Synchronisierungszeit, häufig die Notwendigkeit einer Anpassung eliminieren kann. Planen Sie auf Grundlage dieser Schätzungen Vorgängen zur Feed-Erfassung, um optimale Ergebnisse zu erzielen.
+Denken Sie daran, dass eine sorgfältige Planung, einschließlich der Schätzung des Datenvolumens und der Synchronisierungszeit, oft die Notwendigkeit einer Anpassung eliminiert. Planen Sie die Feed-Aufnahme-Vorgänge basierend auf diesen Schätzungen, um optimale Ergebnisse zu erzielen.
 
 >[!NOTE]
 >
->Adobe empfiehlt, bei der Verarbeitung mehrerer Threads Vorsicht walten zu lassen. Diese Funktion ist eine Funktion für frühzeitigen Zugriff, die noch verbessert wird. Wenn Sie mehrere Threads konfigurieren, um die Leistung zu beschleunigen, können Sie die in Adobe Commerce Services enthaltenen Limits nutzen, um Systemmissbrauch bei der Datenerfassung zu verhindern. Diese Limits hindern Benutzer auch daran, Synchronisierungsänderungen auszulösen, die das System überlasten können. Wenn die Limits ausgelöst werden, werden die Anfragen blockiert und das System gibt 429 Fehler zurück. Wenn diese Fehler auftreten, passen Sie Ihre Konfiguration an und senden Sie ein Support-Ticket für Unterstützung.
+>Adobe empfiehlt, bei der Verwendung von Verarbeitung in mehreren Threads Vorsicht walten zu lassen. Diese Funktion ist eine Funktion für den frühzeitigen Zugriff, die noch verbessert wird. Wenn Sie Multi-Threading für eine schnellere Leistung konfigurieren, können Sie die enthaltenen Trigger Adobe Commerce Services-Leitplanken verwenden, um einen Missbrauch des Systems bei der Datenaufnahme zu verhindern. Diese Leitplanken verhindern auch, dass Benutzer Synchronisierungsänderungen auslösen, die das System überlasten können. Wenn die Leitplanken ausgelöst werden, werden -Anfragen blockiert und das System gibt 429 Fehler zurück. Wenn diese Fehler auftreten, passen Sie Ihre Konfiguration an und senden Sie ein Support-Ticket, um Hilfe zu erhalten.
 
 ## Multithreading konfigurieren
 
-Der Multi-Thread-Modus wird für alle [Synchronisierungsmethoden](data-synchronization.md#synchronization-process) unterstützt - vollständige Synchronisierung, teilweise Synchronisierung und Synchronisation fehlgeschlagener Elemente. Um die Multithreading-Funktion zu konfigurieren, geben Sie die Anzahl der Threads und die Stapelgröße an, die bei der Synchronisierung verwendet werden sollen.
+Der Multi-Thread-Modus wird für alle [Synchronisierungsmethoden](data-synchronization.md#synchronization-process) - Vollsynchronisierung, Teilsynchronisierung und Synchronisierung fehlgeschlagener Elemente unterstützt. Um Multithreading zu konfigurieren, geben Sie die Anzahl der Threads und die Batch-Größe an, die während der Synchronisierung verwendet werden sollen.
 
-- `thread-count` ist die Anzahl der Threads, die für Prozessentitäten aktiviert sind. Der Standardwert `thread-count` ist `1`.
-- `batch-size` ist die Anzahl der Entitäten, die in einer Iteration verarbeitet werden. Der Standardwert `batch-size` ist `100` -Datensätze für alle Feeds außer dem Preis-Feed. Für den Preis-Feed ist der Standardwert `500` Datensätze.
+- `thread-count` ist die Anzahl der Threads, die für die Verarbeitung von Entitäten aktiviert werden. Der `thread-count` lautet `1`.
+- `batch-size` ist die Anzahl der Entitäten, die in einer Iteration verarbeitet werden. Der `batch-size` ist `100` Datensätze für alle Feeds mit Ausnahme des Preis-Feeds. Für den Preis-Feed ist der Standardwert `500` Datensätze.
 
-Sie können Multi-Threading als temporäre Option konfigurieren, wenn Sie einen Resync-Befehl ausführen, oder indem Sie die Multi-Thread-Konfiguration zur Adobe Commerce-Anwendungskonfiguration hinzufügen.
+Sie können Multi-Threading als temporäre Option konfigurieren, wenn Sie einen Resynchronisierungsbefehl ausführen, oder indem Sie die Multi-Thread-Konfiguration zur Adobe Commerce-Anwendungskonfiguration hinzufügen.
 
 >[!NOTE]
 >
->Stellen Sie sicher, dass Sie die Leistung des SAAS-Datenexports mit der für einen Kunden auf der Verbraucherseite definierten Ratenbegrenzung abstimmen.
+>Stellen Sie sicher, dass Sie die Leistung des SaaS-Datenexports an das Ratenlimit ausrichten, das für einen Client auf Verbraucherseite definiert ist.
 
-### Multithreading zur Laufzeit konfigurieren
+### Konfigurieren von Multithreading zur Laufzeit
 
-Wenn Sie einen vollständigen Synchronisierungsbefehl über die Befehlszeile ausführen, geben Sie die Verarbeitung mit mehreren Threads an, indem Sie die Optionen `thread-count` und `batch-size` zum CLI-Befehl hinzufügen.
+Wenn Sie einen vollständigen Synchronisierungsbefehl über die Befehlszeile ausführen, geben Sie die Multi-Thread-Verarbeitung an, indem Sie die `thread-count`- und `batch-size` zum CLI-Befehl hinzufügen.
 
 ```
 bin/magento saas:resync --feed=products --thread-count=2 --batch-size=200
 ```
 
-Die in der Befehlszeile angegebenen Optionen überschreiben die in der Datei mit der Adobe Commerce-Anwendung `config.php` angegebene Datenexportkonfiguration.
+In der Befehlszeile angegebene Optionen überschreiben die in der `config.php` der Adobe Commerce-Anwendung angegebene Datenexportkonfiguration.
 
-### Hinzufügen von Multithreading zur Commerce-Konfiguration
+### Hinzufügen von Multi-Threading zur Commerce-Konfiguration
 
 Um alle Datenexportvorgänge mit Multithreading zu verarbeiten, können Systemintegratoren oder Entwickler die Anzahl der Threads und die Batch-Größe für jeden Feed in der Commerce-Anwendungskonfiguration ändern.
 
-Diese Änderungen können angewendet werden, indem benutzerdefinierte Werte zum [Systemabschnitt](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system) der Konfigurationsdatei `app/etc/config.php` hinzugefügt werden.
+Diese Änderungen können angewendet werden, indem benutzerdefinierte Werte zum [Systemabschnitt](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system) der Konfigurationsdatei hinzugefügt werden, `app/etc/config.php`.
 
 **Beispiel: Multithreading für Produkte und Preise konfigurieren**
 

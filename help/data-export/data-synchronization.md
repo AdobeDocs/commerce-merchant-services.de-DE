@@ -1,6 +1,6 @@
 ---
-title: Daten mit SaaS-Datenexport synchronisieren
-description: Erfahren Sie, wie [!DNL SaaS Data Export] Daten zwischen Adobe Commerce-Instanzen und verbundenen SaaS-Diensten erfasst und synchronisiert.
+title: Synchronisieren von Daten mit dem SaaS-Datenexport
+description: Erfahren Sie, wie  [!DNL SaaS Data Export]  Daten zwischen Adobe Commerce-Instanzen und verbundenen SaaS-Services erfasst und synchronisiert.
 role: Admin, Developer
 exl-id: 530a6ed7-46ec-45fc-94e9-c850168e8aed
 source-git-commit: b80bc2867f44e6123adb104eb148ac5e8f80b63d
@@ -10,91 +10,91 @@ ht-degree: 0%
 
 ---
 
-# Daten mit SaaS-Datenexport synchronisieren
+# Synchronisieren von Daten mit dem SaaS-Datenexport
 
-Wenn Sie einen Commerce-Dienst installieren, der einen Datenexport erfordert, z. B. Catalog Service, Live Search oder Product Recommendations, wird eine Sammlung von Saas-Datenexportmodulen installiert, um den Datenerfassungs- und Synchronisierungsprozess zu verwalten.
+Wenn Sie einen Commerce-Service installieren, für den ein Datenexport erforderlich ist, z. B. Catalog Service, Live Search oder Product Recommendations, wird eine Sammlung von SaaS-Datenexportmodulen installiert, um den Datenerfassungs- und Synchronisierungsprozess zu verwalten.
 
-Der SAAS-Datenexport verschiebt Produktdaten laufend von einer Adobe Commerce-Instanz auf die Commerce Services-Plattform, um die Daten auf dem neuesten Stand zu halten. Beispielsweise erfordert Product Recommendations die aktuellen Kataloginformationen, um Empfehlungen mit korrekten Namen, Preisen und Verfügbarkeit exakt zurückzugeben. Verwenden Sie das [Dashboard &quot;Datenverwaltung&quot;](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/data-services/catalog-sync), um den Synchronisierungsprozess zu beobachten und zu verwalten, oder die Befehlszeilenschnittstelle, um eine Synchronisierung Trigger und Produktdaten für die Verwendung durch Commerce Services neu zu indizieren.
+Der SaaS-Datenexport verschiebt Produktdaten laufend von einer Adobe Commerce-Instanz auf die Commerce Services-Plattform, um die Daten auf dem neuesten Stand zu halten. Beispielsweise benötigt Product Recommendations aktuelle Kataloginformationen, damit Empfehlungen mit korrekten Namen, Preisen und Verfügbarkeit zurückgegeben werden können. Verwenden Sie [Daten-Management-Dashboard](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/data-services/catalog-sync), um den Synchronisierungsprozess zu beobachten und zu verwalten, oder die Befehlszeilenschnittstelle, um eine Synchronisierung Trigger und Produktdaten für die Nutzung durch Commerce Services neu zu indizieren.
 
-Das folgende Diagramm zeigt den SaaS-Datenexport-Fluss.
+Das folgende Diagramm zeigt den SaaS-Datenexportfluss.
 
-![Speichern des Datexport-Erfassungsablaufs und Synchronisierungsablaufs für Adobe Commerce](assets/data-export-flow.png){width="900" zoomable="yes"}
+![SaaS-Datenexporterfassung und -synchronisierungsfluss für Adobe Commerce](assets/data-export-flow.png){width="900" zoomable="yes"}
 
-Zu den Hauptkomponenten des SAAS-Datenexportflusses gehören:
+Zu den Hauptkomponenten des SaaS-Datenexportflusses gehören:
 
-- SaaS-Datenexportmodule, die die Daten für Feeds aus Adobe Commerce erfassen, Feed-Elemente assemblieren, auf Aktualisierungen warten und den Feed-Status beibehalten.
-- SaaS-Exportmodule, die Daten exportieren, Routing konfigurieren und die Feeds in verbundenen Diensten veröffentlichen.
-- Der Adobe Commerce-Dienst verwaltet den Datenerfassungsprozess, um eingehende Feeds zu validieren und Aktualisierungen an verbundenen Diensten beizubehalten.
+- SaaS-Datenexportmodule, die die Daten für Feeds aus Adobe Commerce erfassen, Feed-Elemente zusammenstellen, auf Aktualisierungen warten und den Feed-Status beibehalten.
+- SaaS exportieren Module, die Daten exportieren, Routing konfigurieren und die Feeds an verbundene Services veröffentlichen.
+- Der Adobe Commerce-Service verwaltet den Datenaufnahmeprozess, um eingehende Feeds zu validieren und Aktualisierungen für verbundene Services beizubehalten.
 
-## Synchronisierungsmodi
+## Synchronisationsmodi
 
 Der SaaS-Datenexport verfügt über zwei Modi zur Verarbeitung von Entitäts-Feeds:
 
-- **Sofortiger Exportmodus**: In diesem Modus werden Daten erfasst und in einer einzigen Iteration sofort an den Commerce-Dienst gesendet. Dieser Modus beschleunigt die Bereitstellung von Entitätsaktualisierungen für den Commerce-Dienst und verringert die Speichergröße der Feed-Tabellen.
+- **Modus für sofortigen Export** - In diesem Modus werden Daten in einer einzigen Iteration erfasst und sofort an den Commerce-Service gesendet. Dieser Modus beschleunigt die Bereitstellung von Entitätenaktualisierungen an den Commerce-Service und reduziert die Speichergröße der Feed-Tabellen.
 
-- **Legacy export mode**: In diesem Modus werden Daten in einem einzigen Prozess erfasst. Dann sendet ein Cron-Auftrag die erfassten Daten an die verbundenen Commerce-Dienste. In Datenexport-Protokolleinträgen werden Feeds, die den alten Modus verwenden, als `(legacy)` bezeichnet.
+- **Alter Exportmodus** - In diesem Modus werden Daten in einem einzigen Prozess erfasst. Dann sendet ein Cron-Auftrag die erfassten Daten an die verbundenen Commerce-Services. In Datenexportprotokolleinträgen sind Feeds, die den alten Modus verwenden, mit `(legacy)` gekennzeichnet.
 
 ## Synchronisierungstypen
 
-Der SAAS-Datenexport unterstützt die Synchronisierung von drei Synchronisierungstypen: vollständige Synchronisierung, teilweise Synchronisierung und Wiederholung der Synchronisierung fehlgeschlagener Elemente.
+Der SaaS-Datenexport unterstützt drei Synchronisierungstypen: Vollständige Synchronisierung, Teilsynchronisierung und Wiederholen fehlgeschlagener Elementsynchronisierung.
 
 ### Vollständige Synchronisierung
 
-Nachdem Sie eine Adobe Commerce-Instanz mit Commerce Service verbunden haben, führen Sie eine vollständige Synchronisierung durch, um Entitäts-Feed-Daten von Adobe Commerce an den verbundenen Dienst zu senden.
+Nachdem Sie eine Adobe Commerce-Instanz mit dem Commerce-Service verbunden haben, führen Sie eine vollständige Synchronisierung durch, um Entitäts-Feed-Daten von Adobe Commerce an den verbundenen Service zu senden.
 
 >[!NOTE]
 >
->Vollständige Synchronisation ist hauptsächlich für die Onboarding-Phase vorgesehen. Vermeiden Sie die regelmäßige Verwendung, um eine Überlastung der Datenbank zu verhindern. Nach der ersten Synchronisierung werden laufende Änderungen automatisch mithilfe einer partiellen Synchronisierung synchronisiert.
+>Die vollständige Synchronisierung erfolgt hauptsächlich in der Onboarding-Phase. Vermeiden Sie den regulären Gebrauch, um eine Überlastung der Datenbank zu vermeiden. Nach der ersten Synchronisierung werden laufende Änderungen automatisch durch partielle Synchronisierung synchronisiert.
 
-### Teilsynchronisierung
+### Teilweise synchronisieren
 
-Bei teilweiser Synchronisierung sendet der SaaS-Datenexport automatisch Aktualisierungen von der Commerce-Anwendung, wie z. B. Produktnamensänderungen oder Preisaktualisierungen, an verbundene Commerce-Dienste.
+Bei teilweiser Synchronisierung sendet der SaaS-Datenexport automatisch Aktualisierungen aus der Commerce-Anwendung, z. B. Änderungen des Produktnamens oder Preisaktualisierungen, an verbundene Commerce-Services.
 
-Der Datenexportprozess verwendet die folgenden Cron-Aufträge, um den Teilsynchronisierungsvorgang zu automatisieren.
+Der Datenexportprozess verwendet die folgenden Cron-Aufträge, um den Vorgang der partiellen Synchronisierung zu automatisieren.
 
-- Cron-Gruppenaufträge &quot;index&quot;:
-   - Der `indexer_reindex_all_invalid` -Auftrag deklariert alle ungültigen Feeds neu. Es handelt sich um einen standardmäßigen Adobe Commerce-Cron-Auftrag.
-   - Der `saas_data_exporter`-Auftrag ist für veraltete Export-Feeds bestimmt.
-   - Der Auftrag `sales_data_exporter` ist spezifisch für den Export-Feed für Verkaufsdaten.
+- Cron-Gruppenaufträge „indizieren“:
+   - Der `indexer_reindex_all_invalid` indiziert alle ungültigen Feeds neu. Dies ist ein standardmäßiger Adobe Commerce-Cron-Auftrag.
+   - Der `saas_data_exporter` ist für alte Export-Feeds.
+   - Der `sales_data_exporter` ist spezifisch für den Verkaufsdaten-Export-Feed.
 
 Diese Aufträge werden jede Minute ausgeführt.
 
-Damit die teilweise Synchronisierung funktioniert, muss die Commerce-Anwendung wie folgt konfiguriert werden:
+Damit die partielle Synchronisierung funktioniert, benötigt die Commerce-Anwendung die folgende Konfiguration:
 
-- [Die Aufgabenplanung ist über Cron-Aufträge aktiviert](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html)
+- [Die Aufgabenplanung wird über Cron-Aufträge aktiviert](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html)
 
-- Alle SaaS-Datenexport-Indexer werden im `Update by Schedule` -Modus konfiguriert.
+- Alle SaaS-Datenexportindizierer sind im `Update by Schedule`-Modus konfiguriert.
 
-  In der SaaS-Datenexportversion 103.1.0 und höher ist der `Update by Schedule` -Modus standardmäßig aktiviert. Sie können die Indexkonfiguration auf dem Server mithilfe des Commerce CLI-Befehls `bin/magento indexer:show-mode | grep -i feed` überprüfen.
+  In der SaaS-Datenexportversion 103.1.0 und höher ist der `Update by Schedule` standardmäßig aktiviert. Sie können die Indexkonfiguration auf dem Server mithilfe des Commerce-CLI-Befehls `bin/magento indexer:show-mode | grep -i feed`
 
-### Synchronisation fehlgeschlagener Elemente wiederholen
+### Synchronisierung fehlgeschlagener Elemente wiederholen
 
-Die Synchronisierung fehlgeschlagener Elemente erneut versuchen verwendet einen separaten Prozess, um Elemente erneut zu senden, die während des Synchronisierungsprozesses aufgrund von Fehlern nicht synchronisiert werden konnten, z. B. einen Anwendungsfehler, eine Netzwerkunterbrechung oder einen SaaS-Dienstfehler. Die Implementierung für diese Synchronisierung basiert auch auf Cron-Aufträgen.
+Die Synchronisierung fehlgeschlagener Elemente wiederholen verwendet einen separaten Prozess zum erneuten Senden von Elementen, die aufgrund von Fehlern während des Synchronisierungsprozesses nicht synchronisiert werden konnten, z. B. ein Anwendungsfehler, eine Netzwerkunterbrechung oder ein SaaS-Service-Fehler. Die Implementierung für diese Synchronisierung basiert ebenfalls auf Cron-Aufträgen.
 
 - `resync_failed_feeds_data_exporter` Cron-Gruppenaufträge:
-   - Der Auftrag `<feed name>_feed_resend_failed_feeds_items` sendet erneut Elemente, die nicht synchronisiert werden konnten, z. B. `products_feed_resend_failed_items`.
+   - Der `<feed name>_feed_resend_failed_feeds_items` sendet Elemente, die nicht synchronisiert werden konnten, erneut, z. B. `products_feed_resend_failed_items`.
 
 ### Synchronisierungsprozess anzeigen und verwalten
 
-Die meisten Synchronisierungsaktivitäten werden automatisch auf der Basis der Anwendungskonfiguration verarbeitet. Der SaaS-Datenexport bietet jedoch auch Tools zur Verwaltung des Prozesses.
+Die meisten Synchronisierungsaktivitäten werden automatisch auf Grundlage der Anwendungskonfiguration verarbeitet. Der SaaS-Datenexport bietet jedoch auch Tools zur Verwaltung des Prozesses.
 
-- Admin-Benutzer können den Synchronisierungsfortschritt anzeigen und verfolgen und Informationen zu den Daten aus dem [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard) abrufen.
+- Admin-Benutzer können den Synchronisierungsfortschritt anzeigen und verfolgen und Informationen zu den Daten vom [Daten-Management-Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard) abrufen.
 
-- Entwickler, Systemintegratoren oder Administratoren mit Zugriff auf den Commerce-Anwendungsserver können den Synchronisierungsprozess und die Daten-Feeds mithilfe des Befehlszeilen-Tools (CLI) von Adobe Commerce verwalten. Siehe [Referenz zum Datenexport-Befehl](data-export-cli-commands.md).
+- Entwickler, Systemintegratoren oder Admins mit Zugriff auf den Commerce-Anwendungsserver können den Synchronisierungsprozess und die Daten-Feeds mithilfe des Adobe Commerce-Befehlszeilen-Tools (CLI) verwalten. Siehe [Referenz für Datenexportbefehle](data-export-cli-commands.md).
 
-### Commerce-Anwendungskonfiguration überprüfen
+### Konfiguration der Commerce-Anwendung überprüfen
 
-Die Synchronisierung fehlerhafter Elemente teilweise synchronisieren und erneut versuchen funktioniert nur, wenn die Commerce-Instanz richtig konfiguriert wurde. In der Regel wird die Konfiguration beim Einrichten des Commerce-Dienstes abgeschlossen. Wenn der Datenexport nicht ordnungsgemäß funktioniert, überprüfen Sie die folgende Konfiguration.
+Die Synchronisierung von teilweise synchronisierten und fehlgeschlagenen Elementen mit „Erneut versuchen“ funktioniert nur, wenn die Commerce-Instanz korrekt konfiguriert wurde. Normalerweise wird die Konfiguration abgeschlossen, wenn der Commerce-Service eingerichtet wird. Wenn der Datenexport nicht ordnungsgemäß funktioniert, überprüfen Sie die folgende Konfiguration.
 
-- [Vergewissern Sie sich, dass Cron-Aufträge ausgeführt werden](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues).
+- [Bestätigen Sie, dass Cron-Aufträge ausgeführt werden](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues).
 
-- Stellen Sie sicher, dass die Indexer über den Befehl [Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) oder den Commerce-CLI-Befehl `bin/magento indexer:info` ausgeführt werden.
+- Stellen Sie sicher, dass die Indexer vom [Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) oder mithilfe des Commerce CLI-`bin/magento indexer:info` ausgeführt werden.
 
-- Stellen Sie sicher, dass die Indexer für die folgenden Feeds auf &quot;`Update by Schedule`&quot; eingestellt sind: Katalogattribute, Produkt, Produktüberschreibungen und Produktvarianten. Sie können die Indexer über die [Indexverwaltung](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) im Admin oder über die CLI (`bin/magento indexer:show-mode | grep -i feed`) überprüfen.
+- Stellen Sie sicher, dass die Indexer für die folgenden Feeds auf `Update by Schedule` eingestellt sind: Katalogattribute, Produkt, Produktüberschreibungen und Produktvariante. Sie können die Indexer unter [Indexverwaltung](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) im Admin oder über die CLI (`bin/magento indexer:show-mode | grep -i feed`) überprüfen.
 
-### Benachrichtigungen des Ereignismanagers für die Datenübertragungsprotokollierung
+### Ereignis-Manager-Benachrichtigungen für die Datenübertragungsprotokollierung
 
-In Version 103.3.4 und höher sendet der SaaS-Datenexport das `data_sent_outside` -Ereignis, wenn Daten von der Commerce-Instanz an Adobe Commerce-Dienste gesendet werden.
+In Version 103.3.4 und höher sendet der SaaS-Datenexport das `data_sent_outside`, wenn Daten von der Commerce-Instanz an Adobe Commerce-Services gesendet werden.
 
 ```php
 $this->eventManager->dispatch(
@@ -109,4 +109,4 @@ $this->eventManager->dispatch(
 
 >[!NOTE]
 >
->Weitere Informationen zu Ereignissen und deren Abonnement finden Sie unter [Ereignisse und Beobachter](https://developer.adobe.com/commerce/php/development/components/events-and-observers) in der Adobe Commerce-Entwicklerdokumentation.
+>Informationen zu Ereignissen und zum Abonnieren finden Sie unter [Ereignisse und Beobachter](https://developer.adobe.com/commerce/php/development/components/events-and-observers) in der Adobe Commerce Developer-Dokumentation.

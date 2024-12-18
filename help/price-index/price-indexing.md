@@ -13,46 +13,46 @@ ht-degree: 0%
 
 # SaaS-Preisindizierung
 
-Die Preisindizierung von SaaS optimiert die Site-Leistung durch Abladen ressourcenintensiver Aufgaben - wie Indizierung und Preisberechnung - von der Commerce-Anwendung zur Adobe Cloud-Infrastruktur. Dieser Ansatz ermöglicht es Händlern, Ressourcen schnell zu skalieren, um die Indexierungszeiten zu verkürzen und Preisaktualisierungen schneller an die Storefront und an die Commerce-Dienste angeschlossene Dienste bereitzustellen.
+Die SaaS-Preisindizierung optimiert die Site-Performance, indem ressourcenintensive Aufgaben wie Indizierung und Preisberechnung von der Commerce-Anwendung auf die Adobe-Cloud-Infrastruktur verlagert werden. Dieser Ansatz ermöglicht es Händlern, Ressourcen schnell zu skalieren, um die Indexierungszeiten zu beschleunigen und Preisaktualisierungen schneller für die Storefront und verbundene Commerce-Services bereitzustellen.
 
-Das folgende Diagramm zeigt den indizierenden Datenfluss zu SaaS-Diensten, wenn Commerce den in der Commerce-Anwendung enthaltenen Prozess zur [Preisindizierung](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) verwendet:
+Das folgende Diagramm zeigt den Indizierungsdatenfluss zu SaaS-Services, wenn Commerce den im Commerce-Programm enthaltenen [Preisindizierungs](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers)-Prozess verwendet:
 
 ![Standarddatenfluss](assets/old_way.png)
 
-Wenn die SaaS-Preisindizierung aktiviert ist, ändert sich der Datenfluss. Die Preisindizierung erfolgt über den [Commerce SaaS-Datenexport](../data-export/data-synchronization.md).
+Wenn die SaaS-Preisindizierung aktiviert ist, ändert sich der Datenfluss. Die Preisindizierung erfolgt mithilfe des [Commerce SaaS-](../data-export/data-synchronization.md).
 
-![Datenfluss der Preisindizierung bei SaaS](assets/new_way.png)
+![SaaS-Preisindizierungs-Datenfluss](assets/new_way.png)
 
-Alle Händler können von der Nutzung der SaaS-Preisindizierung profitieren, aber Händler mit Projekten mit den folgenden Eigenschaften können die größten Gewinne erzielen:
+Alle Händler können von der SaaS-Preisindizierung profitieren, aber Händler, die Projekte mit folgenden Merkmalen haben, können die größten Gewinne erzielen:
 
-* **Konstante Preisänderungen** - Händler, die wiederholte Preisänderungen erfordern, um strategische Ziele wie häufige Promotions, saisonale Rabatte oder Inventarmarkdowns zu erreichen.
-* **Mehrere Websites und/oder Kundengruppen** - Händler mit freigegebenen Produktkatalogen über mehrere Websites (Domänen/Marken) und/oder Kundengruppen hinweg.
-* **Viele einzigartige Preise für Websites oder Kundengruppen**-Merchants mit umfangreichen freigegebenen Produktkatalogen, die individuelle Preise für Websites oder Kundengruppen enthalten. Beispiele sind B2B-Händler mit vorverhandelten Preisen oder Marken mit unterschiedlichen Preisstrategien.
+* **Konstante Preisänderungen** Händler, die wiederholte Preisänderungen benötigen, um strategische Ziele wie häufige Werbeaktionen, saisonale Rabatte oder Bestandsmarkdowns zu erreichen.
+* **Mehrere Websites und/oder Kundengruppen** Händler mit freigegebenen Produktkatalogen über mehrere Websites (Domains/Marken) und/oder Kundengruppen hinweg.
+* **Viele einzigartige Preise über Websites oder Kundengruppen hinweg**-Händler mit umfangreichen gemeinsamen Produktkatalogen, die einzigartige Preise über Websites oder Kundengruppen hinweg enthalten. Beispiele sind B2B-Händler mit vorab ausgehandelten Preisen oder Marken mit unterschiedlichen Preisstrategien.
 
 ## SaaS-Preisindizierung verwenden
 
 Die SaaS-Preisindizierung wird bei der Installation von Adobe Commerce Services automatisch aktiviert. Es unterstützt die Preisberechnung für alle integrierten Adobe Commerce-Produktarten.
 
-### Voraussetzungen
+### Anforderungen
 
 * Adobe Commerce 2.4.4+
 
 ### Voraussetzungen
 
-* Einer der folgenden Commerce-Dienste muss mit der neuesten Version der Commerce-Erweiterung installiert sein:
+* Einer der folgenden Commerce-Services muss mit der neuesten Version der Commerce-Erweiterung installiert sein:
 
-   * [Catalog Service](../catalog-service/overview.md)
+   * [Katalog-Service](../catalog-service/overview.md)
    * [Live Search](../live-search/overview.md)
    * [Produkt-Recommendations](../product-recommendations/guide-overview.md)
 
 
 >[!NOTE]
 >
->Bei Bedarf kann der standardmäßige Preisindexer in der Commerce-Anwendung mithilfe des [Katalogadapters](catalog-adapter.md) deaktiviert werden.
+>Bei Bedarf kann der standardmäßige Preisindexer in der Commerce-Anwendung über den [Catalog Adapter“ deaktiviert ](catalog-adapter.md).
 
 ## Preise mit SaaS-Preisindizierung synchronisieren
 
-Nachdem Sie die SaaS-Preisindizierung für Adobe Commerce aktiviert haben, aktualisieren Sie die Preise auf der Storefront und in Commerce Services, indem Sie die neuen Feeds synchronisieren:
+Nachdem Sie die SaaS-Preisindizierung für Adobe Commerce aktiviert haben, aktualisieren Sie die Preise in der Storefront und in Commerce Services, indem Sie die neuen -Feeds synchronisieren:
 
 ```bash
 bin/magento saas:resync --feed=scopesCustomerGroup
@@ -66,7 +66,7 @@ Preisberechnungen werden für benutzerdefinierte Produktarten wie Basispreis, So
 
 Wenn Sie über einen benutzerdefinierten Produkttyp verfügen, der eine bestimmte Formel zur Berechnung des Endpreises verwendet, können Sie das Verhalten des Produktpreis-Feeds erweitern.
 
-1. Erstellen Sie ein Plug-in für die Klasse `Magento\ProductPriceDataExporter\Model\Provider\ProductPrice` .
+1. Erstellen Sie ein Plug-in in der `Magento\ProductPriceDataExporter\Model\Provider\ProductPrice`.
 
    ```xml
    <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"

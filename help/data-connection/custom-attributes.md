@@ -1,46 +1,47 @@
 ---
-title: Benutzerdefinierte Bestellattribute hinzufügen
-description: Erfahren Sie, wie Sie Ihren Backoffice-Daten benutzerdefinierte Bestellattribute hinzufügen und diese Attribute an die Experience Platform senden.
+title: Hinzufügen benutzerdefinierter Bestellattribute
+description: Erfahren Sie, wie Sie Ihren Back-Office-Daten benutzerdefinierte Bestellattribute hinzufügen und diese Attribute an die Experience Platform senden.
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: 14d190726324e2f42d66c2270f2e27be5a74132f
+exl-id: 69b99cd7-33ee-4c22-8819-64e9d4410fb1
+source-git-commit: 8cf67ed76e191b03ddfbfb68ed4ba07e456a3c35
 workflow-type: tm+mt
 source-wordcount: '591'
 ht-degree: 2%
 
 ---
 
-# Benutzerdefinierte Bestellattribute hinzufügen
+# Hinzufügen benutzerdefinierter Bestellattribute
 
-In diesem Artikel erfahren Sie, wie Sie benutzerdefinierte Attribute zu Backoffice-Ereignissen hinzufügen. Mit benutzerdefinierten Attributen können Sie umfangreiche Dateneinblicke erfassen, um die Analyse zu verbessern und personalisierte Erlebnisse für Ihre Kunden zu erstellen.
+In diesem Artikel erfahren Sie, wie Sie Backoffice-Ereignissen benutzerdefinierte Attribute hinzufügen. Mit benutzerdefinierten Attributen können Sie umfangreiche Dateneinblicke erfassen, um die Analyse zu verbessern und weitere personalisierte Erlebnisse für Ihre Kunden zu erstellen.
 
 Benutzerdefinierte Attribute werden auf zwei Ebenen unterstützt:
 
-- Bestellebene
-- Bestellelementebene
+- Auftragsebene
+- Bestellartikelebene
 
 >[!NOTE]
 >
->Adobe [!DNL Commerce] unterstützt benutzerdefinierte Attribute mit einem Datentyp aus Zeichenfolge, Booleschem Wert oder Datum.
+>Adobe [!DNL Commerce] unterstützt benutzerdefinierte Attribute mit dem Datentyp „String“, „Boolean“ oder „Date“.
 
-Zum Hinzufügen benutzerdefinierter Attribute zu Backoffice-Ereignissen müssen Sie Folgendes tun:
+Das Hinzufügen benutzerdefinierter Attribute zu Back-Office-Ereignissen erfordert Folgendes:
 
-1. Erstellen Sie ein Projekt in Ihrer [!DNL Commerce] -Installation.
-1. Aktualisieren Sie Ihr Schema, sodass die neuen benutzerdefinierten Attribute ordnungsgemäß in Experience Platform aufgenommen werden können.
-1. Bestätigen Sie im Admin, dass die benutzerdefinierten Attribute erfasst und an Experience Platform gesendet werden.
+1. Erstellen Sie ein Projekt in Ihrer [!DNL Commerce].
+1. Aktualisieren Sie Ihr Schema, damit die neuen benutzerdefinierten Attribute ordnungsgemäß in Experience Platform erfasst werden können.
+1. Bestätigen Sie in der Admin-Liste, dass die benutzerdefinierten Attribute erfasst und an Experience Platform gesendet werden.
 
 >[!IMPORTANT]
 >
->Die folgende Ordnerstruktur und Codebeispiele veranschaulichen, wie Sie benutzerdefinierte Attribute implementieren können. Die tatsächliche Ordnerstruktur und der erforderliche Code hängen von Ihrer Speicherkonfiguration und -umgebung ab.
+>Die folgende Verzeichnisstruktur und die folgenden Codebeispiele veranschaulichen, wie Sie benutzerdefinierte Attribute implementieren können. Die tatsächliche Verzeichnisstruktur und der erforderliche Code hängen von Ihrer Store-Konfiguration und -Umgebung ab.
 
-## Schritt 1: Verzeichnisstruktur erstellen
+## Schritt 1: Ordnerstruktur erstellen
 
-1. Navigieren Sie zum Ordner &quot;`app/code`&quot;in Ihrer [!DNL Commerce] -Installation und erstellen Sie einen Modulordner. Beispiel: `Magento/AepCustomAttributes`. Dieser Ordner enthält die Dateien, die für Ihre benutzerdefinierten Attribute erforderlich sind.
-1. Erstellen Sie im Modulverzeichnis ein Unterverzeichnis mit dem Namen `etc`. Das Verzeichnis `etc` enthält die Dateien `module.xml`, `query.xml`, `di.xml` und `et_schema.xml`.
+1. Navigieren Sie zum `app/code`-Verzeichnis in Ihrer [!DNL Commerce] und erstellen Sie ein Modulverzeichnis. Beispiel: `Magento/AepCustomAttributes`. Dieses Verzeichnis enthält die Dateien, die für Ihre benutzerdefinierten Attribute erforderlich sind.
+1. Erstellen Sie im Modulverzeichnis ein Unterverzeichnis mit dem Namen `etc`. Das `etc` enthält die `module.xml`-, `query.xml`-, `di.xml`- und `et_schema.xml`.
 
-## Schritt 2: Abhängigkeiten und Setup-Version definieren
+## Schritt 2: Definieren der Abhängigkeiten und der Setup-Version
 
-Erstellen Sie eine `module.xml` -Datei, die die Abhängigkeiten und die Setup-Version definiert. Beispiel:
+Erstellen Sie eine `module.xml`, die die Abhängigkeiten und die Setup-Version definiert. Beispiel:
 
 ```xml
 <?xml version="1.0"?>
@@ -59,9 +60,9 @@ Erstellen Sie eine `module.xml` -Datei, die die Abhängigkeiten und die Setup-Ve
 </config>
 ```
 
-## Schritt 3: Abrufen von Daten zu Verkaufsbestellungen
+## Schritt 3: Kundenauftragsdaten abrufen
 
-Erstellen Sie eine `query.xml` -Datei, die Daten zu Verkaufsbestellungen abruft. Beispiel:
+Erstellen Sie eine `query.xml`, die Kundenauftragsdaten abruft. Beispiel:
 
 ```xml
 <query>
@@ -72,9 +73,9 @@ Erstellen Sie eine `query.xml` -Datei, die Daten zu Verkaufsbestellungen abruft.
 </query>
 ```
 
-## Schritt 4: Einrichten der Abhängigkeitsinjektion
+## Schritt 4: Einrichten der Injektion von Abhängigkeiten
 
-Erstellen Sie eine `di.xml` -Datei, die die Abhängigkeitseinspritzung einrichtet. Beispiel:
+Erstellen Sie eine `di.xml` Datei , die die Injektion von Abhängigkeiten einrichtet. Beispiel:
 
 ```xml
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
@@ -91,9 +92,9 @@ Erstellen Sie eine `di.xml` -Datei, die die Abhängigkeitseinspritzung einrichte
 </manifest>
 ```
 
-## Schritt 5: Definieren Sie die Dienste, die für die Abhängigkeitsinjektion verwendet werden
+## Schritt 5: Definieren der für die Injektion von Abhängigkeiten verwendeten Services
 
-Erstellen Sie eine `et_schema.xml` -Datei, die die Dienste definiert, die für die Abhängigkeitsinjektion verwendet werden. Beispiel:
+Erstellen Sie eine `et_schema.xml` Datei, die die Services definiert, die für die Injektion von Abhängigkeiten verwendet werden. Beispiel:
 
 ```xml
 <services>
@@ -114,13 +115,13 @@ Erstellen Sie eine `et_schema.xml` -Datei, die die Dienste definiert, die für d
 </services>
 ```
 
-## Schritt 6: Erstellen eines Verzeichnisses für die PHP-Dateien
+## Schritt 6: Erstellen Sie ein Verzeichnis für die PHP-Dateien
 
-Erstellen Sie auf derselben Ebene wie das Verzeichnis `etc` einen Ordner mit dem Namen `Module/Provider`. Dieses Verzeichnis enthält die PHP-Dateien `OrderCustomAttributes` und `OrderItemCustomAttributes`.
+Erstellen Sie auf derselben Ebene wie das `etc` Verzeichnis ein Verzeichnis mit dem Namen `Module/Provider`. Dieses Verzeichnis enthält die `OrderCustomAttributes` und `OrderItemCustomAttributes` PHP-Dateien.
 
-## Schritt 7: Definieren der OrderCustomAttributes
+## Schritt 7: OrderCustomAttributes definieren
 
-Erstellen Sie eine `OrderCustomAttributes.php` -Datei, die die benutzerdefinierten Attribute zur Reihenfolge definiert. Beispiel:
+Erstellen Sie eine `OrderCustomAttributes.php`, die die Reihenfolge der benutzerdefinierten Attribute definiert. Beispiel:
 
 ```php
 namespace App\Transformers;
@@ -176,9 +177,9 @@ class CustomAttributeTransformer extends TransformerAbstract
 }
 ```
 
-## Schritt 8: Definieren der OrderItemCustomAttributes
+## Schritt 8: OrderItemCustomAttributes definieren
 
-Erstellen Sie eine `OrderItemCustomAttributes.php` -Datei, die die benutzerdefinierten Attribute des Bestellelements definiert. Beispiel:
+Erstellen Sie eine `OrderItemCustomAttributes.php`, die die benutzerdefinierten Attribute des Bestellartikels definiert. Beispiel:
 
 ```php
 namespace Magento\AepCustomAttributes\Model\Provider;
@@ -234,13 +235,13 @@ class OrderItemCustomAttribute
 }
 ```
 
-## Schritt 9: Erstellen eines Ordners für die productContext-Datei
+## Schritt 9: Erstellen eines Verzeichnisses für die productContext-Datei
 
-Erstellen Sie auf derselben Ebene wie das Verzeichnis `etc` einen Ordner mit dem Namen `Plugin/Module`. Dieses Verzeichnis enthält die Datei &quot;`ProductContext.php`&quot;.
+Erstellen Sie auf derselben Ebene wie das `etc` Verzeichnis ein Verzeichnis mit dem Namen `Plugin/Module`. Dieses Verzeichnis enthält die `ProductContext.php`.
 
-## Schritt 10: Definieren der ProductContext-Klasse
+## Schritt 10: Definieren Sie die ProductContext-Klasse
 
-Erstellen Sie eine Datei mit dem Namen `ProductContext.php` , die die Klasse `ProductContext` definiert. Beispiel:
+Erstellen Sie eine Datei mit dem Namen `ProductContext.php`, die die `ProductContext` definiert. Beispiel:
 
 ```php
 namespace Magento\Catalog\Model\Product;
@@ -276,7 +277,7 @@ class ProductContext
 
 ## Schritt 11: Modul registrieren
 
-Erstellen Sie auf derselben Ebene wie das Verzeichnis &quot;`etc`&quot; eine &quot;`registration.php`&quot;-Datei, die das Modul registriert. Beispiel:
+Erstellen Sie auf derselben Ebene wie das `etc`-Verzeichnis eine `registration.php`-Datei, die das Modul registriert. Beispiel:
 
 ```php
 use \Magento\Framework\Component\ComponentRegistrar;
@@ -290,30 +291,30 @@ ComponentRegistrar::register(
 
 ## Schritt 12: Erweitern des vorhandenen XDM-Schemas
 
-Um sicherzustellen, dass die neuen benutzerdefinierten Bestellattribute von Ihrem [!DNL Commerce] -Schema in Experience Platform erfasst werden können, müssen Sie das Schema erweitern, um diese benutzerdefinierten Felder einzuschließen.
+Um sicherzustellen, dass die neuen benutzerdefinierten Sortierattribute von Ihrem [!DNL Commerce] in Experience Platform aufgenommen werden können, müssen Sie das Schema erweitern, um diese benutzerdefinierten Felder einzuschließen.
 
-Informationen zum Erweitern eines vorhandenen XDM-Schemas um diese benutzerdefinierten Felder finden Sie im Artikel [Erstellen und Bearbeiten von Schemas in der Benutzeroberfläche](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups) in der Experience Platform-Dokumentation. Das Feld Mandantenkennung wird dynamisch generiert. Die Feldstruktur sollte jedoch dem in der Experience Platform-Dokumentation angegebenen Beispiel ähneln.
+Informationen zum Erweitern eines vorhandenen XDM-Schemas um diese benutzerdefinierten Felder finden Sie im Artikel [Erstellen und Bearbeiten von Schemas in der Benutzeroberfläche](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups) in der Experience Platform-Dokumentation. Das Feld Mandanten-ID wird dynamisch generiert. Die Feldstruktur sollte jedoch dem Beispiel in der Experience Platform-Dokumentation ähneln.
 
 >[!IMPORTANT]
 >
 >Benutzerdefinierte XDM-Attribute müssen mit den von [!DNL Commerce] gesendeten Attributen übereinstimmen.
 
-Fügen Sie `commerce.order` ein Feld für die Bestellebene hinzu:
+Fügen Sie `commerce.order` ein Feld für die Auftragsebene hinzu:
 
-![Bestellstufe](assets/order-level.png)
+![Bestellebene](assets/order-level.png)
 
-Fügen Sie zu `productListItems` Felder für die Bestellelementebene hinzu:
+Fügen Sie `productListItems` Felder für die Bestellartikelebene hinzu:
 
-![Bestellelementebene](assets/order-item-level.png)
+![Bestellartikelebene](assets/order-item-level.png)
 
-## Schritt 12: Überprüfen, ob Daten erfasst werden
+## Schritt 12: Bestätigen Sie, dass Daten erfasst werden
 
-Überprüfen Sie im Admin die Registerkarte [Datenanpassung](connect-data.md#data-customization) , ob benutzerdefinierte Attributdaten erfasst und an die Experience Platform gesendet werden.
+Gehen Sie in der Admin [ Registerkarte ](connect-data.md#data-customization)Datenanpassung“, um zu bestätigen, dass benutzerdefinierte Attributdaten erfasst und an die Experience Platform gesendet werden.
 
 ### Fehlerbehebung
 
 Wenn die Meldung `No custom order attributes found.` auf der Registerkarte **[!UICONTROL Data Customization]** angezeigt wird, bestätigen Sie Folgendes:
 
-1. Sie haben die Voraussetzungen für die Aktivierung der [Data Connector-Erweiterung](overview.md#prerequisites) erfüllt.
-1. Sie haben [benutzerdefinierte Bestellattribute](#add-custom-order-attributes) konfiguriert.
-1. Es wurde mindestens ein Bestellereignis generiert.
+1. Sie haben die Voraussetzungen zum Aktivieren der [Data Connector-Erweiterung](overview.md#prerequisites) erfüllt.
+1. Sie haben [benutzerdefinierte Bestellattribute“ ](#add-custom-order-attributes).
+1. Mindestens ein Auftragsereignis wurde generiert.

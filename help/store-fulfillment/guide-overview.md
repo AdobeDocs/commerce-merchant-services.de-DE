@@ -1,6 +1,6 @@
 ---
-title: '[!DNL Store Fulfillment] Guide Overview'
-description: "Umfassende Informationen zu [!DNL Store Fulfillment] für Adobe Commerce-Administratoren, einschließlich Installation und Onboarding."
+title: '[!DNL Store Fulfillment]'
+description: Umfassende Informationen zu  [!DNL Store Fulfillment]  für Adobe Commerce-Administratoren, einschließlich Installation und Onboarding.
 seo-title: Adobe Commerce Store Fulfillment Guide
 seo-description: Describes how to use [!DNL Store Fulfillment by Walmart Commerce Technologies] services with Adobe Commerce.
 recommendations: noDisplay
@@ -12,32 +12,32 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Store Fulfillment] Leitfaden - Übersicht
+# [!DNL Store Fulfillment]
 
-Dieses Handbuch richtet sich an Administratoren von Adobe Commerce. Sie enthält detaillierte Informationen zur Installation und zum Onboarding von [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] sowie zur Konfiguration und Verwaltung der Dienste. Es wird von einem grundlegenden Verständnis der grundlegenden Adobe Commerce-Konfiguration und -Funktionalität ausgegangen.
+Dieses Handbuch richtet sich an Administratoren von Adobe Commerce. Es enthält detaillierte Informationen über die Installation und das Onboarding von [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] sowie die Konfiguration und Verwaltung der Services. Es setzt ein grundlegendes Verständnis der Adobe Commerce-Kernkonfiguration und -funktionen voraus.
 
-[!DNL Store Fulfillment] hat zwei Bereiche für Adobe Commerce-Administratoren:
+[!DNL Store Fulfillment] gibt es zwei Bereiche für Adobe Commerce-Administratoren:
 
-* Administrator: Verwenden Sie diesen Bereich, um auf die Konfigurationsoberfläche zuzugreifen.
-* Befehlszeilenschnittstelle: Verwenden Sie dieses Tool, um Installations- und Backend-Konfigurationsaufgaben auszuführen.
+* Der Administrator: Verwenden Sie diesen Bereich, um auf die Konfigurations-Benutzeroberfläche zuzugreifen.
+* Die Befehlszeilenschnittstelle: Verwenden Sie dieses Tool, um Installations- und Backend-Konfigurationsaufgaben auszuführen.
 
-Dieses Handbuch behandelt:
+Dieses Handbuch behandelt Folgendes:
 
-* Alle [!DNL Store Fulfillment]-spezifischen Aufgaben, die in Admin ausgeführt werden.
-* Alle [!DNL Store Fulfillment]-spezifischen Aufgaben, die über die Adobe Commerce-Befehlszeile ausgeführt werden
+* Alle [!DNL Store Fulfillment] Aufgaben, die in der Admin erledigt werden.
+* Alle [!DNL Store Fulfillment] Aufgaben, die über die Adobe Commerce-Befehlszeile ausgeführt werden
 
-Die Kernfunktionen von Adobe Commerce werden in diesem Handbuch nicht behandelt.
+Dieses Handbuch behandelt nicht die Kernfunktionen von Adobe Commerce.
 
 ## Zusätzliche Dokumentation
 
 | Handbuch | Beschreibung |
 |-----------------------------------------------------------------------|----------------------------------------------------------------------------|
-| [Adobe Commerce 2.4-Benutzerhandbuch](https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home) | Merchandising-fokussierte Dokumentation für Adobe Commerce |
-| [Adobe Commerce 2.4-Entwicklerhandbuch](https://developer.adobe.com/commerce/docs/) | Entwickerorientierte Dokumentation zum Erstellen und Anpassen von Adobe Commerce |
+| [Benutzerhandbuch für Adobe Commerce 2.4](https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home) | Händlerorientierte Dokumentation für Adobe Commerce |
+| [Adobe Commerce 2.4-Entwicklerhandbuch](https://developer.adobe.com/commerce/docs/) | Entwicklerorientierte Dokumentation zum Erstellen und Anpassen von Adobe Commerce |
 
 ## Support
 
-Verwenden Sie die folgenden Ressourcen, wenn Sie Informationen benötigen oder Fragen haben, die nicht in diesem Handbuch behandelt werden:
+Wenn Sie Informationen benötigen oder Fragen haben, die in diesem Handbuch nicht behandelt werden, verwenden Sie die folgenden Ressourcen:
 
-* [Hilfezentrum](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"} - Siehe die Artikel zur Fehlerbehebung im Zusammenhang mit [!DNL Store Fulfillment].
-* [Support-Tickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"}: Senden Sie ein Ticket, um zusätzliche Hilfe zu erhalten.
+* [Hilfezentrum](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"} - Siehe die [!DNL Store Fulfillment] Artikel zur Fehlerbehebung.
+* [Support-](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"}: Senden Sie ein Ticket, um zusätzliche Hilfe zu erhalten.

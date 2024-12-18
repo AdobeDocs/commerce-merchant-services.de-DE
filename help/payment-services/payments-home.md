@@ -1,6 +1,6 @@
 ---
 title: Startseite
-description: Einführung in die [!DNL Payment Services] Startseite.
+description: Einführung in die  [!DNL Payment Services] .
 role: Admin, User
 level: Intermediate
 exl-id: d7a4c87f-33cb-446a-b442-3cdf05b518a2
@@ -8,42 +8,42 @@ feature: Payments, Checkout
 source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '163'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# Einführung in die [!DNL Payment Services]-Startseite
+# Einführung in das [!DNL Payment Services] Home
 
-[!DNL Payment Services] für [!DNL Adobe Commerce] und [!DNL Magento Open Source] bietet eine Home-Ansicht mit allen erforderlichen Informationen, um mit der Einrichtung und Verwendung der Erweiterung zu beginnen.
+[!DNL Payment Services] für [!DNL Adobe Commerce] und [!DNL Magento Open Source] bietet eine Startansicht mit allen erforderlichen Informationen, um mit der Einrichtung und Verwendung der Erweiterung zu beginnen.
 
-1. Wechseln Sie in der Seitenleiste _Admin_ zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**:
+1. Navigieren Sie in der _Admin_-Seitenleiste zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**:
 
-   ![Home view](assets/home-view.png){width="700" zoomable="yes"}
+   ![Startansicht](assets/home-view.png){width="700" zoomable="yes"}
 
-1. In dieser Home-Ansicht können Sie auf die Ansicht _Home_, _Learn_ über [!DNL Payment Services], die Erweiterung _Settings_ oder die Erweiterung _Help_ zugreifen.
+1. In dieser Startansicht können Sie auf _Startansicht_ Ansicht, _Erfahren_ über [!DNL Payment Services] zugreifen, die Erweiterung _Einstellungen_ konfigurieren oder _Hilfe_.
 
 ## Startseite
 
 | Feld | Beschreibung |
 |---|---|
-| [!UICONTROL Orders] | Diese Berichte ermöglichen es Ihnen, schnell den Zahlungsstatus Ihrer Bestellungen anzuzeigen und potenzielle Probleme zu identifizieren. |
-| [!UICONTROL Payouts] | Die Payouts-Berichte zeigen umfassende Auszahlungsinformationen auf einen Blick, sodass Sie vollständige Transparenz in Bezug auf den Zahlungsbetrag, das verarbeitete Volumen und detaillierte Berichte über die Transaktionsstufe zur finanziellen Abstimmung erhalten. |
+| [!UICONTROL Orders] | Diese Berichte ermöglichen es Ihnen, den Zahlungsstatus Ihrer Bestellungen schnell anzuzeigen und mögliche Probleme zu identifizieren. |
+| [!UICONTROL Payouts] | Die Auszahlungsberichte zeigen umfassende Auszahlungsinformationen auf einen Blick und ermöglichen Ihnen volle Transparenz in Bezug auf den Zahlungsbetrag, das verarbeitete Volumen und detaillierte Berichte auf Transaktionsebene für die finanzielle Abstimmung. |
 
-## Lernen
+## Mehr erfahren
 
 | Feld | Beschreibung |
 |---|---|
-| [!UICONTROL Read documentation] | Weitere Informationen finden Sie in den aktuellen Benutzer- und Entwicklerdokumenten für [!DNL Payment Services]. |
-| [!UICONTROL How to onboard] | Suchen Sie alles, was Sie benötigen, um eingerichtet zu werden und mit der Verwendung der Funktion [!DNL Payment Services] zu beginnen. |
-| [!UICONTROL Understand financial reports] | Detaillierte Erläuterung der Berichterstattung über das Cashflow-Management in [!DNL Payment Services]. |
+| [!UICONTROL Read documentation] | Siehe die neuesten Benutzer- und Entwicklerdokumente für [!DNL Payment Services]. |
+| [!UICONTROL How to onboard] | Finden Sie alles, was Sie für die Einrichtung benötigen, und beginnen Sie mit der Verwendung der [!DNL Payment Services]. |
+| [!UICONTROL Understand financial reports] | Ausführliche Erläuterung der Berichterstattung über das Cashflow-Management in [!DNL Payment Services]. |
 
 ## Hilfe
 
 | Feld | Beschreibung |
 |---|---|
-| [!UICONTROL Visit help center] | Das [!DNL Adobe Commerce] Hilfezentrum verfügt über Knowledge Base-Artikel zu [!DNL Payment Services]. |
-| [!UICONTROL Get support] | Besuchen Sie das Support-Portal [!DNL Adobe Commerce] , um Hilfe zu [!DNL Payment Services.] zu erhalten. |
+| [!UICONTROL Visit help center] | Das [!DNL Adobe Commerce]-Hilfezentrum bietet Wissensdatenbankartikel über [!DNL Payment Services]. |
+| [!UICONTROL Get support] | Besuchen Sie das [!DNL Adobe Commerce] Support-Portal , um Hilfe bei der [!DNL Payment Services.] zu erhalten |
 
 ## Einstellungen
 
-Klicken Sie in der Startansicht auf **[!UICONTROL Settings]**. Weitere Informationen finden Sie unter [Einstellungen](settings.md) .
+Klicken Sie in der Startansicht auf **[!UICONTROL Settings]**. Weitere Informationen finden [ unter ](settings.md).

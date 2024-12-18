@@ -1,6 +1,6 @@
 ---
 title: '[!DNL SaaS Data Export Guide]'
-description: Erfahren Sie mehr über die Verwendung der [!DNL data export] Erweiterung für Adobe Commerce SaaS-Dienste, die Daten zwischen Adobe Commerce und verbundenen Commerce-Diensten synchronisieren.
+description: Erfahren Sie mehr über die Verwendung  [!DNL data export]  Erweiterung für Adobe Commerce SaaS-Services, die Daten zwischen Adobe Commerce und verbundenen Commerce-Services synchronisiert.
 role: Admin, Developer
 exl-id: c5711fa6-09e2-42b0-a7af-4d7b866c871d
 source-git-commit: 2eeb11bf5ead38131d42b330162ea3d9c531c465
@@ -12,33 +12,33 @@ ht-degree: 0%
 
 # Handbuch zu [!DNL SaaS Data Export]
 
-[!DNL SaaS data export] synchronisiert Daten zwischen einer Adobe Commerce-Instanz und verbundenen Commerce Services. Wenn Sie einer Adobe Commerce-Installation Live Search, Product Recommendations oder den Catalog Service hinzufügen, wird die Erweiterung [!DNL Data export] automatisch installiert.
+[!DNL SaaS data export] synchronisiert Daten zwischen einer Adobe Commerce-Instanz und verbundenen Commerce Services. Wenn Sie Live Search, Product Recommendations oder den Catalog Service zu einer Adobe Commerce-Installation hinzufügen, wird die [!DNL Data export] automatisch installiert.
 
-Der SAAS-Datenexport erfasst und exportiert verschiedene Datentypen, die als _Feeds_ bezeichnet werden und bestimmte Arten von Informationen aggregieren. Je nachdem, welche Commerce-Dienste installiert sind, umfassen die SaaS-Datenexport-Feeds Folgendes:
+SaaS-Datenexport erfasst und exportiert verschiedene Datentypen, so genannte _Feeds_, mit denen bestimmte Arten von Informationen aggregiert werden. Je nachdem, welche Commerce-Services installiert sind, umfassen die SaaS-Datenexport-Feeds Folgendes:
 
-- **Katalogentitäts-Feeds** aggregierte Produktdaten. Die Daten umfassen Produkte, Produktattribute, Produktpreise, Produktvarianten, Kategorien, Kategorieberechtigungen und Produktberechtigungen.
-- Der **Scopes-Feed** aggregiert Daten für Kundengruppen, Websites, Stores und Store-Ansichten.
-- Der **Feed &quot;Verkaufsaufträge&quot;** aggregiert Auftragsdaten einschließlich der zugehörigen Entitäten wie Rechnungen, Sendungen, Kreditkarten usw.
-- Der **Multi-Source Inventar-Feed** aggregiert Daten zu Lagerbestandsstatuselementen.
+- **Katalogentitäts-Feeds** aggregieren Produktdaten. Zu den Daten gehören Produkte, Produktattribute, Produktpreise, Produktvarianten, Kategorien, Kategorieberechtigungen und Produktberechtigungen.
+- Der **Bereiche-Feed** aggregiert Daten für Kundengruppen, Websites, Stores und Store-Ansichten.
+- Der **Kundenauftrags-Feed** aggregiert Auftragsdaten einschließlich der zugehörigen Entitäten wie Rechnungen, Lieferungen, Gutschriften usw.
+- Der **Inventar-Feed für mehrere Source** aggregiert Daten zu Lagerbestandsstatus-Elementen.
 
-Der SaaS-Datenexport wird als PHP-Erweiterung geliefert. Es unterstützt mehrere Methoden zum Initiieren und Verwalten des Datensynchronisierungsprozesses.
+SaaS-Datenexport wird als PHP-Erweiterung bereitgestellt. Es unterstützt mehrere Methoden zum Initiieren und Verwalten des Datensynchronisierungsprozesses.
 
-- **Manuelle Synchronisation über den Administrator oder die Befehlszeile**
+- **Manuelle Synchronisierung über Admin oder die Befehlszeile**
 
-   - Das Dashboard [Datenverwaltung](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard) in Commerce Admin bietet eine grafische Ansicht des Synchronisierungsstatus. Sie können das Dashboard verwenden, um eine vollständige Neusynchronisierung (_vollständige Synchronisierung_) aller Feeds durchzuführen. Adobe empfiehlt jedoch, nur eine vollständige Synchronisierung durchzuführen, wenn Sie Adobe Commerce zum ersten Mal mit einem Commerce-Dienst verbinden. Siehe [Synchronisierungsprozess](data-synchronization.md).
+   - Das [Daten-Management](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard)Dashboard in Commerce Admin bietet eine grafische Übersicht über den Synchronisierungsstatus. Sie können das Dashboard verwenden, um eine vollständige Resynchronisation (_vollständige_) aller Feeds durchzuführen. Adobe empfiehlt jedoch nur dann eine vollständige Synchronisierung, wenn Sie Adobe Commerce zum ersten Mal mit einem Commerce-Service verbinden. Siehe [Synchronisierungsprozess](data-synchronization.md).
 
-   - Das Befehlszeilen-Tool [Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/config-cli) (CLI) bietet Befehle zum Synchronisieren bestimmter Feeds und umfasst zusätzliche Optionen zum Anpassen der Feed-Verarbeitung.
+   - Das [Adobe Commerce-Befehlszeilen-Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/config-cli) (CLI) bietet Befehle zum Synchronisieren bestimmter Feeds und zusätzliche Optionen zum Anpassen der Feed-Verarbeitung.
 
-- **Automatisierte Synchronisierung mit Cron-Aufträgen**
+- **Automatisierte Synchronisation mit Cron-Aufträgen**
 
-   - [TeilDatensynchronisation](data-synchronization.md#partial-synchronization-with-cron-jobs) - Cron-Aufträge führen zu einer teilweisen Datensynchronisation, wenn ein Commerce-Administrator eine Entität aktualisiert. Der Datenexportprozess sendet nur diese Aktualisierungen an verbundene Commerce-Dienste. Der teilweise Synchronisierungsprozess basiert auf dem MView-Mechanismus und erfordert keine Aktionen des Admin-Benutzers oder Systemintegrators.
+   - [Partielle Datensynchronisation](data-synchronization.md#partial-synchronization-with-cron-jobs) - Cron-Vorgangs-Trigger führt eine partielle Datensynchronisation durch, wenn ein Commerce-Administrator eine Entität aktualisiert. Der Datenexportvorgang sendet nur diese Aktualisierungen an verbundene Commerce-Services. Der Teilsynchronisierungsprozess basiert auf dem MView-Mechanismus und erfordert keine Aktionen vom Admin-Benutzer oder Systemintegrator.
 
-   - [Automatischer Neuversuch auf Synchronisierungsfehler](data-synchronization.md#failed-items-sync-for-error-recovery) - Der Cron-Auftrags-Trigger versucht den Synchronisierungsprozess automatisch erneut, wenn während des Datensynchronisierungsprozesses Fehler auftreten.
+   - [Automatische Wiederholung für Synchronisierungsfehler](data-synchronization.md#failed-items-sync-for-error-recovery) - Cron-Auftrags-Trigger Automatischer Versuch des Synchronisierungsprozesses, wenn während des Datensynchronisierungsprozesses Fehler auftreten.
 
 - **Exportplanung und -leistung**
 
-   - Entwickler und Systemintegratoren können die für den SAAS-Datenexport erforderliche Zeit schätzen, um Daten zwischen Adobe Commerce und verbundenen Diensten zu synchronisieren. Diese Schätzung kann bei der Planung der Datenexportverarbeitung helfen, um eine Site-Unterbrechung zu verhindern. Siehe [Schätzen des Datenvolumens und der Übertragungszeit ](estimate-data-volume-sync-time.md).
+   - Entwickler und Systemintegratoren können die Zeit schätzen, die für den SaaS-Datenexport zur Synchronisierung von Daten zwischen Adobe Commerce und Connected Services erforderlich ist. Diese Schätzung kann dazu beitragen, die Verarbeitung von Datenexporten zu planen, um eine Unterbrechung der Site zu verhindern. Siehe [Schätzen des Datenvolumens und der Übertragungszeit](estimate-data-volume-sync-time.md).
 
-   - In Fällen, in denen die Synchronisierung schneller erfolgen muss, bietet der SAAS-Datenexport Anpassungsoptionen zur Verbesserung der Exportverarbeitungsleistung. Siehe [Verbessern der Datenexportleistung](customize-export-processing.md).
+   - In Fällen, in denen die Synchronisierung schneller erfolgen muss, bietet der SaaS-Datenexport Anpassungsoptionen, um die Leistung der Exportverarbeitung zu verbessern. Siehe [Verbessern der Leistung beim Datenexport](customize-export-processing.md).
 
-- **Tracking und Fehlerbehebung bei Datenexportaktivitäten** - Verwenden Sie Datenexport- und SAAS-Export-Protokolle, um den Synchronisierungsstatus und die Feed-Payloads während des Synchronisations- und Indexierungsprozesses zu überprüfen. Siehe [Protokollierung und Fehlerbehebung](troubleshooting-logging.md).
+- **Nachverfolgen und Fehlerbehebung bei Datenexportaktivitäten** - Verwenden Sie Datenexport- und SaaS-Exportprotokolle, um den Synchronisierungsstatus zu überprüfen und Payloads während des Synchronisierungs- und Indizierungsprozesses zu speisen. Siehe [Protokollierung und Fehlerbehebung](troubleshooting-logging.md).

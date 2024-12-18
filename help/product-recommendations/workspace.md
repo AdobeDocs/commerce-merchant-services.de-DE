@@ -1,6 +1,6 @@
 ---
 title: '[!DNL Product Recommendations] Workspace'
-description: Erfahren Sie, wie Sie die Performance von Produktempfehlungen konfigurieren, verwalten und überwachen.
+description: Erfahren Sie, wie Sie die Leistung von Produktempfehlungen konfigurieren, verwalten und überwachen.
 exl-id: 85a06cc3-91b9-484a-96a9-fc85718e6d70
 source-git-commit: 91e19e30d55259d3287404895d1d893c480743b6
 workflow-type: tm+mt
@@ -11,24 +11,24 @@ ht-degree: 0%
 
 # [!DNL Product Recommendations] Workspace
 
-Der Arbeitsbereich &quot;[!DNL Product Recommendations]&quot; zeigt eine Liste der zuvor konfigurierten Empfehlungen mit Metriken an, mit denen Sie den Erfolg jeder Empfehlung verfolgen können. Die Liste kann so konfiguriert werden, dass sie Metriken für den letzten Tag, die letzte Woche oder den letzten Monat berechnet. Sie können die Metriken verwenden, um praktische Einblicke darauf zu erhalten, wie häufig eine Empfehlungseinheit angezeigt oder angeklickt wird, oder um zu analysieren, wie gut Ihre Empfehlungen funktionieren.
+Der Arbeitsbereich [!DNL Product Recommendations] zeigt eine Liste der zuvor konfigurierten Empfehlungen mit Metriken an, mit denen Sie den Erfolg jeder Empfehlung verfolgen können. Die Liste kann so konfiguriert werden, dass Metriken für den letzten Tag, die letzte Woche oder den letzten Monat berechnet werden. Sie können die Metriken verwenden, um umsetzbare Insights zu erstellen, die darauf basieren, wie oft eine Empfehlungseinheit angezeigt oder angeklickt wird, oder um zu analysieren, wie gut Ihre Empfehlungen funktionieren.
 
 >[!INFO]
 >
->Eine Empfehlungseinheit ist ein Widget, das das empfohlene Produkt _items_ enthält.
+>Eine Empfehlungseinheit ist ein Widget, das das empfohlene Produkt (_)_.
 
-![Recommendations-Arbeitsbereich](assets/workspace.png)
+![Recommendations Workspace](assets/workspace.png)
 _Recommendations Workspace_
 
 ## Festlegen des Umfangs
 
-Zunächst ist der [Bereich](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) aller Empfehlungseinstellungen auf `Default Store View` eingestellt. Wenn Ihre Commerce-Installation mehrere Store-Ansichten enthält, setzen Sie **Umfang** auf die [Store-Ansicht](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings), in der Ihre Empfehlungen gelten.
+Zunächst wird [Umfang](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) aller Empfehlungseinstellungen auf `Default Store View` festgelegt. Wenn Ihre Commerce-Installation mehrere Store-Ansichten enthält, setzen Sie **Umfang** auf die [Store-Ansicht](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings), für die Ihre Empfehlungen gelten.
 
 ## Festlegen des Datumsbereichs von Metriken
 
-1. Klicken Sie auf das Steuerelement **Kalender** ![Kalenderselektor](assets/icon-calendar.png) .
+1. Klicken Sie auf **Steuerelement** Kalender![Selektor](assets/icon-calendar.png) .
 
-1. Wählen Sie eine der folgenden Optionen aus:
+1. Wählen Sie eine der folgenden Optionen:
 
    - Letzte 24 Stunden
    - Letzte 7 Tage
@@ -38,31 +38,31 @@ Zunächst ist der [Bereich](https://experienceleague.adobe.com/docs/commerce-adm
 
    >[!NOTE]
    >
-   >Die Metriken zur Produktempfehlung sind für Luma-Storefronts optimiert. Wenn Ihre Storefront nicht auf Luma basiert, hängt die Art und Weise, wie die Metriken Daten verfolgen, davon ab, wie Sie [die Ereigniskollektion implementieren](events.md).
+   >Metriken für Produktempfehlungen sind für Luma-Storefronts optimiert. Wenn Ihre Storefront nicht auf Luma basiert, hängt die Art und Weise, wie die Metriken Daten verfolgen, davon ab, wie Sie [die Ereigniserfassung implementieren](events.md).
 
 ## Spalten ein-/ausblenden
 
-1. Klicken Sie oben links auf die Spalten **Anzeigen/Ausblenden** ![Spaltenauswahl](assets/icon-show-hide-columns.png) .
+1. Klicken Sie in der oberen linken Ecke auf **Anzeigen/Ausblenden** ![Spaltenauswahl](assets/icon-show-hide-columns.png) Spalten.
 
-   Die sichtbaren Spalten haben ein blaues Häkchen.
+   Die sichtbaren Spalten sind mit einem blauen Häkchen versehen.
 
-1. Führen Sie im Menü einen der folgenden Schritte aus:
+1. Führen Sie im Menü eine der folgenden Aktionen aus:
 
    - Um eine ausgeblendete Spalte anzuzeigen, klicken Sie auf einen beliebigen Spaltennamen ohne Häkchen.
    - Um eine sichtbare Spalte auszublenden, klicken Sie auf einen beliebigen Spaltennamen mit einem Häkchen.
 
-   Die Tabelle wird aktualisiert und enthält jetzt nur die ausgewählten Spalten.
+   Die Tabelle wird aktualisiert und enthält nur die ausgewählten Spalten.
 
-   ![Recommendations-Arbeitsbereich](assets/workspace-select-columns.png)
+   ![Recommendations Workspace](assets/workspace-select-columns.png)
    _Spalten ein-/ausblenden_
 
 ## Einstellungen
 
-Die Einstellungen bestimmen den SaaS-Datenraum, der die Recommendations-Verhaltensdaten bereitstellt.
+Die Einstellungen bestimmen den SaaS-Datenspeicher, der die Recommendations-Verhaltensdaten bereitstellt.
 
-- Wählen Sie einen anderen SaaS-Datenraum aus, um zu ändern, woher Recommendations-Verhaltensdaten stammen.
+- Um zu ändern, wo Recommendations-Verhaltensdaten ihren Ursprung haben, wählen Sie einen anderen SaaS-Datenbereich aus.
 
-- Um einen neuen SaaS-Datenraum zu konfigurieren, klicken Sie auf **Konfiguration bearbeiten** . Weitere Informationen finden Sie unter [Einstellungen](settings.md).
+- Um einen neuen SaaS-Datenbereich zu konfigurieren, klicken Sie auf **Konfiguration bearbeiten**. Weitere Informationen finden Sie unter [Einstellungen](settings.md).
 
 ![Recommendations-Einstellungen](assets/settings.png)
 _Recommendations-Einstellungen_
@@ -71,14 +71,14 @@ _Recommendations-Einstellungen_
 
 1. Klicken Sie in der Tabelle auf die Empfehlung, die Sie untersuchen möchten.
 
-   ![Recommendations-Arbeitsbereich](assets/recommendation-detail.png)
-   _Details zur Konversionsrate der Homepage_
+   ![Recommendations Workspace](assets/recommendation-detail.png)
+   _Details zur Konversionsrate der Startseite_
 
 1. Um den Status der Empfehlung zu ändern, klicken Sie auf **Aktivieren** oder **Deaktivieren**.
 
 ## Empfehlung bearbeiten
 
-Klicken Sie auf der Seite mit den Empfehlungsdetails auf **Bearbeiten**. Weitere Informationen finden Sie unter [Recommendations bearbeiten](edit.md).
+Klicken Sie auf der Seite mit den Empfehlungsdetails auf **Bearbeiten**. Weitere Informationen finden Sie unter [Recommendations ](edit.md).
 
 ## Empfehlung erstellen
 
@@ -88,27 +88,27 @@ Klicken Sie auf der Seite mit den Empfehlungsdetails auf **Erstellen**. Weitere 
 
 | Kontrolle | Beschreibung |
 |---|---|
-| ![Kalenderauswahl](assets/icon-calendar.png) | Bestimmt den Zeitraum, der für Metrikberechnungen verwendet wird. Optionen: 24 Stunden / 7 Tage / 30 Tage |
-| ![Spaltenauswahl](assets/icon-show-hide-columns.png) | Bestimmt die Spalten, die in der Tabelle [!DNL Product Recommendations] angezeigt werden. |
-| Einstellungen | Bestimmt den SaaS-Datenraum, aus dem Recommendations-Verhaltensdaten abgerufen werden, und ermöglicht auch den Empfehlungstyp für visuelle Ähnlichkeit. |
-| Empfehlung erstellen | Öffnet die Seite [Neue Empfehlung erstellen](create.md) . |
+| ![Kalenderauswahl](assets/icon-calendar.png) | Bestimmt den Zeitbereich, der für Metrikberechnungen verwendet wird. Optionen: 24 Stunden / 7 Tage / 30 Tage |
+| ![Spaltenauswahl](assets/icon-show-hide-columns.png) | Bestimmt die Spalten, die in der [!DNL Product Recommendations] Tabelle angezeigt werden. |
+| Einstellungen | Bestimmt den SaaS-Datenraum, in dem Recommendations-Verhaltensdaten abgerufen werden, und ermöglicht außerdem den Empfehlungstyp „Visuelle Ähnlichkeit“. |
+| Empfehlung erstellen | Öffnet die Seite [Neue Empfehlung erstellen](create.md). |
 
 ## Spaltenbeschreibungen
 
 | Spalte | Beschreibung |
 |---|---|
-| Name | Der Name der Empfehlung. |
+| -Name | Der Name der Empfehlung. |
 | Seite | Die Seite, auf der die Empfehlung angezeigt wird. |
 | Typ | Der Empfehlungstyp. |
 | Status | Der Empfehlungsstatus. Optionen: inaktiv/aktiv/Entwurf |
-| Erstellt | Das Datum der Erstellung der Empfehlung. |
+| Erstellt | Das Datum, an dem die Empfehlung erstellt wurde. |
 | Zuletzt bearbeitet | Das Datum, an dem die Empfehlung zuletzt bearbeitet wurde. |
-| Impressionen | Die Häufigkeit, mit der eine Empfehlungseinheit auf einer Seite geladen und gerendert wird. Eine Empfehlungseinheit, die sich unterhalb des Darstellungsbereichs des Browsers befindet, wird auf der Seite gerendert, auch wenn sie nicht vom Käufer angezeigt wird. In diesem Fall wird die gerenderte Einheit als Impression gezählt, eine Ansicht wird jedoch nur gezählt, wenn der Käufer die Einheit in die Ansicht scrollt. |
-| vImpressions | (Sichtbare Impressionen) Die Anzahl der Empfehlungseinheiten, die mindestens eine Ansicht registrieren. Wenn die Empfehlungseinheit beispielsweise zwei Zeilen hat, von denen jede zwei Produkte enthält und die letzten beiden Produkte vom Käufer nicht gesehen werden, die ersten beiden jedoch, zählt die Aktivität weiterhin als Impression. |
-| Ansichten | Die Anzahl der Empfehlungseinheiten, die im Viewport des Browsers des Kunden angezeigt werden. Wenn der Käufer die Seite mehrmals nach oben oder unten scrollt, wird das Ereignis mehrmals ausgelöst, sobald die Einheit sichtbar ist. |
-| Klicks | Die Summe der Klicks eines Käufers auf einen Artikel in der Empfehlungseinheit und der Anzahl der Klicks des Käufers auf die Schaltfläche **Zum Warenkorb hinzufügen** in der Empfehlungseinheit |
-| Umsatz | Der Umsatz, der durch die Empfehlung für den aktuellen Zeitraum bedingt ist. |
-| LT Umsatz | (Lebensdauerumsatz) Der durch eine Empfehlung generierte Lebensdauerumsatz. |
+| Impressionen | Die Häufigkeit, mit der eine Empfehlungseinheit auf einer Seite geladen und gerendert wird. Eine Empfehlungseinheit, die sich unter dem Falz des Darstellungsfelds des Browsers befindet, wird auf der Seite gerendert, auch wenn sie nicht vom Käufer angezeigt wird. In diesem Fall wird die gerenderte Einheit als Impression gezählt, eine Ansicht wird jedoch nur gezählt, wenn der Käufer die Einheit in die Ansicht scrollt. |
+| Impressions | (Sichtbare Impressions) Die Anzahl der Empfehlungseinheiten, die mindestens eine Ansicht registrieren. Wenn die Empfehlungseinheit beispielsweise zwei Zeilen mit jeweils zwei Produkten hat und die letzten beiden Produkte vom Käufer nicht gesehen werden, die ersten beiden jedoch, wird die Aktivität weiterhin als Impression gezählt. |
+| Ansichten | Die Anzahl der Empfehlungseinheiten, die im Ansichtsfenster des Browsers des Käufers angezeigt werden. Wenn der Käufer die Seite mehrmals nach oben oder unten scrollt, wird das Ereignis mehrmals ausgelöst, und zwar jedes Mal, wenn das Gerät angezeigt wird. |
+| Klicks | Die Summe der Klicks eines Kunden auf einen Artikel in der Empfehlungseinheit und die Anzahl der Klicks des Kunden auf die Schaltfläche **Zum Warenkorb hinzufügen** in der Empfehlungseinheit |
+| Einnahmen | Der durch die Empfehlung generierte Umsatz für den aktuellen Zeitraum. |
+| LT-Umsatz | (Lebensdauerumsatz) Der durch eine Empfehlung gesteuerte lebenslange Umsatz. |
 | Sichtbarkeit | Der Prozentsatz der Empfehlungseinheiten, die sich für die Ansicht registrieren. |
-| CTR | (Clickthrough-Rate) Der Prozentsatz der Einheitenimpressionen für die Empfehlung, die einen Klick registriert. CTR zählt alle Impressionen, auch wenn das Gerät nicht in die Ansicht des Käufers gelangt. Wird die Empfehlungseinheit nicht angezeigt, wird sie wahrscheinlich nicht angeklickt. Diese unsichtbaren Impressionen zählen jedoch zum CTR-Wert und reduzieren den gesamten CTR-Prozentsatz. |
-| vCTR | (Sichtbare Clickthrough-Rate) misst Klicks nur auf Grundlage sichtbarer Impressionen (Empfehlungen, die tatsächlich im sichtbaren Teil des Bildschirms des Käufers angezeigt wurden) und liefert so eine genauere Messung der Kundeninteraktion. |
+| CTR | (Klickrate) Der Prozentsatz der Einheitenimpressionen für die Empfehlung, die einen Klick registriert. CTR zählt alle Impressionen, auch wenn die Einheit nicht in die Ansicht des Käufers gelangt. Wenn die Empfehlungseinheit nicht angezeigt wird, ist es unwahrscheinlich, dass darauf geklickt wird. Diese unsichtbaren Impressionen werden jedoch auf den CTR-Score angerechnet und reduzieren den CTR-Gesamtprozentsatz. |
+| vCTR | (Sichtbare Clickthrough-Rate) Misst Klicks nur auf der Grundlage von sichtbaren Impressions (Empfehlungen, die tatsächlich im sichtbaren Teil des Käuferbildschirms erschienen sind) und bietet so einen genaueren Maßstab für die Interaktion mit Kunden. |

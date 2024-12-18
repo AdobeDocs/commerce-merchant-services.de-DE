@@ -1,6 +1,6 @@
 ---
 title: Einrichten der Live-Suche
-description: Der Arbeitsbereich [!DNL Live Search] dient zum Konfigurieren, Verwalten und Überwachen der Suchleistung.
+description: Der  [!DNL Live Search]  wird zum Konfigurieren, Verwalten und Überwachen der Suchleistung verwendet.
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
 source-git-commit: 7f536c93ab1c87bf88bc892b2a485067fa8f8110
 workflow-type: tm+mt
@@ -11,52 +11,52 @@ ht-degree: 0%
 
 # Einrichten der Live-Suche
 
-Im Arbeitsbereich können Sie die Leistung von [!DNL Live Search] konfigurieren, verwalten und überwachen. Das Menü oben bietet Zugriff auf die Tools in den einzelnen Funktionsbereichen. Die verfügbaren Funktionen spiegeln die aktuelle Menüauswahl wider.
+Im Arbeitsbereich können Sie die Leistung von [!DNL Live Search] konfigurieren, verwalten und überwachen. Das Menü oben bietet Zugriff auf die Werkzeuge in jedem Funktionsbereich. Die verfügbaren Funktionen spiegeln die aktuelle Menüauswahl wider.
 
 ![Workspace](assets/workspace.png)
 
 ## Datenerfassung
 
-Um sicherzustellen, dass jeder Funktionsbereich des Arbeitsbereichs die richtigen Daten enthält, müssen Sie die Datenerfassung auf der Grundlage der ausgewählten Storefront-Implementierung konfigurieren:
+Um sicherzustellen, dass jeder Funktionsbereich im Arbeitsbereich die richtigen Daten enthält, müssen Sie die Datenerfassung basierend auf der ausgewählten Storefront-Implementierung konfigurieren:
 
-1. Luma - Die Datenerfassung ist standardmäßig verfügbar.
+1. Luma - Die Datenerfassung ist vorkonfiguriert verfügbar.
 1. Headless - Die Datenerfassung muss je nach Storefront-Implementierung manuell konfiguriert werden.
 
 Wenn Sie eine Headless-Storefront verwenden, finden Sie in der folgenden Dokumentation weitere Informationen zu den erforderlichen Ereignissen, die Sie hinzufügen müssen:
 
 - [Erforderliche Ereignisse](events.md) für das Dashboard der Live-Suche.
-- [Storefront-Ereignissammler](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/) , der als Voraussetzung hinzugefügt werden muss.
+- [Storefront Events Collector](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/), der als Voraussetzung hinzugefügt werden muss.
 - [Beispiele](https://github.com/adobe/commerce-events/tree/main/examples) der Ereignisstruktur.
 
 ## Festlegen des Umfangs
 
-Zunächst ist der [Gültigkeitsbereich](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) aller [!DNL Live Search] Einstellungen auf `Default Store View` eingestellt. Wenn Ihre [!DNL Commerce] -Installation mehrere Store-Ansichten enthält, setzen Sie **Umfang** auf die [Store-Ansicht](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html), in der Ihre Facetteneinstellungen gelten.
+Anfangs ist [Umfang](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) aller [!DNL Live Search] auf `Default Store View` festgelegt. Wenn Ihre [!DNL Commerce] mehrere Store-Ansichten enthält, legen Sie **Umfang** auf die [Store-Ansicht](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) fest, für die Ihre Facetteneinstellungen gelten.
 
 ## Menüoptionen
 
 | Option | Beschreibung |
 |--- |--- |
-| [Leistung](performance.md) | Dashboard bietet Einblicke in die Leistung bei der Produktsuche. |
-| [Faceting](facets.md) | Hochleistungsfilterung, bei der mehrere Dimensionen von Attributwerten verwendet werden, um Suchkriterien zu verfeinern. |
-| [Synonyme](synonyms.md) | Erweitern Sie die Reichweite der Suche, um Wörter einzuschließen, mit denen Käufer Produkte finden können, die sich von denen in Ihrem Katalog unterscheiden. |
-| [Merchandising durchsuchen](rules.md) | Gestalten Sie das Sucherlebnis mit logischen Regeln, die geplante Aktionen Trigger haben. Sie können Produkte steigern, begraben, anheften oder ausblenden, um Suchergebnisse zur Unterstützung Ihrer Geschäftsziele zu kalibrieren. |
-| [Kategorie-Merchandising](category-merch.md) | Anwenden von Regeln und intelligentem Merchandising auf Kategorieebene. |
-| [GraphQL](graphql.md) | Entwickler, die beim Administrator Ihres Stores angemeldet sind, können Abfragen mit tatsächlichen Katalogdaten erstellen und testen. Weitere Informationen finden Sie unter [GraphQL-Übersicht](https://developer.adobe.com/commerce/services/graphql/live-search/) in der [!DNL Live Search] -Entwicklerdokumentation. |
-| [Einstellungen](settings.md) | Bestimmen Sie, wie Preisfacettenwerte in der Storefront nach Preisbereichen gruppiert werden, und legen Sie die Indexsprache fest. |
+| [Leistung](performance.md) | Dashboard bietet Einblicke in die Leistung der Produktsuche. |
+| [facettiert](facets.md) | Leistungsstarke Filterung, die mehrere Dimensionen von Attributwerten verwendet, um Suchkriterien zu verfeinern. |
+| [Synonyme](synonyms.md) | Erweitern Sie die Reichweite der Suche, um Wörter einzuschließen, die Kunden möglicherweise verwenden, um Produkte zu finden, die sich von denen in Ihrem Katalog unterscheiden. |
+| [Merchandising suchen](rules.md) | Gestalten Sie das Sucherlebnis mit logischen Regeln, die den Trigger geplanter Aktionen festlegen. Produkte optimieren, vergraben, anheften oder ausblenden, um Suchergebnisse zu kalibrieren und so Ihre Geschäftsziele zu unterstützen. |
+| [Kategorie Merchandising](category-merch.md) | Wenden Sie Regeln und intelligentes Merchandising auf Kategorieebene an. |
+| [GraphQL](graphql.md) | Entwickler, die beim Administrator Ihres Stores angemeldet sind, können Abfragen mit tatsächlichen Katalogdaten erstellen und testen. Weitere Informationen finden Sie unter [Übersicht über GraphQL](https://developer.adobe.com/commerce/services/graphql/live-search/) in der [!DNL Live Search] Entwicklerdokumentation. |
+| [Einstellungen](settings.md) | Ermitteln Sie, wie die Facettenwerte des Preises nach Preisbereich in der Storefront gruppiert werden, und legen Sie die Indizierungssprache fest. |
 
 ## Festlegen von Attributen als durchsuchbar
 
-Um hochgradig zielgerichtete Ergebnisse zu erzielen, überprüfen Sie den Satz der Produktattribute für [searchable](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) (`searchable=true`). Um die Relevanz sicherzustellen, sollten Attribute nur durchsuchbar sein, wenn sie Inhalte mit einer klaren und präzisen Bedeutung enthalten. Vermeiden Sie die Verwendung von Attributen, die weniger präzisen, langwierigen Text enthalten, wie z. B. `description`, was zwar standardmäßig suchaktiviert ist, die Genauigkeit der Suchergebnisse jedoch verringern kann. Wenn beispielsweise eine Person nach &quot;Shorts&quot;sucht und es Hemden mit einer Beschreibung gibt, die den Begriff &quot;Kurzärmel&quot;enthält, werden die Hemden in die Suchergebnisse aufgenommen.
+Um zielgerichtete Ergebnisse zu erzielen, überprüfen Sie den Satz [ (durchsuchbaren](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) (`searchable=true`) Produktattribute. Um Relevanz zu gewährleisten, sollten Attribute nur durchsuchbar sein, wenn sie Inhalte mit einer klaren und knappen Bedeutung enthalten. Vermeiden Sie die Verwendung von Attributen, die weniger präzisen, langen Text enthalten, z. B. `description`. Dies kann, obwohl standardmäßig die Suche aktiviert ist, die Genauigkeit der Suchergebnisse verringern. Wenn eine Person beispielsweise nach „kurzen Hosen“ sucht und es Hemden mit einer Beschreibung gibt, die den Begriff „kurze Ärmel“ enthält, werden die Hemden in die Suchergebnisse aufgenommen.
 
-Führen Sie die folgenden Schritte aus, um die Suche nach Attributen zu ermöglichen:
+Führen Sie die folgenden Schritte aus, damit Attribute durchsuchbar sein können:
 
-1. Wechseln Sie im Admin zu **Geschäfte** > *Attribut* > **Produkt**.
+1. Gehen Sie in der Admin zu **Stores** > *Attribut* > **Produkt**.
 1. Wählen Sie das Attribut aus, das durchsuchbar sein soll, z. B. `color`.
-1. Wählen Sie **Storefront-Eigenschaften** aus und setzen Sie **In der Suche** auf `yes`.
+1. Wählen Sie **Storefront-Eigenschaften** aus und setzen **In der Suche verwenden** auf `yes`.
 
    ![Workspace](assets/attribute-searchable.png)
 
-[!DNL Live Search] berücksichtigt auch die in Adobe Commerce festgelegte [Gewichtung](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html#weighted-search) eines Produktattributs. Attribute mit einer höheren Gewichtung werden in den Suchergebnissen höher angezeigt.
+[!DNL Live Search] berücksichtigt auch die [Gewichtung](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html#weighted-search) eines Produktattributs, wie in Adobe Commerce festgelegt. Attribute mit einer höheren Gewichtung werden in den Suchergebnissen höher angezeigt.
 
 Die folgenden Attribute sind immer durchsuchbar:
 
@@ -64,9 +64,9 @@ Die folgenden Attribute sind immer durchsuchbar:
 - `name`
 - `categories`
 
-[Facetten](facets.md) sind Produktattribute, die in [!DNL Live Search] definiert sind, um filterbar zu sein. Sie können jedes filterbare Attribut als Facette in [!DNL Live Search] festlegen, es gibt jedoch [Beschränkungen](boundaries-limits.md) dafür, nach wie vielen Facetten Sie gleichzeitig suchen können.
+[Facetten](facets.md) sind Produktattribute, die in definiert sind, [!DNL Live Search] filterbar zu sein. Sie können jedes filterbare Attribut als Facette in [!DNL Live Search] festlegen, aber es gibt [Beschränkungen](boundaries-limits.md) nach wie vielen Facetten Sie gleichzeitig suchen können.
 
-[Synonyme](synonyms.md) sind Begriffe, die Sie definieren können, um Benutzer zum richtigen Produkt zu führen. Benutzer, die nach Hosen suchen, können &quot;Hosen&quot;oder &quot;Schläge&quot;eingeben. Sie können Synonyme festlegen, sodass diese Suchbegriffe Benutzer zu den Ergebnissen der &quot;Hosen&quot;führen.
+[Synonyme](synonyms.md) sind Begriffe, die Sie definieren können, um Benutzende zum richtigen Produkt zu führen. Benutzer, die nach Hosen suchen, geben möglicherweise „Hosen“ oder „Hosen“ ein. Sie können Synonyme so einstellen, dass diese Suchbegriffe die Benutzer zu den „Hosen“-Ergebnissen führen.
 
 ## Commerce-Konfigurationseinstellungen
 
@@ -76,29 +76,29 @@ Im folgenden Abschnitt werden die unterstützten und nicht unterstützten Commer
 
 >[!IMPORTANT]
 >
->Es wird dringend empfohlen, die Widgets zur Produktliste zu verwenden, die standardmäßig in Live Search 4.0.0 aktiviert sind. Die Widgets sollen die Adapterimplementierung in zukünftigen Versionen vollständig ersetzen. Weitere Informationen finden Sie unter [Aktivieren von Widgets zur Produktliste](install.md#enable-product-listing-widgets) .
+>Es wird dringend empfohlen, die Widgets zur Produktauflistung zu verwenden, die in Live Search 4.0.0 standardmäßig aktiviert sind. Die Widgets sollen die Adapterimplementierung in zukünftigen Versionen vollständig ersetzen. Weitere [ finden Sie unter ](install.md#enable-product-listing-widgets) für die Produktliste aktivieren .
 
-| Commerce-Konfigurationseinstellungen | Beschreibung | Unterstützt von Popover | Vom Adapter unterstützt |
+| Commerce-Konfigurationseinstellung | Beschreibung | Unterstützt von Popover | Unterstützt durch Adapter |
 |---|---|---|---|
-| Stores > Konfiguration > Katalog > Katalog > Katalogsuche > Alle Produkte pro Seite zulassen | Wenn auf `Yes` gesetzt, enthält die Option `ALL` im Steuerelement &quot;Pro Seite anzeigen&quot;. | Ja. Max. 500 Produkte | Ja. Max. 500 Produkte |
-| Stores > Konfiguration > Katalog > Katalog > Katalogsuche > Minimale Abfragelänge | Die Mindestanzahl von Zeichen, die bei einer Katalogsuche zulässig ist. | Ja | Ja |
-| Stores > Konfiguration > Katalog > Katalog > Katalogsuche > Produkte pro Seite - Zulässige Werte im Raster | Bestimmt die Anzahl der Produkte, die in der Rasteransicht angezeigt werden. | Ja | Ja |
-| Stores > Konfiguration > Katalog > Katalog > Katalogsuche > Produkte pro Seite auf Raster Standardwert | Bestimmt die Anzahl der Produkte, die standardmäßig in der Rasteransicht pro Seite angezeigt werden. | Ja. Max. 500 Produkte | Ja. Max. 500 Produkte |
-| Stores > Konfiguration > Katalog > Bestand > Nicht vorrätige Produkte anzeigen | Zeigt nicht vorrätige Produkte an. | Ja | Ja |
-| Stores > Konfiguration > Währung > Standardanzeigewährung | Die Primärwährung, die zur Anzeige der Preise verwendet wird. | Ja | Ja |
-| Stores > Konfiguration > Allgemein > Währungseinstellungen > Währungsoptionen > Basiswährung | Die Primärwährung, die für alle Online-Zahlungsvorgänge verwendet wird. | Ja | Ja |
+| Stores > Konfiguration > Katalog > Katalog > Katalogsuche > Alle Produkte pro Seite zulassen | Ist hierfür `Yes` festgelegt, wird die Option `ALL` in das Steuerelement „Pro Seite anzeigen“ einbezogen. | Ja. Max. 500 Produkte | Ja. Max. 500 Produkte |
+| Stores > Konfiguration > Katalog > Katalog > Katalogsuche > Minimale Abfragelänge | Die bei einer Katalogsuche zulässige Mindestanzahl von Zeichen. | Ja | Ja |
+| Stores > Konfiguration > Katalog > Katalog > Katalogsuche > Produkte pro Seite für zulässige Rasterwerte | Bestimmt die Anzahl der in der Rasteransicht angezeigten Produkte. | Ja | Ja |
+| Stores > Konfiguration > Katalog > Katalog > Katalogsuche > Produkte pro Seite im Raster Standardwert | Bestimmt die Anzahl der Produkte, die standardmäßig in der Rasteransicht pro Seite angezeigt werden. | Ja. Max. 500 Produkte | Ja. Max. 500 Produkte |
+| Stores > Konfiguration > Katalog > Inventar > Nicht vorrätige Produkte anzeigen | Zeigt nicht vorrätige Produkte an. | Ja | Ja |
+| Stores > Konfiguration > Währung > Standardanzeigewährung | Die primäre Währung zur Anzeige von Preisen. | Ja | Ja |
+| Filialen > Konfiguration > Allgemein > Währungseinstellungen > Währungsoptionen > Basiswährung | Die primäre Währung, die für alle Online-Zahlungsvorgänge verwendet wird. | Ja | Ja |
 
-Die Preise auf der Produktlistungsseite des Widgets und in Popover werden mithilfe der konfigurierten Währungsraten in die Standardanzeigewährung konvertiert.
+Die Preise auf der Widget-Produktlistenseite und im Pop-up werden mithilfe der konfigurierten Währungskurse in die standardmäßige Anzeigewährung umgerechnet.
 
 ### Nicht unterstützte Konfigurationswerte
 
-| Commerce-Konfigurationseinstellungen | Beschreibung | Hinweise |
+| Commerce-Konfigurationseinstellung | Beschreibung | Notizen |
 |---|---|---|
-| Stores > Konfiguration > Katalog > Storefront > Listenmodus | Bestimmt das Format der Suchergebnisliste. | Wird korrekt gerendert, aber für einige Seiteninteraktionen werden keine Ereignisse gesendet |
-| Stores > Konfiguration > Katalog > Katalog > Katalogsuche > Maximale Abfragelänge | Die maximal zulässige Anzahl von Zeichen bei einer Katalogsuche. | Nicht implementiert. Search Services akzeptiert bis zu 255 Zeichen |
-| Konfiguration > Vertrieb > Steuern > Preisanzeigeeinstellungen > Produktpreise im Katalog anzeigen | Bestimmt, ob die im Katalog veröffentlichten Produktpreise Steuern enthalten oder ausschließen oder zwei Versionen des Preises anzeigen, eine mit und die andere ohne Steuern |  |
-| Stores > Konfiguration > Katalog > Storefront > Produktlisten Sortieren nach | Bestimmt die Sortierreihenfolge der Suchergebnisliste. | Gilt nicht für das [!DNL Live Search] [Seiten-Widget zur Produktauflistung](plp-styling.md) |
+| Stores > Konfiguration > Katalog > Storefront > Listenmodus | Bestimmt das Format der Suchergebnisliste. | Wird korrekt dargestellt, bei einigen Seiteninteraktionen werden jedoch keine Ereignisse gesendet |
+| Stores > Konfiguration > Katalog > Katalog > Katalogsuche > Maximale Abfragelänge | Die maximale Anzahl von Zeichen, die bei einer Katalogsuche zulässig ist. | Nicht implementiert; Search Services akzeptiert bis zu 255 Zeichen |
+| Konfiguration > Verkauf > Steuer > Preisanzeigeeinstellungen > Produktpreise im Katalog anzeigen | Bestimmt, ob im Katalog veröffentlichte Produktpreise Steuern enthalten oder ausschließen oder zwei Versionen des Preises anzeigen, eine mit und die andere ohne Steuer |  |
+| Stores > Konfiguration > Katalog > Storefront > Produktliste Sortieren nach | Bestimmt die Sortierreihenfolge der Suchergebnisliste. | Gilt nicht für das [!DNL Live Search] [Produktlistenseite-Widget](plp-styling.md) |
 
 ### Suchbegriffe
 
-[!DNL Live Search] unterstützt [Suchbegriffsumleitungen](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html) bei Implementierungen, bei denen Adobe Commerce das Routing durchführt, z. B. bei Luma und anderen php-basierten Designs.
+[!DNL Live Search] unterstützt [Suchbegriff-](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html)) für Implementierungen, bei denen Adobe Commerce das Routing übernimmt, wie z. B. auf Luma und anderen PHP-basierten Designs.

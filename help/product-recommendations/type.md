@@ -1,6 +1,6 @@
 ---
 title: Empfehlungstypen
-description: Erfahren Sie mehr über die Empfehlungen, die Sie auf verschiedenen Seiten Ihrer Site bereitstellen können.
+description: Erfahren Sie mehr über die Recommendations, die Sie auf verschiedenen Seiten auf Ihrer Site bereitstellen können.
 exl-id: c3b16307-479b-4736-968b-b6ab38233a48
 source-git-commit: 60e75d626f142002e327b96062bacd5d2e686df2
 workflow-type: tm+mt
@@ -11,81 +11,81 @@ ht-degree: 0%
 
 # Empfehlungstypen
 
-Adobe Commerce bietet eine große Auswahl an Empfehlungen, die Sie auf verschiedenen Seiten Ihrer Site bereitstellen können. Alle Empfehlungstypen sind datengesteuert. Sie basieren auf Verhaltensdaten, Produktattributdaten und Metriken. Empfehlungstypen werden zur einfachen Referenz wie folgt gruppiert:
+Adobe Commerce bietet eine Vielzahl von Empfehlungen, die Sie auf verschiedenen Seiten Ihrer Site bereitstellen können. Alle Empfehlungstypen sind datengesteuert. Sie basieren auf Verhaltensdaten, Produktattributdaten und Metriken. Zur Vereinfachung werden die Empfehlungstypen wie folgt gruppiert:
 
-- [Personalisierte](#personalized)
-- [Cross-Sells und Up-Sells](#crossup)
+- [Personalisiert](#personalized)
+- [Crosssell und Up-Sells](#crossup)
 - [Beliebtheit](#popularity)
-- [Leistungsstark](#highperf)
+- [leistungsstark](#highperf)
 
-Als Best Practice empfiehlt Adobe bei der Verwendung von Empfehlungen die folgenden Richtlinien:
+Als Best Practice empfiehlt Adobe bei der Verwendung von Recommendations die folgenden Richtlinien:
 
-- Diversifizieren Sie Ihre Empfehlungstypen. Kunden beginnen Empfehlungen zu ignorieren, wenn sie dieselben Produkte immer wieder vorschlagen.
+- Diversifizieren Sie Ihre Empfehlungstypen. Kunden ignorieren die Empfehlungen, wenn sie immer wieder dieselben Produkte vorschlagen.
 
-- Stellen Sie nicht dieselben Empfehlungen auf Ihrer Warenkorbseite und Ihrer Bestellbestätigungsseite bereit. Erwägen Sie die Verwendung von `Most Added to Cart` für die Warenkorbseite und `Bought This, Bought That` für die Bestellbestätigungsseite.
+- Stellen Sie nicht dieselben Empfehlungen auf Ihrer Warenkorbseite und Bestellbestätigungsseite bereit. Erwägen Sie, `Most Added to Cart` für die Warenkorbseite und `Bought This, Bought That` für die Bestellbestätigungsseite zu verwenden.
 
-- Halten Sie Ihre Site aufgeräumt. Stellen Sie nicht mehr als drei Empfehlungseinheiten auf derselben Seite bereit.
+- Halten Sie Ihre Website aufgeräumt. Stellen Sie nicht mehr als drei Empfehlungseinheiten auf derselben Seite bereit.
 
-- Wenn Ihr Store Kleidung verkauft, kann die Empfehlung `More like this` geschlechtsspezifische Produkte vorschlagen, die nicht mit dem Geschlecht des angezeigten Produkts übereinstimmen. Erwägen Sie die Verwendung dieses Empfehlungstyps nur für Nicht-Bekleidungskategorien.
+- Wenn Ihr Geschäft Kleidung verkauft, kann die `More like this` Empfehlung geschlechtsspezifische Produkte vorschlagen, die nicht mit dem Geschlecht des angezeigten Produkts übereinstimmen. Erwägen, diesen Empfehlungstyp nur für Nicht-Bekleidungskategorien zu verwenden.
 
 >[!NOTE]
 >
 >Weitere Informationen zu den in diesem Artikel beschriebenen Ereignissen finden Sie unter [Ereignisse](events.md).
 
-## Personalisierte {#personalized}
+## Personalisiert {#personalized}
 
-Diese Empfehlungstypen empfehlen Produkte, die auf dem Verhaltensverlauf des jeweiligen Käufers auf Ihrer Site basieren. Wenn beispielsweise ein Käufer zuvor nach einer Jacke auf Ihrer Site gesucht oder eine Jacke gekauft hat, nehmen diese Empfehlungen im Wesentlichen an, wo er aufgehört hat, und empfehlen andere Jacken oder ähnliche Produkte.
+Diese Empfehlungstypen empfehlen Produkte basierend auf dem Verhaltensverlauf des jeweiligen Käufers auf Ihrer Site. Wenn ein Käufer beispielsweise zuvor auf Ihrer Site nach einer Jacke gesucht oder eine Jacke gekauft hat, greifen diese Empfehlungen im Wesentlichen dort auf, wo er aufgehört hat, und empfehlen andere Jacken oder ähnliche Produkte.
 
 | Typ | Beschreibung |
 |---|---|
-| Empfohlen für Sie | Empfiehlt Produkte auf Grundlage des aktuellen und vorherigen Verhaltens der einzelnen Kunden vor Ort. Zeigt hochrelevante Empfehlungen basierend auf dem Browser- und Kaufverlauf des Käufers an. Dieser Empfehlungstyp ist auf der Startseite wirksam, auf der die meisten Käufer ihre Journey auf einer Site beginnen. Für Erstkäufer Ihrer Site, die kein Signal zur Personalisierung ihres Erlebnisses generiert haben, zeigt Adobe Commerce Produkte basierend auf dem am häufigsten angezeigten Empfehlungstyp an. Wenn der Kunde beginnt, mit den Produkten auf der Site zu interagieren, passen sich die empfohlenen Produkte jedoch in Echtzeit an sein Verhalten an.<br/><br/>**Wo verwendet:**<br/>- Startseite<br/>- Kategorie <br/><br/>**Vorgeschlagene Beschriftungen:**<br/> - Nur für Sie<br/> - Empfohlen für Sie<br/> - Inspiriert von Ihren Einkaufstrends |
-| Zuletzt angezeigt | Zeigt Produkte an, die der Kunde zuletzt angesehen hat, basierend auf dem Browserverlauf. Alle gelöschten Produkte werden von der Empfehlungseinheit entfernt. Die Empfehlungseinheit wird nicht angezeigt, wenn kein Browser-Verlauf vorhanden ist oder wenn bei der Anwendung von Filterregeln nicht genügend Verlauf vorhanden ist. Wenn die Ergebnisse weniger Produkte enthalten, als konfiguriert sind, zeigt die Empfehlungseinheit nur die zurückgegebenen Produkte an.<br/><br/>**Wo verwendet:**<br/>- Homepage<br/>- Kategorie<br/>- Produktdetails<br/>- Warenkorb<br/>- Bestätigung <br/><br/>**Vorgeschlagene Beschriftungen:**<br/>- Kürzlich angezeigt<br/>- Sehen Sie sich einen weiteren Blick an. |
+| Empfohlen | empfiehlt Produkte basierend auf dem aktuellen und vorherigen Onsite-Verhalten jedes Käufers. Zeigt hochrelevante Empfehlungen basierend auf dem Browser- und Kaufverlauf des Käufers an. Dieser Empfehlungstyp ist auf der Startseite wirksam, auf der die meisten Kunden ihren Journey auf einer Website beginnen. Für Erstkäufer auf Ihrer Site, die kein Signal zur Personalisierung ihres Erlebnisses generiert haben, zeigt Adobe Commerce Produkte basierend auf dem am häufigsten angezeigten Empfehlungstyp an. Wenn der Käufer jedoch mit den Produkten auf der Website interagiert, passen sich empfohlene Produkte in Echtzeit an sein Verhalten an.<br/><br/>**Wo verwendet:**<br/>- Startseite<br/>- Kategorie <br/><br/>**Empfohlene Beschriftungen:**<br/> - Nur für Sie<br/>- Für Sie empfohlen<br/>- Inspiriert von Ihren Shopping-Trends |
+| Zuletzt angesehen | Zeigt Produkte an, die der Einkäufer je nach Browser-Verlauf zuletzt angesehen hat. Alle gelöschten Produkte werden von der Empfehlungseinheit entfernt. Die Empfehlungseinheit wird nicht angezeigt, wenn kein Browser-Verlauf vorhanden ist, oder nicht genügend Verlauf, wenn Filterregeln angewendet werden. Wenn die Ergebnisse weniger Produkte enthalten als konfiguriert sind, zeigt die Empfehlungseinheit nur die zurückgegebenen Produkte an.<br/><br/>**Wo verwendet:**<br/>- Startseite<br/>- Kategorie<br/>- Produktdetails<br/>- Warenkorb<br/>- Bestätigung <br/><br/>**Vorgeschlagene Beschriftungen:**<br/>- Kürzlich angezeigt<br/>- Werfen Sie einen weiteren Blick |
 
-## Cross-Sells und Up-Sells {#crossup}
+## Crosssell und Up-Sells {#crossup}
 
-Diese Empfehlungstypen sind sozial unbedenklich, um Kunden zu helfen, herauszufinden, was andere mögen oder produktgesteuert sind, um sie bei der Suche nach anderen ähnlichen Produkten zu unterstützen. Die empfohlenen Produkte ergänzen häufig das ausgewählte Produkt.
+Diese Empfehlungstypen sind sozial abgesichert, um Käufern zu helfen, das zu finden, was anderen gefiel, oder produktgesteuert, um ihnen dabei zu helfen, andere ähnliche Produkte zu finden. Die empfohlenen Produkte ergänzen häufig das ausgewählte Produkt.
 
 >[!NOTE]
 >
->Die Empfehlungstypen &quot;Anzeige, Anzeige, Anzeige, Kauf, Kauf usw.&quot;verwenden keine einfache Metrik für das Vorkommen, sondern einen komplexeren kollaborativen Filteralgorithmus, der nach *interessanten Ähnlichkeiten* sucht, die nicht mit gängigen Produkten verwechselt werden. Die Daten, die zur Information dieser Empfehlungstypen verwendet werden, basieren auf dem aggregierten Verhalten des Käufers, das von mehreren Sitzungen auf Ihrer Site abgeleitet wurde. Die Daten basieren nicht auf dem Kaufverhalten, das von einem einzelnen Vorkommen in einer Sitzung auf Ihrer Site abgeleitet wurde. Diese Empfehlungstypen helfen Käufern dabei, die angrenzenden Produkte zu finden, die nicht offensichtlich mit dem aktuell angezeigten Produkt verbunden werden können.
+>Die Empfehlungstypen „hat dies angezeigt, gesehen,“ hat dies angezeigt, gekauft, und „hat dies gekauft, hat das gekauft“ verwenden keine Metrik für einfache Vorfälle, sondern einen komplexeren Algorithmus für die kollaborative Filterung, der nach *interessanten Ähnlichkeiten“ sucht* die nicht auf beliebte Produkte ausgerichtet sind. Die für diese Empfehlungstypen verwendeten Daten basieren auf dem aggregierten Verhalten des Käufers, das aus mehreren Sitzungen auf Ihrer Site abgeleitet wurde. Die Daten basieren nicht auf dem Käuferverhalten, das aus einem einzelnen Sitzungsereignis auf Ihrer Site abgeleitet wurde. Diese Empfehlungstypen helfen Käufern dabei, die benachbarten Produkte zu finden, deren Kombination mit dem aktuell angezeigten Produkt möglicherweise nicht offensichtlich ist.
 
 | Typ | Beschreibung |
 |---|---|
-| Anzeige, Anzeige, | Empfiehlt Produkte, die Kunden mit dem derzeit angezeigten Produkt überproportional häufiger betrachten.<br/><br/>**Verwendet:**<br/>- Produktdetails<br/>- Warenkorb<br/>- Bestätigung <br/><br/>**Vorgeschlagene Beschriftungen:**<br/>- Kunden, die dieses Produkt angesehen haben, haben auch (PDP) angezeigt. |
-| Anzeige: , gekauft als | Empfiehlt Produkte, die Kunden nach der Anzeige des aktuellen Produkts in der Regel unverhältnismäßig häufiger kaufen. Dieser Typ hilft Käufern, Produkte zu finden, die sie sonst möglicherweise nicht bemerkt haben.<br/><br/>**Wo verwendet:**<br/>- Produktdetails<br/>- Warenkorb<br/>- Bestätigung <br/><br/>**Vorgeschlagene Beschriftungen:**<br/>- Kunden, die dieses ultimative Produkt angesehen haben, kauften<br/>- Kunden kauften schließlich<br/> - Was kaufen andere Kunden nach Ansicht dieses Produkts? |
-| kaufte das, kaufte es | Empfiehlt Produkte, die Käufer unverhältnismäßig häufiger mit dem aktuell angezeigten Produkt kaufen. Dieser Typ zeigt hochrelevante Produkte an, die Kunden zum Warenkorb hinzufügen können, indem sie zusammenfassen, was andere Käufer mit dem aktuellen Produkt gekauft haben.<br/><br/>**Wo verwendet:**<br/>- Produktdetails<br/>- Warenkorb<br/>- Bestätigung <br/><br/>**Vorgeschlagene Beschriftungen:**<br/>- Besorgen Sie sich alles, was Sie benötigen<br/>- Vergessen Sie diese <br/> nicht - Häufig zusammen gekauft |
-| Mehr dazu | Empfiehlt Produkte auf Grundlage ähnlicher Metadaten wie Name, Beschreibung, Kategoriezuweisung und Attribute. Durch die Bewertung der Attribute für die angezeigten Produkte empfiehlt dieser Typ ähnliche Produkte in derselben Kategorie. Wenn beispielsweise ein Käufer Yoga-Matten durchsucht, werden andere Produkte der Gerätegruppe empfohlen. Da dieser Empfehlungstyp keine Geschlechter unterscheidet, wird er nicht für Bekleidung, Mode oder andere geschlechtsspezifische Vertikale empfohlen.<br/><br/>**Verwendet:**<br/>- Produktdetails<br/>- Warenkorb<br/>- Bestätigung <br/><br/>**Vorgeschlagene Beschriftungen:**<br/> - Weitere Produkte wie dieser<br/> - Ähnlich wie diese |
-| [Visuelle Ähnlichkeit](#visualsim) | Empfiehlt ähnlich aussehende Produkte dem angezeigten Produkt. Dieser Empfehlungstyp ist am nützlichsten, wenn Bilder und visuelle Aspekte von Produkten für das Einkaufserlebnis wichtig sind. |
+| hat dieses angezeigt, hat Folgendes angezeigt | empfiehlt Produkte, die Käufer überproportional häufig mit dem aktuell angezeigten Produkt sehen.<br/><br/>**Wo verwendet:**<br/>- Produktdetails<br/>- Warenkorb<br/>- Bestätigung <br/><br/>**Empfohlene Beschriftungen:**<br/>- Kunden, die dieses Produkt angesehen haben, haben auch angezeigt (PDP) |
+| Das hier angesehen, das gekauft | empfiehlt Produkte, die Käufer tendenziell unverhältnismäßig häufiger kaufen, nachdem sie das aktuelle Produkt angesehen haben. Dieser Typ hilft Kundinnen und Kunden, Produkte zu entdecken, die sie andernfalls möglicherweise nicht bemerkt hätten.<br/><br/>**Wo verwendet:**<br/>- Produktdetails<br/>- Warenkorb<br/>- Bestätigung <br/><br/>**Vorgeschlagene Beschriftungen:**<br/>- Kunden, die dieses Ultimate angesehen haben<br/>- Kunden haben schließlich gekauft<br/>- Was kaufen andere, nachdem sie dieses Produkt angesehen haben? |
+| Das kaufte ich, das kaufte ich | empfiehlt Produkte, die Käufer überproportional häufiger mit dem aktuell angezeigten Produkt kaufen. Dieser Typ zeigt hochrelevante Produkte an, die Kunden in den Warenkorb legen können, indem sie aggregieren, was andere Kunden mit dem aktuellen Produkt gekauft haben.<br/><br/>**Wo verwendet:**<br/>- Produktdetails<br/>- Warenkorb<br/>- Bestätigung <br/><br/>**Empfohlene Beschriftungen:**<br/>- Erhalten Sie alles, was Sie benötigen<br/>- Vergessen Sie diese nicht<br/>- Häufig zusammen gekauft |
+| Ähnliche Themen | empfiehlt Produkte, die auf ähnlichen Metadaten wie Name, Beschreibung, Kategoriezuweisung und Attributen basieren. Durch die Auswertung der Attribute für die angezeigten Produkte empfiehlt dieser Typ ähnliche Produkte in derselben Kategorie. Wenn ein Käufer beispielsweise Yogamatten durchsucht, werden andere Produkte der Kategorie Ausrüstung empfohlen. Da dieser Empfehlungstyp keine Geschlechter unterscheidet, wird er nicht für Bekleidung, Mode oder andere geschlechtsspezifische vertikale Bereiche empfohlen.<br/><br/>**Wo verwendet:**<br/>- Produktdetails<br/>- Warenkorb<br/>- Bestätigung <br/><br/>**Empfohlene Beschriftungen:**<br/> - Weitere Produkte wie diese<br/>- Ähnlich wie diese |
+| [Visuelle Ähnlichkeit](#visualsim) | empfiehlt, Produkte, die dem angezeigten Produkt ähnlich sehen. Dieser Empfehlungstyp ist am nützlichsten, wenn Bilder und die visuellen Aspekte von Produkten für das Einkaufserlebnis wichtig sind. |
 
 ## Beliebtheit {#popularity}
 
-Diese Empfehlungstypen empfehlen Produkte, die innerhalb der letzten sieben Tage am beliebtesten oder beliebtesten sind.
+Diese Empfehlungstypen empfehlen Produkte, die in den letzten sieben Tagen am beliebtesten oder beliebtesten waren.
 
 | Typ | Beschreibung |
 |---|---|
-| Am häufigsten angezeigt | Empfiehlt Produkte, die am häufigsten angezeigt wurden, indem die Anzahl der Sitzungen gezählt wird, in denen eine Ansichtsaktion in den letzten sieben Tagen stattgefunden hat.<br/><br/>**Wo verwendet:**<br/>- Homepage<br/>- Kategorie<br/>- Produktdetails<br/>- Warenkorb<br/>- Bestätigung <br/><br/>**Vorgeschlagene Beschriftungen:**<br/>- Am beliebtesten<br/>- Trending<br/>- Beliebt jetzt<br/>- Zuletzt beliebte<br/>- Beliebte Produkte, die von diesem Produkt inspiriert wurden (PDP)<br/>- Topverkäufe |
-| Am häufigsten gekauft | Empfiehlt Produkte, die von Käufern in den letzten sieben Tagen am häufigsten gekauft wurden.<br/><br/>**Wo verwendet:**<br/>- Startseite<br/>- Kategorie<br/>- Produktdetails<br/>- Warenkorb<br/>- Bestätigung <br/><br/>**Vorgeschlagene Beschriftungen:**<br/> - Beliebteste<br/>- Trending<br/>- Beliebte jetzt<br/>- Zuletzt beliebte<br/>- Beliebte Produkte, die von diesem Produkt inspiriert wurden (PDP)<br/>- Topverkäufe |
-| Am häufigsten zum Warenkorb hinzugefügt | Empfiehlt Produkte, die von Käufern innerhalb der letzten sieben Tage am häufigsten zu Warenkörben hinzugefügt wurden. Dieser Empfehlungstyp kann auf allen Seiten verwendet werden.<br/><br/>**Wo verwendet:**<br/>- Startseite<br/>- Kategorie<br/>- Produktdetails<br/>- Warenkorb<br/>- Bestätigung <br/><br/>**Vorgeschlagene Beschriftungen:**<br/> - Beliebteste<br/>- Trending<br/>- Beliebte jetzt<br/>- Zuletzt beliebte<br/>- Beliebte Produkte, die von diesem Produkt inspiriert wurden (PDP)<br/>- Topverkäufe |
-| Trends | Empfiehlt Produkte auf Grundlage der aktuellen Dynamik der Beliebtheit eines Produkts auf Ihrer Site.<br/><br/>Adobe Sensei aggregiert Daten zum Durchsuchen und Kaufen auf Ihrer Site, um zu bestimmen und zu sortieren, welche Produkte bei Ihren Kunden am beliebtesten sind. Da Trending die aktuelle Produktdynamik analysiert, ist es ein effektiver Empfehlungstyp für Kataloge mit hohem Umsatz. Wenn Ihr Katalog statischer ist, ist er möglicherweise nicht so nützlich, es sei denn, die Einkaufsmuster Ihrer Zielgruppe sind stark variabel.<br/><br/>Bei Verwendung auf der Homepage empfiehlt Trending Produkte, die kürzlich auf der gesamten Site beliebt sind. Die Trends zeigen keine Produkte an, die durchweg beliebt sind, sondern Produkte, die in letzter Zeit beliebt geworden sind. Wenn Sie beispielsweise eine E-Mail-Marketing-Kampagne haben, die bestimmte Produkte fördert, erhöht die durch die E-Mail generierte Popularität die Wahrscheinlichkeit, dass die beworbenen Produkte als Trends klassifiziert werden.<br/><br/>**Wo verwendet:**<br/>- Startseite<br/>- Kategorie<br/>- Produktdetails<br/>- Warenkorb<br/>- Bestätigung <br/><br/>**Vorgeschlagene Beschriftungen:**<br/>- Trending<br/>- Trend now<br/>- Kürzlich Trend<br/>- Hot products<br/>- Trendbezogene Produkte (PDP) |
+| Am häufigsten angezeigt | empfiehlt Produkte, die am häufigsten angezeigt wurden, indem die Anzahl der Sitzungen gezählt wird, bei denen in den letzten sieben Tagen eine Ansichtsaktion stattgefunden hat.<br/><br/>**Wo verwendet:**<br/>- Startseite<br/>- Kategorie<br/>- Produktdetails<br/>- Warenkorb<br/>- Bestätigung <br/><br/>**Empfohlene Beschriftungen:**<br/>- Am beliebtesten<br/>- Trend<br/>- Beliebt<br/>- Kürzlich beliebt<br/>- Beliebte Produkte inspiriert durch dieses Produkt (PDP)<br/>- Topverkäufe |
+| Am häufigsten gekauft | empfiehlt Produkte, die von Käufern in den letzten sieben Tagen am häufigsten gekauft wurden.<br/><br/>**Wo verwendet:**<br/>- Startseite<br/>- Kategorie<br/>- Produktdetails<br/>- Warenkorb<br/>- Bestätigung <br/><br/>**Empfohlene Beschriftungen:**<br/> - Am beliebtesten<br/>- Trend<br/>- Beliebt<br/>- Kürzlich beliebt<br/>- Beliebte Produkte inspiriert durch dieses Produkt (PDP)<br/>- Topverkäufe |
+| Am häufigsten zum Warenkorb hinzugefügt | empfiehlt Produkte, die von Käufern in den letzten sieben Tagen am häufigsten in den Warenkorb gelegt wurden. Dieser Empfehlungstyp kann auf allen Seiten verwendet werden.<br/><br/>**Wo verwendet:**<br/>- Startseite<br/>- Kategorie<br/>- Produktdetails<br/>- Warenkorb<br/>- Bestätigung <br/><br/>**Empfohlene Beschriftungen:**<br/> - Am beliebtesten<br/>- Trend<br/>- Beliebt<br/>- Kürzlich beliebt<br/>- Beliebte Produkte inspiriert durch dieses Produkt (PDP)<br/>- Topverkäufe |
+| Trend | empfiehlt Produkte basierend auf der jüngsten Popularitätsdynamik eines Produkts auf Ihrer Site.<br/><br/>Adobe Sensei aggregiert Such- und Kaufdaten auf Ihrer Site, um zu ermitteln und zu bewerten, welche Produkte bei Ihren Kundinnen und Kunden am beliebtesten sind. Da Trending die jüngste Produktimpulse analysiert, ist es ein effektiver Empfehlungstyp für Kataloge mit hohem Umsatz. Wenn Ihr Katalog statischer ist, ist er möglicherweise nur dann so nützlich, wenn die Einkaufsmuster Ihrer Zielgruppe sehr variabel sind.<br/><br/>Bei Verwendung auf der Startseite empfiehlt Trend Produkte, die kürzlich auf der gesamten Site beliebt waren. Im Trend-Bereich werden nicht Produkte angezeigt, die durchgängig beliebt sind, sondern solche, die erst kürzlich beliebt wurden. Wenn Sie beispielsweise eine E-Mail-Marketing-Kampagne haben, die bestimmte Produkte bewirbt, erhöht die durch die E-Mail generierte Popularitätssteigerung die Wahrscheinlichkeit, dass die beworbenen Produkte als Trend klassifiziert werden.<br/><br/>**Wo verwendet:**<br/>- Startseite<br/>- Kategorie<br/>- Produktdetails<br/>- Warenkorb<br/>- Bestätigung <br/><br/>**Empfohlene Beschriftungen:**<br/>- Trending<br/>- Jetzt <br/>- Kürzlich trendend<br/>- Hot products<br/>- Trending Related Products (PDP) |
 
-## Hohe Leistung {#highperf}
+## Hochleistungsfähig {#highperf}
 
-Diese Empfehlungstypen empfehlen leistungsfähigste Produkte basierend auf Erfolgskriterien wie Add-to-Warenkorb- oder Konversionsraten.
+Diese Empfehlungstypen empfehlen, Produkte basierend auf Erfolgskriterien wie Hinzufügen zum Warenkorb oder Konversionsraten am besten zu entwickeln.
 
 | Typ | Beschreibung |
 |---|---|
-| Ansicht zur Kaufkonversion | Empfiehlt Produkte mit der höchsten Konversionsrate zwischen Ansicht und Kauf. Wie hoch ist der Anteil aller Käufersitzungen, in denen eine Produktansicht registriert wurde, der schließlich vom Käufer registriert wurde?<br/><br/>**Wo verwendet:**<br/>- Homepage<br/>- Kategorie<br/>- Produktdetails<br/>- Warenkorb<br/>- Bestätigung <br/><br/>**Vorgeschlagene Beschriftungen:**<br/> -Topverkäufe<br/>- Beliebte Produkte<br/>- Sie können an |
-| Konvertierung in den Warenkorb anzeigen | Empfiehlt Produkte mit der höchsten Konversionsrate von Ansicht zu Warenkorb. Wie hoch ist der Anteil aller Käufersitzungen, in denen eine Produktansicht registriert wurde, der schließlich vom Käufer erfasst und zum Warenkorb hinzugefügt wurde?<br/><br/>**Wo verwendet:**<br/>- Homepage<br/>- Kategorie<br/>- Produktdetails<br/>- Warenkorb<br/>- Bestätigung <br/><br/>**Vorgeschlagene Beschriftungen:**<br/> - Topverkäufe<br/>- Beliebte Produkte<br/>- Sie können an |
-| Am häufigsten gekauft | Dieser Empfehlungstyp, der häufig als &quot;Topverkäufe&quot;bezeichnet wird, zählt die Anzahl der Sitzungen, in denen innerhalb der letzten sieben Tage eine Ortungsaktion stattgefunden hat. Dieser Empfehlungstyp kann auf allen Seiten verwendet werden.<br/><br/>**Wo verwendet:**<br/>- Startseite<br/>- Kategorie<br/>- Produktdetails<br/>- Warenkorb<br/>- Bestätigung <br/><br/>**Vorgeschlagene Beschriftungen:**<br/> - Beliebteste<br/>- Trending<br/>- Beliebte jetzt<br/>- Zuletzt beliebte<br/>- Beliebte Produkte, die von diesem Produkt inspiriert wurden (PDP)<br/>- Topverkäufe |
-| Am häufigsten zum Warenkorb hinzugefügt | Empfiehlt Produkte, die von Käufern innerhalb der letzten sieben Tage am häufigsten zu Warenkörben hinzugefügt wurden. Dieser Empfehlungstyp kann auf allen Seiten verwendet werden.<br/><br/>**Wo verwendet:**<br/>- Startseite<br/>- Kategorie<br/>- Produktdetails<br/>- Warenkorb<br/>- Bestätigung <br/><br/>**Vorgeschlagene Beschriftungen:**<br/> - Beliebteste<br/>- Trending<br/>- Beliebte jetzt<br/>- Zuletzt beliebte<br/>- Beliebte Produkte, die von diesem Produkt inspiriert wurden (PDP)<br/>- Topverkäufe |
+| Konvertierung für Kauf anzeigen | empfiehlt Produkte mit der höchsten Konversionsrate von Ansicht zu Kauf. Wie hoch ist der Anteil aller Shopper-Sitzungen, in denen eine Produktansicht registriert wurde, an der es letztendlich zu einem Kauf durch den Shopper kam.<br/><br/>**Wo verwendet:**<br/>- Startseite<br/>- Kategorie<br/>- Produktdetails<br/>- Warenkorb<br/>- Bestätigung <br/><br/>**Empfohlene Beschriftungen:**<br/> -Topverkäufe<br/>- Beliebte Produkte<br/>- Sie könnten Interesse haben an |
+| Konvertierung von Ansicht in Warenkorb | empfiehlt Produkte mit der höchsten Konversionsrate von Warenkorb zu Ansicht. Wie hoch ist der Anteil aller Shopper-Sitzungen, in denen eine Produktansicht registriert wurde, die von dem Shopper schließlich registriert und in den Warenkorb gelegt wurde.<br/><br/>**Wo verwendet:**<br/>- Startseite<br/>- Kategorie<br/>- Produktdetails<br/>- Warenkorb<br/>- Bestätigung <br/><br/>**Empfohlene Beschriftungen:**<br/> - Topverkäufe<br/>- Beliebte Produkte<br/>- Interessieren Sie sich vielleicht für |
+| Am häufigsten gekauft | Dieser Empfehlungstyp wird häufig als „Topverkäufe“ bezeichnet und zählt die Anzahl der Sitzungen, in denen in den letzten sieben Tagen eine Aktion „Bestellung aufgeben“ stattgefunden hat. Dieser Empfehlungstyp kann auf allen Seiten verwendet werden.<br/><br/>**Wo verwendet:**<br/>- Startseite<br/>- Kategorie<br/>- Produktdetails<br/>- Warenkorb<br/>- Bestätigung <br/><br/>**Empfohlene Beschriftungen:**<br/> - Am beliebtesten<br/>- Trend<br/>- Beliebt<br/>- Kürzlich beliebt<br/>- Beliebte Produkte inspiriert durch dieses Produkt (PDP)<br/>- Topverkäufe |
+| Am häufigsten zum Warenkorb hinzugefügt | empfiehlt Produkte, die von Käufern in den letzten sieben Tagen am häufigsten in den Warenkorb gelegt wurden. Dieser Empfehlungstyp kann auf allen Seiten verwendet werden.<br/><br/>**Wo verwendet:**<br/>- Startseite<br/>- Kategorie<br/>- Produktdetails<br/>- Warenkorb<br/>- Bestätigung <br/><br/>**Empfohlene Beschriftungen:**<br/> - Am beliebtesten<br/>- Trend<br/>- Beliebt<br/>- Kürzlich beliebt<br/>- Beliebte Produkte inspiriert durch dieses Produkt (PDP)<br/>- Topverkäufe |
 
 ## Visuelle Ähnlichkeit {#visualsim}
 
-Der Empfehlungstyp _Visuelle Ähnlichkeit_ empfiehlt ähnlich aussehende Produkte wie das angezeigte Produkt. Dieser Empfehlungstyp ist am nützlichsten, wenn Bilder und visuelle Aspekte der Produkte wichtige Teile des Einkaufserlebnisses sind.
+Der Empfehlungstyp _Visuelle Ähnlichkeit_ empfiehlt, Produkte so auszusehen, wie sie dem angezeigten Produkt ähnlich sind. Dieser Empfehlungstyp ist am nützlichsten, wenn Bilder und visuelle Aspekte der Produkte wichtige Teile des Einkaufserlebnisses sind.
 
 ### Funktionsweise
 
-Der Empfehlungstyp _Visuelle Ähnlichkeit_ bietet Empfehlungen für andere Produkte in Ihrem Katalog, die eine visuelle Ähnlichkeit mit den aktuell angezeigten Bildern aufweisen. Die visuelle Ähnlichkeit umfasst Aspekte wie:
+Der Empfehlungstyp _Visuelle Ähnlichkeit_ bietet Empfehlungen für andere Produkte in Ihrem Katalog, die der aktuell angezeigten Abbildung optisch ähnlich sind. Visuelle Ähnlichkeit umfasst Aspekte wie:
 
 - Farbe
 - Form
@@ -94,7 +94,7 @@ Der Empfehlungstyp _Visuelle Ähnlichkeit_ bietet Empfehlungen für andere Produ
 - Material
 - Stil
 
-Adobe Sensei verwendet AI, um die Bilder in Ihrem Katalog zu verarbeiten und zu analysieren und Attribute zu erstellen, mit denen visuelle Ähnlichkeiten ermittelt werden.
+Adobe Sensei verwendet KI, um die Bilder in Ihrem Katalog zu verarbeiten und zu analysieren und Attribute zu erstellen, die verwendet werden, um visuelle Ähnlichkeiten zu ermitteln.
 
 >[!NOTE]
 >
@@ -102,44 +102,44 @@ Adobe Sensei verwendet AI, um die Bilder in Ihrem Katalog zu verarbeiten und zu 
 
 >[!NOTE]
 >
-> Derzeit müssen Produktbilder eine Größe von 10 MB oder weniger haben.
+> Derzeit müssen Produktbilder 10 MB oder weniger groß sein.
 
-Da dieser Empfehlungstyp nicht auf die meisten Kataloge anwendbar ist, ist er standardmäßig nicht aktiviert. Sie müssen diesen Empfehlungstyp explizit aktivieren.
+Da dieser Empfehlungstyp für die meisten Kataloge nicht anwendbar ist, ist er nicht standardmäßig aktiviert. Sie müssen diesen Empfehlungstyp explizit aktivieren.
 
-### Aktivieren des Empfehlungstyps für visuelle Ähnlichkeit
+### Empfehlungstyp für visuelle Ähnlichkeit aktivieren
 
 >[!NOTE]
 >
-> Der Empfehlungstyp _Visuelle Ähnlichkeit_ ist verfügbar, wenn Sie [ihn als optionales Modul installieren](install-configure.md).
+> Der Empfehlungstyp _Visuelle Ähnlichkeit_ ist verfügbar, wenn Sie [ als optionales ](install-configure.md) installieren.
 
-1. Wechseln Sie in der Seitenleiste _Admin_ zu **Marketing** > _Promotions_ > **Produkt-Recommendations** , um das Dashboard _Produkt-Recommendations_ anzuzeigen.
+1. Wechseln Sie in der _Admin_-Seitenleiste zu **Marketing** > _Promotions_ > **Product Recommendations**, um das _Product Recommendations_-Dashboard anzuzeigen.
 
-1. Klicken Sie auf **Einstellungen** (Zahnradsymbol), um die Seite _Einstellungen_ anzuzeigen.
+1. Klicken Sie **Einstellungen** (Zahnradsymbol), um die Seite _Einstellungen_ anzuzeigen.
 
-1. Wählen Sie im Abschnitt _Visual Recommendations_ die Option **Visual Recommendations aktivieren** aus.
+1. Wählen Sie im Abschnitt _Visual Recommendations_ die Option zum **Aktivieren von Visual Recommendations** aus.
 
-1. Klicken Sie auf **Änderungen speichern** , wenn Sie fertig sind.
+1. Klicken Sie **Abschluss auf**&#x200B;Änderungen speichern“.
 
-   Auf der Seite [Neue Empfehlung erstellen](create.md) wird jetzt **visuelle Ähnlichkeit** als auswählbarer Empfehlungstyp angezeigt, wenn der Seitentyp **Produktdetails** ist.
+   Die Seite [Neue Empfehlung erstellen](create.md) wird jetzt **Visuelle Ähnlichkeit** als auswählbarer Empfehlungstyp angezeigt, wenn der Seitentyp &quot;**&quot;**.
 
-Nachdem Sie visuelle Empfehlungen aktiviert haben, startet Adobe Sensei die Bildverarbeitung. Wie lange es dauert, hängt von der Größe Ihres Katalogs ab.
+Nachdem Sie die visuellen Empfehlungen aktiviert haben, startet Adobe Sensei die Bildverarbeitung. Wie lange es dauert, hängt von der Größe Ihres Katalogs ab.
 
-### Verwendet
+### Wo verwendet
 
 - Produktdetails
 
-### Vorgeschlagene Storefront-Beschriftungen
+### Empfohlene Storefront-Kennzeichnungen
 
-- Sie können auch
-- Wir haben andere Produkte gefunden, die Sie mögen
+- Vielleicht gefällt Ihnen auch Folgendes
+- Wir haben weitere Produkte gefunden, die Ihnen gefallen könnten
 - Inspiriert von diesem Stil
 
 ### Beispiel
 
-Die folgende Abbildung zeigt die Produktdetailseite für die _Bereinigung der Uhr_:
+Die folgende Abbildung zeigt die Produktdetailseite für die _Clamber Watch_:
 
-![ Clamber Watch](assets/visual-sim-pdp.png)
+![Klammeruhr](assets/visual-sim-pdp.png)
 
-Die folgende Abbildung zeigt die Empfehlungseinheit _Visuelle Ähnlichkeit_ für _Bereinigung beobachten_:
+Nachfolgend ist die Empfehlungseinheit _Visuelle Ähnlichkeit_ für _Clamber Watch_ dargestellt:
 
 ![Visuelle Ähnlichkeitseinheit](assets/visual-sim-unit.png)

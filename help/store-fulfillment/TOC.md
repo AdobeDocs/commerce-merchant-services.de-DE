@@ -1,6 +1,6 @@
 ---
-user-guide-title: "[!DNL Store FulFillment Guide]"
-user-guide-description: Detaillierte Informationen zur Installation, Konfiguration und Verwendung der Store-Ausführung für Adobe Commerce Stores.
+user-guide-title: '[!DNL Store FulFillment Guide]'
+user-guide-description: Detaillierte Informationen zur Installation, Konfiguration und Verwendung der Store-Erfüllung für Adobe Commerce-Stores.
 breadcrumb-title: Store-Erfüllung für Adobe Commerce
 index: true
 feature: Shipping/Delivery
@@ -14,30 +14,30 @@ ht-degree: 8%
 ---
 
 
-# Store Fulfillment for Commerce {#store-fulfillment}
+# Store-Erfüllung für Commerce {#store-fulfillment}
 
-- [Guide - Übersicht](guide-overview.md)
+- [Handbuch - Übersicht](guide-overview.md)
 - [Einführung in [!DNL Store Fulfillment]](introduction.md)
-- [Workflows für die Store-Hilfe](store-assist-modules.md)
-- [Voraussetzungen](solution-requirements.md)
+- [Speichern von Assist-Workflows](store-assist-modules.md)
+- [Anforderungen](solution-requirements.md)
 - [Versionshinweise](release-notes.md)
-- Onboard Store Fulfillment {#onboarding}
-   - [Onboarding-Übersicht](onboard.md)
+- Onboard Store Fulfillment-{#onboarding}
+   - [Onboarding - Übersicht](onboard.md)
    - [Installieren der Erweiterung](install.md)
    - [Store-Erfüllung verbinden](connect-set-up-service.md)
    - [Testen und Bereitstellen](test-and-deploy.md)
 - [Konfigurationsübersicht](service-config-settings-overview.md)
-- Speicherkonfiguration {#store-configuration}
+- Store-{#store-configuration}
    - [Allgemeine Konfiguration](enable-general.md)
-   - [E-Mail-Vorlagen für Vertrieb](sales-emails.md)
-   - [Handelsspeicher (Quellen)](merchant-store-configuration.md)
-   - [Lagerverwaltung](product-stock.md)
+   - [Verkaufs-E-Mail-Vorlagen](sales-emails.md)
+   - [Händler (Quellen)](merchant-store-configuration.md)
+   - [Verwaltung von Produktbeständen](product-stock.md)
    - [Inventory management-Quellübertragung](inventory-stock-transfer.md)
    - [Mehrere Websites/Bereiche](multi-site-and-scope-config.md)
-- Systemkonfiguration {#system-configuration}
+- {#system-configuration} der Systemkonfiguration
    - [Hintergrundprozesse](background-processes.md)
-   - [Speicherort und Einrichtung der Zuordnung](store-location-map-provider-setup.md)
-   - [Einrichtung des Eincheckerlebnisses](check-in-experience-setup.md)
-   - [Benutzereinrichtung](user-setup.md)
-   - [App-Einrichtung](app-setup.md)
+   - [Speicherort- und Zuordnungseinrichtung](store-location-map-provider-setup.md)
+   - [Einchecken von Erlebnis-Setup](check-in-experience-setup.md)
+   - [Benutzer-Setup](user-setup.md)
+   - [App-Setup](app-setup.md)
 

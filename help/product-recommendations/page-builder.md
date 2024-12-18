@@ -1,6 +1,6 @@
 ---
 title: '[!DNL Page Builder] Integration'
-description: Erfahren Sie, wie Sie in Page Builder  [!DNL Product Recommendations] Einheiten verwenden.
+description: Erfahren Sie, wie Sie - [!DNL Product Recommendations]  in Page Builder verwenden.
 exl-id: dd972642-1fb4-426a-ac68-f56bb5fa2ecf
 feature: Services, Recommendations, Page Builder
 source-git-commit: 6bd1010066919d8339ddfb70cd7443d701a4ac78
@@ -12,30 +12,30 @@ ht-degree: 0%
 
 # [!DNL Page Builder] Integration
 
-Produkt-Recommendations kann in beliebige Seitenaufbau-Inhalte integriert werden, die Sie auf Ihrer Site bereitstellen.
+Produkt-Recommendations kann in jeden Page Builder-Inhalt integriert werden, den Sie auf Ihrer Site bereitstellen.
 
 >[!NOTE]
 >
-> Auf einer nativen Seite des Seitenaufbaus können Sie bis zu 25 Empfehlungseinheiten haben. Nicht native Seiten-Builder-Seiten können bis zu 5 Empfehlungseinheiten enthalten. Weitere Informationen finden Sie unter [Neue Empfehlung erstellen](create.md) .
+> Auf einer nativen Page Builder-Seite können bis zu 25 Empfehlungseinheiten vorhanden sein. Nicht-native Page Builder-Seiten können bis zu 5 Empfehlungseinheiten enthalten. Weitere Informationen [ Sie unter ](create.md) Empfehlung erstellen .
 
 ## Verwenden von Recommendations mit Page Builder-Inhalten
 
-1. Erstellen Sie eine Empfehlungseinheit in der standardmäßigen Store-Ansicht einer Website. Sie müssen in der standardmäßigen Store-Ansicht erstellt werden, selbst wenn Sie sie in unterschiedlichen Store-Ansichten verwenden möchten.
+1. Erstellen Sie eine Empfehlungseinheit in der Standardspeicheransicht einer Website. Sie müssen in der Store-Standardansicht erstellt werden, selbst wenn Sie sie in verschiedenen Store-Ansichten verwenden möchten.
 
    >[!NOTE]
    >
-   >Metriken für Seiten-Builder-Empfehlungseinheiten werden nur im standardmäßigen Arbeitsbereich für die Store-Ansicht [!DNL Product Recommendations] angezeigt. Selbst wenn Sie eine Seitenaufbau-Empfehlungseinheit in einer Store-Ansicht platzieren, die nicht die standardmäßige Store-Ansicht ist, werden Metriken, die sich auf diese Seitenaufbau-Empfehlungseinheiten beziehen, nicht im Arbeitsbereich für die nicht standardmäßige Store-Ansicht [!DNL Product Recommendations] angezeigt. Um die Seitenaufbau-Metriken in einem nicht standardmäßigen Store-Arbeitsbereich anzuzeigen, öffnen und bearbeiten Sie die Empfehlungseinheit &quot;Seitenaufbau&quot;in der nicht standardmäßigen Store-Ansicht und klicken Sie dann auf [!UICONTROL **Speichern**]. [!DNL Product Recommendations][](edit.md) Die Seitenerstellungsmetriken werden jetzt im Arbeitsbereich [!DNL Product Recommendations] unter dem nicht standardmäßigen Speicher angezeigt.
+   >Metriken für Empfehlungseinheiten von Page Builder werden nur in der standardmäßigen Store-Ansicht [!DNL Product Recommendations] Workspace angezeigt. Selbst wenn Sie eine Page Builder-Empfehlungseinheit in einer Store-Ansicht platzieren, die nicht die standardmäßige Store-Ansicht ist, werden Metriken, die sich auf diese Page Builder-Empfehlungseinheiten beziehen, nicht in der nicht standardmäßigen Store-Ansicht [!DNL Product Recommendations] Workspace angezeigt. Um Page Builder-Metriken in einer nicht standardmäßigen Store-Ansicht [!DNL Product Recommendations] Workspace anzuzeigen, öffnen und [bearbeiten](edit.md) Sie die Page Builder-Empfehlungseinheit in der nicht standardmäßigen Store-Ansicht und klicken Sie dann auf [!UICONTROL **Speichern**]. Die Page Builder-Metriken werden jetzt im [!DNL Product Recommendations] Arbeitsbereich unter der nicht standardmäßigen Storeview angezeigt.
 
-1. Wählen Sie im Seitenaufbau das Inhaltswidget Produkt Recommendations aus und platzieren Sie es auf Ihrer Site.
+1. Wählen Sie in Page Builder das Produkt-Recommendations-Inhalts-Widget aus und platzieren Sie es auf Ihrer Site.
 
 ![Empfehlungseinheit einfügen](assets/pb-insert.png)
 
-1. Klicken Sie auf **Produktempfehlungen bearbeiten**
-1. Klicken Sie auf **Select**
-1. Wählen Sie Ihre zuvor erstellte Empfehlungseinheit aus und klicken Sie auf **Ausgewählte hinzufügen**
+1. Klicken Sie **Produktempfehlung bearbeiten**
+1. Klicken Sie auf **Auswählen**
+1. Wählen Sie die zuvor erstellte Empfehlungseinheit aus und klicken Sie auf **Ausgewählte hinzufügen**
 
 ![Empfehlungseinheit einfügen](assets/pb-select.png)
 
-1. Nehmen Sie alle weiteren Änderungen am Seitenaufbau-Inhalt vor und speichern Sie Ihre Änderungen.
+1. Nehmen Sie beliebige andere Änderungen am Page Builder-Inhalt vor und speichern Sie die Änderungen.
 
-Zum Rendering wird der Kontext und der Umfang des Seitenaufbaus von der Recommendations-Einheit berücksichtigt.
+Zum Zeitpunkt der Wiedergabe werden Kontext und Umfang des Page Builder-Inhalts von der Empfehlungseinheit berücksichtigt.

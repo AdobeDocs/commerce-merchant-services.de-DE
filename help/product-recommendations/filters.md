@@ -1,6 +1,6 @@
 ---
 title: Produkte filtern
-description: Definieren Sie Bedingungen, die Produkte entweder ein- oder ausschließen, um sie als Empfehlungen zu verwenden.
+description: Bedingungen definieren, die Produkte entweder einschließen oder von der Verwendung als Empfehlungen ausschließen.
 exl-id: baab28ff-b529-4cbc-adb7-4fa225e87d4a
 source-git-commit: 0d6e935fc5812efd7d3359a4fa242f8d5d85043e
 workflow-type: tm+mt
@@ -11,30 +11,30 @@ ht-degree: 0%
 
 # Produkte filtern
 
-Adobe Commerce wendet automatisch nicht konfigurierbare Standardfilter auf Empfehlungseinheiten an. Wenn Sie mehrere Empfehlungseinheiten auf einer Seite bereitgestellt haben, filtert Adobe Commerce alle Produkte heraus, die in den Einheiten wiederholt werden. Es wird nur der erste Verweis auf ein wiederholtes Produkt verwendet, um Platz für andere Produkte zu schaffen, die empfohlen werden. Adobe Commerce filtert auch alle zuvor gekauften und im Warenkorb befindlichen Produkte heraus.
+Adobe Commerce wendet nicht konfigurierbare Standardfilter automatisch auf Empfehlungseinheiten an. Wenn mehrere Empfehlungseinheiten auf einer Seite bereitgestellt werden, filtert Adobe Commerce alle Produkte heraus, die in den Einheiten wiederholt werden. Es wird nur der erste Hinweis auf ein wiederholtes Produkt verwendet, um Platz für andere zu empfehlende Produkte zu schaffen. Adobe Commerce filtert auch alle zuvor erworbenen Produkte und diejenigen aus dem Warenkorb heraus.
 
-Wenn Sie [eine Empfehlungseinheit ](create.md) erstellen, können Sie Filter definieren, die steuern, welche Produkte in Empfehlungen angezeigt werden können. Diese Filter basieren auf einem Satz von Einschluss- oder Ausschlussbedingungen, die Sie definieren. In Empfehlungen werden nur Produkte angezeigt, die alle Aufnahmebedingungen erfüllen. Produkte, die eine der Ausschlussbedingungen erfüllen, werden nicht empfohlen.
+Wenn Sie [Empfehlungseinheit erstellen](create.md) können Sie Filter definieren, die steuern, welche Produkte in Recommendations angezeigt werden können. Diese Filter basieren auf einem Satz von Ein- oder Ausschlussbedingungen, die Sie definieren. In den Empfehlungen werden nur Produkte angezeigt, die allen Einschlussbedingungen entsprechen. Produkte, die eine der Ausschlussbedingungen erfüllen, werden nicht empfohlen.
 
-Sie können mehrere Filter konfigurieren und nur die gewünschten Filter aktivieren, indem Sie auf jeder Filterseite den Umschalter aktivieren. Auf diese Weise können Sie Entwürfe von Filtern für die zukünftige Verwendung erstellen. Die Anzahl der aktivierten Filter wird auf jeder Registerkarte angezeigt.
+Sie können mehrere Filter konfigurieren und nur die gewünschten aktivieren, indem Sie den Umschalter auf jeder Filterseite auswählen. Auf diese Weise können Sie Entwürfe von Filtern für die zukünftige Verwendung erstellen. Die Anzahl der aktivierten Filter wird auf jeder Registerkarte angezeigt.
 
 ## Bedingungen
 
 Bedingungen können statisch oder dynamisch sein.
 
-- Eine statische Bedingung verwendet vorhandene Produktattribute, um zu bestimmen, welche Produkte in der Einheit angezeigt werden können. Sie können beispielsweise festlegen, dass nur Lagerprodukte mit einem Preis von mehr als 25 Euro in der Einheit angezeigt werden. Statische Bedingungen sind für alle Seitentypen verfügbar.
+- Eine statische Bedingung verwendet vorhandene Produktattribute, um zu bestimmen, welche Produkte in der Einheit angezeigt werden können. Sie können beispielsweise angeben, dass nur Lagerprodukte mit einem Preis über 25 USD in der Einheit angezeigt werden. Statische Bedingungen sind für alle Seitentypen verfügbar.
 
-- Eine dynamische Bedingung bestimmt den aktuellen Kontext eines Käufers, z. B. die aktuell angezeigte Kategorie oder das aktuell angezeigte Produkt. Wenn Sie beispielsweise eine Produktempfehlung erstellen, die auf Produktdetailseiten bereitgestellt werden soll, können Sie eine Bedingung erstellen, um nur Produkte zu empfehlen, die innerhalb eines relativen Preisbereichs des aktuell angezeigten Produkts liegen. Dynamische Bedingungen sind für jeden Seitentyp außer der Startseite und für Seiten mit Empfehlungen verfügbar, die in Page Builder platziert werden.
+- Eine dynamische Bedingung bestimmt den aktuellen Kontext eines Käufers, z. B. die aktuell angezeigte Kategorie oder das angezeigte Produkt. Wenn Sie beispielsweise eine Produktempfehlung erstellen, die auf Produktdetailseiten bereitgestellt wird, können Sie eine Bedingung erstellen, um nur Produkte zu empfehlen, die innerhalb einer relativen Preisspanne des aktuell angezeigten Produkts liegen. Dynamische Bedingungen sind für jeden Seitentyp mit Ausnahme der Startseite und für Seiten mit Empfehlungen, die in Page Builder platziert werden, verfügbar.
 
 ### Logische Operatoren
 
-Die logischen Operatoren `AND` und `OR` werden verwendet, um mehrere Bedingungen miteinander zu verbinden. Bei Verwendung von Einschluss- und Ausschlussfiltern werden die Einschlüsse zuerst ausgewertet, um alle möglichen Produkte zu ermitteln, die empfohlen werden können, und dann werden Produkte, die mit Ausschlussfiltern übereinstimmen, aus der Liste entfernt.
+Die logischen Operatoren `AND` und `OR` werden verwendet, um mehrere Bedingungen miteinander zu verbinden. Wenn Sie sowohl Ein- als auch Ausschlussfilter verwenden, werden die Einschlüsse zunächst ausgewertet, um alle möglichen Produkte zu bestimmen, die empfohlen werden können. Anschließend werden Produkte, die mit Ausschlussfiltern übereinstimmen, aus der Liste entfernt.
 
 - `AND` - Verbindet zwei Einschlussfilterbedingungen
-- `OR` - Verbindet zwei Ausschlussfilterbedingungen
+- `OR` - Verbindet zwei Ausschluss-Filterbedingungen
 
 >[!NOTE]
 >
-> Einschluss- und Ausschlussfilter ersetzen die alten Kategorieausschlüsse in Version 3.2.2 und höher des Moduls `magento/product-recommendations` . Weitere Informationen zu Adobe Commerce-Versionen finden Sie in den [Versionshinweisen](release-notes.md) .
+> Einschluss- und Ausschlussfilter ersetzen die alten Kategorieausschlüsse in Version 3.2.2 und höher des `magento/product-recommendations`. Weitere Informationen [ Adobe Commerce-Versionen finden ](release-notes.md) in den Versionshinweisen .
 
 ## Filtertypen {#filtertypes}
 
@@ -42,47 +42,47 @@ Die logischen Operatoren `AND` und `OR` werden verwendet, um mehrere Bedingungen
 
 ### Kategorie
 
-Filtert Produkte nach ihrer Kategorie. Der Kategoriefilter verwendet direkte Kategoriezuweisungen und deren Unterkategorien. Wenn Sie beispielsweise eine Ausschlussbedingung für die Kategorie `Gear` aktivieren, werden die `Gear` zugewiesenen Produkte sowie alle zugehörigen Unterkategorien wie `Gear/Bags` oder `Gear/Fitness Equipment` ausgeschlossen. Dasselbe gilt für einen Einschlussfilter für eine Kategorie. Wenn Sie beispielsweise eine Aufnahmebedingung für die Kategorie `Gear` aktivieren, werden `Gear` zugewiesene Produkte sowie alle zugehörigen Unterkategorien wie `Gear/Bags` oder `Gear/Fitness Equipment` eingeschlossen.
+Filtert Produkte nach ihrer Kategorie. Der Kategoriefilter verwendet direkte Kategoriezuweisungen und deren Unterkategorien. Wenn Sie beispielsweise eine Ausschlussbedingung für Kategorie `Gear` aktivieren, werden `Gear` zugewiesene Produkte und alle zugehörigen Unterkategorien wie `Gear/Bags` oder `Gear/Fitness Equipment` ausgeschlossen. Dasselbe gilt für einen Einschlussfilter für eine Kategorie. Wenn Sie beispielsweise eine Einschlussbedingung für Kategorie `Gear` aktivieren, werden `Gear` zugewiesene Produkte und alle zugehörigen Unterkategorien wie `Gear/Bags` oder `Gear/Fitness Equipment` einbezogen.
 
-Das Kategoriefeld zeigt Kategorien an, die zum aktuellen Store gehören.
+Das Feld Kategorie zeigt Kategorien an, die zur aktuellen Storeview gehören.
 
 >[!NOTE]
 >
->Bei B2B-Händlern erfüllt der Kategoriefilter alle [kundenspezifischen Produktkategorien](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html), die Sie konfiguriert haben.
+>Für B2B-Händler entspricht der Kategoriefilter allen [kundenspezifischen Produktkategorien](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html) die Sie konfiguriert haben.
 
 Adobe Commerce empfiehlt die Verwendung der folgenden Kategoriefilterkonfiguration, wenn Sie Empfehlungen für Ihre Seitentypen bereitstellen:
 
 | Seite | Filtern nach |
 |---|---|
 | Startseite | Produkte nicht filtern. |
-| Kategorie | Filtern von Produkten in der jeweiligen Kategorie. |
-| Produktdetails | Filtern Sie Produkte in denselben Kategorien. |
-| Warenkorb | Filtern von Produktkategorien im Warenkorb. |
+| Kategorie | Produkte in der jeweiligen Kategorie filtern. |
+| Produktdetails | Produkte in denselben Kategorien filtern. |
+| Warenkorb | Filtern Sie die Kategorien von Produkten im Warenkorb. |
 | Bestellbestätigung | Filtern Sie die Kategorien der gekauften Produkte. |
 
 ### Produkt
 
-Produktfilter geben an, welche spezifischen Produkte in Empfehlungen angezeigt werden dürfen oder nicht. Sie können keine Produkte auswählen, die deaktiviert sind oder nicht einzeln sichtbar sind, da diese Produkte nie in Empfehlungen angezeigt werden können.
+Produktfilter geben an, welche Produkte für die Anzeige in Recommendations infrage kommen bzw. nicht infrage kommen. Sie können keine Produkte auswählen, die deaktiviert oder nicht einzeln sichtbar sind, da diese Produkte nie in den Empfehlungen angezeigt werden können.
 
 >[!NOTE]
 >
->Untergeordnete Produkte eines konfigurierbaren Produkts werden nicht in einer Empfehlungseinheit angezeigt, da diese untergeordneten Produkte die Sichtbarkeit von _Nicht einzeln sichtbar_ haben.
+>Untergeordnete Produkte eines konfigurierbaren Produkts werden nicht in einer Empfehlungseinheit angezeigt, da diese untergeordneten Produkte die Sichtbarkeit &quot;_einzeln sichtbar“_.
 
 ### Typ
 
-Ein auf dem Produkttyp basierender Filter schließt alle Produkte eines bestimmten Typs ein oder aus. Zu den unterstützten Typen gehören _simple_, _konfigurierbar_, _virtual_, _downloadable_ oder _geschenkkarte_. _Bundle_, _grouped_ und benutzerdefinierte Produktarten werden nicht unterstützt.
+Ein Filter, der auf dem Produkttyp basiert, schließt alle Produkte eines bestimmten Typs ein oder aus. Zu den unterstützten Typen _einfach_, _konfigurierbar_, _virtuell_, _herunterladbar_ oder _Geschenkkarte_. _Bundle_, _grouped_ und benutzerdefinierte Produkttypen werden nicht unterstützt.
 
 ### Sichtbarkeit
 
-Filtert Produkte basierend auf der Sichtbarkeit, z. B.: _Katalog_, _Suche_ oder beides.
+Filtert Produkte nach Sichtbarkeit, z. B. _Katalog_, _Suche_ oder beides.
 
 ### Preis
 
-Ein auf dem Produktpreis basierender Filter verwendet den Endpreis, um den Vergleich durchzuführen. Der Endpreis beinhaltet alle Rabatte oder Sonderpreise, die anonymen Käufern zur Verfügung stehen. Bei B2B-Händlern spiegelt der angezeigte Preis die von Ihnen konfigurierten [kundenspezifischen Gruppenpreise](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) wider.
+Ein auf dem Produktpreis basierender Filter verwendet den Endpreis, um den Vergleich durchzuführen. Der Endpreis beinhaltet alle Rabatte oder Sonderpreise, die anonymen Käufern zur Verfügung stehen. Für B2B-Händler entspricht der angezeigte Preis dem [kundenspezifischen Gruppenpreis](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) den Sie konfiguriert haben.
 
-### Lagerstatus
+### Bestandsstatus
 
-Die folgenden Ausschlussfilter können verwendet werden, um Produkte nach Lagerstatus herauszufiltern:
+Die folgenden Ausschlussfilter können verwendet werden, um Produkte anhand des Lagerstatus herauszufiltern:
 
-- Nicht vorrätig - (nur Ausschluss) Schließt nicht vorrätige Produkte aus.
-- Gering auf Lager - (nur Ausschluss) Schließt Produkte aus, die nicht vorrätig sind. Der Status &quot;Geringer Bestand&quot;basiert auf dem Wert _Nur X linker Schwellenwert_ in der [Lagerbestandskonfiguration](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/inventory.html) .
+- Nicht vorrätig - (Nur Ausschluss) Ausgeschlossen sind nicht vorrätige Produkte.
+- Niedrig auf Lager - (Nur Ausschlüsse) Ausgeschlossen sind Produkte, die niedrig auf Lager sind. Der niedrige Lagerstatus basiert auf dem Wert _Nur noch x Schwellenwert_ in der [Bestandskonfiguration](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/inventory.html).

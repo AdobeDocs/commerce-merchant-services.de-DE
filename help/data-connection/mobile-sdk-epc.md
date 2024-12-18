@@ -1,6 +1,6 @@
 ---
-title: Integrieren des Adobe Experience Platform Mobile SDK mit Commerce
-description: Erfahren Sie, wie Sie das Adobe Experience Platform Mobile SDK mit Ihrer Headless- oder benutzerdefinierten Commerce-Storefront verwenden.
+title: Integrieren von Adobe Experience Platform Mobile SDK mit Commerce
+description: Erfahren Sie, wie Sie die Adobe Experience Platform Mobile SDK mit Ihrer Headless- oder benutzerdefinierten Commerce-Storefront verwenden.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: d1340b15-e7de-42b5-ad64-d4c31f0db029
@@ -11,37 +11,37 @@ ht-degree: 0%
 
 ---
 
-# Integrieren des Adobe Experience Platform Mobile SDK mit Commerce
+# Integrieren von Adobe Experience Platform Mobile SDK mit Commerce
 
 >[!IMPORTANT]
 >
->Das Adobe Experience Platform Mobile SDK für iOS unterstützt iOS 11 oder höher.
+>Adobe Experience Platform Mobile SDK für iOS unterstützt iOS 11 oder höher.
 
-Durch die Integration von [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/home/) in die mobile Commerce-App können Händler Commerce [Ereignisdaten](events.md) an die Experience Platform senden.
+Durch die Integration von [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/home/) mit der Commerce Mobile App können Händler Commerce-[Ereignisdaten](events.md) an den Experience Platform-Edge senden.
 
-Wenn Commerce-Ereignisdaten am Edge verfügbar sind, können sie von anderen Adobe Experience Cloud-Anwendungen aufgerufen werden. Beispielsweise können Sie die Daten zum Erstellen von Zielgruppen in Real-Time CDP verwenden und [diese Zielgruppen](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) zur Personalisierung Ihrer mobilen Commerce-App verwenden.
+Wenn Commerce-Ereignisdaten am Edge verfügbar sind, können andere Adobe Experience Cloud-Programme darauf zugreifen. Sie können die Daten beispielsweise verwenden, um Zielgruppen in Real-Time CDP zu erstellen, und dann [diese Zielgruppen verwenden](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) um Ihre Mobile App von Commerce zu personalisieren.
 
 ## Konfiguration
 
-Um mit der Verwendung des Adobe Experience Platform Mobile SDK mit Commerce zu beginnen, installieren und konfigurieren Sie das SDK im Experience Platform. Schließen Sie dann die Konfiguration in Commerce ab.
+Installieren und konfigurieren Sie SDK auf der Experience Platform, um mit der Verwendung der Adobe Experience Platform Mobile SDK mit Commerce zu beginnen. Schließen Sie dann Ihre Konfiguration in Commerce ab.
 
 ### Experience Platform
 
-1. Informieren Sie sich über die Funktionen mobiler Apps, indem Sie sich das Tutorial [Adobe Experience Cloud in mobilen Apps](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html) ansehen.
+1. Erfahren Sie mehr über die Funktionen mobiler Apps durch das Tutorial zu [Adobe Experience Cloud in Mobile Apps](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html).
 
-1. [Installieren und konfigurieren Sie](https://developer.adobe.com/client-sdks/documentation/getting-started/) das SDK im Experience Platform.
+1. [Installieren und Konfigurieren](https://developer.adobe.com/client-sdks/documentation/getting-started/) der SDK in Experience Platform.
 
    >[!NOTE]
    >
-   >Das Schema, das Sie auf der Experience Platform erstellen und konfigurieren, ist dasselbe Schema, das Sie im Anwendungscode Ihrer mobilen Commerce-App verwenden.
+   >Das Schema, das Sie auf der Experience Platform erstellen und konfigurieren, entspricht dem Schema, das Sie im Anwendungscode in Ihrer Commerce Mobile App verwenden.
 
 ### Commerce
 
-Nachdem Sie die SDK-Konfiguration für die Experience Platform abgeschlossen haben, fügen Sie die SDK-Konfiguration zu Commerce hinzu.
+Nachdem Sie die SDK-Konfiguration für Experience Platform abgeschlossen haben, fügen Sie die SDK-Konfiguration zu Commerce hinzu.
 
-1. Um Commerce-Ereignisdaten über das SDK an die Experience Platform zu senden, müssen Sie ein XDM-Schema im Anwendungscode angeben. Dieses Schema muss mit dem Schema [configured](https://developer.adobe.com/client-sdks/home/getting-started/set-up-schemas-and-datasets/) für das SDK in der Experience Platform übereinstimmen.
+1. Um Commerce-Ereignisdaten über die SDK an die Experience Platform zu senden, müssen Sie ein XDM-Schema im Anwendungs-Code angeben. Dieses Schema muss mit dem Schema ([) ](https://developer.adobe.com/client-sdks/home/getting-started/set-up-schemas-and-datasets/) SDK auf der Experience Platform übereinstimmen.
 
-   Das folgende Beispiel zeigt, wie das `web.webpagedetails.pageViews` -Ereignis verfolgt und das `identityMap` mithilfe des E-Mail-Felds festgelegt wird.
+   Das folgende Beispiel zeigt, wie Sie das `web.webpagedetails.pageViews`-Ereignis verfolgen und die `identityMap` mithilfe des E-Mail-Felds festlegen.
 
    ```swift
    let stateName = "luma: content: ios: us: en: home"
@@ -71,20 +71,20 @@ Nachdem Sie die SDK-Konfiguration für die Experience Platform abgeschlossen hab
 
 1. Stellen Sie eine Verbindung zur Commerce Cloud-Umgebung her.
 
-   Fügen Sie in den Build-Einstellungen Ihres Projekts die URL zum Commerce GraphQL-Endpunkt hinzu. Beispiel:
+   Fügen Sie in den Build-Einstellungen Ihres Projekts die URL zum Commerce GraphQL-Endpunkt hinzu. Beispielsweise:
 
    - Debug: http://_debug_.commerceSite.cloud/graphql/
-   - Release: http://_release_.commerceSite.cloud/graphql/
+   - Version: http://_release_.commerceSite.cloud/graphql/
 
-1. Um Daten aus den Commerce GraphQL-Endpunkten abzurufen, generieren Sie zunächst die erforderlichen Dateien und Ordner in Ihrem Projekt mithilfe des [Apollo Code Generator](https://www.apollographql.com/docs/ios/).
+1. Um Daten von den Commerce GraphQL-Endpunkten abzurufen, generieren Sie zunächst die erforderlichen Dateien und Ordner in Ihrem Projekt mithilfe des [Apollo Code Generator](https://www.apollographql.com/docs/ios/).
 
-   1. Installieren Sie im Projektverzeichnis [install](https://www.apollographql.com/docs/ios/get-started#1-install-the-apollo-frameworks) Apollo iOS.
+   1. Wählen Sie im Projektverzeichnis [install](https://www.apollographql.com/docs/ios/get-started#1-install-the-apollo-frameworks) Apollo iOS aus.
 
-   1. [Initialisieren](https://www.apollographql.com/docs/ios/code-generation/codegen-cli/#initialize) Sie die Apollo-Codegen-CLI.
+   1. [Initialisieren](https://www.apollographql.com/docs/ios/code-generation/codegen-cli/#initialize) der Apollo Codegen-CLI.
 
-      Dadurch wird eine `apollo-codegen-configuration.json` -Datei erstellt.
+      Dadurch wird eine `apollo-codegen-configuration.json` Datei erstellt.
 
-   1. Generieren Sie die erforderlichen GraphQL-Dateien und -Ordner in Ihrem Projekt, indem Sie den Inhalt der Datei &quot;`apollo-codegen-configuration.json`&quot;durch Folgendes ersetzen:
+   1. Generieren Sie die erforderlichen GraphQL-Dateien und -Ordner in Ihrem Projekt, indem Sie den Inhalt der `apollo-codegen-configuration.json`-Datei durch Folgendes ersetzen:
 
       ```json
       {
@@ -132,15 +132,15 @@ Nachdem Sie die SDK-Konfiguration für die Experience Platform abgeschlossen hab
       }
       ```
 
-   1. [Rufen Sie ](https://www.apollographql.com/docs/ios/code-generation/codegen-cli/#fetch-schema) das Commerce GraphQL-Schema ab.
+   1. [Abrufen](https://www.apollographql.com/docs/ios/code-generation/codegen-cli/#fetch-schema) des Commerce GraphQL-Schemas.
 
-      Stellen Sie sicher, dass der Pfad zur Datei &quot;`./apollo-codegen-config.json`&quot; ist, die den Verweis auf das Commerce GraphQL-Schema enthält.
+      Stellen Sie sicher, dass der Pfad zur `./apollo-codegen-config.json`-Datei lautet, die den Verweis auf das Commerce GraphQL-Schema enthält.
 
-   1. [Generieren Sie](https://www.apollographql.com/docs/ios/code-generation/codegen-cli/#generate) den Quellcode.
+   1. [Generieren](https://www.apollographql.com/docs/ios/code-generation/codegen-cli/#generate) des Quell-Codes
 
-      Stellen Sie sicher, dass der Pfad zur Datei &quot;`./apollo-codegen-config.json`&quot; ist, die die Konfigurationsinformationen enthält, um die erforderlichen Dateien und Ordner zu generieren.
+      Stellen Sie sicher, dass der Pfad zur `./apollo-codegen-config.json`-Datei ist, die die Konfigurationsinformationen zum Generieren der erforderlichen Dateien und Verzeichnisse enthält.
 
-   1. Fügen Sie im neu erstellten Ordner **GraphQLGenerated** GraphQL-Typen hinzu oder bearbeiten Sie sie. Sie können beispielsweise den Typ `DynamicBlocks.graphql` mit folgendem Inhalt hinzufügen:
+   1. Fügen Sie innerhalb des neu erstellten **GraphQLGenerated**-Ordners GraphQL-Typen hinzu oder bearbeiten Sie sie. Sie können beispielsweise einen `DynamicBlocks.graphql` mit folgendem Inhalt hinzufügen:
 
       ```graphql
       query dynamicBlocks($input: DynamicBlocksFilterInput){
@@ -155,12 +155,12 @@ Nachdem Sie die SDK-Konfiguration für die Experience Platform abgeschlossen hab
       }
       ```
 
-   Sie haben jetzt das Adobe Experience Platform Mobile SDK in Ihre Commerce Mobile App integriert. Ereignisdaten fließen von Ihrer App an die Experience Platform Edge.
+   Sie haben jetzt Adobe Experience Platform Mobile SDK in Ihre Commerce Mobile App integriert. Ereignisdaten fließen von Ihrer App zum Experience Platform-Edge.
 
-## So unterscheiden Sie Commerce-Ereignisse, die aus Apps generiert wurden
+## So unterscheidet man von Mobile Apps generierte Commerce-Ereignisse
 
-Alle [Ereignisse](events.md) enthalten ein Feld namens `channel`. Das Feld `channel` enthält `channel._id` und `channel._type`, die für eine Luma-Storefront Namespace-Werte von `"https://ns.adobe.com/xdm/channels/web"` bzw. `"https://ns.adobe.com/xdm/channel-types/web"` aufweisen. Bei einer mobilen Storefront sind die Namespace-Werte jedoch `"https://ns.adobe.com/xdm/channels/mobile-app"` bzw. `"https://ns.adobe.com/xdm/channel-types/mobile"`.
+Alle [Ereignisse](events.md) enthalten ein Feld namens `channel`. Das Feld `channel` enthält `channel._id` und `channel._type`, für die eine Luma-Storefront über Namespace-Werte von `"https://ns.adobe.com/xdm/channels/web"` bzw. `"https://ns.adobe.com/xdm/channel-types/web"` verfügt. Bei einer mobilen Storefront sind die Namespace-Werte jedoch `"https://ns.adobe.com/xdm/channels/mobile-app"` bzw. `"https://ns.adobe.com/xdm/channel-types/mobile"`.
 
 ## Nächste Schritte
 
-Informationen zum Abrufen von Real-Time CDP-Zielgruppen aus Ihrer mobilen Commerce-App, um Warenkorbpreisregeln, dynamische Bausteine und zugehörige Produktregeln zu informieren, finden Sie unter [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html#retrieve-audiences-using-the-adobe-experience-platform-mobile-sdk).
+Informationen zum Abrufen von Real-Time CDP-Zielgruppen aus Ihrer mobilen Commerce-App mit Informationen zu Warenkorbpreisregeln, dynamischen Blöcken und zugehörigen Produktregeln finden Sie unter [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html#retrieve-audiences-using-the-adobe-experience-platform-mobile-sdk).

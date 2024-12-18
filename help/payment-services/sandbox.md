@@ -1,6 +1,6 @@
 ---
 title: Einrichten der Test-Sandbox
-description: Verwenden Sie ein PayPal-Sandbox-Konto, um [!DNL Payment Services] im Testmodus zu verwenden.
+description: Verwenden Sie ein PayPal-Sandbox-Konto, um  [!DNL Payment Services]  Testmodus zu verwenden.
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install
 source-git-commit: 5481b19f95908b441e12c4700c51649921dabb08
@@ -12,21 +12,21 @@ ht-degree: 0%
 
 # Einrichten der Test-Sandbox
 
-Bevor Sie mit dem Onboarding einer Sandbox beginnen, müssen Sie sich für ein kostenloses PayPal-Entwicklerkonto registrieren und sowohl Handelskonten (für das Onboarding) als auch Kaufkonten (für das Testen Ihres Checkouts) erstellen. Sie können bei Bedarf mehrere Entwicklerkonten erstellen.
+Bevor Sie mit dem Sandbox-Onboarding beginnen, müssen Sie sich für ein kostenloses PayPal-Entwicklerkonto anmelden und sowohl Händler- (zum Onboarding) als auch Kundenkonten erstellen (zum Testen Ihres Checkouts). Sie können bei Bedarf mehrere Entwicklerkonten erstellen.
 
-Mit einem PayPal-Sandbox-Konto können Sie [!DNL Payment Services] im Testmodus verwenden. PayPal erfordert die Verwendung eines von PayPal Developer Portal generierten Business Sandbox-Testkontos, einer E-Mail-Adresse und eines Kennworts für das Onboarding einer Sandbox. *Erstellen Sie während des Sandbox-Onboarding-Prozesses kein weiteres Konto.*
+Mit einem PayPal-Sandbox-Konto können Sie [!DNL Payment Services] im Testmodus verwenden. PayPal erfordert, dass Sie ein vom PayPal-Entwicklerportal generiertes Geschäfts-Sandbox-Testkonto, eine E-Mail-Adresse und ein Passwort für das Sandbox-Onboarding verwenden. *Erstellen Sie während des Sandbox-Onboarding-Prozesses kein weiteres Konto.*
 
 ## Sandbox-Onboarding
 
-So schließen Sie das Onboarding einer Sandbox ab:
+So schließen Sie das Sandbox-Onboarding ab:
 
 1. Navigieren Sie zur Seite [PayPal-Entwicklerkonto](https://developer.paypal.com/developer/accounts/).
-1. Klicken Sie auf &quot;**[!UICONTROL Log in to Dashboard]**&quot;und melden Sie sich mit Ihrem vorhandenen PayPal Developer Portal-generierten Business-Sandbox-Testkonto an oder klicken Sie auf &quot;**Registrieren**&quot;, um ein Konto zu erstellen.
+1. Klicken Sie auf **[!UICONTROL Log in to Dashboard]** und melden Sie sich mit Ihrem vorhandenen PayPal Developer Portal-generierten Business-Sandbox-Testkonto an oder klicken Sie auf **Registrieren** um ein Konto zu erstellen.
 1. Erstellen Sie ein PayPal-Sandbox-Konto:
-   1. Gehen Sie zu _[!UICONTROL Testing Tools]_>**[!UICONTROL Sandbox Accounts]**.
+   1. Navigieren Sie zu _[!UICONTROL Testing Tools]_>**[!UICONTROL Sandbox Accounts]**.
    1. Klicken Sie auf **[!UICONTROL Create account]**.
 
-      Wenn Sie während des PayPal-Onboarding-Prozesses der Sandbox ein PayPal-Sandbox-Konto erstellt haben, müssen Sie [Ihre Onboarding-Sandbox zurücksetzen](#reset-your-sandbox-account), da Sie Ihre E-Mail nicht verifizieren können.
+      Wenn Sie während des PayPal-Onboarding-Prozesses ein PayPal-Sandbox-Konto erstellt haben, müssen Sie [Ihre Onboarding-Sandbox zurücksetzen](#reset-your-sandbox-account) da Sie sonst Ihre E-Mail nicht verifizieren können.
 
    1. Wählen Sie **[!UICONTROL Business]** als Kontotyp aus und klicken Sie auf **[!UICONTROL Create]**.
    1. Klicken Sie im Abschnitt _[!UICONTROL Sandbox Accounts]_auf die drei Punkte in der Spalte_[!UICONTROL Manage accounts]_ für das von Ihnen erstellte Sandbox-Konto.
@@ -34,54 +34,54 @@ So schließen Sie das Onboarding einer Sandbox ab:
 
       ![PayPal - Sandbox-Konto anzeigen/bearbeiten](assets/onboarding-viewedit-sandbox.png){width="300" zoomable="yes"}
 
-   1. Kopieren Sie die E-Mail-ID und das systemgenerierte Kennwort und speichern Sie sie für die zukünftige Verwendung.
+   1. Kopieren Sie die E-Mail-ID und das systemgenerierte Kennwort und speichern Sie sie zur späteren Verwendung.
 
-1. Wechseln Sie in der Seitenleiste _Admin_ zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+1. Navigieren Sie in der _Admin_-Seitenleiste zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Klicken Sie auf **[!UICONTROL Sandbox onboarding]**.
 
-   Diese Option ist sichtbar, wenn Sie das Einstieg in die Sandbox für [!DNL Payment Services] noch nicht abgeschlossen haben.
+   Diese Option ist sichtbar, wenn Sie das Sandbox-Onboarding für [!DNL Payment Services] noch nicht abgeschlossen haben.
 
-   Eine Sandbox-Händler-ID wird automatisch generiert und in [Einstellungen](settings.md) eingetragen. Ändern oder ändern Sie diese ID nicht.
+   Eine Sandbox-Händler-ID wird automatisch generiert und in [Einstellungen](settings.md) eingefügt. Diese ID darf nicht geändert werden.
 
-   Sie erhalten ein PayPal-Fenster, in dem Sie ein PayPal-Konto anschließen können, um mit der Annahme von Zahlungen zu beginnen.
+   Es wird ein PayPal-Fenster angezeigt, in dem Sie ein PayPal-Konto verbinden können, um mit der Annahme von Zahlungen zu beginnen.
 
-1. Geben Sie die E-Mail-Adresse und das Kennwort des PayPal-Sandbox-Kontos ein, das Sie in Schritt 3 generiert haben (nicht die Informationen zu Ihrem PayPal-Geschäftskonto), und geben Sie Ihr Land oder Ihre Region an.
+1. Geben Sie die E-Mail-Adresse und das Passwort des PayPal-Sandbox-Kontos ein, das Sie in Schritt 3 generiert haben (nicht Ihre PayPal-Geschäftskontoinformationen), sowie Ihr Land oder Ihre Region.
 1. Klicken Sie auf **[!UICONTROL Next]**.
 
-   ![PayPal - Connect PayPal-Konto für Zahlungen](assets/paypal-connectacct.png){width="300" zoomable="yes"}
+   ![PayPal - PayPal-Konto für Zahlungen verbinden](assets/paypal-connectacct.png){width="300" zoomable="yes"}
 
-1. Folgen Sie weiterhin dem Fluss PayPal und verwenden Sie Ihre zuvor gespeicherten Sandbox-Kontoanmeldeinformationen.
-1. Wechseln Sie in der Seitenleiste _Admin_ zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+1. Folgen Sie weiterhin dem PayPal-Fluss und verwenden Sie Ihre zuvor gespeicherten Sandbox-Kontoanmeldeinformationen.
+1. Navigieren Sie in der _Admin_-Seitenleiste zu **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 
-   Die Schaltfläche **[!UICONTROL Sandbox onboarding]** ist nicht mehr sichtbar und Sie sehen den Text &quot;Sandbox-Zahlungen ausstehend&quot;.
+   Die Schaltfläche &quot;**[!UICONTROL Sandbox onboarding]**&quot; ist nicht mehr sichtbar, und es wird der Text „Sandbox-Zahlungen ausstehend“ angezeigt.
 
-Wenn Ihr PayPal-Sandbox-Onboarding genehmigt wird, sollte Ihnen eine Benachrichtigung angezeigt werden, dass Ihr Zahlungssystem sich derzeit im Sandbox-Modus befindet und keine Live-Zahlungen verarbeitet.
+Wenn das Onboarding Ihrer PayPal-Sandbox genehmigt wurde, sollte eine Benachrichtigung angezeigt werden, die besagt, dass sich Ihr Zahlungssystem derzeit im Sandbox-Modus befindet und keine Live-Zahlungen verarbeitet.
 
 >[!IMPORTANT]
 >
->Wenn Sie die Einwilligung zu [!DNL Payment Services] für [!DNL Adobe Commerce] und [!DNL Magento Open Source] für die Verarbeitung Ihrer Zahlungen (in Ihren PayPal-Kontoeinstellungen) widerrufen, können Bestellungen in Ihrem Geschäft nicht von [!DNL Payment Services] verarbeitet werden. Auf Ihrer Zahlungsdienst-Homepage wird ein Warnhinweis über die widerrufene Zustimmung angezeigt. Um den Warnhinweis zu schließen, klicken Sie auf **[!UICONTROL Do not show again]**.
+>Wenn Sie die Einwilligung zur [!DNL Payment Services] für [!DNL Adobe Commerce] und [!DNL Magento Open Source] zur Abwicklung Ihrer Zahlungen widerrufen (in Ihren PayPal-Kontoeinstellungen), können Bestellungen in Ihrem Geschäft nicht von [!DNL Payment Services] bearbeitet werden. Auf Ihrer Zahlungsdienste-Startseite wird ein Warnhinweis zur widerrufenen Einwilligung angezeigt. Um den Warnhinweis zu schließen, klicken Sie auf **[!UICONTROL Do not show again]**.
 
 ### Sandbox-Konto zurücksetzen
 
-Wenn Sie während des PayPal-Onboarding-Prozesses der Sandbox PayPal ein PayPal-Sandbox-Konto erstellt haben, müssen Sie Ihre Onboarding-Sandbox zurücksetzen, da Sie Ihre E-Mail nicht verifizieren können.
+Wenn Sie während des PayPal-Onboarding-Prozesses ein PayPal-Sandbox-Konto erstellt haben, müssen Sie Ihre Onboarding-Sandbox zurücksetzen, da Sie sonst Ihre E-Mail nicht verifizieren können.
 
 So setzen Sie Ihr Sandbox-Konto zurück:
 
-1. Klicken Sie auf **[!UICONTROL Reset sandbox]**. [Erstellen Sie ein PayPal-Business-Sandbox-Konto](https://developer.paypal.com/docs/api-basics/sandbox/accounts/#create-a-business-sandbox-account).
+1. Klicken Sie auf **[!UICONTROL Reset sandbox]**. [Erstellen eines PayPal-Geschäfts-Sandbox-Kontos](https://developer.paypal.com/docs/api-basics/sandbox/accounts/#create-a-business-sandbox-account).
 1. Klicken Sie auf **[!UICONTROL Sandbox onboarding]** und führen Sie die nächsten Schritte aus.
 
-## Kontakttelefonnummer aktivieren
+## Telefonnummer des Kontakts aktivieren
 
-Mit der Telefonnummer Kontakt können Sie die von PayPal gesammelten Telefonnummern von Ihren Kunden abrufen. PayPal sammelt immer Telefonnummern von PayPal-Kontoinhabern, um ihre Identitäten zu bestätigen und sie zu kontaktieren, um Probleme auf ihren Konten zu beheben oder ihre Erfüllung abzuschließen. PayPal rät jedoch von der Verwendung von Kontakttelefonnummern direkt vom Händler ab, da dies den Verkauf beeinträchtigen kann. Weitere Informationen finden Sie in der Dokumentation zum [PayPal Abrufen von Telefonnummern für Kontakte](https://www.sandbox.paypal.com/businessmanage/preferences/website) .
+Mit der Telefonnummer des Kontakts können Sie die Telefonnummern des Kontakts abrufen, die PayPal von Ihren Kunden sammelt. PayPal sammelt immer Kontakt-Telefonnummern von PayPal-Kontoinhabern, um ihre Identität zu bestätigen und sie zu kontaktieren, um Probleme mit ihren Konten zu lösen oder ihre Erfüllungsprozesse abzuschließen. PayPal rät jedoch davon ab, Kontaktnummern direkt vom Händler zu verwenden, da dies negative Auswirkungen auf den Umsatz haben kann. Weitere Informationen finden [ in der Dokumentation ](https://www.sandbox.paypal.com/businessmanage/preferences/website)PayPal - Telefonnummern für Kontakte“.
 
-Diese Funktion ist standardmäßig auf `off` eingestellt. Wenn Sie diese Option aktivieren, können Store-Administratoren Telefonnummern anzeigen, wenn ein Kunde einen Branded Checkout-Fluss außerhalb der Checkout-Seite durchführt.
+Diese Funktion ist standardmäßig `off`. Wenn Sie diese Option aktivieren, können Store-Administratoren Telefonnummern sehen, wenn ein Kunde einen markenspezifischen Checkout-Fluss außerhalb der Checkout-Seite abschließt.
 
 >[!IMPORTANT]
 >
 >Diese Einstellung gilt nicht für andere Checkout-Flüsse.
 
-## Test in Sandbox-Umgebung
+## Testen in Sandbox-Umgebung
 
-Es wird dringend empfohlen, Testdatensätze für Integrations- und Staging-Umgebungen zu verwenden und die Zahlungen in der Produktion mit echten Kreditkarten und Banken zu testen, bevor diese Funktion Käufern zur Verfügung gestellt wird.
+Es wird dringend empfohlen, Testdatenräume für Integrations- und Staging-Umgebungen zu verwenden und Zahlungen in der Produktion mit echten Kreditkarten und Banken zu testen, bevor Sie diese Funktion Käufern bereitstellen.
 
-Weitere Informationen finden Sie unter [Testen und Validieren](test-validate.md) .
+Weitere Informationen [ Sie unter ](test-validate.md) und Validieren .

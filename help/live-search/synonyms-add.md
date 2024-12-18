@@ -1,6 +1,6 @@
 ---
 title: Synonyme hinzufügen
-description: Fügen Sie  [!DNL Live Search] Synonyme hinzu, um die Antwort auf Suchanfragen zu verbessern.
+description: Fügen Sie  [!DNL Live Search]  hinzu, um die Reaktion auf Suchanfragen zu verbessern.
 exl-id: 6c277d88-cb22-4174-abda-6d6bb65fe3be
 source-git-commit: 63318e2eb75bc5fb0a243b6430751b076e541b72
 workflow-type: tm+mt
@@ -11,65 +11,65 @@ ht-degree: 0%
 
 # Synonyme hinzufügen
 
-Erhöhen Sie die Kundeninteraktion, indem Sie Ihre eigene kuratierte Liste mit [!DNL Live Search] -Synonymen hinzufügen. [!DNL Live Search] kann bis zu 200 Synonyme pro `Data Space ID` verwalten.
+Erhöhen Sie die Kundeninteraktion, indem Sie Ihre eigene kuratierte Liste [!DNL Live Search] Synonyme hinzufügen. [!DNL Live Search] können bis zu 200 Synonyme pro `Data Space ID` verwalten.
 
-![[!DNL Live Search] synonyme](assets/synonym-workspace.png)
+![[!DNL Live Search] Synonyme](assets/synonym-workspace.png)
 
 ## Schritt 1: Synonym hinzufügen
 
-1. Wechseln Sie im Admin zu **Marketing** > SEO &amp; Suche > **[!DNL Live Search]**.
-1. Legen Sie für mehrere Stores **Umfang** auf die [Store-Ansicht](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) fest, für die die Synonym-Einstellungen gelten.
-1. Klicken Sie auf die Registerkarte **Synonyme**.
-1. Klicken Sie auf die Schaltfläche **Synonyme hinzufügen** .
+1. Gehen Sie im Admin zu **Marketing** > SEO &amp; Search > **[!DNL Live Search]**.
+1. Setzen Sie bei mehreren Stores **Bereich** auf die [Store-Ansicht](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings), für die die Synonymeinstellungen gelten.
+1. Klicken Sie auf die **Synonyme**.
+1. Klicken Sie auf **Schaltfläche „Synonyme**&quot;.
 
 ## Schritt 2: Synonym nach Typ definieren
 
-Befolgen Sie die Anweisungen für den [Typ des Synonyms](synonyms-type.md), den Sie erstellen möchten.
+Befolgen Sie die Anweisungen für den [Typ des Synonyms](synonyms-type.md) den Sie erstellen möchten.
 
-### Zweiwegsynonym
+### Zweiweg-Synonym
 
-1. Akzeptieren Sie die Standardoption **Zwei-Wege** .
+1. Akzeptieren Sie die standardmäßige **bidirektionale** Option.
 
-   ![Zweiweg-Synonym hinzufügen](assets/synonym-add-two-way.png)
+   ![Zwei-Wege-Synonym hinzufügen](assets/synonym-add-two-way.png)
 
 
-1. Geben Sie den Begriff oder die Phrase **Schlüsselwort** ein, der abgeglichen werden soll.
-1. Geben Sie die Begriffe **Erweiterung** ein, die Sie als Synonyme für den Suchbegriff hinzufügen möchten. Trennen Sie mehrere Begriffe durch ein Komma.
-In diesem Beispiel lautet das passende Keyword &quot;Hosen&quot;und die Erweiterungsbegriffe lauten &quot;Hosen, Schläge&quot;.
+1. Geben Sie den **Keyword**-Begriff oder die zuzuordnende Phrase ein.
+1. Geben Sie **Begriffe**Erweiterung) ein, die Sie als Synonyme für das Keyword hinzufügen möchten. Trennen Sie mehrere Begriffe durch Kommas.
+In diesem Beispiel lautet das Keyword, mit dem eine Übereinstimmung erzielt werden soll, „Hose“, und die Menge der Ausdehnungsbegriffe lautet „Hose, Hose“.
 
-   ![Synonym-Beispiel für Zweiwege](assets/synonym-add-two-way-example.png)
+   ![Beispiel für ein Zwei-Wege-Synonym](assets/synonym-add-two-way-example.png)
 
-1. Klicken Sie nach Abschluss des Vorgangs auf **Speichern**.
-Der Satz von Synonymen erscheint in der Liste mit einem Zwei-Wege-Pfeil zwischen jedem Begriff, was bedeutet, dass die Begriffe austauschbar sind.
+1. Klicken Sie abschließend auf **Speichern**.
+Die Gruppe von Synonymen wird in der Liste mit einem Pfeil in beide Richtungen zwischen den einzelnen Begriffen angezeigt, was bedeutet, dass die Begriffe austauschbar sind.
 
-   ![Zweiweg-Synonym](assets/synonym-two-way.png)
+   ![Zwei-Wege-Synonym](assets/synonym-two-way.png)
 
 ### Einwegsynonym
 
-1. Klicken Sie auf den Synonym-Typ **Einweg** .
+1. Klicken Sie auf **Einwegsynonym** Typ.
 
-   ![Einweg-Synonym hinzufügen](assets/synonym-add-one-way.png)
+   ![Einwegsynonym hinzufügen](assets/synonym-add-one-way.png)
 
-1. Geben Sie die Begriffe **Schlüsselwort** und **Erweiterung** ein. Trennen Sie mehrere Begriffe durch ein Komma.
+1. Geben Sie die Begriffe **Keyword** und **Erweiterung** ein. Trennen Sie mehrere Begriffe durch Kommas.
 
-   ![Beispiel für Einweg-Synonym](assets/synonym-add-one-way-example.png)
+   ![Beispiel für Einwegsynonyme](assets/synonym-add-one-way-example.png)
 
-   In diesem Beispiel ist das Keyword &quot;Hosen&quot;und die unidirektionalen Erweiterungsbegriffe &quot;Capris, Peddle-Pushers&quot;sind jeweils eine Untergruppe von &quot;Hots&quot;, jedoch mit einer bestimmten Bedeutung.
+   In diesem Beispiel ist das Keyword „pants“ und die Einweg-Erweiterungsbegriffe „capris, peddle-pushers“ sind jeweils eine Untergruppe von „pants“, jedoch mit einer bestimmten Bedeutung.
 
-1. Klicken Sie nach Abschluss des Vorgangs auf **Speichern**.
-Die Gruppe von Synonymen wird in der Liste mit einem einseitigen Pfeil angezeigt, der von den Erweiterungsbegriffen zum Keyword zeigt, um anzugeben, dass es sich bei den Begriffen um Untergruppen des Keywords handelt. Ein Pluszeichen trennt jeden Erweiterungsbegriff.
+1. Klicken Sie abschließend auf **Speichern**.
+Der Satz von Synonymen wird in der Liste mit einem Einwegpfeil angezeigt, der von den Erweiterungsbegriffen auf das Keyword verweist, um anzugeben, dass die Begriffe Untergruppen des Keywords sind. Ein Pluszeichen trennt jeden Expansionsbegriff.
 
-   ![Einweg-Synonym](assets/synonym-one-way.png)
+   ![Einwegsynonym](assets/synonym-one-way.png)
 
 ## Schritt 3: Publish-Änderungen
 
-1. Wenn Ihre Synonyme abgeschlossen sind, klicken Sie auf **Publish changes**.
-1. Warten Sie bis zu zwei Stunden, bis Ihre Updates in der Storefront verfügbar sind.
+1. Wenn Ihre Synonyme vollständig sind, klicken Sie auf **Publish-Änderungen**.
+1. Warten Sie bis zu zwei Stunden, bis Ihre Aktualisierungen in der Storefront verfügbar werden.
 
 ## Feldbeschreibungen
 
 | Feld | Beschreibung |
 |--- |--- |
-| [Typ](synonyms.md) | Bestimmt, ob die Synonyme dieselbe Bedeutung wie das Keyword haben oder eine Untergruppe des Keywords sind. Optionen:<br />Zweiweg (Standard) - Begriffe, die dieselbe Bedeutung wie der Suchbegriff haben und dieselben Suchergebnisse zurückgeben<br />Einweg - Begriffe, die eine Untergruppe des Suchbegriffs sind. Einwegsynonyme geben eine engere Liste spezifischer Produkte zurück. |
-| Schlüsselwort | Ein Wort, das häufig mit einer Auswahl von Produkten in Ihrem Katalog verknüpft ist. |
-| Erweiterung | Zusätzliche Begriffe, die dieselbe oder eine ähnliche Bedeutung wie der Suchbegriff haben. |
+| [Typ](synonyms.md) | Bestimmt, ob die Synonyme dieselbe Bedeutung wie das Keyword haben oder eine Teilmenge des Keywords sind. options:<br />bidirektional (Standard) - Begriffe, die dieselbe Bedeutung wie das Keyword haben und dieselben Suchergebnisse zurückgeben<br />unidirektional - Begriffe, die eine Teilmenge des Keywords sind. Einwegsynonyme geben eine engere Liste spezifischer Produkte zurück. |
+| Schlüsselwort | Ein Wort, das normalerweise mit einer Auswahl von Produkten in Ihrem Katalog verknüpft ist. |
+| Expansion | Zusätzliche Begriffe, die dieselbe oder eine ähnliche Bedeutung wie das Keyword haben. |

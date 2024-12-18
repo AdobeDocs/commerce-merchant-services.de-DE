@@ -1,6 +1,6 @@
 ---
-title: Konfiguration des Hintergrundprozesses
-description: "Konfigurieren Sie die Zeitpläne für [!DNL Store Fulfillment] Hintergrundprozesse, die zum Synchronisieren von Daten mit den Fulfillment-Diensten verwendet werden."
+title: Hintergrundprozesskonfiguration
+description: Konfigurieren Sie die Zeitpläne für  [!DNL Store Fulfillment]  Prozesse im Hintergrund, die zum Synchronisieren von Daten mit den Fulfillment-Services verwendet werden.
 role: Admin, Developer
 level: Intermediate
 exl-id: 742ae59e-77a0-4db6-b156-2992d4403be7
@@ -12,14 +12,14 @@ ht-degree: 0%
 ---
 
 
-# Konfiguration des Hintergrundprozesses
+# Hintergrundprozesskonfiguration
 
-Die Integration von Store Fulfillment verwendet Hintergrundprozesse und Nachrichtenwarteschlangen für optimale Leistung und Skalierung. Erstellen Sie Umgebungen für Ihre Adobe Commerce-Stores mithilfe von [Bereitstellungsvariablen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#cron_consumers_runner) , die automatisch [Nachrichtenwarteschlangen-Läufern](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework) starten.
+Die Store-Fulfillment-Integration verwendet Hintergrundprozesse und Nachrichtenwarteschlangen für eine optimale Leistung und Skalierung. Erstellen Sie Umgebungen für Ihre Adobe Commerce-Stores mit [Bereitstellungsvariablen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#cron_consumers_runner) die automatisch gestartet werden [Message Queue Runner](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework).
 
-Hintergrundprozesse werden mit der standardmäßigen Adobe Commerce [Geplante Aufgaben](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cron) -Funktion verwaltet. Diese Prozesse sind für die Synchronisierung von Bestell- und Merchant Store-Konfigurationsdaten mit Store-Erfüllungs-Webdiensten verantwortlich.
+Hintergrundprozesse werden mithilfe der standardmäßigen Adobe Commerce-Funktion [Geplante Aufgaben](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cron) verwaltet. Diese Prozesse sind für die Synchronisierung der Konfigurationsdaten von Bestellungen und Händlern mit Web-Services für die Store-Erfüllung verantwortlich.
 
-## Geplante Aufgaben für die Store-Erfüllung verwalten
+## Geplante Aufgaben für Store Fulfillment verwalten
 
-Wechseln Sie vom Administrator zu &quot;**[!UICONTROL Stores > Configuration > Advanced > System > Cron (Scheduled Tasks) > Cron configuration options for group:store_fulfillment]**&quot;.
+Navigieren Sie vom Administrator zu **[!UICONTROL Stores > Configuration > Advanced > System > Cron (Scheduled Tasks) > Cron configuration options for group:store_fulfillment]**.
 
-Überprüfen Sie die Standardkonfiguration für Store Fulfillment-Dienste. Sie können diese Einstellungen entsprechend Ihrem Auftragsverarbeitungsvolumen und Ihrer Ressourcenverfügbarkeit anpassen.
+Überprüfen Sie die Standardkonfiguration für Store Fulfillment-Services. Sie können diese Einstellungen je nach Auftragsverarbeitungsvolumen und Ressourcenverfügbarkeit anpassen.

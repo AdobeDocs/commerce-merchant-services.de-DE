@@ -1,82 +1,82 @@
 ---
-title: Linienelemente für  [!DNL Payment Services]
-description: Erfahren Sie mehr über die Zeileneinträge für [!DNL Payment Services] und wie Sie Zeileneinträge im Händler-Dashboard anzeigen.
+title: Positionen für [!DNL Payment Services]
+description: Erfahren Sie mehr über Zeileneinträge für  [!DNL Payment Services]  und wie Sie Zeileneinträge im Händler-Dashboard anzeigen können.
 feature: Payments
 role: User
-source-git-commit: 5481b19f95908b441e12c4700c51649921dabb08
+exl-id: f690ff94-f83d-4525-9d52-1dea25a71060
+source-git-commit: 8d83f6ffbef8dfa80e3a129dd7a2940f08fd1e86
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 0%
 
 ---
 
+# Zeileneinträge für [!DNL Payment Services]
 
-# Linienelemente für [!DNL Payment Services]
-
-Zeileneinträge für [!DNL Payment Services] sind die Elemente, die in einer Bestellung enthalten sind. Diese Zeileneinträge enthalten Informationen wie:
+Die Positionen für [!DNL Payment Services] sind die in einer Bestellung enthaltenen Artikel. Diese Zeileneinträge enthalten u. a. folgende Informationen:
 
 * Produktdetails
 * Menge
-* Preis (einschließlich Steuern, Rabatte und sonstige relevante Informationen)
+* Preis (einschließlich Steuern, Rabatte und andere relevante Informationen)
 
 Diese Informationen sind für den Kundendienst, die Auftragsverwaltung und die ordnungsgemäße Rechnungsstellung nützlich.
 
-Diese Funktion ist standardmäßig für [!DNL Payment Services] aktiviert. So zeigen Sie Zeilenelemente an:
+Diese Funktion ist standardmäßig für [!DNL Payment Services] aktiviert. So zeigen Sie Zeileneinträge an:
 
 1. Navigieren Sie zu Ihrem [PayPal-Händler-Dashboard](https://www.paypal.com/merchant/){target=_blank}.
 
-1. Klicken Sie auf **Aktivität** > **Alle Transaktionen**.
+1. Klicken Sie **Aktivität** > **Alle Transaktionen**.
 
 1. Wählen Sie die gewünschte Reihenfolge aus und zeigen Sie die zugehörigen Zeileneinträge an:
 
-   > Beispiel für Zeileneinträge in der Dashboard-Ansicht des Käufers
+   > Beispiel für Zeileneinträge in der Dashboard-Ansicht „Einkäufer“
 
-   ![Ansicht der Zeileneinträge](assets/paypal-shopper-dashboard-line-items-view.png){width="500" zoomable="yes"}
+   ![Zeileneintragsansicht](assets/paypal-shopper-dashboard-line-items-view.png){width="500" zoomable="yes"}
 
-## Linienelementattribute
+## Attribute für Zeileneinträge
 
-Zeilenelemente werden generiert, wenn die Bestellung über Adobe Commerce aufgegeben wird, und Informationen werden an PayPal gesendet, mit den folgenden Attributen:
+Zeileneinträge werden generiert, wenn die Bestellung über Adobe Commerce aufgegeben wird und Informationen mit den folgenden Attributen an PayPal gesendet werden:
 
 | Attribut | Datentyp | Beschreibung |
 | --- | --- | --- |
-| `name` | String! | Der Elementname. Wenn ein Artikel mehr als eine Zeile enthält, weil es mehrere Mengen oder eine Steuerrundung gibt, bleibt der Artikelname für alle Zeilen gleich, aber der angezeigte Preis kann aufgrund der Rundung leicht variieren. |
-| `unit_amount` | Objekt! | Der Artikelpreis oder -preis pro Einheit. Umfasst die folgenden Attribute: `currency_code` und `value`. |
+| `name` | Zeichenfolge! | Der Elementname. Wenn ein Artikel aufgrund mehrerer Mengen oder eines Problems der Steuerrundung mehr als eine Position hat, bleibt die Artikelbezeichnung für alle Positionen gleich, aber der angezeigte Preis kann aufgrund der Rundung leicht variieren. |
+| `unit_amount` | Objekt! | Der Artikelpreis oder -satz pro Einheit. Umfasst die folgenden Attribute: `currency_code` und `value`. |
 | `tax` | Objekt | Die Artikelsteuer für jede Einheit. Umfasst die folgenden Attribute: `currency_code` und `value`. |
-| `quantity` | String! | Die Artikelmenge. wird eine ganze Zahl sein. |
-| `description` | Zeichenfolge | Die detaillierte Elementbeschreibung. |
-| `sku` | Zeichenfolge | Die Lagereinheit (oder SKU) für den Artikel. |
-| `url` | Zeichenfolge | Die `URL` für den Artikel, der gekauft wird. Für Käufer sichtbar und in Käufererlebnissen verwendet. |
-| `upc` | Objekt | Der Universal Product Code (oder UPC) des Artikels. |
-| `category` | Zeichenfolge | Der Elementkategorietyp. |
+| `quantity` | Zeichenfolge! | Die Artikelmenge. Wird eine ganze Zahl sein. |
+| `description` | Zeichenfolge | Die detaillierte Artikelbeschreibung. |
+| `sku` | Zeichenfolge | Die Lagerungseinheit (oder SKU) für den Artikel. |
+| `url` | Zeichenfolge | Die `URL` des gekauften Artikels. Für den Käufer sichtbar und in Käufererlebnissen verwendet. |
+| `upc` | Objekt | Der universelle Produkt-Code (oder UPC) des Artikels. |
+| `category` | Zeichenfolge | Der Typ der Elementkategorie. |
 
-### `unit_amount` Attribute
+### Attribute `unit_amount`
 
-Das Objekt `unit_amount` enthält die folgenden Attribute:
-
-| Attribut | Datentyp | Beschreibung |
-| --- | --- | --- |
-| `currency_code` | String! | Der [ dreistellige ISO-4217-Währungscode](https://developer.paypal.com/api/rest/reference/currency-codes/), der die Währung angibt. |
-| `value` | String! | Gibt den Wert des Elements an. Der `currency_code` bestimmt die erforderliche Anzahl von Dezimalstellen, falls vorhanden. |
-
-### `tax` Attribute
-
-Das Objekt `tax` enthält die folgenden Attribute:
+Das `unit_amount`-Objekt enthält die folgenden Attribute:
 
 | Attribut | Datentyp | Beschreibung |
 | --- | --- | --- |
-| `currency_code` | String! | Der [ dreistellige ISO-4217-Währungscode](https://developer.paypal.com/api/rest/reference/currency-codes/), der die Währung angibt. |
-| `value` | String! | Gibt den Wert des Elements an. Hängt von jedem `currency_code` für die erforderliche Anzahl von Dezimalstellen ab. |
+| `currency_code` | Zeichenfolge! | Der [dreistellige ISO-4217-](https://developer.paypal.com/api/rest/reference/currency-codes/), der die Währung angibt. |
+| `value` | Zeichenfolge! | Gibt den Wert des Elements an. Die `currency_code` bestimmt die erforderliche Anzahl von Dezimalstellen, falls vorhanden. |
 
-### `upc` Attribute
+### Attribute `tax`
 
-Das Objekt `upc` enthält die folgenden Attribute:
+Das `tax`-Objekt enthält die folgenden Attribute:
+
+| Attribut | Datentyp | Beschreibung |
+| --- | --- | --- |
+| `currency_code` | Zeichenfolge! | Der [dreistellige ISO-4217-](https://developer.paypal.com/api/rest/reference/currency-codes/), der die Währung angibt. |
+| `value` | Zeichenfolge! | Gibt den Wert des Elements an. Hängt von jedem `currency_code` für die erforderliche Anzahl von Dezimalstellen ab. |
+
+### Attribute `upc`
+
+Das `upc`-Objekt enthält die folgenden Attribute:
 
 | Attribut | Datentyp | Beschreibung |
 | --- | --- | --- |
 | `type` | Zeichenfolge! | Der UPC-Typ. |
 | `code` | Zeichenfolge! | Der UPC-Produktcode des Artikels. |
 
-Beispiel für +++Zeileneinträge
++++Beispiel für Zeilenelemente
 
 ```json
 {
@@ -123,21 +123,21 @@ Beispiel für +++Zeileneinträge
 
 +++
 
-Weitere Informationen zu diesen Feldern und deren Einschränkungen finden Sie in der [PayPal-Entwicklerdokumentation zu Zeileneinträgen](https://developer.paypal.com/docs/api/orders/v2/#definition-line_item){target=_blank} .
+Weitere Informationen [ diesen Feldern und deren Einschränkungen finden Sie in der ](https://developer.paypal.com/docs/api/orders/v2/#definition-line_item){target=_blank} für PayPal-Entwickler zu Zeileneinträgen .
 
-## Zeilenelemente verwalten
+## Zeileneinträge verwalten
 
-Adobe Commerce [berechnet die Steuer auf Grundlage des Gesamtbetrags für jede Zeile](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank}, was zu Rundungsfehlern führen kann, wenn mehrere Mengen desselben Artikels bestellt werden oder wenn im Katalog Steuereinschlusspreise angezeigt werden. In diesem Fall kann die Gesamtmenge in zwei Zeilen aufgeteilt werden, aber die Menge entspricht den bestellten Artikeln insgesamt.
+Adobe Commerce [berechnet die Steuer auf der Grundlage des Gesamtbetrags für jede Zeile](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank} was zu Rundungsproblemen führen kann, wenn mehrere Mengen desselben Artikels bestellt werden oder wenn im Katalog steuerinklusive Preise angezeigt werden. In solchen Fällen kann die Gesamtmenge in zwei Zeilen aufgeteilt werden, aber die Menge entspricht der Gesamtzahl der bestellten Artikel.
 
-> Beispiel für Zeilenelemente mit Rundungsproblemen in der Dashboard-Ansicht des Händlers
+> Beispiel für Zeileneinträge mit Rundungsproblemen in der Ansicht „Händler-Dashboard“
 
-![Ansicht der Zeileneinträge](assets/line-items-example.png){width="600" zoomable="yes"}
+![Zeileneintragsansicht](assets/line-items-example.png){width="600" zoomable="yes"}
 
-+++Wie Adobe Commerce ein Rundungsproblem in Zeileneinträgen berechnet
++++So berechnet Adobe Commerce ein Rundungsproblem in Zeileneinträgen
 
-Die Zeileneinträge für [!DNL Payment Services] gleichen dieses Rundungsproblem so, dass der `unit_amount` - oder `unit_tax` -Wert dem Gesamtbetrag für die Bestellung entspricht. Ein Element kann in zwei Zeilen aufgeteilt werden, um dieses Rundungsproblem zu beheben:
+Zeileneinträge für [!DNL Payment Services] gleichen dieses Rundungsproblem aus, sodass der `unit_amount`- oder `unit_tax` dem Gesamtbetrag für den Auftrag entspricht. Ein Artikel kann zur Lösung dieses Rundungsproblems in zwei Zeilen aufgeteilt werden:
 
-* Wenn das Rundungsproblem auf dem `unit_amount` auftritt, sollte der Händler einen Unterschied zum Preis in dieser zusätzlichen Zeile sehen.
-* Wenn das Rundungsproblem auf dem `unit_tax` auftritt, wird kein Unterschied bei den einzelnen Zeileneinträgen angezeigt, da der `tax` nicht im Raster, sondern nur als Gesamtsumme am unteren Rand angezeigt wird.
+* Wenn die Rundungsausgabe auf der `unit_amount` erscheint, sollte der Händler eine Differenz zum Preis dieser zusätzlichen Position sehen.
+* Wenn das Rundungsproblem auf der `unit_tax` auftritt, wird kein Unterschied bei den einzelnen Zeileneinträgen angezeigt, da die `tax` nicht im Raster, sondern nur als Summe am unteren Rand angezeigt wird.
 
 +++

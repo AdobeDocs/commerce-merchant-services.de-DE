@@ -1,6 +1,6 @@
 ---
-title: Dokumentation zu Diensten
-description: Adobe Commerce-Produktdokumentation für Commerce SaaS-Dienste durchsuchen
+title: Dokumentation zu Services
+description: Durchsuchen der Adobe Commerce-Produktdokumentation für Commerce SaaS-Services
 seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce merchants support key components of their business.
 breadcrumb-title: Dokumentation
@@ -13,15 +13,15 @@ ht-degree: 0%
 
 ---
 
-# Handbücher für Adobe Commerce-Dienste
+# Adobe Commerce Services-Handbücher
 
-Adobe bietet eine Sammlung von Commerce-Diensten, Integrationsdiensten und Datenwerkzeugen, die Händlern helfen, wichtige Geschäftskomponenten zu unterstützen.
+Adobe bietet eine Sammlung von Commerce-Services, Integrations-Services und Daten-Tools, die Händlern dabei helfen, Schlüsselkomponenten ihres Unternehmens zu unterstützen.
 
 >[!NOTE]
 >
->Adobe empfiehlt ein Upgrade auf die neueste unterstützte Version aller Commerce-Dienste. Siehe die [Versionshinweise](release-notes-all.md).
+>Adobe empfiehlt ein Upgrade auf die neueste unterstützte Version aller Commerce-Services. Siehe die [Versionshinweise](release-notes-all.md).
 
-## Commerce-Dienste
+## Commerce Services
 
 <table style="table-layout:fixed">
 <tr style="border: 0;">
@@ -40,7 +40,7 @@ Adobe bietet eine Sammlung von Commerce-Diensten, Integrationsdiensten und Daten
    </td>
    <td valign="top">
       <a href="../product-recommendations/overview.md">
-      <img alt="ThumbsUp" src="../assets/icons/ThumbUp.svg" width="40">
+      <img alt="Daumen hoch" src="../assets/icons/ThumbUp.svg" width="40">
       </a>
       <div>
          <a href="../product-recommendations/overview.md">
@@ -48,20 +48,20 @@ Adobe bietet eine Sammlung von Commerce-Diensten, Integrationsdiensten und Daten
          </a>
       </div>
       <p>
-         <em>Fügen Sie KI-gesteuerte Empfehlungen hinzu, die auf dem Kundenverhalten, beliebten Trends, der Produktähnlichkeit und mehr basieren.</em>
+         <em>Fügen Sie KI-gestützte Empfehlungen hinzu, die auf dem Käuferverhalten, beliebten Trends, Produktähnlichkeit und mehr basieren.</em>
       </p>
    </td>
    <td valign="top">
       <a href="../catalog-service/overview.md">
-      <img alt="Katalogdaten für verbundene Dienste" src="../assets/icons/DataBook.svg" width="40">
+      <img alt="Katalogdaten für verbundene Services" src="../assets/icons/DataBook.svg" width="40">
       </a>
       <div>
          <a href="../catalog-service/overview.md">
-         <strong>Catalog Service</strong>
+         <strong>Katalog-Service</strong>
          </a>
       </div>
       <p>
-         <em>Bieten Sie Ihren Kunden ein optimiertes Produkterlebnis, während Sie gleichzeitig die Leistung steigern, die Skalierbarkeit verbessern und Konversionen steigern.</em>
+         <em>Bieten Sie Ihren Kunden ein optimiertes Produkterlebnis und steigern Sie gleichzeitig die Leistung, die Skalierbarkeit und die Konversionen.</em>
       </p>
    </td>
    <td valign="top">
@@ -74,19 +74,19 @@ Adobe bietet eine Sammlung von Commerce-Diensten, Integrationsdiensten und Daten
          </a>
       </div>
       <p>
-         <em>Steigern Sie die Kundenzufriedenheit mit diversen Zahlungsmethoden, einschließlich zinsfreier Raten, und optimierten Ansichten zur Zahlungsverarbeitung, zu Bestellungen und Rechnungen.</em>
+         <em>Steigern Sie die Kundenzufriedenheit mit verschiedenen Zahlungsmethoden, einschließlich zinsfreier Raten und optimierter Ansichten der Zahlungsabwicklung, Bestellungen und Rechnungen.</em>
       </p>
    </td>
 </tr>
 </table>
 
-## Integrationsdienste
+## Integrations-Services
 
 <table style="table-layout:fixed">
 <tr style="border: 0;">
    <td valign="top">
       <a href="../data-connection/overview.md">
-      <img alt="Daten an die Plattform übertragen" src="../assets/icons/TransferToPlatform.svg" width="40">
+      <img alt="Übertragen von Daten an Platform" src="../assets/icons/TransferToPlatform.svg" width="40">
       </a>
       <div>
          <a href="../data-connection/overview.md">
@@ -99,27 +99,27 @@ Adobe bietet eine Sammlung von Commerce-Diensten, Integrationsdiensten und Daten
    </td>
    <td valign="top">
       <a href="../landing/saas.md">
-      <img alt="ThumbsUp" src="../assets/icons/DataSetting.svg" width="40">
+      <img alt="Daumen hoch" src="../assets/icons/DataSetting.svg" width="40">
       </a>
       <div>
           <a href="../landing/saas.md">
-         <strong>Commerce Services Connector</strong>
+         <strong>Commerce Services-Connector</strong>
          </a>
       </div>
       <p>
-         <em>Konfigurieren Sie die Authentifizierung, um eine sichere Kommunikation zwischen Adobe Commerce und verbundenen Diensten zu ermöglichen. Geben Sie für jede Umgebung die Datenspeicherungs-ID für den Datenspeicher von Commerce Services an.</em>
+         <em>Konfigurieren Sie die Authentifizierung, um eine sichere Kommunikation zwischen Adobe Commerce und Connected Services zu ermöglichen. Geben Sie für jede Umgebung die Datenspeicher-ID für den Commerce Services-Datenspeicher an.</em>
       </p>
    </td>
 </tr>
 </table>
 
-## Datenwerkzeuge
+## Daten-Tools
 
 <table style="table-layout:fixed">
 <tr style="border: 0;">
    <td valign="top">
        <a href="../data-export/overview.md">
-      <img alt="Verwaltung des SAAs-Datenexport-Feeds" src="../assets/icons/FeedManagement.svg" width="40">
+      <img alt="Verwaltung von SaaS-Datenexport-Feeds" src="../assets/icons/FeedManagement.svg" width="40">
       </a>
       <div>
          <a href="../data-export/overview.md">
@@ -127,37 +127,37 @@ Adobe bietet eine Sammlung von Commerce-Diensten, Integrationsdiensten und Daten
          </a>
       </div>
       <p>
-         <em> Automatisch Katalog-, Bestell- und Bestandsdaten von Adobe Commerce mit verbundenen Diensten synchronisieren. Verwenden Sie die Commerce-CLI-Befehle oder das <strong>Data Management Dashboard</strong>, um die Synchronisierungsverarbeitung zu verwalten.</em>
+         <em>Automatische Synchronisierung von Katalog-, Auftrags- und Inventardaten aus Adobe Commerce mit Connected Services. Verwenden Sie Commerce-CLI-Befehle oder das <strong>Data Management Dashboard</strong> um die Synchronisierungsverarbeitung zu verwalten.</em>
       </p>
    </td>
    <td valign="top">
       <a href="../price-index/price-indexing.md">
-      <img alt="Produktpreise - Feed" src="../assets/icons/Feed.svg" width="40">
+      <img alt="Produktpreise Futtermittel" src="../assets/icons/Feed.svg" width="40">
       </a>
       <div>
           <a href="../price-index/price-indexing.md">
-         <strong>SaaS-Preisindex</strong>
+         <strong>SaaS-Preisindexer</strong>
          </a>
       </div>
       <p>
-         <em>Optimieren Sie die Site-Leistung durch das Abladen ressourcenintensiver Aufgaben - wie Indizierung und Preisberechnung von der Commerce-Anwendung in die Adobe Cloud-Infrastruktur.</em>
+         <em>Optimieren Sie die Site-Performance, indem Sie ressourcenintensive Aufgaben wie Indexierung und Preisberechnung von der Commerce-Anwendung auf die Adobe-Cloud-Infrastruktur auslagern.</em>
       </p>
    </td>
    <td valign="top">
       <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
-      <img alt="Überwachen der Datensynchronisierung" src="../assets/icons/Monitoring.svg" width="40">
+      <img alt="Überwachen der Datensynchronisation" src="../assets/icons/Monitoring.svg" width="40">
       </a>
       <div>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
-         <strong>Dashboard "Datenverwaltung"</strong>
+         <strong>Daten-Management-Dashboard</strong>
          </a>
       </div>
       <p>
-         <em>Verfolgen Sie einfach die Commerce-Datensynchronisation und die Trigger-Resynchronisierung über ein einheitliches Dashboard in Commerce Admin. Erhalten Sie wertvolle Einblicke in die Datenverfügbarkeit für eine zeitnahe Anzeige Ihrer Kunden.</em>
+         <em>Einfaches Tracking der Commerce-Datensynchronisation und der Trigger-Resynchronisation über ein einheitliches Dashboard in der Commerce Admin Console. Erhalten Sie wertvolle Einblicke in die Datenverfügbarkeit, damit Sie sie Ihren Kunden rechtzeitig anzeigen können.</em>
       </p>
    </td>
 </table>
 
 >[!NOTE]
 >
->Das Data Management Dashboard ist für Commerce-Händler, die Produkt Recommendations v6.0.0, Live Search v4.1.0 oder Catalog Service v1.17 mit einer aktiven Lizenz verwenden, kostenlos verfügbar. Händler, die frühere Dienstversionen verwenden, können die Datensynchronisation mit [Katalogsynchronisierung](../landing/catalog-sync.md) verwalten und verfolgen.
+>Das Daten-Management-Dashboard steht Commerce-Händlern, die Recommendations v6.0.0, Live Search v4.1.0 oder Catalog Service v1.17 mit einer aktiven Lizenz verwenden, ohne zusätzliche Kosten zur Verfügung. Händler, die frühere Service-Versionen verwenden, können [Katalogsynchronisierung](../landing/catalog-sync.md) verwenden, um die Datensynchronisierung zu verwalten und zu verfolgen.

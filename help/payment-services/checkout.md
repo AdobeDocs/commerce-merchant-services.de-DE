@@ -1,6 +1,6 @@
 ---
 title: Checkout in [!DNL Payment Services]
-description: Passen Sie den Checkout an die Anforderungen Ihres Kunden an. [!DNL Payment Services]
+description: Passen Sie  [!DNL Payment Services]  Checkout an die Bedürfnisse Ihrer Kunden an.
 feature: Payments, Checkout
 exl-id: 47df165f-2145-4e0e-b272-54b8e768cf19
 source-git-commit: 153e6a82134a34737529f4e1a135eb7803b20e05
@@ -13,37 +13,37 @@ ht-degree: 0%
 
 # Checkout in [!DNL Payment Services]
 
-Sie können den Checkout für Adobe Commerce [!DNL Payment Services] so konfigurieren, dass er Ihren Kunden am besten passt. Funktionen wie [automatische Aufhebung der Bestellung](#order-auto-voided-if-error) und [Kreditkartenauswertung](#credit-card-vaulting) stellen sicher, dass Ihre Kunden ein reibungsloses Benutzererlebnis bieten.
+Sie können den Checkout für Adobe Commerce [!DNL Payment Services] so konfigurieren, dass er Ihren Kundinnen und Kunden am besten entspricht. Funktionen wie [automatische ](#order-auto-voided-if-error) bestellen) und [Tresor für Kreditkarten](#credit-card-vaulting) stellen sicher, dass Ihre Kunden ein reibungsloses Benutzererlebnis haben.
 
-## Reihenfolge bei Fehler automatisch aufgehoben
+## Bei Fehler automatisch storniert bestellen
 
-Tritt beim Auschecken ein Fehler auf, wird die Bestellung von [!DNL Payment Services] automatisch aufgehoben bzw. abgebrochen.
+Tritt während des Checkouts ein Fehler auf, wird die Bestellung automatisch storniert bzw. storniert [!DNL Payment Services].
 
-Auf der Checkout-Seite für den Käufer wird eine Fehlermeldung angezeigt. Die Nachricht kann variieren.
+Auf der Kaufbestätigungsseite wird eine Fehlermeldung für den Käufer angezeigt. Die Meldung kann variieren.
 
-![Fehler beim Überprüfen von ](assets/user-checkout-error.png "Fehler beim Auschecken"){width="600" zoomable="yes"}
+![Fehler beim Überprüfen](assets/user-checkout-error.png "Fehler beim Auschecken"){width="600" zoomable="yes"}
 
-Ein Kommentar zur stornierten Bestellung wird auch im Admin für eine bestimmte [Bestellung](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/orders.html?lang=en) angezeigt.
+Ein Kommentar zur stornierten Bestellung wird auch im Administrator für eine bestimmte [Bestellung](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/orders.html?lang=en) angezeigt.
 
-![Abgebrochener Bestellkommentar in Admin für Bestellung](assets/admin-checkout-error.png "Abgebrochener Bestellkommentar in Admin für Bestellung"){width="600" zoomable="yes"}
+![Stornierter Bestellkommentar in Admin für Bestellung](assets/admin-checkout-error.png "Stornierter Bestellkommentar in Admin für Bestellung"){width="600" zoomable="yes"}
 
-Wenn ein Käufer die Autorisierung für eine Bestellung erhält, die Bestellung jedoch nicht erstellt und in `Capture` konvertiert wurde, wird die Bestellung automatisch aufgehoben. Auf diese Weise wird sichergestellt, dass keine Kreditkarte auf der Kreditkarte des Kunden reserviert wird und die Gebühr des Zahlungsdienstleisters vermieden wird, die eintritt, wenn die Genehmigung am Ende des standardmäßigen Zeitraums von 29 Tagen widerrufen wird.
+Wenn ein Käufer die Genehmigung für eine Bestellung erhält, die Bestellung jedoch nicht erstellt und in eine `Capture` umgewandelt wurde, wird die Bestellung automatisch storniert. Dadurch wird sichergestellt, dass kein Kredit auf der Kreditkarte des Käufers reserviert wird, und die Gebühr des Zahlungsdienstleisters vermieden, die anfällt, wenn die Autorisierung am Ende der standardmäßigen 29-Tage-Frist ungültig wird.
 
 >[!NOTE]
 >
->Die automatische Aufhebung der Bestellung tritt nur dann auf, wenn der Kunde eine Zahlungsmethode verwendet, die auf den Modus `Authorize` und nicht auf den Modus `Authorize and Capture` eingestellt ist.
+>Die automatische Stornierung einer Bestellung tritt nur auf, wenn der Kunde eine Zahlungsmethode verwendet, die auf den `Authorize`-Modus, nicht auf den `Authorize and Capture`-Modus eingestellt ist.
 
-## Kasse von der Produktseite
+## Checkout von der Produktseite
 
-Wenn ein Kunde direkt über die Produktseite mit den Schaltflächen PayPal oder [!DNL Pay Later] zur Kasse geht, wird nur der Artikel gekauft, der auf der aktuellen Produktseite dargestellt wird. Artikel, die sich bereits im Warenkorb des Kunden befinden, werden nicht zum Kassengang hinzugefügt und werden nicht gekauft.
+Wenn ein Kunde direkt über die Produktseite mit den Schaltflächen PayPal oder [!DNL Pay Later] auscheckt, wird nur der auf der aktuellen Produktseite dargestellte Artikel gekauft. Artikel, die sich bereits im Warenkorb des Kunden befinden, werden nicht zum Checkout-Ablauf hinzugefügt und nicht gekauft.
 
-Mit dieser Funktion kann der Kunde den Artikel, den er gerade anzeigt, schnell kaufen und dabei Artikel beibehalten, die ihm zuvor in den Warenkorb gelegt wurden.
+Mit dieser Funktion kann der Kunde schnell den Artikel kaufen, den er gerade anzeigt, während er zuvor zum Warenkorb hinzugefügte Artikel beibehält.
 Wenn der Kunde die Bestellung storniert, wird der Artikel auf der aktuellen Produktseite zum Warenkorb des Kunden hinzugefügt.
 
-Wenn ein Kunde von der Produktseite aus in den Checkout-Fluss wechselt, wird die Checkout-Seite vereinfacht. In der Ansicht werden nur die bestellbaren Daten und Optionen angezeigt.
+Wenn ein Kunde über die Produktseite in den Checkout-Fluss eintritt, wird die Checkout-Seite vereinfacht: Die Ansicht zeigt nur auftragsbezogene Daten und Optionen an.
 
-## Kreditkartenausnahme
+## Tresor mit Kreditkarte
 
-Käufer können ihre Kreditkarteninformationen für zukünftige Käufe auf der Website (alle Geschäfte innerhalb desselben Händlers-Kontos) verwerten oder &quot;speichern&quot;.
+Käufer können ihre Kreditkarteninformationen für zukünftige Käufe auf der Website-Ebene (jedes Geschäft innerhalb des Kontos desselben Händlers) Vault-nutzen oder „speichern“.
 
-Weitere Informationen finden Sie unter [Kreditkartenausnahme](vaulting.md) .
+Siehe [Kreditkartenabwicklung](vaulting.md) für weitere Informationen

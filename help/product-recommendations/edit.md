@@ -11,29 +11,29 @@ ht-degree: 0%
 
 # Empfehlung bearbeiten
 
-Auf der Seite Empfehlung bearbeiten können Sie die einzelnen Einstellungen der Empfehlung anpassen. Mit Ausnahme des Seitentyps und des Empfehlungstyps können alle Einstellungen bearbeitet werden. Die folgenden Einstellungen können bearbeitet werden:
+Die Seite Empfehlung bearbeiten bietet Ihnen die Möglichkeit, die individuellen Einstellungen für die Empfehlung anzupassen. Alle Einstellungen außer dem Seitentyp und dem Empfehlungstyp können bearbeitet werden. Die folgenden Einstellungen können bearbeitet werden:
 
-- [Empfehlungsname](#name)
+- [Name der Empfehlung](#name)
 - [Storefront-Bezeichnung](#label)
-- [Anzahl Produkte](#number)
+- [Anzahl der Produkte](#number)
 - [Platzierung und Position](#placement)
 - [Produkte filtern](#filters)
 
-Die Vorschau auf der rechten Seite der Seite zeigt, wie die Empfehlung mit den aktuellen Einstellungen im Storefront angezeigt werden kann. Die Vorschau _Empfohlene Produkte_ bleibt als Referenz sichtbar, wenn Sie nach unten scrollen. In der Vorschau werden ein Miniaturbild für das Produkt, der Produktname, die SKU, der Preis und der Ergebnistyp für jedes zurückgegebene Produkt angezeigt. Der Ergebnistyp gibt an, ob ausreichend primäre Verhaltensdaten vorhanden sind, um die Empfehlung zu generieren, oder ob es Sicherungsverhaltensdaten verwendet.
+Die Vorschau rechts auf der Seite zeigt, wie die Empfehlung mit den aktuellen Einstellungen in der Storefront aussehen könnte. Die _Empfohlene Produktvorschau_ bleibt beim Scrollen auf der Seite zur Referenz sichtbar. Die Vorschau zeigt ein Miniaturbild des Produkts, den Produktnamen, die SKU, den Preis und den Ergebnistyp für jedes zurückgegebene Produkt an. Der Ergebnistyp gibt an, ob genügend primäre Verhaltensdaten vorhanden sind, um die Empfehlung zu generieren, oder ob Sicherungsverhaltensdaten verwendet werden.
 
 ![Recommendations bearbeiten](assets/edit-recommendation.png)
 
-## Empfehlungen bearbeiten
+## Bearbeiten einer Empfehlung
 
-1. Wechseln Sie in der Seitenleiste _Admin_ zu **Marketing** > _Promotions_ > **Produkt-Recommendations**.
+1. Navigieren Sie in der _Admin_-Seitenleiste zu **Marketing** > _Promotions_ > **Product Recommendations**.
 
 1. Wählen Sie die Empfehlung aus, die Sie bearbeiten möchten.
 
-1. Klicken Sie auf **Bearbeiten**. Folgen Sie dann den unten stehenden Anweisungen, um die gewünschten Änderungen vorzunehmen.
+1. Klicken Sie **Bearbeiten**. Folgen Sie dann den unten stehenden Anweisungen, um die benötigten Änderungen vorzunehmen.
 
-1. Klicken Sie nach Abschluss des Vorgangs auf **Änderungen speichern**.
+1. Klicken Sie abschließend auf **Änderungen speichern**.
 
-### Empfehlungsname {#name}
+### Name der Empfehlung {#name}
 
 Wählen Sie einen beschreibenden Namen, der den Zweck der Empfehlung angibt. Der Name dient als interne Referenz und wird nicht in der Storefront angezeigt.
 
@@ -41,40 +41,40 @@ Wählen Sie einen beschreibenden Namen, der den Zweck der Empfehlung angibt. Der
 
 ### Storefront-Bezeichnung {#label}
 
-Geben Sie den Text ein, den Sie als Beschriftung für die Empfehlungseinheit in der Storefront verwenden möchten.
+Geben Sie den Text ein, den Sie als Titel für die Empfehlungseinheit in der Storefront verwenden möchten.
 
-![Titel bearbeiten](assets/edit-storefront-label.png)
+![Bezeichnung bearbeiten](assets/edit-storefront-label.png)
 
-### Anzahl Produkte {#number}
+### Anzahl der Produkte {#number}
 
-Passen Sie den Schieberegler an, um bis zu 20 Produkte in der Empfehlungseinheit anzuzeigen.
+Stellen Sie den Schieberegler ein, um bis zu 20 Produkte in der Empfehlungseinheit anzuzeigen.
 
 ![Anzahl der Produkte bearbeiten](assets/edit-number-of-products.png)
 
 ### Platzierung und Position {#placement}
 
-1. Wählen Sie den Speicherort der Seite aus, an der die Empfehlungseinheit in der Storefront angezeigt werden soll.
+1. Wählen Sie den Seitenspeicherort aus, an dem die Empfehlungseinheit in der Storefront angezeigt werden soll.
 
-   - Am unteren Rand des Hauptinhalts
-   - Oben im Hauptinhalt
+   - Am Ende des Hauptinhalts
+   - Am Anfang des Hauptinhalts
 
    ![Platzierung bearbeiten](assets/edit-placement.png)
 
-1. Um die Reihenfolge der Empfehlungen zu ändern, die in der Einheit enthalten sind, verwenden Sie das Steuerelement **Verschieben** ![Auswahl verschieben](assets/icon-move.png) , um die Empfehlungen an die gewünschte Position zu ziehen.
+1. Um die Reihenfolge der Empfehlungen zu ändern, die in der Einheit enthalten sind, ziehen Sie die Empfehlungen mit dem Steuerelement **Verschieben** ![Auswahl verschieben](assets/icon-move.png) in die gewünschte Position.
 
    ![Position bearbeiten](assets/edit-position.png)
 
 ### Produkte filtern {#filters}
 
-Alle Änderungen an Produkt [filtern](filters.md) werden in der Vorschau für empfohlene Produkte _3} angezeigt._ Es dürfen nur Produkte empfohlen werden, die mit Einschlussfiltern übereinstimmen. Produkte, die mit Ausschlussfiltern übereinstimmen, werden nicht empfohlen.
+Alle Änderungen an [Filtern](filters.md) werden in der _Empfohlene Produktvorschau_ angezeigt. Es dürfen nur Produkte empfohlen werden, die mit Einschlussfiltern übereinstimmen. Produkte, die Ausschlussfiltern entsprechen, werden nicht empfohlen.
 
-Die Registerkarten _Einschlüsse_ und _Ausschlüsse_ enthalten die verfügbaren Filter für jeden Typ. In der Liste ist jeder aktive Filter mit einem blauen Punkt markiert.
+Die _Einschlüsse_ und _Ausschlüsse_ führen die verfügbaren Filter jedes Typs auf. In der Liste ist jeder aktive Filter mit einem blauen Punkt markiert.
 
-- Um Details zu den einzelnen Filtern anzuzeigen, klicken Sie auf den Namen des Filters.
-- Um den Filterstatus zu ändern, stellen Sie den Umschalter **Filter aktivieren** auf die Position `on` oder `off` ein.
+- Um die Details der einzelnen Filter anzuzeigen, klicken Sie auf den Filternamen.
+- Um den Filterstatus zu ändern, setzen Sie den Umschalter **Filter aktivieren** auf die `on` oder `off`.
 
 ![Filter bearbeiten](assets/edit-filters.png)
 
-Die Filtereinstellungen beschreiben die Produkte, die in die Empfehlungseinheit aufgenommen oder ausgeschlossen werden sollen. Beispielsweise weisen die Einstellungen für die Filtereinbindung für _Kategorie_ an, dass das System nur Produkte aus den ausgewählten Kategorien einbeziehen soll.
+Die Filtereinstellungen beschreiben die Produkte, die in der Empfehlungseinheit ein- oder ausgeschlossen werden sollen. Beispielsweise weisen die Einstellungen _Kategorie_ für die Filtereinbindung das System an, nur Produkte aus den ausgewählten Kategorien einzubeziehen.
 
 ![Kategoriefilter bearbeiten](assets/edit-filter-category.png)

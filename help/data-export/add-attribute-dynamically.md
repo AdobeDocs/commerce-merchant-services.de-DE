@@ -1,27 +1,28 @@
 ---
-title: Produktattribute dynamisch hinzufügen
-description: Erfahren Sie, wie Sie während der Datensynchronisierung dynamische benutzerdefinierte Produktattribute zum Datenexport-Feed hinzufügen.
+title: Dynamisches Hinzufügen von Produktattributen
+description: Erfahren Sie, wie Sie dem Datenexport-Feed während des Datensynchronisierungsprozesses dynamisch benutzerdefinierte Produktattribute hinzufügen.
 role: Admin, Developer
-source-git-commit: e75092e918d06d4d1291784b0498d274ea8396e8
+exl-id: fd0e142e-eb39-4c4b-90da-6c9279b7706c
+source-git-commit: 839d7ca7871acfbbfe1d1654c74e3002e1d170f7
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 0%
 
 ---
 
-# Produktattribute dynamisch während der Datensynchronisation hinzufügen
+# Dynamisches Hinzufügen von Produktattributen während der Datensynchronisation
 
 Sie können Produktattribute erweitern, ohne sie in Adobe Commerce zu registrieren, indem Sie ein Plug-in erstellen, um die Attribute während des Datensynchronisierungsprozesses hinzuzufügen.
 
 >[!NOTE]
 >
->Die beste Möglichkeit, Produktattribute zu erweitern, besteht darin, sie [zu Adobe Commerce](extensibility-and-customizations.md#add-product-attributes-to-adobe-commerce) hinzuzufügen, wo Sie sie über den Commerce-Administrator konfigurieren und verwalten können. Fügen Sie sie nur dynamisch hinzu, wenn Sie sie ausschließlich für Commerce Storefront-Dienste benötigen und sie nicht in Adobe Commerce registrieren möchten. Sie können auch benutzerdefinierte Attribute mithilfe von [API-Mesh mit dem Catalog Service](../catalog-service/mesh.md) verwalten, um das GraphQL-Schema für den Catalog Service zu erweitern.
+>Die beste Möglichkeit, Produktattribute zu erweitern, besteht darin[ sie zu Adobe Commerce hinzuzufügen](extensibility-and-customizations.md#add-product-attributes-to-adobe-commerce) wo Sie sie über den Commerce-Administrator konfigurieren und verwalten können. Fügen Sie sie nur dann dynamisch hinzu, wenn Sie sie ausschließlich für Commerce-Storefront-Services benötigen und nicht in Adobe Commerce registrieren möchten. Sie haben außerdem die Möglichkeit, benutzerdefinierte Attribute mithilfe von [API Mesh mit dem Katalog-Service](../catalog-service/mesh.md) zu verwalten, um das GraphQL-Schema des Katalog-Service zu erweitern.
 
 ## Produktattribute hinzufügen
 
-Erstellen Sie ein Plug-in, das der `Magento\CatalogDataExporter\Model\Provider\Product\Attributes` -Klasse eine `customer_attribute` hinzufügt.
+Erstellen Sie ein Plug-in, das der `Magento\CatalogDataExporter\Model\Provider\Product\Attributes`-Klasse einen `customer_attribute` hinzufügt.
 
-1. Aktualisieren Sie die Konfigurationsdatei für die [Abhängigkeitseinspritzung](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/) (`di.xml`), um das Plug-in zu definieren.
+1. Aktualisieren Sie die [Konfigurationsdatei für die Abhängigkeitseinspeisung](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/) (`di.xml`), um das Plug-in zu definieren.
 
    ```xml
    <type name="Magento\CatalogDataExporter\Model\Provider\Product\Attributes">
@@ -73,7 +74,7 @@ Erstellen Sie ein Plug-in, das der `Magento\CatalogDataExporter\Model\Provider\P
     }
    ```
 
-   Nachdem Sie das Plug-in hinzugefügt haben, werden die Änderungen bei der nächsten geplanten Synchronisierung mit verbundenen Storefront-Diensten synchronisiert. Um die Aktualisierungen sofort zu senden, verwenden Sie den folgenden CLI-Befehl, um den Synchronisierungsprozess manuell zu starten.
+   Nachdem Sie das Plug-in hinzugefügt haben, werden die Änderungen bei der nächsten geplanten Synchronisierung mit verbundenen Storefront-Services synchronisiert. Um die Aktualisierungen sofort zu senden, verwenden Sie den folgenden CLI-Befehl, um den Synchronisierungsprozess manuell zu starten.
 
    ```
    bin/magento saas:resync --feed=products
@@ -81,9 +82,9 @@ Erstellen Sie ein Plug-in, das der `Magento\CatalogDataExporter\Model\Provider\P
 
 ## Deklarieren benutzerdefinierter Produktattribut-Metadaten
 
-Wenn Sie ein benutzerdefiniertes Produktattribut dynamisch erstellen und es für die Anzeige, Suche oder Filterung in Storefront-Diensten verwenden möchten, fügen Sie die Produktattribut-Metadaten hinzu, um das Storefront-Verhalten zu konfigurieren.
+Wenn Sie ein benutzerdefiniertes Produktattribut dynamisch erstellen und es für die Anzeige, Suche oder Filterung in Storefront-Services verwenden möchten, fügen Sie die Metadaten des Produktattributs hinzu, um das Verhalten der Storefront zu konfigurieren.
 
-1. Aktualisieren Sie die Konfigurationsdatei für die [Abhängigkeitsinjektion](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/) (`di.xml`), um das Plug-in für die Produktattribut-Metadaten zu definieren.
+1. Aktualisieren Sie die [Konfigurationsdatei für Abhängigkeitseinfügungen](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/) (`di.xml`), um das Plug-in für die Metadaten des Produktattributs zu definieren.
 
    ```xml
    <type name="\Magento\CatalogDataExporter\Model\Provider\ProductMetadata">
@@ -91,9 +92,9 @@ Wenn Sie ein benutzerdefiniertes Produktattribut dynamisch erstellen und es für
    </type>
    ```
 
-1. Erstellen Sie das Plug-in für den folgenden Provider `\Magento\CatalogDataExporter\Model\Provider\ProductMetadata`.
+1. Erstellen Sie das Plug-in im folgenden Provider-`\Magento\CatalogDataExporter\Model\Provider\ProductMetadata`.
 
-   Überprüfen Sie `ProductAttributeMetadata` in `vendor/magento/module-catalog-data-exporter/etc/et_schema.xml` auf erforderliche Felder.
+   Überprüfen Sie `ProductAttributeMetadata` in `vendor/magento/module-catalog-data-exporter/etc/et_schema.xml` auf Pflichtfelder.
 
    ```php
     <?php
@@ -158,12 +159,8 @@ Wenn Sie ein benutzerdefiniertes Produktattribut dynamisch erstellen und es für
       }
    ```
 
-   Nachdem Sie das Plug-in hinzugefügt haben, werden die Änderungen bei der nächsten geplanten Synchronisierung mit verbundenen Storefront-Diensten synchronisiert. Um die Aktualisierungen sofort zu senden, verwenden Sie den folgenden CLI-Befehl, um den Synchronisierungsprozess manuell zu starten.
+   Nachdem Sie das Plug-in hinzugefügt haben, werden die Änderungen bei der nächsten geplanten Synchronisierung mit verbundenen Storefront-Services synchronisiert. Um die Aktualisierungen sofort zu senden, verwenden Sie den folgenden CLI-Befehl, um den Synchronisierungsprozess manuell zu starten.
 
    ```
    bin/magento saas:resync --feed=productattributes
    ```
-
-
-
-

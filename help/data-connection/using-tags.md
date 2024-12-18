@@ -1,5 +1,5 @@
 ---
-title: Erfassen von Commerce-Daten mithilfe von Adobe Experience Platform-Tags
+title: Erfassen von Commerce-Daten mithilfe von Adobe Experience Platform Tags
 description: Erfahren Sie, wie Sie Commerce-Daten mithilfe von Adobe Experience Platform-Tags erfassen.
 exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
 role: Admin, Developer
@@ -11,118 +11,118 @@ ht-degree: 0%
 
 ---
 
-# Erfassen von Commerce-Daten mithilfe von Adobe Experience Platform-Tags
+# Erfassen von Commerce-Daten mithilfe von Adobe Experience Platform Tags
 
-Sie können zwar die Erweiterung [!DNL Data Connection] verwenden, um Storefront-Ereignisse zu veröffentlichen und zu abonnieren, aber einige Händler verwenden möglicherweise bereits eine Datenerfassungslösung, z. B. die [Adobe Experience Platform-Tags](https://experienceleague.adobe.com/docs/platform-learn/data-collection/tags/create-a-property.html). Für diese Händler stellt Adobe Commerce eine reine Veröffentlichungsoption in der Erweiterung [!DNL Data Connection] bereit, die das Adobe Commerce Event SDK verwendet.
+Sie können die [!DNL Data Connection]-Erweiterung zwar verwenden, um Storefront-Ereignisse zu veröffentlichen und zu abonnieren, einige Händler verwenden jedoch möglicherweise bereits eine Datenerfassungslösung, z. B. die [Adobe Experience Platform-Tags](https://experienceleague.adobe.com/docs/platform-learn/data-collection/tags/create-a-property.html). Für diese Händler bietet Adobe Commerce in der [!DNL Data Connection]-Erweiterung eine Veröffentlichungsoption, die die Adobe Commerce Event SDK verwendet.
 
-![[!DNL Data Connection] Erweiterungsdatenfluss](assets/tags-data-flow.png)
-_[!DNL Data Connection]Erweiterungsdatenfluss mit Tags_
+Datenfluss ![[!DNL Data Connection] Erweiterung](assets/tags-data-flow.png)
+Datenfluss der _[!DNL Data Connection]mit Tags_
 
-In diesem Thema erfahren Sie, wie Sie die von der Erweiterung [!DNL Data Connection] bereitgestellten Storefront-Ereigniswerte der bereits verwendeten Adobe Experience Platform-Tags-Lösung zuordnen.
+In diesem Abschnitt erfahren Sie, wie Sie die von der [!DNL Data Connection] bereitgestellten Storefront-Ereigniswerte der bereits verwendeten Adobe Experience Platform Tags-Lösung zuordnen.
 
 ## Erfassen von Ereignisdaten aus Adobe Commerce
 
 So erfassen Sie Commerce-Ereignisdaten:
 
-- Installieren Sie das [Adobe Commerce Events SDK](https://github.com/adobe/commerce-events/tree/main/packages/storefront-events-sdk). Informationen zu PHP-Storefronts finden Sie im Thema [install](install.md) . Informationen zu PWA Studio-Storefronts finden Sie im [PWA Studio-Handbuch](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/).
+- Installieren Sie [Adobe Commerce Events SDK](https://github.com/adobe/commerce-events/tree/main/packages/storefront-events-sdk). Informationen zu PHP-Storefronts finden Sie unter [install](install.md)-Thema. Informationen zu PWA Studio-Storefronts finden Sie im [PWA Studio-Handbuch](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/).
 
   >[!NOTE]
   >
-  > Konfigurieren Sie **nicht** [die Organisations-ID und die Datastraam-ID](connect-data.md).
+  > **** nicht[konfigurieren](connect-data.md) die Organisations-ID und die Datenstrom-ID.
 
-## Commerce Storefront-Daten Adobe Experience Platform zuordnen
+## Zuordnen von Commerce-Storefront-Daten zu Adobe Experience Platform
 
-Um Commerce Storefront-Daten Adobe Experience Platform zuzuordnen, konfigurieren und installieren Sie Folgendes in Adobe Experience Platform-Tags:
+Um Daten einer Commerce-Storefront Adobe Experience Platform zuzuordnen, konfigurieren und installieren Sie Folgendes in Adobe Experience Platform Tags:
 
-1. [Richten Sie eine Tag-Eigenschaft ](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html) in der Adobe Experience Platform-Datenerfassung ein.
+1. [Richten Sie eine Tag-Eigenschaft ](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html) der Datenerfassung in Adobe Experience Platform ein.
 
-1. Wählen Sie unter **Authoring** die Option **Erweiterungen** aus und installieren und konfigurieren Sie die folgenden Erweiterungen:
+1. Wählen **unter** die Option **Erweiterungen** aus und installieren und konfigurieren Sie die folgenden Erweiterungen:
 
    - [Adobe Client-Datenschicht](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/client-data-layer/overview.html)
 
    - [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html)
 
-1. [Publish-Tag](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html) in Ihrer Entwicklungsumgebung verwenden.
+1. [Publish-Tag](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html) in Ihrer Entwicklungsumgebung hinzufügen.
 
-1. Gehen Sie wie folgt vor: **Ereigniszuordnung** , um Datenelemente und Regeln für bestimmte Ereignisse zu konfigurieren.
+1. Gehen Sie wie **folgt vor** um Datenelemente und Regeln für bestimmte Ereignisse zu konfigurieren.
 
-### Ereigniszuordnung
+### Ereignis-Mapping
 
-Da sich die Datenerfassung mit Tags von der Verwendung des Adobe Commerce Event SDK unterscheidet, müssen die in beiden Frameworks verwendeten äquivalenten Begriffe verstanden werden.
+Da sich die Datenerfassung mithilfe von Tags von der Verwendung der Adobe Commerce Event SDK unterscheidet, ist es wichtig, die in beiden Frameworks verwendeten entsprechenden Begriffe zu verstehen.
 
-| Adobe Experience Platform-Tags-Begriff | Adobe Commerce Event SDK - Begriff |
+| Adobe Experience Platform Tags-Begriff | Adobe Commerce Event SDK Begriff |
 |---|---|
-| _Datenelemente_ | context |
-| _rules_ | event |
-|  | _Regelbedingungen_ - Ereignis-Listener (von ACDL)<br><br>_Regelaktionen_ - Ereignishandler (an Adobe Experience Platform senden) |
+| _Datenelemente_ | Kontext |
+| _Regeln_ | Ereignis |
+|  | _Regelbedingungen_ - Ereignis-Listener (von ACDL)<br><br>_Regelaktionen_ - Ereignis-Handler (an Adobe Experience Platform senden) |
 
-Wenn Sie die Datenelemente und Regeln in Adobe Experience Platform-Tags mit Adobe Commerce-spezifischen Ereignisdaten aktualisieren, werden Sie einige gängige Schritte ausführen.
+Wenn Sie die Datenelemente und Regeln in Adobe Experience Platform Tags mit Adobe Commerce-spezifischen Ereignisdaten aktualisieren, werden Sie einige allgemeine Schritte ausführen.
 
-Fügen wir beispielsweise das Adobe Commerce `signOut` -Ereignis zu Adobe Experience Platform-Tags hinzu. In den unten beschriebenen Schritten wird beschrieben, wie Sie - mit Ausnahme der von Ihnen festgelegten spezifischen Werte - [Datenelemente](https://experienceleague.adobe.com/docs/experience-platform/collection/e2e.html#data-element) und [Regeln](https://experienceleague.adobe.com/docs/experience-platform/collection/e2e.html#create-a-rule) hinzufügen, die für alle Adobe Commerce-Ereignisse gelten, die Sie zu Tags hinzufügen.
+Fügen wir beispielsweise das Adobe Commerce-`signOut`-Ereignis zu Adobe Experience Platform-Tags hinzu. Die folgenden Schritte beschreiben mit Ausnahme der von Ihnen festgelegten spezifischen Werte, wie [Datenelemente](https://experienceleague.adobe.com/docs/experience-platform/collection/e2e.html#data-element) und [Regeln](https://experienceleague.adobe.com/docs/experience-platform/collection/e2e.html#create-a-rule) hinzugefügt werden. Diese gelten für alle Adobe Commerce-Ereignisse, die Sie Tags hinzufügen.
 
 1. Erstellen Sie ein Datenelement:
 
    ![Neues Datenelement erstellen](assets/create-new-data-elements.png)
    _Neues Datenelement erstellen_
 
-1. Setzen Sie **Name** auf `sign out`.
+1. Legen Sie **Name** auf `sign out` fest.
 
-1. Setzen Sie **Extension** auf `Adobe Experience Platform Web SDK`.
+1. Legen **Erweiterung** auf `Adobe Experience Platform Web SDK` fest.
 
-1. Setzen Sie **Datenelementtyp** auf `XDM object`.
+1. Setzen **Datenelementtyp** auf `XDM object`.
 
-1. Wählen Sie die **Sandbox** und das **Schema** aus, die Sie aktualisieren möchten.
+1. Wählen Sie die **Sandbox** und **Schema** aus, die Sie aktualisieren möchten.
 
-1. Legen Sie unter **userAccount** > **logout** den **value** in **Visitor Logout** auf `1` fest.
+1. Legen **unter** > **abmelden** den **Wert** in **Besucher-Abmeldung** auf `1` fest.
 
-   ![Wert für Abmeldevorgang aktualisieren](assets/signout-value.png)
-   _Wert für Abmeldevorgang aktualisieren_
+   ![Abmeldewert aktualisieren](assets/signout-value.png)
+   _Abmeldewert aktualisieren_
 
 1. Wählen Sie **Speichern** aus.
 
-1. Erstellen einer Regel:
+1. Erstellen Sie eine Regel:
 
    ![Neue Regel erstellen](assets/create-new-rule.png)
    _Neue Regel erstellen_
 
-1. Wählen Sie **Hinzufügen** unter **EREIGNISSE** aus.
+1. Wählen **Hinzufügen** unter **EREIGNISSE** aus.
 
-1. Setzen Sie **Extension** auf `Adobe Client Data Layer`.
+1. Legen **Erweiterung** auf `Adobe Client Data Layer` fest.
 
-1. Setzen Sie **Ereignistyp** auf `Data Pushed`.
+1. Legen Sie **Ereignistyp** auf `Data Pushed` fest.
 
-1. Wählen Sie **Bestimmtes Ereignis** aus und setzen Sie den **Ereignis/Schlüssel für** auf `sign-out`.
+1. Wählen Sie **Spezifisches Ereignis** aus und setzen Sie den **Ereignis/Schlüssel für die Registrierung** auf `sign-out`.
 
-1. Wählen Sie **Änderungen beibehalten** aus, um die neue Regel zu speichern.
+1. Wählen **Änderungen beibehalten**, um die neue Regel zu speichern.
 
-1. Hinzufügen einer Aktion.
+1. Fügen Sie eine Aktion hinzu.
 
-1. Setzen Sie **Extension** auf `Adobe Experience Platform Web SDK`.
+1. Legen **Erweiterung** auf `Adobe Experience Platform Web SDK` fest.
 
-1. Setzen Sie **Aktionstyp** auf `Send Event`.
+1. Legen Sie **Aktionstyp** auf `Send Event` fest.
 
-1. Setzen Sie **Instanz** auf `Alloy`.
+1. Legen Sie **instance** auf `Alloy` fest.
 
-1. Setzen Sie **Typ** auf `userAccount.logout`.
+1. Legen Sie **type** auf `userAccount.logout` fest.
 
-1. Setzen Sie **XDM data** auf `%sign out%`.
+1. Legen Sie **XDM-Daten** auf `%sign out%` fest.
 
-1. Klicken Sie auf **Speichern**.
+1. Klicken Sie **Speichern**.
 
-   Sie haben ein Datenelement in Ihrem Schema für das `signOut` -Ereignis aus Adobe Commerce erstellt. Außerdem haben Sie eine Regel mit einer bestimmten Aktion erstellt, die auftreten sollte, wenn dieses Ereignis aus der Adobe Commerce-Storefront ausgelöst wird.
+   Sie haben ein Datenelement in Ihrem Schema für das `signOut` von Adobe Commerce erstellt. Außerdem haben Sie eine Regel mit einer bestimmten Aktion erstellt, die auftreten soll, wenn dieses Ereignis in der Adobe Commerce-Storefront ausgelöst wird.
 
-Wiederholen Sie die oben genannten Schritte in den Tags für jedes der unten beschriebenen Adobe Commerce-Ereignisse.
+Wiederholen Sie die obigen Schritte in Tags für jedes der unten beschriebenen Adobe Commerce-Ereignisse.
 
 ## Verfügbare Ereignisse
 
-Ordnen Sie für jedes der folgenden Ereignisse die Adobe Commerce-Ereignisse Ihrem XDM zu, indem Sie die oben genannten Schritte ausführen.
+Ordnen Sie die Adobe Commerce-Ereignisse jedem der folgenden Ereignisse Ihrem XDM zu, indem Sie die oben genannten Schritte ausführen.
 
 - [`signOut`](#signout)
 - [`signIn`](#signin)
 - [`createAccount`](#createaccount)
 - [`editAccount`](#editaccount)
 - [`pageView`](#pageview)
-- [&quot;productView&quot;](#productview)
+- [`productView`](#productview)
 - [`searchRequestSent`](#searchrequestsent)
 - [`searchResponseReceived`](#searchresponsereceived)
 - [`addToCart`](#addtocart)
@@ -132,7 +132,7 @@ Ordnen Sie für jedes der folgenden Ereignisse die Adobe Commerce-Ereignisse Ihr
 - [`initiativeCheckout`](#initiatecheckout)
 - [`placeOrder`](#placeorder)
 
-### signOut
+### Abmelden
 
 Wird ausgelöst, wenn ein Käufer versucht, sich abzumelden.
 
@@ -146,23 +146,23 @@ Erstellen Sie das folgende Datenelement:
    - **Erweiterung**: `Adobe Experience Platform Web SDK`
    - **Datenelementtyp**: `XDM object`
    - **Feldergruppe**: `userAccount` > `logout`
-   - **Besucher-Logout**: **Wert** = `1`
+   - **Besucher-Abmeldung**: **Wert** = `1`
 
 #### Regeln 
 
 - **Name**: `Sign out`
 - **Erweiterung**: `Adobe Client Data Layer`
 - **Ereignistyp**: `Data Pushed`
-- **Bestimmtes Ereignis**: `sign-out`
+- **Spezifisches Ereignis**: `sign-out`
 
 ##### Aktionen
 
 - **Erweiterung**: `Adobe Experience Platform Web SDK`
 - **Aktionstyp**: `Send event`
 - **Typ**: `userAccount.logout`
-- **XDM data**: `%sign-out%`
+- **XDM-Daten**: `%sign-out%`
 
-### signIn
+### Anmelden
 
 Wird ausgelöst, wenn ein Käufer versucht, sich anzumelden.
 
@@ -199,9 +199,9 @@ Erstellen Sie die folgenden Datenelemente:
    - **Feldergruppe**: `person` > `accountID`
    - **Konto-ID**: **Wert** = `%account id%`
    - **Feldergruppe**: `person` > `accountType`
-   - **Kontotyp**: **Wert** = `%account type%`
+   - **Kontotyp**: **value** = `%account type%`
    - **Feldergruppe**: `person` > `personalEmailID`
-   - **Persönliche E-Mail-Adresse**: **Wert** = `%account email%`
+   - **Persönliche E-Mail**: **Wert** = `%account email%`
    - **Feldergruppe**: `personalEmail` > `address`
    - **Adresse**: **Wert** = `%account email%`
    - **Feldergruppe**: `userAccount` > `login`
@@ -212,14 +212,14 @@ Erstellen Sie die folgenden Datenelemente:
 - **Name**: `sign in`
 - **Erweiterung**: `Adobe Client Data Layer`
 - **Ereignistyp**: `Data Pushed`
-- **Bestimmtes Ereignis**: `sign-in`
+- **Spezifisches Ereignis**: `sign-in`
 
 ##### Aktionen
 
 - **Erweiterung**: `Adobe Experience Platform Web SDK`
 - **Aktionstyp**: `Send event`
 - **Typ**: `userAccount.login`
-- **XDM data**: `%sign in%`
+- **XDM-Daten**: `%sign in%`
 
 ### createAccount
 
@@ -258,9 +258,9 @@ Erstellen Sie die folgenden Datenelemente:
    - **Feldergruppe**: `person` > `accountID`
    - **Konto-ID**: **Wert** = `%account id%`
    - **Feldergruppe**: `person` > `accountType`
-   - **Kontotyp**: **Wert** = `%account type%`
+   - **Kontotyp**: **value** = `%account type%`
    - **Feldergruppe**: `person` > `personalEmailID`
-   - **Persönliche E-Mail-Adresse**: **Wert** = `%account email%`
+   - **Persönliche E-Mail**: **Wert** = `%account email%`
    - **Feldergruppe**: `personalEmail` > `address`
    - **Adresse**: **Wert** = `%account email%`
    - **Feldergruppe**: `userAccount` > `createProfile`
@@ -271,16 +271,16 @@ Erstellen Sie die folgenden Datenelemente:
 - **Name**: `Create account`
 - **Erweiterung**: `Adobe Client Data Layer`
 - **Ereignistyp**: `Data Pushed`
-- **Bestimmtes Ereignis**: `create-account`
+- **Spezifisches Ereignis**: `create-account`
 
 ##### Aktionen
 
 - **Erweiterung**: `Adobe Experience Platform Web SDK`
 - **Aktionstyp**: `Send event`
 - **Typ**: `userAccount.createProfile`
-- **XDM data**: `%create account%`
+- **XDM-Daten**: `%create account%`
 
-### editAccount
+### Konto bearbeiten
 
 Wird ausgelöst, wenn ein Käufer versucht, ein Konto zu bearbeiten.
 
@@ -317,9 +317,9 @@ Erstellen Sie die folgenden Datenelemente:
    - **Feldergruppe**: `person` > `accountID`
    - **Konto-ID**: **Wert** = `%account id%`
    - **Feldergruppe**: `person` > `accountType`
-   - **Kontotyp**: **Wert** = `%account type%`
+   - **Kontotyp**: **value** = `%account type%`
    - **Feldergruppe**: `person` > `personalEmailID`
-   - **Persönliche E-Mail-Adresse**: **Wert** = `%account email%`
+   - **Persönliche E-Mail**: **Wert** = `%account email%`
    - **Feldergruppe**: `personalEmail` > `address`
    - **Adresse**: **Wert** = `%account email%`
    - **Feldergruppe**: `userAccount` > `updateProfile`
@@ -330,18 +330,18 @@ Erstellen Sie die folgenden Datenelemente:
 - **Name**: `Edit account`
 - **Erweiterung**: `Adobe Client Data Layer`
 - **Ereignistyp**: `Data Pushed`
-- **Bestimmtes Ereignis**: `edit-account`
+- **Spezifisches Ereignis**: `edit-account`
 
 ##### Aktionen
 
 - **Erweiterung**: `Adobe Experience Platform Web SDK`
 - **Aktionstyp**: `Send event`
 - **Typ**: `userAccount.updateProfile`
-- **XDM data**: `%edit account%`
+- **XDM-Daten**: `%edit account%`
 
 ### pageView
 
-Wird ausgelöst, wenn eine Seite geladen wird.
+Wird ausgelöst, wenn eine beliebige Seite geladen wird.
 
 #### Datenelemente
 
@@ -359,14 +359,14 @@ Erstellen Sie die folgenden Datenelemente:
 - **Name**: `page view`
 - **Erweiterung**: `Adobe Client Data Layer`
 - **Ereignistyp**: `Data Pushed`
-- **Bestimmtes Ereignis**: `page-view`
+- **Spezifisches Ereignis**: `page-view`
 
 ##### Aktionen
 
 - **Erweiterung**: `Adobe Experience Platform Web SDK`
 - **Aktionstyp**: `Send event`
 - **Typ**: `web.webPageDetails.pageViews`
-- **XDM data**: `%page view%`
+- **XDM-Daten**: `%page view%`
 
 ### productView
 
@@ -397,7 +397,7 @@ Erstellen Sie die folgenden Datenelemente:
    - **Datenelementtyp**: `Data Layer Computed State`
    - **[Optional] path**: `productContext.mainImageUrl`
 
-1. Produktwährung:
+1. Währung des Produkts:
 
    - **Name**: `product currency`
    - **Erweiterung**: `Adobe Client Data Layer`
@@ -422,7 +422,7 @@ Erstellen Sie die folgenden Datenelemente:
    - **Datenelementtyp**: `Data Layer Computed State`
    - **[Optional] path**: `productContext.pricing.specialPrice`
 
-1. Regelpreis:
+1. Regulärer Preis:
 
    - **Name**: `regular price`
    - **Erweiterung**: `Adobe Client Data Layer`
@@ -445,17 +445,17 @@ Erstellen Sie die folgenden Datenelemente:
    - **Name**: `product view`
    - **Erweiterung**: `Adobe Experience Platform Web SDK`
    - **Datenelementtyp**: `XDM object`
-   - **Feldergruppe**: `productListItems`. Wählen Sie **Einzelne Elemente angeben** und klicken Sie auf die Schaltfläche **Element hinzufügen** . Da diese Ansicht für eine Produktdetailseiten gilt, können Sie mit einem einzelnen Element füllen.
+   - **Feldergruppe**: `productListItems`. Wählen **Einzelne Elemente angeben** und klicken Sie auf die Schaltfläche **Element hinzufügen**. Da es sich bei dieser Ansicht um eine PDP handelt, können Sie sie mit einem einzelnen Element füllen.
    - **Feldergruppe**: `productListItems` > `name`
-   - **Name**: **Wert** = `%product name%`
+   - **name**: **value** = `%product name%`
    - **Feldergruppe**: `productListItems` > `SKU`
-   - **SKU**: **Wert** = `%product sku%`
+   - **SKU**: **value** = `%product sku%`
    - **Feldergruppe**: `productListItems` > `priceTotal`
-   - **Preissumme**: **Wert** = `%product price%`
+   - **Gesamtpreis**: **Wert** = `%product price%`
    - **Feldergruppe**: `productListItems` > `currencyCode`
    - **Währungscode**: **Wert** = `%currency code%`
    - **Feldergruppe**: `productListItems` > `ProductImageUrl`
-   - **ProductImageUrl**: **Value** = `%product image%`
+   - **ProductImageUrl**: **value** = `%product image%`
    - **Feldergruppe**: `commerce` > `productViews` > `value`
    - **value**: **value** = `1`
 
@@ -464,31 +464,31 @@ Erstellen Sie die folgenden Datenelemente:
 - **Name**: `product view`
 - **Erweiterung**: `Adobe Client Data Layer`
 - **Ereignistyp**: `Data Pushed`
-- **Bestimmtes Ereignis**: `product-page-view`
+- **Spezifisches Ereignis**: `product-page-view`
 
 ##### Aktionen
 
 - **Erweiterung**: `Adobe Experience Platform Web SDK`
 - **Aktionstyp**: `Send event`
 - **Typ**: `commerce.productViews`
-- **XDM data**: `%product view%`
+- **XDM-Daten**: `%product view%`
 
 ### searchRequestSent
 
-Wird durch Ereignisse im Popup &quot;Suche beim Eingeben&quot;und durch Ereignisse auf den Suchergebnisseiten ausgelöst.
+Ausgelöst durch Ereignisse im Pop-up „Suche während der Eingabe“ und durch Ereignisse auf Suchergebnisseiten.
 
 #### Datenelemente
 
 Erstellen Sie die folgenden Datenelemente:
 
-1. Sucheingabe
+1. Eingabe suchen
 
    - **Name**: `search input`
    - **Erweiterung**: `Adobe Client Data Layer`
    - **Datenelementtyp**: `Data Layer Computed State`
    - **[Optional] path**: `searchInputContext.units[0]`
 
-1. Sucheingabesatz
+1. Eingabephrase suchen
 
    - **Name**: `search input phrase`
    - **Erweiterung**: `Core`
@@ -499,7 +499,7 @@ Erstellen Sie die folgenden Datenelemente:
    return _satellite.getVar('search input').phrase;
    ```
 
-1. Suche nach Eingabe
+1. Eingabesortierung suchen
 
    - **Name**: `search input sort`
    - **Erweiterung**: `Core`
@@ -518,7 +518,7 @@ Erstellen Sie die folgenden Datenelemente:
    return sort;
    ```
 
-1. Sucheingabefelder
+1. Eingabefilter suchen
 
    - **Name**: `search input filters`
    - **Erweiterung**: `Core`
@@ -559,8 +559,8 @@ Erstellen Sie die folgenden Datenelemente:
    - **Datenelementtyp**: `XDM object`
    - **Feldergruppe**: `siteSearch` > `phrase`
    - **value**: Noch nicht verfügbar
-   - **Feldergruppe**: `siteSearch` > `sort`. Wählen Sie &quot;**Gesamtes Objekt bereitstellen**&quot;.
-   - **Feldergruppe**: `siteSearch` > `filter`. Wählen Sie &quot;**Gesamtes Objekt bereitstellen**&quot;.
+   - **Feldergruppe**: `siteSearch` > `sort`. Wählen Sie **Gesamtes Objekt bereitstellen** aus.
+   - **Feldergruppe**: `siteSearch` > `filter`. Wählen Sie **Gesamtes Objekt bereitstellen** aus.
    - **Feldergruppe**: `searchRequest` > `id`
    - **Eindeutige Kennung**: **Wert** = `%search request ID%`
    - **Feldergruppe**: `searchRequest` > `value`
@@ -571,18 +571,18 @@ Erstellen Sie die folgenden Datenelemente:
 - **Name**: `search request sent`
 - **Erweiterung**: `Adobe Client Data Layer`
 - **Ereignistyp**: `Data Pushed`
-- **Bestimmtes Ereignis**: `search-request-sent`
+- **Spezifisches Ereignis**: `search-request-sent`
 
 ##### Aktionen
 
 - **Erweiterung**: `Adobe Experience Platform Web SDK`
 - **Aktionstyp**: `Send event`
 - **Typ**: `searchRequest`
-- **XDM data**: `%search request%`
+- **XDM-Daten**: `%search request%`
 
 ### searchResponseReceived
 
-Wird ausgelöst, wenn die Live-Suche Ergebnisse für die Popup- oder Suchergebnisseite &quot;Suche beim Eingeben&quot;zurückgibt.
+Wird ausgelöst, wenn die Live-Suche Ergebnisse für das Pop-up „Suche während der Eingabe“ oder die Suchergebnisseite zurückgibt.
 
 #### Datenelemente
 
@@ -595,7 +595,7 @@ Erstellen Sie die folgenden Datenelemente:
    - **Datenelementtyp**: `Data Layer Computed State`
    - **[Optional] path**: `searchResultsContext.units[0]`
 
-1. Suchergebnisnummer der Produkte:
+1. Anzahl der Produkte im Suchergebnis:
 
    - **Name**: `search result number of products`
    - **Erweiterung**: `Core`
@@ -606,7 +606,7 @@ Erstellen Sie die folgenden Datenelemente:
    return _satellite.getVar('search result').products.length;
    ```
 
-1. Suchergebnisprodukte:
+1. Produkte für Suchergebnisse:
 
    - **Name**: `search result products`
    - **Erweiterung**: `Core`
@@ -624,7 +624,7 @@ Erstellen Sie die folgenden Datenelemente:
    return products;
    ```
 
-1. Suchergebnisvorschläge:
+1. Vorschläge für Suchergebnisse:
 
    - **Name**: `search result products`
    - **Erweiterung**: `Core`
@@ -650,13 +650,13 @@ Erstellen Sie die folgenden Datenelemente:
    - **Name**: `search response`
    - **Erweiterung**: `Adobe Experience Platform Web SDK`
    - **Datenelementtyp**: `XDM object`
-   - **Feldergruppe**: `siteSearch` > `suggestions`. Wählen Sie &quot;**Gesamtes Objekt bereitstellen**&quot;.
+   - **Feldergruppe**: `siteSearch` > `suggestions`. Wählen Sie **Gesamtes Objekt bereitstellen** aus.
    - **Datenelement**: `%search result suggestions%`
    - **Feldergruppe**: `siteSearch` > `numberOfResults`
    - **value**: `%search result number of products%`
-   - **Feldergruppe**: `productListItems`. Wählen Sie &quot;**Gesamtes Objekt bereitstellen**&quot;.
+   - **Feldergruppe**: `productListItems`. Wählen Sie **Gesamtes Objekt bereitstellen** aus.
    - **Feldergruppe**: `productListItems` > `ProductImageUrl`
-   - **ProductImageUrl**: **Value** = `%product image%`
+   - **ProductImageUrl**: **value** = `%product image%`
    - **Datenelement**: `%search result products%`
    - **Feldergruppe**: `searchResponse` > `id`
    - **Eindeutige Kennung**: **Wert** = `%search response ID%`
@@ -668,18 +668,18 @@ Erstellen Sie die folgenden Datenelemente:
 - **Name**: `search response received`
 - **Erweiterung**: `Adobe Client Data Layer`
 - **Ereignistyp**: `Data Pushed`
-- **Bestimmtes Ereignis**: `search-response-received`
+- **Spezifisches Ereignis**: `search-response-received`
 
 ##### Aktionen
 
 - **Erweiterung**: `Adobe Experience Platform Web SDK`
 - **Aktionstyp**: `Send event`
 - **Typ**: `searchResponse`
-- **XDM data**: `%search response%`
+- **XDM-Daten**: `%search response%`
 
 ### addToCart
 
-Wird ausgelöst, wenn ein Produkt einem Warenkorb hinzugefügt oder die Menge eines Produkts im Warenkorb erhöht wird.
+Wird ausgelöst, wenn ein Produkt zum Warenkorb hinzugefügt wird oder jedes Mal, wenn die Menge eines Produkts im Warenkorb erhöht wird.
 
 #### Datenelemente
 
@@ -720,14 +720,14 @@ Erstellen Sie die folgenden Datenelemente:
    - **Datenelementtyp**: `Data Layer Computed State`
    - **[Optional] path**: `productContext.mainImageUrl`
 
-1. Produktregulärer Preis:
+1. Regulärer Produktpreis:
 
    - **Name**: `product regular price`
    - **Erweiterung**: `Adobe Client Data Layer`
    - **Datenelementtyp**: `Data Layer Computed State`
    - **[Optional] path**: `productContext.pricing.regularPrice`
 
-1. Produkt  price:
+1. Produkt  Preis:
 
    - **Name**: `product price`
    - **Erweiterung**: `Core`
@@ -761,16 +761,16 @@ Erstellen Sie die folgenden Datenelemente:
    - **Name**: `add to cart`
    - **Erweiterung**: `Adobe Experience Platform Web SDK`
    - **Datenelementtyp**: `XDM object`
-   - **Feldergruppe**: `productListItems`. Wählen Sie **Einzelne Elemente angeben** und klicken Sie auf die Schaltfläche **Element hinzufügen** . Da diese Ansicht für eine Produktdetailseiten gilt, können Sie mit einem einzelnen Element füllen.
+   - **Feldergruppe**: `productListItems`. Wählen **Einzelne Elemente angeben** und klicken Sie auf die Schaltfläche **Element hinzufügen**. Da es sich bei dieser Ansicht um eine PDP handelt, können Sie sie mit einem einzelnen Element füllen.
    - **Feldergruppe**: `productListItems` > `name`
-   - **Name**: **Wert** = `%product name%`
+   - **name**: **value** = `%product name%`
    - **Feldergruppe**: `productListItems` > `SKU`
-   - **SKU**: **Wert** = `%product sku%`
+   - **SKU**: **value** = `%product sku%`
    - **Feldergruppe**: `productListItems` > `priceTotal`
-   - **Preissumme**: **Wert** = `%product price%`
+   - **Gesamtpreis**: **Wert** = `%product price%`
    - **Feldergruppe**: `productListItems` > `currencyCode`
    - **Feldergruppe**: `productListItems` > `ProductImageUrl`
-   - **ProductImageUrl**: **Value** = `%product image%`
+   - **ProductImageUrl**: **value** = `%product image%`
    - **Währungscode**: **Wert** = `%currency code%`
    - **Feldergruppe**: `commerce` > `cart` > `cartID`
    - **Warenkorb-ID**: **Wert** = `%cart id%`
@@ -782,24 +782,24 @@ Erstellen Sie die folgenden Datenelemente:
 - **Name**: `add to cart`
 - **Erweiterung**: `Adobe Client Data Layer`
 - **Ereignistyp**: `Data Pushed`
-- **Bestimmtes Ereignis**: `add-to-cart`
+- **Spezifisches Ereignis**: `add-to-cart`
 
 ##### Aktionen
 
 - **Erweiterung**: `Adobe Experience Platform Web SDK`
 - **Aktionstyp**: `Send event`
 - **Typ**: `commerce.productListAdds`
-- **XDM data**: `%add to cart%`
+- **XDM-Daten**: `%add to cart%`
 
 ### openCart
 
-Wird ausgelöst, wenn ein neuer Warenkorb erstellt wird, was passiert, wenn ein Produkt einem leeren Warenkorb hinzugefügt wird.
+Wird ausgelöst, wenn ein neuer Warenkorb erstellt wird, was passiert, wenn ein Produkt zu einem leeren Warenkorb hinzugefügt wird.
 
 #### Datenelemente
 
 Erstellen Sie das folgende Datenelement:
 
-1. Öffnen Sie den Warenkorb:
+1. Warenkorb öffnen:
 
    - **Name**: `open cart`
    - **Erweiterung**: `Adobe Experience Platform Web SDK`
@@ -808,23 +808,23 @@ Erstellen Sie das folgende Datenelement:
    - **value**: **value** = `1`
    - **Feldergruppe**: `commerce` > `cart` > `cartID`
    - **Warenkorb-ID**: **Wert** = `%cart id%`
-   - **Feldergruppe**: `productListItems`. Für `productListItems` können mehrere Elemente vorberechnet werden. Wählen Sie **productListItems** > **Gesamtes Array bereitstellen** aus.
+   - **Feldergruppe**: `productListItems`. `productListItems` können mehrere Elemente vorab berechnet werden. Wählen Sie **productListItems** > **Gesamtes Array bereitstellen** aus.
 
 #### Regeln 
 
 - **Name**: `open cart`
 - **Erweiterung**: `Adobe Client Data Layer`
 - **Ereignistyp**: `Data Pushed`
-- **Bestimmtes Ereignis**: `open-cart`
+- **Spezifisches Ereignis**: `open-cart`
 
 ##### Aktionen
 
 - **Erweiterung**: `Adobe Experience Platform Web SDK`
 - **Aktionstyp**: `Send event`
 - **Typ**: `commerce.productListOpens`
-- **XDM data**: `%open cart%`
+- **XDM-Daten**: `%open cart%`
 
-### viewCart
+### Warenkorb anzeigen
 
 Wird ausgelöst, wenn eine beliebige Warenkorbseite geladen wird.
 
@@ -864,7 +864,7 @@ Erstellen Sie die folgenden Datenelemente:
    return _satellite.getVar('cart').id
    ```
 
-1. Produktlistenelemente:
+1. Elemente der Produktliste:
 
    - **Name**: `product list items:`
    - **Erweiterung**: `Core`
@@ -904,10 +904,10 @@ Erstellen Sie die folgenden Datenelemente:
    - **Name**: `view cart`
    - **Erweiterung**: `Adobe Experience Platform Web SDK`
    - **Datenelementtyp**: `XDM object`
-   - **Feldergruppe**: `productListItems`. Für `productListItems` kann es mehrere vorberechnete Elemente geben. Wählen Sie **productListItems** > **Gesamtes Array ausfüllen** aus.
+   - **Feldergruppe**: `productListItems`. `productListItems` kann es mehrere Elemente geben, die vorberechnet werden. Wählen Sie **productListItems** > **Gesamtes Array füllen** aus.
    - **Datenelement**: `%product list items%`
    - **Feldergruppe**: `productListItems` > `ProductImageUrl`
-   - **ProductImageUrl**: **Value** = `%product image%`
+   - **ProductImageUrl**: **value** = `%product image%`
    - **Feldergruppe**: `commerce` > `cart` > `cartID`
    - **Warenkorb-ID**: **Wert** = `%cart id%`
    - **Feldergruppe**: `commerce` > `productListViews` > `value`
@@ -918,18 +918,18 @@ Erstellen Sie die folgenden Datenelemente:
 - **Name**: `view cart`
 - **Erweiterung**: `Adobe Client Data Layer`
 - **Ereignistyp**: `Data Pushed`
-- **Bestimmtes Ereignis**: `shopping-cart-view`
+- **Spezifisches Ereignis**: `shopping-cart-view`
 
 ##### Aktionen
 
 - **Erweiterung**: `Adobe Experience Platform Web SDK`
 - **Aktionstyp**: `Send event`
 - **Typ**: `commerce.productListViews`
-- **XDM data**: `%view cart%`
+- **XDM-Daten**: `%view cart%`
 
 ### removeFromCart
 
-Wird ausgelöst, wenn ein Produkt aus dem Warenkorb entfernt wird oder wenn die Menge eines Produkts im Warenkorb verringert wird.
+Wird ausgelöst, wenn ein Produkt aus einem Warenkorb entfernt wird oder jedes Mal, wenn die Menge eines Produkts im Warenkorb verringert wird.
 
 #### Datenelemente
 
@@ -963,14 +963,14 @@ Erstellen Sie die folgenden Datenelemente:
    - **Datenelementtyp**: `Data Layer Computed State`
    - **[Optional] path**: `productContext.pricing.specialPrice`
 
-1. Produktregulärer Preis:
+1. Regulärer Produktpreis:
 
    - **Name**: `product regular price`
    - **Erweiterung**: `Adobe Client Data Layer`
    - **Datenelementtyp**: `Data Layer Computed State`
    - **[Optional] path**: `productContext.pricing.regularPrice`
 
-1. Produkt  price:
+1. Produkt  Preis:
 
    - **Name**: `product price`
    - **Erweiterung**: `Core`
@@ -999,18 +999,18 @@ Erstellen Sie die folgenden Datenelemente:
    return _satellite.getVar('cart').id
    ```
 
-1. Aus Warenkorb entfernen:
+1. Aus dem Warenkorb entfernen:
 
    - **Name**: `remove from cart`
    - **Erweiterung**: `Adobe Experience Platform Web SDK`
    - **Datenelementtyp**: `XDM object`
-   - **Feldergruppe**: `productListItems`. Wählen Sie **Einzelne Elemente angeben** und klicken Sie auf die Schaltfläche **Element hinzufügen** . Da diese Ansicht für eine Produktdetailseiten gilt, können Sie mit einem einzelnen Element füllen.
+   - **Feldergruppe**: `productListItems`. Wählen **Einzelne Elemente angeben** und klicken Sie auf die Schaltfläche **Element hinzufügen**. Da es sich bei dieser Ansicht um eine PDP handelt, können Sie sie mit einem einzelnen Element füllen.
    - **Feldergruppe**: `productListItems` > `name`
-   - **Name**: **Wert** = `%product name%`
+   - **name**: **value** = `%product name%`
    - **Feldergruppe**: `productListItems` > `SKU`
-   - **SKU**: **Wert** = `%product sku%`
+   - **SKU**: **value** = `%product sku%`
    - **Feldergruppe**: `productListItems` > `priceTotal`
-   - **Preissumme**: **Wert** = `%product price%`
+   - **Gesamtpreis**: **Wert** = `%product price%`
    - **Feldergruppe**: `productListItems` > `currencyCode`
    - **Währungscode**: **Wert** = `%currency code%`
    - **Feldergruppe**: `commerce` > `cart` > `cartID`
@@ -1023,18 +1023,18 @@ Erstellen Sie die folgenden Datenelemente:
 - **Name**: `remove from cart`
 - **Erweiterung**: `Adobe Client Data Layer`
 - **Ereignistyp**: `Data Pushed`
-- **Bestimmtes Ereignis**: `remove-from-cart`
+- **Spezifisches Ereignis**: `remove-from-cart`
 
 ##### Aktionen
 
 - **Erweiterung**: `Adobe Experience Platform Web SDK`
 - **Aktionstyp**: `Send event`
 - **Typ**: `commerce.productListRemovals`
-- **XDM data**: `%remove from cart%`
+- **XDM-Daten**: `%remove from cart%`
 
-### initiativeCheckout
+### initiateCheckout
 
-Wird ausgelöst, wenn der Käufer auf eine Schaltfläche zum Auschecken klickt.
+Wird ausgelöst, wenn der Käufer auf eine Checkout-Schaltfläche klickt.
 
 #### Datenelemente
 
@@ -1072,7 +1072,7 @@ Erstellen Sie die folgenden Datenelemente:
    return _satellite.getVar('cart').id
    ```
 
-1. Produktlistenelemente:
+1. Elemente der Produktliste:
 
    - **Name**: `product list items`
    - **Erweiterung**: `Core`
@@ -1112,10 +1112,10 @@ Erstellen Sie die folgenden Datenelemente:
    - **Name**: `initiate checkout`
    - **Erweiterung**: `Adobe Experience Platform Web SDK`
    - **Datenelementtyp**: `XDM object`
-   - **Feldergruppe**: `productListItems`. Für `productListItems` kann es mehrere vorberechnete Elemente geben. Wählen Sie **productListItems** > **Gesamtes Array ausfüllen** aus.
+   - **Feldergruppe**: `productListItems`. `productListItems` kann es mehrere Elemente geben, die vorberechnet werden. Wählen Sie **productListItems** > **Gesamtes Array füllen** aus.
    - **Datenelement**: `%product list items%`
    - **Feldergruppe**: `productListItems` > `ProductImageUrl`
-   - **ProductImageUrl**: **Value** = `%product image%`
+   - **ProductImageUrl**: **value** = `%product image%`
    - **Feldergruppe**: `commerce` > `cart` > `cartID`
    - **Warenkorb-ID**: **Wert** = `%cart id%`
    - **Feldergruppe**: `commerce` > `checkouts` > `value`
@@ -1126,14 +1126,14 @@ Erstellen Sie die folgenden Datenelemente:
 - **Name**: `initiate checkout`
 - **Erweiterung**: `Adobe Client Data Layer`
 - **Ereignistyp**: `Data Pushed`
-- **Bestimmtes Ereignis**: `initiate-checkout`
+- **Spezifisches Ereignis**: `initiate-checkout`
 
 ##### Aktionen
 
 - **Erweiterung**: `Adobe Experience Platform Web SDK`
 - **Aktionstyp**: `Send event`
 - **Typ**: `commerce.checkouts`
-- **XDM data**: `%initiate checkout%`
+- **XDM-Daten**: `%initiate checkout%`
 
 ### placeOrder
 
@@ -1182,14 +1182,14 @@ Erstellen Sie die folgenden Datenelemente:
    return _satellite.getVar('cart').id
    ```
 
-1. Reihenfolge:
+1. Bestellung:
 
    - **Name**: `order`
    - **Erweiterung**: `Adobe Client Data Layer`
    - **Datenelementtyp**: `Data Layer Computed State`
    - **[Optional] path**: `orderContext`
 
-1. Commerce-Reihenfolge:
+1. Commerce-Bestellung:
 
    - **Name**: `commerce order`
    - **Erweiterung**: `Core`
@@ -1251,7 +1251,7 @@ Erstellen Sie die folgenden Datenelemente:
    return _satellite.getVar('order').appliedCouponCode
    ```
 
-1. Produktlistenelemente:
+1. Elemente der Produktliste:
 
    - **Name**: `product list items`
    - **Erweiterung**: `Core`
@@ -1286,24 +1286,24 @@ Erstellen Sie die folgenden Datenelemente:
    return returnList;
    ```
 
-1. Platzierung:
+1. Bestellung aufgeben
 
    - **Name**: `place order`
    - **Erweiterung**: `Adobe Experience Platform Web SDK`
    - **Datenelementtyp**: `XDM object`
-   - **Feldergruppe**: `productListItems`. Für `productListItems` kann es mehrere vorberechnete Elemente geben. Wählen Sie **productListItems** > **Gesamtes Array ausfüllen** aus.
+   - **Feldergruppe**: `productListItems`. `productListItems` kann es mehrere Elemente geben, die vorberechnet werden. Wählen Sie **productListItems** > **Gesamtes Array füllen** aus.
    - **Datenelement**: `%product list items%`
    - **Feldergruppe**: `productListItems` > `ProductImageUrl`
-   - **ProductImageUrl**: **Value** = `%product image%`
+   - **ProductImageUrl**: **value** = `%product image%`
    - **Feldergruppe**: `commerce` > `order`
    - **Eindeutige Kennung**: **Wert** = `%commerce order%`
    - **Feldergruppe**: `commerce` > `shipping`
    - **Eindeutige Kennung**: **Wert** = `%order shipping%`
    - **Feldergruppe**: `commerce` > `promotionID`
-   - **Promotion-ID**: **Wert** = `%promotion id%`
+   - **Promotion-ID**: **value** = `%promotion id%`
    - **Feldergruppe**: `commerce` > `purchases` > `value`
    - **value**: **value** = `1`
-   - **Persönliche E-Mail-Adresse**: **Wert** = `%account email%`
+   - **Persönliche E-Mail**: **Wert** = `%account email%`
    - **Feldergruppe**: `personalEmail` > `address`
    - **Adresse**: **Wert** = `%account email%`
 
@@ -1312,31 +1312,31 @@ Erstellen Sie die folgenden Datenelemente:
 - **Name**: `place order`
 - **Erweiterung**: `Adobe Client Data Layer`
 - **Ereignistyp**: `Data Pushed`
-- **Bestimmtes Ereignis**: `place-order`
+- **Spezifisches Ereignis**: `place-order`
 
 ##### Aktionen
 
 - **Erweiterung**: `Adobe Experience Platform Web SDK`
 - **Aktionstyp**: `Send event`
 - **Typ**: `commerce.order`
-- **XDM data**: `%place order%`
+- **XDM-Daten**: `%place order%`
 
 ## Festlegen der Identität in Storefront-Ereignissen
 
-Storefront-Ereignisse enthalten Profilinformationen, die auf den Feldern `personalEmail` (für Kontoereignisse) und `identityMap` (für alle anderen Storefront-Ereignisse) basieren. Die Erweiterung [!DNL Data Connection] fügt sich hinzu und generiert Profile, die auf diesen beiden Feldern basieren. Für jedes Feld sind jedoch unterschiedliche Schritte zum Erstellen von Profilen erforderlich:
+Storefront-Ereignisse enthalten Profilinformationen, die auf den Feldern `personalEmail` (für Kontoereignisse) und `identityMap` (für alle anderen Storefront-Ereignisse) basieren. Die [!DNL Data Connection]-Erweiterung verknüpft und generiert Profile, die auf diesen beiden Feldern basieren. Für jedes Feld sind jedoch verschiedene Schritte zum Erstellen von Profilen erforderlich:
 
 >[!NOTE]
 >
->Wenn Sie bereits über ein Setup verfügen, das auf verschiedenen Feldern basiert, können Sie diese weiterhin verwenden.
+>Wenn Sie eine frühere Einrichtung haben, die sich auf verschiedene Felder stützt, können Sie diese weiterhin verwenden.
 
-- `personalEmail` - Gilt nur für Kontoereignisse. Befolgen Sie die Schritte, Regeln und Aktionen, die [oben ](#createaccount) beschrieben sind.
+- `personalEmail` - Gilt nur für Kontoereignisse. Führen Sie die oben beschriebenen Schritte, Regeln und [ aus](#createaccount)
 - `identityMap` - Gilt für alle anderen Storefront-Ereignisse. Siehe folgendes Beispiel.
 
 ### Beispiel
 
-Die folgenden Schritte zeigen, wie Sie ein `pageView` -Ereignis mit `identityMap` in der [!DNL Data Connection] -Erweiterung konfigurieren:
+Die folgenden Schritte zeigen, wie Sie ein `pageView`-Ereignis mit `identityMap` in [!DNL Data Connection] Erweiterung konfigurieren:
 
-1. Konfigurieren Sie das Datenelement mit benutzerdefiniertem Code für ECID:
+1. Konfigurieren des Datenelements mit benutzerdefiniertem Code für ECID:
 
    ![Konfigurieren des Datenelements mit benutzerdefiniertem Code](assets/set-custom-code-ecid.png)
    _Konfigurieren des Datenelements mit benutzerdefiniertem Code_
@@ -1363,24 +1363,24 @@ Die folgenden Schritte zeigen, wie Sie ein `pageView` -Ereignis mit `identityMap
    });
    ```
 
-1. Aktualisieren des XDM-Schemas mit dem als ECID festgelegten Wert `identityMap`:
+1. Aktualisieren Sie das XDM-Schema mit `identityMap` als ECID:
 
-   ![Legen Sie identityMap als ECID fest](assets/identity-map-data-element.png)
-   _Legen Sie identityMap als ECID fest_
+   ![identityMap als ECID festlegen](assets/identity-map-data-element.png)
+   _identityMap als ECID festlegen_
 
 1. Definieren Sie Regelaktionen, die ECID abrufen:
 
    ![ECID abrufen](assets/rule-retrieve-ecid.png)
    _ECID abrufen_
 
-## Festlegen der Identität in Backoffice-Ereignissen
+## Festlegen der Identität in Back-Office-Ereignissen
 
-Im Gegensatz zu Storefront-Ereignissen, die ECID zur Identifizierung und Verknüpfung von Profilinformationen verwenden, sind Back-Office-Ereignisdaten SaaS-basiert und daher keine ECID verfügbar. Bei Back-Office-Ereignissen müssen Sie E-Mail verwenden, um Käufer eindeutig zu identifizieren. In diesem Abschnitt erfahren Sie, wie Sie Back-Office-Ereignisdaten per E-Mail mit einer ECID verknüpfen.
+Im Gegensatz zu Storefront-Ereignissen, die ECID verwenden, um Profilinformationen zu identifizieren und zu verknüpfen, sind Backoffice-Ereignisdaten SaaS-basiert und daher ist keine ECID verfügbar. Bei Back-Office-Ereignissen müssen Sie E-Mails verwenden, um Käufer eindeutig zu identifizieren. In diesem Abschnitt erfahren Sie, wie Sie Backoffice-Ereignisdaten per E-Mail mit einer ECID verknüpfen.
 
 1. Erstellen Sie ein Identitätszuordnungselement.
 
-   ![Identitätszuordnung für Back Office](assets/custom-code-backoffice.png)
-   _Erstellen der Identitätszuordnung für das Backoffice_
+   ![Identitätszuordnung für Backoffice](assets/custom-code-backoffice.png)
+   _Back-Office-Identitätszuordnung erstellen_
 
 1. Wählen Sie [!UICONTROL Open Editor] aus und fügen Sie den folgenden benutzerdefinierten Code hinzu:
 
@@ -1405,32 +1405,32 @@ if (_satellite.getVar('account email')) {
 return IdentityMap;
 ```
 
-1. Fügen Sie dieses neue Element zu jedem `identityMap` -Feld hinzu.
+1. Fügen Sie jedes `identityMap` Feld dieses neue Element hinzu.
 
-   ![Aktualisieren der einzelnen identityMap](assets/add-element-back-office.png)
-   _Aktualisieren der einzelnen identityMap_
+   ![Aktualisieren jeder identityMap](assets/add-element-back-office.png)
+   _Aktualisieren jeder identityMap_
 
-## Einverständniserklärung
+## Einverständnis wird festgelegt
 
-Wenn Sie die Erweiterung [!DNL Data Connection] in Adobe Commerce installieren, ist die Datenerfassungs-Zustimmung standardmäßig aktiviert. Die Opt-out-Funktion wird über das [`mg_dnt` -Cookie](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) verwaltet. Sie können die hier beschriebenen Schritte ausführen, wenn Sie die Einwilligung mit `mg_dnt` verwalten. Die Dokumentation zum Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html) enthält mehrere zusätzliche Optionen zum Verwalten der Zustimmung.[
+Wenn Sie die [!DNL Data Connection]-Erweiterung in Adobe Commerce installieren, ist das Einverständnis zur Datenerfassung standardmäßig aktiviert. Das Opt-out wird über das [`mg_dnt`-Cookie verwaltet](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html). Sie können die hier beschriebenen Schritte ausführen, wenn Sie `mg_dnt` zur Einverständnisverwaltung verwenden. Die [Dokumentation zu Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html) bietet mehrere zusätzliche Optionen zum Verwalten des Einverständnisses.
 
-1. Erstellen Sie ein Datenelement **Benutzerdefinierter Kern-Code** (`%do not track cookie%`) für das Cookie `mg_dnt`:
+1. Erstellen Sie ein **Core Custom Code**-Datenelement (`%do not track cookie%`) für das `mg_dnt` Cookie:
 
-   ![Erstellen Sie kein Datenelement](assets/element-dnt-cookie.png)
-   _Erstellen Sie kein Datenelement_
+   ![Erstellen verfolgt kein Datenelement](assets/element-dnt-cookie.png)
+   _Erstellen verfolgt kein Datenelement_
 
-1. Erstellen Sie ein Datenelement &quot;**Benutzerdefinierter Core-Code**&quot;(`%consent%`), das `out` zurückgibt, wenn das Cookie gesetzt ist, und andernfalls `in`:
+1. Erstellen Sie ein **Core Custom Code**-Datenelement (`%consent%`), das `out` zurückgibt, wenn das Cookie gesetzt ist, und andernfalls `in`:
 
-   ![Element für Einwilligungsdaten erstellen](assets/element-consent-dnt-cookie.png)
-   _Element für Einwilligungsdaten erstellen_
+   ![Einverständnisdatenelement erstellen](assets/element-consent-dnt-cookie.png)
+   _Einverständnisdatenelement erstellen_
 
-1. Konfigurieren der Adobe Experience Platform Web SDK-Erweiterung mit dem Datenelement `%consent%` :
+1. Konfigurieren der Adobe Experience Platform Web SDK-Erweiterung mit `%consent%` Datenelement:
 
-   ![SDK mit Zustimmung aktualisieren](assets/config-sdk-consent.png)
-   _SDK mit Zustimmung aktualisieren_
+   ![Aktualisieren von SDK mit Einverständnis](assets/config-sdk-consent.png)
+   _Aktualisieren von SDK mit Einverständnis_
 
 ## Warnungen
 
-- Wenn Sie die Schritte zum Deaktivieren der Experience Platform-Erfassung nicht ausführen, werden die Ereignisse doppelt gezählt
-- Das nicht wie in diesem Thema beschriebene Einrichten von Zuordnungen/Ereignissen kann sich auf Adobe Analytics-Pinnwände auswirken
-- Sie können Target nicht über die Erweiterung [!DNL Data Connection] einrichten, wenn die Datenerfassung deaktiviert ist
+- Wenn Sie die Experience Platform-Sammlung nicht deaktivieren, werden Ereignisse doppelt gezählt
+- Das Nicht-Einrichten von Zuordnungen/Ereignissen wie in diesem Thema beschrieben kann Auswirkungen auf Adobe Analytics Boards haben
+- Sie können Target nicht über die [!DNL Data Connection]-Erweiterung einrichten, wenn die Datenerfassung deaktiviert ist

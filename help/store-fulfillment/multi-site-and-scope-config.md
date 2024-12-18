@@ -1,6 +1,6 @@
 ---
-title: Konfiguration mehrerer Websites und Perimeter
-description: Konfigurieren Sie Lager und Bereitstellungsmethoden für mehrere Websites und Storebereiche.
+title: Konfiguration mehrerer Websites und Bereiche
+description: Konfigurieren Sie Lager- und Versandmethoden für mehrere Websites und Speicherbereiche.
 role: Admin
 level: Experienced
 feature: Shipping/Delivery, Inventory, Configuration
@@ -12,30 +12,30 @@ ht-degree: 0%
 
 ---
 
-# Konfiguration mehrerer Websites und Perimeter
+# Konfiguration mehrerer Websites und Bereiche
 
 Sie können den [Umfang](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) für einige Elemente festlegen, um mehrere Websites, Stores und Store-Ansichten aufzunehmen:
 
-- [ Stock verwalten](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-manage) pro Umfang
+- [Stock verwalten](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-manage) pro Umfang
 
-- Verwalten von [!DNL Delivery Methods] pro Umfang
+- [!DNL Delivery Methods] pro Umfang verwalten
 
-Sie können einem Website- oder Store-Bereich ein Lager zuweisen. Aktualisieren Sie dann die Store-Quellen, um verfügbare Bereitstellungsmethoden festzulegen (Startseite, Store-Abruf).
+Sie können Stock einer Website oder einem Store-Umfang zuweisen. Aktualisieren Sie dann die Store-Quellen, um verfügbare Versandmethoden festzulegen (Versand an die Startseite, Store-Abholung).
 
-Nach erfolgreicher Aktualisierung der Konfiguration können die Speicherbereinigungsoptionen auf der Produktdetailseite (PDP) in der Adobe Commerce-Storefront nur für Produkte ausgewählt werden, die von einer Lagerquelle verfügbar sind, die die Speicherbereinigung ermöglicht.
+Nach erfolgreichem Aktualisieren der Konfiguration können die Store-Abholoptionen auf der Produktdetailseite (PDP) in der Adobe Commerce-Storefront nur für Produkte ausgewählt werden, die aus einer Lagerquelle verfügbar sind, die die Store-Abholung ermöglicht.
 
-## Einstellungen zur In-Store-Abholung verwalten
+## Einstellungen für die Abholung im Geschäft verwalten
 
-Aktivieren oder deaktivieren Sie die [!UICONTROL In-Store Pickup] -Optionen für jede Website oder jeden Speicherbereich in den [Konfigurationen für Bereitstellungsmethoden](enable-general.md#delivery-methods) im Admin.
+Aktivieren oder deaktivieren Sie die [!UICONTROL In-Store Pickup] Optionen für jede Website oder jeden Speicherbereich über die [Bereitstellungsmethodenkonfigurationen](enable-general.md#delivery-methods) im Admin-Bereich.
 
 1. Navigieren Sie zu **[!UICONTROL Stores > Configuration]**.
 
-1. Wählen Sie den zu konfigurierenden Perimeter (Website zu Store) aus.
+1. Wählen Sie den zu konfigurierenden Umfang (Website oder Store) aus.
 
-1. Navigieren Sie bei ausgewähltem Bereich zu &quot;**[!UICONTROL Sales > Delivery Methods]**&quot;.
+1. Navigieren Sie bei ausgewähltem Bereich zu **[!UICONTROL Sales > Delivery Methods]**.
 
-1. Deaktivieren oder aktivieren Sie die Versandmethode **[!UICONTROL In-Store Pickup]** .
+1. Deaktivieren oder aktivieren Sie die **[!UICONTROL In-Store Pickup]** Versandmethode.
 
-In diesem Abschnitt können Sie auch verwalten, ob die Cursor- oder In-Store-Abholung global verfügbar ist.
+In diesem Abschnitt können Sie auch festlegen, ob die Abholung am Bordstein oder im Geschäft global verfügbar ist.
 
-Verwalten Sie die Einstellungen [!UICONTROL In-Store Pickup] und [!UICONTROL Delivery Method] pro Lagerbestand. Es gibt zahlreiche weitere Konfigurationen, um die volle Flexibilität Ihrer Implementierung zu gewährleisten.
+Verwalten Sie die [!UICONTROL In-Store Pickup]- und [!UICONTROL Delivery Method] für jede Stock-Quelle. Zahlreiche weitere Konfigurationen bieten Ihnen volle Flexibilität bei der Implementierung.

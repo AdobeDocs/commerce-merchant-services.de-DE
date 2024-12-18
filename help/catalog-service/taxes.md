@@ -1,6 +1,6 @@
 ---
-title: Anzeigen von besteuerten Preisen mit dem API-Mesh
-description: Verwenden Sie [!DNL API Mesh] für Adobe Commerce und Catalog Service, um Preise einschließlich Steuern anzuzeigen.
+title: Versteuerte Preise mit dem API-Mesh anzeigen
+description: Verwenden Sie  [!DNL API Mesh]  für Adobe Commerce und Catalog Service, um Preise einschließlich Steuern anzuzeigen.
 role: Admin, Developer
 feature: Services, API Mesh, Catalog Service
 exl-id: 0d3da296-4409-4653-b397-99eae35e4cb7
@@ -11,28 +11,28 @@ ht-degree: 0%
 
 ---
 
-# Steuern der Preise mit API-Mesh für Adobe Developer App Builder anzeigen
+# Versteuerte Preise mit API Mesh für Adobe Developer App Builder anzeigen
 
-[API-Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) ermöglicht es Entwicklern, mithilfe von Adobe I/O Runtime private oder Drittanbieter-APIs und andere Schnittstellen mit Adobe-Produkten zu integrieren.
+[API Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) ermöglicht Entwicklern die Integration von privaten oder Drittanbieter-APIs und anderen Benutzeroberflächen mit Adobe-Produkten unter Verwendung von Adobe I/O Runtime.
 
-In diesem Thema wird API-Mesh verwendet, um Produktpreise auf einer Produktdetailseite mit konfigurierten Steuern anzuzeigen.
+In diesem Thema wird API Mesh verwendet, um Produktpreise auf einer Produktdetailseite mit Steuern anzuzeigen, die in angegeben sind.
 
-## Festlegen von Steuersätzen
+## Steuersätze einrichten
 
-Sie müssen Steuern für die Anzeige auf der Produktdetailseite konfiguriert haben.
+Sie müssen Steuern dafür konfiguriert haben, damit sie auf der Produktdetailseite angezeigt werden.
 
-1. [Einrichten von Steuersätzen](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/tax-rules.html).
-1. Aktivieren Sie Steuern so, dass sie im Katalog ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/display-settings.html#step-1%3A-configure-catalog-prices-display-settings) mit [ angezeigt werden, und legen Sie dafür entweder `Including and Excluding Tax` oder `Including Tax` fest.
+1. [Steuersätze einrichten](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/tax-rules.html).
+1. Aktivieren Sie die Anzeige [im Katalog](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/display-settings.html#step-1%3A-configure-catalog-prices-display-settings) und legen Sie dafür entweder `Including and Excluding Tax` oder `Including Tax` fest.
 
-Stellen Sie sicher, dass der Catalog Service funktioniert, indem Sie eine Produktdetailseite überprüfen.
+Überprüfen Sie, ob der Katalog-Service funktioniert, indem Sie eine Produktdetailseite prüfen.
 
-![Auf der Produktdetailseite angezeigte Steuern](assets/display-tax.png)
+![Steuern werden auf der Produktdetailseite angezeigt](assets/display-tax.png)
 
-## API-Gitter konfigurieren
+## Konfigurieren von API-Mesh
 
-Verbinden Sie, falls noch nicht geschehen, den API-Mesh mit Catalog Service mit Ihrer Instanz. Detaillierte Anweisungen finden Sie im Thema [Erste Schritte](https://developer.adobe.com/graphql-mesh-gateway/gateway/getting-started/) im API-Mesh-Entwicklerhandbuch.
+Verbinden Sie, falls noch nicht geschehen, die API Mesh mit dem Katalog-Service mit Ihrer -Instanz. Detaillierte Anweisungen finden Sie [ Thema „Erste Schritte](https://developer.adobe.com/graphql-mesh-gateway/gateway/getting-started/) im API Mesh-Entwicklerhandbuch.
 
-Ersetzen Sie in der Datei `mesh.json` die Werte `name `, `endpoint` und `x-api-key`.
+Ersetzen Sie in der `mesh.json`-Datei die Werte `name `, `endpoint` und `x-api-key`.
 
 ```json
 {
@@ -107,15 +107,15 @@ Ersetzen Sie in der Datei `mesh.json` die Werte `name `, `endpoint` und `x-api-k
 
 Diese `mesh.json` Konfigurationsdatei:
 
-* Wandelt die Commerce-Hauptanwendung in die Anforderung um, dass ihr &quot;Core_&quot;vorangestellt wird, um Abfragen oder Typen vorzuziehen. Dadurch werden mögliche Namenskonflikte mit dem Catalog Service verhindert.
-* Erweitert die Typen `ComplexProductView` und `SimpleProductView` mit einem neuen Feld namens `priceWithTaxes`.
+* Wandelt die Commerce-Kernanwendung so um, dass „core_“ allen Abfragen oder Typen vorangestellt werden muss. Dadurch werden mögliche Namenskonflikte mit dem Katalog-Service verhindert.
+* Erweitert die `ComplexProductView`- und `SimpleProductView` mit einem neuen Feld namens `priceWithTaxes`.
 * Fügt einen benutzerdefinierten Resolver für das neue Feld hinzu.
 
-Erstellen Sie das Gitter mit dem Befehl [create command](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/#create-a-mesh-1) mit der Datei `mesh.json` .
+Erstellen Sie das Netz mit dem [Befehl erstellen](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/#create-a-mesh-1) mit der `mesh.json`.
 
 ### GraphQL-Abfrage
 
-Sie können die neuen `priceWithTaxes` -Daten mit GraphQL abrufen.
+Sie können die neuen `priceWithTaxes` mit GraphQL abrufen.
 
 Abfragebeispiel:
 
@@ -180,7 +180,7 @@ query {
 }
 ```
 
-Abfrageantwort:
+Antwort der Abfrage:
 
 ```json
 {

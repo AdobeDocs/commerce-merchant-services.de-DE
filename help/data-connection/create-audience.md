@@ -1,6 +1,6 @@
 ---
-title: Erstellen einer Zielgruppe in Real-Time CDP mithilfe von  [!DNL Commerce] Ereignisdaten
-description: Erfahren Sie, wie Sie mit [!DNL Commerce] Ereignisdaten eine Zielgruppe in Real-Time CDP erstellen können.
+title: Erstellen einer Zielgruppe in Real-Time CDP mithilfe  [!DNL Commerce]  Ereignisdaten
+description: Erfahren Sie, wie Sie  [!DNL Commerce] -Ereignisdaten verwenden, um eine Zielgruppe in Real-Time CDP zu erstellen
 role: Admin, Developer
 feature: Personalization, Integration
 exl-id: b637f40b-0d35-4c41-a4eb-563085966dc0
@@ -11,61 +11,61 @@ ht-degree: 0%
 
 ---
 
-# Erstellen von Zielgruppen in Real-Time CDP mit [!DNL Commerce] Ereignisdaten
+# Erstellen von Zielgruppen in Real-Time CDP mithilfe [!DNL Commerce] Ereignisdaten
 
-Verwenden Sie Ereignisdaten, die aus Ihrem [!DNL Commerce] -Store erfasst werden, um Zielgruppen in Real-Time CDP zu erstellen. Die erfassten Daten basieren auf dem Browsing-Verhalten, früheren Käufen, Profilattributen, Konvertierungs- oder Abwanderungsneigungen, dem Treuestatus, dem hohen und niedrigen Kundenwert und mehr.
+Verwenden Sie Ereignisdaten, die aus Ihrem [!DNL Commerce] erfasst werden, um Zielgruppen in Real-Time CDP zu erstellen. Die erfassten Daten basieren auf dem Browser-Verhalten, früheren Käufen, Profilattributen, Konversions- oder Abwanderungsneigungen, dem Treuestatus, einem hohen und niedrigen Kundenwert und mehr.
 
-## Welche Daten sollten verwendet werden?
+## Welche Daten sollte ich verwenden?
 
 Erstellen Sie Zielgruppen in Real-Time CDP mithilfe von Daten aus Storefront-, Back-Office- und Profilereignissen.
 
-| Datentypen | Storefront-Daten (Verhaltensereignisse) | Back Office Data (Server-Side Events) | Kundenprofil und Segmentdaten |
+| Datentypen | Storefront-Daten (Verhaltensereignisse) | Back-Office-Daten (Server-seitige Ereignisse) | Kundenprofil- und Segmentdaten |
 |---|---|---|---|
-| **Definition** | Klicks oder Aktionen, die Kunden auf Ihrer Site ausführen. | Informationen zum Lebenszyklus und Details der einzelnen Bestellungen (Vergangenheit und aktuell). | Wer Ihre Käufer sind und für welche Segmente sie sich qualifizieren. |
-| **Von Adobe Commerce erfasste Ereignisse** | [productPageView](events.md#productpageview)<br>[addToCart](events.md#addtocart) | [placeOrder](events.md#completecheckout)<br>[orderPlace](events-backoffice.md#orderplaced)<br>[orderLineItemRefunding](events-backoffice.md#orderlineitemrefunded)<br>[order Cancelled](events-backoffice.md#ordercancelled)<br>[order history](connect-data.md#send-historical-order-data) | [createAccount](events.md#createaccount)<br>[editAccount](events.md#editaccount)<br>[Profildatensatz](events-profilerecord.md) |
+| **Definition** | Klicks oder Aktionen, die Kunden auf Ihrer Site durchführen. | Informationen über den Lebenszyklus und Details jeder Bestellung (vergangene und aktuelle). | Wer sind Ihre Kunden und für welche Segmente sind sie qualifiziert? |
+| **Von Adobe Commerce erfasste Ereignisse** | [productPageView](events.md#productpageview)<br>[addToCart](events.md#addtocart) | [placeOrder](events.md#completecheckout)<br>[orderapped](events-backoffice.md#orderplaced)<br>[orderLineItemRefund](events-backoffice.md#orderlineitemrefunded)<br>[order Cancelled](events-backoffice.md#ordercancelled)<br>[order history](connect-data.md#send-historical-order-data) | [createAccount](events.md#createaccount)<br>[editAccount](events.md#editaccount)<br>[Profile-Eintrag](events-profilerecord.md) |
 
 ## Was haben andere Kunden erreicht?
 
-Adobe [!DNL Commerce] -Kunden haben durch die Aktivierung von in Real-Time CDP erstellten Zielgruppen und deren Bereitstellung in ihrer [!DNL Commerce]-Instanz erhebliche geschäftliche Auswirkungen erzielt.
+Adobe [!DNL Commerce]-Kunden haben durch die Aktivierung von in Real-Time CDP erstellten Zielgruppen und deren Bereitstellung auf ihrer [!DNL Commerce]-Instanz erhebliche geschäftliche Vorteile erzielt.
 
-Ein weltweiter Bekleidungshändler mit mehreren Marken erzielte folgende Ergebnisse:
+Ein weltweiter, markenübergreifender Bekleidungseinzelhändler hat erreicht:
 
 - Eine Quelle der Wahrheit mit 10 Millionen von einheitlichen Kundenprofilen
-- Es wurden mehr als 40 einzigartige Zielgruppen von &quot;Kunden mit hohem Intent&quot;erstellt, um kanalübergreifend Interaktionen zu ermöglichen
+- Es wurden mehr als 40 einzigartige Zielgruppen von „Kunden mit hohen Absichten“ erstellt, um kanalübergreifend zu interagieren
 
-Ein globales Getränkekonzern:
+Ein globales Getränkeunternehmen sammelte:
 
 - 98 Millionen Kundenprofile aus über 100 Ländern
 
 ## Fangen wir an
 
-In diesem Artikel lernen Sie Folgendes:
+In diesem Artikel erfahren Sie, wie Sie:
 
-- Erstellen einer Zielgruppe in Real-Time CDP basierend auf den [!DNL Commerce] Daten, die von den Ereignissen erfasst werden
-- Aktivieren Sie diese Zielgruppe für Ihren [!DNL Commerce]-Store
-- Verwenden Sie die Zielgruppe in [!DNL Commerce], um eine Preisregel für den Warenkorb zu informieren.
+- Erstellen Sie eine Zielgruppe in Real-Time CDP basierend auf den [!DNL Commerce], die die Ereignisse erfassen
+- Aktivieren dieser Zielgruppe für Ihren [!DNL Commerce] Store
+- Verwenden Sie die Zielgruppe in [!DNL Commerce], um eine Warenkorb-Preisregel zu informieren
 
 >[!IMPORTANT]
 >
->Führen Sie die in diesem Artikel beschriebenen Aufgaben mit Ihrer Sandbox-Umgebung [!DNL Commerce] aus. Dadurch wird sichergestellt, dass die an Experience Platform gesendeten Storefront- und Back-Office-Ereignisdaten Ihre Produktionsereignisdaten nicht verwässern.
+>Führen Sie die in diesem Artikel beschriebenen Aufgaben mithilfe Ihrer [!DNL Commerce] Sandbox-Umgebung aus. Dadurch wird sichergestellt, dass die an Experience Platform gesendeten Storefront- und Backoffice-Ereignisdaten Ihre Produktionsereignisdaten nicht verwässern.
 
 ### Voraussetzungen
 
 Bevor Sie beginnen, stellen Sie Folgendes sicher:
 
-- Sie sind für die Verwendung von Real-Time CDP freigeschaltet. Wenn Sie sich nicht sicher sind, wenden Sie sich an Ihren Systemintegrator oder das Entwicklungsteam, das Projekte und Umgebungen verwaltet.
-- Sie [haben ](install.md) und [konfiguriert](connect-data.md) die Erweiterung [!DNL Data Connection] in [!DNL Commerce] installiert.
-- Sie haben [bestätigt](connect-data.md#confirm-that-event-data-is-collected), dass Ihre [!DNL Commerce] -Ereignisdaten am Experience Platform-Edge eintreffen.
+- Sie haben die Berechtigung zur Verwendung von Real-Time CDP. Wenn Sie sich nicht sicher sind, wenden Sie sich an Ihren Systemintegrator oder das Entwicklungs-Team, das Projekte und Umgebungen verwaltet.
+- Sie [ die [!DNL Data Connection]-Erweiterung in [!DNL Commerce] ](install.md) und [ ](connect-data.md) konfiguriert.
+- Sie [bestätigt](connect-data.md#confirm-that-event-data-is-collected) dass Ihre [!DNL Commerce] Ereignisdaten am Experience Platform-Edge eintreffen.
 
-### 1. Erstellen einer Audience
+### 1. Erstellen einer Zielgruppe
 
-Eine Zielgruppe ist eine Gruppe von Kunden, die ähnliche Verhaltensweisen oder Merkmale aufweisen. In dieser Übung erstellen Sie eine Zielgruppe, die Personen qualifiziert, die an einem bestimmten Produkt aus Ihrem Geschäft interessiert sind.
+Eine Zielgruppe ist eine Gruppe von Kundinnen und Kunden, die ein ähnliches Verhalten oder ähnliche Merkmale aufweisen. In dieser Übung erstellen Sie eine Zielgruppe, die Personen qualifiziert, die sich für ein bestimmtes Produkt aus Ihrem Geschäft interessieren.
 
-Um diese Übung zu vereinfachen, verwenden Sie Ereignisdaten aus dem [productPageView](events.md#productpageview) -Ereignis. Dieses Ereignis erfasst Details zum angezeigten Produkt, z. B. Produktname, SKU, Preis usw.
+Um diese Übung zu vereinfachen, verwenden Sie Ereignisdaten aus dem [productPageView](events.md#productpageview)-Ereignis. Dieses Ereignis erfasst Details zum angezeigten Produkt, z. B. Produktname, SKU, Preis usw.
 
-Verwenden Sie diese Ereignisdaten, um anzugeben, dass die Zielgruppe Kontakte enthält, die mindestens ein Ereignis &quot;Produktansichten&quot;haben, bei dem die SKU (Produkt-ID) mit einem bestimmten Produkt auf Ihrer Site übereinstimmt und das Ereignis innerhalb des letzten Tages eintritt. &#x200B;
+Verwenden Sie diese Ereignisdaten, um anzugeben, dass die Zielgruppe Personen umfasst, die mindestens ein Ereignis vom Typ „Produktansichten“ haben, bei dem die SKU (Produktkennung) einem bestimmten Produkt auf Ihrer Site entspricht und das Ereignis innerhalb des letzten Tages auftritt. &#x200B;
 
-1. Öffnen Sie Experience Platform und wählen Sie im linken Navigationsmenü die Option **[!UICONTROL Audiences]** aus.
+1. Öffnen Sie Experience Platform und wählen Sie **[!UICONTROL Audiences]** aus dem linken Navigationsmenü aus.
 
    ![Zielgruppen-Dashboard](assets/audience-left-rail.png)
 
@@ -73,72 +73,72 @@ Verwenden Sie diese Ereignisdaten, um anzugeben, dass die Zielgruppe Kontakte en
 
    ![Zielgruppe erstellen](assets/browse-create-audience.png)
 
-   Der Arbeitsbereich **Segmentaufbau** wird angezeigt.
+   Der **Segment Builder**-Arbeitsbereich wird angezeigt.
 
-1. Wählen Sie im Arbeitsbereich **Segmentaufbau** die Erstellungsmethode **Regel erstellen** aus.
+1. Wählen **Arbeitsbereich „Segment**&quot; die Erstellungsmethode **Regel erstellen** aus.
 
-   ![Build-Regel](assets/build-rule.png)
+   ![Regel erstellen](assets/build-rule.png)
 
-   Im Arbeitsbereich **Segment Builder** definieren Sie die Regeln und Bedingungen für Ihre Zielgruppe. &#x200B; Diese Regeln und Bedingungen basieren auf Ereignis- und Profildaten aus Ihrem Commerce-Store und definieren die Kriterien, anhand derer bestimmt wird, ob sich ein Benutzer für die Zielgruppe qualifiziert. Sie können beispielsweise eine Regel erstellen, die Benutzer umfasst, die ein bestimmtes Produkt angesehen haben, oder Benutzer, die innerhalb eines bestimmten Zeitraums einen Kauf getätigt haben. Erfahren Sie mehr über [Segmentaufbau](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder) und Regeln und Bedingungen.
+   Im **Segment Builder**-Arbeitsbereich definieren Sie die Regeln und Bedingungen für Ihre Zielgruppe&#x200B; Diese Regeln und Bedingungen basieren auf Ereignis- und Profildaten aus Ihrem Commerce Store und definieren die Kriterien, die bestimmen, ob eine Benutzerin oder ein Benutzer für die Zielgruppe geeignet ist. Sie können beispielsweise eine Regel erstellen, die Benutzer enthält, die ein bestimmtes Produkt angesehen haben, oder Benutzer, die innerhalb eines bestimmten Zeitraums einen Kauf getätigt haben. Weitere Informationen zu [Segment Builder](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder) und Regeln und Bedingungen.
 
-1. Wählen Sie die Registerkarte [Ereignisse](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder#events) aus.
+1. Wählen Sie die [Ereignisse](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder#events) aus.
 
-   ![Registerkarte &quot;Ereignisse&quot;](assets/audience-events-tab.png)
+   ![Registerkarte „Ereignisse“](assets/audience-events-tab.png)
 
-1. Suchen Sie nach dem Ereignistyp &quot;Produktansichten&quot;. Ziehen Sie es dann in den Arbeitsbereich **Segment Builder** .
+1. Suchen Sie nach dem Ereignistyp „Produktansichten“. Ziehen Sie sie dann per Drag-and-Drop in den **Segment Builder**-Arbeitsbereich.
 
-1. Kehren Sie zur Registerkarte **Ereignisse** zurück und suchen Sie nach &quot;SKU&quot;, dem Datenfeld unter dem Feld `productListItems` . Ziehen Sie es in den Arbeitsbereich **Segment Builder** , um ihn über dem Ereignis **Produktansicht** zu platzieren.
+1. Kehren Sie zur Registerkarte **Ereignisse** zurück und suchen Sie nach „SKU“, dem Datenfeld unter dem `productListItems`. Ziehen Sie sie in den **Segment Builder**-Arbeitsbereich oben auf dem Ereignis **Produktansicht**.
 
-   Im Abschnitt **Ereignisregeln** wird angezeigt, wo Sie das spezifische Produkt angeben können, aus dem Sie Ihre Zielgruppe erstellen möchten.
+   Der **Ereignisregeln** wird angezeigt, in dem Sie das spezifische Produkt angeben können, aus dem Sie Ihre Zielgruppe erstellen möchten.
 
    ![SKU auswählen](assets/audience-addsku.png)
 
-1. Legen Sie das Zeitintervall auf einen Tag fest, indem Sie auf **Beliebige Zeit** klicken und *Im letzten* mit dem Wert *1* auswählen.
+1. Legen Sie das Zeitintervall auf einen Tag fest, indem Sie auf **Beliebige Zeit** klicken und *Letzte* mit dem Wert *1*.
 
-   Beim Erstellen einer Zielgruppe können Sie ein Zeitintervall festlegen, in dem die aktuelle Aktivität erfasst werden soll. Durch das Festlegen eines Zeitintervalls können Sie Benutzer auf der Basis ihrer aktuellen Interaktionen oder Verhaltensweisen innerhalb eines bestimmten Zeitraums ansprechen.
+   Beim Erstellen einer Zielgruppe können Sie ein Zeitintervall angeben, in dem die letzte Aktivität erfasst wird. Durch das Festlegen eines Zeitintervalls können Sie Benutzende auf der Grundlage ihrer letzten Interaktionen oder Verhaltensweisen innerhalb eines bestimmten Zeitraums ansprechen.
 
-1. Legen Sie im Abschnitt **Zielgruppeneigenschaften** auf der rechten Seite des Arbeitsbereichs die Zielgruppeneigenschaften fest, indem Sie einen Namen, eine Beschreibung und eine Auswertungsmethode für die Zielgruppe angeben.
+1. Legen **im Bereich** Zielgruppeneigenschaften“ auf der rechten Seite des Arbeitsbereichs die Zielgruppeneigenschaften fest, indem Sie einen Namen, eine Beschreibung und eine Auswertungsmethode für die Zielgruppe angeben.
 
-1. Klicken Sie zum Speichern der Zielgruppe auf **[!UICONTROL Save and Close]**.
+1. Um die Zielgruppe zu speichern, klicken Sie auf **[!UICONTROL Save and Close]**.
 
-   Die Details Ihrer Zielgruppe werden im Dashboard **Zielgruppe** angezeigt.
+   Die Details Ihrer Audience werden im Dashboard **Audience** angezeigt.
 
-### 2. Aktivieren Sie die Zielgruppe für das [!DNL Commerce]-Ziel.
+### 2. Aktivieren Sie die Zielgruppe für das [!DNL Commerce]
 
-Sie stellen eine Zielgruppe in [!DNL Commerce] zur Verfügung, indem Sie sie für das [!DNL Commerce]-Ziel aktivieren.
+Sie stellen eine Zielgruppe in [!DNL Commerce] zur Verfügung, indem Sie sie für das [!DNL Commerce] aktivieren.
 
 >[!IMPORTANT]
 >
->Wenn Sie [!DNL Commerce] noch nicht als verfügbares Ziel für den Empfang von Daten festgelegt haben, lesen Sie das Thema [Adobe [!DNL Commerce] Verbindung](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/adobe-commerce) .
+>Wenn Sie [!DNL Commerce] noch nicht als verfügbares Ziel für den Datenempfang festgelegt haben, lesen Sie den Abschnitt [Adobe [!DNL Commerce] Connection](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/adobe-commerce).
 
-1. Klicken Sie auf der Registerkarte **Details** Ihrer Zielgruppe auf **Für Ziel aktivieren**.
+1. Klicken **auf der Registerkarte** Details“ Ihrer Zielgruppe auf **Für Ziel aktivieren**.
 
-1. Wählen Sie Ihr [!DNL Commerce] Ziel aus. Klicken Sie dann auf **Weiter**.
+1. Wählen Sie Ihr [!DNL Commerce] aus. Klicken Sie dann auf **Weiter**.
 
-1. Schließen Sie den Aktivierungsprozess ab, indem Sie auf **[!UICONTROL Finish]** klicken.
+1. Schließen Sie den Aktivierungsvorgang ab, indem Sie auf **[!UICONTROL Finish]** klicken.
 
-## 3. Anzeigen der Audience im Audiences-Dashboard
+## 3. Anzeigen der Zielgruppe im Zielgruppen-Dashboard
 
-In [!DNL Commerce] können Sie alle [aktiven](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-edge-personalization-destinations) Zielgruppen anzeigen, die für Ihre [!DNL Commerce] -Instanz personalisiert werden können, indem Sie das Dashboard **Real-Time CDP-Zielgruppen** verwenden.
+In [!DNL Commerce] können Sie alle &quot;[&quot; Zielgruppen anzeigen](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-edge-personalization-destinations) die mithilfe des Dashboards **Real-Time CDP-Zielgruppen** für Ihre [!DNL Commerce] personalisiert werden können.
 
-Um auf das Dashboard **Real-Time CDP-Zielgruppen** zuzugreifen, wechseln Sie zur Seitenleiste _Admin_ und dann zu **[!UICONTROL Customers]** > **[!UICONTROL Real-time CDP Audience]**.
+Um auf das Dashboard **Real-Time CDP** Zielgruppen zuzugreifen, gehen Sie zur Seitenleiste _Admin_ und dann zu **[!UICONTROL Customers]** > **[!UICONTROL Real-time CDP Audience]**.
 
-Suchen Sie im Dashboard nach der von Ihnen erstellten Audience. Beachten Sie, dass sie nicht in einer Warenkorbpreisregel oder in einem dynamischen Block verwendet wird. Im nächsten Abschnitt verknüpfen Sie die Zielgruppe mit einer Warenkorbpreisregel.
+Suchen Sie im Dashboard nach der von Ihnen erstellten Zielgruppe. Beachten Sie, dass es in einer Warenkorb-Preisregel oder einem dynamischen Block nicht verwendet wird. Im nächsten Abschnitt verknüpfen Sie die Zielgruppe mit einer Warenkorb-Preisregel.
 
 ![Real-Time CDP-Zielgruppen-Dashboard](assets/real-time-cdp-dashboard.png)
 
-### 4. Erstellen Sie eine auf der Zielgruppe basierende Warenkorbpreisregel.
+### 4. Erstellen Sie eine Warenkorb-Preisregel basierend auf der Zielgruppe
 
-In diesem Abschnitt erfahren Sie, wie Sie basierend auf Ihrer neuen Zielgruppe eine Preisregel für den Warenkorb erstellen.
+In diesem Abschnitt erfahren Sie, wie Sie eine Warenkorb-Preisregel basierend auf Ihrer neuen Zielgruppe erstellen.
 
 1. Vergewissern Sie sich, dass Ihre neue Zielgruppe im Dashboard **Real-Time CDP-Zielgruppen** angezeigt wird.
-1. [Erstellen Sie eine Warenkorbpreisregel](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create).
-1. [Legen Sie die Bedingung](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create#use-real-time-cdp-audiences-to-set-a-condition) der Preisregel für den Warenkorb mit Ihrer neuen Zielgruppe fest.
-1. [Legen Sie die Aktion ](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create#step-3-define-the-actions) fest, die ausgeführt werden soll, wenn das Produkt zum Warenkorb hinzugefügt wird.
-1. Konfigurieren Sie weiterhin die Regel für den Warenkorbpreis.
-1. Rufen Sie die Kundenansicht Ihrer Sandbox-Instanz auf.
-1. Fügen Sie das Produkt, auf dem die Zielgruppe von basiert, zum Warenkorb hinzu. Beachten Sie, dass die Regel zum Warenkorbpreis aktiviert ist.
+1. [Erstellen einer Warenkorb-Preisregel](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create).
+1. [Legen Sie die Bedingung ](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create#use-real-time-cdp-audiences-to-set-a-condition) Warenkorb-Preisregel mithilfe Ihrer neuen Zielgruppe fest.
+1. [Legen Sie die Aktion ](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create#step-3-define-the-actions), die beim Hinzufügen des Produkts zum Warenkorb ausgeführt werden soll.
+1. Fahren Sie mit der Konfiguration Ihrer Warenkorb-Preisregel fort.
+1. Navigieren Sie zur Kundenansicht Ihrer Sandbox-Instanz.
+1. Fügen Sie das Produkt, das Sie basierend auf der Zielgruppe von erstellt haben, zum Warenkorb hinzu. Beachten Sie, dass die Warenkorb-Preisregel aktiviert ist.
 
-## Aufschließen
+## einpacken
 
-In dieser Übung haben Sie eine Zielgruppe in Real-Time CDP erstellt und für das [!DNL Commerce]-Ziel aktiviert. Anschließend haben Sie in der Admin-Datei [!DNL Commerce] eine auf dieser Zielgruppe basierende Warenkorbpreisregel erstellt und die Regel in Ihrer Sandbox-Umgebung aktiviert.
+In dieser Übung haben Sie eine Zielgruppe in Real-Time CDP erstellt und für das [!DNL Commerce] aktiviert. Anschließend haben Sie in der [!DNL Commerce] eine auf dieser Zielgruppe basierende Warenkorbpreisregel erstellt und die Regel in Ihrer Sandbox-Umgebung aktiviert.

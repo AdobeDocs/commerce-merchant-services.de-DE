@@ -12,153 +12,153 @@ ht-degree: 0%
 
 # Zahlungsoptionen
 
-Bei [!DNL Adobe Commerce] und [!DNL Magento Open Source] [!DNL Payment Services] stehen Ihnen mehrere Zahlungsoptionen zur Verfügung.
+Mit [!DNL Adobe Commerce] und [!DNL Magento Open Source] [!DNL Payment Services] stehen Ihnen mehrere Zahlungsoptionen zur Verfügung.
 
-Sie können diese Zahlungsoptionen in den [Home settings](payments-home.md) oder in der [Store-Konfiguration](configure-admin.md) konfigurieren (empfohlen für ältere Zahlungsoptionen oder ein Multi-Store-Setup).
+Sie können diese Zahlungsoptionen in &quot;[&quot; oder ](payments-home.md)[ Store-Konfiguration](configure-admin.md) konfigurieren (empfohlen für ältere Zahlungsoptionen oder eine Multi-Store-Einrichtung).
 
-Je nachdem, wo Sie sich im Checkout-Prozess befinden, gibt es für jede Zahlungsmethode unterschiedliche Verhaltensweisen:
+Es gibt verschiedene Verhaltensweisen für jede Zahlungsmethode, je nachdem, wo Sie sich im Checkout-Prozess befinden:
 
 * Produktseite - Die Produktseite für ein Element
-* Mini-Warenkorb: Verfügbar beim Klicken auf das Warenkorbsymbol, wenn ein Produkt zum Warenkorb hinzugefügt wurde
-* Warenkorb: Verfügbar bei Klick auf _Warenkorb anzeigen und bearbeiten_ aus dem Mini-Warenkorb
-* Checkout-Ansicht - Verfügbar beim Klicken auf _Fahren Sie mit dem Checkout_ aus dem Mini-Warenkorb oder Warenkorb fort.
+* Mini-Warenkorb - Erhältlich beim Klicken auf das Warenkorb-Symbol, wenn ein Produkt zum Warenkorb hinzugefügt wurde
+* Warenkorb - Verfügbar beim Klicken auf _Warenkorb anzeigen und bearbeiten_ aus dem Miniwarenkorb
+* Checkout-Ansicht - Verfügbar beim Klicken auf _Zum Checkout_ aus dem Mini-Warenkorb oder Warenkorb
 
 >[!IMPORTANT]
 >
->[!DNL Payment Services] Das Onboarding muss abgeschlossen sein, bevor Zahlungen verarbeitet werden können.
+>[!DNL Payment Services] Onboarding muss abgeschlossen sein, bevor Zahlungen verarbeitet werden können.
 
-## Erlebnis für Standardzahlungen im Vergleich zu erweiterten Zahlungen
+## Erlebnis „Standard“ im Vergleich zu „Erweiterte Zahlungen“
 
-[!DNL Payment Services] bietet je nach Land, in dem Sie tätig sind, **Erweiterte Optionen** (vollständig unterstützt) und **Standard** (Express-Checkout) sowie Onboarding-Zahlungsoptionen.
+[!DNL Payment Services] bietet **Erweitert** (vollständig unterstützt) und **Standard** (Express-Checkout) Zahlungsoptionen und Onboarding-Flüsse, je nach dem Land, in dem Sie tätig sind.
 
-* **Erweitert** - Alle verfügbaren [Zahlungsoptionen](../payment-services/payments-options.md) sind für die aktuellen [vollständig unterstützten Länder](../payment-services/overview.md#availability) verfügbar. Wählen Sie beim Onboarding die Option [Erweitertes Onboarding](../payment-services/production.md#advanced-onboarding), um Live-Zahlungen zu aktivieren.
-* **Standard** - Eine Untergruppe von Zahlungsoptionen (Express Checkout) - PayPal-Kredit- und Debitkarten - ist für andere verfügbare unterstützte Länder verfügbar. [Kreditkartenfelder](#credit-card-fields) und [Apple Pay](#apple-pay-button) sind für diese Onboarding-Option nicht verfügbar. Wählen Sie beim Onboarding die Option [Standardeinstieg](../payment-services/production.md#standard-onboarding) aus, um Live-Zahlungen zu aktivieren.
+* **Erweitert** - Alle verfügbaren [Zahlungsoptionen](../payment-services/payments-options.md) sind für aktuelle ([ Länder) ](../payment-services/overview.md#availability). Um Live-Zahlungen während des Onboardings zu aktivieren, wählen Sie die Option [Erweitertes Onboarding](../payment-services/production.md#advanced-onboarding) aus.
+* **Standard** - Eine Untergruppe von Zahlungsoptionen (Express Checkout) - PayPal-Kredit- und Debitkarten - ist für andere verfügbare unterstützte Länder verfügbar. [Kreditkartenfelder](#credit-card-fields) und [Apple Pay](#apple-pay-button) sind für diese Onboarding-Option nicht verfügbar. Wählen Sie während des Onboardings die Option [Standard-Onboarding](../payment-services/production.md#standard-onboarding) aus, um Live-Zahlungen zu aktivieren.
 
-Informationen zum Abschluss des erweiterten und standardmäßigen Onboarding finden Sie unter [Aktivieren [!DNL Payment Services] für die Produktion](../payment-services/production.md#complete-merchant-onboarding) .
+Informationen [ Abschluss des Erweiterten Onboardings und des standardmäßigen Onboarding finden Sie  [!DNL Payment Services]  „Aktivieren für ](../payment-services/production.md#complete-merchant-onboarding)&quot;.
 
 ## [!UICONTROL Credit Card Fields]
 
-[!UICONTROL Credit Card Fields] bietet einen einfachen und sicheren Checkout für Kreditkarten- oder Debitkartenzahlmethoden. Wenn ein Kunde mit Kreditkartenfeldern zur Kasse geht, gibt er seinen Namen, seine Rechnungsadresse sowie seine Kredit- oder Debitkarteninformationen ein, um seine Bestellung aufzugeben. Ihre Kundeninformationen werden während der Kaufsitzung sicher verwendet, um sie nahtlos durch den Checkout-Fluss zu führen.
+[!UICONTROL Credit Card Fields] bieten einen einfachen und sicheren Checkout für Kreditkarten- oder Debitkartenzahlungsmethoden. Wenn ein Käufer mit Kreditkartenfeldern auscheckt, gibt er seinen Namen, seine Rechnungsadresse und Kreditkarteninformationen ein, um seine Bestellung aufzugeben. Ihre Kundeninformationen werden während der Kaufsitzung sicher verwendet, um sie nahtlos durch den Checkout-Ablauf zu führen.
 
-![Kreditkartenfelder im Checkout](assets/credit-card-fields.png){width="500" zoomable="yes"}
+![Kreditkartenfelder beim Checkout](assets/credit-card-fields.png){width="500" zoomable="yes"}
 
-Aktivieren Sie [Kreditkartengewinn](#vaulting) für Ihre Geschäfte, damit Käufer ihre Kreditkarteninformationen für einen schnellen Checkout später überprüfen (speichern) können.
+Aktivieren Sie [Kreditkartenabdeckung](#vaulting) für Ihre Geschäfte, damit Käufer ihre Kreditkarteninformationen für einen schnellen späteren Checkout abspeichern können.
 
-Sie können [!UICONTROL Credit Card Fields] in der Store-Konfiguration oder der [!DNL Payment Services]-Startseite konfigurieren. Weitere Informationen finden Sie unter [Einstellungen](settings.md#credit-card-fields) .
+Sie können [!UICONTROL Credit Card Fields] in der Store-Konfiguration oder auf der [!DNL Payment Services]-Startseite konfigurieren. Weitere Informationen finden [ unter ](settings.md#credit-card-fields).
 
-Sie können auch das Layout, die Breite, die Höhe und den äußeren Stil der Kreditkartenfelder ändern. Weitere Informationen finden Sie in der [PayPal-Dokumentation](https://developer.paypal.com/docs/checkout/advanced/customize/card-field-style/) .
+Sie können auch das Layout, die Breite, Höhe und den äußeren Stil der Kreditkartenfelder ändern. Weitere Informationen finden [ in der ](https://developer.paypal.com/docs/checkout/advanced/customize/card-field-style/) zu PayPal .
 
-## Schaltfläche [!DNL Apple Pay]
+## [!DNL Apple Pay]
 
-Kunden können [[!DNL Apple Pay]](https://www.apple.com/apple-pay/) verwenden, das die auf einem iOS- oder macOS-Gerät gespeicherten Zahlungsberechtigungen für Kredit- und Debitkarten verwendet, um Käufe zu tätigen.
+Kunden können [[!DNL Apple Pay]](https://www.apple.com/apple-pay/) verwenden, das auf einem iOS- oder macOS-Gerät gespeicherte Anmeldeinformationen für die Zahlung mit Kredit- und Debitkarte verwendet, um Käufe zu tätigen.
 
-[!DNL Apple Pay] ist nur im Safari-Browser verfügbar. Händler können bis zu 99 Domänen pro Händlerkonto hinzufügen.
+[!DNL Apple Pay] ist nur im Safari-Browser verfügbar. Händler können bis zu 99 Domains pro Händlerkonto hinzufügen.
 
-![Apple-Schaltfläche &quot;Bezahlen&quot;im Minicart](assets/applepay-button.png){width="500" zoomable="yes"}
+![Apple-Pay-Schaltfläche im Mini-Warenkorb](assets/applepay-button.png){width="500" zoomable="yes"}
 
-Die Schaltfläche &quot;[!DNL Apple Pay]&quot; ist von der Produktseite aus sichtbar, in den Miniaturausschnitten, im Warenkorb und in den Checkout-Ansichten.
+Die Schaltfläche &quot;[!DNL Apple Pay]&quot; ist auf der Produktseite sowie in den Ansichten „Mini-Warenkorb“, „Warenkorb“ und „Checkout“ sichtbar.
 
-Um [!DNL Apple Pay] für Ihre Stores zu verwenden, führen Sie die [ Selbstregistrierung mit  [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) durch (_Nur die Live-Domäne registrieren_ ) und konfigurieren Sie sie für Ihre Stores in  [!DNL Payment Services]](settings.md#payment-buttons).[
-
->[!NOTE]
->
-> Weitere Informationen dazu, wie Sie Käufern die Zahlung mit Apple PayPal auf Ihrer Site ermöglichen, finden Sie unter [Erweiterter Checkout](https://www.paypal.com/us/cshelp/article/what-is-paypal-advanced-checkout-and-how-do-i-get-started-help953){target=_blank} in der PayPal-Entwicklerdokumentation.
-
-Sie können [!UICONTROL Apple Pay] in der Store-Konfiguration oder auf der Zahlungsdienst-Startseite konfigurieren. Weitere Informationen finden Sie unter [Einstellungen](settings.md#apple-pay) .
-
-## Schaltfläche [!DNL Google Pay]
-
-Kunden können [[!DNL Google Pay]](https://pay.google.com/about/) verwenden, indem sie Zahlungsdetails zu ihrem Google-Konto hinzufügen, wo sie sicher für ein nahtloses Checkout-Erlebnis gespeichert sind.
-
-[!DNL Google Pay] ist nur in bestimmten Ländern oder Regionen und auf bestimmten Geräten verfügbar. Weitere Informationen finden Sie in der [[!DNL Google Pay] Dokumentation](https://developer.paypal.com/docs/checkout/apm/google-pay/#link-googlepayintegration) .
-
-![Google-Schaltfläche &quot;Bezahlen&quot;im Checkout](assets/google-pay-button.png){width="500" zoomable="yes"}
-
-Die Schaltfläche &quot;[!DNL Google Pay]&quot; ist von der Produktseite aus sichtbar, in den Miniaturausschnitten, im Warenkorb und in den Checkout-Ansichten.
-
-Sie können [!UICONTROL Google Pay] in der Store-Konfiguration oder auf der Zahlungsdienst-Startseite konfigurieren. Weitere Informationen finden Sie unter [Einstellungen](configure-admin.md) .
+Um [!DNL Apple Pay] für Ihre Stores zu verwenden[ füllen Sie den Abschnitt Selbstregistrierung mit [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_nur Ihre Live-_ registrieren) aus und [ Sie ihn für Ihre Stores in  [!DNL Payment Services]](settings.md#payment-buttons).
 
 >[!NOTE]
 >
-> Die [!DNL Google Pay] -API kann nur auf Websites in einem sicheren Kontext verwendet werden. Weitere Informationen finden Sie in der Dokumentation zur Fehlerbehebung ](https://developers.google.com/pay/api/web/support/troubleshooting) .[
+> Siehe [erweiterter Checkout](https://www.paypal.com/us/cshelp/article/what-is-paypal-advanced-checkout-and-how-do-i-get-started-help953){target=_blank} in der Entwicklerdokumentation zu PayPal, um zu erfahren, wie Sie Käufern ermöglichen, auf Ihrer Site mit Apple Pay zu bezahlen.
+
+Sie können [!UICONTROL Apple Pay] in der Store-Konfiguration oder auf der Zahlungsdienste-Startseite konfigurieren. Weitere Informationen finden [ unter ](settings.md#apple-pay).
+
+## [!DNL Google Pay]
+
+Kunden können [[!DNL Google Pay]](https://pay.google.com/about/) verwenden, indem sie Zahlungsdetails zu ihrem Google-Konto hinzufügen, wo sie sicher für einen nahtlosen Checkout-Erlebnis gespeichert werden.
+
+[!DNL Google Pay] ist nur in bestimmten Ländern oder Regionen und auf bestimmten Geräten verfügbar. Weitere Informationen finden [[!DNL Google Pay]  unter ](https://developer.paypal.com/docs/checkout/apm/google-pay/#link-googlepayintegration)Dokumentation).
+
+![Google-Pay-Schaltfläche an der Kasse](assets/google-pay-button.png){width="500" zoomable="yes"}
+
+Die Schaltfläche &quot;[!DNL Google Pay]&quot; ist auf der Produktseite sowie in den Ansichten „Mini-Warenkorb“, „Warenkorb“ und „Checkout“ sichtbar.
+
+Sie können [!UICONTROL Google Pay] in der Store-Konfiguration oder auf der Zahlungsdienste-Startseite konfigurieren. Weitere Informationen finden [ unter ](configure-admin.md).
+
+>[!NOTE]
+>
+> Die [!DNL Google Pay]-API kann nur auf Websites in einem sicheren Kontext verwendet werden. Weitere Informationen finden [ in ](https://developers.google.com/pay/api/web/support/troubleshooting) Dokumentation zur Fehlerbehebung .
 
 ## [!DNL PayPal Payment Buttons]
 
-[!DNL PayPal payment buttons], das PayPal zum Abschluss eines Kaufs verwendet, speichert die Lieferadresse, Rechnungsadressen und Zahlungsdetails Ihres Käufers zur späteren Verwendung. Käufer können jede Zahlungsmethode verwenden, die zuvor von PayPal gespeichert oder angeboten wurde.
+[!DNL PayPal payment buttons], die PayPal verwenden, um einen Kauf abzuschließen, speichert die Lieferadresse, Rechnungsadressen und Zahlungsdetails Ihres Käufers für die spätere Verwendung. Käufer können jede Zahlungsmethode verwenden, die zuvor von PayPal gespeichert oder angeboten wurde.
 
-![Schaltfläche &quot;PayPal&quot;](assets/paypal-button.png){width="350" zoomable="yes"}
+![PayPal-Taste](assets/paypal-button.png){width="350" zoomable="yes"}
 
-Sie können [!UICONTROL PayPal payment buttons] in der Store-Konfiguration oder der [!DNL Payment Services]-Startseite konfigurieren. Weitere Informationen finden Sie unter [Einstellungen](settings.md#payment-buttons) .
+Sie können [!UICONTROL PayPal payment buttons] in der Store-Konfiguration oder auf der [!DNL Payment Services]-Startseite konfigurieren. Weitere Informationen finden [ unter ](settings.md#payment-buttons).
 
-Erfahren Sie mehr über die Verfügbarkeit der Zahlungsmethoden nach Ländern in der Dokumentation zu PayPal [Zahlungsmethoden](https://developer.paypal.com/docs/checkout/payment-methods/).
+Erfahren Sie mehr über die Verfügbarkeit von Zahlungsmethoden nach Land in der [ zu Zahlungsmethoden ](https://developer.paypal.com/docs/checkout/payment-methods/).
 
-### Schaltfläche [!DNL PayPal]
+### [!DNL PayPal]
 
-Kunden können mit der Schaltfläche PayPal problemlos und sicher auschecken.
+Kunden können mit der PayPal-Schaltfläche bequem und sicher auschecken.
 
-Die Schaltfläche &quot;[!DNL PayPal]&quot; ist von der Produktseite aus sichtbar, in den Miniaturausschnitten, im Warenkorb und in den Checkout-Ansichten.
+Die Schaltfläche &quot;[!DNL PayPal]&quot; ist auf der Produktseite sowie in den Ansichten „Mini-Warenkorb“, „Warenkorb“ und „Checkout“ sichtbar.
 
-### Schaltfläche [!DNL Venmo]
+### [!DNL Venmo]
 
 Kunden können mit der Schaltfläche [Venmo](https://venmo.com/) auschecken.
 
-Die Schaltfläche &quot;[!DNL Venmo]&quot; ist von der Produktseite aus sichtbar, in den Miniaturausschnitten, im Warenkorb und in den Checkout-Ansichten.
+Die Schaltfläche &quot;[!DNL Venmo]&quot; ist auf der Produktseite sowie in den Ansichten „Mini-Warenkorb“, „Warenkorb“ und „Checkout“ sichtbar.
 
-### Schaltfläche &quot;PayPal Debit&quot;oder &quot;Kreditkarte&quot;
+### PayPal Debit- oder Kreditkarten-Button
 
-Kunden können mit der Schaltfläche PayPal Debit oder Kreditkarte auschecken.
+Kunden können mit der PayPal Debit- oder Kreditkartenschaltfläche auschecken.
 
 Die Schaltfläche PayPal Debit oder Kreditkarte ist auf der Checkout-Seite sichtbar.
 
-Diese Option kann verwendet werden, um Ihren Kunden eine Lastschrift oder Kreditkartenzahlungsoption mit einer PayPal-gehosteten Schaltfläche als Alternative zu einer Kreditkartenintegration vorzuzeigen.
+Diese Option kann verwendet werden, um Ihren Kunden eine Debit- oder Kreditkartenzahlungsoption mit einer PayPal-gehosteten Schaltfläche als Alternative zu einer Kreditkartenintegration anzuzeigen.
 
-### Schaltfläche [!DNL Pay Later]
+### [!DNL Pay Later]
 
-Bieten Sie Ihren Kunden kurzfristige, zinsfreie Zahlungen und andere Finanzierungsoptionen an, damit sie jetzt kaufen und später mit der Schaltfläche [!DNL Pay Later] bezahlen können.
+Bieten Sie Ihren Kunden kurzfristige, zinslose Zahlungen und andere Finanzierungsoptionen, damit sie jetzt kaufen und später mit der [!DNL Pay Later] bezahlen können.
 
-Die Schaltfläche &quot;[!DNL Pay Later]&quot; ist von der Produktseite aus sichtbar, in den Miniaturausschnitten, im Warenkorb und in den Checkout-Ansichten.
+Die Schaltfläche &quot;[!DNL Pay Later]&quot; ist auf der Produktseite sowie in den Ansichten „Mini-Warenkorb“, „Warenkorb“ und „Checkout“ sichtbar.
 
-Weitere Informationen zu den Angeboten von Pay-Later finden Sie in der Dokumentation zu PayPal&#39;s PayPal&#39;s Pay-Later-Angeboten](https://developer.paypal.com/docs/checkout/pay-later/us/). [ Verwenden Sie das Dropdown-Menü **Land oder Region** , um eine Region auszuwählen.
+Informationen zu den Pay Later-Angeboten finden Sie in [ Dokumentation zu PayPal-Angeboten ](https://developer.paypal.com/docs/checkout/pay-later/us/). Wählen Sie **Dropdown-Menü „Land** oder Region“ eine gewünschte Region aus.
 
-Erfahren Sie, wie Sie die [!DNL Pay Later]-Nachricht deaktivieren oder aktivieren, indem Sie die Konfiguration [Einstellungen](settings.md#payment-buttons) aktualisieren.
+Erfahren Sie, wie Sie [!DNL Pay Later]-Messaging deaktivieren oder aktivieren, indem Sie die Konfiguration [Einstellungen](settings.md#payment-buttons) aktualisieren.
 
-## Verwenden Sie nur PayPal-Zahlungsschaltflächen
+## Nur PayPal-Zahlungs-Buttons verwenden
 
-Um Ihren Store schnell in den Produktionsmodus zu versetzen, können Sie die Zahlungsschaltflächen _nur_ PayPal (Venmo, PayPal usw.) konfigurieren.—anstatt auch die Zahlungsoption PayPal Kreditkarte zu verwenden.
+Um Ihren Shop schnell in den Produktionsmodus zu versetzen, können Sie _nur_ PayPal-Zahlungsschaltflächen (Venmo, PayPal usw.) konfigurieren.- anstatt auch die PayPal Kreditkartenzahlungsoption zu verwenden.
 
-Dies ermöglicht Ihnen Folgendes:
+Auf diese Weise können Sie:
 
-* Stellen Sie verschiedene Zahlungsoptionen für Ihre Kunden bereit, einschließlich der Zahlungsschaltflächen Venmo und PayPal, mit der Option, gehostete PayPal-Kartenfelder zu deaktivieren und einen vorhandenen Kreditkartenanbieter zu verwenden.
-* Verwenden Sie Ihren bestehenden Kreditkartenanbieter für Kreditkartenzahlungen und gleichzeitig die anderen Zahlungsoptionen von PayPal.
-* Verwenden Sie die Zahlungsschaltflächen von PayPal in Regionen, in denen PayPal keine Kreditkarten als Zahlungsoption unterstützt.
+* Bieten Sie verschiedene Zahlungsoptionen für Ihre Kunden, einschließlich Venmo und PayPal-Zahlungsschaltflächen, mit der Option, PayPal-gehostete Kartenfelder zu deaktivieren und einen vorhandenen Kreditkartenanbieter zu verwenden.
+* Nutzen Sie Ihren bestehenden Kreditkartenanbieter für Kreditkartenzahlungen und nutzen Sie gleichzeitig die anderen Zahlungsoptionen von PayPal.
+* Verwenden Sie die Zahlungs-Buttons von PayPal in Regionen, in denen PayPal keine Kreditkarten als Zahlungsoption unterstützt.
 
-So erfassen Sie Zahlungen mit _nur_ PayPal-Zahlungsschaltflächen (_nicht_ die Zahlungsoption PayPal-Kreditkarte)**:**
+So **Zahlungen mit _nur_ PayPal-Zahlungs-Schaltflächen (_nicht_ PayPal-Kreditkartenzahlungsoption) erfasst**:
 
-1. Stellen Sie sicher, dass Ihr Store im Produktionsmodus ](settings.md#enable-payment-services) [ist.
-1. [Konfigurieren Sie die gewünschten PayPal-Zahlungsschaltflächen](settings.md#payment-buttons) in den Einstellungen.
-1. Deaktivieren Sie _Aus_ die Option **[[!UICONTROL Show PayPal Credit and Debit card button]](settings.md#payment-buttons)** im Abschnitt _[!UICONTROL Payment buttons]_.
+1. Stellen Sie sicher, dass sich Ihr Store [im Produktionsmodus) ](settings.md#enable-payment-services).
+1. [Konfigurieren Sie die gewünschten PayPal-Zahlungs-Schaltflächen](settings.md#payment-buttons) in den Einstellungen.
+1. Deaktivieren __ die Option **[[!UICONTROL Show PayPal Credit and Debit card button]](settings.md#payment-buttons)** im Abschnitt _[!UICONTROL Payment buttons]_.
 
-So erfassen Sie **Zahlungen mit Ihrem vorhandenen Kreditkartenanbieter _und_ PayPal-Zahlungsschaltflächen**:
+So **Sie Zahlungen mit Ihrem vorhandenen Kreditkartenanbieter _und_ PayPal-Zahlungs-Schaltflächen**:
 
-1. Stellen Sie sicher, dass Ihr Store im Produktionsmodus ](settings.md#enable-payment-services) [ist.
+1. Stellen Sie sicher, dass sich Ihr Store [im Produktionsmodus) ](settings.md#enable-payment-services).
 1. [Konfigurieren Sie die gewünschten PayPal-Zahlungsschaltflächen](settings.md#payment-buttons).
-1. Deaktivieren Sie _Aus_ die Option **[[!UICONTROL PayPal Show Credit and Debit card button]](settings.md#payment-buttons)** im Abschnitt _[!UICONTROL Payment buttons]_.
-1. Deaktivieren Sie _Aus_ die Option **[[!UICONTROL Show on checkout page]](settings.md#credit-card-fields)** im Abschnitt _[!UICONTROL Credit card fields]_und verwenden Sie Ihr [bestehendes Kreditkartenanbieterkonto](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments).
+1. Deaktivieren __ die Option **[[!UICONTROL PayPal Show Credit and Debit card button]](settings.md#payment-buttons)** im Abschnitt _[!UICONTROL Payment buttons]_.
+1. Deaktivieren __ die Option **[[!UICONTROL Show on checkout page]](settings.md#credit-card-fields)** im Abschnitt _[!UICONTROL Credit card fields]_und verwenden Sie Ihr [vorhandenes Kreditkartenkonto](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments).
 
-## Auftragsumberechnung
+## Neuberechnung der Bestellung
 
-Wenn ein Kunde von der Mini-Warenkorb-, Warenkorb- oder Produktseite aus in den Kassengang wechselt, wird er auf eine Seite zur Überprüfung der Bestellung weitergeleitet, auf der er die ausgewählte Lieferadresse in einem PayPal-Popup-Fenster sehen kann. Nachdem der Kunde die Versandmethode ausgewählt hat, wird der Auftragsbetrag entsprechend neu berechnet und der Kunde kann Versandkosten und Steuern sehen.
+Wenn ein Kunde den Checkout-Fluss über den Mini-Warenkorb, den Warenkorb oder die Produktseite aufruft, wird er zu einer Seite zur Bestellüberprüfung weitergeleitet, auf der er die ausgewählte Lieferadresse in einem PayPal-Popup-Fenster sehen kann. Nachdem der Kunde die Versandart ausgewählt hat, wird der Bestellbetrag entsprechend neu berechnet und der Kunde kann die Versandkosten und -steuern sehen.
 
-Wenn ein Kunde von der Checkout-Seite aus in den Checkout-Fluss eintritt, ist dem System die Lieferadresse und der endgültige berechnete Betrag bereits bekannt und die Summen werden entsprechend dargestellt.
+Wenn ein Kunde den Checkout-Fluss über die Checkout-Seite betritt, ist das System bereits über die Lieferadresse und den endgültigen berechneten Betrag informiert und die Gesamtsummen werden entsprechend dargestellt.
 
-Steuerferien, Versandkosten und Umsatzsteuern können von Ort zu Ort sehr variieren. Nachdem [!DNL Payment Services] die Lieferadresse und den Versandpreis erhalten hat, berechnet es schnell alle anwendbaren Kosten neu und zeigt sie in den letzten Phasen des Checkout korrekt an.
+Steuerferien, Versandkosten und Umsatzsteuer können von Standort zu Standort stark variieren. Nachdem [!DNL Payment Services] die Lieferadresse und den Preis erhalten hat, berechnet es schnell alle anfallenden Kosten neu und zeigt sie in den letzten Phasen des Checkouts angemessen an.
 
-## Kreditkartenausnahme
+## Tresor mit Kreditkarte
 
-Käufer können ihre Kreditkarteninformationen für zukünftige Käufe auf der Website (alle Geschäfte innerhalb desselben Händlers-Kontos) verwerten oder &quot;speichern&quot;.
+Käufer können ihre Kreditkarteninformationen für zukünftige Käufe auf der Website-Ebene (jedes Geschäft innerhalb des Kontos desselben Händlers) Vault-nutzen oder „speichern“.
 
-Weitere Informationen finden Sie unter [Kreditkartenausnahme](vaulting.md) .
+Weitere Informationen [ Sie unter ](vaulting.md)Kreditkartenabwicklung).
 
 ## Sicherheit
 
-Weitere Informationen finden Sie unter [PCI compliance](security.md#pci-compliance) .
+Siehe [PCI-](security.md#pci-compliance)) für weitere Informationen.
