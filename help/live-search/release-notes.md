@@ -3,9 +3,9 @@ title: '[!DNL Live Search] Versionshinweise'
 description: Die neuesten Versionsinformationen für  [!DNL Live Search]  von Adobe Commerce.
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 7f536c93ab1c87bf88bc892b2a485067fa8f8110
+source-git-commit: 3cd773060e0546026cc4cb1979abaceadd3fcc2c
 workflow-type: tm+mt
-source-wordcount: '2042'
+source-wordcount: '2068'
 ht-degree: 0%
 
 ---
@@ -65,6 +65,14 @@ _31. Mai 2024_
 _27. Oktober 2023_
 
 ![Neu](../assets/new.svg) Das [!DNL Live Search] PLP-Widget unterstützt jetzt Farbfelder.
+
+## [!DNL Live Search] 4.2.2 {#422}
+
+_6. Januar 2025_
+
+[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
+
+![Behebung](../assets/fix.svg) Es wurde ein Problem behoben, das zu einem Fehler bei der `categoryList` GraphQL-Abfrage in Adobe Commerce Version 2.4.5 und früher führte.
 
 ## [!DNL Live Search] 4.2.1 {#421}
 
