@@ -2,9 +2,9 @@
 title: Verwalten von Synonymen
 description: Erfahren Sie, wie Sie bestehende  [!DNL Live Search]  verwalten.
 exl-id: 9f910b3c-ea28-4a50-9d3f-24b4812c0e75
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: b31d2f566dfd5c765c3d12bd2659c89afe7f91e0
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '221'
 ht-degree: 0%
 
 ---
@@ -32,8 +32,6 @@ Um das Auffinden eines Synonyms zu erleichtern, können Sie die Liste nach Typ f
 1. Klicken Sie **Bearbeiten**.
 Das Keyword ist der erste Begriff in der Liste, und jeder Begriff wird durch ein Komma getrennt. Die Schlüsselwort- und Erweiterungsbegriffe können aktualisiert werden, der Typ des Synonyms kann jedoch nicht geändert werden.
 1. Klicken Sie auf das Element, das Sie bearbeiten möchten. Aktualisieren Sie dann den Text nach Bedarf.
-
-   ![Zwei-Wege-Synonym bearbeiten](assets/synonym-two-way-edit.png)
 
 1. Klicken Sie abschließend auf **Speichern**.
 
