@@ -1,22 +1,26 @@
 ---
 title: Erfassen von Daten
-description: Erfahren Sie, wie Ereignisse Daten für Produktempfehlungen erfassen.
+description: Erfahren Sie, wie Ereignisse Daten für  [!DNL Product Recommendations] erfassen.
 exl-id: b827d88c-327f-4986-8239-8f1921d8383c
 feature: Services, Recommendations, Eventing
-source-git-commit: cd1ce643d7c1ffeec8e9853cfc6ffc5519ce8f7a
+source-git-commit: eb98389cfdd7a0492a4437e9de9412f2d2e5401c
 workflow-type: tm+mt
-source-wordcount: '1316'
+source-wordcount: '1360'
 ht-degree: 0%
 
 ---
 
 # Erfassen von Daten
 
-Wenn Sie SaaS-basierte Adobe Commerce-Funktionen wie [Produkt-Recommendations](install-configure.md) oder [Live-Suche](../live-search/install.md) installieren und konfigurieren, stellen die Module die Erfassung von Verhaltensdaten für Ihre Storefront bereit. Dieser Mechanismus erfasst anonymisierte Verhaltensdaten von Käufern und ermöglicht Produktempfehlungen und [Live Search](../live-search/overview.md)Ergebnisse. Beispielsweise wird das `view` Ereignis verwendet, um den `Viewed this, viewed that` Empfehlungstyp zu berechnen, und das `place-order` Ereignis wird verwendet, um den `Bought this, bought that` Empfehlungstyp zu berechnen.
+Wenn Sie SaaS-basierte Adobe Commerce-Funktionen wie [[!DNL Product Recommendations]](install-configure.md) oder [[!DNL Live Search]](../live-search/install.md) installieren und konfigurieren, stellen die Module die Verhaltensdatenerfassung für Ihre Storefront bereit. Dieser Mechanismus erfasst anonymisierte Verhaltensdaten von Ihren Käufern und unterstützt [!DNL Product Recommendations]. Beispielsweise wird das `view` Ereignis verwendet, um den `Viewed this, viewed that` Empfehlungstyp zu berechnen, und das `place-order` Ereignis wird verwendet, um den `Bought this, bought that` Empfehlungstyp zu berechnen.
 
 >[!NOTE]
 >
->Die Datenerfassung für die Zwecke von Produktempfehlungen umfasst keine personenbezogenen Daten (PII). Alle Benutzerkennungen wie Cookie-IDs und IP-Adressen werden streng anonymisiert. Weitere [ (](https://www.adobe.com/privacy/experience-cloud.html).
+>Die Datenerhebung zum Zwecke der [!DNL Product Recommendations] umfasst keine personenbezogenen Daten (PII). Alle Benutzerkennungen wie Cookie-IDs und IP-Adressen werden streng anonymisiert. Weitere [ (](https://www.adobe.com/privacy/experience-cloud.html).
+
+## Healthcare-Kunden
+
+Wenn Sie Kundschaft im Gesundheitswesen sind und die [Data Services HIPAA-Erweiterung](../data-connection/hipaa-readiness.md#installation) installiert haben, die Teil der [Data Connection](../data-connection/overview.md)-Erweiterung ist, werden von [!DNL Product Recommendations] verwendete Storefront-Ereignisdaten nicht mehr erfasst. Dies liegt daran, dass Storefront-Ereignisdaten Client-seitig generiert werden. Um weiterhin Storefront-Ereignisdaten zu erfassen und zu senden, aktivieren Sie die Ereigniserfassung für [!DNL Product Recommendations] erneut. Weitere Informationen finden [ unter ](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general.html#data-services)Allgemeine Konfiguration“.
 
 ## Datentypen und Ereignisse
 
@@ -75,7 +79,7 @@ Bei unzureichender Erfassung von Eingabedaten greifen die folgenden Empfehlungst
 
 ### -Events
 
-Der Ereignissammler für die [Adobe Commerce-Storefront](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/#quick-start) listet alle Ereignisse auf, die in Ihrer Storefront bereitgestellt wurden. Aus dieser Liste gibt es jedoch eine Teilmenge von Ereignissen, die für Produkt-Recommendations spezifisch sind. Diese Ereignisse erfassen Daten, wenn Käufer mit Empfehlungseinheiten in der Storefront interagieren, und liefern die Grundlage für die Metriken, mit denen Sie die Leistung Ihrer Empfehlungen analysieren können.
+Der Ereignissammler für die [Adobe Commerce-Storefront](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/#quick-start) listet alle Ereignisse auf, die in Ihrer Storefront bereitgestellt wurden. In dieser Liste gibt es eine Teilmenge von Ereignissen, die spezifisch für [!DNL Product Recommendations] sind. Diese Ereignisse erfassen Daten, wenn Käufer mit Empfehlungseinheiten in der Storefront interagieren, und ermöglichen es den Metriken, zu analysieren, wie gut Ihre Empfehlungen funktionieren.
 
 | Ereignis | Beschreibung |
 | --- | --- |

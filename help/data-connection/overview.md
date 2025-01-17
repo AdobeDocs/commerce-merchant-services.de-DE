@@ -3,9 +3,9 @@ title: Handbuch-Übersicht
 description: Erfahren Sie, wie Sie Adobe Commerce-Daten mit Adobe Experience Platform mithilfe der  [!DNL Data Connection] -Erweiterung integrieren.
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
 recommendations: noCatalog
-source-git-commit: b5727c90737ecfd237dd143801152f25600c3f97
+source-git-commit: eb98389cfdd7a0492a4437e9de9412f2d2e5401c
 workflow-type: tm+mt
-source-wordcount: '1752'
+source-wordcount: '1762'
 ht-degree: 0%
 
 ---
@@ -49,23 +49,23 @@ Nachdem Sie die Verbindung zwischen Commerce zu Experience Platform und Experien
 
 Für die Datenfreigabe zwischen diesen beiden Systemen müssen Sie mehrere Konzepte verstehen.
 
-* **Daten** - Die Daten, die für die Experience Platform freigegeben werden, sind Daten, die von Browser-Ereignissen in Ihrer Storefront, Back-Office-Ereignissen auf dem Server und Profildatensatzdaten erfasst wurden. Storefront-Ereignisse werden aus den Interaktionen von Käufern auf der Website erfasst und umfassen Ereignisse wie [`addToCart`](events.md#addtocart), [`pageView`](events.md#pageview), [`createAccount`](events.md#createaccount), [`editAccount`](events.md#editaccount), [`startCheckout`](events.md#startcheckout), [`completeCheckout`](events.md#completecheckout), [`signIn`](events.md#signin), [`signOut`](events.md#signout) usw. Siehe [Storefront-Ereignisse](events.md#storefront-events) für die vollständige Liste der Storefront-Ereignisse. Server-seitige oder Back-Office-Ereignisse umfassen [Bestellstatus](events-backoffice.md#order-status) Informationen wie [`orderPlaced`](events-backoffice.md#orderplaced), [`orderReturned`](events-backoffice.md#orderitemreturncompleted), [`orderShipped`](events-backoffice.md#ordershipmentcompleted), [`orderCancelled`](events-backoffice.md#ordercancelled) usw. Siehe [Backoffice-Ereignisse](events-backoffice.md) für die vollständige Liste der Backoffice-Ereignisse. Profildatensatzdaten enthalten Informationen, wenn ein neues Profil erstellt, aktualisiert oder gelöscht wird. Weitere Informationen [ Sie unter ](events-profilerecord.md) von Profildatensätzen .
+- **Daten** - Die Daten, die für die Experience Platform freigegeben werden, sind Daten, die von Browser-Ereignissen in Ihrer Storefront, Back-Office-Ereignissen auf dem Server und Profildatensatzdaten erfasst wurden. Storefront-Ereignisse werden aus den Interaktionen von Käufern auf der Website erfasst und umfassen Ereignisse wie [`addToCart`](events.md#addtocart), [`pageView`](events.md#pageview), [`createAccount`](events.md#createaccount), [`editAccount`](events.md#editaccount), [`startCheckout`](events.md#startcheckout), [`completeCheckout`](events.md#completecheckout), [`signIn`](events.md#signin), [`signOut`](events.md#signout) usw. Siehe [Storefront-Ereignisse](events.md#storefront-events) für die vollständige Liste der Storefront-Ereignisse. Server-seitige oder Back-Office-Ereignisse umfassen [Bestellstatus](events-backoffice.md#order-status) Informationen wie [`orderPlaced`](events-backoffice.md#orderplaced), [`orderReturned`](events-backoffice.md#orderitemreturncompleted), [`orderShipped`](events-backoffice.md#ordershipmentcompleted), [`orderCancelled`](events-backoffice.md#ordercancelled) usw. Siehe [Backoffice-Ereignisse](events-backoffice.md) für die vollständige Liste der Backoffice-Ereignisse. Profildatensatzdaten enthalten Informationen, wenn ein neues Profil erstellt, aktualisiert oder gelöscht wird. Weitere Informationen [ Sie unter ](events-profilerecord.md) von Profildatensätzen .
 
-* **Experience Platform und Edge Network** - Das Data Warehouse für die meisten Adobe DX-Produkte. Daten, die an den Experience Platform gesendet werden, werden dann über das Experience Platform-Edge Network auf die Adobe DX-Produkte übertragen. Sie können beispielsweise Journey Optimizer starten, Ihre spezifischen Commerce-Ereignisdaten vom Edge abrufen und in Journey Optimizer eine E-Mail zu einem Transaktionsabbruch erstellen. Journey Optimizer kann diese E-Mail dann senden, wenn sich im Commerce-Store Transaktionsabbrüche befinden. Weitere Informationen über die [Experience Platform und das Edge Network ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html).
+- **Experience Platform und Edge Network** - Das Data Warehouse für die meisten Adobe DX-Produkte. Daten, die an den Experience Platform gesendet werden, werden über das Experience Platform-Edge Network auf Adobe DX-Produkte übertragen. Sie können beispielsweise Journey Optimizer starten, Ihre spezifischen Commerce-Ereignisdaten vom Edge abrufen und in Journey Optimizer eine E-Mail zu einem Transaktionsabbruch erstellen. Journey Optimizer kann diese E-Mail dann senden, wenn sich im Commerce-Store Transaktionsabbrüche befinden. Weitere Informationen über die [Experience Platform und das Edge Network ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html).
 
-* **Schema** - Das Schema beschreibt die Struktur der gesendeten Daten. Bevor Experience Platform Ihre Commerce-Daten aufnehmen kann, müssen Sie ein Schema erstellen, das die Datenstruktur beschreibt und den Datentyp einschränkt, der in den einzelnen Feldern enthalten sein kann. Schemata bestehen aus einer Basisklasse und keiner oder mehreren Schemafeldgruppen. Das Schema verwendet die XDM-Struktur, die alle Adobe-DX-Produkte lesen können. Wenn Sie also Ihre Daten an die Experience Platform senden, können Sie sicher sein, dass Ihre Daten in allen DX-Produkten verstanden werden. Weitere Informationen zu [Schemata](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html).
+- **Schema** - Das Schema beschreibt die Struktur der gesendeten Daten. Bevor Experience Platform Ihre Commerce-Daten aufnehmen kann, müssen Sie ein Schema erstellen, das die Datenstruktur beschreibt und Einschränkungen für den Datentyp bereitstellt, der in den einzelnen Feldern enthalten sein kann. Schemata bestehen aus einer Basisklasse und keiner oder mehreren Schemafeldgruppen. Das Schema verwendet die XDM-Struktur, die alle Adobe-DX-Produkte lesen können. Das Schema stellt sicher, dass die an den Experience Platform gesendeten Daten in allen DX-Produkten verstanden werden. Weitere Informationen zu [Schemata](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html).
 
-* **Dataset** - Ein Konstrukt zur Speicherung und Verwaltung von Daten, normalerweise eine Tabelle, die ein Schema (Spalten) und Felder (Zeilen) enthält. Datensätze enthalten auch Metadaten, die verschiedene Aspekte der in ihnen gespeicherten Daten beschreiben. Alle Daten, die erfolgreich in Adobe Experience Platform aufgenommen werden, sind in Datensätzen enthalten. Weitere Informationen zu [Datensätzen](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html).
+- **Dataset** - Ein Konstrukt zur Speicherung und Verwaltung von Daten, normalerweise eine Tabelle, die ein Schema (Spalten) und Felder (Zeilen) enthält. Datensätze enthalten auch Metadaten, die verschiedene Aspekte der in ihnen gespeicherten Daten beschreiben. Alle Daten, die erfolgreich in Adobe Experience Platform aufgenommen werden, sind in Datensätzen enthalten. Weitere Informationen zu [Datensätzen](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html).
 
-* **Datastream** - ID, die den Datenfluss von Adobe Experience Platform zu anderen Adobe DX-Produkten ermöglicht. Diese ID muss mit einer bestimmten Website innerhalb Ihrer spezifischen Adobe Commerce-Instanz verknüpft sein. Wenn Sie diesen Datenstrom erstellen, geben Sie das oben erstellte XDM-Schema an. Weitere Informationen zu [Datenströmen](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html).
+- **Datastream** - ID, die den Datenfluss von Adobe Experience Platform zu anderen Adobe DX-Produkten ermöglicht. Diese ID muss mit einer bestimmten Website innerhalb Ihrer spezifischen Adobe Commerce-Instanz verknüpft sein. Wenn Sie diesen Datenstrom erstellen, geben Sie das oben erstellte XDM-Schema an. Weitere Informationen zu [Datenströmen](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html).
 
 ## Unterstützte Architektur
 
 Die [!DNL Data Connection]-Erweiterung ist auf den folgenden Architekturen verfügbar:
 
-* PHP/Luma
-* [PWA Studio ](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/)
-* [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/aep.html)
+- PHP/Luma
+- [PWA Studio ](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/)
+- [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/aep.html)
 
 >[!BEGINSHADEBOX]
 
@@ -73,10 +73,10 @@ Die [!DNL Data Connection]-Erweiterung ist auf den folgenden Architekturen verf�
 
 Um die [!DNL Data Connection]-Erweiterung verwenden zu können, müssen Sie über Folgendes verfügen:
 
-* Adobe Commerce 2.4.4 oder neuer
-* Adobe ID und Organisations-ID
-* [Adobe-Client-Datenschicht (ACDL)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/client-data-layer/overview.html) die zum Erfassen von Storefront-Ereignisdaten erforderlich ist
-* Berechtigungen für andere Adobe DX-Produkte.
+- Adobe Commerce 2.4.4 oder neuer
+- Adobe ID und Organisations-ID
+- [Adobe-Client-Datenschicht (ACDL)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/client-data-layer/overview.html) die zum Erfassen von Storefront-Ereignisdaten erforderlich ist
+- Berechtigungen für andere Adobe DX-Produkte.
 
 >[!ENDSHADEBOX]
 
@@ -100,6 +100,10 @@ Der Rest dieses Handbuchs führt Sie durch alle diese Schritte, damit Sie sich a
 >
 >Entwickler von Mobilgeräten erfahren, wie [ Adobe Experience Platform Mobile SDK ](./mobile-sdk-epc.md) Commerce integrieren.
 
+## HIPAA-Bereitschaft
+
+Mit der [!DNL Data Connection]-Erweiterung können Sie [!DNL Commerce] Back-Office-Daten mit der Experience Platform austauschen und die HIPAA-Konformität aufrechterhalten. [Weitere Informationen](hipaa-readiness.md).
+
 ## Zielgruppe
 
 Dieses Handbuch richtet sich an Händler in Adobe Commerce, die ihren Commerce-Store erweitern und personalisieren möchten, um ihren Kunden ein noch besseres Einkaufserlebnis zu bieten.
@@ -108,5 +112,5 @@ Dieses Handbuch richtet sich an Händler in Adobe Commerce, die ihren Commerce-S
 
 Wenn Sie Informationen benötigen oder Fragen haben, die in diesem Handbuch nicht behandelt werden, verwenden Sie die folgenden Ressourcen:
 
-* [Hilfezentrum](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html){target="_blank"}
-* [Support-](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"}: Senden Sie ein Ticket, um zusätzliche Hilfe zu erhalten.
+- [Hilfezentrum](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html){target="_blank"}
+- [Support-](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"}: Senden Sie ein Ticket, um zusätzliche Hilfe zu erhalten.

@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie die Erweiterung  [!DNL Data Connection]  Adob
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 role: Admin, Developer
 feature: Install
-source-git-commit: 962452b7e3fdfecabe05f5af3d16afd8d24f2740
+source-git-commit: ae8651e3c3e11d1ed4c39f4d989b816a74d2437b
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '448'
 ht-degree: 0%
 
 ---
@@ -44,6 +44,8 @@ Admin-Ansicht ![[!DNL Data Connection] Erweiterung](assets/epc-adminui.png)
 1. (Optional) Um [!DNL Live Search] einzuschließen, die [Suchereignisse](events.md#search-events) umfassen, installieren Sie die [[!DNL Live Search]](../live-search/install.md).
 
 1. (Optional) Um B2B-Daten einzuschließen, die [Anforderungsereignisse](events.md#b2b-events) umfassen, installieren Sie die [B2B-Erweiterung](#install-the-b2b-extension).
+
+1. (Optional) Wenn Sie ein Händler im Gesundheitswesen sind, installieren Sie die [Data Services HIPAA](#install-the-data-services-hipaa-extension)-Erweiterung, damit Ihre [!DNL Commerce] Backoffice-Daten HIPAA-fähig sind.
 
 ### Installieren von Adobe I/O-Ereignissen und Konfigurieren des Moduls „customers-connector“
 
@@ -109,6 +111,16 @@ Laden Sie die `magento/experience-platform-connector-b2b`-Erweiterung herunter, 
 
 ```bash
 composer require magento/experience-platform-connector-b2b
+```
+
+### Installieren der HIPAA-Erweiterung für Data Services
+
+Installieren Sie für Händler im Gesundheitswesen die folgende Erweiterung, um sicherzustellen, dass die Backoffice-Ereignisdaten HIPAA-fähig sind.
+
+Laden Sie die `magento/module-data-services-hipaa`-Erweiterung herunter, indem Sie Folgendes über die Befehlszeile ausführen:
+
+```bash
+composer require magento/module-data-services-hipaa
 ```
 
 ## Aktualisieren der [!DNL Data Connection] {#update}
