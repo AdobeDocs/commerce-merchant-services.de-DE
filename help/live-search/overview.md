@@ -3,9 +3,9 @@ title: Was ist [!DNL Live Search]?
 description: '[!DNL Live Search] von Adobe Commerce bietet ein schnelles, relevantes und intuitives Sucherlebnis.'
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: 7f536c93ab1c87bf88bc892b2a485067fa8f8110
+source-git-commit: 006b9cc1fe83ecbeb8102984eb3378e0e05df3d2
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '744'
 ht-degree: 0%
 
 ---
@@ -74,8 +74,8 @@ Merchandising [Regeln](rules.md) gestalten das Einkaufserlebnis mit If-Then-Anwe
 ## Live Search-Komponenten
 
 - [!DNL Live Search] [Popover-](storefront-popover.md)) ist das Feld, das unter dem Suchfeld geöffnet wird, das die Suchergebnisse enthält.
-- [Produktlistenseite-Widget](plp-styling.md) (PLP) bietet eine durchsuchbare Produktlistenseite mit Facetten und Unterstützung für Synonyme. Das Widget ist in der Live Search 4.0.0 und höher installiert und aktiviert.
-- (**Veraltet**) Der Suchadapter war der Vorläufer des PLP-Widgets und wurde mit Live Search &lt; 4.0.0 installiert. Wenn Sie eine Version der Live Search vor 4.0.0 verwenden, empfiehlt Commerce ein Upgrade, um die Vorteile der PLP-Widget-Funktionen und zukünftige Verbesserungen zu erhalten.
+- [Produktlistenseite-Widget](plp-styling.md) (PLP) bietet eine durchsuchbare Produktlistenseite mit Facetten und Unterstützung für Synonyme. Das Widget wird in Live Search 4.0.0+ installiert und aktiviert und ersetzt den Suchadapter.
+- (**Veraltet**) Der Suchadapter war der Vorläufer des PLP-Widgets und wurde mit Live Search &lt; 4.0.0 installiert. Wenn Sie eine Version der Live Search vor 4.0.0 verwenden, empfiehlt Commerce ein Upgrade, um die Vorteile der PLP-Widget-Funktionen und zukünftige Verbesserungen zu erhalten. Ab nun wird der Suchadapter nur noch aktualisiert, um Sicherheitsprobleme zu beheben.
 
 ## [!DNL Live Search] Workspace
 
