@@ -2,7 +2,7 @@
 title: Facetten verwalten
 description: Erfahren Sie, wie Sie vorhandene Facetten  [!DNL Live Search] .
 exl-id: 1d51a36a-20d6-46b6-b379-11e46c8824a0
-source-git-commit: bce69f952e70e2e8dcb892357dea41e18f61e5f6
+source-git-commit: e7befb65ef465e98ff35db3046a438835cfd157f
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 0%
@@ -44,22 +44,26 @@ Informationen zum Konfigurieren von [ und Gruppierungen finden ](settings.md) un
 1. (Nur Headless) Um die Methode zum Sortieren von Facettenwerten zu ändern, klicken Sie auf den Wert in der Spalte *Sortiertyp* und wählen Sie eine der folgenden Optionen aus:
 
    * Alphabetisch
-   * Zählung
+   * Count
 
    ![Anzahl bearbeiten](assets/facets-edit-count.png)
 
 1. Legen Sie in **Spalte &quot;** Wert“ die maximale Anzahl (von 0 bis 10) der Facettenfilterwerte fest, die in der Storefront angezeigt werden sollen.
 1. Klicken Sie abschließend auf **Speichern**.
-Ihre Änderungen werden erst nach ihrer Veröffentlichung in der Storefront angezeigt.
+
+   Ihre Änderungen werden erst nach ihrer Veröffentlichung in der Storefront angezeigt.
 
 ## Facette anheften/lösen
 
 Die Nadel ändert ihre Farbe, wenn Sie darauf klicken, und wird verwendet, um die Facette entweder in den Abschnitt *Angeheftete Facetten* oder in den Abschnitt *Dynamische Facetten* zu verschieben.
 
 1. Um eine Facette an den Anfang der Liste *Filter* zu setzen, suchen Sie die Facette in der Liste *Dynamische Facetten* und klicken Sie auf den grauen Pin (![Pin-Auswahl](assets/btn-pin-gray.png)).
-Die Nadel wird blau und die Facette wird in den Abschnitt *Facetten*.
+
+   Die Nadel wird blau und die Facette wird in den Abschnitt *Facetten*.
+
 1. Um eine Facette zu lösen, suchen Sie die Facette in der Liste *Facetten angeheftet* und klicken Sie auf die blaue Nadel (![Nadel-Selektor](assets/btn-pin-blue.png)).
-Der Stift wird grau und die Facette wird in den Abschnitt *Dynamische Facetten* verschoben.
+
+   Der Stift wird grau und die Facette wird in den Abschnitt *Dynamische Facetten* verschoben.
 
    ![Angeheftete und dynamische Facetten](assets/facets-pinned-unpinned.png)
 
@@ -77,7 +81,8 @@ Die Reihenfolge der fixierten Facetten kann geändert werden, indem die Zeile an
 
 1. Suchen Sie die Facette *Abschnitt „Angeheftete*&quot; der Liste.
 1. Ziehen Sie die **mithilfe des Symbols** Verschieben![ (Auswahl verschieben](assets/btn-move.png) an eine neue Position im Abschnitt *Fixierte Facetten*.
-Nachdem die Änderungen veröffentlicht wurden, werden die neu angeordneten Facetten in der Liste Storefront *Filter* angezeigt.
+
+   Nachdem die Änderungen veröffentlicht wurden, werden die neu angeordneten Facetten in der Liste Storefront *Filter* angezeigt.
 
 ## Facette löschen
 
