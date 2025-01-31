@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Ihre Adobe Commerce- oder Magento Open Source
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: daad5bb1ce74126d727207812abebdcf0cbf72c0
+source-git-commit: 867ce9c218632714d463af5c366dccd792d892ad
 workflow-type: tm+mt
-source-wordcount: '1304'
+source-wordcount: '1338'
 ht-degree: 0%
 
 ---
@@ -88,9 +88,11 @@ Alle Adobe Commerce-Händler können pro SaaS-Projekt auf einen Produktionsdaten
 
 Sie können die Testdatenräume in jeder Nicht-Produktionsumgebung verwenden, solange Sie nicht denselben Datenraum in mehreren Umgebungen gleichzeitig verwenden. Um den Testdatenspeicher in einer anderen Umgebung zu verwenden, führen Sie eine Datenbereinigung durch, bevor Sie den Datenspeicher in dieser Umgebung auswählen und konfigurieren.
 
-Bei Adobe Commerce Cloud Pro-Projekten mit mehreren Staging-Umgebungen können Sie zusätzliche Testdatenbereiche für jede Staging-Umgebung anfordern, indem Sie [eine Support-Anfrage senden](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview). Wenn Sie jedoch nur über eine Staging-Umgebung verfügen und zusätzliche Testdatenbereiche benötigen, haben Sie die folgenden Optionen:
-- Wenden Sie sich an das Customer Success-Team oder Ihren Customer Success Manager, um eine zusätzliche Staging-Umgebung anzufordern. Es fallen zusätzliche Kosten an.
-- [Senden einer Support-Anfrage](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) für einen zusätzlichen Testdatenbereich und geben Sie die geschäftliche Begründung für den zusätzlichen Datenbereich an. Diese Anfrage muss genehmigt werden.
+Bei Adobe Commerce Cloud Pro-Projekten mit mehreren Staging-Umgebungen können Sie zusätzliche Testdatenbereiche für jede Staging-Umgebung anfordern, indem Sie [eine Support-Anfrage senden](https://experienceleague.adobe.com/home?support-tab=home#support). Wenn Sie jedoch nur über eine Staging-Umgebung verfügen und zusätzliche Testdatenbereiche benötigen, haben Sie die folgenden Optionen:
+- Wenden Sie sich an das Customer Success-Team oder Ihren Customer Success Manager, um eine zusätzliche Staging-Umgebung anzufordern.
+- [Senden einer Support-Anfrage](https://experienceleague.adobe.com/home?support-tab=home#support) , um den zusätzlichen Testdatenbereich anzufordern und die geschäftliche Begründung für den zusätzlichen Datenbereich anzugeben. Diese Anfrage muss genehmigt werden.
+
+Magento Open Source-Kunden, die Adobe Payment Services verwenden, können auch einen zusätzlichen Datenspeicher anfordern. Wenden Sie sich an das Zahlungs-Team, um die zusätzlichen Datenräume zu genehmigen, bevor Sie eine [Support-Anfrage](https://experienceleague.adobe.com/home?support-tab=home#support) einreichen, um den Testdatenraum anzufordern.
 
 ### SaaS-Projekt auswählen oder erstellen {#createsaasenv}
 
