@@ -4,7 +4,7 @@ description: Die neuesten Versionsinformationen für  [!DNL Data Export Extensio
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 0c7aeeda-e8a6-4740-b466-0661a6d2df07
-source-git-commit: 7d9f4e362fdb92e404a9293e3e9e6e45bb6bde86
+source-git-commit: 5379299cdd10f3a9aab41da56ed0a7b41282b085
 workflow-type: tm+mt
 source-wordcount: '871'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Zu den Aktualisierungen gehören:
 
 >[!NOTE]
 >
->Die SaaS-Datenexporterweiterung ist eine Sammlung von Modulen, die automatisch mit der Live-Suche, der Produkt-Recommendations und dem Katalog-Service installiert werden. Sie können die auf Ihrem System installierte Version mit Composer überprüfen. In einigen Fällen empfiehlt es sich, ein Upgrade der Datenexporterweiterung auf dem System durchzuführen, um Fehlerbehebungen oder neue Funktionen zu erhalten, ohne die Commerce Service-Version zu aktualisieren.
+>Die SaaS-Datenexporterweiterung ist eine Sammlung von Modulen, die automatisch mit der Live-Suche, der Produkt-Recommendations und dem Katalog-Service installiert werden. Sie können die auf Ihrem System installierte Version mit dem Composer überprüfen. In einigen Fällen empfiehlt es sich, ein Upgrade der Datenexporterweiterung auf dem System durchzuführen, um Fehlerbehebungen oder neue Funktionen zu erhalten, ohne die Commerce Service-Version zu aktualisieren.
 
 ## Aktuelle Hauptversion
 
