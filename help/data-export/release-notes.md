@@ -4,9 +4,9 @@ description: Die neuesten Versionsinformationen für  [!DNL Data Export Extensio
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 0c7aeeda-e8a6-4740-b466-0661a6d2df07
-source-git-commit: 4e40ea6214498f2b1c8bcf86b471d61a74ef561c
+source-git-commit: 7d9f4e362fdb92e404a9293e3e9e6e45bb6bde86
 workflow-type: tm+mt
-source-wordcount: '867'
+source-wordcount: '871'
 ht-degree: 0%
 
 ---
@@ -28,32 +28,36 @@ Zu den Aktualisierungen gehören:
 
 ## Aktuelle Hauptversion
 
+## Version 103.3.18
+
+![Korrigieren](../assets/fix.svg) Staging-Aktualisierungen für Produkt- und Kategorienentitäten werden jetzt bei Aktualisierungen von Datenexportdaten korrekt ausgelöst.&lt;!-MDEE-963—>
+
 ## Version 103.3.17
 
-![Fix](../assets/fix.svg) Hinzugefügte Kompatibilität für PHP 8.4. &lt;!-MDEE-941—>
+![Fix](../assets/fix.svg) Hinzugefügte Kompatibilität für PHP 8.4. <!--MDEE-941-->
 
 ## Version 103.3.16
 
-![Fix](../assets/fix.svg) Optionswerte können für konfigurierbare Produkte für mehrere Store-Ansichten leer sein. &lt;!-MDEE-926—>
+![Fix](../assets/fix.svg) Optionswerte können für konfigurierbare Produkte für mehrere Store-Ansichten leer sein. <!--MDEE-926-->
 
 ## Version 103.3.15
 
-![Fix](../assets/fix.svg) Sicherstellen eines stabilen Betriebs von Integrationstests auf älteren Konfigurationen. &lt;!-MDEE-869—>
-![Beheben](../assets/fix.svg) Beenden der Übertragung unnötiger Attributoptionen. &lt;!-MDEE-882—>
-![Behebung](../assets/fix.svg) Es wurde die Fehlermeldung behoben, die an das Datenexportprotokoll gesendet wurde, wenn die Datenserialisierung fehlschlägt. &lt;!-MDEE-913—>
-![Fix](../assets/fix.svg) Die Zuverlässigkeit einfacher Produktaktualisierungen wurde durch zusätzliche Testabdeckung verbessert. &lt;!-MDEE-886—>
+![Fix](../assets/fix.svg) Sicherstellen eines stabilen Betriebs von Integrationstests auf älteren Konfigurationen. <!--MDEE-869-->
+![Beheben](../assets/fix.svg) Beenden der Übertragung unnötiger Attributoptionen. <!--MDEE-882-->
+![Behebung](../assets/fix.svg) Es wurde die Fehlermeldung behoben, die an das Datenexportprotokoll gesendet wurde, wenn die Datenserialisierung fehlschlägt. <!--MDEE-913-->
+![Fix](../assets/fix.svg) Die Zuverlässigkeit einfacher Produktaktualisierungen wurde durch zusätzliche Testabdeckung verbessert. <!--MDEE-886-->
 
 ## Version 103.3.14
 
-![Fehlerbehebung](../assets/fix.svg) Der Exporter-Indexer behält jetzt den richtigen Status für abhängige Indexer. Zuvor wurden diese Indizes fälschlicherweise ungültig gemacht und erforderten zusätzliche Prüfungen und Validierungen, die die Indizierungsleistung verlangsamten. &lt;!-MDEE-866—>
+![Fehlerbehebung](../assets/fix.svg) Der Exporter-Indexer behält jetzt den richtigen Status für abhängige Indexer. Zuvor wurden diese Indizes fälschlicherweise ungültig gemacht und erforderten zusätzliche Prüfungen und Validierungen, die die Indizierungsleistung verlangsamten. <!--MDEE-866-->
 
 ## Version 103.3.13
 
-![Korrektur](../assets/fix.svg) Verbesserte Leistung des Datensynchronisierungsprozesses durch Hinzufügen eines lokalen Cache für Attributoptionendaten.&lt;!-MDEE-864—>
+![Korrektur](../assets/fix.svg) Verbesserte Leistung des Datensynchronisierungsprozesses durch Hinzufügen eines lokalen Cache für Attributdatenoptionen.<!--MDEE-864-->
 
 ## Version 103.3.12
 
-![Behebung](../assets/fix.svg) Es wurde ein Problem behoben, das die Synchronisierungszeit für einfache und virtuelle Produkte verlängerte. &lt;!-MDEE-861—>
+![Behebung](../assets/fix.svg) Es wurde ein Problem behoben, das die Synchronisierungszeit für einfache und virtuelle Produkte verlängerte. <!--MDEE-861-->
 
 ## Version 103.3.11
 
