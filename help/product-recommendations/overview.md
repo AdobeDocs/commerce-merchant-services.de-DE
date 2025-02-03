@@ -3,9 +3,9 @@ title: Einführung in [!DNL Product Recommendations]
 description: '[!DNL Product Recommendations] sind ein leistungsstarkes Marketing-Tool, mit dem Sie Konversionen steigern, Umsätze steigern und die Kundenbindung stimulieren können.'
 exl-id: 818ac876-58c9-4c68-975e-53da59ed6b52
 recommendations: noCatalog
-source-git-commit: 289ac6ac464955f18f3a2448099ad459e6264941
+source-git-commit: e446eb06212609dc44d0bf64fe981c7d1489d33c
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
@@ -43,3 +43,9 @@ Produktempfehlungen ermöglichen Ihnen Folgendes:
 In diesem Video erfahren Sie mehr über [!DNL Product Recommendations]:
 
 >[!VIDEO](https://video.tv.adobe.com/v/343991?quality=12)
+
+## Richtlinie zur Aufbewahrung von Katalogdaten
+
+Wenn Sie in Ihrer Testumgebung an 90 aufeinander folgenden Tagen keine Abfrage für die Katalogdaten senden, werden die Katalogdaten auf den Ruhezustand eingestellt und es werden keine Daten für eine Abfrage zurückgegeben. Katalogdaten in Ihrer Produktionsumgebung sind von dieser Richtlinie nicht betroffen.
+
+Um die Katalogdaten in Ihrer Testumgebung erneut zu aktivieren, [ Sie „eine Support-Anfrage ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page)&quot; mit dem Titel &quot;[!DNL Product Recommendations] erneut aktivieren“ und fügen Sie die Umgebungs-IDs hinzu. Die Katalogdaten in Ihrer Testumgebung sollten innerhalb weniger Stunden wiederhergestellt werden.

@@ -2,9 +2,9 @@
 title: Leistung
 description: Der  [!DNL Live Search]  „Performance“ bietet Einblicke in die Suchbegriffe, die Kundinnen und Kunden verwenden.
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
-source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
+source-git-commit: 7539c0fe9ebe4b82f42f3a7ff30b03c951980eed
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '487'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,10 @@ Der *Performance*-Arbeitsbereich bietet Einblicke in die Suchbegriffe, die Kundi
 
 Weitere Informationen zur Datensynchronisation finden [ auch im ](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html)Daten-Management-Dashboard).
 
+>[!NOTE]
+>
+>Der Leistungsarbeitsbereich wird alle 12 Stunden aktualisiert.
+
 ## Anzeigen eines Berichts
 
 1. Um den **Datumsbereich“**, klicken Sie auf den Kalender ![Kalender](assets/btn-calendar.png) und führen Sie einen der folgenden Schritte aus:
@@ -30,7 +34,7 @@ Weitere Informationen zur Datensynchronisation finden [ auch im ](https://experi
 
 >[!NOTE]
 >
->Der Leistungsarbeitsbereich wird alle 12 Stunden aktualisiert.
+>Der Datumsbereich darf ein Jahr nicht überschreiten.
 
 ## Feldbeschreibungen
 

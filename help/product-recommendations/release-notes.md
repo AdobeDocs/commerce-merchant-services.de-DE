@@ -3,9 +3,9 @@ title: '[!DNL Product Recommendations] Versionshinweise'
 description: Die neuesten Versionsinformationen für  [!DNL Product Recommendations]  von Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: 0e0f67c01c49c8d8c0ac4967eda0bde8685b2980
+source-git-commit: e446eb06212609dc44d0bf64fe981c7d1489d33c
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1429'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,10 @@ Informationen zum Produkt-[ finden Sie in der Entwicklerdokumentation ](https://
 ## Gehostete Service-Aktualisierungen
 
 In diesen Hinweisen werden Aktualisierungen oder bekannte Probleme beschrieben, die außerhalb einer versionierten Version oder Verbesserungen am gehosteten Service veröffentlicht oder erkannt wurden.
+
+_31. Januar 2025_
+
+![Neu](../assets/new.svg) Es gibt eine neue Richtlinie zur Datenaufbewahrung für nicht abgefragte Katalogdaten in Ihrer Testumgebung. [Weitere Informationen](overview.md#catalog-data-retention-policy).
 
 _28. Juni 2024_
 

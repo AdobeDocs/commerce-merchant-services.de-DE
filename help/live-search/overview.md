@@ -3,9 +3,9 @@ title: Was ist [!DNL Live Search]?
 description: '[!DNL Live Search] von Adobe Commerce bietet ein schnelles, relevantes und intuitives Sucherlebnis.'
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: 006b9cc1fe83ecbeb8102984eb3378e0e05df3d2
+source-git-commit: e446eb06212609dc44d0bf64fe981c7d1489d33c
 workflow-type: tm+mt
-source-wordcount: '744'
+source-wordcount: '834'
 ht-degree: 0%
 
 ---
@@ -84,3 +84,9 @@ Der [!DNL Live Search] [Arbeitsbereich](workspace.md) ist der Bereich im Admin-B
 ## -Events
 
 [!DNL Live Search] verwendet [Ereignisse](events.md) zum Berechnen von [Intelligent Merchandising](category-merch.md) und [Performance](performance.md)-Dashboards. Eventing wird mit Standardimplementierungen bereitgestellt. Eventing für Headless-Storefronts sollte manuell aktiviert werden.
+
+## Richtlinie zur Aufbewahrung von Katalogdaten
+
+Wenn Sie an 90 aufeinander folgenden Tagen keine Suchanfrage für die Katalogdaten in Ihrer Testumgebung senden, werden die Katalogdaten in den Ruhezustand versetzt und es werden keine Daten für eine Suchanfrage zurückgegeben. Katalogdaten in Ihrer Produktionsumgebung sind von dieser Richtlinie nicht betroffen.
+
+Um die Katalogdaten in Ihrer Testumgebung erneut zu aktivieren, [ Sie „eine Support-Anfrage ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page)&quot; mit dem Titel &quot;[!DNL Live Search] erneut aktivieren“ und fügen Sie die Umgebungs-IDs hinzu. Die Katalogdaten in Ihrer Testumgebung sollten innerhalb weniger Stunden wiederhergestellt werden.

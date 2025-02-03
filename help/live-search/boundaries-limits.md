@@ -3,9 +3,9 @@ title: Grenzen und Beschränkungen
 description: Erfahren Sie mehr über die Grenzen und Einschränkungen von  [!DNL Live Search] , um sicherzustellen, dass es den Anforderungen Ihres Unternehmens entspricht.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 867d65d0ffd212061524605fd725df1eb75be9eb
+source-git-commit: 7539c0fe9ebe4b82f42f3a7ff30b03c951980eed
 workflow-type: tm+mt
-source-wordcount: '943'
+source-wordcount: '953'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,7 @@ Wenn es um die Site-Suche geht, bietet Ihnen Adobe Commerce Optionen. Überprüf
 - Benutzerdefinierte Produkttypen werden nicht unterstützt.
 - Benutzerdefinierte Attribute, die programmgesteuert mit `"is_user_defined": false` erstellt wurden, werden nicht unterstützt.
 - Sie können Ergebnisse mithilfe der Bedingungen „Beginnt mit“ oder „Enthält“ mit einigen Einschränkungen filtern, wie [hier](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#limitations) beschrieben.
+- Sie können Leistungsmetriken nur innerhalb des letzten Jahres verfolgen.
 
 ## Indizierung
 
