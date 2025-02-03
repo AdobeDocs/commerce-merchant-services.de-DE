@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Ihre Adobe Commerce- oder Magento Open Source
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 867ce9c218632714d463af5c366dccd792d892ad
+source-git-commit: c7ba4401d94f14cc66ef7b404e5444e1f2cb1e23
 workflow-type: tm+mt
-source-wordcount: '1338'
+source-wordcount: '1372'
 ht-degree: 0%
 
 ---
@@ -57,6 +57,10 @@ Darüber hinaus sind Lösungsintegratoren auch berechtigt, [!DNL Commerce Servic
 
 1. Wählen Sie im _Umgebung_ die Option **Produktion** oder **Sandbox**.
 
+   >[!NOTE]
+   >
+   >*Produktion* und *Sandbox* beziehen sich auf die Datenspeicherumgebungen, in denen Daten in Adobe SaaS-Backend-Systemen gespeichert werden. Es bezieht sich nicht auf Commerce-Umgebung(en), in der Sie die Schlüssel verwenden werden.
+
 1. Geben Sie im Abschnitt _API-Schlüssel_ einen Namen ein und klicken Sie auf **Neu hinzufügen**, um das Dialogfeld zum Herunterladen des neuen Schlüssels zu öffnen.
 
    ![Privaten Schlüssel herunterladen](assets/download-api-private-key.png)
@@ -69,7 +73,7 @@ Darüber hinaus sind Lösungsintegratoren auch berechtigt, [!DNL Commerce Servic
 
 1. Wiederholen Sie die obigen Schritte für jede Umgebung (Produktion und Sandbox).
 
-   Im Abschnitt **API-Schlüssel** werden nun Ihre API-Schlüssel (öffentliche Schlüssel) angezeigt. Sie benötigen alle vier Schlüssel (Produktions- und Sandbox-Schlüssel, öffentlich+privat), wenn Sie [ein SaaS-Projekt auswählen oder erstellen](#createsaasenv) in einer der Umgebungen/Installationen ausführen, die mit der Lizenz verbunden sind.
+   Im Abschnitt **API-Schlüssel** werden nun Ihre API-Schlüssel (öffentliche Schlüssel) angezeigt. Sie benötigen alle vier Schlüssel (Produktions- und Sandbox-Schlüssel, öffentlich+privat), wenn Sie [ein SaaS-Projekt auswählen oder erstellen](#createsaasenv) in einer der Umgebungen oder Installationen ausführen, die mit der Lizenz verbunden sind.
 
 ## SaaS-Konfiguration {#saasenv}
 
