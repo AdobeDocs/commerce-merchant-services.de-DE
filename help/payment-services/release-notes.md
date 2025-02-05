@@ -3,9 +3,9 @@ title: '[!DNL Payment Services] Versionshinweise'
 description: Informationen zu allen Versionen finden  [!DNL Payment Services]  in den Versionshinweisen .
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: feeaed7b7130b3581a1b1f7e3bdd161ce1e7d765
+source-git-commit: 8cf48ade51157a8d2ce51333deb4d142e4a1a011
 workflow-type: tm+mt
-source-wordcount: '3311'
+source-wordcount: '3344'
 ht-degree: 0%
 
 ---
@@ -91,13 +91,23 @@ _28. Juni 2021_
 
 +++
 
+## v2.10.1
+
+_5. Februar 2025_
+
+[!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
+
+![Neu](../assets/new.svg)<!-- PAY-5813 --> Es wurde Unterstützung für Adobe Commerce 2.4.8 und PHP 8.4 hinzugefügt.
+
 ## v2.10.0
 
 _13. Dezember 2024_
 
 [!BADGE Unterstützt]{type=Informative tooltip="Unterstützt"}
 
-![Neu](../assets/new.svg)<!-- PAY-5702 --> [!DNL Payment Services] unterstützt jetzt GraphQL-Endpunkte für Vaulting ohne Kauf, sodass Kunden ihre Zahlungsmethoden speichern können, ohne eine Transaktion abzuschließen.
+![Neu](../assets/new.svg)<!-- PAY-5873 --> [!DNL Payment Services] unterstützt jetzt eine [[!DNL Payment Services] Dropdown-Komponente](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/payment-services/) in der [Edge Delivery Services-Storefront für Adobe Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/).
+
+![Neu](../assets/new.svg)<!-- PAY-5702 --> [!DNL Payment Services] unterstützt jetzt [GraphQL-Endpunkte für Vaulting ohne Kauf](https://developer.adobe.com/commerce/webapi/graphql/payment-services-extension/queries/get-vault-config/) sodass Kunden ihre Zahlungsmethoden speichern können, ohne eine Transaktion abzuschließen.
 
 ![Neu](../assets/fix.svg)<!-- PAY-5789 --> [!DNL Payment Services] unterstützt jetzt die sichere [3D-Authentifizierung mit Google Pay](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/security-compliance/security#3ds), wodurch die Sicherheit für Händler und Kunden während des Zahlungsverkehrs verbessert wird.
 
