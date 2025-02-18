@@ -4,9 +4,9 @@ description: Die neuesten Versionsinformationen für  [!DNL Data Export Extensio
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 0c7aeeda-e8a6-4740-b466-0661a6d2df07
-source-git-commit: f222d66ff3fc99c1fb234e1988a760482aadf2ca
+source-git-commit: 5b987bf60a87046d6576464327dca589f6afded4
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '905'
 ht-degree: 0%
 
 ---
@@ -24,9 +24,15 @@ Zu den Aktualisierungen gehören:
 
 >[!NOTE]
 >
->Die SaaS-Datenexporterweiterung ist eine Sammlung von Modulen, die automatisch mit der Live-Suche, der Produkt-Recommendations und dem Katalog-Service installiert werden. Sie können die auf Ihrem System installierte Version mit dem Composer überprüfen. In einigen Fällen empfiehlt es sich, ein Upgrade der Datenexporterweiterung auf dem System durchzuführen, um Fehlerbehebungen oder neue Funktionen zu erhalten, ohne die Commerce Service-Version zu aktualisieren.
+>Die SaaS-Datenexporterweiterung ist eine Sammlung von Modulen, die automatisch mit der Live-Suche, Produktempfehlungen und dem Katalog-Service installiert werden. Sie können die auf Ihrem System installierte Version mit dem Composer überprüfen. In einigen Fällen empfiehlt es sich, ein Upgrade der Datenexporterweiterung auf dem System durchzuführen, um Fehlerbehebungen oder neue Funktionen zu erhalten, ohne die Commerce Service-Version zu aktualisieren.
 
 ## Aktuelle Hauptversion
+
+
+## Version 103.3.19
+
+![Korrigieren](../assets/fix.svg) Die Datenexporterweiterung wurde aktualisiert, um die Erweiterbarkeit von Feeds zu verbessern. <!--MDEE-936-->
+![Korrektur](../assets/fix.svg) Der Datenexportprozessor überprüft jetzt den Indexerstatus vor einer vollständigen Neusynchronisierung, um einen versehentlichen Datenverlust in der Feed-Tabelle zu vermeiden.
 
 ## Version 103.3.18
 
