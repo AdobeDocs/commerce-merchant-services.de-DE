@@ -3,9 +3,9 @@ title: Erste Schritte mit [!DNL Live Search]
 description: Erfahren Sie mehr über die Systemanforderungen und Installationsschritte für  [!DNL Live Search]  von Adobe Commerce.
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 42ad3e05789844a0bcc6cb114a0db067f3d497db
+source-git-commit: 079998ad1390849bc8078f958140e101b95460ca
 workflow-type: tm+mt
-source-wordcount: '3093'
+source-wordcount: '3100'
 ht-degree: 0%
 
 ---
@@ -168,7 +168,7 @@ Sie können diese neuen Bedingungen auf Ihrer Suchergebnisseite implementieren. 
 
 | Feld | Beschreibung |
 |--- |--- |
-| `Autocomplete` | Standardmäßig aktiviert und kann nicht geändert werden. Mit `Autocomplete` können Sie `contains` im [Suchfilter](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering) verwenden. Hier gibt die Suchabfrage in `contains` eine Suchantwort mit automatischer Vervollständigung zurück. Adobe empfiehlt, diesen Suchtyp für Beschreibungsfelder zu verwenden, die in der Regel mehr als 50 Zeichen enthalten. |
+| `Autocomplete` | Standardmäßig aktiviert und kann nicht geändert werden. Mit `Autocomplete` können Sie `contains` im [Suchfilter](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering) verwenden. Hier gibt die Suchabfrage in `contains` eine Suchantwort mit automatischer Vervollständigung zurück. Adobe empfiehlt, diesen Typ der Suche nach Beschreibungsfeldern zu verwenden, die in der Regel mehr als 50 Zeichen enthalten. |
 | `Contains` | Aktiviert die Suche nach „in einer Zeichenfolge enthaltenem“ Text anstelle einer Suche mit automatischer Vervollständigung. Verwenden Sie `contains` im [Suchfilter](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-using-search-capability). Weitere Informationen finden [ unter ](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#limitations) . |
 | `Starts with` | Ermöglicht die Abfrage von Zeichenfolgen, die mit einem bestimmten Wert beginnen. Verwenden Sie `startsWith` im [Suchfilter](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-using-search-capability). |
 
@@ -227,7 +227,7 @@ Um zu überprüfen, ob Ihre Katalogdaten aus Adobe Commerce exportiert und mit [
   >
   >Wenn Sie einen `table does not exist` Fehler erhalten, suchen Sie in den `catalog_data_exporter_products` und `catalog_data_exporter_product_attributes` Tabellen nach Einträgen. Diese Tabellennamen werden in [!DNL Live Search] Versionen vor 4.2.1 verwendet.
 
-- Verwenden Sie den [GraphQL Playground](https://developer.adobe.com/commerce/services/graphql/live-search/) mit der Standardabfrage, um Folgendes zu überprüfen:
+- Verwenden Sie den [GraphQL Playground](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-admin/graphql) mit der Standardabfrage (weitere Informationen finden Sie ](https://developer.adobe.com/commerce/services/graphql/live-search/) [GraphQL-Referenz), um Folgendes zu überprüfen:
 
    - Die zurückgegebene Anzahl von Produkten entspricht fast den Erwartungen für die Store-Ansicht.
    - Facetten werden zurückgegeben.
@@ -402,7 +402,7 @@ Wenn Sie über eine benutzerdefinierte Headless-Implementierung verfügen, finde
 - [PLP-Widget](https://github.com/adobe/storefront-product-listing-page)
 - [Live Search-Feld](https://github.com/adobe/storefront-search-as-you-type)
 
-Die automatische Erfassung von Benutzerinteraktionsdaten funktioniert nicht standardmäßig, wenn Sie nicht die Standardkomponenten wie den Suchadapter, Luma-Widgets oder AEM-CIF-Widgets verwenden. Adobe Sensei verwendet diese erfassten Daten für intelligentes Merchandising und Leistungsüberwachung. Um dieses Problem zu beheben, müssen Sie eine benutzerdefinierte Lösung entwickeln, um diese Datenerfassung auf Headless-Weise zu implementieren.
+Die automatische Erfassung von Benutzerinteraktionsdaten funktioniert nicht standardmäßig, wenn Sie nicht die Standardkomponenten wie den Suchadapter, Luma-Widgets oder AEM CIF-Widgets verwenden. Adobe Sensei verwendet diese erfassten Daten für intelligentes Merchandising und Leistungsüberwachung. Um dieses Problem zu beheben, müssen Sie eine benutzerdefinierte Lösung entwickeln, um diese Datenerfassung auf Headless-Weise zu implementieren.
 
 Die neueste Version von [!DNL Live Search] verwendet bereits [!DNL Catalog Service].
 
@@ -506,13 +506,13 @@ Dieses Modul fügt zusätzliche Kontexte zu GraphQL-Abfragen hinzu:
 
 [!DNL Live Search] unterstützt [B2B-](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/guide-overview) mit zusätzlichen [Einschränkungen](boundaries-limits.md#b2b-and-category-permissions).
 
-### PWA-Unterstützung
+### PWA-Support
 
 [!DNL Live Search] funktioniert mit PWA Studio, aber die Benutzenden sehen möglicherweise leichte Unterschiede im Vergleich zu anderen Commerce-Implementierungen. Grundlegende Funktionen wie die Suche und die Produktlistenseite funktionieren in Venia, aber einige Permutationen von GraphQL funktionieren möglicherweise nicht richtig. Es können auch Leistungsunterschiede auftreten.
 
 - Die aktuelle PWA-Implementierung von [!DNL Live Search] benötigt mehr Verarbeitungszeit, um Suchergebnisse zurückzugeben, als mit der nativen Commerce-Storefront [!DNL Live Search].
-- [!DNL Live Search] in PWA unterstützt nicht [Ereignisverarbeitung](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). Daher funktionieren Suchberichte und intelligentes Merchandising nicht auf PWA-Storefronts.
-- Bei Verwendung von [PWA Studio ](https://developer.adobe.com/commerce/pwa-studio/) unterstützt GraphQL das direkte Filtern nach `description`, `name` oder `short_description` nicht. Diese Felder können jedoch mit einem allgemeineren Filter zurückgegeben werden.
+- [!DNL Live Search] in PWA unterstützt nicht [Ereignisverarbeitung](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). Daher funktionieren Suchberichte und intelligentes Merchandising nicht in PWA-Storefronts.
+- Bei Verwendung von [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) unterstützt GraphQL das direkte Filtern nach `description`, `name` oder `short_description` nicht. Diese Felder können jedoch mit einem allgemeineren Filter zurückgegeben werden.
 
 Um [!DNL Live Search] mit PWA Studio verwenden zu können, müssen Integratoren außerdem:
 
